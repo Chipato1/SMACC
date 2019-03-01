@@ -1,0 +1,58 @@
+\hypertarget{classGMapping_1_1RangeReading}{}\section{G\+Mapping\+:\+:Range\+Reading Class Reference}
+\label{classGMapping_1_1RangeReading}\index{G\+Mapping\+::\+Range\+Reading@{G\+Mapping\+::\+Range\+Reading}}
+
+
+Inheritance diagram for G\+Mapping\+:\+:Range\+Reading\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGMapping_1_1RangeReading__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for G\+Mapping\+:\+:Range\+Reading\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGMapping_1_1RangeReading__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1RangeReading_afd3cc81a7d26c4d141e7fb2b67b39de5}\label{classGMapping_1_1RangeReading_afd3cc81a7d26c4d141e7fb2b67b39de5}} 
+{\bfseries Range\+Reading} (const \hyperlink{classGMapping_1_1RangeSensor}{Range\+Sensor} $\ast$rs, double time=0)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1RangeReading_ab004e5752633c773410cc78e8578b218}\label{classGMapping_1_1RangeReading_ab004e5752633c773410cc78e8578b218}} 
+{\bfseries Range\+Reading} (unsigned int n\+\_\+beams, const double $\ast$d, const \hyperlink{classGMapping_1_1RangeSensor}{Range\+Sensor} $\ast$rs, double time=0)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1RangeReading_a397a6492e1759f0623c7a3ceb7e549c3}\label{classGMapping_1_1RangeReading_a397a6492e1759f0623c7a3ceb7e549c3}} 
+const \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} \& {\bfseries get\+Pose} () const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1RangeReading_a14bd6d1fe87196ffeb2b78f2d69500fc}\label{classGMapping_1_1RangeReading_a14bd6d1fe87196ffeb2b78f2d69500fc}} 
+void {\bfseries set\+Pose} (const \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} \&pose)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1RangeReading_a567ac887823c73ca3d1da3d04df678dc}\label{classGMapping_1_1RangeReading_a567ac887823c73ca3d1da3d04df678dc}} 
+unsigned int {\bfseries raw\+View} (double $\ast$v, double density=0.) const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1RangeReading_af6a18cc22892ffc409805066d6455fcb}\label{classGMapping_1_1RangeReading_af6a18cc22892ffc409805066d6455fcb}} 
+std\+::vector$<$ \hyperlink{structGMapping_1_1point}{Point} $>$ {\bfseries cartesian\+Form} (double max\+Range=1e6) const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1RangeReading_a7bf8e17ff306e0085ea6312e68471c50}\label{classGMapping_1_1RangeReading_a7bf8e17ff306e0085ea6312e68471c50}} 
+unsigned int {\bfseries active\+Beams} (double density=0.) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1RangeReading_a2ee201c5ff8b2875904ca696234865e6}\label{classGMapping_1_1RangeReading_a2ee201c5ff8b2875904ca696234865e6}} 
+\hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} {\bfseries m\+\_\+pose}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+openslam\+\_\+gmapping/include/gmapping/sensor/sensor\+\_\+range/rangereading.\+h\item 
+openslam\+\_\+gmapping/sensor/sensor\+\_\+range/rangereading.\+cpp\end{DoxyCompactItemize}

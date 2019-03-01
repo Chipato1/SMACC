@@ -1,0 +1,209 @@
+\hypertarget{classGMapping_1_1QParticleViewer}{}\section{G\+Mapping\+:\+:Q\+Particle\+Viewer Class Reference}
+\label{classGMapping_1_1QParticleViewer}\index{G\+Mapping\+::\+Q\+Particle\+Viewer@{G\+Mapping\+::\+Q\+Particle\+Viewer}}
+
+
+Inheritance diagram for G\+Mapping\+:\+:Q\+Particle\+Viewer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{classGMapping_1_1QParticleViewer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for G\+Mapping\+:\+:Q\+Particle\+Viewer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGMapping_1_1QParticleViewer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structGMapping_1_1QParticleViewer_1_1MatchingParameters}{Matching\+Parameters}
+\item 
+struct \hyperlink{structGMapping_1_1QParticleViewer_1_1StartParameters}{Start\+Parameters}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a063d584e9f97a15dc53fe7bb9013948a}\label{classGMapping_1_1QParticleViewer_a063d584e9f97a15dc53fe7bb9013948a}} 
+typedef std\+::vector$<$ \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} $>$ {\bfseries Oriented\+Point\+Vector}
+\end{DoxyCompactItemize}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a3b806644bf1e812ccb5d6edebdaaea52}\label{classGMapping_1_1QParticleViewer_a3b806644bf1e812ccb5d6edebdaaea52}} 
+void {\bfseries set\+Matching\+Parameters} (const \hyperlink{structGMapping_1_1QParticleViewer_1_1MatchingParameters}{Matching\+Parameters} \&mp)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a328f4fb99c23bc3150dc6655a235e1c3}\label{classGMapping_1_1QParticleViewer_a328f4fb99c23bc3150dc6655a235e1c3}} 
+void {\bfseries set\+Start\+Parameters} (const \hyperlink{structGMapping_1_1QParticleViewer_1_1StartParameters}{Start\+Parameters} \&mp)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a46fc03d1850c0772713af5f298b7267c}\label{classGMapping_1_1QParticleViewer_a46fc03d1850c0772713af5f298b7267c}} 
+void {\bfseries start} ()
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_ab003530245791ce989f819fbf119f3fb}\label{classGMapping_1_1QParticleViewer_ab003530245791ce989f819fbf119f3fb}} 
+void {\bfseries stop} ()
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a41549076ebb97cf5bccc44ae44cfa0f2}\label{classGMapping_1_1QParticleViewer_a41549076ebb97cf5bccc44ae44cfa0f2}} 
+void {\bfseries load\+File} (const char $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_aa70a9176ac24b207483f1b8470d4e7a5}\label{classGMapping_1_1QParticleViewer_aa70a9176ac24b207483f1b8470d4e7a5}} 
+void {\bfseries neff\+Changed} (double)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a664ea81c16768dd0cb016420d2e20f37}\label{classGMapping_1_1QParticleViewer_a664ea81c16768dd0cb016420d2e20f37}} 
+void {\bfseries pose\+Entropy\+Changed} (double, double, double)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a62567933d7ca1295ee975276552d466b}\label{classGMapping_1_1QParticleViewer_a62567933d7ca1295ee975276552d466b}} 
+void {\bfseries trajectory\+Entropy\+Changed} (double, double, double)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a687bf4952a33cf999bb3fb9f07984aef}\label{classGMapping_1_1QParticleViewer_a687bf4952a33cf999bb3fb9f07984aef}} 
+void {\bfseries maps\+Entropy\+Changed} (double)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a5fca217e9758ad7235345a313461cccb}\label{classGMapping_1_1QParticleViewer_a5fca217e9758ad7235345a313461cccb}} 
+void {\bfseries maps\+I\+Gain\+Changed} (double)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_ab1c90a321c5bacf58da35dd9555cf238}\label{classGMapping_1_1QParticleViewer_ab1c90a321c5bacf58da35dd9555cf238}} 
+void {\bfseries refresh\+Parameters} ()
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a0040f129b4d2e27cbb74007b5b330032}\label{classGMapping_1_1QParticleViewer_a0040f129b4d2e27cbb74007b5b330032}} 
+void {\bfseries set\+G\+SP} (\hyperlink{structGridSlamProcessorThread}{Grid\+Slam\+Processor\+Thread} $\ast$thread)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_ab33f2169961d04182ef5a6443af392ce}\label{classGMapping_1_1QParticleViewer_ab33f2169961d04182ef5a6443af392ce}} 
+{\bfseries Q\+Particle\+Viewer} (Q\+Widget $\ast$parent=0, const char $\ast$name=0, Qt\+::\+Window\+Flags f=0, \hyperlink{structGridSlamProcessorThread}{Grid\+Slam\+Processor\+Thread} $\ast$thread=0)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a73de994d7c18a9685b605d836980782d}\label{classGMapping_1_1QParticleViewer_a73de994d7c18a9685b605d836980782d}} 
+virtual void {\bfseries timer\+Event} (Q\+Timer\+Event $\ast$te)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a34d50616bf939a45856d07c0c3e8430a}\label{classGMapping_1_1QParticleViewer_a34d50616bf939a45856d07c0c3e8430a}} 
+virtual void {\bfseries resize\+Event} (Q\+Resize\+Event $\ast$)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_ab1c8e75f06524812bebc264f26bf2df0}\label{classGMapping_1_1QParticleViewer_ab1c8e75f06524812bebc264f26bf2df0}} 
+void {\bfseries draw\+From\+File} ()
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a2c08a8eb63d44e7319a48e1110ef4a93}\label{classGMapping_1_1QParticleViewer_a2c08a8eb63d44e7319a48e1110ef4a93}} 
+void {\bfseries draw\+From\+Memory} ()
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a3e48703f01b28717da91a75fd078fd59}\label{classGMapping_1_1QParticleViewer_a3e48703f01b28717da91a75fd078fd59}} 
+void {\bfseries draw\+Map} (const \hyperlink{classGMapping_1_1Map}{Scan\+Matcher\+Map} \&map)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_ab0fda4c3f050d5616cd910b74f81c3b1}\label{classGMapping_1_1QParticleViewer_ab0fda4c3f050d5616cd910b74f81c3b1}} 
+void {\bfseries start} (int period)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a86c1fba435fb9f2c6b88b0073f33b8a0}\label{classGMapping_1_1QParticleViewer_a86c1fba435fb9f2c6b88b0073f33b8a0}} 
+Q\+Text\+Stream $\ast$ {\bfseries tis}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a8548978dd92c266537ef18f92c5e4d46}\label{classGMapping_1_1QParticleViewer_a8548978dd92c266537ef18f92c5e4d46}} 
+\hyperlink{structGMapping_1_1QParticleViewer_1_1MatchingParameters}{Matching\+Parameters} {\bfseries matching\+Parameters}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_ab9f55a454358a63df3e74d0f1c6c7337}\label{classGMapping_1_1QParticleViewer_ab9f55a454358a63df3e74d0f1c6c7337}} 
+\hyperlink{structGMapping_1_1QParticleViewer_1_1StartParameters}{Start\+Parameters} {\bfseries start\+Parameters}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a8402ca72c2682714001c8609fd410e42}\label{classGMapping_1_1QParticleViewer_a8402ca72c2682714001c8609fd410e42}} 
+int {\bfseries write\+To\+File}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a5888fdb23af3742dd208469d7c4681cb}\label{classGMapping_1_1QParticleViewer_a5888fdb23af3742dd208469d7c4681cb}} 
+\hyperlink{structGMapping_1_1point}{Point} {\bfseries pic2map} (const \hyperlink{structGMapping_1_1point}{Int\+Point} \&p)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a4eb6ac9e7376019089224af9995cac17}\label{classGMapping_1_1QParticleViewer_a4eb6ac9e7376019089224af9995cac17}} 
+\hyperlink{structGMapping_1_1point}{Int\+Point} {\bfseries map2pic} (const \hyperlink{structGMapping_1_1point}{Point} \&p)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a6dc4092e186b94cf01e6cb77af1fc899}\label{classGMapping_1_1QParticleViewer_a6dc4092e186b94cf01e6cb77af1fc899}} 
+virtual void {\bfseries paint\+Event} (Q\+Paint\+Event $\ast$paintevent)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_abcdb7abdfb7ccc9d229f00fb6d99f8bf}\label{classGMapping_1_1QParticleViewer_abcdb7abdfb7ccc9d229f00fb6d99f8bf}} 
+void {\bfseries draw\+Particle\+Move} (const Oriented\+Point\+Vector \&start, const Oriented\+Point\+Vector \&end)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a782983a07984cf3ac24ed3d8174f313d}\label{classGMapping_1_1QParticleViewer_a782983a07984cf3ac24ed3d8174f313d}} 
+virtual void {\bfseries mouse\+Press\+Event} (Q\+Mouse\+Event $\ast$)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a64c039a71f18042cd000842996a1d8b0}\label{classGMapping_1_1QParticleViewer_a64c039a71f18042cd000842996a1d8b0}} 
+virtual void {\bfseries mouse\+Release\+Event} (Q\+Mouse\+Event $\ast$)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a1368164743b1685589a6f63f87227d0a}\label{classGMapping_1_1QParticleViewer_a1368164743b1685589a6f63f87227d0a}} 
+virtual void {\bfseries mouse\+Move\+Event} (Q\+Mouse\+Event $\ast$)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_ad3147f20306ffd2176b4ac818b612917}\label{classGMapping_1_1QParticleViewer_ad3147f20306ffd2176b4ac818b612917}} 
+virtual void {\bfseries key\+Press\+Event} (Q\+Key\+Event $\ast$e)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a64450d61bc47184dcbf3a98e99088326}\label{classGMapping_1_1QParticleViewer_a64450d61bc47184dcbf3a98e99088326}} 
+ifstream {\bfseries input\+Stream}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a1b09d93e9ecb0a2a3db9a9e0001ce3a9}\label{classGMapping_1_1QParticleViewer_a1b09d93e9ecb0a2a3db9a9e0001ce3a9}} 
+ofstream {\bfseries output\+Stream}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a59fd80ffb9c3769a83cc7cb8fed889a4}\label{classGMapping_1_1QParticleViewer_a59fd80ffb9c3769a83cc7cb8fed889a4}} 
+int {\bfseries timer}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_ad6d1d61c5010cb01637a69e582d6501a}\label{classGMapping_1_1QParticleViewer_ad6d1d61c5010cb01637a69e582d6501a}} 
+Q\+Pixmap $\ast$ {\bfseries m\+\_\+pixmap}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a4fe10989c2361ba236c12c7d2b5ae55e}\label{classGMapping_1_1QParticleViewer_a4fe10989c2361ba236c12c7d2b5ae55e}} 
+\hyperlink{structGridSlamProcessorThread}{Grid\+Slam\+Processor\+Thread} $\ast$ {\bfseries gfs\+\_\+thread}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_ad29a0e8524a4866afba42a47bf0f371f}\label{classGMapping_1_1QParticleViewer_ad29a0e8524a4866afba42a47bf0f371f}} 
+Grid\+Slam\+Processor\+Thread\+::\+Event\+Deque {\bfseries history}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_ad634eaa19d5289d49ede2c40a515c735}\label{classGMapping_1_1QParticleViewer_ad634eaa19d5289d49ede2c40a515c735}} 
+Q\+Point {\bfseries dragging\+Pos}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a5ef5774270871a262015ce3a212b5604}\label{classGMapping_1_1QParticleViewer_a5ef5774270871a262015ce3a212b5604}} 
+bool {\bfseries dragging}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a09983770f6c7907bfb12816da84033f8}\label{classGMapping_1_1QParticleViewer_a09983770f6c7907bfb12816da84033f8}} 
+double {\bfseries mapscale}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_aef77f1bfc2f7fa7cbdc26a064458ad49}\label{classGMapping_1_1QParticleViewer_aef77f1bfc2f7fa7cbdc26a064458ad49}} 
+\hyperlink{structGMapping_1_1point}{Point} {\bfseries view\+Center}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a97fd8f6ec6cc2b2c11b65424f1a1679d}\label{classGMapping_1_1QParticleViewer_a97fd8f6ec6cc2b2c11b65424f1a1679d}} 
+\hyperlink{structGMapping_1_1point}{Point} {\bfseries best\+Particle\+Pose}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_aabd031c487806f42aa8c8bc68eb49b96}\label{classGMapping_1_1QParticleViewer_aabd031c487806f42aa8c8bc68eb49b96}} 
+\hyperlink{classGMapping_1_1Map}{Scan\+Matcher\+Map} $\ast$ {\bfseries best\+Map}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_addca8908dd8853bf26f42b0aee01f952}\label{classGMapping_1_1QParticleViewer_addca8908dd8853bf26f42b0aee01f952}} 
+bool {\bfseries show\+Paths}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a3a399e6b82459d0039f877c85e17a8e0}\label{classGMapping_1_1QParticleViewer_a3a399e6b82459d0039f877c85e17a8e0}} 
+bool {\bfseries show\+Best\+Path}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_aa35c0a9530f88d9c932ee6977914d57b}\label{classGMapping_1_1QParticleViewer_aa35c0a9530f88d9c932ee6977914d57b}} 
+Q\+Particle\+Viewer\+::\+Oriented\+Point\+Vector {\bfseries m\+\_\+old\+Pose}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a87331acc943d6ce2c443604a8f5fcfd8}\label{classGMapping_1_1QParticleViewer_a87331acc943d6ce2c443604a8f5fcfd8}} 
+Q\+Particle\+Viewer\+::\+Oriented\+Point\+Vector {\bfseries m\+\_\+new\+Pose}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_ad3c06a02699c07a23c11a24958dd2a58}\label{classGMapping_1_1QParticleViewer_ad3c06a02699c07a23c11a24958dd2a58}} 
+unsigned int {\bfseries m\+\_\+particle\+Size}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_a3dbe87942f6fdf64caef1776d1ca201c}\label{classGMapping_1_1QParticleViewer_a3dbe87942f6fdf64caef1776d1ca201c}} 
+bool {\bfseries m\+\_\+refresh}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1QParticleViewer_ab3d52756bda7bad4bd3ba7d33b8305b9}\label{classGMapping_1_1QParticleViewer_ab3d52756bda7bad4bd3ba7d33b8305b9}} 
+int {\bfseries count}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+openslam\+\_\+gmapping/gui/qparticleviewer.\+h\item 
+openslam\+\_\+gmapping/gui/qparticleviewer.\+cpp\end{DoxyCompactItemize}

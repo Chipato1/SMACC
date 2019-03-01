@@ -1,0 +1,99 @@
+\hypertarget{classGMapping_1_1DataSmoother}{}\section{G\+Mapping\+:\+:Data\+Smoother Class Reference}
+\label{classGMapping_1_1DataSmoother}\index{G\+Mapping\+::\+Data\+Smoother@{G\+Mapping\+::\+Data\+Smoother}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structGMapping_1_1DataSmoother_1_1DataPoint}{Data\+Point}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_aba2dbbd1e15122f9de8552af63b468b2}\label{classGMapping_1_1DataSmoother_aba2dbbd1e15122f9de8552af63b468b2}} 
+typedef std\+::vector$<$ \hyperlink{structGMapping_1_1DataSmoother_1_1DataPoint}{Data\+Point} $>$ {\bfseries Data}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_a4104b0276d5dccd2f8aef38ed59b3999}\label{classGMapping_1_1DataSmoother_a4104b0276d5dccd2f8aef38ed59b3999}} 
+{\bfseries Data\+Smoother} (double parzen\+Window)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_a4a670e042812f22f0d64088013890b30}\label{classGMapping_1_1DataSmoother_a4a670e042812f22f0d64088013890b30}} 
+void {\bfseries init} (double parzen\+Window)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_abfa40531b92a973c6fcc3e62d6389774}\label{classGMapping_1_1DataSmoother_abfa40531b92a973c6fcc3e62d6389774}} 
+double {\bfseries sqr} (double x)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_a3ad6b4c7dddf222b4de8fd823246b86b}\label{classGMapping_1_1DataSmoother_a3ad6b4c7dddf222b4de8fd823246b86b}} 
+void {\bfseries set\+Min\+To\+Zero} ()
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_a4fed1016b471099016b806f6dd577414}\label{classGMapping_1_1DataSmoother_a4fed1016b471099016b806f6dd577414}} 
+void {\bfseries add} (double x, double p)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_a284df40b580bb62b25381ee745e3d097}\label{classGMapping_1_1DataSmoother_a284df40b580bb62b25381ee745e3d097}} 
+void {\bfseries integrate} (double step)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_adc2cfd5e10c3c58437b10f41dc1264ae}\label{classGMapping_1_1DataSmoother_adc2cfd5e10c3c58437b10f41dc1264ae}} 
+double {\bfseries integral} (double step, double x\+To)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_ac09a19f61cdeaf6b47ee7a859432a70c}\label{classGMapping_1_1DataSmoother_ac09a19f61cdeaf6b47ee7a859432a70c}} 
+double {\bfseries smoothed\+Data} (double x)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_afef73d3e0485ce9b02fbc1124692aaf1}\label{classGMapping_1_1DataSmoother_afef73d3e0485ce9b02fbc1124692aaf1}} 
+double {\bfseries sample\+Numeric} (double step)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_a4e5724b0cec0a67e903a70d377c1bb5f}\label{classGMapping_1_1DataSmoother_a4e5724b0cec0a67e903a70d377c1bb5f}} 
+void {\bfseries compute\+Cummuated} ()
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_aef590500a20262e39b8ddfca895f32ab}\label{classGMapping_1_1DataSmoother_aef590500a20262e39b8ddfca895f32ab}} 
+double {\bfseries sample} ()
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_a85a3ddc9bb89b3cdc98e5e6f466af9c3}\label{classGMapping_1_1DataSmoother_a85a3ddc9bb89b3cdc98e5e6f466af9c3}} 
+void {\bfseries sample\+Multiple} (std\+::vector$<$ double $>$ \&samples, int num)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_ab17bd459ddb31d4b0a446277add46a55}\label{classGMapping_1_1DataSmoother_ab17bd459ddb31d4b0a446277add46a55}} 
+void {\bfseries approx\+Gauss} (double step, double $\ast$mean, double $\ast$sigma)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_a81456c2d6646b4679cc232438593d5e5}\label{classGMapping_1_1DataSmoother_a81456c2d6646b4679cc232438593d5e5}} 
+double {\bfseries gauss} (double x, double mean, double sigma)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_a63315101db777165a5a20aad9a245cfe}\label{classGMapping_1_1DataSmoother_a63315101db777165a5a20aad9a245cfe}} 
+double {\bfseries cramer\+Von\+Mises\+To\+Gauss} (double step, double mean, double sigma)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_ac33a9eb24cc4b2ba35e80af877d6812e}\label{classGMapping_1_1DataSmoother_ac33a9eb24cc4b2ba35e80af877d6812e}} 
+double {\bfseries kld\+To\+Gauss} (double step, double mean, double sigma)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_af87d3a17873cc689926c1a6e0b0b7a00}\label{classGMapping_1_1DataSmoother_af87d3a17873cc689926c1a6e0b0b7a00}} 
+void {\bfseries gnuplot\+Dump\+Data} (F\+I\+LE $\ast$fp)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_a6f9fdabb800528d8b0fe15f62a9214ef}\label{classGMapping_1_1DataSmoother_a6f9fdabb800528d8b0fe15f62a9214ef}} 
+void {\bfseries gnuplot\+Dump\+Smoothed\+Data} (F\+I\+LE $\ast$fp, double step)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_a514a05b6eb27d81990a60962b0a5a0d8}\label{classGMapping_1_1DataSmoother_a514a05b6eb27d81990a60962b0a5a0d8}} 
+Data {\bfseries m\+\_\+data}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_a87e4082a9865afd681f2adf1abb1589c}\label{classGMapping_1_1DataSmoother_a87e4082a9865afd681f2adf1abb1589c}} 
+std\+::vector$<$ double $>$ {\bfseries m\+\_\+cummulated}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_aa91b21892d6339f808a5def07ddc7f73}\label{classGMapping_1_1DataSmoother_aa91b21892d6339f808a5def07ddc7f73}} 
+double {\bfseries m\+\_\+int}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_abd9ea769c0634c5bb8f58b63d95670bc}\label{classGMapping_1_1DataSmoother_abd9ea769c0634c5bb8f58b63d95670bc}} 
+double {\bfseries m\+\_\+last\+Step}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_afe6466a46fe8175831482c8d4c0ece26}\label{classGMapping_1_1DataSmoother_afe6466a46fe8175831482c8d4c0ece26}} 
+double {\bfseries m\+\_\+parzen\+Window}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_a1189615afeec570ddb4cfdbdb6896a38}\label{classGMapping_1_1DataSmoother_a1189615afeec570ddb4cfdbdb6896a38}} 
+double {\bfseries m\+\_\+from}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1DataSmoother_a59dde49efd125d54a905fbd9659ae0c4}\label{classGMapping_1_1DataSmoother_a59dde49efd125d54a905fbd9659ae0c4}} 
+double {\bfseries m\+\_\+to}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+openslam\+\_\+gmapping/utils/datasmoother.\+h\end{DoxyCompactItemize}

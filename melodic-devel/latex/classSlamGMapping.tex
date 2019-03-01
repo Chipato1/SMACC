@@ -1,0 +1,38 @@
+\hypertarget{classSlamGMapping}{}\section{Slam\+G\+Mapping Class Reference}
+\label{classSlamGMapping}\index{Slam\+G\+Mapping@{Slam\+G\+Mapping}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSlamGMapping_a3f9432f78c6eff17041a4b0b0f87a1ad}\label{classSlamGMapping_a3f9432f78c6eff17041a4b0b0f87a1ad}} 
+{\bfseries Slam\+G\+Mapping} (ros\+::\+Node\+Handle \&nh, ros\+::\+Node\+Handle \&pnh)
+\item 
+\mbox{\Hypertarget{classSlamGMapping_a6a4853715facc1ee2591955180e830a2}\label{classSlamGMapping_a6a4853715facc1ee2591955180e830a2}} 
+{\bfseries Slam\+G\+Mapping} (unsigned long int seed, unsigned long int max\+\_\+duration\+\_\+buffer)
+\item 
+\mbox{\Hypertarget{classSlamGMapping_aca7f6aaa57c8ac675068701adda348ea}\label{classSlamGMapping_aca7f6aaa57c8ac675068701adda348ea}} 
+void {\bfseries init} ()
+\item 
+\mbox{\Hypertarget{classSlamGMapping_ab0d5567e7a8e010ff11068fcce0d9c04}\label{classSlamGMapping_ab0d5567e7a8e010ff11068fcce0d9c04}} 
+void {\bfseries start\+Live\+Slam} ()
+\item 
+\mbox{\Hypertarget{classSlamGMapping_a90bee18e7c96af13916caae4a4bfd618}\label{classSlamGMapping_a90bee18e7c96af13916caae4a4bfd618}} 
+void {\bfseries start\+Replay} (const std\+::string \&bag\+\_\+fname, std\+::string scan\+\_\+topic)
+\item 
+\mbox{\Hypertarget{classSlamGMapping_a2447af8faad253af05c7dc9f492b8489}\label{classSlamGMapping_a2447af8faad253af05c7dc9f492b8489}} 
+void {\bfseries publish\+Transform} ()
+\item 
+\mbox{\Hypertarget{classSlamGMapping_a49172a6ae33df4daf397959789dc1c34}\label{classSlamGMapping_a49172a6ae33df4daf397959789dc1c34}} 
+void {\bfseries laser\+Callback} (const sensor\+\_\+msgs\+::\+Laser\+Scan\+::\+Const\+Ptr \&scan)
+\item 
+\mbox{\Hypertarget{classSlamGMapping_a780899c48f753bf4768580fb46580d83}\label{classSlamGMapping_a780899c48f753bf4768580fb46580d83}} 
+bool {\bfseries map\+Callback} (nav\+\_\+msgs\+::\+Get\+Map\+::\+Request \&req, nav\+\_\+msgs\+::\+Get\+Map\+::\+Response \&res)
+\item 
+\mbox{\Hypertarget{classSlamGMapping_a00a01ecfacccbfcfccc3e138de6bd00f}\label{classSlamGMapping_a00a01ecfacccbfcfccc3e138de6bd00f}} 
+void {\bfseries publish\+Loop} (double transform\+\_\+publish\+\_\+period)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gmapping/gmapping/src/slam\+\_\+gmapping.\+h\item 
+gmapping/gmapping/src/slam\+\_\+gmapping.\+cpp\end{DoxyCompactItemize}

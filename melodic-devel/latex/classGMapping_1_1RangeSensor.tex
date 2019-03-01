@@ -1,0 +1,81 @@
+\hypertarget{classGMapping_1_1RangeSensor}{}\section{G\+Mapping\+:\+:Range\+Sensor Class Reference}
+\label{classGMapping_1_1RangeSensor}\index{G\+Mapping\+::\+Range\+Sensor@{G\+Mapping\+::\+Range\+Sensor}}
+
+
+Inheritance diagram for G\+Mapping\+:\+:Range\+Sensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{classGMapping_1_1RangeSensor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for G\+Mapping\+:\+:Range\+Sensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{classGMapping_1_1RangeSensor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structGMapping_1_1RangeSensor_1_1Beam}{Beam}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1RangeSensor_a759acaf8e43b5ede4225c223e372e123}\label{classGMapping_1_1RangeSensor_a759acaf8e43b5ede4225c223e372e123}} 
+{\bfseries Range\+Sensor} (std\+::string name)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1RangeSensor_adbc852d4b503d035e7426cbdc74be79d}\label{classGMapping_1_1RangeSensor_adbc852d4b503d035e7426cbdc74be79d}} 
+{\bfseries Range\+Sensor} (std\+::string name, unsigned int beams, double res, const \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} \&position=\hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point}(0, 0, 0), double span=0, double maxrange=89.\+0)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1RangeSensor_ae2b39d612082cc7e5de756baeaaac8e2}\label{classGMapping_1_1RangeSensor_ae2b39d612082cc7e5de756baeaaac8e2}} 
+const std\+::vector$<$ \hyperlink{structGMapping_1_1RangeSensor_1_1Beam}{Beam} $>$ \& {\bfseries beams} () const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1RangeSensor_ac9b8ba055316c0f3e11a3a3e5ae9c488}\label{classGMapping_1_1RangeSensor_ac9b8ba055316c0f3e11a3a3e5ae9c488}} 
+std\+::vector$<$ \hyperlink{structGMapping_1_1RangeSensor_1_1Beam}{Beam} $>$ \& {\bfseries beams} ()
+\item 
+\mbox{\Hypertarget{classGMapping_1_1RangeSensor_a9da0f1915d19b4b9d8837937567755f1}\label{classGMapping_1_1RangeSensor_a9da0f1915d19b4b9d8837937567755f1}} 
+\hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} {\bfseries get\+Pose} () const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1RangeSensor_a5d4ca7fb976b6423cab5698a91d0384e}\label{classGMapping_1_1RangeSensor_a5d4ca7fb976b6423cab5698a91d0384e}} 
+void {\bfseries update\+Beams\+Lookup} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1RangeSensor_abb35bace17df584710591ee0e737aa87}\label{classGMapping_1_1RangeSensor_abb35bace17df584710591ee0e737aa87}} 
+bool {\bfseries new\+Format}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1RangeSensor_a8008abe1dafd518b095c05b9d9dad24d}\label{classGMapping_1_1RangeSensor_a8008abe1dafd518b095c05b9d9dad24d}} 
+\hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} {\bfseries m\+\_\+pose}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1RangeSensor_a83bf5a2dd17929fb46b62b589f29825e}\label{classGMapping_1_1RangeSensor_a83bf5a2dd17929fb46b62b589f29825e}} 
+std\+::vector$<$ \hyperlink{structGMapping_1_1RangeSensor_1_1Beam}{Beam} $>$ {\bfseries m\+\_\+beams}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1RangeSensor_a30221ddc558692a7b52598b963a74bc2}\label{classGMapping_1_1RangeSensor_a30221ddc558692a7b52598b963a74bc2}} 
+class {\bfseries Configuration}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1RangeSensor_a09f1dc78bbac19dbdb1bc6ee6fb44ed1}\label{classGMapping_1_1RangeSensor_a09f1dc78bbac19dbdb1bc6ee6fb44ed1}} 
+class {\bfseries Carmen\+Configuration}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1RangeSensor_afe9c5ce6f93950026cd9f3f18a3fa9f6}\label{classGMapping_1_1RangeSensor_afe9c5ce6f93950026cd9f3f18a3fa9f6}} 
+class {\bfseries Carmen\+Wrapper}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+openslam\+\_\+gmapping/include/gmapping/sensor/sensor\+\_\+range/rangesensor.\+h\item 
+openslam\+\_\+gmapping/sensor/sensor\+\_\+range/rangesensor.\+cpp\end{DoxyCompactItemize}

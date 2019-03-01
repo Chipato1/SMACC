@@ -1,0 +1,64 @@
+\hypertarget{classQMapPainter}{}\section{Q\+Map\+Painter Class Reference}
+\label{classQMapPainter}\index{Q\+Map\+Painter@{Q\+Map\+Painter}}
+
+
+Inheritance diagram for Q\+Map\+Painter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classQMapPainter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Q\+Map\+Painter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classQMapPainter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classQMapPainter_ad02329677ea39c064f9791d312cdec34}\label{classQMapPainter_ad02329677ea39c064f9791d312cdec34}} 
+{\bfseries Q\+Map\+Painter} (Q\+Widget $\ast$parent=0, const char $\ast$name=0, W\+Flags f=0)
+\item 
+\mbox{\Hypertarget{classQMapPainter_a5473ffe4d3cfbf012396d6c112790045}\label{classQMapPainter_a5473ffe4d3cfbf012396d6c112790045}} 
+{\footnotesize template$<$typename Cell $>$ }\\void {\bfseries set\+Pixmap} (unsigned int xsize, unsigned int ysize, Cell $\ast$$\ast$values)
+\item 
+\mbox{\Hypertarget{classQMapPainter_ae6a5a71b7c3a080a3facd665eabbaea8}\label{classQMapPainter_ae6a5a71b7c3a080a3facd665eabbaea8}} 
+{\footnotesize template$<$typename Iterator $>$ }\\void {\bfseries draw\+Points} (const Iterator \&begin, const Iterator \&end, unsigned char r, unsigned char g, unsigned char b)
+\item 
+\mbox{\Hypertarget{classQMapPainter_a94b767c466b6169817d5e29ee6b2ea3b}\label{classQMapPainter_a94b767c466b6169817d5e29ee6b2ea3b}} 
+void {\bfseries start} (int period)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classQMapPainter_a431755606bb7827249d33c4ebaabacb2}\label{classQMapPainter_a431755606bb7827249d33c4ebaabacb2}} 
+virtual void {\bfseries timer\+Event} (Q\+Timer\+Event $\ast$te)
+\item 
+\mbox{\Hypertarget{classQMapPainter_ab775705f92dc8b127a79093755b638b6}\label{classQMapPainter_ab775705f92dc8b127a79093755b638b6}} 
+virtual void {\bfseries resize\+Event} (Q\+Resize\+Event $\ast$)
+\item 
+\mbox{\Hypertarget{classQMapPainter_a37958ec02d1a8bfde3a88bc210b7e202}\label{classQMapPainter_a37958ec02d1a8bfde3a88bc210b7e202}} 
+virtual void {\bfseries paint\+Event} (Q\+Paint\+Event $\ast$paintevent)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classQMapPainter_aa336ae3965c716a4728081fef9dba2e6}\label{classQMapPainter_aa336ae3965c716a4728081fef9dba2e6}} 
+int {\bfseries timer}
+\item 
+\mbox{\Hypertarget{classQMapPainter_aecf732026dd1058935f50eccf5e90b80}\label{classQMapPainter_aecf732026dd1058935f50eccf5e90b80}} 
+Q\+Pixmap $\ast$ {\bfseries m\+\_\+pixmap}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+openslam\+\_\+gmapping/gui/qmappainter.\+h\item 
+openslam\+\_\+gmapping/gui/qmappainter.\+cpp\end{DoxyCompactItemize}

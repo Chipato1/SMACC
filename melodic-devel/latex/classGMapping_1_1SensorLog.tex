@@ -1,0 +1,55 @@
+\hypertarget{classGMapping_1_1SensorLog}{}\section{G\+Mapping\+:\+:Sensor\+Log Class Reference}
+\label{classGMapping_1_1SensorLog}\index{G\+Mapping\+::\+Sensor\+Log@{G\+Mapping\+::\+Sensor\+Log}}
+
+
+Inheritance diagram for G\+Mapping\+:\+:Sensor\+Log\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classGMapping_1_1SensorLog__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for G\+Mapping\+:\+:Sensor\+Log\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classGMapping_1_1SensorLog__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1SensorLog_ac4a889158ae6ccb35890cef3b701d00f}\label{classGMapping_1_1SensorLog_ac4a889158ae6ccb35890cef3b701d00f}} 
+{\bfseries Sensor\+Log} (const Sensor\+Map \&)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1SensorLog_a0e48499de876774339e5d64299ce01e7}\label{classGMapping_1_1SensorLog_a0e48499de876774339e5d64299ce01e7}} 
+std\+::istream \& {\bfseries load} (std\+::istream \&is)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1SensorLog_a7a5c9ad7125e1173bd2eb93c00fe24ca}\label{classGMapping_1_1SensorLog_a7a5c9ad7125e1173bd2eb93c00fe24ca}} 
+\hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} {\bfseries bounding\+Box} (double \&xmin, double \&ymin, double \&xmax, double \&ymax) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1SensorLog_aebe59c0b3ae95ba336db058085e945d4}\label{classGMapping_1_1SensorLog_aebe59c0b3ae95ba336db058085e945d4}} 
+\hyperlink{classGMapping_1_1OdometryReading}{Odometry\+Reading} $\ast$ {\bfseries parse\+Odometry} (std\+::istream \&is, const \hyperlink{classGMapping_1_1OdometrySensor}{Odometry\+Sensor} $\ast$) const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1SensorLog_ab0cf24fe49e6bb020c64ede8d3b619ce}\label{classGMapping_1_1SensorLog_ab0cf24fe49e6bb020c64ede8d3b619ce}} 
+\hyperlink{classGMapping_1_1RangeReading}{Range\+Reading} $\ast$ {\bfseries parse\+Range} (std\+::istream \&is, const \hyperlink{classGMapping_1_1RangeSensor}{Range\+Sensor} $\ast$) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1SensorLog_a1b309acc3cacc72c26d4f67da2cf5d77}\label{classGMapping_1_1SensorLog_a1b309acc3cacc72c26d4f67da2cf5d77}} 
+const Sensor\+Map \& {\bfseries m\+\_\+sensor\+Map}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+openslam\+\_\+gmapping/include/gmapping/log/sensorlog.\+h\item 
+openslam\+\_\+gmapping/log/sensorlog.\+cpp\end{DoxyCompactItemize}

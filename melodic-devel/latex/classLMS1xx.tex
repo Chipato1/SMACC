@@ -1,0 +1,253 @@
+\hypertarget{classLMS1xx}{}\section{L\+M\+S1xx Class Reference}
+\label{classLMS1xx}\index{L\+M\+S1xx@{L\+M\+S1xx}}
+
+
+Class responsible for communicating with \hyperlink{classLMS1xx}{L\+M\+S1xx} device.  
+
+
+
+
+{\ttfamily \#include $<$L\+M\+S1xx.\+h$>$}
+
+
+
+Collaboration diagram for L\+M\+S1xx\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{classLMS1xx__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classLMS1xx_ae907a9e0c30a7cb34bdcbf44589ba9cc}{connect} (std\+::string host, int port=2111)
+\begin{DoxyCompactList}\small\item\em Connect to \hyperlink{classLMS1xx}{L\+M\+S1xx}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLMS1xx_ac8d7e180f1c359e380ed3380f75fbe55}\label{classLMS1xx_ac8d7e180f1c359e380ed3380f75fbe55}} 
+void \hyperlink{classLMS1xx_ac8d7e180f1c359e380ed3380f75fbe55}{disconnect} ()
+\begin{DoxyCompactList}\small\item\em Disconnect from \hyperlink{classLMS1xx}{L\+M\+S1xx} device. \end{DoxyCompactList}\item 
+bool \hyperlink{classLMS1xx_a8f876ce189ccbc0d5f9e6673f8b744e1}{is\+Connected} ()
+\begin{DoxyCompactList}\small\item\em Get status of connection. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLMS1xx_a115f541f0d1a82b358a00c61a5aed802}\label{classLMS1xx_a115f541f0d1a82b358a00c61a5aed802}} 
+void \hyperlink{classLMS1xx_a115f541f0d1a82b358a00c61a5aed802}{start\+Meas} ()
+\begin{DoxyCompactList}\small\item\em Start measurements. After receiving this command \hyperlink{classLMS1xx}{L\+M\+S1xx} unit starts spinning laser and measuring. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLMS1xx_a07c45a5915ab9dc8da4be0d70b305097}\label{classLMS1xx_a07c45a5915ab9dc8da4be0d70b305097}} 
+void \hyperlink{classLMS1xx_a07c45a5915ab9dc8da4be0d70b305097}{stop\+Meas} ()
+\begin{DoxyCompactList}\small\item\em Stop measurements. After receiving this command \hyperlink{classLMS1xx}{L\+M\+S1xx} unit stop spinning laser and measuring. \end{DoxyCompactList}\item 
+status\+\_\+t \hyperlink{classLMS1xx_a6edfc1caa0a9788375ca6d9e6025dc2f}{query\+Status} ()
+\begin{DoxyCompactList}\small\item\em Get current status of \hyperlink{classLMS1xx}{L\+M\+S1xx} device. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLMS1xx_ab06186d507e737522287f3f22cc8e6d0}\label{classLMS1xx_ab06186d507e737522287f3f22cc8e6d0}} 
+void \hyperlink{classLMS1xx_ab06186d507e737522287f3f22cc8e6d0}{login} ()
+\begin{DoxyCompactList}\small\item\em Log into \hyperlink{classLMS1xx}{L\+M\+S1xx} unit. Increase privilege level, giving ability to change device configuration. \end{DoxyCompactList}\item 
+\hyperlink{structscanCfg}{scan\+Cfg} \hyperlink{classLMS1xx_ac24aca9ae9b4329c6455fb1ad2a6faad}{get\+Scan\+Cfg} () const
+\begin{DoxyCompactList}\small\item\em Get current scan configuration. Get scan configuration \+: \end{DoxyCompactList}\item 
+void \hyperlink{classLMS1xx_aa0feadf2fefe3c8145d9cb67d02f058c}{set\+Scan\+Cfg} (const \hyperlink{structscanCfg}{scan\+Cfg} \&cfg)
+\begin{DoxyCompactList}\small\item\em Set scan configuration. Get scan configuration \+: \end{DoxyCompactList}\item 
+void \hyperlink{classLMS1xx_ac8cdbf56a26b60f8cf202d307e57f08c}{set\+Scan\+Data\+Cfg} (const \hyperlink{structscanDataCfg}{scan\+Data\+Cfg} \&cfg)
+\begin{DoxyCompactList}\small\item\em Set scan data configuration. Set format of scan message returned by device. \end{DoxyCompactList}\item 
+\hyperlink{structscanOutputRange}{scan\+Output\+Range} \hyperlink{classLMS1xx_a89b61570421cabe5e57b2f8596c25673}{get\+Scan\+Output\+Range} () const
+\begin{DoxyCompactList}\small\item\em Get current output range configuration. Get output range configuration \+: \end{DoxyCompactList}\item 
+void \hyperlink{classLMS1xx_a0cb0158a78d64667e31c5216871cd656}{scan\+Continous} (int start)
+\begin{DoxyCompactList}\small\item\em Start or stop continuous data acquisition. After reception of this command device start or stop continuous data stream containing scan messages. \end{DoxyCompactList}\item 
+bool \hyperlink{classLMS1xx_a079674c2c50e13cc9089e3c0f09a5d28}{get\+Scan\+Data} (\hyperlink{structscanData}{scan\+Data} $\ast$scan\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Receive single scan message. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLMS1xx_a732cb24abc56dfa36bef0e98830c0b17}\label{classLMS1xx_a732cb24abc56dfa36bef0e98830c0b17}} 
+void \hyperlink{classLMS1xx_a732cb24abc56dfa36bef0e98830c0b17}{save\+Config} ()
+\begin{DoxyCompactList}\small\item\em Save data permanently. Parameters are saved in the E\+E\+P\+R\+OM of the L\+MS and will also be available after the device is switched off and on again. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLMS1xx_ae6af68b09685305614c3155670961e8c}\label{classLMS1xx_ae6af68b09685305614c3155670961e8c}} 
+void \hyperlink{classLMS1xx_ae6af68b09685305614c3155670961e8c}{start\+Device} ()
+\begin{DoxyCompactList}\small\item\em The device is returned to the measurement mode after configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classLMS1xx_af464cc59dd48de8497e9d52599b5c292}{parse\+Scan\+Data} (char $\ast$buf, \hyperlink{structscanData}{scan\+Data} $\ast$data)
+\begin{DoxyCompactList}\small\item\em Receive single scan message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLMS1xx_ada186ec65d6cbe26d5499cb06457029d}\label{classLMS1xx_ada186ec65d6cbe26d5499cb06457029d}} 
+bool {\bfseries connected\+\_\+}
+\item 
+\mbox{\Hypertarget{classLMS1xx_a2b25bb24cb41ce11f0e2b0a3b772cb96}\label{classLMS1xx_a2b25bb24cb41ce11f0e2b0a3b772cb96}} 
+\hyperlink{classLMSBuffer}{L\+M\+S\+Buffer} {\bfseries buffer\+\_\+}
+\item 
+\mbox{\Hypertarget{classLMS1xx_a97c421968056f2dc4b88dab33cffe426}\label{classLMS1xx_a97c421968056f2dc4b88dab33cffe426}} 
+int {\bfseries socket\+\_\+fd\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class responsible for communicating with \hyperlink{classLMS1xx}{L\+M\+S1xx} device. 
+
+\begin{DoxyAuthor}{Author}
+Konrad Banachowicz 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classLMS1xx_ae907a9e0c30a7cb34bdcbf44589ba9cc}\label{classLMS1xx_ae907a9e0c30a7cb34bdcbf44589ba9cc}} 
+\index{L\+M\+S1xx@{L\+M\+S1xx}!connect@{connect}}
+\index{connect@{connect}!L\+M\+S1xx@{L\+M\+S1xx}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily void L\+M\+S1xx\+::connect (\begin{DoxyParamCaption}\item[{std\+::string}]{host,  }\item[{int}]{port = {\ttfamily 2111} }\end{DoxyParamCaption})}
+
+
+
+Connect to \hyperlink{classLMS1xx}{L\+M\+S1xx}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & \hyperlink{classLMS1xx}{L\+M\+S1xx} host name or ip address. \\
+\hline
+{\em port} & \hyperlink{classLMS1xx}{L\+M\+S1xx} port number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLMS1xx_ac24aca9ae9b4329c6455fb1ad2a6faad}\label{classLMS1xx_ac24aca9ae9b4329c6455fb1ad2a6faad}} 
+\index{L\+M\+S1xx@{L\+M\+S1xx}!get\+Scan\+Cfg@{get\+Scan\+Cfg}}
+\index{get\+Scan\+Cfg@{get\+Scan\+Cfg}!L\+M\+S1xx@{L\+M\+S1xx}}
+\subsubsection{\texorpdfstring{get\+Scan\+Cfg()}{getScanCfg()}}
+{\footnotesize\ttfamily \hyperlink{structscanCfg}{scan\+Cfg} L\+M\+S1xx\+::get\+Scan\+Cfg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get current scan configuration. Get scan configuration \+: 
+
+
+\begin{DoxyItemize}
+\item scanning frequency.
+\item scanning resolution.
+\item start angle.
+\item stop angle. \begin{DoxyReturn}{Returns}
+\hyperlink{structscanCfg}{scan\+Cfg} structure. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}\mbox{\Hypertarget{classLMS1xx_a079674c2c50e13cc9089e3c0f09a5d28}\label{classLMS1xx_a079674c2c50e13cc9089e3c0f09a5d28}} 
+\index{L\+M\+S1xx@{L\+M\+S1xx}!get\+Scan\+Data@{get\+Scan\+Data}}
+\index{get\+Scan\+Data@{get\+Scan\+Data}!L\+M\+S1xx@{L\+M\+S1xx}}
+\subsubsection{\texorpdfstring{get\+Scan\+Data()}{getScanData()}}
+{\footnotesize\ttfamily bool L\+M\+S1xx\+::get\+Scan\+Data (\begin{DoxyParamCaption}\item[{\hyperlink{structscanData}{scan\+Data} $\ast$}]{scan\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Receive single scan message. 
+
+\begin{DoxyReturn}{Returns}
+true if scan was read successfully, false if error or timeout. False implies that higher level logic should take correct action such as reopening the connection. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLMS1xx_a89b61570421cabe5e57b2f8596c25673}\label{classLMS1xx_a89b61570421cabe5e57b2f8596c25673}} 
+\index{L\+M\+S1xx@{L\+M\+S1xx}!get\+Scan\+Output\+Range@{get\+Scan\+Output\+Range}}
+\index{get\+Scan\+Output\+Range@{get\+Scan\+Output\+Range}!L\+M\+S1xx@{L\+M\+S1xx}}
+\subsubsection{\texorpdfstring{get\+Scan\+Output\+Range()}{getScanOutputRange()}}
+{\footnotesize\ttfamily \hyperlink{structscanOutputRange}{scan\+Output\+Range} L\+M\+S1xx\+::get\+Scan\+Output\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get current output range configuration. Get output range configuration \+: 
+
+
+\begin{DoxyItemize}
+\item scanning resolution.
+\item start angle.
+\item stop angle. \begin{DoxyReturn}{Returns}
+\hyperlink{structscanOutputRange}{scan\+Output\+Range} structure. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}\mbox{\Hypertarget{classLMS1xx_a8f876ce189ccbc0d5f9e6673f8b744e1}\label{classLMS1xx_a8f876ce189ccbc0d5f9e6673f8b744e1}} 
+\index{L\+M\+S1xx@{L\+M\+S1xx}!is\+Connected@{is\+Connected}}
+\index{is\+Connected@{is\+Connected}!L\+M\+S1xx@{L\+M\+S1xx}}
+\subsubsection{\texorpdfstring{is\+Connected()}{isConnected()}}
+{\footnotesize\ttfamily bool L\+M\+S1xx\+::is\+Connected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get status of connection. 
+
+\begin{DoxyReturn}{Returns}
+connected or not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLMS1xx_af464cc59dd48de8497e9d52599b5c292}\label{classLMS1xx_af464cc59dd48de8497e9d52599b5c292}} 
+\index{L\+M\+S1xx@{L\+M\+S1xx}!parse\+Scan\+Data@{parse\+Scan\+Data}}
+\index{parse\+Scan\+Data@{parse\+Scan\+Data}!L\+M\+S1xx@{L\+M\+S1xx}}
+\subsubsection{\texorpdfstring{parse\+Scan\+Data()}{parseScanData()}}
+{\footnotesize\ttfamily void L\+M\+S1xx\+::parse\+Scan\+Data (\begin{DoxyParamCaption}\item[{char $\ast$}]{buf,  }\item[{\hyperlink{structscanData}{scan\+Data} $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Receive single scan message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & pointer to \hyperlink{structscanData}{scan\+Data} buffer structure. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLMS1xx_a6edfc1caa0a9788375ca6d9e6025dc2f}\label{classLMS1xx_a6edfc1caa0a9788375ca6d9e6025dc2f}} 
+\index{L\+M\+S1xx@{L\+M\+S1xx}!query\+Status@{query\+Status}}
+\index{query\+Status@{query\+Status}!L\+M\+S1xx@{L\+M\+S1xx}}
+\subsubsection{\texorpdfstring{query\+Status()}{queryStatus()}}
+{\footnotesize\ttfamily status\+\_\+t L\+M\+S1xx\+::query\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get current status of \hyperlink{classLMS1xx}{L\+M\+S1xx} device. 
+
+\begin{DoxyReturn}{Returns}
+status of \hyperlink{classLMS1xx}{L\+M\+S1xx} device. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLMS1xx_a0cb0158a78d64667e31c5216871cd656}\label{classLMS1xx_a0cb0158a78d64667e31c5216871cd656}} 
+\index{L\+M\+S1xx@{L\+M\+S1xx}!scan\+Continous@{scan\+Continous}}
+\index{scan\+Continous@{scan\+Continous}!L\+M\+S1xx@{L\+M\+S1xx}}
+\subsubsection{\texorpdfstring{scan\+Continous()}{scanContinous()}}
+{\footnotesize\ttfamily void L\+M\+S1xx\+::scan\+Continous (\begin{DoxyParamCaption}\item[{int}]{start }\end{DoxyParamCaption})}
+
+
+
+Start or stop continuous data acquisition. After reception of this command device start or stop continuous data stream containing scan messages. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & 1 \+: start 0 \+: stop \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLMS1xx_aa0feadf2fefe3c8145d9cb67d02f058c}\label{classLMS1xx_aa0feadf2fefe3c8145d9cb67d02f058c}} 
+\index{L\+M\+S1xx@{L\+M\+S1xx}!set\+Scan\+Cfg@{set\+Scan\+Cfg}}
+\index{set\+Scan\+Cfg@{set\+Scan\+Cfg}!L\+M\+S1xx@{L\+M\+S1xx}}
+\subsubsection{\texorpdfstring{set\+Scan\+Cfg()}{setScanCfg()}}
+{\footnotesize\ttfamily void L\+M\+S1xx\+::set\+Scan\+Cfg (\begin{DoxyParamCaption}\item[{const \hyperlink{structscanCfg}{scan\+Cfg} \&}]{cfg }\end{DoxyParamCaption})}
+
+
+
+Set scan configuration. Get scan configuration \+: 
+
+
+\begin{DoxyItemize}
+\item scanning frequency.
+\item scanning resolution.
+\item start angle.
+\item stop angle. 
+\begin{DoxyParams}{Parameters}
+{\em cfg} & structure containing scan configuration. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}\mbox{\Hypertarget{classLMS1xx_ac8cdbf56a26b60f8cf202d307e57f08c}\label{classLMS1xx_ac8cdbf56a26b60f8cf202d307e57f08c}} 
+\index{L\+M\+S1xx@{L\+M\+S1xx}!set\+Scan\+Data\+Cfg@{set\+Scan\+Data\+Cfg}}
+\index{set\+Scan\+Data\+Cfg@{set\+Scan\+Data\+Cfg}!L\+M\+S1xx@{L\+M\+S1xx}}
+\subsubsection{\texorpdfstring{set\+Scan\+Data\+Cfg()}{setScanDataCfg()}}
+{\footnotesize\ttfamily void L\+M\+S1xx\+::set\+Scan\+Data\+Cfg (\begin{DoxyParamCaption}\item[{const \hyperlink{structscanDataCfg}{scan\+Data\+Cfg} \&}]{cfg }\end{DoxyParamCaption})}
+
+
+
+Set scan data configuration. Set format of scan message returned by device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cfg} & structure containing scan data configuration. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+L\+M\+S1xx/include/\+L\+M\+S1xx/L\+M\+S1xx.\+h\item 
+L\+M\+S1xx/src/L\+M\+S1xx.\+cpp\end{DoxyCompactItemize}

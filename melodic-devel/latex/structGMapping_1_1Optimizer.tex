@@ -1,0 +1,55 @@
+\hypertarget{structGMapping_1_1Optimizer}{}\section{G\+Mapping\+:\+:Optimizer$<$ Likelihood, Map $>$ Struct Template Reference}
+\label{structGMapping_1_1Optimizer}\index{G\+Mapping\+::\+Optimizer$<$ Likelihood, Map $>$@{G\+Mapping\+::\+Optimizer$<$ Likelihood, Map $>$}}
+
+
+Collaboration diagram for G\+Mapping\+:\+:Optimizer$<$ Likelihood, Map $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structGMapping_1_1Optimizer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structGMapping_1_1Optimizer_a2741a3d19153f7bc9a78a9b7ad559e35}\label{structGMapping_1_1Optimizer_a2741a3d19153f7bc9a78a9b7ad559e35}} 
+enum {\bfseries Move} \{ \newline
+{\bfseries Forward}, 
+{\bfseries Backward}, 
+{\bfseries Left}, 
+{\bfseries Right}, 
+\newline
+{\bfseries Turn\+Right}, 
+{\bfseries Turn\+Left}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structGMapping_1_1Optimizer_a8163c2bfadfa1a0daf114a1c6ebb1643}\label{structGMapping_1_1Optimizer_a8163c2bfadfa1a0daf114a1c6ebb1643}} 
+{\bfseries Optimizer} (const \hyperlink{structGMapping_1_1OptimizerParams}{Optimizer\+Params} \&params)
+\item 
+\mbox{\Hypertarget{structGMapping_1_1Optimizer_aff3cf6db83bf2e7d0d1d6a01a35af639}\label{structGMapping_1_1Optimizer_aff3cf6db83bf2e7d0d1d6a01a35af639}} 
+\hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} {\bfseries gradient\+Descent} (const \hyperlink{classGMapping_1_1RangeReading}{Range\+Reading} \&old\+Reading, const \hyperlink{classGMapping_1_1RangeReading}{Range\+Reading} \&new\+Reading)
+\item 
+\mbox{\Hypertarget{structGMapping_1_1Optimizer_a36fe94bbbd7568b1d96987e8abe6a6e2}\label{structGMapping_1_1Optimizer_a36fe94bbbd7568b1d96987e8abe6a6e2}} 
+\hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} {\bfseries gradient\+Descent} (const \hyperlink{classGMapping_1_1RangeReading}{Range\+Reading} \&old\+Reading, const \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} \&pose, O\+Local\+Map \&\hyperlink{classGMapping_1_1Map}{Map})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structGMapping_1_1Optimizer_a1ae20dedafa9f218ac13382efe909b98}\label{structGMapping_1_1Optimizer_a1ae20dedafa9f218ac13382efe909b98}} 
+\hyperlink{structGMapping_1_1OptimizerParams}{Optimizer\+Params} {\bfseries params}
+\item 
+\mbox{\Hypertarget{structGMapping_1_1Optimizer_a29120879bc5716ecee37f530875892c3}\label{structGMapping_1_1Optimizer_a29120879bc5716ecee37f530875892c3}} 
+\hyperlink{classGMapping_1_1Map}{Map} {\bfseries lmap}
+\item 
+\mbox{\Hypertarget{structGMapping_1_1Optimizer_ab36db0ba4116e589349101393fb23da2}\label{structGMapping_1_1Optimizer_ab36db0ba4116e589349101393fb23da2}} 
+Likelihood {\bfseries likelihood}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+openslam\+\_\+gmapping/utils/optimizer.\+h\end{DoxyCompactItemize}

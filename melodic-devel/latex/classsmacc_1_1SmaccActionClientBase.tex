@@ -1,0 +1,99 @@
+\hypertarget{classsmacc_1_1SmaccActionClientBase}{}\section{smacc\+:\+:Smacc\+Action\+Client\+Base$<$ Action\+Type $>$ Class Template Reference}
+\label{classsmacc_1_1SmaccActionClientBase}\index{smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$@{smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$}}
+
+
+Inheritance diagram for smacc\+:\+:Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{classsmacc_1_1SmaccActionClientBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+:\+:Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classsmacc_1_1SmaccActionClientBase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccActionClientBase_aea1392d9e41f48bda1de8acaec1c3233}\label{classsmacc_1_1SmaccActionClientBase_aea1392d9e41f48bda1de8acaec1c3233}} 
+typedef actionlib\+::\+Simple\+Action\+Client$<$ Action\+Type $>$ {\bfseries Action\+Client}
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccActionClientBase_a70384df77a0bbf416475e730960a77cf}\label{classsmacc_1_1SmaccActionClientBase_a70384df77a0bbf416475e730960a77cf}} 
+typedef actionlib\+::\+Simple\+Action\+Client$<$ Action\+Type $>$ {\bfseries Goal\+Handle}
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccActionClientBase_a185a419026fcdbec9ddf4703a1505524}\label{classsmacc_1_1SmaccActionClientBase_a185a419026fcdbec9ddf4703a1505524}} 
+typedef Action\+Client\+::\+Simple\+Done\+Callback {\bfseries Simple\+Done\+Callback}
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccActionClientBase_ab99def4cdf0522abaf5a3bf7a444cfcb}\label{classsmacc_1_1SmaccActionClientBase_ab99def4cdf0522abaf5a3bf7a444cfcb}} 
+typedef Action\+Client\+::\+Simple\+Active\+Callback {\bfseries Simple\+Active\+Callback}
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccActionClientBase_ad8a68f659fb23e082e75d220515c76f3}\label{classsmacc_1_1SmaccActionClientBase_ad8a68f659fb23e082e75d220515c76f3}} 
+typedef Action\+Client\+::\+Simple\+Feedback\+Callback {\bfseries Simple\+Feedback\+Callback}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccActionClientBase_aee053cafcc5c2e56c3c60a7de16be31a}\label{classsmacc_1_1SmaccActionClientBase_aee053cafcc5c2e56c3c60a7de16be31a}} 
+{\bfseries A\+C\+T\+I\+O\+N\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON} (Action\+Type)
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccActionClientBase_af55217911e61d8345903f52acada3f11}\label{classsmacc_1_1SmaccActionClientBase_af55217911e61d8345903f52acada3f11}} 
+{\bfseries Smacc\+Action\+Client\+Base} (int feedback\+\_\+queue\+\_\+size=10)
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccActionClientBase_a642594be28535dd4db782b8f2777ba38}\label{classsmacc_1_1SmaccActionClientBase_a642594be28535dd4db782b8f2777ba38}} 
+virtual void {\bfseries init} (ros\+::\+Node\+Handle \&nh) override
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccActionClientBase_ab953ee383c5dd627a62c36d06c365930}\label{classsmacc_1_1SmaccActionClientBase_ab953ee383c5dd627a62c36d06c365930}} 
+virtual void {\bfseries cancel\+Goal} ()
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccActionClientBase_a7a3edf84a8126dc723f3fc5e082aecf0}\label{classsmacc_1_1SmaccActionClientBase_a7a3edf84a8126dc723f3fc5e082aecf0}} 
+virtual Simple\+Client\+Goal\+State {\bfseries get\+State} () override
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccActionClientBase_a4746ad2b84551095274051ca58a9996d}\label{classsmacc_1_1SmaccActionClientBase_a4746ad2b84551095274051ca58a9996d}} 
+virtual bool {\bfseries has\+Feedback} () override
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}\label{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}} 
+void {\bfseries send\+Goal} (Goal \&goal)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccActionClientBase_a9ba39f09edcf9a4737d8cb0f0d6ee5e2}\label{classsmacc_1_1SmaccActionClientBase_a9ba39f09edcf9a4737d8cb0f0d6ee5e2}} 
+void {\bfseries on\+Feedback} (const Feedback\+Const\+Ptr \&feedback)
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccActionClientBase_a2e2d131731d54ea529f6ff2ebb0c63cd}\label{classsmacc_1_1SmaccActionClientBase_a2e2d131731d54ea529f6ff2ebb0c63cd}} 
+virtual void {\bfseries post\+Event} (Smacc\+Scheduler $\ast$scheduler, Smacc\+Scheduler\+::processor\+\_\+handle processor\+Handle) override
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccActionClientBase_a8e500f37853599d32c39483d442ede72}\label{classsmacc_1_1SmaccActionClientBase_a8e500f37853599d32c39483d442ede72}} 
+virtual void {\bfseries post\+Feedback\+Event} (Smacc\+Scheduler $\ast$scheduler, Smacc\+Scheduler\+::processor\+\_\+handle processor\+Handle) override
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccActionClientBase_a10d3b707b855c6d360aeeb35e50cd0c7}\label{classsmacc_1_1SmaccActionClientBase_a10d3b707b855c6d360aeeb35e50cd0c7}} 
+std\+::shared\+\_\+ptr$<$ Action\+Client $>$ {\bfseries client\+\_\+}
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccActionClientBase_a834575fe2be93d0ccada8c1d486c49cd}\label{classsmacc_1_1SmaccActionClientBase_a834575fe2be93d0ccada8c1d486c49cd}} 
+int {\bfseries feedback\+\_\+queue\+\_\+size\+\_\+}
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccActionClientBase_a66fe8948b906b832b06b5dae469d8dc4}\label{classsmacc_1_1SmaccActionClientBase_a66fe8948b906b832b06b5dae469d8dc4}} 
+std\+::list$<$ Feedback $>$ {\bfseries feedback\+\_\+queue\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccActionClientBase_a9fb9044f83e768849d1b42d9d0d5508e}\label{classsmacc_1_1SmaccActionClientBase_a9fb9044f83e768849d1b42d9d0d5508e}} 
+class {\bfseries Signal\+Detector}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc/include/smacc/smacc\+\_\+action\+\_\+client\+\_\+base.\+h\end{DoxyCompactItemize}

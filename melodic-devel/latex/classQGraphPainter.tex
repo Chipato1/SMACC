@@ -1,0 +1,109 @@
+\hypertarget{classQGraphPainter}{}\section{Q\+Graph\+Painter Class Reference}
+\label{classQGraphPainter}\index{Q\+Graph\+Painter@{Q\+Graph\+Painter}}
+
+
+Inheritance diagram for Q\+Graph\+Painter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{classQGraphPainter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Q\+Graph\+Painter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{classQGraphPainter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classQGraphPainter_a1bf39c73ba4583cc7b5ec16aea999b08}\label{classQGraphPainter_a1bf39c73ba4583cc7b5ec16aea999b08}} 
+void {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{classQGraphPainter_a49a8c35d6cd08bcd9f43cbb8c6fcde89}\label{classQGraphPainter_a49a8c35d6cd08bcd9f43cbb8c6fcde89}} 
+void {\bfseries value\+Added} (double)
+\item 
+\mbox{\Hypertarget{classQGraphPainter_a3aef295cb722de0b3023ef831ed87fef}\label{classQGraphPainter_a3aef295cb722de0b3023ef831ed87fef}} 
+void {\bfseries value\+Added} (double, double, double)
+\item 
+\mbox{\Hypertarget{classQGraphPainter_ae6b9d1900cd97e61734f4c7294c748fe}\label{classQGraphPainter_ae6b9d1900cd97e61734f4c7294c748fe}} 
+void {\bfseries set\+Y\+Reference} (double y)
+\item 
+\mbox{\Hypertarget{classQGraphPainter_a57505657eb19bf2def835cbac32e4b5d}\label{classQGraphPainter_a57505657eb19bf2def835cbac32e4b5d}} 
+void {\bfseries disable\+Y\+Reference} ()
+\item 
+\mbox{\Hypertarget{classQGraphPainter_a007619fdc7f1c8befe7b52f48ac0460c}\label{classQGraphPainter_a007619fdc7f1c8befe7b52f48ac0460c}} 
+void {\bfseries set\+Range} (double min, double max)
+\item 
+\mbox{\Hypertarget{classQGraphPainter_a53cade68d51858dc2c9cef9d11730826}\label{classQGraphPainter_a53cade68d51858dc2c9cef9d11730826}} 
+void {\bfseries start} (int period)
+\item 
+\mbox{\Hypertarget{classQGraphPainter_ab19d744eb3ff3869307d5bd0903980cb}\label{classQGraphPainter_ab19d744eb3ff3869307d5bd0903980cb}} 
+void {\bfseries set\+Title} (const char $\ast$title)
+\item 
+\mbox{\Hypertarget{classQGraphPainter_a12270f365e21843aa8bac9846dc8daaa}\label{classQGraphPainter_a12270f365e21843aa8bac9846dc8daaa}} 
+void {\bfseries set\+Autoscale} (bool a)
+\item 
+\mbox{\Hypertarget{classQGraphPainter_aaef72c5af4bca12c192193676c36969e}\label{classQGraphPainter_aaef72c5af4bca12c192193676c36969e}} 
+bool {\bfseries get\+Autoscale} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classQGraphPainter_a772389a69629d5b8e06b8dfdecdb7113}\label{classQGraphPainter_a772389a69629d5b8e06b8dfdecdb7113}} 
+{\bfseries Q\+Graph\+Painter} (Q\+Widget $\ast$parent=0, const char $\ast$name=0, Qt\+::\+Window\+Flags f=0)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classQGraphPainter_a4c7e963731cd62a808b8c092cecbd09b}\label{classQGraphPainter_a4c7e963731cd62a808b8c092cecbd09b}} 
+virtual void {\bfseries timer\+Event} (Q\+Timer\+Event $\ast$te)
+\item 
+\mbox{\Hypertarget{classQGraphPainter_adbe4afa15c5a653d7820f5004882b565}\label{classQGraphPainter_adbe4afa15c5a653d7820f5004882b565}} 
+virtual void {\bfseries resize\+Event} (Q\+Resize\+Event $\ast$)
+\item 
+\mbox{\Hypertarget{classQGraphPainter_aa873f55313fe40673b529803891dfd14}\label{classQGraphPainter_aa873f55313fe40673b529803891dfd14}} 
+virtual void {\bfseries paint\+Event} (Q\+Paint\+Event $\ast$paintevent)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classQGraphPainter_aefe0fcaddc8416e303555f9b0adfcb44}\label{classQGraphPainter_aefe0fcaddc8416e303555f9b0adfcb44}} 
+double {\bfseries min}
+\item 
+\mbox{\Hypertarget{classQGraphPainter_a3b665bafcd49d1f612dfb1e9dfe630d9}\label{classQGraphPainter_a3b665bafcd49d1f612dfb1e9dfe630d9}} 
+double {\bfseries max}
+\item 
+\mbox{\Hypertarget{classQGraphPainter_a0feefecd1c1d290cf76009b3f662285f}\label{classQGraphPainter_a0feefecd1c1d290cf76009b3f662285f}} 
+double {\bfseries reference}
+\item 
+\mbox{\Hypertarget{classQGraphPainter_afcb6fb18a1119403dda4de3446edfb02}\label{classQGraphPainter_afcb6fb18a1119403dda4de3446edfb02}} 
+Double\+Deque {\bfseries values}
+\item 
+\mbox{\Hypertarget{classQGraphPainter_a57cbb3af42819d61e8ddaba6ecb3abc1}\label{classQGraphPainter_a57cbb3af42819d61e8ddaba6ecb3abc1}} 
+bool {\bfseries autoscale}
+\item 
+\mbox{\Hypertarget{classQGraphPainter_a0067f6212186a1a9f6668d3e8a0ca96b}\label{classQGraphPainter_a0067f6212186a1a9f6668d3e8a0ca96b}} 
+bool {\bfseries m\+\_\+use\+Y\+Reference}
+\item 
+\mbox{\Hypertarget{classQGraphPainter_a1bad9ad62dde873d37a8b0dd47c358a3}\label{classQGraphPainter_a1bad9ad62dde873d37a8b0dd47c358a3}} 
+int {\bfseries timer}
+\item 
+\mbox{\Hypertarget{classQGraphPainter_adf303f77d70ace6c0caedaee198221b7}\label{classQGraphPainter_adf303f77d70ace6c0caedaee198221b7}} 
+Q\+Pixmap $\ast$ {\bfseries m\+\_\+pixmap}
+\item 
+\mbox{\Hypertarget{classQGraphPainter_ad4a46f35dc7b1cc9fbc0dff2188120b5}\label{classQGraphPainter_ad4a46f35dc7b1cc9fbc0dff2188120b5}} 
+Q\+String {\bfseries title}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+openslam\+\_\+gmapping/gui/qgraphpainter.\+h\item 
+openslam\+\_\+gmapping/gui/qgraphpainter.\+cpp\end{DoxyCompactItemize}

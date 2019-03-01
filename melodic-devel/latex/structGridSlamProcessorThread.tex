@@ -1,0 +1,110 @@
+\hypertarget{structGridSlamProcessorThread}{}\section{Grid\+Slam\+Processor\+Thread Struct Reference}
+\label{structGridSlamProcessorThread}\index{Grid\+Slam\+Processor\+Thread@{Grid\+Slam\+Processor\+Thread}}
+
+
+Inheritance diagram for Grid\+Slam\+Processor\+Thread\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{structGridSlamProcessorThread__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Grid\+Slam\+Processor\+Thread\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structGridSlamProcessorThread__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structGridSlamProcessorThread_1_1DoneEvent}{Done\+Event}
+\item 
+struct \hyperlink{structGridSlamProcessorThread_1_1Event}{Event}
+\item 
+struct \hyperlink{structGridSlamProcessorThread_1_1MapEvent}{Map\+Event}
+\item 
+struct \hyperlink{structGridSlamProcessorThread_1_1ParticleMoveEvent}{Particle\+Move\+Event}
+\item 
+struct \hyperlink{structGridSlamProcessorThread_1_1ResampleEvent}{Resample\+Event}
+\item 
+struct \hyperlink{structGridSlamProcessorThread_1_1TruePosEvent}{True\+Pos\+Event}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structGridSlamProcessorThread_a50b35507f7044e4d53e091f63c4adffe}\label{structGridSlamProcessorThread_a50b35507f7044e4d53e091f63c4adffe}} 
+typedef deque$<$ \hyperlink{structGridSlamProcessorThread_1_1Event}{Event} $\ast$ $>$ {\bfseries Event\+Deque}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structGridSlamProcessorThread_ae9ede2676d18eecf0acf07e18c4711ba}\label{structGridSlamProcessorThread_ae9ede2676d18eecf0acf07e18c4711ba}} 
+int {\bfseries init} (int argc, const char $\ast$const $\ast$argv)
+\item 
+\mbox{\Hypertarget{structGridSlamProcessorThread_ab0bb091ef9b4e69d41f9748232e50ecf}\label{structGridSlamProcessorThread_ab0bb091ef9b4e69d41f9748232e50ecf}} 
+int {\bfseries load\+Files} (const char $\ast$fn=0)
+\item 
+\mbox{\Hypertarget{structGridSlamProcessorThread_abc0a700e8a01904af3ff6c6428dc6f5c}\label{structGridSlamProcessorThread_abc0a700e8a01904af3ff6c6428dc6f5c}} 
+std\+::vector$<$ \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} $>$ {\bfseries get\+Hypotheses} ()
+\item 
+\mbox{\Hypertarget{structGridSlamProcessorThread_a866a35ca8309351d315a2a5e8baab2a4}\label{structGridSlamProcessorThread_a866a35ca8309351d315a2a5e8baab2a4}} 
+std\+::vector$<$ unsigned int $>$ {\bfseries get\+Indexes} ()
+\item 
+\mbox{\Hypertarget{structGridSlamProcessorThread_af771f6563a1855c4c0bd0617ffd09620}\label{structGridSlamProcessorThread_af771f6563a1855c4c0bd0617ffd09620}} 
+Event\+Deque {\bfseries get\+Events} ()
+\item 
+\mbox{\Hypertarget{structGridSlamProcessorThread_a97dd968292d48bebddec162e121bff47}\label{structGridSlamProcessorThread_a97dd968292d48bebddec162e121bff47}} 
+void {\bfseries start} ()
+\item 
+\mbox{\Hypertarget{structGridSlamProcessorThread_a8d9df9fcdd03ad0ec3bcc986719e7015}\label{structGridSlamProcessorThread_a8d9df9fcdd03ad0ec3bcc986719e7015}} 
+void {\bfseries stop} ()
+\item 
+\mbox{\Hypertarget{structGridSlamProcessorThread_a95af6181c93ec51f64e5c2fa86c86893}\label{structGridSlamProcessorThread_a95af6181c93ec51f64e5c2fa86c86893}} 
+virtual void {\bfseries on\+Odometry\+Update} ()
+\item 
+\mbox{\Hypertarget{structGridSlamProcessorThread_a3a7298ce8e38b4753903c7c8f7fd94dc}\label{structGridSlamProcessorThread_a3a7298ce8e38b4753903c7c8f7fd94dc}} 
+virtual void {\bfseries on\+Resample\+Update} ()
+\item 
+\mbox{\Hypertarget{structGridSlamProcessorThread_ac816094bb1b69817356e56179d746726}\label{structGridSlamProcessorThread_ac816094bb1b69817356e56179d746726}} 
+virtual void {\bfseries on\+Scanmatch\+Update} ()
+\item 
+\mbox{\Hypertarget{structGridSlamProcessorThread_a019f44d49b69cc451edb80301ac80ffa}\label{structGridSlamProcessorThread_a019f44d49b69cc451edb80301ac80ffa}} 
+virtual void {\bfseries sync\+Odometry\+Update} ()
+\item 
+\mbox{\Hypertarget{structGridSlamProcessorThread_adfc0fbdd1a2f1d585e024692495519b4}\label{structGridSlamProcessorThread_adfc0fbdd1a2f1d585e024692495519b4}} 
+virtual void {\bfseries sync\+Resample\+Update} ()
+\item 
+\mbox{\Hypertarget{structGridSlamProcessorThread_a8aa40ff654969ad1b2a2b38e10a52512}\label{structGridSlamProcessorThread_a8aa40ff654969ad1b2a2b38e10a52512}} 
+virtual void {\bfseries sync\+Scanmatch\+Update} ()
+\item 
+\mbox{\Hypertarget{structGridSlamProcessorThread_ab278d7c81576e97d53f5f0cb980b51ad}\label{structGridSlamProcessorThread_ab278d7c81576e97d53f5f0cb980b51ad}} 
+void {\bfseries set\+Event\+Buffer\+Size} (unsigned int length)
+\item 
+\mbox{\Hypertarget{structGridSlamProcessorThread_aa9b76fce8a1c351d1d3abc7db45936f1}\label{structGridSlamProcessorThread_aa9b76fce8a1c351d1d3abc7db45936f1}} 
+void {\bfseries set\+Map\+Update\+Time} (unsigned int ut)
+\item 
+\mbox{\Hypertarget{structGridSlamProcessorThread_a5111ca7367f1a27ee7c9688528d7c9ac}\label{structGridSlamProcessorThread_a5111ca7367f1a27ee7c9688528d7c9ac}} 
+bool {\bfseries is\+Running} () const
+\item 
+\mbox{\Hypertarget{structGridSlamProcessorThread_a8d4a9ee2c6f348b480e4efca4ff772df}\label{structGridSlamProcessorThread_a8d4a9ee2c6f348b480e4efca4ff772df}} 
+\hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} {\bfseries bounding\+Box} (\hyperlink{classGMapping_1_1SensorLog}{Sensor\+Log} $\ast$log, double \&xmin, double \&ymin, double \&xmax, double \&ymax) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structGridSlamProcessorThread_a6aea95c0700486ccc22bc2fa1c3970c0}\label{structGridSlamProcessorThread_a6aea95c0700486ccc22bc2fa1c3970c0}} 
+static void $\ast$ {\bfseries fastslamthread} (\hyperlink{structGridSlamProcessorThread}{Grid\+Slam\+Processor\+Thread} $\ast$gpt)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+openslam\+\_\+gmapping/gui/gsp\+\_\+thread.\+h\item 
+openslam\+\_\+gmapping/gui/gsp\+\_\+thread.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,122 @@
+\hypertarget{classmecanum__drive__controller_1_1MecanumDriveController}{}\section{mecanum\+\_\+drive\+\_\+controller\+:\+:Mecanum\+Drive\+Controller Class Reference}
+\label{classmecanum__drive__controller_1_1MecanumDriveController}\index{mecanum\+\_\+drive\+\_\+controller\+::\+Mecanum\+Drive\+Controller@{mecanum\+\_\+drive\+\_\+controller\+::\+Mecanum\+Drive\+Controller}}
+
+
+{\ttfamily \#include $<$mecanum\+\_\+drive\+\_\+controller.\+h$>$}
+
+
+
+Inheritance diagram for mecanum\+\_\+drive\+\_\+controller\+:\+:Mecanum\+Drive\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{classmecanum__drive__controller_1_1MecanumDriveController__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for mecanum\+\_\+drive\+\_\+controller\+:\+:Mecanum\+Drive\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{classmecanum__drive__controller_1_1MecanumDriveController__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classmecanum__drive__controller_1_1MecanumDriveController_aad81c2f7b52ec97e08d4b102bb577709}{init} (hardware\+\_\+interface\+::\+Velocity\+Joint\+Interface $\ast$hw, ros\+::\+Node\+Handle \&root\+\_\+nh, ros\+::\+Node\+Handle \&controller\+\_\+nh)
+\begin{DoxyCompactList}\small\item\em Initialize controller. \end{DoxyCompactList}\item 
+void \hyperlink{classmecanum__drive__controller_1_1MecanumDriveController_a458c6c52b997c8b91d44f16e7bc31221}{update} (const ros\+::\+Time \&time, const ros\+::\+Duration \&period)
+\begin{DoxyCompactList}\small\item\em Updates controller, i.\+e. computes the odometry and sets the new velocity commands. \end{DoxyCompactList}\item 
+void \hyperlink{classmecanum__drive__controller_1_1MecanumDriveController_a0f226fc034ee64d5cc8bc1a0d8237fc6}{starting} (const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em Starts controller. \end{DoxyCompactList}\item 
+void \hyperlink{classmecanum__drive__controller_1_1MecanumDriveController_abf933c790a867ee8cc794ac85386d59c}{stopping} (const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em Stops controller. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class makes some assumptions on the model of the robot\+:
+\begin{DoxyItemize}
+\item the rotation axes of wheels are collinear
+\item the wheels are identical in radius Additional assumptions to not duplicate information readily available in the U\+R\+DF\+:
+\item the wheels have the same parent frame
+\item a wheel collision geometry is a cylinder in the urdf
+\item a wheel joint frame center\textquotesingle{}s vertical projection on the floor must lie within the contact patch 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1MecanumDriveController_aad81c2f7b52ec97e08d4b102bb577709}\label{classmecanum__drive__controller_1_1MecanumDriveController_aad81c2f7b52ec97e08d4b102bb577709}} 
+\index{mecanum\+\_\+drive\+\_\+controller\+::\+Mecanum\+Drive\+Controller@{mecanum\+\_\+drive\+\_\+controller\+::\+Mecanum\+Drive\+Controller}!init@{init}}
+\index{init@{init}!mecanum\+\_\+drive\+\_\+controller\+::\+Mecanum\+Drive\+Controller@{mecanum\+\_\+drive\+\_\+controller\+::\+Mecanum\+Drive\+Controller}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily bool mecanum\+\_\+drive\+\_\+controller\+::\+Mecanum\+Drive\+Controller\+::init (\begin{DoxyParamCaption}\item[{hardware\+\_\+interface\+::\+Velocity\+Joint\+Interface $\ast$}]{hw,  }\item[{ros\+::\+Node\+Handle \&}]{root\+\_\+nh,  }\item[{ros\+::\+Node\+Handle \&}]{controller\+\_\+nh }\end{DoxyParamCaption})}
+
+
+
+Initialize controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hw} & Velocity joint interface for the wheels \\
+\hline
+{\em root\+\_\+nh} & Node handle at root namespace \\
+\hline
+{\em controller\+\_\+nh} & Node handle inside the controller namespace \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1MecanumDriveController_a0f226fc034ee64d5cc8bc1a0d8237fc6}\label{classmecanum__drive__controller_1_1MecanumDriveController_a0f226fc034ee64d5cc8bc1a0d8237fc6}} 
+\index{mecanum\+\_\+drive\+\_\+controller\+::\+Mecanum\+Drive\+Controller@{mecanum\+\_\+drive\+\_\+controller\+::\+Mecanum\+Drive\+Controller}!starting@{starting}}
+\index{starting@{starting}!mecanum\+\_\+drive\+\_\+controller\+::\+Mecanum\+Drive\+Controller@{mecanum\+\_\+drive\+\_\+controller\+::\+Mecanum\+Drive\+Controller}}
+\subsubsection{\texorpdfstring{starting()}{starting()}}
+{\footnotesize\ttfamily void mecanum\+\_\+drive\+\_\+controller\+::\+Mecanum\+Drive\+Controller\+::starting (\begin{DoxyParamCaption}\item[{const ros\+::\+Time \&}]{time }\end{DoxyParamCaption})}
+
+
+
+Starts controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & Current time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1MecanumDriveController_abf933c790a867ee8cc794ac85386d59c}\label{classmecanum__drive__controller_1_1MecanumDriveController_abf933c790a867ee8cc794ac85386d59c}} 
+\index{mecanum\+\_\+drive\+\_\+controller\+::\+Mecanum\+Drive\+Controller@{mecanum\+\_\+drive\+\_\+controller\+::\+Mecanum\+Drive\+Controller}!stopping@{stopping}}
+\index{stopping@{stopping}!mecanum\+\_\+drive\+\_\+controller\+::\+Mecanum\+Drive\+Controller@{mecanum\+\_\+drive\+\_\+controller\+::\+Mecanum\+Drive\+Controller}}
+\subsubsection{\texorpdfstring{stopping()}{stopping()}}
+{\footnotesize\ttfamily void mecanum\+\_\+drive\+\_\+controller\+::\+Mecanum\+Drive\+Controller\+::stopping (\begin{DoxyParamCaption}\item[{const ros\+::\+Time \&}]{time }\end{DoxyParamCaption})}
+
+
+
+Stops controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & Current time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1MecanumDriveController_a458c6c52b997c8b91d44f16e7bc31221}\label{classmecanum__drive__controller_1_1MecanumDriveController_a458c6c52b997c8b91d44f16e7bc31221}} 
+\index{mecanum\+\_\+drive\+\_\+controller\+::\+Mecanum\+Drive\+Controller@{mecanum\+\_\+drive\+\_\+controller\+::\+Mecanum\+Drive\+Controller}!update@{update}}
+\index{update@{update}!mecanum\+\_\+drive\+\_\+controller\+::\+Mecanum\+Drive\+Controller@{mecanum\+\_\+drive\+\_\+controller\+::\+Mecanum\+Drive\+Controller}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void mecanum\+\_\+drive\+\_\+controller\+::\+Mecanum\+Drive\+Controller\+::update (\begin{DoxyParamCaption}\item[{const ros\+::\+Time \&}]{time,  }\item[{const ros\+::\+Duration \&}]{period }\end{DoxyParamCaption})}
+
+
+
+Updates controller, i.\+e. computes the odometry and sets the new velocity commands. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & Current time \\
+\hline
+{\em period} & Time since the last called to update \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+ridgeback/ridgeback\+\_\+control/include/mecanum\+\_\+drive\+\_\+controller/mecanum\+\_\+drive\+\_\+controller.\+h\item 
+ridgeback/ridgeback\+\_\+control/src/mecanum\+\_\+drive\+\_\+controller.\+cpp\end{DoxyCompactItemize}

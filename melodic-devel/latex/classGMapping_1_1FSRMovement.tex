@@ -1,0 +1,72 @@
+\hypertarget{classGMapping_1_1FSRMovement}{}\section{G\+Mapping\+:\+:F\+S\+R\+Movement Class Reference}
+\label{classGMapping_1_1FSRMovement}\index{G\+Mapping\+::\+F\+S\+R\+Movement@{G\+Mapping\+::\+F\+S\+R\+Movement}}
+
+
+{\ttfamily \#include $<$movement.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1FSRMovement_a6bc88fa47a97a0fcfe9d518e721ce00b}\label{classGMapping_1_1FSRMovement_a6bc88fa47a97a0fcfe9d518e721ce00b}} 
+{\bfseries F\+S\+R\+Movement} (double f=0.\+0, double s=0.\+0, double r=0.\+0)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1FSRMovement_ad6e28fd681adc361c370f12216da885c}\label{classGMapping_1_1FSRMovement_ad6e28fd681adc361c370f12216da885c}} 
+{\bfseries F\+S\+R\+Movement} (const \hyperlink{classGMapping_1_1FSRMovement}{F\+S\+R\+Movement} \&src)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1FSRMovement_af3e5524c774aaf1d31b0165a97651cc9}\label{classGMapping_1_1FSRMovement_af3e5524c774aaf1d31b0165a97651cc9}} 
+{\bfseries F\+S\+R\+Movement} (const \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} \&pt1, const \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} \&pt2)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1FSRMovement_a00d21267977d64578cd2b3ccba847c32}\label{classGMapping_1_1FSRMovement_a00d21267977d64578cd2b3ccba847c32}} 
+{\bfseries F\+S\+R\+Movement} (const \hyperlink{classGMapping_1_1FSRMovement}{F\+S\+R\+Movement} \&move1, const \hyperlink{classGMapping_1_1FSRMovement}{F\+S\+R\+Movement} \&move2)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1FSRMovement_a9ce813f06bddde097697b00adeb51db1}\label{classGMapping_1_1FSRMovement_a9ce813f06bddde097697b00adeb51db1}} 
+void {\bfseries normalize} ()
+\item 
+\mbox{\Hypertarget{classGMapping_1_1FSRMovement_a628f03b23fc66b36e45e770a2aa8cff6}\label{classGMapping_1_1FSRMovement_a628f03b23fc66b36e45e770a2aa8cff6}} 
+void {\bfseries invert} ()
+\item 
+\mbox{\Hypertarget{classGMapping_1_1FSRMovement_aadb5a27fce9ad65ca94ef8925d12691e}\label{classGMapping_1_1FSRMovement_aadb5a27fce9ad65ca94ef8925d12691e}} 
+void {\bfseries compose} (const \hyperlink{classGMapping_1_1FSRMovement}{F\+S\+R\+Movement} \&move2)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1FSRMovement_a2b4290a239c002e487c1035bae321c4a}\label{classGMapping_1_1FSRMovement_a2b4290a239c002e487c1035bae321c4a}} 
+\hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} {\bfseries move} (const \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} \&pt) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1FSRMovement_a403a350cef0a0e1aa87f9ce5c58d77e2}\label{classGMapping_1_1FSRMovement_a403a350cef0a0e1aa87f9ce5c58d77e2}} 
+static \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} {\bfseries move\+Point} (const \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} \&pt, const \hyperlink{classGMapping_1_1FSRMovement}{F\+S\+R\+Movement} \&move1)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1FSRMovement_a72c03093e67db102fed68403050ccf37}\label{classGMapping_1_1FSRMovement_a72c03093e67db102fed68403050ccf37}} 
+static \hyperlink{classGMapping_1_1FSRMovement}{F\+S\+R\+Movement} {\bfseries compose\+Moves} (const \hyperlink{classGMapping_1_1FSRMovement}{F\+S\+R\+Movement} \&move1, const \hyperlink{classGMapping_1_1FSRMovement}{F\+S\+R\+Movement} \&move2)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1FSRMovement_a9fcfacb79a7c428474355ec385983b00}\label{classGMapping_1_1FSRMovement_a9fcfacb79a7c428474355ec385983b00}} 
+static \hyperlink{classGMapping_1_1FSRMovement}{F\+S\+R\+Movement} {\bfseries move\+Between\+Points} (const \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} \&pt1, const \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} \&pt2)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1FSRMovement_aaa0400eaa46dc818755834215539652c}\label{classGMapping_1_1FSRMovement_aaa0400eaa46dc818755834215539652c}} 
+static \hyperlink{classGMapping_1_1FSRMovement}{F\+S\+R\+Movement} {\bfseries invert\+Move} (const \hyperlink{classGMapping_1_1FSRMovement}{F\+S\+R\+Movement} \&move1)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1FSRMovement_a6ff44fef668a82d5013a0b547d4357b9}\label{classGMapping_1_1FSRMovement_a6ff44fef668a82d5013a0b547d4357b9}} 
+static \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} {\bfseries frame\+Transformation} (const \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} \&reference\+\_\+pt\+\_\+frame1, const \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} \&reference\+\_\+pt\+\_\+frame2, const \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} \&pt\+\_\+frame1)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1FSRMovement_a537404eea9e1b32f278bc29073c5aa0d}\label{classGMapping_1_1FSRMovement_a537404eea9e1b32f278bc29073c5aa0d}} 
+double {\bfseries f}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1FSRMovement_a77978847222b856ae4fb685c6940b74c}\label{classGMapping_1_1FSRMovement_a77978847222b856ae4fb685c6940b74c}} 
+double {\bfseries s}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1FSRMovement_a97fa45f8404cb53068e3aa85baca6f01}\label{classGMapping_1_1FSRMovement_a97fa45f8404cb53068e3aa85baca6f01}} 
+double {\bfseries r}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+fsr-\/movement (forward, sideward, rotate) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+openslam\+\_\+gmapping/utils/movement.\+h\item 
+openslam\+\_\+gmapping/utils/movement.\+cpp\end{DoxyCompactItemize}

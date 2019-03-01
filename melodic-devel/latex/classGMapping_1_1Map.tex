@@ -1,0 +1,158 @@
+\hypertarget{classGMapping_1_1Map}{}\section{G\+Mapping\+:\+:Map$<$ Cell, Storage, is\+Class $>$ Class Template Reference}
+\label{classGMapping_1_1Map}\index{G\+Mapping\+::\+Map$<$ Cell, Storage, is\+Class $>$@{G\+Mapping\+::\+Map$<$ Cell, Storage, is\+Class $>$}}
+
+
+Collaboration diagram for G\+Mapping\+:\+:Map$<$ Cell, Storage, is\+Class $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classGMapping_1_1Map__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a36bacfcd3fc3fabc5fe7617754b25567}\label{classGMapping_1_1Map_a36bacfcd3fc3fabc5fe7617754b25567}} 
+{\bfseries Map} (int map\+SizeX, int map\+SizeY, double delta)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a0ea4f04959c874b7c3086d96fac30236}\label{classGMapping_1_1Map_a0ea4f04959c874b7c3086d96fac30236}} 
+{\bfseries Map} (const \hyperlink{structGMapping_1_1point}{Point} \&center, double world\+SizeX, double world\+SizeY, double delta)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a6703b56ce15339cb9d9603f61332bfc1}\label{classGMapping_1_1Map_a6703b56ce15339cb9d9603f61332bfc1}} 
+{\bfseries Map} (const \hyperlink{structGMapping_1_1point}{Point} \&center, double xmin, double ymin, double xmax, double ymax, double delta)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a89c4799297d5231a5bae0a0eef9adc28}\label{classGMapping_1_1Map_a89c4799297d5231a5bae0a0eef9adc28}} 
+void {\bfseries resize} (double xmin, double ymin, double xmax, double ymax)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_af79403cb4804e75ed16aeaf78bcfcfee}\label{classGMapping_1_1Map_af79403cb4804e75ed16aeaf78bcfcfee}} 
+void {\bfseries grow} (double xmin, double ymin, double xmax, double ymax)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_aa0cdf0d1af8991704693ac78a0d83d5a}\label{classGMapping_1_1Map_aa0cdf0d1af8991704693ac78a0d83d5a}} 
+\hyperlink{structGMapping_1_1point}{Int\+Point} {\bfseries world2map} (const \hyperlink{structGMapping_1_1point}{Point} \&p) const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a4a3caa104a1a6faf240001279e92199b}\label{classGMapping_1_1Map_a4a3caa104a1a6faf240001279e92199b}} 
+\hyperlink{structGMapping_1_1point}{Point} {\bfseries map2world} (const \hyperlink{structGMapping_1_1point}{Int\+Point} \&p) const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a182b2bc4ae28c064176c745437eac2cd}\label{classGMapping_1_1Map_a182b2bc4ae28c064176c745437eac2cd}} 
+\hyperlink{structGMapping_1_1point}{Int\+Point} {\bfseries world2map} (double x, double y) const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a687b05f408e176b12a032835ca61b3dd}\label{classGMapping_1_1Map_a687b05f408e176b12a032835ca61b3dd}} 
+\hyperlink{structGMapping_1_1point}{Point} {\bfseries map2world} (int x, int y) const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a51d79d775e7e9ba9fad119f3fe8363e0}\label{classGMapping_1_1Map_a51d79d775e7e9ba9fad119f3fe8363e0}} 
+\hyperlink{structGMapping_1_1point}{Point} {\bfseries get\+Center} () const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a547de649b4e93ff35a46993bc15950fe}\label{classGMapping_1_1Map_a547de649b4e93ff35a46993bc15950fe}} 
+double {\bfseries get\+World\+SizeX} () const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_abfd0ba43b75538269787abbf9717b1f7}\label{classGMapping_1_1Map_abfd0ba43b75538269787abbf9717b1f7}} 
+double {\bfseries get\+World\+SizeY} () const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_ac3ae4095e469da549d41c5f71cd4581f}\label{classGMapping_1_1Map_ac3ae4095e469da549d41c5f71cd4581f}} 
+int {\bfseries get\+Map\+SizeX} () const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a010cbdc6712b21c9d7ae845aac10ed33}\label{classGMapping_1_1Map_a010cbdc6712b21c9d7ae845aac10ed33}} 
+int {\bfseries get\+Map\+SizeY} () const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a7e4d075ffd05e958655bd57f468dbe46}\label{classGMapping_1_1Map_a7e4d075ffd05e958655bd57f468dbe46}} 
+double {\bfseries get\+Delta} () const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_aca1bfd698a956de8d255c6d61b41bf58}\label{classGMapping_1_1Map_aca1bfd698a956de8d255c6d61b41bf58}} 
+double {\bfseries get\+Map\+Resolution} () const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_ae627deaed285f19a7d587adffb9466df}\label{classGMapping_1_1Map_ae627deaed285f19a7d587adffb9466df}} 
+double {\bfseries get\+Resolution} () const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a56be1afc747f98139c7e609d55782679}\label{classGMapping_1_1Map_a56be1afc747f98139c7e609d55782679}} 
+void {\bfseries get\+Size} (double \&xmin, double \&ymin, double \&xmax, double \&ymax) const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a96d0d851ca48c18961ae8603b7e892ea}\label{classGMapping_1_1Map_a96d0d851ca48c18961ae8603b7e892ea}} 
+Cell \& {\bfseries cell} (int x, int y)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a0587b6d6590af4f0500be3b71309bccc}\label{classGMapping_1_1Map_a0587b6d6590af4f0500be3b71309bccc}} 
+Cell \& {\bfseries cell} (const \hyperlink{structGMapping_1_1point}{Int\+Point} \&p)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_af4e9ed5140ac507ec4eda0d78affda0d}\label{classGMapping_1_1Map_af4e9ed5140ac507ec4eda0d78affda0d}} 
+const Cell \& {\bfseries cell} (int x, int y) const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a95106109c3ff4f5a7eab44beb82ee387}\label{classGMapping_1_1Map_a95106109c3ff4f5a7eab44beb82ee387}} 
+const Cell \& {\bfseries cell} (const \hyperlink{structGMapping_1_1point}{Int\+Point} \&p) const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a2f25e756ca2c40c51973e14a6b8ad2f2}\label{classGMapping_1_1Map_a2f25e756ca2c40c51973e14a6b8ad2f2}} 
+Cell \& {\bfseries cell} (double x, double y)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a31daad0361fb10b11bae75a88c104f2b}\label{classGMapping_1_1Map_a31daad0361fb10b11bae75a88c104f2b}} 
+Cell \& {\bfseries cell} (const \hyperlink{structGMapping_1_1point}{Point} \&p)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a69d81217f0757bb7ddf9a420f9117103}\label{classGMapping_1_1Map_a69d81217f0757bb7ddf9a420f9117103}} 
+const Cell \& {\bfseries cell} (double x, double y) const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_aef45014647a01d8fa00c1a96a27ad8ee}\label{classGMapping_1_1Map_aef45014647a01d8fa00c1a96a27ad8ee}} 
+bool {\bfseries is\+Inside} (int x, int y) const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a83f0cc6f57d1a33197352e6cad1a96fc}\label{classGMapping_1_1Map_a83f0cc6f57d1a33197352e6cad1a96fc}} 
+bool {\bfseries is\+Inside} (const \hyperlink{structGMapping_1_1point}{Int\+Point} \&p) const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_ac36215843a4f82e4c212902cf14c5301}\label{classGMapping_1_1Map_ac36215843a4f82e4c212902cf14c5301}} 
+bool {\bfseries is\+Inside} (double x, double y) const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a22f5070ce945d7f7f9bf2cdab8326e3f}\label{classGMapping_1_1Map_a22f5070ce945d7f7f9bf2cdab8326e3f}} 
+bool {\bfseries is\+Inside} (const \hyperlink{structGMapping_1_1point}{Point} \&p) const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_ac25cc844ef6af3a71deb8d2eed2374f1}\label{classGMapping_1_1Map_ac25cc844ef6af3a71deb8d2eed2374f1}} 
+const Cell \& {\bfseries cell} (const \hyperlink{structGMapping_1_1point}{Point} \&p) const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a8bc733ffc30a93d5ccc2d50fde1b0bcb}\label{classGMapping_1_1Map_a8bc733ffc30a93d5ccc2d50fde1b0bcb}} 
+Storage \& {\bfseries storage} ()
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_af416137d12cbb60575cda0114e64827b}\label{classGMapping_1_1Map_af416137d12cbb60575cda0114e64827b}} 
+const Storage \& {\bfseries storage} () const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_aec32de1d6f2bf3c4c65e8b0061d70114}\label{classGMapping_1_1Map_aec32de1d6f2bf3c4c65e8b0061d70114}} 
+\hyperlink{classGMapping_1_1Array2D}{Double\+Array2D} $\ast$ {\bfseries to\+Double\+Array} () const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a951c00310fe6138f46e29af17ff2dd64}\label{classGMapping_1_1Map_a951c00310fe6138f46e29af17ff2dd64}} 
+\hyperlink{classGMapping_1_1Map}{Map}$<$ double, \hyperlink{classGMapping_1_1Array2D}{Double\+Array2D}, false $>$ $\ast$ {\bfseries to\+Double\+Map} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_aecd8d0eb5c8a5a8454c55e283934c5f0}\label{classGMapping_1_1Map_aecd8d0eb5c8a5a8454c55e283934c5f0}} 
+\hyperlink{structGMapping_1_1point}{Point} {\bfseries m\+\_\+center}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a10fdfaab06655e3a860b22a128b1e38b}\label{classGMapping_1_1Map_a10fdfaab06655e3a860b22a128b1e38b}} 
+double {\bfseries m\+\_\+world\+SizeX}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a04515b99844c64b5467e262206fc1093}\label{classGMapping_1_1Map_a04515b99844c64b5467e262206fc1093}} 
+double {\bfseries m\+\_\+world\+SizeY}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a2ff6f09bc5532cadc6ffbae79aad6016}\label{classGMapping_1_1Map_a2ff6f09bc5532cadc6ffbae79aad6016}} 
+double {\bfseries m\+\_\+delta}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a485e3b3e595bad7e907939e6c1cd2d07}\label{classGMapping_1_1Map_a485e3b3e595bad7e907939e6c1cd2d07}} 
+Storage {\bfseries m\+\_\+storage}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a537a3f96ba5e7c8559789daf81162969}\label{classGMapping_1_1Map_a537a3f96ba5e7c8559789daf81162969}} 
+int {\bfseries m\+\_\+map\+SizeX}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a96613b57751a8a4942f2988da41305d7}\label{classGMapping_1_1Map_a96613b57751a8a4942f2988da41305d7}} 
+int {\bfseries m\+\_\+map\+SizeY}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a573575e86b23cc139d4e4c1069e1cdbf}\label{classGMapping_1_1Map_a573575e86b23cc139d4e4c1069e1cdbf}} 
+int {\bfseries m\+\_\+size\+X2}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_a107cabec8e4630a31fb11e5562543fb5}\label{classGMapping_1_1Map_a107cabec8e4630a31fb11e5562543fb5}} 
+int {\bfseries m\+\_\+size\+Y2}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1Map_aca2e12fc76363d004fe5bf403b72a6aa}\label{classGMapping_1_1Map_aca2e12fc76363d004fe5bf403b72a6aa}} 
+static const Cell {\bfseries m\+\_\+unknown} = Cell(-\/1)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+openslam\+\_\+gmapping/include/gmapping/grid/map.\+h\end{DoxyCompactItemize}

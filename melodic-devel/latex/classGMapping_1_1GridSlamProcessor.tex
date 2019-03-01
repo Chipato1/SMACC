@@ -1,0 +1,505 @@
+\hypertarget{classGMapping_1_1GridSlamProcessor}{}\section{G\+Mapping\+:\+:Grid\+Slam\+Processor Class Reference}
+\label{classGMapping_1_1GridSlamProcessor}\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+
+
+{\ttfamily \#include $<$gridslamprocessor.\+h$>$}
+
+
+
+Inheritance diagram for G\+Mapping\+:\+:Grid\+Slam\+Processor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{classGMapping_1_1GridSlamProcessor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for G\+Mapping\+:\+:Grid\+Slam\+Processor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGMapping_1_1GridSlamProcessor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structGMapping_1_1GridSlamProcessor_1_1Particle}{Particle}
+\item 
+struct \hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode}{T\+Node}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a5992af06fd86724fbdc9471b2780ab49}\label{classGMapping_1_1GridSlamProcessor_a5992af06fd86724fbdc9471b2780ab49}} 
+typedef std\+::vector$<$ \hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode}{Grid\+Slam\+Processor\+::\+T\+Node} $\ast$ $>$ {\bfseries T\+Node\+Vector}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a2c477fefb94357e8a6951e1e4786935e}\label{classGMapping_1_1GridSlamProcessor_a2c477fefb94357e8a6951e1e4786935e}} 
+typedef std\+::deque$<$ \hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode}{Grid\+Slam\+Processor\+::\+T\+Node} $\ast$ $>$ {\bfseries T\+Node\+Deque}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_acce61eef3666984121227234e376b8df}\label{classGMapping_1_1GridSlamProcessor_acce61eef3666984121227234e376b8df}} 
+typedef std\+::vector$<$ \hyperlink{structGMapping_1_1GridSlamProcessor_1_1Particle}{Particle} $>$ {\bfseries Particle\+Vector}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_a736f647e15e7b3e5f853920beb7b2b80}{Grid\+Slam\+Processor} ()
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_acccb98ea4c54b844acf14d7ec979e8a8}{Grid\+Slam\+Processor} (std\+::ostream \&info\+Str)
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor}{Grid\+Slam\+Processor} $\ast$ \hyperlink{classGMapping_1_1GridSlamProcessor_a2e5270f6e87161189f19e5880db792ca}{clone} () const
+\item 
+virtual \hyperlink{classGMapping_1_1GridSlamProcessor_a5cc821f920af1f0e5b6f6c06a5281d35}{$\sim$\+Grid\+Slam\+Processor} ()
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a4277d04a56f1d03deecddcd3f62bf58d}\label{classGMapping_1_1GridSlamProcessor_a4277d04a56f1d03deecddcd3f62bf58d}} 
+void {\bfseries set\+Sensor\+Map} (const Sensor\+Map \&smap)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a0993feeb34469143808a6ff2d9d1ae6b}\label{classGMapping_1_1GridSlamProcessor_a0993feeb34469143808a6ff2d9d1ae6b}} 
+void {\bfseries init} (unsigned int size, double xmin, double ymin, double xmax, double ymax, double delta, \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} initial\+Pose=\hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point}(0, 0, 0))
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_ac015894484817bd962b0990fa64abfe4}\label{classGMapping_1_1GridSlamProcessor_ac015894484817bd962b0990fa64abfe4}} 
+void {\bfseries set\+Matching\+Parameters} (double urange, double range, double sigma, int kernsize, double lopt, double aopt, int iterations, double likelihood\+Sigma=1, double likelihood\+Gain=1, unsigned int likelihood\+Skip=0)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_af5c4b7f2992f1d11b2e373dbd410cab2}\label{classGMapping_1_1GridSlamProcessor_af5c4b7f2992f1d11b2e373dbd410cab2}} 
+void {\bfseries set\+Motion\+Model\+Parameters} (double srr, double srt, double str, double stt)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a82a12db62b99cf2f0cd3f475c81af77f}\label{classGMapping_1_1GridSlamProcessor_a82a12db62b99cf2f0cd3f475c81af77f}} 
+void {\bfseries set\+Update\+Distances} (double linear, double angular, double resample\+Threshold)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a37b6e3cfceeae5b20fd34888551464e4}\label{classGMapping_1_1GridSlamProcessor_a37b6e3cfceeae5b20fd34888551464e4}} 
+void {\bfseries set\+Update\+Period} (double p)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_ae95960a9452ea93a6002a92ff8cd4777}\label{classGMapping_1_1GridSlamProcessor_ae95960a9452ea93a6002a92ff8cd4777}} 
+void {\bfseries process\+True\+Pos} (const \hyperlink{classGMapping_1_1OdometryReading}{Odometry\+Reading} \&odometry)
+\item 
+bool \hyperlink{classGMapping_1_1GridSlamProcessor_a34c7f216947ee4c8ac05d5a53366aa5d}{process\+Scan} (const \hyperlink{classGMapping_1_1RangeReading}{Range\+Reading} \&reading, int adapt\+Particles=0)
+\item 
+T\+Node\+Vector \hyperlink{classGMapping_1_1GridSlamProcessor_a78fbf89b86513284f191d6c96755ffcf}{get\+Trajectories} () const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a9f3ed3d072d48b81b5abb76a3dd848b6}\label{classGMapping_1_1GridSlamProcessor_a9f3ed3d072d48b81b5abb76a3dd848b6}} 
+void {\bfseries integrate\+Scan\+Sequence} (\hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode}{T\+Node} $\ast$node)
+\item 
+std\+::ofstream \& \hyperlink{classGMapping_1_1GridSlamProcessor_a4cd45d059a6cc1b82cb7688addccfd29}{output\+Stream} ()
+\item 
+std\+::ostream \& \hyperlink{classGMapping_1_1GridSlamProcessor_ae7be39c0e2a9cea422e1a76c96a407b6}{info\+Stream} ()
+\item 
+const Particle\+Vector \& \hyperlink{classGMapping_1_1GridSlamProcessor_ae6ed37b49322fa55dc65a53f737188d3}{get\+Particles} () const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_aa3ce119ab73a7bcddca24b031fe61fa4}\label{classGMapping_1_1GridSlamProcessor_aa3ce119ab73a7bcddca24b031fe61fa4}} 
+const std\+::vector$<$ unsigned int $>$ \& {\bfseries get\+Indexes} () const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_ab79f70268a5facacc079748b0bc069b7}\label{classGMapping_1_1GridSlamProcessor_ab79f70268a5facacc079748b0bc069b7}} 
+int {\bfseries get\+Best\+Particle\+Index} () const
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a2d39e20b20691b27676d36273b91a69e}\label{classGMapping_1_1GridSlamProcessor_a2d39e20b20691b27676d36273b91a69e}} 
+virtual void {\bfseries on\+Odometry\+Update} ()
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_ae12e8c9b89dcb7f571464f5d79010339}\label{classGMapping_1_1GridSlamProcessor_ae12e8c9b89dcb7f571464f5d79010339}} 
+virtual void {\bfseries on\+Resample\+Update} ()
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a877081a40963db2b11e90eb894ff207a}\label{classGMapping_1_1GridSlamProcessor_a877081a40963db2b11e90eb894ff207a}} 
+virtual void {\bfseries on\+Scanmatch\+Update} ()
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_a59fd57518b8010bdf60972b239067f19}{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}, double, laser\+Max\+Range, protected, public, public)
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_a76a51cf2adbc8b4ff976d94b1c7d6e91}{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}, double, usable\+Range, protected, public, public)
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_a1a4b79434cb2b998ebeecdf84bec85c5}{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}, double, gaussian\+Sigma, protected, public, public)
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_a0ca266215482753f991e702f222e5f4b}{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}, double, likelihood\+Sigma, protected, public, public)
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_abe193f91a1ddcdf68cf65284217c64d8}{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}, int, kernel\+Size, protected, public, public)
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_a2d7ed8bd432b4e8fd2f415536f48231d}{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}, double, opt\+Angular\+Delta, protected, public, public)
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_ab1d5ded4e425ece05d38a98fbe0a8b2c}{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}, double, opt\+Linear\+Delta, protected, public, public)
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_a52575a11c089158b1a37e74ead526da9}{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}, unsigned int, opt\+Recursive\+Iterations, protected, public, public)
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_a600cd2d77f3662e3c4c6c241be4aaaac}{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}, unsigned int, likelihood\+Skip, protected, public, public)
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_a61ebeb294126d9081b8cb099fc60c6b0}{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}, double, llsamplerange, protected, public, public)
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_ab6234158b112bfd2aba9ce5a063eff78}{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}, double, lasamplerange, protected, public, public)
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_a7a491940692ed37326fc746e27c687bc}{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}, double, llsamplestep, protected, public, public)
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_ae3fb37cdec3e49f4a74d7e5adbeaed75}{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}, double, lasamplestep, protected, public, public)
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_a375b3327975b1d8de93d5b8c4c494463}{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}, bool, generate\+Map, protected, public, public)
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_ad7e50913d07e1003d2fb97b40b3768aa}{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}, bool, enlarge\+Step, protected, public, public)
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_a02a3a4462d3e5f35e746a789f0d9674c}{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}, \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point}, laser\+Pose, protected, public, public)
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_a5dca255f4b499a703a002715fd70828e}{S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (\hyperlink{classGMapping_1_1GridSlamProcessor_ae1fa20e9679abdbc23784e2dc17194b5}{m\+\_\+motion\+Model}, double, srr, protected, public, public)
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_a10f9bff87947ec28aedae11a3ec97f3d}{S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (\hyperlink{classGMapping_1_1GridSlamProcessor_ae1fa20e9679abdbc23784e2dc17194b5}{m\+\_\+motion\+Model}, double, srt, protected, public, public)
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_a8cb558f4aa4f6f57f2173a0ac8f63bc1}{S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (\hyperlink{classGMapping_1_1GridSlamProcessor_ae1fa20e9679abdbc23784e2dc17194b5}{m\+\_\+motion\+Model}, double, str, protected, public, public)
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_a272f53828c2033879c364de540d1e0c0}{S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (\hyperlink{classGMapping_1_1GridSlamProcessor_ae1fa20e9679abdbc23784e2dc17194b5}{m\+\_\+motion\+Model}, double, stt, protected, public, public)
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_aef1af48fa8542ceff98b81e1d0f6e039}{P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (double, minimum\+Score, protected, public, public)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGMapping_1_1ScanMatcher}{Scan\+Matcher} \hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_a7800b02d50b6b5d7c8b226e3c361ca2c}{Grid\+Slam\+Processor} (const \hyperlink{classGMapping_1_1GridSlamProcessor}{Grid\+Slam\+Processor} \&gsp)
+\item 
+\hyperlink{classGMapping_1_1GridSlamProcessor_a9669d7233fda1a872ee2e7bfd58422f6}{P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (double, resample\+Threshold, protected, public, public)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_aafaee08750396914c0359cd533a3a32e}\label{classGMapping_1_1GridSlamProcessor_aafaee08750396914c0359cd533a3a32e}} 
+{\bfseries P\+A\+R\+A\+M\+\_\+\+G\+ET} (double, neff, protected, public)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a5b55357e7c755d1814641bd9277ff67f}\label{classGMapping_1_1GridSlamProcessor_a5b55357e7c755d1814641bd9277ff67f}} 
+{\bfseries P\+A\+R\+A\+M\+\_\+\+G\+ET} (double, xmin, protected, public)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a225d3c8e74e1a533a49a18664939f9a1}\label{classGMapping_1_1GridSlamProcessor_a225d3c8e74e1a533a49a18664939f9a1}} 
+{\bfseries P\+A\+R\+A\+M\+\_\+\+G\+ET} (double, ymin, protected, public)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a9705463bbdbfc1adfaadc9d63de57037}\label{classGMapping_1_1GridSlamProcessor_a9705463bbdbfc1adfaadc9d63de57037}} 
+{\bfseries P\+A\+R\+A\+M\+\_\+\+G\+ET} (double, xmax, protected, public)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_aa42c6dbd72076e79f858d096e8fa5645}\label{classGMapping_1_1GridSlamProcessor_aa42c6dbd72076e79f858d096e8fa5645}} 
+{\bfseries P\+A\+R\+A\+M\+\_\+\+G\+ET} (double, ymax, protected, public)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a24de55fb12548d080071138c087eb275}\label{classGMapping_1_1GridSlamProcessor_a24de55fb12548d080071138c087eb275}} 
+{\bfseries P\+A\+R\+A\+M\+\_\+\+G\+ET} (double, delta, protected, public)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a83cecf60f47fc3c3f3142e67fd80e59d}\label{classGMapping_1_1GridSlamProcessor_a83cecf60f47fc3c3f3142e67fd80e59d}} 
+{\bfseries P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (double, reg\+Score, protected, public, public)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a98219e814eccc6bb63c1c69f9fa0447f}\label{classGMapping_1_1GridSlamProcessor_a98219e814eccc6bb63c1c69f9fa0447f}} 
+{\bfseries P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (double, crit\+Score, protected, public, public)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a61d3c3d7d5226a7ae92c365d1f3652b3}\label{classGMapping_1_1GridSlamProcessor_a61d3c3d7d5226a7ae92c365d1f3652b3}} 
+{\bfseries P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (double, max\+Move, protected, public, public)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a754c520cbb975790c970ca596e8a4b1f}\label{classGMapping_1_1GridSlamProcessor_a754c520cbb975790c970ca596e8a4b1f}} 
+{\bfseries P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (double, linear\+Threshold\+Distance, protected, public, public)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a77438894a9614deb0fdf3829ce6557ee}\label{classGMapping_1_1GridSlamProcessor_a77438894a9614deb0fdf3829ce6557ee}} 
+{\bfseries P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (double, angular\+Threshold\+Distance, protected, public, public)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_ac86d3cc3827574c10f1169cb63323d23}\label{classGMapping_1_1GridSlamProcessor_ac86d3cc3827574c10f1169cb63323d23}} 
+{\bfseries P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET} (double, obs\+Sigma\+Gain, protected, public, public)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{classGMapping_1_1GridSlamProcessor_aec30b4ee3a767c9f50bb95236851a1be}{m\+\_\+beams}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a3f40a117057427e725aa92739dbe2480}\label{classGMapping_1_1GridSlamProcessor_a3f40a117057427e725aa92739dbe2480}} 
+double {\bfseries last\+\_\+update\+\_\+time\+\_\+}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a83d163ab15cf15856ea69507ec87904a}\label{classGMapping_1_1GridSlamProcessor_a83d163ab15cf15856ea69507ec87904a}} 
+double {\bfseries period\+\_\+}
+\item 
+Particle\+Vector \hyperlink{classGMapping_1_1GridSlamProcessor_a67c2ade1a066269de12fe382999f2905}{m\+\_\+particles}
+\item 
+std\+::vector$<$ unsigned int $>$ \hyperlink{classGMapping_1_1GridSlamProcessor_a79cee7069bb938f3b9d6d35b42b48ec6}{m\+\_\+indexes}
+\item 
+std\+::vector$<$ double $>$ \hyperlink{classGMapping_1_1GridSlamProcessor_a39e71ee439dde6ca9ccd2929cf12551f}{m\+\_\+weights}
+\item 
+\hyperlink{structGMapping_1_1MotionModel}{Motion\+Model} \hyperlink{classGMapping_1_1GridSlamProcessor_ae1fa20e9679abdbc23784e2dc17194b5}{m\+\_\+motion\+Model}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a1c7e0a4fec2a31769f27fd17a9cfac3d}\label{classGMapping_1_1GridSlamProcessor_a1c7e0a4fec2a31769f27fd17a9cfac3d}} 
+int {\bfseries m\+\_\+count}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a50a21e3936bb5c122a9e4b8039be9bc9}\label{classGMapping_1_1GridSlamProcessor_a50a21e3936bb5c122a9e4b8039be9bc9}} 
+int {\bfseries m\+\_\+reading\+Count}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_aeddf8ebf9784e818d93a4c5bb94e3c0d}\label{classGMapping_1_1GridSlamProcessor_aeddf8ebf9784e818d93a4c5bb94e3c0d}} 
+\hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} {\bfseries m\+\_\+last\+Part\+Pose}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a242df41618ccce684a01229c3c752dc9}\label{classGMapping_1_1GridSlamProcessor_a242df41618ccce684a01229c3c752dc9}} 
+\hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} {\bfseries m\+\_\+odo\+Pose}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a4435f10953b33bff663a6a7b21acb6cd}\label{classGMapping_1_1GridSlamProcessor_a4435f10953b33bff663a6a7b21acb6cd}} 
+\hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} {\bfseries m\+\_\+pose}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a94ba410742ad6712b707e908e53da5e1}\label{classGMapping_1_1GridSlamProcessor_a94ba410742ad6712b707e908e53da5e1}} 
+double {\bfseries m\+\_\+linear\+Distance}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_aeede1ad148cba7c6080da5d8f00d4ac6}\label{classGMapping_1_1GridSlamProcessor_aeede1ad148cba7c6080da5d8f00d4ac6}} 
+double {\bfseries m\+\_\+angular\+Distance}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a25d322edaf8cdbc585493934918b3a6a}\label{classGMapping_1_1GridSlamProcessor_a25d322edaf8cdbc585493934918b3a6a}} 
+std\+::ofstream {\bfseries m\+\_\+output\+Stream}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a7ad909f978d96737b5a336a15c65384c}\label{classGMapping_1_1GridSlamProcessor_a7ad909f978d96737b5a336a15c65384c}} 
+std\+::ostream \& {\bfseries m\+\_\+info\+Stream}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class defines the basic Grid\+Fast\+S\+L\+AM algorithm. It implements a rao blackwellized particle filter. Each particle has its own map and robot pose.~\newline
+ This implementation works as follows\+: each time a new pair odometry/laser reading is received, the particle\textquotesingle{}s robot pose is updated according to the motion model. This pose is subsequently used for initalizing a scan matching algorithm. The scanmatcher performs a local optimization for each particle. It is initialized with the pose drawn from the motion model, and the pose is corrected according to the each particle map.~\newline
+ In order to avoid unnecessary computation the filter state is updated only when the robot moves more than a given threshold. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a736f647e15e7b3e5f853920beb7b2b80}\label{classGMapping_1_1GridSlamProcessor_a736f647e15e7b3e5f853920beb7b2b80}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!Grid\+Slam\+Processor@{Grid\+Slam\+Processor}}
+\index{Grid\+Slam\+Processor@{Grid\+Slam\+Processor}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{Grid\+Slam\+Processor()}{GridSlamProcessor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Grid\+Slam\+Processor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs a \hyperlink{classGMapping_1_1GridSlamProcessor}{Grid\+Slam\+Processor}, initialized with the default parameters \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_acccb98ea4c54b844acf14d7ec979e8a8}\label{classGMapping_1_1GridSlamProcessor_acccb98ea4c54b844acf14d7ec979e8a8}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!Grid\+Slam\+Processor@{Grid\+Slam\+Processor}}
+\index{Grid\+Slam\+Processor@{Grid\+Slam\+Processor}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{Grid\+Slam\+Processor()}{GridSlamProcessor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Grid\+Slam\+Processor (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{info\+Str }\end{DoxyParamCaption})}
+
+Constructs a \hyperlink{classGMapping_1_1GridSlamProcessor}{Grid\+Slam\+Processor}, whose output is routed to a stream. 
+\begin{DoxyParams}{Parameters}
+{\em info\+Str} & the output stream \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a5cc821f920af1f0e5b6f6c06a5281d35}\label{classGMapping_1_1GridSlamProcessor_a5cc821f920af1f0e5b6f6c06a5281d35}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!````~Grid\+Slam\+Processor@{$\sim$\+Grid\+Slam\+Processor}}
+\index{````~Grid\+Slam\+Processor@{$\sim$\+Grid\+Slam\+Processor}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{$\sim$\+Grid\+Slam\+Processor()}{~GridSlamProcessor()}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::$\sim$\+Grid\+Slam\+Processor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Deleted the gridslamprocessor \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a7800b02d50b6b5d7c8b226e3c361ca2c}\label{classGMapping_1_1GridSlamProcessor_a7800b02d50b6b5d7c8b226e3c361ca2c}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!Grid\+Slam\+Processor@{Grid\+Slam\+Processor}}
+\index{Grid\+Slam\+Processor@{Grid\+Slam\+Processor}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{Grid\+Slam\+Processor()}{GridSlamProcessor()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Grid\+Slam\+Processor (\begin{DoxyParamCaption}\item[{const \hyperlink{classGMapping_1_1GridSlamProcessor}{Grid\+Slam\+Processor} \&}]{gsp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Copy constructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a2e5270f6e87161189f19e5880db792ca}\label{classGMapping_1_1GridSlamProcessor_a2e5270f6e87161189f19e5880db792ca}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!clone@{clone}}
+\index{clone@{clone}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \hyperlink{classGMapping_1_1GridSlamProcessor}{Grid\+Slam\+Processor} $\ast$ G\+Mapping\+::\+Grid\+Slam\+Processor\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+a deep copy of the grid slam processor with all the internal structures. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_ae6ed37b49322fa55dc65a53f737188d3}\label{classGMapping_1_1GridSlamProcessor_ae6ed37b49322fa55dc65a53f737188d3}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!get\+Particles@{get\+Particles}}
+\index{get\+Particles@{get\+Particles}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{get\+Particles()}{getParticles()}}
+{\footnotesize\ttfamily const Particle\+Vector\& G\+Mapping\+::\+Grid\+Slam\+Processor\+::get\+Particles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+the particles 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a78fbf89b86513284f191d6c96755ffcf}\label{classGMapping_1_1GridSlamProcessor_a78fbf89b86513284f191d6c96755ffcf}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!get\+Trajectories@{get\+Trajectories}}
+\index{get\+Trajectories@{get\+Trajectories}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{get\+Trajectories()}{getTrajectories()}}
+{\footnotesize\ttfamily Grid\+Slam\+Processor\+::\+T\+Node\+Vector G\+Mapping\+::\+Grid\+Slam\+Processor\+::get\+Trajectories (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+This method copies the state of the filter in a tree. The tree is represented through reversed pointers (each node has a pointer to its parent). The leafs are stored in a vector, whose size is the same as the number of particles. \begin{DoxyReturn}{Returns}
+the leafs of the tree 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_ae7be39c0e2a9cea422e1a76c96a407b6}\label{classGMapping_1_1GridSlamProcessor_ae7be39c0e2a9cea422e1a76c96a407b6}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!info\+Stream@{info\+Stream}}
+\index{info\+Stream@{info\+Stream}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{info\+Stream()}{infoStream()}}
+{\footnotesize\ttfamily std\+::ostream \& G\+Mapping\+::\+Grid\+Slam\+Processor\+::info\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+the stream used for writing the info/debug messages \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a59fd57518b8010bdf60972b239067f19}\label{classGMapping_1_1GridSlamProcessor_a59fd57518b8010bdf60972b239067f19}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}}
+\index{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+E\+T()}{MEMBER\_PARAM\_SET\_GET()}\hspace{0.1cm}{\footnotesize\ttfamily [1/16]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET (\begin{DoxyParamCaption}\item[{\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}}]{,  }\item[{double}]{,  }\item[{laser\+Max\+Range}]{,  }\item[{protected}]{,  }\item[{public}]{,  }\item[{public}]{ }\end{DoxyParamCaption})}
+
+the maxrange of the laser to consider \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a76a51cf2adbc8b4ff976d94b1c7d6e91}\label{classGMapping_1_1GridSlamProcessor_a76a51cf2adbc8b4ff976d94b1c7d6e91}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}}
+\index{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+E\+T()}{MEMBER\_PARAM\_SET\_GET()}\hspace{0.1cm}{\footnotesize\ttfamily [2/16]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET (\begin{DoxyParamCaption}\item[{\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}}]{,  }\item[{double}]{,  }\item[{usable\+Range}]{,  }\item[{protected}]{,  }\item[{public}]{,  }\item[{public}]{ }\end{DoxyParamCaption})}
+
+the maximum usable range of the laser. A beam is cropped to this value. \mbox{[}scanmatcher\mbox{]} \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a1a4b79434cb2b998ebeecdf84bec85c5}\label{classGMapping_1_1GridSlamProcessor_a1a4b79434cb2b998ebeecdf84bec85c5}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}}
+\index{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+E\+T()}{MEMBER\_PARAM\_SET\_GET()}\hspace{0.1cm}{\footnotesize\ttfamily [3/16]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET (\begin{DoxyParamCaption}\item[{\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}}]{,  }\item[{double}]{,  }\item[{gaussian\+Sigma}]{,  }\item[{protected}]{,  }\item[{public}]{,  }\item[{public}]{ }\end{DoxyParamCaption})}
+
+The sigma used by the greedy endpoint matching. \mbox{[}scanmatcher\mbox{]} \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a0ca266215482753f991e702f222e5f4b}\label{classGMapping_1_1GridSlamProcessor_a0ca266215482753f991e702f222e5f4b}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}}
+\index{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+E\+T()}{MEMBER\_PARAM\_SET\_GET()}\hspace{0.1cm}{\footnotesize\ttfamily [4/16]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET (\begin{DoxyParamCaption}\item[{\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}}]{,  }\item[{double}]{,  }\item[{likelihood\+Sigma}]{,  }\item[{protected}]{,  }\item[{public}]{,  }\item[{public}]{ }\end{DoxyParamCaption})}
+
+The sigma of a beam used for likelihood computation \mbox{[}scanmatcher\mbox{]} \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_abe193f91a1ddcdf68cf65284217c64d8}\label{classGMapping_1_1GridSlamProcessor_abe193f91a1ddcdf68cf65284217c64d8}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}}
+\index{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+E\+T()}{MEMBER\_PARAM\_SET\_GET()}\hspace{0.1cm}{\footnotesize\ttfamily [5/16]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET (\begin{DoxyParamCaption}\item[{\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}}]{,  }\item[{int}]{,  }\item[{kernel\+Size}]{,  }\item[{protected}]{,  }\item[{public}]{,  }\item[{public}]{ }\end{DoxyParamCaption})}
+
+The kernel in which to look for a correspondence\mbox{[}scanmatcher\mbox{]} \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a2d7ed8bd432b4e8fd2f415536f48231d}\label{classGMapping_1_1GridSlamProcessor_a2d7ed8bd432b4e8fd2f415536f48231d}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}}
+\index{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+E\+T()}{MEMBER\_PARAM\_SET\_GET()}\hspace{0.1cm}{\footnotesize\ttfamily [6/16]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET (\begin{DoxyParamCaption}\item[{\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}}]{,  }\item[{double}]{,  }\item[{opt\+Angular\+Delta}]{,  }\item[{protected}]{,  }\item[{public}]{,  }\item[{public}]{ }\end{DoxyParamCaption})}
+
+The optimization step in rotation \mbox{[}scanmatcher\mbox{]} \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_ab1d5ded4e425ece05d38a98fbe0a8b2c}\label{classGMapping_1_1GridSlamProcessor_ab1d5ded4e425ece05d38a98fbe0a8b2c}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}}
+\index{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+E\+T()}{MEMBER\_PARAM\_SET\_GET()}\hspace{0.1cm}{\footnotesize\ttfamily [7/16]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET (\begin{DoxyParamCaption}\item[{\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}}]{,  }\item[{double}]{,  }\item[{opt\+Linear\+Delta}]{,  }\item[{protected}]{,  }\item[{public}]{,  }\item[{public}]{ }\end{DoxyParamCaption})}
+
+The optimization step in translation \mbox{[}scanmatcher\mbox{]} \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a52575a11c089158b1a37e74ead526da9}\label{classGMapping_1_1GridSlamProcessor_a52575a11c089158b1a37e74ead526da9}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}}
+\index{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+E\+T()}{MEMBER\_PARAM\_SET\_GET()}\hspace{0.1cm}{\footnotesize\ttfamily [8/16]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET (\begin{DoxyParamCaption}\item[{\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}}]{,  }\item[{unsigned}]{int,  }\item[{opt\+Recursive\+Iterations}]{,  }\item[{protected}]{,  }\item[{public}]{,  }\item[{public}]{ }\end{DoxyParamCaption})}
+
+The number of iterations of the scanmatcher \mbox{[}scanmatcher\mbox{]} \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a600cd2d77f3662e3c4c6c241be4aaaac}\label{classGMapping_1_1GridSlamProcessor_a600cd2d77f3662e3c4c6c241be4aaaac}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}}
+\index{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+E\+T()}{MEMBER\_PARAM\_SET\_GET()}\hspace{0.1cm}{\footnotesize\ttfamily [9/16]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET (\begin{DoxyParamCaption}\item[{\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}}]{,  }\item[{unsigned}]{int,  }\item[{likelihood\+Skip}]{,  }\item[{protected}]{,  }\item[{public}]{,  }\item[{public}]{ }\end{DoxyParamCaption})}
+
+the beams to skip for computing the likelihood (consider a beam every likelihood\+Skip) \mbox{[}scanmatcher\mbox{]} \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a61ebeb294126d9081b8cb099fc60c6b0}\label{classGMapping_1_1GridSlamProcessor_a61ebeb294126d9081b8cb099fc60c6b0}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}}
+\index{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+E\+T()}{MEMBER\_PARAM\_SET\_GET()}\hspace{0.1cm}{\footnotesize\ttfamily [10/16]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET (\begin{DoxyParamCaption}\item[{\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}}]{,  }\item[{double}]{,  }\item[{llsamplerange}]{,  }\item[{protected}]{,  }\item[{public}]{,  }\item[{public}]{ }\end{DoxyParamCaption})}
+
+translational sampling range for the likelihood \mbox{[}scanmatcher\mbox{]} \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_ab6234158b112bfd2aba9ce5a063eff78}\label{classGMapping_1_1GridSlamProcessor_ab6234158b112bfd2aba9ce5a063eff78}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}}
+\index{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+E\+T()}{MEMBER\_PARAM\_SET\_GET()}\hspace{0.1cm}{\footnotesize\ttfamily [11/16]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET (\begin{DoxyParamCaption}\item[{\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}}]{,  }\item[{double}]{,  }\item[{lasamplerange}]{,  }\item[{protected}]{,  }\item[{public}]{,  }\item[{public}]{ }\end{DoxyParamCaption})}
+
+angular sampling range for the likelihood \mbox{[}scanmatcher\mbox{]} \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a7a491940692ed37326fc746e27c687bc}\label{classGMapping_1_1GridSlamProcessor_a7a491940692ed37326fc746e27c687bc}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}}
+\index{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+E\+T()}{MEMBER\_PARAM\_SET\_GET()}\hspace{0.1cm}{\footnotesize\ttfamily [12/16]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET (\begin{DoxyParamCaption}\item[{\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}}]{,  }\item[{double}]{,  }\item[{llsamplestep}]{,  }\item[{protected}]{,  }\item[{public}]{,  }\item[{public}]{ }\end{DoxyParamCaption})}
+
+translational sampling range for the likelihood \mbox{[}scanmatcher\mbox{]} \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_ae3fb37cdec3e49f4a74d7e5adbeaed75}\label{classGMapping_1_1GridSlamProcessor_ae3fb37cdec3e49f4a74d7e5adbeaed75}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}}
+\index{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+E\+T()}{MEMBER\_PARAM\_SET\_GET()}\hspace{0.1cm}{\footnotesize\ttfamily [13/16]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET (\begin{DoxyParamCaption}\item[{\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}}]{,  }\item[{double}]{,  }\item[{lasamplestep}]{,  }\item[{protected}]{,  }\item[{public}]{,  }\item[{public}]{ }\end{DoxyParamCaption})}
+
+angular sampling step for the likelihood \mbox{[}scanmatcher\mbox{]} \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a375b3327975b1d8de93d5b8c4c494463}\label{classGMapping_1_1GridSlamProcessor_a375b3327975b1d8de93d5b8c4c494463}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}}
+\index{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+E\+T()}{MEMBER\_PARAM\_SET\_GET()}\hspace{0.1cm}{\footnotesize\ttfamily [14/16]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET (\begin{DoxyParamCaption}\item[{\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}}]{,  }\item[{bool}]{,  }\item[{generate\+Map}]{,  }\item[{protected}]{,  }\item[{public}]{,  }\item[{public}]{ }\end{DoxyParamCaption})}
+
+generate an accupancy grid map \mbox{[}scanmatcher\mbox{]} \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_ad7e50913d07e1003d2fb97b40b3768aa}\label{classGMapping_1_1GridSlamProcessor_ad7e50913d07e1003d2fb97b40b3768aa}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}}
+\index{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+E\+T()}{MEMBER\_PARAM\_SET\_GET()}\hspace{0.1cm}{\footnotesize\ttfamily [15/16]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET (\begin{DoxyParamCaption}\item[{\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}}]{,  }\item[{bool}]{,  }\item[{enlarge\+Step}]{,  }\item[{protected}]{,  }\item[{public}]{,  }\item[{public}]{ }\end{DoxyParamCaption})}
+
+enlarge the map when the robot goes out of the boundaries \mbox{[}scanmatcher\mbox{]} \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a02a3a4462d3e5f35e746a789f0d9674c}\label{classGMapping_1_1GridSlamProcessor_a02a3a4462d3e5f35e746a789f0d9674c}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}}
+\index{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+E\+T()}{MEMBER\_PARAM\_SET\_GET()}\hspace{0.1cm}{\footnotesize\ttfamily [16/16]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+M\+E\+M\+B\+E\+R\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET (\begin{DoxyParamCaption}\item[{\hyperlink{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}{m\+\_\+matcher}}]{,  }\item[{\hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point}}]{,  }\item[{laser\+Pose}]{,  }\item[{protected}]{,  }\item[{public}]{,  }\item[{public}]{ }\end{DoxyParamCaption})}
+
+pose of the laser wrt the robot \mbox{[}scanmatcher\mbox{]} \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a4cd45d059a6cc1b82cb7688addccfd29}\label{classGMapping_1_1GridSlamProcessor_a4cd45d059a6cc1b82cb7688addccfd29}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!output\+Stream@{output\+Stream}}
+\index{output\+Stream@{output\+Stream}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{output\+Stream()}{outputStream()}}
+{\footnotesize\ttfamily std\+::ofstream \& G\+Mapping\+::\+Grid\+Slam\+Processor\+::output\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+the stream used for writing the output of the algorithm \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_aef1af48fa8542ceff98b81e1d0f6e039}\label{classGMapping_1_1GridSlamProcessor_aef1af48fa8542ceff98b81e1d0f6e039}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}}
+\index{P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+E\+T()}{PARAM\_SET\_GET()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET (\begin{DoxyParamCaption}\item[{double}]{,  }\item[{minimum\+Score}]{,  }\item[{protected}]{,  }\item[{public}]{,  }\item[{public}]{ }\end{DoxyParamCaption})}
+
+minimum score for considering the outcome of the scanmatching good \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a9669d7233fda1a872ee2e7bfd58422f6}\label{classGMapping_1_1GridSlamProcessor_a9669d7233fda1a872ee2e7bfd58422f6}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}}
+\index{P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+E\+T()}{PARAM\_SET\_GET()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET (\begin{DoxyParamCaption}\item[{double}]{,  }\item[{resample\+Threshold}]{,  }\item[{protected}]{,  }\item[{public}]{,  }\item[{public}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+this sets the neff based resampling threshold \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a34c7f216947ee4c8ac05d5a53366aa5d}\label{classGMapping_1_1GridSlamProcessor_a34c7f216947ee4c8ac05d5a53366aa5d}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!process\+Scan@{process\+Scan}}
+\index{process\+Scan@{process\+Scan}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{process\+Scan()}{processScan()}}
+{\footnotesize\ttfamily bool G\+Mapping\+::\+Grid\+Slam\+Processor\+::process\+Scan (\begin{DoxyParamCaption}\item[{const \hyperlink{classGMapping_1_1RangeReading}{Range\+Reading} \&}]{reading,  }\item[{int}]{adapt\+Particles = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+retireve the position from the reading, and compute the odometry \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a5dca255f4b499a703a002715fd70828e}\label{classGMapping_1_1GridSlamProcessor_a5dca255f4b499a703a002715fd70828e}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}}
+\index{S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+E\+T()}{STRUCT\_PARAM\_SET\_GET()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET (\begin{DoxyParamCaption}\item[{\hyperlink{classGMapping_1_1GridSlamProcessor_ae1fa20e9679abdbc23784e2dc17194b5}{m\+\_\+motion\+Model}}]{,  }\item[{double}]{,  }\item[{srr}]{,  }\item[{protected}]{,  }\item[{public}]{,  }\item[{public}]{ }\end{DoxyParamCaption})}
+
+odometry error in translation as a function of translation (rho/rho) \mbox{[}motionmodel\mbox{]} \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a10f9bff87947ec28aedae11a3ec97f3d}\label{classGMapping_1_1GridSlamProcessor_a10f9bff87947ec28aedae11a3ec97f3d}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}}
+\index{S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+E\+T()}{STRUCT\_PARAM\_SET\_GET()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET (\begin{DoxyParamCaption}\item[{\hyperlink{classGMapping_1_1GridSlamProcessor_ae1fa20e9679abdbc23784e2dc17194b5}{m\+\_\+motion\+Model}}]{,  }\item[{double}]{,  }\item[{srt}]{,  }\item[{protected}]{,  }\item[{public}]{,  }\item[{public}]{ }\end{DoxyParamCaption})}
+
+odometry error in translation as a function of rotation (rho/theta) \mbox{[}motionmodel\mbox{]} \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a8cb558f4aa4f6f57f2173a0ac8f63bc1}\label{classGMapping_1_1GridSlamProcessor_a8cb558f4aa4f6f57f2173a0ac8f63bc1}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}}
+\index{S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+E\+T()}{STRUCT\_PARAM\_SET\_GET()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET (\begin{DoxyParamCaption}\item[{\hyperlink{classGMapping_1_1GridSlamProcessor_ae1fa20e9679abdbc23784e2dc17194b5}{m\+\_\+motion\+Model}}]{,  }\item[{double}]{,  }\item[{str}]{,  }\item[{protected}]{,  }\item[{public}]{,  }\item[{public}]{ }\end{DoxyParamCaption})}
+
+odometry error in rotation as a function of translation (theta/rho) \mbox{[}motionmodel\mbox{]} \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a272f53828c2033879c364de540d1e0c0}\label{classGMapping_1_1GridSlamProcessor_a272f53828c2033879c364de540d1e0c0}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}}
+\index{S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET@{S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+E\+T()}{STRUCT\_PARAM\_SET\_GET()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+S\+T\+R\+U\+C\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+E\+T\+\_\+\+G\+ET (\begin{DoxyParamCaption}\item[{\hyperlink{classGMapping_1_1GridSlamProcessor_ae1fa20e9679abdbc23784e2dc17194b5}{m\+\_\+motion\+Model}}]{,  }\item[{double}]{,  }\item[{stt}]{,  }\item[{protected}]{,  }\item[{public}]{,  }\item[{public}]{ }\end{DoxyParamCaption})}
+
+odometry error in rotation as a function of rotation (theta/theta) \mbox{[}motionmodel\mbox{]} 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_aec30b4ee3a767c9f50bb95236851a1be}\label{classGMapping_1_1GridSlamProcessor_aec30b4ee3a767c9f50bb95236851a1be}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!m\+\_\+beams@{m\+\_\+beams}}
+\index{m\+\_\+beams@{m\+\_\+beams}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{m\+\_\+beams}{m\_beams}}
+{\footnotesize\ttfamily unsigned int G\+Mapping\+::\+Grid\+Slam\+Processor\+::m\+\_\+beams\hspace{0.3cm}{\ttfamily [protected]}}
+
+the laser beams \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a79cee7069bb938f3b9d6d35b42b48ec6}\label{classGMapping_1_1GridSlamProcessor_a79cee7069bb938f3b9d6d35b42b48ec6}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!m\+\_\+indexes@{m\+\_\+indexes}}
+\index{m\+\_\+indexes@{m\+\_\+indexes}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{m\+\_\+indexes}{m\_indexes}}
+{\footnotesize\ttfamily std\+::vector$<$unsigned int$>$ G\+Mapping\+::\+Grid\+Slam\+Processor\+::m\+\_\+indexes\hspace{0.3cm}{\ttfamily [protected]}}
+
+the particle indexes after resampling (internally used) \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}\label{classGMapping_1_1GridSlamProcessor_ac50952d259590c4aeba22eee4e6437f5}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!m\+\_\+matcher@{m\+\_\+matcher}}
+\index{m\+\_\+matcher@{m\+\_\+matcher}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{m\+\_\+matcher}{m\_matcher}}
+{\footnotesize\ttfamily \hyperlink{classGMapping_1_1ScanMatcher}{Scan\+Matcher} G\+Mapping\+::\+Grid\+Slam\+Processor\+::m\+\_\+matcher}
+
+the scanmatcher algorithm \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_ae1fa20e9679abdbc23784e2dc17194b5}\label{classGMapping_1_1GridSlamProcessor_ae1fa20e9679abdbc23784e2dc17194b5}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!m\+\_\+motion\+Model@{m\+\_\+motion\+Model}}
+\index{m\+\_\+motion\+Model@{m\+\_\+motion\+Model}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{m\+\_\+motion\+Model}{m\_motionModel}}
+{\footnotesize\ttfamily \hyperlink{structGMapping_1_1MotionModel}{Motion\+Model} G\+Mapping\+::\+Grid\+Slam\+Processor\+::m\+\_\+motion\+Model\hspace{0.3cm}{\ttfamily [protected]}}
+
+the motion model \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a67c2ade1a066269de12fe382999f2905}\label{classGMapping_1_1GridSlamProcessor_a67c2ade1a066269de12fe382999f2905}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!m\+\_\+particles@{m\+\_\+particles}}
+\index{m\+\_\+particles@{m\+\_\+particles}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{m\+\_\+particles}{m\_particles}}
+{\footnotesize\ttfamily Particle\+Vector G\+Mapping\+::\+Grid\+Slam\+Processor\+::m\+\_\+particles\hspace{0.3cm}{\ttfamily [protected]}}
+
+the particles \mbox{\Hypertarget{classGMapping_1_1GridSlamProcessor_a39e71ee439dde6ca9ccd2929cf12551f}\label{classGMapping_1_1GridSlamProcessor_a39e71ee439dde6ca9ccd2929cf12551f}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}!m\+\_\+weights@{m\+\_\+weights}}
+\index{m\+\_\+weights@{m\+\_\+weights}!G\+Mapping\+::\+Grid\+Slam\+Processor@{G\+Mapping\+::\+Grid\+Slam\+Processor}}
+\subsubsection{\texorpdfstring{m\+\_\+weights}{m\_weights}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ G\+Mapping\+::\+Grid\+Slam\+Processor\+::m\+\_\+weights\hspace{0.3cm}{\ttfamily [protected]}}
+
+the particle weights (internally used) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+openslam\+\_\+gmapping/include/gmapping/gridfastslam/gridslamprocessor.\+h\item 
+openslam\+\_\+gmapping/gridfastslam/gridslamprocessor.\+cpp\item 
+openslam\+\_\+gmapping/gridfastslam/gridslamprocessor\+\_\+tree.\+cpp\item 
+openslam\+\_\+gmapping/include/gmapping/gridfastslam/gridslamprocessor.\+hxx\end{DoxyCompactItemize}

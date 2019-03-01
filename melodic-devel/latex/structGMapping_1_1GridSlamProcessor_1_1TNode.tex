@@ -1,0 +1,133 @@
+\hypertarget{structGMapping_1_1GridSlamProcessor_1_1TNode}{}\section{G\+Mapping\+:\+:Grid\+Slam\+Processor\+:\+:T\+Node Struct Reference}
+\label{structGMapping_1_1GridSlamProcessor_1_1TNode}\index{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node}}
+
+
+{\ttfamily \#include $<$gridslamprocessor.\+h$>$}
+
+
+
+Collaboration diagram for G\+Mapping\+:\+:Grid\+Slam\+Processor\+:\+:T\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structGMapping_1_1GridSlamProcessor_1_1TNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode_a7742a4335c17d489467af9bbd21334ef}{T\+Node} (const \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} \&\hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode_a00ffad9f49ae467746aa211fbfaf4523}{pose}, double \hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode_ab30d02945ab4cba987bbc428f87b3028}{weight}, \hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode}{T\+Node} $\ast$\hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode_aa96443473844405f417fb8170b3d7243}{parent}=0, unsigned int \hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode_a4c15378fddd812b0376ceb81c43be3e0}{childs}=0)
+\item 
+\hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode_a22b5e02c6b9dc2139f63652d8b0d57c5}{$\sim$\+T\+Node} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} \hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode_a00ffad9f49ae467746aa211fbfaf4523}{pose}
+\item 
+double \hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode_ab30d02945ab4cba987bbc428f87b3028}{weight}
+\item 
+double \hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode_ab0c21a7a7fb16bd061f3b61cae8f55bd}{acc\+Weight}
+\item 
+\mbox{\Hypertarget{structGMapping_1_1GridSlamProcessor_1_1TNode_a8163d6ff4d930d1762f9029b9f7162b3}\label{structGMapping_1_1GridSlamProcessor_1_1TNode_a8163d6ff4d930d1762f9029b9f7162b3}} 
+double {\bfseries gweight}
+\item 
+\hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode}{T\+Node} $\ast$ \hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode_aa96443473844405f417fb8170b3d7243}{parent}
+\item 
+const \hyperlink{classGMapping_1_1RangeReading}{Range\+Reading} $\ast$ \hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode_a574dd0cc9f28e7feb3d85a1ddb544d06}{reading}
+\item 
+unsigned int \hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode_a4c15378fddd812b0376ceb81c43be3e0}{childs}
+\item 
+unsigned int \hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode_aa5aa2b0e4bea309de90270cd56a2bd78}{visit\+Counter}
+\item 
+bool \hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode_a0d10763653ac0630632259c8c1e48e42}{flag}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class defines the the node of reversed tree in which the trajectories are stored. Each node of a tree has a pointer to its parent and a counter indicating the number of childs of a node. The tree is updated in a way consistent with the operation performed on the particles. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structGMapping_1_1GridSlamProcessor_1_1TNode_a7742a4335c17d489467af9bbd21334ef}\label{structGMapping_1_1GridSlamProcessor_1_1TNode_a7742a4335c17d489467af9bbd21334ef}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node}!T\+Node@{T\+Node}}
+\index{T\+Node@{T\+Node}!G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node}}
+\subsubsection{\texorpdfstring{T\+Node()}{TNode()}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node\+::\+T\+Node (\begin{DoxyParamCaption}\item[{const \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} \&}]{pose,  }\item[{double}]{weight,  }\item[{\hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode}{T\+Node} $\ast$}]{parent = {\ttfamily 0},  }\item[{unsigned int}]{childs = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Constructs a node of the trajectory tree. 
+\begin{DoxyParams}{Parameters}
+{\em pose} & the pose of the robot in the trajectory \\
+\hline
+{\em weight} & the weight of the particle at that point in the trajectory \\
+\hline
+{\em acc\+Weight} & the cumulative weight of the particle \\
+\hline
+{\em parent} & the parent node in the tree \\
+\hline
+{\em childs} & the number of childs \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structGMapping_1_1GridSlamProcessor_1_1TNode_a22b5e02c6b9dc2139f63652d8b0d57c5}\label{structGMapping_1_1GridSlamProcessor_1_1TNode_a22b5e02c6b9dc2139f63652d8b0d57c5}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node}!````~T\+Node@{$\sim$\+T\+Node}}
+\index{````~T\+Node@{$\sim$\+T\+Node}!G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node}}
+\subsubsection{\texorpdfstring{$\sim$\+T\+Node()}{~TNode()}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node\+::$\sim$\+T\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destroys a tree node, and consistently updates the tree. If a node whose parent has only one child is deleted, also the parent node is deleted. This because the parent will not be reacheable anymore in the trajectory tree. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structGMapping_1_1GridSlamProcessor_1_1TNode_ab0c21a7a7fb16bd061f3b61cae8f55bd}\label{structGMapping_1_1GridSlamProcessor_1_1TNode_ab0c21a7a7fb16bd061f3b61cae8f55bd}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node}!acc\+Weight@{acc\+Weight}}
+\index{acc\+Weight@{acc\+Weight}!G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node}}
+\subsubsection{\texorpdfstring{acc\+Weight}{accWeight}}
+{\footnotesize\ttfamily double G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node\+::acc\+Weight}
+
+The sum of all the particle weights in the previous part of the trajectory \mbox{\Hypertarget{structGMapping_1_1GridSlamProcessor_1_1TNode_a4c15378fddd812b0376ceb81c43be3e0}\label{structGMapping_1_1GridSlamProcessor_1_1TNode_a4c15378fddd812b0376ceb81c43be3e0}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node}!childs@{childs}}
+\index{childs@{childs}!G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node}}
+\subsubsection{\texorpdfstring{childs}{childs}}
+{\footnotesize\ttfamily unsigned int G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node\+::childs}
+
+The number of childs \mbox{\Hypertarget{structGMapping_1_1GridSlamProcessor_1_1TNode_a0d10763653ac0630632259c8c1e48e42}\label{structGMapping_1_1GridSlamProcessor_1_1TNode_a0d10763653ac0630632259c8c1e48e42}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node}!flag@{flag}}
+\index{flag@{flag}!G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node}}
+\subsubsection{\texorpdfstring{flag}{flag}}
+{\footnotesize\ttfamily bool G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node\+::flag\hspace{0.3cm}{\ttfamily [mutable]}}
+
+visit flag (internally used) \mbox{\Hypertarget{structGMapping_1_1GridSlamProcessor_1_1TNode_aa96443473844405f417fb8170b3d7243}\label{structGMapping_1_1GridSlamProcessor_1_1TNode_aa96443473844405f417fb8170b3d7243}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node}!parent@{parent}}
+\index{parent@{parent}!G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node}}
+\subsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily \hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode}{T\+Node}$\ast$ G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node\+::parent}
+
+The parent \mbox{\Hypertarget{structGMapping_1_1GridSlamProcessor_1_1TNode_a00ffad9f49ae467746aa211fbfaf4523}\label{structGMapping_1_1GridSlamProcessor_1_1TNode_a00ffad9f49ae467746aa211fbfaf4523}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node}!pose@{pose}}
+\index{pose@{pose}!G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node}}
+\subsubsection{\texorpdfstring{pose}{pose}}
+{\footnotesize\ttfamily \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node\+::pose}
+
+The pose of the robot \mbox{\Hypertarget{structGMapping_1_1GridSlamProcessor_1_1TNode_a574dd0cc9f28e7feb3d85a1ddb544d06}\label{structGMapping_1_1GridSlamProcessor_1_1TNode_a574dd0cc9f28e7feb3d85a1ddb544d06}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node}!reading@{reading}}
+\index{reading@{reading}!G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node}}
+\subsubsection{\texorpdfstring{reading}{reading}}
+{\footnotesize\ttfamily const \hyperlink{classGMapping_1_1RangeReading}{Range\+Reading}$\ast$ G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node\+::reading}
+
+The range reading to which this node is associated \mbox{\Hypertarget{structGMapping_1_1GridSlamProcessor_1_1TNode_aa5aa2b0e4bea309de90270cd56a2bd78}\label{structGMapping_1_1GridSlamProcessor_1_1TNode_aa5aa2b0e4bea309de90270cd56a2bd78}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node}!visit\+Counter@{visit\+Counter}}
+\index{visit\+Counter@{visit\+Counter}!G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node}}
+\subsubsection{\texorpdfstring{visit\+Counter}{visitCounter}}
+{\footnotesize\ttfamily unsigned int G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node\+::visit\+Counter\hspace{0.3cm}{\ttfamily [mutable]}}
+
+counter in visiting the node (internally used) \mbox{\Hypertarget{structGMapping_1_1GridSlamProcessor_1_1TNode_ab30d02945ab4cba987bbc428f87b3028}\label{structGMapping_1_1GridSlamProcessor_1_1TNode_ab30d02945ab4cba987bbc428f87b3028}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node}!weight@{weight}}
+\index{weight@{weight}!G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node}}
+\subsubsection{\texorpdfstring{weight}{weight}}
+{\footnotesize\ttfamily double G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+T\+Node\+::weight}
+
+The weight of the particle 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+openslam\+\_\+gmapping/include/gmapping/gridfastslam/gridslamprocessor.\+h\item 
+openslam\+\_\+gmapping/gridfastslam/gridslamprocessor\+\_\+tree.\+cpp\end{DoxyCompactItemize}

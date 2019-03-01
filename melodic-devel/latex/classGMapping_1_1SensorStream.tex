@@ -1,0 +1,54 @@
+\hypertarget{classGMapping_1_1SensorStream}{}\section{G\+Mapping\+:\+:Sensor\+Stream Class Reference}
+\label{classGMapping_1_1SensorStream}\index{G\+Mapping\+::\+Sensor\+Stream@{G\+Mapping\+::\+Sensor\+Stream}}
+
+
+Inheritance diagram for G\+Mapping\+:\+:Sensor\+Stream\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGMapping_1_1SensorStream__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1SensorStream_ae7a8b5c54cb9dffe20b7d5556a0c2e3d}\label{classGMapping_1_1SensorStream_ae7a8b5c54cb9dffe20b7d5556a0c2e3d}} 
+{\bfseries Sensor\+Stream} (const Sensor\+Map \&sensor\+Map)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1SensorStream_a4c9464c3a2ef72f386c669ec2a0cb849}\label{classGMapping_1_1SensorStream_a4c9464c3a2ef72f386c669ec2a0cb849}} 
+virtual {\bfseries operator bool} () const =0
+\item 
+\mbox{\Hypertarget{classGMapping_1_1SensorStream_a683dee135ab1051f65d533b399854d99}\label{classGMapping_1_1SensorStream_a683dee135ab1051f65d533b399854d99}} 
+virtual bool {\bfseries rewind} ()=0
+\item 
+\mbox{\Hypertarget{classGMapping_1_1SensorStream_a93830c09eaf4fef0765e0edb5d98a92f}\label{classGMapping_1_1SensorStream_a93830c09eaf4fef0765e0edb5d98a92f}} 
+virtual \hyperlink{classGMapping_1_1SensorStream}{Sensor\+Stream} \& {\bfseries operator$>$$>$} (const \hyperlink{classGMapping_1_1SensorReading}{Sensor\+Reading} $\ast$\&)=0
+\item 
+\mbox{\Hypertarget{classGMapping_1_1SensorStream_a676b9f4d8df96482a4882827a8a0a71f}\label{classGMapping_1_1SensorStream_a676b9f4d8df96482a4882827a8a0a71f}} 
+const Sensor\+Map \& {\bfseries get\+Sensor\+Map} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1SensorStream_aa1a2469698bbe8264b6d0b49f1650615}\label{classGMapping_1_1SensorStream_aa1a2469698bbe8264b6d0b49f1650615}} 
+static \hyperlink{classGMapping_1_1SensorReading}{Sensor\+Reading} $\ast$ {\bfseries parse\+Reading} (std\+::istream \&is, const Sensor\+Map \&smap)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1SensorStream_aed9152731b2cd4a3c0a99cd0beca0c33}\label{classGMapping_1_1SensorStream_aed9152731b2cd4a3c0a99cd0beca0c33}} 
+static \hyperlink{classGMapping_1_1OdometryReading}{Odometry\+Reading} $\ast$ {\bfseries parse\+Odometry} (std\+::istream \&is, const \hyperlink{classGMapping_1_1OdometrySensor}{Odometry\+Sensor} $\ast$)
+\item 
+\mbox{\Hypertarget{classGMapping_1_1SensorStream_a451ecf16c146ce840a6518f14b952d1e}\label{classGMapping_1_1SensorStream_a451ecf16c146ce840a6518f14b952d1e}} 
+static \hyperlink{classGMapping_1_1RangeReading}{Range\+Reading} $\ast$ {\bfseries parse\+Range} (std\+::istream \&is, const \hyperlink{classGMapping_1_1RangeSensor}{Range\+Sensor} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGMapping_1_1SensorStream_ad5753b33864d289f6fa3051ed2d9acb8}\label{classGMapping_1_1SensorStream_ad5753b33864d289f6fa3051ed2d9acb8}} 
+const Sensor\+Map \& {\bfseries m\+\_\+sensor\+Map}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+openslam\+\_\+gmapping/log/sensorstream.\+h\item 
+openslam\+\_\+gmapping/log/sensorstream.\+cpp\end{DoxyCompactItemize}

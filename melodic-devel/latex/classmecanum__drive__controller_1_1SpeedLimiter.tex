@@ -1,0 +1,124 @@
+\hypertarget{classmecanum__drive__controller_1_1SpeedLimiter}{}\section{mecanum\+\_\+drive\+\_\+controller\+:\+:Speed\+Limiter Class Reference}
+\label{classmecanum__drive__controller_1_1SpeedLimiter}\index{mecanum\+\_\+drive\+\_\+controller\+::\+Speed\+Limiter@{mecanum\+\_\+drive\+\_\+controller\+::\+Speed\+Limiter}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmecanum__drive__controller_1_1SpeedLimiter_a560d3c524c45294c6996145b5d3ff7c6}{Speed\+Limiter} (bool has\+\_\+velocity\+\_\+limits=false, bool has\+\_\+acceleration\+\_\+limits=false, double min\+\_\+velocity=0.\+0, double max\+\_\+velocity=0.\+0, double min\+\_\+acceleration=0.\+0, double max\+\_\+acceleration=0.\+0)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classmecanum__drive__controller_1_1SpeedLimiter_a648a5d296d9275e5be8f10744dce16ba}{limit} (double \&v, double v0, double dt)
+\begin{DoxyCompactList}\small\item\em Limit the velocity and acceleration. \end{DoxyCompactList}\item 
+void \hyperlink{classmecanum__drive__controller_1_1SpeedLimiter_ab7de185ae135affae6f9a7acfb60247c}{limit\+\_\+velocity} (double \&v)
+\begin{DoxyCompactList}\small\item\em Limit the velocity. \end{DoxyCompactList}\item 
+void \hyperlink{classmecanum__drive__controller_1_1SpeedLimiter_a51b27d6e45d3d2ba9b7adab1c85cbcd0}{limit\+\_\+acceleration} (double \&v, double v0, double dt)
+\begin{DoxyCompactList}\small\item\em Limit the acceleration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1SpeedLimiter_ad984056631d829c13397587237c2a97b}\label{classmecanum__drive__controller_1_1SpeedLimiter_ad984056631d829c13397587237c2a97b}} 
+bool {\bfseries has\+\_\+velocity\+\_\+limits}
+\item 
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1SpeedLimiter_acd9a5a5f0c53f76795b5d428e1bc10d5}\label{classmecanum__drive__controller_1_1SpeedLimiter_acd9a5a5f0c53f76795b5d428e1bc10d5}} 
+bool {\bfseries has\+\_\+acceleration\+\_\+limits}
+\item 
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1SpeedLimiter_a34086de13775ee38798b0e8e2e3338df}\label{classmecanum__drive__controller_1_1SpeedLimiter_a34086de13775ee38798b0e8e2e3338df}} 
+double {\bfseries min\+\_\+velocity}
+\item 
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1SpeedLimiter_aad506d38055cf4b68b0ff6bf39b8d696}\label{classmecanum__drive__controller_1_1SpeedLimiter_aad506d38055cf4b68b0ff6bf39b8d696}} 
+double {\bfseries max\+\_\+velocity}
+\item 
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1SpeedLimiter_a4cfc88143ccac0f43e0c0d2d1629428c}\label{classmecanum__drive__controller_1_1SpeedLimiter_a4cfc88143ccac0f43e0c0d2d1629428c}} 
+double {\bfseries min\+\_\+acceleration}
+\item 
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1SpeedLimiter_a7f5a845b96d99539abe9f650aff58d84}\label{classmecanum__drive__controller_1_1SpeedLimiter_a7f5a845b96d99539abe9f650aff58d84}} 
+double {\bfseries max\+\_\+acceleration}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1SpeedLimiter_a560d3c524c45294c6996145b5d3ff7c6}\label{classmecanum__drive__controller_1_1SpeedLimiter_a560d3c524c45294c6996145b5d3ff7c6}} 
+\index{mecanum\+\_\+drive\+\_\+controller\+::\+Speed\+Limiter@{mecanum\+\_\+drive\+\_\+controller\+::\+Speed\+Limiter}!Speed\+Limiter@{Speed\+Limiter}}
+\index{Speed\+Limiter@{Speed\+Limiter}!mecanum\+\_\+drive\+\_\+controller\+::\+Speed\+Limiter@{mecanum\+\_\+drive\+\_\+controller\+::\+Speed\+Limiter}}
+\subsubsection{\texorpdfstring{Speed\+Limiter()}{SpeedLimiter()}}
+{\footnotesize\ttfamily mecanum\+\_\+drive\+\_\+controller\+::\+Speed\+Limiter\+::\+Speed\+Limiter (\begin{DoxyParamCaption}\item[{bool}]{has\+\_\+velocity\+\_\+limits = {\ttfamily false},  }\item[{bool}]{has\+\_\+acceleration\+\_\+limits = {\ttfamily false},  }\item[{double}]{min\+\_\+velocity = {\ttfamily 0.0},  }\item[{double}]{max\+\_\+velocity = {\ttfamily 0.0},  }\item[{double}]{min\+\_\+acceleration = {\ttfamily 0.0},  }\item[{double}]{max\+\_\+acceleration = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em has\+\_\+velocity\+\_\+limits} & if true, applies velocity limits \\
+\hline
+\mbox{\tt in}  & {\em has\+\_\+acceleration\+\_\+limits} & if true, applies acceleration limits \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+velocity} & Minimum velocity \mbox{[}m/s\mbox{]}, usually $<$= 0 \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+velocity} & Maximum velocity \mbox{[}m/s\mbox{]}, usually $>$= 0 \\
+\hline
+\mbox{\tt in}  & {\em min\+\_\+acceleration} & Minimum acceleration \mbox{[}m/s$^\wedge$2\mbox{]}, usually $<$= 0 \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+acceleration} & Maximum acceleration \mbox{[}m/s$^\wedge$2\mbox{]}, usually $>$= 0 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1SpeedLimiter_a648a5d296d9275e5be8f10744dce16ba}\label{classmecanum__drive__controller_1_1SpeedLimiter_a648a5d296d9275e5be8f10744dce16ba}} 
+\index{mecanum\+\_\+drive\+\_\+controller\+::\+Speed\+Limiter@{mecanum\+\_\+drive\+\_\+controller\+::\+Speed\+Limiter}!limit@{limit}}
+\index{limit@{limit}!mecanum\+\_\+drive\+\_\+controller\+::\+Speed\+Limiter@{mecanum\+\_\+drive\+\_\+controller\+::\+Speed\+Limiter}}
+\subsubsection{\texorpdfstring{limit()}{limit()}}
+{\footnotesize\ttfamily void mecanum\+\_\+drive\+\_\+controller\+::\+Speed\+Limiter\+::limit (\begin{DoxyParamCaption}\item[{double \&}]{v,  }\item[{double}]{v0,  }\item[{double}]{dt }\end{DoxyParamCaption})}
+
+
+
+Limit the velocity and acceleration. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em v} & Velocity \mbox{[}m/s\mbox{]} \\
+\hline
+\mbox{\tt in}  & {\em v0} & Previous velocity \mbox{[}m/s\mbox{]} \\
+\hline
+\mbox{\tt in}  & {\em dt} & Time step \mbox{[}s\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1SpeedLimiter_a51b27d6e45d3d2ba9b7adab1c85cbcd0}\label{classmecanum__drive__controller_1_1SpeedLimiter_a51b27d6e45d3d2ba9b7adab1c85cbcd0}} 
+\index{mecanum\+\_\+drive\+\_\+controller\+::\+Speed\+Limiter@{mecanum\+\_\+drive\+\_\+controller\+::\+Speed\+Limiter}!limit\+\_\+acceleration@{limit\+\_\+acceleration}}
+\index{limit\+\_\+acceleration@{limit\+\_\+acceleration}!mecanum\+\_\+drive\+\_\+controller\+::\+Speed\+Limiter@{mecanum\+\_\+drive\+\_\+controller\+::\+Speed\+Limiter}}
+\subsubsection{\texorpdfstring{limit\+\_\+acceleration()}{limit\_acceleration()}}
+{\footnotesize\ttfamily void mecanum\+\_\+drive\+\_\+controller\+::\+Speed\+Limiter\+::limit\+\_\+acceleration (\begin{DoxyParamCaption}\item[{double \&}]{v,  }\item[{double}]{v0,  }\item[{double}]{dt }\end{DoxyParamCaption})}
+
+
+
+Limit the acceleration. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em v} & Velocity \mbox{[}m/s\mbox{]} \\
+\hline
+\mbox{\tt in}  & {\em v0} & Previous velocity \mbox{[}m/s\mbox{]} \\
+\hline
+\mbox{\tt in}  & {\em dt} & Time step \mbox{[}s\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1SpeedLimiter_ab7de185ae135affae6f9a7acfb60247c}\label{classmecanum__drive__controller_1_1SpeedLimiter_ab7de185ae135affae6f9a7acfb60247c}} 
+\index{mecanum\+\_\+drive\+\_\+controller\+::\+Speed\+Limiter@{mecanum\+\_\+drive\+\_\+controller\+::\+Speed\+Limiter}!limit\+\_\+velocity@{limit\+\_\+velocity}}
+\index{limit\+\_\+velocity@{limit\+\_\+velocity}!mecanum\+\_\+drive\+\_\+controller\+::\+Speed\+Limiter@{mecanum\+\_\+drive\+\_\+controller\+::\+Speed\+Limiter}}
+\subsubsection{\texorpdfstring{limit\+\_\+velocity()}{limit\_velocity()}}
+{\footnotesize\ttfamily void mecanum\+\_\+drive\+\_\+controller\+::\+Speed\+Limiter\+::limit\+\_\+velocity (\begin{DoxyParamCaption}\item[{double \&}]{v }\end{DoxyParamCaption})}
+
+
+
+Limit the velocity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em v} & Velocity \mbox{[}m/s\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+ridgeback/ridgeback\+\_\+control/include/mecanum\+\_\+drive\+\_\+controller/speed\+\_\+limiter.\+h\item 
+ridgeback/ridgeback\+\_\+control/src/speed\+\_\+limiter.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,147 @@
+\hypertarget{structGMapping_1_1GridSlamProcessor_1_1Particle}{}\section{G\+Mapping\+:\+:Grid\+Slam\+Processor\+:\+:Particle Struct Reference}
+\label{structGMapping_1_1GridSlamProcessor_1_1Particle}\index{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle}}
+
+
+{\ttfamily \#include $<$gridslamprocessor.\+h$>$}
+
+
+
+Collaboration diagram for G\+Mapping\+:\+:Grid\+Slam\+Processor\+:\+:Particle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structGMapping_1_1GridSlamProcessor_1_1Particle__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structGMapping_1_1GridSlamProcessor_1_1Particle_a51dc73563ad5e3035f8cb3b51965854a}{Particle} (const \hyperlink{classGMapping_1_1Map}{Scan\+Matcher\+Map} \&\hyperlink{structGMapping_1_1GridSlamProcessor_1_1Particle_a33f1690ccf3a95622e0246e75f5af145}{map})
+\item 
+\hyperlink{structGMapping_1_1GridSlamProcessor_1_1Particle_a0b78d91dc4d41c565c388fe7320603b3}{operator double} () const
+\item 
+\hyperlink{structGMapping_1_1GridSlamProcessor_1_1Particle_a4538a813d749fadc1ba922858cdd8d7f}{operator Oriented\+Point} () const
+\item 
+void \hyperlink{structGMapping_1_1GridSlamProcessor_1_1Particle_a07888ebc307fab0bfee912bbfda45832}{set\+Weight} (double w)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGMapping_1_1Map}{Scan\+Matcher\+Map} \hyperlink{structGMapping_1_1GridSlamProcessor_1_1Particle_a33f1690ccf3a95622e0246e75f5af145}{map}
+\item 
+\hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} \hyperlink{structGMapping_1_1GridSlamProcessor_1_1Particle_a82d332a479fe5441be6f6f7be32ba39d}{pose}
+\item 
+\hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} \hyperlink{structGMapping_1_1GridSlamProcessor_1_1Particle_aa0bfef7c1113864bc0dd5c3e38cfbf38}{previous\+Pose}
+\item 
+double \hyperlink{structGMapping_1_1GridSlamProcessor_1_1Particle_a29fee66d34dd87e2bd641eeebfe6fc00}{weight}
+\item 
+double \hyperlink{structGMapping_1_1GridSlamProcessor_1_1Particle_a9e1d6ebe3b70943834d2987e826313ef}{weight\+Sum}
+\item 
+\mbox{\Hypertarget{structGMapping_1_1GridSlamProcessor_1_1Particle_a205c1435fc24f59460c76362b65da10c}\label{structGMapping_1_1GridSlamProcessor_1_1Particle_a205c1435fc24f59460c76362b65da10c}} 
+double {\bfseries gweight}
+\item 
+int \hyperlink{structGMapping_1_1GridSlamProcessor_1_1Particle_ab80f34a85a79ad4584d25b162bb72e5b}{previous\+Index}
+\item 
+\hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode}{T\+Node} $\ast$ \hyperlink{structGMapping_1_1GridSlamProcessor_1_1Particle_a9c91ccdf7009b50785d939e1791ae4be}{node}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class defines a particle of the filter. Each particle has a map, a pose, a weight and retains the current node in the trajectory tree 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structGMapping_1_1GridSlamProcessor_1_1Particle_a51dc73563ad5e3035f8cb3b51965854a}\label{structGMapping_1_1GridSlamProcessor_1_1Particle_a51dc73563ad5e3035f8cb3b51965854a}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle}!Particle@{Particle}}
+\index{Particle@{Particle}!G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle}}
+\subsubsection{\texorpdfstring{Particle()}{Particle()}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle\+::\+Particle (\begin{DoxyParamCaption}\item[{const \hyperlink{classGMapping_1_1Map}{Scan\+Matcher\+Map} \&}]{map }\end{DoxyParamCaption})}
+
+constructs a particle, given a map 
+\begin{DoxyParams}{Parameters}
+{\em map} & the particle map \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structGMapping_1_1GridSlamProcessor_1_1Particle_a0b78d91dc4d41c565c388fe7320603b3}\label{structGMapping_1_1GridSlamProcessor_1_1Particle_a0b78d91dc4d41c565c388fe7320603b3}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle}!operator double@{operator double}}
+\index{operator double@{operator double}!G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle}}
+\subsubsection{\texorpdfstring{operator double()}{operator double()}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle\+::operator double (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+the weight of a particle 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structGMapping_1_1GridSlamProcessor_1_1Particle_a4538a813d749fadc1ba922858cdd8d7f}\label{structGMapping_1_1GridSlamProcessor_1_1Particle_a4538a813d749fadc1ba922858cdd8d7f}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle}!operator Oriented\+Point@{operator Oriented\+Point}}
+\index{operator Oriented\+Point@{operator Oriented\+Point}!G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle}}
+\subsubsection{\texorpdfstring{operator Oriented\+Point()}{operator OrientedPoint()}}
+{\footnotesize\ttfamily G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle\+::operator \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+the pose of a particle 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structGMapping_1_1GridSlamProcessor_1_1Particle_a07888ebc307fab0bfee912bbfda45832}\label{structGMapping_1_1GridSlamProcessor_1_1Particle_a07888ebc307fab0bfee912bbfda45832}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle}!set\+Weight@{set\+Weight}}
+\index{set\+Weight@{set\+Weight}!G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle}}
+\subsubsection{\texorpdfstring{set\+Weight()}{setWeight()}}
+{\footnotesize\ttfamily void G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle\+::set\+Weight (\begin{DoxyParamCaption}\item[{double}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+sets the weight of a particle 
+\begin{DoxyParams}{Parameters}
+{\em w} & the weight \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structGMapping_1_1GridSlamProcessor_1_1Particle_a33f1690ccf3a95622e0246e75f5af145}\label{structGMapping_1_1GridSlamProcessor_1_1Particle_a33f1690ccf3a95622e0246e75f5af145}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle}!map@{map}}
+\index{map@{map}!G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle}}
+\subsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \hyperlink{classGMapping_1_1Map}{Scan\+Matcher\+Map} G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle\+::map}
+
+The map \mbox{\Hypertarget{structGMapping_1_1GridSlamProcessor_1_1Particle_a9c91ccdf7009b50785d939e1791ae4be}\label{structGMapping_1_1GridSlamProcessor_1_1Particle_a9c91ccdf7009b50785d939e1791ae4be}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle}!node@{node}}
+\index{node@{node}!G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle}}
+\subsubsection{\texorpdfstring{node}{node}}
+{\footnotesize\ttfamily \hyperlink{structGMapping_1_1GridSlamProcessor_1_1TNode}{T\+Node}$\ast$ G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle\+::node}
+
+Entry to the trajectory tree \mbox{\Hypertarget{structGMapping_1_1GridSlamProcessor_1_1Particle_a82d332a479fe5441be6f6f7be32ba39d}\label{structGMapping_1_1GridSlamProcessor_1_1Particle_a82d332a479fe5441be6f6f7be32ba39d}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle}!pose@{pose}}
+\index{pose@{pose}!G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle}}
+\subsubsection{\texorpdfstring{pose}{pose}}
+{\footnotesize\ttfamily \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle\+::pose}
+
+The pose of the robot \mbox{\Hypertarget{structGMapping_1_1GridSlamProcessor_1_1Particle_ab80f34a85a79ad4584d25b162bb72e5b}\label{structGMapping_1_1GridSlamProcessor_1_1Particle_ab80f34a85a79ad4584d25b162bb72e5b}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle}!previous\+Index@{previous\+Index}}
+\index{previous\+Index@{previous\+Index}!G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle}}
+\subsubsection{\texorpdfstring{previous\+Index}{previousIndex}}
+{\footnotesize\ttfamily int G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle\+::previous\+Index}
+
+The index of the previous particle in the trajectory tree \mbox{\Hypertarget{structGMapping_1_1GridSlamProcessor_1_1Particle_aa0bfef7c1113864bc0dd5c3e38cfbf38}\label{structGMapping_1_1GridSlamProcessor_1_1Particle_aa0bfef7c1113864bc0dd5c3e38cfbf38}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle}!previous\+Pose@{previous\+Pose}}
+\index{previous\+Pose@{previous\+Pose}!G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle}}
+\subsubsection{\texorpdfstring{previous\+Pose}{previousPose}}
+{\footnotesize\ttfamily \hyperlink{structGMapping_1_1orientedpoint}{Oriented\+Point} G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle\+::previous\+Pose}
+
+The pose of the robot at the previous time frame (used for computing thr odometry displacements) \mbox{\Hypertarget{structGMapping_1_1GridSlamProcessor_1_1Particle_a29fee66d34dd87e2bd641eeebfe6fc00}\label{structGMapping_1_1GridSlamProcessor_1_1Particle_a29fee66d34dd87e2bd641eeebfe6fc00}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle}!weight@{weight}}
+\index{weight@{weight}!G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle}}
+\subsubsection{\texorpdfstring{weight}{weight}}
+{\footnotesize\ttfamily double G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle\+::weight}
+
+The weight of the particle \mbox{\Hypertarget{structGMapping_1_1GridSlamProcessor_1_1Particle_a9e1d6ebe3b70943834d2987e826313ef}\label{structGMapping_1_1GridSlamProcessor_1_1Particle_a9e1d6ebe3b70943834d2987e826313ef}} 
+\index{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle}!weight\+Sum@{weight\+Sum}}
+\index{weight\+Sum@{weight\+Sum}!G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle@{G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle}}
+\subsubsection{\texorpdfstring{weight\+Sum}{weightSum}}
+{\footnotesize\ttfamily double G\+Mapping\+::\+Grid\+Slam\+Processor\+::\+Particle\+::weight\+Sum}
+
+The cumulative weight of the particle 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+openslam\+\_\+gmapping/include/gmapping/gridfastslam/gridslamprocessor.\+h\item 
+openslam\+\_\+gmapping/gridfastslam/gridslamprocessor.\+cpp\end{DoxyCompactItemize}

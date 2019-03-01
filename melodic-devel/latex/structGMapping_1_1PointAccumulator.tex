@@ -1,0 +1,69 @@
+\hypertarget{structGMapping_1_1PointAccumulator}{}\section{G\+Mapping\+:\+:Point\+Accumulator Struct Reference}
+\label{structGMapping_1_1PointAccumulator}\index{G\+Mapping\+::\+Point\+Accumulator@{G\+Mapping\+::\+Point\+Accumulator}}
+
+
+Collaboration diagram for G\+Mapping\+:\+:Point\+Accumulator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{structGMapping_1_1PointAccumulator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structGMapping_1_1PointAccumulator_aa256b887e57057b22cc726d0b708e63f}\label{structGMapping_1_1PointAccumulator_aa256b887e57057b22cc726d0b708e63f}} 
+typedef \hyperlink{structGMapping_1_1point}{point}$<$ float $>$ {\bfseries Float\+Point}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structGMapping_1_1PointAccumulator_a2dcf27d200b53ba10f16c1b701bd0503}\label{structGMapping_1_1PointAccumulator_a2dcf27d200b53ba10f16c1b701bd0503}} 
+{\bfseries Point\+Accumulator} (int i)
+\item 
+\mbox{\Hypertarget{structGMapping_1_1PointAccumulator_ac414ab2f3d79d50fbb1b5326423fc84f}\label{structGMapping_1_1PointAccumulator_ac414ab2f3d79d50fbb1b5326423fc84f}} 
+void {\bfseries update} (bool value, const \hyperlink{structGMapping_1_1point}{Point} \&p=\hyperlink{structGMapping_1_1point}{Point}(0, 0))
+\item 
+\mbox{\Hypertarget{structGMapping_1_1PointAccumulator_aee73954066c51b648da5b9af3cd2089d}\label{structGMapping_1_1PointAccumulator_aee73954066c51b648da5b9af3cd2089d}} 
+\hyperlink{structGMapping_1_1point}{Point} {\bfseries mean} () const
+\item 
+\mbox{\Hypertarget{structGMapping_1_1PointAccumulator_abdfda9e51d85cb2cc70f87b446be47f1}\label{structGMapping_1_1PointAccumulator_abdfda9e51d85cb2cc70f87b446be47f1}} 
+{\bfseries operator double} () const
+\item 
+\mbox{\Hypertarget{structGMapping_1_1PointAccumulator_a81e890f24d04e5f04433ba2fc7c51be8}\label{structGMapping_1_1PointAccumulator_a81e890f24d04e5f04433ba2fc7c51be8}} 
+void {\bfseries add} (const \hyperlink{structGMapping_1_1PointAccumulator}{Point\+Accumulator} \&p)
+\item 
+\mbox{\Hypertarget{structGMapping_1_1PointAccumulator_a723dc2aaaca092a1e33246f416feb59e}\label{structGMapping_1_1PointAccumulator_a723dc2aaaca092a1e33246f416feb59e}} 
+double {\bfseries entropy} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structGMapping_1_1PointAccumulator_a81db0b19d19a84bdf4a3ac01b0796e8f}\label{structGMapping_1_1PointAccumulator_a81db0b19d19a84bdf4a3ac01b0796e8f}} 
+static const \hyperlink{structGMapping_1_1PointAccumulator}{Point\+Accumulator} \& {\bfseries Unknown} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structGMapping_1_1PointAccumulator_afe87f0be8d1e6fc22fa3b1cd071fccbc}\label{structGMapping_1_1PointAccumulator_afe87f0be8d1e6fc22fa3b1cd071fccbc}} 
+\hyperlink{structGMapping_1_1point}{Float\+Point} {\bfseries acc}
+\item 
+\mbox{\Hypertarget{structGMapping_1_1PointAccumulator_a0f8ef48ef8f7ffb3a032fae2b8894a59}\label{structGMapping_1_1PointAccumulator_a0f8ef48ef8f7ffb3a032fae2b8894a59}} 
+int {\bfseries n}
+\item 
+\mbox{\Hypertarget{structGMapping_1_1PointAccumulator_ac0f05215ef622a21313b219015ae5de1}\label{structGMapping_1_1PointAccumulator_ac0f05215ef622a21313b219015ae5de1}} 
+int {\bfseries visits}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structGMapping_1_1PointAccumulator_a56ae0e815f9b340e4e2a483bd7f6704d}\label{structGMapping_1_1PointAccumulator_a56ae0e815f9b340e4e2a483bd7f6704d}} 
+static \hyperlink{structGMapping_1_1PointAccumulator}{Point\+Accumulator} $\ast$ {\bfseries unknown\+\_\+ptr} =0
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+openslam\+\_\+gmapping/include/gmapping/scanmatcher/smmap.\+h\item 
+openslam\+\_\+gmapping/scanmatcher/smmap.\+cpp\end{DoxyCompactItemize}

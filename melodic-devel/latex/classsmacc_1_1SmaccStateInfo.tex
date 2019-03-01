@@ -1,0 +1,75 @@
+\hypertarget{classsmacc_1_1SmaccStateInfo}{}\section{smacc\+:\+:Smacc\+State\+Info Class Reference}
+\label{classsmacc_1_1SmaccStateInfo}\index{smacc\+::\+Smacc\+State\+Info@{smacc\+::\+Smacc\+State\+Info}}
+
+
+Inheritance diagram for smacc\+:\+:Smacc\+State\+Info\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classsmacc_1_1SmaccStateInfo__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+:\+:Smacc\+State\+Info\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classsmacc_1_1SmaccStateInfo__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccStateInfo_a2be1e3db5d31a7e2491a25eafc87671e}\label{classsmacc_1_1SmaccStateInfo_a2be1e3db5d31a7e2491a25eafc87671e}} 
+{\bfseries Smacc\+State\+Info} (std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ parent\+State, std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1SmaccStateMachineInfo}{Smacc\+State\+Machine\+Info} $>$ state\+Machine\+Info)
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccStateInfo_a4fa90d2686fe561a7f9dcd02ca886279}\label{classsmacc_1_1SmaccStateInfo_a4fa90d2686fe561a7f9dcd02ca886279}} 
+int {\bfseries depth} () const
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccStateInfo_a22e625806a74808ee272df5c034d122e}\label{classsmacc_1_1SmaccStateInfo_a22e625806a74808ee272df5c034d122e}} 
+std\+::string {\bfseries get\+Full\+Path} ()
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccStateInfo_a1c935c77640d496f22f5f48d78ddb296}\label{classsmacc_1_1SmaccStateInfo_a1c935c77640d496f22f5f48d78ddb296}} 
+{\footnotesize template$<$typename State\+Type $>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ {\bfseries create\+Child\+State} ()
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccStateInfo_ad5228fe261f574c95b82641699bbf9dd}\label{classsmacc_1_1SmaccStateInfo_ad5228fe261f574c95b82641699bbf9dd}} 
+{\footnotesize template$<$typename Ev\+Type $>$ }\\void {\bfseries declare\+Transition} (std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \&dst\+State)
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccStateInfo_ab6b7a351659aa82856e4d12d134d495d}\label{classsmacc_1_1SmaccStateInfo_ab6b7a351659aa82856e4d12d134d495d}} 
+const std\+::string \& {\bfseries to\+Short\+Name} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccStateInfo_a12b5db7f92c7d1bbef492b6f33d2680d}\label{classsmacc_1_1SmaccStateInfo_a12b5db7f92c7d1bbef492b6f33d2680d}} 
+bool {\bfseries active\+\_\+}
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccStateInfo_a3d9d81ebeda351fba21665bb7b9ff148}\label{classsmacc_1_1SmaccStateInfo_a3d9d81ebeda351fba21665bb7b9ff148}} 
+std\+::string {\bfseries full\+State\+Name}
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccStateInfo_ad36e29f3984e40d36664567f9703239a}\label{classsmacc_1_1SmaccStateInfo_ad36e29f3984e40d36664567f9703239a}} 
+std\+::string {\bfseries demangled\+State\+Name}
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccStateInfo_af9884b3fda41fbc87abf9908b8bd72e7}\label{classsmacc_1_1SmaccStateInfo_af9884b3fda41fbc87abf9908b8bd72e7}} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1SmaccStateMachineInfo}{Smacc\+State\+Machine\+Info} $>$ {\bfseries state\+Machine\+\_\+}
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccStateInfo_ae19f4efbeb2ca665b320df80766d9209}\label{classsmacc_1_1SmaccStateInfo_ae19f4efbeb2ca665b320df80766d9209}} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ {\bfseries parent\+State\+\_\+}
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccStateInfo_ad9a57f1532506ff82a2885e854f6132f}\label{classsmacc_1_1SmaccStateInfo_ad9a57f1532506ff82a2885e854f6132f}} 
+std\+::map$<$ std\+::string, std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ $>$ {\bfseries transitions\+\_\+}
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccStateInfo_a7773f1d9e865a839b0bfed087bbb93ba}\label{classsmacc_1_1SmaccStateInfo_a7773f1d9e865a839b0bfed087bbb93ba}} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ $>$ {\bfseries children\+\_\+}
+\item 
+\mbox{\Hypertarget{classsmacc_1_1SmaccStateInfo_a3f44d5af069d0f37ed63b3101b330a65}\label{classsmacc_1_1SmaccStateInfo_a3f44d5af069d0f37ed63b3101b330a65}} 
+int {\bfseries depth\+\_\+}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc/include/smacc/smacc\+\_\+state\+\_\+machine\+\_\+base.\+h\end{DoxyCompactItemize}

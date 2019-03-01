@@ -1,0 +1,233 @@
+\hypertarget{classmecanum__drive__controller_1_1Odometry}{}\section{mecanum\+\_\+drive\+\_\+controller\+:\+:Odometry Class Reference}
+\label{classmecanum__drive__controller_1_1Odometry}\index{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry@{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry}}
+
+
+The \hyperlink{classmecanum__drive__controller_1_1Odometry}{Odometry} class handles odometry readings (2D pose and velocity with related timestamp)  
+
+
+
+
+{\ttfamily \#include $<$odometry.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1Odometry_a0a4b9e35c3b14456cceb2e02db6a895a}\label{classmecanum__drive__controller_1_1Odometry_a0a4b9e35c3b14456cceb2e02db6a895a}} 
+typedef boost\+::function$<$ void(double, double, double)$>$ \hyperlink{classmecanum__drive__controller_1_1Odometry_a0a4b9e35c3b14456cceb2e02db6a895a}{Integration\+Function}
+\begin{DoxyCompactList}\small\item\em Integration function, used to integrate the odometry\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmecanum__drive__controller_1_1Odometry_a1ee869a418151783f8283e0911073c94}{Odometry} (size\+\_\+t velocity\+\_\+rolling\+\_\+window\+\_\+size=10)
+\begin{DoxyCompactList}\small\item\em Constructor Timestamp will get the current time value Value will be set to zero. \end{DoxyCompactList}\item 
+void \hyperlink{classmecanum__drive__controller_1_1Odometry_aab16ac85e777de56f586734fad0d3b54}{init} (const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em Initialize the odometry. \end{DoxyCompactList}\item 
+bool \hyperlink{classmecanum__drive__controller_1_1Odometry_af4c7c019ccb5db9878bbdf0b83bbbc5c}{update} (double wheel0\+\_\+vel, double wheel1\+\_\+vel, double wheel2\+\_\+vel, double wheel3\+\_\+vel, const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em Updates the odometry class with latest wheels position. \end{DoxyCompactList}\item 
+void \hyperlink{classmecanum__drive__controller_1_1Odometry_ab0562b24b9174f345683e28f1bbb2e49}{update\+Open\+Loop} (double linearX, double linearY, double angular, const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em Updates the odometry class with latest velocity command. \end{DoxyCompactList}\item 
+double \hyperlink{classmecanum__drive__controller_1_1Odometry_ae99c465bd00eb9498266ec88fe7712f7}{get\+Heading} () const
+\begin{DoxyCompactList}\small\item\em heading getter \end{DoxyCompactList}\item 
+double \hyperlink{classmecanum__drive__controller_1_1Odometry_a4964c24a7e17cca8d3eba39123e92733}{getX} () const
+\begin{DoxyCompactList}\small\item\em x position getter \end{DoxyCompactList}\item 
+double \hyperlink{classmecanum__drive__controller_1_1Odometry_aa10bb571e668d1fe549c42bb9bad1ea6}{getY} () const
+\begin{DoxyCompactList}\small\item\em y position getter \end{DoxyCompactList}\item 
+double \hyperlink{classmecanum__drive__controller_1_1Odometry_a853fa4f4d60e6bde3156a040b2d2afd4}{get\+LinearX} () const
+\begin{DoxyCompactList}\small\item\em linearX velocity getter \end{DoxyCompactList}\item 
+double \hyperlink{classmecanum__drive__controller_1_1Odometry_a8099ac0900687515b3e700c9334594ab}{get\+LinearY} () const
+\begin{DoxyCompactList}\small\item\em linearY velocity getter \end{DoxyCompactList}\item 
+double \hyperlink{classmecanum__drive__controller_1_1Odometry_aede4d8f9fccf9c6b5ff41f035f383a0f}{get\+Angular} () const
+\begin{DoxyCompactList}\small\item\em angular velocity getter \end{DoxyCompactList}\item 
+void \hyperlink{classmecanum__drive__controller_1_1Odometry_aabd05f5d6caf20f0d2f7ba9406efe3e9}{set\+Wheels\+Params} (double wheels\+\_\+k, double wheels\+\_\+radius)
+\begin{DoxyCompactList}\small\item\em Sets the wheels parameters\+: mecanum geometric param and radius. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classmecanum__drive__controller_1_1Odometry}{Odometry} class handles odometry readings (2D pose and velocity with related timestamp) 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1Odometry_a1ee869a418151783f8283e0911073c94}\label{classmecanum__drive__controller_1_1Odometry_a1ee869a418151783f8283e0911073c94}} 
+\index{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry@{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry}!Odometry@{Odometry}}
+\index{Odometry@{Odometry}!mecanum\+\_\+drive\+\_\+controller\+::\+Odometry@{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry}}
+\subsubsection{\texorpdfstring{Odometry()}{Odometry()}}
+{\footnotesize\ttfamily mecanum\+\_\+drive\+\_\+controller\+::\+Odometry\+::\+Odometry (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{velocity\+\_\+rolling\+\_\+window\+\_\+size = {\ttfamily 10} }\end{DoxyParamCaption})}
+
+
+
+Constructor Timestamp will get the current time value Value will be set to zero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em velocity\+\_\+rolling\+\_\+window\+\_\+size} & Rolling window size used to compute the velocity mean \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1Odometry_aede4d8f9fccf9c6b5ff41f035f383a0f}\label{classmecanum__drive__controller_1_1Odometry_aede4d8f9fccf9c6b5ff41f035f383a0f}} 
+\index{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry@{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry}!get\+Angular@{get\+Angular}}
+\index{get\+Angular@{get\+Angular}!mecanum\+\_\+drive\+\_\+controller\+::\+Odometry@{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry}}
+\subsubsection{\texorpdfstring{get\+Angular()}{getAngular()}}
+{\footnotesize\ttfamily double mecanum\+\_\+drive\+\_\+controller\+::\+Odometry\+::get\+Angular (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+angular velocity getter 
+
+\begin{DoxyReturn}{Returns}
+angular velocity \mbox{[}rad/s\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1Odometry_ae99c465bd00eb9498266ec88fe7712f7}\label{classmecanum__drive__controller_1_1Odometry_ae99c465bd00eb9498266ec88fe7712f7}} 
+\index{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry@{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry}!get\+Heading@{get\+Heading}}
+\index{get\+Heading@{get\+Heading}!mecanum\+\_\+drive\+\_\+controller\+::\+Odometry@{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry}}
+\subsubsection{\texorpdfstring{get\+Heading()}{getHeading()}}
+{\footnotesize\ttfamily double mecanum\+\_\+drive\+\_\+controller\+::\+Odometry\+::get\+Heading (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+heading getter 
+
+\begin{DoxyReturn}{Returns}
+heading \mbox{[}rad\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1Odometry_a853fa4f4d60e6bde3156a040b2d2afd4}\label{classmecanum__drive__controller_1_1Odometry_a853fa4f4d60e6bde3156a040b2d2afd4}} 
+\index{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry@{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry}!get\+LinearX@{get\+LinearX}}
+\index{get\+LinearX@{get\+LinearX}!mecanum\+\_\+drive\+\_\+controller\+::\+Odometry@{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry}}
+\subsubsection{\texorpdfstring{get\+Linear\+X()}{getLinearX()}}
+{\footnotesize\ttfamily double mecanum\+\_\+drive\+\_\+controller\+::\+Odometry\+::get\+LinearX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+linearX velocity getter 
+
+\begin{DoxyReturn}{Returns}
+linearX velocity \mbox{[}m/s\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1Odometry_a8099ac0900687515b3e700c9334594ab}\label{classmecanum__drive__controller_1_1Odometry_a8099ac0900687515b3e700c9334594ab}} 
+\index{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry@{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry}!get\+LinearY@{get\+LinearY}}
+\index{get\+LinearY@{get\+LinearY}!mecanum\+\_\+drive\+\_\+controller\+::\+Odometry@{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry}}
+\subsubsection{\texorpdfstring{get\+Linear\+Y()}{getLinearY()}}
+{\footnotesize\ttfamily double mecanum\+\_\+drive\+\_\+controller\+::\+Odometry\+::get\+LinearY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+linearY velocity getter 
+
+\begin{DoxyReturn}{Returns}
+linearY velocity \mbox{[}m/s\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1Odometry_a4964c24a7e17cca8d3eba39123e92733}\label{classmecanum__drive__controller_1_1Odometry_a4964c24a7e17cca8d3eba39123e92733}} 
+\index{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry@{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry}!getX@{getX}}
+\index{getX@{getX}!mecanum\+\_\+drive\+\_\+controller\+::\+Odometry@{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry}}
+\subsubsection{\texorpdfstring{get\+X()}{getX()}}
+{\footnotesize\ttfamily double mecanum\+\_\+drive\+\_\+controller\+::\+Odometry\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+x position getter 
+
+\begin{DoxyReturn}{Returns}
+x position \mbox{[}m\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1Odometry_aa10bb571e668d1fe549c42bb9bad1ea6}\label{classmecanum__drive__controller_1_1Odometry_aa10bb571e668d1fe549c42bb9bad1ea6}} 
+\index{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry@{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry}!getY@{getY}}
+\index{getY@{getY}!mecanum\+\_\+drive\+\_\+controller\+::\+Odometry@{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry}}
+\subsubsection{\texorpdfstring{get\+Y()}{getY()}}
+{\footnotesize\ttfamily double mecanum\+\_\+drive\+\_\+controller\+::\+Odometry\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+y position getter 
+
+\begin{DoxyReturn}{Returns}
+y position \mbox{[}m\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1Odometry_aab16ac85e777de56f586734fad0d3b54}\label{classmecanum__drive__controller_1_1Odometry_aab16ac85e777de56f586734fad0d3b54}} 
+\index{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry@{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry}!init@{init}}
+\index{init@{init}!mecanum\+\_\+drive\+\_\+controller\+::\+Odometry@{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void mecanum\+\_\+drive\+\_\+controller\+::\+Odometry\+::init (\begin{DoxyParamCaption}\item[{const ros\+::\+Time \&}]{time }\end{DoxyParamCaption})}
+
+
+
+Initialize the odometry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & Current time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1Odometry_aabd05f5d6caf20f0d2f7ba9406efe3e9}\label{classmecanum__drive__controller_1_1Odometry_aabd05f5d6caf20f0d2f7ba9406efe3e9}} 
+\index{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry@{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry}!set\+Wheels\+Params@{set\+Wheels\+Params}}
+\index{set\+Wheels\+Params@{set\+Wheels\+Params}!mecanum\+\_\+drive\+\_\+controller\+::\+Odometry@{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry}}
+\subsubsection{\texorpdfstring{set\+Wheels\+Params()}{setWheelsParams()}}
+{\footnotesize\ttfamily void mecanum\+\_\+drive\+\_\+controller\+::\+Odometry\+::set\+Wheels\+Params (\begin{DoxyParamCaption}\item[{double}]{wheels\+\_\+k,  }\item[{double}]{wheels\+\_\+radius }\end{DoxyParamCaption})}
+
+
+
+Sets the wheels parameters\+: mecanum geometric param and radius. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wheels\+\_\+k} & Wheels geometric param (used in mecanum wheels\textquotesingle{} ik) \mbox{[}m\mbox{]} \\
+\hline
+{\em wheels\+\_\+radius} & Wheels radius \mbox{[}m\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmecanum__drive__controller_1_1Odometry_af4c7c019ccb5db9878bbdf0b83bbbc5c}\label{classmecanum__drive__controller_1_1Odometry_af4c7c019ccb5db9878bbdf0b83bbbc5c}} 
+\index{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry@{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry}!update@{update}}
+\index{update@{update}!mecanum\+\_\+drive\+\_\+controller\+::\+Odometry@{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily bool mecanum\+\_\+drive\+\_\+controller\+::\+Odometry\+::update (\begin{DoxyParamCaption}\item[{double}]{wheel0\+\_\+vel,  }\item[{double}]{wheel1\+\_\+vel,  }\item[{double}]{wheel2\+\_\+vel,  }\item[{double}]{wheel3\+\_\+vel,  }\item[{const ros\+::\+Time \&}]{time }\end{DoxyParamCaption})}
+
+
+
+Updates the odometry class with latest wheels position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wheel0\+\_\+vel} & Wheel velocity \mbox{[}rad\mbox{]} \\
+\hline
+{\em wheel1\+\_\+vel} & Wheel velocity \mbox{[}rad\mbox{]} \\
+\hline
+{\em wheel2\+\_\+vel} & Wheel velocity \mbox{[}rad\mbox{]} \\
+\hline
+{\em wheel3\+\_\+vel} & Wheel velocity \mbox{[}rad\mbox{]} \\
+\hline
+{\em time} & Current time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the odometry is actually updated 
+\end{DoxyReturn}
+We cannot estimate the speed with very small time intervals\+:
+
+Compute forward kinematics (i.\+e. compute mobile robot\textquotesingle{}s body twist out of its wheels velocities)\+: N\+O\+TE\+: we use the IK of the mecanum wheels which we invert using a pseudo-\/inverse. N\+O\+TE\+: in the diff drive the velocity is filtered out, but we prefer to return it raw and let the user perform post-\/processing at will. We prefer this way of doing as filtering introduces delay (which makes it difficult to interpret and compare behavior curves).
+
+Integrate odometry. \mbox{\Hypertarget{classmecanum__drive__controller_1_1Odometry_ab0562b24b9174f345683e28f1bbb2e49}\label{classmecanum__drive__controller_1_1Odometry_ab0562b24b9174f345683e28f1bbb2e49}} 
+\index{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry@{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry}!update\+Open\+Loop@{update\+Open\+Loop}}
+\index{update\+Open\+Loop@{update\+Open\+Loop}!mecanum\+\_\+drive\+\_\+controller\+::\+Odometry@{mecanum\+\_\+drive\+\_\+controller\+::\+Odometry}}
+\subsubsection{\texorpdfstring{update\+Open\+Loop()}{updateOpenLoop()}}
+{\footnotesize\ttfamily void mecanum\+\_\+drive\+\_\+controller\+::\+Odometry\+::update\+Open\+Loop (\begin{DoxyParamCaption}\item[{double}]{linearX,  }\item[{double}]{linearY,  }\item[{double}]{angular,  }\item[{const ros\+::\+Time \&}]{time }\end{DoxyParamCaption})}
+
+
+
+Updates the odometry class with latest velocity command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em linearX} & Linear velocity \mbox{[}m/s\mbox{]} \\
+\hline
+{\em angular} & Angular velocity \mbox{[}rad/s\mbox{]} \\
+\hline
+{\em time} & Current time \\
+\hline
+\end{DoxyParams}
+Save last linear and angular velocity\+:
+
+Integrate odometry\+: 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+ridgeback/ridgeback\+\_\+control/include/mecanum\+\_\+drive\+\_\+controller/odometry.\+h\item 
+ridgeback/ridgeback\+\_\+control/src/odometry.\+cpp\end{DoxyCompactItemize}
