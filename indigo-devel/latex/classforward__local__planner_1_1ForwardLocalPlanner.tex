@@ -1,0 +1,144 @@
+\hypertarget{classforward__local__planner_1_1ForwardLocalPlanner}{\section{forward\-\_\-local\-\_\-planner\-:\-:Forward\-Local\-Planner Class Reference}
+\label{classforward__local__planner_1_1ForwardLocalPlanner}\index{forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner@{forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner}}
+}
+
+
+Inheritance diagram for forward\-\_\-local\-\_\-planner\-:\-:Forward\-Local\-Planner\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classforward__local__planner_1_1ForwardLocalPlanner__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for forward\-\_\-local\-\_\-planner\-:\-:Forward\-Local\-Planner\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classforward__local__planner_1_1ForwardLocalPlanner__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classforward__local__planner_1_1ForwardLocalPlanner_a799b88b11a20f65c49f08090092de578}{Forward\-Local\-Planner} ()
+\item 
+virtual \hyperlink{classforward__local__planner_1_1ForwardLocalPlanner_ac842ee5e8465cb9038adf5596b5c4469}{$\sim$\-Forward\-Local\-Planner} ()
+\item 
+virtual bool \hyperlink{classforward__local__planner_1_1ForwardLocalPlanner_af66bd75aa18afa2f027f1951dfe18b41}{compute\-Velocity\-Commands} (geometry\-\_\-msgs\-::\-Twist \&cmd\-\_\-vel) override
+\begin{DoxyCompactList}\small\item\em Given the current position, orientation, and velocity of the robot\-: compute velocity commands to send to the robot mobile base. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classforward__local__planner_1_1ForwardLocalPlanner_a76d7b463fbe432b6af22d12270a1c2bd}{is\-Goal\-Reached} () override
+\begin{DoxyCompactList}\small\item\em Check if the goal pose has been achieved by the local planner. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classforward__local__planner_1_1ForwardLocalPlanner_a63db153f4977a9336dc992cb92415cd7}{set\-Plan} (const std\-::vector$<$ geometry\-\_\-msgs\-::\-Pose\-Stamped $>$ \&plan) override
+\begin{DoxyCompactList}\small\item\em Set the plan that the local planner is following. \end{DoxyCompactList}\item 
+void \hyperlink{classforward__local__planner_1_1ForwardLocalPlanner_a0ae17e1f6fd009d1ec223135891a548a}{initialize} (std\-::string name, tf\-::\-Transform\-Listener $\ast$tf, costmap\-\_\-2d\-::\-Costmap2\-D\-R\-O\-S $\ast$costmap\-Ros\-\_\-)
+\begin{DoxyCompactList}\small\item\em Constructs the local planner. \end{DoxyCompactList}\item 
+\hypertarget{classforward__local__planner_1_1ForwardLocalPlanner_a62a79a2c97359b566419731e3f2d0175}{void {\bfseries initialize} (std\-::string name, tf2\-\_\-ros\-::\-Buffer $\ast$tf, costmap\-\_\-2d\-::\-Costmap2\-D\-R\-O\-S $\ast$costmap\-Ros)}\label{classforward__local__planner_1_1ForwardLocalPlanner_a62a79a2c97359b566419731e3f2d0175}
+
+\item 
+\hypertarget{classforward__local__planner_1_1ForwardLocalPlanner_a1c4b2493ff014c2539572c4c219caabf}{void {\bfseries initialize} ()}\label{classforward__local__planner_1_1ForwardLocalPlanner_a1c4b2493ff014c2539572c4c219caabf}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classforward__local__planner_1_1ForwardLocalPlanner_a799b88b11a20f65c49f08090092de578}{\index{forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner@{forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner}!Forward\-Local\-Planner@{Forward\-Local\-Planner}}
+\index{Forward\-Local\-Planner@{Forward\-Local\-Planner}!forward_local_planner::ForwardLocalPlanner@{forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner}}
+\subsubsection[{Forward\-Local\-Planner}]{\setlength{\rightskip}{0pt plus 5cm}forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner\-::\-Forward\-Local\-Planner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classforward__local__planner_1_1ForwardLocalPlanner_a799b88b11a20f65c49f08090092de578}
+\hyperlink{classforward__local__planner_1_1ForwardLocalPlanner_a799b88b11a20f65c49f08090092de578}{Forward\-Local\-Planner()} \hypertarget{classforward__local__planner_1_1ForwardLocalPlanner_ac842ee5e8465cb9038adf5596b5c4469}{\index{forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner@{forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner}!$\sim$\-Forward\-Local\-Planner@{$\sim$\-Forward\-Local\-Planner}}
+\index{$\sim$\-Forward\-Local\-Planner@{$\sim$\-Forward\-Local\-Planner}!forward_local_planner::ForwardLocalPlanner@{forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner}}
+\subsubsection[{$\sim$\-Forward\-Local\-Planner}]{\setlength{\rightskip}{0pt plus 5cm}forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner\-::$\sim$\-Forward\-Local\-Planner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classforward__local__planner_1_1ForwardLocalPlanner_ac842ee5e8465cb9038adf5596b5c4469}
+\hyperlink{classforward__local__planner_1_1ForwardLocalPlanner_a799b88b11a20f65c49f08090092de578}{Forward\-Local\-Planner()} 
+
+\subsection{Member Function Documentation}
+\hypertarget{classforward__local__planner_1_1ForwardLocalPlanner_af66bd75aa18afa2f027f1951dfe18b41}{\index{forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner@{forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner}!compute\-Velocity\-Commands@{compute\-Velocity\-Commands}}
+\index{compute\-Velocity\-Commands@{compute\-Velocity\-Commands}!forward_local_planner::ForwardLocalPlanner@{forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner}}
+\subsubsection[{compute\-Velocity\-Commands}]{\setlength{\rightskip}{0pt plus 5cm}bool forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner\-::compute\-Velocity\-Commands (
+\begin{DoxyParamCaption}
+\item[{geometry\-\_\-msgs\-::\-Twist \&}]{cmd\-\_\-vel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classforward__local__planner_1_1ForwardLocalPlanner_af66bd75aa18afa2f027f1951dfe18b41}
+
+
+Given the current position, orientation, and velocity of the robot\-: compute velocity commands to send to the robot mobile base. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd\-\_\-vel} & Will be filled with the velocity command to be passed to the robot base \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if a valid velocity command was found, false otherwise
+\end{DoxyReturn}
+\hyperlink{classforward__local__planner_1_1ForwardLocalPlanner_af66bd75aa18afa2f027f1951dfe18b41}{compute\-Velocity\-Commands()} \hypertarget{classforward__local__planner_1_1ForwardLocalPlanner_a0ae17e1f6fd009d1ec223135891a548a}{\index{forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner@{forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner}!initialize@{initialize}}
+\index{initialize@{initialize}!forward_local_planner::ForwardLocalPlanner@{forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}void forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner\-::initialize (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{name, }
+\item[{tf\-::\-Transform\-Listener $\ast$}]{tf, }
+\item[{costmap\-\_\-2d\-::\-Costmap2\-D\-R\-O\-S $\ast$}]{costmap\-\_\-ros}
+\end{DoxyParamCaption}
+)}}\label{classforward__local__planner_1_1ForwardLocalPlanner_a0ae17e1f6fd009d1ec223135891a548a}
+
+
+Constructs the local planner. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name to give this instance of the local planner \\
+\hline
+{\em tf} & A pointer to a transform listener \\
+\hline
+{\em costmap\-\_\-ros} & The cost map to use for assigning costs to local plans\\
+\hline
+\end{DoxyParams}
+initialize() \hypertarget{classforward__local__planner_1_1ForwardLocalPlanner_a76d7b463fbe432b6af22d12270a1c2bd}{\index{forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner@{forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner}!is\-Goal\-Reached@{is\-Goal\-Reached}}
+\index{is\-Goal\-Reached@{is\-Goal\-Reached}!forward_local_planner::ForwardLocalPlanner@{forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner}}
+\subsubsection[{is\-Goal\-Reached}]{\setlength{\rightskip}{0pt plus 5cm}bool forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner\-::is\-Goal\-Reached (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classforward__local__planner_1_1ForwardLocalPlanner_a76d7b463fbe432b6af22d12270a1c2bd}
+
+
+Check if the goal pose has been achieved by the local planner. 
+
+\begin{DoxyReturn}{Returns}
+True if achieved, false otherwise
+\end{DoxyReturn}
+\hyperlink{classforward__local__planner_1_1ForwardLocalPlanner_a76d7b463fbe432b6af22d12270a1c2bd}{is\-Goal\-Reached()} \hypertarget{classforward__local__planner_1_1ForwardLocalPlanner_a63db153f4977a9336dc992cb92415cd7}{\index{forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner@{forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner}!set\-Plan@{set\-Plan}}
+\index{set\-Plan@{set\-Plan}!forward_local_planner::ForwardLocalPlanner@{forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner}}
+\subsubsection[{set\-Plan}]{\setlength{\rightskip}{0pt plus 5cm}bool forward\-\_\-local\-\_\-planner\-::\-Forward\-Local\-Planner\-::set\-Plan (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ geometry\-\_\-msgs\-::\-Pose\-Stamped $>$ \&}]{plan}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classforward__local__planner_1_1ForwardLocalPlanner_a63db153f4977a9336dc992cb92415cd7}
+
+
+Set the plan that the local planner is following. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plan} & The plan to pass to the local planner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the plan was updated successfully, false otherwise
+\end{DoxyReturn}
+\hyperlink{classforward__local__planner_1_1ForwardLocalPlanner_a63db153f4977a9336dc992cb92415cd7}{set\-Plan()} 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+smacc\-\_\-navigation/forward\-\_\-local\-\_\-planner/include/forward\-\_\-local\-\_\-planner/forward\-\_\-local\-\_\-planner.\-h\item 
+smacc\-\_\-navigation/forward\-\_\-local\-\_\-planner/src/forward\-\_\-local\-\_\-planner.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classsmacc_1_1ISmaccComponent.html" title="smacc::ISmaccComponent" alt="" coords="5,143,187,169"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccActionClient.html" title="smacc::ISmaccActionClient" alt="" coords="235,84,421,111"/>
+<area shape="rect" id="node8" href="$classsmacc__odom__tracker_1_1OdomTracker.html" title="This class track the required distance of the cord based on the external localization system..." alt="" coords="255,135,401,177"/>
+<area shape="rect" id="node9" href="$classsmacc__planner__switcher_1_1PlannerSwitcher.html" title="smacc_planner_switcher\l::PlannerSwitcher" alt="" coords="245,201,411,242"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1SmaccActionClientBase.html" title="smacc::SmaccActionClient\lBase\&lt; ActionType \&gt;" alt="" coords="480,5,661,46"/>
+<area shape="rect" id="node4" href="$classsmacc_1_1SmaccActionClientBase.html" title="smacc::SmaccActionClient\lBase\&lt; move_base_msgs::\lMoveBaseAction \&gt;" alt="" coords="480,69,661,125"/>
+<area shape="rect" id="node6" href="$classsmacc_1_1SmaccActionClientBase.html" title="smacc::SmaccActionClient\lBase\&lt; smacc_tool_plugin\l_template::ToolControlAction \&gt;" alt="" coords="469,149,672,205"/>
+<area shape="rect" id="node5" href="$classsmacc_1_1SmaccMoveBaseActionClient.html" title="smacc::SmaccMoveBaseAction\lClient" alt="" coords="721,77,930,118"/>
+<area shape="rect" id="node7" href="$classsmacc_1_1SmaccToolActionClient.html" title="smacc::SmaccToolActionClient" alt="" coords="722,164,929,191"/>
+</map>
