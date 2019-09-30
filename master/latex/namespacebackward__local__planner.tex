@@ -1,0 +1,50 @@
+\hypertarget{namespacebackward__local__planner}{}\section{backward\+\_\+local\+\_\+planner Namespace Reference}
+\label{namespacebackward__local__planner}\index{backward\+\_\+local\+\_\+planner@{backward\+\_\+local\+\_\+planner}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classbackward__local__planner_1_1BackwardLocalPlanner}{Backward\+Local\+Planner}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+tf\+::\+Stamped$<$ tf\+::\+Pose $>$ \hyperlink{namespacebackward__local__planner_a6c2eb91307e14f740b0bec1248dfe1c7}{optional\+Robot\+Pose} (costmap\+\_\+2d\+::\+Costmap2\+D\+R\+OS $\ast$costmap\+Ros)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{backward\+\_\+local\+\_\+planner@{backward\+\_\+local\+\_\+planner}!optional\+Robot\+Pose@{optional\+Robot\+Pose}}
+\index{optional\+Robot\+Pose@{optional\+Robot\+Pose}!backward\+\_\+local\+\_\+planner@{backward\+\_\+local\+\_\+planner}}
+\subsubsection[{\texorpdfstring{optional\+Robot\+Pose(costmap\+\_\+2d\+::\+Costmap2\+D\+R\+O\+S $\ast$costmap\+Ros)}{optionalRobotPose(costmap_2d::Costmap2DROS *costmapRos)}}]{\setlength{\rightskip}{0pt plus 5cm}tf\+::\+Stamped$<$tf\+::\+Pose$>$ backward\+\_\+local\+\_\+planner\+::optional\+Robot\+Pose (
+\begin{DoxyParamCaption}
+\item[{costmap\+\_\+2d\+::\+Costmap2\+D\+R\+OS $\ast$}]{costmap\+Ros}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacebackward__local__planner_a6c2eb91307e14f740b0bec1248dfe1c7}{}\label{namespacebackward__local__planner_a6c2eb91307e14f740b0bec1248dfe1c7}
+
+
+Definition at line 243 of file backward\+\_\+curved\+\_\+local\+\_\+planner.\+cpp.
+
+
+
+Referenced by backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::compute\+Velocity\+Commands(), and backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::pure\+Spinning\+Cmd().
+
+
+\begin{DoxyCode}
+244 \{
+245     tf::Stamped<tf::Pose> tfpose;
+246     costmapRos->getRobotPose(tfpose);
+247     \textcolor{keywordflow}{return} tfpose;
+248 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacebackward__local__planner_a6c2eb91307e14f740b0bec1248dfe1c7_icgraph}
+\end{center}
+\end{figure}
+
+

@@ -1,0 +1,73 @@
+\hypertarget{namespacesmacc__viewer_1_1smacc__user__data}{}\section{smacc\+\_\+viewer.\+smacc\+\_\+user\+\_\+data Namespace Reference}
+\label{namespacesmacc__viewer_1_1smacc__user__data}\index{smacc\+\_\+viewer.\+smacc\+\_\+user\+\_\+data@{smacc\+\_\+viewer.\+smacc\+\_\+user\+\_\+data}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsmacc__viewer_1_1smacc__user__data_1_1Const}{Const}
+\item 
+class \hyperlink{classsmacc__viewer_1_1smacc__user__data_1_1Remapper}{Remapper}
+\item 
+class \hyperlink{classsmacc__viewer_1_1smacc__user__data_1_1UserData}{User\+Data}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesmacc__viewer_1_1smacc__user__data_aca85c67e60fb6f052014a8584ba85d38}{get\+\_\+const} (obj)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \hyperlink{namespacesmacc__viewer_1_1smacc__user__data_aeab8192696d125744891fa431706f5f9}{\+\_\+\+\_\+all\+\_\+\+\_\+} = \mbox{[}\textquotesingle{}\hyperlink{classsmacc__viewer_1_1smacc__user__data_1_1UserData}{User\+Data}\textquotesingle{},\textquotesingle{}\hyperlink{classsmacc__viewer_1_1smacc__user__data_1_1Remapper}{Remapper}\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{smacc\+\_\+viewer\+::smacc\+\_\+user\+\_\+data@{smacc\+\_\+viewer\+::smacc\+\_\+user\+\_\+data}!get\+\_\+const@{get\+\_\+const}}
+\index{get\+\_\+const@{get\+\_\+const}!smacc\+\_\+viewer\+::smacc\+\_\+user\+\_\+data@{smacc\+\_\+viewer\+::smacc\+\_\+user\+\_\+data}}
+\subsubsection[{\texorpdfstring{get\+\_\+const(obj)}{get_const(obj)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+smacc\+\_\+user\+\_\+data.\+get\+\_\+const (
+\begin{DoxyParamCaption}
+\item[{}]{obj}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc__viewer_1_1smacc__user__data_aca85c67e60fb6f052014a8584ba85d38}{}\label{namespacesmacc__viewer_1_1smacc__user__data_aca85c67e60fb6f052014a8584ba85d38}
+\begin{DoxyVerb}Get a const reference to an object if it has "user-defined" attributes.\end{DoxyVerb}
+ 
+
+Definition at line 83 of file smacc\+\_\+user\+\_\+data.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+smacc\+\_\+user\+\_\+data.\+Const.\+\_\+\+\_\+getattr\+\_\+\+\_\+(), smacc\+\_\+viewer.\+smacc\+\_\+user\+\_\+data.\+Remapper.\+\_\+\+\_\+getattr\+\_\+\+\_\+(), smacc\+\_\+viewer.\+smacc\+\_\+user\+\_\+data.\+Const.\+\_\+\+\_\+getitem\+\_\+\+\_\+(), and smacc\+\_\+viewer.\+smacc\+\_\+user\+\_\+data.\+Remapper.\+\_\+\+\_\+getitem\+\_\+\+\_\+().
+
+
+\begin{DoxyCode}
+83 \textcolor{keyword}{def }\hyperlink{namespacesmacc__viewer_1_1smacc__user__data_aca85c67e60fb6f052014a8584ba85d38}{get\_const}(obj):
+84     \textcolor{stringliteral}{"""Get a const reference to an object if it has "user-defined" attributes."""}
+85     \textcolor{keywordflow}{if} hasattr(obj,\textcolor{stringliteral}{'\_\_dict\_\_'}):
+86         rospy.logdebug(\textcolor{stringliteral}{"Making const '%s'"} % str(obj))
+87         \textcolor{keywordflow}{return} \hyperlink{classsmacc__viewer_1_1smacc__user__data_1_1Const}{Const}(obj)
+88     \textcolor{keywordflow}{else}:
+89         \textcolor{keywordflow}{return} obj
+90 
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesmacc__viewer_1_1smacc__user__data_aca85c67e60fb6f052014a8584ba85d38_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{smacc\+\_\+viewer\+::smacc\+\_\+user\+\_\+data@{smacc\+\_\+viewer\+::smacc\+\_\+user\+\_\+data}!\+\_\+\+\_\+all\+\_\+\+\_\+@{\+\_\+\+\_\+all\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+all\+\_\+\+\_\+@{\+\_\+\+\_\+all\+\_\+\+\_\+}!smacc\+\_\+viewer\+::smacc\+\_\+user\+\_\+data@{smacc\+\_\+viewer\+::smacc\+\_\+user\+\_\+data}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+all\+\_\+\+\_\+}{__all__}}]{\setlength{\rightskip}{0pt plus 5cm}list smacc\+\_\+viewer.\+smacc\+\_\+user\+\_\+data.\+\_\+\+\_\+all\+\_\+\+\_\+ = \mbox{[}\textquotesingle{}{\bf User\+Data}\textquotesingle{},\textquotesingle{}{\bf Remapper}\textquotesingle{}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{namespacesmacc__viewer_1_1smacc__user__data_aeab8192696d125744891fa431706f5f9}{}\label{namespacesmacc__viewer_1_1smacc__user__data_aeab8192696d125744891fa431706f5f9}
+
+
+Definition at line 6 of file smacc\+\_\+user\+\_\+data.\+py.
+

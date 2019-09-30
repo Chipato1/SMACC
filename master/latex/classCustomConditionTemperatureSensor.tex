@@ -1,0 +1,97 @@
+\hypertarget{classCustomConditionTemperatureSensor}{}\section{Custom\+Condition\+Temperature\+Sensor Class Reference}
+\label{classCustomConditionTemperatureSensor}\index{Custom\+Condition\+Temperature\+Sensor@{Custom\+Condition\+Temperature\+Sensor}}
+
+
+{\ttfamily \#include $<$custom\+\_\+condition\+\_\+temperature\+\_\+sensor.\+h$>$}
+
+
+
+Inheritance diagram for Custom\+Condition\+Temperature\+Sensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classCustomConditionTemperatureSensor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Custom\+Condition\+Temperature\+Sensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCustomConditionTemperatureSensor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCustomConditionTemperatureSensor_abc4c749adb4996745639c8848de51990}{Custom\+Condition\+Temperature\+Sensor} (std\+::string topic\+Name, \hyperlink{classint}{int} queue\+Size=1, ros\+::\+Duration timeout=ros\+::\+Duration(5))
+\item 
+virtual void \hyperlink{classCustomConditionTemperatureSensor_a34847ebb7d87c53d332e1b8c956e9720}{on\+Message\+Callback} (const sensor\+\_\+msgs\+::\+Temperature \&msg) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file custom\+\_\+condition\+\_\+temperature\+\_\+sensor.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Custom\+Condition\+Temperature\+Sensor@{Custom\+Condition\+Temperature\+Sensor}!Custom\+Condition\+Temperature\+Sensor@{Custom\+Condition\+Temperature\+Sensor}}
+\index{Custom\+Condition\+Temperature\+Sensor@{Custom\+Condition\+Temperature\+Sensor}!Custom\+Condition\+Temperature\+Sensor@{Custom\+Condition\+Temperature\+Sensor}}
+\subsubsection[{\texorpdfstring{Custom\+Condition\+Temperature\+Sensor(std\+::string topic\+Name, int queue\+Size=1, ros\+::\+Duration timeout=ros\+::\+Duration(5))}{CustomConditionTemperatureSensor(std::string topicName, int queueSize=1, ros::Duration timeout=ros::Duration(5))}}]{\setlength{\rightskip}{0pt plus 5cm}Custom\+Condition\+Temperature\+Sensor\+::\+Custom\+Condition\+Temperature\+Sensor (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{topic\+Name, }
+\item[{{\bf int}}]{queue\+Size = {\ttfamily 1}, }
+\item[{ros\+::\+Duration}]{timeout = {\ttfamily ros\+:\+:Duration(5)}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCustomConditionTemperatureSensor_abc4c749adb4996745639c8848de51990}{}\label{classCustomConditionTemperatureSensor_abc4c749adb4996745639c8848de51990}
+
+
+Definition at line 14 of file custom\+\_\+condition\+\_\+temperature\+\_\+sensor.\+h.
+
+
+\begin{DoxyCode}
+15   : \hyperlink{classsmacc_1_1SensorTopic}{smacc::SensorTopic<sensor\_msgs::Temperature>}(topicName, 
+      queueSize, timeout)
+16   \{
+17   \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Custom\+Condition\+Temperature\+Sensor@{Custom\+Condition\+Temperature\+Sensor}!on\+Message\+Callback@{on\+Message\+Callback}}
+\index{on\+Message\+Callback@{on\+Message\+Callback}!Custom\+Condition\+Temperature\+Sensor@{Custom\+Condition\+Temperature\+Sensor}}
+\subsubsection[{\texorpdfstring{on\+Message\+Callback(const sensor\+\_\+msgs\+::\+Temperature \&msg) override}{onMessageCallback(const sensor_msgs::Temperature &msg) override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Custom\+Condition\+Temperature\+Sensor\+::on\+Message\+Callback (
+\begin{DoxyParamCaption}
+\item[{const sensor\+\_\+msgs\+::\+Temperature \&}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classCustomConditionTemperatureSensor_a34847ebb7d87c53d332e1b8c956e9720}{}\label{classCustomConditionTemperatureSensor_a34847ebb7d87c53d332e1b8c956e9720}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SensorTopic_a1160ef981ab390d75d862a6067615e41}{smacc\+::\+Sensor\+Topic$<$ sensor\+\_\+msgs\+::\+Temperature $>$}.
+
+
+
+Definition at line 19 of file custom\+\_\+condition\+\_\+temperature\+\_\+sensor.\+h.
+
+
+\begin{DoxyCode}
+20   \{
+21     \textcolor{keywordflow}{if}(\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}.temperature > 40)
+22     \{
+23       \textcolor{keyword}{auto} ev = \textcolor{keyword}{new} \hyperlink{structEvCustomTemperatureAlert}{EvCustomTemperatureAlert}();
+24       this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a8538664f9828247727a27446112788a2}{postEvent}(ev);
+25     \}
+26   \} 
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+client\+\_\+library/smacc\+\_\+sensors/examples/sensor\+\_\+substate\+\_\+example/include/substates\+\_\+behaviors/sensor/\hyperlink{custom__condition__temperature__sensor_8h}{custom\+\_\+condition\+\_\+temperature\+\_\+sensor.\+h}\end{DoxyCompactItemize}

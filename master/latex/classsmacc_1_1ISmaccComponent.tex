@@ -1,0 +1,265 @@
+\hypertarget{classsmacc_1_1ISmaccComponent}{}\section{smacc\+:\+:I\+Smacc\+Component Class Reference}
+\label{classsmacc_1_1ISmaccComponent}\index{smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}}
+
+
+{\ttfamily \#include $<$component.\+h$>$}
+
+
+
+Inheritance diagram for smacc\+:\+:I\+Smacc\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1ISmaccComponent__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+:\+:I\+Smacc\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1ISmaccComponent__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc_1_1ISmaccComponent_a43952d7269ddb81d017a80f018fe502e}{I\+Smacc\+Component} ()
+\item 
+virtual \hyperlink{classsmacc_1_1ISmaccComponent_a46f5cfc6a308de938b6ee3a5e80a8fe9}{$\sim$\+I\+Smacc\+Component} ()
+\item 
+virtual void \hyperlink{classsmacc_1_1ISmaccComponent_a2463ed9d3a5ccf167f9596a38671ace0}{init} (ros\+::\+Node\+Handle \&nh)
+\item 
+virtual void \hyperlink{classsmacc_1_1ISmaccComponent_abc2c65813913369f0693ab7d2c2bd49c}{init} (ros\+::\+Node\+Handle \&nh, std\+::string value)
+\item 
+void \hyperlink{classsmacc_1_1ISmaccComponent_afe57665a6982475e8f9c2a5885e986e1}{set\+State\+Machine} (\hyperlink{classsmacc_1_1ISmaccStateMachine}{I\+Smacc\+State\+Machine} $\ast$state\+Machine)
+\item 
+virtual std\+::string \hyperlink{classsmacc_1_1ISmaccComponent_aa314809a7fd3516461e31cc120d0cfe7}{get\+Name} () const 
+\item 
+{\footnotesize template$<$typename Event\+Type $>$ }\\void \hyperlink{classsmacc_1_1ISmaccComponent_a687dead5b87a3b9781b9bf6ab0b7afa5}{post\+Event} (const Event\+Type \&ev)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc_1_1ISmaccStateMachine}{I\+Smacc\+State\+Machine} $\ast$ \hyperlink{classsmacc_1_1ISmaccComponent_ae3f37acc1679f79299b86872d4b1f80f}{state\+Machine\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file component.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}!I\+Smacc\+Component@{I\+Smacc\+Component}}
+\index{I\+Smacc\+Component@{I\+Smacc\+Component}!smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}}
+\subsubsection[{\texorpdfstring{I\+Smacc\+Component()}{ISmaccComponent()}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+::\+I\+Smacc\+Component\+::\+I\+Smacc\+Component (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1ISmaccComponent_a43952d7269ddb81d017a80f018fe502e}{}\label{classsmacc_1_1ISmaccComponent_a43952d7269ddb81d017a80f018fe502e}
+
+
+Definition at line 16 of file smacc\+\_\+component.\+cpp.
+
+
+\begin{DoxyCode}
+17 \{
+18 \}
+\end{DoxyCode}
+\index{smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}!````~I\+Smacc\+Component@{$\sim$\+I\+Smacc\+Component}}
+\index{````~I\+Smacc\+Component@{$\sim$\+I\+Smacc\+Component}!smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}}
+\subsubsection[{\texorpdfstring{$\sim$\+I\+Smacc\+Component()}{~ISmaccComponent()}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+::\+I\+Smacc\+Component\+::$\sim$\+I\+Smacc\+Component (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classsmacc_1_1ISmaccComponent_a46f5cfc6a308de938b6ee3a5e80a8fe9}{}\label{classsmacc_1_1ISmaccComponent_a46f5cfc6a308de938b6ee3a5e80a8fe9}
+
+
+Definition at line 11 of file smacc\+\_\+component.\+cpp.
+
+
+\begin{DoxyCode}
+12 \{
+13 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}}
+\subsubsection[{\texorpdfstring{get\+Name() const }{getName() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::\+I\+Smacc\+Component\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classsmacc_1_1ISmaccComponent_aa314809a7fd3516461e31cc120d0cfe7}{}\label{classsmacc_1_1ISmaccComponent_aa314809a7fd3516461e31cc120d0cfe7}
+
+
+Reimplemented in \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient_ac90f555fadd3b3c9394aca537a9962f4}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, and \hyperlink{classsmacc_1_1SmaccToolActionClient_a07ee35b66e8e8e28c9e39052835515c9}{smacc\+::\+Smacc\+Tool\+Action\+Client}.
+
+
+
+Definition at line 36 of file smacc\+\_\+component.\+cpp.
+
+
+
+References demangle\+Symbol().
+
+
+
+Referenced by smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::cancel\+Goal(), smacc\+::\+Signal\+Detector\+::finalize\+Request(), smacc\+::\+Smacc\+Service\+Client$<$ std\+\_\+srvs\+::\+Set\+Bool $>$\+::initialize(), smacc\+::\+Smacc\+Topic\+Publisher\+Client$<$ std\+\_\+msgs\+::\+String $>$\+::initialize(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::post\+Event(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::post\+Feedback\+Event(), smacc\+::\+Signal\+Detector\+::register\+Action\+Client\+Request(), smacc\+::\+I\+Smacc\+State\+Machine\+::register\+Action\+Client\+Request(), and smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::send\+Goal().
+
+
+\begin{DoxyCode}
+37 \{
+38     std::string keyname = \hyperlink{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{demangleSymbol}(\textcolor{keyword}{typeid}(*this).name());
+39     \textcolor{keywordflow}{return} keyname;
+40 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1ISmaccComponent_aa314809a7fd3516461e31cc120d0cfe7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1ISmaccComponent_aa314809a7fd3516461e31cc120d0cfe7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}!init@{init}}
+\index{init@{init}!smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}}
+\subsubsection[{\texorpdfstring{init(ros\+::\+Node\+Handle \&nh)}{init(ros::NodeHandle &nh)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+I\+Smacc\+Component\+::init (
+\begin{DoxyParamCaption}
+\item[{ros\+::\+Node\+Handle \&}]{nh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classsmacc_1_1ISmaccComponent_a2463ed9d3a5ccf167f9596a38671ace0}{}\label{classsmacc_1_1ISmaccComponent_a2463ed9d3a5ccf167f9596a38671ace0}
+
+
+Reimplemented in \hyperlink{classsmacc_1_1SmaccActionClientBase_a642594be28535dd4db782b8f2777ba38}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$}, \hyperlink{classsmacc_1_1SmaccActionClientBase_a642594be28535dd4db782b8f2777ba38}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ smacc\+\_\+action\+\_\+client\+\_\+generic\+::\+Tool\+Control\+Action $>$}, \hyperlink{classsmacc_1_1SmaccActionClientBase_a642594be28535dd4db782b8f2777ba38}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$}, and \hyperlink{classsmacc_1_1ISmaccActionClient_ada515034533cfc7be40407aee31fd76f}{smacc\+::\+I\+Smacc\+Action\+Client}.
+
+
+
+Definition at line 20 of file smacc\+\_\+component.\+cpp.
+
+
+\begin{DoxyCode}
+21 \{
+22     
+23 \}
+\end{DoxyCode}
+\index{smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}!init@{init}}
+\index{init@{init}!smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}}
+\subsubsection[{\texorpdfstring{init(ros\+::\+Node\+Handle \&nh, std\+::string value)}{init(ros::NodeHandle &nh, std::string value)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+I\+Smacc\+Component\+::init (
+\begin{DoxyParamCaption}
+\item[{ros\+::\+Node\+Handle \&}]{nh, }
+\item[{std\+::string}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classsmacc_1_1ISmaccComponent_abc2c65813913369f0693ab7d2c2bd49c}{}\label{classsmacc_1_1ISmaccComponent_abc2c65813913369f0693ab7d2c2bd49c}
+
+
+Reimplemented in \hyperlink{classsmacc_1_1SmaccActionClientBase_aa8288d14fe85c2c6e93e8ad635cc8ea5}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$}, \hyperlink{classsmacc_1_1SmaccActionClientBase_aa8288d14fe85c2c6e93e8ad635cc8ea5}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ smacc\+\_\+action\+\_\+client\+\_\+generic\+::\+Tool\+Control\+Action $>$}, \hyperlink{classsmacc_1_1SmaccActionClientBase_aa8288d14fe85c2c6e93e8ad635cc8ea5}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$}, \hyperlink{classsmacc__odom__tracker_1_1OdomTracker_aa4525024fdc01e54bc310f48c7676a2f}{smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker}, \hyperlink{classsmacc_1_1ISmaccActionClient_ad51cf3b82a54fb6d698e9da9cb42ad38}{smacc\+::\+I\+Smacc\+Action\+Client}, and \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_ae1e0ad820a95f2671a8967cfc45fb299}{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}.
+
+
+
+Definition at line 25 of file smacc\+\_\+component.\+cpp.
+
+
+\begin{DoxyCode}
+26 \{
+27     
+28 \}
+\end{DoxyCode}
+\index{smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}!post\+Event@{post\+Event}}
+\index{post\+Event@{post\+Event}!smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}}
+\subsubsection[{\texorpdfstring{post\+Event(const Event\+Type \&ev)}{postEvent(const EventType &ev)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Event\+Type $>$ void smacc\+::\+I\+Smacc\+Component\+::post\+Event (
+\begin{DoxyParamCaption}
+\item[{const Event\+Type \&}]{ev}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1ISmaccComponent_a687dead5b87a3b9781b9bf6ab0b7afa5}{}\label{classsmacc_1_1ISmaccComponent_a687dead5b87a3b9781b9bf6ab0b7afa5}
+
+
+Definition at line 9 of file smacc\+\_\+component\+\_\+impl.\+h.
+
+
+
+References smacc\+::\+I\+Smacc\+State\+Machine\+::post\+Event(), and state\+Machine\+\_\+.
+
+
+\begin{DoxyCode}
+10     \{
+11         \hyperlink{classsmacc_1_1ISmaccComponent_ae3f37acc1679f79299b86872d4b1f80f}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_ad80cdd7bbc9a9f3b221c625754fed1ed}{postEvent}(ev);
+12     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1ISmaccComponent_a687dead5b87a3b9781b9bf6ab0b7afa5_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}!set\+State\+Machine@{set\+State\+Machine}}
+\index{set\+State\+Machine@{set\+State\+Machine}!smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}}
+\subsubsection[{\texorpdfstring{set\+State\+Machine(\+I\+Smacc\+State\+Machine $\ast$state\+Machine)}{setStateMachine(ISmaccStateMachine *stateMachine)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+I\+Smacc\+Component\+::set\+State\+Machine (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Smacc\+State\+Machine} $\ast$}]{state\+Machine}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1ISmaccComponent_afe57665a6982475e8f9c2a5885e986e1}{}\label{classsmacc_1_1ISmaccComponent_afe57665a6982475e8f9c2a5885e986e1}
+
+
+Definition at line 31 of file smacc\+\_\+component.\+cpp.
+
+
+
+References state\+Machine\+\_\+.
+
+
+\begin{DoxyCode}
+32 \{
+33     \hyperlink{classsmacc_1_1ISmaccComponent_ae3f37acc1679f79299b86872d4b1f80f}{stateMachine\_} = stateMachine;
+34 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}!state\+Machine\+\_\+@{state\+Machine\+\_\+}}
+\index{state\+Machine\+\_\+@{state\+Machine\+\_\+}!smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}}
+\subsubsection[{\texorpdfstring{state\+Machine\+\_\+}{stateMachine_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Smacc\+State\+Machine}$\ast$ smacc\+::\+I\+Smacc\+Component\+::state\+Machine\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classsmacc_1_1ISmaccComponent_ae3f37acc1679f79299b86872d4b1f80f}{}\label{classsmacc_1_1ISmaccComponent_ae3f37acc1679f79299b86872d4b1f80f}
+
+
+Definition at line 34 of file component.\+h.
+
+
+
+Referenced by post\+Event(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::send\+Goal(), and set\+State\+Machine().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+smacc/include/smacc/\hyperlink{component_8h}{component.\+h}\item 
+smacc/include/smacc/impl/\hyperlink{smacc__component__impl_8h}{smacc\+\_\+component\+\_\+impl.\+h}\item 
+smacc/src/smacc/\hyperlink{smacc__component_8cpp}{smacc\+\_\+component.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,127 @@
+\hypertarget{classSbToolStop}{}\section{Sb\+Tool\+Stop Class Reference}
+\label{classSbToolStop}\index{Sb\+Tool\+Stop@{Sb\+Tool\+Stop}}
+
+
+{\ttfamily \#include $<$sb\+\_\+tool\+\_\+stop.\+h$>$}
+
+
+
+Inheritance diagram for Sb\+Tool\+Stop\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{classSbToolStop__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sb\+Tool\+Stop\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSbToolStop__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classSbToolStop_a411f6a864d2d70be43bdedc0c7ce77ac}{on\+Entry} () override
+\item 
+virtual \hyperlink{classbool}{bool} \hyperlink{classSbToolStop_a297d4c079bc5d8d06010dcf28cff98dc}{on\+Exit} () override
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc_1_1SmaccToolActionClient}{smacc\+::\+Smacc\+Tool\+Action\+Client} $\ast$ \hyperlink{classSbToolStop_ad1d7100ab912d6671d09e1ae8e038086}{tool\+Action\+Client\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 5 of file sb\+\_\+tool\+\_\+stop.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Sb\+Tool\+Stop@{Sb\+Tool\+Stop}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!Sb\+Tool\+Stop@{Sb\+Tool\+Stop}}
+\subsubsection[{\texorpdfstring{on\+Entry() override}{onEntry() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Sb\+Tool\+Stop\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSbToolStop_a411f6a864d2d70be43bdedc0c7ce77ac}{}\label{classSbToolStop_a411f6a864d2d70be43bdedc0c7ce77ac}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_a7c28e1c46238bbb2c2e0450573c6de94}{smacc\+::\+Smacc\+Sub\+State\+Behavior}.
+
+
+
+Definition at line 11 of file sb\+\_\+tool\+\_\+stop.\+h.
+
+
+
+References smacc\+::\+Smacc\+Sub\+State\+Behavior\+::requires\+Component(), and smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal().
+
+
+\begin{DoxyCode}
+12     \{
+13       this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}{requiresComponent}(\hyperlink{classSbToolStop_ad1d7100ab912d6671d09e1ae8e038086}{toolActionClient\_} , ros::NodeHandle(\textcolor{stringliteral}{"
+      tool\_action\_server"}));
+14 
+15       smacc::SmaccToolActionClient::Goal goal;
+16       goal.command = smacc::SmaccToolActionClient::Goal::CMD\_STOP;
+17       \hyperlink{classSbToolStop_ad1d7100ab912d6671d09e1ae8e038086}{toolActionClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
+18     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSbToolStop_a411f6a864d2d70be43bdedc0c7ce77ac_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Sb\+Tool\+Stop@{Sb\+Tool\+Stop}!on\+Exit@{on\+Exit}}
+\index{on\+Exit@{on\+Exit}!Sb\+Tool\+Stop@{Sb\+Tool\+Stop}}
+\subsubsection[{\texorpdfstring{on\+Exit() override}{onExit() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf bool} Sb\+Tool\+Stop\+::on\+Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSbToolStop_a297d4c079bc5d8d06010dcf28cff98dc}{}\label{classSbToolStop_a297d4c079bc5d8d06010dcf28cff98dc}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_ab78b9de76c04a7ab6c16d5924e216ef9}{smacc\+::\+Smacc\+Sub\+State\+Behavior}.
+
+
+
+Definition at line 20 of file sb\+\_\+tool\+\_\+stop.\+h.
+
+
+\begin{DoxyCode}
+21     \{
+22       \textcolor{comment}{//ROS\_INFO("Entering ToolSubstateBehavior");}
+23       \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+24     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{Sb\+Tool\+Stop@{Sb\+Tool\+Stop}!tool\+Action\+Client\+\_\+@{tool\+Action\+Client\+\_\+}}
+\index{tool\+Action\+Client\+\_\+@{tool\+Action\+Client\+\_\+}!Sb\+Tool\+Stop@{Sb\+Tool\+Stop}}
+\subsubsection[{\texorpdfstring{tool\+Action\+Client\+\_\+}{toolActionClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+::\+Smacc\+Tool\+Action\+Client}$\ast$ Sb\+Tool\+Stop\+::tool\+Action\+Client\+\_\+}\hypertarget{classSbToolStop_ad1d7100ab912d6671d09e1ae8e038086}{}\label{classSbToolStop_ad1d7100ab912d6671d09e1ae8e038086}
+
+
+Definition at line 9 of file sb\+\_\+tool\+\_\+stop.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+examples/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/substate\+\_\+behaviors/tool/\hyperlink{sb__tool__stop_8h}{sb\+\_\+tool\+\_\+stop.\+h}\end{DoxyCompactItemize}

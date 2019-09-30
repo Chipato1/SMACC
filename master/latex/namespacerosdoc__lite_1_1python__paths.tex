@@ -1,0 +1,165 @@
+\hypertarget{namespacerosdoc__lite_1_1python__paths}{}\section{rosdoc\+\_\+lite.\+python\+\_\+paths Namespace Reference}
+\label{namespacerosdoc__lite_1_1python__paths}\index{rosdoc\+\_\+lite.\+python\+\_\+paths@{rosdoc\+\_\+lite.\+python\+\_\+paths}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacerosdoc__lite_1_1python__paths_a397da4b72eb60002cbd7bb76b7e546b8}{get\+\_\+non\+\_\+catkin\+\_\+depends} (package, rospack)
+\item 
+def \hyperlink{namespacerosdoc__lite_1_1python__paths_a4d48c6c920453bf437efcbbc05d783b2}{append\+\_\+package\+\_\+paths} (manifest, paths, pkg\+\_\+dir)
+\item 
+def \hyperlink{namespacerosdoc__lite_1_1python__paths_ade66328b714b7469349faf40ac24b3d5}{generate\+\_\+python\+\_\+path} (pkg, rospack, m)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{rosdoc\+\_\+lite\+::python\+\_\+paths@{rosdoc\+\_\+lite\+::python\+\_\+paths}!append\+\_\+package\+\_\+paths@{append\+\_\+package\+\_\+paths}}
+\index{append\+\_\+package\+\_\+paths@{append\+\_\+package\+\_\+paths}!rosdoc\+\_\+lite\+::python\+\_\+paths@{rosdoc\+\_\+lite\+::python\+\_\+paths}}
+\subsubsection[{\texorpdfstring{append\+\_\+package\+\_\+paths(manifest, paths, pkg\+\_\+dir)}{append_package_paths(manifest, paths, pkg_dir)}}]{\setlength{\rightskip}{0pt plus 5cm}def rosdoc\+\_\+lite.\+python\+\_\+paths.\+append\+\_\+package\+\_\+paths (
+\begin{DoxyParamCaption}
+\item[{}]{manifest, }
+\item[{}]{paths, }
+\item[{}]{pkg\+\_\+dir}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerosdoc__lite_1_1python__paths_a4d48c6c920453bf437efcbbc05d783b2}{}\label{namespacerosdoc__lite_1_1python__paths_a4d48c6c920453bf437efcbbc05d783b2}
+\begin{DoxyVerb}Added paths for package to paths
+:param manifest_: package manifest, ``Manifest``
+:param pkg_dir: package's filesystem directory path, ``str``
+:param paths: list of paths, ``[str]``
+\end{DoxyVerb}
+ 
+
+Definition at line 43 of file python\+\_\+paths.\+py.
+
+
+
+Referenced by rosdoc\+\_\+lite.\+python\+\_\+paths.\+generate\+\_\+python\+\_\+path().
+
+
+\begin{DoxyCode}
+43 \textcolor{keyword}{def }\hyperlink{namespacerosdoc__lite_1_1python__paths_a4d48c6c920453bf437efcbbc05d783b2}{append\_package\_paths}(manifest, paths, pkg\_dir):
+44     \textcolor{stringliteral}{"""}
+45 \textcolor{stringliteral}{    Added paths for package to paths}
+46 \textcolor{stringliteral}{    :param manifest\_: package manifest, ``Manifest``}
+47 \textcolor{stringliteral}{    :param pkg\_dir: package's filesystem directory path, ``str``}
+48 \textcolor{stringliteral}{    :param paths: list of paths, ``[str]``}
+49 \textcolor{stringliteral}{    """}
+50     exports = manifest.get\_export(\textcolor{stringliteral}{'python'}, \textcolor{stringliteral}{'path'})
+51     \textcolor{keywordflow}{if} exports:
+52         \textcolor{keywordflow}{for} export \textcolor{keywordflow}{in} exports:
+53             \textcolor{keywordflow}{if} \textcolor{stringliteral}{':'} \textcolor{keywordflow}{in} export:
+54                 export = export.split(\textcolor{stringliteral}{':'})
+55             \textcolor{keywordflow}{else}:
+56                 export = [export]
+57             \textcolor{keywordflow}{for} e \textcolor{keywordflow}{in} export:
+58                 paths.append(e.replace(\textcolor{stringliteral}{'$\{prefix\}'}, pkg\_dir))
+59     \textcolor{keywordflow}{else}:
+60         dirs = [os.path.join(pkg\_dir, d) \textcolor{keywordflow}{for} d \textcolor{keywordflow}{in} [\textcolor{stringliteral}{'src'}, \textcolor{stringliteral}{'lib'}]]
+61         print(\textcolor{stringliteral}{"Trying to put %s on python path"} % dirs)
+62         paths.extend([d \textcolor{keywordflow}{for} d \textcolor{keywordflow}{in} dirs \textcolor{keywordflow}{if} os.path.isdir(d)])
+63 
+64 
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerosdoc__lite_1_1python__paths_a4d48c6c920453bf437efcbbc05d783b2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{rosdoc\+\_\+lite\+::python\+\_\+paths@{rosdoc\+\_\+lite\+::python\+\_\+paths}!generate\+\_\+python\+\_\+path@{generate\+\_\+python\+\_\+path}}
+\index{generate\+\_\+python\+\_\+path@{generate\+\_\+python\+\_\+path}!rosdoc\+\_\+lite\+::python\+\_\+paths@{rosdoc\+\_\+lite\+::python\+\_\+paths}}
+\subsubsection[{\texorpdfstring{generate\+\_\+python\+\_\+path(pkg, rospack, m)}{generate_python_path(pkg, rospack, m)}}]{\setlength{\rightskip}{0pt plus 5cm}def rosdoc\+\_\+lite.\+python\+\_\+paths.\+generate\+\_\+python\+\_\+path (
+\begin{DoxyParamCaption}
+\item[{}]{pkg, }
+\item[{}]{rospack, }
+\item[{}]{m}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerosdoc__lite_1_1python__paths_ade66328b714b7469349faf40ac24b3d5}{}\label{namespacerosdoc__lite_1_1python__paths_ade66328b714b7469349faf40ac24b3d5}
+\begin{DoxyVerb}Recursive subroutine for building dependency list and python path
+\end{DoxyVerb}
+ 
+
+Definition at line 65 of file python\+\_\+paths.\+py.
+
+
+
+References rosdoc\+\_\+lite.\+python\+\_\+paths.\+append\+\_\+package\+\_\+paths(), and rosdoc\+\_\+lite.\+python\+\_\+paths.\+get\+\_\+non\+\_\+catkin\+\_\+depends().
+
+
+\begin{DoxyCode}
+65 \textcolor{keyword}{def }\hyperlink{namespacerosdoc__lite_1_1python__paths_ade66328b714b7469349faf40ac24b3d5}{generate\_python\_path}(pkg, rospack, m):
+66     \textcolor{stringliteral}{"""}
+67 \textcolor{stringliteral}{    Recursive subroutine for building dependency list and python path}
+68 \textcolor{stringliteral}{    """}
+69     \textcolor{comment}{# short-circuit if this is a catkin-ized package}
+70     \textcolor{keywordflow}{if} m.is\_catkin:
+71         print(\textcolor{stringliteral}{"Catkin package, no need to generate python paths"})
+72         \textcolor{keywordflow}{return} []
+73 
+74     packages = \hyperlink{namespacerosdoc__lite_1_1python__paths_a397da4b72eb60002cbd7bb76b7e546b8}{get\_non\_catkin\_depends}(pkg, rospack)
+75     packages.append(pkg)
+76     print(\textcolor{stringliteral}{"Packages to create python paths for %s"} % packages)
+77 
+78     paths = []
+79     \textcolor{keywordflow}{try}:
+80         \textcolor{keywordflow}{for} p \textcolor{keywordflow}{in} packages:
+81             m = rospack.get\_manifest(p)
+82             d = rospack.get\_path(p)
+83             \hyperlink{namespacerosdoc__lite_1_1python__paths_a4d48c6c920453bf437efcbbc05d783b2}{append\_package\_paths}(m, paths, d)
+84     \textcolor{keywordflow}{except}:
+85         \textcolor{keywordflow}{raise}
+86     \textcolor{keywordflow}{return} paths
+87 \end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerosdoc__lite_1_1python__paths_ade66328b714b7469349faf40ac24b3d5_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{rosdoc\+\_\+lite\+::python\+\_\+paths@{rosdoc\+\_\+lite\+::python\+\_\+paths}!get\+\_\+non\+\_\+catkin\+\_\+depends@{get\+\_\+non\+\_\+catkin\+\_\+depends}}
+\index{get\+\_\+non\+\_\+catkin\+\_\+depends@{get\+\_\+non\+\_\+catkin\+\_\+depends}!rosdoc\+\_\+lite\+::python\+\_\+paths@{rosdoc\+\_\+lite\+::python\+\_\+paths}}
+\subsubsection[{\texorpdfstring{get\+\_\+non\+\_\+catkin\+\_\+depends(package, rospack)}{get_non_catkin_depends(package, rospack)}}]{\setlength{\rightskip}{0pt plus 5cm}def rosdoc\+\_\+lite.\+python\+\_\+paths.\+get\+\_\+non\+\_\+catkin\+\_\+depends (
+\begin{DoxyParamCaption}
+\item[{}]{package, }
+\item[{}]{rospack}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerosdoc__lite_1_1python__paths_a397da4b72eb60002cbd7bb76b7e546b8}{}\label{namespacerosdoc__lite_1_1python__paths_a397da4b72eb60002cbd7bb76b7e546b8}
+
+
+Definition at line 38 of file python\+\_\+paths.\+py.
+
+
+
+Referenced by rosdoc\+\_\+lite.\+python\+\_\+paths.\+generate\+\_\+python\+\_\+path().
+
+
+\begin{DoxyCode}
+38 \textcolor{keyword}{def }\hyperlink{namespacerosdoc__lite_1_1python__paths_a397da4b72eb60002cbd7bb76b7e546b8}{get\_non\_catkin\_depends}(package, rospack):
+39     vals = rospack.get\_depends(package, implicit=\textcolor{keyword}{True})
+40     \textcolor{keywordflow}{return} [v \textcolor{keywordflow}{for} v \textcolor{keywordflow}{in} vals \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} rospack.get\_manifest(v).is\_catkin]
+41 
+42 
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerosdoc__lite_1_1python__paths_a397da4b72eb60002cbd7bb76b7e546b8_icgraph}
+\end{center}
+\end{figure}
+
+

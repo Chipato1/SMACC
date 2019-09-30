@@ -1,0 +1,56 @@
+\hypertarget{smacc__state__machine__info_8h}{}\section{smacc/include/smacc/smacc\+\_\+state\+\_\+machine\+\_\+info.h File Reference}
+\label{smacc__state__machine__info_8h}\index{smacc/include/smacc/smacc\+\_\+state\+\_\+machine\+\_\+info.\+h@{smacc/include/smacc/smacc\+\_\+state\+\_\+machine\+\_\+info.\+h}}
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$smacc/common.\+h$>$}\\*
+Include dependency graph for smacc\+\_\+state\+\_\+machine\+\_\+info.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{smacc__state__machine__info_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{smacc__state__machine__info_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsmacc_1_1SmaccStateMachineInfo}{smacc\+::\+Smacc\+State\+Machine\+Info}
+\item 
+struct \hyperlink{structsmacc_1_1type__}{smacc\+::type\+\_\+$<$ T $>$}
+\item 
+struct \hyperlink{structsmacc_1_1add__type__wrapper}{smacc\+::add\+\_\+type\+\_\+wrapper$<$ T $>$}
+\item 
+struct \hyperlink{structsmacc_1_1AddSubState}{smacc\+::\+Add\+Sub\+State}
+\item 
+struct \hyperlink{structsmacc_1_1AddTransition}{smacc\+::\+Add\+Transition}
+\item 
+struct \hyperlink{structsmacc_1_1WalkStatesExecutor}{smacc\+::\+Walk\+States\+Executor$<$ Initial\+State\+Type $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacesmacc}{smacc}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\disable\+\_\+if$<$ boost\+::mpl\+::is\+\_\+sequence$<$ T $>$ $>$\+::type \hyperlink{namespacesmacc_a5cafbc92a9118372bd260f6a6f0cc585}{smacc\+::process\+Sub\+State} (std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&parent\+State)
+\item 
+{\footnotesize template$<$typename T $>$ }\\enable\+\_\+if$<$ boost\+::mpl\+::is\+\_\+sequence$<$ T $>$ $>$\+::type \hyperlink{namespacesmacc_ad37426186f133b3653e9adae5b313699}{smacc\+::process\+Sub\+State} (std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&parent\+State)
+\item 
+{\footnotesize template$<$typename T $>$ }\\enable\+\_\+if$<$ boost\+::mpl\+::is\+\_\+sequence$<$ T $>$ $>$\+::type \hyperlink{namespacesmacc_aa41f91df712a86c870af2816553f478e}{smacc\+::process\+Transitions} (std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&source\+State)
+\item 
+{\footnotesize template$<$typename Ev , typename Dst $>$ }\\void \hyperlink{namespacesmacc_a89246662ad7a95c78e6fa5eedf0c01a5}{smacc\+::process\+Transition} (statechart\+::transition$<$ Ev, Dst $>$ $\ast$, std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&source\+State)
+\item 
+{\footnotesize template$<$typename Ev $>$ }\\void \hyperlink{namespacesmacc_a1f165532f9a9126db41900fbf23a985d}{smacc\+::process\+Transition} (statechart\+::custom\+\_\+reaction$<$ Ev $>$ $\ast$, std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&source\+State)
+\item 
+{\footnotesize template$<$typename T $>$ }\\disable\+\_\+if$<$ boost\+::mpl\+::is\+\_\+sequence$<$ T $>$ $>$\+::type \hyperlink{namespacesmacc_a097ffb8059d48bbe45ee8321e92e8878}{smacc\+::process\+Transitions} (std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&source\+State)
+\end{DoxyCompactItemize}

@@ -1,0 +1,84 @@
+\hypertarget{structSsrFPatternReturn1}{}\section{Ssr\+F\+Pattern\+Return1 Struct Reference}
+\label{structSsrFPatternReturn1}\index{Ssr\+F\+Pattern\+Return1@{Ssr\+F\+Pattern\+Return1}}
+
+
+{\ttfamily \#include $<$ssr\+\_\+fpattern\+\_\+return\+\_\+1.\+h$>$}
+
+
+
+Inheritance diagram for Ssr\+F\+Pattern\+Return1\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structSsrFPatternReturn1__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Ssr\+F\+Pattern\+Return1\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structSsrFPatternReturn1__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef sc\+::transition$<$ Ev\+Action\+Succeded$<$ smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result $>$, \hyperlink{structSsrFPatternRotate2}{Ssr\+F\+Pattern\+Rotate2} $>$ \hyperlink{structSsrFPatternReturn1_adf53d61ea903824985e33f4dd2527cea}{reactions}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structSsrFPatternReturn1_acce01589edd211023478e946a070851a}{on\+Initialize} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1 of file ssr\+\_\+fpattern\+\_\+return\+\_\+1.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{Ssr\+F\+Pattern\+Return1@{Ssr\+F\+Pattern\+Return1}!reactions@{reactions}}
+\index{reactions@{reactions}!Ssr\+F\+Pattern\+Return1@{Ssr\+F\+Pattern\+Return1}}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef sc\+::transition$<$Ev\+Action\+Succeded$<$smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result$>$, {\bf Ssr\+F\+Pattern\+Rotate2}$>$ {\bf Ssr\+F\+Pattern\+Return1\+::reactions}}\hypertarget{structSsrFPatternReturn1_adf53d61ea903824985e33f4dd2527cea}{}\label{structSsrFPatternReturn1_adf53d61ea903824985e33f4dd2527cea}
+
+
+Definition at line 5 of file ssr\+\_\+fpattern\+\_\+return\+\_\+1.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Ssr\+F\+Pattern\+Return1@{Ssr\+F\+Pattern\+Return1}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!Ssr\+F\+Pattern\+Return1@{Ssr\+F\+Pattern\+Return1}}
+\subsubsection[{\texorpdfstring{on\+Initialize()}{onInitialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ssr\+F\+Pattern\+Return1\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structSsrFPatternReturn1_acce01589edd211023478e946a070851a}{}\label{structSsrFPatternReturn1_acce01589edd211023478e946a070851a}
+
+
+Definition at line 7 of file ssr\+\_\+fpattern\+\_\+return\+\_\+1.\+h.
+
+
+\begin{DoxyCode}
+8   \{
+9     \textcolor{keyword}{auto} &superstate = this->context<SS>();
+10     ROS\_INFO(\textcolor{stringliteral}{"[SsrFpattern] Fpattern rotate: SS current iteration: %d/%d"}, superstate.iteration\_count, 
+      superstate.total\_iterations);
+11 
+12     this->configure<NavigationOrthogonal>(std::make\_shared<SbUndoPathBackwards>());
+13     this->configure<ToolOrthogonal>(std::make\_shared<SbToolStart>());
+14   \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+examples/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/superstate\+\_\+routines/f\+\_\+pattern/\hyperlink{ssr__fpattern__return__1_8h}{ssr\+\_\+fpattern\+\_\+return\+\_\+1.\+h}\end{DoxyCompactItemize}

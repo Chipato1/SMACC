@@ -1,0 +1,94 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classsmacc_1_1ISmaccState.html" title="smacc::ISmaccState" alt="" coords="5,1613,160,1639"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l MostDerived, Context,\l InnerInitial, historyMode \&gt;" alt="" coords="243,454,435,510"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l Active, StopWatch \&gt;" alt="" coords="258,5,421,47"/>
+<area shape="rect" id="node5" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l ExecuteToolState, SimpleState\lMachine \&gt;" alt="" coords="228,70,451,126"/>
+<area shape="rect" id="node7" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l KeyboardState, KeyboardState\lMachine \&gt;" alt="" coords="228,150,451,206"/>
+<area shape="rect" id="node9" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l Navigate, SimpleStateMachine \&gt;" alt="" coords="220,229,459,271"/>
+<area shape="rect" id="node11" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l NavigateToEndPoint,\l RadialMotionSuperState \&gt;" alt="" coords="242,294,437,350"/>
+<area shape="rect" id="node13" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l NavigateToRadialStart,\l RadialMotionSuperState \&gt;" alt="" coords="242,374,437,430"/>
+<area shape="rect" id="node15" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l RadialMotionSuperState,\l RadialMotionStateMachine,\l NavigateToRadialStart \&gt;" alt="" coords="240,535,439,605"/>
+<area shape="rect" id="node17" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l SensorState, SensorStateMachine \&gt;" alt="" coords="208,629,471,671"/>
+<area shape="rect" id="node19" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l SsFPattern1, SmDanceBot,\l SsrFPatternRotate1 \&gt;" alt="" coords="239,694,439,750"/>
+<area shape="rect" id="node21" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l SsRadialPattern1, SmDance\lBot, SsrRadialRotate \&gt;" alt="" coords="237,774,442,830"/>
+<area shape="rect" id="node23" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l SsRadialPattern2, SmDance\lBot, SsrRadialRotate \&gt;" alt="" coords="237,854,442,910"/>
+<area shape="rect" id="node25" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l SsRadialPattern3, SmDance\lBot, SsrRadialRotate \&gt;" alt="" coords="237,934,442,990"/>
+<area shape="rect" id="node27" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l SsrFPatternForward1, SS \&gt;" alt="" coords="240,1013,439,1055"/>
+<area shape="rect" id="node29" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l SsrFPatternForward2, SS \&gt;" alt="" coords="240,1079,439,1120"/>
+<area shape="rect" id="node31" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l SsrFPatternReturn1, SS \&gt;" alt="" coords="244,1144,435,1185"/>
+<area shape="rect" id="node33" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l SsrFPatternRotate1, SS \&gt;" alt="" coords="244,1209,435,1251"/>
+<area shape="rect" id="node35" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l SsrFPatternRotate2, SS \&gt;" alt="" coords="244,1275,435,1316"/>
+<area shape="rect" id="node37" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l SsrRadialEndPoint, SS \&gt;" alt="" coords="248,1340,431,1381"/>
+<area shape="rect" id="node39" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l SsrRadialReturn, SS \&gt;" alt="" coords="256,1405,423,1447"/>
+<area shape="rect" id="node41" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l SsrRadialRotate, SS \&gt;" alt="" coords="256,1471,423,1512"/>
+<area shape="rect" id="node43" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l SsrSPatternForward1, SS \&gt;" alt="" coords="239,1536,440,1577"/>
+<area shape="rect" id="node45" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l SsrSPatternForward2, SS \&gt;" alt="" coords="239,1601,440,1643"/>
+<area shape="rect" id="node47" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l SsrSPatternForward3, SS \&gt;" alt="" coords="239,1667,440,1708"/>
+<area shape="rect" id="node49" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l SsrSPatternForward4, SS \&gt;" alt="" coords="239,1732,440,1773"/>
+<area shape="rect" id="node51" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l SsrSPatternRotate1, SS \&gt;" alt="" coords="243,1797,435,1839"/>
+<area shape="rect" id="node53" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l SsrSPatternRotate2, SS \&gt;" alt="" coords="243,1863,435,1904"/>
+<area shape="rect" id="node55" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l SsrSPatternRotate3, SS \&gt;" alt="" coords="243,1928,435,1969"/>
+<area shape="rect" id="node57" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l SsrSPatternRotate4, SS \&gt;" alt="" coords="243,1993,435,2035"/>
+<area shape="rect" id="node59" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l SsSPattern1, SmDanceBot,\l SsrSPatternRotate1 \&gt;" alt="" coords="238,2058,441,2114"/>
+<area shape="rect" id="node61" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l StAcquireSensors, SmDance\lBot \&gt;" alt="" coords="234,2138,445,2194"/>
+<area shape="rect" id="node63" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l StNavigateForward1,\l SmDanceBot \&gt;" alt="" coords="258,2218,421,2274"/>
+<area shape="rect" id="node65" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l StNavigateForward2,\l SmDanceBot \&gt;" alt="" coords="258,2298,421,2354"/>
+<area shape="rect" id="node67" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l StNavigateReverse1,\l SmDanceBot \&gt;" alt="" coords="258,2378,421,2434"/>
+<area shape="rect" id="node69" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l StNavigateReverse2,\l SmDanceBot \&gt;" alt="" coords="258,2458,421,2514"/>
+<area shape="rect" id="node71" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l StNavigateReverse3,\l SmDanceBot \&gt;" alt="" coords="258,2538,421,2594"/>
+<area shape="rect" id="node73" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l StNavigateToWaypoint1,\l SmDanceBot \&gt;" alt="" coords="250,2618,429,2674"/>
+<area shape="rect" id="node75" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l StNavigateToWaypointsX,\l SmDanceBot \&gt;" alt="" coords="246,2698,433,2754"/>
+<area shape="rect" id="node77" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l StRotateDegrees1, SmDance\lBot \&gt;" alt="" coords="232,2778,447,2834"/>
+<area shape="rect" id="node79" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l StRotateDegrees2, SmDance\lBot \&gt;" alt="" coords="232,2858,447,2914"/>
+<area shape="rect" id="node81" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l StRotateDegrees3, SmDance\lBot \&gt;" alt="" coords="232,2938,447,2994"/>
+<area shape="rect" id="node83" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l StRotateDegrees4, SmDance\lBot \&gt;" alt="" coords="232,3018,447,3074"/>
+<area shape="rect" id="node85" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l StRotateDegrees5, SmDance\lBot \&gt;" alt="" coords="232,3098,447,3154"/>
+<area shape="rect" id="node87" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l StRotateDegrees6, SmDance\lBot \&gt;" alt="" coords="232,3178,447,3234"/>
+<area shape="rect" id="node89" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l TimerState, TimerStateMachine \&gt;" alt="" coords="217,3257,461,3299"/>
+<area shape="rect" id="node91" href="$classsmacc_1_1SmaccState.html" title="smacc::SmaccState\&lt;\l ToolSimpleState, SimpleState\lMachine \&gt;" alt="" coords="231,3322,447,3378"/>
+<area shape="rect" id="node4" href="$structActive.html" title="Active" alt="" coords="577,13,639,39"/>
+<area shape="rect" id="node6" href="$structExecuteToolState.html" title="ExecuteToolState" alt="" coords="542,85,674,111"/>
+<area shape="rect" id="node8" href="$structKeyboardState.html" title="KeyboardState" alt="" coords="550,165,666,191"/>
+<area shape="rect" id="node10" href="$structNavigate.html" title="Navigate" alt="" coords="569,237,647,263"/>
+<area shape="rect" id="node12" href="$structNavigateToEndPoint.html" title="NavigateToEndPoint State. " alt="" coords="534,309,682,335"/>
+<area shape="rect" id="node14" href="$structNavigateToRadialStart.html" title="State NavigateToRadialStart. " alt="" coords="527,389,689,415"/>
+<area shape="rect" id="node16" href="$structRadialMotionSuperState.html" title="RadialMotionSuperState" alt="" coords="520,557,696,583"/>
+<area shape="rect" id="node18" href="$structSensorState.html" title="SensorState" alt="" coords="557,637,659,663"/>
+<area shape="rect" id="node20" href="$structSS4_1_1SsFPattern1.html" title="SS4::SsFPattern1" alt="" coords="541,709,675,735"/>
+<area shape="rect" id="node22" href="$structSS1_1_1SsRadialPattern1.html" title="SS1::SsRadialPattern1" alt="" coords="526,789,690,815"/>
+<area shape="rect" id="node24" href="$structSS2_1_1SsRadialPattern2.html" title="SS2::SsRadialPattern2" alt="" coords="526,869,690,895"/>
+<area shape="rect" id="node26" href="$structSS3_1_1SsRadialPattern3.html" title="SS3::SsRadialPattern3" alt="" coords="526,949,690,975"/>
+<area shape="rect" id="node28" href="$structSsrFPatternForward1.html" title="SsrFPatternForward1" alt="" coords="531,1021,685,1047"/>
+<area shape="rect" id="node30" href="$structSsrFPatternForward2.html" title="SsrFPatternForward2" alt="" coords="531,1086,685,1113"/>
+<area shape="rect" id="node32" href="$structSsrFPatternReturn1.html" title="SsrFPatternReturn1" alt="" coords="535,1151,681,1178"/>
+<area shape="rect" id="node34" href="$structSsrFPatternRotate1.html" title="SsrFPatternRotate1" alt="" coords="535,1217,681,1243"/>
+<area shape="rect" id="node36" href="$structSsrFPatternRotate2.html" title="SsrFPatternRotate2" alt="" coords="535,1282,681,1309"/>
+<area shape="rect" id="node38" href="$structSsrRadialEndPoint.html" title="SsrRadialEndPoint" alt="" coords="539,1347,677,1374"/>
+<area shape="rect" id="node40" href="$structSsrRadialReturn.html" title="SsrRadialReturn" alt="" coords="547,1413,669,1439"/>
+<area shape="rect" id="node42" href="$structSsrRadialRotate.html" title="SsrRadialRotate" alt="" coords="547,1478,669,1505"/>
+<area shape="rect" id="node44" href="$structSsrSPatternForward1.html" title="SsrSPatternForward1" alt="" coords="530,1543,686,1570"/>
+<area shape="rect" id="node46" href="$structSsrSPatternForward2.html" title="SsrSPatternForward2" alt="" coords="530,1609,686,1635"/>
+<area shape="rect" id="node48" href="$structSsrSPatternForward3.html" title="SsrSPatternForward3" alt="" coords="530,1674,686,1701"/>
+<area shape="rect" id="node50" href="$structSsrSPatternForward4.html" title="SsrSPatternForward4" alt="" coords="530,1739,686,1766"/>
+<area shape="rect" id="node52" href="$structSsrSPatternRotate1.html" title="SsrSPatternRotate1" alt="" coords="535,1805,681,1831"/>
+<area shape="rect" id="node54" href="$structSsrSPatternRotate2.html" title="SsrSPatternRotate2" alt="" coords="535,1870,681,1897"/>
+<area shape="rect" id="node56" href="$structSsrSPatternRotate3.html" title="SsrSPatternRotate3" alt="" coords="535,1935,681,1962"/>
+<area shape="rect" id="node58" href="$structSsrSPatternRotate4.html" title="SsrSPatternRotate4" alt="" coords="535,2001,681,2027"/>
+<area shape="rect" id="node60" href="$structSS5_1_1SsSPattern1.html" title="SS5::SsSPattern1" alt="" coords="541,2073,675,2099"/>
+<area shape="rect" id="node62" href="$structStAcquireSensors.html" title="StAcquireSensors" alt="" coords="540,2153,676,2179"/>
+<area shape="rect" id="node64" href="$structStNavigateForward1.html" title="StNavigateForward1" alt="" coords="533,2233,683,2259"/>
+<area shape="rect" id="node66" href="$structStNavigateForward2.html" title="StNavigateForward2" alt="" coords="533,2313,683,2339"/>
+<area shape="rect" id="node68" href="$structStNavigateReverse1.html" title="StNavigateReverse1" alt="" coords="533,2393,683,2419"/>
+<area shape="rect" id="node70" href="$structStNavigateReverse2.html" title="StNavigateReverse2" alt="" coords="533,2473,683,2499"/>
+<area shape="rect" id="node72" href="$structStNavigateReverse3.html" title="StNavigateReverse3" alt="" coords="533,2553,683,2579"/>
+<area shape="rect" id="node74" href="$structStNavigateToWaypoint1.html" title="StNavigateToWaypoint1" alt="" coords="523,2633,693,2659"/>
+<area shape="rect" id="node76" href="$structStNavigateToWaypointsX.html" title="StNavigateToWaypointsX" alt="" coords="519,2713,697,2739"/>
+<area shape="rect" id="node78" href="$structStRotateDegrees1.html" title="StRotateDegrees1" alt="" coords="539,2793,677,2819"/>
+<area shape="rect" id="node80" href="$structStRotateDegrees2.html" title="StRotateDegrees2" alt="" coords="539,2873,677,2899"/>
+<area shape="rect" id="node82" href="$structStRotateDegrees3.html" title="StRotateDegrees3" alt="" coords="539,2953,677,2979"/>
+<area shape="rect" id="node84" href="$structStRotateDegrees4.html" title="StRotateDegrees4" alt="" coords="539,3033,677,3059"/>
+<area shape="rect" id="node86" href="$structStRotateDegrees5.html" title="StRotateDegrees5" alt="" coords="539,3113,677,3139"/>
+<area shape="rect" id="node88" href="$structStRotateDegrees6.html" title="StRotateDegrees6" alt="" coords="539,3193,677,3219"/>
+<area shape="rect" id="node90" href="$structTimerState.html" title="TimerState" alt="" coords="561,3265,655,3291"/>
+<area shape="rect" id="node92" href="$structToolSimpleState.html" title="ToolSimpleState" alt="" coords="545,3337,671,3363"/>
+</map>

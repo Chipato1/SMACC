@@ -1,0 +1,254 @@
+\hypertarget{classsmacc__rviz__plugin_1_1ImuVisual}{}\section{smacc\+\_\+rviz\+\_\+plugin\+:\+:Imu\+Visual Class Reference}
+\label{classsmacc__rviz__plugin_1_1ImuVisual}\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual@{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual}}
+
+
+{\ttfamily \#include $<$imu\+\_\+visual.\+h$>$}
+
+
+
+Collaboration diagram for smacc\+\_\+rviz\+\_\+plugin\+:\+:Imu\+Visual\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__rviz__plugin_1_1ImuVisual__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc__rviz__plugin_1_1ImuVisual_a3963b29a785b0b95e56ac860cb58b000}{Imu\+Visual} (Ogre\+::\+Scene\+Manager $\ast$scene\+\_\+manager, Ogre\+::\+Scene\+Node $\ast$parent\+\_\+node)
+\item 
+virtual \hyperlink{classsmacc__rviz__plugin_1_1ImuVisual_acabcd6898e61f77c5353205539457db1}{$\sim$\+Imu\+Visual} ()
+\item 
+void \hyperlink{classsmacc__rviz__plugin_1_1ImuVisual_a69589c7845b2e29e092460b1ee8a8275}{set\+Message} (const sensor\+\_\+msgs\+::\+Imu\+::\+Const\+Ptr \&msg)
+\item 
+void \hyperlink{classsmacc__rviz__plugin_1_1ImuVisual_a405f4e15692f2443f202bc55d989d669}{set\+Frame\+Position} (const Ogre\+::\+Vector3 \&position)
+\item 
+void \hyperlink{classsmacc__rviz__plugin_1_1ImuVisual_ac308baf22f4bfb15b69b18776d22f181}{set\+Frame\+Orientation} (const Ogre\+::\+Quaternion \&orientation)
+\item 
+void \hyperlink{classsmacc__rviz__plugin_1_1ImuVisual_a6b5973fedfb8620c1e1493840ae7c76b}{set\+Color} (float r, float g, float b, float a)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::shared\+\_\+ptr$<$ rviz\+::\+Arrow $>$ \hyperlink{classsmacc__rviz__plugin_1_1ImuVisual_abead7d3f3c66b20bba8123a145b121b0}{acceleration\+\_\+arrow\+\_\+}
+\item 
+Ogre\+::\+Scene\+Node $\ast$ \hyperlink{classsmacc__rviz__plugin_1_1ImuVisual_ae41316c00ac89e1e0ee0adf62da10841}{frame\+\_\+node\+\_\+}
+\item 
+Ogre\+::\+Scene\+Manager $\ast$ \hyperlink{classsmacc__rviz__plugin_1_1ImuVisual_acef4dba58d14224192bbed7eabbd6cbb}{scene\+\_\+manager\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 56 of file imu\+\_\+visual.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual@{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual}!Imu\+Visual@{Imu\+Visual}}
+\index{Imu\+Visual@{Imu\+Visual}!smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual@{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual}}
+\subsubsection[{\texorpdfstring{Imu\+Visual(\+Ogre\+::\+Scene\+Manager $\ast$scene\+\_\+manager, Ogre\+::\+Scene\+Node $\ast$parent\+\_\+node)}{ImuVisual(Ogre::SceneManager *scene_manager, Ogre::SceneNode *parent_node)}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual\+::\+Imu\+Visual (
+\begin{DoxyParamCaption}
+\item[{Ogre\+::\+Scene\+Manager $\ast$}]{scene\+\_\+manager, }
+\item[{Ogre\+::\+Scene\+Node $\ast$}]{parent\+\_\+node}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__rviz__plugin_1_1ImuVisual_a3963b29a785b0b95e56ac860cb58b000}{}\label{classsmacc__rviz__plugin_1_1ImuVisual_a3963b29a785b0b95e56ac860cb58b000}
+
+
+Definition at line 42 of file imu\+\_\+visual.\+cpp.
+
+
+
+References acceleration\+\_\+arrow\+\_\+, frame\+\_\+node\+\_\+, and scene\+\_\+manager\+\_\+.
+
+
+\begin{DoxyCode}
+43 \{
+44   \hyperlink{classsmacc__rviz__plugin_1_1ImuVisual_acef4dba58d14224192bbed7eabbd6cbb}{scene\_manager\_} = scene\_manager;
+45 
+46   \textcolor{comment}{// Ogre::SceneNode s form a tree, with each node storing the}
+47   \textcolor{comment}{// transform (position and orientation) of itself relative to its}
+48   \textcolor{comment}{// parent.  Ogre does the math of combining those transforms when it}
+49   \textcolor{comment}{// is time to render.}
+50   \textcolor{comment}{//}
+51   \textcolor{comment}{// Here we create a node to store the pose of the Imu's header frame}
+52   \textcolor{comment}{// relative to the RViz fixed frame.}
+53   \hyperlink{classsmacc__rviz__plugin_1_1ImuVisual_ae41316c00ac89e1e0ee0adf62da10841}{frame\_node\_} = parent\_node->createChildSceneNode();
+54 
+55   \textcolor{comment}{// We create the arrow object within the frame node so that we can}
+56   \textcolor{comment}{// set its position and direction relative to its header frame.}
+57   \hyperlink{classsmacc__rviz__plugin_1_1ImuVisual_abead7d3f3c66b20bba8123a145b121b0}{acceleration\_arrow\_}.reset(\textcolor{keyword}{new} rviz::Arrow( \hyperlink{classsmacc__rviz__plugin_1_1ImuVisual_acef4dba58d14224192bbed7eabbd6cbb}{scene\_manager\_}, 
+      \hyperlink{classsmacc__rviz__plugin_1_1ImuVisual_ae41316c00ac89e1e0ee0adf62da10841}{frame\_node\_} ));
+58 \}
+\end{DoxyCode}
+\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual@{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual}!````~Imu\+Visual@{$\sim$\+Imu\+Visual}}
+\index{````~Imu\+Visual@{$\sim$\+Imu\+Visual}!smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual@{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual}}
+\subsubsection[{\texorpdfstring{$\sim$\+Imu\+Visual()}{~ImuVisual()}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual\+::$\sim$\+Imu\+Visual (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classsmacc__rviz__plugin_1_1ImuVisual_acabcd6898e61f77c5353205539457db1}{}\label{classsmacc__rviz__plugin_1_1ImuVisual_acabcd6898e61f77c5353205539457db1}
+
+
+Definition at line 60 of file imu\+\_\+visual.\+cpp.
+
+
+
+References frame\+\_\+node\+\_\+, and scene\+\_\+manager\+\_\+.
+
+
+\begin{DoxyCode}
+61 \{
+62   \textcolor{comment}{// Destroy the frame node since we don't need it anymore.}
+63   \hyperlink{classsmacc__rviz__plugin_1_1ImuVisual_acef4dba58d14224192bbed7eabbd6cbb}{scene\_manager\_}->destroySceneNode( \hyperlink{classsmacc__rviz__plugin_1_1ImuVisual_ae41316c00ac89e1e0ee0adf62da10841}{frame\_node\_} );
+64 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual@{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual@{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual}}
+\subsubsection[{\texorpdfstring{set\+Color(float r, float g, float b, float a)}{setColor(float r, float g, float b, float a)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual\+::set\+Color (
+\begin{DoxyParamCaption}
+\item[{float}]{r, }
+\item[{float}]{g, }
+\item[{float}]{b, }
+\item[{float}]{a}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__rviz__plugin_1_1ImuVisual_a6b5973fedfb8620c1e1493840ae7c76b}{}\label{classsmacc__rviz__plugin_1_1ImuVisual_a6b5973fedfb8620c1e1493840ae7c76b}
+
+
+Definition at line 97 of file imu\+\_\+visual.\+cpp.
+
+
+
+References acceleration\+\_\+arrow\+\_\+.
+
+
+\begin{DoxyCode}
+98 \{
+99   \hyperlink{classsmacc__rviz__plugin_1_1ImuVisual_abead7d3f3c66b20bba8123a145b121b0}{acceleration\_arrow\_}->setColor( r, g, b, a );
+100 \}
+\end{DoxyCode}
+\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual@{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual}!set\+Frame\+Orientation@{set\+Frame\+Orientation}}
+\index{set\+Frame\+Orientation@{set\+Frame\+Orientation}!smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual@{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual}}
+\subsubsection[{\texorpdfstring{set\+Frame\+Orientation(const Ogre\+::\+Quaternion \&orientation)}{setFrameOrientation(const Ogre::Quaternion &orientation)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual\+::set\+Frame\+Orientation (
+\begin{DoxyParamCaption}
+\item[{const Ogre\+::\+Quaternion \&}]{orientation}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__rviz__plugin_1_1ImuVisual_ac308baf22f4bfb15b69b18776d22f181}{}\label{classsmacc__rviz__plugin_1_1ImuVisual_ac308baf22f4bfb15b69b18776d22f181}
+
+
+Definition at line 91 of file imu\+\_\+visual.\+cpp.
+
+
+
+References frame\+\_\+node\+\_\+.
+
+
+\begin{DoxyCode}
+92 \{
+93   \hyperlink{classsmacc__rviz__plugin_1_1ImuVisual_ae41316c00ac89e1e0ee0adf62da10841}{frame\_node\_}->setOrientation( orientation );
+94 \}
+\end{DoxyCode}
+\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual@{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual}!set\+Frame\+Position@{set\+Frame\+Position}}
+\index{set\+Frame\+Position@{set\+Frame\+Position}!smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual@{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual}}
+\subsubsection[{\texorpdfstring{set\+Frame\+Position(const Ogre\+::\+Vector3 \&position)}{setFramePosition(const Ogre::Vector3 &position)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual\+::set\+Frame\+Position (
+\begin{DoxyParamCaption}
+\item[{const Ogre\+::\+Vector3 \&}]{position}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__rviz__plugin_1_1ImuVisual_a405f4e15692f2443f202bc55d989d669}{}\label{classsmacc__rviz__plugin_1_1ImuVisual_a405f4e15692f2443f202bc55d989d669}
+
+
+Definition at line 86 of file imu\+\_\+visual.\+cpp.
+
+
+
+References frame\+\_\+node\+\_\+.
+
+
+\begin{DoxyCode}
+87 \{
+88   \hyperlink{classsmacc__rviz__plugin_1_1ImuVisual_ae41316c00ac89e1e0ee0adf62da10841}{frame\_node\_}->setPosition( position );
+89 \}
+\end{DoxyCode}
+\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual@{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual}!set\+Message@{set\+Message}}
+\index{set\+Message@{set\+Message}!smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual@{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual}}
+\subsubsection[{\texorpdfstring{set\+Message(const sensor\+\_\+msgs\+::\+Imu\+::\+Const\+Ptr \&msg)}{setMessage(const sensor_msgs::Imu::ConstPtr &msg)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual\+::set\+Message (
+\begin{DoxyParamCaption}
+\item[{const sensor\+\_\+msgs\+::\+Imu\+::\+Const\+Ptr \&}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__rviz__plugin_1_1ImuVisual_a69589c7845b2e29e092460b1ee8a8275}{}\label{classsmacc__rviz__plugin_1_1ImuVisual_a69589c7845b2e29e092460b1ee8a8275}
+
+
+Definition at line 66 of file imu\+\_\+visual.\+cpp.
+
+
+
+References acceleration\+\_\+arrow\+\_\+.
+
+
+\begin{DoxyCode}
+67 \{
+68   \textcolor{keyword}{const} geometry\_msgs::Vector3& a = \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}->linear\_acceleration;
+69 
+70   \textcolor{comment}{// Convert the geometry\_msgs::Vector3 to an Ogre::Vector3.}
+71   Ogre::Vector3 acc( a.x, a.y, a.z );
+72 
+73   \textcolor{comment}{// Find the magnitude of the acceleration vector.}
+74   \textcolor{keywordtype}{float} length = acc.length();
+75 
+76   \textcolor{comment}{// Scale the arrow's thickness in each dimension along with its length.}
+77   Ogre::Vector3 scale( length, length, length );
+78   \hyperlink{classsmacc__rviz__plugin_1_1ImuVisual_abead7d3f3c66b20bba8123a145b121b0}{acceleration\_arrow\_}->setScale( scale );
+79 
+80   \textcolor{comment}{// Set the orientation of the arrow to match the direction of the}
+81   \textcolor{comment}{// acceleration vector.}
+82   \hyperlink{classsmacc__rviz__plugin_1_1ImuVisual_abead7d3f3c66b20bba8123a145b121b0}{acceleration\_arrow\_}->setDirection( acc );
+83 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual@{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual}!acceleration\+\_\+arrow\+\_\+@{acceleration\+\_\+arrow\+\_\+}}
+\index{acceleration\+\_\+arrow\+\_\+@{acceleration\+\_\+arrow\+\_\+}!smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual@{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual}}
+\subsubsection[{\texorpdfstring{acceleration\+\_\+arrow\+\_\+}{acceleration_arrow_}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::shared\+\_\+ptr$<$rviz\+::\+Arrow$>$ smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual\+::acceleration\+\_\+arrow\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__rviz__plugin_1_1ImuVisual_abead7d3f3c66b20bba8123a145b121b0}{}\label{classsmacc__rviz__plugin_1_1ImuVisual_abead7d3f3c66b20bba8123a145b121b0}
+
+
+Definition at line 83 of file imu\+\_\+visual.\+h.
+
+
+
+Referenced by Imu\+Visual(), set\+Color(), and set\+Message().
+
+\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual@{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual}!frame\+\_\+node\+\_\+@{frame\+\_\+node\+\_\+}}
+\index{frame\+\_\+node\+\_\+@{frame\+\_\+node\+\_\+}!smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual@{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual}}
+\subsubsection[{\texorpdfstring{frame\+\_\+node\+\_\+}{frame_node_}}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\+::\+Scene\+Node$\ast$ smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual\+::frame\+\_\+node\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__rviz__plugin_1_1ImuVisual_ae41316c00ac89e1e0ee0adf62da10841}{}\label{classsmacc__rviz__plugin_1_1ImuVisual_ae41316c00ac89e1e0ee0adf62da10841}
+
+
+Definition at line 87 of file imu\+\_\+visual.\+h.
+
+
+
+Referenced by Imu\+Visual(), set\+Frame\+Orientation(), set\+Frame\+Position(), and $\sim$\+Imu\+Visual().
+
+\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual@{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual}!scene\+\_\+manager\+\_\+@{scene\+\_\+manager\+\_\+}}
+\index{scene\+\_\+manager\+\_\+@{scene\+\_\+manager\+\_\+}!smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual@{smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual}}
+\subsubsection[{\texorpdfstring{scene\+\_\+manager\+\_\+}{scene_manager_}}]{\setlength{\rightskip}{0pt plus 5cm}Ogre\+::\+Scene\+Manager$\ast$ smacc\+\_\+rviz\+\_\+plugin\+::\+Imu\+Visual\+::scene\+\_\+manager\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__rviz__plugin_1_1ImuVisual_acef4dba58d14224192bbed7eabbd6cbb}{}\label{classsmacc__rviz__plugin_1_1ImuVisual_acef4dba58d14224192bbed7eabbd6cbb}
+
+
+Definition at line 91 of file imu\+\_\+visual.\+h.
+
+
+
+Referenced by Imu\+Visual(), and $\sim$\+Imu\+Visual().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+diagnostics/smacc\+\_\+rviz\+\_\+plugin/src/\hyperlink{imu__visual_8h}{imu\+\_\+visual.\+h}\item 
+smacc\+\_\+diagnostics/smacc\+\_\+rviz\+\_\+plugin/src/\hyperlink{imu__visual_8cpp}{imu\+\_\+visual.\+cpp}\end{DoxyCompactItemize}

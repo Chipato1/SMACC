@@ -1,0 +1,82 @@
+\hypertarget{structStNavigateToWaypoint1}{}\section{St\+Navigate\+To\+Waypoint1 Struct Reference}
+\label{structStNavigateToWaypoint1}\index{St\+Navigate\+To\+Waypoint1@{St\+Navigate\+To\+Waypoint1}}
+
+
+{\ttfamily \#include $<$st\+\_\+navigate\+\_\+to\+\_\+waypoint\+\_\+1.\+h$>$}
+
+
+
+Inheritance diagram for St\+Navigate\+To\+Waypoint1\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structStNavigateToWaypoint1__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for St\+Navigate\+To\+Waypoint1\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structStNavigateToWaypoint1__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef mpl\+::list$<$ sc\+::transition$<$ Ev\+Action\+Succeded$<$ smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result $>$, \hyperlink{structStNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$, sc\+::transition$<$ Ev\+Key\+PressP$<$ Sb\+Keyboard $>$, \hyperlink{structStNavigateReverse2}{St\+Navigate\+Reverse2} $>$, sc\+::transition$<$ \hyperlink{structsmacc_1_1EvTopicMessageTimeout}{smacc\+::\+Ev\+Topic\+Message\+Timeout}$<$ \hyperlink{sensor__state_8h_a9db9e1944f88de79507758d08e4a2ee3}{Lidar\+Sensor} $>$, \hyperlink{structStAcquireSensors}{St\+Acquire\+Sensors} $>$, sc\+::transition$<$ Ev\+Action\+Aborted$<$ smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result $>$, \hyperlink{structStNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$ $>$ \hyperlink{structStNavigateToWaypoint1_aa6eccd5225b9a5a208126ec518defdd5}{reactions}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structStNavigateToWaypoint1_abf862e4062f5c46d80c0779db4485387}{on\+Initialize} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1 of file st\+\_\+navigate\+\_\+to\+\_\+waypoint\+\_\+1.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{St\+Navigate\+To\+Waypoint1@{St\+Navigate\+To\+Waypoint1}!reactions@{reactions}}
+\index{reactions@{reactions}!St\+Navigate\+To\+Waypoint1@{St\+Navigate\+To\+Waypoint1}}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ sc\+::transition$<$Ev\+Action\+Succeded$<$smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$, sc\+::transition$<$Ev\+Key\+PressP$<$Sb\+Keyboard$>$,{\bf St\+Navigate\+Reverse2}$>$, sc\+::transition$<${\bf smacc\+::\+Ev\+Topic\+Message\+Timeout}$<${\bf Lidar\+Sensor}$>$, {\bf St\+Acquire\+Sensors}$>$, sc\+::transition$<$Ev\+Action\+Aborted$<$smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$ $>$ {\bf St\+Navigate\+To\+Waypoint1\+::reactions}}\hypertarget{structStNavigateToWaypoint1_aa6eccd5225b9a5a208126ec518defdd5}{}\label{structStNavigateToWaypoint1_aa6eccd5225b9a5a208126ec518defdd5}
+
+
+Definition at line 15 of file st\+\_\+navigate\+\_\+to\+\_\+waypoint\+\_\+1.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{St\+Navigate\+To\+Waypoint1@{St\+Navigate\+To\+Waypoint1}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!St\+Navigate\+To\+Waypoint1@{St\+Navigate\+To\+Waypoint1}}
+\subsubsection[{\texorpdfstring{on\+Initialize()}{onInitialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void St\+Navigate\+To\+Waypoint1\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structStNavigateToWaypoint1_abf862e4062f5c46d80c0779db4485387}{}\label{structStNavigateToWaypoint1_abf862e4062f5c46d80c0779db4485387}
+
+
+Definition at line 17 of file st\+\_\+navigate\+\_\+to\+\_\+waypoint\+\_\+1.\+h.
+
+
+\begin{DoxyCode}
+18   \{
+19      this->configure<NavigationOrthogonal>(std::make\_shared<SbNavigateGlobalPosition>(0, 0, 0));
+20      this->configure<ToolOrthogonal>(std::make\_shared<SbToolStart>());
+21      this->configure<KeyboardOrthogonal>(std::make\_shared<SbKeyboard>());
+22      this->configure<PublisherOrthogonal>(std::make\_shared<SbStringPublisher>(\textcolor{stringliteral}{"All Done!"}));
+23   \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+examples/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/states/\hyperlink{st__navigate__to__waypoint__1_8h}{st\+\_\+navigate\+\_\+to\+\_\+waypoint\+\_\+1.\+h}\end{DoxyCompactItemize}

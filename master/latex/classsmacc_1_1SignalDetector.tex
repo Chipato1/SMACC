@@ -1,0 +1,767 @@
+\hypertarget{classsmacc_1_1SignalDetector}{}\section{smacc\+:\+:Signal\+Detector Class Reference}
+\label{classsmacc_1_1SignalDetector}\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+
+
+{\ttfamily \#include $<$signal\+\_\+detector.\+h$>$}
+
+
+
+Collaboration diagram for smacc\+:\+:Signal\+Detector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SignalDetector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc_1_1SignalDetector_aeaefdb0fe56cc527486598417f605c37}{Signal\+Detector} (\hyperlink{common_8h_a13d01c0cecec33c3093445edab0a7eb4}{Smacc\+Scheduler} $\ast$scheduler)
+\item 
+void \hyperlink{classsmacc_1_1SignalDetector_a91ab3cd92d8095cdaf8610b50731f04b}{initialize} (\hyperlink{classsmacc_1_1ISmaccStateMachine}{I\+Smacc\+State\+Machine} $\ast$state\+Machine)
+\item 
+void \hyperlink{classsmacc_1_1SignalDetector_aed018c3d7978069dab3f538d077184f0}{set\+Processor\+Handle} (Smacc\+Scheduler\+::processor\+\_\+handle processor\+Handle)
+\item 
+void \hyperlink{classsmacc_1_1SignalDetector_a48b3fee853ddcb25732408b22ecfcf39}{run\+Thread} ()
+\item 
+void \hyperlink{classsmacc_1_1SignalDetector_a636f704e469bf74b4a9fdb15bd63d5be}{join} ()
+\item 
+void \hyperlink{classsmacc_1_1SignalDetector_a536ea005ea4ef4632c0c9c1c62c557a3}{stop} ()
+\item 
+void \hyperlink{classsmacc_1_1SignalDetector_a1dc830d77ee10717db17015e6ced354c}{to\+String} (std\+::stringstream \&ss)
+\item 
+void \hyperlink{classsmacc_1_1SignalDetector_a2665e66cdae9f6533c64bbcecf3fa199}{polling\+Loop} ()
+\item 
+void \hyperlink{classsmacc_1_1SignalDetector_a9a116479e23259f3a5d5d4a47278afd5}{poll\+Once} ()
+\item 
+{\footnotesize template$<$typename Event\+Type $>$ }\\void \hyperlink{classsmacc_1_1SignalDetector_a6ab99d99cef8d101e39797a72daeb2b7}{post\+Event} (Event\+Type $\ast$ev)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classsmacc_1_1SignalDetector_af455ae5187fc9405d790992060af647b}{finalize\+Request} (\hyperlink{classsmacc_1_1ISmaccActionClient}{I\+Smacc\+Action\+Client} $\ast$resource)
+\item 
+void \hyperlink{classsmacc_1_1SignalDetector_a2c848e6d3bc64996cf8f7e56f3de1ee6}{notify\+Feedback} (\hyperlink{classsmacc_1_1ISmaccActionClient}{I\+Smacc\+Action\+Client} $\ast$resource)
+\item 
+void \hyperlink{classsmacc_1_1SignalDetector_a9a28cc1e9dcf7d204f3589fad8291bfd}{register\+Action\+Client\+Request} (\hyperlink{classsmacc_1_1ISmaccActionClient}{I\+Smacc\+Action\+Client} $\ast$action\+Client\+Request\+Info)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc_1_1ISmaccStateMachine}{I\+Smacc\+State\+Machine} $\ast$ \hyperlink{classsmacc_1_1SignalDetector_a46025de6ac7b5980e22144f9703236a4}{smacc\+State\+Machine\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{classsmacc_1_1ISmaccActionClient}{I\+Smacc\+Action\+Client} $\ast$ $>$ \hyperlink{classsmacc_1_1SignalDetector_a3f7e46b9fa9fcac9f5bc72a95ab20ca9}{open\+Requests\+\_\+}
+\item 
+double \hyperlink{classsmacc_1_1SignalDetector_a41a2ae4262ed350f46d8b886bdc1dfa5}{loop\+\_\+rate\+\_\+hz}
+\item 
+std\+::atomic$<$ \hyperlink{classbool}{bool} $>$ \hyperlink{classsmacc_1_1SignalDetector_aaee266393c01693528a2d74b1f2354a2}{end\+\_\+}
+\item 
+ros\+::\+Node\+Handle \hyperlink{classsmacc_1_1SignalDetector_a5c416677fd537afc79f2fbc2e68b2dee}{nh\+\_\+}
+\item 
+ros\+::\+Publisher \hyperlink{classsmacc_1_1SignalDetector_ae065bbd4e699e5fce00fbc508dedd4c1}{status\+Pub\+\_\+}
+\item 
+\hyperlink{common_8h_a13d01c0cecec33c3093445edab0a7eb4}{Smacc\+Scheduler} $\ast$ \hyperlink{classsmacc_1_1SignalDetector_acf16adb82241eb97efd07530dd16c80d}{scheduler\+\_\+}
+\item 
+Smacc\+Scheduler\+::processor\+\_\+handle \hyperlink{classsmacc_1_1SignalDetector_ac5a7fe931a4cd3390219259c70533033}{processor\+Handle\+\_\+}
+\item 
+boost\+::thread \hyperlink{classsmacc_1_1SignalDetector_a4346a400cd37eafc5d1d2e63d975785e}{signal\+Detector\+Thread\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsmacc_1_1SignalDetector_a0e71d23a61c07d55f419d02237d03b6a}{I\+Smacc\+State\+Machine}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file signal\+\_\+detector.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!Signal\+Detector@{Signal\+Detector}}
+\index{Signal\+Detector@{Signal\+Detector}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{Signal\+Detector(\+Smacc\+Scheduler $\ast$scheduler)}{SignalDetector(SmaccScheduler *scheduler)}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+::\+Signal\+Detector\+::\+Signal\+Detector (
+\begin{DoxyParamCaption}
+\item[{{\bf Smacc\+Scheduler} $\ast$}]{scheduler}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1SignalDetector_aeaefdb0fe56cc527486598417f605c37}{}\label{classsmacc_1_1SignalDetector_aeaefdb0fe56cc527486598417f605c37}
+\hyperlink{classsmacc_1_1SignalDetector_aeaefdb0fe56cc527486598417f605c37}{Signal\+Detector()} 
+
+Definition at line 16 of file signal\+\_\+detector.\+cpp.
+
+
+
+References end\+\_\+, loop\+\_\+rate\+\_\+hz, and scheduler\+\_\+.
+
+
+\begin{DoxyCode}
+17 \{
+18     \hyperlink{classsmacc_1_1SignalDetector_acf16adb82241eb97efd07530dd16c80d}{scheduler\_} = scheduler;
+19     \hyperlink{classsmacc_1_1SignalDetector_a41a2ae4262ed350f46d8b886bdc1dfa5}{loop\_rate\_hz} = 10.0;
+20     \hyperlink{classsmacc_1_1SignalDetector_aaee266393c01693528a2d74b1f2354a2}{end\_}= \textcolor{keyword}{false};
+21 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!finalize\+Request@{finalize\+Request}}
+\index{finalize\+Request@{finalize\+Request}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{finalize\+Request(\+I\+Smacc\+Action\+Client $\ast$resource)}{finalizeRequest(ISmaccActionClient *resource)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Signal\+Detector\+::finalize\+Request (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Smacc\+Action\+Client} $\ast$}]{client}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_af455ae5187fc9405d790992060af647b}{}\label{classsmacc_1_1SignalDetector_af455ae5187fc9405d790992060af647b}
+\hyperlink{classsmacc_1_1SignalDetector_af455ae5187fc9405d790992060af647b}{finalize\+Request()} 
+
+Definition at line 107 of file signal\+\_\+detector.\+cpp.
+
+
+
+References smacc\+::\+I\+Smacc\+Component\+::get\+Name(), smacc\+::\+I\+Smacc\+Action\+Client\+::get\+State(), open\+Requests\+\_\+, smacc\+::\+I\+Smacc\+Action\+Client\+::post\+Event(), processor\+Handle\+\_\+, and scheduler\+\_\+.
+
+
+
+Referenced by poll\+Once(), and post\+Event().
+
+
+\begin{DoxyCode}
+108 \{
+109     ROS\_INFO(\textcolor{stringliteral}{"SignalDetector: Finalizing actionlib request: %s. RESULT: %s"}, client->getName().c\_str(), 
+      client->getState().toString().c\_str());
+110     \textcolor{keyword}{auto} it = find(\hyperlink{classsmacc_1_1SignalDetector_a3f7e46b9fa9fcac9f5bc72a95ab20ca9}{openRequests\_}.begin(), \hyperlink{classsmacc_1_1SignalDetector_a3f7e46b9fa9fcac9f5bc72a95ab20ca9}{openRequests\_}.end(), client);
+111 
+112     \textcolor{keywordflow}{if} (it != \hyperlink{classsmacc_1_1SignalDetector_a3f7e46b9fa9fcac9f5bc72a95ab20ca9}{openRequests\_}.end())
+113     \{
+114         \hyperlink{classsmacc_1_1SignalDetector_a3f7e46b9fa9fcac9f5bc72a95ab20ca9}{openRequests\_}.erase(it);
+115     \}
+116 
+117     \textcolor{comment}{//boost::intrusive\_ptr< IActionResult> actionClientResultEvent = client->createActionResultEvent();}
+118     \textcolor{comment}{//actionClientResultEvent->client = client;}
+119 
+120     ROS\_INFO(\textcolor{stringliteral}{"SignalDetector: action lib result obtained, posting event"});
+121     client->postEvent(\hyperlink{classsmacc_1_1SignalDetector_acf16adb82241eb97efd07530dd16c80d}{scheduler\_}, \hyperlink{classsmacc_1_1SignalDetector_ac5a7fe931a4cd3390219259c70533033}{processorHandle\_});
+122     \textcolor{comment}{// SmaccScheduler}
+123     \textcolor{comment}{//SmaccScheduler::processor\_handle}
+124     \textcolor{comment}{//scheduler\_->queue\_event(processorHandle\_, actionClientResultEvent);}
+125 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SignalDetector_af455ae5187fc9405d790992060af647b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SignalDetector_af455ae5187fc9405d790992060af647b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!initialize@{initialize}}
+\index{initialize@{initialize}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{initialize(\+I\+Smacc\+State\+Machine $\ast$state\+Machine)}{initialize(ISmaccStateMachine *stateMachine)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Signal\+Detector\+::initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Smacc\+State\+Machine} $\ast$}]{state\+Machine}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1SignalDetector_a91ab3cd92d8095cdaf8610b50731f04b}{}\label{classsmacc_1_1SignalDetector_a91ab3cd92d8095cdaf8610b50731f04b}
+\hyperlink{classsmacc_1_1SignalDetector_a91ab3cd92d8095cdaf8610b50731f04b}{initialize()} 
+
+Definition at line 40 of file signal\+\_\+detector.\+cpp.
+
+
+
+References smacc\+State\+Machine\+\_\+.
+
+
+
+Referenced by smacc\+::\+I\+Smacc\+State\+Machine\+::\+I\+Smacc\+State\+Machine().
+
+
+\begin{DoxyCode}
+41 \{
+42     \hyperlink{classsmacc_1_1SignalDetector_a46025de6ac7b5980e22144f9703236a4}{smaccStateMachine\_} = stateMachine;
+43 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SignalDetector_a91ab3cd92d8095cdaf8610b50731f04b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!join@{join}}
+\index{join@{join}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{join()}{join()}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Signal\+Detector\+::join (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1SignalDetector_a636f704e469bf74b4a9fdb15bd63d5be}{}\label{classsmacc_1_1SignalDetector_a636f704e469bf74b4a9fdb15bd63d5be}
+\hyperlink{classsmacc_1_1SignalDetector_a636f704e469bf74b4a9fdb15bd63d5be}{join()} 
+
+Definition at line 70 of file signal\+\_\+detector.\+cpp.
+
+
+
+References signal\+Detector\+Thread\+\_\+.
+
+
+\begin{DoxyCode}
+71 \{
+72     \hyperlink{classsmacc_1_1SignalDetector_a4346a400cd37eafc5d1d2e63d975785e}{signalDetectorThread\_}.join();
+73 \}
+\end{DoxyCode}
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!notify\+Feedback@{notify\+Feedback}}
+\index{notify\+Feedback@{notify\+Feedback}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{notify\+Feedback(\+I\+Smacc\+Action\+Client $\ast$resource)}{notifyFeedback(ISmaccActionClient *resource)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Signal\+Detector\+::notify\+Feedback (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Smacc\+Action\+Client} $\ast$}]{client}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_a2c848e6d3bc64996cf8f7e56f3de1ee6}{}\label{classsmacc_1_1SignalDetector_a2c848e6d3bc64996cf8f7e56f3de1ee6}
+\hyperlink{classsmacc_1_1SignalDetector_a2c848e6d3bc64996cf8f7e56f3de1ee6}{notify\+Feedback()} 
+
+Definition at line 90 of file signal\+\_\+detector.\+cpp.
+
+
+
+References smacc\+::\+I\+Smacc\+Action\+Client\+::post\+Feedback\+Event(), processor\+Handle\+\_\+, and scheduler\+\_\+.
+
+
+
+Referenced by poll\+Once(), and post\+Event().
+
+
+\begin{DoxyCode}
+91 \{
+92     \textcolor{comment}{//ROS\_INFO("Notify feedback");}
+93     \textcolor{comment}{//boost::intrusive\_ptr< EvActionFeedback > actionFeedbackEvent = new EvActionFeedback();}
+94     \textcolor{comment}{//actionFeedbackEvent->client = client;}
+95 
+96     client->postFeedbackEvent(\hyperlink{classsmacc_1_1SignalDetector_acf16adb82241eb97efd07530dd16c80d}{scheduler\_}, \hyperlink{classsmacc_1_1SignalDetector_ac5a7fe931a4cd3390219259c70533033}{processorHandle\_});
+97 
+98     \textcolor{comment}{//ROS\_INFO("Sending feedback event");}
+99     \textcolor{comment}{//scheduler\_->queue\_event(processorHandle\_, actionFeedbackEvent);}
+100 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SignalDetector_a2c848e6d3bc64996cf8f7e56f3de1ee6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SignalDetector_a2c848e6d3bc64996cf8f7e56f3de1ee6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!polling\+Loop@{polling\+Loop}}
+\index{polling\+Loop@{polling\+Loop}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{polling\+Loop()}{pollingLoop()}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Signal\+Detector\+::polling\+Loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1SignalDetector_a2665e66cdae9f6533c64bbcecf3fa199}{}\label{classsmacc_1_1SignalDetector_a2665e66cdae9f6533c64bbcecf3fa199}
+\hyperlink{classsmacc_1_1SignalDetector_a2665e66cdae9f6533c64bbcecf3fa199}{polling\+Loop()} 
+
+Definition at line 173 of file signal\+\_\+detector.\+cpp.
+
+
+
+References end\+\_\+, loop\+\_\+rate\+\_\+hz, and poll\+Once().
+
+
+
+Referenced by smacc\+::run(), and run\+Thread().
+
+
+\begin{DoxyCode}
+174 \{
+175     ros::NodeHandle nh(\textcolor{stringliteral}{"~"});
+176 
+177     \textcolor{keywordflow}{if} (!nh.param(\textcolor{stringliteral}{"signal\_detector\_loop\_freq"}, this->loop\_rate\_hz))
+178     \{
+179     \}
+180 
+181     nh.setParam(\textcolor{stringliteral}{"signal\_detector\_loop\_freq"}, this->\hyperlink{classsmacc_1_1SignalDetector_a41a2ae4262ed350f46d8b886bdc1dfa5}{loop\_rate\_hz});
+182 
+183     ros::Rate r(\hyperlink{classsmacc_1_1SignalDetector_a41a2ae4262ed350f46d8b886bdc1dfa5}{loop\_rate\_hz});
+184 
+185     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"[SignalDetector] loop rate hz:"} << \hyperlink{classsmacc_1_1SignalDetector_a41a2ae4262ed350f46d8b886bdc1dfa5}{loop\_rate\_hz});
+186     \textcolor{keywordflow}{while} (ros::ok() && !\hyperlink{classsmacc_1_1SignalDetector_aaee266393c01693528a2d74b1f2354a2}{end\_})
+187     \{
+188         ROS\_INFO\_STREAM\_THROTTLE(10, \textcolor{stringliteral}{"[SignalDetector] heartbeat"});
+189 
+190         \hyperlink{classsmacc_1_1SignalDetector_a9a116479e23259f3a5d5d4a47278afd5}{pollOnce}();
+191         ros::spinOnce();
+192         r.sleep();
+193     \}
+194 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SignalDetector_a2665e66cdae9f6533c64bbcecf3fa199_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SignalDetector_a2665e66cdae9f6533c64bbcecf3fa199_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!poll\+Once@{poll\+Once}}
+\index{poll\+Once@{poll\+Once}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{poll\+Once()}{pollOnce()}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Signal\+Detector\+::poll\+Once (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1SignalDetector_a9a116479e23259f3a5d5d4a47278afd5}{}\label{classsmacc_1_1SignalDetector_a9a116479e23259f3a5d5d4a47278afd5}
+poll() 
+
+Definition at line 149 of file signal\+\_\+detector.\+cpp.
+
+
+
+References finalize\+Request(), notify\+Feedback(), and open\+Requests\+\_\+.
+
+
+
+Referenced by polling\+Loop().
+
+
+\begin{DoxyCode}
+150 \{
+151     \textcolor{keywordflow}{for} (ISmaccActionClient *smaccActionClient : \hyperlink{classsmacc_1_1SignalDetector_a3f7e46b9fa9fcac9f5bc72a95ab20ca9}{openRequests\_})
+152     \{
+153         \textcolor{comment}{// check feedback messages}
+154         \textcolor{keywordflow}{if} (smaccActionClient->hasFeedback())
+155         \{
+156             \hyperlink{classsmacc_1_1SignalDetector_a2c848e6d3bc64996cf8f7e56f3de1ee6}{notifyFeedback}(smaccActionClient);
+157         \}
+158 
+159         \textcolor{comment}{// check result}
+160         \textcolor{keyword}{auto} state = smaccActionClient->getState();
+161         \textcolor{keywordflow}{if} (state.isDone())
+162         \{
+163             \hyperlink{classsmacc_1_1SignalDetector_af455ae5187fc9405d790992060af647b}{finalizeRequest}(smaccActionClient);
+164         \}
+165     \}
+166 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SignalDetector_a9a116479e23259f3a5d5d4a47278afd5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SignalDetector_a9a116479e23259f3a5d5d4a47278afd5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!post\+Event@{post\+Event}}
+\index{post\+Event@{post\+Event}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{post\+Event(\+Event\+Type $\ast$ev)}{postEvent(EventType *ev)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Event\+Type $>$ void smacc\+::\+Signal\+Detector\+::post\+Event (
+\begin{DoxyParamCaption}
+\item[{Event\+Type $\ast$}]{ev}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SignalDetector_a6ab99d99cef8d101e39797a72daeb2b7}{}\label{classsmacc_1_1SignalDetector_a6ab99d99cef8d101e39797a72daeb2b7}
+
+
+Definition at line 39 of file signal\+\_\+detector.\+h.
+
+
+
+References finalize\+Request(), notify\+Feedback(), processor\+Handle\+\_\+, register\+Action\+Client\+Request(), and scheduler\+\_\+.
+
+
+
+Referenced by smacc\+::\+I\+Smacc\+State\+Machine\+::post\+Event().
+
+
+\begin{DoxyCode}
+40         \{
+41             boost::intrusive\_ptr< EventType> weakPtrEvent = ev;
+42             this->\hyperlink{classsmacc_1_1SignalDetector_acf16adb82241eb97efd07530dd16c80d}{scheduler\_}->queue\_event(\hyperlink{classsmacc_1_1SignalDetector_ac5a7fe931a4cd3390219259c70533033}{processorHandle\_}, weakPtrEvent);
+43         \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SignalDetector_a6ab99d99cef8d101e39797a72daeb2b7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SignalDetector_a6ab99d99cef8d101e39797a72daeb2b7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!register\+Action\+Client\+Request@{register\+Action\+Client\+Request}}
+\index{register\+Action\+Client\+Request@{register\+Action\+Client\+Request}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{register\+Action\+Client\+Request(\+I\+Smacc\+Action\+Client $\ast$action\+Client\+Request\+Info)}{registerActionClientRequest(ISmaccActionClient *actionClientRequestInfo)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Signal\+Detector\+::register\+Action\+Client\+Request (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Smacc\+Action\+Client} $\ast$}]{action\+Client\+Request\+Info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_a9a28cc1e9dcf7d204f3589fad8291bfd}{}\label{classsmacc_1_1SignalDetector_a9a28cc1e9dcf7d204f3589fad8291bfd}
+\hyperlink{classsmacc_1_1SignalDetector_a9a28cc1e9dcf7d204f3589fad8291bfd}{register\+Action\+Client\+Request()} 
+
+Definition at line 28 of file signal\+\_\+detector.\+cpp.
+
+
+
+References smacc\+::\+I\+Smacc\+Component\+::get\+Name(), and open\+Requests\+\_\+.
+
+
+
+Referenced by post\+Event(), and smacc\+::\+I\+Smacc\+State\+Machine\+::register\+Action\+Client\+Request().
+
+
+\begin{DoxyCode}
+29 \{
+30     ROS\_INFO(\textcolor{stringliteral}{"Signal detector is aware of the '-- %s -- action client request'"}, actionClientRequestInfo->
+      getName().c\_str());
+31     \hyperlink{classsmacc_1_1SignalDetector_a3f7e46b9fa9fcac9f5bc72a95ab20ca9}{openRequests\_}.push\_back(actionClientRequestInfo);
+32     ROS\_INFO(\textcolor{stringliteral}{"Added to the opened requests list"});
+33 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SignalDetector_a9a28cc1e9dcf7d204f3589fad8291bfd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SignalDetector_a9a28cc1e9dcf7d204f3589fad8291bfd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!run\+Thread@{run\+Thread}}
+\index{run\+Thread@{run\+Thread}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{run\+Thread()}{runThread()}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Signal\+Detector\+::run\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1SignalDetector_a48b3fee853ddcb25732408b22ecfcf39}{}\label{classsmacc_1_1SignalDetector_a48b3fee853ddcb25732408b22ecfcf39}
+\hyperlink{classsmacc_1_1SignalDetector_a48b3fee853ddcb25732408b22ecfcf39}{run\+Thread()} 
+
+Definition at line 60 of file signal\+\_\+detector.\+cpp.
+
+
+
+References polling\+Loop(), and signal\+Detector\+Thread\+\_\+.
+
+
+\begin{DoxyCode}
+61 \{
+62     \hyperlink{classsmacc_1_1SignalDetector_a4346a400cd37eafc5d1d2e63d975785e}{signalDetectorThread\_} = boost::thread(boost::bind(&
+      \hyperlink{classsmacc_1_1SignalDetector_a2665e66cdae9f6533c64bbcecf3fa199}{SignalDetector::pollingLoop}, \textcolor{keyword}{this}));
+63 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SignalDetector_a48b3fee853ddcb25732408b22ecfcf39_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!set\+Processor\+Handle@{set\+Processor\+Handle}}
+\index{set\+Processor\+Handle@{set\+Processor\+Handle}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{set\+Processor\+Handle(\+Smacc\+Scheduler\+::processor\+\_\+handle processor\+Handle)}{setProcessorHandle(SmaccScheduler::processor_handle processorHandle)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Signal\+Detector\+::set\+Processor\+Handle (
+\begin{DoxyParamCaption}
+\item[{Smacc\+Scheduler\+::processor\+\_\+handle}]{processor\+Handle}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1SignalDetector_aed018c3d7978069dab3f538d077184f0}{}\label{classsmacc_1_1SignalDetector_aed018c3d7978069dab3f538d077184f0}
+\hyperlink{classsmacc_1_1SignalDetector_aed018c3d7978069dab3f538d077184f0}{set\+Processor\+Handle()} 
+
+Definition at line 50 of file signal\+\_\+detector.\+cpp.
+
+
+
+References processor\+Handle\+\_\+.
+
+
+
+Referenced by smacc\+::run().
+
+
+\begin{DoxyCode}
+51 \{
+52     \hyperlink{classsmacc_1_1SignalDetector_ac5a7fe931a4cd3390219259c70533033}{processorHandle\_} = processorHandle;
+53 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{classsmacc_1_1SignalDetector_aed018c3d7978069dab3f538d077184f0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!stop@{stop}}
+\index{stop@{stop}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{stop()}{stop()}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Signal\+Detector\+::stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1SignalDetector_a536ea005ea4ef4632c0c9c1c62c557a3}{}\label{classsmacc_1_1SignalDetector_a536ea005ea4ef4632c0c9c1c62c557a3}
+\hyperlink{classsmacc_1_1SignalDetector_a536ea005ea4ef4632c0c9c1c62c557a3}{stop()} 
+
+Definition at line 80 of file signal\+\_\+detector.\+cpp.
+
+
+
+References end\+\_\+.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Animation\+::tick(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation\+::tick().
+
+
+\begin{DoxyCode}
+81 \{
+82     \hyperlink{classsmacc_1_1SignalDetector_aaee266393c01693528a2d74b1f2354a2}{end\_}=\textcolor{keyword}{true};
+83 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SignalDetector_a536ea005ea4ef4632c0c9c1c62c557a3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{to\+String(std\+::stringstream \&ss)}{toString(std::stringstream &ss)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Signal\+Detector\+::to\+String (
+\begin{DoxyParamCaption}
+\item[{std\+::stringstream \&}]{ss}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1SignalDetector_a1dc830d77ee10717db17015e6ced354c}{}\label{classsmacc_1_1SignalDetector_a1dc830d77ee10717db17015e6ced354c}
+\hyperlink{classsmacc_1_1SignalDetector_a1dc830d77ee10717db17015e6ced354c}{to\+String()} 
+
+Definition at line 132 of file signal\+\_\+detector.\+cpp.
+
+
+
+References open\+Requests\+\_\+.
+
+
+\begin{DoxyCode}
+133 \{
+134     ss << \textcolor{stringliteral}{"--------"} << std::endl;
+135     ss << \textcolor{stringliteral}{"Open requests"} << std::endl;
+136     \textcolor{keywordflow}{for} (ISmaccActionClient *smaccActionClient : this->\hyperlink{classsmacc_1_1SignalDetector_a3f7e46b9fa9fcac9f5bc72a95ab20ca9}{openRequests\_})
+137     \{
+138         \textcolor{keyword}{auto} state = smaccActionClient->getState().toString();
+139         ss << smaccActionClient->getName() << \textcolor{stringliteral}{": "} << state << std::endl;
+140     \}
+141     ss << \textcolor{stringliteral}{"--------"};
+142 \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!I\+Smacc\+State\+Machine@{I\+Smacc\+State\+Machine}}
+\index{I\+Smacc\+State\+Machine@{I\+Smacc\+State\+Machine}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{I\+Smacc\+State\+Machine}{ISmaccStateMachine}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf I\+Smacc\+State\+Machine}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classsmacc_1_1SignalDetector_a0e71d23a61c07d55f419d02237d03b6a}{}\label{classsmacc_1_1SignalDetector_a0e71d23a61c07d55f419d02237d03b6a}
+
+
+Definition at line 76 of file signal\+\_\+detector.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!end\+\_\+@{end\+\_\+}}
+\index{end\+\_\+@{end\+\_\+}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{end\+\_\+}{end_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::atomic$<${\bf bool}$>$ smacc\+::\+Signal\+Detector\+::end\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_aaee266393c01693528a2d74b1f2354a2}{}\label{classsmacc_1_1SignalDetector_aaee266393c01693528a2d74b1f2354a2}
+
+
+Definition at line 61 of file signal\+\_\+detector.\+h.
+
+
+
+Referenced by polling\+Loop(), Signal\+Detector(), and stop().
+
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!loop\+\_\+rate\+\_\+hz@{loop\+\_\+rate\+\_\+hz}}
+\index{loop\+\_\+rate\+\_\+hz@{loop\+\_\+rate\+\_\+hz}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{loop\+\_\+rate\+\_\+hz}{loop_rate_hz}}]{\setlength{\rightskip}{0pt plus 5cm}double smacc\+::\+Signal\+Detector\+::loop\+\_\+rate\+\_\+hz\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_a41a2ae4262ed350f46d8b886bdc1dfa5}{}\label{classsmacc_1_1SignalDetector_a41a2ae4262ed350f46d8b886bdc1dfa5}
+
+
+Definition at line 59 of file signal\+\_\+detector.\+h.
+
+
+
+Referenced by polling\+Loop(), and Signal\+Detector().
+
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!nh\+\_\+@{nh\+\_\+}}
+\index{nh\+\_\+@{nh\+\_\+}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{nh\+\_\+}{nh_}}]{\setlength{\rightskip}{0pt plus 5cm}ros\+::\+Node\+Handle smacc\+::\+Signal\+Detector\+::nh\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_a5c416677fd537afc79f2fbc2e68b2dee}{}\label{classsmacc_1_1SignalDetector_a5c416677fd537afc79f2fbc2e68b2dee}
+
+
+Definition at line 63 of file signal\+\_\+detector.\+h.
+
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!open\+Requests\+\_\+@{open\+Requests\+\_\+}}
+\index{open\+Requests\+\_\+@{open\+Requests\+\_\+}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{open\+Requests\+\_\+}{openRequests_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf I\+Smacc\+Action\+Client}$\ast$$>$ smacc\+::\+Signal\+Detector\+::open\+Requests\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_a3f7e46b9fa9fcac9f5bc72a95ab20ca9}{}\label{classsmacc_1_1SignalDetector_a3f7e46b9fa9fcac9f5bc72a95ab20ca9}
+
+
+Definition at line 56 of file signal\+\_\+detector.\+h.
+
+
+
+Referenced by finalize\+Request(), poll\+Once(), register\+Action\+Client\+Request(), and to\+String().
+
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!processor\+Handle\+\_\+@{processor\+Handle\+\_\+}}
+\index{processor\+Handle\+\_\+@{processor\+Handle\+\_\+}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{processor\+Handle\+\_\+}{processorHandle_}}]{\setlength{\rightskip}{0pt plus 5cm}Smacc\+Scheduler\+::processor\+\_\+handle smacc\+::\+Signal\+Detector\+::processor\+Handle\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_ac5a7fe931a4cd3390219259c70533033}{}\label{classsmacc_1_1SignalDetector_ac5a7fe931a4cd3390219259c70533033}
+
+
+Definition at line 71 of file signal\+\_\+detector.\+h.
+
+
+
+Referenced by finalize\+Request(), notify\+Feedback(), post\+Event(), and set\+Processor\+Handle().
+
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!scheduler\+\_\+@{scheduler\+\_\+}}
+\index{scheduler\+\_\+@{scheduler\+\_\+}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{scheduler\+\_\+}{scheduler_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Smacc\+Scheduler}$\ast$ smacc\+::\+Signal\+Detector\+::scheduler\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_acf16adb82241eb97efd07530dd16c80d}{}\label{classsmacc_1_1SignalDetector_acf16adb82241eb97efd07530dd16c80d}
+
+
+Definition at line 69 of file signal\+\_\+detector.\+h.
+
+
+
+Referenced by finalize\+Request(), notify\+Feedback(), post\+Event(), and Signal\+Detector().
+
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!signal\+Detector\+Thread\+\_\+@{signal\+Detector\+Thread\+\_\+}}
+\index{signal\+Detector\+Thread\+\_\+@{signal\+Detector\+Thread\+\_\+}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{signal\+Detector\+Thread\+\_\+}{signalDetectorThread_}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::thread smacc\+::\+Signal\+Detector\+::signal\+Detector\+Thread\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_a4346a400cd37eafc5d1d2e63d975785e}{}\label{classsmacc_1_1SignalDetector_a4346a400cd37eafc5d1d2e63d975785e}
+
+
+Definition at line 73 of file signal\+\_\+detector.\+h.
+
+
+
+Referenced by join(), and run\+Thread().
+
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!smacc\+State\+Machine\+\_\+@{smacc\+State\+Machine\+\_\+}}
+\index{smacc\+State\+Machine\+\_\+@{smacc\+State\+Machine\+\_\+}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{smacc\+State\+Machine\+\_\+}{smaccStateMachine_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Smacc\+State\+Machine}$\ast$ smacc\+::\+Signal\+Detector\+::smacc\+State\+Machine\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_a46025de6ac7b5980e22144f9703236a4}{}\label{classsmacc_1_1SignalDetector_a46025de6ac7b5980e22144f9703236a4}
+
+
+Definition at line 53 of file signal\+\_\+detector.\+h.
+
+
+
+Referenced by initialize().
+
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!status\+Pub\+\_\+@{status\+Pub\+\_\+}}
+\index{status\+Pub\+\_\+@{status\+Pub\+\_\+}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{status\+Pub\+\_\+}{statusPub_}}]{\setlength{\rightskip}{0pt plus 5cm}ros\+::\+Publisher smacc\+::\+Signal\+Detector\+::status\+Pub\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_ae065bbd4e699e5fce00fbc508dedd4c1}{}\label{classsmacc_1_1SignalDetector_ae065bbd4e699e5fce00fbc508dedd4c1}
+
+
+Definition at line 65 of file signal\+\_\+detector.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+smacc/include/smacc/\hyperlink{signal__detector_8h}{signal\+\_\+detector.\+h}\item 
+smacc/src/smacc/\hyperlink{signal__detector_8cpp}{signal\+\_\+detector.\+cpp}\end{DoxyCompactItemize}

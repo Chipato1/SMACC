@@ -1,0 +1,141 @@
+\hypertarget{classSbUndoPathBackwards}{}\section{Sb\+Undo\+Path\+Backwards Class Reference}
+\label{classSbUndoPathBackwards}\index{Sb\+Undo\+Path\+Backwards@{Sb\+Undo\+Path\+Backwards}}
+
+
+{\ttfamily \#include $<$sb\+\_\+undo\+\_\+path\+\_\+backwards.\+h$>$}
+
+
+
+Inheritance diagram for Sb\+Undo\+Path\+Backwards\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{classSbUndoPathBackwards__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sb\+Undo\+Path\+Backwards\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSbUndoPathBackwards__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classSbUndoPathBackwards_ab7eed4fa4633235b877758bd787bbea1}{on\+Entry} () override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tf\+::\+Transform\+Listener \hyperlink{classSbUndoPathBackwards_ad341922358ca111e8bea86a2f94a1f5c}{listener}
+\item 
+\hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $\ast$ \hyperlink{classSbUndoPathBackwards_ad201bd8837a54bd7df0efc8d72fdb151}{move\+Base\+Client\+\_\+}
+\item 
+\hyperlink{classsmacc__odom__tracker_1_1OdomTracker}{smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker} $\ast$ \hyperlink{classSbUndoPathBackwards_a4e543595d070980fb5cb621232904048}{odom\+Tracker\+\_\+}
+\item 
+\hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher}{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher} $\ast$ \hyperlink{classSbUndoPathBackwards_a881b1b8e6bcab14d59e26c09aaa3c7c0}{planner\+Switcher\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file sb\+\_\+undo\+\_\+path\+\_\+backwards.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Sb\+Undo\+Path\+Backwards@{Sb\+Undo\+Path\+Backwards}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!Sb\+Undo\+Path\+Backwards@{Sb\+Undo\+Path\+Backwards}}
+\subsubsection[{\texorpdfstring{on\+Entry() override}{onEntry() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Sb\+Undo\+Path\+Backwards\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classSbUndoPathBackwards_ab7eed4fa4633235b877758bd787bbea1}{}\label{classSbUndoPathBackwards_ab7eed4fa4633235b877758bd787bbea1}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_a7c28e1c46238bbb2c2e0450573c6de94}{smacc\+::\+Smacc\+Sub\+State\+Behavior}.
+
+
+
+Definition at line 18 of file sb\+\_\+undo\+\_\+path\+\_\+backwards.\+h.
+
+
+
+References smacc\+\_\+odom\+\_\+tracker\+::\+C\+L\+E\+A\+R\+\_\+\+P\+A\+T\+H\+\_\+\+B\+A\+C\+K\+W\+A\+RD, smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::get\+Path(), smacc\+::\+Smacc\+Sub\+State\+Behavior\+::requires\+Component(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal(), smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher\+::set\+Backward\+Planner(), and smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Working\+Mode().
+
+
+\begin{DoxyCode}
+19   \{
+20     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}{requiresComponent}(\hyperlink{classSbUndoPathBackwards_ad201bd8837a54bd7df0efc8d72fdb151}{moveBaseClient\_} ,ros::NodeHandle(\textcolor{stringliteral}{"move\_base"}));
+21     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}{requiresComponent}(\hyperlink{classSbUndoPathBackwards_a4e543595d070980fb5cb621232904048}{odomTracker\_});
+22     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}{requiresComponent}(\hyperlink{classSbUndoPathBackwards_a881b1b8e6bcab14d59e26c09aaa3c7c0}{plannerSwitcher\_} , ros::NodeHandle(\textcolor{stringliteral}{"move\_base"}
+      ));   
+23 
+24     nav\_msgs::Path forwardpath = this->\hyperlink{classSbUndoPathBackwards_a4e543595d070980fb5cb621232904048}{odomTracker\_}->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_ace0762f93bc272a426d3038f74dc8752}{getPath}();
+25     this->\hyperlink{classSbUndoPathBackwards_a4e543595d070980fb5cb621232904048}{odomTracker\_}->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a38fbca999297c46dc95628cc60851a45}{setWorkingMode}(
+      \hyperlink{namespacesmacc__odom__tracker_ade9730dd5cc10ccfad9362176cf46c33a0cf8f27617189e35619df3c18bda6274}{smacc\_odom\_tracker::WorkingMode::CLEAR\_PATH\_BACKWARD});
+26     
+27     smacc::SmaccMoveBaseActionClient::Goal goal;
+28     \textcolor{keywordflow}{if} ( forwardpath.poses.size()>0)
+29     \{
+30       goal.target\_pose = forwardpath.poses.front();
+31       this->\hyperlink{classSbUndoPathBackwards_a881b1b8e6bcab14d59e26c09aaa3c7c0}{plannerSwitcher\_}->\hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_a848558a4309a42c546ab87e65722da2f}{setBackwardPlanner}();
+32       \hyperlink{classSbUndoPathBackwards_ad201bd8837a54bd7df0efc8d72fdb151}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
+33     \}
+34   \}    
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSbUndoPathBackwards_ab7eed4fa4633235b877758bd787bbea1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Sb\+Undo\+Path\+Backwards@{Sb\+Undo\+Path\+Backwards}!listener@{listener}}
+\index{listener@{listener}!Sb\+Undo\+Path\+Backwards@{Sb\+Undo\+Path\+Backwards}}
+\subsubsection[{\texorpdfstring{listener}{listener}}]{\setlength{\rightskip}{0pt plus 5cm}tf\+::\+Transform\+Listener Sb\+Undo\+Path\+Backwards\+::listener\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSbUndoPathBackwards_ad341922358ca111e8bea86a2f94a1f5c}{}\label{classSbUndoPathBackwards_ad341922358ca111e8bea86a2f94a1f5c}
+
+
+Definition at line 10 of file sb\+\_\+undo\+\_\+path\+\_\+backwards.\+h.
+
+\index{Sb\+Undo\+Path\+Backwards@{Sb\+Undo\+Path\+Backwards}!move\+Base\+Client\+\_\+@{move\+Base\+Client\+\_\+}}
+\index{move\+Base\+Client\+\_\+@{move\+Base\+Client\+\_\+}!Sb\+Undo\+Path\+Backwards@{Sb\+Undo\+Path\+Backwards}}
+\subsubsection[{\texorpdfstring{move\+Base\+Client\+\_\+}{moveBaseClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}$\ast$ Sb\+Undo\+Path\+Backwards\+::move\+Base\+Client\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSbUndoPathBackwards_ad201bd8837a54bd7df0efc8d72fdb151}{}\label{classSbUndoPathBackwards_ad201bd8837a54bd7df0efc8d72fdb151}
+
+
+Definition at line 12 of file sb\+\_\+undo\+\_\+path\+\_\+backwards.\+h.
+
+\index{Sb\+Undo\+Path\+Backwards@{Sb\+Undo\+Path\+Backwards}!odom\+Tracker\+\_\+@{odom\+Tracker\+\_\+}}
+\index{odom\+Tracker\+\_\+@{odom\+Tracker\+\_\+}!Sb\+Undo\+Path\+Backwards@{Sb\+Undo\+Path\+Backwards}}
+\subsubsection[{\texorpdfstring{odom\+Tracker\+\_\+}{odomTracker_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker}$\ast$ Sb\+Undo\+Path\+Backwards\+::odom\+Tracker\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSbUndoPathBackwards_a4e543595d070980fb5cb621232904048}{}\label{classSbUndoPathBackwards_a4e543595d070980fb5cb621232904048}
+
+
+Definition at line 14 of file sb\+\_\+undo\+\_\+path\+\_\+backwards.\+h.
+
+\index{Sb\+Undo\+Path\+Backwards@{Sb\+Undo\+Path\+Backwards}!planner\+Switcher\+\_\+@{planner\+Switcher\+\_\+}}
+\index{planner\+Switcher\+\_\+@{planner\+Switcher\+\_\+}!Sb\+Undo\+Path\+Backwards@{Sb\+Undo\+Path\+Backwards}}
+\subsubsection[{\texorpdfstring{planner\+Switcher\+\_\+}{plannerSwitcher_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}$\ast$ Sb\+Undo\+Path\+Backwards\+::planner\+Switcher\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSbUndoPathBackwards_a881b1b8e6bcab14d59e26c09aaa3c7c0}{}\label{classSbUndoPathBackwards_a881b1b8e6bcab14d59e26c09aaa3c7c0}
+
+
+Definition at line 16 of file sb\+\_\+undo\+\_\+path\+\_\+backwards.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+examples/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/substate\+\_\+behaviors/navigation/\hyperlink{sb__undo__path__backwards_8h}{sb\+\_\+undo\+\_\+path\+\_\+backwards.\+h}\end{DoxyCompactItemize}

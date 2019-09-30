@@ -1,0 +1,114 @@
+\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1DotLexer}{}\section{smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Lexer Class Reference}
+\label{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1DotLexer}\index{smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Lexer@{smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Lexer}}
+
+
+Inheritance diagram for smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Lexer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1DotLexer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Lexer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1DotLexer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1DotLexer_adf9b3add46fdb9d96f457be225abd5b7}{filter} (self, type, text)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1DotLexer_a9f5cee5823d09d8eb8a00e326160b0e4}{scanner} = \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1DotScanner}{Dot\+Scanner}()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 864 of file xdot\+\_\+qt.\+py.
+
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Dot\+Lexer@{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Dot\+Lexer}!filter@{filter}}
+\index{filter@{filter}!smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Dot\+Lexer@{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Dot\+Lexer}}
+\subsubsection[{\texorpdfstring{filter(self, type, text)}{filter(self, type, text)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Lexer.\+filter (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{type, }
+\item[{}]{text}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1DotLexer_adf9b3add46fdb9d96f457be225abd5b7}{}\label{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1DotLexer_adf9b3add46fdb9d96f457be225abd5b7}
+
+
+Definition at line 868 of file xdot\+\_\+qt.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Lexer.\+next(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+Lexer.\+next().
+
+
+\begin{DoxyCode}
+868     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1DotLexer_adf9b3add46fdb9d96f457be225abd5b7}{filter}(self, type, text):
+869         \textcolor{comment}{# TODO: handle charset}
+870         \textcolor{keywordflow}{if} type == STR\_ID:
+871             text = text[1:-1]
+872 
+873             \textcolor{comment}{# line continuations}
+874             text = text.replace(\textcolor{stringliteral}{'\(\backslash\)\(\backslash\)\(\backslash\)r\(\backslash\)n'}, \textcolor{stringliteral}{''})
+875             text = text.replace(\textcolor{stringliteral}{'\(\backslash\)\(\backslash\)\(\backslash\)r'}, \textcolor{stringliteral}{''})
+876             text = text.replace(\textcolor{stringliteral}{'\(\backslash\)\(\backslash\)\(\backslash\)n'}, \textcolor{stringliteral}{''})
+877 
+878             text = text.replace(\textcolor{stringliteral}{'\(\backslash\)\(\backslash\)r', '}\(\backslash\)r')
+879             text = text.replace(\textcolor{stringliteral}{'\(\backslash\)\(\backslash\)n'}, \textcolor{stringliteral}{'\(\backslash\)n'})
+880             text = text.replace(\textcolor{stringliteral}{'\(\backslash\)\(\backslash\)t'}, \textcolor{stringliteral}{'\(\backslash\)t'})
+881             text = text.replace(\textcolor{stringliteral}{'\(\backslash\)\(\backslash\)'}, \textcolor{stringliteral}{''})
+882 
+883             type = ID
+884 
+885         \textcolor{keywordflow}{elif} type == HTML\_ID:
+886             text = text[1:-1]
+887             type = ID
+888 
+889         \textcolor{keywordflow}{return} type, text
+890 
+891 
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1DotLexer_adf9b3add46fdb9d96f457be225abd5b7_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Dot\+Lexer@{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Dot\+Lexer}!scanner@{scanner}}
+\index{scanner@{scanner}!smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Dot\+Lexer@{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Dot\+Lexer}}
+\subsubsection[{\texorpdfstring{scanner}{scanner}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Lexer.\+scanner = {\bf Dot\+Scanner}()\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1DotLexer_a9f5cee5823d09d8eb8a00e326160b0e4}{}\label{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1DotLexer_a9f5cee5823d09d8eb8a00e326160b0e4}
+
+
+Definition at line 866 of file xdot\+\_\+qt.\+py.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+viewer/src/smacc\+\_\+viewer/xdot/\hyperlink{xdot__qt_8py}{xdot\+\_\+qt.\+py}\end{DoxyCompactItemize}

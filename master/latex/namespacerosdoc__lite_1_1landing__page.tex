@@ -1,0 +1,300 @@
+\hypertarget{namespacerosdoc__lite_1_1landing__page}{}\section{rosdoc\+\_\+lite.\+landing\+\_\+page Namespace Reference}
+\label{namespacerosdoc__lite_1_1landing__page}\index{rosdoc\+\_\+lite.\+landing\+\_\+page@{rosdoc\+\_\+lite.\+landing\+\_\+page}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacerosdoc__lite_1_1landing__page_a443baa6b6a03fec4b5ea3969e5dcad4a}{\+\_\+href} (location, text)
+\item 
+def \hyperlink{namespacerosdoc__lite_1_1landing__page_a36213cc50ea95b4e8ae862879455f4aa}{link\+\_\+name} (rd\+\_\+config)
+\item 
+def \hyperlink{namespacerosdoc__lite_1_1landing__page_acd5e6e0a950587a17eb4e2e9898b8487}{output\+\_\+location} (config)
+\item 
+def \hyperlink{namespacerosdoc__lite_1_1landing__page_a551db1039b876758b3822ecc24ce105d}{generate\+\_\+links} (package, manifest, rd\+\_\+configs)
+\item 
+def \hyperlink{namespacerosdoc__lite_1_1landing__page_aa4758e48bd6468ca6e6835d517e9708a}{generate\+\_\+landing\+\_\+page} (package, manifest, rd\+\_\+configs, output\+\_\+dir)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{rosdoc\+\_\+lite\+::landing\+\_\+page@{rosdoc\+\_\+lite\+::landing\+\_\+page}!\+\_\+href@{\+\_\+href}}
+\index{\+\_\+href@{\+\_\+href}!rosdoc\+\_\+lite\+::landing\+\_\+page@{rosdoc\+\_\+lite\+::landing\+\_\+page}}
+\subsubsection[{\texorpdfstring{\+\_\+href(location, text)}{_href(location, text)}}]{\setlength{\rightskip}{0pt plus 5cm}def rosdoc\+\_\+lite.\+landing\+\_\+page.\+\_\+href (
+\begin{DoxyParamCaption}
+\item[{}]{location, }
+\item[{}]{text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{namespacerosdoc__lite_1_1landing__page_a443baa6b6a03fec4b5ea3969e5dcad4a}{}\label{namespacerosdoc__lite_1_1landing__page_a443baa6b6a03fec4b5ea3969e5dcad4a}
+
+
+Definition at line 44 of file landing\+\_\+page.\+py.
+
+
+
+Referenced by rosdoc\+\_\+lite.\+landing\+\_\+page.\+generate\+\_\+links().
+
+
+\begin{DoxyCode}
+44 \textcolor{keyword}{def }\hyperlink{namespacerosdoc__lite_1_1landing__page_a443baa6b6a03fec4b5ea3969e5dcad4a}{\_href}(location, text):
+45     \textcolor{keywordflow}{return} \textcolor{stringliteral}{'<a href="%(location)s">%(text)s</a>'} % locals()
+46 
+47 
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerosdoc__lite_1_1landing__page_a443baa6b6a03fec4b5ea3969e5dcad4a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{rosdoc\+\_\+lite\+::landing\+\_\+page@{rosdoc\+\_\+lite\+::landing\+\_\+page}!generate\+\_\+landing\+\_\+page@{generate\+\_\+landing\+\_\+page}}
+\index{generate\+\_\+landing\+\_\+page@{generate\+\_\+landing\+\_\+page}!rosdoc\+\_\+lite\+::landing\+\_\+page@{rosdoc\+\_\+lite\+::landing\+\_\+page}}
+\subsubsection[{\texorpdfstring{generate\+\_\+landing\+\_\+page(package, manifest, rd\+\_\+configs, output\+\_\+dir)}{generate_landing_page(package, manifest, rd_configs, output_dir)}}]{\setlength{\rightskip}{0pt plus 5cm}def rosdoc\+\_\+lite.\+landing\+\_\+page.\+generate\+\_\+landing\+\_\+page (
+\begin{DoxyParamCaption}
+\item[{}]{package, }
+\item[{}]{manifest, }
+\item[{}]{rd\+\_\+configs, }
+\item[{}]{output\+\_\+dir}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerosdoc__lite_1_1landing__page_aa4758e48bd6468ca6e6835d517e9708a}{}\label{namespacerosdoc__lite_1_1landing__page_aa4758e48bd6468ca6e6835d517e9708a}
+\begin{DoxyVerb}Generate landing page in the event that there are multiple documentation sets
+:returns: list of packages for which there are landing pages generated
+\end{DoxyVerb}
+ 
+
+Definition at line 104 of file landing\+\_\+page.\+py.
+
+
+
+References rosdoc\+\_\+lite.\+landing\+\_\+page.\+generate\+\_\+links().
+
+
+\begin{DoxyCode}
+104 \textcolor{keyword}{def }\hyperlink{namespacerosdoc__lite_1_1landing__page_aa4758e48bd6468ca6e6835d517e9708a}{generate\_landing\_page}(package, manifest, rd\_configs, output\_dir):
+105     \textcolor{stringliteral}{"""}
+106 \textcolor{stringliteral}{    Generate landing page in the event that there are multiple documentation sets}
+107 \textcolor{stringliteral}{    :returns: list of packages for which there are landing pages generated}
+108 \textcolor{stringliteral}{    """}
+109     template = rdcore.load\_tmpl(\textcolor{stringliteral}{'landing.template'})
+110     \textcolor{comment}{#print("landing\_page: packages are", ctx.packages.keys())}
+111     \textcolor{keywordflow}{try}:
+112         links = \hyperlink{namespacerosdoc__lite_1_1landing__page_a551db1039b876758b3822ecc24ce105d}{generate\_links}(package, manifest, rd\_configs)
+113         \textcolor{comment}{# if links is empty, it means that the rd\_configs builds}
+114         \textcolor{comment}{# to the base directory and no landing page is required}
+115         \textcolor{comment}{# (or it means that the config is corrupt)}
+116         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} links:
+117             \textcolor{comment}{#print("ignoring landing page for", package)}
+118             \textcolor{keywordflow}{return}
+119 
+120         html\_dir = output\_dir
+121         \textcolor{comment}{#print("generating landing page", html\_dir)}
+122 
+123         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} os.path.isdir(html\_dir):
+124             os.makedirs(html\_dir)
+125 
+126         links\_html = \textcolor{stringliteral}{'\(\backslash\)n'}.join([\textcolor{stringliteral}{'<li class="landing-li">%s</li>'} % l \textcolor{keywordflow}{for} l \textcolor{keywordflow}{in} links])
+127         date = str(time.strftime(\textcolor{stringliteral}{'%a, %d %b %Y %H:%M:%S'}))
+128         tempvars = \{
+129             \textcolor{stringliteral}{'$package'}: package,
+130             \textcolor{stringliteral}{'$links'}: links\_html,
+131             \textcolor{stringliteral}{'$date'}: date,
+132                 \}
+133 
+134         with open(os.path.join(html\_dir, \textcolor{stringliteral}{'index.html'}), \textcolor{stringliteral}{'w'}) \textcolor{keyword}{as} f:
+135             f.write(rdcore.instantiate\_template(template, tempvars))
+136 
+137     \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:
+138         print(\textcolor{stringliteral}{"Unable to generate landing\_page for [%s]:\(\backslash\)n\(\backslash\)t%s"} % (package, str(e)), file=sys.stderr)
+139         \textcolor{keywordflow}{raise}
+140 \end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerosdoc__lite_1_1landing__page_aa4758e48bd6468ca6e6835d517e9708a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{rosdoc\+\_\+lite\+::landing\+\_\+page@{rosdoc\+\_\+lite\+::landing\+\_\+page}!generate\+\_\+links@{generate\+\_\+links}}
+\index{generate\+\_\+links@{generate\+\_\+links}!rosdoc\+\_\+lite\+::landing\+\_\+page@{rosdoc\+\_\+lite\+::landing\+\_\+page}}
+\subsubsection[{\texorpdfstring{generate\+\_\+links(package, manifest, rd\+\_\+configs)}{generate_links(package, manifest, rd_configs)}}]{\setlength{\rightskip}{0pt plus 5cm}def rosdoc\+\_\+lite.\+landing\+\_\+page.\+generate\+\_\+links (
+\begin{DoxyParamCaption}
+\item[{}]{package, }
+\item[{}]{manifest, }
+\item[{}]{rd\+\_\+configs}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerosdoc__lite_1_1landing__page_a551db1039b876758b3822ecc24ce105d}{}\label{namespacerosdoc__lite_1_1landing__page_a551db1039b876758b3822ecc24ce105d}
+\begin{DoxyVerb}:param package: str packagename
+:param manifest: manifest object
+:param rd_configs: [dict] package manifest rosdoc configs
+:returns: [str] list of html snippets
+\end{DoxyVerb}
+ 
+
+Definition at line 78 of file landing\+\_\+page.\+py.
+
+
+
+References rosdoc\+\_\+lite.\+landing\+\_\+page.\+\_\+href(), rosdoc\+\_\+lite.\+landing\+\_\+page.\+link\+\_\+name(), and rosdoc\+\_\+lite.\+landing\+\_\+page.\+output\+\_\+location().
+
+
+
+Referenced by rosdoc\+\_\+lite.\+landing\+\_\+page.\+generate\+\_\+landing\+\_\+page().
+
+
+\begin{DoxyCode}
+78 \textcolor{keyword}{def }\hyperlink{namespacerosdoc__lite_1_1landing__page_a551db1039b876758b3822ecc24ce105d}{generate\_links}(package, manifest, rd\_configs):
+79     \textcolor{stringliteral}{"""}
+80 \textcolor{stringliteral}{    :param package: str packagename}
+81 \textcolor{stringliteral}{    :param manifest: manifest object}
+82 \textcolor{stringliteral}{    :param rd\_configs: [dict] package manifest rosdoc configs}
+83 \textcolor{stringliteral}{    :returns: [str] list of html snippets}
+84 \textcolor{stringliteral}{    """}
+85     config\_list = [c \textcolor{keywordflow}{for} c \textcolor{keywordflow}{in} rd\_configs.itervalues() \textcolor{keywordflow}{if} c[\textcolor{stringliteral}{'builder'}] != \textcolor{stringliteral}{'rosmake'}]
+86     output\_dirs = [\hyperlink{namespacerosdoc__lite_1_1landing__page_acd5e6e0a950587a17eb4e2e9898b8487}{output\_location}(c) \textcolor{keywordflow}{for} c \textcolor{keywordflow}{in} config\_list]
+87     \textcolor{comment}{# filter out empties}
+88     output\_dirs = [d \textcolor{keywordflow}{for} d \textcolor{keywordflow}{in} output\_dirs \textcolor{keywordflow}{if} d \textcolor{keywordflow}{and} d != \textcolor{stringliteral}{'.'}]
+89 
+90     \textcolor{comment}{# length check. if these are unequal, cannot generate landing}
+91     \textcolor{comment}{# page. this is often true if the config is merely generating}
+92     \textcolor{comment}{# local.}
+93     \textcolor{keywordflow}{if} len(output\_dirs) != len(config\_list):
+94         \textcolor{keywordflow}{return} \textcolor{keywordtype}{None}
+95 
+96     links = [\hyperlink{namespacerosdoc__lite_1_1landing__page_a443baa6b6a03fec4b5ea3969e5dcad4a}{\_href}(d, \hyperlink{namespacerosdoc__lite_1_1landing__page_a36213cc50ea95b4e8ae862879455f4aa}{link\_name}(c)) \textcolor{keywordflow}{for} c, d \textcolor{keywordflow}{in} zip(config\_list, output\_dirs)]
+97 
+98     url = manifest.url
+99     \textcolor{keywordflow}{if} url:
+100         links.append(\hyperlink{namespacerosdoc__lite_1_1landing__page_a443baa6b6a03fec4b5ea3969e5dcad4a}{\_href}(url, \textcolor{stringliteral}{'%s Package Documentation'} % package))
+101     \textcolor{keywordflow}{return} links
+102 
+103 
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerosdoc__lite_1_1landing__page_a551db1039b876758b3822ecc24ce105d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerosdoc__lite_1_1landing__page_a551db1039b876758b3822ecc24ce105d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{rosdoc\+\_\+lite\+::landing\+\_\+page@{rosdoc\+\_\+lite\+::landing\+\_\+page}!link\+\_\+name@{link\+\_\+name}}
+\index{link\+\_\+name@{link\+\_\+name}!rosdoc\+\_\+lite\+::landing\+\_\+page@{rosdoc\+\_\+lite\+::landing\+\_\+page}}
+\subsubsection[{\texorpdfstring{link\+\_\+name(rd\+\_\+config)}{link_name(rd_config)}}]{\setlength{\rightskip}{0pt plus 5cm}def rosdoc\+\_\+lite.\+landing\+\_\+page.\+link\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{}]{rd\+\_\+config}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerosdoc__lite_1_1landing__page_a36213cc50ea95b4e8ae862879455f4aa}{}\label{namespacerosdoc__lite_1_1landing__page_a36213cc50ea95b4e8ae862879455f4aa}
+\begin{DoxyVerb}returns the name to display as for the generated kind of API.
+:param rdconfig: dict as parsed from manifest.xml
+:returns: label, ``str``
+\end{DoxyVerb}
+ 
+
+Definition at line 48 of file landing\+\_\+page.\+py.
+
+
+
+Referenced by rosdoc\+\_\+lite.\+landing\+\_\+page.\+generate\+\_\+links().
+
+
+\begin{DoxyCode}
+48 \textcolor{keyword}{def }\hyperlink{namespacerosdoc__lite_1_1landing__page_a36213cc50ea95b4e8ae862879455f4aa}{link\_name}(rd\_config):
+49     \textcolor{stringliteral}{"""}
+50 \textcolor{stringliteral}{    returns the name to display as for the generated kind of API.}
+51 \textcolor{stringliteral}{    :param rdconfig: dict as parsed from manifest.xml}
+52 \textcolor{stringliteral}{    :returns: label, ``str``}
+53 \textcolor{stringliteral}{    """}
+54     \textcolor{keywordflow}{if} \textcolor{stringliteral}{'name'} \textcolor{keywordflow}{in} rd\_config:
+55         n = rd\_config[\textcolor{stringliteral}{'name'}]
+56     \textcolor{keywordflow}{else}:
+57         \textcolor{keywordflow}{if} rd\_config[\textcolor{stringliteral}{'builder'}] == \textcolor{stringliteral}{'doxygen'}:
+58             \textcolor{keywordflow}{return} \textcolor{stringliteral}{'C++ API'}
+59         \textcolor{keywordflow}{elif} rd\_config[\textcolor{stringliteral}{'builder'}] \textcolor{keywordflow}{in} [\textcolor{stringliteral}{'epydoc'}, \textcolor{stringliteral}{'sphinx'}]:
+60             \textcolor{keywordflow}{return} \textcolor{stringliteral}{'Python API'}
+61         \textcolor{keywordflow}{elif} rd\_config[\textcolor{stringliteral}{'builder'}] \textcolor{keywordflow}{in} [\textcolor{stringliteral}{'external'}]:
+62             \textcolor{keywordflow}{return} rd\_config.get(\textcolor{stringliteral}{'external\_label'}, \textcolor{stringliteral}{'External'})
+63         \textcolor{keywordflow}{else}:
+64             \textcolor{keywordflow}{return} rd\_config[\textcolor{stringliteral}{'builder'}]
+65     \textcolor{keywordflow}{return} n
+66 
+67 
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerosdoc__lite_1_1landing__page_a36213cc50ea95b4e8ae862879455f4aa_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{rosdoc\+\_\+lite\+::landing\+\_\+page@{rosdoc\+\_\+lite\+::landing\+\_\+page}!output\+\_\+location@{output\+\_\+location}}
+\index{output\+\_\+location@{output\+\_\+location}!rosdoc\+\_\+lite\+::landing\+\_\+page@{rosdoc\+\_\+lite\+::landing\+\_\+page}}
+\subsubsection[{\texorpdfstring{output\+\_\+location(config)}{output_location(config)}}]{\setlength{\rightskip}{0pt plus 5cm}def rosdoc\+\_\+lite.\+landing\+\_\+page.\+output\+\_\+location (
+\begin{DoxyParamCaption}
+\item[{}]{config}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerosdoc__lite_1_1landing__page_acd5e6e0a950587a17eb4e2e9898b8487}{}\label{namespacerosdoc__lite_1_1landing__page_acd5e6e0a950587a17eb4e2e9898b8487}
+\begin{DoxyVerb}:returns: uri, ``str``
+\end{DoxyVerb}
+ 
+
+Definition at line 68 of file landing\+\_\+page.\+py.
+
+
+
+Referenced by rosdoc\+\_\+lite.\+landing\+\_\+page.\+generate\+\_\+links().
+
+
+\begin{DoxyCode}
+68 \textcolor{keyword}{def }\hyperlink{namespacerosdoc__lite_1_1landing__page_acd5e6e0a950587a17eb4e2e9898b8487}{output\_location}(config):
+69     \textcolor{stringliteral}{"""}
+70 \textcolor{stringliteral}{    :returns: uri, ``str``}
+71 \textcolor{stringliteral}{    """}
+72     \textcolor{keywordflow}{if} config[\textcolor{stringliteral}{'builder'}] == \textcolor{stringliteral}{'external'}:
+73         \textcolor{keywordflow}{return} config.get(\textcolor{stringliteral}{'external\_url'}, \textcolor{keywordtype}{None})
+74     \textcolor{keywordflow}{else}:
+75         \textcolor{keywordflow}{return} config.get(\textcolor{stringliteral}{'output\_dir'}, \textcolor{keywordtype}{None})
+76 
+77 
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerosdoc__lite_1_1landing__page_acd5e6e0a950587a17eb4e2e9898b8487_icgraph}
+\end{center}
+\end{figure}
+
+

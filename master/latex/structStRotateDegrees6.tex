@@ -1,0 +1,81 @@
+\hypertarget{structStRotateDegrees6}{}\section{St\+Rotate\+Degrees6 Struct Reference}
+\label{structStRotateDegrees6}\index{St\+Rotate\+Degrees6@{St\+Rotate\+Degrees6}}
+
+
+{\ttfamily \#include $<$st\+\_\+rotate\+\_\+degrees\+\_\+6.\+h$>$}
+
+
+
+Inheritance diagram for St\+Rotate\+Degrees6\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structStRotateDegrees6__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for St\+Rotate\+Degrees6\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structStRotateDegrees6__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef mpl\+::list$<$ sc\+::transition$<$ Ev\+Action\+Succeded$<$ smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result $>$, \hyperlink{structStNavigateReverse3}{St\+Navigate\+Reverse3} $>$, sc\+::transition$<$ Ev\+Key\+PressP$<$ Sb\+Keyboard $>$, \hyperlink{structSS5_1_1SsSPattern1}{S\+S5\+::\+Ss\+S\+Pattern1} $>$, sc\+::transition$<$ \hyperlink{structsmacc_1_1EvKeyPressN}{smacc\+::\+Ev\+Key\+PressN}$<$ Sb\+Keyboard $>$, \hyperlink{structStNavigateReverse3}{St\+Navigate\+Reverse3} $>$, sc\+::transition$<$ \hyperlink{structsmacc_1_1EvTopicMessageTimeout}{smacc\+::\+Ev\+Topic\+Message\+Timeout}$<$ \hyperlink{sensor__state_8h_a9db9e1944f88de79507758d08e4a2ee3}{Lidar\+Sensor} $>$, \hyperlink{structStAcquireSensors}{St\+Acquire\+Sensors} $>$, sc\+::transition$<$ Ev\+Action\+Aborted$<$ smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result $>$, \hyperlink{structStNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$ $>$ \hyperlink{structStRotateDegrees6_a4ae1a585700ec463a683a74b8f57bbdc}{reactions}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structStRotateDegrees6_ad83461ae95f2862d684609df5713d980}{on\+Initialize} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1 of file st\+\_\+rotate\+\_\+degrees\+\_\+6.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{St\+Rotate\+Degrees6@{St\+Rotate\+Degrees6}!reactions@{reactions}}
+\index{reactions@{reactions}!St\+Rotate\+Degrees6@{St\+Rotate\+Degrees6}}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ sc\+::transition$<$Ev\+Action\+Succeded$<$smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result$>$, {\bf St\+Navigate\+Reverse3}$>$, sc\+::transition$<$Ev\+Key\+PressP$<$Sb\+Keyboard$>$,{\bf S\+S5\+::\+Ss\+S\+Pattern1}$>$, sc\+::transition$<${\bf smacc\+::\+Ev\+Key\+PressN}$<$Sb\+Keyboard$>$, {\bf St\+Navigate\+Reverse3}$>$, sc\+::transition$<${\bf smacc\+::\+Ev\+Topic\+Message\+Timeout}$<${\bf Lidar\+Sensor}$>$, {\bf St\+Acquire\+Sensors}$>$, sc\+::transition$<$Ev\+Action\+Aborted$<$smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$ $>$ {\bf St\+Rotate\+Degrees6\+::reactions}}\hypertarget{structStRotateDegrees6_a4ae1a585700ec463a683a74b8f57bbdc}{}\label{structStRotateDegrees6_a4ae1a585700ec463a683a74b8f57bbdc}
+
+
+Definition at line 16 of file st\+\_\+rotate\+\_\+degrees\+\_\+6.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{St\+Rotate\+Degrees6@{St\+Rotate\+Degrees6}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!St\+Rotate\+Degrees6@{St\+Rotate\+Degrees6}}
+\subsubsection[{\texorpdfstring{on\+Initialize()}{onInitialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void St\+Rotate\+Degrees6\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structStRotateDegrees6_ad83461ae95f2862d684609df5713d980}{}\label{structStRotateDegrees6_ad83461ae95f2862d684609df5713d980}
+
+
+Definition at line 18 of file st\+\_\+rotate\+\_\+degrees\+\_\+6.\+h.
+
+
+\begin{DoxyCode}
+19   \{
+20     this->configure<NavigationOrthogonal>(std::make\_shared<SbRotate>(\textcolor{comment}{/*30*/}-180));
+21     this->configure<ToolOrthogonal>(std::make\_shared<SbToolStop>());
+22     this->configure<KeyboardOrthogonal>(std::make\_shared<SbKeyboard>());
+23   \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+examples/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/states/\hyperlink{st__rotate__degrees__6_8h}{st\+\_\+rotate\+\_\+degrees\+\_\+6.\+h}\end{DoxyCompactItemize}

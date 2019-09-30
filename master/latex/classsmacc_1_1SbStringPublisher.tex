@@ -1,0 +1,179 @@
+\hypertarget{classsmacc_1_1SbStringPublisher}{}\section{smacc\+:\+:Sb\+String\+Publisher Class Reference}
+\label{classsmacc_1_1SbStringPublisher}\index{smacc\+::\+Sb\+String\+Publisher@{smacc\+::\+Sb\+String\+Publisher}}
+
+
+{\ttfamily \#include $<$sb\+\_\+string\+\_\+publisher.\+h$>$}
+
+
+
+Inheritance diagram for smacc\+:\+:Sb\+String\+Publisher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{classsmacc_1_1SbStringPublisher__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+:\+:Sb\+String\+Publisher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SbStringPublisher__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc_1_1SbStringPublisher_ab01e3e417879f811c32dc47df5edb90f}{Sb\+String\+Publisher} (std\+::string msg)
+\item 
+virtual void \hyperlink{classsmacc_1_1SbStringPublisher_adde036f7d11370ec44ed418c2734b60a}{on\+Entry} ()
+\item 
+virtual \hyperlink{classbool}{bool} \hyperlink{classsmacc_1_1SbStringPublisher_a6e8de8b5d553092467ae980aa08ae576}{on\+Exit} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc_1_1StringPublisherClient}{smacc\+::\+String\+Publisher\+Client} $\ast$ \hyperlink{classsmacc_1_1SbStringPublisher_a85fd3ba65479542c9f5e02ffa727cf4c}{publisher\+Client\+\_\+}
+\item 
+std\+::string \hyperlink{classsmacc_1_1SbStringPublisher_ad3397fa2bb3097192c3f82d243704741}{msg\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file sb\+\_\+string\+\_\+publisher.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+::\+Sb\+String\+Publisher@{smacc\+::\+Sb\+String\+Publisher}!Sb\+String\+Publisher@{Sb\+String\+Publisher}}
+\index{Sb\+String\+Publisher@{Sb\+String\+Publisher}!smacc\+::\+Sb\+String\+Publisher@{smacc\+::\+Sb\+String\+Publisher}}
+\subsubsection[{\texorpdfstring{Sb\+String\+Publisher(std\+::string msg)}{SbStringPublisher(std::string msg)}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+::\+Sb\+String\+Publisher\+::\+Sb\+String\+Publisher (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SbStringPublisher_ab01e3e417879f811c32dc47df5edb90f}{}\label{classsmacc_1_1SbStringPublisher_ab01e3e417879f811c32dc47df5edb90f}
+
+
+Definition at line 15 of file sb\+\_\+string\+\_\+publisher.\+h.
+
+
+
+References keyboard\+\_\+node\+::msg.
+
+
+\begin{DoxyCode}
+16     \{
+17         \hyperlink{classsmacc_1_1SbStringPublisher_ad3397fa2bb3097192c3f82d243704741}{msg\_} = \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg};
+18     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::\+Sb\+String\+Publisher@{smacc\+::\+Sb\+String\+Publisher}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!smacc\+::\+Sb\+String\+Publisher@{smacc\+::\+Sb\+String\+Publisher}}
+\subsubsection[{\texorpdfstring{on\+Entry()}{onEntry()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void smacc\+::\+Sb\+String\+Publisher\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1SbStringPublisher_adde036f7d11370ec44ed418c2734b60a}{}\label{classsmacc_1_1SbStringPublisher_adde036f7d11370ec44ed418c2734b60a}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_a7c28e1c46238bbb2c2e0450573c6de94}{smacc\+::\+Smacc\+Sub\+State\+Behavior}.
+
+
+
+Definition at line 20 of file sb\+\_\+string\+\_\+publisher.\+h.
+
+
+
+References smacc\+::\+Smacc\+Topic\+Publisher\+Client$<$ Message\+Type $>$\+::initialize(), and smacc\+::\+Smacc\+Sub\+State\+Behavior\+::requires\+Component().
+
+
+\begin{DoxyCode}
+21     \{
+22         this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}{requiresComponent}(\hyperlink{classsmacc_1_1SbStringPublisher_a85fd3ba65479542c9f5e02ffa727cf4c}{publisherClient\_});
+23         \hyperlink{classsmacc_1_1SbStringPublisher_a85fd3ba65479542c9f5e02ffa727cf4c}{publisherClient\_}->\hyperlink{classsmacc_1_1SmaccTopicPublisherClient_a739bc675f476023f4b657a03afd68098}{initialize}(\textcolor{stringliteral}{"/string\_publisher\_out"});
+24     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SbStringPublisher_adde036f7d11370ec44ed418c2734b60a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Sb\+String\+Publisher@{smacc\+::\+Sb\+String\+Publisher}!on\+Exit@{on\+Exit}}
+\index{on\+Exit@{on\+Exit}!smacc\+::\+Sb\+String\+Publisher@{smacc\+::\+Sb\+String\+Publisher}}
+\subsubsection[{\texorpdfstring{on\+Exit()}{onExit()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf bool} smacc\+::\+Sb\+String\+Publisher\+::on\+Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1SbStringPublisher_a6e8de8b5d553092467ae980aa08ae576}{}\label{classsmacc_1_1SbStringPublisher_a6e8de8b5d553092467ae980aa08ae576}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_ab78b9de76c04a7ab6c16d5924e216ef9}{smacc\+::\+Smacc\+Sub\+State\+Behavior}.
+
+
+
+Definition at line 26 of file sb\+\_\+string\+\_\+publisher.\+h.
+
+
+
+References msg\+\_\+, and smacc\+::\+Smacc\+Topic\+Publisher\+Client$<$ Message\+Type $>$\+::publish().
+
+
+\begin{DoxyCode}
+27     \{
+28         std\_msgs::String rosmsg;
+29         rosmsg.data =  \hyperlink{classsmacc_1_1SbStringPublisher_ad3397fa2bb3097192c3f82d243704741}{msg\_};
+30         \hyperlink{classsmacc_1_1SbStringPublisher_a85fd3ba65479542c9f5e02ffa727cf4c}{publisherClient\_}->\hyperlink{classsmacc_1_1SmaccTopicPublisherClient_a8f72ebf2cdb0b56b8288fde14c787c01}{publish}(rosmsg);
+31     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SbStringPublisher_a6e8de8b5d553092467ae980aa08ae576_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+::\+Sb\+String\+Publisher@{smacc\+::\+Sb\+String\+Publisher}!msg\+\_\+@{msg\+\_\+}}
+\index{msg\+\_\+@{msg\+\_\+}!smacc\+::\+Sb\+String\+Publisher@{smacc\+::\+Sb\+String\+Publisher}}
+\subsubsection[{\texorpdfstring{msg\+\_\+}{msg_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::\+Sb\+String\+Publisher\+::msg\+\_\+}\hypertarget{classsmacc_1_1SbStringPublisher_ad3397fa2bb3097192c3f82d243704741}{}\label{classsmacc_1_1SbStringPublisher_ad3397fa2bb3097192c3f82d243704741}
+
+
+Definition at line 13 of file sb\+\_\+string\+\_\+publisher.\+h.
+
+
+
+Referenced by on\+Exit().
+
+\index{smacc\+::\+Sb\+String\+Publisher@{smacc\+::\+Sb\+String\+Publisher}!publisher\+Client\+\_\+@{publisher\+Client\+\_\+}}
+\index{publisher\+Client\+\_\+@{publisher\+Client\+\_\+}!smacc\+::\+Sb\+String\+Publisher@{smacc\+::\+Sb\+String\+Publisher}}
+\subsubsection[{\texorpdfstring{publisher\+Client\+\_\+}{publisherClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+::\+String\+Publisher\+Client}$\ast$ smacc\+::\+Sb\+String\+Publisher\+::publisher\+Client\+\_\+}\hypertarget{classsmacc_1_1SbStringPublisher_a85fd3ba65479542c9f5e02ffa727cf4c}{}\label{classsmacc_1_1SbStringPublisher_a85fd3ba65479542c9f5e02ffa727cf4c}
+
+
+Definition at line 12 of file sb\+\_\+string\+\_\+publisher.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+examples/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/substate\+\_\+behaviors/publisher/\hyperlink{sb__string__publisher_8h}{sb\+\_\+string\+\_\+publisher.\+h}\end{DoxyCompactItemize}

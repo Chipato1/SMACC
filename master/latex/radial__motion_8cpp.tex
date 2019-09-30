@@ -1,0 +1,40 @@
+\hypertarget{radial__motion_8cpp}{}\section{smacc\+\_\+sm\+\_\+examples/sm\+\_\+radial\+\_\+motion/src/radial\+\_\+motion.cpp File Reference}
+\label{radial__motion_8cpp}\index{smacc\+\_\+sm\+\_\+examples/sm\+\_\+radial\+\_\+motion/src/radial\+\_\+motion.\+cpp@{smacc\+\_\+sm\+\_\+examples/sm\+\_\+radial\+\_\+motion/src/radial\+\_\+motion.\+cpp}}
+{\ttfamily \#include $<$sm\+\_\+radial\+\_\+motion/radial\+\_\+motion.\+h$>$}\\*
+Include dependency graph for radial\+\_\+motion.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{radial__motion_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classint}{int} \hyperlink{radial__motion_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (\hyperlink{classint}{int} argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{radial\+\_\+motion.\+cpp@{radial\+\_\+motion.\+cpp}!main@{main}}
+\index{main@{main}!radial\+\_\+motion.\+cpp@{radial\+\_\+motion.\+cpp}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} main (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\hypertarget{radial__motion_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{radial__motion_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Definition at line 3 of file radial\+\_\+motion.\+cpp.
+
+
+\begin{DoxyCode}
+4 \{
+5   ros::init(argc, \hyperlink{namespacesmacc__viewer_a641e44a1c9c09b36c59a0651d01d4d97}{argv}, \textcolor{stringliteral}{"radial\_test\_state\_machine"});
+6   ros::NodeHandle nh;
+7 
+8   ros::Duration(5).sleep();
+9   smacc::run<RadialMotionStateMachine>();
+10 \}\end{DoxyCode}

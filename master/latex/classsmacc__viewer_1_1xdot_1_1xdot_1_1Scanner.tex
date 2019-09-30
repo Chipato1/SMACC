@@ -1,0 +1,174 @@
+\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner}{}\section{smacc\+\_\+viewer.\+xdot.\+xdot.\+Scanner Class Reference}
+\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner}\index{smacc\+\_\+viewer.\+xdot.\+xdot.\+Scanner@{smacc\+\_\+viewer.\+xdot.\+xdot.\+Scanner}}
+
+
+Inheritance diagram for smacc\+\_\+viewer.\+xdot.\+xdot.\+Scanner\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+\_\+viewer.\+xdot.\+xdot.\+Scanner\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_a5bffb8d13c4b249cc3bf450bc1aef8ce}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_aba0c6db4df841feb6e42ffa0b6ab2d65}{next} (self, buf, pos)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_a14859d0283cb278fc3526eb313a1c4b3}{tokens\+\_\+re}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_a9c1c5b5b90c3d4282b56edf396a822b3}{tokens} = \mbox{[}$\,$\mbox{]}
+\item 
+dictionary \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_a1e1208f35dbfc3ad5c2c6a28b99cde53}{symbols} = \{\}
+\item 
+dictionary \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_ae37f61b9c99b0d7ab8195b52c859e254}{literals} = \{\}
+\item 
+\hyperlink{classbool}{bool} \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_a0c0357df655e8db8794746b713c24173}{ignorecase} = \hyperlink{namespacesmacc__viewer_a5928e8da279785cbab9011356c3eaa87}{False}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Stateless scanner.\end{DoxyVerb}
+ 
+
+Definition at line 685 of file xdot.\+py.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self)}{__init__(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+xdot.\+Scanner.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_a5bffb8d13c4b249cc3bf450bc1aef8ce}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_a5bffb8d13c4b249cc3bf450bc1aef8ce}
+
+
+Definition at line 694 of file xdot.\+py.
+
+
+
+References smacc\+\_\+viewer.\+xdot.\+xdot.\+Scanner.\+ignorecase.
+
+
+\begin{DoxyCode}
+694     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_a5bffb8d13c4b249cc3bf450bc1aef8ce}{\_\_init\_\_}(self):
+695         flags = re.DOTALL
+696         \textcolor{keywordflow}{if} self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_a0c0357df655e8db8794746b713c24173}{ignorecase}:
+697             flags |= re.IGNORECASE
+698         self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_a14859d0283cb278fc3526eb313a1c4b3}{tokens\_re} = re.compile(
+699             \textcolor{stringliteral}{'|'}.join([\textcolor{stringliteral}{'('} + regexp + \textcolor{stringliteral}{')'} \textcolor{keywordflow}{for} type, regexp, test\_lit \textcolor{keywordflow}{in} self.
+      \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_a9c1c5b5b90c3d4282b56edf396a822b3}{tokens}]),
+700              flags
+701         )
+702 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner}!next@{next}}
+\index{next@{next}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner}}
+\subsubsection[{\texorpdfstring{next(self, buf, pos)}{next(self, buf, pos)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+xdot.\+Scanner.\+next (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{buf, }
+\item[{}]{pos}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_aba0c6db4df841feb6e42ffa0b6ab2d65}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_aba0c6db4df841feb6e42ffa0b6ab2d65}
+
+
+Definition at line 703 of file xdot.\+py.
+
+
+
+References smacc\+\_\+viewer.\+xdot.\+xdot.\+Scanner.\+tokens.
+
+
+\begin{DoxyCode}
+703     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_aba0c6db4df841feb6e42ffa0b6ab2d65}{next}(self, buf, pos):
+704         \textcolor{keywordflow}{if} pos >= len(buf):
+705             \textcolor{keywordflow}{return} EOF, \textcolor{stringliteral}{''}, pos
+706         mo = self.tokens\_re.match(buf, pos)
+707         \textcolor{keywordflow}{if} mo:
+708             text = mo.group()
+709             type, regexp, test\_lit = self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_a9c1c5b5b90c3d4282b56edf396a822b3}{tokens}[mo.lastindex - 1]
+710             pos = mo.end()
+711             \textcolor{keywordflow}{if} test\_lit:
+712                 type = self.literals.get(text, type)
+713             \textcolor{keywordflow}{return} type, text, pos
+714         \textcolor{keywordflow}{else}:
+715             c = buf[pos]
+716             \textcolor{keywordflow}{return} self.symbols.get(c, \textcolor{keywordtype}{None}), c, pos + 1
+717 
+718 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner}!ignorecase@{ignorecase}}
+\index{ignorecase@{ignorecase}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner}}
+\subsubsection[{\texorpdfstring{ignorecase}{ignorecase}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool} smacc\+\_\+viewer.\+xdot.\+xdot.\+Scanner.\+ignorecase = {\bf False}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_a0c0357df655e8db8794746b713c24173}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_a0c0357df655e8db8794746b713c24173}
+
+
+Definition at line 692 of file xdot.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Scanner.\+\_\+\+\_\+init\+\_\+\+\_\+(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+Scanner.\+\_\+\+\_\+init\+\_\+\+\_\+().
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner}!literals@{literals}}
+\index{literals@{literals}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner}}
+\subsubsection[{\texorpdfstring{literals}{literals}}]{\setlength{\rightskip}{0pt plus 5cm}dictionary smacc\+\_\+viewer.\+xdot.\+xdot.\+Scanner.\+literals = \{\}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_ae37f61b9c99b0d7ab8195b52c859e254}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_ae37f61b9c99b0d7ab8195b52c859e254}
+
+
+Definition at line 691 of file xdot.\+py.
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner}!symbols@{symbols}}
+\index{symbols@{symbols}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner}}
+\subsubsection[{\texorpdfstring{symbols}{symbols}}]{\setlength{\rightskip}{0pt plus 5cm}dictionary smacc\+\_\+viewer.\+xdot.\+xdot.\+Scanner.\+symbols = \{\}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_a1e1208f35dbfc3ad5c2c6a28b99cde53}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_a1e1208f35dbfc3ad5c2c6a28b99cde53}
+
+
+Definition at line 690 of file xdot.\+py.
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner}!tokens@{tokens}}
+\index{tokens@{tokens}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner}}
+\subsubsection[{\texorpdfstring{tokens}{tokens}}]{\setlength{\rightskip}{0pt plus 5cm}list smacc\+\_\+viewer.\+xdot.\+xdot.\+Scanner.\+tokens = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_a9c1c5b5b90c3d4282b56edf396a822b3}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_a9c1c5b5b90c3d4282b56edf396a822b3}
+
+
+Definition at line 689 of file xdot.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Scanner.\+next(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+Scanner.\+next().
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner}!tokens\+\_\+re@{tokens\+\_\+re}}
+\index{tokens\+\_\+re@{tokens\+\_\+re}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Scanner}}
+\subsubsection[{\texorpdfstring{tokens\+\_\+re}{tokens_re}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+xdot.\+xdot.\+Scanner.\+tokens\+\_\+re}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_a14859d0283cb278fc3526eb313a1c4b3}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1Scanner_a14859d0283cb278fc3526eb313a1c4b3}
+
+
+Definition at line 698 of file xdot.\+py.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+viewer/src/smacc\+\_\+viewer/xdot/\hyperlink{xdot_8py}{xdot.\+py}\end{DoxyCompactItemize}

@@ -1,0 +1,37 @@
+\hypertarget{sensor__main_8cpp}{}\section{smacc\+\_\+client\+\_\+library/smacc\+\_\+sensors/examples/sensor\+\_\+substate\+\_\+example/src/sensor\+\_\+main.cpp File Reference}
+\label{sensor__main_8cpp}\index{smacc\+\_\+client\+\_\+library/smacc\+\_\+sensors/examples/sensor\+\_\+substate\+\_\+example/src/sensor\+\_\+main.\+cpp@{smacc\+\_\+client\+\_\+library/smacc\+\_\+sensors/examples/sensor\+\_\+substate\+\_\+example/src/sensor\+\_\+main.\+cpp}}
+{\ttfamily \#include $<$sensor\+\_\+state\+\_\+machine.\+h$>$}\\*
+Include dependency graph for sensor\+\_\+main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sensor__main_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classint}{int} \hyperlink{sensor__main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (\hyperlink{classint}{int} argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{sensor\+\_\+main.\+cpp@{sensor\+\_\+main.\+cpp}!main@{main}}
+\index{main@{main}!sensor\+\_\+main.\+cpp@{sensor\+\_\+main.\+cpp}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} main (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\hypertarget{sensor__main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{sensor__main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Definition at line 3 of file sensor\+\_\+main.\+cpp.
+
+
+\begin{DoxyCode}
+4 \{
+5   ros::init(argc, \hyperlink{namespacesmacc__viewer_a641e44a1c9c09b36c59a0651d01d4d97}{argv}, \textcolor{stringliteral}{"sensor\_state\_machine"});
+6   smacc::run<SensorStateMachine>();
+7 \}\end{DoxyCode}

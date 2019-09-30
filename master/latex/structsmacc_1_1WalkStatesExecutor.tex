@@ -1,0 +1,100 @@
+\hypertarget{structsmacc_1_1WalkStatesExecutor}{}\section{smacc\+:\+:Walk\+States\+Executor$<$ Initial\+State\+Type $>$ Struct Template Reference}
+\label{structsmacc_1_1WalkStatesExecutor}\index{smacc\+::\+Walk\+States\+Executor$<$ Initial\+State\+Type $>$@{smacc\+::\+Walk\+States\+Executor$<$ Initial\+State\+Type $>$}}
+
+
+{\ttfamily \#include $<$smacc\+\_\+state\+\_\+machine\+\_\+info.\+h$>$}
+
+
+
+Collaboration diagram for smacc\+:\+:Walk\+States\+Executor$<$ Initial\+State\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{structsmacc_1_1WalkStatesExecutor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{structsmacc_1_1WalkStatesExecutor_a11a2b02eafb62ec298bcf5ffbb32848b}{walk\+States} (std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \&current\+State, \hyperlink{classbool}{bool} root\+Initial\+Node)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Initial\+State\+Type$>$\\*
+struct smacc\+::\+Walk\+States\+Executor$<$ Initial\+State\+Type $>$}
+
+
+
+Definition at line 113 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::\+Walk\+States\+Executor@{smacc\+::\+Walk\+States\+Executor}!walk\+States@{walk\+States}}
+\index{walk\+States@{walk\+States}!smacc\+::\+Walk\+States\+Executor@{smacc\+::\+Walk\+States\+Executor}}
+\subsubsection[{\texorpdfstring{walk\+States(std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&current\+State, bool root\+Initial\+Node)}{walkStates(std::shared_ptr< SmaccStateInfo > &currentState, bool rootInitialNode)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Initial\+State\+Type $>$ void {\bf smacc\+::\+Walk\+States\+Executor}$<$ Initial\+State\+Type $>$\+::walk\+States (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Smacc\+State\+Info} $>$ \&}]{current\+State, }
+\item[{{\bf bool}}]{root\+Initial\+Node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structsmacc_1_1WalkStatesExecutor_a11a2b02eafb62ec298bcf5ffbb32848b}{}\label{structsmacc_1_1WalkStatesExecutor_a11a2b02eafb62ec298bcf5ffbb32848b}
+
+
+Definition at line 200 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+Referenced by smacc\+::\+Smacc\+State\+Machine\+Info\+::build\+State\+Machine\+Info(), smacc\+::\+Add\+Sub\+State\+::operator()(), smacc\+::process\+Sub\+State(), and smacc\+::process\+Transition().
+
+
+\begin{DoxyCode}
+201 \{
+202     \textcolor{comment}{//ros::Duration(1).sleep();}
+203     \textcolor{keyword}{auto} currentname = demangledTypeName<InitialStateType>();
+204 
+205     std::shared\_ptr<SmaccStateInfo> targetState;
+206 
+207     \textcolor{keywordflow}{if} (!rootInitialNode)
+208     \{
+209         \textcolor{keywordflow}{if} (parentState->stateMachine\_->containsState<InitialStateType>())
+210         \{
+211             \textcolor{comment}{// it already exist: break;}
+212             \textcolor{keywordflow}{return};
+213         \}
+214 
+215         targetState = parentState->createChildState<InitialStateType>();
+216     \}
+217     \textcolor{keywordflow}{else}
+218     \{
+219         targetState = parentState;
+220     \}
+221 
+222     \textcolor{keyword}{typedef} \textcolor{keyword}{typename} std::remove\_pointer<decltype(InitialStateType::smacc\_inner\_type)>::type InnerType;
+223     processSubState<InnerType>(targetState);
+224 
+225     \textcolor{comment}{// -------------------- REACTIONS --------------------}
+226     \textcolor{keyword}{typedef} \textcolor{keyword}{typename} InitialStateType::reactions reactions;
+227     \textcolor{comment}{//ROS\_INFO\_STREAM("state machine initial state reactions: "<< demangledTypeName<reactions>());}
+228 
+229     processTransitions<reactions>(targetState);
+230 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsmacc_1_1WalkStatesExecutor_a11a2b02eafb62ec298bcf5ffbb32848b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc/include/smacc/\hyperlink{smacc__state__machine__info_8h}{smacc\+\_\+state\+\_\+machine\+\_\+info.\+h}\end{DoxyCompactItemize}

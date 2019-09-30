@@ -1,0 +1,47 @@
+\hypertarget{example1_8cpp}{}\section{smacc\+\_\+sm\+\_\+examples/sm\+\_\+smacc\+\_\+tutorial\+\_\+examples/src/example1.cpp File Reference}
+\label{example1_8cpp}\index{smacc\+\_\+sm\+\_\+examples/sm\+\_\+smacc\+\_\+tutorial\+\_\+examples/src/example1.\+cpp@{smacc\+\_\+sm\+\_\+examples/sm\+\_\+smacc\+\_\+tutorial\+\_\+examples/src/example1.\+cpp}}
+{\ttfamily \#include $<$smacc/smacc.\+h$>$}\\*
+Include dependency graph for example1.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{example1_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSimpleStateMachine}{Simple\+State\+Machine}
+\item 
+struct \hyperlink{structToolSimpleState}{Tool\+Simple\+State}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classint}{int} \hyperlink{example1_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (\hyperlink{classint}{int} argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{example1.\+cpp@{example1.\+cpp}!main@{main}}
+\index{main@{main}!example1.\+cpp@{example1.\+cpp}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} main (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\hypertarget{example1_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{example1_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Definition at line 36 of file example1.\+cpp.
+
+
+\begin{DoxyCode}
+36                                 \{
+37   \textcolor{comment}{// initialize the ros node}
+38   ros::init(argc, \hyperlink{namespacesmacc__viewer_a641e44a1c9c09b36c59a0651d01d4d97}{argv}, \textcolor{stringliteral}{"example1"});
+39   ros::NodeHandle nh;
+40 
+41   smacc::run<SimpleStateMachine>();
+42 \}\end{DoxyCode}

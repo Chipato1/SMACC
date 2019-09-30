@@ -1,0 +1,242 @@
+\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation}{}\section{smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation Class Reference}
+\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation}\index{smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation@{smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation}}
+
+
+Inheritance diagram for smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a4114be9139756881f33d5e803bb9b8f8}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a0fca25f51eb80a7ba49233a0729ab955}{dot\+\_\+widget})
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_abfce9139a365decfda6a6c04d1d939f9}{start} (self)
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a1cec902e320f3f91a9b460a0db751198}{stop} (self)
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_abe947b684db8e263f38c3f4e3a5831b7}{tick} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a0fca25f51eb80a7ba49233a0729ab955}{dot\+\_\+widget}
+\item 
+\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a34df6d9513d5da72a6b662e0f7536d5b}{timeout\+\_\+id}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_afe2ecb1f30386b9d3758019d73417d9c}{step} = 0.\+03
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1179 of file xdot.\+py.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self, dot\+\_\+widget)}{__init__(self, dot_widget)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{dot\+\_\+widget}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a4114be9139756881f33d5e803bb9b8f8}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a4114be9139756881f33d5e803bb9b8f8}
+
+
+Definition at line 1183 of file xdot.\+py.
+
+
+\begin{DoxyCode}
+1183     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a4114be9139756881f33d5e803bb9b8f8}{\_\_init\_\_}(self, dot\_widget):
+1184         self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a0fca25f51eb80a7ba49233a0729ab955}{dot\_widget} = dot\_widget
+1185         self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a34df6d9513d5da72a6b662e0f7536d5b}{timeout\_id} = \textcolor{keywordtype}{None}
+1186 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation}!start@{start}}
+\index{start@{start}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation}}
+\subsubsection[{\texorpdfstring{start(self)}{start(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation.\+start (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_abfce9139a365decfda6a6c04d1d939f9}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_abfce9139a365decfda6a6c04d1d939f9}
+
+
+Definition at line 1187 of file xdot.\+py.
+
+
+
+References smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation.\+step, smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation.\+tick(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation.\+timeout\+\_\+id.
+
+
+\begin{DoxyCode}
+1187     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_abfce9139a365decfda6a6c04d1d939f9}{start}(self):
+1188         self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a34df6d9513d5da72a6b662e0f7536d5b}{timeout\_id} = gobject.timeout\_add(\hyperlink{classint}{int}(self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_afe2ecb1f30386b9d3758019d73417d9c}{step} * 1000), self.
+      \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_abe947b684db8e263f38c3f4e3a5831b7}{tick})
+1189 
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_abfce9139a365decfda6a6c04d1d939f9_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation}!stop@{stop}}
+\index{stop@{stop}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation}}
+\subsubsection[{\texorpdfstring{stop(self)}{stop(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation.\+stop (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a1cec902e320f3f91a9b460a0db751198}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a1cec902e320f3f91a9b460a0db751198}
+
+
+Definition at line 1190 of file xdot.\+py.
+
+
+
+References smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Drag\+Action.\+dot\+\_\+widget, smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation.\+dot\+\_\+widget, and smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation.\+timeout\+\_\+id.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Animation.\+tick(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation.\+tick().
+
+
+\begin{DoxyCode}
+1190     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a1cec902e320f3f91a9b460a0db751198}{stop}(self):
+1191         self.dot\_widget.animation = \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1NoAnimation}{NoAnimation}(self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a0fca25f51eb80a7ba49233a0729ab955}{dot\_widget})
+1192         \textcolor{keywordflow}{if} self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a34df6d9513d5da72a6b662e0f7536d5b}{timeout\_id} \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None}:
+1193             gobject.source\_remove(self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a34df6d9513d5da72a6b662e0f7536d5b}{timeout\_id})
+1194             self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a34df6d9513d5da72a6b662e0f7536d5b}{timeout\_id} = \textcolor{keywordtype}{None}
+1195 
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a1cec902e320f3f91a9b460a0db751198_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation}!tick@{tick}}
+\index{tick@{tick}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation}}
+\subsubsection[{\texorpdfstring{tick(self)}{tick(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation.\+tick (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_abe947b684db8e263f38c3f4e3a5831b7}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_abe947b684db8e263f38c3f4e3a5831b7}
+
+
+Definition at line 1196 of file xdot.\+py.
+
+
+
+References smacc\+::\+Signal\+Detector.\+stop(), smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Drag\+Action.\+stop(), smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Pan\+Action.\+stop(), smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Zoom\+Action.\+stop(), smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Zoom\+Area\+Action.\+stop(), smacc\+\_\+viewer.\+introspection\+\_\+container.\+Container\+Proxy.\+stop(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation.\+stop().
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Animation.\+start(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation.\+start().
+
+
+\begin{DoxyCode}
+1196     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_abe947b684db8e263f38c3f4e3a5831b7}{tick}(self):
+1197         self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a1cec902e320f3f91a9b460a0db751198}{stop}()
+1198 
+1199 
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_abe947b684db8e263f38c3f4e3a5831b7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_abe947b684db8e263f38c3f4e3a5831b7_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation}!dot\+\_\+widget@{dot\+\_\+widget}}
+\index{dot\+\_\+widget@{dot\+\_\+widget}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation}}
+\subsubsection[{\texorpdfstring{dot\+\_\+widget}{dot_widget}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation.\+dot\+\_\+widget}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a0fca25f51eb80a7ba49233a0729ab955}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a0fca25f51eb80a7ba49233a0729ab955}
+
+
+Definition at line 1184 of file xdot.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Null\+Action.\+on\+\_\+motion\+\_\+notify(), smacc\+\_\+viewer.\+xdot.\+xdot.\+Null\+Action.\+on\+\_\+motion\+\_\+notify(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Animation.\+stop(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation.\+stop().
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation}!step@{step}}
+\index{step@{step}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation}}
+\subsubsection[{\texorpdfstring{step}{step}}]{\setlength{\rightskip}{0pt plus 5cm}float smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation.\+step = 0.\+03\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_afe2ecb1f30386b9d3758019d73417d9c}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_afe2ecb1f30386b9d3758019d73417d9c}
+
+
+Definition at line 1181 of file xdot.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Animation.\+start(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation.\+start().
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation}!timeout\+\_\+id@{timeout\+\_\+id}}
+\index{timeout\+\_\+id@{timeout\+\_\+id}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Animation}}
+\subsubsection[{\texorpdfstring{timeout\+\_\+id}{timeout_id}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation.\+timeout\+\_\+id}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a34df6d9513d5da72a6b662e0f7536d5b}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1Animation_a34df6d9513d5da72a6b662e0f7536d5b}
+
+
+Definition at line 1185 of file xdot.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Animation.\+start(), smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation.\+start(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Animation.\+stop(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation.\+stop().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+viewer/src/smacc\+\_\+viewer/xdot/\hyperlink{xdot_8py}{xdot.\+py}\end{DoxyCompactItemize}

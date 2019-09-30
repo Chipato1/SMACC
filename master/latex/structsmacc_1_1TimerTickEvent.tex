@@ -1,0 +1,117 @@
+\hypertarget{structsmacc_1_1TimerTickEvent}{}\section{smacc\+:\+:Timer\+Tick\+Event Struct Reference}
+\label{structsmacc_1_1TimerTickEvent}\index{smacc\+::\+Timer\+Tick\+Event@{smacc\+::\+Timer\+Tick\+Event}}
+
+
+{\ttfamily \#include $<$timer\+\_\+substate.\+h$>$}
+
+
+
+Inheritance diagram for smacc\+:\+:Timer\+Tick\+Event\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{structsmacc_1_1TimerTickEvent__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+:\+:Timer\+Tick\+Event\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsmacc_1_1TimerTickEvent__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structsmacc_1_1TimerTickEvent_aa41996c36a5cad4b74ea5ca09c187943}{Timer\+Tick\+Event} (\hyperlink{classsmacc_1_1Timer}{Timer} $\ast$\hyperlink{structsmacc_1_1TimerTickEvent_adeac356195d07acbee0ec2e02bf2d500}{sender}, const ros\+::\+Timer\+Event \&\hyperlink{structsmacc_1_1TimerTickEvent_afac83d8b00999b26c2365932030389e9}{timedata})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc_1_1Timer}{Timer} $\ast$ \hyperlink{structsmacc_1_1TimerTickEvent_adeac356195d07acbee0ec2e02bf2d500}{sender}
+\item 
+ros\+::\+Timer\+Event \hyperlink{structsmacc_1_1TimerTickEvent_afac83d8b00999b26c2365932030389e9}{timedata}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file timer\+\_\+substate.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+::\+Timer\+Tick\+Event@{smacc\+::\+Timer\+Tick\+Event}!Timer\+Tick\+Event@{Timer\+Tick\+Event}}
+\index{Timer\+Tick\+Event@{Timer\+Tick\+Event}!smacc\+::\+Timer\+Tick\+Event@{smacc\+::\+Timer\+Tick\+Event}}
+\subsubsection[{\texorpdfstring{Timer\+Tick\+Event(\+Timer $\ast$sender, const ros\+::\+Timer\+Event \&timedata)}{TimerTickEvent(Timer *sender, const ros::TimerEvent &timedata)}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+::\+Timer\+Tick\+Event\+::\+Timer\+Tick\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf Timer} $\ast$}]{sender, }
+\item[{const ros\+::\+Timer\+Event \&}]{timedata}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsmacc_1_1TimerTickEvent_aa41996c36a5cad4b74ea5ca09c187943}{}\label{structsmacc_1_1TimerTickEvent_aa41996c36a5cad4b74ea5ca09c187943}
+
+
+Definition at line 19 of file timer\+\_\+substate.\+h.
+
+
+
+References sender, and timedata.
+
+
+
+Referenced by smacc\+::\+Timer\+::timer\+Callback().
+
+
+\begin{DoxyCode}
+20   \{
+21     this->\hyperlink{structsmacc_1_1TimerTickEvent_adeac356195d07acbee0ec2e02bf2d500}{sender} = \hyperlink{structsmacc_1_1TimerTickEvent_adeac356195d07acbee0ec2e02bf2d500}{sender};
+22     this->\hyperlink{structsmacc_1_1TimerTickEvent_afac83d8b00999b26c2365932030389e9}{timedata} = \hyperlink{structsmacc_1_1TimerTickEvent_afac83d8b00999b26c2365932030389e9}{timedata};
+23   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsmacc_1_1TimerTickEvent_aa41996c36a5cad4b74ea5ca09c187943_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+::\+Timer\+Tick\+Event@{smacc\+::\+Timer\+Tick\+Event}!sender@{sender}}
+\index{sender@{sender}!smacc\+::\+Timer\+Tick\+Event@{smacc\+::\+Timer\+Tick\+Event}}
+\subsubsection[{\texorpdfstring{sender}{sender}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Timer}$\ast$ smacc\+::\+Timer\+Tick\+Event\+::sender}\hypertarget{structsmacc_1_1TimerTickEvent_adeac356195d07acbee0ec2e02bf2d500}{}\label{structsmacc_1_1TimerTickEvent_adeac356195d07acbee0ec2e02bf2d500}
+
+
+Definition at line 16 of file timer\+\_\+substate.\+h.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Window\+::open\+\_\+file(), and Timer\+Tick\+Event().
+
+\index{smacc\+::\+Timer\+Tick\+Event@{smacc\+::\+Timer\+Tick\+Event}!timedata@{timedata}}
+\index{timedata@{timedata}!smacc\+::\+Timer\+Tick\+Event@{smacc\+::\+Timer\+Tick\+Event}}
+\subsubsection[{\texorpdfstring{timedata}{timedata}}]{\setlength{\rightskip}{0pt plus 5cm}ros\+::\+Timer\+Event smacc\+::\+Timer\+Tick\+Event\+::timedata}\hypertarget{structsmacc_1_1TimerTickEvent_afac83d8b00999b26c2365932030389e9}{}\label{structsmacc_1_1TimerTickEvent_afac83d8b00999b26c2365932030389e9}
+
+
+Definition at line 17 of file timer\+\_\+substate.\+h.
+
+
+
+Referenced by Timer\+Tick\+Event().
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+client\+\_\+library/smacc\+\_\+sensors/examples/timer\+\_\+substate\+\_\+example/include/substates\+\_\+behaviors/navigation/\hyperlink{timer__substate_8h}{timer\+\_\+substate.\+h}\end{DoxyCompactItemize}

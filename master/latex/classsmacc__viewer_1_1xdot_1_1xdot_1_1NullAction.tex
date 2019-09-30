@@ -1,0 +1,79 @@
+\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1NullAction}{}\section{smacc\+\_\+viewer.\+xdot.\+xdot.\+Null\+Action Class Reference}
+\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1NullAction}\index{smacc\+\_\+viewer.\+xdot.\+xdot.\+Null\+Action@{smacc\+\_\+viewer.\+xdot.\+xdot.\+Null\+Action}}
+
+
+Inheritance diagram for smacc\+\_\+viewer.\+xdot.\+xdot.\+Null\+Action\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classsmacc__viewer_1_1xdot_1_1xdot_1_1NullAction__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+\_\+viewer.\+xdot.\+xdot.\+Null\+Action\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classsmacc__viewer_1_1xdot_1_1xdot_1_1NullAction__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1NullAction_ae77c1e1dd5fdd7f6bc71715a2c277f00}{on\+\_\+motion\+\_\+notify} (self, event)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1311 of file xdot.\+py.
+
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Null\+Action@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Null\+Action}!on\+\_\+motion\+\_\+notify@{on\+\_\+motion\+\_\+notify}}
+\index{on\+\_\+motion\+\_\+notify@{on\+\_\+motion\+\_\+notify}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Null\+Action@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+Null\+Action}}
+\subsubsection[{\texorpdfstring{on\+\_\+motion\+\_\+notify(self, event)}{on_motion_notify(self, event)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+xdot.\+Null\+Action.\+on\+\_\+motion\+\_\+notify (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{event}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1NullAction_ae77c1e1dd5fdd7f6bc71715a2c277f00}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1NullAction_ae77c1e1dd5fdd7f6bc71715a2c277f00}
+
+
+Definition at line 1313 of file xdot.\+py.
+
+
+
+References smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Drag\+Action.\+dot\+\_\+widget, smacc\+\_\+viewer.\+xdot.\+xdot.\+Animation.\+dot\+\_\+widget, and smacc\+\_\+viewer.\+xdot.\+xdot.\+Drag\+Action.\+dot\+\_\+widget.
+
+
+\begin{DoxyCode}
+1313     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1NullAction_ae77c1e1dd5fdd7f6bc71715a2c277f00}{on\_motion\_notify}(self, event):
+1314         \textcolor{keywordflow}{if} event.is\_hint:
+1315             x, y, state = event.window.get\_pointer()
+1316         \textcolor{keywordflow}{else}:
+1317             x, y, state = event.x, event.y, event.state
+1318         dot\_widget = self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1DragAction_afbd8271575b937b6d47a89a7de5fc186}{dot\_widget}
+1319         item = dot\_widget.get\_url(x, y)
+1320         \textcolor{keywordflow}{if} item \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:
+1321             item = dot\_widget.get\_jump(x, y)
+1322         \textcolor{keywordflow}{if} item \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None}:
+1323             dot\_widget.window.set\_cursor(gtk.gdk.Cursor(gtk.gdk.HAND2))
+1324             dot\_widget.set\_highlight(item.highlight)
+1325         \textcolor{keywordflow}{else}:
+1326             dot\_widget.window.set\_cursor(gtk.gdk.Cursor(gtk.gdk.ARROW))
+1327             dot\_widget.set\_highlight(\textcolor{keywordtype}{None})
+1328 
+1329 
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+viewer/src/smacc\+\_\+viewer/xdot/\hyperlink{xdot_8py}{xdot.\+py}\end{DoxyCompactItemize}

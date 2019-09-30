@@ -1,0 +1,628 @@
+\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser}{}\section{smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser Class Reference}
+\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser}\index{smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser@{smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser}}
+
+
+Inheritance diagram for smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a1f7c20111b1ee9cd28bc4556f2cd06bb}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, xdotcode)
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a733c3b35b32dca660005970397474a15}{handle\+\_\+graph} (self, attrs)
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a2447765fab39800834af0c26834398cd}{handle\+\_\+node} (self, id, attrs)
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a52bddf39ebaebf552a806c879d6b0cfa}{handle\+\_\+edge} (self, src\+\_\+id, dst\+\_\+id, attrs)
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_aa4143ed0fc5df44a34a48d664397bb21}{parse} (self)
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_aa8c1803b0418e65b40bda63bf127248b}{parse\+\_\+node\+\_\+pos} (self, pos)
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a197eeb6847d6621e4174b4f438a961c8}{parse\+\_\+edge\+\_\+pos} (self, pos)
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a490b6dcfb3944af0d6d691f1aa25db54}{transform} (self, x, y)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_abe817aefceb772f9c874fc46049d6cf4}{nodes}
+\item 
+\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a7c816c08835a7559802b2df9d60a19bc}{edges}
+\item 
+\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a768f7f940ba60d62b1913c212987f5ef}{shapes}
+\item 
+\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_ab2ae36f76adbaf2c08f05eb5a3fb5557}{node\+\_\+by\+\_\+name}
+\item 
+\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a5c873e467edfbfa937d8a59a8e1853c2}{top\+\_\+graph}
+\item 
+\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_aa2c8b09ed8274e0eeb753b28deb1c770}{subgraph\+\_\+shapes}
+\item 
+\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a62eaf1edc60a3fc0fa9de0ea6e4e48ae}{xoffset}
+\item 
+\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_ac9489fc14a7ba7229f965c327b479385}{yoffset}
+\item 
+\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a3c3b5417bb8d937745bc0160d568915f}{xscale}
+\item 
+\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a89fee1a8bb775af0509be2bce06b6e34}{yscale}
+\item 
+\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a2fd09ff25776c1dcbb3b23fe1679a312}{width}
+\item 
+\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_adc64dc74de1a8ccd5e77455467999e90}{height}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1066 of file xdot.\+py.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self, xdotcode)}{__init__(self, xdotcode)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{xdotcode}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a1f7c20111b1ee9cd28bc4556f2cd06bb}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a1f7c20111b1ee9cd28bc4556f2cd06bb}
+
+
+Definition at line 1068 of file xdot.\+py.
+
+
+\begin{DoxyCode}
+1068     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a1f7c20111b1ee9cd28bc4556f2cd06bb}{\_\_init\_\_}(self, xdotcode):
+1069         lexer = \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1DotLexer}{DotLexer}(buf = xdotcode)
+1070         DotParser.\_\_init\_\_(self, lexer)
+1071         
+1072         self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_abe817aefceb772f9c874fc46049d6cf4}{nodes} = []
+1073         self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a7c816c08835a7559802b2df9d60a19bc}{edges} = []
+1074         self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a768f7f940ba60d62b1913c212987f5ef}{shapes} = []
+1075         self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_ab2ae36f76adbaf2c08f05eb5a3fb5557}{node\_by\_name} = \{\}
+1076         self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a5c873e467edfbfa937d8a59a8e1853c2}{top\_graph} = \textcolor{keyword}{True}
+1077         self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_aa2c8b09ed8274e0eeb753b28deb1c770}{subgraph\_shapes} = \{\}
+1078 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}!handle\+\_\+edge@{handle\+\_\+edge}}
+\index{handle\+\_\+edge@{handle\+\_\+edge}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}}
+\subsubsection[{\texorpdfstring{handle\+\_\+edge(self, src\+\_\+id, dst\+\_\+id, attrs)}{handle_edge(self, src_id, dst_id, attrs)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+handle\+\_\+edge (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{src\+\_\+id, }
+\item[{}]{dst\+\_\+id, }
+\item[{}]{attrs}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a52bddf39ebaebf552a806c879d6b0cfa}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a52bddf39ebaebf552a806c879d6b0cfa}
+
+
+Definition at line 1127 of file xdot.\+py.
+
+
+
+References smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+node\+\_\+by\+\_\+name, and smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+parse\+\_\+edge\+\_\+pos().
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Parser.\+parse\+\_\+stmt().
+
+
+\begin{DoxyCode}
+1127     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a52bddf39ebaebf552a806c879d6b0cfa}{handle\_edge}(self, src\_id, dst\_id, attrs):
+1128         \textcolor{keywordflow}{try}:
+1129             pos = attrs[\textcolor{stringliteral}{'pos'}]
+1130         \textcolor{keywordflow}{except} KeyError:
+1131             \textcolor{keywordflow}{return}
+1132         
+1133         points = self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a197eeb6847d6621e4174b4f438a961c8}{parse\_edge\_pos}(pos)
+1134         shapes = []
+1135         \textcolor{keywordflow}{for} attr \textcolor{keywordflow}{in} (\textcolor{stringliteral}{"\_draw\_"}, \textcolor{stringliteral}{"\_ldraw\_"}, \textcolor{stringliteral}{"\_hdraw\_"}, \textcolor{stringliteral}{"\_tdraw\_"}, \textcolor{stringliteral}{"\_hldraw\_"}, \textcolor{stringliteral}{"\_tldraw\_"}):
+1136             \textcolor{keywordflow}{if} attr \textcolor{keywordflow}{in} attrs:
+1137                 parser = \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotAttrParser}{XDotAttrParser}(self, attrs[attr])
+1138                 shapes.extend(parser.parse())
+1139         url = attrs.get(\textcolor{stringliteral}{'URL'}, \textcolor{keywordtype}{None})
+1140         \textcolor{keywordflow}{if} shapes:
+1141             src = self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_ab2ae36f76adbaf2c08f05eb5a3fb5557}{node\_by\_name}[src\_id]
+1142             dst = self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_ab2ae36f76adbaf2c08f05eb5a3fb5557}{node\_by\_name}[dst\_id]
+1143             self.edges.append(\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Edge}{Edge}(src, dst, points, shapes, url))
+1144 
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a52bddf39ebaebf552a806c879d6b0cfa_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a52bddf39ebaebf552a806c879d6b0cfa_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}!handle\+\_\+graph@{handle\+\_\+graph}}
+\index{handle\+\_\+graph@{handle\+\_\+graph}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}}
+\subsubsection[{\texorpdfstring{handle\+\_\+graph(self, attrs)}{handle_graph(self, attrs)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+handle\+\_\+graph (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{attrs}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a733c3b35b32dca660005970397474a15}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a733c3b35b32dca660005970397474a15}
+
+
+Definition at line 1079 of file xdot.\+py.
+
+
+
+References smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+top\+\_\+graph.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Parser.\+parse\+\_\+stmt().
+
+
+\begin{DoxyCode}
+1079     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a733c3b35b32dca660005970397474a15}{handle\_graph}(self, attrs):
+1080         \textcolor{keywordflow}{if} self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a5c873e467edfbfa937d8a59a8e1853c2}{top\_graph}:
+1081             \textcolor{keywordflow}{try}:
+1082                 bb = attrs[\textcolor{stringliteral}{'bb'}]
+1083             \textcolor{keywordflow}{except} KeyError:
+1084                 \textcolor{keywordflow}{return}
+1085 
+1086             \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} bb:
+1087                 \textcolor{keywordflow}{return}
+1088 
+1089             xmin, ymin, xmax, ymax = map(float, bb.split(\textcolor{stringliteral}{","}))
+1090 
+1091             self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a62eaf1edc60a3fc0fa9de0ea6e4e48ae}{xoffset} = -xmin
+1092             self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_ac9489fc14a7ba7229f965c327b479385}{yoffset} = -ymax
+1093             self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a3c3b5417bb8d937745bc0160d568915f}{xscale} = 1.0
+1094             self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a89fee1a8bb775af0509be2bce06b6e34}{yscale} = -1.0
+1095             \textcolor{comment}{# FIXME: scale from points to pixels}
+1096 
+1097             self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a2fd09ff25776c1dcbb3b23fe1679a312}{width} = xmax - xmin
+1098             self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_adc64dc74de1a8ccd5e77455467999e90}{height} = ymax - ymin
+1099 
+1100             self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a5c873e467edfbfa937d8a59a8e1853c2}{top\_graph} = \textcolor{keyword}{False}
+1101         
+1102         \textcolor{keywordflow}{for} attr \textcolor{keywordflow}{in} (\textcolor{stringliteral}{"\_draw\_"}, \textcolor{stringliteral}{"\_ldraw\_"}, \textcolor{stringliteral}{"\_hdraw\_"}, \textcolor{stringliteral}{"\_tdraw\_"}, \textcolor{stringliteral}{"\_hldraw\_"}, \textcolor{stringliteral}{"\_tldraw\_"}):
+1103             \textcolor{keywordflow}{if} attr \textcolor{keywordflow}{in} attrs:
+1104                 parser = \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotAttrParser}{XDotAttrParser}(self, attrs[attr])
+1105                 self.shapes.extend(parser.parse())
+1106 
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a733c3b35b32dca660005970397474a15_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}!handle\+\_\+node@{handle\+\_\+node}}
+\index{handle\+\_\+node@{handle\+\_\+node}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}}
+\subsubsection[{\texorpdfstring{handle\+\_\+node(self, id, attrs)}{handle_node(self, id, attrs)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+handle\+\_\+node (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{id, }
+\item[{}]{attrs}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a2447765fab39800834af0c26834398cd}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a2447765fab39800834af0c26834398cd}
+
+
+Definition at line 1107 of file xdot.\+py.
+
+
+
+References smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+node\+\_\+by\+\_\+name, and smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+parse\+\_\+node\+\_\+pos().
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Parser.\+parse\+\_\+stmt().
+
+
+\begin{DoxyCode}
+1107     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a2447765fab39800834af0c26834398cd}{handle\_node}(self, id, attrs):
+1108         \textcolor{keywordflow}{try}:
+1109             pos = attrs[\textcolor{stringliteral}{'pos'}]
+1110         \textcolor{keywordflow}{except} KeyError:
+1111             \textcolor{keywordflow}{return}
+1112 
+1113         x, y = self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_aa8c1803b0418e65b40bda63bf127248b}{parse\_node\_pos}(pos)
+1114         w = float(attrs[\textcolor{stringliteral}{'width'}])*72
+1115         h = float(attrs[\textcolor{stringliteral}{'height'}])*72
+1116         shapes = []
+1117         \textcolor{keywordflow}{for} attr \textcolor{keywordflow}{in} (\textcolor{stringliteral}{"\_draw\_"}, \textcolor{stringliteral}{"\_ldraw\_"}):
+1118             \textcolor{keywordflow}{if} attr \textcolor{keywordflow}{in} attrs:
+1119                 parser = \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotAttrParser}{XDotAttrParser}(self, attrs[attr])
+1120                 shapes.extend(parser.parse())
+1121         url = attrs.get(\textcolor{stringliteral}{'URL'}, \textcolor{keywordtype}{None})
+1122         node = \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Node}{Node}(x, y, w, h, shapes, url)
+1123         self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_ab2ae36f76adbaf2c08f05eb5a3fb5557}{node\_by\_name}[id] = node
+1124         \textcolor{keywordflow}{if} shapes:
+1125             self.nodes.append(node)
+1126 
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a2447765fab39800834af0c26834398cd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a2447765fab39800834af0c26834398cd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}!parse@{parse}}
+\index{parse@{parse}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}}
+\subsubsection[{\texorpdfstring{parse(self)}{parse(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+parse (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_aa4143ed0fc5df44a34a48d664397bb21}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_aa4143ed0fc5df44a34a48d664397bb21}
+
+
+Definition at line 1145 of file xdot.\+py.
+
+
+
+References smacc\+\_\+viewer.\+xdot.\+xdot.\+Graph.\+edges, smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+edges, smacc\+\_\+viewer.\+xdot.\+xdot.\+Graph.\+height, smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+height, smacc\+\_\+viewer.\+xdot.\+xdot.\+Graph.\+nodes, smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+nodes, smacc\+\_\+viewer.\+xdot.\+xdot.\+Compound\+Shape.\+shapes, smacc\+\_\+viewer.\+xdot.\+xdot.\+Graph.\+shapes, smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Attr\+Parser.\+shapes, smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+shapes, smacc\+\_\+viewer.\+xdot.\+xdot.\+Graph.\+subgraph\+\_\+shapes, smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Dot\+Window.\+subgraph\+\_\+shapes, smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+subgraph\+\_\+shapes, smacc\+\_\+viewer.\+xdot.\+xdot.\+Graph.\+width, and smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+width.
+
+
+\begin{DoxyCode}
+1145     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_aa4143ed0fc5df44a34a48d664397bb21}{parse}(self):
+1146         DotParser.parse(self)
+1147 
+1148         \textcolor{stringliteral}{"""}
+1149 \textcolor{stringliteral}{        for k,shapes in self.subgraph\_shapes.iteritems():}
+1150 \textcolor{stringliteral}{          self.shapes += shapes}
+1151 \textcolor{stringliteral}{        """}
+1152 
+1153         \textcolor{keywordflow}{return} \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1Graph}{Graph}(self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a2fd09ff25776c1dcbb3b23fe1679a312}{width}, self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_adc64dc74de1a8ccd5e77455467999e90}{height}, self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a768f7f940ba60d62b1913c212987f5ef}{shapes}, self.
+      \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_abe817aefceb772f9c874fc46049d6cf4}{nodes}, self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a7c816c08835a7559802b2df9d60a19bc}{edges}, self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_aa2c8b09ed8274e0eeb753b28deb1c770}{subgraph\_shapes})
+1154 
+\end{DoxyCode}
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}!parse\+\_\+edge\+\_\+pos@{parse\+\_\+edge\+\_\+pos}}
+\index{parse\+\_\+edge\+\_\+pos@{parse\+\_\+edge\+\_\+pos}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}}
+\subsubsection[{\texorpdfstring{parse\+\_\+edge\+\_\+pos(self, pos)}{parse_edge_pos(self, pos)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+parse\+\_\+edge\+\_\+pos (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{pos}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a197eeb6847d6621e4174b4f438a961c8}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a197eeb6847d6621e4174b4f438a961c8}
+
+
+Definition at line 1159 of file xdot.\+py.
+
+
+
+References smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Attr\+Parser.\+transform(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+transform().
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+X\+Dot\+Parser.\+handle\+\_\+edge(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+handle\+\_\+edge().
+
+
+\begin{DoxyCode}
+1159     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a197eeb6847d6621e4174b4f438a961c8}{parse\_edge\_pos}(self, pos):
+1160         points = []
+1161         \textcolor{keywordflow}{for} entry \textcolor{keywordflow}{in} pos.split(\textcolor{stringliteral}{' '}):
+1162             fields = entry.split(\textcolor{stringliteral}{','})
+1163             \textcolor{keywordflow}{try}:
+1164                 x, y = fields
+1165             \textcolor{keywordflow}{except} ValueError:
+1166                 \textcolor{comment}{# TODO: handle start/end points}
+1167                 \textcolor{keywordflow}{continue}
+1168             \textcolor{keywordflow}{else}:
+1169                 points.append(self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a490b6dcfb3944af0d6d691f1aa25db54}{transform}(float(x), float(y)))
+1170         \textcolor{keywordflow}{return} points
+1171 
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a197eeb6847d6621e4174b4f438a961c8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a197eeb6847d6621e4174b4f438a961c8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}!parse\+\_\+node\+\_\+pos@{parse\+\_\+node\+\_\+pos}}
+\index{parse\+\_\+node\+\_\+pos@{parse\+\_\+node\+\_\+pos}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}}
+\subsubsection[{\texorpdfstring{parse\+\_\+node\+\_\+pos(self, pos)}{parse_node_pos(self, pos)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+parse\+\_\+node\+\_\+pos (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{pos}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_aa8c1803b0418e65b40bda63bf127248b}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_aa8c1803b0418e65b40bda63bf127248b}
+
+
+Definition at line 1155 of file xdot.\+py.
+
+
+
+References smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Attr\+Parser.\+transform(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+transform().
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+X\+Dot\+Parser.\+handle\+\_\+node(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+handle\+\_\+node().
+
+
+\begin{DoxyCode}
+1155     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_aa8c1803b0418e65b40bda63bf127248b}{parse\_node\_pos}(self, pos):
+1156         x, y = pos.split(\textcolor{stringliteral}{","})
+1157         \textcolor{keywordflow}{return} self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a490b6dcfb3944af0d6d691f1aa25db54}{transform}(float(x), float(y))
+1158 
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_aa8c1803b0418e65b40bda63bf127248b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_aa8c1803b0418e65b40bda63bf127248b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}!transform@{transform}}
+\index{transform@{transform}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}}
+\subsubsection[{\texorpdfstring{transform(self, x, y)}{transform(self, x, y)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+transform (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a490b6dcfb3944af0d6d691f1aa25db54}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a490b6dcfb3944af0d6d691f1aa25db54}
+
+
+Definition at line 1172 of file xdot.\+py.
+
+
+
+References smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+xoffset, smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+xscale, smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+yoffset, and smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+yscale.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+X\+Dot\+Parser.\+parse\+\_\+edge\+\_\+pos(), smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+parse\+\_\+edge\+\_\+pos(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+X\+Dot\+Parser.\+parse\+\_\+node\+\_\+pos(), smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+parse\+\_\+node\+\_\+pos(), and smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+X\+Dot\+Attr\+Parser.\+read\+\_\+point().
+
+
+\begin{DoxyCode}
+1172     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a490b6dcfb3944af0d6d691f1aa25db54}{transform}(self, x, y):
+1173         \textcolor{comment}{# XXX: this is not the right place for this code}
+1174         x = (x + self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a62eaf1edc60a3fc0fa9de0ea6e4e48ae}{xoffset})*self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a3c3b5417bb8d937745bc0160d568915f}{xscale}
+1175         y = (y + self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_ac9489fc14a7ba7229f965c327b479385}{yoffset})*self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a89fee1a8bb775af0509be2bce06b6e34}{yscale}
+1176         \textcolor{keywordflow}{return} x, y
+1177 
+1178 
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a490b6dcfb3944af0d6d691f1aa25db54_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}!edges@{edges}}
+\index{edges@{edges}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}}
+\subsubsection[{\texorpdfstring{edges}{edges}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+edges}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a7c816c08835a7559802b2df9d60a19bc}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a7c816c08835a7559802b2df9d60a19bc}
+
+
+Definition at line 1073 of file xdot.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Graph.\+draw(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Graph.\+get\+\_\+jump(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+X\+Dot\+Parser.\+parse(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+parse().
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}!height@{height}}
+\index{height@{height}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}}
+\subsubsection[{\texorpdfstring{height}{height}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+height}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_adc64dc74de1a8ccd5e77455467999e90}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_adc64dc74de1a8ccd5e77455467999e90}
+
+
+Definition at line 1098 of file xdot.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Graph.\+get\+\_\+size(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+X\+Dot\+Parser.\+parse(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+parse().
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}!node\+\_\+by\+\_\+name@{node\+\_\+by\+\_\+name}}
+\index{node\+\_\+by\+\_\+name@{node\+\_\+by\+\_\+name}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}}
+\subsubsection[{\texorpdfstring{node\+\_\+by\+\_\+name}{node_by_name}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+node\+\_\+by\+\_\+name}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_ab2ae36f76adbaf2c08f05eb5a3fb5557}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_ab2ae36f76adbaf2c08f05eb5a3fb5557}
+
+
+Definition at line 1075 of file xdot.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+X\+Dot\+Parser.\+handle\+\_\+edge(), smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+handle\+\_\+edge(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+X\+Dot\+Parser.\+handle\+\_\+node(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+handle\+\_\+node().
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}!nodes@{nodes}}
+\index{nodes@{nodes}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}}
+\subsubsection[{\texorpdfstring{nodes}{nodes}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+nodes}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_abe817aefceb772f9c874fc46049d6cf4}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_abe817aefceb772f9c874fc46049d6cf4}
+
+
+Definition at line 1072 of file xdot.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Graph.\+draw(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Graph.\+get\+\_\+jump(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Graph.\+get\+\_\+url(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+X\+Dot\+Parser.\+parse(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+parse().
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}!shapes@{shapes}}
+\index{shapes@{shapes}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}}
+\subsubsection[{\texorpdfstring{shapes}{shapes}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+shapes}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a768f7f940ba60d62b1913c212987f5ef}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a768f7f940ba60d62b1913c212987f5ef}
+
+
+Definition at line 1074 of file xdot.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Compound\+Shape.\+draw(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Graph.\+draw(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+X\+Dot\+Attr\+Parser.\+parse(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+X\+Dot\+Parser.\+parse(), smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+parse(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Parser.\+parse\+\_\+subgraph(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+Dot\+Parser.\+parse\+\_\+subgraph().
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}!subgraph\+\_\+shapes@{subgraph\+\_\+shapes}}
+\index{subgraph\+\_\+shapes@{subgraph\+\_\+shapes}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}}
+\subsubsection[{\texorpdfstring{subgraph\+\_\+shapes}{subgraph_shapes}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+subgraph\+\_\+shapes}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_aa2c8b09ed8274e0eeb753b28deb1c770}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_aa2c8b09ed8274e0eeb753b28deb1c770}
+
+
+Definition at line 1077 of file xdot.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+X\+Dot\+Parser.\+parse(), smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+parse(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Parser.\+parse\+\_\+subgraph(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+Dot\+Parser.\+parse\+\_\+subgraph().
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}!top\+\_\+graph@{top\+\_\+graph}}
+\index{top\+\_\+graph@{top\+\_\+graph}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}}
+\subsubsection[{\texorpdfstring{top\+\_\+graph}{top_graph}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+top\+\_\+graph}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a5c873e467edfbfa937d8a59a8e1853c2}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a5c873e467edfbfa937d8a59a8e1853c2}
+
+
+Definition at line 1076 of file xdot.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+X\+Dot\+Parser.\+handle\+\_\+graph(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+handle\+\_\+graph().
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}!width@{width}}
+\index{width@{width}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}}
+\subsubsection[{\texorpdfstring{width}{width}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+width}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a2fd09ff25776c1dcbb3b23fe1679a312}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a2fd09ff25776c1dcbb3b23fe1679a312}
+
+
+Definition at line 1097 of file xdot.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Graph.\+get\+\_\+size(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+X\+Dot\+Parser.\+parse(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+parse().
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}!xoffset@{xoffset}}
+\index{xoffset@{xoffset}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}}
+\subsubsection[{\texorpdfstring{xoffset}{xoffset}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+xoffset}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a62eaf1edc60a3fc0fa9de0ea6e4e48ae}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a62eaf1edc60a3fc0fa9de0ea6e4e48ae}
+
+
+Definition at line 1091 of file xdot.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+X\+Dot\+Parser.\+transform(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+transform().
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}!xscale@{xscale}}
+\index{xscale@{xscale}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}}
+\subsubsection[{\texorpdfstring{xscale}{xscale}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+xscale}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a3c3b5417bb8d937745bc0160d568915f}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a3c3b5417bb8d937745bc0160d568915f}
+
+
+Definition at line 1093 of file xdot.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+X\+Dot\+Parser.\+transform(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+transform().
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}!yoffset@{yoffset}}
+\index{yoffset@{yoffset}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}}
+\subsubsection[{\texorpdfstring{yoffset}{yoffset}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+yoffset}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_ac9489fc14a7ba7229f965c327b479385}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_ac9489fc14a7ba7229f965c327b479385}
+
+
+Definition at line 1092 of file xdot.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+X\+Dot\+Parser.\+transform(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+transform().
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}!yscale@{yscale}}
+\index{yscale@{yscale}!smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+::\+X\+Dot\+Parser}}
+\subsubsection[{\texorpdfstring{yscale}{yscale}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+yscale}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a89fee1a8bb775af0509be2bce06b6e34}{}\label{classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser_a89fee1a8bb775af0509be2bce06b6e34}
+
+
+Definition at line 1094 of file xdot.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+X\+Dot\+Parser.\+transform(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+X\+Dot\+Parser.\+transform().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+viewer/src/smacc\+\_\+viewer/xdot/\hyperlink{xdot_8py}{xdot.\+py}\end{DoxyCompactItemize}

@@ -1,0 +1,220 @@
+\hypertarget{classRotate}{}\section{Rotate Class Reference}
+\label{classRotate}\index{Rotate@{Rotate}}
+
+
+{\ttfamily \#include $<$rotate.\+h$>$}
+
+
+
+Inheritance diagram for Rotate\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{classRotate__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Rotate\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRotate__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRotate_a36c4a94d1c5a6306ce443c3f6c546e13}{Rotate} ()
+\item 
+\hyperlink{classRotate_ad8334e945e878a7e7f9dd4521c6a9573}{Rotate} (float rotate\+\_\+degree)
+\item 
+virtual void \hyperlink{classRotate_ab07f79966ab172e454139c4139adf51b}{on\+Entry} () override
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tf\+::\+Transform\+Listener \hyperlink{classRotate_ad8c08acbc62347f654d979f3e34c13dc}{listener}
+\item 
+\hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $\ast$ \hyperlink{classRotate_ae632332fc9901b146697d5942d83ed42}{move\+Base\+Client\+\_\+}
+\item 
+\hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher}{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher} $\ast$ \hyperlink{classRotate_a83b5665eb3ccd4f4a1e38976bc6fec6e}{planner\+Switcher\+\_\+}
+\item 
+boost\+::optional$<$ float $>$ \hyperlink{classRotate_a0d494e54d8311aafe97bd44b381c039c}{rotate\+Degree}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file rotate.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Rotate@{Rotate}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!Rotate@{Rotate}}
+\subsubsection[{\texorpdfstring{Rotate()}{Rotate()}}]{\setlength{\rightskip}{0pt plus 5cm}Rotate\+::\+Rotate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRotate_a36c4a94d1c5a6306ce443c3f6c546e13}{}\label{classRotate_a36c4a94d1c5a6306ce443c3f6c546e13}
+
+
+Definition at line 22 of file rotate.\+h.
+
+
+\begin{DoxyCode}
+23   \{
+24 
+25   \}
+\end{DoxyCode}
+\index{Rotate@{Rotate}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!Rotate@{Rotate}}
+\subsubsection[{\texorpdfstring{Rotate(float rotate\+\_\+degree)}{Rotate(float rotate_degree)}}]{\setlength{\rightskip}{0pt plus 5cm}Rotate\+::\+Rotate (
+\begin{DoxyParamCaption}
+\item[{float}]{rotate\+\_\+degree}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classRotate_ad8334e945e878a7e7f9dd4521c6a9573}{}\label{classRotate_ad8334e945e878a7e7f9dd4521c6a9573}
+
+
+Definition at line 27 of file rotate.\+h.
+
+
+\begin{DoxyCode}
+28   \{
+29     \hyperlink{classRotate_a0d494e54d8311aafe97bd44b381c039c}{rotateDegree} = rotate\_degree;
+30   \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Rotate@{Rotate}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!Rotate@{Rotate}}
+\subsubsection[{\texorpdfstring{on\+Entry() override}{onEntry() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Rotate\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classRotate_ab07f79966ab172e454139c4139adf51b}{}\label{classRotate_ab07f79966ab172e454139c4139adf51b}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_a7c28e1c46238bbb2c2e0450573c6de94}{smacc\+::\+Smacc\+Sub\+State\+Behavior}.
+
+
+
+Definition at line 32 of file rotate.\+h.
+
+
+
+References smacc\+::\+Smacc\+Sub\+State\+Behavior\+::current\+State, smacc\+::\+I\+Smacc\+State\+::param(), smacc\+::\+Smacc\+Sub\+State\+Behavior\+::requires\+Component(), rotate\+Degree, smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal(), and smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher\+::set\+Forward\+Planner().
+
+
+\begin{DoxyCode}
+33   \{
+34     \textcolor{keywordtype}{double}  angle\_increment\_degree;
+35 
+36     \textcolor{keywordflow}{if}(!\hyperlink{classRotate_a0d494e54d8311aafe97bd44b381c039c}{rotateDegree})
+37     \{
+38         this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a62e2b9da4a446f09396d0b4c01659b88}{currentState}->\hyperlink{classsmacc_1_1ISmaccState_a4982f2187ed6da337462721146e8ef70}{param}(\textcolor{stringliteral}{"angle\_increment\_degree"}, angle\_increment\_degree, 90.0);
+39     \}
+40     \textcolor{keywordflow}{else}
+41     \{
+42        angle\_increment\_degree = *\hyperlink{classRotate_a0d494e54d8311aafe97bd44b381c039c}{rotateDegree};
+43     \}
+44 
+45     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}{requiresComponent}(\hyperlink{classRotate_ae632332fc9901b146697d5942d83ed42}{moveBaseClient\_} , ros::NodeHandle(\textcolor{stringliteral}{"move\_base"}))
+      ;
+46     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}{requiresComponent}(\hyperlink{classRotate_a83b5665eb3ccd4f4a1e38976bc6fec6e}{plannerSwitcher\_}, ros::NodeHandle(\textcolor{stringliteral}{"move\_base"})
+      );
+47     
+48     \textcolor{comment}{//this->plannerSwitcher\_->setDefaultPlanners();}
+49     this->\hyperlink{classRotate_a83b5665eb3ccd4f4a1e38976bc6fec6e}{plannerSwitcher\_}->\hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_a6510ee1f23243ee725c61e590354d3bc}{setForwardPlanner}();
+50 
+51     \textcolor{comment}{//this should work better with a coroutine and await}
+52     ros::Rate rate(10.0);
+53     geometry\_msgs::Pose currentPoseMsg;
+54     \textcolor{keywordflow}{while} (ros::ok())
+55     \{
+56         tf::StampedTransform currentPose;
+57         \textcolor{keywordflow}{try}\{
+58           \hyperlink{classRotate_ad8c08acbc62347f654d979f3e34c13dc}{listener}.lookupTransform(\textcolor{stringliteral}{"/odom"}, \textcolor{stringliteral}{"/base\_link"},  
+59                                 ros::Time(0), currentPose);
+60 
+61           tf::poseTFToMsg (currentPose, currentPoseMsg);
+62         \textcolor{keywordflow}{break};
+63         \}
+64         \textcolor{keywordflow}{catch} (tf::TransformException ex)\{
+65         ROS\_ERROR(\textcolor{stringliteral}{"%s"},ex.what());
+66         ros::Duration(1.0).sleep();
+67         \}
+68     \}   
+69 
+70     smacc::SmaccMoveBaseActionClient::Goal goal;
+71     goal.target\_pose.header.frame\_id = \textcolor{stringliteral}{"/odom"};
+72     goal.target\_pose.header.stamp = ros::Time::now();
+73 
+74     \textcolor{keyword}{auto} currentAngle = tf::getYaw(currentPoseMsg.orientation);
+75     \textcolor{keyword}{auto} targetAngle = currentAngle + angle\_increment\_degree *M\_PI/180.0;
+76     goal.target\_pose.pose.orientation =tf::createQuaternionMsgFromYaw(targetAngle);
+77     goal.target\_pose.pose.position = currentPoseMsg.position;
+78     ROS\_WARN\_STREAM(\textcolor{stringliteral}{"rotate behavior current\_state : "} << currentPoseMsg);
+79     ROS\_WARN\_STREAM(\textcolor{stringliteral}{"rotate behavior target : "} << goal.target\_pose.pose);
+80 
+81     ROS\_INFO(\textcolor{stringliteral}{"forward behavior: sending forward goal"});
+82     \hyperlink{classRotate_ae632332fc9901b146697d5942d83ed42}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
+83   \}    
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRotate_ab07f79966ab172e454139c4139adf51b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Rotate@{Rotate}!listener@{listener}}
+\index{listener@{listener}!Rotate@{Rotate}}
+\subsubsection[{\texorpdfstring{listener}{listener}}]{\setlength{\rightskip}{0pt plus 5cm}tf\+::\+Transform\+Listener Rotate\+::listener}\hypertarget{classRotate_ad8c08acbc62347f654d979f3e34c13dc}{}\label{classRotate_ad8c08acbc62347f654d979f3e34c13dc}
+
+
+Definition at line 14 of file rotate.\+h.
+
+\index{Rotate@{Rotate}!move\+Base\+Client\+\_\+@{move\+Base\+Client\+\_\+}}
+\index{move\+Base\+Client\+\_\+@{move\+Base\+Client\+\_\+}!Rotate@{Rotate}}
+\subsubsection[{\texorpdfstring{move\+Base\+Client\+\_\+}{moveBaseClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}$\ast$ Rotate\+::move\+Base\+Client\+\_\+}\hypertarget{classRotate_ae632332fc9901b146697d5942d83ed42}{}\label{classRotate_ae632332fc9901b146697d5942d83ed42}
+
+
+Definition at line 16 of file rotate.\+h.
+
+\index{Rotate@{Rotate}!planner\+Switcher\+\_\+@{planner\+Switcher\+\_\+}}
+\index{planner\+Switcher\+\_\+@{planner\+Switcher\+\_\+}!Rotate@{Rotate}}
+\subsubsection[{\texorpdfstring{planner\+Switcher\+\_\+}{plannerSwitcher_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}$\ast$ Rotate\+::planner\+Switcher\+\_\+}\hypertarget{classRotate_a83b5665eb3ccd4f4a1e38976bc6fec6e}{}\label{classRotate_a83b5665eb3ccd4f4a1e38976bc6fec6e}
+
+
+Definition at line 18 of file rotate.\+h.
+
+\index{Rotate@{Rotate}!rotate\+Degree@{rotate\+Degree}}
+\index{rotate\+Degree@{rotate\+Degree}!Rotate@{Rotate}}
+\subsubsection[{\texorpdfstring{rotate\+Degree}{rotateDegree}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::optional$<$float$>$ Rotate\+::rotate\+Degree}\hypertarget{classRotate_a0d494e54d8311aafe97bd44b381c039c}{}\label{classRotate_a0d494e54d8311aafe97bd44b381c039c}
+
+
+Definition at line 20 of file rotate.\+h.
+
+
+
+Referenced by on\+Entry().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+examples/sm\+\_\+radial\+\_\+motion/include/sm\+\_\+radial\+\_\+motion/substates\+\_\+behaviors/navigation/\hyperlink{rotate_8h}{rotate.\+h}\end{DoxyCompactItemize}

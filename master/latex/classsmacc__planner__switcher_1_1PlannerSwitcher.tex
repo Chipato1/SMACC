@@ -1,0 +1,447 @@
+\hypertarget{classsmacc__planner__switcher_1_1PlannerSwitcher}{}\section{smacc\+\_\+planner\+\_\+switcher\+:\+:Planner\+Switcher Class Reference}
+\label{classsmacc__planner__switcher_1_1PlannerSwitcher}\index{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher@{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}}
+
+
+{\ttfamily \#include $<$planner\+\_\+switcher.\+h$>$}
+
+
+
+Inheritance diagram for smacc\+\_\+planner\+\_\+switcher\+:\+:Planner\+Switcher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classsmacc__planner__switcher_1_1PlannerSwitcher__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+\_\+planner\+\_\+switcher\+:\+:Planner\+Switcher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__planner__switcher_1_1PlannerSwitcher__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_ae1e0ad820a95f2671a8967cfc45fb299}{init} (ros\+::\+Node\+Handle \&nh, std\+::string) override
+\item 
+void \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_a848558a4309a42c546ab87e65722da2f}{set\+Backward\+Planner} ()
+\item 
+void \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_a6510ee1f23243ee725c61e590354d3bc}{set\+Forward\+Planner} ()
+\item 
+void \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_a9672bbbb245b3a5120b365810c9cc746}{set\+Default\+Planners} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_ae45c57b459f1eb9ee4cc3c6dc6dc0995}{update\+Planners} (\hyperlink{classbool}{bool} subscribecallback=true)
+\item 
+void \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_a19328a8a844797e39dd24736872bd442}{dynreconf\+Callback} (const dynamic\+\_\+reconfigure\+::\+Config\+::\+Const\+Ptr \&configuration\+\_\+update)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_aed229df648a0903e3cdf77682220efb5}{desired\+\_\+global\+\_\+planner\+\_\+}
+\item 
+std\+::string \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_aecc5958653ed39dd7611783043d23345}{desired\+\_\+local\+\_\+planner\+\_\+}
+\item 
+ros\+::\+Subscriber \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_a3ac34789d0fc620bb2bd27f984486ba9}{dynrecof\+Sub\+\_\+}
+\item 
+\hyperlink{classbool}{bool} \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_a266b7a17a8c92bda2d74a7c8991a4a61}{set\+\_\+planners\+\_\+mode\+\_\+flag}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file planner\+\_\+switcher.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher@{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}!dynreconf\+Callback@{dynreconf\+Callback}}
+\index{dynreconf\+Callback@{dynreconf\+Callback}!smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher@{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}}
+\subsubsection[{\texorpdfstring{dynreconf\+Callback(const dynamic\+\_\+reconfigure\+::\+Config\+::\+Const\+Ptr \&configuration\+\_\+update)}{dynreconfCallback(const dynamic_reconfigure::Config::ConstPtr &configuration_update)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher\+::dynreconf\+Callback (
+\begin{DoxyParamCaption}
+\item[{const dynamic\+\_\+reconfigure\+::\+Config\+::\+Const\+Ptr \&}]{configuration\+\_\+update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__planner__switcher_1_1PlannerSwitcher_a19328a8a844797e39dd24736872bd442}{}\label{classsmacc__planner__switcher_1_1PlannerSwitcher_a19328a8a844797e39dd24736872bd442}
+
+
+Definition at line 65 of file planner\+\_\+switcher.\+cpp.
+
+
+
+References desired\+\_\+global\+\_\+planner\+\_\+, desired\+\_\+local\+\_\+planner\+\_\+, set\+\_\+planners\+\_\+mode\+\_\+flag, and update\+Planners().
+
+
+
+Referenced by init().
+
+
+\begin{DoxyCode}
+66 \{
+67   \textcolor{keyword}{auto} gp = std::find\_if(configuration\_update->strs.begin(),configuration\_update->strs.begin() ,
+68               [&](\textcolor{keyword}{const} dynamic\_reconfigure::StrParameter& p)
+69               \{
+70                   \textcolor{keywordflow}{return} p.name == \textcolor{stringliteral}{"base\_global\_planner"} &&  p.value == 
+      \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_aed229df648a0903e3cdf77682220efb5}{desired\_global\_planner\_};
+71               \});
+72 
+73   \textcolor{keyword}{auto} lp = std::find\_if(configuration\_update->strs.begin(),configuration\_update->strs.begin() ,
+74               [&](\textcolor{keyword}{const} dynamic\_reconfigure::StrParameter& p)
+75               \{
+76                 \textcolor{keywordflow}{return} p.name == \textcolor{stringliteral}{"base\_local\_planner"} &&  p.value == 
+      \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_aecc5958653ed39dd7611783043d23345}{desired\_local\_planner\_};
+77               \});
+78 
+79   \textcolor{keywordflow}{if}(gp== configuration\_update->strs.end() ||  lp == configuration\_update->strs.end())
+80     \{
+81       ROS\_INFO(\textcolor{stringliteral}{"[PlannerSwitcher] After planner update it is noticed an incorrect move\_base planner
+       configuration. Resending request."});
+82       \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_a266b7a17a8c92bda2d74a7c8991a4a61}{set\_planners\_mode\_flag} =\textcolor{keyword}{false};
+83       \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_ae45c57b459f1eb9ee4cc3c6dc6dc0995}{updatePlanners}(\textcolor{keyword}{false});
+84     \}
+85     \textcolor{keywordflow}{else}
+86     \{
+87       ROS\_INFO(\textcolor{stringliteral}{"[PlannerSwitcher] Planners correctly configured according to parameter update callback"});
+88       \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_a266b7a17a8c92bda2d74a7c8991a4a61}{set\_planners\_mode\_flag}= \textcolor{keyword}{true};
+89     \}
+90 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__planner__switcher_1_1PlannerSwitcher_a19328a8a844797e39dd24736872bd442_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__planner__switcher_1_1PlannerSwitcher_a19328a8a844797e39dd24736872bd442_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher@{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}!init@{init}}
+\index{init@{init}!smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher@{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}}
+\subsubsection[{\texorpdfstring{init(ros\+::\+Node\+Handle \&nh, std\+::string) override}{init(ros::NodeHandle &nh, std::string) override}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher\+::init (
+\begin{DoxyParamCaption}
+\item[{ros\+::\+Node\+Handle \&}]{nh, }
+\item[{std\+::string}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsmacc__planner__switcher_1_1PlannerSwitcher_ae1e0ad820a95f2671a8967cfc45fb299}{}\label{classsmacc__planner__switcher_1_1PlannerSwitcher_ae1e0ad820a95f2671a8967cfc45fb299}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1ISmaccComponent_abc2c65813913369f0693ab7d2c2bd49c}{smacc\+::\+I\+Smacc\+Component}.
+
+
+
+Definition at line 11 of file planner\+\_\+switcher.\+cpp.
+
+
+
+References dynrecof\+Sub\+\_\+, and dynreconf\+Callback().
+
+
+\begin{DoxyCode}
+12 \{
+13   \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_a3ac34789d0fc620bb2bd27f984486ba9}{dynrecofSub\_} = nh.subscribe<dynamic\_reconfigure::Config>(\textcolor{stringliteral}{"/move\_base/parameter\_updates"} , 1, 
+      boost::bind(&\hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_a19328a8a844797e39dd24736872bd442}{PlannerSwitcher::dynreconfCallback}, \textcolor{keyword}{this}, \_1));
+14 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__planner__switcher_1_1PlannerSwitcher_ae1e0ad820a95f2671a8967cfc45fb299_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher@{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}!set\+Backward\+Planner@{set\+Backward\+Planner}}
+\index{set\+Backward\+Planner@{set\+Backward\+Planner}!smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher@{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}}
+\subsubsection[{\texorpdfstring{set\+Backward\+Planner()}{setBackwardPlanner()}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher\+::set\+Backward\+Planner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__planner__switcher_1_1PlannerSwitcher_a848558a4309a42c546ab87e65722da2f}{}\label{classsmacc__planner__switcher_1_1PlannerSwitcher_a848558a4309a42c546ab87e65722da2f}
+
+
+Definition at line 16 of file planner\+\_\+switcher.\+cpp.
+
+
+
+References desired\+\_\+global\+\_\+planner\+\_\+, desired\+\_\+local\+\_\+planner\+\_\+, and update\+Planners().
+
+
+
+Referenced by Sb\+Undo\+Path\+Backwards\+::on\+Entry(), Undo\+Path\+Backwards\+::on\+Entry(), and Sb\+Navigate\+Backwards\+::on\+Entry().
+
+
+\begin{DoxyCode}
+17 \{
+18   ROS\_INFO(\textcolor{stringliteral}{"[PlannerSwitcher] Planner Switcher: Trying to set BackwardPlanner"});
+19   \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_aed229df648a0903e3cdf77682220efb5}{desired\_global\_planner\_} = \textcolor{stringliteral}{"backward\_global\_planner/BackwardGlobalPlanner"};
+20   \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_aecc5958653ed39dd7611783043d23345}{desired\_local\_planner\_} = \textcolor{stringliteral}{"backward\_local\_planner/BackwardLocalPlanner"};
+21   \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_ae45c57b459f1eb9ee4cc3c6dc6dc0995}{updatePlanners}();
+22 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__planner__switcher_1_1PlannerSwitcher_a848558a4309a42c546ab87e65722da2f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__planner__switcher_1_1PlannerSwitcher_a848558a4309a42c546ab87e65722da2f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher@{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}!set\+Default\+Planners@{set\+Default\+Planners}}
+\index{set\+Default\+Planners@{set\+Default\+Planners}!smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher@{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}}
+\subsubsection[{\texorpdfstring{set\+Default\+Planners()}{setDefaultPlanners()}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher\+::set\+Default\+Planners (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__planner__switcher_1_1PlannerSwitcher_a9672bbbb245b3a5120b365810c9cc746}{}\label{classsmacc__planner__switcher_1_1PlannerSwitcher_a9672bbbb245b3a5120b365810c9cc746}
+
+
+Definition at line 32 of file planner\+\_\+switcher.\+cpp.
+
+
+
+References desired\+\_\+global\+\_\+planner\+\_\+, desired\+\_\+local\+\_\+planner\+\_\+, and update\+Planners().
+
+
+
+Referenced by Sb\+Rotate\+::on\+Entry(), and Sb\+Navigate\+Global\+Position\+::on\+Entry().
+
+
+\begin{DoxyCode}
+33 \{
+34   \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_aed229df648a0903e3cdf77682220efb5}{desired\_global\_planner\_} = \textcolor{stringliteral}{"navfn/NavfnROS"};
+35   \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_aecc5958653ed39dd7611783043d23345}{desired\_local\_planner\_} = \textcolor{stringliteral}{"base\_local\_planner/TrajectoryPlannerROS"};
+36   \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_ae45c57b459f1eb9ee4cc3c6dc6dc0995}{updatePlanners}();
+37 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__planner__switcher_1_1PlannerSwitcher_a9672bbbb245b3a5120b365810c9cc746_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__planner__switcher_1_1PlannerSwitcher_a9672bbbb245b3a5120b365810c9cc746_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher@{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}!set\+Forward\+Planner@{set\+Forward\+Planner}}
+\index{set\+Forward\+Planner@{set\+Forward\+Planner}!smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher@{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}}
+\subsubsection[{\texorpdfstring{set\+Forward\+Planner()}{setForwardPlanner()}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher\+::set\+Forward\+Planner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__planner__switcher_1_1PlannerSwitcher_a6510ee1f23243ee725c61e590354d3bc}{}\label{classsmacc__planner__switcher_1_1PlannerSwitcher_a6510ee1f23243ee725c61e590354d3bc}
+
+
+Definition at line 24 of file planner\+\_\+switcher.\+cpp.
+
+
+
+References desired\+\_\+global\+\_\+planner\+\_\+, desired\+\_\+local\+\_\+planner\+\_\+, and update\+Planners().
+
+
+
+Referenced by Navigate\+Global\+Position\+::on\+Entry(), Rotate\+::on\+Entry(), Sb\+Navigate\+Forward\+::on\+Entry(), and Navigate\+Forward\+::on\+Entry().
+
+
+\begin{DoxyCode}
+25 \{
+26   ROS\_INFO(\textcolor{stringliteral}{"[PlannerSwitcher] Planner Switcher: Trying to set ForwardPlanner"});
+27   \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_aed229df648a0903e3cdf77682220efb5}{desired\_global\_planner\_} = \textcolor{stringliteral}{"forward\_global\_planner/ForwardGlobalPlanner"};
+28   \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_aecc5958653ed39dd7611783043d23345}{desired\_local\_planner\_} = \textcolor{stringliteral}{"forward\_local\_planner/ForwardLocalPlanner"};
+29   \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_ae45c57b459f1eb9ee4cc3c6dc6dc0995}{updatePlanners}();
+30 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__planner__switcher_1_1PlannerSwitcher_a6510ee1f23243ee725c61e590354d3bc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__planner__switcher_1_1PlannerSwitcher_a6510ee1f23243ee725c61e590354d3bc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher@{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}!update\+Planners@{update\+Planners}}
+\index{update\+Planners@{update\+Planners}!smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher@{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}}
+\subsubsection[{\texorpdfstring{update\+Planners(bool subscribecallback=true)}{updatePlanners(bool subscribecallback=true)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher\+::update\+Planners (
+\begin{DoxyParamCaption}
+\item[{{\bf bool}}]{subscribecallback = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__planner__switcher_1_1PlannerSwitcher_ae45c57b459f1eb9ee4cc3c6dc6dc0995}{}\label{classsmacc__planner__switcher_1_1PlannerSwitcher_ae45c57b459f1eb9ee4cc3c6dc6dc0995}
+
+
+Definition at line 39 of file planner\+\_\+switcher.\+cpp.
+
+
+
+References desired\+\_\+global\+\_\+planner\+\_\+, and desired\+\_\+local\+\_\+planner\+\_\+.
+
+
+
+Referenced by dynreconf\+Callback(), set\+Backward\+Planner(), set\+Default\+Planners(), and set\+Forward\+Planner().
+
+
+\begin{DoxyCode}
+40 \{
+41   ROS\_INFO\_STREAM(\textcolor{stringliteral}{"[PlannerSwitcher] Setting global planner: "} << 
+      \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_aed229df648a0903e3cdf77682220efb5}{desired\_global\_planner\_});
+42   ROS\_INFO\_STREAM(\textcolor{stringliteral}{"[PlannerSwitcher] Setting local planner: "} << 
+      \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_aecc5958653ed39dd7611783043d23345}{desired\_local\_planner\_});
+43 
+44   dynamic\_reconfigure::ReconfigureRequest srv\_req;
+45   dynamic\_reconfigure::ReconfigureResponse srv\_resp;
+46   dynamic\_reconfigure::StrParameter local\_planner, global\_planner;
+47   dynamic\_reconfigure::Config \hyperlink{namespaceconf}{conf};
+48 
+49   local\_planner.name = \textcolor{stringliteral}{"base\_local\_planner"};
+50   local\_planner.value =  \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_aecc5958653ed39dd7611783043d23345}{desired\_local\_planner\_};
+51   conf.strs.push\_back(local\_planner);
+52 
+53   global\_planner.name= \textcolor{stringliteral}{"base\_global\_planner"};
+54   global\_planner.value = \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_aed229df648a0903e3cdf77682220efb5}{desired\_global\_planner\_};
+55   conf.strs.push\_back(global\_planner);
+56   
+57   srv\_req.config = conf;
+58   ROS\_INFO(\textcolor{stringliteral}{"seting values of the dynamic reconfigure server"});
+59   ros::service::call(\textcolor{stringliteral}{"/move\_base/set\_parameters"}, srv\_req, srv\_resp);
+60   ros::spinOnce();
+61   ros::Duration(0.5).sleep();
+62   ROS\_INFO\_STREAM(\textcolor{stringliteral}{"[PlannerSwitcher] Response: "}<< srv\_resp);
+63 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__planner__switcher_1_1PlannerSwitcher_ae45c57b459f1eb9ee4cc3c6dc6dc0995_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher@{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}!desired\+\_\+global\+\_\+planner\+\_\+@{desired\+\_\+global\+\_\+planner\+\_\+}}
+\index{desired\+\_\+global\+\_\+planner\+\_\+@{desired\+\_\+global\+\_\+planner\+\_\+}!smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher@{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}}
+\subsubsection[{\texorpdfstring{desired\+\_\+global\+\_\+planner\+\_\+}{desired_global_planner_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher\+::desired\+\_\+global\+\_\+planner\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__planner__switcher_1_1PlannerSwitcher_aed229df648a0903e3cdf77682220efb5}{}\label{classsmacc__planner__switcher_1_1PlannerSwitcher_aed229df648a0903e3cdf77682220efb5}
+
+
+Definition at line 28 of file planner\+\_\+switcher.\+h.
+
+
+
+Referenced by dynreconf\+Callback(), set\+Backward\+Planner(), set\+Default\+Planners(), set\+Forward\+Planner(), and update\+Planners().
+
+\index{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher@{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}!desired\+\_\+local\+\_\+planner\+\_\+@{desired\+\_\+local\+\_\+planner\+\_\+}}
+\index{desired\+\_\+local\+\_\+planner\+\_\+@{desired\+\_\+local\+\_\+planner\+\_\+}!smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher@{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}}
+\subsubsection[{\texorpdfstring{desired\+\_\+local\+\_\+planner\+\_\+}{desired_local_planner_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher\+::desired\+\_\+local\+\_\+planner\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__planner__switcher_1_1PlannerSwitcher_aecc5958653ed39dd7611783043d23345}{}\label{classsmacc__planner__switcher_1_1PlannerSwitcher_aecc5958653ed39dd7611783043d23345}
+
+
+Definition at line 29 of file planner\+\_\+switcher.\+h.
+
+
+
+Referenced by dynreconf\+Callback(), set\+Backward\+Planner(), set\+Default\+Planners(), set\+Forward\+Planner(), and update\+Planners().
+
+\index{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher@{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}!dynrecof\+Sub\+\_\+@{dynrecof\+Sub\+\_\+}}
+\index{dynrecof\+Sub\+\_\+@{dynrecof\+Sub\+\_\+}!smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher@{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}}
+\subsubsection[{\texorpdfstring{dynrecof\+Sub\+\_\+}{dynrecofSub_}}]{\setlength{\rightskip}{0pt plus 5cm}ros\+::\+Subscriber smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher\+::dynrecof\+Sub\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__planner__switcher_1_1PlannerSwitcher_a3ac34789d0fc620bb2bd27f984486ba9}{}\label{classsmacc__planner__switcher_1_1PlannerSwitcher_a3ac34789d0fc620bb2bd27f984486ba9}
+
+
+Definition at line 30 of file planner\+\_\+switcher.\+h.
+
+
+
+Referenced by init().
+
+\index{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher@{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}!set\+\_\+planners\+\_\+mode\+\_\+flag@{set\+\_\+planners\+\_\+mode\+\_\+flag}}
+\index{set\+\_\+planners\+\_\+mode\+\_\+flag@{set\+\_\+planners\+\_\+mode\+\_\+flag}!smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher@{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}}
+\subsubsection[{\texorpdfstring{set\+\_\+planners\+\_\+mode\+\_\+flag}{set_planners_mode_flag}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool} smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher\+::set\+\_\+planners\+\_\+mode\+\_\+flag\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__planner__switcher_1_1PlannerSwitcher_a266b7a17a8c92bda2d74a7c8991a4a61}{}\label{classsmacc__planner__switcher_1_1PlannerSwitcher_a266b7a17a8c92bda2d74a7c8991a4a61}
+
+
+Definition at line 31 of file planner\+\_\+switcher.\+h.
+
+
+
+Referenced by dynreconf\+Callback().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+client\+\_\+library/smacc\+\_\+navigation/smacc\+\_\+planner\+\_\+switcher/include/smacc\+\_\+planner\+\_\+switcher/\hyperlink{planner__switcher_8h}{planner\+\_\+switcher.\+h}\item 
+smacc\+\_\+client\+\_\+library/smacc\+\_\+navigation/smacc\+\_\+planner\+\_\+switcher/src/\hyperlink{planner__switcher_8cpp}{planner\+\_\+switcher.\+cpp}\end{DoxyCompactItemize}

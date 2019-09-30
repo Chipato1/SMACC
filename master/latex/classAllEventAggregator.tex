@@ -1,0 +1,216 @@
+\hypertarget{classAllEventAggregator}{}\section{All\+Event\+Aggregator Class Reference}
+\label{classAllEventAggregator}\index{All\+Event\+Aggregator@{All\+Event\+Aggregator}}
+
+
+{\ttfamily \#include $<$all\+\_\+event\+\_\+aggregator.\+h$>$}
+
+
+
+Collaboration diagram for All\+Event\+Aggregator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{classAllEventAggregator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classAllEventAggregator_ab9d6e59d70fd564ffa2333a30c9a41de}{set\+Trigger\+Event\+Types\+Count} (\hyperlink{classint}{int} \hyperlink{classAllEventAggregator_a8b64cd4c8d8592916a19c628b61606cd}{event\+\_\+types\+\_\+count})
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classbool}{bool} \hyperlink{classAllEventAggregator_aec3ce484f803c39cb1fddefb07611e45}{notify} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classbool}{bool} \hyperlink{classAllEventAggregator_a2480186f62c0f2809f9683bb42e8bbb6}{notify} (const T \&ev)
+\item 
+\hyperlink{classbool}{bool} \hyperlink{classAllEventAggregator_a043a05c1b9b4fe79aa4513cb37414f9a}{is\+Triggered} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ const char $\ast$, \hyperlink{classbool}{bool} $>$ \hyperlink{classAllEventAggregator_af9de1c3e60421aa0b1a4979340fc4765}{events}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classint}{int} \hyperlink{classAllEventAggregator_a8b64cd4c8d8592916a19c628b61606cd}{event\+\_\+types\+\_\+count}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 5 of file all\+\_\+event\+\_\+aggregator.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{All\+Event\+Aggregator@{All\+Event\+Aggregator}!is\+Triggered@{is\+Triggered}}
+\index{is\+Triggered@{is\+Triggered}!All\+Event\+Aggregator@{All\+Event\+Aggregator}}
+\subsubsection[{\texorpdfstring{is\+Triggered()}{isTriggered()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool} All\+Event\+Aggregator\+::is\+Triggered (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAllEventAggregator_a043a05c1b9b4fe79aa4513cb37414f9a}{}\label{classAllEventAggregator_a043a05c1b9b4fe79aa4513cb37414f9a}
+
+
+Definition at line 32 of file all\+\_\+event\+\_\+aggregator.\+h.
+
+
+
+References event\+\_\+types\+\_\+count.
+
+
+
+Referenced by notify().
+
+
+\begin{DoxyCode}
+33     \{
+34       \textcolor{keywordflow}{return} \hyperlink{classAllEventAggregator_af9de1c3e60421aa0b1a4979340fc4765}{events}.size() >= \hyperlink{classAllEventAggregator_a8b64cd4c8d8592916a19c628b61606cd}{event\_types\_count};
+35     \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAllEventAggregator_a043a05c1b9b4fe79aa4513cb37414f9a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{All\+Event\+Aggregator@{All\+Event\+Aggregator}!notify@{notify}}
+\index{notify@{notify}!All\+Event\+Aggregator@{All\+Event\+Aggregator}}
+\subsubsection[{\texorpdfstring{notify()}{notify()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf bool} All\+Event\+Aggregator\+::notify (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAllEventAggregator_aec3ce484f803c39cb1fddefb07611e45}{}\label{classAllEventAggregator_aec3ce484f803c39cb1fddefb07611e45}
+
+
+Definition at line 18 of file all\+\_\+event\+\_\+aggregator.\+h.
+
+
+
+References is\+Triggered().
+
+
+
+Referenced by St\+Acquire\+Sensors\+::react().
+
+
+\begin{DoxyCode}
+19     \{
+20       \textcolor{keyword}{auto}* name = \textcolor{keyword}{typeid}(T).name();
+21       \hyperlink{classAllEventAggregator_af9de1c3e60421aa0b1a4979340fc4765}{events}[name] = \textcolor{keyword}{true};
+22 
+23       \textcolor{keywordflow}{return} \hyperlink{classAllEventAggregator_a043a05c1b9b4fe79aa4513cb37414f9a}{isTriggered}();
+24     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classAllEventAggregator_aec3ce484f803c39cb1fddefb07611e45_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAllEventAggregator_aec3ce484f803c39cb1fddefb07611e45_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{All\+Event\+Aggregator@{All\+Event\+Aggregator}!notify@{notify}}
+\index{notify@{notify}!All\+Event\+Aggregator@{All\+Event\+Aggregator}}
+\subsubsection[{\texorpdfstring{notify(const T \&ev)}{notify(const T &ev)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf bool} All\+Event\+Aggregator\+::notify (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{ev}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAllEventAggregator_a2480186f62c0f2809f9683bb42e8bbb6}{}\label{classAllEventAggregator_a2480186f62c0f2809f9683bb42e8bbb6}
+
+
+Definition at line 27 of file all\+\_\+event\+\_\+aggregator.\+h.
+
+
+\begin{DoxyCode}
+28     \{
+29       \textcolor{keywordflow}{return} this->notify<T>();
+30     \}
+\end{DoxyCode}
+\index{All\+Event\+Aggregator@{All\+Event\+Aggregator}!set\+Trigger\+Event\+Types\+Count@{set\+Trigger\+Event\+Types\+Count}}
+\index{set\+Trigger\+Event\+Types\+Count@{set\+Trigger\+Event\+Types\+Count}!All\+Event\+Aggregator@{All\+Event\+Aggregator}}
+\subsubsection[{\texorpdfstring{set\+Trigger\+Event\+Types\+Count(int event\+\_\+types\+\_\+count)}{setTriggerEventTypesCount(int event_types_count)}}]{\setlength{\rightskip}{0pt plus 5cm}void All\+Event\+Aggregator\+::set\+Trigger\+Event\+Types\+Count (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{event\+\_\+types\+\_\+count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classAllEventAggregator_ab9d6e59d70fd564ffa2333a30c9a41de}{}\label{classAllEventAggregator_ab9d6e59d70fd564ffa2333a30c9a41de}
+
+
+Definition at line 10 of file all\+\_\+event\+\_\+aggregator.\+h.
+
+
+
+References event\+\_\+types\+\_\+count.
+
+
+
+Referenced by St\+Acquire\+Sensors\+::on\+Initialize().
+
+
+\begin{DoxyCode}
+11     \{
+12       this->event\_types\_count = \hyperlink{classAllEventAggregator_a8b64cd4c8d8592916a19c628b61606cd}{event\_types\_count};
+13     \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAllEventAggregator_ab9d6e59d70fd564ffa2333a30c9a41de_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{All\+Event\+Aggregator@{All\+Event\+Aggregator}!event\+\_\+types\+\_\+count@{event\+\_\+types\+\_\+count}}
+\index{event\+\_\+types\+\_\+count@{event\+\_\+types\+\_\+count}!All\+Event\+Aggregator@{All\+Event\+Aggregator}}
+\subsubsection[{\texorpdfstring{event\+\_\+types\+\_\+count}{event_types_count}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} All\+Event\+Aggregator\+::event\+\_\+types\+\_\+count\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classAllEventAggregator_a8b64cd4c8d8592916a19c628b61606cd}{}\label{classAllEventAggregator_a8b64cd4c8d8592916a19c628b61606cd}
+
+
+Definition at line 7 of file all\+\_\+event\+\_\+aggregator.\+h.
+
+
+
+Referenced by is\+Triggered(), and set\+Trigger\+Event\+Types\+Count().
+
+\index{All\+Event\+Aggregator@{All\+Event\+Aggregator}!events@{events}}
+\index{events@{events}!All\+Event\+Aggregator@{All\+Event\+Aggregator}}
+\subsubsection[{\texorpdfstring{events}{events}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$const char$\ast$,{\bf bool}$>$ All\+Event\+Aggregator\+::events}\hypertarget{classAllEventAggregator_af9de1c3e60421aa0b1a4979340fc4765}{}\label{classAllEventAggregator_af9de1c3e60421aa0b1a4979340fc4765}
+
+
+Definition at line 15 of file all\+\_\+event\+\_\+aggregator.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc/include/smacc/\hyperlink{all__event__aggregator_8h}{all\+\_\+event\+\_\+aggregator.\+h}\end{DoxyCompactItemize}

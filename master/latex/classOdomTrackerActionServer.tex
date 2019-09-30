@@ -1,0 +1,231 @@
+\hypertarget{classOdomTrackerActionServer}{}\section{Odom\+Tracker\+Action\+Server Class Reference}
+\label{classOdomTrackerActionServer}\index{Odom\+Tracker\+Action\+Server@{Odom\+Tracker\+Action\+Server}}
+
+
+Collaboration diagram for Odom\+Tracker\+Action\+Server\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOdomTrackerActionServer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOdomTrackerActionServer_a98b7fba6da04e1afcf1000f937be7fef}{Odom\+Tracker\+Action\+Server} ()
+\item 
+void \hyperlink{classOdomTrackerActionServer_af8a72e60dfa1b6224d5c0a9cc9ae68a8}{execute} (const smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+Goal\+Const\+Ptr \&goal)
+\item 
+void \hyperlink{classOdomTrackerActionServer_a8ab6984c7383949a048d72437e9f79d3}{run} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{odom__tracker__node_8cpp_a287066ed24118c12919f0d8ed7e010ff}{Server} $>$ \hyperlink{classOdomTrackerActionServer_a28bed1d95003d837b2b47053dbc66878}{as\+\_\+}
+\item 
+\hyperlink{classsmacc__odom__tracker_1_1OdomTracker}{Odom\+Tracker} \hyperlink{classOdomTrackerActionServer_a3e5c4328d3206fbd2fd2708f0aefe651}{odom\+Tracker}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file odom\+\_\+tracker\+\_\+node.\+cpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Odom\+Tracker\+Action\+Server@{Odom\+Tracker\+Action\+Server}!Odom\+Tracker\+Action\+Server@{Odom\+Tracker\+Action\+Server}}
+\index{Odom\+Tracker\+Action\+Server@{Odom\+Tracker\+Action\+Server}!Odom\+Tracker\+Action\+Server@{Odom\+Tracker\+Action\+Server}}
+\subsubsection[{\texorpdfstring{Odom\+Tracker\+Action\+Server()}{OdomTrackerActionServer()}}]{\setlength{\rightskip}{0pt plus 5cm}Odom\+Tracker\+Action\+Server\+::\+Odom\+Tracker\+Action\+Server (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classOdomTrackerActionServer_a98b7fba6da04e1afcf1000f937be7fef}{}\label{classOdomTrackerActionServer_a98b7fba6da04e1afcf1000f937be7fef}
+
+
+Definition at line 21 of file odom\+\_\+tracker\+\_\+node.\+cpp.
+
+
+\begin{DoxyCode}
+22 \{
+23 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Odom\+Tracker\+Action\+Server@{Odom\+Tracker\+Action\+Server}!execute@{execute}}
+\index{execute@{execute}!Odom\+Tracker\+Action\+Server@{Odom\+Tracker\+Action\+Server}}
+\subsubsection[{\texorpdfstring{execute(const smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+Goal\+Const\+Ptr \&goal)}{execute(const smacc_odom_tracker::OdomTrackerGoalConstPtr &goal)}}]{\setlength{\rightskip}{0pt plus 5cm}void Odom\+Tracker\+Action\+Server\+::execute (
+\begin{DoxyParamCaption}
+\item[{const smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+Goal\+Const\+Ptr \&}]{goal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classOdomTrackerActionServer_af8a72e60dfa1b6224d5c0a9cc9ae68a8}{}\label{classOdomTrackerActionServer_af8a72e60dfa1b6224d5c0a9cc9ae68a8}
+\hyperlink{classOdomTrackerActionServer_af8a72e60dfa1b6224d5c0a9cc9ae68a8}{execute()} 
+
+Definition at line 31 of file odom\+\_\+tracker\+\_\+node.\+cpp.
+
+
+
+References smacc\+\_\+odom\+\_\+tracker\+::\+C\+L\+E\+A\+R\+\_\+\+P\+A\+T\+H\+\_\+\+B\+A\+C\+K\+W\+A\+RD, smacc\+\_\+odom\+\_\+tracker\+::\+I\+D\+LE, smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::pop\+Path(), smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::push\+Path(), smacc\+\_\+odom\+\_\+tracker\+::\+R\+E\+C\+O\+R\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+O\+R\+W\+A\+RD, smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Publish\+Messages(), and smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Working\+Mode().
+
+
+
+Referenced by run().
+
+
+\begin{DoxyCode}
+32 \{
+33   \textcolor{keywordflow}{try}
+34   \{
+35     \textcolor{keywordflow}{switch}(goal->command)
+36     \{
+37       \textcolor{keywordflow}{case} OdomTrackerGoal::RECORD\_FORWARD\_PATH: 
+38         \hyperlink{classOdomTrackerActionServer_a3e5c4328d3206fbd2fd2708f0aefe651}{odomTracker}.\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a38fbca999297c46dc95628cc60851a45}{setWorkingMode}(WorkingMode::RECORD\_PATH\_FORWARD);
+39       \textcolor{keywordflow}{break};
+40 
+41       \textcolor{keywordflow}{case} OdomTrackerGoal::CLEAR\_PATH\_BACKWARDS:
+42         \hyperlink{classOdomTrackerActionServer_a3e5c4328d3206fbd2fd2708f0aefe651}{odomTracker}.\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a38fbca999297c46dc95628cc60851a45}{setWorkingMode}(WorkingMode::CLEAR\_PATH\_BACKWARD);
+43       \textcolor{keywordflow}{break};
+44 
+45       \textcolor{keywordflow}{case} OdomTrackerGoal::IDLE:
+46         \hyperlink{classOdomTrackerActionServer_a3e5c4328d3206fbd2fd2708f0aefe651}{odomTracker}.\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a38fbca999297c46dc95628cc60851a45}{setWorkingMode}(WorkingMode::IDLE);
+47       \textcolor{keywordflow}{break};
+48 
+49       \textcolor{keywordflow}{case} OdomTrackerGoal::START\_BROADCAST\_PATH:
+50         \hyperlink{classOdomTrackerActionServer_a3e5c4328d3206fbd2fd2708f0aefe651}{odomTracker}.\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a5808c41a9d8d75a70ec66fa581af4570}{setPublishMessages}(\textcolor{keyword}{true});
+51       \textcolor{keywordflow}{break};
+52 
+53       \textcolor{keywordflow}{case} OdomTrackerGoal::STOP\_BROADCAST\_PATH:
+54         \hyperlink{classOdomTrackerActionServer_a3e5c4328d3206fbd2fd2708f0aefe651}{odomTracker}.\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a5808c41a9d8d75a70ec66fa581af4570}{setPublishMessages}(\textcolor{keyword}{false});
+55       \textcolor{keywordflow}{break};
+56 
+57       \textcolor{keywordflow}{case} OdomTrackerGoal::PUSH\_PATH:
+58         \hyperlink{classOdomTrackerActionServer_a3e5c4328d3206fbd2fd2708f0aefe651}{odomTracker}.\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a01194bc1bd8095929c61fc912a44e534}{pushPath}();
+59       \textcolor{keywordflow}{break};
+60 
+61       \textcolor{keywordflow}{case} OdomTrackerGoal::POP\_PATH:
+62         \hyperlink{classOdomTrackerActionServer_a3e5c4328d3206fbd2fd2708f0aefe651}{odomTracker}.\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a915623e872cc34912c8d50cffd9551f2}{popPath}();
+63       \textcolor{keywordflow}{break};
+64 
+65       \textcolor{keywordflow}{default}:
+66 
+67       ROS\_ERROR(\textcolor{stringliteral}{"Odom Tracker Node - Action Server execute error: incorrect command - %d"}, goal->command);
+68       \hyperlink{classOdomTrackerActionServer_a28bed1d95003d837b2b47053dbc66878}{as\_}->setAborted();
+69     \}
+70 
+71     \textcolor{comment}{// never reach succeded because were are interested in keeping the feedback alive}
+72     \hyperlink{classOdomTrackerActionServer_a28bed1d95003d837b2b47053dbc66878}{as\_}->setSucceeded();
+73   \}
+74   \textcolor{keywordflow}{catch}(std::exception& ex)
+75   \{
+76     ROS\_ERROR(\textcolor{stringliteral}{"Odom Tracker Node - Action Server execute error: %s"}, ex.what());
+77     \hyperlink{classOdomTrackerActionServer_a28bed1d95003d837b2b47053dbc66878}{as\_}->setAborted();
+78   \}
+79 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOdomTrackerActionServer_af8a72e60dfa1b6224d5c0a9cc9ae68a8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOdomTrackerActionServer_af8a72e60dfa1b6224d5c0a9cc9ae68a8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Odom\+Tracker\+Action\+Server@{Odom\+Tracker\+Action\+Server}!run@{run}}
+\index{run@{run}!Odom\+Tracker\+Action\+Server@{Odom\+Tracker\+Action\+Server}}
+\subsubsection[{\texorpdfstring{run()}{run()}}]{\setlength{\rightskip}{0pt plus 5cm}void Odom\+Tracker\+Action\+Server\+::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classOdomTrackerActionServer_a8ab6984c7383949a048d72437e9f79d3}{}\label{classOdomTrackerActionServer_a8ab6984c7383949a048d72437e9f79d3}
+\hyperlink{classOdomTrackerActionServer_a8ab6984c7383949a048d72437e9f79d3}{run()} 
+
+Definition at line 86 of file odom\+\_\+tracker\+\_\+node.\+cpp.
+
+
+
+References execute().
+
+
+
+Referenced by main().
+
+
+\begin{DoxyCode}
+87 \{
+88   ros::NodeHandle n;
+89   ROS\_INFO(\textcolor{stringliteral}{"Creating odom tracker action server"});
+90 
+91   \hyperlink{classOdomTrackerActionServer_a28bed1d95003d837b2b47053dbc66878}{as\_} = std::make\_shared<Server>(n, \textcolor{stringliteral}{"odom\_tracker"}, boost::bind(&
+      \hyperlink{classOdomTrackerActionServer_af8a72e60dfa1b6224d5c0a9cc9ae68a8}{OdomTrackerActionServer::execute}, \textcolor{keyword}{this},  \_1), \textcolor{keyword}{false});
+92   ROS\_INFO(\textcolor{stringliteral}{"Starting OdomTracker Action Server"});
+93 
+94   \hyperlink{classOdomTrackerActionServer_a28bed1d95003d837b2b47053dbc66878}{as\_}->start();
+95 
+96   ros::spin();
+97 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOdomTrackerActionServer_a8ab6984c7383949a048d72437e9f79d3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classOdomTrackerActionServer_a8ab6984c7383949a048d72437e9f79d3_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Odom\+Tracker\+Action\+Server@{Odom\+Tracker\+Action\+Server}!as\+\_\+@{as\+\_\+}}
+\index{as\+\_\+@{as\+\_\+}!Odom\+Tracker\+Action\+Server@{Odom\+Tracker\+Action\+Server}}
+\subsubsection[{\texorpdfstring{as\+\_\+}{as_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Server}$>$ Odom\+Tracker\+Action\+Server\+::as\+\_\+}\hypertarget{classOdomTrackerActionServer_a28bed1d95003d837b2b47053dbc66878}{}\label{classOdomTrackerActionServer_a28bed1d95003d837b2b47053dbc66878}
+
+
+Definition at line 18 of file odom\+\_\+tracker\+\_\+node.\+cpp.
+
+\index{Odom\+Tracker\+Action\+Server@{Odom\+Tracker\+Action\+Server}!odom\+Tracker@{odom\+Tracker}}
+\index{odom\+Tracker@{odom\+Tracker}!Odom\+Tracker\+Action\+Server@{Odom\+Tracker\+Action\+Server}}
+\subsubsection[{\texorpdfstring{odom\+Tracker}{odomTracker}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Odom\+Tracker} Odom\+Tracker\+Action\+Server\+::odom\+Tracker}\hypertarget{classOdomTrackerActionServer_a3e5c4328d3206fbd2fd2708f0aefe651}{}\label{classOdomTrackerActionServer_a3e5c4328d3206fbd2fd2708f0aefe651}
+
+
+Definition at line 19 of file odom\+\_\+tracker\+\_\+node.\+cpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+client\+\_\+library/smacc\+\_\+navigation/smacc\+\_\+odom\+\_\+tracker/src/\hyperlink{odom__tracker__node_8cpp}{odom\+\_\+tracker\+\_\+node.\+cpp}\end{DoxyCompactItemize}

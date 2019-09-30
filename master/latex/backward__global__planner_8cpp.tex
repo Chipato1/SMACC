@@ -1,0 +1,62 @@
+\hypertarget{backward__global__planner_8cpp}{}\section{smacc\+\_\+client\+\_\+library/smacc\+\_\+navigation/backward\+\_\+global\+\_\+planner/src/backward\+\_\+global\+\_\+planner.cpp File Reference}
+\label{backward__global__planner_8cpp}\index{smacc\+\_\+client\+\_\+library/smacc\+\_\+navigation/backward\+\_\+global\+\_\+planner/src/backward\+\_\+global\+\_\+planner.\+cpp@{smacc\+\_\+client\+\_\+library/smacc\+\_\+navigation/backward\+\_\+global\+\_\+planner/src/backward\+\_\+global\+\_\+planner.\+cpp}}
+{\ttfamily \#include $<$boost/assign.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/range/adaptor/reversed.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/range/algorithm/copy.\+hpp$>$}\\*
+{\ttfamily \#include $<$pcl\+\_\+conversions/pcl\+\_\+conversions.\+h$>$}\\*
+{\ttfamily \#include $<$pcl\+\_\+ros/point\+\_\+cloud.\+h$>$}\\*
+{\ttfamily \#include $<$pluginlib/class\+\_\+list\+\_\+macros.\+h$>$}\\*
+{\ttfamily \#include $<$backward\+\_\+global\+\_\+planner/backward\+\_\+global\+\_\+planner.\+h$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$streambuf$>$}\\*
+{\ttfamily \#include $<$nav\+\_\+msgs/\+Path.\+h$>$}\\*
+{\ttfamily \#include $<$visualization\+\_\+msgs/\+Marker\+Array.\+h$>$}\\*
+{\ttfamily \#include $<$tf/tf.\+h$>$}\\*
+{\ttfamily \#include $<$tf/transform\+\_\+datatypes.\+h$>$}\\*
+{\ttfamily \#include $<$angles/angles.\+h$>$}\\*
+{\ttfamily \#include $<$forward\+\_\+global\+\_\+planner/reel\+\_\+path\+\_\+tools.\+h$>$}\\*
+Include dependency graph for backward\+\_\+global\+\_\+planner.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{backward__global__planner_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebackward__global__planner}{backward\+\_\+global\+\_\+planner}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{backward__global__planner_8cpp_ab281ed1637a6dd4beeba422e1b280061}{P\+L\+U\+G\+I\+N\+L\+I\+B\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+C\+L\+A\+SS} (\hyperlink{classbackward__global__planner_1_1BackwardGlobalPlanner}{backward\+\_\+global\+\_\+planner\+::\+Backward\+Global\+Planner}, nav\+\_\+core\+::\+Base\+Global\+Planner)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{backward\+\_\+global\+\_\+planner.\+cpp@{backward\+\_\+global\+\_\+planner.\+cpp}!P\+L\+U\+G\+I\+N\+L\+I\+B\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+C\+L\+A\+SS@{P\+L\+U\+G\+I\+N\+L\+I\+B\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+C\+L\+A\+SS}}
+\index{P\+L\+U\+G\+I\+N\+L\+I\+B\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+C\+L\+A\+SS@{P\+L\+U\+G\+I\+N\+L\+I\+B\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+C\+L\+A\+SS}!backward\+\_\+global\+\_\+planner.\+cpp@{backward\+\_\+global\+\_\+planner.\+cpp}}
+\subsubsection[{\texorpdfstring{P\+L\+U\+G\+I\+N\+L\+I\+B\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+C\+L\+A\+S\+S(backward\+\_\+global\+\_\+planner\+::\+Backward\+Global\+Planner, nav\+\_\+core\+::\+Base\+Global\+Planner)}{PLUGINLIB_EXPORT_CLASS(backward_global_planner::BackwardGlobalPlanner, nav_core::BaseGlobalPlanner)}}]{\setlength{\rightskip}{0pt plus 5cm}P\+L\+U\+G\+I\+N\+L\+I\+B\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+C\+L\+A\+SS (
+\begin{DoxyParamCaption}
+\item[{{\bf backward\+\_\+global\+\_\+planner\+::\+Backward\+Global\+Planner}}]{, }
+\item[{nav\+\_\+core\+::\+Base\+Global\+Planner}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{backward__global__planner_8cpp_ab281ed1637a6dd4beeba422e1b280061}{}\label{backward__global__planner_8cpp_ab281ed1637a6dd4beeba422e1b280061}
+
+
+Referenced by smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display\+::process\+Message(), and smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::$\sim$\+Smacc\+Move\+Base\+Action\+Client().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{backward__global__planner_8cpp_ab281ed1637a6dd4beeba422e1b280061_icgraph}
+\end{center}
+\end{figure}
+
+

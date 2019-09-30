@@ -1,0 +1,139 @@
+\hypertarget{classService3Behavior}{}\section{Service3\+Behavior Class Reference}
+\label{classService3Behavior}\index{Service3\+Behavior@{Service3\+Behavior}}
+
+
+{\ttfamily \#include $<$service3\+\_\+behavior.\+h$>$}
+
+
+
+Inheritance diagram for Service3\+Behavior\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{classService3Behavior__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Service3\+Behavior\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classService3Behavior__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classService3Behavior_a32e9bb1dc52a69d7bac9a3f282ca6cd1}{Service3\+Behavior} (\hyperlink{service3__behavior_8h_a220998b2c3cad22a21ce6676b2478543}{Service3\+Command} value)
+\item 
+virtual void \hyperlink{classService3Behavior_a914618fa7f8152868204543838cd8359}{on\+Entry} () override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classServiceClient3}{Service\+Client3} $\ast$ \hyperlink{classService3Behavior_af9320a57c796b75f10c722ba57a89b13}{service\+Client\+\_\+}
+\item 
+\hyperlink{service3__behavior_8h_a220998b2c3cad22a21ce6676b2478543}{Service3\+Command} \hyperlink{classService3Behavior_a63303d829c0433edf1a0bf104c386ac9}{value\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 6 of file service3\+\_\+behavior.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Service3\+Behavior@{Service3\+Behavior}!Service3\+Behavior@{Service3\+Behavior}}
+\index{Service3\+Behavior@{Service3\+Behavior}!Service3\+Behavior@{Service3\+Behavior}}
+\subsubsection[{\texorpdfstring{Service3\+Behavior(\+Service3\+Command value)}{Service3Behavior(Service3Command value)}}]{\setlength{\rightskip}{0pt plus 5cm}Service3\+Behavior\+::\+Service3\+Behavior (
+\begin{DoxyParamCaption}
+\item[{{\bf Service3\+Command}}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classService3Behavior_a32e9bb1dc52a69d7bac9a3f282ca6cd1}{}\label{classService3Behavior_a32e9bb1dc52a69d7bac9a3f282ca6cd1}
+
+
+Definition at line 13 of file service3\+\_\+behavior.\+h.
+
+
+\begin{DoxyCode}
+14   \{
+15     \hyperlink{classService3Behavior_a63303d829c0433edf1a0bf104c386ac9}{value\_} = value;
+16   \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Service3\+Behavior@{Service3\+Behavior}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!Service3\+Behavior@{Service3\+Behavior}}
+\subsubsection[{\texorpdfstring{on\+Entry() override}{onEntry() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Service3\+Behavior\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classService3Behavior_a914618fa7f8152868204543838cd8359}{}\label{classService3Behavior_a914618fa7f8152868204543838cd8359}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_a7c28e1c46238bbb2c2e0450573c6de94}{smacc\+::\+Smacc\+Sub\+State\+Behavior}.
+
+
+
+Definition at line 18 of file service3\+\_\+behavior.\+h.
+
+
+
+References smacc\+::\+Smacc\+Service\+Client$<$ Service\+Type $>$\+::call(), smacc\+::\+Smacc\+Service\+Client$<$ Service\+Type $>$\+::initialize(), and S\+E\+R\+V\+I\+C\+E3\+\_\+\+ON.
+
+
+\begin{DoxyCode}
+19   \{
+20     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}{requiresComponent}(\hyperlink{classService3Behavior_af9320a57c796b75f10c722ba57a89b13}{serviceClient\_});
+21     \hyperlink{classService3Behavior_af9320a57c796b75f10c722ba57a89b13}{serviceClient\_}->\hyperlink{classsmacc_1_1SmaccServiceClient_a5be21b63eb7cfe54d9ac7de33c3c0938}{initialize}(\textcolor{stringliteral}{"/service\_node3"});
+22 
+23     std\_srvs::SetBool req;
+24     \textcolor{keywordflow}{if}(\hyperlink{classService3Behavior_a63303d829c0433edf1a0bf104c386ac9}{value\_} == \hyperlink{service3__behavior_8h_a220998b2c3cad22a21ce6676b2478543a13cdca48a01bbb44fa8fb35567fbc58e}{Service3Command::SERVICE3\_ON})
+25       req.request.data = \textcolor{keyword}{true};
+26     \textcolor{keywordflow}{else}
+27       req.request.data = \textcolor{keyword}{false};
+28     
+29     \hyperlink{classService3Behavior_af9320a57c796b75f10c722ba57a89b13}{serviceClient\_}->\hyperlink{classsmacc_1_1SmaccServiceClient_a1b749ce13f3cb1dbf10a5992c05c173e}{call}(req);
+30   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classService3Behavior_a914618fa7f8152868204543838cd8359_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Service3\+Behavior@{Service3\+Behavior}!service\+Client\+\_\+@{service\+Client\+\_\+}}
+\index{service\+Client\+\_\+@{service\+Client\+\_\+}!Service3\+Behavior@{Service3\+Behavior}}
+\subsubsection[{\texorpdfstring{service\+Client\+\_\+}{serviceClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Service\+Client3}$\ast$ Service3\+Behavior\+::service\+Client\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classService3Behavior_af9320a57c796b75f10c722ba57a89b13}{}\label{classService3Behavior_af9320a57c796b75f10c722ba57a89b13}
+
+
+Definition at line 9 of file service3\+\_\+behavior.\+h.
+
+\index{Service3\+Behavior@{Service3\+Behavior}!value\+\_\+@{value\+\_\+}}
+\index{value\+\_\+@{value\+\_\+}!Service3\+Behavior@{Service3\+Behavior}}
+\subsubsection[{\texorpdfstring{value\+\_\+}{value_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Service3\+Command} Service3\+Behavior\+::value\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classService3Behavior_a63303d829c0433edf1a0bf104c386ac9}{}\label{classService3Behavior_a63303d829c0433edf1a0bf104c386ac9}
+
+
+Definition at line 10 of file service3\+\_\+behavior.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+examples/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/substate\+\_\+behaviors/service\+\_\+client/\hyperlink{service3__behavior_8h}{service3\+\_\+behavior.\+h}\end{DoxyCompactItemize}

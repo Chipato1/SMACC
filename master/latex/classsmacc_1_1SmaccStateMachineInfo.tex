@@ -1,0 +1,295 @@
+\hypertarget{classsmacc_1_1SmaccStateMachineInfo}{}\section{smacc\+:\+:Smacc\+State\+Machine\+Info Class Reference}
+\label{classsmacc_1_1SmaccStateMachineInfo}\index{smacc\+::\+Smacc\+State\+Machine\+Info@{smacc\+::\+Smacc\+State\+Machine\+Info}}
+
+
+{\ttfamily \#include $<$smacc\+\_\+state\+\_\+machine\+\_\+info.\+h$>$}
+
+
+
+Inheritance diagram for smacc\+:\+:Smacc\+State\+Machine\+Info\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{classsmacc_1_1SmaccStateMachineInfo__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+:\+:Smacc\+State\+Machine\+Info\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SmaccStateMachineInfo__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Initial\+State\+Type $>$ }\\void \hyperlink{classsmacc_1_1SmaccStateMachineInfo_abef92b54a5e643232491db968de4aff0}{build\+State\+Machine\+Info} ()
+\item 
+{\footnotesize template$<$typename State\+Type $>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \hyperlink{classsmacc_1_1SmaccStateMachineInfo_a2d5759ccb5a8296debcc5dec741d3b42}{create\+State} (std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ parent\+State)
+\item 
+{\footnotesize template$<$typename State\+Type $>$ }\\\hyperlink{classbool}{bool} \hyperlink{classsmacc_1_1SmaccStateMachineInfo_a416fe38639da791c2c77686988b545b0}{contains\+State} ()
+\item 
+{\footnotesize template$<$typename State\+Type $>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \hyperlink{classsmacc_1_1SmaccStateMachineInfo_a50cfbf5f500583054b98aaef7495bdb0}{get\+State} ()
+\item 
+{\footnotesize template$<$typename State\+Type $>$ }\\void \hyperlink{classsmacc_1_1SmaccStateMachineInfo_a188e81067d4a693ce479518dc87cf89b}{add\+State} (std\+::shared\+\_\+ptr$<$ State\+Type $>$ \&state)
+\item 
+void \hyperlink{classsmacc_1_1SmaccStateMachineInfo_a9f7848e013ff10b06f5a32cf81bd108f}{print\+All\+States} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ $>$ \hyperlink{classsmacc_1_1SmaccStateMachineInfo_a8d6f1a9ce60f39835e7aa2179139977f}{states}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::\+Smacc\+State\+Machine\+Info@{smacc\+::\+Smacc\+State\+Machine\+Info}!add\+State@{add\+State}}
+\index{add\+State@{add\+State}!smacc\+::\+Smacc\+State\+Machine\+Info@{smacc\+::\+Smacc\+State\+Machine\+Info}}
+\subsubsection[{\texorpdfstring{add\+State(std\+::shared\+\_\+ptr$<$ State\+Type $>$ \&state)}{addState(std::shared_ptr< StateType > &state)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename State\+Type $>$ void smacc\+::\+Smacc\+State\+Machine\+Info\+::add\+State (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ State\+Type $>$ \&}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1SmaccStateMachineInfo_a188e81067d4a693ce479518dc87cf89b}{}\label{classsmacc_1_1SmaccStateMachineInfo_a188e81067d4a693ce479518dc87cf89b}
+
+
+Definition at line 263 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+References states.
+
+
+
+Referenced by create\+State(), and get\+State().
+
+
+\begin{DoxyCode}
+264 \{
+265     \hyperlink{classsmacc_1_1SmaccStateMachineInfo_a8d6f1a9ce60f39835e7aa2179139977f}{states}[state->fullStateName] = state;
+266 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SmaccStateMachineInfo_a188e81067d4a693ce479518dc87cf89b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Smacc\+State\+Machine\+Info@{smacc\+::\+Smacc\+State\+Machine\+Info}!build\+State\+Machine\+Info@{build\+State\+Machine\+Info}}
+\index{build\+State\+Machine\+Info@{build\+State\+Machine\+Info}!smacc\+::\+Smacc\+State\+Machine\+Info@{smacc\+::\+Smacc\+State\+Machine\+Info}}
+\subsubsection[{\texorpdfstring{build\+State\+Machine\+Info()}{buildStateMachineInfo()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Initial\+State\+Type $>$ void smacc\+::\+Smacc\+State\+Machine\+Info\+::build\+State\+Machine\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1SmaccStateMachineInfo_abef92b54a5e643232491db968de4aff0}{}\label{classsmacc_1_1SmaccStateMachineInfo_abef92b54a5e643232491db968de4aff0}
+
+
+Definition at line 233 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+References smacc\+::\+Walk\+States\+Executor$<$ Initial\+State\+Type $>$\+::walk\+States().
+
+
+\begin{DoxyCode}
+234 \{
+235     \textcolor{keyword}{auto} initialState = this->createState<InitialStateType>(\textcolor{keyword}{nullptr});
+236     \hyperlink{structsmacc_1_1WalkStatesExecutor_a11a2b02eafb62ec298bcf5ffbb32848b}{WalkStatesExecutor<InitialStateType>::walkStates}(
+      initialState, \textcolor{keyword}{true});
+237 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SmaccStateMachineInfo_abef92b54a5e643232491db968de4aff0_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Smacc\+State\+Machine\+Info@{smacc\+::\+Smacc\+State\+Machine\+Info}!contains\+State@{contains\+State}}
+\index{contains\+State@{contains\+State}!smacc\+::\+Smacc\+State\+Machine\+Info@{smacc\+::\+Smacc\+State\+Machine\+Info}}
+\subsubsection[{\texorpdfstring{contains\+State()}{containsState()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename State\+Type $>$ {\bf bool} smacc\+::\+Smacc\+State\+Machine\+Info\+::contains\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccStateMachineInfo_a416fe38639da791c2c77686988b545b0}{}\label{classsmacc_1_1SmaccStateMachineInfo_a416fe38639da791c2c77686988b545b0}
+
+
+Definition at line 22 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+\begin{DoxyCode}
+23     \{
+24         \textcolor{keyword}{auto} typeNameStr = \textcolor{keyword}{typeid}(StateType).name();
+25 
+26         \textcolor{keywordflow}{return} \hyperlink{classsmacc_1_1SmaccStateMachineInfo_a8d6f1a9ce60f39835e7aa2179139977f}{states}.count(typeNameStr) > 0;
+27     \}
+\end{DoxyCode}
+\index{smacc\+::\+Smacc\+State\+Machine\+Info@{smacc\+::\+Smacc\+State\+Machine\+Info}!create\+State@{create\+State}}
+\index{create\+State@{create\+State}!smacc\+::\+Smacc\+State\+Machine\+Info@{smacc\+::\+Smacc\+State\+Machine\+Info}}
+\subsubsection[{\texorpdfstring{create\+State(std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ parent\+State)}{createState(std::shared_ptr< SmaccStateInfo > parentState)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename State\+Type $>$ std\+::shared\+\_\+ptr$<$ {\bf Smacc\+State\+Info} $>$ smacc\+::\+Smacc\+State\+Machine\+Info\+::create\+State (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Smacc\+State\+Info} $>$}]{parent\+State}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1SmaccStateMachineInfo_a2d5759ccb5a8296debcc5dec741d3b42}{}\label{classsmacc_1_1SmaccStateMachineInfo_a2d5759ccb5a8296debcc5dec741d3b42}
+
+
+Definition at line 240 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+References add\+State().
+
+
+\begin{DoxyCode}
+241 \{
+242     \textcolor{keyword}{auto} thisptr = this->shared\_from\_this();
+243     \textcolor{keyword}{auto} state = std::shared\_ptr<SmaccStateInfo>(\textcolor{keyword}{new} SmaccStateInfo(parent, thisptr));
+244     state->demangledStateName = demangledTypeName<StateType>();
+245     state->fullStateName = \textcolor{keyword}{typeid}(StateType).name();
+246 
+247     std::vector<std::string> strs;
+248     boost::split(strs, state->demangledStateName, boost::is\_any\_of(\textcolor{stringliteral}{":"}));
+249 
+250     state->demangledStateName = strs.back();
+251 
+252     \textcolor{keywordflow}{if} (parent != \textcolor{keyword}{nullptr})
+253     \{
+254         parent->children\_.push\_back(state);
+255     \}
+256 
+257     this->\hyperlink{classsmacc_1_1SmaccStateMachineInfo_a188e81067d4a693ce479518dc87cf89b}{addState}(state);
+258 
+259     \textcolor{keywordflow}{return} state;
+260 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SmaccStateMachineInfo_a2d5759ccb5a8296debcc5dec741d3b42_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Smacc\+State\+Machine\+Info@{smacc\+::\+Smacc\+State\+Machine\+Info}!get\+State@{get\+State}}
+\index{get\+State@{get\+State}!smacc\+::\+Smacc\+State\+Machine\+Info@{smacc\+::\+Smacc\+State\+Machine\+Info}}
+\subsubsection[{\texorpdfstring{get\+State()}{getState()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename State\+Type $>$ std\+::shared\+\_\+ptr$<${\bf Smacc\+State\+Info}$>$ smacc\+::\+Smacc\+State\+Machine\+Info\+::get\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccStateMachineInfo_a50cfbf5f500583054b98aaef7495bdb0}{}\label{classsmacc_1_1SmaccStateMachineInfo_a50cfbf5f500583054b98aaef7495bdb0}
+
+
+Definition at line 30 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+References add\+State().
+
+
+\begin{DoxyCode}
+31     \{
+32         \textcolor{keywordflow}{if} (this->containsState<StateType>())
+33         \{
+34             \textcolor{keywordflow}{return} \hyperlink{classsmacc_1_1SmaccStateMachineInfo_a8d6f1a9ce60f39835e7aa2179139977f}{states}[\textcolor{keyword}{typeid}(StateType).name()];
+35         \}
+36         \textcolor{keywordflow}{return} \textcolor{keyword}{nullptr};
+37     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SmaccStateMachineInfo_a50cfbf5f500583054b98aaef7495bdb0_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Smacc\+State\+Machine\+Info@{smacc\+::\+Smacc\+State\+Machine\+Info}!print\+All\+States@{print\+All\+States}}
+\index{print\+All\+States@{print\+All\+States}!smacc\+::\+Smacc\+State\+Machine\+Info@{smacc\+::\+Smacc\+State\+Machine\+Info}}
+\subsubsection[{\texorpdfstring{print\+All\+States()}{printAllStates()}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Smacc\+State\+Machine\+Info\+::print\+All\+States (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccStateMachineInfo_a9f7848e013ff10b06f5a32cf81bd108f}{}\label{classsmacc_1_1SmaccStateMachineInfo_a9f7848e013ff10b06f5a32cf81bd108f}
+
+
+Definition at line 42 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+\begin{DoxyCode}
+43     \{
+44         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &val : this->\hyperlink{classsmacc_1_1SmaccStateMachineInfo_a8d6f1a9ce60f39835e7aa2179139977f}{states})
+45         \{
+46             \textcolor{keyword}{auto} state = val.second;
+47 
+48             std::stringstream ss;
+49             \textcolor{keywordflow}{if} (state->parentState\_ == \textcolor{keyword}{nullptr})
+50             \{
+51                 ss << \textcolor{stringliteral}{"**** Print StateType: "} << state->demangledStateName << std::endl;
+52                 ss << \textcolor{stringliteral}{" Childstates:"} << std::endl;
+53 
+54                 \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &child : state->children\_)
+55                 \{
+56                     ss << \textcolor{stringliteral}{" - "} << child->demangledStateName << std::endl;
+57                 \}
+58 
+59                 ss << \textcolor{stringliteral}{" Transitions:"} << std::endl;
+60 
+61                 \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &transition : state->transitions\_)
+62                 \{
+63                     ss << \textcolor{stringliteral}{" - "} << transition.first << \textcolor{stringliteral}{" -> "} << transition.second->demangledStateName << 
+      std::endl;
+64                 \}
+65 
+66                 ROS\_INFO\_STREAM(ss.str());
+67             \}
+68         \}
+69     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+::\+Smacc\+State\+Machine\+Info@{smacc\+::\+Smacc\+State\+Machine\+Info}!states@{states}}
+\index{states@{states}!smacc\+::\+Smacc\+State\+Machine\+Info@{smacc\+::\+Smacc\+State\+Machine\+Info}}
+\subsubsection[{\texorpdfstring{states}{states}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$std\+::string, std\+::shared\+\_\+ptr$<${\bf Smacc\+State\+Info}$>$ $>$ smacc\+::\+Smacc\+State\+Machine\+Info\+::states}\hypertarget{classsmacc_1_1SmaccStateMachineInfo_a8d6f1a9ce60f39835e7aa2179139977f}{}\label{classsmacc_1_1SmaccStateMachineInfo_a8d6f1a9ce60f39835e7aa2179139977f}
+
+
+Definition at line 13 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+Referenced by add\+State().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc/include/smacc/\hyperlink{smacc__state__machine__info_8h}{smacc\+\_\+state\+\_\+machine\+\_\+info.\+h}\end{DoxyCompactItemize}

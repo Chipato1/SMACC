@@ -1,0 +1,401 @@
+\hypertarget{classsmacc_1_1SmaccSubStateBehavior}{}\section{smacc\+:\+:Smacc\+Sub\+State\+Behavior Class Reference}
+\label{classsmacc_1_1SmaccSubStateBehavior}\index{smacc\+::\+Smacc\+Sub\+State\+Behavior@{smacc\+::\+Smacc\+Sub\+State\+Behavior}}
+
+
+{\ttfamily \#include $<$smacc\+\_\+substate\+\_\+behavior.\+h$>$}
+
+
+
+Inheritance diagram for smacc\+:\+:Smacc\+Sub\+State\+Behavior\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SmaccSubStateBehavior__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+:\+:Smacc\+Sub\+State\+Behavior\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SmaccSubStateBehavior__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc_1_1SmaccSubStateBehavior_abc902f4fa003071f759a2255b276fb90}{Smacc\+Sub\+State\+Behavior} ()
+\item 
+virtual \hyperlink{classsmacc_1_1SmaccSubStateBehavior_a69c91bee534322bc09423d6f5b0c33a2}{$\sim$\+Smacc\+Sub\+State\+Behavior} ()
+\item 
+{\footnotesize template$<$typename Event\+Type $>$ }\\void \hyperlink{classsmacc_1_1SmaccSubStateBehavior_a8538664f9828247727a27446112788a2}{post\+Event} (const Event\+Type \&ev)
+\item 
+{\footnotesize template$<$typename Smacc\+Component\+Type $>$ }\\void \hyperlink{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}{requires\+Component} (Smacc\+Component\+Type $\ast$\&storage, ros\+::\+Node\+Handle nh=ros\+::\+Node\+Handle(), std\+::string value=\char`\"{}\char`\"{}, \hyperlink{classbool}{bool} verbose=false)
+\item 
+std\+::string \hyperlink{classsmacc_1_1SmaccSubStateBehavior_a077a9784d17e3a95284ad351a43cfcbb}{get\+Name} () const 
+\item 
+virtual void \hyperlink{classsmacc_1_1SmaccSubStateBehavior_a7c28e1c46238bbb2c2e0450573c6de94}{on\+Entry} ()
+\item 
+virtual \hyperlink{classbool}{bool} \hyperlink{classsmacc_1_1SmaccSubStateBehavior_ab78b9de76c04a7ab6c16d5924e216ef9}{on\+Exit} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc_1_1ISmaccStateMachine}{I\+Smacc\+State\+Machine} $\ast$ \hyperlink{classsmacc_1_1SmaccSubStateBehavior_ae3ff8a316bdd4bc5b7fee59d19464609}{state\+Machine}
+\item 
+\hyperlink{classsmacc_1_1ISmaccState}{I\+Smacc\+State} $\ast$ \hyperlink{classsmacc_1_1SmaccSubStateBehavior_a62e2b9da4a446f09396d0b4c01659b88}{current\+State}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 31 of file smacc\+\_\+substate\+\_\+behavior.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+::\+Smacc\+Sub\+State\+Behavior@{smacc\+::\+Smacc\+Sub\+State\+Behavior}!Smacc\+Sub\+State\+Behavior@{Smacc\+Sub\+State\+Behavior}}
+\index{Smacc\+Sub\+State\+Behavior@{Smacc\+Sub\+State\+Behavior}!smacc\+::\+Smacc\+Sub\+State\+Behavior@{smacc\+::\+Smacc\+Sub\+State\+Behavior}}
+\subsubsection[{\texorpdfstring{Smacc\+Sub\+State\+Behavior()}{SmaccSubStateBehavior()}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+::\+Smacc\+Sub\+State\+Behavior\+::\+Smacc\+Sub\+State\+Behavior (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccSubStateBehavior_abc902f4fa003071f759a2255b276fb90}{}\label{classsmacc_1_1SmaccSubStateBehavior_abc902f4fa003071f759a2255b276fb90}
+
+
+Definition at line 40 of file smacc\+\_\+substate\+\_\+behavior.\+h.
+
+
+\begin{DoxyCode}
+41     \{
+42         \hyperlink{classsmacc_1_1SmaccSubStateBehavior_ae3ff8a316bdd4bc5b7fee59d19464609}{stateMachine} = \textcolor{keyword}{nullptr};
+43         \hyperlink{classsmacc_1_1SmaccSubStateBehavior_a62e2b9da4a446f09396d0b4c01659b88}{currentState} = \textcolor{keyword}{nullptr};
+44     \}
+\end{DoxyCode}
+\index{smacc\+::\+Smacc\+Sub\+State\+Behavior@{smacc\+::\+Smacc\+Sub\+State\+Behavior}!````~Smacc\+Sub\+State\+Behavior@{$\sim$\+Smacc\+Sub\+State\+Behavior}}
+\index{````~Smacc\+Sub\+State\+Behavior@{$\sim$\+Smacc\+Sub\+State\+Behavior}!smacc\+::\+Smacc\+Sub\+State\+Behavior@{smacc\+::\+Smacc\+Sub\+State\+Behavior}}
+\subsubsection[{\texorpdfstring{$\sim$\+Smacc\+Sub\+State\+Behavior()}{~SmaccSubStateBehavior()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual smacc\+::\+Smacc\+Sub\+State\+Behavior\+::$\sim$\+Smacc\+Sub\+State\+Behavior (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1SmaccSubStateBehavior_a69c91bee534322bc09423d6f5b0c33a2}{}\label{classsmacc_1_1SmaccSubStateBehavior_a69c91bee534322bc09423d6f5b0c33a2}
+
+
+Definition at line 46 of file smacc\+\_\+substate\+\_\+behavior.\+h.
+
+
+\begin{DoxyCode}
+47     \{
+48         ROS\_WARN(\textcolor{stringliteral}{"Substate behavior deallocated."});
+49     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::\+Smacc\+Sub\+State\+Behavior@{smacc\+::\+Smacc\+Sub\+State\+Behavior}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!smacc\+::\+Smacc\+Sub\+State\+Behavior@{smacc\+::\+Smacc\+Sub\+State\+Behavior}}
+\subsubsection[{\texorpdfstring{get\+Name() const }{getName() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::\+Smacc\+Sub\+State\+Behavior\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccSubStateBehavior_a077a9784d17e3a95284ad351a43cfcbb}{}\label{classsmacc_1_1SmaccSubStateBehavior_a077a9784d17e3a95284ad351a43cfcbb}
+
+
+Definition at line 79 of file smacc\+\_\+substate\+\_\+behavior.\+h.
+
+
+
+References demangle\+Symbol().
+
+
+
+Referenced by on\+Entry(), and on\+Exit().
+
+
+\begin{DoxyCode}
+80     \{
+81         \textcolor{keywordflow}{return} \hyperlink{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{demangleSymbol}(\textcolor{keyword}{typeid}(*this).name());
+82     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SmaccSubStateBehavior_a077a9784d17e3a95284ad351a43cfcbb_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SmaccSubStateBehavior_a077a9784d17e3a95284ad351a43cfcbb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Smacc\+Sub\+State\+Behavior@{smacc\+::\+Smacc\+Sub\+State\+Behavior}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!smacc\+::\+Smacc\+Sub\+State\+Behavior@{smacc\+::\+Smacc\+Sub\+State\+Behavior}}
+\subsubsection[{\texorpdfstring{on\+Entry()}{onEntry()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void smacc\+::\+Smacc\+Sub\+State\+Behavior\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1SmaccSubStateBehavior_a7c28e1c46238bbb2c2e0450573c6de94}{}\label{classsmacc_1_1SmaccSubStateBehavior_a7c28e1c46238bbb2c2e0450573c6de94}
+
+
+Reimplemented in \hyperlink{classsmacc_1_1Timer_ab99111438ad35cf740ed4bd8c136ff6a}{smacc\+::\+Timer}, \hyperlink{classSbNavigateBackwards_a59b7bc4f0b714f548c73659c87dd405e}{Sb\+Navigate\+Backwards}, \hyperlink{classNavigateForward_a2a1ad66b031773aeac11663020afebba}{Navigate\+Forward}, \hyperlink{classSbNavigateForward_a0e01d850ed0e028f3b9b3704862c7ea5}{Sb\+Navigate\+Forward}, \hyperlink{classSbNavigateGlobalPosition_ae4c1f2e5de1077ee88d506eb69099f0c}{Sb\+Navigate\+Global\+Position}, \hyperlink{classRotate_ab07f79966ab172e454139c4139adf51b}{Rotate}, \hyperlink{classsmacc_1_1SensorTopic_a27fe3515e3981a5a393dea193902cbd0}{smacc\+::\+Sensor\+Topic$<$ Message\+Type $>$}, \hyperlink{classSbRotate_adb33f70659313834da495c294e2eafeb}{Sb\+Rotate}, \hyperlink{classsmacc_1_1SensorTopic_a27fe3515e3981a5a393dea193902cbd0}{smacc\+::\+Sensor\+Topic$<$ sensor\+\_\+msgs\+::\+Temperature $>$}, \hyperlink{classsmacc_1_1Keyboard_afd90aca9ae741a0648e273b70771ac1d}{smacc\+::\+Keyboard}, \hyperlink{classNavigateGlobalPosition_a80962ce5bba51285565e360872f58c47}{Navigate\+Global\+Position}, \hyperlink{classsmacc_1_1SbStringPublisher_adde036f7d11370ec44ed418c2734b60a}{smacc\+::\+Sb\+String\+Publisher}, \hyperlink{classSbUndoPathBackwards_ab7eed4fa4633235b877758bd787bbea1}{Sb\+Undo\+Path\+Backwards}, \hyperlink{classService3Behavior_a914618fa7f8152868204543838cd8359}{Service3\+Behavior}, \hyperlink{classUndoPathBackwards_a073a69a9e7b89d38faaab47096df292c}{Undo\+Path\+Backwards}, \hyperlink{classsmacc_1_1SbKeyboard_ac8a485f7d89b8173ae17d9b190105f21}{smacc\+::\+Sb\+Keyboard}, \hyperlink{classSbToolStart_a1f027da301c03b5114fc241c820dd56a}{Sb\+Tool\+Start}, \hyperlink{classToolStart_a23b54807a3d839a08a6031e67b341a4f}{Tool\+Start}, \hyperlink{classSbToolStop_a411f6a864d2d70be43bdedc0c7ce77ac}{Sb\+Tool\+Stop}, and \hyperlink{classToolStop_a1db01a6b333c6570cbad3495a483d452}{Tool\+Stop}.
+
+
+
+Definition at line 84 of file smacc\+\_\+substate\+\_\+behavior.\+h.
+
+
+
+References get\+Name().
+
+
+
+Referenced by smacc\+::\+Smacc\+State$<$ St\+Navigate\+Forward1, Sm\+Dance\+Bot $>$\+::\+Smacc\+State().
+
+
+\begin{DoxyCode}
+85     \{
+86         ROS\_INFO(\textcolor{stringliteral}{"SmaccSubStateBehavior %s onEntry"}, this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a077a9784d17e3a95284ad351a43cfcbb}{getName}().c\_str());
+87     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SmaccSubStateBehavior_a7c28e1c46238bbb2c2e0450573c6de94_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SmaccSubStateBehavior_a7c28e1c46238bbb2c2e0450573c6de94_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Smacc\+Sub\+State\+Behavior@{smacc\+::\+Smacc\+Sub\+State\+Behavior}!on\+Exit@{on\+Exit}}
+\index{on\+Exit@{on\+Exit}!smacc\+::\+Smacc\+Sub\+State\+Behavior@{smacc\+::\+Smacc\+Sub\+State\+Behavior}}
+\subsubsection[{\texorpdfstring{on\+Exit()}{onExit()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf bool} smacc\+::\+Smacc\+Sub\+State\+Behavior\+::on\+Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1SmaccSubStateBehavior_ab78b9de76c04a7ab6c16d5924e216ef9}{}\label{classsmacc_1_1SmaccSubStateBehavior_ab78b9de76c04a7ab6c16d5924e216ef9}
+
+
+Reimplemented in \hyperlink{classSbNavigateBackwards_afc23bccc5d951e064bd8a9283934e7ec}{Sb\+Navigate\+Backwards}, \hyperlink{classSbNavigateForward_ac16315240c9dd4e5e7f3681455f997cb}{Sb\+Navigate\+Forward}, \hyperlink{classSbNavigateGlobalPosition_a9a002dcd2bcc35d8f87f79d32e47fb3c}{Sb\+Navigate\+Global\+Position}, \hyperlink{classNavigateGlobalPosition_aa5e17638bdf3944631e81d901632bb72}{Navigate\+Global\+Position}, \hyperlink{classsmacc_1_1SensorTopic_a563d6288b66605ca99320eab5de9cfba}{smacc\+::\+Sensor\+Topic$<$ Message\+Type $>$}, \hyperlink{classsmacc_1_1SensorTopic_a563d6288b66605ca99320eab5de9cfba}{smacc\+::\+Sensor\+Topic$<$ sensor\+\_\+msgs\+::\+Temperature $>$}, \hyperlink{classsmacc_1_1Timer_a5984dee1815d8626f7728c08aa7c6278}{smacc\+::\+Timer}, \hyperlink{classsmacc_1_1Keyboard_a494dd2f35c5b1fb520b4f4cd4b61b6a9}{smacc\+::\+Keyboard}, \hyperlink{classsmacc_1_1SbKeyboard_adbfe63be296d5e93b51de80672ea36c5}{smacc\+::\+Sb\+Keyboard}, \hyperlink{classsmacc_1_1SbStringPublisher_a6e8de8b5d553092467ae980aa08ae576}{smacc\+::\+Sb\+String\+Publisher}, \hyperlink{classSbToolStart_ade7a5c2b52056ba0bb6c089c8d8b4949}{Sb\+Tool\+Start}, \hyperlink{classToolStart_ab258607079d47d3ef0da92c085020bd4}{Tool\+Start}, \hyperlink{classSbToolStop_a297d4c079bc5d8d06010dcf28cff98dc}{Sb\+Tool\+Stop}, and \hyperlink{classToolStop_a8c5028c3e7aa2de0b5b48793d38784b3}{Tool\+Stop}.
+
+
+
+Definition at line 89 of file smacc\+\_\+substate\+\_\+behavior.\+h.
+
+
+
+References get\+Name().
+
+
+
+Referenced by smacc\+::\+Smacc\+State$<$ St\+Navigate\+Forward1, Sm\+Dance\+Bot $>$\+::$\sim$\+Smacc\+State().
+
+
+\begin{DoxyCode}
+90     \{
+91         ROS\_INFO(\textcolor{stringliteral}{"SmaccSubStateBehavior %s onExit"}, this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a077a9784d17e3a95284ad351a43cfcbb}{getName}().c\_str());
+92         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+93     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SmaccSubStateBehavior_ab78b9de76c04a7ab6c16d5924e216ef9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SmaccSubStateBehavior_ab78b9de76c04a7ab6c16d5924e216ef9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Smacc\+Sub\+State\+Behavior@{smacc\+::\+Smacc\+Sub\+State\+Behavior}!post\+Event@{post\+Event}}
+\index{post\+Event@{post\+Event}!smacc\+::\+Smacc\+Sub\+State\+Behavior@{smacc\+::\+Smacc\+Sub\+State\+Behavior}}
+\subsubsection[{\texorpdfstring{post\+Event(const Event\+Type \&ev)}{postEvent(const EventType &ev)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Event\+Type $>$ void smacc\+::\+Smacc\+Sub\+State\+Behavior\+::post\+Event (
+\begin{DoxyParamCaption}
+\item[{const Event\+Type \&}]{ev}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccSubStateBehavior_a8538664f9828247727a27446112788a2}{}\label{classsmacc_1_1SmaccSubStateBehavior_a8538664f9828247727a27446112788a2}
+
+
+Definition at line 52 of file smacc\+\_\+substate\+\_\+behavior.\+h.
+
+
+
+References smacc\+::\+I\+Smacc\+State\+Machine\+::post\+Event().
+
+
+
+Referenced by smacc\+::\+Sensor\+Topic$<$ sensor\+\_\+msgs\+::\+Temperature $>$\+::on\+Entry(), and smacc\+::\+Sb\+Keyboard\+::post\+Key\+Event().
+
+
+\begin{DoxyCode}
+53     \{
+54         \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1SmaccSubStateBehavior_ae3ff8a316bdd4bc5b7fee59d19464609}{stateMachine} == \textcolor{keyword}{nullptr})
+55         \{
+56             ROS\_ERROR(\textcolor{stringliteral}{"The substate behavior cannot post events before being assigned to an orthogonal.
+       Ignoring post event call."});
+57         \}
+58         \textcolor{keywordflow}{else}
+59         \{
+60             \hyperlink{classsmacc_1_1SmaccSubStateBehavior_ae3ff8a316bdd4bc5b7fee59d19464609}{stateMachine}->\hyperlink{classsmacc_1_1ISmaccStateMachine_ad80cdd7bbc9a9f3b221c625754fed1ed}{postEvent}(ev);
+61         \}
+62     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SmaccSubStateBehavior_a8538664f9828247727a27446112788a2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SmaccSubStateBehavior_a8538664f9828247727a27446112788a2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Smacc\+Sub\+State\+Behavior@{smacc\+::\+Smacc\+Sub\+State\+Behavior}!requires\+Component@{requires\+Component}}
+\index{requires\+Component@{requires\+Component}!smacc\+::\+Smacc\+Sub\+State\+Behavior@{smacc\+::\+Smacc\+Sub\+State\+Behavior}}
+\subsubsection[{\texorpdfstring{requires\+Component(\+Smacc\+Component\+Type $\ast$\&storage, ros\+::\+Node\+Handle nh=ros\+::\+Node\+Handle(), std\+::string value="""", bool verbose=false)}{requiresComponent(SmaccComponentType *&storage, ros::NodeHandle nh=ros::NodeHandle(), std::string value="", bool verbose=false)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Smacc\+Component\+Type $>$ void smacc\+::\+Smacc\+Sub\+State\+Behavior\+::requires\+Component (
+\begin{DoxyParamCaption}
+\item[{Smacc\+Component\+Type $\ast$\&}]{storage, }
+\item[{ros\+::\+Node\+Handle}]{nh = {\ttfamily ros\+:\+:NodeHandle()}, }
+\item[{std\+::string}]{value = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{{\bf bool}}]{verbose = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}{}\label{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}
+
+
+Definition at line 65 of file smacc\+\_\+substate\+\_\+behavior.\+h.
+
+
+
+References smacc\+::\+I\+Smacc\+State\+Machine\+::requires\+Component().
+
+
+
+Referenced by Sb\+Tool\+Stop\+::on\+Entry(), Tool\+Stop\+::on\+Entry(), Sb\+Tool\+Start\+::on\+Entry(), Tool\+Start\+::on\+Entry(), smacc\+::\+Sb\+Keyboard\+::on\+Entry(), Undo\+Path\+Backwards\+::on\+Entry(), Sb\+Undo\+Path\+Backwards\+::on\+Entry(), smacc\+::\+Sb\+String\+Publisher\+::on\+Entry(), Navigate\+Global\+Position\+::on\+Entry(), smacc\+::\+Sensor\+Topic$<$ sensor\+\_\+msgs\+::\+Temperature $>$\+::on\+Entry(), Sb\+Rotate\+::on\+Entry(), Sb\+Navigate\+Global\+Position\+::on\+Entry(), Rotate\+::on\+Entry(), Sb\+Navigate\+Forward\+::on\+Entry(), Navigate\+Forward\+::on\+Entry(), and Sb\+Navigate\+Backwards\+::on\+Entry().
+
+
+\begin{DoxyCode}
+68     \{
+69         \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1SmaccSubStateBehavior_ae3ff8a316bdd4bc5b7fee59d19464609}{stateMachine} == \textcolor{keyword}{nullptr})
+70         \{
+71             ROS\_ERROR(\textcolor{stringliteral}{"Cannot use the requiresComponent funcionality before asigning the substate behavior
+       to an orthogonal. Try using the OnEntry method to capture required components."});
+72         \}
+73         \textcolor{keywordflow}{else}
+74         \{
+75             \hyperlink{classsmacc_1_1SmaccSubStateBehavior_ae3ff8a316bdd4bc5b7fee59d19464609}{stateMachine}->\hyperlink{classsmacc_1_1ISmaccStateMachine_a7f4c12bb2def8eceb718bd5e9a55076a}{requiresComponent}(storage, nh, value, verbose);
+76         \}
+77     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+::\+Smacc\+Sub\+State\+Behavior@{smacc\+::\+Smacc\+Sub\+State\+Behavior}!current\+State@{current\+State}}
+\index{current\+State@{current\+State}!smacc\+::\+Smacc\+Sub\+State\+Behavior@{smacc\+::\+Smacc\+Sub\+State\+Behavior}}
+\subsubsection[{\texorpdfstring{current\+State}{currentState}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Smacc\+State}$\ast$ smacc\+::\+Smacc\+Sub\+State\+Behavior\+::current\+State}\hypertarget{classsmacc_1_1SmaccSubStateBehavior_a62e2b9da4a446f09396d0b4c01659b88}{}\label{classsmacc_1_1SmaccSubStateBehavior_a62e2b9da4a446f09396d0b4c01659b88}
+
+
+Definition at line 38 of file smacc\+\_\+substate\+\_\+behavior.\+h.
+
+
+
+Referenced by smacc\+::\+I\+Smacc\+State\+::configure\+State\+Behavior(), Sb\+Rotate\+::on\+Entry(), Rotate\+::on\+Entry(), Sb\+Navigate\+Forward\+::on\+Entry(), Navigate\+Forward\+::on\+Entry(), Sb\+Navigate\+Backwards\+::on\+Entry(), Navigate\+Global\+Position\+::read\+Start\+Pose\+From\+Parameter\+Server(), and Sb\+Navigate\+Global\+Position\+::read\+Start\+Pose\+From\+Parameter\+Server().
+
+\index{smacc\+::\+Smacc\+Sub\+State\+Behavior@{smacc\+::\+Smacc\+Sub\+State\+Behavior}!state\+Machine@{state\+Machine}}
+\index{state\+Machine@{state\+Machine}!smacc\+::\+Smacc\+Sub\+State\+Behavior@{smacc\+::\+Smacc\+Sub\+State\+Behavior}}
+\subsubsection[{\texorpdfstring{state\+Machine}{stateMachine}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Smacc\+State\+Machine}$\ast$ smacc\+::\+Smacc\+Sub\+State\+Behavior\+::state\+Machine}\hypertarget{classsmacc_1_1SmaccSubStateBehavior_ae3ff8a316bdd4bc5b7fee59d19464609}{}\label{classsmacc_1_1SmaccSubStateBehavior_ae3ff8a316bdd4bc5b7fee59d19464609}
+
+
+Definition at line 37 of file smacc\+\_\+substate\+\_\+behavior.\+h.
+
+
+
+Referenced by smacc\+::\+I\+Smacc\+State\+::configure\+State\+Behavior(), Navigate\+Global\+Position\+::go\+To\+Radial\+Start(), and Sb\+Navigate\+Global\+Position\+::go\+To\+Radial\+Start().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc/include/smacc/\hyperlink{smacc__substate__behavior_8h}{smacc\+\_\+substate\+\_\+behavior.\+h}\end{DoxyCompactItemize}

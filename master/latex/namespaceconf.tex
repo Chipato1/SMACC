@@ -1,0 +1,234 @@
+\hypertarget{namespaceconf}{}\section{conf Namespace Reference}
+\label{namespaceconf}\index{conf@{conf}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespaceconf_a85ebd472b7d3a9e41a63030cdd5944e6}{html\+\_\+logo} = \textquotesingle{}ros.\+png\textquotesingle{}
+\item 
+list \hyperlink{namespaceconf_a4960231f83b1b44a1ffcd212903b62e8}{html\+\_\+theme\+\_\+path} = \mbox{[}os.\+path.\+join(os.\+path.\+dirname(catkin\+\_\+sphinx.\+\_\+\+\_\+file\+\_\+\+\_\+), \textquotesingle{}theme\textquotesingle{})\mbox{]}
+\item 
+list \hyperlink{namespaceconf_ae475e080536acb271a0a0efe56c3ba42}{extensions}
+\item 
+list \hyperlink{namespaceconf_ae850ae634911b713e036b43894fdd525}{templates\+\_\+path} = \mbox{[}\textquotesingle{}\+\_\+templates\textquotesingle{}\mbox{]}
+\item 
+string \hyperlink{namespaceconf_a10af2a769eb3bd3322e874f677e435b1}{source\+\_\+suffix} = \textquotesingle{}.rst\textquotesingle{}
+\item 
+string \hyperlink{namespaceconf_a6fcd7e5236f355b1e1a55f9d95988810}{master\+\_\+doc} = \textquotesingle{}index\textquotesingle{}
+\item 
+string \hyperlink{namespaceconf_a45653c983098153b78e33600e39230eb}{project} = u\textquotesingle{}rosdoc\+\_\+lite\textquotesingle{}
+\item 
+string \hyperlink{namespaceconf_a33fa97cf51dcb25970fbf53f10159589}{copyright} = u\textquotesingle{}2012, Eitan Marder-\/Eppstein\textquotesingle{}
+\item 
+\hyperlink{namespaceconf_ad32f00e5793a88cf41ae2357bd582ca0}{root} = Element\+Tree(None, os.\+path.\+join(\textquotesingle{}..\textquotesingle{}, \textquotesingle{}package.\+xml\textquotesingle{}))
+\item 
+\hyperlink{namespaceconf_af51f21968ea73bb4391b0d4aed1f7ad2}{version} = root.\+findtext(\textquotesingle{}version\textquotesingle{})
+\item 
+\hyperlink{namespaceconf_aee93453546a31f4e76999ebaadf6e356}{release} = \hyperlink{namespaceconf_af51f21968ea73bb4391b0d4aed1f7ad2}{version}
+\item 
+list \hyperlink{namespaceconf_a7ad48fb6f3e9b129c02346ea0d3527c1}{exclude\+\_\+patterns} = \mbox{[}\textquotesingle{}build\textquotesingle{}\mbox{]}
+\item 
+string \hyperlink{namespaceconf_a641130e096b26cba8a5d63ed38684de7}{pygments\+\_\+style} = \textquotesingle{}sphinx\textquotesingle{}
+\item 
+string \hyperlink{namespaceconf_a6c3bfcc1a44546c1c75ce20f55bd0fd6}{html\+\_\+theme} = \textquotesingle{}ros-\/theme\textquotesingle{}
+\item 
+list \hyperlink{namespaceconf_af4fb5d8851ccaade135c2668dd3ced41}{html\+\_\+static\+\_\+path} = \mbox{[}$\,$\mbox{]}
+\item 
+string \hyperlink{namespaceconf_aab7fddb2766ce3c430d8246fbfdbc7b1}{htmlhelp\+\_\+basename} = \textquotesingle{}rosdoc\+\_\+litedoc\textquotesingle{}
+\item 
+dictionary \hyperlink{namespaceconf_a33619d385ad23765ac6ebb58bf82d43d}{latex\+\_\+elements}
+\item 
+list \hyperlink{namespaceconf_a7812f49970f3de0d15dd7b9b9a10e3a1}{latex\+\_\+documents}
+\item 
+list \hyperlink{namespaceconf_a85efc5fee48a26fa2d651f6eeb38fc2b}{man\+\_\+pages}
+\item 
+list \hyperlink{namespaceconf_a54b0faed214ac92017d5689efbb10672}{texinfo\+\_\+documents}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{conf@{conf}!copyright@{copyright}}
+\index{copyright@{copyright}!conf@{conf}}
+\subsubsection[{\texorpdfstring{copyright}{copyright}}]{\setlength{\rightskip}{0pt plus 5cm}string conf.\+copyright = u\textquotesingle{}2012, Eitan Marder-\/Eppstein\textquotesingle{}}\hypertarget{namespaceconf_a33fa97cf51dcb25970fbf53f10159589}{}\label{namespaceconf_a33fa97cf51dcb25970fbf53f10159589}
+
+
+Definition at line 53 of file conf.\+py.
+
+\index{conf@{conf}!exclude\+\_\+patterns@{exclude\+\_\+patterns}}
+\index{exclude\+\_\+patterns@{exclude\+\_\+patterns}!conf@{conf}}
+\subsubsection[{\texorpdfstring{exclude\+\_\+patterns}{exclude_patterns}}]{\setlength{\rightskip}{0pt plus 5cm}list conf.\+exclude\+\_\+patterns = \mbox{[}\textquotesingle{}build\textquotesingle{}\mbox{]}}\hypertarget{namespaceconf_a7ad48fb6f3e9b129c02346ea0d3527c1}{}\label{namespaceconf_a7ad48fb6f3e9b129c02346ea0d3527c1}
+
+
+Definition at line 81 of file conf.\+py.
+
+\index{conf@{conf}!extensions@{extensions}}
+\index{extensions@{extensions}!conf@{conf}}
+\subsubsection[{\texorpdfstring{extensions}{extensions}}]{\setlength{\rightskip}{0pt plus 5cm}list conf.\+extensions}\hypertarget{namespaceconf_ae475e080536acb271a0a0efe56c3ba42}{}\label{namespaceconf_ae475e080536acb271a0a0efe56c3ba42}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = [\textcolor{stringliteral}{'sphinx.ext.ifconfig'}, \textcolor{stringliteral}{'sphinx.ext.graphviz'},
+2               \textcolor{stringliteral}{'sphinx.ext.intersphinx'}, 
+3               \textcolor{stringliteral}{'catkin\_sphinx.ShLexer'}, \textcolor{stringliteral}{'catkin\_sphinx.cmake'},
+4               \textcolor{stringliteral}{'sphinx.ext.autodoc'}]
+\end{DoxyCode}
+
+
+Definition at line 34 of file conf.\+py.
+
+\index{conf@{conf}!html\+\_\+logo@{html\+\_\+logo}}
+\index{html\+\_\+logo@{html\+\_\+logo}!conf@{conf}}
+\subsubsection[{\texorpdfstring{html\+\_\+logo}{html_logo}}]{\setlength{\rightskip}{0pt plus 5cm}string conf.\+html\+\_\+logo = \textquotesingle{}ros.\+png\textquotesingle{}}\hypertarget{namespaceconf_a85ebd472b7d3a9e41a63030cdd5944e6}{}\label{namespaceconf_a85ebd472b7d3a9e41a63030cdd5944e6}
+
+
+Definition at line 17 of file conf.\+py.
+
+\index{conf@{conf}!html\+\_\+static\+\_\+path@{html\+\_\+static\+\_\+path}}
+\index{html\+\_\+static\+\_\+path@{html\+\_\+static\+\_\+path}!conf@{conf}}
+\subsubsection[{\texorpdfstring{html\+\_\+static\+\_\+path}{html_static_path}}]{\setlength{\rightskip}{0pt plus 5cm}list conf.\+html\+\_\+static\+\_\+path = \mbox{[}$\,$\mbox{]}}\hypertarget{namespaceconf_af4fb5d8851ccaade135c2668dd3ced41}{}\label{namespaceconf_af4fb5d8851ccaade135c2668dd3ced41}
+
+
+Definition at line 137 of file conf.\+py.
+
+\index{conf@{conf}!html\+\_\+theme@{html\+\_\+theme}}
+\index{html\+\_\+theme@{html\+\_\+theme}!conf@{conf}}
+\subsubsection[{\texorpdfstring{html\+\_\+theme}{html_theme}}]{\setlength{\rightskip}{0pt plus 5cm}string conf.\+html\+\_\+theme = \textquotesingle{}ros-\/theme\textquotesingle{}}\hypertarget{namespaceconf_a6c3bfcc1a44546c1c75ce20f55bd0fd6}{}\label{namespaceconf_a6c3bfcc1a44546c1c75ce20f55bd0fd6}
+
+
+Definition at line 108 of file conf.\+py.
+
+\index{conf@{conf}!html\+\_\+theme\+\_\+path@{html\+\_\+theme\+\_\+path}}
+\index{html\+\_\+theme\+\_\+path@{html\+\_\+theme\+\_\+path}!conf@{conf}}
+\subsubsection[{\texorpdfstring{html\+\_\+theme\+\_\+path}{html_theme_path}}]{\setlength{\rightskip}{0pt plus 5cm}list conf.\+html\+\_\+theme\+\_\+path = \mbox{[}os.\+path.\+join(os.\+path.\+dirname(catkin\+\_\+sphinx.\+\_\+\+\_\+file\+\_\+\+\_\+), \textquotesingle{}theme\textquotesingle{})\mbox{]}}\hypertarget{namespaceconf_a4960231f83b1b44a1ffcd212903b62e8}{}\label{namespaceconf_a4960231f83b1b44a1ffcd212903b62e8}
+
+
+Definition at line 20 of file conf.\+py.
+
+\index{conf@{conf}!htmlhelp\+\_\+basename@{htmlhelp\+\_\+basename}}
+\index{htmlhelp\+\_\+basename@{htmlhelp\+\_\+basename}!conf@{conf}}
+\subsubsection[{\texorpdfstring{htmlhelp\+\_\+basename}{htmlhelp_basename}}]{\setlength{\rightskip}{0pt plus 5cm}string conf.\+htmlhelp\+\_\+basename = \textquotesingle{}rosdoc\+\_\+litedoc\textquotesingle{}}\hypertarget{namespaceconf_aab7fddb2766ce3c430d8246fbfdbc7b1}{}\label{namespaceconf_aab7fddb2766ce3c430d8246fbfdbc7b1}
+
+
+Definition at line 181 of file conf.\+py.
+
+\index{conf@{conf}!latex\+\_\+documents@{latex\+\_\+documents}}
+\index{latex\+\_\+documents@{latex\+\_\+documents}!conf@{conf}}
+\subsubsection[{\texorpdfstring{latex\+\_\+documents}{latex_documents}}]{\setlength{\rightskip}{0pt plus 5cm}list conf.\+latex\+\_\+documents}\hypertarget{namespaceconf_a7812f49970f3de0d15dd7b9b9a10e3a1}{}\label{namespaceconf_a7812f49970f3de0d15dd7b9b9a10e3a1}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = [
+2   (\textcolor{stringliteral}{'index'}, \textcolor{stringliteral}{'rosdoc\_lite.tex'}, \textcolor{stringliteral}{u'rosdoc\(\backslash\)\(\backslash\)\_lite Documentation'},
+3    \textcolor{stringliteral}{u'Eitan Marder-Eppstein'}, \textcolor{stringliteral}{'manual'}),
+4 ]
+\end{DoxyCode}
+
+
+Definition at line 199 of file conf.\+py.
+
+\index{conf@{conf}!latex\+\_\+elements@{latex\+\_\+elements}}
+\index{latex\+\_\+elements@{latex\+\_\+elements}!conf@{conf}}
+\subsubsection[{\texorpdfstring{latex\+\_\+elements}{latex_elements}}]{\setlength{\rightskip}{0pt plus 5cm}dictionary conf.\+latex\+\_\+elements}\hypertarget{namespaceconf_a33619d385ad23765ac6ebb58bf82d43d}{}\label{namespaceconf_a33619d385ad23765ac6ebb58bf82d43d}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = \{
+2 \textcolor{comment}{# The paper size ('letterpaper' or 'a4paper').}
+3 \textcolor{comment}{#'papersize': 'letterpaper',}
+4 
+5 \textcolor{comment}{# The font size ('10pt', '11pt' or '12pt').}
+6 \textcolor{comment}{#'pointsize': '10pt',}
+7 
+8 \textcolor{comment}{# Additional stuff for the LaTeX preamble.}
+9 \textcolor{comment}{#'preamble': '',}
+10 \}
+\end{DoxyCode}
+
+
+Definition at line 186 of file conf.\+py.
+
+\index{conf@{conf}!man\+\_\+pages@{man\+\_\+pages}}
+\index{man\+\_\+pages@{man\+\_\+pages}!conf@{conf}}
+\subsubsection[{\texorpdfstring{man\+\_\+pages}{man_pages}}]{\setlength{\rightskip}{0pt plus 5cm}list conf.\+man\+\_\+pages}\hypertarget{namespaceconf_a85efc5fee48a26fa2d651f6eeb38fc2b}{}\label{namespaceconf_a85efc5fee48a26fa2d651f6eeb38fc2b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = [
+2     (\textcolor{stringliteral}{'index'}, \textcolor{stringliteral}{'rosdoc\_lite'}, \textcolor{stringliteral}{u'rosdoc\_lite Documentation'},
+3      [\textcolor{stringliteral}{u'Eitan Marder-Eppstein'}], 1)
+4 ]
+\end{DoxyCode}
+
+
+Definition at line 229 of file conf.\+py.
+
+\index{conf@{conf}!master\+\_\+doc@{master\+\_\+doc}}
+\index{master\+\_\+doc@{master\+\_\+doc}!conf@{conf}}
+\subsubsection[{\texorpdfstring{master\+\_\+doc}{master_doc}}]{\setlength{\rightskip}{0pt plus 5cm}string conf.\+master\+\_\+doc = \textquotesingle{}index\textquotesingle{}}\hypertarget{namespaceconf_a6fcd7e5236f355b1e1a55f9d95988810}{}\label{namespaceconf_a6fcd7e5236f355b1e1a55f9d95988810}
+
+
+Definition at line 49 of file conf.\+py.
+
+\index{conf@{conf}!project@{project}}
+\index{project@{project}!conf@{conf}}
+\subsubsection[{\texorpdfstring{project}{project}}]{\setlength{\rightskip}{0pt plus 5cm}string conf.\+project = u\textquotesingle{}rosdoc\+\_\+lite\textquotesingle{}}\hypertarget{namespaceconf_a45653c983098153b78e33600e39230eb}{}\label{namespaceconf_a45653c983098153b78e33600e39230eb}
+
+
+Definition at line 52 of file conf.\+py.
+
+\index{conf@{conf}!pygments\+\_\+style@{pygments\+\_\+style}}
+\index{pygments\+\_\+style@{pygments\+\_\+style}!conf@{conf}}
+\subsubsection[{\texorpdfstring{pygments\+\_\+style}{pygments_style}}]{\setlength{\rightskip}{0pt plus 5cm}string conf.\+pygments\+\_\+style = \textquotesingle{}sphinx\textquotesingle{}}\hypertarget{namespaceconf_a641130e096b26cba8a5d63ed38684de7}{}\label{namespaceconf_a641130e096b26cba8a5d63ed38684de7}
+
+
+Definition at line 98 of file conf.\+py.
+
+\index{conf@{conf}!release@{release}}
+\index{release@{release}!conf@{conf}}
+\subsubsection[{\texorpdfstring{release}{release}}]{\setlength{\rightskip}{0pt plus 5cm}conf.\+release = {\bf version}}\hypertarget{namespaceconf_aee93453546a31f4e76999ebaadf6e356}{}\label{namespaceconf_aee93453546a31f4e76999ebaadf6e356}
+
+
+Definition at line 67 of file conf.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+smacc\+\_\+user\+\_\+data.\+User\+Data.\+\_\+\+\_\+setattr\+\_\+\+\_\+().
+
+\index{conf@{conf}!root@{root}}
+\index{root@{root}!conf@{conf}}
+\subsubsection[{\texorpdfstring{root}{root}}]{\setlength{\rightskip}{0pt plus 5cm}conf.\+root = Element\+Tree(None, os.\+path.\+join(\textquotesingle{}..\textquotesingle{}, \textquotesingle{}package.\+xml\textquotesingle{}))}\hypertarget{namespaceconf_ad32f00e5793a88cf41ae2357bd582ca0}{}\label{namespaceconf_ad32f00e5793a88cf41ae2357bd582ca0}
+
+
+Definition at line 61 of file conf.\+py.
+
+\index{conf@{conf}!source\+\_\+suffix@{source\+\_\+suffix}}
+\index{source\+\_\+suffix@{source\+\_\+suffix}!conf@{conf}}
+\subsubsection[{\texorpdfstring{source\+\_\+suffix}{source_suffix}}]{\setlength{\rightskip}{0pt plus 5cm}string conf.\+source\+\_\+suffix = \textquotesingle{}.rst\textquotesingle{}}\hypertarget{namespaceconf_a10af2a769eb3bd3322e874f677e435b1}{}\label{namespaceconf_a10af2a769eb3bd3322e874f677e435b1}
+
+
+Definition at line 43 of file conf.\+py.
+
+\index{conf@{conf}!templates\+\_\+path@{templates\+\_\+path}}
+\index{templates\+\_\+path@{templates\+\_\+path}!conf@{conf}}
+\subsubsection[{\texorpdfstring{templates\+\_\+path}{templates_path}}]{\setlength{\rightskip}{0pt plus 5cm}list conf.\+templates\+\_\+path = \mbox{[}\textquotesingle{}\+\_\+templates\textquotesingle{}\mbox{]}}\hypertarget{namespaceconf_ae850ae634911b713e036b43894fdd525}{}\label{namespaceconf_ae850ae634911b713e036b43894fdd525}
+
+
+Definition at line 40 of file conf.\+py.
+
+\index{conf@{conf}!texinfo\+\_\+documents@{texinfo\+\_\+documents}}
+\index{texinfo\+\_\+documents@{texinfo\+\_\+documents}!conf@{conf}}
+\subsubsection[{\texorpdfstring{texinfo\+\_\+documents}{texinfo_documents}}]{\setlength{\rightskip}{0pt plus 5cm}list conf.\+texinfo\+\_\+documents}\hypertarget{namespaceconf_a54b0faed214ac92017d5689efbb10672}{}\label{namespaceconf_a54b0faed214ac92017d5689efbb10672}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = [
+2   (\textcolor{stringliteral}{'index'}, \textcolor{stringliteral}{'rosdoc\_lite'}, \textcolor{stringliteral}{u'rosdoc\_lite Documentation'},
+3    \textcolor{stringliteral}{u'Eitan Marder-Eppstein'}, \textcolor{stringliteral}{'rosdoc\_lite'}, \textcolor{stringliteral}{'One line description of project.'},
+4    \textcolor{stringliteral}{'Miscellaneous'}),
+5 ]
+\end{DoxyCode}
+
+
+Definition at line 243 of file conf.\+py.
+
+\index{conf@{conf}!version@{version}}
+\index{version@{version}!conf@{conf}}
+\subsubsection[{\texorpdfstring{version}{version}}]{\setlength{\rightskip}{0pt plus 5cm}conf.\+version = root.\+findtext(\textquotesingle{}version\textquotesingle{})}\hypertarget{namespaceconf_af51f21968ea73bb4391b0d4aed1f7ad2}{}\label{namespaceconf_af51f21968ea73bb4391b0d4aed1f7ad2}
+
+
+Definition at line 62 of file conf.\+py.
+

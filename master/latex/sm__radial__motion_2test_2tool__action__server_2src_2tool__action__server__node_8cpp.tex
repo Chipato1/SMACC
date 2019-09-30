@@ -1,0 +1,87 @@
+\hypertarget{sm__radial__motion_2test_2tool__action__server_2src_2tool__action__server__node_8cpp}{}\section{smacc\+\_\+sm\+\_\+examples/sm\+\_\+radial\+\_\+motion/test/tool\+\_\+action\+\_\+server/src/tool\+\_\+action\+\_\+server\+\_\+node.cpp File Reference}
+\label{sm__radial__motion_2test_2tool__action__server_2src_2tool__action__server__node_8cpp}\index{smacc\+\_\+sm\+\_\+examples/sm\+\_\+radial\+\_\+motion/test/tool\+\_\+action\+\_\+server/src/tool\+\_\+action\+\_\+server\+\_\+node.\+cpp@{smacc\+\_\+sm\+\_\+examples/sm\+\_\+radial\+\_\+motion/test/tool\+\_\+action\+\_\+server/src/tool\+\_\+action\+\_\+server\+\_\+node.\+cpp}}
+{\ttfamily \#include $<$actionlib/server/simple\+\_\+action\+\_\+server.\+h$>$}\\*
+{\ttfamily \#include $<$std\+\_\+msgs/\+U\+Int8.\+h$>$}\\*
+{\ttfamily \#include $<$functional$>$}\\*
+{\ttfamily \#include $<$dynamic\+\_\+reconfigure/\+Double\+Parameter.\+h$>$}\\*
+{\ttfamily \#include $<$dynamic\+\_\+reconfigure/\+Reconfigure.\+h$>$}\\*
+{\ttfamily \#include $<$dynamic\+\_\+reconfigure/\+Config.\+h$>$}\\*
+{\ttfamily \#include $<$smacc\+\_\+action\+\_\+client\+\_\+generic/\+Tool\+Control\+Action.\+h$>$}\\*
+{\ttfamily \#include $<$smacc\+\_\+action\+\_\+client\+\_\+generic/\+Tool\+Control\+Action\+Result.\+h$>$}\\*
+{\ttfamily \#include $<$smacc\+\_\+action\+\_\+client\+\_\+generic/\+Tool\+Control\+Result.\+h$>$}\\*
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include $<$visualization\+\_\+msgs/\+Marker\+Array.\+h$>$}\\*
+Include dependency graph for tool\+\_\+action\+\_\+server\+\_\+node.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sm__radial__motion_2test_2tool__action__server_2src_2tool__action__server__node_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classToolActionServer}{Tool\+Action\+Server}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef actionlib\+::\+Simple\+Action\+Server$<$ smacc\+\_\+action\+\_\+client\+\_\+generic\+::\+Tool\+Control\+Action $>$ \hyperlink{sm__radial__motion_2test_2tool__action__server_2src_2tool__action__server__node_8cpp_ab5d66ae48b02f831fb527e5260ce1ed2}{Server}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classint}{int} \hyperlink{sm__radial__motion_2test_2tool__action__server_2src_2tool__action__server__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (\hyperlink{classint}{int} argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{sm\+\_\+radial\+\_\+motion/test/tool\+\_\+action\+\_\+server/src/tool\+\_\+action\+\_\+server\+\_\+node.\+cpp@{sm\+\_\+radial\+\_\+motion/test/tool\+\_\+action\+\_\+server/src/tool\+\_\+action\+\_\+server\+\_\+node.\+cpp}!Server@{Server}}
+\index{Server@{Server}!sm\+\_\+radial\+\_\+motion/test/tool\+\_\+action\+\_\+server/src/tool\+\_\+action\+\_\+server\+\_\+node.\+cpp@{sm\+\_\+radial\+\_\+motion/test/tool\+\_\+action\+\_\+server/src/tool\+\_\+action\+\_\+server\+\_\+node.\+cpp}}
+\subsubsection[{\texorpdfstring{Server}{Server}}]{\setlength{\rightskip}{0pt plus 5cm}typedef actionlib\+::\+Simple\+Action\+Server$<$smacc\+\_\+action\+\_\+client\+\_\+generic\+::\+Tool\+Control\+Action$>$ {\bf Server}}\hypertarget{sm__radial__motion_2test_2tool__action__server_2src_2tool__action__server__node_8cpp_ab5d66ae48b02f831fb527e5260ce1ed2}{}\label{sm__radial__motion_2test_2tool__action__server_2src_2tool__action__server__node_8cpp_ab5d66ae48b02f831fb527e5260ce1ed2}
+
+
+Definition at line 18 of file tool\+\_\+action\+\_\+server\+\_\+node.\+cpp.
+
+
+
+\subsection{Function Documentation}
+\index{sm\+\_\+radial\+\_\+motion/test/tool\+\_\+action\+\_\+server/src/tool\+\_\+action\+\_\+server\+\_\+node.\+cpp@{sm\+\_\+radial\+\_\+motion/test/tool\+\_\+action\+\_\+server/src/tool\+\_\+action\+\_\+server\+\_\+node.\+cpp}!main@{main}}
+\index{main@{main}!sm\+\_\+radial\+\_\+motion/test/tool\+\_\+action\+\_\+server/src/tool\+\_\+action\+\_\+server\+\_\+node.\+cpp@{sm\+\_\+radial\+\_\+motion/test/tool\+\_\+action\+\_\+server/src/tool\+\_\+action\+\_\+server\+\_\+node.\+cpp}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} main (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\hypertarget{sm__radial__motion_2test_2tool__action__server_2src_2tool__action__server__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{sm__radial__motion_2test_2tool__action__server_2src_2tool__action__server__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+\hyperlink{sm__dance__bot_2test_2tool__action__server_2src_2tool__action__server__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main()} 
+
+Definition at line 177 of file tool\+\_\+action\+\_\+server\+\_\+node.\+cpp.
+
+
+
+References Tool\+Action\+Server\+::run().
+
+
+\begin{DoxyCode}
+178 \{
+179   ros::init(argc, \hyperlink{namespacesmacc__viewer_a641e44a1c9c09b36c59a0651d01d4d97}{argv}, \textcolor{stringliteral}{"tool\_action\_server\_node"});
+180   \hyperlink{classToolActionServer}{ToolActionServer} toolActionServer;
+181   toolActionServer.\hyperlink{classToolActionServer_adbf39061e0f8c74352cbdc695d7d8469}{run}();
+182 
+183   \textcolor{keywordflow}{return} 0;
+184 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sm__radial__motion_2test_2tool__action__server_2src_2tool__action__server__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph}
+\end{center}
+\end{figure}
+
+

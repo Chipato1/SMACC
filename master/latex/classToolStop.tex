@@ -1,0 +1,127 @@
+\hypertarget{classToolStop}{}\section{Tool\+Stop Class Reference}
+\label{classToolStop}\index{Tool\+Stop@{Tool\+Stop}}
+
+
+{\ttfamily \#include $<$tool\+\_\+stop.\+h$>$}
+
+
+
+Inheritance diagram for Tool\+Stop\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{classToolStop__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Tool\+Stop\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classToolStop__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classToolStop_a1db01a6b333c6570cbad3495a483d452}{on\+Entry} () override
+\item 
+virtual \hyperlink{classbool}{bool} \hyperlink{classToolStop_a8c5028c3e7aa2de0b5b48793d38784b3}{on\+Exit} () override
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc_1_1SmaccToolActionClient}{smacc\+::\+Smacc\+Tool\+Action\+Client} $\ast$ \hyperlink{classToolStop_ae8ebe607606d235b52317e9a0f570e31}{tool\+Action\+Client\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 5 of file tool\+\_\+stop.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Tool\+Stop@{Tool\+Stop}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!Tool\+Stop@{Tool\+Stop}}
+\subsubsection[{\texorpdfstring{on\+Entry() override}{onEntry() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Tool\+Stop\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classToolStop_a1db01a6b333c6570cbad3495a483d452}{}\label{classToolStop_a1db01a6b333c6570cbad3495a483d452}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_a7c28e1c46238bbb2c2e0450573c6de94}{smacc\+::\+Smacc\+Sub\+State\+Behavior}.
+
+
+
+Definition at line 11 of file tool\+\_\+stop.\+h.
+
+
+
+References smacc\+::\+Smacc\+Sub\+State\+Behavior\+::requires\+Component(), and smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal().
+
+
+\begin{DoxyCode}
+12     \{
+13       this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}{requiresComponent}(\hyperlink{classToolStop_ae8ebe607606d235b52317e9a0f570e31}{toolActionClient\_} , ros::NodeHandle(\textcolor{stringliteral}{"
+      tool\_action\_server"}));
+14 
+15       smacc::SmaccToolActionClient::Goal goal;
+16       goal.command = smacc::SmaccToolActionClient::Goal::CMD\_STOP;
+17       \hyperlink{classToolStop_ae8ebe607606d235b52317e9a0f570e31}{toolActionClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
+18     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classToolStop_a1db01a6b333c6570cbad3495a483d452_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Tool\+Stop@{Tool\+Stop}!on\+Exit@{on\+Exit}}
+\index{on\+Exit@{on\+Exit}!Tool\+Stop@{Tool\+Stop}}
+\subsubsection[{\texorpdfstring{on\+Exit() override}{onExit() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf bool} Tool\+Stop\+::on\+Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classToolStop_a8c5028c3e7aa2de0b5b48793d38784b3}{}\label{classToolStop_a8c5028c3e7aa2de0b5b48793d38784b3}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_ab78b9de76c04a7ab6c16d5924e216ef9}{smacc\+::\+Smacc\+Sub\+State\+Behavior}.
+
+
+
+Definition at line 20 of file tool\+\_\+stop.\+h.
+
+
+\begin{DoxyCode}
+21     \{
+22       \textcolor{comment}{//ROS\_INFO("Entering ToolSubstateBehavior");}
+23       \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+24     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{Tool\+Stop@{Tool\+Stop}!tool\+Action\+Client\+\_\+@{tool\+Action\+Client\+\_\+}}
+\index{tool\+Action\+Client\+\_\+@{tool\+Action\+Client\+\_\+}!Tool\+Stop@{Tool\+Stop}}
+\subsubsection[{\texorpdfstring{tool\+Action\+Client\+\_\+}{toolActionClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+::\+Smacc\+Tool\+Action\+Client}$\ast$ Tool\+Stop\+::tool\+Action\+Client\+\_\+}\hypertarget{classToolStop_ae8ebe607606d235b52317e9a0f570e31}{}\label{classToolStop_ae8ebe607606d235b52317e9a0f570e31}
+
+
+Definition at line 9 of file tool\+\_\+stop.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+examples/sm\+\_\+radial\+\_\+motion/include/sm\+\_\+radial\+\_\+motion/substates\+\_\+behaviors/tool/\hyperlink{tool__stop_8h}{tool\+\_\+stop.\+h}\end{DoxyCompactItemize}

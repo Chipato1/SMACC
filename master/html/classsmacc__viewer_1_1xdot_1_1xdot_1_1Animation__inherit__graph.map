@@ -1,0 +1,7 @@
+<map id="smacc_viewer.xdot.xdot.Animation" name="smacc_viewer.xdot.xdot.Animation">
+<area shape="rect" id="node3" href="$classsmacc__viewer_1_1xdot_1_1xdot_1_1LinearAnimation.html" title="{smacc_viewer.xdot.xdot.Linear\lAnimation\n|+ started\l+ duration\l|+ start()\l+ tick()\l+ animate()\l}" alt="" coords="5,329,223,465"/>
+<area shape="rect" id="node6" href="$classsmacc__viewer_1_1xdot_1_1xdot_1_1NoAnimation.html" title="{smacc_viewer.xdot.xdot.No\lAnimation\n||+ start()\l+ stop()\l}" alt="" coords="247,344,443,451"/>
+<area shape="rect" id="node2" href="$classobject.html" title="{object\n||}" alt="" coords="198,5,259,83"/>
+<area shape="rect" id="node4" href="$classsmacc__viewer_1_1xdot_1_1xdot_1_1MoveToAnimation.html" title="{smacc_viewer.xdot.xdot.Move\lToAnimation\n|+ source_x\l+ source_y\l+ target_x\l+ target_y\l|+ __init__()\l+ animate()\l}" alt="" coords="8,513,220,664"/>
+<area shape="rect" id="node5" href="$classsmacc__viewer_1_1xdot_1_1xdot_1_1ZoomToAnimation.html" title="{smacc_viewer.xdot.xdot.Zoom\lToAnimation\n|+ source_zoom\l+ target_zoom\l+ extra_zoom\l|+ __init__()\l+ animate()\l}" alt="" coords="5,712,223,848"/>
+</map>

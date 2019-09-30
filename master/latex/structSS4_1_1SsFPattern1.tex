@@ -1,0 +1,165 @@
+\hypertarget{structSS4_1_1SsFPattern1}{}\section{S\+S4\+:\+:Ss\+F\+Pattern1 Struct Reference}
+\label{structSS4_1_1SsFPattern1}\index{S\+S4\+::\+Ss\+F\+Pattern1@{S\+S4\+::\+Ss\+F\+Pattern1}}
+
+
+{\ttfamily \#include $<$ss\+\_\+f\+\_\+pattern\+\_\+1.\+h$>$}
+
+
+
+Inheritance diagram for S\+S4\+:\+:Ss\+F\+Pattern1\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structSS4_1_1SsFPattern1__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for S\+S4\+:\+:Ss\+F\+Pattern1\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structSS4_1_1SsFPattern1__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef mpl\+::list$<$ sc\+::transition$<$ Ev\+State\+Finish$<$ \hyperlink{structSS4_1_1SsFPattern1}{Ss\+F\+Pattern1} $>$, \hyperlink{structStNavigateForward2}{St\+Navigate\+Forward2} $>$, sc\+::transition$<$ \hyperlink{structsmacc_1_1EvKeyPressN}{smacc\+::\+Ev\+Key\+PressN}$<$ Sb\+Keyboard $>$, \hyperlink{structStRotateDegrees4}{St\+Rotate\+Degrees4} $>$, sc\+::transition$<$ Ev\+Key\+PressP$<$ Sb\+Keyboard $>$, \hyperlink{structStNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$, sc\+::transition$<$ \hyperlink{structsmacc_1_1EvTopicMessageTimeout}{smacc\+::\+Ev\+Topic\+Message\+Timeout}$<$ \hyperlink{sensor__state_8h_a9db9e1944f88de79507758d08e4a2ee3}{Lidar\+Sensor} $>$, \hyperlink{structStAcquireSensors}{St\+Acquire\+Sensors} $>$, sc\+::transition$<$ Ev\+Action\+Aborted$<$ smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result $>$, \hyperlink{structStNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$, sc\+::custom\+\_\+reaction$<$ \hyperlink{structsmacc_1_1EvStateFinish}{smacc\+::\+Ev\+State\+Finish}$<$ \hyperlink{structSsrFPatternRotate2}{Ssr\+F\+Pattern\+Rotate2} $>$ $>$ $>$ \hyperlink{structSS4_1_1SsFPattern1_a7fc9c850f50926b0a4e0d00ecd178ed7}{reactions}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structSS4_1_1SsFPattern1_af4dca5dae22315ddcfed435d277791b0}{on\+Initialize} ()
+\item 
+sc\+::result \hyperlink{structSS4_1_1SsFPattern1_a133a70236087b3e12c55f5e46bcfd2d9}{react} (const \hyperlink{structsmacc_1_1EvStateFinish}{smacc\+::\+Ev\+State\+Finish}$<$ \hyperlink{structSsrFPatternRotate2}{Ssr\+F\+Pattern\+Rotate2} $>$ \&ev)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{structSS4_1_1SsFPattern1_a72803a7a7ce8025ee7aa36726f3aaefc}{ray\+\_\+lenght\+\_\+meters}
+\item 
+float \hyperlink{structSS4_1_1SsFPattern1_affb031c56b95d731f868bda21bf9c37e}{pitch\+\_\+lenght\+\_\+meters}
+\item 
+\hyperlink{classint}{int} \hyperlink{structSS4_1_1SsFPattern1_ab86bc79bcbe1b0f61a8aff73c87845ba}{iteration\+\_\+count}
+\item 
+\hyperlink{classint}{int} \hyperlink{structSS4_1_1SsFPattern1_ac7c81f3b8a44de58fad91a7be3af03c0}{total\+\_\+iterations}
+\item 
+\hyperlink{namespaceSS4_ac7fa695c4f9dc0b99e73fcbbf5311282}{T\+Direction} \hyperlink{structSS4_1_1SsFPattern1_a4f18d9734ab8894ffcdbdaa3673af910}{direction}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file ss\+\_\+f\+\_\+pattern\+\_\+1.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{S\+S4\+::\+Ss\+F\+Pattern1@{S\+S4\+::\+Ss\+F\+Pattern1}!reactions@{reactions}}
+\index{reactions@{reactions}!S\+S4\+::\+Ss\+F\+Pattern1@{S\+S4\+::\+Ss\+F\+Pattern1}}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ sc\+::transition$<$Ev\+State\+Finish$<${\bf Ss\+F\+Pattern1}$>$, {\bf St\+Navigate\+Forward2}$>$, sc\+::transition$<${\bf smacc\+::\+Ev\+Key\+PressN}$<$Sb\+Keyboard$>$, {\bf St\+Rotate\+Degrees4}$>$, sc\+::transition$<$Ev\+Key\+PressP$<$Sb\+Keyboard$>$,{\bf St\+Navigate\+To\+WaypointsX}$>$, sc\+::transition$<${\bf smacc\+::\+Ev\+Topic\+Message\+Timeout}$<${\bf Lidar\+Sensor}$>$, {\bf St\+Acquire\+Sensors}$>$, sc\+::transition$<$Ev\+Action\+Aborted$<$smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$, sc\+::custom\+\_\+reaction$<${\bf smacc\+::\+Ev\+State\+Finish}$<${\bf Ssr\+F\+Pattern\+Rotate2}$>$ $>$ $>$ {\bf S\+S4\+::\+Ss\+F\+Pattern1\+::reactions}}\hypertarget{structSS4_1_1SsFPattern1_a7fc9c850f50926b0a4e0d00ecd178ed7}{}\label{structSS4_1_1SsFPattern1_a7fc9c850f50926b0a4e0d00ecd178ed7}
+
+
+Definition at line 33 of file ss\+\_\+f\+\_\+pattern\+\_\+1.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{S\+S4\+::\+Ss\+F\+Pattern1@{S\+S4\+::\+Ss\+F\+Pattern1}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!S\+S4\+::\+Ss\+F\+Pattern1@{S\+S4\+::\+Ss\+F\+Pattern1}}
+\subsubsection[{\texorpdfstring{on\+Initialize()}{onInitialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+S4\+::\+Ss\+F\+Pattern1\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structSS4_1_1SsFPattern1_af4dca5dae22315ddcfed435d277791b0}{}\label{structSS4_1_1SsFPattern1_af4dca5dae22315ddcfed435d277791b0}
+
+
+Definition at line 43 of file ss\+\_\+f\+\_\+pattern\+\_\+1.\+h.
+
+
+
+References S\+S4\+::\+R\+I\+G\+HT.
+
+
+\begin{DoxyCode}
+44     \{
+45         this->\hyperlink{structSS4_1_1SsFPattern1_a72803a7a7ce8025ee7aa36726f3aaefc}{ray\_lenght\_meters} = 2;
+46         this->\hyperlink{structSS4_1_1SsFPattern1_affb031c56b95d731f868bda21bf9c37e}{pitch\_lenght\_meters} = 0.6;
+47         this->\hyperlink{structSS4_1_1SsFPattern1_ab86bc79bcbe1b0f61a8aff73c87845ba}{iteration\_count} = 0 ;
+48         this->\hyperlink{structSS4_1_1SsFPattern1_ac7c81f3b8a44de58fad91a7be3af03c0}{total\_iterations} = 2;
+49         this->\hyperlink{structSS4_1_1SsFPattern1_a4f18d9734ab8894ffcdbdaa3673af910}{direction} = \hyperlink{namespaceSS4_ac7fa695c4f9dc0b99e73fcbbf5311282a21507b40c80068eda19865706fdc2403}{TDirection::RIGHT};
+50 
+51         this->configure<KeyboardOrthogonal>(std::make\_shared<SbKeyboard>());
+52     \}
+\end{DoxyCode}
+\index{S\+S4\+::\+Ss\+F\+Pattern1@{S\+S4\+::\+Ss\+F\+Pattern1}!react@{react}}
+\index{react@{react}!S\+S4\+::\+Ss\+F\+Pattern1@{S\+S4\+::\+Ss\+F\+Pattern1}}
+\subsubsection[{\texorpdfstring{react(const smacc\+::\+Ev\+State\+Finish$<$ Ssr\+F\+Pattern\+Rotate2 $>$ \&ev)}{react(const smacc::EvStateFinish< SsrFPatternRotate2 > &ev)}}]{\setlength{\rightskip}{0pt plus 5cm}sc\+::result S\+S4\+::\+Ss\+F\+Pattern1\+::react (
+\begin{DoxyParamCaption}
+\item[{const {\bf smacc\+::\+Ev\+State\+Finish}$<$ {\bf Ssr\+F\+Pattern\+Rotate2} $>$ \&}]{ev}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structSS4_1_1SsFPattern1_a133a70236087b3e12c55f5e46bcfd2d9}{}\label{structSS4_1_1SsFPattern1_a133a70236087b3e12c55f5e46bcfd2d9}
+
+
+Definition at line 54 of file ss\+\_\+f\+\_\+pattern\+\_\+1.\+h.
+
+
+\begin{DoxyCode}
+55     \{
+56         ROS\_INFO(\textcolor{stringliteral}{"FPATTERN iteration: %d"}, \hyperlink{structSS4_1_1SsFPattern1_ab86bc79bcbe1b0f61a8aff73c87845ba}{iteration\_count});
+57         \textcolor{keywordflow}{if} (++\hyperlink{structSS4_1_1SsFPattern1_ab86bc79bcbe1b0f61a8aff73c87845ba}{iteration\_count} == \hyperlink{structSS4_1_1SsFPattern1_ac7c81f3b8a44de58fad91a7be3af03c0}{total\_iterations}) \textcolor{comment}{// 1 == two times}
+58         \{
+59             this->\hyperlink{classsmacc_1_1SmaccState_a56ccdfaf818ed6409dcbd4ab8b01c60e}{throwFinishEvent}();
+60         \}
+61 
+62         \textcolor{keywordflow}{return} forward\_event();
+63     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{S\+S4\+::\+Ss\+F\+Pattern1@{S\+S4\+::\+Ss\+F\+Pattern1}!direction@{direction}}
+\index{direction@{direction}!S\+S4\+::\+Ss\+F\+Pattern1@{S\+S4\+::\+Ss\+F\+Pattern1}}
+\subsubsection[{\texorpdfstring{direction}{direction}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+Direction} S\+S4\+::\+Ss\+F\+Pattern1\+::direction}\hypertarget{structSS4_1_1SsFPattern1_a4f18d9734ab8894ffcdbdaa3673af910}{}\label{structSS4_1_1SsFPattern1_a4f18d9734ab8894ffcdbdaa3673af910}
+
+
+Definition at line 41 of file ss\+\_\+f\+\_\+pattern\+\_\+1.\+h.
+
+\index{S\+S4\+::\+Ss\+F\+Pattern1@{S\+S4\+::\+Ss\+F\+Pattern1}!iteration\+\_\+count@{iteration\+\_\+count}}
+\index{iteration\+\_\+count@{iteration\+\_\+count}!S\+S4\+::\+Ss\+F\+Pattern1@{S\+S4\+::\+Ss\+F\+Pattern1}}
+\subsubsection[{\texorpdfstring{iteration\+\_\+count}{iteration_count}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} S\+S4\+::\+Ss\+F\+Pattern1\+::iteration\+\_\+count}\hypertarget{structSS4_1_1SsFPattern1_ab86bc79bcbe1b0f61a8aff73c87845ba}{}\label{structSS4_1_1SsFPattern1_ab86bc79bcbe1b0f61a8aff73c87845ba}
+
+
+Definition at line 38 of file ss\+\_\+f\+\_\+pattern\+\_\+1.\+h.
+
+\index{S\+S4\+::\+Ss\+F\+Pattern1@{S\+S4\+::\+Ss\+F\+Pattern1}!pitch\+\_\+lenght\+\_\+meters@{pitch\+\_\+lenght\+\_\+meters}}
+\index{pitch\+\_\+lenght\+\_\+meters@{pitch\+\_\+lenght\+\_\+meters}!S\+S4\+::\+Ss\+F\+Pattern1@{S\+S4\+::\+Ss\+F\+Pattern1}}
+\subsubsection[{\texorpdfstring{pitch\+\_\+lenght\+\_\+meters}{pitch_lenght_meters}}]{\setlength{\rightskip}{0pt plus 5cm}float S\+S4\+::\+Ss\+F\+Pattern1\+::pitch\+\_\+lenght\+\_\+meters}\hypertarget{structSS4_1_1SsFPattern1_affb031c56b95d731f868bda21bf9c37e}{}\label{structSS4_1_1SsFPattern1_affb031c56b95d731f868bda21bf9c37e}
+
+
+Definition at line 37 of file ss\+\_\+f\+\_\+pattern\+\_\+1.\+h.
+
+\index{S\+S4\+::\+Ss\+F\+Pattern1@{S\+S4\+::\+Ss\+F\+Pattern1}!ray\+\_\+lenght\+\_\+meters@{ray\+\_\+lenght\+\_\+meters}}
+\index{ray\+\_\+lenght\+\_\+meters@{ray\+\_\+lenght\+\_\+meters}!S\+S4\+::\+Ss\+F\+Pattern1@{S\+S4\+::\+Ss\+F\+Pattern1}}
+\subsubsection[{\texorpdfstring{ray\+\_\+lenght\+\_\+meters}{ray_lenght_meters}}]{\setlength{\rightskip}{0pt plus 5cm}float S\+S4\+::\+Ss\+F\+Pattern1\+::ray\+\_\+lenght\+\_\+meters}\hypertarget{structSS4_1_1SsFPattern1_a72803a7a7ce8025ee7aa36726f3aaefc}{}\label{structSS4_1_1SsFPattern1_a72803a7a7ce8025ee7aa36726f3aaefc}
+
+
+Definition at line 36 of file ss\+\_\+f\+\_\+pattern\+\_\+1.\+h.
+
+\index{S\+S4\+::\+Ss\+F\+Pattern1@{S\+S4\+::\+Ss\+F\+Pattern1}!total\+\_\+iterations@{total\+\_\+iterations}}
+\index{total\+\_\+iterations@{total\+\_\+iterations}!S\+S4\+::\+Ss\+F\+Pattern1@{S\+S4\+::\+Ss\+F\+Pattern1}}
+\subsubsection[{\texorpdfstring{total\+\_\+iterations}{total_iterations}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} S\+S4\+::\+Ss\+F\+Pattern1\+::total\+\_\+iterations}\hypertarget{structSS4_1_1SsFPattern1_ac7c81f3b8a44de58fad91a7be3af03c0}{}\label{structSS4_1_1SsFPattern1_ac7c81f3b8a44de58fad91a7be3af03c0}
+
+
+Definition at line 39 of file ss\+\_\+f\+\_\+pattern\+\_\+1.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+examples/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/superstates/\hyperlink{ss__f__pattern__1_8h}{ss\+\_\+f\+\_\+pattern\+\_\+1.\+h}\end{DoxyCompactItemize}

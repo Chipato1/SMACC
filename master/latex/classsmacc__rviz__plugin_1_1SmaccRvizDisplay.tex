@@ -1,0 +1,534 @@
+\hypertarget{classsmacc__rviz__plugin_1_1SmaccRvizDisplay}{}\section{smacc\+\_\+rviz\+\_\+plugin\+:\+:Smacc\+Rviz\+Display Class Reference}
+\label{classsmacc__rviz__plugin_1_1SmaccRvizDisplay}\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}}
+
+
+{\ttfamily \#include $<$smacc\+\_\+rviz\+\_\+display.\+h$>$}
+
+
+
+Inheritance diagram for smacc\+\_\+rviz\+\_\+plugin\+:\+:Smacc\+Rviz\+Display\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classsmacc__rviz__plugin_1_1SmaccRvizDisplay__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+\_\+rviz\+\_\+plugin\+:\+:Smacc\+Rviz\+Display\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__rviz__plugin_1_1SmaccRvizDisplay__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a57d912b6eeec19a0654546bb011fb593}{Smacc\+Rviz\+Display} ()
+\item 
+virtual \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_aebda19712c75b75a31e90272f472a7e3}{$\sim$\+Smacc\+Rviz\+Display} ()
+\item 
+virtual void \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_ad774027ba3eda277c991619332495cbb}{subscribe} ()
+\item 
+virtual void \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a49a35acd10a664a8335ef5852f8c115c}{unsubscribe} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a8a041fe0d0e88fa0219204c85831d10e}{on\+Initialize} ()
+\item 
+virtual void \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_af9cf4f5ef4f5fdb2fcb1bf1a81cdac4d}{reset} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a6031090e46077a5e95754b5f70ea639a}{update\+Current\+State} ()
+\item 
+void \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_adf332ae95bd83969b33ba713a60832fd}{update\+Topic} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_acc7281b99c92fa89f7494f6ca53e4905}{process\+Message} (const smacc\+\_\+msgs\+::\+Smacc\+Status\+::\+Const\+Ptr \&msg)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+rviz\+::\+String\+Property $\ast$ \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a342ff238c1dfaa427f09ee205a9e92d5}{current\+\_\+state\+\_\+}
+\item 
+rviz\+::\+Ros\+Topic\+Property $\ast$ \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_ad81e5239e1343b2ba01ee16d1f010932}{topic\+\_\+property\+\_\+}
+\item 
+ros\+::\+Node\+Handle \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a077ef80f5698d21376b2d211f95ab73d}{nh\+\_\+}
+\item 
+ros\+::\+Subscriber \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_abae6e8df8428a072d1de2c59dd4f9cd4}{sub\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 81 of file smacc\+\_\+rviz\+\_\+display.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}!Smacc\+Rviz\+Display@{Smacc\+Rviz\+Display}}
+\index{Smacc\+Rviz\+Display@{Smacc\+Rviz\+Display}!smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}}
+\subsubsection[{\texorpdfstring{Smacc\+Rviz\+Display()}{SmaccRvizDisplay()}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display\+::\+Smacc\+Rviz\+Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a57d912b6eeec19a0654546bb011fb593}{}\label{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a57d912b6eeec19a0654546bb011fb593}
+
+
+Definition at line 51 of file smacc\+\_\+rviz\+\_\+display.\+cpp.
+
+
+
+References current\+\_\+state\+\_\+, topic\+\_\+property\+\_\+, update\+Current\+State(), and update\+Topic().
+
+
+\begin{DoxyCode}
+52 \{
+53 
+54   \textcolor{comment}{/*}
+55 \textcolor{comment}{  color\_property\_ = new rviz::ColorProperty( "Color", QColor( 204, 51, 204 ),}
+56 \textcolor{comment}{                                             "Color to draw the acceleration arrows.",}
+57 \textcolor{comment}{                                             this, SLOT( updateColorAndAlpha() ));}
+58 \textcolor{comment}{}
+59 \textcolor{comment}{  alpha\_property\_ = new rviz::FloatProperty( "Alpha", 1.0,}
+60 \textcolor{comment}{                                             "0 is fully transparent, 1.0 is fully opaque.",}
+61 \textcolor{comment}{                                             this, SLOT( updateColorAndAlpha() ));}
+62 \textcolor{comment}{}
+63 \textcolor{comment}{  history\_length\_property\_ = new rviz::IntProperty( "History Length", 1,}
+64 \textcolor{comment}{                                                    "Number of prior measurements to display.",}
+65 \textcolor{comment}{                                                    this, SLOT( updateHistoryLength() ));}
+66 \textcolor{comment}{                                                    */}
+67 
+68   \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a342ff238c1dfaa427f09ee205a9e92d5}{current\_state\_} = \textcolor{keyword}{new} rviz::StringProperty( \textcolor{stringliteral}{"CurrentState"}, \textcolor{stringliteral}{""},
+69                                                     \textcolor{stringliteral}{"current smacc state"},
+70                                                     \textcolor{keyword}{this}, SLOT( 
+      \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a6031090e46077a5e95754b5f70ea639a}{updateCurrentState}() ));
+71 
+72   
+73   \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_ad81e5239e1343b2ba01ee16d1f010932}{topic\_property\_} = \textcolor{keyword}{new} rviz::RosTopicProperty( \textcolor{stringliteral}{"Topic"}, \textcolor{stringliteral}{""},
+74                                             \textcolor{stringliteral}{""}, \textcolor{stringliteral}{""},
+75                                             \textcolor{keyword}{this}, SLOT( \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_adf332ae95bd83969b33ba713a60832fd}{updateTopic}() ));
+76 
+77   QString message\_type = QString::fromStdString( ros::message\_traits::datatype<smacc\_msgs::SmaccStatus>() )
+      ;
+78       \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_ad81e5239e1343b2ba01ee16d1f010932}{topic\_property\_}->setMessageType( message\_type );
+79       \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_ad81e5239e1343b2ba01ee16d1f010932}{topic\_property\_}->setDescription( message\_type + \textcolor{stringliteral}{" topic to subscribe to."} );
+80 
+81 
+82   \textcolor{comment}{//history\_length\_property\_->setMin( 1 );}
+83   \textcolor{comment}{//history\_length\_property\_->setMax( 100000 );}
+84 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a57d912b6eeec19a0654546bb011fb593_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}!````~Smacc\+Rviz\+Display@{$\sim$\+Smacc\+Rviz\+Display}}
+\index{````~Smacc\+Rviz\+Display@{$\sim$\+Smacc\+Rviz\+Display}!smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}}
+\subsubsection[{\texorpdfstring{$\sim$\+Smacc\+Rviz\+Display()}{~SmaccRvizDisplay()}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display\+::$\sim$\+Smacc\+Rviz\+Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_aebda19712c75b75a31e90272f472a7e3}{}\label{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_aebda19712c75b75a31e90272f472a7e3}
+
+
+Definition at line 119 of file smacc\+\_\+rviz\+\_\+display.\+cpp.
+
+
+\begin{DoxyCode}
+120 \{
+121 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}}
+\subsubsection[{\texorpdfstring{on\+Initialize()}{onInitialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a8a041fe0d0e88fa0219204c85831d10e}{}\label{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a8a041fe0d0e88fa0219204c85831d10e}
+
+
+Definition at line 114 of file smacc\+\_\+rviz\+\_\+display.\+cpp.
+
+
+\begin{DoxyCode}
+115 \{
+116   \textcolor{comment}{//MFDClass::onInitialize();}
+117 \}
+\end{DoxyCode}
+\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}!process\+Message@{process\+Message}}
+\index{process\+Message@{process\+Message}!smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}}
+\subsubsection[{\texorpdfstring{process\+Message(const smacc\+\_\+msgs\+::\+Smacc\+Status\+::\+Const\+Ptr \&msg)}{processMessage(const smacc_msgs::SmaccStatus::ConstPtr &msg)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display\+::process\+Message (
+\begin{DoxyParamCaption}
+\item[{const smacc\+\_\+msgs\+::\+Smacc\+Status\+::\+Const\+Ptr \&}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_acc7281b99c92fa89f7494f6ca53e4905}{}\label{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_acc7281b99c92fa89f7494f6ca53e4905}
+
+
+Definition at line 135 of file smacc\+\_\+rviz\+\_\+display.\+cpp.
+
+
+
+References current\+\_\+state\+\_\+, and P\+L\+U\+G\+I\+N\+L\+I\+B\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+C\+L\+A\+S\+S().
+
+
+
+Referenced by subscribe().
+
+
+\begin{DoxyCode}
+136 \{
+137   std::string concatenated;
+138 
+139   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& state: \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}->current\_states)
+140   \{
+141     concatenated = concatenated + std::string(\textcolor{stringliteral}{"/"})+ state;
+142   \}
+143 
+144   ROS\_INFO(\textcolor{stringliteral}{"current state: %s"}, concatenated.c\_str());
+145   \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a342ff238c1dfaa427f09ee205a9e92d5}{current\_state\_}->setValue(QString(concatenated.c\_str()));
+146   \textcolor{comment}{// Here we call the rviz::FrameManager to get the transform from the}
+147   \textcolor{comment}{// fixed frame to the frame in the header of this Imu message.  If}
+148   \textcolor{comment}{// it fails, we can't do anything else so we return.}
+149   \textcolor{comment}{/*}
+150 \textcolor{comment}{  Ogre::Quaternion orientation;}
+151 \textcolor{comment}{  Ogre::Vector3 position;}
+152 \textcolor{comment}{  if( !context\_->getFrameManager()->getTransform( msg->header.frame\_id,}
+153 \textcolor{comment}{                                                  msg->header.stamp,}
+154 \textcolor{comment}{                                                  position, orientation ))}
+155 \textcolor{comment}{  \{}
+156 \textcolor{comment}{    ROS\_DEBUG( "Error transforming from frame '%s' to frame '%s'",}
+157 \textcolor{comment}{               msg->header.frame\_id.c\_str(), qPrintable( fixed\_frame\_ ));}
+158 \textcolor{comment}{    return;}
+159 \textcolor{comment}{  \}}
+160 \textcolor{comment}{}
+161 \textcolor{comment}{  // We are keeping a circular buffer of visual pointers.  This gets}
+162 \textcolor{comment}{  // the next one, or creates and stores it if the buffer is not full}
+163 \textcolor{comment}{  boost::shared\_ptr<ImuVisual> visual;}
+164 \textcolor{comment}{  if( visuals\_.full() )}
+165 \textcolor{comment}{  \{}
+166 \textcolor{comment}{    visual = visuals\_.front();}
+167 \textcolor{comment}{  \}}
+168 \textcolor{comment}{  else}
+169 \textcolor{comment}{  \{}
+170 \textcolor{comment}{    visual.reset(new ImuVisual( context\_->getSceneManager(), scene\_node\_ ));}
+171 \textcolor{comment}{  \}*/}
+172 
+173   \textcolor{comment}{// Now set or update the contents of the chosen visual.}
+174   \textcolor{comment}{//visual->setMessage( msg );}
+175   \textcolor{comment}{//visual->setFramePosition( position );}
+176   \textcolor{comment}{//visual->setFrameOrientation( orientation );}
+177 
+178   \textcolor{comment}{/*}
+179 \textcolor{comment}{  float alpha = alpha\_property\_->getFloat();}
+180 \textcolor{comment}{  Ogre::ColourValue color = color\_property\_->getOgreColor();}
+181 \textcolor{comment}{  visual->setColor( color.r, color.g, color.b, alpha );}
+182 \textcolor{comment}{}
+183 \textcolor{comment}{  // And send it to the end of the circular buffer}
+184 \textcolor{comment}{  visuals\_.push\_back(visual);}
+185 \textcolor{comment}{  */}
+186 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_acc7281b99c92fa89f7494f6ca53e4905_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_acc7281b99c92fa89f7494f6ca53e4905_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}!reset@{reset}}
+\index{reset@{reset}!smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}}
+\subsubsection[{\texorpdfstring{reset()}{reset()}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_af9cf4f5ef4f5fdb2fcb1bf1a81cdac4d}{}\label{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_af9cf4f5ef4f5fdb2fcb1bf1a81cdac4d}
+
+
+Definition at line 124 of file smacc\+\_\+rviz\+\_\+display.\+cpp.
+
+
+
+Referenced by update\+Topic().
+
+
+\begin{DoxyCode}
+125 \{
+126   \textcolor{comment}{//MFDClass::reset();}
+127   \textcolor{comment}{//visuals\_.clear();}
+128 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_af9cf4f5ef4f5fdb2fcb1bf1a81cdac4d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}!subscribe@{subscribe}}
+\index{subscribe@{subscribe}!smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}}
+\subsubsection[{\texorpdfstring{subscribe()}{subscribe()}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display\+::subscribe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_ad774027ba3eda277c991619332495cbb}{}\label{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_ad774027ba3eda277c991619332495cbb}
+
+
+Definition at line 94 of file smacc\+\_\+rviz\+\_\+display.\+cpp.
+
+
+
+References nh\+\_\+, process\+Message(), sub\+\_\+, and topic\+\_\+property\+\_\+.
+
+
+
+Referenced by update\+Topic().
+
+
+\begin{DoxyCode}
+95   \{
+96       \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_abae6e8df8428a072d1de2c59dd4f9cd4}{sub\_} = \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a077ef80f5698d21376b2d211f95ab73d}{nh\_}.subscribe<smacc\_msgs::SmaccStatus>(\hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_ad81e5239e1343b2ba01ee16d1f010932}{topic\_property\_}->getTopic().
+      toStdString(), 1, &\hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_acc7281b99c92fa89f7494f6ca53e4905}{SmaccRvizDisplay::processMessage} , \textcolor{keyword}{this});
+97   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_ad774027ba3eda277c991619332495cbb_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_ad774027ba3eda277c991619332495cbb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}!unsubscribe@{unsubscribe}}
+\index{unsubscribe@{unsubscribe}!smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}}
+\subsubsection[{\texorpdfstring{unsubscribe()}{unsubscribe()}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display\+::unsubscribe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a49a35acd10a664a8335ef5852f8c115c}{}\label{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a49a35acd10a664a8335ef5852f8c115c}
+
+
+Definition at line 99 of file smacc\+\_\+rviz\+\_\+display.\+cpp.
+
+
+
+References sub\+\_\+.
+
+
+
+Referenced by update\+Topic().
+
+
+\begin{DoxyCode}
+100   \{
+101     \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_abae6e8df8428a072d1de2c59dd4f9cd4}{sub\_}.shutdown();
+102 
+103   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a49a35acd10a664a8335ef5852f8c115c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}!update\+Current\+State@{update\+Current\+State}}
+\index{update\+Current\+State@{update\+Current\+State}!smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}}
+\subsubsection[{\texorpdfstring{update\+Current\+State}{updateCurrentState}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display\+::update\+Current\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a6031090e46077a5e95754b5f70ea639a}{}\label{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a6031090e46077a5e95754b5f70ea639a}
+
+
+Definition at line 130 of file smacc\+\_\+rviz\+\_\+display.\+cpp.
+
+
+
+Referenced by Smacc\+Rviz\+Display().
+
+
+\begin{DoxyCode}
+131 \{  
+132 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a6031090e46077a5e95754b5f70ea639a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}!update\+Topic@{update\+Topic}}
+\index{update\+Topic@{update\+Topic}!smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}}
+\subsubsection[{\texorpdfstring{update\+Topic}{updateTopic}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display\+::update\+Topic (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}\hypertarget{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_adf332ae95bd83969b33ba713a60832fd}{}\label{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_adf332ae95bd83969b33ba713a60832fd}
+
+
+Definition at line 86 of file smacc\+\_\+rviz\+\_\+display.\+cpp.
+
+
+
+References reset(), subscribe(), and unsubscribe().
+
+
+
+Referenced by Smacc\+Rviz\+Display().
+
+
+\begin{DoxyCode}
+87   \{
+88     \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a49a35acd10a664a8335ef5852f8c115c}{unsubscribe}();
+89     \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_af9cf4f5ef4f5fdb2fcb1bf1a81cdac4d}{reset}();
+90     \hyperlink{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_ad774027ba3eda277c991619332495cbb}{subscribe}();
+91     context\_->queueRender();
+92   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_adf332ae95bd83969b33ba713a60832fd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_adf332ae95bd83969b33ba713a60832fd_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}!current\+\_\+state\+\_\+@{current\+\_\+state\+\_\+}}
+\index{current\+\_\+state\+\_\+@{current\+\_\+state\+\_\+}!smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}}
+\subsubsection[{\texorpdfstring{current\+\_\+state\+\_\+}{current_state_}}]{\setlength{\rightskip}{0pt plus 5cm}rviz\+::\+String\+Property$\ast$ smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display\+::current\+\_\+state\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a342ff238c1dfaa427f09ee205a9e92d5}{}\label{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a342ff238c1dfaa427f09ee205a9e92d5}
+
+
+Definition at line 125 of file smacc\+\_\+rviz\+\_\+display.\+h.
+
+
+
+Referenced by process\+Message(), and Smacc\+Rviz\+Display().
+
+\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}!nh\+\_\+@{nh\+\_\+}}
+\index{nh\+\_\+@{nh\+\_\+}!smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}}
+\subsubsection[{\texorpdfstring{nh\+\_\+}{nh_}}]{\setlength{\rightskip}{0pt plus 5cm}ros\+::\+Node\+Handle smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display\+::nh\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a077ef80f5698d21376b2d211f95ab73d}{}\label{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_a077ef80f5698d21376b2d211f95ab73d}
+
+
+Definition at line 127 of file smacc\+\_\+rviz\+\_\+display.\+h.
+
+
+
+Referenced by subscribe().
+
+\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}!sub\+\_\+@{sub\+\_\+}}
+\index{sub\+\_\+@{sub\+\_\+}!smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}}
+\subsubsection[{\texorpdfstring{sub\+\_\+}{sub_}}]{\setlength{\rightskip}{0pt plus 5cm}ros\+::\+Subscriber smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display\+::sub\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_abae6e8df8428a072d1de2c59dd4f9cd4}{}\label{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_abae6e8df8428a072d1de2c59dd4f9cd4}
+
+
+Definition at line 128 of file smacc\+\_\+rviz\+\_\+display.\+h.
+
+
+
+Referenced by subscribe(), and unsubscribe().
+
+\index{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}!topic\+\_\+property\+\_\+@{topic\+\_\+property\+\_\+}}
+\index{topic\+\_\+property\+\_\+@{topic\+\_\+property\+\_\+}!smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display@{smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display}}
+\subsubsection[{\texorpdfstring{topic\+\_\+property\+\_\+}{topic_property_}}]{\setlength{\rightskip}{0pt plus 5cm}rviz\+::\+Ros\+Topic\+Property$\ast$ smacc\+\_\+rviz\+\_\+plugin\+::\+Smacc\+Rviz\+Display\+::topic\+\_\+property\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_ad81e5239e1343b2ba01ee16d1f010932}{}\label{classsmacc__rviz__plugin_1_1SmaccRvizDisplay_ad81e5239e1343b2ba01ee16d1f010932}
+
+
+Definition at line 126 of file smacc\+\_\+rviz\+\_\+display.\+h.
+
+
+
+Referenced by Smacc\+Rviz\+Display(), and subscribe().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+diagnostics/smacc\+\_\+rviz\+\_\+plugin/src/\hyperlink{smacc__rviz__display_8h}{smacc\+\_\+rviz\+\_\+display.\+h}\item 
+smacc\+\_\+diagnostics/smacc\+\_\+rviz\+\_\+plugin/src/\hyperlink{smacc__rviz__display_8cpp}{smacc\+\_\+rviz\+\_\+display.\+cpp}\end{DoxyCompactItemize}

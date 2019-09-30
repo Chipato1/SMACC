@@ -1,0 +1,58 @@
+\hypertarget{smacc__substate__behavior_8h}{}\section{smacc/include/smacc/smacc\+\_\+substate\+\_\+behavior.h File Reference}
+\label{smacc__substate__behavior_8h}\index{smacc/include/smacc/smacc\+\_\+substate\+\_\+behavior.\+h@{smacc/include/smacc/smacc\+\_\+substate\+\_\+behavior.\+h}}
+{\ttfamily \#include $<$smacc/component.\+h$>$}\\*
+{\ttfamily \#include $<$smacc/smacc\+\_\+state\+\_\+machine.\+h$>$}\\*
+Include dependency graph for smacc\+\_\+substate\+\_\+behavior.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{smacc__substate__behavior_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{smacc__substate__behavior_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsmacc_1_1SmaccSubStateBehavior}{smacc\+::\+Smacc\+Sub\+State\+Behavior}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacesmacc}{smacc}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{smacc__substate__behavior_8h_aea096c97b30152d8b292ca5501eca051}{S\+M\+A\+C\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+B\+E\+H\+A\+V\+I\+OR}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{smacc\+\_\+substate\+\_\+behavior.\+h@{smacc\+\_\+substate\+\_\+behavior.\+h}!S\+M\+A\+C\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+B\+E\+H\+A\+V\+I\+OR@{S\+M\+A\+C\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+B\+E\+H\+A\+V\+I\+OR}}
+\index{S\+M\+A\+C\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+B\+E\+H\+A\+V\+I\+OR@{S\+M\+A\+C\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+B\+E\+H\+A\+V\+I\+OR}!smacc\+\_\+substate\+\_\+behavior.\+h@{smacc\+\_\+substate\+\_\+behavior.\+h}}
+\subsubsection[{\texorpdfstring{S\+M\+A\+C\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+B\+E\+H\+A\+V\+I\+OR}{SMACC_STATE_BEHAVIOR}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+M\+A\+C\+C\+\_\+\+S\+T\+A\+T\+E\+\_\+\+B\+E\+H\+A\+V\+I\+OR}\hypertarget{smacc__substate__behavior_8h_aea096c97b30152d8b292ca5501eca051}{}\label{smacc__substate__behavior_8h_aea096c97b30152d8b292ca5501eca051}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+SmaccSubStateBehavior *definesBehavioralSmaccState()                         \(\backslash\)
+    \{                                                                            \(\backslash\)
+        std::string shortname = this->getFullName();                             \(\backslash\)
+        ROS\_INFO(\textcolor{stringliteral}{"trying to get the substate behavior: %s"}, shortname.c\_str());  \(\backslash\)
+        SmaccSubStateBehavior *behavior;                                         \(\backslash\)
+                                                                                 \(\backslash\)
+        bool found = this->getGlobalSMData(shortname, behavior);                 \(\backslash\)
+        ROS\_INFO(\textcolor{stringliteral}{"substate behavior '%s' exists? %d"}, shortname.c\_str(), found); \(\backslash\)
+        return behavior;                                                         \(\backslash\)
+    \}
+\end{DoxyCode}
+
+
+Definition at line 19 of file smacc\+\_\+substate\+\_\+behavior.\+h.
+

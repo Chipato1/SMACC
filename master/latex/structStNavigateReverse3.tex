@@ -1,0 +1,81 @@
+\hypertarget{structStNavigateReverse3}{}\section{St\+Navigate\+Reverse3 Struct Reference}
+\label{structStNavigateReverse3}\index{St\+Navigate\+Reverse3@{St\+Navigate\+Reverse3}}
+
+
+{\ttfamily \#include $<$st\+\_\+navigate\+\_\+reverse\+\_\+3.\+h$>$}
+
+
+
+Inheritance diagram for St\+Navigate\+Reverse3\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structStNavigateReverse3__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for St\+Navigate\+Reverse3\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structStNavigateReverse3__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef mpl\+::list$<$ sc\+::transition$<$ Ev\+Action\+Succeded$<$ smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result $>$, \hyperlink{structStNavigateToWaypoint1}{St\+Navigate\+To\+Waypoint1} $>$, sc\+::transition$<$ Ev\+Key\+PressP$<$ Sb\+Keyboard $>$, \hyperlink{structStRotateDegrees6}{St\+Rotate\+Degrees6} $>$, sc\+::transition$<$ \hyperlink{structsmacc_1_1EvKeyPressN}{smacc\+::\+Ev\+Key\+PressN}$<$ Sb\+Keyboard $>$, \hyperlink{structStNavigateToWaypoint1}{St\+Navigate\+To\+Waypoint1} $>$, sc\+::transition$<$ \hyperlink{structsmacc_1_1EvTopicMessageTimeout}{smacc\+::\+Ev\+Topic\+Message\+Timeout}$<$ \hyperlink{sensor__state_8h_a9db9e1944f88de79507758d08e4a2ee3}{Lidar\+Sensor} $>$, \hyperlink{structStAcquireSensors}{St\+Acquire\+Sensors} $>$, sc\+::transition$<$ Ev\+Action\+Aborted$<$ smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result $>$, \hyperlink{structStNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$ $>$ \hyperlink{structStNavigateReverse3_ae78d5eb8678ce6a8f7ac772ca2b6ac7a}{reactions}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structStNavigateReverse3_a4cbaaac42b28f996e98d6b50a9527a89}{on\+Initialize} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1 of file st\+\_\+navigate\+\_\+reverse\+\_\+3.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{St\+Navigate\+Reverse3@{St\+Navigate\+Reverse3}!reactions@{reactions}}
+\index{reactions@{reactions}!St\+Navigate\+Reverse3@{St\+Navigate\+Reverse3}}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ sc\+::transition$<$Ev\+Action\+Succeded$<$smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result$>$, {\bf St\+Navigate\+To\+Waypoint1}$>$, sc\+::transition$<$Ev\+Key\+PressP$<$Sb\+Keyboard$>$,{\bf St\+Rotate\+Degrees6}$>$, sc\+::transition$<${\bf smacc\+::\+Ev\+Key\+PressN}$<$Sb\+Keyboard$>$, {\bf St\+Navigate\+To\+Waypoint1}$>$, sc\+::transition$<${\bf smacc\+::\+Ev\+Topic\+Message\+Timeout}$<${\bf Lidar\+Sensor}$>$, {\bf St\+Acquire\+Sensors}$>$, sc\+::transition$<$Ev\+Action\+Aborted$<$smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$ $>$ {\bf St\+Navigate\+Reverse3\+::reactions}}\hypertarget{structStNavigateReverse3_ae78d5eb8678ce6a8f7ac772ca2b6ac7a}{}\label{structStNavigateReverse3_ae78d5eb8678ce6a8f7ac772ca2b6ac7a}
+
+
+Definition at line 16 of file st\+\_\+navigate\+\_\+reverse\+\_\+3.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{St\+Navigate\+Reverse3@{St\+Navigate\+Reverse3}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!St\+Navigate\+Reverse3@{St\+Navigate\+Reverse3}}
+\subsubsection[{\texorpdfstring{on\+Initialize()}{onInitialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void St\+Navigate\+Reverse3\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structStNavigateReverse3_a4cbaaac42b28f996e98d6b50a9527a89}{}\label{structStNavigateReverse3_a4cbaaac42b28f996e98d6b50a9527a89}
+
+
+Definition at line 18 of file st\+\_\+navigate\+\_\+reverse\+\_\+3.\+h.
+
+
+\begin{DoxyCode}
+19    \{
+20       this->configure<NavigationOrthogonal>(std::make\_shared<SbNavigateBackwards>(2));
+21       this->configure<ToolOrthogonal>(std::make\_shared<SbToolStop>());
+22       this->configure<KeyboardOrthogonal>(std::make\_shared<SbKeyboard>());
+23    \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+examples/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/states/\hyperlink{st__navigate__reverse__3_8h}{st\+\_\+navigate\+\_\+reverse\+\_\+3.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,51 @@
+\hypertarget{example3_8cpp}{}\section{smacc\+\_\+sm\+\_\+examples/sm\+\_\+smacc\+\_\+tutorial\+\_\+examples/src/example3.cpp File Reference}
+\label{example3_8cpp}\index{smacc\+\_\+sm\+\_\+examples/sm\+\_\+smacc\+\_\+tutorial\+\_\+examples/src/example3.\+cpp@{smacc\+\_\+sm\+\_\+examples/sm\+\_\+smacc\+\_\+tutorial\+\_\+examples/src/example3.\+cpp}}
+{\ttfamily \#include $<$smacc/smacc.\+h$>$}\\*
+{\ttfamily \#include $<$smacc\+\_\+navigation\+\_\+plugin/move\+\_\+base\+\_\+to\+\_\+goal.\+h$>$}\\*
+{\ttfamily \#include $<$tf/tf.\+h$>$}\\*
+Include dependency graph for example3.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{example3_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSimpleStateMachine}{Simple\+State\+Machine}
+\item 
+struct \hyperlink{structNavigate}{Navigate}
+\item 
+struct \hyperlink{structExecuteToolState}{Execute\+Tool\+State}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classint}{int} \hyperlink{example3_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (\hyperlink{classint}{int} argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{example3.\+cpp@{example3.\+cpp}!main@{main}}
+\index{main@{main}!example3.\+cpp@{example3.\+cpp}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} main (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\hypertarget{example3_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{example3_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Definition at line 76 of file example3.\+cpp.
+
+
+\begin{DoxyCode}
+76                                 \{
+77   \textcolor{comment}{// initialize the ros node}
+78   ros::init(argc, \hyperlink{namespacesmacc__viewer_a641e44a1c9c09b36c59a0651d01d4d97}{argv}, \textcolor{stringliteral}{"example3"});
+79   ros::NodeHandle nh;
+80 
+81   smacc::run<SimpleStateMachine>();
+82 \}\end{DoxyCode}

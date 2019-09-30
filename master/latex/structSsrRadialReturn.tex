@@ -1,0 +1,80 @@
+\hypertarget{structSsrRadialReturn}{}\section{Ssr\+Radial\+Return Struct Reference}
+\label{structSsrRadialReturn}\index{Ssr\+Radial\+Return@{Ssr\+Radial\+Return}}
+
+
+{\ttfamily \#include $<$ssr\+\_\+radial\+\_\+return.\+h$>$}
+
+
+
+Inheritance diagram for Ssr\+Radial\+Return\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structSsrRadialReturn__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Ssr\+Radial\+Return\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structSsrRadialReturn__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef sc\+::transition$<$ Ev\+Action\+Succeded$<$ smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result $>$, \hyperlink{structSsrRadialRotate}{Ssr\+Radial\+Rotate} $>$ \hyperlink{structSsrRadialReturn_aff2288b31f7e93b319ce7a50826f14f7}{reactions}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structSsrRadialReturn_a713e3a0722102ad2c4b030aeceefe823}{on\+Initialize} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1 of file ssr\+\_\+radial\+\_\+return.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{Ssr\+Radial\+Return@{Ssr\+Radial\+Return}!reactions@{reactions}}
+\index{reactions@{reactions}!Ssr\+Radial\+Return@{Ssr\+Radial\+Return}}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef sc\+::transition$<$Ev\+Action\+Succeded$<$smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result$>$, {\bf Ssr\+Radial\+Rotate}$>$ {\bf Ssr\+Radial\+Return\+::reactions}}\hypertarget{structSsrRadialReturn_aff2288b31f7e93b319ce7a50826f14f7}{}\label{structSsrRadialReturn_aff2288b31f7e93b319ce7a50826f14f7}
+
+
+Definition at line 3 of file ssr\+\_\+radial\+\_\+return.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Ssr\+Radial\+Return@{Ssr\+Radial\+Return}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!Ssr\+Radial\+Return@{Ssr\+Radial\+Return}}
+\subsubsection[{\texorpdfstring{on\+Initialize()}{onInitialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ssr\+Radial\+Return\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structSsrRadialReturn_a713e3a0722102ad2c4b030aeceefe823}{}\label{structSsrRadialReturn_a713e3a0722102ad2c4b030aeceefe823}
+
+
+Definition at line 7 of file ssr\+\_\+radial\+\_\+return.\+h.
+
+
+\begin{DoxyCode}
+8   \{
+9     this->configure<NavigationOrthogonal>(std::make\_shared<SbUndoPathBackwards>());
+10     this->configure<ToolOrthogonal>(std::make\_shared<SbToolStop>());
+11   \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+examples/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/superstate\+\_\+routines/radial\+\_\+motion/\hyperlink{ssr__radial__return_8h}{ssr\+\_\+radial\+\_\+return.\+h}\end{DoxyCompactItemize}

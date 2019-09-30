@@ -1,0 +1,288 @@
+\hypertarget{classsmacc_1_1Orthogonal}{}\section{smacc\+:\+:Orthogonal Class Reference}
+\label{classsmacc_1_1Orthogonal}\index{smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}}
+
+
+{\ttfamily \#include $<$orthogonal.\+h$>$}
+
+
+
+Inheritance diagram for smacc\+:\+:Orthogonal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1Orthogonal__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+:\+:Orthogonal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1Orthogonal__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classsmacc_1_1Orthogonal_a05f65c01344a6c8593f7f88c0ca19654}{set\+State\+Machine} (\hyperlink{classsmacc_1_1ISmaccStateMachine}{I\+Smacc\+State\+Machine} $\ast$value)
+\item 
+void \hyperlink{classsmacc_1_1Orthogonal_a0476ba0e6575824893947918567ebbaa}{set\+State\+Behavior} (std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1SmaccSubStateBehavior}{smacc\+::\+Smacc\+Sub\+State\+Behavior} $>$ statebehavior)
+\item 
+void \hyperlink{classsmacc_1_1Orthogonal_a77888104f276bdbd177d69cf23f11a56}{on\+Entry} ()
+\item 
+void \hyperlink{classsmacc_1_1Orthogonal_a71c0df3d9e8327e65286e1ce0a3a7043}{on\+Exit} ()
+\item 
+virtual std\+::string \hyperlink{classsmacc_1_1Orthogonal_ae1ad57a2fda4d7f2ecf708c342fc1bb9}{get\+Name} () const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc_1_1ISmaccStateMachine}{I\+Smacc\+State\+Machine} $\ast$ \hyperlink{classsmacc_1_1Orthogonal_acea2058ac94667e46fc60ed3d4f524f7}{state\+Machine\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1SmaccSubStateBehavior}{smacc\+::\+Smacc\+Sub\+State\+Behavior} $>$ \hyperlink{classsmacc_1_1Orthogonal_aac82a4b0f756c942ff4947dc1cd6586b}{current\+Behavior}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file orthogonal.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}}
+\subsubsection[{\texorpdfstring{get\+Name() const }{getName() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::\+Orthogonal\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classsmacc_1_1Orthogonal_ae1ad57a2fda4d7f2ecf708c342fc1bb9}{}\label{classsmacc_1_1Orthogonal_ae1ad57a2fda4d7f2ecf708c342fc1bb9}
+
+
+Definition at line 26 of file orthogonal.\+cpp.
+
+
+
+References demangle\+Symbol().
+
+
+
+Referenced by on\+Entry(), on\+Exit(), and set\+State\+Behavior().
+
+
+\begin{DoxyCode}
+27 \{
+28     \textcolor{keywordflow}{return} \hyperlink{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{demangleSymbol}(\textcolor{keyword}{typeid}(*this).name());
+29 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classsmacc_1_1Orthogonal_ae1ad57a2fda4d7f2ecf708c342fc1bb9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classsmacc_1_1Orthogonal_ae1ad57a2fda4d7f2ecf708c342fc1bb9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}}
+\subsubsection[{\texorpdfstring{on\+Entry()}{onEntry()}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Orthogonal\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1Orthogonal_a77888104f276bdbd177d69cf23f11a56}{}\label{classsmacc_1_1Orthogonal_a77888104f276bdbd177d69cf23f11a56}
+
+
+Definition at line 31 of file orthogonal.\+cpp.
+
+
+
+References current\+Behavior, and get\+Name().
+
+
+\begin{DoxyCode}
+32 \{
+33     \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1Orthogonal_aac82a4b0f756c942ff4947dc1cd6586b}{currentBehavior} != \textcolor{keyword}{nullptr})
+34     \{
+35         ROS\_INFO(\textcolor{stringliteral}{"Orthogonal %s OnEntry, current Behavior: %s"},
+36                  this->\hyperlink{classsmacc_1_1Orthogonal_ae1ad57a2fda4d7f2ecf708c342fc1bb9}{getName}().c\_str(),
+37                  \hyperlink{classsmacc_1_1Orthogonal_aac82a4b0f756c942ff4947dc1cd6586b}{currentBehavior}->getName().c\_str());
+38 
+39         \hyperlink{classsmacc_1_1Orthogonal_aac82a4b0f756c942ff4947dc1cd6586b}{currentBehavior}->onEntry();
+40     \}
+41     \textcolor{keywordflow}{else}
+42     \{
+43         ROS\_INFO(\textcolor{stringliteral}{"Orthogonal %s OnEntry"},
+44                  this->\hyperlink{classsmacc_1_1Orthogonal_ae1ad57a2fda4d7f2ecf708c342fc1bb9}{getName}().c\_str());
+45     \}
+46 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1Orthogonal_a77888104f276bdbd177d69cf23f11a56_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}!on\+Exit@{on\+Exit}}
+\index{on\+Exit@{on\+Exit}!smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}}
+\subsubsection[{\texorpdfstring{on\+Exit()}{onExit()}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Orthogonal\+::on\+Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1Orthogonal_a71c0df3d9e8327e65286e1ce0a3a7043}{}\label{classsmacc_1_1Orthogonal_a71c0df3d9e8327e65286e1ce0a3a7043}
+
+
+Definition at line 48 of file orthogonal.\+cpp.
+
+
+
+References current\+Behavior, and get\+Name().
+
+
+\begin{DoxyCode}
+49 \{
+50     \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1Orthogonal_aac82a4b0f756c942ff4947dc1cd6586b}{currentBehavior} != \textcolor{keyword}{nullptr})
+51     \{
+52         ROS\_INFO(\textcolor{stringliteral}{"Orthogonal %s OnExit, current Behavior: %s"}, this->\hyperlink{classsmacc_1_1Orthogonal_ae1ad57a2fda4d7f2ecf708c342fc1bb9}{getName}().c\_str(), 
+      \hyperlink{classsmacc_1_1Orthogonal_aac82a4b0f756c942ff4947dc1cd6586b}{currentBehavior}->getName().c\_str());
+53         \hyperlink{classsmacc_1_1Orthogonal_aac82a4b0f756c942ff4947dc1cd6586b}{currentBehavior}->onExit();
+54         \hyperlink{classsmacc_1_1Orthogonal_aac82a4b0f756c942ff4947dc1cd6586b}{currentBehavior} = \textcolor{keyword}{nullptr};
+55     \}
+56     \textcolor{keywordflow}{else}
+57     \{
+58         ROS\_INFO(\textcolor{stringliteral}{"Orthogonal %s OnExit"}, this->\hyperlink{classsmacc_1_1Orthogonal_ae1ad57a2fda4d7f2ecf708c342fc1bb9}{getName}().c\_str());
+59     \}
+60 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1Orthogonal_a71c0df3d9e8327e65286e1ce0a3a7043_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}!set\+State\+Behavior@{set\+State\+Behavior}}
+\index{set\+State\+Behavior@{set\+State\+Behavior}!smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}}
+\subsubsection[{\texorpdfstring{set\+State\+Behavior(std\+::shared\+\_\+ptr$<$ smacc\+::\+Smacc\+Sub\+State\+Behavior $>$ statebehavior)}{setStateBehavior(std::shared_ptr< smacc::SmaccSubStateBehavior > statebehavior)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Orthogonal\+::set\+State\+Behavior (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf smacc\+::\+Smacc\+Sub\+State\+Behavior} $>$}]{statebehavior}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1Orthogonal_a0476ba0e6575824893947918567ebbaa}{}\label{classsmacc_1_1Orthogonal_a0476ba0e6575824893947918567ebbaa}
+
+
+Definition at line 12 of file orthogonal.\+cpp.
+
+
+
+References current\+Behavior, get\+Name(), and state\+Machine\+\_\+.
+
+
+\begin{DoxyCode}
+13 \{
+14     \textcolor{keywordflow}{if} (statebehavior != \textcolor{keyword}{nullptr})
+15     \{
+16         ROS\_INFO(\textcolor{stringliteral}{"Setting Ortho %s State behavior: %s"}, this->\hyperlink{classsmacc_1_1Orthogonal_ae1ad57a2fda4d7f2ecf708c342fc1bb9}{getName}().c\_str(), statebehavior->
+      getName().c\_str());
+17         statebehavior->stateMachine = this->\hyperlink{classsmacc_1_1Orthogonal_acea2058ac94667e46fc60ed3d4f524f7}{stateMachine\_};
+18         \hyperlink{classsmacc_1_1Orthogonal_aac82a4b0f756c942ff4947dc1cd6586b}{currentBehavior} = statebehavior;
+19     \}
+20     \textcolor{keywordflow}{else}
+21     \{
+22         ROS\_INFO(\textcolor{stringliteral}{"Not behavioral State by orthogonal"});
+23     \}
+24 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1Orthogonal_a0476ba0e6575824893947918567ebbaa_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}!set\+State\+Machine@{set\+State\+Machine}}
+\index{set\+State\+Machine@{set\+State\+Machine}!smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}}
+\subsubsection[{\texorpdfstring{set\+State\+Machine(\+I\+Smacc\+State\+Machine $\ast$value)}{setStateMachine(ISmaccStateMachine *value)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Orthogonal\+::set\+State\+Machine (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Smacc\+State\+Machine} $\ast$}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1Orthogonal_a05f65c01344a6c8593f7f88c0ca19654}{}\label{classsmacc_1_1Orthogonal_a05f65c01344a6c8593f7f88c0ca19654}
+
+
+Definition at line 7 of file orthogonal.\+cpp.
+
+
+
+References state\+Machine\+\_\+.
+
+
+\begin{DoxyCode}
+8 \{
+9     this->\hyperlink{classsmacc_1_1Orthogonal_acea2058ac94667e46fc60ed3d4f524f7}{stateMachine\_} = value;
+10 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}!current\+Behavior@{current\+Behavior}}
+\index{current\+Behavior@{current\+Behavior}!smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}}
+\subsubsection[{\texorpdfstring{current\+Behavior}{currentBehavior}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf smacc\+::\+Smacc\+Sub\+State\+Behavior}$>$ smacc\+::\+Orthogonal\+::current\+Behavior}\hypertarget{classsmacc_1_1Orthogonal_aac82a4b0f756c942ff4947dc1cd6586b}{}\label{classsmacc_1_1Orthogonal_aac82a4b0f756c942ff4947dc1cd6586b}
+
+
+Definition at line 11 of file orthogonal.\+h.
+
+
+
+Referenced by on\+Entry(), on\+Exit(), and set\+State\+Behavior().
+
+\index{smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}!state\+Machine\+\_\+@{state\+Machine\+\_\+}}
+\index{state\+Machine\+\_\+@{state\+Machine\+\_\+}!smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}}
+\subsubsection[{\texorpdfstring{state\+Machine\+\_\+}{stateMachine_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Smacc\+State\+Machine}$\ast$ smacc\+::\+Orthogonal\+::state\+Machine\+\_\+}\hypertarget{classsmacc_1_1Orthogonal_acea2058ac94667e46fc60ed3d4f524f7}{}\label{classsmacc_1_1Orthogonal_acea2058ac94667e46fc60ed3d4f524f7}
+
+
+Definition at line 10 of file orthogonal.\+h.
+
+
+
+Referenced by set\+State\+Behavior(), and set\+State\+Machine().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+smacc/include/smacc/\hyperlink{orthogonal_8h}{orthogonal.\+h}\item 
+smacc/src/smacc/\hyperlink{orthogonal_8cpp}{orthogonal.\+cpp}\end{DoxyCompactItemize}

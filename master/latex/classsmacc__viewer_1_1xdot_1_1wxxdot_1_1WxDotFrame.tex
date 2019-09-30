@@ -1,0 +1,399 @@
+\hypertarget{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame}{}\section{smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Dot\+Frame Class Reference}
+\label{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame}\index{smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Dot\+Frame@{smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Dot\+Frame}}
+
+
+Inheritance diagram for smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Dot\+Frame\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Dot\+Frame\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a03ac561b2408b4dd264d2a3201c9ce4c}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a5116d653e19a10b16c0efed6aae13874}{Show\+Controls\+Dialog} (self, event)
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a133223742fb695676ea62ba29a985dbb}{Do\+Open\+File} (self, event)
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a12dd7f291407853597f902096bcf5664}{On\+Exit} (self, event)
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a6735354701679484d0821f2c31c4de61}{set\+\_\+dotcode} (self, dotcode, filename=\textquotesingle{}$<$ stdin $>$\textquotesingle{})
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a27243dae9ea562049045e4a56c4c3418}{set\+\_\+xdotcode} (self, xdotcode, filename=\textquotesingle{}$<$ stdin $>$\textquotesingle{})
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_ae2b463edfd3e4156077b2dcd39d6f9b2}{open\+\_\+file} (self, filename)
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a7809317f2f774d8df31bc1b9cca167d4}{set\+\_\+filter} (self, filter)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_ab72815878b25f1f3c85c5bf6cc3eaaf9}{widget}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 503 of file wxxdot.\+py.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame@{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame@{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self)}{__init__(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Dot\+Frame.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a03ac561b2408b4dd264d2a3201c9ce4c}{}\label{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a03ac561b2408b4dd264d2a3201c9ce4c}
+
+
+Definition at line 504 of file wxxdot.\+py.
+
+
+\begin{DoxyCode}
+504   \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a03ac561b2408b4dd264d2a3201c9ce4c}{\_\_init\_\_}(self):
+505     wx.Frame.\_\_init\_\_(self, \textcolor{keywordtype}{None}, -1, \textcolor{stringliteral}{"Dot Viewer"}, size=(512,512))
+506 
+507     vbox = wx.BoxSizer(wx.VERTICAL)
+508 
+509     \textcolor{comment}{# Construct toolbar}
+510     toolbar = wx.ToolBar(self, -1)
+511     toolbar.AddLabelTool(wx.ID\_OPEN, \textcolor{stringliteral}{'Open File'},
+512         wx.ArtProvider.GetBitmap(wx.ART\_FOLDER\_OPEN,wx.ART\_OTHER,(16,16)))
+513     toolbar.AddLabelTool(wx.ID\_HELP, \textcolor{stringliteral}{'Help'},
+514         wx.ArtProvider.GetBitmap(wx.ART\_HELP,wx.ART\_OTHER,(16,16)) )
+515     toolbar.Realize()
+516 
+517     self.Bind(wx.EVT\_TOOL, self.\hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a133223742fb695676ea62ba29a985dbb}{DoOpenFile}, id=wx.ID\_OPEN)
+518     self.Bind(wx.EVT\_TOOL, self.\hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a5116d653e19a10b16c0efed6aae13874}{ShowControlsDialog}, id=wx.ID\_HELP)
+519 
+520     \textcolor{comment}{# Create dot widge}
+521     self.\hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_ab72815878b25f1f3c85c5bf6cc3eaaf9}{widget} = \hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotWindow}{WxDotWindow}(self, -1)
+522 
+523     \textcolor{comment}{# Add elements to sizer}
+524     vbox.Add(toolbar, 0, wx.EXPAND)
+525     vbox.Add(self.\hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_ab72815878b25f1f3c85c5bf6cc3eaaf9}{widget}, 100, wx.EXPAND | wx.ALL)
+526 
+527     self.SetSizer(vbox)
+528     self.Center()
+529 
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a03ac561b2408b4dd264d2a3201c9ce4c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame@{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame}!Do\+Open\+File@{Do\+Open\+File}}
+\index{Do\+Open\+File@{Do\+Open\+File}!smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame@{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame}}
+\subsubsection[{\texorpdfstring{Do\+Open\+File(self, event)}{DoOpenFile(self, event)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Dot\+Frame.\+Do\+Open\+File (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{event}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a133223742fb695676ea62ba29a985dbb}{}\label{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a133223742fb695676ea62ba29a985dbb}
+
+
+Definition at line 540 of file wxxdot.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Dot\+Frame.\+\_\+\+\_\+init\+\_\+\+\_\+().
+
+
+\begin{DoxyCode}
+540   \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a133223742fb695676ea62ba29a985dbb}{DoOpenFile}(self,event):
+541     wcd = \textcolor{stringliteral}{'All files (*)|*|GraphViz Dot Files(*.dot)|*.dot|'}
+542     dir = os.getcwd()
+543     open\_dlg = wx.FileDialog(self, message=\textcolor{stringliteral}{'Choose a file'}, defaultDir=dir, defaultFile=\textcolor{stringliteral}{''},
+544     wildcard=wcd, style=wx.OPEN|wx.CHANGE\_DIR)
+545     \textcolor{keywordflow}{if} open\_dlg.ShowModal() == wx.ID\_OK:
+546       path = open\_dlg.GetPath()
+547 
+548       \textcolor{keywordflow}{try}:
+549         self.\hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_ae2b463edfd3e4156077b2dcd39d6f9b2}{open\_file}(path)
+550 
+551       \textcolor{keywordflow}{except} IOError, error:
+552         dlg = wx.MessageDialog(self, \textcolor{stringliteral}{'Error opening file\(\backslash\)n'} + str(error))
+553         dlg.ShowModal()
+554 
+555       \textcolor{keywordflow}{except} UnicodeDecodeError, error:
+556         dlg = wx.MessageDialog(self, \textcolor{stringliteral}{'Error opening file\(\backslash\)n'} + str(error))
+557         dlg.ShowModal()
+558 
+559     open\_dlg.Destroy()
+560 
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a133223742fb695676ea62ba29a985dbb_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a133223742fb695676ea62ba29a985dbb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame@{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame}!On\+Exit@{On\+Exit}}
+\index{On\+Exit@{On\+Exit}!smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame@{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame}}
+\subsubsection[{\texorpdfstring{On\+Exit(self, event)}{OnExit(self, event)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Dot\+Frame.\+On\+Exit (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{event}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a12dd7f291407853597f902096bcf5664}{}\label{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a12dd7f291407853597f902096bcf5664}
+
+
+Definition at line 561 of file wxxdot.\+py.
+
+
+\begin{DoxyCode}
+561   \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a12dd7f291407853597f902096bcf5664}{OnExit}(self, event):
+562     \textcolor{keywordflow}{pass}
+563 
+\end{DoxyCode}
+\index{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame@{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame}!open\+\_\+file@{open\+\_\+file}}
+\index{open\+\_\+file@{open\+\_\+file}!smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame@{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame}}
+\subsubsection[{\texorpdfstring{open\+\_\+file(self, filename)}{open_file(self, filename)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Dot\+Frame.\+open\+\_\+file (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{filename}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_ae2b463edfd3e4156077b2dcd39d6f9b2}{}\label{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_ae2b463edfd3e4156077b2dcd39d6f9b2}
+
+
+Definition at line 574 of file wxxdot.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Dot\+Frame.\+Do\+Open\+File(), smacc\+\_\+viewer.\+xdot.\+xdot.\+Dot\+Window.\+on\+\_\+open(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Window.\+on\+\_\+open(), and smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Window.\+update\+\_\+file\+\_\+menu().
+
+
+\begin{DoxyCode}
+574   \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_ae2b463edfd3e4156077b2dcd39d6f9b2}{open\_file}(self, filename):
+575     \textcolor{keywordflow}{try}:
+576       fp = file(filename, \textcolor{stringliteral}{'rt'})
+577       self.\hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a6735354701679484d0821f2c31c4de61}{set\_dotcode}(fp.read(), filename)
+578       fp.close()
+579     \textcolor{keywordflow}{except} IOError, ex:
+580       \textcolor{stringliteral}{"""}
+581 \textcolor{stringliteral}{      dlg = gtk.MessageDialog(type=gtk.MESSAGE\_ERROR,}
+582 \textcolor{stringliteral}{                  message\_format=str(ex),}
+583 \textcolor{stringliteral}{                  buttons=gtk.BUTTONS\_OK)}
+584 \textcolor{stringliteral}{      dlg.set\_title('Dot Viewer')}
+585 \textcolor{stringliteral}{      dlg.run()}
+586 \textcolor{stringliteral}{      dlg.destroy()}
+587 \textcolor{stringliteral}{      """}
+588 
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_ae2b463edfd3e4156077b2dcd39d6f9b2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_ae2b463edfd3e4156077b2dcd39d6f9b2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame@{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame}!set\+\_\+dotcode@{set\+\_\+dotcode}}
+\index{set\+\_\+dotcode@{set\+\_\+dotcode}!smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame@{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame}}
+\subsubsection[{\texorpdfstring{set\+\_\+dotcode(self, dotcode, filename=\textquotesingle{}$<$ stdin $>$\textquotesingle{})}{set_dotcode(self, dotcode, filename='< stdin >')}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Dot\+Frame.\+set\+\_\+dotcode (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{dotcode, }
+\item[{}]{filename = {\ttfamily \textquotesingle{}$<$stdin$>$\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a6735354701679484d0821f2c31c4de61}{}\label{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a6735354701679484d0821f2c31c4de61}
+
+
+Definition at line 564 of file wxxdot.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Dot\+Frame.\+open\+\_\+file(), smacc\+\_\+viewer.\+xdot.\+xdot.\+Dot\+Window.\+open\+\_\+file(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Window.\+open\+\_\+file(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+Dot\+Widget.\+reload().
+
+
+\begin{DoxyCode}
+564   \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a6735354701679484d0821f2c31c4de61}{set\_dotcode}(self, dotcode, filename='<stdin>'):
+565     \textcolor{keywordflow}{if} self.widget.set\_dotcode(dotcode, filename):
+566       self.SetTitle(os.path.basename(filename) + \textcolor{stringliteral}{' - Dot Viewer'})
+567       self.widget.zoom\_to\_fit()
+568 
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a6735354701679484d0821f2c31c4de61_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame@{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame}!set\+\_\+filter@{set\+\_\+filter}}
+\index{set\+\_\+filter@{set\+\_\+filter}!smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame@{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame}}
+\subsubsection[{\texorpdfstring{set\+\_\+filter(self, filter)}{set_filter(self, filter)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Dot\+Frame.\+set\+\_\+filter (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{filter}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a7809317f2f774d8df31bc1b9cca167d4}{}\label{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a7809317f2f774d8df31bc1b9cca167d4}
+
+
+Definition at line 589 of file wxxdot.\+py.
+
+
+\begin{DoxyCode}
+589   \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a7809317f2f774d8df31bc1b9cca167d4}{set\_filter}(self, filter):
+590     self.widget.set\_filter(filter)
+591 
+592 \end{DoxyCode}
+\index{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame@{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame}!set\+\_\+xdotcode@{set\+\_\+xdotcode}}
+\index{set\+\_\+xdotcode@{set\+\_\+xdotcode}!smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame@{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame}}
+\subsubsection[{\texorpdfstring{set\+\_\+xdotcode(self, xdotcode, filename=\textquotesingle{}$<$ stdin $>$\textquotesingle{})}{set_xdotcode(self, xdotcode, filename='< stdin >')}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Dot\+Frame.\+set\+\_\+xdotcode (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{xdotcode, }
+\item[{}]{filename = {\ttfamily \textquotesingle{}$<$stdin$>$\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a27243dae9ea562049045e4a56c4c3418}{}\label{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a27243dae9ea562049045e4a56c4c3418}
+
+
+Definition at line 569 of file wxxdot.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot.\+Dot\+Widget.\+set\+\_\+dotcode().
+
+
+\begin{DoxyCode}
+569   \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a27243dae9ea562049045e4a56c4c3418}{set\_xdotcode}(self, xdotcode, filename='<stdin>'):
+570     \textcolor{keywordflow}{if} self.widget.set\_xdotcode(xdotcode):
+571       self.SetTitle(os.path.basename(filename) + \textcolor{stringliteral}{' - Dot Viewer'})
+572       self.widget.zoom\_to\_fit()
+573 
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a27243dae9ea562049045e4a56c4c3418_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame@{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame}!Show\+Controls\+Dialog@{Show\+Controls\+Dialog}}
+\index{Show\+Controls\+Dialog@{Show\+Controls\+Dialog}!smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame@{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame}}
+\subsubsection[{\texorpdfstring{Show\+Controls\+Dialog(self, event)}{ShowControlsDialog(self, event)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Dot\+Frame.\+Show\+Controls\+Dialog (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{event}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a5116d653e19a10b16c0efed6aae13874}{}\label{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a5116d653e19a10b16c0efed6aae13874}
+
+
+Definition at line 530 of file wxxdot.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Dot\+Frame.\+\_\+\+\_\+init\+\_\+\+\_\+().
+
+
+\begin{DoxyCode}
+530   \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a5116d653e19a10b16c0efed6aae13874}{ShowControlsDialog}(self,event):
+531     dial = wx.MessageDialog(\textcolor{keywordtype}{None},
+532         \textcolor{stringliteral}{"\(\backslash\)}
+533 \textcolor{stringliteral}{Pan: Arrow Keys\(\backslash\)n\(\backslash\)}
+534 \textcolor{stringliteral}{Zoom: PageUp / PageDown\(\backslash\)n\(\backslash\)}
+535 \textcolor{stringliteral}{Zoom To Fit: F\(\backslash\)n\(\backslash\)}
+536 \textcolor{stringliteral}{Refresh: R"},
+537         \textcolor{stringliteral}{'Keyboard Controls'}, wx.OK)
+538     dial.ShowModal()
+539 
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_a5116d653e19a10b16c0efed6aae13874_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame@{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame}!widget@{widget}}
+\index{widget@{widget}!smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame@{smacc\+\_\+viewer\+::xdot\+::wxxdot\+::\+Wx\+Dot\+Frame}}
+\subsubsection[{\texorpdfstring{widget}{widget}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+xdot.\+wxxdot.\+Wx\+Dot\+Frame.\+widget}\hypertarget{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_ab72815878b25f1f3c85c5bf6cc3eaaf9}{}\label{classsmacc__viewer_1_1xdot_1_1wxxdot_1_1WxDotFrame_ab72815878b25f1f3c85c5bf6cc3eaaf9}
+
+
+Definition at line 521 of file wxxdot.\+py.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+viewer/src/smacc\+\_\+viewer/xdot/\hyperlink{wxxdot_8py}{wxxdot.\+py}\end{DoxyCompactItemize}

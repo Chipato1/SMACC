@@ -1,0 +1,95 @@
+\hypertarget{structActive}{}\section{Active Struct Reference}
+\label{structActive}\index{Active@{Active}}
+
+
+Inheritance diagram for Active\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structActive__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Active\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structActive__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef sc\+::custom\+\_\+reaction$<$ \hyperlink{structEvReset}{Ev\+Reset} $>$ \hyperlink{structActive_a2df2dabcf29191d36281a0fc2a29fd87}{reactions}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structActive_ab6be732073ce73ec70afdff59cef7188}{on\+Entry} ()
+\item 
+sc\+::result \hyperlink{structActive_a9ca01e927be26d724f1f2db3a37d30b4}{react} (const \hyperlink{structEvReset}{Ev\+Reset} \&ev)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 43 of file example5.\+cpp.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{Active@{Active}!reactions@{reactions}}
+\index{reactions@{reactions}!Active@{Active}}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef sc\+::custom\+\_\+reaction$<${\bf Ev\+Reset}$>$ {\bf Active\+::reactions}}\hypertarget{structActive_a2df2dabcf29191d36281a0fc2a29fd87}{}\label{structActive_a2df2dabcf29191d36281a0fc2a29fd87}
+
+
+Definition at line 46 of file example5.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Active@{Active}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!Active@{Active}}
+\subsubsection[{\texorpdfstring{on\+Entry()}{onEntry()}}]{\setlength{\rightskip}{0pt plus 5cm}void Active\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structActive_ab6be732073ce73ec70afdff59cef7188}{}\label{structActive_ab6be732073ce73ec70afdff59cef7188}
+
+
+Definition at line 54 of file example5.\+cpp.
+
+
+\begin{DoxyCode}
+55     \{
+56         \textcolor{keyword}{auto} ev = \textcolor{keyword}{new} \hyperlink{structEvReset}{EvReset}();
+57         \hyperlink{classsmacc_1_1SmaccState_ae0e035e2d4e60f4ad58f08f44261f26c}{postEvent}( ev );
+58     \}
+\end{DoxyCode}
+\index{Active@{Active}!react@{react}}
+\index{react@{react}!Active@{Active}}
+\subsubsection[{\texorpdfstring{react(const Ev\+Reset \&ev)}{react(const EvReset &ev)}}]{\setlength{\rightskip}{0pt plus 5cm}sc\+::result Active\+::react (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ev\+Reset} \&}]{ev}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structActive_a9ca01e927be26d724f1f2db3a37d30b4}{}\label{structActive_a9ca01e927be26d724f1f2db3a37d30b4}
+
+
+Definition at line 60 of file example5.\+cpp.
+
+
+\begin{DoxyCode}
+61     \{
+62         std::cout << \textcolor{stringliteral}{"REACTION!!!!"} << std::endl;
+63     \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+examples/sm\+\_\+smacc\+\_\+tutorial\+\_\+examples/src/\hyperlink{example5_8cpp}{example5.\+cpp}\end{DoxyCompactItemize}

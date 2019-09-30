@@ -1,0 +1,734 @@
+\hypertarget{classsmacc__viewer_1_1ContainerNode}{}\section{smacc\+\_\+viewer.\+Container\+Node Class Reference}
+\label{classsmacc__viewer_1_1ContainerNode}\index{smacc\+\_\+viewer.\+Container\+Node@{smacc\+\_\+viewer.\+Container\+Node}}
+
+
+Collaboration diagram for smacc\+\_\+viewer.\+Container\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classsmacc__viewer_1_1ContainerNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsmacc__viewer_1_1ContainerNode_a1bd3d888ed6e16752a066e0fb081ac2e}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, server\+\_\+name, msg)
+\item 
+def \hyperlink{classsmacc__viewer_1_1ContainerNode_abb9e7a8f8daab12e87231622c85cebad}{update\+\_\+structure} (self, msg)
+\item 
+def \hyperlink{classsmacc__viewer_1_1ContainerNode_a91546f29baa378bb672873b3caf05ef2}{update\+\_\+status} (self, msg)
+\item 
+def \hyperlink{classsmacc__viewer_1_1ContainerNode_ae94079c15f311a526219155705e19fe0}{get\+\_\+dotcode} (self, selected\+\_\+paths, closed\+\_\+paths, depth, max\+\_\+depth, containers, show\+\_\+all, label\+\_\+wrapper, attrs=\{\})
+\item 
+def \hyperlink{classsmacc__viewer_1_1ContainerNode_ae35633b977b8ea568e70a62dcd3c4632}{set\+\_\+styles} (self, selected\+\_\+paths, depth, max\+\_\+depth, items, subgraph\+\_\+shapes, containers)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc__viewer_1_1ContainerNode_aac5daf1b3edc6c4fad17b72a6e491066}{\+\_\+server\+\_\+name}
+\item 
+\hyperlink{classsmacc__viewer_1_1ContainerNode_ae600e450e4ccfa137937076c391ded72}{\+\_\+path}
+\item 
+\hyperlink{classsmacc__viewer_1_1ContainerNode_ae088542666a3b43101b59f2e03d22e8b}{\+\_\+label}
+\item 
+\hyperlink{classsmacc__viewer_1_1ContainerNode_a2a6efbc2a25f65b830415ee994408ca0}{\+\_\+dir}
+\item 
+\hyperlink{classsmacc__viewer_1_1ContainerNode_a886cb99815f827d99bcd4c3e341284f1}{\+\_\+children}
+\item 
+\hyperlink{classsmacc__viewer_1_1ContainerNode_a0cecef41d6d1036c4716d1143479743a}{\+\_\+internal\+\_\+outcomes}
+\item 
+\hyperlink{classsmacc__viewer_1_1ContainerNode_ad0975f45567a6339b66516548e67385a}{\+\_\+outcomes\+\_\+from}
+\item 
+\hyperlink{classsmacc__viewer_1_1ContainerNode_a26f35e2c039a0a7d5f68a5abfc918627}{\+\_\+outcomes\+\_\+to}
+\item 
+\hyperlink{classsmacc__viewer_1_1ContainerNode_afc173014e336c7c3ab6a5d2dd1798d63}{\+\_\+container\+\_\+outcomes}
+\item 
+\hyperlink{classsmacc__viewer_1_1ContainerNode_a3d5c9521ab4377e7b94e437d4f7e5a83}{\+\_\+initial\+\_\+states}
+\item 
+\hyperlink{classsmacc__viewer_1_1ContainerNode_ad4607ee25bd9dd1f1c54ac72ca1ba5aa}{\+\_\+active\+\_\+states}
+\item 
+\hyperlink{classsmacc__viewer_1_1ContainerNode_a627a2895916d1815096914f67a612af2}{\+\_\+last\+\_\+active\+\_\+states}
+\item 
+\hyperlink{classsmacc__viewer_1_1ContainerNode_af401127311993eaf8cc2b9e631634320}{\+\_\+local\+\_\+data}
+\item 
+\hyperlink{classsmacc__viewer_1_1ContainerNode_a1e3dcba4beb3738d72e57805b7d2474b}{\+\_\+info}
+\item 
+\hyperlink{classsmacc__viewer_1_1ContainerNode_a8d17a3a75ce519ef442b9bc94a801130}{\+\_\+structure\+\_\+changed}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}This class represents a given container in a running smacc system. 
+
+Its primary use is to generate dotcode for a smacc container. It has
+methods for responding to structure and status messages from a smacc
+introspection server, as well as methods for updating the styles of a 
+graph once it's been drawn.
+\end{DoxyVerb}
+ 
+
+Definition at line 118 of file smacc\+\_\+viewer.\+py.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self, server\+\_\+name, msg)}{__init__(self, server_name, msg)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+Container\+Node.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{server\+\_\+name, }
+\item[{}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1ContainerNode_a1bd3d888ed6e16752a066e0fb081ac2e}{}\label{classsmacc__viewer_1_1ContainerNode_a1bd3d888ed6e16752a066e0fb081ac2e}
+
+
+Definition at line 127 of file smacc\+\_\+viewer.\+py.
+
+
+\begin{DoxyCode}
+127     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1ContainerNode_a1bd3d888ed6e16752a066e0fb081ac2e}{\_\_init\_\_}(self, server\_name, msg):
+128         \textcolor{comment}{# Store path info}
+129         self.\hyperlink{classsmacc__viewer_1_1ContainerNode_aac5daf1b3edc6c4fad17b72a6e491066}{\_server\_name} = server\_name
+130         self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ae600e450e4ccfa137937076c391ded72}{\_path} = msg.path
+131         splitpath = msg.path.split(\textcolor{stringliteral}{'/'})
+132         self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ae088542666a3b43101b59f2e03d22e8b}{\_label} = splitpath[-1]
+133         self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a2a6efbc2a25f65b830415ee994408ca0}{\_dir} = \textcolor{stringliteral}{'/'}.join(splitpath[0:-1])
+134 
+135         self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a886cb99815f827d99bcd4c3e341284f1}{\_children} = msg.children
+136         self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a0cecef41d6d1036c4716d1143479743a}{\_internal\_outcomes} = msg.internal\_outcomes
+137         self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ad0975f45567a6339b66516548e67385a}{\_outcomes\_from} = msg.outcomes\_from
+138         self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a26f35e2c039a0a7d5f68a5abfc918627}{\_outcomes\_to} = msg.outcomes\_to
+139 
+140         self.\hyperlink{classsmacc__viewer_1_1ContainerNode_afc173014e336c7c3ab6a5d2dd1798d63}{\_container\_outcomes} = msg.container\_outcomes
+141 
+142         \textcolor{comment}{# Status}
+143         self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a3d5c9521ab4377e7b94e437d4f7e5a83}{\_initial\_states} = []
+144         self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ad4607ee25bd9dd1f1c54ac72ca1ba5aa}{\_active\_states} = []
+145         self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a627a2895916d1815096914f67a612af2}{\_last\_active\_states} = []
+146         self.\hyperlink{classsmacc__viewer_1_1ContainerNode_af401127311993eaf8cc2b9e631634320}{\_local\_data} = \hyperlink{classsmacc__viewer_1_1smacc__user__data_1_1UserData}{UserData}()
+147         self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a1e3dcba4beb3738d72e57805b7d2474b}{\_info} = \textcolor{stringliteral}{''}
+148 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}!get\+\_\+dotcode@{get\+\_\+dotcode}}
+\index{get\+\_\+dotcode@{get\+\_\+dotcode}!smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}}
+\subsubsection[{\texorpdfstring{get\+\_\+dotcode(self, selected\+\_\+paths, closed\+\_\+paths, depth, max\+\_\+depth, containers, show\+\_\+all, label\+\_\+wrapper, attrs=\lcurly{}\rcurly{})}{get_dotcode(self, selected_paths, closed_paths, depth, max_depth, containers, show_all, label_wrapper, attrs=\{\})}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+Container\+Node.\+get\+\_\+dotcode (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{selected\+\_\+paths, }
+\item[{}]{closed\+\_\+paths, }
+\item[{}]{depth, }
+\item[{}]{max\+\_\+depth, }
+\item[{}]{containers, }
+\item[{}]{show\+\_\+all, }
+\item[{}]{label\+\_\+wrapper, }
+\item[{}]{attrs = {\ttfamily \{\}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1ContainerNode_ae94079c15f311a526219155705e19fe0}{}\label{classsmacc__viewer_1_1ContainerNode_ae94079c15f311a526219155705e19fe0}
+\begin{DoxyVerb}Generate the dotcode representing this container.
+
+@param selected_paths: The paths to nodes that are selected
+@closed paths: The paths that shouldn't be expanded
+@param depth: The depth to start traversing the tree
+@param max_depth: The depth to which we should traverse the tree
+@param containers: A dict of containers keyed by their paths
+@param show_all: True if implicit transitions should be shown
+@param label_wrapper: A text wrapper for wrapping element names
+@param attrs: A dict of dotcode attributes for this cluster
+\end{DoxyVerb}
+ 
+
+Definition at line 205 of file smacc\+\_\+viewer.\+py.
+
+
+
+References smacc\+\_\+viewer.\+Container\+Node.\+\_\+children, smacc\+\_\+viewer.\+Container\+Node.\+\_\+container\+\_\+outcomes, smacc\+\_\+viewer.\+Container\+Node.\+\_\+initial\+\_\+states, smacc\+\_\+viewer.\+Container\+Node.\+\_\+internal\+\_\+outcomes, smacc\+\_\+viewer.\+Container\+Node.\+\_\+label, smacc\+\_\+viewer.\+Container\+Node.\+\_\+outcomes\+\_\+from, smacc\+\_\+viewer.\+Container\+Node.\+\_\+outcomes\+\_\+to, smacc\+\_\+viewer.\+Container\+Node.\+\_\+path, smacc\+\_\+viewer.\+attr\+\_\+string(), and smacc\+\_\+viewer.\+graph\+\_\+attr\+\_\+string().
+
+
+\begin{DoxyCode}
+205     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1ContainerNode_ae94079c15f311a526219155705e19fe0}{get\_dotcode}(self, selected\_paths, closed\_paths, depth, max\_depth, containers, show\_all, 
+      label\_wrapper, attrs=\{\}):
+206         \textcolor{stringliteral}{"""Generate the dotcode representing this container.}
+207 \textcolor{stringliteral}{        }
+208 \textcolor{stringliteral}{        @param selected\_paths: The paths to nodes that are selected}
+209 \textcolor{stringliteral}{        @closed paths: The paths that shouldn't be expanded}
+210 \textcolor{stringliteral}{        @param depth: The depth to start traversing the tree}
+211 \textcolor{stringliteral}{        @param max\_depth: The depth to which we should traverse the tree}
+212 \textcolor{stringliteral}{        @param containers: A dict of containers keyed by their paths}
+213 \textcolor{stringliteral}{        @param show\_all: True if implicit transitions should be shown}
+214 \textcolor{stringliteral}{        @param label\_wrapper: A text wrapper for wrapping element names}
+215 \textcolor{stringliteral}{        @param attrs: A dict of dotcode attributes for this cluster}
+216 \textcolor{stringliteral}{        """}
+217 
+218         dotstr = \textcolor{stringliteral}{'subgraph "cluster\_%s" \{\(\backslash\)n'} % (self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ae600e450e4ccfa137937076c391ded72}{\_path})
+219         \textcolor{keywordflow}{if} depth == 0:
+220             \textcolor{comment}{#attrs['style'] = 'filled,rounded'}
+221             attrs[\textcolor{stringliteral}{'color'}] = \textcolor{stringliteral}{'#00000000'}
+222             attrs[\textcolor{stringliteral}{'fillcolor'}] = \textcolor{stringliteral}{'#0000000F'}
+223         \textcolor{comment}{#attrs['rank'] = 'max'}
+224 
+225         \textcolor{comment}{#,'succeeded','aborted','preempted'attrs['label'] = self.\_label}
+226         dotstr += \hyperlink{namespacesmacc__viewer_a22b916faeb443f12141a375c8e4e1c5f}{graph\_attr\_string}(attrs)
+227 
+228         \textcolor{comment}{# Add start/terimate target}
+229         proxy\_attrs = \{
+230                 \textcolor{stringliteral}{'URL'}:self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ae600e450e4ccfa137937076c391ded72}{\_path},
+231                 \textcolor{stringliteral}{'shape'}:\textcolor{stringliteral}{'plaintext'},
+232                 \textcolor{stringliteral}{'color'}:\textcolor{stringliteral}{'gray'},
+233                 \textcolor{stringliteral}{'fontsize'}:\textcolor{stringliteral}{'18'},
+234                 \textcolor{stringliteral}{'fontweight'}:\textcolor{stringliteral}{'18'},
+235                 \textcolor{stringliteral}{'rank'}:\textcolor{stringliteral}{'min'},
+236                 \textcolor{stringliteral}{'height'}:\textcolor{stringliteral}{'0.01'}\}
+237         proxy\_attrs[\textcolor{stringliteral}{'label'}] = \textcolor{stringliteral}{'\(\backslash\)\(\backslash\)n'}.join(label\_wrapper.wrap(self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ae088542666a3b43101b59f2e03d22e8b}{\_label}))
+238         dotstr += \textcolor{stringliteral}{'"%s" %s;\(\backslash\)n'} % (
+239                 \textcolor{stringliteral}{'/'}.join([self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ae600e450e4ccfa137937076c391ded72}{\_path},\textcolor{stringliteral}{'\_\_proxy\_\_'}]),
+240                 \hyperlink{namespacesmacc__viewer_ac133c37694da94ec1d68458f72cf8cea}{attr\_string}(proxy\_attrs))
+241 
+242         \textcolor{comment}{# Check if we should expand this container}
+243         \textcolor{keywordflow}{if} max\_depth == -1 \textcolor{keywordflow}{or} depth <= max\_depth:
+244             \textcolor{comment}{# Add container outcomes}
+245             dotstr += \textcolor{stringliteral}{'subgraph "cluster\_%s" \{\(\backslash\)n'} % \textcolor{stringliteral}{'/'}.join([self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ae600e450e4ccfa137937076c391ded72}{\_path},\textcolor{stringliteral}{'\_\_outcomes\_\_'}])
+246             outcomes\_attrs = \{
+247                     \textcolor{stringliteral}{'style'}:\textcolor{stringliteral}{'rounded,filled'},
+248                     \textcolor{stringliteral}{'rank'}:\textcolor{stringliteral}{'sink'},
+249                     \textcolor{stringliteral}{'color'}:\textcolor{stringliteral}{'#FFFFFFFF'},\textcolor{comment}{#'#871C34',}
+250                     \textcolor{stringliteral}{'fillcolor'}:\textcolor{stringliteral}{'#FFFFFF00'}\textcolor{comment}{#'#FE464f3F'#'#DB889A'}
+251                     \}
+252             dotstr += \hyperlink{namespacesmacc__viewer_a22b916faeb443f12141a375c8e4e1c5f}{graph\_attr\_string}(outcomes\_attrs)
+253 
+254             \textcolor{keywordflow}{for} outcome\_label \textcolor{keywordflow}{in} self.\hyperlink{classsmacc__viewer_1_1ContainerNode_afc173014e336c7c3ab6a5d2dd1798d63}{\_container\_outcomes}:
+255                 outcome\_path = \textcolor{stringliteral}{':'}.join([self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ae600e450e4ccfa137937076c391ded72}{\_path},outcome\_label])
+256                 outcome\_attrs = \{
+257                         \textcolor{stringliteral}{'shape'}:\textcolor{stringliteral}{'box'},
+258                         \textcolor{stringliteral}{'height'}:\textcolor{stringliteral}{'0.3'},
+259                         \textcolor{stringliteral}{'style'}:\textcolor{stringliteral}{'filled,rounded'},
+260                         \textcolor{stringliteral}{'fontsize'}:\textcolor{stringliteral}{'12'},
+261                         \textcolor{stringliteral}{'fillcolor'}:\textcolor{stringliteral}{'#FE464f'},\textcolor{comment}{#'#EDC2CC',}
+262                         \textcolor{stringliteral}{'color'}:\textcolor{stringliteral}{'#780006'},\textcolor{comment}{#'#EBAEBB',}
+263                         \textcolor{stringliteral}{'fontcolor'}:\textcolor{stringliteral}{'#780006'},\textcolor{comment}{#'#EBAEBB',}
+264                         \textcolor{stringliteral}{'label'}:\textcolor{stringliteral}{'\(\backslash\)\(\backslash\)n'}.join(label\_wrapper.wrap(outcome\_label)),
+265                         \textcolor{stringliteral}{'URL'}:\textcolor{stringliteral}{':'}.join([self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ae600e450e4ccfa137937076c391ded72}{\_path},outcome\_label])
+266                         \}
+267                 dotstr += \textcolor{stringliteral}{'"%s" %s;\(\backslash\)n'} % (outcome\_path,\hyperlink{namespacesmacc__viewer_ac133c37694da94ec1d68458f72cf8cea}{attr\_string}(outcome\_attrs))
+268             dotstr += \textcolor{stringliteral}{"\}\(\backslash\)n"}
+269 
+270             \textcolor{comment}{# Iterate over children}
+271             \textcolor{keywordflow}{for} child\_label \textcolor{keywordflow}{in} self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a886cb99815f827d99bcd4c3e341284f1}{\_children}:
+272                 child\_attrs = \{
+273                         \textcolor{stringliteral}{'style'}:\textcolor{stringliteral}{'filled,setlinewidth(2)'},
+274                         \textcolor{stringliteral}{'color'}:\textcolor{stringliteral}{'#000000FF'},
+275                         \textcolor{stringliteral}{'fillcolor'}:\textcolor{stringliteral}{'#FFFFFF00'}
+276                         \}
+277 
+278                 child\_path = \textcolor{stringliteral}{'/'}.join([self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ae600e450e4ccfa137937076c391ded72}{\_path},child\_label])
+279                 \textcolor{comment}{# Generate dotcode for children}
+280                 \textcolor{keywordflow}{if} child\_path \textcolor{keywordflow}{in} containers:
+281                     child\_attrs[\textcolor{stringliteral}{'style'}] += \textcolor{stringliteral}{',rounded'}
+282 
+283                     dotstr += containers[child\_path].\hyperlink{classsmacc__viewer_1_1ContainerNode_ae94079c15f311a526219155705e19fe0}{get\_dotcode}(
+284                             selected\_paths,
+285                             closed\_paths,
+286                             depth+1, max\_depth,
+287                             containers,
+288                             show\_all,
+289                             label\_wrapper,
+290                             child\_attrs)
+291                 \textcolor{keywordflow}{else}:
+292                     child\_attrs[\textcolor{stringliteral}{'label'}] = \textcolor{stringliteral}{'\(\backslash\)\(\backslash\)n'}.join(label\_wrapper.wrap(child\_label))
+293                     child\_attrs[\textcolor{stringliteral}{'URL'}] = child\_path
+294                     dotstr += \textcolor{stringliteral}{'"%s" %s;\(\backslash\)n'} % (child\_path, \hyperlink{namespacesmacc__viewer_ac133c37694da94ec1d68458f72cf8cea}{attr\_string}(child\_attrs))
+295 
+296             \textcolor{comment}{# Iterate over edges}
+297             internal\_edges = zip(
+298                     self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a0cecef41d6d1036c4716d1143479743a}{\_internal\_outcomes},
+299                     self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ad0975f45567a6339b66516548e67385a}{\_outcomes\_from},
+300                     self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a26f35e2c039a0a7d5f68a5abfc918627}{\_outcomes\_to})
+301 
+302             \textcolor{comment}{# Add edge from container label to initial state}
+303             internal\_edges += [(\textcolor{stringliteral}{''},\textcolor{stringliteral}{'\_\_proxy\_\_'},initial\_child) \textcolor{keywordflow}{for} initial\_child \textcolor{keywordflow}{in} self.
+      \hyperlink{classsmacc__viewer_1_1ContainerNode_a3d5c9521ab4377e7b94e437d4f7e5a83}{\_initial\_states}]
+304 
+305             has\_explicit\_transitions = []
+306             \textcolor{keywordflow}{for} (outcome\_label,from\_label,to\_label) \textcolor{keywordflow}{in} internal\_edges:
+307                 \textcolor{keywordflow}{if} to\_label != \textcolor{stringliteral}{'None'} \textcolor{keywordflow}{or} outcome\_label == to\_label:
+308                     has\_explicit\_transitions.append(from\_label)
+309 
+310             \textcolor{comment}{# Draw internal edges}
+311             \textcolor{keywordflow}{for} (outcome\_label,from\_label,to\_label) \textcolor{keywordflow}{in} internal\_edges:
+312 
+313                 from\_path = \textcolor{stringliteral}{'/'}.join([self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ae600e450e4ccfa137937076c391ded72}{\_path}, from\_label])
+314 
+315                 \textcolor{keywordflow}{if} show\_all \(\backslash\)
+316                         \textcolor{keywordflow}{or} to\_label != \textcolor{stringliteral}{'None'}\(\backslash\)
+317                         \textcolor{keywordflow}{or} from\_label \textcolor{keywordflow}{not} \textcolor{keywordflow}{in} has\_explicit\_transitions \(\backslash\)
+318                         \textcolor{keywordflow}{or} (outcome\_label == from\_label) \(\backslash\)
+319                         \textcolor{keywordflow}{or} from\_path \textcolor{keywordflow}{in} containers:
+320                     \textcolor{comment}{# Set the implicit target of this outcome}
+321                     \textcolor{keywordflow}{if} to\_label == \textcolor{stringliteral}{'None'}:
+322                         to\_label = outcome\_label
+323 
+324                     to\_path = \textcolor{stringliteral}{'/'}.join([self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ae600e450e4ccfa137937076c391ded72}{\_path}, to\_label])
+325 
+326                     edge\_attrs = \{
+327                             \textcolor{stringliteral}{'URL'}:\textcolor{stringliteral}{':'}.join([from\_path,outcome\_label,to\_path]),
+328                             \textcolor{stringliteral}{'fontsize'}:\textcolor{stringliteral}{'12'},
+329                             \textcolor{stringliteral}{'label'}:\textcolor{stringliteral}{'\(\backslash\)\(\backslash\)n'}.join(label\_wrapper.wrap(outcome\_label))\}
+330                     edge\_attrs[\textcolor{stringliteral}{'style'}] = \textcolor{stringliteral}{'setlinewidth(2)'}
+331 
+332                     \textcolor{comment}{# Hide implicit}
+333                     \textcolor{comment}{#if not show\_all and to\_label == outcome\_label:}
+334                     \textcolor{comment}{#    edge\_attrs['style'] += ',invis'}
+335 
+336                     from\_key = \textcolor{stringliteral}{'"%s"'} % from\_path
+337                     \textcolor{keywordflow}{if} from\_path \textcolor{keywordflow}{in} containers:
+338                         \textcolor{keywordflow}{if} max\_depth == -1 \textcolor{keywordflow}{or} depth+1 <= max\_depth:
+339                             from\_key = \textcolor{stringliteral}{'"%s:%s"'} % ( from\_path, outcome\_label)
+340                         \textcolor{keywordflow}{else}:
+341                             edge\_attrs[\textcolor{stringliteral}{'ltail'}] = \textcolor{stringliteral}{'cluster\_'}+from\_path
+342                             from\_path = \textcolor{stringliteral}{'/'}.join([from\_path,\textcolor{stringliteral}{'\_\_proxy\_\_'}])
+343                             from\_key = \textcolor{stringliteral}{'"%s"'} % ( from\_path )
+344 
+345                     to\_key = \textcolor{stringliteral}{''}
+346                     \textcolor{keywordflow}{if} to\_label \textcolor{keywordflow}{in} self.\hyperlink{classsmacc__viewer_1_1ContainerNode_afc173014e336c7c3ab6a5d2dd1798d63}{\_container\_outcomes}:
+347                         to\_key = \textcolor{stringliteral}{'"%s:%s"'} % (self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ae600e450e4ccfa137937076c391ded72}{\_path},to\_label)
+348                         edge\_attrs[\textcolor{stringliteral}{'color'}] = \textcolor{stringliteral}{'#00000055'}\textcolor{comment}{# '#780006'}
+349                     \textcolor{keywordflow}{else}:
+350                         \textcolor{keywordflow}{if} to\_path \textcolor{keywordflow}{in} containers:
+351                             edge\_attrs[\textcolor{stringliteral}{'lhead'}] = \textcolor{stringliteral}{'cluster\_'}+to\_path
+352                             to\_path = \textcolor{stringliteral}{'/'}.join([to\_path,\textcolor{stringliteral}{'\_\_proxy\_\_'}])
+353                         to\_key = \textcolor{stringliteral}{'"%s"'} % to\_path
+354 
+355                     dotstr += \textcolor{stringliteral}{'%s -> %s %s;\(\backslash\)n'} % (
+356                             from\_key, to\_key, \hyperlink{namespacesmacc__viewer_ac133c37694da94ec1d68458f72cf8cea}{attr\_string}(edge\_attrs))
+357 
+358         dotstr += \textcolor{stringliteral}{'\}\(\backslash\)n'}
+359         \textcolor{keywordflow}{return} dotstr
+360 
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1ContainerNode_ae94079c15f311a526219155705e19fe0_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}!set\+\_\+styles@{set\+\_\+styles}}
+\index{set\+\_\+styles@{set\+\_\+styles}!smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}}
+\subsubsection[{\texorpdfstring{set\+\_\+styles(self, selected\+\_\+paths, depth, max\+\_\+depth, items, subgraph\+\_\+shapes, containers)}{set_styles(self, selected_paths, depth, max_depth, items, subgraph_shapes, containers)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+Container\+Node.\+set\+\_\+styles (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{selected\+\_\+paths, }
+\item[{}]{depth, }
+\item[{}]{max\+\_\+depth, }
+\item[{}]{items, }
+\item[{}]{subgraph\+\_\+shapes, }
+\item[{}]{containers}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1ContainerNode_ae35633b977b8ea568e70a62dcd3c4632}{}\label{classsmacc__viewer_1_1ContainerNode_ae35633b977b8ea568e70a62dcd3c4632}
+\begin{DoxyVerb}Update the styles for a list of containers without regenerating the dotcode.
+
+This function is called recursively to update an entire tree.
+
+@param selected_paths: A list of paths to nodes that are currently selected.
+@param depth: The depth to start traversing the tree
+@param max_depth: The depth to traverse into the tree
+@param items: A dict of all the graph items, keyed by url
+@param subgraph_shapes: A dictionary of shapes from the rendering engine
+@param containers: A dict of all the containers
+\end{DoxyVerb}
+\begin{DoxyVerb}if depth == 0:
+    container_shapes = subgraph_shapes['cluster_'+self._path]
+    container_color = (0,0,0,0)
+    container_fillcolor = (0,0,0,0)
+
+    for shape in container_shapes:
+shape.pen.color = container_color
+shape.pen.fillcolor = container_fillcolor
+\end{DoxyVerb}
+ 
+
+Definition at line 361 of file smacc\+\_\+viewer.\+py.
+
+
+
+References smacc\+\_\+viewer.\+Container\+Node.\+\_\+active\+\_\+states, smacc\+\_\+viewer.\+Container\+Node.\+\_\+children, smacc\+\_\+viewer.\+Container\+Node.\+\_\+initial\+\_\+states, smacc\+\_\+viewer.\+Container\+Node.\+\_\+path, and smacc\+\_\+viewer.\+hex2t().
+
+
+\begin{DoxyCode}
+361     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1ContainerNode_ae35633b977b8ea568e70a62dcd3c4632}{set\_styles}(self, selected\_paths, depth, max\_depth, items, subgraph\_shapes, containers):
+362         \textcolor{stringliteral}{"""Update the styles for a list of containers without regenerating the dotcode.}
+363 \textcolor{stringliteral}{}
+364 \textcolor{stringliteral}{        This function is called recursively to update an entire tree.}
+365 \textcolor{stringliteral}{        }
+366 \textcolor{stringliteral}{        @param selected\_paths: A list of paths to nodes that are currently selected.}
+367 \textcolor{stringliteral}{        @param depth: The depth to start traversing the tree}
+368 \textcolor{stringliteral}{        @param max\_depth: The depth to traverse into the tree}
+369 \textcolor{stringliteral}{        @param items: A dict of all the graph items, keyed by url}
+370 \textcolor{stringliteral}{        @param subgraph\_shapes: A dictionary of shapes from the rendering engine}
+371 \textcolor{stringliteral}{        @param containers: A dict of all the containers}
+372 \textcolor{stringliteral}{        """}
+373 
+374         \textcolor{comment}{# Color root container}
+375         \textcolor{stringliteral}{"""}
+376 \textcolor{stringliteral}{        if depth == 0:}
+377 \textcolor{stringliteral}{            container\_shapes = subgraph\_shapes['cluster\_'+self.\_path]}
+378 \textcolor{stringliteral}{            container\_color = (0,0,0,0)}
+379 \textcolor{stringliteral}{            container\_fillcolor = (0,0,0,0)}
+380 \textcolor{stringliteral}{}
+381 \textcolor{stringliteral}{            for shape in container\_shapes:}
+382 \textcolor{stringliteral}{                shape.pen.color = container\_color}
+383 \textcolor{stringliteral}{                shape.pen.fillcolor = container\_fillcolor}
+384 \textcolor{stringliteral}{                """}
+385 
+386         \textcolor{comment}{# Color shapes for outcomes}
+387 
+388         \textcolor{comment}{# Color children}
+389         \textcolor{keywordflow}{if} max\_depth == -1 \textcolor{keywordflow}{or} depth <= max\_depth:
+390             \textcolor{comment}{# Iterate over children}
+391             \textcolor{keywordflow}{for} child\_label \textcolor{keywordflow}{in} self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a886cb99815f827d99bcd4c3e341284f1}{\_children}:
+392                 child\_path = \textcolor{stringliteral}{'/'}.join([self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ae600e450e4ccfa137937076c391ded72}{\_path},child\_label])
+393 
+394                 child\_color = [0.5,0.5,0.5,1]
+395                 child\_fillcolor = [1,1,1,1]
+396                 child\_linewidth = 2
+397 
+398                 active\_color = \hyperlink{namespacesmacc__viewer_a96e53903efa626dbc5ba683667c295ef}{hex2t}(\textcolor{stringliteral}{'#5C7600FF'})
+399                 active\_fillcolor = \hyperlink{namespacesmacc__viewer_a96e53903efa626dbc5ba683667c295ef}{hex2t}(\textcolor{stringliteral}{'#C0F700FF'})
+400 
+401                 initial\_color = \hyperlink{namespacesmacc__viewer_a96e53903efa626dbc5ba683667c295ef}{hex2t}(\textcolor{stringliteral}{'#000000FF'})
+402                 initial\_fillcolor = \hyperlink{namespacesmacc__viewer_a96e53903efa626dbc5ba683667c295ef}{hex2t}(\textcolor{stringliteral}{'#FFFFFFFF'})
+403 
+404                 \textcolor{keywordflow}{if} child\_label \textcolor{keywordflow}{in} self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ad4607ee25bd9dd1f1c54ac72ca1ba5aa}{\_active\_states}:
+405                     \textcolor{comment}{# Check if the child is active}
+406                     child\_color = active\_color
+407                     child\_fillcolor = active\_fillcolor
+408                     child\_linewidth = 5
+409                 \textcolor{keywordflow}{elif} child\_label \textcolor{keywordflow}{in} self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a3d5c9521ab4377e7b94e437d4f7e5a83}{\_initial\_states}:
+410                     \textcolor{comment}{# Initial style}
+411                     \textcolor{comment}{#child\_fillcolor = initial\_fillcolor}
+412                     child\_color = initial\_color
+413                     child\_linewidth = 2
+414 
+415                 \textcolor{comment}{# Check if the child is selected}
+416                 \textcolor{keywordflow}{if} child\_path \textcolor{keywordflow}{in} selected\_paths:
+417                     child\_color = \hyperlink{namespacesmacc__viewer_a96e53903efa626dbc5ba683667c295ef}{hex2t}(\textcolor{stringliteral}{'#FB000DFF'})
+418 
+419                 \textcolor{comment}{# Generate dotcode for child containers }
+420                 \textcolor{keywordflow}{if} child\_path \textcolor{keywordflow}{in} containers:
+421                     subgraph\_id = \textcolor{stringliteral}{'cluster\_'}+child\_path
+422                     \textcolor{keywordflow}{if} subgraph\_id \textcolor{keywordflow}{in} subgraph\_shapes:
+423                         \textcolor{keywordflow}{if} child\_label \textcolor{keywordflow}{in} self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ad4607ee25bd9dd1f1c54ac72ca1ba5aa}{\_active\_states}:
+424                             child\_fillcolor[3] = 0.25
+425                         \textcolor{keywordflow}{elif} 0 \textcolor{keywordflow}{and} child\_label \textcolor{keywordflow}{in} self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a3d5c9521ab4377e7b94e437d4f7e5a83}{\_initial\_states}:
+426                             child\_fillcolor[3] = 0.25
+427                         \textcolor{keywordflow}{else}:
+428                             \textcolor{keywordflow}{if} max\_depth > 0:
+429                                 v = 1.0-0.25*((depth+1)/float(max\_depth))
+430                             \textcolor{keywordflow}{else}:
+431                                 v = 0.85
+432                             child\_fillcolor = [v,v,v,1.0]
+433 
+434                         
+435                         \textcolor{keywordflow}{for} shape \textcolor{keywordflow}{in} subgraph\_shapes[\textcolor{stringliteral}{'cluster\_'}+child\_path]:
+436                             pen = shape.pen
+437                             \textcolor{keywordflow}{if} len(pen.color) > 3:
+438                                 pen\_color\_opacity = pen.color[3]
+439                                 \textcolor{keywordflow}{if} pen\_color\_opacity < 0.01:
+440                                     pen\_color\_opacity = 0
+441                             \textcolor{keywordflow}{else}:
+442                                 pen\_color\_opacity = 0.5
+443                             shape.pen.color = child\_color[0:3]+[pen\_color\_opacity]
+444                             shape.pen.fillcolor = [child\_fillcolor[i] \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(min(3,len(
+      pen.fillcolor)))]
+445                             shape.pen.linewidth = child\_linewidth
+446 
+447                         \textcolor{comment}{# Recurse on this child}
+448                         containers[child\_path].\hyperlink{classsmacc__viewer_1_1ContainerNode_ae35633b977b8ea568e70a62dcd3c4632}{set\_styles}(
+449                                 selected\_paths,
+450                                 depth+1, max\_depth,
+451                                 items,
+452                                 subgraph\_shapes,
+453                                 containers)
+454                 \textcolor{keywordflow}{else}:
+455                     \textcolor{keywordflow}{if} child\_path \textcolor{keywordflow}{in} items:
+456                         \textcolor{keywordflow}{for} shape \textcolor{keywordflow}{in} items[child\_path].shapes:
+457                             \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} isinstance(shape,\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot_1_1TextShape}{xdot.xdot.TextShape}):
+458                                 shape.pen.color = child\_color
+459                                 shape.pen.fillcolor = child\_fillcolor
+460                                 shape.pen.linewidth = child\_linewidth
+461                     \textcolor{keywordflow}{else}:
+462                         \textcolor{comment}{#print child\_path+" NOT IN "+str(items.keys())}
+463                         \textcolor{keywordflow}{pass}
+464 
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1ContainerNode_ae35633b977b8ea568e70a62dcd3c4632_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}!update\+\_\+status@{update\+\_\+status}}
+\index{update\+\_\+status@{update\+\_\+status}!smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}}
+\subsubsection[{\texorpdfstring{update\+\_\+status(self, msg)}{update_status(self, msg)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+Container\+Node.\+update\+\_\+status (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1ContainerNode_a91546f29baa378bb672873b3caf05ef2}{}\label{classsmacc__viewer_1_1ContainerNode_a91546f29baa378bb672873b3caf05ef2}
+\begin{DoxyVerb}Update the known userdata and active state set and return True if the graph needs to be redrawn.\end{DoxyVerb}
+ 
+
+Definition at line 170 of file smacc\+\_\+viewer.\+py.
+
+
+
+References smacc\+\_\+viewer.\+Container\+Node.\+\_\+initial\+\_\+states.
+
+
+\begin{DoxyCode}
+170     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1ContainerNode_a91546f29baa378bb672873b3caf05ef2}{update\_status}(self, msg):
+171         \textcolor{stringliteral}{"""Update the known userdata and active state set and return True if the graph needs to be redrawn.
+      """}
+172 
+173         \textcolor{comment}{# Initialize the return value}
+174         needs\_update = \textcolor{keyword}{False}
+175 
+176         \textcolor{comment}{# Check if the initial states or active states have changed}
+177         \textcolor{keywordflow}{if} set(msg.initial\_states) != set(self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a3d5c9521ab4377e7b94e437d4f7e5a83}{\_initial\_states}):
+178             self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a8d17a3a75ce519ef442b9bc94a801130}{\_structure\_changed} = \textcolor{keyword}{True}
+179             needs\_update = \textcolor{keyword}{True}
+180         \textcolor{keywordflow}{if} set(msg.active\_states) != set(self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ad4607ee25bd9dd1f1c54ac72ca1ba5aa}{\_active\_states}):
+181             needs\_update = \textcolor{keyword}{True}
+182 
+183         \textcolor{comment}{# Store the initial and active states}
+184         self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a3d5c9521ab4377e7b94e437d4f7e5a83}{\_initial\_states} = msg.initial\_states
+185         self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a627a2895916d1815096914f67a612af2}{\_last\_active\_states} = self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ad4607ee25bd9dd1f1c54ac72ca1ba5aa}{\_active\_states}
+186         self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ad4607ee25bd9dd1f1c54ac72ca1ba5aa}{\_active\_states} = msg.active\_states
+187 
+188         \textcolor{comment}{# Unpack the user data}
+189         \textcolor{keywordflow}{while} \textcolor{keywordflow}{not} rospy.is\_shutdown():
+190             \textcolor{keywordflow}{try}:
+191                 \textcolor{comment}{#self.\_local\_data.\_data = pickle.loads(msg.local\_data)}
+192                 \textcolor{keywordflow}{break}
+193             \textcolor{keywordflow}{except} ImportError \textcolor{keyword}{as} ie:
+194                 \textcolor{comment}{# This will only happen once for each package}
+195                 modulename = ie.args[0][16:]
+196                 packagename = modulename[0:modulename.find(\textcolor{stringliteral}{'.'})]
+197                 roslib.load\_manifest(packagename)
+198                 \textcolor{comment}{#self.\_local\_data.\_data = pickle.loads(msg.local\_data)}
+199 
+200         \textcolor{comment}{# Store the info string}
+201         self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a1e3dcba4beb3738d72e57805b7d2474b}{\_info} = msg.info
+202 
+203         \textcolor{keywordflow}{return} needs\_update
+204 
+\end{DoxyCode}
+\index{smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}!update\+\_\+structure@{update\+\_\+structure}}
+\index{update\+\_\+structure@{update\+\_\+structure}!smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}}
+\subsubsection[{\texorpdfstring{update\+\_\+structure(self, msg)}{update_structure(self, msg)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+Container\+Node.\+update\+\_\+structure (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1ContainerNode_abb9e7a8f8daab12e87231622c85cebad}{}\label{classsmacc__viewer_1_1ContainerNode_abb9e7a8f8daab12e87231622c85cebad}
+\begin{DoxyVerb}Update the structure of this container from a given message. Return True if anything changes.\end{DoxyVerb}
+ 
+
+Definition at line 149 of file smacc\+\_\+viewer.\+py.
+
+
+
+References smacc\+\_\+viewer.\+Container\+Node.\+\_\+children, smacc\+\_\+viewer.\+Container\+Node.\+\_\+container\+\_\+outcomes, smacc\+\_\+viewer.\+Container\+Node.\+\_\+internal\+\_\+outcomes, smacc\+\_\+viewer.\+Container\+Node.\+\_\+outcomes\+\_\+from, and smacc\+\_\+viewer.\+Container\+Node.\+\_\+outcomes\+\_\+to.
+
+
+\begin{DoxyCode}
+149     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1ContainerNode_abb9e7a8f8daab12e87231622c85cebad}{update\_structure}(self, msg):
+150         \textcolor{stringliteral}{"""Update the structure of this container from a given message. Return True if anything changes."""}
+151         needs\_update = \textcolor{keyword}{False}
+152 
+153         \textcolor{keywordflow}{if} self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a886cb99815f827d99bcd4c3e341284f1}{\_children} != msg.children\(\backslash\)
+154                 \textcolor{keywordflow}{or} self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a0cecef41d6d1036c4716d1143479743a}{\_internal\_outcomes} != msg.internal\_outcomes\(\backslash\)
+155                 \textcolor{keywordflow}{or} self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ad0975f45567a6339b66516548e67385a}{\_outcomes\_from} != msg.outcomes\_from\(\backslash\)
+156                 \textcolor{keywordflow}{or} self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a26f35e2c039a0a7d5f68a5abfc918627}{\_outcomes\_to} != msg.outcomes\_to\(\backslash\)
+157                 \textcolor{keywordflow}{or} self.\hyperlink{classsmacc__viewer_1_1ContainerNode_afc173014e336c7c3ab6a5d2dd1798d63}{\_container\_outcomes} != msg.container\_outcomes:
+158             needs\_update = \textcolor{keyword}{True}
+159 
+160         \textcolor{keywordflow}{if} needs\_update:
+161             self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a886cb99815f827d99bcd4c3e341284f1}{\_children} = msg.children
+162             self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a0cecef41d6d1036c4716d1143479743a}{\_internal\_outcomes} = msg.internal\_outcomes
+163             self.\hyperlink{classsmacc__viewer_1_1ContainerNode_ad0975f45567a6339b66516548e67385a}{\_outcomes\_from} = msg.outcomes\_from
+164             self.\hyperlink{classsmacc__viewer_1_1ContainerNode_a26f35e2c039a0a7d5f68a5abfc918627}{\_outcomes\_to} = msg.outcomes\_to
+165 
+166             self.\hyperlink{classsmacc__viewer_1_1ContainerNode_afc173014e336c7c3ab6a5d2dd1798d63}{\_container\_outcomes} = msg.container\_outcomes
+167 
+168         \textcolor{keywordflow}{return} needs\_update
+169 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}!\+\_\+active\+\_\+states@{\+\_\+active\+\_\+states}}
+\index{\+\_\+active\+\_\+states@{\+\_\+active\+\_\+states}!smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+active\+\_\+states}{_active_states}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+Container\+Node.\+\_\+active\+\_\+states\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__viewer_1_1ContainerNode_ad4607ee25bd9dd1f1c54ac72ca1ba5aa}{}\label{classsmacc__viewer_1_1ContainerNode_ad4607ee25bd9dd1f1c54ac72ca1ba5aa}
+
+
+Definition at line 144 of file smacc\+\_\+viewer.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+Container\+Node.\+set\+\_\+styles().
+
+\index{smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}!\+\_\+children@{\+\_\+children}}
+\index{\+\_\+children@{\+\_\+children}!smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+children}{_children}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+Container\+Node.\+\_\+children\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__viewer_1_1ContainerNode_a886cb99815f827d99bcd4c3e341284f1}{}\label{classsmacc__viewer_1_1ContainerNode_a886cb99815f827d99bcd4c3e341284f1}
+
+
+Definition at line 135 of file smacc\+\_\+viewer.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+Container\+Node.\+get\+\_\+dotcode(), smacc\+\_\+viewer.\+Container\+Node.\+set\+\_\+styles(), and smacc\+\_\+viewer.\+Container\+Node.\+update\+\_\+structure().
+
+\index{smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}!\+\_\+container\+\_\+outcomes@{\+\_\+container\+\_\+outcomes}}
+\index{\+\_\+container\+\_\+outcomes@{\+\_\+container\+\_\+outcomes}!smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+container\+\_\+outcomes}{_container_outcomes}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+Container\+Node.\+\_\+container\+\_\+outcomes\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__viewer_1_1ContainerNode_afc173014e336c7c3ab6a5d2dd1798d63}{}\label{classsmacc__viewer_1_1ContainerNode_afc173014e336c7c3ab6a5d2dd1798d63}
+
+
+Definition at line 140 of file smacc\+\_\+viewer.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+Container\+Node.\+get\+\_\+dotcode(), and smacc\+\_\+viewer.\+Container\+Node.\+update\+\_\+structure().
+
+\index{smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}!\+\_\+dir@{\+\_\+dir}}
+\index{\+\_\+dir@{\+\_\+dir}!smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+dir}{_dir}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+Container\+Node.\+\_\+dir\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__viewer_1_1ContainerNode_a2a6efbc2a25f65b830415ee994408ca0}{}\label{classsmacc__viewer_1_1ContainerNode_a2a6efbc2a25f65b830415ee994408ca0}
+
+
+Definition at line 133 of file smacc\+\_\+viewer.\+py.
+
+\index{smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}!\+\_\+info@{\+\_\+info}}
+\index{\+\_\+info@{\+\_\+info}!smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+info}{_info}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+Container\+Node.\+\_\+info\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__viewer_1_1ContainerNode_a1e3dcba4beb3738d72e57805b7d2474b}{}\label{classsmacc__viewer_1_1ContainerNode_a1e3dcba4beb3738d72e57805b7d2474b}
+
+
+Definition at line 147 of file smacc\+\_\+viewer.\+py.
+
+\index{smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}!\+\_\+initial\+\_\+states@{\+\_\+initial\+\_\+states}}
+\index{\+\_\+initial\+\_\+states@{\+\_\+initial\+\_\+states}!smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+initial\+\_\+states}{_initial_states}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+Container\+Node.\+\_\+initial\+\_\+states\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__viewer_1_1ContainerNode_a3d5c9521ab4377e7b94e437d4f7e5a83}{}\label{classsmacc__viewer_1_1ContainerNode_a3d5c9521ab4377e7b94e437d4f7e5a83}
+
+
+Definition at line 143 of file smacc\+\_\+viewer.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+Container\+Node.\+get\+\_\+dotcode(), smacc\+\_\+viewer.\+Container\+Node.\+set\+\_\+styles(), and smacc\+\_\+viewer.\+Container\+Node.\+update\+\_\+status().
+
+\index{smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}!\+\_\+internal\+\_\+outcomes@{\+\_\+internal\+\_\+outcomes}}
+\index{\+\_\+internal\+\_\+outcomes@{\+\_\+internal\+\_\+outcomes}!smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+internal\+\_\+outcomes}{_internal_outcomes}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+Container\+Node.\+\_\+internal\+\_\+outcomes\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__viewer_1_1ContainerNode_a0cecef41d6d1036c4716d1143479743a}{}\label{classsmacc__viewer_1_1ContainerNode_a0cecef41d6d1036c4716d1143479743a}
+
+
+Definition at line 136 of file smacc\+\_\+viewer.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+Container\+Node.\+get\+\_\+dotcode(), and smacc\+\_\+viewer.\+Container\+Node.\+update\+\_\+structure().
+
+\index{smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}!\+\_\+label@{\+\_\+label}}
+\index{\+\_\+label@{\+\_\+label}!smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+label}{_label}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+Container\+Node.\+\_\+label\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__viewer_1_1ContainerNode_ae088542666a3b43101b59f2e03d22e8b}{}\label{classsmacc__viewer_1_1ContainerNode_ae088542666a3b43101b59f2e03d22e8b}
+
+
+Definition at line 132 of file smacc\+\_\+viewer.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+Container\+Node.\+get\+\_\+dotcode().
+
+\index{smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}!\+\_\+last\+\_\+active\+\_\+states@{\+\_\+last\+\_\+active\+\_\+states}}
+\index{\+\_\+last\+\_\+active\+\_\+states@{\+\_\+last\+\_\+active\+\_\+states}!smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+last\+\_\+active\+\_\+states}{_last_active_states}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+Container\+Node.\+\_\+last\+\_\+active\+\_\+states\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__viewer_1_1ContainerNode_a627a2895916d1815096914f67a612af2}{}\label{classsmacc__viewer_1_1ContainerNode_a627a2895916d1815096914f67a612af2}
+
+
+Definition at line 145 of file smacc\+\_\+viewer.\+py.
+
+\index{smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}!\+\_\+local\+\_\+data@{\+\_\+local\+\_\+data}}
+\index{\+\_\+local\+\_\+data@{\+\_\+local\+\_\+data}!smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+local\+\_\+data}{_local_data}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+Container\+Node.\+\_\+local\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__viewer_1_1ContainerNode_af401127311993eaf8cc2b9e631634320}{}\label{classsmacc__viewer_1_1ContainerNode_af401127311993eaf8cc2b9e631634320}
+
+
+Definition at line 146 of file smacc\+\_\+viewer.\+py.
+
+\index{smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}!\+\_\+outcomes\+\_\+from@{\+\_\+outcomes\+\_\+from}}
+\index{\+\_\+outcomes\+\_\+from@{\+\_\+outcomes\+\_\+from}!smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+outcomes\+\_\+from}{_outcomes_from}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+Container\+Node.\+\_\+outcomes\+\_\+from\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__viewer_1_1ContainerNode_ad0975f45567a6339b66516548e67385a}{}\label{classsmacc__viewer_1_1ContainerNode_ad0975f45567a6339b66516548e67385a}
+
+
+Definition at line 137 of file smacc\+\_\+viewer.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+Container\+Node.\+get\+\_\+dotcode(), and smacc\+\_\+viewer.\+Container\+Node.\+update\+\_\+structure().
+
+\index{smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}!\+\_\+outcomes\+\_\+to@{\+\_\+outcomes\+\_\+to}}
+\index{\+\_\+outcomes\+\_\+to@{\+\_\+outcomes\+\_\+to}!smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+outcomes\+\_\+to}{_outcomes_to}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+Container\+Node.\+\_\+outcomes\+\_\+to\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__viewer_1_1ContainerNode_a26f35e2c039a0a7d5f68a5abfc918627}{}\label{classsmacc__viewer_1_1ContainerNode_a26f35e2c039a0a7d5f68a5abfc918627}
+
+
+Definition at line 138 of file smacc\+\_\+viewer.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+Container\+Node.\+get\+\_\+dotcode(), and smacc\+\_\+viewer.\+Container\+Node.\+update\+\_\+structure().
+
+\index{smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}!\+\_\+path@{\+\_\+path}}
+\index{\+\_\+path@{\+\_\+path}!smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+path}{_path}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+Container\+Node.\+\_\+path\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__viewer_1_1ContainerNode_ae600e450e4ccfa137937076c391ded72}{}\label{classsmacc__viewer_1_1ContainerNode_ae600e450e4ccfa137937076c391ded72}
+
+
+Definition at line 130 of file smacc\+\_\+viewer.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+introspection\+\_\+container.\+Container\+Proxy.\+\_\+init\+\_\+cmd\+\_\+cb(), smacc\+\_\+viewer.\+introspection\+\_\+container.\+Container\+Proxy.\+\_\+publish\+\_\+status(), smacc\+\_\+viewer.\+introspection\+\_\+container.\+Container\+Proxy.\+\_\+publish\+\_\+structure(), smacc\+\_\+viewer.\+Smacc\+Viewer\+Frame.\+\_\+set\+\_\+path(), smacc\+\_\+viewer.\+Smacc\+Viewer\+Frame.\+\_\+update\+\_\+graph(), smacc\+\_\+viewer.\+Container\+Node.\+get\+\_\+dotcode(), smacc\+\_\+viewer.\+Smacc\+Viewer\+Frame.\+set\+\_\+path(), and smacc\+\_\+viewer.\+Container\+Node.\+set\+\_\+styles().
+
+\index{smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}!\+\_\+server\+\_\+name@{\+\_\+server\+\_\+name}}
+\index{\+\_\+server\+\_\+name@{\+\_\+server\+\_\+name}!smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+server\+\_\+name}{_server_name}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+Container\+Node.\+\_\+server\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__viewer_1_1ContainerNode_aac5daf1b3edc6c4fad17b72a6e491066}{}\label{classsmacc__viewer_1_1ContainerNode_aac5daf1b3edc6c4fad17b72a6e491066}
+
+
+Definition at line 129 of file smacc\+\_\+viewer.\+py.
+
+\index{smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}!\+\_\+structure\+\_\+changed@{\+\_\+structure\+\_\+changed}}
+\index{\+\_\+structure\+\_\+changed@{\+\_\+structure\+\_\+changed}!smacc\+\_\+viewer\+::\+Container\+Node@{smacc\+\_\+viewer\+::\+Container\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+structure\+\_\+changed}{_structure_changed}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+Container\+Node.\+\_\+structure\+\_\+changed\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc__viewer_1_1ContainerNode_a8d17a3a75ce519ef442b9bc94a801130}{}\label{classsmacc__viewer_1_1ContainerNode_a8d17a3a75ce519ef442b9bc94a801130}
+
+
+Definition at line 178 of file smacc\+\_\+viewer.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+Smacc\+Viewer\+Frame.\+\_\+structure\+\_\+msg\+\_\+update(), smacc\+\_\+viewer.\+Smacc\+Viewer\+Frame.\+\_\+update\+\_\+graph(), smacc\+\_\+viewer.\+Smacc\+Viewer\+Frame.\+toggle\+\_\+all\+\_\+transitions(), and smacc\+\_\+viewer.\+Smacc\+Viewer\+Frame.\+toggle\+\_\+auto\+\_\+focus().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+viewer/scripts/\hyperlink{smacc__viewer_8py}{smacc\+\_\+viewer.\+py}\end{DoxyCompactItemize}

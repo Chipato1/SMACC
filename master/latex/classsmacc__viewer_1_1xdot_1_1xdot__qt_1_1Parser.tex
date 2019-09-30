@@ -1,0 +1,228 @@
+\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser}{}\section{smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Parser Class Reference}
+\label{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser}\index{smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Parser@{smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Parser}}
+
+
+Inheritance diagram for smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Parser\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Parser\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_abefbee433fb161eb4f71f93523bff075}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_a849927c1fb4026f95914fd8e7b6d5065}{lexer})
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_a0c71d82eee6f329e1a1441d0a13c11ce}{match} (self, type)
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_a4e2f01d5c182da82a3e0d54e0e5b5143}{skip} (self, type)
+\item 
+def \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_aba6f69f48f1d4e25b13e4cb297f509e6}{consume} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_a849927c1fb4026f95914fd8e7b6d5065}{lexer}
+\item 
+\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_a328364d5814b359473e2bf499fbeed85}{lookahead}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 763 of file xdot\+\_\+qt.\+py.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self, lexer)}{__init__(self, lexer)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Parser.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{lexer}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_abefbee433fb161eb4f71f93523bff075}{}\label{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_abefbee433fb161eb4f71f93523bff075}
+
+
+Definition at line 765 of file xdot\+\_\+qt.\+py.
+
+
+\begin{DoxyCode}
+765     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_abefbee433fb161eb4f71f93523bff075}{\_\_init\_\_}(self, lexer):
+766         self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_a849927c1fb4026f95914fd8e7b6d5065}{lexer} = lexer
+767         self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_a328364d5814b359473e2bf499fbeed85}{lookahead} = self.lexer.next()
+768 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser}!consume@{consume}}
+\index{consume@{consume}!smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser}}
+\subsubsection[{\texorpdfstring{consume(self)}{consume(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Parser.\+consume (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_aba6f69f48f1d4e25b13e4cb297f509e6}{}\label{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_aba6f69f48f1d4e25b13e4cb297f509e6}
+
+
+Definition at line 781 of file xdot\+\_\+qt.\+py.
+
+
+
+References smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Parser.\+lookahead, and smacc\+\_\+viewer.\+xdot.\+xdot.\+Parser.\+lookahead.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Parser.\+parse\+\_\+attr(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Parser.\+parse\+\_\+attrs(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Parser.\+parse\+\_\+graph(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Parser.\+parse\+\_\+id(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Parser.\+parse\+\_\+node\+\_\+id(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Parser.\+parse\+\_\+stmt(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Parser.\+parse\+\_\+subgraph(), and smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Parser.\+skip().
+
+
+\begin{DoxyCode}
+781     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_aba6f69f48f1d4e25b13e4cb297f509e6}{consume}(self):
+782         token = self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_a328364d5814b359473e2bf499fbeed85}{lookahead}
+783         self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_a328364d5814b359473e2bf499fbeed85}{lookahead} = self.lexer.next()
+784         \textcolor{keywordflow}{return} token
+785 
+786 
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_aba6f69f48f1d4e25b13e4cb297f509e6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser}!match@{match}}
+\index{match@{match}!smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser}}
+\subsubsection[{\texorpdfstring{match(self, type)}{match(self, type)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Parser.\+match (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_a0c71d82eee6f329e1a1441d0a13c11ce}{}\label{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_a0c71d82eee6f329e1a1441d0a13c11ce}
+
+
+Definition at line 769 of file xdot\+\_\+qt.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Parser.\+parse(), and smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Parser.\+parse\+\_\+id().
+
+
+\begin{DoxyCode}
+769     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_a0c71d82eee6f329e1a1441d0a13c11ce}{match}(self, type):
+770         \textcolor{keywordflow}{if} self.lookahead.type != type:
+771             \textcolor{keywordflow}{raise} \hyperlink{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1ParseError}{ParseError}(
+772                 msg = \textcolor{stringliteral}{'unexpected token %r'} % self.lookahead.text,
+773                 filename = self.lexer.filename,
+774                 line = self.lookahead.line,
+775                 col = self.lookahead.col)
+776 
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_a0c71d82eee6f329e1a1441d0a13c11ce_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser}!skip@{skip}}
+\index{skip@{skip}!smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser}}
+\subsubsection[{\texorpdfstring{skip(self, type)}{skip(self, type)}}]{\setlength{\rightskip}{0pt plus 5cm}def smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Parser.\+skip (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_a4e2f01d5c182da82a3e0d54e0e5b5143}{}\label{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_a4e2f01d5c182da82a3e0d54e0e5b5143}
+
+
+Definition at line 777 of file xdot\+\_\+qt.\+py.
+
+
+
+References smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Lexer.\+consume(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Parser.\+consume(), smacc\+\_\+viewer.\+xdot.\+xdot.\+Lexer.\+consume(), and smacc\+\_\+viewer.\+xdot.\+xdot.\+Parser.\+consume().
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Dot\+Parser.\+parse\+\_\+graph().
+
+
+\begin{DoxyCode}
+777     \textcolor{keyword}{def }\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_a4e2f01d5c182da82a3e0d54e0e5b5143}{skip}(self, type):
+778         \textcolor{keywordflow}{while} self.lookahead.type != type:
+779             self.\hyperlink{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_aba6f69f48f1d4e25b13e4cb297f509e6}{consume}()
+780 
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_a4e2f01d5c182da82a3e0d54e0e5b5143_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_a4e2f01d5c182da82a3e0d54e0e5b5143_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser}!lexer@{lexer}}
+\index{lexer@{lexer}!smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser}}
+\subsubsection[{\texorpdfstring{lexer}{lexer}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Parser.\+lexer}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_a849927c1fb4026f95914fd8e7b6d5065}{}\label{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_a849927c1fb4026f95914fd8e7b6d5065}
+
+
+Definition at line 766 of file xdot\+\_\+qt.\+py.
+
+\index{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser}!lookahead@{lookahead}}
+\index{lookahead@{lookahead}!smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser@{smacc\+\_\+viewer\+::xdot\+::xdot\+\_\+qt\+::\+Parser}}
+\subsubsection[{\texorpdfstring{lookahead}{lookahead}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Parser.\+lookahead}\hypertarget{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_a328364d5814b359473e2bf499fbeed85}{}\label{classsmacc__viewer_1_1xdot_1_1xdot__qt_1_1Parser_a328364d5814b359473e2bf499fbeed85}
+
+
+Definition at line 767 of file xdot\+\_\+qt.\+py.
+
+
+
+Referenced by smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt.\+Parser.\+consume().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+viewer/src/smacc\+\_\+viewer/xdot/\hyperlink{xdot__qt_8py}{xdot\+\_\+qt.\+py}\end{DoxyCompactItemize}

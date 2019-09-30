@@ -1,0 +1,178 @@
+\hypertarget{classsmacc_1_1Keyboard}{}\section{smacc\+:\+:Keyboard Class Reference}
+\label{classsmacc_1_1Keyboard}\index{smacc\+::\+Keyboard@{smacc\+::\+Keyboard}}
+
+
+{\ttfamily \#include $<$keyboard\+\_\+substate.\+h$>$}
+
+
+
+Inheritance diagram for smacc\+:\+:Keyboard\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{classsmacc_1_1Keyboard__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+:\+:Keyboard\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1Keyboard__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classsmacc_1_1Keyboard_afd90aca9ae741a0648e273b70771ac1d}{on\+Entry} ()
+\item 
+\hyperlink{classbool}{bool} \hyperlink{classsmacc_1_1Keyboard_a494dd2f35c5b1fb520b4f4cd4b61b6a9}{on\+Exit} ()
+\item 
+void \hyperlink{classsmacc_1_1Keyboard_a46ee02152cd0f2300242e4383c3e46af}{keyboard\+Listener\+Loop} ()
+\item 
+{\footnotesize template$<$char keychar$>$ }\\void \hyperlink{classsmacc_1_1Keyboard_a3e4ddff830111ec555d07d416995b673}{post\+Key\+Event} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file keyboard\+\_\+substate.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::\+Keyboard@{smacc\+::\+Keyboard}!keyboard\+Listener\+Loop@{keyboard\+Listener\+Loop}}
+\index{keyboard\+Listener\+Loop@{keyboard\+Listener\+Loop}!smacc\+::\+Keyboard@{smacc\+::\+Keyboard}}
+\subsubsection[{\texorpdfstring{keyboard\+Listener\+Loop()}{keyboardListenerLoop()}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Keyboard\+::keyboard\+Listener\+Loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1Keyboard_a46ee02152cd0f2300242e4383c3e46af}{}\label{classsmacc_1_1Keyboard_a46ee02152cd0f2300242e4383c3e46af}
+
+
+Definition at line 38 of file keyboard\+\_\+substate.\+h.
+
+
+\begin{DoxyCode}
+39   \{
+40     io\_service ioservice;        
+41     boost::asio::posix::stream\_descriptor stream(ioservice, STDIN\_FILENO);
+42 
+43     \textcolor{keywordtype}{char} buf[1] = \{\};
+44 
+45     std::function<void(boost::system::error\_code, size\_t)> read\_handler;
+46 
+47     read\_handler = [&](boost::system::error\_code ec, \textcolor{keywordtype}{size\_t} len) \{   
+48             \textcolor{keywordflow}{if} (ec) \{
+49                 std::cerr << \textcolor{stringliteral}{"exit with "} << ec.message() << std::endl;
+50             \} \textcolor{keywordflow}{else} \{
+51                 
+52                 \textcolor{keywordflow}{if} (len == 1 ) \{
+53 
+54                   \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'a'}) postKeyEvent<'a'>();
+55                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'a'}) postKeyEvent<'a'>();
+56                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'b'}) postKeyEvent<'b'>();
+57                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'c'}) postKeyEvent<'c'>();
+58                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'d'}) postKeyEvent<'d'>();
+59                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'e'}) postKeyEvent<'e'>();
+60                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'f'}) postKeyEvent<'f'>();
+61                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'g'}) postKeyEvent<'g'>();
+62                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'h'}) postKeyEvent<'h'>();
+63                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'y'}) postKeyEvent<'y'>();
+64                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'j'}) postKeyEvent<'j'>();
+65                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'k'}) postKeyEvent<'k'>();
+66                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'l'}) postKeyEvent<'l'>();
+67                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'m'}) postKeyEvent<'m'>();
+68                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'n'}) postKeyEvent<'n'>();
+69                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'o'}) postKeyEvent<'o'>();
+70                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'p'}) postKeyEvent<'p'>();
+71                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'q'}) postKeyEvent<'q'>();
+72                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'r'}) postKeyEvent<'r'>();
+73                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'s'}) postKeyEvent<'s'>();
+74                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'t'}) postKeyEvent<'t'>();
+75                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'u'}) postKeyEvent<'u'>();
+76                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'v'}) postKeyEvent<'v'>();
+77                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'w'}) postKeyEvent<'w'>();
+78                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'x'}) postKeyEvent<'x'>();
+79                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'y'}) postKeyEvent<'y'>();
+80                   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(buf[0]==\textcolor{charliteral}{'z'}) postKeyEvent<'z'>();
+81                
+82                 \}
+83                 async\_read(stream, buffer(buf), read\_handler);
+84             \}
+85         \};
+86 
+87     async\_read(stream, buffer(buf), read\_handler);
+88 
+89     ioservice.run();    
+90   \}
+\end{DoxyCode}
+\index{smacc\+::\+Keyboard@{smacc\+::\+Keyboard}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!smacc\+::\+Keyboard@{smacc\+::\+Keyboard}}
+\subsubsection[{\texorpdfstring{on\+Entry()}{onEntry()}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Keyboard\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1Keyboard_afd90aca9ae741a0648e273b70771ac1d}{}\label{classsmacc_1_1Keyboard_afd90aca9ae741a0648e273b70771ac1d}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_a7c28e1c46238bbb2c2e0450573c6de94}{smacc\+::\+Smacc\+Sub\+State\+Behavior}.
+
+
+
+Definition at line 30 of file keyboard\+\_\+substate.\+h.
+
+
+\begin{DoxyCode}
+31   \{
+32   \}
+\end{DoxyCode}
+\index{smacc\+::\+Keyboard@{smacc\+::\+Keyboard}!on\+Exit@{on\+Exit}}
+\index{on\+Exit@{on\+Exit}!smacc\+::\+Keyboard@{smacc\+::\+Keyboard}}
+\subsubsection[{\texorpdfstring{on\+Exit()}{onExit()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool} smacc\+::\+Keyboard\+::on\+Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1Keyboard_a494dd2f35c5b1fb520b4f4cd4b61b6a9}{}\label{classsmacc_1_1Keyboard_a494dd2f35c5b1fb520b4f4cd4b61b6a9}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_ab78b9de76c04a7ab6c16d5924e216ef9}{smacc\+::\+Smacc\+Sub\+State\+Behavior}.
+
+
+
+Definition at line 34 of file keyboard\+\_\+substate.\+h.
+
+
+\begin{DoxyCode}
+35   \{
+36   \}
+\end{DoxyCode}
+\index{smacc\+::\+Keyboard@{smacc\+::\+Keyboard}!post\+Key\+Event@{post\+Key\+Event}}
+\index{post\+Key\+Event@{post\+Key\+Event}!smacc\+::\+Keyboard@{smacc\+::\+Keyboard}}
+\subsubsection[{\texorpdfstring{post\+Key\+Event()}{postKeyEvent()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$char keychar$>$ void smacc\+::\+Keyboard\+::post\+Key\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1Keyboard_a3e4ddff830111ec555d07d416995b673}{}\label{classsmacc_1_1Keyboard_a3e4ddff830111ec555d07d416995b673}
+
+
+Definition at line 93 of file keyboard\+\_\+substate.\+h.
+
+
+\begin{DoxyCode}
+94   \{
+95     \textcolor{keyword}{auto} \textcolor{keyword}{event}= \textcolor{keyword}{new} KeyPressEvent<keychar>();
+96     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a8538664f9828247727a27446112788a2}{postEvent}(event);
+97 
+98   \}      
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+client\+\_\+library/smacc\+\_\+sensors/examples/keyboard\+\_\+listener\+\_\+example/include/substates\+\_\+behaviors/input\+\_\+device/\hyperlink{keyboard__substate_8h}{keyboard\+\_\+substate.\+h}\end{DoxyCompactItemize}

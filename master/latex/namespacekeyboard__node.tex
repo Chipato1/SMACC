@@ -1,0 +1,94 @@
+\hypertarget{namespacekeyboard__node}{}\section{keyboard\+\_\+node Namespace Reference}
+\label{namespacekeyboard__node}\index{keyboard\+\_\+node@{keyboard\+\_\+node}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacekeyboard__node_a14d63e075186fe8cedf60ed3524811f5}{get\+Key} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacekeyboard__node_aaf29d185963f7dbed690d072de1a0b17}{settings} = termios.\+tcgetattr(sys.\+stdin)
+\item 
+\hyperlink{namespacekeyboard__node_af6db75302d320b64f2d03f7b84404a9f}{pub} = rospy.\+Publisher(\textquotesingle{}keyboard\+\_\+unicode\textquotesingle{}, U\+Int16, queue\+\_\+size = 1)
+\item 
+\hyperlink{namespacekeyboard__node_aec12217d2be0bbc768f52b63b0673925}{key} = \hyperlink{namespacekeyboard__node_a14d63e075186fe8cedf60ed3524811f5}{get\+Key}()
+\item 
+\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg} = U\+Int16()
+\item 
+\hyperlink{namespacekeyboard__node_a33f8346a3ffb7a9fef12da96e958f14e}{data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{keyboard\+\_\+node@{keyboard\+\_\+node}!get\+Key@{get\+Key}}
+\index{get\+Key@{get\+Key}!keyboard\+\_\+node@{keyboard\+\_\+node}}
+\subsubsection[{\texorpdfstring{get\+Key()}{getKey()}}]{\setlength{\rightskip}{0pt plus 5cm}def keyboard\+\_\+node.\+get\+Key (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacekeyboard__node_a14d63e075186fe8cedf60ed3524811f5}{}\label{namespacekeyboard__node_a14d63e075186fe8cedf60ed3524811f5}
+
+
+Definition at line 12 of file keyboard\+\_\+node.\+py.
+
+
+\begin{DoxyCode}
+12 \textcolor{keyword}{def }\hyperlink{namespacekeyboard__node_a14d63e075186fe8cedf60ed3524811f5}{getKey}():
+13     tty.setraw(sys.stdin.fileno())
+14     select.select([sys.stdin], [], [], 0)
+15     key = sys.stdin.read(1)
+16     termios.tcsetattr(sys.stdin, termios.TCSADRAIN, settings)
+17     \textcolor{keywordflow}{return} key
+18 
+\end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\index{keyboard\+\_\+node@{keyboard\+\_\+node}!data@{data}}
+\index{data@{data}!keyboard\+\_\+node@{keyboard\+\_\+node}}
+\subsubsection[{\texorpdfstring{data}{data}}]{\setlength{\rightskip}{0pt plus 5cm}keyboard\+\_\+node.\+data}\hypertarget{namespacekeyboard__node_a33f8346a3ffb7a9fef12da96e958f14e}{}\label{namespacekeyboard__node_a33f8346a3ffb7a9fef12da96e958f14e}
+
+
+Definition at line 30 of file keyboard\+\_\+node.\+py.
+
+\index{keyboard\+\_\+node@{keyboard\+\_\+node}!key@{key}}
+\index{key@{key}!keyboard\+\_\+node@{keyboard\+\_\+node}}
+\subsubsection[{\texorpdfstring{key}{key}}]{\setlength{\rightskip}{0pt plus 5cm}keyboard\+\_\+node.\+key = {\bf get\+Key}()}\hypertarget{namespacekeyboard__node_aec12217d2be0bbc768f52b63b0673925}{}\label{namespacekeyboard__node_aec12217d2be0bbc768f52b63b0673925}
+
+
+Definition at line 27 of file keyboard\+\_\+node.\+py.
+
+
+
+Referenced by smacc\+::\+Smacc\+State$<$ St\+Navigate\+Forward1, Sm\+Dance\+Bot $>$.\+get\+Full\+Path\+Name().
+
+\index{keyboard\+\_\+node@{keyboard\+\_\+node}!msg@{msg}}
+\index{msg@{msg}!keyboard\+\_\+node@{keyboard\+\_\+node}}
+\subsubsection[{\texorpdfstring{msg}{msg}}]{\setlength{\rightskip}{0pt plus 5cm}keyboard\+\_\+node.\+msg = U\+Int16()}\hypertarget{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{}\label{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}
+
+
+Definition at line 29 of file keyboard\+\_\+node.\+py.
+
+
+
+Referenced by backward\+\_\+global\+\_\+planner\+::\+Backward\+Global\+Planner.\+command\+Service\+Call(), smacc\+::\+Sensor\+Client$<$ sensor\+\_\+msgs\+::\+Temperature $>$.\+initialize(), smacc\+::\+Keyboard\+Client.\+initialize(), main(), smacc\+::\+Sensor\+Topic$<$ sensor\+\_\+msgs\+::\+Temperature $>$.\+on\+Entry(), smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker.\+rt\+Publish\+Paths(), and smacc\+::\+Sb\+String\+Publisher.\+Sb\+String\+Publisher().
+
+\index{keyboard\+\_\+node@{keyboard\+\_\+node}!pub@{pub}}
+\index{pub@{pub}!keyboard\+\_\+node@{keyboard\+\_\+node}}
+\subsubsection[{\texorpdfstring{pub}{pub}}]{\setlength{\rightskip}{0pt plus 5cm}keyboard\+\_\+node.\+pub = rospy.\+Publisher(\textquotesingle{}keyboard\+\_\+unicode\textquotesingle{}, U\+Int16, queue\+\_\+size = 1)}\hypertarget{namespacekeyboard__node_af6db75302d320b64f2d03f7b84404a9f}{}\label{namespacekeyboard__node_af6db75302d320b64f2d03f7b84404a9f}
+
+
+Definition at line 22 of file keyboard\+\_\+node.\+py.
+
+
+
+Referenced by main().
+
+\index{keyboard\+\_\+node@{keyboard\+\_\+node}!settings@{settings}}
+\index{settings@{settings}!keyboard\+\_\+node@{keyboard\+\_\+node}}
+\subsubsection[{\texorpdfstring{settings}{settings}}]{\setlength{\rightskip}{0pt plus 5cm}keyboard\+\_\+node.\+settings = termios.\+tcgetattr(sys.\+stdin)}\hypertarget{namespacekeyboard__node_aaf29d185963f7dbed690d072de1a0b17}{}\label{namespacekeyboard__node_aaf29d185963f7dbed690d072de1a0b17}
+
+
+Definition at line 20 of file keyboard\+\_\+node.\+py.
+

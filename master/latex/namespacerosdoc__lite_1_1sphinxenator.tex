@@ -1,0 +1,70 @@
+\hypertarget{namespacerosdoc__lite_1_1sphinxenator}{}\section{rosdoc\+\_\+lite.\+sphinxenator Namespace Reference}
+\label{namespacerosdoc__lite_1_1sphinxenator}\index{rosdoc\+\_\+lite.\+sphinxenator@{rosdoc\+\_\+lite.\+sphinxenator}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacerosdoc__lite_1_1sphinxenator_a0e940616df3606001806ac19f8597eeb}{generate\+\_\+sphinx} (path, package, manifest, rd\+\_\+config, output\+\_\+dir, quiet)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{rosdoc\+\_\+lite\+::sphinxenator@{rosdoc\+\_\+lite\+::sphinxenator}!generate\+\_\+sphinx@{generate\+\_\+sphinx}}
+\index{generate\+\_\+sphinx@{generate\+\_\+sphinx}!rosdoc\+\_\+lite\+::sphinxenator@{rosdoc\+\_\+lite\+::sphinxenator}}
+\subsubsection[{\texorpdfstring{generate\+\_\+sphinx(path, package, manifest, rd\+\_\+config, output\+\_\+dir, quiet)}{generate_sphinx(path, package, manifest, rd_config, output_dir, quiet)}}]{\setlength{\rightskip}{0pt plus 5cm}def rosdoc\+\_\+lite.\+sphinxenator.\+generate\+\_\+sphinx (
+\begin{DoxyParamCaption}
+\item[{}]{path, }
+\item[{}]{package, }
+\item[{}]{manifest, }
+\item[{}]{rd\+\_\+config, }
+\item[{}]{output\+\_\+dir, }
+\item[{}]{quiet}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerosdoc__lite_1_1sphinxenator_a0e940616df3606001806ac19f8597eeb}{}\label{namespacerosdoc__lite_1_1sphinxenator_a0e940616df3606001806ac19f8597eeb}
+\begin{DoxyVerb}Main entrypoint into creating Sphinx documentation
+:return [str]: list of packages that were successfully generated
+\end{DoxyVerb}
+ 
+
+Definition at line 43 of file sphinxenator.\+py.
+
+
+\begin{DoxyCode}
+43 \textcolor{keyword}{def }\hyperlink{namespacerosdoc__lite_1_1sphinxenator_a0e940616df3606001806ac19f8597eeb}{generate\_sphinx}(path, package, manifest, rd\_config, output\_dir, quiet):
+44     \textcolor{stringliteral}{"""}
+45 \textcolor{stringliteral}{    Main entrypoint into creating Sphinx documentation}
+46 \textcolor{stringliteral}{    :return [str]: list of packages that were successfully generated}
+47 \textcolor{stringliteral}{    """}
+48     \textcolor{keywordflow}{try}:
+49         \textcolor{comment}{# check to see which directory index.rst/conf.py are rooted in}
+50         \textcolor{keywordflow}{if} \textcolor{stringliteral}{'sphinx\_root\_dir'} \textcolor{keywordflow}{in} rd\_config:
+51             base\_dir = os.path.join(path, rd\_config[\textcolor{stringliteral}{'sphinx\_root\_dir'}])
+52         \textcolor{keywordflow}{else}:
+53             base\_dir = path
+54         \textcolor{keywordflow}{if} os.access(os.path.join(base\_dir, \textcolor{stringliteral}{"conf.py"}), os.R\_OK):
+55             oldcwd = os.getcwd()
+56             os.chdir(base\_dir)
+57             \textcolor{keywordflow}{try}:
+58                 paths = python\_paths.generate\_python\_path(package, rospkg.RosPack(), manifest)
+59                 env = os.environ.copy()
+60                 additional\_packages = [p \textcolor{keywordflow}{for} p \textcolor{keywordflow}{in} paths \textcolor{keywordflow}{if} os.path.exists(p)]
+61                 \textcolor{keywordflow}{if} additional\_packages:
+62                     env[\textcolor{stringliteral}{'PYTHONPATH'}] = \textcolor{stringliteral}{"%s:%s"} % (os.pathsep.join(additional\_packages), env[\textcolor{stringliteral}{'PYTHONPATH'}])
+63                 \textcolor{keywordflow}{print} (\textcolor{stringliteral}{"Sphinx python path is: %s"} % env[\textcolor{stringliteral}{'PYTHONPATH'}])
+64 
+65                 html\_dir = os.path.join(oldcwd, output\_dir, rd\_config.get(\textcolor{stringliteral}{'output\_dir'}, \textcolor{stringliteral}{'.'}))
+66                 command = [\textcolor{stringliteral}{'sphinx-build'}, \textcolor{stringliteral}{'-a'}, \textcolor{stringliteral}{'-E'}, \textcolor{stringliteral}{'-b'}, \textcolor{stringliteral}{'html'}, \textcolor{stringliteral}{'.'}, html\_dir]
+67                 print(\textcolor{stringliteral}{"sphinx-building %s [%s]"} % (package, \textcolor{stringliteral}{' '}.join(command)))
+68                 print(\textcolor{stringliteral}{"  cwd is"}, os.getcwd())
+69                 com = Popen(command, stdout=PIPE, env=env).communicate()
+70                 print(\textcolor{stringliteral}{'stdout:'})
+71                 print(com[0])
+72                 print(\textcolor{stringliteral}{'stderr'})
+73                 print(com[1])
+74             \textcolor{keywordflow}{finally}:
+75                 \textcolor{comment}{# restore cwd}
+76                 os.chdir(oldcwd)
+77         \textcolor{keywordflow}{else}:
+78             print(\textcolor{stringliteral}{"ERROR: no conf.py for sphinx build of [%s]"}%package, file=sys.stderr)
+79     \textcolor{keywordflow}{finally}:
+80         \textcolor{keywordflow}{pass}
+81 \end{DoxyCode}
