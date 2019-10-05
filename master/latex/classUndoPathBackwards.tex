@@ -37,8 +37,6 @@ tf\+::\+Transform\+Listener \hyperlink{classUndoPathBackwards_a482530dc30c268b6c
 \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $\ast$ \hyperlink{classUndoPathBackwards_ac9b783f5d06850fe1c3f03bb1308ca2f}{move\+Base\+Client\+\_\+}
 \item 
 \hyperlink{classsmacc__odom__tracker_1_1OdomTracker}{smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker} $\ast$ \hyperlink{classUndoPathBackwards_a7700dd293e08d1383f9e9247329480bc}{odom\+Tracker\+\_\+}
-\item 
-\hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher}{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher} $\ast$ \hyperlink{classUndoPathBackwards_a88c201f6b358634091afec44002e5f28}{planner\+Switcher\+\_\+}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -64,32 +62,30 @@ Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_a7c28e1c46238b
 
 
 
-Definition at line 18 of file undo\+\_\+path\+\_\+backwards.\+h.
+Definition at line 16 of file undo\+\_\+path\+\_\+backwards.\+h.
 
 
 
-References smacc\+\_\+odom\+\_\+tracker\+::\+C\+L\+E\+A\+R\+\_\+\+P\+A\+T\+H\+\_\+\+B\+A\+C\+K\+W\+A\+RD, smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::get\+Path(), smacc\+::\+Smacc\+Sub\+State\+Behavior\+::requires\+Component(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal(), smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher\+::set\+Backward\+Planner(), and smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Working\+Mode().
+References smacc\+\_\+odom\+\_\+tracker\+::\+C\+L\+E\+A\+R\+\_\+\+P\+A\+T\+H\+\_\+\+B\+A\+C\+K\+W\+A\+RD, smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::get\+Path(), smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::planner\+Switcher\+\_\+, smacc\+::\+Smacc\+Sub\+State\+Behavior\+::requires\+Client(), smacc\+::\+Smacc\+Sub\+State\+Behavior\+::requires\+Component(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal(), and smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Working\+Mode().
 
 
 \begin{DoxyCode}
-19   \{
-20     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}{requiresComponent}(\hyperlink{classUndoPathBackwards_ac9b783f5d06850fe1c3f03bb1308ca2f}{moveBaseClient\_} ,ros::NodeHandle(\textcolor{stringliteral}{"move\_base"}));
-21     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}{requiresComponent}(\hyperlink{classUndoPathBackwards_a7700dd293e08d1383f9e9247329480bc}{odomTracker\_});
-22     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}{requiresComponent}(\hyperlink{classUndoPathBackwards_a88c201f6b358634091afec44002e5f28}{plannerSwitcher\_} , ros::NodeHandle(\textcolor{stringliteral}{"move\_base"}
-      ));   
-23 
-24     nav\_msgs::Path forwardpath = this->\hyperlink{classUndoPathBackwards_a7700dd293e08d1383f9e9247329480bc}{odomTracker\_}->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_ace0762f93bc272a426d3038f74dc8752}{getPath}();
-25     this->\hyperlink{classUndoPathBackwards_a7700dd293e08d1383f9e9247329480bc}{odomTracker\_}->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a38fbca999297c46dc95628cc60851a45}{setWorkingMode}(
+17   \{
+18     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_ae8361a9e794b02f9f3d962b881e4fd7d}{requiresClient}(\hyperlink{classUndoPathBackwards_ac9b783f5d06850fe1c3f03bb1308ca2f}{moveBaseClient\_});
+19     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a9f31f62f886cc06017e92fa0d834b12d}{requiresComponent}(\hyperlink{classUndoPathBackwards_a7700dd293e08d1383f9e9247329480bc}{odomTracker\_});
+20 
+21     nav\_msgs::Path forwardpath = this->\hyperlink{classUndoPathBackwards_a7700dd293e08d1383f9e9247329480bc}{odomTracker\_}->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_ace0762f93bc272a426d3038f74dc8752}{getPath}();
+22     this->\hyperlink{classUndoPathBackwards_a7700dd293e08d1383f9e9247329480bc}{odomTracker\_}->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a38fbca999297c46dc95628cc60851a45}{setWorkingMode}(
       \hyperlink{namespacesmacc__odom__tracker_ade9730dd5cc10ccfad9362176cf46c33a0cf8f27617189e35619df3c18bda6274}{smacc\_odom\_tracker::WorkingMode::CLEAR\_PATH\_BACKWARD});
-26     
-27     smacc::SmaccMoveBaseActionClient::Goal goal;
-28     \textcolor{keywordflow}{if} ( forwardpath.poses.size()>0)
-29     \{
-30       goal.target\_pose = forwardpath.poses.front();
-31       this->\hyperlink{classUndoPathBackwards_a88c201f6b358634091afec44002e5f28}{plannerSwitcher\_}->\hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_a848558a4309a42c546ab87e65722da2f}{setBackwardPlanner}();
-32       \hyperlink{classUndoPathBackwards_ac9b783f5d06850fe1c3f03bb1308ca2f}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
-33     \}
-34   \}    
+23     
+24     smacc::SmaccMoveBaseActionClient::Goal goal;
+25     \textcolor{keywordflow}{if} ( forwardpath.poses.size()>0)
+26     \{
+27       goal.target\_pose = forwardpath.poses.front();
+28       \hyperlink{classUndoPathBackwards_ac9b783f5d06850fe1c3f03bb1308ca2f}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccMoveBaseActionClient_ae24164268108abf0b35cf51bfba5ec67}{plannerSwitcher\_}->setBackwardPlanner();
+29       \hyperlink{classUndoPathBackwards_ac9b783f5d06850fe1c3f03bb1308ca2f}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
+30     \}
+31   \}    
 \end{DoxyCode}
 
 
@@ -126,13 +122,6 @@ Definition at line 12 of file undo\+\_\+path\+\_\+backwards.\+h.
 
 
 Definition at line 14 of file undo\+\_\+path\+\_\+backwards.\+h.
-
-\index{Undo\+Path\+Backwards@{Undo\+Path\+Backwards}!planner\+Switcher\+\_\+@{planner\+Switcher\+\_\+}}
-\index{planner\+Switcher\+\_\+@{planner\+Switcher\+\_\+}!Undo\+Path\+Backwards@{Undo\+Path\+Backwards}}
-\subsubsection[{\texorpdfstring{planner\+Switcher\+\_\+}{plannerSwitcher_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}$\ast$ Undo\+Path\+Backwards\+::planner\+Switcher\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classUndoPathBackwards_a88c201f6b358634091afec44002e5f28}{}\label{classUndoPathBackwards_a88c201f6b358634091afec44002e5f28}
-
-
-Definition at line 16 of file undo\+\_\+path\+\_\+backwards.\+h.
 
 
 

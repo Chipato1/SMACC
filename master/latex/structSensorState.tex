@@ -107,8 +107,8 @@ Definition at line 32 of file sensor\+\_\+state.\+h.
 \begin{DoxyCode}
 33   \{
 34     this->configure<ObstaclePerceptionOrthogonal>(
-      std::make\_shared<smacc::SensorTopic<sensor\_msgs::LaserScan>>(\textcolor{stringliteral}{"/scan"}, 1, ros::Duration(10)));
-35     this->configure<SensorOrthogonal>(std::make\_shared<CustomConditionTemperatureSensor>(\textcolor{stringliteral}{"/temperature"}));
+      std::make\_shared<smacc::SensorTopic<sensor\_msgs::LaserScan>>());
+35     this->configure<SensorOrthogonal>(std::make\_shared<CustomConditionTemperatureSensor>());
 36   \}
 \end{DoxyCode}
 

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['keyboardclient',['KeyboardClient',['../classsmacc_1_1KeyboardClient.html#a4d75e7c63cec3be4d52f6e80c48d0e03',1,'smacc::KeyboardClient']]],
+  ['keyboardclient',['KeyboardClient',['../classdance__bot_1_1KeyboardClient.html#a9eca90df01ec0e231fb3ed1a7d830197',1,'dance_bot::KeyboardClient']]],
   ['keyboardlistenerloop',['keyboardListenerLoop',['../classsmacc_1_1Keyboard.html#a46ee02152cd0f2300242e4383c3e46af',1,'smacc::Keyboard']]],
   ['keyboardstatemachine',['KeyboardStateMachine',['../structKeyboardStateMachine.html#a710a456a56f0ecb1bbed087420f68050',1,'KeyboardStateMachine']]],
   ['keypressevent',['keyPressEvent',['../namespacesmacc__viewer_1_1xdot_1_1xdot__qt.html#a7edb0d2c26f36159d820fccc6aa33213',1,'smacc_viewer::xdot::xdot_qt']]],

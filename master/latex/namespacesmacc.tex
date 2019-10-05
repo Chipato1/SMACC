@@ -21,58 +21,6 @@ struct \hyperlink{structsmacc_1_1EvActionResult}{Ev\+Action\+Result}
 \item 
 struct \hyperlink{structsmacc_1_1EvActionSucceded}{Ev\+Action\+Succeded}
 \item 
-struct \hyperlink{structsmacc_1_1EvKeyPressA}{Ev\+Key\+PressA}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressB}{Ev\+Key\+PressB}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressC}{Ev\+Key\+PressC}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressD}{Ev\+Key\+PressD}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressE}{Ev\+Key\+PressE}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressF}{Ev\+Key\+PressF}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressG}{Ev\+Key\+PressG}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressH}{Ev\+Key\+PressH}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressI}{Ev\+Key\+PressI}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressJ}{Ev\+Key\+PressJ}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressK}{Ev\+Key\+PressK}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressL}{Ev\+Key\+PressL}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressM}{Ev\+Key\+PressM}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressN}{Ev\+Key\+PressN}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressO}{Ev\+Key\+PressO}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressP}{Ev\+Key\+PressP}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressQ}{Ev\+Key\+PressQ}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressR}{Ev\+Key\+PressR}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressS}{Ev\+Key\+PressS}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressT}{Ev\+Key\+PressT}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressU}{Ev\+Key\+PressU}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressV}{Ev\+Key\+PressV}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressW}{Ev\+Key\+PressW}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressX}{Ev\+Key\+PressX}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressY}{Ev\+Key\+PressY}
-\item 
-struct \hyperlink{structsmacc_1_1EvKeyPressZ}{Ev\+Key\+PressZ}
-\item 
 struct \hyperlink{structsmacc_1_1EvStateFinish}{Ev\+State\+Finish}
 \item 
 struct \hyperlink{structsmacc_1_1EvTopicInitialMessage}{Ev\+Topic\+Initial\+Message}
@@ -95,13 +43,9 @@ class \hyperlink{classsmacc_1_1ISmaccStateMachine}{I\+Smacc\+State\+Machine}
 \item 
 class \hyperlink{classsmacc_1_1Keyboard}{Keyboard}
 \item 
-class \hyperlink{classsmacc_1_1KeyboardClient}{Keyboard\+Client}
-\item 
 struct \hyperlink{structsmacc_1_1KeyPressEvent}{Key\+Press\+Event}
 \item 
 class \hyperlink{classsmacc_1_1Orthogonal}{Orthogonal}
-\item 
-class \hyperlink{classsmacc_1_1SbKeyboard}{Sb\+Keyboard}
 \item 
 class \hyperlink{classsmacc_1_1SbStringPublisher}{Sb\+String\+Publisher}
 \item 
@@ -132,8 +76,6 @@ class \hyperlink{classsmacc_1_1SmaccToolActionClient}{Smacc\+Tool\+Action\+Clien
 class \hyperlink{classsmacc_1_1SmaccTopicPublisherClient}{Smacc\+Topic\+Publisher\+Client}
 \item 
 class \hyperlink{classsmacc_1_1SmaccTopicSubscriberClient}{Smacc\+Topic\+Subscriber\+Client}
-\item 
-class \hyperlink{classsmacc_1_1StringPublisherClient}{String\+Publisher\+Client}
 \item 
 class \hyperlink{classsmacc_1_1Timer}{Timer}
 \item 
@@ -207,7 +149,7 @@ Definition at line 127 of file common.\+h.
 )}\hypertarget{namespacesmacc_a09b297b1cdb9aae93a958f323431464a}{}\label{namespacesmacc_a09b297b1cdb9aae93a958f323431464a}
 
 
-Definition at line 17 of file common.\+cpp.
+Definition at line 16 of file common.\+cpp.
 
 
 
@@ -219,16 +161,16 @@ Referenced by smacc\+::\+Smacc\+State$<$ St\+Navigate\+Forward1, Sm\+Dance\+Bot 
 
 
 \begin{DoxyCode}
-18 \{
-19     std::string fullclassname = \hyperlink{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{demangleSymbol}(tinfo.name());
-20     \textcolor{comment}{//ROS\_INFO("State full classname: %s", fullclassname.c\_str());}
-21 
-22     std::vector<std::string> strs;
-23     boost::split(strs,fullclassname,boost::is\_any\_of(\textcolor{stringliteral}{"::"}));
-24     std::string classname = strs.back();
-25     \textcolor{comment}{//ROS\_INFO("State classname: %s", classname.c\_str());}
-26     \textcolor{keywordflow}{return} classname;
-27 \}
+17 \{
+18     std::string fullclassname = \hyperlink{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{demangleSymbol}(tinfo.name());
+19     \textcolor{comment}{//ROS\_INFO("State full classname: %s", fullclassname.c\_str());}
+20 
+21     std::vector<std::string> strs;
+22     boost::split(strs,fullclassname,boost::is\_any\_of(\textcolor{stringliteral}{"::"}));
+23     std::string classname = strs.back();
+24     \textcolor{comment}{//ROS\_INFO("State classname: %s", classname.c\_str());}
+25     \textcolor{keywordflow}{return} classname;
+26 \}
 \end{DoxyCode}
 
 

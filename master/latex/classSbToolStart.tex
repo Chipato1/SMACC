@@ -63,13 +63,12 @@ Definition at line 12 of file sb\+\_\+tool\+\_\+start.\+h.
 
 
 
-References smacc\+::\+Smacc\+Sub\+State\+Behavior\+::requires\+Component(), and smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal().
+References smacc\+::\+Smacc\+Sub\+State\+Behavior\+::requires\+Client(), and smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal().
 
 
 \begin{DoxyCode}
 13     \{
-14       this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}{requiresComponent}(\hyperlink{classSbToolStart_ade218adc9ad0c00accf947dffdcd1a33}{toolActionClient\_} , ros::NodeHandle(\textcolor{stringliteral}{"
-      tool\_action\_server"}));
+14       this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_ae8361a9e794b02f9f3d962b881e4fd7d}{requiresClient}(\hyperlink{classSbToolStart_ade218adc9ad0c00accf947dffdcd1a33}{toolActionClient\_} );
 15 
 16       smacc::SmaccToolActionClient::Goal goal;
 17       goal.command = smacc::SmaccToolActionClient::Goal::CMD\_START;

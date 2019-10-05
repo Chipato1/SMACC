@@ -36,7 +36,7 @@ virtual \hyperlink{classbool}{bool} \hyperlink{classsmacc_1_1SbStringPublisher_a
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classsmacc_1_1StringPublisherClient}{smacc\+::\+String\+Publisher\+Client} $\ast$ \hyperlink{classsmacc_1_1SbStringPublisher_a85fd3ba65479542c9f5e02ffa727cf4c}{publisher\+Client\+\_\+}
+\hyperlink{classdance__bot_1_1StringPublisherClient}{dance\+\_\+bot\+::\+String\+Publisher\+Client} $\ast$ \hyperlink{classsmacc_1_1SbStringPublisher_a447bf4a72903d9bf0ed7583dee3d09b2}{publisher\+Client\+\_\+}
 \item 
 std\+::string \hyperlink{classsmacc_1_1SbStringPublisher_ad3397fa2bb3097192c3f82d243704741}{msg\+\_\+}
 \end{DoxyCompactItemize}
@@ -91,14 +91,13 @@ Definition at line 20 of file sb\+\_\+string\+\_\+publisher.\+h.
 
 
 
-References smacc\+::\+Smacc\+Topic\+Publisher\+Client$<$ Message\+Type $>$\+::initialize(), and smacc\+::\+Smacc\+Sub\+State\+Behavior\+::requires\+Component().
+References smacc\+::\+Smacc\+Sub\+State\+Behavior\+::requires\+Client().
 
 
 \begin{DoxyCode}
 21     \{
-22         this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}{requiresComponent}(\hyperlink{classsmacc_1_1SbStringPublisher_a85fd3ba65479542c9f5e02ffa727cf4c}{publisherClient\_});
-23         \hyperlink{classsmacc_1_1SbStringPublisher_a85fd3ba65479542c9f5e02ffa727cf4c}{publisherClient\_}->\hyperlink{classsmacc_1_1SmaccTopicPublisherClient_a739bc675f476023f4b657a03afd68098}{initialize}(\textcolor{stringliteral}{"/string\_publisher\_out"});
-24     \}
+22         this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_ae8361a9e794b02f9f3d962b881e4fd7d}{requiresClient}(\hyperlink{classsmacc_1_1SbStringPublisher_a447bf4a72903d9bf0ed7583dee3d09b2}{publisherClient\_});
+23     \}
 \end{DoxyCode}
 
 
@@ -125,7 +124,7 @@ Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_ab78b9de76c04a
 
 
 
-Definition at line 26 of file sb\+\_\+string\+\_\+publisher.\+h.
+Definition at line 25 of file sb\+\_\+string\+\_\+publisher.\+h.
 
 
 
@@ -133,11 +132,11 @@ References msg\+\_\+, and smacc\+::\+Smacc\+Topic\+Publisher\+Client$<$ Message\
 
 
 \begin{DoxyCode}
-27     \{
-28         std\_msgs::String rosmsg;
-29         rosmsg.data =  \hyperlink{classsmacc_1_1SbStringPublisher_ad3397fa2bb3097192c3f82d243704741}{msg\_};
-30         \hyperlink{classsmacc_1_1SbStringPublisher_a85fd3ba65479542c9f5e02ffa727cf4c}{publisherClient\_}->\hyperlink{classsmacc_1_1SmaccTopicPublisherClient_a8f72ebf2cdb0b56b8288fde14c787c01}{publish}(rosmsg);
-31     \}
+26     \{
+27         std\_msgs::String rosmsg;
+28         rosmsg.data =  \hyperlink{classsmacc_1_1SbStringPublisher_ad3397fa2bb3097192c3f82d243704741}{msg\_};
+29         \hyperlink{classsmacc_1_1SbStringPublisher_a447bf4a72903d9bf0ed7583dee3d09b2}{publisherClient\_}->\hyperlink{classsmacc_1_1SmaccTopicPublisherClient_a8f72ebf2cdb0b56b8288fde14c787c01}{publish}(rosmsg);
+30     \}
 \end{DoxyCode}
 
 
@@ -167,7 +166,7 @@ Referenced by on\+Exit().
 
 \index{smacc\+::\+Sb\+String\+Publisher@{smacc\+::\+Sb\+String\+Publisher}!publisher\+Client\+\_\+@{publisher\+Client\+\_\+}}
 \index{publisher\+Client\+\_\+@{publisher\+Client\+\_\+}!smacc\+::\+Sb\+String\+Publisher@{smacc\+::\+Sb\+String\+Publisher}}
-\subsubsection[{\texorpdfstring{publisher\+Client\+\_\+}{publisherClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+::\+String\+Publisher\+Client}$\ast$ smacc\+::\+Sb\+String\+Publisher\+::publisher\+Client\+\_\+}\hypertarget{classsmacc_1_1SbStringPublisher_a85fd3ba65479542c9f5e02ffa727cf4c}{}\label{classsmacc_1_1SbStringPublisher_a85fd3ba65479542c9f5e02ffa727cf4c}
+\subsubsection[{\texorpdfstring{publisher\+Client\+\_\+}{publisherClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf dance\+\_\+bot\+::\+String\+Publisher\+Client}$\ast$ smacc\+::\+Sb\+String\+Publisher\+::publisher\+Client\+\_\+}\hypertarget{classsmacc_1_1SbStringPublisher_a447bf4a72903d9bf0ed7583dee3d09b2}{}\label{classsmacc_1_1SbStringPublisher_a447bf4a72903d9bf0ed7583dee3d09b2}
 
 
 Definition at line 12 of file sb\+\_\+string\+\_\+publisher.\+h.

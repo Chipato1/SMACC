@@ -2,7 +2,7 @@
 \label{classsmacc_1_1SmaccServiceClient}\index{smacc\+::\+Smacc\+Service\+Client$<$ Service\+Type $>$@{smacc\+::\+Smacc\+Service\+Client$<$ Service\+Type $>$}}
 
 
-{\ttfamily \#include $<$smacc\+\_\+service.\+h$>$}
+{\ttfamily \#include $<$smacc\+\_\+service\+\_\+client.\+h$>$}
 
 
 
@@ -29,9 +29,14 @@ Collaboration diagram for smacc\+:\+:Smacc\+Service\+Client$<$ Service\+Type $>$
 \item 
 \hyperlink{classsmacc_1_1SmaccServiceClient_a54f6b9cd746c3e6c604afa1c93b990fd}{Smacc\+Service\+Client} ()
 \item 
-void \hyperlink{classsmacc_1_1SmaccServiceClient_a5be21b63eb7cfe54d9ac7de33c3c0938}{initialize} (std\+::string service\+Name)
+virtual void \hyperlink{classsmacc_1_1SmaccServiceClient_a9ac26f1ca1e661e6b393ce7605166bdc}{initialize} () override
 \item 
 \hyperlink{classbool}{bool} \hyperlink{classsmacc_1_1SmaccServiceClient_a1b749ce13f3cb1dbf10a5992c05c173e}{call} (Service\+Type \&srvreq)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::optional$<$ std\+::string $>$ \hyperlink{classsmacc_1_1SmaccServiceClient_a93cf1653e9d7a0f4aa25dbb8ae7d07fc}{service\+Name\+\_\+}
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -50,7 +55,7 @@ class smacc\+::\+Smacc\+Service\+Client$<$ Service\+Type $>$}
 
 
 
-Definition at line 8 of file smacc\+\_\+service.\+h.
+Definition at line 9 of file smacc\+\_\+service\+\_\+client.\+h.
 
 
 
@@ -64,13 +69,13 @@ Definition at line 8 of file smacc\+\_\+service.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccServiceClient_a54f6b9cd746c3e6c604afa1c93b990fd}{}\label{classsmacc_1_1SmaccServiceClient_a54f6b9cd746c3e6c604afa1c93b990fd}
 
 
-Definition at line 11 of file smacc\+\_\+service.\+h.
+Definition at line 14 of file smacc\+\_\+service\+\_\+client.\+h.
 
 
 \begin{DoxyCode}
-12     \{
-13         \hyperlink{classsmacc_1_1SmaccServiceClient_a251b147a783f05d13edb272b85f64982}{initialized\_}=\textcolor{keyword}{false};
-14     \}
+15     \{
+16         \hyperlink{classsmacc_1_1SmaccServiceClient_a251b147a783f05d13edb272b85f64982}{initialized\_} = \textcolor{keyword}{false};
+17     \}
 \end{DoxyCode}
 
 
@@ -84,7 +89,7 @@ Definition at line 11 of file smacc\+\_\+service.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccServiceClient_a1b749ce13f3cb1dbf10a5992c05c173e}{}\label{classsmacc_1_1SmaccServiceClient_a1b749ce13f3cb1dbf10a5992c05c173e}
 
 
-Definition at line 27 of file smacc\+\_\+service.\+h.
+Definition at line 37 of file smacc\+\_\+service\+\_\+client.\+h.
 
 
 
@@ -92,9 +97,9 @@ Referenced by Service3\+Behavior\+::on\+Entry().
 
 
 \begin{DoxyCode}
-28     \{
-29         \textcolor{keywordflow}{return} \hyperlink{classsmacc_1_1SmaccServiceClient_a6eed795ca67ec50096a9e5695d4281c6}{client\_}.call(srvreq);
-30     \}
+38     \{
+39         \textcolor{keywordflow}{return} \hyperlink{classsmacc_1_1SmaccServiceClient_a6eed795ca67ec50096a9e5695d4281c6}{client\_}.call(srvreq);
+40     \}
 \end{DoxyCode}
 
 
@@ -110,43 +115,39 @@ Here is the caller graph for this function\+:
 
 \index{smacc\+::\+Smacc\+Service\+Client@{smacc\+::\+Smacc\+Service\+Client}!initialize@{initialize}}
 \index{initialize@{initialize}!smacc\+::\+Smacc\+Service\+Client@{smacc\+::\+Smacc\+Service\+Client}}
-\subsubsection[{\texorpdfstring{initialize(std\+::string service\+Name)}{initialize(std::string serviceName)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Service\+Type$>$ void {\bf smacc\+::\+Smacc\+Service\+Client}$<$ Service\+Type $>$\+::initialize (
+\subsubsection[{\texorpdfstring{initialize() override}{initialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Service\+Type$>$ virtual void {\bf smacc\+::\+Smacc\+Service\+Client}$<$ Service\+Type $>$\+::initialize (
 \begin{DoxyParamCaption}
-\item[{std\+::string}]{service\+Name}
+{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccServiceClient_a5be21b63eb7cfe54d9ac7de33c3c0938}{}\label{classsmacc_1_1SmaccServiceClient_a5be21b63eb7cfe54d9ac7de33c3c0938}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1SmaccServiceClient_a9ac26f1ca1e661e6b393ce7605166bdc}{}\label{classsmacc_1_1SmaccServiceClient_a9ac26f1ca1e661e6b393ce7605166bdc}
 
 
-Definition at line 16 of file smacc\+\_\+service.\+h.
+Reimplemented from \hyperlink{classsmacc_1_1ISmaccClient_a974ebb6ad6cf812e7b9de6b78b3d901f}{smacc\+::\+I\+Smacc\+Client}.
 
 
 
-Referenced by Service3\+Behavior\+::on\+Entry().
+Definition at line 19 of file smacc\+\_\+service\+\_\+client.\+h.
 
 
 \begin{DoxyCode}
-17     \{
-18         \textcolor{keywordflow}{if} (!\hyperlink{classsmacc_1_1SmaccServiceClient_a251b147a783f05d13edb272b85f64982}{initialized\_})
-19         \{
-20             ROS\_INFO\_STREAM(\textcolor{stringliteral}{"["} << this->\hyperlink{classsmacc_1_1ISmaccComponent_aa314809a7fd3516461e31cc120d0cfe7}{getName}() << \textcolor{stringliteral}{"] Client Service: "} << serviceName);
-21             this->\hyperlink{classsmacc_1_1SmaccServiceClient_a251b147a783f05d13edb272b85f64982}{initialized\_} = \textcolor{keyword}{true};
-22 
-23             \hyperlink{classsmacc_1_1SmaccServiceClient_a6eed795ca67ec50096a9e5695d4281c6}{client\_} = \hyperlink{classsmacc_1_1SmaccServiceClient_a6e5e8b77b4c7137f9c820b09c8f661b5}{nh\_}.serviceClient<ServiceType>(serviceName);
-24         \}
-25     \}
+20     \{
+21         \textcolor{keywordflow}{if} (!\hyperlink{classsmacc_1_1SmaccServiceClient_a251b147a783f05d13edb272b85f64982}{initialized\_})
+22         \{
+23             \textcolor{keywordflow}{if} (!\hyperlink{classsmacc_1_1SmaccServiceClient_a93cf1653e9d7a0f4aa25dbb8ae7d07fc}{serviceName\_})
+24             \{
+25                 ROS\_ERROR(\textcolor{stringliteral}{"service client with no service name set. Skipping."});
+26             \}
+27             \textcolor{keywordflow}{else}
+28             \{
+29                 ROS\_INFO\_STREAM(\textcolor{stringliteral}{"["} << this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}() << \textcolor{stringliteral}{"] Client Service: "} << *
+      \hyperlink{classsmacc_1_1SmaccServiceClient_a93cf1653e9d7a0f4aa25dbb8ae7d07fc}{serviceName\_});
+30                 this->\hyperlink{classsmacc_1_1SmaccServiceClient_a251b147a783f05d13edb272b85f64982}{initialized\_} = \textcolor{keyword}{true};
+31 
+32                 \hyperlink{classsmacc_1_1SmaccServiceClient_a6eed795ca67ec50096a9e5695d4281c6}{client\_} = \hyperlink{classsmacc_1_1SmaccServiceClient_a6e5e8b77b4c7137f9c820b09c8f661b5}{nh\_}.serviceClient<ServiceType>(*serviceName\_);
+33             \}
+34         \}
+35     \}
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classsmacc_1_1SmaccServiceClient_a5be21b63eb7cfe54d9ac7de33c3c0938_icgraph}
-\end{center}
-\end{figure}
-
-
 
 
 \subsection{Member Data Documentation}
@@ -155,7 +156,7 @@ Here is the caller graph for this function\+:
 \subsubsection[{\texorpdfstring{client\+\_\+}{client_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Service\+Type$>$ ros\+::\+Service\+Client {\bf smacc\+::\+Smacc\+Service\+Client}$<$ Service\+Type $>$\+::client\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classsmacc_1_1SmaccServiceClient_a6eed795ca67ec50096a9e5695d4281c6}{}\label{classsmacc_1_1SmaccServiceClient_a6eed795ca67ec50096a9e5695d4281c6}
 
 
-Definition at line 34 of file smacc\+\_\+service.\+h.
+Definition at line 44 of file smacc\+\_\+service\+\_\+client.\+h.
 
 
 
@@ -166,7 +167,7 @@ Referenced by smacc\+::\+Smacc\+Service\+Client$<$ std\+\_\+srvs\+::\+Set\+Bool 
 \subsubsection[{\texorpdfstring{initialized\+\_\+}{initialized_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Service\+Type$>$ {\bf bool} {\bf smacc\+::\+Smacc\+Service\+Client}$<$ Service\+Type $>$\+::initialized\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classsmacc_1_1SmaccServiceClient_a251b147a783f05d13edb272b85f64982}{}\label{classsmacc_1_1SmaccServiceClient_a251b147a783f05d13edb272b85f64982}
 
 
-Definition at line 35 of file smacc\+\_\+service.\+h.
+Definition at line 45 of file smacc\+\_\+service\+\_\+client.\+h.
 
 
 
@@ -177,14 +178,21 @@ Referenced by smacc\+::\+Smacc\+Service\+Client$<$ std\+\_\+srvs\+::\+Set\+Bool 
 \subsubsection[{\texorpdfstring{nh\+\_\+}{nh_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Service\+Type$>$ ros\+::\+Node\+Handle {\bf smacc\+::\+Smacc\+Service\+Client}$<$ Service\+Type $>$\+::nh\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classsmacc_1_1SmaccServiceClient_a6e5e8b77b4c7137f9c820b09c8f661b5}{}\label{classsmacc_1_1SmaccServiceClient_a6e5e8b77b4c7137f9c820b09c8f661b5}
 
 
-Definition at line 33 of file smacc\+\_\+service.\+h.
+Definition at line 43 of file smacc\+\_\+service\+\_\+client.\+h.
 
 
 
 Referenced by smacc\+::\+Smacc\+Service\+Client$<$ std\+\_\+srvs\+::\+Set\+Bool $>$\+::initialize().
 
+\index{smacc\+::\+Smacc\+Service\+Client@{smacc\+::\+Smacc\+Service\+Client}!service\+Name\+\_\+@{service\+Name\+\_\+}}
+\index{service\+Name\+\_\+@{service\+Name\+\_\+}!smacc\+::\+Smacc\+Service\+Client@{smacc\+::\+Smacc\+Service\+Client}}
+\subsubsection[{\texorpdfstring{service\+Name\+\_\+}{serviceName_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Service\+Type$>$ boost\+::optional$<$std\+::string$>$ {\bf smacc\+::\+Smacc\+Service\+Client}$<$ Service\+Type $>$\+::service\+Name\+\_\+}\hypertarget{classsmacc_1_1SmaccServiceClient_a93cf1653e9d7a0f4aa25dbb8ae7d07fc}{}\label{classsmacc_1_1SmaccServiceClient_a93cf1653e9d7a0f4aa25dbb8ae7d07fc}
+
+
+Definition at line 12 of file smacc\+\_\+service\+\_\+client.\+h.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-smacc/include/smacc/interface\+\_\+components/\hyperlink{smacc__service_8h}{smacc\+\_\+service.\+h}\end{DoxyCompactItemize}
+smacc/include/smacc/interface\+\_\+components/\hyperlink{smacc__service__client_8h}{smacc\+\_\+service\+\_\+client.\+h}\end{DoxyCompactItemize}

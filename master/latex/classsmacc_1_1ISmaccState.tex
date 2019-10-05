@@ -82,10 +82,17 @@ References smacc\+::\+I\+Smacc\+State\+Machine\+::get\+Orthogonal(), and get\+St
 64   \{
 65     std::string orthogonalkey = demangledTypeName<TOrthogonal>();
 66     ROS\_INFO(\textcolor{stringliteral}{"Configuring orthogonal: %s"}, orthogonalkey.c\_str());
-67     TOrthogonal *orthogonal;
-68     this->\hyperlink{classsmacc_1_1ISmaccState_a562bb3f9a3ac16b8be71e4794c9e7523}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_adc18cd0e0b5dbc0b1f308f19346137b5}{getOrthogonal}<TOrthogonal>(orthogonal);
-69     orthogonal->setStateBehavior(smaccBehavior);
-70   \}
+67     
+68     std::shared\_ptr<TOrthogonal> orthogonal;
+69     \textcolor{keywordflow}{if}(this->\hyperlink{classsmacc_1_1ISmaccState_a562bb3f9a3ac16b8be71e4794c9e7523}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_a66a6732a48dbc0bc7a95b57fba5ec980}{getOrthogonal}<TOrthogonal>(orthogonal))
+70     \{
+71       orthogonal->setStateBehavior(smaccBehavior);
+72     \}
+73     \textcolor{keywordflow}{else}
+74     \{
+75       ROS\_ERROR(\textcolor{stringliteral}{"Skipping substate behavior creation. Orthogonal did not exist."});
+76     \}
+77   \}
 \end{DoxyCode}
 
 
@@ -168,7 +175,7 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1ISmaccState_ad6811b03329d9e694e78bc4b1220c2c0}{}\label{classsmacc_1_1ISmaccState_ad6811b03329d9e694e78bc4b1220c2c0}
 
 
-Definition at line 79 of file smacc\+\_\+state.\+h.
+Definition at line 86 of file smacc\+\_\+state.\+h.
 
 
 
@@ -176,9 +183,9 @@ References smacc\+::\+I\+Smacc\+State\+Machine\+::get\+Global\+S\+M\+Data(), and
 
 
 \begin{DoxyCode}
-80   \{
-81     \textcolor{keywordflow}{return} this->\hyperlink{classsmacc_1_1ISmaccState_a562bb3f9a3ac16b8be71e4794c9e7523}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_aeda2d6813c6c428bf318a5792e014b61}{getGlobalSMData}(name, ret);
-82   \}
+87   \{
+88     \textcolor{keywordflow}{return} this->\hyperlink{classsmacc_1_1ISmaccState_a562bb3f9a3ac16b8be71e4794c9e7523}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_aeda2d6813c6c428bf318a5792e014b61}{getGlobalSMData}(name, ret);
+89   \}
 \end{DoxyCode}
 
 
@@ -235,7 +242,7 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classsmacc_1_1ISmaccState_a562bb3f9a3ac16b8be71e4794c9e7523}{}\label{classsmacc_1_1ISmaccState_a562bb3f9a3ac16b8be71e4794c9e7523}
 
 
-Implemented in \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Most\+Derived, Context, Inner\+Initial, history\+Mode $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Rotate\+Degrees4, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Navigate\+Reverse1, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ss\+S\+Pattern1, Sm\+Dance\+Bot, Ssr\+S\+Pattern\+Rotate1 $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Navigate\+To\+Radial\+Start, Radial\+Motion\+Super\+State $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Execute\+Tool\+State, Simple\+State\+Machine $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Rotate\+Degrees3, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Acquire\+Sensors, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Keyboard\+State, Keyboard\+State\+Machine $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Radial\+Motion\+Super\+State, Radial\+Motion\+State\+Machine, Navigate\+To\+Radial\+Start $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Rotate\+Degrees1, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+Radial\+End\+Point, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+S\+Pattern\+Rotate4, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+Radial\+Return, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+Radial\+Rotate, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+S\+Pattern\+Rotate2, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Return1, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+S\+Pattern\+Rotate3, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Sensor\+State, Sensor\+State\+Machine $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Navigate\+Forward2, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Navigate, Simple\+State\+Machine $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+S\+Pattern\+Rotate1, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Navigate\+To\+Waypoints\+X, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+S\+Pattern\+Forward4, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ss\+Radial\+Pattern3, Sm\+Dance\+Bot, Ssr\+Radial\+Rotate $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Tool\+Simple\+State, Simple\+State\+Machine $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Rotate2, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+S\+Pattern\+Forward3, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ss\+F\+Pattern1, Sm\+Dance\+Bot, Ssr\+F\+Pattern\+Rotate1 $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+S\+Pattern\+Forward2, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Navigate\+To\+Waypoint1, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Rotate\+Degrees6, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Navigate\+To\+End\+Point, Radial\+Motion\+Super\+State $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+S\+Pattern\+Forward1, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Active, Stop\+Watch $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ss\+Radial\+Pattern2, Sm\+Dance\+Bot, Ssr\+Radial\+Rotate $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Navigate\+Reverse2, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Forward2, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Rotate1, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Forward1, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ss\+Radial\+Pattern1, Sm\+Dance\+Bot, Ssr\+Radial\+Rotate $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Timer\+State, Timer\+State\+Machine $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Rotate\+Degrees2, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Navigate\+Reverse3, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Rotate\+Degrees5, Sm\+Dance\+Bot $>$}, and \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Navigate\+Forward1, Sm\+Dance\+Bot $>$}.
+Implemented in \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Most\+Derived, Context, Inner\+Initial, history\+Mode $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Rotate\+Degrees4, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Navigate\+Reverse1, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ss\+S\+Pattern1, Sm\+Dance\+Bot, Ssr\+S\+Pattern\+Rotate1 $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Navigate\+To\+Radial\+Start, Radial\+Motion\+Super\+State $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Rotate\+Degrees3, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Acquire\+Sensors, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Keyboard\+State, Keyboard\+State\+Machine $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Radial\+Motion\+Super\+State, Radial\+Motion\+State\+Machine, Navigate\+To\+Radial\+Start $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Rotate\+Degrees1, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+Radial\+End\+Point, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+S\+Pattern\+Rotate4, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+Radial\+Return, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+Radial\+Rotate, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+S\+Pattern\+Rotate2, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Return1, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+S\+Pattern\+Rotate3, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Sensor\+State, Sensor\+State\+Machine $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Navigate\+Forward2, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+S\+Pattern\+Rotate1, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Navigate\+To\+Waypoints\+X, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+S\+Pattern\+Forward4, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ss\+Radial\+Pattern3, Sm\+Dance\+Bot, Ssr\+Radial\+Rotate $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Rotate2, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+S\+Pattern\+Forward3, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ss\+F\+Pattern1, Sm\+Dance\+Bot, Ssr\+F\+Pattern\+Rotate1 $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+S\+Pattern\+Forward2, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Navigate\+To\+Waypoint1, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Rotate\+Degrees6, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Navigate\+To\+End\+Point, Radial\+Motion\+Super\+State $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+S\+Pattern\+Forward1, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ss\+Radial\+Pattern2, Sm\+Dance\+Bot, Ssr\+Radial\+Rotate $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Navigate\+Reverse2, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Forward2, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Rotate1, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Forward1, S\+S $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Ss\+Radial\+Pattern1, Sm\+Dance\+Bot, Ssr\+Radial\+Rotate $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ Timer\+State, Timer\+State\+Machine $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Rotate\+Degrees2, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Navigate\+Reverse3, Sm\+Dance\+Bot $>$}, \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Rotate\+Degrees5, Sm\+Dance\+Bot $>$}, and \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{smacc\+::\+Smacc\+State$<$ St\+Navigate\+Forward1, Sm\+Dance\+Bot $>$}.
 
 
 
@@ -313,7 +320,7 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1ISmaccState_afd5264c36403d22e124eea89a0122e59}{}\label{classsmacc_1_1ISmaccState_afd5264c36403d22e124eea89a0122e59}
 
 
-Definition at line 73 of file smacc\+\_\+state.\+h.
+Definition at line 80 of file smacc\+\_\+state.\+h.
 
 
 
@@ -321,9 +328,9 @@ References get\+State\+Machine(), and smacc\+::\+I\+Smacc\+State\+Machine\+::req
 
 
 \begin{DoxyCode}
-74   \{
-75     this->\hyperlink{classsmacc_1_1ISmaccState_a562bb3f9a3ac16b8be71e4794c9e7523}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_a7f4c12bb2def8eceb718bd5e9a55076a}{requiresComponent}(storage);
-76   \}
+81   \{
+82     this->\hyperlink{classsmacc_1_1ISmaccState_a562bb3f9a3ac16b8be71e4794c9e7523}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_a729d0bcb3c4894e33f0696e0b1aeb155}{requiresComponent}(storage);
+83   \}
 \end{DoxyCode}
 
 
@@ -347,7 +354,7 @@ Here is the call graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1ISmaccState_a120fcda41b44a437ff2e3906ac9fa5ca}{}\label{classsmacc_1_1ISmaccState_a120fcda41b44a437ff2e3906ac9fa5ca}
 
 
-Definition at line 86 of file smacc\+\_\+state.\+h.
+Definition at line 93 of file smacc\+\_\+state.\+h.
 
 
 
@@ -355,9 +362,9 @@ References get\+State\+Machine(), and smacc\+::\+I\+Smacc\+State\+Machine\+::set
 
 
 \begin{DoxyCode}
-87   \{
-88     this->\hyperlink{classsmacc_1_1ISmaccState_a562bb3f9a3ac16b8be71e4794c9e7523}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_a8588f9e580fbb95b53e2bd2ca3ff1f98}{setGlobalSMData}(name, value);
-89   \}
+94   \{
+95     this->\hyperlink{classsmacc_1_1ISmaccState_a562bb3f9a3ac16b8be71e4794c9e7523}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_a8588f9e580fbb95b53e2bd2ca3ff1f98}{setGlobalSMData}(name, value);
+96   \}
 \end{DoxyCode}
 
 

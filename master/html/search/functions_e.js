@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['navigate',['Navigate',['../structNavigate.html#a6be585a62dc40f453857b649017b4e82',1,'Navigate::Navigate(my_context ctx)'],['../structNavigate.html#a6be585a62dc40f453857b649017b4e82',1,'Navigate::Navigate(my_context ctx)'],['../structNavigate.html#a6be585a62dc40f453857b649017b4e82',1,'Navigate::Navigate(my_context ctx)']]],
   ['navigateforward',['NavigateForward',['../classNavigateForward.html#a45fc93000c710b0a31b34d2dd2fa3625',1,'NavigateForward::NavigateForward(float forwardDistance)'],['../classNavigateForward.html#a49125886df55eb4253f95dc8e3e45ba3',1,'NavigateForward::NavigateForward()']]],
   ['navigateglobalposition',['NavigateGlobalPosition',['../classNavigateGlobalPosition.html#a9d689608937eb75fe747be14acfab57d',1,'NavigateGlobalPosition::NavigateGlobalPosition()'],['../classNavigateGlobalPosition.html#a60ea1910d8d317fa0af83554aee56dde',1,'NavigateGlobalPosition::NavigateGlobalPosition(float x, float y)']]],
   ['navigatestate',['navigateState',['../structStNavigateToWaypointsX.html#a0df2892ed95cae253b2ae0c09c850268',1,'StNavigateToWaypointsX']]],

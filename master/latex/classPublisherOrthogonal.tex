@@ -11,7 +11,7 @@ Inheritance diagram for Publisher\+Orthogonal\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=216pt]{classPublisherOrthogonal__inherit__graph}
+\includegraphics[width=211pt]{classPublisherOrthogonal__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -24,38 +24,43 @@ Collaboration diagram for Publisher\+Orthogonal\+:
 \includegraphics[width=350pt]{classPublisherOrthogonal__coll__graph}
 \end{center}
 \end{figure}
-\subsection*{Private Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \hyperlink{classPublisherOrthogonal_a3c97e9a0f3a2b8a3ea05fcfb3a12725f}{$\sim$\+Publisher\+Orthogonal} ()
+virtual void \hyperlink{classPublisherOrthogonal_ab4ab0ba34c2c185c384ed09b3eb37e89}{on\+Initialize} () override
 \end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 5 of file publisher\+\_\+orthogonal.\+h.
+Definition at line 6 of file publisher\+\_\+orthogonal.\+h.
 
 
 
-\subsection{Constructor \& Destructor Documentation}
-\index{Publisher\+Orthogonal@{Publisher\+Orthogonal}!````~Publisher\+Orthogonal@{$\sim$\+Publisher\+Orthogonal}}
-\index{````~Publisher\+Orthogonal@{$\sim$\+Publisher\+Orthogonal}!Publisher\+Orthogonal@{Publisher\+Orthogonal}}
-\subsubsection[{\texorpdfstring{$\sim$\+Publisher\+Orthogonal()}{~PublisherOrthogonal()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Publisher\+Orthogonal\+::$\sim$\+Publisher\+Orthogonal (
+\subsection{Member Function Documentation}
+\index{Publisher\+Orthogonal@{Publisher\+Orthogonal}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!Publisher\+Orthogonal@{Publisher\+Orthogonal}}
+\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Publisher\+Orthogonal\+::on\+Initialize (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classPublisherOrthogonal_a3c97e9a0f3a2b8a3ea05fcfb3a12725f}{}\label{classPublisherOrthogonal_a3c97e9a0f3a2b8a3ea05fcfb3a12725f}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classPublisherOrthogonal_ab4ab0ba34c2c185c384ed09b3eb37e89}{}\label{classPublisherOrthogonal_ab4ab0ba34c2c185c384ed09b3eb37e89}
 
 
-Definition at line 7 of file publisher\+\_\+orthogonal.\+h.
+Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+
+
+
+Definition at line 9 of file publisher\+\_\+orthogonal.\+h.
 
 
 \begin{DoxyCode}
-8     \{
-9 
-10     \}
+10     \{
+11         \textcolor{keyword}{auto}* publisherClient\_ = this->createClient<dance\_bot::StringPublisherClient>();
+12         publisherClient\_->topicName = \textcolor{stringliteral}{"/string\_publisher\_out"};
+13         publisherClient\_->initialize();
+14     \}
 \end{DoxyCode}
 
 

@@ -1,6 +1,7 @@
 <map id="smacc_odom_tracker::p2pDistance" name="smacc_odom_tracker::p2pDistance">
 <area shape="rect" id="node2" href="$classsmacc__odom__tracker_1_1OdomTracker.html#a3a47119be9af27de9115b043d1f76fe7" title="smacc_odom_tracker\l::OdomTracker::updateBackward" alt="" coords="213,5,441,47"/>
-<area shape="rect" id="node5" href="$classsmacc__odom__tracker_1_1OdomTracker.html#a7ef4ecc171a6fd37b2ed3c96a58e0659" title="smacc_odom_tracker\l::OdomTracker::updateForward" alt="" coords="219,71,436,112"/>
+<area shape="rect" id="node6" href="$classsmacc__odom__tracker_1_1OdomTracker.html#a7ef4ecc171a6fd37b2ed3c96a58e0659" title="smacc_odom_tracker\l::OdomTracker::updateForward" alt="" coords="219,71,436,112"/>
 <area shape="rect" id="node3" href="$classsmacc__odom__tracker_1_1OdomTracker.html#adef7b87ba453ca86886239d875344de1" title="odom callback: Updates the path &#45; this must be called periodically for each odometry message..." alt="" coords="489,31,725,87"/>
-<area shape="rect" id="node4" href="$classsmacc__odom__tracker_1_1OdomTracker.html#aa4525024fdc01e54bc310f48c7676a2f" title="Must be called at the begining of the execution. " alt="" coords="773,39,933,80"/>
+<area shape="rect" id="node4" href="$classsmacc__odom__tracker_1_1OdomTracker.html#a4b3ff3f659474cb7bdd6b4b54dcc0a53" title="Must be called at the begining of the execution. " alt="" coords="773,39,947,80"/>
+<area shape="rect" id="node5" href="$classNavigationOrthogonal.html#a1d9e825be23c75d7baf594a8c1f0fb74" title="NavigationOrthogonal\l::onInitialize" alt="" coords="995,39,1156,80"/>
 </map>

@@ -1,13 +1,5 @@
 <map id="smacc_client_library/smacc_navigation/smacc_planner_switcher/include/smacc_planner_switcher/planner_switcher.h" name="smacc_client_library/smacc_navigation/smacc_planner_switcher/include/smacc_planner_switcher/planner_switcher.h">
-<area shape="rect" id="node2" href="$smacc__action__client_8h.html" title="smacc/interface_components\l/smacc_action_client.h" alt="" coords="1293,139,1503,180"/>
-<area shape="rect" id="node3" href="$client_8h.html" title="smacc/client.h" alt="" coords="1341,228,1455,255"/>
-<area shape="rect" id="node4" href="$component_8h.html" title="smacc/component.h" alt="" coords="1396,399,1549,426"/>
-<area shape="rect" id="node23" href="$smacc__component__impl_8h.html" title="smacc/impl/smacc_component\l_impl.h" alt="" coords="1214,303,1435,344"/>
-<area shape="rect" id="node5" href="$common_8h.html" title="smacc/common.h" alt="" coords="1384,578,1521,605"/>
-<area shape="rect" id="node24" href="$smacc__state__machine__impl_8h.html" title="smacc/impl/smacc_state\l_machine_impl.h" alt="" coords="1127,392,1309,433"/>
-<area shape="rect" id="node25" href="$smacc__state__machine_8h.html" title="smacc/smacc_state_machine.h" alt="" coords="415,489,639,515"/>
-<area shape="rect" id="node31" href="$orthogonal_8h.html" title="smacc/orthogonal.h" alt="" coords="1347,489,1497,515"/>
-<area shape="rect" id="node32" href="$signal__detector_8h.html" title="smacc/signal_detector.h" alt="" coords="1572,489,1749,515"/>
-<area shape="rect" id="node35" href="$smacc__state__info_8h.html" title="smacc/smacc_state_info.h" alt="" coords="663,489,855,515"/>
-<area shape="rect" id="node37" href="$smacc__state__machine__info_8h.html" title="smacc/smacc_state_machine\l_info.h" alt="" coords="1112,481,1324,523"/>
+<area shape="rect" id="node2" href="$smacc__action__client_8h.html" title="smacc/interface_components\l/smacc_action_client.h" alt="" coords="1503,139,1714,180"/>
+<area shape="rect" id="node3" href="$client_8h.html" title="smacc/client.h" alt="" coords="1551,228,1666,255"/>
+<area shape="rect" id="node4" href="$common_8h.html" title="smacc/common.h" alt="" coords="1540,303,1677,329"/>
 </map>

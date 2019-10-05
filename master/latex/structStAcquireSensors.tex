@@ -27,7 +27,7 @@ Collaboration diagram for St\+Acquire\+Sensors\+:
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef mpl\+::list$<$ sc\+::transition$<$ \hyperlink{structsmacc_1_1EvStateFinish}{Ev\+State\+Finish}$<$ \hyperlink{structStAcquireSensors}{St\+Acquire\+Sensors} $>$, \hyperlink{structStNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$, sc\+::transition$<$ \hyperlink{structsmacc_1_1EvKeyPressN}{Ev\+Key\+PressN}$<$ \hyperlink{classsmacc_1_1SbKeyboard}{Sb\+Keyboard} $>$, \hyperlink{structStNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$, sc\+::custom\+\_\+reaction$<$ \hyperlink{structsmacc_1_1EvTopicMessage}{Ev\+Topic\+Message}$<$ \hyperlink{sensor__state_8h_a9db9e1944f88de79507758d08e4a2ee3}{Lidar\+Sensor} $>$ $>$, sc\+::custom\+\_\+reaction$<$ \hyperlink{structsmacc_1_1EvTopicMessage}{Ev\+Topic\+Message}$<$ \hyperlink{classsmacc_1_1SensorTopic}{smacc\+::\+Sensor\+Topic}$<$ sensor\+\_\+msgs\+::\+Temperature $>$ $>$ $>$ $>$ \hyperlink{structStAcquireSensors_a2e405e02a34cab31c6c05351e092e235}{reactions}
+typedef mpl\+::list$<$ sc\+::transition$<$ \hyperlink{structsmacc_1_1EvStateFinish}{Ev\+State\+Finish}$<$ \hyperlink{structStAcquireSensors}{St\+Acquire\+Sensors} $>$, \hyperlink{structStNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$, sc\+::transition$<$ Ev\+Key\+PressN$<$ Sb\+Keyboard $>$, \hyperlink{structStNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$, sc\+::custom\+\_\+reaction$<$ \hyperlink{structsmacc_1_1EvTopicMessage}{Ev\+Topic\+Message}$<$ \hyperlink{sensor__state_8h_a9db9e1944f88de79507758d08e4a2ee3}{Lidar\+Sensor} $>$ $>$, sc\+::custom\+\_\+reaction$<$ \hyperlink{structsmacc_1_1EvTopicMessage}{Ev\+Topic\+Message}$<$ \hyperlink{classsmacc_1_1SensorTopic}{smacc\+::\+Sensor\+Topic}$<$ sensor\+\_\+msgs\+::\+Temperature $>$ $>$ $>$ $>$ \hyperlink{structStAcquireSensors_a2e405e02a34cab31c6c05351e092e235}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -56,7 +56,7 @@ Definition at line 3 of file st\+\_\+acquire\+\_\+sensors.\+h.
 \subsection{Member Typedef Documentation}
 \index{St\+Acquire\+Sensors@{St\+Acquire\+Sensors}!reactions@{reactions}}
 \index{reactions@{reactions}!St\+Acquire\+Sensors@{St\+Acquire\+Sensors}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ sc\+::transition$<${\bf Ev\+State\+Finish}$<${\bf St\+Acquire\+Sensors}$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$, sc\+::transition$<${\bf Ev\+Key\+PressN}$<${\bf Sb\+Keyboard}$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$, sc\+::custom\+\_\+reaction$<${\bf Ev\+Topic\+Message}$<${\bf Lidar\+Sensor}$>$ $>$, sc\+::custom\+\_\+reaction$<${\bf Ev\+Topic\+Message}$<${\bf smacc\+::\+Sensor\+Topic}$<$sensor\+\_\+msgs\+::\+Temperature$>$ $>$ $>$ $>$ {\bf St\+Acquire\+Sensors\+::reactions}}\hypertarget{structStAcquireSensors_a2e405e02a34cab31c6c05351e092e235}{}\label{structStAcquireSensors_a2e405e02a34cab31c6c05351e092e235}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ sc\+::transition$<${\bf Ev\+State\+Finish}$<${\bf St\+Acquire\+Sensors}$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$, sc\+::transition$<$Ev\+Key\+PressN$<$Sb\+Keyboard$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$, sc\+::custom\+\_\+reaction$<${\bf Ev\+Topic\+Message}$<${\bf Lidar\+Sensor}$>$ $>$, sc\+::custom\+\_\+reaction$<${\bf Ev\+Topic\+Message}$<${\bf smacc\+::\+Sensor\+Topic}$<$sensor\+\_\+msgs\+::\+Temperature$>$ $>$ $>$ $>$ {\bf St\+Acquire\+Sensors\+::reactions}}\hypertarget{structStAcquireSensors_a2e405e02a34cab31c6c05351e092e235}{}\label{structStAcquireSensors_a2e405e02a34cab31c6c05351e092e235}
 
 
 Definition at line 20 of file st\+\_\+acquire\+\_\+sensors.\+h.
@@ -82,9 +82,8 @@ References S\+E\+R\+V\+I\+C\+E3\+\_\+\+ON, and All\+Event\+Aggregator\+::set\+Tr
 
 \begin{DoxyCode}
 25    \{
-26       this->configure<ObstaclePerceptionOrthogonal>(std::make\_shared<LidarSensor>(\textcolor{stringliteral}{"/front/scan"}, 1, 
-      ros::Duration(10)));
-27       this->configure<SensorOrthogonal>(std::make\_shared<SbConditionTemperatureSensor>(\textcolor{stringliteral}{"/temperature"}));
+26       this->configure<ObstaclePerceptionOrthogonal>(std::make\_shared<LidarSensor>());
+27       this->configure<SensorOrthogonal>(std::make\_shared<SbConditionTemperatureSensor>());
 28       this->configure<KeyboardOrthogonal>(std::make\_shared<SbKeyboard>());
 29 
 30       this->configure<PublisherOrthogonal>(std::make\_shared<SbStringPublisher>(\textcolor{stringliteral}{"Hello World!"}));

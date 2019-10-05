@@ -1,4 +1,5 @@
 <map id="smacc_odom_tracker::OdomTracker::updateBackward" name="smacc_odom_tracker::OdomTracker::updateBackward">
 <area shape="rect" id="node2" href="$classsmacc__odom__tracker_1_1OdomTracker.html#adef7b87ba453ca86886239d875344de1" title="odom callback: Updates the path &#45; this must be called periodically for each odometry message..." alt="" coords="281,5,517,61"/>
-<area shape="rect" id="node3" href="$classsmacc__odom__tracker_1_1OdomTracker.html#aa4525024fdc01e54bc310f48c7676a2f" title="Must be called at the begining of the execution. " alt="" coords="565,13,725,54"/>
+<area shape="rect" id="node3" href="$classsmacc__odom__tracker_1_1OdomTracker.html#a4b3ff3f659474cb7bdd6b4b54dcc0a53" title="Must be called at the begining of the execution. " alt="" coords="565,13,739,54"/>
+<area shape="rect" id="node4" href="$classNavigationOrthogonal.html#a1d9e825be23c75d7baf594a8c1f0fb74" title="NavigationOrthogonal\l::onInitialize" alt="" coords="787,13,948,54"/>
 </map>

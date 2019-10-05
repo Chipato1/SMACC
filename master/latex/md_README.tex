@@ -137,8 +137,8 @@ The following chunk of code shows the minimal S\+M\+A\+CC State machine you can 
 \begin{DoxyCode}
 \textcolor{preprocessor}{#include <\hyperlink{smacc__state__machine__base_8h}{smacc/smacc\_state\_machine\_base.h}>}
 
-\textcolor{keyword}{struct }\hyperlink{structSimpleStateMachine}{SimpleStateMachine}
-    : \textcolor{keyword}{public} \hyperlink{structsmacc_1_1SmaccStateMachineBase_a47508a2d301007546d4c70dedd2ade4b}{SmaccStateMachineBase}<SimpleStateMachine,ToolSimpleState>
+\textcolor{keyword}{struct }SimpleStateMachine
+    : \textcolor{keyword}{public} SmaccStateMachineBase<SimpleStateMachine,ToolSimpleState>
 \{
   \textcolor{keyword}{using} SmaccState::SmaccState;
   \textcolor{keywordtype}{void} onEntry()
@@ -148,7 +148,7 @@ The following chunk of code shows the minimal S\+M\+A\+CC State machine you can 
 \end{DoxyCode}
 
 
-Every S\+M\+A\+CC State Machine must inherit from Smacc\+State\+Machine\+Base. The first template parameter is the derived class type (\hyperlink{structSimpleStateMachine}{Simple\+State\+Machine} itself) according to the curiosuly recurring template pattern, and the second template parameter (\hyperlink{structToolSimpleState}{Tool\+Simple\+State}) would be the class name of the initial Smacc State
+Every S\+M\+A\+CC State Machine must inherit from Smacc\+State\+Machine\+Base. The first template parameter is the derived class type (Simple\+State\+Machine itself) according to the curiosuly recurring template pattern, and the second template parameter (Tool\+Simple\+State) would be the class name of the initial Smacc State
 
 \subsection*{Code a simple S\+M\+A\+CC State}
 
@@ -156,13 +156,13 @@ For the previous state machine, this would be the initial S\+M\+A\+CC State. It 
 
 
 \begin{DoxyCode}
-\textcolor{keyword}{struct }\hyperlink{structToolSimpleState}{ToolSimpleState}
+\textcolor{keyword}{struct }ToolSimpleState
     : \hyperlink{classSmaccState}{SmaccState}<ToolSimpleState, SimpleStateMachine>
 \{
 \textcolor{keyword}{public}:
 
   \textcolor{keyword}{using} SmaccState::SmaccState;
-  \textcolor{keywordtype}{void} \hyperlink{classsmacc_1_1SmaccState_a4a10a74fdbe51a798b8d651668b8ed9a}{onEntry}()
+  \textcolor{keywordtype}{void} onEntry()
   \{
     ROS\_INFO(\textcolor{stringliteral}{"Entering ToolSimpleState"});
   \}
@@ -171,7 +171,7 @@ For the previous state machine, this would be the initial S\+M\+A\+CC State. It 
 \textcolor{keywordtype}{int} \hyperlink{namespacerosdoc__lite_af17b2a5046f7827add27b1cc8deb06a0}{main}(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} **\hyperlink{namespacesmacc__viewer_a641e44a1c9c09b36c59a0651d01d4d97}{argv}) \{
   \textcolor{comment}{// initialize the ros node}
   ros::init(argc, argv, \textcolor{stringliteral}{"example1"});
-  ros::NodeHandle \hyperlink{classsmacc_1_1ISmaccState_a13fe6e6abfdb87996402189d44b78494}{nh};
+  ros::NodeHandle nh;
 
   smacc::run<SimpleStateMachine>();
 \}
@@ -190,29 +190,28 @@ The code would be the following\+:
 
 
 \begin{DoxyCode}
-\textcolor{keyword}{struct }\hyperlink{structNavigate}{Navigate} : \hyperlink{classSmaccState}{SmaccState}<Navigate, SimpleStateMachine> 
+\textcolor{keyword}{struct }Navigate : \hyperlink{classSmaccState}{SmaccState}<Navigate, SimpleStateMachine> 
 \{
 
 \textcolor{keyword}{public}:
   \textcolor{comment}{// This is the smacc component (it basically is a wrapper of the ROS Action Client for move base), please
        check the SMACC}
   \textcolor{comment}{// code to see how to implement your own action client}
-  \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc::SmaccMoveBaseActionClient} *
-      \hyperlink{structNavigate_a6ccf129ef69c3a8f664ecb8c367dae86}{moveBaseClient\_};
+  \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc::SmaccMoveBaseActionClient} *moveBaseClient\_;
 
   \textcolor{keyword}{using} SmaccState::SmaccState;
-  \textcolor{keywordtype}{void} \hyperlink{classsmacc_1_1SmaccState_a4a10a74fdbe51a798b8d651668b8ed9a}{onEntry}()
+  \textcolor{keywordtype}{void} onEntry()
   \{
     ROS\_INFO(\textcolor{stringliteral}{"Entering Navigate"});
 
     \textcolor{comment}{// this substate will need access to the "MoveBase" resource or plugin. In this line}
     \textcolor{comment}{// you get the reference to this resource.}
-    this->\hyperlink{classsmacc_1_1SmaccState_ac986eddc8e7e552fd563b76a8f5ca908}{requiresComponent}(moveBaseClient\_);
-    \hyperlink{structNavigate_a941523c9ba8391d3775d6b7f62fe1261}{goToEndPoint}();
+    this->requiresComponent(moveBaseClient\_);
+    goToEndPoint();
   \}
 
   \textcolor{comment}{// auxiliar function that defines the motion that is requested to the move\_base action server}
-  \textcolor{keywordtype}{void} \hyperlink{structNavigate_a941523c9ba8391d3775d6b7f62fe1261}{goToEndPoint}() \{
+  \textcolor{keywordtype}{void} goToEndPoint() \{
     geometry\_msgs::PoseStamped radialStartPose = createInitialPose();
 
     smacc::SmaccMoveBaseActionClient::Goal goal;
@@ -232,7 +231,7 @@ The code would be the following\+:
 
 \subsection*{Simple State Transition on Action Result Event}
 
-According to the U\+ML state machines standard, transitions between states happen on events. In S\+M\+A\+CC events can be implemented by the user or happen when Action Results callbacks and Action Feedback callbacks happen. In the following example we extend the previous example to transit to another state \textquotesingle{}\hyperlink{structExecuteToolState}{Execute\+Tool\+State}\textquotesingle{} when the move\+\_\+base action sever returns a Result.
+According to the U\+ML state machines standard, transitions between states happen on events. In S\+M\+A\+CC events can be implemented by the user or happen when Action Results callbacks and Action Feedback callbacks happen. In the following example we extend the previous example to transit to another state \textquotesingle{}Execute\+Tool\+State\textquotesingle{} when the move\+\_\+base action sever returns a Result.
 
  
 
@@ -240,26 +239,26 @@ The following would be the code to implement the diagram shown above.
 
 
 \begin{DoxyCode}
-\textcolor{keyword}{struct }\hyperlink{structNavigate}{Navigate} : \hyperlink{classSmaccState}{SmaccState}<Navigate, SimpleStateMachine>
+\textcolor{keyword}{struct }Navigate : \hyperlink{classSmaccState}{SmaccState}<Navigate, SimpleStateMachine>
 \{
 \textcolor{keyword}{public}:
 
   \textcolor{comment}{// With this line we specify that we are going to react to any EvActionResult event}
   \textcolor{comment}{// generated by SMACC when the action server provides a response to our request}
-  \textcolor{keyword}{typedef} mpl::list<sc::transition<EvActionResult<SmaccMoveBaseActionClient::Result>, 
-      \hyperlink{structExecuteToolState}{ExecuteToolState}>> \hyperlink{structNavigate_afdad91862c4900a993cc6e44309e807a}{reactions};
+  \textcolor{keyword}{typedef} mpl::list<sc::transition<EvActionResult<SmaccMoveBaseActionClient::Result>, ExecuteToolState>> 
+      reactions;
 
   \textcolor{keyword}{using} SmaccState::SmaccState;
-  \textcolor{keywordtype}{void} \hyperlink{classsmacc_1_1SmaccState_a4a10a74fdbe51a798b8d651668b8ed9a}{onEntry}()
+  \textcolor{keywordtype}{void} onEntry()
   \{
    [...]
   \}
 \};
 
-\textcolor{keyword}{struct }\hyperlink{structExecuteToolState}{ExecuteToolState} : \hyperlink{classSmaccState}{SmaccState}<ExecuteToolState, SimpleStateMachine>
+\textcolor{keyword}{struct }ExecuteToolState : \hyperlink{classSmaccState}{SmaccState}<ExecuteToolState, SimpleStateMachine>
 \{
     \textcolor{keyword}{using} SmaccState::SmaccState;
-    \textcolor{keywordtype}{void} \hyperlink{classsmacc_1_1SmaccState_a4a10a74fdbe51a798b8d651668b8ed9a}{onEntry}()
+    \textcolor{keywordtype}{void} onEntry()
     \{
     \}
 \};
@@ -276,25 +275,24 @@ The following would be the code for this state machine\+:
 
 
 \begin{DoxyCode}
-\textcolor{keyword}{struct }\hyperlink{structNavigate}{Navigate} : \hyperlink{classSmaccState}{SmaccState}<Navigate, SimpleStateMachine> 
+\textcolor{keyword}{struct }Navigate : \hyperlink{classSmaccState}{SmaccState}<Navigate, SimpleStateMachine> 
 \{
 \textcolor{keyword}{public}:
 
   \textcolor{comment}{// With this line we specify that we are going to react to any EvActionResult event}
   \textcolor{comment}{// generated by SMACC when the action server provides a response to our request}
-  \textcolor{keyword}{typedef} mpl::list<sc::custom\_reaction<EvActionResult<SmaccMoveBaseActionClient::Result>>> 
-      \hyperlink{structNavigate_afdad91862c4900a993cc6e44309e807a}{reactions};
+  \textcolor{keyword}{typedef} mpl::list<sc::custom\_reaction<EvActionResult<SmaccMoveBaseActionClient::Result>>> reactions;
   \textcolor{keyword}{using} SmaccState::SmaccState;
-  \textcolor{keywordtype}{void} \hyperlink{classsmacc_1_1SmaccState_a4a10a74fdbe51a798b8d651668b8ed9a}{onEntry}()
+  \textcolor{keywordtype}{void} onEntry()
   \{
    [...]
   \}
 
   \textcolor{comment}{// auxiliary function that defines the motion that is requested to the move\_base action server}
-  \textcolor{keywordtype}{void} \hyperlink{structNavigate_a941523c9ba8391d3775d6b7f62fe1261}{goToEndPoint}() \{
+  \textcolor{keywordtype}{void} goToEndPoint() \{
    [...]
 
-  sc::result \hyperlink{structNavigate_ac058d0da392b7c5e1873702820595ae4}{react}(\textcolor{keyword}{const} EvActionResult<SmaccMoveBaseActionClient::Result> &ev)
+  sc::result react(\textcolor{keyword}{const} EvActionResult<SmaccMoveBaseActionClient::Result> &ev)
   \{
       \textcolor{comment}{// we only will react when the result is succeeded}
       \textcolor{keywordflow}{if} (ev.getResult() == actionlib::SimpleClientGoalState::SUCCEEDED)
@@ -311,10 +309,10 @@ The following would be the code for this state machine\+:
   \}
 \};
 
-\textcolor{keyword}{struct }\hyperlink{structExecuteToolState}{ExecuteToolState} : \hyperlink{classSmaccState}{SmaccState}<ExecuteToolState, SimpleStateMachine> 
+\textcolor{keyword}{struct }ExecuteToolState : \hyperlink{classSmaccState}{SmaccState}<ExecuteToolState, SimpleStateMachine> 
 \{
     \textcolor{keyword}{using} SmaccState::SmaccState;
-    \textcolor{keywordtype}{void} \hyperlink{classsmacc_1_1SmaccState_a4a10a74fdbe51a798b8d651668b8ed9a}{onEntry}()
+    \textcolor{keywordtype}{void} onEntry()
     \{
     \}
 \};
@@ -349,15 +347,15 @@ Then, the c++ code for the State My\+State\+Machine/\+State1/\+Navigation\+Ortho
 
 
 \begin{DoxyCode}
-\textcolor{keyword}{struct }\hyperlink{structNavigate}{Navigate} : \hyperlink{classSmaccState}{SmaccState}<Navigate, NavigationOrthogonalLine> 
+\textcolor{keyword}{struct }Navigate : \hyperlink{classSmaccState}{SmaccState}<Navigate, NavigationOrthogonalLine> 
 \{
 \textcolor{keyword}{public}:
   \textcolor{keyword}{using} SmaccState::SmaccState;
-  \textcolor{keywordtype}{void} \hyperlink{classsmacc_1_1SmaccState_a4a10a74fdbe51a798b8d651668b8ed9a}{onEntry}()
+  \textcolor{keywordtype}{void} onEntry()
   \{
       geometry\_msgs::Point p;
-      \hyperlink{classsmacc_1_1ISmaccState_a4982f2187ed6da337462721146e8ef70}{param}(\textcolor{stringliteral}{"start\_position\_x"}, p.x, 0);
-      \hyperlink{classsmacc_1_1ISmaccState_a4982f2187ed6da337462721146e8ef70}{param}(\textcolor{stringliteral}{"start\_position\_y"}, p.y, 0);
+      param(\textcolor{stringliteral}{"start\_position\_x"}, p.x, 0);
+      param(\textcolor{stringliteral}{"start\_position\_y"}, p.y, 0);
   \}
 \}
 \end{DoxyCode}
@@ -367,28 +365,28 @@ The param template method reads from the parameters server delegating to the met
 
 \subsection*{Shared variables between states}
 
-This following example shows how to share a variable between two states. In the \hyperlink{structNavigate}{Navigate} state the \char`\"{}angle\+\_\+value\char`\"{} variable is set using the template method \char`\"{}set\+Data\char`\"{}. Latter in the \hyperlink{structExecuteToolState}{Execute\+Tool\+State} it gets the value using the template method \char`\"{}get\+Global\+S\+M\+Data\char`\"{}.
+This following example shows how to share a variable between two states. In the Navigate state the \char`\"{}angle\+\_\+value\char`\"{} variable is set using the template method \char`\"{}set\+Data\char`\"{}. Latter in the Execute\+Tool\+State it gets the value using the template method \char`\"{}get\+Global\+S\+M\+Data\char`\"{}.
 
 
 \begin{DoxyCode}
-\textcolor{keyword}{struct }\hyperlink{structNavigate}{Navigate} : \hyperlink{classSmaccState}{SmaccState}<Navigate, SimpleStateMachine>
+\textcolor{keyword}{struct }Navigate : \hyperlink{classSmaccState}{SmaccState}<Navigate, SimpleStateMachine>
 \{
 \textcolor{keyword}{public}:
   \textcolor{keyword}{using} SmaccState::SmaccState;
-  \textcolor{keywordtype}{void} \hyperlink{classsmacc_1_1SmaccState_a4a10a74fdbe51a798b8d651668b8ed9a}{onEntry}()
+  \textcolor{keywordtype}{void} onEntry()
   \{
         \textcolor{keywordtype}{double} angle = M\_PI;
-        this->\hyperlink{classsmacc_1_1SmaccState_a98f2673b257479e0a3615d5d8279a591}{setGlobalSMData}(\textcolor{stringliteral}{"angle\_value"}, angle);
+        this->setGlobalSMData(\textcolor{stringliteral}{"angle\_value"}, angle);
   \}
 \};
 
-\textcolor{keyword}{struct }\hyperlink{structExecuteToolState}{ExecuteToolState} : \hyperlink{classSmaccState}{SmaccState}<ExecuteToolState, SimpleStateMachine>
+\textcolor{keyword}{struct }ExecuteToolState : \hyperlink{classSmaccState}{SmaccState}<ExecuteToolState, SimpleStateMachine>
 \{
     \textcolor{keyword}{using} SmaccState::SmaccState;
-    \textcolor{keywordtype}{void} \hyperlink{classsmacc_1_1SmaccState_a4a10a74fdbe51a798b8d651668b8ed9a}{onEntry}()
+    \textcolor{keywordtype}{void} onEntry()
     \{
          \textcolor{keywordtype}{int} angle;
-         this->\hyperlink{classsmacc_1_1SmaccState_ad53b5be2760eb7ffb50f3b2e542b65f1}{getGlobalSMData}(\textcolor{stringliteral}{"angle\_value"}, angle);
+         this->getGlobalSMData(\textcolor{stringliteral}{"angle\_value"}, angle);
     \}
 \};
 \end{DoxyCode}

@@ -47,8 +47,6 @@ tf\+::\+Transform\+Listener \hyperlink{classSbNavigateForward_acdf8c63e8a81587ef
 \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $\ast$ \hyperlink{classSbNavigateForward_a6c3b305bdf4a637dad4d80b456575a36}{move\+Base\+Client\+\_\+}
 \item 
 \hyperlink{classsmacc__odom__tracker_1_1OdomTracker}{smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker} $\ast$ \hyperlink{classSbNavigateForward_ac45353a2cfde3c3d2c802065ed1419fc}{odom\+Tracker\+\_\+}
-\item 
-\hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher}{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher} $\ast$ \hyperlink{classSbNavigateForward_afdb6dba7135fa431ef14bf7a7b6cee09}{planner\+Switcher\+\_\+}
 \end{DoxyCompactItemize}
 
 
@@ -69,7 +67,7 @@ Definition at line 10 of file sb\+\_\+navigate\+\_\+forward.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSbNavigateForward_a151cdb95352703ff9065fd0d34ddcdda}{}\label{classSbNavigateForward_a151cdb95352703ff9065fd0d34ddcdda}
 
 
-Definition at line 26 of file sb\+\_\+navigate\+\_\+forward.\+h.
+Definition at line 24 of file sb\+\_\+navigate\+\_\+forward.\+h.
 
 
 
@@ -77,9 +75,9 @@ References forward\+Distance.
 
 
 \begin{DoxyCode}
-27     \{
-28         this->\hyperlink{classSbNavigateForward_adc99629f937c3d43fa56a59ca16f9aee}{forwardDistance} = \hyperlink{classSbNavigateForward_adc99629f937c3d43fa56a59ca16f9aee}{forwardDistance};
-29     \}
+25     \{
+26         this->\hyperlink{classSbNavigateForward_adc99629f937c3d43fa56a59ca16f9aee}{forwardDistance} = \hyperlink{classSbNavigateForward_adc99629f937c3d43fa56a59ca16f9aee}{forwardDistance};
+27     \}
 \end{DoxyCode}
 \index{Sb\+Navigate\+Forward@{Sb\+Navigate\+Forward}!Sb\+Navigate\+Forward@{Sb\+Navigate\+Forward}}
 \index{Sb\+Navigate\+Forward@{Sb\+Navigate\+Forward}!Sb\+Navigate\+Forward@{Sb\+Navigate\+Forward}}
@@ -90,12 +88,12 @@ References forward\+Distance.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSbNavigateForward_a4b6a96bcd0055a5186dbecdc48f8a03b}{}\label{classSbNavigateForward_a4b6a96bcd0055a5186dbecdc48f8a03b}
 
 
-Definition at line 31 of file sb\+\_\+navigate\+\_\+forward.\+h.
+Definition at line 29 of file sb\+\_\+navigate\+\_\+forward.\+h.
 
 
 \begin{DoxyCode}
-32     \{
-33     \}
+30     \{
+31     \}
 \end{DoxyCode}
 
 
@@ -113,82 +111,79 @@ Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_a7c28e1c46238b
 
 
 
-Definition at line 35 of file sb\+\_\+navigate\+\_\+forward.\+h.
+Definition at line 33 of file sb\+\_\+navigate\+\_\+forward.\+h.
 
 
 
-References smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::clear\+Path(), smacc\+::\+Smacc\+Sub\+State\+Behavior\+::current\+State, forward\+Distance, smacc\+::\+I\+Smacc\+State\+::param(), smacc\+\_\+odom\+\_\+tracker\+::\+R\+E\+C\+O\+R\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+O\+R\+W\+A\+RD, smacc\+::\+Smacc\+Sub\+State\+Behavior\+::requires\+Component(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal(), smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher\+::set\+Forward\+Planner(), smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Start\+Point(), and smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Working\+Mode().
+References smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::clear\+Path(), smacc\+::\+Smacc\+Sub\+State\+Behavior\+::current\+State, forward\+Distance, smacc\+::\+I\+Smacc\+State\+::param(), smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::planner\+Switcher\+\_\+, smacc\+\_\+odom\+\_\+tracker\+::\+R\+E\+C\+O\+R\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+O\+R\+W\+A\+RD, smacc\+::\+Smacc\+Sub\+State\+Behavior\+::requires\+Client(), smacc\+::\+Smacc\+Sub\+State\+Behavior\+::requires\+Component(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal(), smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Start\+Point(), and smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Working\+Mode().
 
 
 \begin{DoxyCode}
-36     \{
-37         \textcolor{comment}{// straight motion distance}
-38         \textcolor{keywordtype}{double} dist;
-39 
-40         \textcolor{keywordflow}{if} (!\hyperlink{classSbNavigateForward_adc99629f937c3d43fa56a59ca16f9aee}{forwardDistance})
-41         \{
-42             this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a62e2b9da4a446f09396d0b4c01659b88}{currentState}->\hyperlink{classsmacc_1_1ISmaccState_a4982f2187ed6da337462721146e8ef70}{param}(\textcolor{stringliteral}{"straight\_motion\_distance"}, dist, 3.5);
-43         \}
-44         \textcolor{keywordflow}{else}
-45         \{
-46             dist = *\hyperlink{classSbNavigateForward_adc99629f937c3d43fa56a59ca16f9aee}{forwardDistance};
-47         \}
+34     \{
+35         \textcolor{comment}{// straight motion distance}
+36         \textcolor{keywordtype}{double} dist;
+37 
+38         \textcolor{keywordflow}{if} (!\hyperlink{classSbNavigateForward_adc99629f937c3d43fa56a59ca16f9aee}{forwardDistance})
+39         \{
+40             this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a62e2b9da4a446f09396d0b4c01659b88}{currentState}->\hyperlink{classsmacc_1_1ISmaccState_a4982f2187ed6da337462721146e8ef70}{param}(\textcolor{stringliteral}{"straight\_motion\_distance"}, dist, 3.5);
+41         \}
+42         \textcolor{keywordflow}{else}
+43         \{
+44             dist = *\hyperlink{classSbNavigateForward_adc99629f937c3d43fa56a59ca16f9aee}{forwardDistance};
+45         \}
+46 
+47         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"Straight motion distance: "} << dist);
 48 
-49         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"Straight motion distance: "} << dist);
-50 
-51         this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}{requiresComponent}(\hyperlink{classSbNavigateForward_a6c3b305bdf4a637dad4d80b456575a36}{moveBaseClient\_}, ros::NodeHandle(\textcolor{stringliteral}{"move\_base
-      "}));
-52         this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}{requiresComponent}(\hyperlink{classSbNavigateForward_ac45353a2cfde3c3d2c802065ed1419fc}{odomTracker\_});
-53         this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}{requiresComponent}(\hyperlink{classSbNavigateForward_afdb6dba7135fa431ef14bf7a7b6cee09}{plannerSwitcher\_}, ros::NodeHandle(\textcolor{stringliteral}{"
-      move\_base"}));
-54 
-55         \textcolor{comment}{//this should work better with a coroutine and await}
-56         ros::Rate rate(10.0);
-57         tf::StampedTransform currentPose;
-58 
-59         \textcolor{keywordflow}{while} (ros::ok())
-60         \{
-61             \textcolor{keywordflow}{try}
-62             \{
-63                 \hyperlink{classSbNavigateForward_acdf8c63e8a81587ef0b419c94e3b6a4d}{listener}.lookupTransform(\textcolor{stringliteral}{"/odom"}, \textcolor{stringliteral}{"/base\_link"}, 
-64                                          ros::Time(0), currentPose);
-65 
-66                 \textcolor{keywordflow}{break};
-67             \}
-68             \textcolor{keywordflow}{catch} (tf::TransformException ex)
-69             \{
-70                 ROS\_ERROR(\textcolor{stringliteral}{"%s"}, ex.what());
-71                 ros::Duration(1.0).sleep();
-72             \}
-73         \}
-74 
-75         tf::Transform forwardDeltaTransform;
-76         forwardDeltaTransform.setIdentity();
-77         forwardDeltaTransform.setOrigin(tf::Vector3(dist, 0, 0));
-78 
-79         tf::Transform targetPose = currentPose * forwardDeltaTransform;
-80 
-81         smacc::SmaccMoveBaseActionClient::Goal goal;
-82         goal.target\_pose.header.frame\_id = \textcolor{stringliteral}{"/odom"};
-83         goal.target\_pose.header.stamp = ros::Time::now();
-84         tf::poseTFToMsg(targetPose, goal.target\_pose.pose);
-85 
-86         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"TARGET POSE FORWARD: "} << goal.target\_pose.pose);
-87         ros::Duration(10).sleep();
-88         this->\hyperlink{classSbNavigateForward_ac45353a2cfde3c3d2c802065ed1419fc}{odomTracker\_}->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a81ef228f0c2659e1bf9f8fdcb03fc7ae}{clearPath}();
-89 
-90         geometry\_msgs::PoseStamped currentPoseMsg;
-91         currentPoseMsg.header.frame\_id = \textcolor{stringliteral}{"/odom"};
-92         currentPoseMsg.header.stamp = ros::Time::now();
-93         tf::poseTFToMsg(currentPose, currentPoseMsg.pose);
-94         this->\hyperlink{classSbNavigateForward_ac45353a2cfde3c3d2c802065ed1419fc}{odomTracker\_}->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a5ac7c4770b3e29b74571ef65377048ee}{setStartPoint}(currentPoseMsg);
-95         this->\hyperlink{classSbNavigateForward_ac45353a2cfde3c3d2c802065ed1419fc}{odomTracker\_}->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a38fbca999297c46dc95628cc60851a45}{setWorkingMode}(
+49         this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_ae8361a9e794b02f9f3d962b881e4fd7d}{requiresClient}(\hyperlink{classSbNavigateForward_a6c3b305bdf4a637dad4d80b456575a36}{moveBaseClient\_});
+50         this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a9f31f62f886cc06017e92fa0d834b12d}{requiresComponent}(\hyperlink{classSbNavigateForward_ac45353a2cfde3c3d2c802065ed1419fc}{odomTracker\_});
+51 
+52         \textcolor{comment}{//this should work better with a coroutine and await}
+53         ros::Rate rate(10.0);
+54         tf::StampedTransform currentPose;
+55 
+56         \textcolor{keywordflow}{while} (ros::ok())
+57         \{
+58             \textcolor{keywordflow}{try}
+59             \{
+60                 \hyperlink{classSbNavigateForward_acdf8c63e8a81587ef0b419c94e3b6a4d}{listener}.lookupTransform(\textcolor{stringliteral}{"/odom"}, \textcolor{stringliteral}{"/base\_link"}, 
+61                                          ros::Time(0), currentPose);
+62 
+63                 \textcolor{keywordflow}{break};
+64             \}
+65             \textcolor{keywordflow}{catch} (tf::TransformException ex)
+66             \{
+67                 ROS\_ERROR(\textcolor{stringliteral}{"%s"}, ex.what());
+68                 ros::Duration(1.0).sleep();
+69             \}
+70         \}
+71 
+72         tf::Transform forwardDeltaTransform;
+73         forwardDeltaTransform.setIdentity();
+74         forwardDeltaTransform.setOrigin(tf::Vector3(dist, 0, 0));
+75 
+76         tf::Transform targetPose = currentPose * forwardDeltaTransform;
+77 
+78         smacc::SmaccMoveBaseActionClient::Goal goal;
+79         goal.target\_pose.header.frame\_id = \textcolor{stringliteral}{"/odom"};
+80         goal.target\_pose.header.stamp = ros::Time::now();
+81         tf::poseTFToMsg(targetPose, goal.target\_pose.pose);
+82 
+83         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"TARGET POSE FORWARD: "} << goal.target\_pose.pose);
+84         ros::Duration(10).sleep();
+85         this->\hyperlink{classSbNavigateForward_ac45353a2cfde3c3d2c802065ed1419fc}{odomTracker\_}->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a81ef228f0c2659e1bf9f8fdcb03fc7ae}{clearPath}();
+86 
+87         geometry\_msgs::PoseStamped currentPoseMsg;
+88         currentPoseMsg.header.frame\_id = \textcolor{stringliteral}{"/odom"};
+89         currentPoseMsg.header.stamp = ros::Time::now();
+90         tf::poseTFToMsg(currentPose, currentPoseMsg.pose);
+91         this->\hyperlink{classSbNavigateForward_ac45353a2cfde3c3d2c802065ed1419fc}{odomTracker\_}->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a5ac7c4770b3e29b74571ef65377048ee}{setStartPoint}(currentPoseMsg);
+92         this->\hyperlink{classSbNavigateForward_ac45353a2cfde3c3d2c802065ed1419fc}{odomTracker\_}->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a38fbca999297c46dc95628cc60851a45}{setWorkingMode}(
       \hyperlink{namespacesmacc__odom__tracker_ade9730dd5cc10ccfad9362176cf46c33a989d06a586bcf9520889228da7faa643}{smacc\_odom\_tracker::WorkingMode::RECORD\_PATH\_FORWARD});
-96 
-97         this->\hyperlink{classSbNavigateForward_afdb6dba7135fa431ef14bf7a7b6cee09}{plannerSwitcher\_}->\hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_a6510ee1f23243ee725c61e590354d3bc}{setForwardPlanner}();
-98 
-99         \hyperlink{classSbNavigateForward_a6c3b305bdf4a637dad4d80b456575a36}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
-100     \}
+93 
+94         \hyperlink{classSbNavigateForward_a6c3b305bdf4a637dad4d80b456575a36}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccMoveBaseActionClient_ae24164268108abf0b35cf51bfba5ec67}{plannerSwitcher\_}->setForwardPlanner();
+95 
+96         \hyperlink{classSbNavigateForward_a6c3b305bdf4a637dad4d80b456575a36}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
+97     \}
 \end{DoxyCode}
 
 
@@ -215,7 +210,7 @@ Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_ab78b9de76c04a
 
 
 
-Definition at line 102 of file sb\+\_\+navigate\+\_\+forward.\+h.
+Definition at line 99 of file sb\+\_\+navigate\+\_\+forward.\+h.
 
 
 
@@ -223,10 +218,10 @@ References smacc\+\_\+odom\+\_\+tracker\+::\+I\+D\+LE, and smacc\+\_\+odom\+\_\+
 
 
 \begin{DoxyCode}
-103     \{
-104         this->\hyperlink{classSbNavigateForward_ac45353a2cfde3c3d2c802065ed1419fc}{odomTracker\_}->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a38fbca999297c46dc95628cc60851a45}{setWorkingMode}(
+100     \{
+101         this->\hyperlink{classSbNavigateForward_ac45353a2cfde3c3d2c802065ed1419fc}{odomTracker\_}->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a38fbca999297c46dc95628cc60851a45}{setWorkingMode}(
       \hyperlink{namespacesmacc__odom__tracker_ade9730dd5cc10ccfad9362176cf46c33aa5daf7f2ebbba4975d61dab1c40188c7}{smacc\_odom\_tracker::WorkingMode::IDLE});
-105     \}
+102     \}
 \end{DoxyCode}
 
 
@@ -281,13 +276,6 @@ Definition at line 20 of file sb\+\_\+navigate\+\_\+forward.\+h.
 
 
 Definition at line 22 of file sb\+\_\+navigate\+\_\+forward.\+h.
-
-\index{Sb\+Navigate\+Forward@{Sb\+Navigate\+Forward}!planner\+Switcher\+\_\+@{planner\+Switcher\+\_\+}}
-\index{planner\+Switcher\+\_\+@{planner\+Switcher\+\_\+}!Sb\+Navigate\+Forward@{Sb\+Navigate\+Forward}}
-\subsubsection[{\texorpdfstring{planner\+Switcher\+\_\+}{plannerSwitcher_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}$\ast$ Sb\+Navigate\+Forward\+::planner\+Switcher\+\_\+}\hypertarget{classSbNavigateForward_afdb6dba7135fa431ef14bf7a7b6cee09}{}\label{classSbNavigateForward_afdb6dba7135fa431ef14bf7a7b6cee09}
-
-
-Definition at line 24 of file sb\+\_\+navigate\+\_\+forward.\+h.
 
 
 

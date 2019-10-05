@@ -115,11 +115,10 @@ Collaboration diagram for smacc::IActionResult:</div>
 <div class="dyncontent">
 <div class="center"><img src="structsmacc_1_1IActionResult__coll__graph.png" border="0" usemap="#smacc_1_1IActionResult_coll__map" alt="Collaboration graph"/></div>
 <map name="smacc_1_1IActionResult_coll__map" id="smacc_1_1IActionResult_coll__map">
-<area shape="rect" id="node2" href="classsmacc_1_1ISmaccActionClient.html" title="{smacc::ISmaccActionClient\n||+ ISmaccActionClient()\l+ ~ISmaccActionClient()\l+ init()\l+ init()\l+ getState()\l+ hasFeedback()\l+ getNamespace()\l# postEvent()\l# postFeedbackEvent()\l}" alt="" coords="311,1007,506,1201"/>
-<area shape="rect" id="node3" href="classsmacc_1_1ISmaccClient.html" title="{smacc::ISmaccClient\n||+ ISmaccClient()\l+ ~ISmaccClient()\l}" alt="" coords="234,852,389,944"/>
-<area shape="rect" id="node4" href="classsmacc_1_1ISmaccComponent.html" title="{smacc::ISmaccComponent\n||+ ISmaccComponent()\l+ ~ISmaccComponent()\l+ init()\l+ init()\l+ setStateMachine()\l+ getName()\l+ postEvent()\l}" alt="" coords="214,593,409,759"/>
-<area shape="rect" id="node5" href="classsmacc_1_1ISmaccStateMachine.html" title="{smacc::ISmaccStateMachine\n||+ ISmaccStateMachine()\l+ ~ISmaccStateMachine()\l+ Reset()\l+ Stop()\l+ EStop()\l+ notifyOnStateEntry()\l+ notifyOnStateExit()\l+ getOrthogonal()\l+ requiresComponent()\l+ requiresComponent()\l+ postEvent()\l+ getGlobalSMData()\l+ setGlobalSMData()\l+ registerActionClientRequest()\l+ mapBehavior()\l+ updateCurrentState()\l+ getStateMachineName()\l}" alt="" coords="452,175,675,487"/>
-<area shape="rect" id="node10" href="classsmacc_1_1SignalDetector.html" title="{smacc::SignalDetector\n||+ SignalDetector()\l+ initialize()\l+ setProcessorHandle()\l+ runThread()\l+ join()\l+ stop()\l+ toString()\l+ pollingLoop()\l+ pollOnce()\l+ postEvent()\l&#45; finalizeRequest()\l&#45; notifyFeedback()\l&#45; registerActionClientRequest()\l}" alt="" coords="984,549,1201,803"/>
+<area shape="rect" id="node2" href="classsmacc_1_1ISmaccActionClient.html" title="{smacc::ISmaccActionClient\n||+ ISmaccActionClient()\l+ ~ISmaccActionClient()\l+ getState()\l+ hasFeedback()\l+ getNamespace()\l# postEvent()\l# postFeedbackEvent()\l}" alt="" coords="305,880,500,1045"/>
+<area shape="rect" id="node3" href="classsmacc_1_1ISmaccClient.html" title="{smacc::ISmaccClient\n||+ ISmaccClient()\l+ ~ISmaccClient()\l+ initialize()\l+ setStateMachine()\l+ getName()\l+ postEvent()\l}" alt="" coords="228,615,383,766"/>
+<area shape="rect" id="node4" href="classsmacc_1_1ISmaccStateMachine.html" title="{smacc::ISmaccStateMachine\n||+ ISmaccStateMachine()\l+ ~ISmaccStateMachine()\l+ Reset()\l+ Stop()\l+ EStop()\l+ notifyOnStateEntry()\l+ notifyOnStateExit()\l+ getOrthogonal()\l+ requiresComponent()\l+ postEvent()\l+ getGlobalSMData()\l+ setGlobalSMData()\l+ registerActionClientRequest()\l+ mapBehavior()\l+ updateCurrentState()\l+ getStateMachineName()\l# createOrthogonal()\l}" alt="" coords="446,189,669,501"/>
+<area shape="rect" id="node9" href="classsmacc_1_1SignalDetector.html" title="{smacc::SignalDetector\n||+ SignalDetector()\l+ initialize()\l+ setProcessorHandle()\l+ runThread()\l+ join()\l+ stop()\l+ toString()\l+ pollingLoop()\l+ pollOnce()\l+ postEvent()\l&#45; finalizeRequest()\l&#45; notifyFeedback()\l&#45; registerActionClientRequest()\l}" alt="" coords="978,564,1195,817"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -153,8 +152,6 @@ Public Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="common_8cpp_source.html#l00011">11</a> of file <a class="el" href="common_8cpp_source.html">common.cpp</a>.</p>
 
 <p>References <a class="el" href="common_8h_source.html#l00074">client</a>, and <a class="el" href="classsmacc_1_1ISmaccActionClient.html#a272349b93828674d57fb48070f4edebf">smacc::ISmaccActionClient::getState()</a>.</p>
-
-<p>Referenced by <a class="el" href="example4_8cpp_source.html#l00065">Navigate::react()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="structsmacc_1_1IActionResult.html#a8768f186e223b75188025f318d156ee2">client</a>-&gt;<a class="code" href="classsmacc_1_1ISmaccActionClient.html#a272349b93828674d57fb48070f4edebf">getState</a>();</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div><div class="ttc" id="classsmacc_1_1ISmaccActionClient_html_a272349b93828674d57fb48070f4edebf"><div class="ttname"><a href="classsmacc_1_1ISmaccActionClient.html#a272349b93828674d57fb48070f4edebf">smacc::ISmaccActionClient::getState</a></div><div class="ttdeci">virtual SimpleClientGoalState getState()=0</div></div>
 <div class="ttc" id="structsmacc_1_1IActionResult_html_a8768f186e223b75188025f318d156ee2"><div class="ttname"><a href="structsmacc_1_1IActionResult.html#a8768f186e223b75188025f318d156ee2">smacc::IActionResult::client</a></div><div class="ttdeci">smacc::ISmaccActionClient * client</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00074">common.h:74</a></div></div>
 </div><!-- fragment -->
@@ -164,16 +161,6 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="structsmacc_1_1IActionResult_a0c127144bfd0a844380533a95f133300_cgraph.png" border="0" usemap="#structsmacc_1_1IActionResult_a0c127144bfd0a844380533a95f133300_cgraph" alt=""/></div>
 <map name="structsmacc_1_1IActionResult_a0c127144bfd0a844380533a95f133300_cgraph" id="structsmacc_1_1IActionResult_a0c127144bfd0a844380533a95f133300_cgraph">
 <area shape="rect" id="node2" href="classsmacc_1_1ISmaccActionClient.html#a272349b93828674d57fb48070f4edebf" title="smacc::ISmaccActionClient\l::getState" alt="" coords="207,5,401,47"/>
-</map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="structsmacc_1_1IActionResult_a0c127144bfd0a844380533a95f133300_icgraph.png" border="0" usemap="#structsmacc_1_1IActionResult_a0c127144bfd0a844380533a95f133300_icgraph" alt=""/></div>
-<map name="structsmacc_1_1IActionResult_a0c127144bfd0a844380533a95f133300_icgraph" id="structsmacc_1_1IActionResult_a0c127144bfd0a844380533a95f133300_icgraph">
-<area shape="rect" id="node2" href="structNavigate.html#ac058d0da392b7c5e1873702820595ae4" title="Navigate::react" alt="" coords="207,13,327,39"/>
 </map>
 </div>
 </p>
@@ -193,7 +180,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="common_8h_source.html#l00074">74</a> of file <a class="el" href="common_8h_source.html">common.h</a>.</p>
 
-<p>Referenced by <a class="el" href="common_8cpp_source.html#l00011">getResult()</a>, and <a class="el" href="smacc__action__client__base_8h_source.html#l00121">smacc::SmaccActionClientBase&lt; move_base_msgs::MoveBaseAction &gt;::postEvent()</a>.</p>
+<p>Referenced by <a class="el" href="common_8cpp_source.html#l00011">getResult()</a>, and <a class="el" href="smacc__action__client__base_8h_source.html#l00122">smacc::SmaccActionClientBase&lt; move_base_msgs::MoveBaseAction &gt;::postEvent()</a>.</p>
 
 </div>
 </div>

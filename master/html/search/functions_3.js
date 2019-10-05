@@ -21,9 +21,11 @@ var searchData=
   ['create_5ffrom_5fpackage',['create_from_package',['../classrosdoc__lite_1_1rdcore_1_1PackageInformation.html#a2349efef3941fbc9e024588a769ba5a1',1,'rosdoc_lite::rdcore::PackageInformation']]],
   ['createcarrotgoal',['createCarrotGoal',['../classbackward__local__planner_1_1BackwardLocalPlanner.html#a8ee2775f7891177091efb91c85b3ce0c',1,'backward_local_planner::BackwardLocalPlanner']]],
   ['createchildstate',['createChildState',['../classsmacc_1_1SmaccStateInfo.html#a1c935c77640d496f22f5f48d78ddb296',1,'smacc::SmaccStateInfo']]],
+  ['createclient',['createClient',['../classsmacc_1_1Orthogonal.html#a7e1a5d0cf9fc07e4b6052c692aa73b1d',1,'smacc::Orthogonal']]],
   ['createdefaultbackwardpath',['createDefaultBackwardPath',['../classbackward__global__planner_1_1BackwardGlobalPlanner.html#a625dba5902c088241ab25c9fb628fd04',1,'backward_global_planner::BackwardGlobalPlanner']]],
+  ['createorthogonal',['createOrthogonal',['../classsmacc_1_1ISmaccStateMachine.html#a9155cf3d1877255d70b0bd71648734a3',1,'smacc::ISmaccStateMachine']]],
   ['createpurespiningandstragihtlinebackwardpath',['createPureSpiningAndStragihtLineBackwardPath',['../classbackward__global__planner_1_1BackwardGlobalPlanner.html#ad0caebe12fdd6cfe66d353bc7b772718',1,'backward_global_planner::BackwardGlobalPlanner']]],
   ['createstate',['createState',['../classsmacc_1_1SmaccStateMachineInfo.html#a2d5759ccb5a8296debcc5dec741d3b42',1,'smacc::SmaccStateMachineInfo']]],
   ['createstructuremessage',['createStructureMessage',['../structsmacc_1_1SmaccStateMachineBase.html#a060a552dce399a974a8e68d498fdfb6b',1,'smacc::SmaccStateMachineBase']]],
-  ['customconditiontemperaturesensor',['CustomConditionTemperatureSensor',['../classCustomConditionTemperatureSensor.html#abc4c749adb4996745639c8848de51990',1,'CustomConditionTemperatureSensor']]]
+  ['customconditiontemperaturesensor',['CustomConditionTemperatureSensor',['../classCustomConditionTemperatureSensor.html#a61cf97136c5d24334ce1c5a25f981ccc',1,'CustomConditionTemperatureSensor']]]
 ];

@@ -11,7 +11,7 @@ Inheritance diagram for Tool\+Orthogonal\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=199pt]{classToolOrthogonal__inherit__graph}
+\includegraphics[width=211pt]{classToolOrthogonal__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -24,12 +24,13 @@ Collaboration diagram for Tool\+Orthogonal\+:
 \includegraphics[width=350pt]{classToolOrthogonal__coll__graph}
 \end{center}
 \end{figure}
-\subsection*{Private Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \hyperlink{classToolOrthogonal_a0e64fd0512c0833272821682b5a42c56}{$\sim$\+Tool\+Orthogonal} ()
+virtual void \hyperlink{classToolOrthogonal_a7b8a7ef7c7bc4d71946264286400ea3e}{on\+Initialize} () override
+\item 
+virtual void \hyperlink{classToolOrthogonal_a7b8a7ef7c7bc4d71946264286400ea3e}{on\+Initialize} () override
 \end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -39,22 +40,52 @@ Definition at line 5 of file tool\+\_\+orthogonal.\+h.
 
 
 
-\subsection{Constructor \& Destructor Documentation}
-\index{Tool\+Orthogonal@{Tool\+Orthogonal}!````~Tool\+Orthogonal@{$\sim$\+Tool\+Orthogonal}}
-\index{````~Tool\+Orthogonal@{$\sim$\+Tool\+Orthogonal}!Tool\+Orthogonal@{Tool\+Orthogonal}}
-\subsubsection[{\texorpdfstring{$\sim$\+Tool\+Orthogonal()}{~ToolOrthogonal()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Tool\+Orthogonal\+::$\sim$\+Tool\+Orthogonal (
+\subsection{Member Function Documentation}
+\index{Tool\+Orthogonal@{Tool\+Orthogonal}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!Tool\+Orthogonal@{Tool\+Orthogonal}}
+\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Tool\+Orthogonal\+::on\+Initialize (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classToolOrthogonal_a0e64fd0512c0833272821682b5a42c56}{}\label{classToolOrthogonal_a0e64fd0512c0833272821682b5a42c56}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classToolOrthogonal_a7b8a7ef7c7bc4d71946264286400ea3e}{}\label{classToolOrthogonal_a7b8a7ef7c7bc4d71946264286400ea3e}
 
 
-Definition at line 7 of file tool\+\_\+orthogonal.\+h.
+Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+
+
+
+Definition at line 9 of file tool\+\_\+orthogonal.\+h.
 
 
 \begin{DoxyCode}
-8     \{
-9     \}
+10     \{
+11         \textcolor{keyword}{auto} *actionclient = this->createClient<smacc::SmaccToolActionClient>();
+12         actionclient->name\_ = \textcolor{stringliteral}{"tool\_action\_server"};
+13         actionclient->initialize();
+14     \}
+\end{DoxyCode}
+\index{Tool\+Orthogonal@{Tool\+Orthogonal}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!Tool\+Orthogonal@{Tool\+Orthogonal}}
+\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Tool\+Orthogonal\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classToolOrthogonal_a7b8a7ef7c7bc4d71946264286400ea3e}{}\label{classToolOrthogonal_a7b8a7ef7c7bc4d71946264286400ea3e}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+
+
+
+Definition at line 9 of file tool\+\_\+orthogonal.\+h.
+
+
+\begin{DoxyCode}
+10     \{
+11         \textcolor{keyword}{auto} *actionclient = this->createClient<smacc::SmaccToolActionClient>();
+12         actionclient->name\_ = \textcolor{stringliteral}{"tool\_action\_server"};
+13         actionclient->initialize();
+14     \}
 \end{DoxyCode}
 
 

@@ -1,14 +1,16 @@
 <map id="smacc_sm_examples/sm_dance_bot/include/sm_dance_bot/substate_behaviors/keyboard/keyboard_client.h" name="smacc_sm_examples/sm_dance_bot/include/sm_dance_bot/substate_behaviors/keyboard/keyboard_client.h">
-<area shape="rect" id="node2" href="$smacc__substate__behavior_8h.html" title="smacc/smacc_substate\l_behavior.h" alt="" coords="2142,288,2315,329"/>
-<area shape="rect" id="node28" href="$smacc__topic__subscriber_8h.html" title="smacc/interface_components\l/smacc_topic_subscriber.h" alt="" coords="1901,124,2111,165"/>
-<area shape="rect" id="node3" href="$component_8h.html" title="smacc/component.h" alt="" coords="2003,385,2156,411"/>
-<area shape="rect" id="node22" href="$smacc__state__machine_8h.html" title="smacc/smacc_state_machine.h" alt="" coords="2117,474,2341,501"/>
-<area shape="rect" id="node4" href="$common_8h.html" title="smacc/common.h" alt="" coords="1759,563,1896,590"/>
-<area shape="rect" id="node29" href="$client_8h.html" title="smacc/client.h" alt="" coords="1949,213,2063,240"/>
-<area shape="rect" id="node30" href="$smacc__component__impl_8h.html" title="smacc/impl/smacc_component\l_impl.h" alt="" coords="1821,288,2042,329"/>
-<area shape="rect" id="node31" href="$smacc__state__machine__impl_8h.html" title="smacc/impl/smacc_state\l_machine_impl.h" alt="" coords="1689,377,1870,419"/>
-<area shape="rect" id="node32" href="$orthogonal_8h.html" title="smacc/orthogonal.h" alt="" coords="1893,474,2042,501"/>
-<area shape="rect" id="node33" href="$signal__detector_8h.html" title="smacc/signal_detector.h" alt="" coords="1691,474,1868,501"/>
-<area shape="rect" id="node36" href="$smacc__state__info_8h.html" title="smacc/smacc_state_info.h" alt="" coords="1238,474,1430,501"/>
-<area shape="rect" id="node38" href="$smacc__state__machine__info_8h.html" title="smacc/smacc_state_machine\l_info.h" alt="" coords="1455,467,1667,508"/>
+<area shape="rect" id="node2" href="$smacc__substate__behavior_8h.html" title="smacc/smacc_substate\l_behavior.h" alt="" coords="1733,124,1907,165"/>
+<area shape="rect" id="node42" href="$smacc__topic__subscriber_8h.html" title="smacc/interface_components\l/smacc_topic_subscriber.h" alt="" coords="2703,288,2913,329"/>
+<area shape="rect" id="node3" href="$component_8h.html" title="smacc/component.h" alt="" coords="1595,385,1749,411"/>
+<area shape="rect" id="node22" href="$smacc__state__machine_8h.html" title="smacc/smacc_state_machine.h" alt="" coords="1140,213,1364,240"/>
+<area shape="rect" id="node4" href="$common_8h.html" title="smacc/common.h" alt="" coords="1531,556,1669,583"/>
+<area shape="rect" id="node28" href="$smacc__state__machine__base__impl_8h.html" title="smacc/impl/smacc_state\l_machine_base_impl.h" alt="" coords="1255,288,1436,329"/>
+<area shape="rect" id="node29" href="$smacc__client__impl_8h.html" title="smacc/impl/smacc_client\l_impl.h" alt="" coords="1858,288,2041,329"/>
+<area shape="rect" id="node41" href="$smacc__component__impl_8h.html" title="smacc/impl/smacc_component\l_impl.h" alt="" coords="1561,288,1783,329"/>
+<area shape="rect" id="node30" href="$client_8h.html" title="smacc/client.h" alt="" coords="1811,385,1925,411"/>
+<area shape="rect" id="node31" href="$smacc__state__machine__impl_8h.html" title="smacc/impl/smacc_state\l_machine_impl.h" alt="" coords="1949,377,2131,419"/>
+<area shape="rect" id="node32" href="$orthogonal_8h.html" title="smacc/orthogonal.h" alt="" coords="1337,474,1487,501"/>
+<area shape="rect" id="node33" href="$signal__detector_8h.html" title="smacc/signal_detector.h" alt="" coords="1994,474,2171,501"/>
+<area shape="rect" id="node36" href="$smacc__state__info_8h.html" title="smacc/smacc_state_info.h" alt="" coords="2432,474,2624,501"/>
+<area shape="rect" id="node38" href="$smacc__state__machine__info_8h.html" title="smacc/smacc_state_machine\l_info.h" alt="" coords="2195,467,2407,508"/>
 </map>

@@ -1,14 +1,17 @@
 <map id="smacc_client_library/smacc_navigation/smacc_navigation_plugin/include/smacc_navigation_plugin/move_base_to_goal.h" name="smacc_client_library/smacc_navigation/smacc_navigation_plugin/include/smacc_navigation_plugin/move_base_to_goal.h">
-<area shape="rect" id="node2" href="$smacc__action__client__base_8h.html" title="smacc/interface_components\l/smacc_action_client_base.h" alt="" coords="1556,139,1767,180"/>
-<area shape="rect" id="node3" href="$smacc__action__client_8h.html" title="smacc/interface_components\l/smacc_action_client.h" alt="" coords="1556,228,1767,269"/>
-<area shape="rect" id="node24" href="$smacc__component__impl_8h.html" title="smacc/impl/smacc_component\l_impl.h" alt="" coords="1404,392,1625,433"/>
-<area shape="rect" id="node4" href="$client_8h.html" title="smacc/client.h" alt="" coords="1604,317,1719,344"/>
-<area shape="rect" id="node5" href="$component_8h.html" title="smacc/component.h" alt="" coords="1513,489,1666,515"/>
-<area shape="rect" id="node6" href="$common_8h.html" title="smacc/common.h" alt="" coords="1433,667,1570,694"/>
-<area shape="rect" id="node25" href="$smacc__state__machine__impl_8h.html" title="smacc/impl/smacc_state\l_machine_impl.h" alt="" coords="1183,481,1364,523"/>
-<area shape="rect" id="node26" href="$smacc__state__machine_8h.html" title="smacc/smacc_state_machine.h" alt="" coords="703,578,927,605"/>
-<area shape="rect" id="node32" href="$orthogonal_8h.html" title="smacc/orthogonal.h" alt="" coords="1403,578,1552,605"/>
-<area shape="rect" id="node33" href="$signal__detector_8h.html" title="smacc/signal_detector.h" alt="" coords="1627,578,1805,605"/>
-<area shape="rect" id="node36" href="$smacc__state__info_8h.html" title="smacc/smacc_state_info.h" alt="" coords="951,578,1143,605"/>
-<area shape="rect" id="node38" href="$smacc__state__machine__info_8h.html" title="smacc/smacc_state_machine\l_info.h" alt="" coords="1167,571,1379,612"/>
+<area shape="rect" id="node2" href="$smacc__action__client__base_8h.html" title="smacc/interface_components\l/smacc_action_client_base.h" alt="" coords="823,139,1033,180"/>
+<area shape="rect" id="node46" href="$planner__switcher_8h.html" title="smacc_planner_switcher\l/planner_switcher.h" alt="" coords="332,481,511,523"/>
+<area shape="rect" id="node3" href="$smacc__action__client_8h.html" title="smacc/interface_components\l/smacc_action_client.h" alt="" coords="701,571,912,612"/>
+<area shape="rect" id="node23" href="$smacc__component__impl_8h.html" title="smacc/impl/smacc_component\l_impl.h" alt="" coords="2032,228,2253,269"/>
+<area shape="rect" id="node4" href="$client_8h.html" title="smacc/client.h" alt="" coords="1639,660,1753,687"/>
+<area shape="rect" id="node5" href="$common_8h.html" title="smacc/common.h" alt="" coords="1581,735,1718,761"/>
+<area shape="rect" id="node24" href="$component_8h.html" title="smacc/component.h" alt="" coords="2169,660,2322,687"/>
+<area shape="rect" id="node25" href="$smacc__state__machine__impl_8h.html" title="smacc/impl/smacc_state\l_machine_impl.h" alt="" coords="1881,317,2063,359"/>
+<area shape="rect" id="node26" href="$smacc__state__machine_8h.html" title="smacc/smacc_state_machine.h" alt="" coords="2151,489,2375,515"/>
+<area shape="rect" id="node34" href="$orthogonal_8h.html" title="smacc/orthogonal.h" alt="" coords="1644,407,1793,433"/>
+<area shape="rect" id="node35" href="$signal__detector_8h.html" title="smacc/signal_detector.h" alt="" coords="1118,407,1295,433"/>
+<area shape="rect" id="node38" href="$smacc__state__info_8h.html" title="smacc/smacc_state_info.h" alt="" coords="1376,489,1568,515"/>
+<area shape="rect" id="node40" href="$smacc__state__machine__info_8h.html" title="smacc/smacc_state_machine\l_info.h" alt="" coords="1593,481,1805,523"/>
+<area shape="rect" id="node32" href="$smacc__state__machine__base__impl_8h.html" title="smacc/impl/smacc_state\l_machine_base_impl.h" alt="" coords="2337,571,2519,612"/>
+<area shape="rect" id="node33" href="$smacc__client__impl_8h.html" title="smacc/impl/smacc_client\l_impl.h" alt="" coords="1714,571,1897,612"/>
 </map>

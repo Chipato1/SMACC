@@ -8,13 +8,7 @@ var searchData=
   ['_7eismaccclient',['~ISmaccClient',['../classsmacc_1_1ISmaccClient.html#a030e17771bf2e404a6fad97273c4d7f4',1,'smacc::ISmaccClient']]],
   ['_7eismacccomponent',['~ISmaccComponent',['../classsmacc_1_1ISmaccComponent.html#a46f5cfc6a308de938b6ee3a5e80a8fe9',1,'smacc::ISmaccComponent']]],
   ['_7eismaccstatemachine',['~ISmaccStateMachine',['../classsmacc_1_1ISmaccStateMachine.html#a54bb9bac0008d3efc6a50cce88dce48e',1,'smacc::ISmaccStateMachine']]],
-  ['_7ekeyboardclient',['~KeyboardClient',['../classsmacc_1_1KeyboardClient.html#ae9d4d5f20dd058509941ab647e75fe82',1,'smacc::KeyboardClient']]],
-  ['_7ekeyboardorthogonal',['~KeyboardOrthogonal',['../classKeyboardOrthogonal.html#aa1fdd399e3e0c5170fbd32d309976325',1,'KeyboardOrthogonal']]],
-  ['_7enavigationorthogonal',['~NavigationOrthogonal',['../classNavigationOrthogonal.html#ae8bd442fa8116f2d90ea54b13e4a79de',1,'NavigationOrthogonal']]],
-  ['_7eobstacleperceptionorthogonal',['~ObstaclePerceptionOrthogonal',['../classObstaclePerceptionOrthogonal.html#a8cee21ce62e390013ba5960f7f60fc5f',1,'ObstaclePerceptionOrthogonal']]],
-  ['_7epublisherorthogonal',['~PublisherOrthogonal',['../classPublisherOrthogonal.html#a3c97e9a0f3a2b8a3ea05fcfb3a12725f',1,'PublisherOrthogonal']]],
-  ['_7esensororthogonal',['~SensorOrthogonal',['../classSensorOrthogonal.html#a5ce4c34658101d34696abc86c0e43016',1,'SensorOrthogonal']]],
-  ['_7eservice3orthogonal',['~Service3Orthogonal',['../classService3Orthogonal.html#ab7e2ce2f6d55500e838281fad12df298',1,'Service3Orthogonal']]],
+  ['_7ekeyboardclient',['~KeyboardClient',['../classdance__bot_1_1KeyboardClient.html#a699a4f23b24c8fa51dfe85a001a1371b',1,'dance_bot::KeyboardClient']]],
   ['_7esmaccactionclientbase',['~SmaccActionClientBase',['../classsmacc_1_1SmaccActionClientBase.html#a36e490ea3174b379fa0d809f60cf02e1',1,'smacc::SmaccActionClientBase']]],
   ['_7esmaccmovebaseactionclient',['~SmaccMoveBaseActionClient',['../classsmacc_1_1SmaccMoveBaseActionClient.html#a10e2971e7ff4b55a1861abe233d3c24f',1,'smacc::SmaccMoveBaseActionClient']]],
   ['_7esmaccrvizdisplay',['~SmaccRvizDisplay',['../classsmacc__rviz__plugin_1_1SmaccRvizDisplay.html#aebda19712c75b75a31e90272f472a7e3',1,'smacc_rviz_plugin::SmaccRvizDisplay']]],
@@ -23,6 +17,5 @@ var searchData=
   ['_7esmaccsubstatebehavior',['~SmaccSubStateBehavior',['../classsmacc_1_1SmaccSubStateBehavior.html#a69c91bee534322bc09423d6f5b0c33a2',1,'smacc::SmaccSubStateBehavior']]],
   ['_7esmacctoolactionclient',['~SmaccToolActionClient',['../classsmacc_1_1SmaccToolActionClient.html#a5795339a373ad22bc77b21970503ad91',1,'smacc::SmaccToolActionClient']]],
   ['_7esmacctopicpublisherclient',['~SmaccTopicPublisherClient',['../classsmacc_1_1SmaccTopicPublisherClient.html#aab87bffc59484ab72f62966cd76b31e4',1,'smacc::SmaccTopicPublisherClient']]],
-  ['_7esmacctopicsubscriberclient',['~SmaccTopicSubscriberClient',['../classsmacc_1_1SmaccTopicSubscriberClient.html#afbedb6318483cdb945ce862ec33ab45d',1,'smacc::SmaccTopicSubscriberClient']]],
-  ['_7etoolorthogonal',['~ToolOrthogonal',['../classToolOrthogonal.html#a0e64fd0512c0833272821682b5a42c56',1,'ToolOrthogonal']]]
+  ['_7esmacctopicsubscriberclient',['~SmaccTopicSubscriberClient',['../classsmacc_1_1SmaccTopicSubscriberClient.html#afbedb6318483cdb945ce862ec33ab45d',1,'smacc::SmaccTopicSubscriberClient']]]
 ];

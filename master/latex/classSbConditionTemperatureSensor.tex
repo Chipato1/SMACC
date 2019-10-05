@@ -32,7 +32,7 @@ typedef \hyperlink{classsmacc_1_1SensorTopic}{smacc\+::\+Sensor\+Topic}$<$ senso
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classSbConditionTemperatureSensor_a4405185bc4fa5b0b8dc285a69923b082}{Sb\+Condition\+Temperature\+Sensor} (std\+::string topic\+Name, \hyperlink{classint}{int} queue\+Size=1, ros\+::\+Duration timeout=ros\+::\+Duration(5))
+\hyperlink{classSbConditionTemperatureSensor_aec2f9af020755424f3f961d5f87c3ac8}{Sb\+Condition\+Temperature\+Sensor} ()
 \item 
 virtual void \hyperlink{classSbConditionTemperatureSensor_a0bacff918eeb167bd115c4d8041c3055}{on\+Message\+Callback} (const sensor\+\_\+msgs\+::\+Temperature \&msg) override
 \end{DoxyCompactItemize}
@@ -59,21 +59,18 @@ Definition at line 14 of file sb\+\_\+custom\+\_\+condition\+\_\+temperature\+\_
 \subsection{Constructor \& Destructor Documentation}
 \index{Sb\+Condition\+Temperature\+Sensor@{Sb\+Condition\+Temperature\+Sensor}!Sb\+Condition\+Temperature\+Sensor@{Sb\+Condition\+Temperature\+Sensor}}
 \index{Sb\+Condition\+Temperature\+Sensor@{Sb\+Condition\+Temperature\+Sensor}!Sb\+Condition\+Temperature\+Sensor@{Sb\+Condition\+Temperature\+Sensor}}
-\subsubsection[{\texorpdfstring{Sb\+Condition\+Temperature\+Sensor(std\+::string topic\+Name, int queue\+Size=1, ros\+::\+Duration timeout=ros\+::\+Duration(5))}{SbConditionTemperatureSensor(std::string topicName, int queueSize=1, ros::Duration timeout=ros::Duration(5))}}]{\setlength{\rightskip}{0pt plus 5cm}Sb\+Condition\+Temperature\+Sensor\+::\+Sb\+Condition\+Temperature\+Sensor (
+\subsubsection[{\texorpdfstring{Sb\+Condition\+Temperature\+Sensor()}{SbConditionTemperatureSensor()}}]{\setlength{\rightskip}{0pt plus 5cm}Sb\+Condition\+Temperature\+Sensor\+::\+Sb\+Condition\+Temperature\+Sensor (
 \begin{DoxyParamCaption}
-\item[{std\+::string}]{topic\+Name, }
-\item[{{\bf int}}]{queue\+Size = {\ttfamily 1}, }
-\item[{ros\+::\+Duration}]{timeout = {\ttfamily ros\+:\+:Duration(5)}}
+{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSbConditionTemperatureSensor_a4405185bc4fa5b0b8dc285a69923b082}{}\label{classSbConditionTemperatureSensor_a4405185bc4fa5b0b8dc285a69923b082}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSbConditionTemperatureSensor_aec2f9af020755424f3f961d5f87c3ac8}{}\label{classSbConditionTemperatureSensor_aec2f9af020755424f3f961d5f87c3ac8}
 
 
 Definition at line 16 of file sb\+\_\+custom\+\_\+condition\+\_\+temperature\+\_\+sensor.\+h.
 
 
 \begin{DoxyCode}
-17   : \hyperlink{classsmacc_1_1SensorTopic}{smacc::SensorTopic<sensor\_msgs::Temperature>}(topicName, 
-      queueSize, timeout)
+17   : \hyperlink{classsmacc_1_1SensorTopic}{smacc::SensorTopic<sensor\_msgs::Temperature>}()
 18   \{
 19   \}
 \end{DoxyCode}

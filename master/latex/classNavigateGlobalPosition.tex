@@ -50,8 +50,6 @@ boost\+::optional$<$ geometry\+\_\+msgs\+::\+Point $>$ \hyperlink{classNavigateG
 \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $\ast$ \hyperlink{classNavigateGlobalPosition_a1fdbaa1d3924509637a53b991d195670}{move\+Base\+Client\+\_\+}
 \item 
 \hyperlink{classsmacc__odom__tracker_1_1OdomTracker}{smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker} $\ast$ \hyperlink{classNavigateGlobalPosition_a7bec01b571fac3c04008b7fab84dfb3d}{odom\+Tracker\+\_\+}
-\item 
-\hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher}{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher} $\ast$ \hyperlink{classNavigateGlobalPosition_a544cf45f4233da0ebaf33813730143f9}{planner\+Switcher\+\_\+}
 \end{DoxyCompactItemize}
 
 
@@ -117,7 +115,7 @@ References smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt\+::x, and smacc\+\_\+viewer.\
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNavigateGlobalPosition_a5181e70601da336334f25a95840fd878}{}\label{classNavigateGlobalPosition_a5181e70601da336334f25a95840fd878}
 
 
-Definition at line 48 of file navigate\+\_\+global\+\_\+position.\+h.
+Definition at line 47 of file navigate\+\_\+global\+\_\+position.\+h.
 
 
 
@@ -129,19 +127,19 @@ Referenced by on\+Entry().
 
 
 \begin{DoxyCode}
-49   \{
-50     ROS\_INFO(\textcolor{stringliteral}{"Sending Goal to MoveBase"});
-51     smacc::SmaccMoveBaseActionClient::Goal goal;
-52     goal.target\_pose.header.frame\_id = \textcolor{stringliteral}{"/odom"};
-53     goal.target\_pose.header.stamp = ros::Time::now();
-54     \hyperlink{classNavigateGlobalPosition_a7f59ee188413d4f4b006549ba6d3d3f8}{readStartPoseFromParameterServer}(goal);
-55 
-56     \textcolor{comment}{// store the start pose on the state machine storage so that it can}
-57     \textcolor{comment}{// be referenced from other states (for example return to radial start)}
-58     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_ae3ff8a316bdd4bc5b7fee59d19464609}{stateMachine}->\hyperlink{classsmacc_1_1ISmaccStateMachine_a8588f9e580fbb95b53e2bd2ca3ff1f98}{setGlobalSMData}(\textcolor{stringliteral}{"radial\_start\_pose"}, goal.target\_pose);
-59 
-60     \hyperlink{classNavigateGlobalPosition_a1fdbaa1d3924509637a53b991d195670}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
-61   \}
+48   \{
+49     ROS\_INFO(\textcolor{stringliteral}{"Sending Goal to MoveBase"});
+50     smacc::SmaccMoveBaseActionClient::Goal goal;
+51     goal.target\_pose.header.frame\_id = \textcolor{stringliteral}{"/odom"};
+52     goal.target\_pose.header.stamp = ros::Time::now();
+53     \hyperlink{classNavigateGlobalPosition_a7f59ee188413d4f4b006549ba6d3d3f8}{readStartPoseFromParameterServer}(goal);
+54 
+55     \textcolor{comment}{// store the start pose on the state machine storage so that it can}
+56     \textcolor{comment}{// be referenced from other states (for example return to radial start)}
+57     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_ae3ff8a316bdd4bc5b7fee59d19464609}{stateMachine}->\hyperlink{classsmacc_1_1ISmaccStateMachine_a8588f9e580fbb95b53e2bd2ca3ff1f98}{setGlobalSMData}(\textcolor{stringliteral}{"radial\_start\_pose"}, goal.target\_pose);
+58 
+59     \hyperlink{classNavigateGlobalPosition_a1fdbaa1d3924509637a53b991d195670}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
+60   \}
 \end{DoxyCode}
 
 
@@ -184,7 +182,7 @@ Definition at line 29 of file navigate\+\_\+global\+\_\+position.\+h.
 
 
 
-References go\+To\+Radial\+Start(), move\+Base\+Client\+\_\+, odom\+Tracker\+\_\+, planner\+Switcher\+\_\+, smacc\+\_\+odom\+\_\+tracker\+::\+R\+E\+C\+O\+R\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+O\+R\+W\+A\+RD, smacc\+::\+Smacc\+Sub\+State\+Behavior\+::requires\+Component(), smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher\+::set\+Forward\+Planner(), and smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Working\+Mode().
+References go\+To\+Radial\+Start(), move\+Base\+Client\+\_\+, odom\+Tracker\+\_\+, smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::planner\+Switcher\+\_\+, smacc\+\_\+odom\+\_\+tracker\+::\+R\+E\+C\+O\+R\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+O\+R\+W\+A\+RD, smacc\+::\+Smacc\+Sub\+State\+Behavior\+::requires\+Client(), smacc\+::\+Smacc\+Sub\+State\+Behavior\+::requires\+Component(), and smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Working\+Mode().
 
 
 \begin{DoxyCode}
@@ -193,20 +191,17 @@ References go\+To\+Radial\+Start(), move\+Base\+Client\+\_\+, odom\+Tracker\+\_\
 32 
 33     \textcolor{comment}{// this substate will need access to the "MoveBase" resource or plugin. In this line}
 34     \textcolor{comment}{// you get the reference to this resource.}
-35     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}{requiresComponent}(\hyperlink{classNavigateGlobalPosition_a1fdbaa1d3924509637a53b991d195670}{moveBaseClient\_} , ros::NodeHandle(\textcolor{stringliteral}{"move\_base"}))
-      ;
-36     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}{requiresComponent}(\hyperlink{classNavigateGlobalPosition_a7bec01b571fac3c04008b7fab84dfb3d}{odomTracker\_});
-37     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}{requiresComponent}(\hyperlink{classNavigateGlobalPosition_a544cf45f4233da0ebaf33813730143f9}{plannerSwitcher\_} , ros::NodeHandle(\textcolor{stringliteral}{"move\_base"}
-      ));   
-38 
-39     ROS\_INFO(\textcolor{stringliteral}{"Component requirements completed"});
-40 
-41     this->\hyperlink{classNavigateGlobalPosition_a544cf45f4233da0ebaf33813730143f9}{plannerSwitcher\_}->\hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher_a6510ee1f23243ee725c61e590354d3bc}{setForwardPlanner}();
-42     this->\hyperlink{classNavigateGlobalPosition_a7bec01b571fac3c04008b7fab84dfb3d}{odomTracker\_}->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a38fbca999297c46dc95628cc60851a45}{setWorkingMode}(
+35     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_ae8361a9e794b02f9f3d962b881e4fd7d}{requiresClient}(\hyperlink{classNavigateGlobalPosition_a1fdbaa1d3924509637a53b991d195670}{moveBaseClient\_} );
+36     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a9f31f62f886cc06017e92fa0d834b12d}{requiresComponent}(\hyperlink{classNavigateGlobalPosition_a7bec01b571fac3c04008b7fab84dfb3d}{odomTracker\_});
+37     
+38     ROS\_INFO(\textcolor{stringliteral}{"Component requirements completed"});
+39 
+40     \hyperlink{classNavigateGlobalPosition_a1fdbaa1d3924509637a53b991d195670}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccMoveBaseActionClient_ae24164268108abf0b35cf51bfba5ec67}{plannerSwitcher\_}->setForwardPlanner();
+41     this->\hyperlink{classNavigateGlobalPosition_a7bec01b571fac3c04008b7fab84dfb3d}{odomTracker\_}->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a38fbca999297c46dc95628cc60851a45}{setWorkingMode}(
       \hyperlink{namespacesmacc__odom__tracker_ade9730dd5cc10ccfad9362176cf46c33a989d06a586bcf9520889228da7faa643}{smacc\_odom\_tracker::WorkingMode::RECORD\_PATH\_FORWARD});
-43 
-44     \hyperlink{classNavigateGlobalPosition_a5181e70601da336334f25a95840fd878}{goToRadialStart}(); 
-45   \}
+42 
+43     \hyperlink{classNavigateGlobalPosition_a5181e70601da336334f25a95840fd878}{goToRadialStart}(); 
+44   \}
 \end{DoxyCode}
 
 
@@ -233,13 +228,13 @@ Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_ab78b9de76c04a
 
 
 
-Definition at line 82 of file navigate\+\_\+global\+\_\+position.\+h.
+Definition at line 81 of file navigate\+\_\+global\+\_\+position.\+h.
 
 
 \begin{DoxyCode}
-83   \{ 
-84     ROS\_INFO(\textcolor{stringliteral}{"Exiting move goal Action Client"}); 
-85   \}
+82   \{ 
+83     ROS\_INFO(\textcolor{stringliteral}{"Exiting move goal Action Client"}); 
+84   \}
 \end{DoxyCode}
 \index{Navigate\+Global\+Position@{Navigate\+Global\+Position}!read\+Start\+Pose\+From\+Parameter\+Server@{read\+Start\+Pose\+From\+Parameter\+Server}}
 \index{read\+Start\+Pose\+From\+Parameter\+Server@{read\+Start\+Pose\+From\+Parameter\+Server}!Navigate\+Global\+Position@{Navigate\+Global\+Position}}
@@ -250,7 +245,7 @@ Definition at line 82 of file navigate\+\_\+global\+\_\+position.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classNavigateGlobalPosition_a7f59ee188413d4f4b006549ba6d3d3f8}{}\label{classNavigateGlobalPosition_a7f59ee188413d4f4b006549ba6d3d3f8}
 
 
-Definition at line 63 of file navigate\+\_\+global\+\_\+position.\+h.
+Definition at line 62 of file navigate\+\_\+global\+\_\+position.\+h.
 
 
 
@@ -262,23 +257,23 @@ Referenced by go\+To\+Radial\+Start().
 
 
 \begin{DoxyCode}
-64   \{
-65     \textcolor{keywordflow}{if}(! \hyperlink{classNavigateGlobalPosition_a3b8beafc64a18063c86228b6c497102b}{initialPoint})
-66     \{
-67       this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a62e2b9da4a446f09396d0b4c01659b88}{currentState}->\hyperlink{classsmacc_1_1ISmaccState_abbb3a24b912c6e8de28f7b86123b6357}{getParam}(\textcolor{stringliteral}{"start\_position\_x"}, goal.target\_pose.pose.position.x
+63   \{
+64     \textcolor{keywordflow}{if}(! \hyperlink{classNavigateGlobalPosition_a3b8beafc64a18063c86228b6c497102b}{initialPoint})
+65     \{
+66       this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a62e2b9da4a446f09396d0b4c01659b88}{currentState}->\hyperlink{classsmacc_1_1ISmaccState_abbb3a24b912c6e8de28f7b86123b6357}{getParam}(\textcolor{stringliteral}{"start\_position\_x"}, goal.target\_pose.pose.position.x
       );
-68       this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a62e2b9da4a446f09396d0b4c01659b88}{currentState}->\hyperlink{classsmacc_1_1ISmaccState_abbb3a24b912c6e8de28f7b86123b6357}{getParam}(\textcolor{stringliteral}{"start\_position\_y"}, goal.target\_pose.pose.position.y
+67       this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a62e2b9da4a446f09396d0b4c01659b88}{currentState}->\hyperlink{classsmacc_1_1ISmaccState_abbb3a24b912c6e8de28f7b86123b6357}{getParam}(\textcolor{stringliteral}{"start\_position\_y"}, goal.target\_pose.pose.position.y
       );
-69     \}
-70     \textcolor{keywordflow}{else}
-71     \{
-72       goal.target\_pose.pose.position= *\hyperlink{classNavigateGlobalPosition_a3b8beafc64a18063c86228b6c497102b}{initialPoint};
-73     \}
-74     
-75     goal.target\_pose.pose.orientation.w = 1;
-76 
-77     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"start position read from parameter server: "} << goal.target\_pose.pose.position);
-78   \}
+68     \}
+69     \textcolor{keywordflow}{else}
+70     \{
+71       goal.target\_pose.pose.position= *\hyperlink{classNavigateGlobalPosition_a3b8beafc64a18063c86228b6c497102b}{initialPoint};
+72     \}
+73     
+74     goal.target\_pose.pose.orientation.w = 1;
+75 
+76     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"start position read from parameter server: "} << goal.target\_pose.pose.position);
+77   \}
 \end{DoxyCode}
 
 
@@ -323,7 +318,7 @@ Referenced by read\+Start\+Pose\+From\+Parameter\+Server().
 \subsubsection[{\texorpdfstring{move\+Base\+Client\+\_\+}{moveBaseClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}$\ast$ Navigate\+Global\+Position\+::move\+Base\+Client\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classNavigateGlobalPosition_a1fdbaa1d3924509637a53b991d195670}{}\label{classNavigateGlobalPosition_a1fdbaa1d3924509637a53b991d195670}
 
 
-Definition at line 90 of file navigate\+\_\+global\+\_\+position.\+h.
+Definition at line 89 of file navigate\+\_\+global\+\_\+position.\+h.
 
 
 
@@ -334,18 +329,7 @@ Referenced by go\+To\+Radial\+Start(), and on\+Entry().
 \subsubsection[{\texorpdfstring{odom\+Tracker\+\_\+}{odomTracker_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker}$\ast$ Navigate\+Global\+Position\+::odom\+Tracker\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classNavigateGlobalPosition_a7bec01b571fac3c04008b7fab84dfb3d}{}\label{classNavigateGlobalPosition_a7bec01b571fac3c04008b7fab84dfb3d}
 
 
-Definition at line 92 of file navigate\+\_\+global\+\_\+position.\+h.
-
-
-
-Referenced by on\+Entry().
-
-\index{Navigate\+Global\+Position@{Navigate\+Global\+Position}!planner\+Switcher\+\_\+@{planner\+Switcher\+\_\+}}
-\index{planner\+Switcher\+\_\+@{planner\+Switcher\+\_\+}!Navigate\+Global\+Position@{Navigate\+Global\+Position}}
-\subsubsection[{\texorpdfstring{planner\+Switcher\+\_\+}{plannerSwitcher_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}$\ast$ Navigate\+Global\+Position\+::planner\+Switcher\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classNavigateGlobalPosition_a544cf45f4233da0ebaf33813730143f9}{}\label{classNavigateGlobalPosition_a544cf45f4233da0ebaf33813730143f9}
-
-
-Definition at line 94 of file navigate\+\_\+global\+\_\+position.\+h.
+Definition at line 91 of file navigate\+\_\+global\+\_\+position.\+h.
 
 
 

@@ -1,10 +1,10 @@
 <map id="smacc::Orthogonal" name="smacc::Orthogonal">
-<area shape="rect" id="node2" href="$classInputDeviceOrthogonal.html" title="{InputDeviceOrthogonal\n||}" alt="" coords="5,204,173,281"/>
-<area shape="rect" id="node3" href="$classKeyboardOrthogonal.html" title="{KeyboardOrthogonal\n||&#45; ~KeyboardOrthogonal()\l}" alt="" coords="198,204,381,281"/>
-<area shape="rect" id="node4" href="$classNavigationOrthogonal.html" title="{NavigationOrthogonal\n||&#45; ~NavigationOrthogonal()\l}" alt="" coords="405,204,595,281"/>
-<area shape="rect" id="node5" href="$classObstaclePerceptionOrthogonal.html" title="{ObstaclePerceptionOrthogonal\n||&#45; ~ObstaclePerceptionOrthogonal()\l}" alt="" coords="619,204,866,281"/>
-<area shape="rect" id="node6" href="$classPublisherOrthogonal.html" title="{PublisherOrthogonal\n||&#45; ~PublisherOrthogonal()\l}" alt="" coords="891,204,1072,281"/>
-<area shape="rect" id="node7" href="$classSensorOrthogonal.html" title="{SensorOrthogonal\n||&#45; ~SensorOrthogonal()\l}" alt="" coords="1096,204,1264,281"/>
-<area shape="rect" id="node8" href="$classService3Orthogonal.html" title="{Service3Orthogonal\n||&#45; ~Service3Orthogonal()\l}" alt="" coords="1288,204,1467,281"/>
-<area shape="rect" id="node9" href="$classToolOrthogonal.html" title="{ToolOrthogonal\n||&#45; ~ToolOrthogonal()\l}" alt="" coords="1491,204,1637,281"/>
+<area shape="rect" id="node2" href="$classInputDeviceOrthogonal.html" title="{InputDeviceOrthogonal\n||}" alt="" coords="5,285,173,362"/>
+<area shape="rect" id="node3" href="$classKeyboardOrthogonal.html" title="{KeyboardOrthogonal\n||+ onInitialize()\l}" alt="" coords="197,285,349,362"/>
+<area shape="rect" id="node4" href="$classNavigationOrthogonal.html" title="{NavigationOrthogonal\n||+ onInitialize()\l+ onInitialize()\l}" alt="" coords="374,277,535,369"/>
+<area shape="rect" id="node5" href="$classObstaclePerceptionOrthogonal.html" title="{ObstaclePerceptionOrthogonal\n||+ onInitialize()\l+ onInitialize()\l}" alt="" coords="559,277,777,369"/>
+<area shape="rect" id="node6" href="$classPublisherOrthogonal.html" title="{PublisherOrthogonal\n||+ onInitialize()\l}" alt="" coords="801,285,951,362"/>
+<area shape="rect" id="node7" href="$classSensorOrthogonal.html" title="{SensorOrthogonal\n||+ onInitialize()\l+ onInitialize()\l}" alt="" coords="976,277,1115,369"/>
+<area shape="rect" id="node8" href="$classService3Orthogonal.html" title="{Service3Orthogonal\n||+ onInitialize()\l}" alt="" coords="1139,285,1287,362"/>
+<area shape="rect" id="node9" href="$classToolOrthogonal.html" title="{ToolOrthogonal\n||+ onInitialize()\l+ onInitialize()\l}" alt="" coords="1311,277,1428,369"/>
 </map>

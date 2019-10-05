@@ -35,7 +35,7 @@ Collaboration diagram for Sensor\+State\+Machine\+:
 \subsection{Detailed Description}
 
 
-Definition at line 8 of file sensor\+\_\+state\+\_\+machine.\+h.
+Definition at line 10 of file sensor\+\_\+state\+\_\+machine.\+h.
 
 
 
@@ -50,14 +50,16 @@ Definition at line 8 of file sensor\+\_\+state\+\_\+machine.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structSensorStateMachine_ab923d35d47081f5a87b8cfab382c2b41}{}\label{structSensorStateMachine_ab923d35d47081f5a87b8cfab382c2b41}
 
 
-Definition at line 11 of file sensor\+\_\+state\+\_\+machine.\+h.
+Definition at line 13 of file sensor\+\_\+state\+\_\+machine.\+h.
 
 
 \begin{DoxyCode}
-12       : \hyperlink{structsmacc_1_1SmaccStateMachineBase}{SmaccStateMachineBase<SensorStateMachine,SensorState>}
+14       : \hyperlink{structsmacc_1_1SmaccStateMachineBase}{SmaccStateMachineBase<SensorStateMachine,SensorState>}
       (\hyperlink{namespacesmacc__viewer_1_1xdot_1_1xdot__qt_a9f8d32bd9e568c00c10171dc27e9483a}{ctx}, signalDetector) 
-13       \{
-14       \}      
+15       \{
+16           this->createOrthogonal<SensorOrthogonal>();
+17           this->createOrthogonal<ObstaclePerceptionOrthogonal>();
+18       \}      
 \end{DoxyCode}
 
 

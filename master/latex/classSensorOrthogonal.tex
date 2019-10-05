@@ -11,7 +11,7 @@ Inheritance diagram for Sensor\+Orthogonal\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=206pt]{classSensorOrthogonal__inherit__graph}
+\includegraphics[width=211pt]{classSensorOrthogonal__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -24,37 +24,76 @@ Collaboration diagram for Sensor\+Orthogonal\+:
 \includegraphics[width=350pt]{classSensorOrthogonal__coll__graph}
 \end{center}
 \end{figure}
-\subsection*{Private Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \hyperlink{classSensorOrthogonal_a5ce4c34658101d34696abc86c0e43016}{$\sim$\+Sensor\+Orthogonal} ()
+virtual void \hyperlink{classSensorOrthogonal_a1e02d800b8f8ee7c5aeab4e6ff74cbba}{on\+Initialize} () override
+\item 
+virtual void \hyperlink{classSensorOrthogonal_a1e02d800b8f8ee7c5aeab4e6ff74cbba}{on\+Initialize} () override
 \end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 5 of file sensor\+\_\+orthogonal.\+h.
-
-
-
-\subsection{Constructor \& Destructor Documentation}
-\index{Sensor\+Orthogonal@{Sensor\+Orthogonal}!````~Sensor\+Orthogonal@{$\sim$\+Sensor\+Orthogonal}}
-\index{````~Sensor\+Orthogonal@{$\sim$\+Sensor\+Orthogonal}!Sensor\+Orthogonal@{Sensor\+Orthogonal}}
-\subsubsection[{\texorpdfstring{$\sim$\+Sensor\+Orthogonal()}{~SensorOrthogonal()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Sensor\+Orthogonal\+::$\sim$\+Sensor\+Orthogonal (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classSensorOrthogonal_a5ce4c34658101d34696abc86c0e43016}{}\label{classSensorOrthogonal_a5ce4c34658101d34696abc86c0e43016}
-
-
 Definition at line 7 of file sensor\+\_\+orthogonal.\+h.
 
 
+
+\subsection{Member Function Documentation}
+\index{Sensor\+Orthogonal@{Sensor\+Orthogonal}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!Sensor\+Orthogonal@{Sensor\+Orthogonal}}
+\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Sensor\+Orthogonal\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSensorOrthogonal_a1e02d800b8f8ee7c5aeab4e6ff74cbba}{}\label{classSensorOrthogonal_a1e02d800b8f8ee7c5aeab4e6ff74cbba}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+
+
+
+Definition at line 10 of file sensor\+\_\+orthogonal.\+h.
+
+
 \begin{DoxyCode}
-8     \{
-9     \}
+11     \{
+12         \textcolor{keyword}{auto}* temperatureSensor = this->createClient<smacc::SensorClient<sensor\_msgs::Temperature>>();
+13         
+14         temperatureSensor->topicName = \textcolor{stringliteral}{"/temperature"};
+15         \textcolor{comment}{//temperatureSensor->queueSize = "/front/scan";}
+16         temperatureSensor->timeout\_ =  ros::Duration(10);
+17 
+18         temperatureSensor->initialize();
+19     \}
+\end{DoxyCode}
+\index{Sensor\+Orthogonal@{Sensor\+Orthogonal}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!Sensor\+Orthogonal@{Sensor\+Orthogonal}}
+\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Sensor\+Orthogonal\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSensorOrthogonal_a1e02d800b8f8ee7c5aeab4e6ff74cbba}{}\label{classSensorOrthogonal_a1e02d800b8f8ee7c5aeab4e6ff74cbba}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+
+
+
+Definition at line 10 of file sensor\+\_\+orthogonal.\+h.
+
+
+\begin{DoxyCode}
+11     \{
+12         \textcolor{keyword}{auto}* temperatureSensor = this->createClient<smacc::SensorClient<sensor\_msgs::Temperature>>();
+13         
+14         temperatureSensor->topicName = \textcolor{stringliteral}{"/temperature"};
+15         \textcolor{comment}{//temperatureSensor->queueSize = "/front/scan";}
+16         temperatureSensor->timeout\_ =  ros::Duration(10);
+17 
+18         temperatureSensor->initialize();
+19     \}
 \end{DoxyCode}
 
 

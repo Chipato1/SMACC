@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['navigate',['Navigate',['../structNavigate.html',1,'']]],
   ['navigateforward',['NavigateForward',['../classNavigateForward.html',1,'']]],
   ['navigateglobalposition',['NavigateGlobalPosition',['../classNavigateGlobalPosition.html',1,'']]],
   ['navigatetoendpoint',['NavigateToEndPoint',['../structNavigateToEndPoint.html',1,'']]],

@@ -1,16 +1,11 @@
 <map id="smacc/include/smacc/smacc_state_base.h" name="smacc/include/smacc/smacc_state_base.h">
-<area shape="rect" id="node2" href="$smacc__state__machine__base_8h.html" title="smacc/include/smacc\l/smacc_state_machine\l_base.h" alt="" coords="1525,95,1695,151"/>
-<area shape="rect" id="node3" href="$smacc_8h.html" title="smacc/include/smacc\l/smacc.h" alt="" coords="1531,199,1689,240"/>
-<area shape="rect" id="node4" href="$keyboard__state__machine_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/keyboard_listener_example\l/include/keyboard_state_machine.h" alt="" coords="101,288,349,359"/>
-<area shape="rect" id="node7" href="$sensor__state__machine_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/sensor_substate_example\l/include/sensor_state_machine.h" alt="" coords="577,288,809,359"/>
+<area shape="rect" id="node2" href="$smacc__state__machine__base_8h.html" title="smacc/include/smacc\l/smacc_state_machine\l_base.h" alt="" coords="961,95,1131,151"/>
+<area shape="rect" id="node3" href="$smacc_8h.html" title="smacc/include/smacc\l/smacc.h" alt="" coords="967,199,1125,240"/>
+<area shape="rect" id="node4" href="$keyboard__state__machine_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/keyboard_listener_example\l/include/keyboard_state_machine.h" alt="" coords="117,288,365,359"/>
+<area shape="rect" id="node7" href="$sensor__state__machine_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/sensor_substate_example\l/include/sensor_state_machine.h" alt="" coords="594,288,826,359"/>
 <area shape="rect" id="node10" href="$timer__state__machine_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/timer_substate_example\l/include/timer_state_machine.h" alt="" coords="935,288,1157,359"/>
-<area shape="rect" id="node13" href="$sm__dance__bot_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/sm_dance_bot.h" alt="" coords="1181,295,1388,351"/>
-<area shape="rect" id="node15" href="$radial__motion_8h.html" title="smacc_sm_examples/sm\l_radial_motion/include\l/sm_radial_motion/radial\l_motion.h" alt="" coords="1413,288,1597,359"/>
-<area shape="rect" id="node17" href="$example1_8cpp.html" title="smacc_sm_examples/sm\l_smacc_tutorial_examples\l/src/example1.cpp" alt="" coords="1621,295,1813,351"/>
-<area shape="rect" id="node18" href="$example2_8cpp.html" title="smacc_sm_examples/sm\l_smacc_tutorial_examples\l/src/example2.cpp" alt="" coords="1837,295,2029,351"/>
-<area shape="rect" id="node19" href="$example3_8cpp.html" title="smacc_sm_examples/sm\l_smacc_tutorial_examples\l/src/example3.cpp" alt="" coords="2053,295,2245,351"/>
-<area shape="rect" id="node20" href="$example4_8cpp.html" title="smacc_sm_examples/sm\l_smacc_tutorial_examples\l/src/example4.cpp" alt="" coords="2269,295,2461,351"/>
-<area shape="rect" id="node21" href="$example5_8cpp.html" title="smacc_sm_examples/sm\l_smacc_tutorial_examples\l/src/example5.cpp" alt="" coords="2485,295,2677,351"/>
+<area shape="rect" id="node13" href="$sm__dance__bot_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/sm_dance_bot.h" alt="" coords="1228,295,1435,351"/>
+<area shape="rect" id="node15" href="$radial__motion_8h.html" title="smacc_sm_examples/sm\l_radial_motion/include\l/sm_radial_motion/radial\l_motion.h" alt="" coords="1554,288,1738,359"/>
 <area shape="rect" id="node5" href="$keyboard__state_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/keyboard_listener_example\l/include/states/keyboard_state.h" alt="" coords="5,407,236,477"/>
 <area shape="rect" id="node6" href="$keyboard__main_8cpp.html" title="smacc_client_library\l/smacc_sensors/examples\l/keyboard_listener_example\l/src/keyboard_main.cpp" alt="" coords="260,407,461,477"/>
 <area shape="rect" id="node8" href="$sensor__state_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/sensor_substate_example\l/include/states/sensor_state.h" alt="" coords="485,407,700,477"/>

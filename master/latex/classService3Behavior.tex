@@ -86,22 +86,21 @@ Definition at line 18 of file service3\+\_\+behavior.\+h.
 
 
 
-References smacc\+::\+Smacc\+Service\+Client$<$ Service\+Type $>$\+::call(), smacc\+::\+Smacc\+Service\+Client$<$ Service\+Type $>$\+::initialize(), and S\+E\+R\+V\+I\+C\+E3\+\_\+\+ON.
+References smacc\+::\+Smacc\+Service\+Client$<$ Service\+Type $>$\+::call(), and S\+E\+R\+V\+I\+C\+E3\+\_\+\+ON.
 
 
 \begin{DoxyCode}
 19   \{
-20     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a4d25c4ba8ec01c489df172a71bb1c37d}{requiresComponent}(\hyperlink{classService3Behavior_af9320a57c796b75f10c722ba57a89b13}{serviceClient\_});
-21     \hyperlink{classService3Behavior_af9320a57c796b75f10c722ba57a89b13}{serviceClient\_}->\hyperlink{classsmacc_1_1SmaccServiceClient_a5be21b63eb7cfe54d9ac7de33c3c0938}{initialize}(\textcolor{stringliteral}{"/service\_node3"});
-22 
-23     std\_srvs::SetBool req;
-24     \textcolor{keywordflow}{if}(\hyperlink{classService3Behavior_a63303d829c0433edf1a0bf104c386ac9}{value\_} == \hyperlink{service3__behavior_8h_a220998b2c3cad22a21ce6676b2478543a13cdca48a01bbb44fa8fb35567fbc58e}{Service3Command::SERVICE3\_ON})
-25       req.request.data = \textcolor{keyword}{true};
-26     \textcolor{keywordflow}{else}
-27       req.request.data = \textcolor{keyword}{false};
-28     
-29     \hyperlink{classService3Behavior_af9320a57c796b75f10c722ba57a89b13}{serviceClient\_}->\hyperlink{classsmacc_1_1SmaccServiceClient_a1b749ce13f3cb1dbf10a5992c05c173e}{call}(req);
-30   \}
+20     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_ae8361a9e794b02f9f3d962b881e4fd7d}{requiresClient}(\hyperlink{classService3Behavior_af9320a57c796b75f10c722ba57a89b13}{serviceClient\_});
+21     
+22     std\_srvs::SetBool req;
+23     \textcolor{keywordflow}{if}(\hyperlink{classService3Behavior_a63303d829c0433edf1a0bf104c386ac9}{value\_} == \hyperlink{service3__behavior_8h_a220998b2c3cad22a21ce6676b2478543a13cdca48a01bbb44fa8fb35567fbc58e}{Service3Command::SERVICE3\_ON})
+24       req.request.data = \textcolor{keyword}{true};
+25     \textcolor{keywordflow}{else}
+26       req.request.data = \textcolor{keyword}{false};
+27     
+28     \hyperlink{classService3Behavior_af9320a57c796b75f10c722ba57a89b13}{serviceClient\_}->\hyperlink{classsmacc_1_1SmaccServiceClient_a1b749ce13f3cb1dbf10a5992c05c173e}{call}(req);
+29   \}
 \end{DoxyCode}
 
 

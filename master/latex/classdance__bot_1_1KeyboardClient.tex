@@ -1,0 +1,288 @@
+\hypertarget{classdance__bot_1_1KeyboardClient}{}\section{dance\+\_\+bot\+:\+:Keyboard\+Client Class Reference}
+\label{classdance__bot_1_1KeyboardClient}\index{dance\+\_\+bot\+::\+Keyboard\+Client@{dance\+\_\+bot\+::\+Keyboard\+Client}}
+
+
+{\ttfamily \#include $<$keyboard\+\_\+client.\+h$>$}
+
+
+
+Inheritance diagram for dance\+\_\+bot\+:\+:Keyboard\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classdance__bot_1_1KeyboardClient__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for dance\+\_\+bot\+:\+:Keyboard\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdance__bot_1_1KeyboardClient__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdance__bot_1_1KeyboardClient_a9eca90df01ec0e231fb3ed1a7d830197}{Keyboard\+Client} ()
+\item 
+virtual \hyperlink{classdance__bot_1_1KeyboardClient_a699a4f23b24c8fa51dfe85a001a1371b}{$\sim$\+Keyboard\+Client} ()
+\item 
+virtual void \hyperlink{classdance__bot_1_1KeyboardClient_aaf0de36cfc92f79e8cb036defab43afd}{initialize} () override
+\item 
+void \hyperlink{classdance__bot_1_1KeyboardClient_a17a184bb276d2de8c8ae6622db736761}{on\+Keyboard\+Message} (const std\+\_\+msgs\+::\+U\+Int16 \&unicode\+\_\+keychar)
+\item 
+{\footnotesize template$<$typename T\+Ev $>$ }\\void \hyperlink{classdance__bot_1_1KeyboardClient_a8b1f980191a031623044937c7f162597}{post\+Key\+Event} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::signals2\+::signal$<$ void(char keypress)$>$ \hyperlink{classdance__bot_1_1KeyboardClient_a96fc4ee6a96424305a43d3d23fe66695}{On\+Key\+Press}
+\item 
+boost\+::signals2\+::scoped\+\_\+connection \hyperlink{classdance__bot_1_1KeyboardClient_ad2318d9d1107915d721f9457c10f1ee6}{c\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbool}{bool} \hyperlink{classdance__bot_1_1KeyboardClient_afb6a3cb23ba0c0e0b65ae7dfad216f19}{initialized\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 153 of file keyboard\+\_\+client.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{dance\+\_\+bot\+::\+Keyboard\+Client@{dance\+\_\+bot\+::\+Keyboard\+Client}!Keyboard\+Client@{Keyboard\+Client}}
+\index{Keyboard\+Client@{Keyboard\+Client}!dance\+\_\+bot\+::\+Keyboard\+Client@{dance\+\_\+bot\+::\+Keyboard\+Client}}
+\subsubsection[{\texorpdfstring{Keyboard\+Client()}{KeyboardClient()}}]{\setlength{\rightskip}{0pt plus 5cm}dance\+\_\+bot\+::\+Keyboard\+Client\+::\+Keyboard\+Client (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classdance__bot_1_1KeyboardClient_a9eca90df01ec0e231fb3ed1a7d830197}{}\label{classdance__bot_1_1KeyboardClient_a9eca90df01ec0e231fb3ed1a7d830197}
+
+
+Definition at line 159 of file keyboard\+\_\+client.\+h.
+
+
+\begin{DoxyCode}
+160         \{
+161                 \hyperlink{classdance__bot_1_1KeyboardClient_afb6a3cb23ba0c0e0b65ae7dfad216f19}{initialized\_} = \textcolor{keyword}{false};
+162         \}
+\end{DoxyCode}
+\index{dance\+\_\+bot\+::\+Keyboard\+Client@{dance\+\_\+bot\+::\+Keyboard\+Client}!````~Keyboard\+Client@{$\sim$\+Keyboard\+Client}}
+\index{````~Keyboard\+Client@{$\sim$\+Keyboard\+Client}!dance\+\_\+bot\+::\+Keyboard\+Client@{dance\+\_\+bot\+::\+Keyboard\+Client}}
+\subsubsection[{\texorpdfstring{$\sim$\+Keyboard\+Client()}{~KeyboardClient()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual dance\+\_\+bot\+::\+Keyboard\+Client\+::$\sim$\+Keyboard\+Client (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classdance__bot_1_1KeyboardClient_a699a4f23b24c8fa51dfe85a001a1371b}{}\label{classdance__bot_1_1KeyboardClient_a699a4f23b24c8fa51dfe85a001a1371b}
+
+
+Definition at line 164 of file keyboard\+\_\+client.\+h.
+
+
+\begin{DoxyCode}
+165         \{
+166         \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{dance\+\_\+bot\+::\+Keyboard\+Client@{dance\+\_\+bot\+::\+Keyboard\+Client}!initialize@{initialize}}
+\index{initialize@{initialize}!dance\+\_\+bot\+::\+Keyboard\+Client@{dance\+\_\+bot\+::\+Keyboard\+Client}}
+\subsubsection[{\texorpdfstring{initialize() override}{initialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void dance\+\_\+bot\+::\+Keyboard\+Client\+::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classdance__bot_1_1KeyboardClient_aaf0de36cfc92f79e8cb036defab43afd}{}\label{classdance__bot_1_1KeyboardClient_aaf0de36cfc92f79e8cb036defab43afd}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccTopicSubscriberClient_af171664e207d6e86da278ea9b0d861ec}{smacc\+::\+Smacc\+Topic\+Subscriber\+Client$<$ std\+\_\+msgs\+::\+U\+Int16 $>$}.
+
+
+
+Definition at line 168 of file keyboard\+\_\+client.\+h.
+
+
+
+References smacc\+::\+Smacc\+Topic\+Subscriber\+Client$<$ std\+\_\+msgs\+::\+U\+Int16 $>$\+::initialize(), and keyboard\+\_\+node\+::msg.
+
+
+\begin{DoxyCode}
+169         \{
+170                 \hyperlink{classsmacc_1_1SmaccTopicSubscriberClient_af171664e207d6e86da278ea9b0d861ec}{SmaccTopicSubscriberClient<std\_msgs::UInt16>::initialize}
+      ();
+171 
+172                 \textcolor{keywordflow}{if} (!this->\hyperlink{classdance__bot_1_1KeyboardClient_afb6a3cb23ba0c0e0b65ae7dfad216f19}{initialized\_})
+173                 \{
+174                         \hyperlink{classdance__bot_1_1KeyboardClient_ad2318d9d1107915d721f9457c10f1ee6}{c\_} = this->\hyperlink{classsmacc_1_1SmaccTopicSubscriberClient_a4260d955152200804e9c51a1098965c8}{onMessageReceived}.connect([\textcolor{keyword}{this}](\textcolor{keyword}{auto} 
+      \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{
+175                                 this->\hyperlink{classdance__bot_1_1KeyboardClient_a17a184bb276d2de8c8ae6622db736761}{onKeyboardMessage}(\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg});
+176 
+177                                 this->\hyperlink{classdance__bot_1_1KeyboardClient_afb6a3cb23ba0c0e0b65ae7dfad216f19}{initialized\_} = \textcolor{keyword}{true};
+178                         \});
+179                 \}
+180         \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdance__bot_1_1KeyboardClient_aaf0de36cfc92f79e8cb036defab43afd_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{dance\+\_\+bot\+::\+Keyboard\+Client@{dance\+\_\+bot\+::\+Keyboard\+Client}!on\+Keyboard\+Message@{on\+Keyboard\+Message}}
+\index{on\+Keyboard\+Message@{on\+Keyboard\+Message}!dance\+\_\+bot\+::\+Keyboard\+Client@{dance\+\_\+bot\+::\+Keyboard\+Client}}
+\subsubsection[{\texorpdfstring{on\+Keyboard\+Message(const std\+\_\+msgs\+::\+U\+Int16 \&unicode\+\_\+keychar)}{onKeyboardMessage(const std_msgs::UInt16 &unicode_keychar)}}]{\setlength{\rightskip}{0pt plus 5cm}void dance\+\_\+bot\+::\+Keyboard\+Client\+::on\+Keyboard\+Message (
+\begin{DoxyParamCaption}
+\item[{const std\+\_\+msgs\+::\+U\+Int16 \&}]{unicode\+\_\+keychar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classdance__bot_1_1KeyboardClient_a17a184bb276d2de8c8ae6622db736761}{}\label{classdance__bot_1_1KeyboardClient_a17a184bb276d2de8c8ae6622db736761}
+
+
+Definition at line 182 of file keyboard\+\_\+client.\+h.
+
+
+\begin{DoxyCode}
+183         \{
+184                 \textcolor{keywordtype}{char} character = (char)unicode\_keychar.data;
+185                 ROS\_WARN(\textcolor{stringliteral}{"detected keyboard: %c"}, character);
+186 
+187                 \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'a'})
+188                         postKeyEvent<EvKeyPressA<KeyboardClient>>();
+189                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'b'})
+190                         postKeyEvent<EvKeyPressB<KeyboardClient>>();
+191                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'c'})
+192                         postKeyEvent<EvKeyPressC<KeyboardClient>>();
+193                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'d'})
+194                         postKeyEvent<EvKeyPressD<KeyboardClient>>();
+195                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'e'})
+196                         postKeyEvent<EvKeyPressE<KeyboardClient>>();
+197                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'f'})
+198                         postKeyEvent<EvKeyPressF<KeyboardClient>>();
+199                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'g'})
+200                         postKeyEvent<EvKeyPressG<KeyboardClient>>();
+201                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'h'})
+202                         postKeyEvent<EvKeyPressH<KeyboardClient>>();
+203                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'y'})
+204                         postKeyEvent<EvKeyPressI<KeyboardClient>>();
+205                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'j'})
+206                         postKeyEvent<EvKeyPressJ<KeyboardClient>>();
+207                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'k'})
+208                         postKeyEvent<EvKeyPressK<KeyboardClient>>();
+209                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'l'})
+210                         postKeyEvent<EvKeyPressL<KeyboardClient>>();
+211                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'m'})
+212                         postKeyEvent<EvKeyPressM<KeyboardClient>>();
+213                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'n'})
+214                         postKeyEvent<EvKeyPressN<KeyboardClient>>();
+215                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'o'})
+216                         postKeyEvent<EvKeyPressO<KeyboardClient>>();
+217                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'p'})
+218                         postKeyEvent<EvKeyPressP<KeyboardClient>>();
+219                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'q'})
+220                         postKeyEvent<EvKeyPressQ<KeyboardClient>>();
+221                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'r'})
+222                         postKeyEvent<EvKeyPressR<KeyboardClient>>();
+223                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'s'})
+224                         postKeyEvent<EvKeyPressS<KeyboardClient>>();
+225                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'t'})
+226                         postKeyEvent<EvKeyPressT<KeyboardClient>>();
+227                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'u'})
+228                         postKeyEvent<EvKeyPressU<KeyboardClient>>();
+229                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'v'})
+230                         postKeyEvent<EvKeyPressV<KeyboardClient>>();
+231                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'w'})
+232                         postKeyEvent<EvKeyPressW<KeyboardClient>>();
+233                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'x'})
+234                         postKeyEvent<EvKeyPressX<KeyboardClient>>();
+235                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'y'})
+236                         postKeyEvent<EvKeyPressY<KeyboardClient>>();
+237                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'z'})
+238                         postKeyEvent<EvKeyPressZ<KeyboardClient>>();
+239 
+240                 \hyperlink{classdance__bot_1_1KeyboardClient_a96fc4ee6a96424305a43d3d23fe66695}{OnKeyPress}(character);
+241         \}
+\end{DoxyCode}
+\index{dance\+\_\+bot\+::\+Keyboard\+Client@{dance\+\_\+bot\+::\+Keyboard\+Client}!post\+Key\+Event@{post\+Key\+Event}}
+\index{post\+Key\+Event@{post\+Key\+Event}!dance\+\_\+bot\+::\+Keyboard\+Client@{dance\+\_\+bot\+::\+Keyboard\+Client}}
+\subsubsection[{\texorpdfstring{post\+Key\+Event()}{postKeyEvent()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Ev $>$ void dance\+\_\+bot\+::\+Keyboard\+Client\+::post\+Key\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classdance__bot_1_1KeyboardClient_a8b1f980191a031623044937c7f162597}{}\label{classdance__bot_1_1KeyboardClient_a8b1f980191a031623044937c7f162597}
+
+
+Definition at line 244 of file keyboard\+\_\+client.\+h.
+
+
+
+References demangle\+Symbol().
+
+
+\begin{DoxyCode}
+245         \{
+246                 ROS\_WARN(\textcolor{stringliteral}{"KeyboardClient ev: %s"}, \hyperlink{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{demangleSymbol}(\textcolor{keyword}{typeid}(TEv).name()).c\_str())
+      ;
+247                 \textcolor{keyword}{auto} \textcolor{keyword}{event} = \textcolor{keyword}{new} TEv();
+248                 this->\hyperlink{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80}{postEvent}(event);
+249         \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdance__bot_1_1KeyboardClient_a8b1f980191a031623044937c7f162597_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{dance\+\_\+bot\+::\+Keyboard\+Client@{dance\+\_\+bot\+::\+Keyboard\+Client}!c\+\_\+@{c\+\_\+}}
+\index{c\+\_\+@{c\+\_\+}!dance\+\_\+bot\+::\+Keyboard\+Client@{dance\+\_\+bot\+::\+Keyboard\+Client}}
+\subsubsection[{\texorpdfstring{c\+\_\+}{c_}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::signals2\+::scoped\+\_\+connection dance\+\_\+bot\+::\+Keyboard\+Client\+::c\+\_\+}\hypertarget{classdance__bot_1_1KeyboardClient_ad2318d9d1107915d721f9457c10f1ee6}{}\label{classdance__bot_1_1KeyboardClient_ad2318d9d1107915d721f9457c10f1ee6}
+
+
+Definition at line 157 of file keyboard\+\_\+client.\+h.
+
+\index{dance\+\_\+bot\+::\+Keyboard\+Client@{dance\+\_\+bot\+::\+Keyboard\+Client}!initialized\+\_\+@{initialized\+\_\+}}
+\index{initialized\+\_\+@{initialized\+\_\+}!dance\+\_\+bot\+::\+Keyboard\+Client@{dance\+\_\+bot\+::\+Keyboard\+Client}}
+\subsubsection[{\texorpdfstring{initialized\+\_\+}{initialized_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool} dance\+\_\+bot\+::\+Keyboard\+Client\+::initialized\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classdance__bot_1_1KeyboardClient_afb6a3cb23ba0c0e0b65ae7dfad216f19}{}\label{classdance__bot_1_1KeyboardClient_afb6a3cb23ba0c0e0b65ae7dfad216f19}
+
+
+Definition at line 252 of file keyboard\+\_\+client.\+h.
+
+\index{dance\+\_\+bot\+::\+Keyboard\+Client@{dance\+\_\+bot\+::\+Keyboard\+Client}!On\+Key\+Press@{On\+Key\+Press}}
+\index{On\+Key\+Press@{On\+Key\+Press}!dance\+\_\+bot\+::\+Keyboard\+Client@{dance\+\_\+bot\+::\+Keyboard\+Client}}
+\subsubsection[{\texorpdfstring{On\+Key\+Press}{OnKeyPress}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::signals2\+::signal$<$void(char keypress)$>$ dance\+\_\+bot\+::\+Keyboard\+Client\+::\+On\+Key\+Press}\hypertarget{classdance__bot_1_1KeyboardClient_a96fc4ee6a96424305a43d3d23fe66695}{}\label{classdance__bot_1_1KeyboardClient_a96fc4ee6a96424305a43d3d23fe66695}
+
+
+Definition at line 156 of file keyboard\+\_\+client.\+h.
+
+
+
+Referenced by dance\+\_\+bot\+::\+Sb\+Keyboard\+::on\+Entry().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+examples/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/substate\+\_\+behaviors/keyboard/\hyperlink{keyboard__client_8h}{keyboard\+\_\+client.\+h}\end{DoxyCompactItemize}

@@ -11,7 +11,7 @@ Inheritance diagram for Keyboard\+Orthogonal\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=217pt]{classKeyboardOrthogonal__inherit__graph}
+\includegraphics[width=211pt]{classKeyboardOrthogonal__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -24,38 +24,45 @@ Collaboration diagram for Keyboard\+Orthogonal\+:
 \includegraphics[width=350pt]{classKeyboardOrthogonal__coll__graph}
 \end{center}
 \end{figure}
-\subsection*{Private Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \hyperlink{classKeyboardOrthogonal_aa1fdd399e3e0c5170fbd32d309976325}{$\sim$\+Keyboard\+Orthogonal} ()
+virtual void \hyperlink{classKeyboardOrthogonal_a7b4dbf9306a1b30653cf39b89dea30c1}{on\+Initialize} () override
 \end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 5 of file keyboard\+\_\+orthogonal.\+h.
+Definition at line 6 of file keyboard\+\_\+orthogonal.\+h.
 
 
 
-\subsection{Constructor \& Destructor Documentation}
-\index{Keyboard\+Orthogonal@{Keyboard\+Orthogonal}!````~Keyboard\+Orthogonal@{$\sim$\+Keyboard\+Orthogonal}}
-\index{````~Keyboard\+Orthogonal@{$\sim$\+Keyboard\+Orthogonal}!Keyboard\+Orthogonal@{Keyboard\+Orthogonal}}
-\subsubsection[{\texorpdfstring{$\sim$\+Keyboard\+Orthogonal()}{~KeyboardOrthogonal()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Keyboard\+Orthogonal\+::$\sim$\+Keyboard\+Orthogonal (
+\subsection{Member Function Documentation}
+\index{Keyboard\+Orthogonal@{Keyboard\+Orthogonal}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!Keyboard\+Orthogonal@{Keyboard\+Orthogonal}}
+\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Keyboard\+Orthogonal\+::on\+Initialize (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classKeyboardOrthogonal_aa1fdd399e3e0c5170fbd32d309976325}{}\label{classKeyboardOrthogonal_aa1fdd399e3e0c5170fbd32d309976325}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classKeyboardOrthogonal_a7b4dbf9306a1b30653cf39b89dea30c1}{}\label{classKeyboardOrthogonal_a7b4dbf9306a1b30653cf39b89dea30c1}
 
 
-Definition at line 7 of file keyboard\+\_\+orthogonal.\+h.
+Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+
+
+
+Definition at line 9 of file keyboard\+\_\+orthogonal.\+h.
 
 
 \begin{DoxyCode}
-8     \{
-9 
-10     \}
+10     \{
+11         \textcolor{keyword}{auto} keyboardClient =  this->createClient<dance\_bot::KeyboardClient>();
+12         keyboardClient->topicName = \textcolor{stringliteral}{"/keyboard\_unicode"};
+13         
+14         \textcolor{comment}{//keyboardClient.queueSize = 1;}
+15         keyboardClient->initialize();
+16     \}
 \end{DoxyCode}
 
 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['queuesize_5f',['queueSize_',['../classsmacc_1_1SensorTopic.html#a8f9f1d8ca6c9c6430e1ee1ba78022483',1,'smacc::SensorTopic']]]
+  ['queuesize',['queueSize',['../classsmacc_1_1SmaccTopicPublisherClient.html#af6094c0d04c48cec8334ced16e36d998',1,'smacc::SmaccTopicPublisherClient::queueSize()'],['../classsmacc_1_1SmaccTopicSubscriberClient.html#a1fd2ebc705ae0217ae21b23b7098cd9b',1,'smacc::SmaccTopicSubscriberClient::queueSize()']]]
 ];

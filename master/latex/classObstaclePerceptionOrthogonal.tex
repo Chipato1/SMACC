@@ -11,7 +11,7 @@ Inheritance diagram for Obstacle\+Perception\+Orthogonal\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=265pt]{classObstaclePerceptionOrthogonal__inherit__graph}
+\includegraphics[width=243pt]{classObstaclePerceptionOrthogonal__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -24,37 +24,76 @@ Collaboration diagram for Obstacle\+Perception\+Orthogonal\+:
 \includegraphics[width=350pt]{classObstaclePerceptionOrthogonal__coll__graph}
 \end{center}
 \end{figure}
-\subsection*{Private Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \hyperlink{classObstaclePerceptionOrthogonal_a8cee21ce62e390013ba5960f7f60fc5f}{$\sim$\+Obstacle\+Perception\+Orthogonal} ()
+virtual void \hyperlink{classObstaclePerceptionOrthogonal_a75913ace603e86139b11bb1045ef600b}{on\+Initialize} () override
+\item 
+virtual void \hyperlink{classObstaclePerceptionOrthogonal_a75913ace603e86139b11bb1045ef600b}{on\+Initialize} () override
 \end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 5 of file obstacle\+\_\+perception\+\_\+orthogonal.\+h.
-
-
-
-\subsection{Constructor \& Destructor Documentation}
-\index{Obstacle\+Perception\+Orthogonal@{Obstacle\+Perception\+Orthogonal}!````~Obstacle\+Perception\+Orthogonal@{$\sim$\+Obstacle\+Perception\+Orthogonal}}
-\index{````~Obstacle\+Perception\+Orthogonal@{$\sim$\+Obstacle\+Perception\+Orthogonal}!Obstacle\+Perception\+Orthogonal@{Obstacle\+Perception\+Orthogonal}}
-\subsubsection[{\texorpdfstring{$\sim$\+Obstacle\+Perception\+Orthogonal()}{~ObstaclePerceptionOrthogonal()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Obstacle\+Perception\+Orthogonal\+::$\sim$\+Obstacle\+Perception\+Orthogonal (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classObstaclePerceptionOrthogonal_a8cee21ce62e390013ba5960f7f60fc5f}{}\label{classObstaclePerceptionOrthogonal_a8cee21ce62e390013ba5960f7f60fc5f}
-
-
 Definition at line 7 of file obstacle\+\_\+perception\+\_\+orthogonal.\+h.
 
 
+
+\subsection{Member Function Documentation}
+\index{Obstacle\+Perception\+Orthogonal@{Obstacle\+Perception\+Orthogonal}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!Obstacle\+Perception\+Orthogonal@{Obstacle\+Perception\+Orthogonal}}
+\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Obstacle\+Perception\+Orthogonal\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classObstaclePerceptionOrthogonal_a75913ace603e86139b11bb1045ef600b}{}\label{classObstaclePerceptionOrthogonal_a75913ace603e86139b11bb1045ef600b}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+
+
+
+Definition at line 10 of file obstacle\+\_\+perception\+\_\+orthogonal.\+h.
+
+
 \begin{DoxyCode}
-8     \{
-9     \}
+11     \{
+12         \textcolor{keyword}{auto}* lidarClient = this->createClient<smacc::SensorClient<sensor\_msgs::LaserScan>>();
+13         
+14         lidarClient->topicName = \textcolor{stringliteral}{"/front/scan"};
+15         \textcolor{comment}{//lidarClient->queueSize = "/front/scan";}
+16         lidarClient->timeout\_ =  ros::Duration(10);
+17 
+18         lidarClient->initialize();
+19     \}
+\end{DoxyCode}
+\index{Obstacle\+Perception\+Orthogonal@{Obstacle\+Perception\+Orthogonal}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!Obstacle\+Perception\+Orthogonal@{Obstacle\+Perception\+Orthogonal}}
+\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Obstacle\+Perception\+Orthogonal\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classObstaclePerceptionOrthogonal_a75913ace603e86139b11bb1045ef600b}{}\label{classObstaclePerceptionOrthogonal_a75913ace603e86139b11bb1045ef600b}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+
+
+
+Definition at line 10 of file obstacle\+\_\+perception\+\_\+orthogonal.\+h.
+
+
+\begin{DoxyCode}
+11     \{
+12         \textcolor{keyword}{auto}* lidarClient = this->createClient<smacc::SensorClient<sensor\_msgs::LaserScan>>();
+13         
+14         lidarClient->topicName = \textcolor{stringliteral}{"/front/scan"};
+15         \textcolor{comment}{//lidarClient->queueSize = "/front/scan";}
+16         lidarClient->timeout\_ =  ros::Duration(10);
+17 
+18         lidarClient->initialize();
+19     \}
 \end{DoxyCode}
 
 
