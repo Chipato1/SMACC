@@ -1,67 +1,67 @@
 <map id="demangleSymbol" name="demangleSymbol">
-<area shape="rect" id="node2" href="$namespacesmacc.html#a09b297b1cdb9aae93a958f323431464a" title="smacc::cleanShortTypeName" alt="" coords="200,304,408,330"/>
-<area shape="rect" id="node3" href="$classsmacc_1_1SmaccState.html#adc225018fe91da47e6e9f1d20150b26a" title="smacc::SmaccState\&lt;\l StNavigateForward1,\l SmDanceBot \&gt;::SmaccState" alt="" coords="815,60,1028,116"/>
-<area shape="rect" id="node6" href="$common_8h.html#ac3e1038dcfa388433ad35e76ce86c747" title="demangledTypeName" alt="" coords="223,460,385,486"/>
-<area shape="rect" id="node7" href="$classsmacc_1_1SmaccState.html#a897dbdfe52a8b944d4bf1844ddcc3aa5" title="smacc::SmaccState\&lt;\l StNavigateForward1,\l SmDanceBot \&gt;::getFullName" alt="" coords="197,510,411,566"/>
-<area shape="rect" id="node8" href="$classsmacc_1_1Orthogonal.html#ae1ad57a2fda4d7f2ecf708c342fc1bb9" title="smacc::Orthogonal::\lgetName" alt="" coords="229,590,379,631"/>
-<area shape="rect" id="node12" href="$classsmacc_1_1ISmaccComponent.html#aa314809a7fd3516461e31cc120d0cfe7" title="smacc::ISmaccComponent\l::getName" alt="" coords="207,655,401,696"/>
-<area shape="rect" id="node13" href="$classsmacc_1_1ISmaccClient.html#a20846aabfd1de832aa27d7a8237a1742" title="smacc::ISmaccClient\l::getName" alt="" coords="227,1102,381,1143"/>
-<area shape="rect" id="node16" href="$classsmacc_1_1SmaccActionClientBase.html#a2e2d131731d54ea529f6ff2ebb0c63cd" title="smacc::SmaccActionClient\lBase\&lt; move_base_msgs::\lMoveBaseAction \&gt;::postEvent" alt="" coords="507,1424,722,1480"/>
-<area shape="rect" id="node30" href="$classdance__bot_1_1SbKeyboard.html#a18cd04fb8536e7fe793f74f011077b9d" title="dance_bot::SbKeyboard\l::postKeyEvent" alt="" coords="1639,1340,1812,1382"/>
-<area shape="rect" id="node34" href="$classsmacc_1_1ISmaccStateMachine.html#acfb75233b79062cc7769ea751b7f320d" title="smacc::ISmaccStateMachine\l::mapBehavior" alt="" coords="1353,786,1559,827"/>
-<area shape="rect" id="node44" href="$classsmacc_1_1SmaccSubStateBehavior.html#a077a9784d17e3a95284ad351a43cfcbb" title="smacc::SmaccSubStateBehavior\l::getName" alt="" coords="188,132,420,174"/>
-<area shape="rect" id="node47" href="$classsmacc_1_1SmaccState.html#a41b2515faf76648c6d69fe09108d2691" title="smacc::SmaccState\&lt;\l StNavigateForward1,\l SmDanceBot \&gt;::~SmaccState" alt="" coords="809,268,1033,324"/>
-<area shape="rect" id="node48" href="$classsmacc_1_1ISmaccStateMachine.html#a2d0b1742f17dd77d5df217153e8b5259" title="smacc::ISmaccStateMachine\l::getStateMachineName" alt="" coords="201,1558,407,1599"/>
-<area shape="rect" id="node52" href="$classsmacc_1_1SmaccActionClientBase.html#a0224d7482b50a706f99bd280495ef1af" title="smacc::SmaccActionClient\lBase\&lt; move_base_msgs::\lMoveBaseAction \&gt;::initialize" alt="" coords="203,1622,405,1678"/>
-<area shape="rect" id="node53" href="$classdance__bot_1_1KeyboardClient.html#a8b1f980191a031623044937c7f162597" title="dance_bot::KeyboardClient\l::postKeyEvent" alt="" coords="208,1702,400,1743"/>
-<area shape="rect" id="node54" href="$namespacesmacc.html#a89246662ad7a95c78e6fa5eedf0c01a5" title="smacc::processTransition" alt="" coords="213,1797,395,1824"/>
-<area shape="rect" id="node56" href="$classsmacc_1_1ISmaccStateMachine.html#a729d0bcb3c4894e33f0696e0b1aeb155" title="smacc::ISmaccStateMachine\l::requiresComponent" alt="" coords="1083,706,1290,747"/>
-<area shape="rect" id="node66" href="$classsmacc_1_1ISmaccStateMachine.html#aea0936b00b0186e8d4e514af16f69766" title="smacc::ISmaccStateMachine\l::updateCurrentState" alt="" coords="818,823,1025,864"/>
-<area shape="rect" id="node4" href="$classsmacc_1_1SmaccState.html#a4db028a85244653e48957d2b3371413d" title="smacc::SmaccState\&lt;\l StNavigateForward1,\l SmDanceBot \&gt;::getShortName" alt="" coords="500,329,729,385"/>
-<area shape="rect" id="node5" href="$structsmacc_1_1SmaccStateMachineBase.html#a47508a2d301007546d4c70dedd2ade4b" title="smacc::SmaccStateMachine\lBase\&lt; SensorStateMachine,\l SensorState \&gt;::SmaccStateMachineBase" alt="" coords="468,249,761,305"/>
-<area shape="rect" id="node9" href="$classsmacc_1_1Orthogonal.html#a0476ba0e6575824893947918567ebbaa" title="smacc::Orthogonal::\lsetStateBehavior" alt="" coords="539,524,690,566"/>
-<area shape="rect" id="node10" href="$classsmacc_1_1Orthogonal.html#a77888104f276bdbd177d69cf23f11a56" title="smacc::Orthogonal::\lonEntry" alt="" coords="539,590,690,631"/>
-<area shape="rect" id="node11" href="$classsmacc_1_1Orthogonal.html#a71c0df3d9e8327e65286e1ce0a3a7043" title="smacc::Orthogonal::\lonExit" alt="" coords="539,655,690,696"/>
-<area shape="rect" id="node14" href="$classsmacc_1_1SmaccActionClientBase.html#ab953ee383c5dd627a62c36d06c365930" title="smacc::SmaccActionClient\lBase\&lt; move_base_msgs::\lMoveBaseAction \&gt;::cancelGoal" alt="" coords="504,873,725,929"/>
-<area shape="rect" id="node15" href="$classsmacc_1_1SmaccActionClientBase.html#a58c67a87c5fb8ea1633573c58fe3eee1" title="smacc::SmaccActionClient\lBase\&lt; move_base_msgs::\lMoveBaseAction \&gt;::sendGoal" alt="" coords="1081,925,1292,981"/>
-<area shape="rect" id="node17" href="$classsmacc_1_1SmaccActionClientBase.html#a8e500f37853599d32c39483d442ede72" title="smacc::SmaccActionClient\lBase\&lt; move_base_msgs::\lMoveBaseAction \&gt;::postFeedbackEvent" alt="" coords="477,1054,752,1110"/>
-<area shape="rect" id="node18" href="$classsmacc_1_1SmaccServiceClient.html#a9ac26f1ca1e661e6b393ce7605166bdc" title="smacc::SmaccServiceClient\l\&lt; std_srvs::SetBool \&gt;::\linitialize" alt="" coords="515,1134,714,1190"/>
-<area shape="rect" id="node19" href="$classsmacc_1_1SmaccTopicPublisherClient.html#ab2195989f5106a0f2a01546bebd50991" title="smacc::SmaccTopicPublisher\lClient\&lt; std_msgs::String\l \&gt;::initialize" alt="" coords="512,1214,717,1270"/>
-<area shape="rect" id="node20" href="$classsmacc_1_1SignalDetector.html#a9a28cc1e9dcf7d204f3589fad8291bfd" title="smacc::SignalDetector\l::registerActionClientRequest" alt="" coords="511,1294,718,1335"/>
-<area shape="rect" id="node31" href="$classsmacc_1_1ISmaccStateMachine.html#aacef10d3f0c509612114ff7b21a239d1" title="Used by the ISMaccActionClients when a new send goal is launched. " alt="" coords="818,1004,1025,1046"/>
-<area shape="rect" id="node39" href="$classsmacc_1_1SignalDetector.html#af455ae5187fc9405d790992060af647b" title="smacc::SignalDetector\l::finalizeRequest" alt="" coords="531,1359,698,1400"/>
-<area shape="rect" id="node21" href="$classsmacc_1_1SignalDetector.html#a6ab99d99cef8d101e39797a72daeb2b7" title="smacc::SignalDetector\l::postEvent" alt="" coords="838,1294,1005,1335"/>
-<area shape="rect" id="node22" href="$classsmacc_1_1ISmaccStateMachine.html#ad80cdd7bbc9a9f3b221c625754fed1ed" title="smacc::ISmaccStateMachine\l::postEvent" alt="" coords="1083,1211,1290,1252"/>
-<area shape="rect" id="node23" href="$classsmacc_1_1ISmaccClient.html#a46cbc0d695214efe40d29247323bfc80" title="smacc::ISmaccClient\l::postEvent" alt="" coords="1379,1178,1533,1219"/>
-<area shape="rect" id="node24" href="$classsmacc_1_1ISmaccComponent.html#a687dead5b87a3b9781b9bf6ab0b7afa5" title="smacc::ISmaccComponent\l::postEvent" alt="" coords="1359,1243,1553,1284"/>
-<area shape="rect" id="node25" href="$classsmacc_1_1SmaccState.html#ae0e035e2d4e60f4ad58f08f44261f26c" title="smacc::SmaccState\&lt;\l StNavigateForward1,\l SmDanceBot \&gt;::postEvent" alt="" coords="1357,1308,1555,1364"/>
-<area shape="rect" id="node26" href="$classsmacc_1_1ISmaccStateMachine.html#af79fbc17f064bba77e598f5e55a86200" title="smacc::ISmaccStateMachine\l::EStop" alt="" coords="1353,916,1559,958"/>
-<area shape="rect" id="node28" href="$classsmacc_1_1SmaccSubStateBehavior.html#a8538664f9828247727a27446112788a2" title="smacc::SmaccSubStateBehavior\l::postEvent" alt="" coords="1340,1112,1572,1154"/>
-<area shape="rect" id="node27" href="$structsmacc_1_1SmaccStateMachineBase.html#aa585d63332b29a61555468874b49aad3" title="smacc::SmaccStateMachine\lBase\&lt; SensorStateMachine,\l SensorState \&gt;::EStop" alt="" coords="1622,981,1829,1037"/>
-<area shape="rect" id="node29" href="$classsmacc_1_1SensorTopic.html#a27fe3515e3981a5a393dea193902cbd0" title="smacc::SensorTopic\l\&lt; sensor_msgs::Temperature\l \&gt;::onEntry" alt="" coords="1620,1105,1831,1161"/>
-<area shape="rect" id="node32" href="$classsmacc_1_1ISmaccStateMachine.html#a8588f9e580fbb95b53e2bd2ca3ff1f98" title="smacc::ISmaccStateMachine\l::setGlobalSMData" alt="" coords="1083,1004,1290,1046"/>
-<area shape="rect" id="node33" href="$classsmacc_1_1ISmaccState.html#a120fcda41b44a437ff2e3906ac9fa5ca" title="smacc::ISmaccState\l::setGlobalSMData" alt="" coords="1379,982,1533,1023"/>
-<area shape="rect" id="node35" href="$classSbNavigateGlobalPosition.html#a37b56e88ae4b01413c8fff19ee319769" title="SbNavigateGlobalPosition\l::goToRadialStart" alt="" coords="1363,851,1549,892"/>
-<area shape="rect" id="node37" href="$classNavigateGlobalPosition.html#a5181e70601da336334f25a95840fd878" title="NavigateGlobalPosition\l::goToRadialStart" alt="" coords="1371,1047,1541,1088"/>
-<area shape="rect" id="node36" href="$classSbNavigateGlobalPosition.html#ae4c1f2e5de1077ee88d506eb69099f0c" title="SbNavigateGlobalPosition\l::onEntry" alt="" coords="1632,851,1819,892"/>
-<area shape="rect" id="node38" href="$classNavigateGlobalPosition.html#a80962ce5bba51285565e360872f58c47" title="NavigateGlobalPosition\l::onEntry" alt="" coords="1641,916,1810,958"/>
-<area shape="rect" id="node40" href="$classsmacc_1_1SignalDetector.html#a9a116479e23259f3a5d5d4a47278afd5" title="smacc::SignalDetector\l::pollOnce" alt="" coords="838,1374,1005,1415"/>
-<area shape="rect" id="node41" href="$classsmacc_1_1SignalDetector.html#a2665e66cdae9f6533c64bbcecf3fa199" title="smacc::SignalDetector\l::pollingLoop" alt="" coords="1103,1387,1270,1428"/>
-<area shape="rect" id="node42" href="$namespacesmacc.html#a47ac3b8d2968b1ba4152afd64ab66bd0" title="smacc::run" alt="" coords="1409,1453,1503,1480"/>
-<area shape="rect" id="node43" href="$classsmacc_1_1SignalDetector.html#a48b3fee853ddcb25732408b22ecfcf39" title="smacc::SignalDetector\l::runThread" alt="" coords="1373,1387,1539,1428"/>
-<area shape="rect" id="node45" href="$classsmacc_1_1SmaccSubStateBehavior.html#a7c28e1c46238bbb2c2e0450573c6de94" title="smacc::SmaccSubStateBehavior\l::onEntry" alt="" coords="499,67,731,108"/>
-<area shape="rect" id="node46" href="$classsmacc_1_1SmaccSubStateBehavior.html#ab78b9de76c04a7ab6c16d5924e216ef9" title="smacc::SmaccSubStateBehavior\l::onExit" alt="" coords="499,132,731,174"/>
-<area shape="rect" id="node49" href="$structsmacc_1_1SmaccStateMachineBase.html#a2dc1cd9a25b80f00602f1faab9b01e7b" title="smacc::SmaccStateMachine\lBase\&lt; SensorStateMachine,\l SensorState \&gt;::initiate_impl" alt="" coords="511,1554,718,1610"/>
-<area shape="rect" id="node50" href="$structsmacc_1_1SmaccStateMachineBase.html#a5c078ef0eec2c64ecd9a31b46341b13c" title="smacc::SmaccStateMachine\lBase\&lt; SensorStateMachine,\l SensorState \&gt;::recursivePublish\lStatus" alt="" coords="499,1635,731,1706"/>
-<area shape="rect" id="node51" href="$structsmacc_1_1SmaccStateMachineBase.html#afcee04fc4d307b31d7d0fac932d7d90f" title="smacc::SmaccStateMachine\lBase\&lt; SensorStateMachine,\l SensorState \&gt;::state_machine\l_visualization" alt="" coords="503,1730,727,1800"/>
-<area shape="rect" id="node55" href="$namespacesmacc.html#a097ffb8059d48bbe45ee8321e92e8878" title="smacc::processTransitions" alt="" coords="520,1825,709,1852"/>
-<area shape="rect" id="node57" href="$classsmacc_1_1Orthogonal.html#a098b5be0f89d0911afc44c10b756ef2a" title="smacc::Orthogonal::\lrequiresComponent" alt="" coords="1381,531,1531,572"/>
-<area shape="rect" id="node59" href="$classsmacc_1_1ISmaccState.html#afd5264c36403d22e124eea89a0122e59" title="smacc::ISmaccState\l::requiresComponent" alt="" coords="1377,655,1535,696"/>
-<area shape="rect" id="node60" href="$classsmacc_1_1SmaccSubStateBehavior.html#a9f31f62f886cc06017e92fa0d834b12d" title="smacc::SmaccSubStateBehavior\l::requiresComponent" alt="" coords="1340,720,1572,762"/>
-<area shape="rect" id="node58" href="$classNavigationOrthogonal.html#a1d9e825be23c75d7baf594a8c1f0fb74" title="NavigationOrthogonal\l::onInitialize" alt="" coords="1645,472,1806,514"/>
-<area shape="rect" id="node61" href="$classSbNavigateBackwards.html#a59b7bc4f0b714f548c73659c87dd405e" title="SbNavigateBackwards\l::onEntry" alt="" coords="1643,603,1807,644"/>
-<area shape="rect" id="node62" href="$classSbNavigateForward.html#a0e01d850ed0e028f3b9b3704862c7ea5" title="SbNavigateForward::\lonEntry" alt="" coords="1648,668,1803,710"/>
-<area shape="rect" id="node63" href="$classSbUndoPathBackwards.html#ab7eed4fa4633235b877758bd787bbea1" title="SbUndoPathBackwards\l::onEntry" alt="" coords="1641,734,1810,775"/>
-<area shape="rect" id="node64" href="$classNavigateForward.html#a2a1ad66b031773aeac11663020afebba" title="NavigateForward::onEntry" alt="" coords="1632,800,1819,826"/>
-<area shape="rect" id="node65" href="$classUndoPathBackwards.html#a073a69a9e7b89d38faaab47096df292c" title="UndoPathBackwards::\lonEntry" alt="" coords="1645,538,1805,579"/>
+<area shape="rect" id="node2" href="$namespacesmacc.html#a09b297b1cdb9aae93a958f323431464a" title="smacc::cleanShortTypeName" alt="" coords="200,115,408,141"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1SmaccState.html#adc225018fe91da47e6e9f1d20150b26a" title="smacc::SmaccState\&lt;\l StNavigateForward1,\l SmDanceBot \&gt;::SmaccState" alt="" coords="508,5,721,61"/>
+<area shape="rect" id="node6" href="$common_8h.html#ac3e1038dcfa388433ad35e76ce86c747" title="demangledTypeName" alt="" coords="223,180,385,207"/>
+<area shape="rect" id="node7" href="$classsmacc_1_1SmaccState.html#a897dbdfe52a8b944d4bf1844ddcc3aa5" title="smacc::SmaccState\&lt;\l StNavigateForward1,\l SmDanceBot \&gt;::getFullName" alt="" coords="197,231,411,287"/>
+<area shape="rect" id="node8" href="$classsmacc_1_1Orthogonal.html#ae1ad57a2fda4d7f2ecf708c342fc1bb9" title="smacc::Orthogonal::\lgetName" alt="" coords="229,310,379,351"/>
+<area shape="rect" id="node12" href="$classsmacc_1_1ISmaccComponent.html#aa314809a7fd3516461e31cc120d0cfe7" title="smacc::ISmaccComponent\l::getName" alt="" coords="207,375,401,417"/>
+<area shape="rect" id="node13" href="$classsmacc_1_1ISmaccClient.html#a20846aabfd1de832aa27d7a8237a1742" title="smacc::ISmaccClient\l::getName" alt="" coords="227,845,381,886"/>
+<area shape="rect" id="node16" href="$classsmacc_1_1SmaccActionClientBase.html#a2e2d131731d54ea529f6ff2ebb0c63cd" title="smacc::SmaccActionClient\lBase\&lt; move_base_msgs::\lMoveBaseAction \&gt;::postEvent" alt="" coords="507,1144,722,1200"/>
+<area shape="rect" id="node30" href="$classdance__bot_1_1SbKeyboard.html#a18cd04fb8536e7fe793f74f011077b9d" title="dance_bot::SbKeyboard\l::postKeyEvent" alt="" coords="1621,1061,1795,1102"/>
+<area shape="rect" id="node34" href="$classsmacc_1_1ISmaccStateMachine.html#acfb75233b79062cc7769ea751b7f320d" title="smacc::ISmaccStateMachine\l::mapBehavior" alt="" coords="1335,506,1542,547"/>
+<area shape="rect" id="node44" href="$classsmacc_1_1SmaccSubStateBehavior.html#a077a9784d17e3a95284ad351a43cfcbb" title="smacc::SmaccSubStateBehavior\l::getName" alt="" coords="188,1275,420,1317"/>
+<area shape="rect" id="node47" href="$classsmacc_1_1ISmaccStateMachine.html#a2d0b1742f17dd77d5df217153e8b5259" title="smacc::ISmaccStateMachine\l::getStateMachineName" alt="" coords="201,1341,407,1382"/>
+<area shape="rect" id="node51" href="$classsmacc_1_1SmaccActionClientBase.html#a0224d7482b50a706f99bd280495ef1af" title="smacc::SmaccActionClient\lBase\&lt; move_base_msgs::\lMoveBaseAction \&gt;::initialize" alt="" coords="203,1405,405,1461"/>
+<area shape="rect" id="node52" href="$classdance__bot_1_1KeyboardClient.html#a8b1f980191a031623044937c7f162597" title="dance_bot::KeyboardClient\l::postKeyEvent" alt="" coords="208,1485,400,1526"/>
+<area shape="rect" id="node53" href="$namespacesmacc.html#a89246662ad7a95c78e6fa5eedf0c01a5" title="smacc::processTransition" alt="" coords="213,1551,395,1577"/>
+<area shape="rect" id="node55" href="$classsmacc_1_1ISmaccStateMachine.html#a729d0bcb3c4894e33f0696e0b1aeb155" title="smacc::ISmaccStateMachine\l::requiresComponent" alt="" coords="1066,426,1273,467"/>
+<area shape="rect" id="node65" href="$classsmacc_1_1ISmaccStateMachine.html#aea0936b00b0186e8d4e514af16f69766" title="smacc::ISmaccStateMachine\l::updateCurrentState" alt="" coords="809,543,1016,585"/>
+<area shape="rect" id="node66" href="$classsmacc_1_1SmaccState.html#a41b2515faf76648c6d69fe09108d2691" title="smacc::SmaccState\&lt;\l StNavigateForward1,\l SmDanceBot \&gt;::~SmaccState" alt="" coords="192,1601,416,1657"/>
+<area shape="rect" id="node4" href="$classsmacc_1_1SmaccState.html#a4db028a85244653e48957d2b3371413d" title="smacc::SmaccState\&lt;\l StNavigateForward1,\l SmDanceBot \&gt;::getShortName" alt="" coords="500,165,729,221"/>
+<area shape="rect" id="node5" href="$structsmacc_1_1SmaccStateMachineBase.html#a47508a2d301007546d4c70dedd2ade4b" title="smacc::SmaccStateMachine\lBase\&lt; SensorStateMachine,\l SensorState \&gt;::SmaccStateMachineBase" alt="" coords="468,85,761,141"/>
+<area shape="rect" id="node9" href="$classsmacc_1_1Orthogonal.html#a0476ba0e6575824893947918567ebbaa" title="smacc::Orthogonal::\lsetStateBehavior" alt="" coords="539,310,690,351"/>
+<area shape="rect" id="node10" href="$classsmacc_1_1Orthogonal.html#a77888104f276bdbd177d69cf23f11a56" title="smacc::Orthogonal::\lonEntry" alt="" coords="539,375,690,417"/>
+<area shape="rect" id="node11" href="$classsmacc_1_1Orthogonal.html#a71c0df3d9e8327e65286e1ce0a3a7043" title="smacc::Orthogonal::\lonExit" alt="" coords="539,245,690,286"/>
+<area shape="rect" id="node14" href="$classsmacc_1_1SmaccActionClientBase.html#ab953ee383c5dd627a62c36d06c365930" title="smacc::SmaccActionClient\lBase\&lt; move_base_msgs::\lMoveBaseAction \&gt;::cancelGoal" alt="" coords="504,1000,725,1056"/>
+<area shape="rect" id="node15" href="$classsmacc_1_1SmaccActionClientBase.html#a58c67a87c5fb8ea1633573c58fe3eee1" title="smacc::SmaccActionClient\lBase\&lt; move_base_msgs::\lMoveBaseAction \&gt;::sendGoal" alt="" coords="1064,792,1275,848"/>
+<area shape="rect" id="node17" href="$classsmacc_1_1SmaccActionClientBase.html#a8e500f37853599d32c39483d442ede72" title="smacc::SmaccActionClient\lBase\&lt; move_base_msgs::\lMoveBaseAction \&gt;::postFeedbackEvent" alt="" coords="477,644,752,700"/>
+<area shape="rect" id="node18" href="$classsmacc_1_1SmaccServiceClient.html#a9ac26f1ca1e661e6b393ce7605166bdc" title="smacc::SmaccServiceClient\l\&lt; std_srvs::SetBool \&gt;::\linitialize" alt="" coords="515,724,714,780"/>
+<area shape="rect" id="node19" href="$classsmacc_1_1SmaccTopicPublisherClient.html#ab2195989f5106a0f2a01546bebd50991" title="smacc::SmaccTopicPublisher\lClient\&lt; std_msgs::String\l \&gt;::initialize" alt="" coords="512,804,717,860"/>
+<area shape="rect" id="node20" href="$classsmacc_1_1SignalDetector.html#a9a28cc1e9dcf7d204f3589fad8291bfd" title="smacc::SignalDetector\l::registerActionClientRequest" alt="" coords="511,935,718,977"/>
+<area shape="rect" id="node31" href="$classsmacc_1_1ISmaccStateMachine.html#aacef10d3f0c509612114ff7b21a239d1" title="Used by the ISMaccActionClients when a new send goal is launched. " alt="" coords="809,750,1016,791"/>
+<area shape="rect" id="node39" href="$classsmacc_1_1SignalDetector.html#af455ae5187fc9405d790992060af647b" title="smacc::SignalDetector\l::finalizeRequest" alt="" coords="531,1079,698,1121"/>
+<area shape="rect" id="node21" href="$classsmacc_1_1SignalDetector.html#a6ab99d99cef8d101e39797a72daeb2b7" title="smacc::SignalDetector\l::postEvent" alt="" coords="829,935,996,977"/>
+<area shape="rect" id="node22" href="$classsmacc_1_1ISmaccStateMachine.html#ad80cdd7bbc9a9f3b221c625754fed1ed" title="smacc::ISmaccStateMachine\l::postEvent" alt="" coords="1066,917,1273,958"/>
+<area shape="rect" id="node23" href="$classsmacc_1_1ISmaccClient.html#a46cbc0d695214efe40d29247323bfc80" title="smacc::ISmaccClient\l::postEvent" alt="" coords="1361,898,1516,939"/>
+<area shape="rect" id="node24" href="$classsmacc_1_1ISmaccComponent.html#a687dead5b87a3b9781b9bf6ab0b7afa5" title="smacc::ISmaccComponent\l::postEvent" alt="" coords="1341,963,1536,1005"/>
+<area shape="rect" id="node25" href="$classsmacc_1_1SmaccState.html#ae0e035e2d4e60f4ad58f08f44261f26c" title="smacc::SmaccState\&lt;\l StNavigateForward1,\l SmDanceBot \&gt;::postEvent" alt="" coords="1339,1028,1538,1084"/>
+<area shape="rect" id="node26" href="$classsmacc_1_1ISmaccStateMachine.html#af79fbc17f064bba77e598f5e55a86200" title="smacc::ISmaccStateMachine\l::EStop" alt="" coords="1335,637,1542,678"/>
+<area shape="rect" id="node28" href="$classsmacc_1_1SmaccSubStateBehavior.html#a8538664f9828247727a27446112788a2" title="smacc::SmaccSubStateBehavior\l::postEvent" alt="" coords="1323,833,1555,874"/>
+<area shape="rect" id="node27" href="$structsmacc_1_1SmaccStateMachineBase.html#aa585d63332b29a61555468874b49aad3" title="smacc::SmaccStateMachine\lBase\&lt; SensorStateMachine,\l SensorState \&gt;::EStop" alt="" coords="1605,701,1811,757"/>
+<area shape="rect" id="node29" href="$classsmacc_1_1SensorTopic.html#a27fe3515e3981a5a393dea193902cbd0" title="smacc::SensorTopic\l\&lt; sensor_msgs::Temperature\l \&gt;::onEntry" alt="" coords="1603,825,1813,881"/>
+<area shape="rect" id="node32" href="$classsmacc_1_1ISmaccStateMachine.html#a8588f9e580fbb95b53e2bd2ca3ff1f98" title="smacc::ISmaccStateMachine\l::setGlobalSMData" alt="" coords="1066,702,1273,743"/>
+<area shape="rect" id="node33" href="$classsmacc_1_1ISmaccState.html#a120fcda41b44a437ff2e3906ac9fa5ca" title="smacc::ISmaccState\l::setGlobalSMData" alt="" coords="1361,702,1516,743"/>
+<area shape="rect" id="node35" href="$classSbNavigateGlobalPosition.html#a37b56e88ae4b01413c8fff19ee319769" title="SbNavigateGlobalPosition\l::goToRadialStart" alt="" coords="1345,571,1532,613"/>
+<area shape="rect" id="node37" href="$classNavigateGlobalPosition.html#a5181e70601da336334f25a95840fd878" title="NavigateGlobalPosition\l::goToRadialStart" alt="" coords="1354,767,1523,809"/>
+<area shape="rect" id="node36" href="$classSbNavigateGlobalPosition.html#ae4c1f2e5de1077ee88d506eb69099f0c" title="SbNavigateGlobalPosition\l::onEntry" alt="" coords="1615,571,1801,613"/>
+<area shape="rect" id="node38" href="$classNavigateGlobalPosition.html#a80962ce5bba51285565e360872f58c47" title="NavigateGlobalPosition\l::onEntry" alt="" coords="1623,637,1793,678"/>
+<area shape="rect" id="node40" href="$classsmacc_1_1SignalDetector.html#a9a116479e23259f3a5d5d4a47278afd5" title="smacc::SignalDetector\l::pollOnce" alt="" coords="829,1093,996,1134"/>
+<area shape="rect" id="node41" href="$classsmacc_1_1SignalDetector.html#a2665e66cdae9f6533c64bbcecf3fa199" title="smacc::SignalDetector\l::pollingLoop" alt="" coords="1086,1107,1253,1149"/>
+<area shape="rect" id="node42" href="$namespacesmacc.html#a47ac3b8d2968b1ba4152afd64ab66bd0" title="smacc::run" alt="" coords="1392,1173,1485,1200"/>
+<area shape="rect" id="node43" href="$classsmacc_1_1SignalDetector.html#a48b3fee853ddcb25732408b22ecfcf39" title="smacc::SignalDetector\l::runThread" alt="" coords="1355,1107,1522,1149"/>
+<area shape="rect" id="node45" href="$classsmacc_1_1SmaccSubStateBehavior.html#a7c28e1c46238bbb2c2e0450573c6de94" title="smacc::SmaccSubStateBehavior\l::onEntry" alt="" coords="499,1341,731,1382"/>
+<area shape="rect" id="node46" href="$classsmacc_1_1SmaccSubStateBehavior.html#a1f87ab55c1805b2a2fd9c022807d35b9" title="smacc::SmaccSubStateBehavior\l::onExit" alt="" coords="499,1275,731,1317"/>
+<area shape="rect" id="node48" href="$structsmacc_1_1SmaccStateMachineBase.html#a2dc1cd9a25b80f00602f1faab9b01e7b" title="smacc::SmaccStateMachine\lBase\&lt; SensorStateMachine,\l SensorState \&gt;::initiate_impl" alt="" coords="511,1501,718,1557"/>
+<area shape="rect" id="node49" href="$structsmacc_1_1SmaccStateMachineBase.html#a5c078ef0eec2c64ecd9a31b46341b13c" title="smacc::SmaccStateMachine\lBase\&lt; SensorStateMachine,\l SensorState \&gt;::recursivePublish\lStatus" alt="" coords="499,1582,731,1653"/>
+<area shape="rect" id="node50" href="$structsmacc_1_1SmaccStateMachineBase.html#afcee04fc4d307b31d7d0fac932d7d90f" title="smacc::SmaccStateMachine\lBase\&lt; SensorStateMachine,\l SensorState \&gt;::state_machine\l_visualization" alt="" coords="503,1406,727,1477"/>
+<area shape="rect" id="node54" href="$namespacesmacc.html#a097ffb8059d48bbe45ee8321e92e8878" title="smacc::processTransitions" alt="" coords="520,1677,709,1704"/>
+<area shape="rect" id="node56" href="$classsmacc_1_1Orthogonal.html#a098b5be0f89d0911afc44c10b756ef2a" title="smacc::Orthogonal::\lrequiresComponent" alt="" coords="1363,251,1514,293"/>
+<area shape="rect" id="node58" href="$classsmacc_1_1ISmaccState.html#afd5264c36403d22e124eea89a0122e59" title="smacc::ISmaccState\l::requiresComponent" alt="" coords="1360,375,1517,417"/>
+<area shape="rect" id="node59" href="$classsmacc_1_1SmaccSubStateBehavior.html#a9f31f62f886cc06017e92fa0d834b12d" title="smacc::SmaccSubStateBehavior\l::requiresComponent" alt="" coords="1323,441,1555,482"/>
+<area shape="rect" id="node57" href="$classNavigationOrthogonal.html#a1d9e825be23c75d7baf594a8c1f0fb74" title="NavigationOrthogonal\l::onInitialize" alt="" coords="1627,193,1789,234"/>
+<area shape="rect" id="node60" href="$classSbNavigateBackwards.html#a59b7bc4f0b714f548c73659c87dd405e" title="SbNavigateBackwards\l::onEntry" alt="" coords="1626,323,1790,365"/>
+<area shape="rect" id="node61" href="$classSbNavigateForward.html#a0e01d850ed0e028f3b9b3704862c7ea5" title="SbNavigateForward::\lonEntry" alt="" coords="1631,389,1785,430"/>
+<area shape="rect" id="node62" href="$classSbUndoPathBackwards.html#ab7eed4fa4633235b877758bd787bbea1" title="SbUndoPathBackwards\l::onEntry" alt="" coords="1623,454,1793,495"/>
+<area shape="rect" id="node63" href="$classNavigateForward.html#a2a1ad66b031773aeac11663020afebba" title="NavigateForward::onEntry" alt="" coords="1615,520,1801,547"/>
+<area shape="rect" id="node64" href="$classUndoPathBackwards.html#a073a69a9e7b89d38faaab47096df292c" title="UndoPathBackwards::\lonEntry" alt="" coords="1628,258,1788,299"/>
 </map>

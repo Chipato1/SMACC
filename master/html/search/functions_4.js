@@ -4,7 +4,6 @@ var searchData=
   ['declaretransition',['declareTransition',['../classsmacc_1_1SmaccStateInfo.html#ad5228fe261f574c95b82641699bbf9dd',1,'smacc::SmaccStateInfo']]],
   ['deep_5fconstruct',['deep_construct',['../classsmacc_1_1SmaccState.html#aac23d8a6909f75c5e5fca2a7c09b5368',1,'smacc::SmaccState']]],
   ['defaultbackwardcmd',['defaultBackwardCmd',['../classbackward__local__planner_1_1BackwardLocalPlanner.html#aeeb7c645f6965c3c400a948d74cdc7b1',1,'backward_local_planner::BackwardLocalPlanner']]],
-  ['definesbehavioralsmaccstate',['definesBehavioralSmaccState',['../classsmacc_1_1SmaccState.html#a419506333cbae1a43a3747e5c42a042d',1,'smacc::SmaccState']]],
   ['demangledtypename',['demangledTypeName',['../common_8h.html#ac3e1038dcfa388433ad35e76ce86c747',1,'common.h']]],
   ['demanglesymbol',['demangleSymbol',['../common_8h.html#a401d7e4f000fd4246a20be1e7d5ec2fc',1,'common.h']]],
   ['depth',['depth',['../classsmacc_1_1SmaccStateInfo.html#a2abede9fd08d8954c3e392a053d50533',1,'smacc::SmaccStateInfo']]],

@@ -125,8 +125,8 @@ Collaboration diagram for ToolStart:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a23b54807a3d839a08a6031e67b341a4f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classToolStart.html#a23b54807a3d839a08a6031e67b341a4f">onEntry</a> () override</td></tr>
 <tr class="separator:a23b54807a3d839a08a6031e67b341a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab258607079d47d3ef0da92c085020bd4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classToolStart.html#ab258607079d47d3ef0da92c085020bd4">onExit</a> () override</td></tr>
-<tr class="separator:ab258607079d47d3ef0da92c085020bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b4a19f3b344af4ff51551947f922be"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classToolStart.html#a20b4a19f3b344af4ff51551947f922be">onExit</a> () override</td></tr>
+<tr class="separator:a20b4a19f3b344af4ff51551947f922be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classsmacc_1_1SmaccSubStateBehavior"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsmacc_1_1SmaccSubStateBehavior')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classsmacc_1_1SmaccSubStateBehavior.html">smacc::SmaccSubStateBehavior</a></td></tr>
 <tr class="memitem:abc902f4fa003071f759a2255b276fb90 inherit pub_methods_classsmacc_1_1SmaccSubStateBehavior"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccSubStateBehavior.html#abc902f4fa003071f759a2255b276fb90">SmaccSubStateBehavior</a> ()</td></tr>
 <tr class="separator:abc902f4fa003071f759a2255b276fb90 inherit pub_methods_classsmacc_1_1SmaccSubStateBehavior"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,7 +158,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="tool__start_8h_source.html#l00006">6</a> of file <a class="el" href="tool__start_8h_source.html">tool_start.h</a>.</p>
+<p>Definition at line <a class="el" href="tool__start_8h_source.html#l00005">5</a> of file <a class="el" href="tool__start_8h_source.html">tool_start.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a23b54807a3d839a08a6031e67b341a4f"></a>
 <div class="memitem">
@@ -183,10 +183,10 @@ Public Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classsmacc_1_1SmaccSubStateBehavior.html#a7c28e1c46238bbb2c2e0450573c6de94">smacc::SmaccSubStateBehavior</a>.</p>
 
-<p>Definition at line <a class="el" href="tool__start_8h_source.html#l00012">12</a> of file <a class="el" href="tool__start_8h_source.html">tool_start.h</a>.</p>
+<p>Definition at line <a class="el" href="tool__start_8h_source.html#l00011">11</a> of file <a class="el" href="tool__start_8h_source.html">tool_start.h</a>.</p>
 
 <p>References <a class="el" href="smacc__substate__behavior_8h_source.html#l00066">smacc::SmaccSubStateBehavior::requiresClient()</a>, and <a class="el" href="smacc__action__client__base_8h_source.html#l00069">smacc::SmaccActionClientBase&lt; ActionType &gt;::sendGoal()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;      this-&gt;<a class="code" href="classsmacc_1_1SmaccSubStateBehavior.html#ae8361a9e794b02f9f3d962b881e4fd7d">requiresClient</a>(<a class="code" href="classToolStart.html#ad9fabf93fd9edf374496393ad6733b27">toolActionClient_</a> );</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      smacc::SmaccToolActionClient::Goal goal;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      goal.command = smacc::SmaccToolActionClient::Goal::CMD_START;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      <a class="code" href="classToolStart.html#ad9fabf93fd9edf374496393ad6733b27">toolActionClient_</a>-&gt;<a class="code" href="classsmacc_1_1SmaccActionClientBase.html#a58c67a87c5fb8ea1633573c58fe3eee1">sendGoal</a>(goal);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div><div class="ttc" id="classToolStart_html_ad9fabf93fd9edf374496393ad6733b27"><div class="ttname"><a href="classToolStart.html#ad9fabf93fd9edf374496393ad6733b27">ToolStart::toolActionClient_</a></div><div class="ttdeci">smacc::SmaccToolActionClient * toolActionClient_</div><div class="ttdef"><b>Definition:</b> <a href="tool__start_8h_source.html#l00010">tool_start.h:10</a></div></div>
+<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    {</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      this-&gt;<a class="code" href="classsmacc_1_1SmaccSubStateBehavior.html#ae8361a9e794b02f9f3d962b881e4fd7d">requiresClient</a>(<a class="code" href="classToolStart.html#ad9fabf93fd9edf374496393ad6733b27">toolActionClient_</a> );</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      smacc::SmaccToolActionClient::Goal goal;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      goal.command = smacc::SmaccToolActionClient::Goal::CMD_START;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <a class="code" href="classToolStart.html#ad9fabf93fd9edf374496393ad6733b27">toolActionClient_</a>-&gt;<a class="code" href="classsmacc_1_1SmaccActionClientBase.html#a58c67a87c5fb8ea1633573c58fe3eee1">sendGoal</a>(goal);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    }</div><div class="ttc" id="classToolStart_html_ad9fabf93fd9edf374496393ad6733b27"><div class="ttname"><a href="classToolStart.html#ad9fabf93fd9edf374496393ad6733b27">ToolStart::toolActionClient_</a></div><div class="ttdeci">smacc::SmaccToolActionClient * toolActionClient_</div><div class="ttdef"><b>Definition:</b> <a href="tool__start_8h_source.html#l00009">tool_start.h:9</a></div></div>
 <div class="ttc" id="classsmacc_1_1SmaccActionClientBase_html_a58c67a87c5fb8ea1633573c58fe3eee1"><div class="ttname"><a href="classsmacc_1_1SmaccActionClientBase.html#a58c67a87c5fb8ea1633573c58fe3eee1">smacc::SmaccActionClientBase::sendGoal</a></div><div class="ttdeci">void sendGoal(Goal &amp;goal)</div><div class="ttdef"><b>Definition:</b> <a href="smacc__action__client__base_8h_source.html#l00069">smacc_action_client_base.h:69</a></div></div>
 <div class="ttc" id="classsmacc_1_1SmaccSubStateBehavior_html_ae8361a9e794b02f9f3d962b881e4fd7d"><div class="ttname"><a href="classsmacc_1_1SmaccSubStateBehavior.html#ae8361a9e794b02f9f3d962b881e4fd7d">smacc::SmaccSubStateBehavior::requiresClient</a></div><div class="ttdeci">void requiresClient(SmaccClientType *&amp;storage, bool verbose=false)</div><div class="ttdef"><b>Definition:</b> <a href="smacc__substate__behavior_8h_source.html#l00066">smacc_substate_behavior.h:66</a></div></div>
 </div><!-- fragment -->
@@ -205,7 +205,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ab258607079d47d3ef0da92c085020bd4"></a>
+<a class="anchor" id="a20b4a19f3b344af4ff51551947f922be"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -213,7 +213,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classbool.html">bool</a> ToolStart::onExit </td>
+          <td class="memname">virtual void ToolStart::onExit </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -226,10 +226,10 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classsmacc_1_1SmaccSubStateBehavior.html#ab78b9de76c04a7ab6c16d5924e216ef9">smacc::SmaccSubStateBehavior</a>.</p>
+<p>Reimplemented from <a class="el" href="classsmacc_1_1SmaccSubStateBehavior.html#a1f87ab55c1805b2a2fd9c022807d35b9">smacc::SmaccSubStateBehavior</a>.</p>
 
-<p>Definition at line <a class="el" href="tool__start_8h_source.html#l00021">21</a> of file <a class="el" href="tool__start_8h_source.html">tool_start.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <span class="comment">//ROS_INFO(&quot;Entering ToolSubstateBehavior&quot;);</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="tool__start_8h_source.html#l00020">20</a> of file <a class="el" href="tool__start_8h_source.html">tool_start.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="comment">//ROS_INFO(&quot;Entering ToolSubstateBehavior&quot;);</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -243,7 +243,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tool__start_8h_source.html#l00010">10</a> of file <a class="el" href="tool__start_8h_source.html">tool_start.h</a>.</p>
+<p>Definition at line <a class="el" href="tool__start_8h_source.html#l00009">9</a> of file <a class="el" href="tool__start_8h_source.html">tool_start.h</a>.</p>
 
 </div>
 </div>

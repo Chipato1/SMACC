@@ -137,8 +137,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5181e70601da336334f25a95840fd878"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f59ee188413d4f4b006549ba6d3d3f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNavigateGlobalPosition.html#a7f59ee188413d4f4b006549ba6d3d3f8">readStartPoseFromParameterServer</a> (smacc::SmaccMoveBaseActionClient::Goal &amp;goal)</td></tr>
 <tr class="separator:a7f59ee188413d4f4b006549ba6d3d3f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5e17638bdf3944631e81d901632bb72"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNavigateGlobalPosition.html#aa5e17638bdf3944631e81d901632bb72">onExit</a> ()</td></tr>
-<tr class="separator:aa5e17638bdf3944631e81d901632bb72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbf7d81439a8d13ed7ac5a22194be28c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNavigateGlobalPosition.html#afbf7d81439a8d13ed7ac5a22194be28c">onExit</a> () override</td></tr>
+<tr class="separator:afbf7d81439a8d13ed7ac5a22194be28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classsmacc_1_1SmaccSubStateBehavior"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsmacc_1_1SmaccSubStateBehavior')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classsmacc_1_1SmaccSubStateBehavior.html">smacc::SmaccSubStateBehavior</a></td></tr>
 <tr class="memitem:abc902f4fa003071f759a2255b276fb90 inherit pub_methods_classsmacc_1_1SmaccSubStateBehavior"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccSubStateBehavior.html#abc902f4fa003071f759a2255b276fb90">SmaccSubStateBehavior</a> ()</td></tr>
 <tr class="separator:abc902f4fa003071f759a2255b276fb90 inherit pub_methods_classsmacc_1_1SmaccSubStateBehavior"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -368,7 +368,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="aa5e17638bdf3944631e81d901632bb72"></a>
+<a class="anchor" id="afbf7d81439a8d13ed7ac5a22194be28c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -376,7 +376,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classbool.html">bool</a> NavigateGlobalPosition::onExit </td>
+          <td class="memname">virtual void NavigateGlobalPosition::onExit </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -384,12 +384,12 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classsmacc_1_1SmaccSubStateBehavior.html#ab78b9de76c04a7ab6c16d5924e216ef9">smacc::SmaccSubStateBehavior</a>.</p>
+<p>Reimplemented from <a class="el" href="classsmacc_1_1SmaccSubStateBehavior.html#a1f87ab55c1805b2a2fd9c022807d35b9">smacc::SmaccSubStateBehavior</a>.</p>
 
 <p>Definition at line <a class="el" href="navigate__global__position_8h_source.html#l00081">81</a> of file <a class="el" href="navigate__global__position_8h_source.html">navigate_global_position.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  { </div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    ROS_INFO(<span class="stringliteral">&quot;Exiting move goal Action Client&quot;</span>); </div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div></div><!-- fragment -->

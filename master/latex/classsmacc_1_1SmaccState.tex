@@ -71,11 +71,9 @@ virtual \hyperlink{classsmacc_1_1SmaccState_a41b2515faf76648c6d69fe09108d2691}{$
 \item 
 void \hyperlink{classsmacc_1_1SmaccState_a56ccdfaf818ed6409dcbd4ab8b01c60e}{throw\+Finish\+Event} ()
 \item 
-\hyperlink{classsmacc_1_1SmaccSubStateBehavior}{Smacc\+Sub\+State\+Behavior} $\ast$ \hyperlink{classsmacc_1_1SmaccState_a419506333cbae1a43a3747e5c42a042d}{defines\+Behavioral\+Smacc\+State} ()
+void \hyperlink{classsmacc_1_1SmaccState_a49e958861b6ddbe9468e39c1919fde92}{on\+Initialize} ()
 \item 
 void \hyperlink{classsmacc_1_1SmaccState_a4a10a74fdbe51a798b8d651668b8ed9a}{on\+Entry} ()
-\item 
-void \hyperlink{classsmacc_1_1SmaccState_a49e958861b6ddbe9468e39c1919fde92}{on\+Initialize} ()
 \item 
 void \hyperlink{classsmacc_1_1SmaccState_a82ca7c69153e86dc5eedf3f909560f3a}{on\+Exit} ()
 \end{DoxyCompactItemize}
@@ -123,21 +121,21 @@ Definition at line 16 of file smacc\+\_\+state\+\_\+base.\+h.
 \subsubsection[{\texorpdfstring{context\+\_\+ptr\+\_\+type}{context_ptr_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Most\+Derived, class Context, class Inner\+Initial = mpl\+::list$<$$>$, sc\+::history\+\_\+mode history\+Mode = sc\+::has\+\_\+no\+\_\+history$>$ typedef base\+\_\+type\+::context\+\_\+ptr\+\_\+type {\bf smacc\+::\+Smacc\+State}$<$ Most\+Derived, Context, Inner\+Initial, history\+Mode $>$\+::{\bf context\+\_\+ptr\+\_\+type}}\hypertarget{classsmacc_1_1SmaccState_a0e15b77514301039f6bc093a9d3f6425}{}\label{classsmacc_1_1SmaccState_a0e15b77514301039f6bc093a9d3f6425}
 
 
-Definition at line 202 of file smacc\+\_\+state\+\_\+base.\+h.
+Definition at line 181 of file smacc\+\_\+state\+\_\+base.\+h.
 
 \index{smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}!inner\+\_\+context\+\_\+ptr\+\_\+type@{inner\+\_\+context\+\_\+ptr\+\_\+type}}
 \index{inner\+\_\+context\+\_\+ptr\+\_\+type@{inner\+\_\+context\+\_\+ptr\+\_\+type}!smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}}
 \subsubsection[{\texorpdfstring{inner\+\_\+context\+\_\+ptr\+\_\+type}{inner_context_ptr_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Most\+Derived, class Context, class Inner\+Initial = mpl\+::list$<$$>$, sc\+::history\+\_\+mode history\+Mode = sc\+::has\+\_\+no\+\_\+history$>$ typedef base\+\_\+type\+::inner\+\_\+context\+\_\+ptr\+\_\+type {\bf smacc\+::\+Smacc\+State}$<$ Most\+Derived, Context, Inner\+Initial, history\+Mode $>$\+::{\bf inner\+\_\+context\+\_\+ptr\+\_\+type}}\hypertarget{classsmacc_1_1SmaccState_a65a772c2e2039e9a59148ba6ffb54d8a}{}\label{classsmacc_1_1SmaccState_a65a772c2e2039e9a59148ba6ffb54d8a}
 
 
-Definition at line 201 of file smacc\+\_\+state\+\_\+base.\+h.
+Definition at line 180 of file smacc\+\_\+state\+\_\+base.\+h.
 
 \index{smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}!inner\+\_\+initial\+\_\+list@{inner\+\_\+initial\+\_\+list}}
 \index{inner\+\_\+initial\+\_\+list@{inner\+\_\+initial\+\_\+list}!smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}}
 \subsubsection[{\texorpdfstring{inner\+\_\+initial\+\_\+list}{inner_initial_list}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Most\+Derived, class Context, class Inner\+Initial = mpl\+::list$<$$>$, sc\+::history\+\_\+mode history\+Mode = sc\+::has\+\_\+no\+\_\+history$>$ typedef base\+\_\+type\+::inner\+\_\+initial\+\_\+list {\bf smacc\+::\+Smacc\+State}$<$ Most\+Derived, Context, Inner\+Initial, history\+Mode $>$\+::{\bf inner\+\_\+initial\+\_\+list}}\hypertarget{classsmacc_1_1SmaccState_acb4ac84bce421d39b594510a6b2df558}{}\label{classsmacc_1_1SmaccState_acb4ac84bce421d39b594510a6b2df558}
 
 
-Definition at line 203 of file smacc\+\_\+state\+\_\+base.\+h.
+Definition at line 182 of file smacc\+\_\+state\+\_\+base.\+h.
 
 \index{smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}!my\+\_\+base@{my\+\_\+base}}
 \index{my\+\_\+base@{my\+\_\+base}!smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}}
@@ -151,7 +149,7 @@ Definition at line 29 of file smacc\+\_\+state\+\_\+base.\+h.
 \subsubsection[{\texorpdfstring{outermost\+\_\+context\+\_\+base\+\_\+type}{outermost_context_base_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Most\+Derived, class Context, class Inner\+Initial = mpl\+::list$<$$>$, sc\+::history\+\_\+mode history\+Mode = sc\+::has\+\_\+no\+\_\+history$>$ typedef base\+\_\+type\+::outermost\+\_\+context\+\_\+base\+\_\+type {\bf smacc\+::\+Smacc\+State}$<$ Most\+Derived, Context, Inner\+Initial, history\+Mode $>$\+::{\bf outermost\+\_\+context\+\_\+base\+\_\+type}}\hypertarget{classsmacc_1_1SmaccState_aaf76bbe2aa9dd73e3284605f84ab4b16}{}\label{classsmacc_1_1SmaccState_aaf76bbe2aa9dd73e3284605f84ab4b16}
 
 
-Definition at line 200 of file smacc\+\_\+state\+\_\+base.\+h.
+Definition at line 179 of file smacc\+\_\+state\+\_\+base.\+h.
 
 
 
@@ -216,26 +214,15 @@ Definition at line 58 of file smacc\+\_\+state\+\_\+base.\+h.
 79     this->\hyperlink{classsmacc_1_1SmaccState_abc2a2b5e635b0ba09fcb350710b20117}{updateCurrentState}(\textcolor{keyword}{true}, test); \textcolor{comment}{//<MostDerived>}
 80 
 81     this->\hyperlink{classsmacc_1_1ISmaccState_a0b6c531ca8c446052022308548f55b92}{setParam}(\textcolor{stringliteral}{"created"}, \textcolor{keyword}{true});
-82     \hyperlink{classsmacc_1_1ISmaccState_a224d00a92a71611daa800f45a6a0d47b}{stateBehavior} = \textcolor{keyword}{static\_cast<}MostDerived *\textcolor{keyword}{>}(\textcolor{keyword}{this})->
-      \hyperlink{classsmacc_1_1SmaccState_a419506333cbae1a43a3747e5c42a042d}{definesBehavioralSmaccState}();
-83 
-84     \textcolor{keyword}{static\_cast<}MostDerived *\textcolor{keyword}{>}(\textcolor{keyword}{this})->\hyperlink{classsmacc_1_1SmaccState_a49e958861b6ddbe9468e39c1919fde92}{onInitialize}();
-85 
-86     this->\hyperlink{classsmacc_1_1ISmaccState_a778ac422e3bb646b47814087abef2c3d}{configureStateBehavior}(\hyperlink{classsmacc_1_1ISmaccState_a224d00a92a71611daa800f45a6a0d47b}{stateBehavior});
-87 
-88     this->\hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_aab812187ecb452771e91f0003b257cd2}{notifyOnStateEntry}(\textcolor{keyword}{this});
-89 
-90     \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1ISmaccState_a224d00a92a71611daa800f45a6a0d47b}{stateBehavior} != \textcolor{keyword}{nullptr})
-91     \{
-92       \textcolor{comment}{//ROS\_INFO("Behavioral State");}
-93       \hyperlink{classsmacc_1_1ISmaccState_a224d00a92a71611daa800f45a6a0d47b}{stateBehavior}->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a7c28e1c46238bbb2c2e0450573c6de94}{onEntry}();
-94     \}
-95     \textcolor{keywordflow}{else}
-96     \{
-97       \textcolor{comment}{//ROS\_INFO("Not behavioral State");}
-98       \textcolor{keyword}{static\_cast<}MostDerived *\textcolor{keyword}{>}(\textcolor{keyword}{this})->\hyperlink{classsmacc_1_1SmaccState_a4a10a74fdbe51a798b8d651668b8ed9a}{onEntry}();
-99     \}
-100   \}
+82 
+83     \textcolor{keyword}{static\_cast<}MostDerived *\textcolor{keyword}{>}(\textcolor{keyword}{this})->\hyperlink{classsmacc_1_1SmaccState_a49e958861b6ddbe9468e39c1919fde92}{onInitialize}();
+84 
+85     this->\hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_aab812187ecb452771e91f0003b257cd2}{notifyOnStateEntry}(\textcolor{keyword}{this});
+86 
+87     \textcolor{comment}{//ROS\_INFO("Not behavioral State");}
+88     \textcolor{keyword}{static\_cast<}MostDerived *\textcolor{keyword}{>}(\textcolor{keyword}{this})->\hyperlink{classsmacc_1_1SmaccState_a4a10a74fdbe51a798b8d651668b8ed9a}{onEntry}();
+89     
+90   \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}!````~Smacc\+State@{$\sim$\+Smacc\+State}}
 \index{````~Smacc\+State@{$\sim$\+Smacc\+State}!smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}}
@@ -246,30 +233,23 @@ Definition at line 58 of file smacc\+\_\+state\+\_\+base.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1SmaccState_a41b2515faf76648c6d69fe09108d2691}{}\label{classsmacc_1_1SmaccState_a41b2515faf76648c6d69fe09108d2691}
 
 
-Definition at line 135 of file smacc\+\_\+state\+\_\+base.\+h.
+Definition at line 125 of file smacc\+\_\+state\+\_\+base.\+h.
 
 
 \begin{DoxyCode}
-136   \{
-137     \textcolor{keyword}{auto} fullname = \hyperlink{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{demangleSymbol}(\textcolor{keyword}{typeid}(MostDerived).name());
-138     ROS\_WARN\_STREAM(\textcolor{stringliteral}{"exiting state: "} << fullname);
-139 
-140     this->\hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_a9c499f2e3df95a9f72731d2d0d1de0e6}{notifyOnStateExit}(\textcolor{keyword}{this});
-141 
-142     \textcolor{keywordflow}{if} (this->\hyperlink{classsmacc_1_1ISmaccState_a224d00a92a71611daa800f45a6a0d47b}{stateBehavior} != \textcolor{keyword}{nullptr})
-143     \{
-144       \hyperlink{classsmacc_1_1ISmaccState_a224d00a92a71611daa800f45a6a0d47b}{stateBehavior}->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_ab78b9de76c04a7ab6c16d5924e216ef9}{onExit}();
-145     \}
-146     \textcolor{keywordflow}{else}
-147     \{
-148       \textcolor{comment}{//this->updateCurrentState<MostDerived>(false);}
-149       \textcolor{keyword}{static\_cast<}MostDerived *\textcolor{keyword}{>}(\textcolor{keyword}{this})->\hyperlink{classsmacc_1_1SmaccState_a82ca7c69153e86dc5eedf3f909560f3a}{onExit}();
-150     \}
-151 
-152     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"throwing finish event "} << fullname);
-153     this->\hyperlink{classsmacc_1_1SmaccState_a56ccdfaf818ed6409dcbd4ab8b01c60e}{throwFinishEvent}();
-154     ROS\_WARN\_STREAM(\textcolor{stringliteral}{"state exit: "} << fullname);
-155   \}
+126   \{
+127     \textcolor{keyword}{auto} fullname = \hyperlink{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{demangleSymbol}(\textcolor{keyword}{typeid}(MostDerived).name());
+128     ROS\_WARN\_STREAM(\textcolor{stringliteral}{"exiting state: "} << fullname);
+129 
+130     this->\hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_a9c499f2e3df95a9f72731d2d0d1de0e6}{notifyOnStateExit}(\textcolor{keyword}{this});
+131 
+132     \textcolor{comment}{//this->updateCurrentState<MostDerived>(false);}
+133     \textcolor{keyword}{static\_cast<}MostDerived *\textcolor{keyword}{>}(\textcolor{keyword}{this})->\hyperlink{classsmacc_1_1SmaccState_a82ca7c69153e86dc5eedf3f909560f3a}{onExit}();    
+134 
+135     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"throwing finish event "} << fullname);
+136     this->\hyperlink{classsmacc_1_1SmaccState_a56ccdfaf818ed6409dcbd4ab8b01c60e}{throwFinishEvent}();
+137     ROS\_WARN\_STREAM(\textcolor{stringliteral}{"state exit: "} << fullname);
+138   \}
 \end{DoxyCode}
 
 
@@ -284,7 +264,7 @@ Definition at line 135 of file smacc\+\_\+state\+\_\+base.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classsmacc_1_1SmaccState_aac23d8a6909f75c5e5fca2a7c09b5368}{}\label{classsmacc_1_1SmaccState_aac23d8a6909f75c5e5fca2a7c09b5368}
 
 
-Definition at line 212 of file smacc\+\_\+state\+\_\+base.\+h.
+Definition at line 191 of file smacc\+\_\+state\+\_\+base.\+h.
 
 
 
@@ -292,12 +272,12 @@ Referenced by smacc\+::\+Smacc\+State$<$ St\+Navigate\+Forward1, Sm\+Dance\+Bot 
 
 
 \begin{DoxyCode}
-215   \{
-216     \textcolor{keyword}{const} \hyperlink{classsmacc_1_1SmaccState_a65a772c2e2039e9a59148ba6ffb54d8a}{inner\_context\_ptr\_type} pInnerContext(
-217         \hyperlink{classsmacc_1_1SmaccState_a1dccb401e1a99031863a21a590d953e6}{shallow\_construct}(pContext, outermostContextBase));
-218     base\_type::template deep\_construct\_inner<inner\_initial\_list>(
-219         pInnerContext, outermostContextBase);
-220   \}
+194   \{
+195     \textcolor{keyword}{const} \hyperlink{classsmacc_1_1SmaccState_a65a772c2e2039e9a59148ba6ffb54d8a}{inner\_context\_ptr\_type} pInnerContext(
+196         \hyperlink{classsmacc_1_1SmaccState_a1dccb401e1a99031863a21a590d953e6}{shallow\_construct}(pContext, outermostContextBase));
+197     base\_type::template deep\_construct\_inner<inner\_initial\_list>(
+198         pInnerContext, outermostContextBase);
+199   \}
 \end{DoxyCode}
 
 
@@ -311,39 +291,6 @@ Here is the caller graph for this function\+:
 \end{figure}
 
 
-\index{smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}!defines\+Behavioral\+Smacc\+State@{defines\+Behavioral\+Smacc\+State}}
-\index{defines\+Behavioral\+Smacc\+State@{defines\+Behavioral\+Smacc\+State}!smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}}
-\subsubsection[{\texorpdfstring{defines\+Behavioral\+Smacc\+State()}{definesBehavioralSmaccState()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Most\+Derived, class Context, class Inner\+Initial = mpl\+::list$<$$>$, sc\+::history\+\_\+mode history\+Mode = sc\+::has\+\_\+no\+\_\+history$>$ {\bf Smacc\+Sub\+State\+Behavior}$\ast$ {\bf smacc\+::\+Smacc\+State}$<$ Most\+Derived, Context, Inner\+Initial, history\+Mode $>$\+::defines\+Behavioral\+Smacc\+State (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccState_a419506333cbae1a43a3747e5c42a042d}{}\label{classsmacc_1_1SmaccState_a419506333cbae1a43a3747e5c42a042d}
-
-
-Definition at line 171 of file smacc\+\_\+state\+\_\+base.\+h.
-
-
-
-Referenced by smacc\+::\+Smacc\+State$<$ St\+Navigate\+Forward1, Sm\+Dance\+Bot $>$\+::\+Smacc\+State().
-
-
-\begin{DoxyCode}
-172   \{
-173     \textcolor{keywordflow}{return} \textcolor{keyword}{nullptr};
-174   \}
-\end{DoxyCode}
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classsmacc_1_1SmaccState_a419506333cbae1a43a3747e5c42a042d_icgraph}
-\end{center}
-\end{figure}
-
-
 \index{smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}!get\+Full\+Name@{get\+Full\+Name}}
 \index{get\+Full\+Name@{get\+Full\+Name}!smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}}
 \subsubsection[{\texorpdfstring{get\+Full\+Name()}{getFullName()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Most\+Derived, class Context, class Inner\+Initial = mpl\+::list$<$$>$, sc\+::history\+\_\+mode history\+Mode = sc\+::has\+\_\+no\+\_\+history$>$ std\+::string {\bf smacc\+::\+Smacc\+State}$<$ Most\+Derived, Context, Inner\+Initial, history\+Mode $>$\+::get\+Full\+Name (
@@ -353,13 +300,13 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccState_a897dbdfe52a8b944d4bf1844ddcc3aa5}{}\label{classsmacc_1_1SmaccState_a897dbdfe52a8b944d4bf1844ddcc3aa5}
 
 
-Definition at line 125 of file smacc\+\_\+state\+\_\+base.\+h.
+Definition at line 115 of file smacc\+\_\+state\+\_\+base.\+h.
 
 
 \begin{DoxyCode}
-126   \{
-127     \textcolor{keywordflow}{return} \hyperlink{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{demangleSymbol}(\textcolor{keyword}{typeid}(MostDerived).name());
-128   \}
+116   \{
+117     \textcolor{keywordflow}{return} \hyperlink{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{demangleSymbol}(\textcolor{keyword}{typeid}(MostDerived).name());
+118   \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}!get\+Full\+Path\+Name@{get\+Full\+Path\+Name}}
 \index{get\+Full\+Path\+Name@{get\+Full\+Path\+Name}!smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}}
@@ -370,23 +317,23 @@ Definition at line 125 of file smacc\+\_\+state\+\_\+base.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccState_a1a2ae90b80ba8ca88b4b9b66972abfbd}{}\label{classsmacc_1_1SmaccState_a1a2ae90b80ba8ca88b4b9b66972abfbd}
 
 
-Definition at line 110 of file smacc\+\_\+state\+\_\+base.\+h.
+Definition at line 100 of file smacc\+\_\+state\+\_\+base.\+h.
 
 
 \begin{DoxyCode}
-111   \{
-112     \textcolor{keyword}{auto} smInfo = this->\hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_a5ec3201cbddab4f062f572fb33021041}{info\_};
-113 
-114     \textcolor{keyword}{auto} \hyperlink{namespacekeyboard__node_aec12217d2be0bbc768f52b63b0673925}{key} = \textcolor{keyword}{typeid}(MostDerived).name();
-115     \textcolor{keywordflow}{if} (smInfo->states.count(\hyperlink{namespacekeyboard__node_aec12217d2be0bbc768f52b63b0673925}{key}))
-116     \{
-117       \textcolor{keywordflow}{return} smInfo->states[\hyperlink{namespacekeyboard__node_aec12217d2be0bbc768f52b63b0673925}{key}]->getFullPath();
-118     \}
-119     \textcolor{keywordflow}{else}
-120     \{
-121       \textcolor{keywordflow}{return} \textcolor{stringliteral}{"UnknownFullPath"};
-122     \}
-123   \}
+101   \{
+102     \textcolor{keyword}{auto} smInfo = this->\hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_a5ec3201cbddab4f062f572fb33021041}{info\_};
+103 
+104     \textcolor{keyword}{auto} \hyperlink{namespacekeyboard__node_aec12217d2be0bbc768f52b63b0673925}{key} = \textcolor{keyword}{typeid}(MostDerived).name();
+105     \textcolor{keywordflow}{if} (smInfo->states.count(\hyperlink{namespacekeyboard__node_aec12217d2be0bbc768f52b63b0673925}{key}))
+106     \{
+107       \textcolor{keywordflow}{return} smInfo->states[\hyperlink{namespacekeyboard__node_aec12217d2be0bbc768f52b63b0673925}{key}]->getFullPath();
+108     \}
+109     \textcolor{keywordflow}{else}
+110     \{
+111       \textcolor{keywordflow}{return} \textcolor{stringliteral}{"UnknownFullPath"};
+112     \}
+113   \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}!get\+Global\+S\+M\+Data@{get\+Global\+S\+M\+Data}}
 \index{get\+Global\+S\+M\+Data@{get\+Global\+S\+M\+Data}!smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}}
@@ -415,13 +362,13 @@ Definition at line 32 of file smacc\+\_\+state\+\_\+base.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccState_a4db028a85244653e48957d2b3371413d}{}\label{classsmacc_1_1SmaccState_a4db028a85244653e48957d2b3371413d}
 
 
-Definition at line 130 of file smacc\+\_\+state\+\_\+base.\+h.
+Definition at line 120 of file smacc\+\_\+state\+\_\+base.\+h.
 
 
 \begin{DoxyCode}
-131   \{
-132     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_a09b297b1cdb9aae93a958f323431464a}{cleanShortTypeName}(\textcolor{keyword}{typeid}(MostDerived));
-133   \}
+121   \{
+122     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_a09b297b1cdb9aae93a958f323431464a}{cleanShortTypeName}(\textcolor{keyword}{typeid}(MostDerived));
+123   \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}!get\+State\+Machine@{get\+State\+Machine}}
 \index{get\+State\+Machine@{get\+State\+Machine}!smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}}
@@ -469,13 +416,13 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classsmacc_1_1SmaccState_af4b4635d16a32bdd3956e5d40ddbd01d}{}\label{classsmacc_1_1SmaccState_af4b4635d16a32bdd3956e5d40ddbd01d}
 
 
-Definition at line 205 of file smacc\+\_\+state\+\_\+base.\+h.
+Definition at line 184 of file smacc\+\_\+state\+\_\+base.\+h.
 
 
 \begin{DoxyCode}
-207   \{
-208     \hyperlink{classsmacc_1_1SmaccState_aac23d8a6909f75c5e5fca2a7c09b5368}{deep\_construct}(&outermostContextBase, outermostContextBase);
-209   \}
+186   \{
+187     \hyperlink{classsmacc_1_1SmaccState_aac23d8a6909f75c5e5fca2a7c09b5368}{deep\_construct}(&outermostContextBase, outermostContextBase);
+188   \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}!on\+Entry@{on\+Entry}}
 \index{on\+Entry@{on\+Entry}!smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}}
@@ -486,7 +433,7 @@ Definition at line 205 of file smacc\+\_\+state\+\_\+base.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccState_a4a10a74fdbe51a798b8d651668b8ed9a}{}\label{classsmacc_1_1SmaccState_a4a10a74fdbe51a798b8d651668b8ed9a}
 
 
-Definition at line 178 of file smacc\+\_\+state\+\_\+base.\+h.
+Definition at line 163 of file smacc\+\_\+state\+\_\+base.\+h.
 
 
 
@@ -494,8 +441,8 @@ Referenced by smacc\+::\+Smacc\+State$<$ St\+Navigate\+Forward1, Sm\+Dance\+Bot 
 
 
 \begin{DoxyCode}
-179   \{
-180   \}
+164   \{
+165   \}
 \end{DoxyCode}
 
 
@@ -518,7 +465,7 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccState_a82ca7c69153e86dc5eedf3f909560f3a}{}\label{classsmacc_1_1SmaccState_a82ca7c69153e86dc5eedf3f909560f3a}
 
 
-Definition at line 190 of file smacc\+\_\+state\+\_\+base.\+h.
+Definition at line 169 of file smacc\+\_\+state\+\_\+base.\+h.
 
 
 
@@ -526,8 +473,8 @@ Referenced by smacc\+::\+Smacc\+State$<$ St\+Navigate\+Forward1, Sm\+Dance\+Bot 
 
 
 \begin{DoxyCode}
-191   \{
-192   \}
+170   \{
+171   \}
 \end{DoxyCode}
 
 
@@ -550,7 +497,7 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccState_a49e958861b6ddbe9468e39c1919fde92}{}\label{classsmacc_1_1SmaccState_a49e958861b6ddbe9468e39c1919fde92}
 
 
-Definition at line 184 of file smacc\+\_\+state\+\_\+base.\+h.
+Definition at line 157 of file smacc\+\_\+state\+\_\+base.\+h.
 
 
 
@@ -558,8 +505,8 @@ Referenced by smacc\+::\+Smacc\+State$<$ St\+Navigate\+Forward1, Sm\+Dance\+Bot 
 
 
 \begin{DoxyCode}
-185   \{
-186   \}
+158   \{
+159   \}
 \end{DoxyCode}
 
 
@@ -582,7 +529,7 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccState_ae0e035e2d4e60f4ad58f08f44261f26c}{}\label{classsmacc_1_1SmaccState_ae0e035e2d4e60f4ad58f08f44261f26c}
 
 
-Definition at line 158 of file smacc\+\_\+state\+\_\+base.\+h.
+Definition at line 141 of file smacc\+\_\+state\+\_\+base.\+h.
 
 
 
@@ -590,9 +537,9 @@ Referenced by smacc\+::\+Smacc\+State$<$ St\+Navigate\+Forward1, Sm\+Dance\+Bot 
 
 
 \begin{DoxyCode}
-159   \{
-160     \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_ad80cdd7bbc9a9f3b221c625754fed1ed}{postEvent}(ev);
-161   \}
+142   \{
+143     \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_ad80cdd7bbc9a9f3b221c625754fed1ed}{postEvent}(ev);
+144   \}
 \end{DoxyCode}
 
 
@@ -654,7 +601,7 @@ Definition at line 39 of file smacc\+\_\+state\+\_\+base.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classsmacc_1_1SmaccState_a1dccb401e1a99031863a21a590d953e6}{}\label{classsmacc_1_1SmaccState_a1dccb401e1a99031863a21a590d953e6}
 
 
-Definition at line 222 of file smacc\+\_\+state\+\_\+base.\+h.
+Definition at line 201 of file smacc\+\_\+state\+\_\+base.\+h.
 
 
 
@@ -662,12 +609,12 @@ Referenced by smacc\+::\+Smacc\+State$<$ St\+Navigate\+Forward1, Sm\+Dance\+Bot 
 
 
 \begin{DoxyCode}
-225   \{
-226     \textcolor{keyword}{const} \hyperlink{classsmacc_1_1SmaccState_a65a772c2e2039e9a59148ba6ffb54d8a}{inner\_context\_ptr\_type} pInnerContext(
-227         \textcolor{keyword}{new} MostDerived(\hyperlink{common_8h_af2dcacead80d69b96952496fe413bbfe}{my\_context}(pContext)));
-228     outermostContextBase.add(pInnerContext);
-229     \textcolor{keywordflow}{return} pInnerContext;
-230   \}
+204   \{
+205     \textcolor{keyword}{const} \hyperlink{classsmacc_1_1SmaccState_a65a772c2e2039e9a59148ba6ffb54d8a}{inner\_context\_ptr\_type} pInnerContext(
+206         \textcolor{keyword}{new} MostDerived(\hyperlink{common_8h_af2dcacead80d69b96952496fe413bbfe}{my\_context}(pContext)));
+207     outermostContextBase.add(pInnerContext);
+208     \textcolor{keywordflow}{return} pInnerContext;
+209   \}
 \end{DoxyCode}
 
 
@@ -690,7 +637,7 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccState_a56ccdfaf818ed6409dcbd4ab8b01c60e}{}\label{classsmacc_1_1SmaccState_a56ccdfaf818ed6409dcbd4ab8b01c60e}
 
 
-Definition at line 163 of file smacc\+\_\+state\+\_\+base.\+h.
+Definition at line 146 of file smacc\+\_\+state\+\_\+base.\+h.
 
 
 
@@ -698,11 +645,11 @@ Referenced by smacc\+::\+Smacc\+State$<$ St\+Navigate\+Forward1, Sm\+Dance\+Bot 
 
 
 \begin{DoxyCode}
-164   \{
-165     \textcolor{keyword}{auto} *finishEvent = \textcolor{keyword}{new} EvStateFinish<MostDerived>();
-166     finishEvent->state = \textcolor{keyword}{static\_cast<}MostDerived *\textcolor{keyword}{>}(\textcolor{keyword}{this});
-167     this->\hyperlink{classsmacc_1_1SmaccState_ae0e035e2d4e60f4ad58f08f44261f26c}{postEvent}(finishEvent);
-168   \}
+147   \{
+148     \textcolor{keyword}{auto} *finishEvent = \textcolor{keyword}{new} EvStateFinish<MostDerived>();
+149     finishEvent->state = \textcolor{keyword}{static\_cast<}MostDerived *\textcolor{keyword}{>}(\textcolor{keyword}{this});
+150     this->\hyperlink{classsmacc_1_1SmaccState_ae0e035e2d4e60f4ad58f08f44261f26c}{postEvent}(finishEvent);
+151   \}
 \end{DoxyCode}
 
 
@@ -726,7 +673,7 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccState_abc2a2b5e635b0ba09fcb350710b20117}{}\label{classsmacc_1_1SmaccState_abc2a2b5e635b0ba09fcb350710b20117}
 
 
-Definition at line 103 of file smacc\+\_\+state\+\_\+base.\+h.
+Definition at line 93 of file smacc\+\_\+state\+\_\+base.\+h.
 
 
 
@@ -734,9 +681,9 @@ Referenced by smacc\+::\+Smacc\+State$<$ St\+Navigate\+Forward1, Sm\+Dance\+Bot 
 
 
 \begin{DoxyCode}
-104   \{
-105     base\_type::outermost\_context().updateCurrentState(active, test);
-106   \}
+94   \{
+95     base\_type::outermost\_context().updateCurrentState(active, test);
+96   \}
 \end{DoxyCode}
 
 
@@ -758,7 +705,7 @@ Here is the caller graph for this function\+:
 \subsubsection[{\texorpdfstring{smacc\+\_\+inner\+\_\+type}{smacc_inner_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Most\+Derived, class Context, class Inner\+Initial = mpl\+::list$<$$>$, sc\+::history\+\_\+mode history\+Mode = sc\+::has\+\_\+no\+\_\+history$>$ Inner\+Initial$\ast$ {\bf smacc\+::\+Smacc\+State}$<$ Most\+Derived, Context, Inner\+Initial, history\+Mode $>$\+::smacc\+\_\+inner\+\_\+type}\hypertarget{classsmacc_1_1SmaccState_a087d0f66729b98614feb8c59ea548af1}{}\label{classsmacc_1_1SmaccState_a087d0f66729b98614feb8c59ea548af1}
 
 
-Definition at line 108 of file smacc\+\_\+state\+\_\+base.\+h.
+Definition at line 98 of file smacc\+\_\+state\+\_\+base.\+h.
 
 
 

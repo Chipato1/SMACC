@@ -1,8 +1,8 @@
 <map id="smacc::SmaccActionClientBase::sendGoal" name="smacc::SmaccActionClientBase::sendGoal">
 <area shape="rect" id="node2" href="$classNavigateGlobalPosition.html#a5181e70601da336334f25a95840fd878" title="NavigateGlobalPosition\l::goToRadialStart" alt="" coords="254,5,423,47"/>
 <area shape="rect" id="node4" href="$classSbNavigateGlobalPosition.html#a37b56e88ae4b01413c8fff19ee319769" title="SbNavigateGlobalPosition\l::goToRadialStart" alt="" coords="245,71,432,112"/>
-<area shape="rect" id="node6" href="$classSbToolStop.html#a411f6a864d2d70be43bdedc0c7ce77ac" title="SbToolStop::onEntry" alt="" coords="263,137,414,163"/>
-<area shape="rect" id="node7" href="$classToolStop.html#a1db01a6b333c6570cbad3495a483d452" title="ToolStop::onEntry" alt="" coords="272,187,405,214"/>
+<area shape="rect" id="node6" href="$classToolStop.html#a1db01a6b333c6570cbad3495a483d452" title="ToolStop::onEntry" alt="" coords="272,137,405,163"/>
+<area shape="rect" id="node7" href="$classSbToolStop.html#a411f6a864d2d70be43bdedc0c7ce77ac" title="SbToolStop::onEntry" alt="" coords="263,187,414,214"/>
 <area shape="rect" id="node8" href="$classToolStart.html#a23b54807a3d839a08a6031e67b341a4f" title="ToolStart::onEntry" alt="" coords="271,238,406,265"/>
 <area shape="rect" id="node9" href="$classSbToolStart.html#a1f027da301c03b5114fc241c820dd56a" title="SbToolStart::onEntry" alt="" coords="263,289,415,315"/>
 <area shape="rect" id="node10" href="$classSbUndoPathBackwards.html#ab7eed4fa4633235b877758bd787bbea1" title="SbUndoPathBackwards\l::onEntry" alt="" coords="254,340,423,381"/>

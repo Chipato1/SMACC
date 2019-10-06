@@ -1,5 +1,5 @@
 <map id="smacc::SmaccSubStateBehavior" name="smacc::SmaccSubStateBehavior">
-<area shape="rect" id="node2" href="$classdance__bot_1_1SbKeyboard.html" title="{dance_bot::SbKeyboard\n|+ keyboardClient_\l+ c_\l|+ onEntry()\l+ onExit()\l+ OnKeyPress()\l+ postKeyEvent()\l}" alt="" coords="5,301,179,437"/>
+<area shape="rect" id="node2" href="$classdance__bot_1_1SbKeyboard.html" title="{dance_bot::SbKeyboard\n|+ keyboardClient_\l+ c_\l|+ onEntry()\l+ OnKeyPress()\l+ postKeyEvent()\l}" alt="" coords="5,308,179,429"/>
 <area shape="rect" id="node3" href="$classNavigateForward.html" title="{NavigateForward\n|+ forwardDistance\l+ forwardSpeed\l+ listener\l+ moveBaseClient_\l+ odomTracker_\l|+ NavigateForward()\l+ NavigateForward()\l+ onEntry()\l}" alt="" coords="203,286,357,451"/>
 <area shape="rect" id="node4" href="$classNavigateGlobalPosition.html" title="{NavigateGlobalPosition\n|+ initialPoint\l&#45; moveBaseClient_\l&#45; odomTracker_\l|+ NavigateGlobalPosition()\l+ NavigateGlobalPosition()\l+ onEntry()\l+ goToRadialStart()\l+ readStartPoseFromParameter\lServer()\l+ onExit()\l}" alt="" coords="382,271,610,466"/>
 <area shape="rect" id="node5" href="$classRotate.html" title="{Rotate\n|+ listener\l+ moveBaseClient_\l+ rotateDegree\l|+ Rotate()\l+ Rotate()\l+ onEntry()\l}" alt="" coords="634,301,782,437"/>
