@@ -42,12 +42,16 @@ sc\+::result \hyperlink{structStNavigateToWaypointsX_ab9973901dfb0db2035223ec81d
 \item 
 sc\+::result \hyperlink{structStNavigateToWaypointsX_aa2d1a8c49b4c3227201eb300e21e53c1}{react} (const Ev\+Key\+PressP$<$ Sb\+Keyboard $>$ \&ev)
 \end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{structStNavigateToWaypointsX_a0698c15b3241c4aa15a4f5380365e72d}{on\+Definition} ()
+\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classint}{int} \hyperlink{structStNavigateToWaypointsX_a2f597fd0ee0258ef66506e98d55e8060}{current\+Iteration}
 \end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -77,58 +81,76 @@ Definition at line 62 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structStNavigateToWaypointsX_a0df2892ed95cae253b2ae0c09c850268}{}\label{structStNavigateToWaypointsX_a0df2892ed95cae253b2ae0c09c850268}
 
 
-Definition at line 101 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h.
+Definition at line 106 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h.
 
 
 \begin{DoxyCode}
-102   \{
-103     \textcolor{keywordflow}{switch} (\hyperlink{structStNavigateToWaypointsX_a2f597fd0ee0258ef66506e98d55e8060}{currentIteration})
-104     \{
-105     \textcolor{keywordflow}{case} 1:
-106     \{
-107       ROS\_INFO(\textcolor{stringliteral}{"transition to ss1"});
-108       \textcolor{keyword}{auto} ev1 = \textcolor{keyword}{new} \hyperlink{structEvWaypoint1}{EvWaypoint1}();
-109       this->\hyperlink{classsmacc_1_1SmaccState_ae0e035e2d4e60f4ad58f08f44261f26c}{postEvent}(ev1);
-110     \}
-111     \textcolor{keywordflow}{break};
-112       \textcolor{comment}{//return transit<SS1::SsRadialPattern1>();}
-113     \textcolor{keywordflow}{case} 2:
-114     \{
-115       ROS\_INFO(\textcolor{stringliteral}{"transition to ss2"});
-116       \textcolor{keyword}{auto} ev2 = \textcolor{keyword}{new} \hyperlink{structEvWaypoint2}{EvWaypoint2}();
-117       this->\hyperlink{classsmacc_1_1SmaccState_ae0e035e2d4e60f4ad58f08f44261f26c}{postEvent}(ev2);
-118     \}
-119     \textcolor{keywordflow}{break};
-120       \textcolor{comment}{//return transit<SS2::SsRadialPattern2>();}
-121     \textcolor{keywordflow}{case} 3:
-122     \{
-123       ROS\_INFO(\textcolor{stringliteral}{"transition to ss3"});
-124       \textcolor{keyword}{auto} ev3 = \textcolor{keyword}{new} \hyperlink{structEvWaypoint3}{EvWaypoint3}();
-125       this->\hyperlink{classsmacc_1_1SmaccState_ae0e035e2d4e60f4ad58f08f44261f26c}{postEvent}(ev3);
-126     \}
-127     \textcolor{keywordflow}{break};
-128     \textcolor{keywordflow}{case} 4:
-129     \{
-130       ROS\_INFO(\textcolor{stringliteral}{"transition to ss4"});
-131       \textcolor{keyword}{auto} ev4 = \textcolor{keyword}{new} \hyperlink{structEvWaypoint4}{EvWaypoint4}();
-132       this->\hyperlink{classsmacc_1_1SmaccState_ae0e035e2d4e60f4ad58f08f44261f26c}{postEvent}(ev4);
-133     \}
-134     \textcolor{keywordflow}{break};
-135     \textcolor{keywordflow}{case} 5:
-136     \{
-137       ROS\_INFO(\textcolor{stringliteral}{"transition to ss5"});
-138       \textcolor{keyword}{auto} ev5 = \textcolor{keyword}{new} \hyperlink{structEvWaypoint5}{EvWaypoint5}();
-139       this->\hyperlink{classsmacc_1_1SmaccState_ae0e035e2d4e60f4ad58f08f44261f26c}{postEvent}(ev5);
-140     \}
-141     \textcolor{keywordflow}{break};
-142       \textcolor{comment}{//return transit<SS3::SsRadialPattern3>();}
-143     \textcolor{keywordflow}{default}:
-144       ROS\_INFO(\textcolor{stringliteral}{"error in transition"});
-145       \textcolor{keywordflow}{break};
-146     \}
-147 
-148     \textcolor{keywordflow}{return} forward\_event();
-149   \}
+107   \{
+108     \textcolor{keywordflow}{switch} (\hyperlink{structStNavigateToWaypointsX_a2f597fd0ee0258ef66506e98d55e8060}{currentIteration})
+109     \{
+110     \textcolor{keywordflow}{case} 1:
+111     \{
+112       ROS\_INFO(\textcolor{stringliteral}{"transition to ss1"});
+113       \textcolor{keyword}{auto} ev1 = \textcolor{keyword}{new} \hyperlink{structEvWaypoint1}{EvWaypoint1}();
+114       this->\hyperlink{classsmacc_1_1SmaccState_ae0e035e2d4e60f4ad58f08f44261f26c}{postEvent}(ev1);
+115     \}
+116     \textcolor{keywordflow}{break};
+117       \textcolor{comment}{//return transit<SS1::SsRadialPattern1>();}
+118     \textcolor{keywordflow}{case} 2:
+119     \{
+120       ROS\_INFO(\textcolor{stringliteral}{"transition to ss2"});
+121       \textcolor{keyword}{auto} ev2 = \textcolor{keyword}{new} \hyperlink{structEvWaypoint2}{EvWaypoint2}();
+122       this->\hyperlink{classsmacc_1_1SmaccState_ae0e035e2d4e60f4ad58f08f44261f26c}{postEvent}(ev2);
+123     \}
+124     \textcolor{keywordflow}{break};
+125       \textcolor{comment}{//return transit<SS2::SsRadialPattern2>();}
+126     \textcolor{keywordflow}{case} 3:
+127     \{
+128       ROS\_INFO(\textcolor{stringliteral}{"transition to ss3"});
+129       \textcolor{keyword}{auto} ev3 = \textcolor{keyword}{new} \hyperlink{structEvWaypoint3}{EvWaypoint3}();
+130       this->\hyperlink{classsmacc_1_1SmaccState_ae0e035e2d4e60f4ad58f08f44261f26c}{postEvent}(ev3);
+131     \}
+132     \textcolor{keywordflow}{break};
+133     \textcolor{keywordflow}{case} 4:
+134     \{
+135       ROS\_INFO(\textcolor{stringliteral}{"transition to ss4"});
+136       \textcolor{keyword}{auto} ev4 = \textcolor{keyword}{new} \hyperlink{structEvWaypoint4}{EvWaypoint4}();
+137       this->\hyperlink{classsmacc_1_1SmaccState_ae0e035e2d4e60f4ad58f08f44261f26c}{postEvent}(ev4);
+138     \}
+139     \textcolor{keywordflow}{break};
+140     \textcolor{keywordflow}{case} 5:
+141     \{
+142       ROS\_INFO(\textcolor{stringliteral}{"transition to ss5"});
+143       \textcolor{keyword}{auto} ev5 = \textcolor{keyword}{new} \hyperlink{structEvWaypoint5}{EvWaypoint5}();
+144       this->\hyperlink{classsmacc_1_1SmaccState_ae0e035e2d4e60f4ad58f08f44261f26c}{postEvent}(ev5);
+145     \}
+146     \textcolor{keywordflow}{break};
+147       \textcolor{comment}{//return transit<SS3::SsRadialPattern3>();}
+148     \textcolor{keywordflow}{default}:
+149       ROS\_INFO(\textcolor{stringliteral}{"error in transition"});
+150       \textcolor{keywordflow}{break};
+151     \}
+152 
+153     \textcolor{keywordflow}{return} forward\_event();
+154   \}
+\end{DoxyCode}
+\index{St\+Navigate\+To\+WaypointsX@{St\+Navigate\+To\+WaypointsX}!on\+Definition@{on\+Definition}}
+\index{on\+Definition@{on\+Definition}!St\+Navigate\+To\+WaypointsX@{St\+Navigate\+To\+WaypointsX}}
+\subsubsection[{\texorpdfstring{on\+Definition()}{onDefinition()}}]{\setlength{\rightskip}{0pt plus 5cm}static void St\+Navigate\+To\+Waypoints\+X\+::on\+Definition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structStNavigateToWaypointsX_a0698c15b3241c4aa15a4f5380365e72d}{}\label{structStNavigateToWaypointsX_a0698c15b3241c4aa15a4f5380365e72d}
+
+
+Definition at line 66 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h.
+
+
+\begin{DoxyCode}
+67   \{
+68     static\_configure<ToolOrthogonal, SbToolStart>();
+69     static\_configure<KeyboardOrthogonal, SbKeyboard>();
+70   \}
 \end{DoxyCode}
 \index{St\+Navigate\+To\+WaypointsX@{St\+Navigate\+To\+WaypointsX}!on\+Initialize@{on\+Initialize}}
 \index{on\+Initialize@{on\+Initialize}!St\+Navigate\+To\+WaypointsX@{St\+Navigate\+To\+WaypointsX}}
@@ -139,46 +161,45 @@ Definition at line 101 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structStNavigateToWaypointsX_ac5f251c0431495e14c458a298592b663}{}\label{structStNavigateToWaypointsX_ac5f251c0431495e14c458a298592b663}
 
 
-Definition at line 66 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h.
+Definition at line 72 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h.
 
 
 \begin{DoxyCode}
-67   \{
-68     this->\hyperlink{structStNavigateToWaypointsX_a2f597fd0ee0258ef66506e98d55e8060}{currentIteration} = 0;
-69 
-70     \textcolor{comment}{// IDEA: this->declarePersistentVariable(&currentIteration)}
-71     this->\hyperlink{classsmacc_1_1SmaccState_ad53b5be2760eb7ffb50f3b2e542b65f1}{getGlobalSMData}(\textcolor{stringliteral}{"navigation\_x\_iteration"}, 
+73   \{
+74     this->\hyperlink{structStNavigateToWaypointsX_a2f597fd0ee0258ef66506e98d55e8060}{currentIteration} = 0;
+75 
+76     \textcolor{comment}{// IDEA: this->declarePersistentVariable(&currentIteration)}
+77     this->\hyperlink{classsmacc_1_1SmaccState_ad53b5be2760eb7ffb50f3b2e542b65f1}{getGlobalSMData}(\textcolor{stringliteral}{"navigation\_x\_iteration"}, 
       \hyperlink{structStNavigateToWaypointsX_a2f597fd0ee0258ef66506e98d55e8060}{currentIteration});
-72 
-73     ROS\_INFO(\textcolor{stringliteral}{"current iteration waypoints x: %d"}, \hyperlink{structStNavigateToWaypointsX_a2f597fd0ee0258ef66506e98d55e8060}{currentIteration});
-74 
-75     \textcolor{comment}{// x, y, yaw (orientation)}
-76     std::vector<Pose2D> waypoints = 
-77     \{
-78         \{3.0, -2.0, 0\},
-79         \{-5.5, 3.0 , 0\},
-80         \{-11.0, -5.0 , 0\},
-81         \{2.0, -8.58, 0\},
-82         \{-10.0, 14.5, 0\}
-83     \};
-84 
-85     \textcolor{keywordflow}{if} (\hyperlink{structStNavigateToWaypointsX_a2f597fd0ee0258ef66506e98d55e8060}{currentIteration} > waypoints.size())
-86     \{
-87       ROS\_FATAL(\textcolor{stringliteral}{"[WaypointsX] Out of range of waypoint list. Cannot go to waypoint %d."}, this->
+78 
+79     ROS\_INFO(\textcolor{stringliteral}{"current iteration waypoints x: %d"}, \hyperlink{structStNavigateToWaypointsX_a2f597fd0ee0258ef66506e98d55e8060}{currentIteration});
+80 
+81     \textcolor{comment}{// x, y, yaw (orientation)}
+82     std::vector<Pose2D> waypoints = 
+83     \{
+84         \{3.0, -2.0, 0\},
+85         \{-5.5, 3.0 , 0\},
+86         \{-11.0, -5.0 , 0\},
+87         \{2.0, -8.58, 0\},
+88         \{-10.0, 14.5, 0\}
+89     \};
+90 
+91     \textcolor{keywordflow}{if} (\hyperlink{structStNavigateToWaypointsX_a2f597fd0ee0258ef66506e98d55e8060}{currentIteration} > waypoints.size())
+92     \{
+93       ROS\_FATAL(\textcolor{stringliteral}{"[WaypointsX] Out of range of waypoint list. Cannot go to waypoint %d."}, this->
       \hyperlink{structStNavigateToWaypointsX_a2f597fd0ee0258ef66506e98d55e8060}{currentIteration});
-88       this->\hyperlink{classsmacc_1_1SmaccState_a56ccdfaf818ed6409dcbd4ab8b01c60e}{throwFinishEvent}();
-89     \}
-90     \textcolor{keywordflow}{else}
-91     \{
-92       \textcolor{keyword}{auto} &target = waypoints[\hyperlink{structStNavigateToWaypointsX_a2f597fd0ee0258ef66506e98d55e8060}{currentIteration}];
-93 
-94       ROS\_INFO(\textcolor{stringliteral}{"[NavigateWaypointsX] navigating to %lf %lf yaw: %lf"}, target.x\_, target.y\_ , target.yaw\_);
-95       this->configure<NavigationOrthogonal>(std::make\_shared<SbNavigateGlobalPosition>(target.x\_, target.y\_
+94       this->\hyperlink{classsmacc_1_1SmaccState_a56ccdfaf818ed6409dcbd4ab8b01c60e}{throwFinishEvent}();
+95     \}
+96     \textcolor{keywordflow}{else}
+97     \{
+98       \textcolor{keyword}{auto} &target = waypoints[\hyperlink{structStNavigateToWaypointsX_a2f597fd0ee0258ef66506e98d55e8060}{currentIteration}];
+99 
+100       ROS\_INFO(\textcolor{stringliteral}{"[NavigateWaypointsX] navigating to %lf %lf yaw: %lf"}, target.x\_, target.y\_ , target.yaw\_);
+101       this->configure<NavigationOrthogonal>(std::make\_shared<SbNavigateGlobalPosition>(target.x\_, target.y\_
       , target.yaw\_));
-96       this->configure<ToolOrthogonal>(std::make\_shared<SbToolStart>());
-97       this->configure<KeyboardOrthogonal>(std::make\_shared<SbKeyboard>());
-98     \}
-99   \}
+102       
+103     \}
+104   \}
 \end{DoxyCode}
 \index{St\+Navigate\+To\+WaypointsX@{St\+Navigate\+To\+WaypointsX}!react@{react}}
 \index{react@{react}!St\+Navigate\+To\+WaypointsX@{St\+Navigate\+To\+WaypointsX}}
@@ -189,18 +210,18 @@ Definition at line 66 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structStNavigateToWaypointsX_aab643c73ebd67edd5d16e186b0ab527f}{}\label{structStNavigateToWaypointsX_aab643c73ebd67edd5d16e186b0ab527f}
 
 
-Definition at line 151 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h.
+Definition at line 156 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h.
 
 
 \begin{DoxyCode}
-152   \{
-153     ROS\_INFO(\textcolor{stringliteral}{"Waypoints X reaction"});
-154 
-155     \hyperlink{structStNavigateToWaypointsX_a2f597fd0ee0258ef66506e98d55e8060}{currentIteration}++;
-156     this->\hyperlink{classsmacc_1_1SmaccState_a98f2673b257479e0a3615d5d8279a591}{setGlobalSMData}(\textcolor{stringliteral}{"navigation\_x\_iteration"}, 
+157   \{
+158     ROS\_INFO(\textcolor{stringliteral}{"Waypoints X reaction"});
+159 
+160     \hyperlink{structStNavigateToWaypointsX_a2f597fd0ee0258ef66506e98d55e8060}{currentIteration}++;
+161     this->\hyperlink{classsmacc_1_1SmaccState_a98f2673b257479e0a3615d5d8279a591}{setGlobalSMData}(\textcolor{stringliteral}{"navigation\_x\_iteration"}, 
       \hyperlink{structStNavigateToWaypointsX_a2f597fd0ee0258ef66506e98d55e8060}{currentIteration});
-157     \textcolor{keywordflow}{return} \hyperlink{structStNavigateToWaypointsX_a0df2892ed95cae253b2ae0c09c850268}{navigateState}();
-158   \}
+162     \textcolor{keywordflow}{return} \hyperlink{structStNavigateToWaypointsX_a0df2892ed95cae253b2ae0c09c850268}{navigateState}();
+163   \}
 \end{DoxyCode}
 \index{St\+Navigate\+To\+WaypointsX@{St\+Navigate\+To\+WaypointsX}!react@{react}}
 \index{react@{react}!St\+Navigate\+To\+WaypointsX@{St\+Navigate\+To\+WaypointsX}}
@@ -211,16 +232,16 @@ Definition at line 151 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structStNavigateToWaypointsX_ab9973901dfb0db2035223ec81d6fe0df}{}\label{structStNavigateToWaypointsX_ab9973901dfb0db2035223ec81d6fe0df}
 
 
-Definition at line 160 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h.
+Definition at line 165 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h.
 
 
 \begin{DoxyCode}
-161   \{
-162     \hyperlink{structStNavigateToWaypointsX_a2f597fd0ee0258ef66506e98d55e8060}{currentIteration}++;
-163     this->\hyperlink{classsmacc_1_1SmaccState_a98f2673b257479e0a3615d5d8279a591}{setGlobalSMData}(\textcolor{stringliteral}{"navigation\_x\_iteration"}, 
+166   \{
+167     \hyperlink{structStNavigateToWaypointsX_a2f597fd0ee0258ef66506e98d55e8060}{currentIteration}++;
+168     this->\hyperlink{classsmacc_1_1SmaccState_a98f2673b257479e0a3615d5d8279a591}{setGlobalSMData}(\textcolor{stringliteral}{"navigation\_x\_iteration"}, 
       \hyperlink{structStNavigateToWaypointsX_a2f597fd0ee0258ef66506e98d55e8060}{currentIteration});
-164     \textcolor{keywordflow}{return} \hyperlink{structStNavigateToWaypointsX_a0df2892ed95cae253b2ae0c09c850268}{navigateState}();
-165   \}
+169     \textcolor{keywordflow}{return} \hyperlink{structStNavigateToWaypointsX_a0df2892ed95cae253b2ae0c09c850268}{navigateState}();
+170   \}
 \end{DoxyCode}
 \index{St\+Navigate\+To\+WaypointsX@{St\+Navigate\+To\+WaypointsX}!react@{react}}
 \index{react@{react}!St\+Navigate\+To\+WaypointsX@{St\+Navigate\+To\+WaypointsX}}
@@ -231,23 +252,23 @@ Definition at line 160 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structStNavigateToWaypointsX_aa2d1a8c49b4c3227201eb300e21e53c1}{}\label{structStNavigateToWaypointsX_aa2d1a8c49b4c3227201eb300e21e53c1}
 
 
-Definition at line 167 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h.
+Definition at line 172 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h.
 
 
 \begin{DoxyCode}
-168   \{
-169     \textcolor{keywordflow}{switch} (\hyperlink{structStNavigateToWaypointsX_a2f597fd0ee0258ef66506e98d55e8060}{currentIteration})
-170     \{
-171     \textcolor{keywordflow}{case} 0:
-172       \textcolor{keywordflow}{return} transit<StRotateDegrees2>();
-173     \textcolor{keywordflow}{case} 1:
-174       \textcolor{keywordflow}{return} transit<StRotateDegrees3>();
-175     \textcolor{keywordflow}{default}:
-176       ROS\_INFO(\textcolor{stringliteral}{"error in transition"});
-177     \}
-178 
-179     \textcolor{keywordflow}{return} forward\_event();
-180   \}
+173   \{
+174     \textcolor{keywordflow}{switch} (\hyperlink{structStNavigateToWaypointsX_a2f597fd0ee0258ef66506e98d55e8060}{currentIteration})
+175     \{
+176     \textcolor{keywordflow}{case} 0:
+177       \textcolor{keywordflow}{return} transit<StRotateDegrees2>();
+178     \textcolor{keywordflow}{case} 1:
+179       \textcolor{keywordflow}{return} transit<StRotateDegrees3>();
+180     \textcolor{keywordflow}{default}:
+181       ROS\_INFO(\textcolor{stringliteral}{"error in transition"});
+182     \}
+183 
+184     \textcolor{keywordflow}{return} forward\_event();
+185   \}
 \end{DoxyCode}
 
 

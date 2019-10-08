@@ -38,12 +38,16 @@ sc\+::result \hyperlink{structStAcquireSensors_aa3c461ccdb69aa4c7d09b88dae21c646
 \item 
 sc\+::result \hyperlink{structStAcquireSensors_af69db5f01143f5b9267fbd39fc566be8}{react} (const \hyperlink{structsmacc_1_1EvTopicMessage}{Ev\+Topic\+Message}$<$ \hyperlink{classsmacc_1_1SensorTopic}{smacc\+::\+Sensor\+Topic}$<$ sensor\+\_\+msgs\+::\+Temperature $>$$>$ \&ev)
 \end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{structStAcquireSensors_a4f638e39d921300d4dcbc9ce5fa8d1c8}{on\+Definition} ()
+\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classAllEventAggregator}{All\+Event\+Aggregator} \hyperlink{structStAcquireSensors_adc57ee1bdc2d1622b65811366f70845b}{all\+Sensors\+Ready}
 \end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -59,11 +63,37 @@ Definition at line 3 of file st\+\_\+acquire\+\_\+sensors.\+h.
 \subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ sc\+::transition$<${\bf Ev\+State\+Finish}$<${\bf St\+Acquire\+Sensors}$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$, sc\+::transition$<$Ev\+Key\+PressN$<$Sb\+Keyboard$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$, sc\+::custom\+\_\+reaction$<${\bf Ev\+Topic\+Message}$<${\bf Lidar\+Sensor}$>$ $>$, sc\+::custom\+\_\+reaction$<${\bf Ev\+Topic\+Message}$<${\bf smacc\+::\+Sensor\+Topic}$<$sensor\+\_\+msgs\+::\+Temperature$>$ $>$ $>$ $>$ {\bf St\+Acquire\+Sensors\+::reactions}}\hypertarget{structStAcquireSensors_a2e405e02a34cab31c6c05351e092e235}{}\label{structStAcquireSensors_a2e405e02a34cab31c6c05351e092e235}
 
 
-Definition at line 20 of file st\+\_\+acquire\+\_\+sensors.\+h.
+Definition at line 18 of file st\+\_\+acquire\+\_\+sensors.\+h.
 
 
 
 \subsection{Member Function Documentation}
+\index{St\+Acquire\+Sensors@{St\+Acquire\+Sensors}!on\+Definition@{on\+Definition}}
+\index{on\+Definition@{on\+Definition}!St\+Acquire\+Sensors@{St\+Acquire\+Sensors}}
+\subsubsection[{\texorpdfstring{on\+Definition()}{onDefinition()}}]{\setlength{\rightskip}{0pt plus 5cm}static void St\+Acquire\+Sensors\+::on\+Definition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structStAcquireSensors_a4f638e39d921300d4dcbc9ce5fa8d1c8}{}\label{structStAcquireSensors_a4f638e39d921300d4dcbc9ce5fa8d1c8}
+
+
+Definition at line 22 of file st\+\_\+acquire\+\_\+sensors.\+h.
+
+
+
+References S\+E\+R\+V\+I\+C\+E3\+\_\+\+ON.
+
+
+\begin{DoxyCode}
+23    \{
+24       static\_configure<ObstaclePerceptionOrthogonal, LidarSensor>();
+25       static\_configure<KeyboardOrthogonal, SbKeyboard>();
+26       static\_configure<PublisherOrthogonal, SbStringPublisher>(\textcolor{stringliteral}{"Hello World!"});
+27       static\_configure<SensorOrthogonal, SbConditionTemperatureSensor>();
+28       static\_configure<Service3Orthogonal, Service3Behavior>(
+      \hyperlink{service3__behavior_8h_a220998b2c3cad22a21ce6676b2478543a13cdca48a01bbb44fa8fb35567fbc58e}{Service3Command::SERVICE3\_ON});
+29    \}
+\end{DoxyCode}
 \index{St\+Acquire\+Sensors@{St\+Acquire\+Sensors}!on\+Initialize@{on\+Initialize}}
 \index{on\+Initialize@{on\+Initialize}!St\+Acquire\+Sensors@{St\+Acquire\+Sensors}}
 \subsubsection[{\texorpdfstring{on\+Initialize()}{onInitialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void St\+Acquire\+Sensors\+::on\+Initialize (
@@ -73,23 +103,15 @@ Definition at line 20 of file st\+\_\+acquire\+\_\+sensors.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structStAcquireSensors_af25bdea33dab12d2c37301eb999ac6e8}{}\label{structStAcquireSensors_af25bdea33dab12d2c37301eb999ac6e8}
 
 
-Definition at line 24 of file st\+\_\+acquire\+\_\+sensors.\+h.
+Definition at line 31 of file st\+\_\+acquire\+\_\+sensors.\+h.
 
 
 
-References S\+E\+R\+V\+I\+C\+E3\+\_\+\+ON, and All\+Event\+Aggregator\+::set\+Trigger\+Event\+Types\+Count().
+References All\+Event\+Aggregator\+::set\+Trigger\+Event\+Types\+Count().
 
 
 \begin{DoxyCode}
-25    \{
-26       this->configure<ObstaclePerceptionOrthogonal>(std::make\_shared<LidarSensor>());
-27       this->configure<SensorOrthogonal>(std::make\_shared<SbConditionTemperatureSensor>());
-28       this->configure<KeyboardOrthogonal>(std::make\_shared<SbKeyboard>());
-29 
-30       this->configure<PublisherOrthogonal>(std::make\_shared<SbStringPublisher>(\textcolor{stringliteral}{"Hello World!"}));
-31       this->configure<Service3Orthogonal>(std::make\_shared<Service3Behavior>(
-      \hyperlink{service3__behavior_8h_a220998b2c3cad22a21ce6676b2478543a13cdca48a01bbb44fa8fb35567fbc58e}{Service3Command::SERVICE3\_ON}));
-32 
+32    \{
 33       \hyperlink{structStAcquireSensors_adc57ee1bdc2d1622b65811366f70845b}{allSensorsReady}.\hyperlink{classAllEventAggregator_ab9d6e59d70fd564ffa2333a30c9a41de}{setTriggerEventTypesCount}(2);
 34    \}
 \end{DoxyCode}
@@ -188,7 +210,7 @@ Here is the call graph for this function\+:
 \subsubsection[{\texorpdfstring{all\+Sensors\+Ready}{allSensorsReady}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf All\+Event\+Aggregator} St\+Acquire\+Sensors\+::all\+Sensors\+Ready}\hypertarget{structStAcquireSensors_adc57ee1bdc2d1622b65811366f70845b}{}\label{structStAcquireSensors_adc57ee1bdc2d1622b65811366f70845b}
 
 
-Definition at line 22 of file st\+\_\+acquire\+\_\+sensors.\+h.
+Definition at line 20 of file st\+\_\+acquire\+\_\+sensors.\+h.
 
 
 

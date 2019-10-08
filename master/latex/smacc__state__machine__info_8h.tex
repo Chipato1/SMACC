@@ -33,6 +33,8 @@ struct \hyperlink{structsmacc_1_1AddSubState}{smacc\+::\+Add\+Sub\+State}
 struct \hyperlink{structsmacc_1_1AddTransition}{smacc\+::\+Add\+Transition}
 \item 
 struct \hyperlink{structsmacc_1_1WalkStatesExecutor}{smacc\+::\+Walk\+States\+Executor$<$ Initial\+State\+Type $>$}
+\item 
+class \hyperlink{classsmacc_1_1HasOnDefinition}{smacc\+::\+Has\+On\+Definition$<$ T $>$}
 \end{DoxyCompactItemize}
 \subsection*{Namespaces}
 \begin{DoxyCompactItemize}
@@ -53,4 +55,8 @@ struct \hyperlink{structsmacc_1_1WalkStatesExecutor}{smacc\+::\+Walk\+States\+Ex
 {\footnotesize template$<$typename Ev $>$ }\\void \hyperlink{namespacesmacc_a1f165532f9a9126db41900fbf23a985d}{smacc\+::process\+Transition} (statechart\+::custom\+\_\+reaction$<$ Ev $>$ $\ast$, std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&source\+State)
 \item 
 {\footnotesize template$<$typename T $>$ }\\disable\+\_\+if$<$ boost\+::mpl\+::is\+\_\+sequence$<$ T $>$ $>$\+::type \hyperlink{namespacesmacc_a097ffb8059d48bbe45ee8321e92e8878}{smacc\+::process\+Transitions} (std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&source\+State)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::enable\+\_\+if$<$ Has\+On\+Definition$<$ T $>$\+::value, void $>$\+::type \hyperlink{namespacesmacc_a380bcca82a996c6c88868251206ad420}{smacc\+::\+Call\+On\+Definition} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::enable\+\_\+if$<$!Has\+On\+Definition$<$ T $>$\+::value, void $>$\+::type \hyperlink{namespacesmacc_a52c5d314d71f6a1d8658c6f1d26d9135}{smacc\+::\+Call\+On\+Definition} ()
 \end{DoxyCompactItemize}

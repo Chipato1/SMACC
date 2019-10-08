@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['outermost_5fcontext_5fbase_5ftype',['outermost_context_base_type',['../classsmacc_1_1SmaccState.html#aaf76bbe2aa9dd73e3284605f84ab4b16',1,'smacc::SmaccState']]]
+  ['notype',['NoType',['../classsmacc_1_1HasOnDefinition.html#ab424fbc32a091d6271cabe47eb0725ca',1,'smacc::HasOnDefinition']]]
 ];

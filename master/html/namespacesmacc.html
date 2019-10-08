@@ -119,6 +119,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsmacc_1_1EvTopicMessageTimeout.html">EvTopicMessageTimeout</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1HasOnDefinition.html">HasOnDefinition</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsmacc_1_1IActionResult.html">IActionResult</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1ISmaccActionClient.html">ISmaccActionClient</a></td></tr>
@@ -168,6 +170,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccTopicSubscriberClient.html">SmaccTopicSubscriberClient</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsmacc_1_1StateBehaviorInfoEntry.html">StateBehaviorInfoEntry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1Timer.html">Timer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsmacc_1_1TimerTickEvent.html">TimerTickEvent</a></td></tr>
@@ -209,6 +213,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a097ffb8059d48bbe45ee8321e92e8878"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a097ffb8059d48bbe45ee8321e92e8878"><td class="memTemplItemLeft" align="right" valign="top">disable_if&lt; boost::mpl::is_sequence&lt; T &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacesmacc.html#a097ffb8059d48bbe45ee8321e92e8878">processTransitions</a> (std::shared_ptr&lt; <a class="el" href="classsmacc_1_1SmaccStateInfo.html">SmaccStateInfo</a> &gt; &amp;sourceState)</td></tr>
 <tr class="separator:a097ffb8059d48bbe45ee8321e92e8878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a380bcca82a996c6c88868251206ad420"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a380bcca82a996c6c88868251206ad420"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="classsmacc_1_1HasOnDefinition.html">HasOnDefinition</a>&lt; T &gt;::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacesmacc.html#a380bcca82a996c6c88868251206ad420">CallOnDefinition</a> ()</td></tr>
+<tr class="separator:a380bcca82a996c6c88868251206ad420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52c5d314d71f6a1d8658c6f1d26d9135"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a52c5d314d71f6a1d8658c6f1d26d9135"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt;!<a class="el" href="classsmacc_1_1HasOnDefinition.html">HasOnDefinition</a>&lt; T &gt;::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacesmacc.html#a52c5d314d71f6a1d8658c6f1d26d9135">CallOnDefinition</a> ()</td></tr>
+<tr class="separator:a52c5d314d71f6a1d8658c6f1d26d9135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a class="anchor" id="a3e4f79486ea6ea6342dd3c712d16a4f6"></a>
@@ -242,6 +252,70 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a380bcca82a996c6c88868251206ad420"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;<a class="el" href="classsmacc_1_1HasOnDefinition.html">HasOnDefinition</a>&lt;T&gt;::value, void&gt;::type smacc::CallOnDefinition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00221">221</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
+
+<p>References <a class="el" href="common_8h_source.html#l00137">demangleSymbol()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                   {</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;   <span class="comment">/* something when T has toString ... */</span></div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;   ROS_INFO_STREAM(<span class="stringliteral">&quot;EXECUTING ONDEFINITION: &quot;</span> &lt;&lt; <a class="code" href="common_8h.html#a401d7e4f000fd4246a20be1e7d5ec2fc">demangleSymbol</a>(<span class="keyword">typeid</span>(T).name()));</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;   T::onDefinition();</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;}</div><div class="ttc" id="common_8h_html_a401d7e4f000fd4246a20be1e7d5ec2fc"><div class="ttname"><a href="common_8h.html#a401d7e4f000fd4246a20be1e7d5ec2fc">demangleSymbol</a></div><div class="ttdeci">std::string demangleSymbol(const char *name)</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00137">common.h:137</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesmacc_a380bcca82a996c6c88868251206ad420_cgraph.png" border="0" usemap="#namespacesmacc_a380bcca82a996c6c88868251206ad420_cgraph" alt=""/></div>
+<map name="namespacesmacc_a380bcca82a996c6c88868251206ad420_cgraph" id="namespacesmacc_a380bcca82a996c6c88868251206ad420_cgraph">
+<area shape="rect" id="node2" href="common_8h.html#a401d7e4f000fd4246a20be1e7d5ec2fc" title="demangleSymbol" alt="" coords="227,5,361,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a52c5d314d71f6a1d8658c6f1d26d9135"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;!<a class="el" href="classsmacc_1_1HasOnDefinition.html">HasOnDefinition</a>&lt;T&gt;::value, void&gt;::type smacc::CallOnDefinition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00229">229</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
+
+<p>References <a class="el" href="common_8h_source.html#l00137">demangleSymbol()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                   {</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    ROS_INFO_STREAM(<span class="stringliteral">&quot;static OnDefinition: dont exist for &quot;</span> &lt;&lt; <a class="code" href="common_8h.html#a401d7e4f000fd4246a20be1e7d5ec2fc">demangleSymbol</a>(<span class="keyword">typeid</span>(T).name()));</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;   <span class="comment">/* something when T has toString ... */</span></div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;   </div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;}</div><div class="ttc" id="common_8h_html_a401d7e4f000fd4246a20be1e7d5ec2fc"><div class="ttname"><a href="common_8h.html#a401d7e4f000fd4246a20be1e7d5ec2fc">demangleSymbol</a></div><div class="ttdeci">std::string demangleSymbol(const char *name)</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00137">common.h:137</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesmacc_a52c5d314d71f6a1d8658c6f1d26d9135_cgraph.png" border="0" usemap="#namespacesmacc_a52c5d314d71f6a1d8658c6f1d26d9135_cgraph" alt=""/></div>
+<map name="namespacesmacc_a52c5d314d71f6a1d8658c6f1d26d9135_cgraph" id="namespacesmacc_a52c5d314d71f6a1d8658c6f1d26d9135_cgraph">
+<area shape="rect" id="node2" href="common_8h.html#a401d7e4f000fd4246a20be1e7d5ec2fc" title="demangleSymbol" alt="" coords="227,5,361,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a09b297b1cdb9aae93a958f323431464a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -260,7 +334,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="common_8h_source.html#l00137">demangleSymbol()</a>.</p>
 
-<p>Referenced by <a class="el" href="smacc__state__base_8h_source.html#l00120">smacc::SmaccState&lt; StNavigateForward1, SmDanceBot &gt;::getShortName()</a>, <a class="el" href="smacc__state__base_8h_source.html#l00058">smacc::SmaccState&lt; StNavigateForward1, SmDanceBot &gt;::SmaccState()</a>, and <a class="el" href="smacc__state__machine__base_8h_source.html#l00053">smacc::SmaccStateMachineBase&lt; SensorStateMachine, SensorState &gt;::SmaccStateMachineBase()</a>.</p>
+<p>Referenced by <a class="el" href="smacc__state__base_8h_source.html#l00146">smacc::SmaccState&lt; StNavigateForward1, SmDanceBot &gt;::getShortName()</a>, <a class="el" href="smacc__state__base_8h_source.html#l00060">smacc::SmaccState&lt; StNavigateForward1, SmDanceBot &gt;::SmaccState()</a>, and <a class="el" href="smacc__state__machine__base_8h_source.html#l00053">smacc::SmaccStateMachineBase&lt; SensorStateMachine, SensorState &gt;::SmaccStateMachineBase()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::string fullclassname = <a class="code" href="common_8h.html#a401d7e4f000fd4246a20be1e7d5ec2fc">demangleSymbol</a>(tinfo.name());</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">//ROS_INFO(&quot;State full classname: %s&quot;, fullclassname.c_str());</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    std::vector&lt;std::string&gt; strs;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    boost::split(strs,fullclassname,boost::is_any_of(<span class="stringliteral">&quot;::&quot;</span>));</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    std::string classname = strs.back();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">//ROS_INFO(&quot;State classname: %s&quot;, classname.c_str());</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> classname;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div><div class="ttc" id="common_8h_html_a401d7e4f000fd4246a20be1e7d5ec2fc"><div class="ttname"><a href="common_8h.html#a401d7e4f000fd4246a20be1e7d5ec2fc">demangleSymbol</a></div><div class="ttdeci">std::string demangleSymbol(const char *name)</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00137">common.h:137</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -305,7 +379,7 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00128">128</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
 
-<p>References <a class="el" href="smacc__state__machine__info_8h_source.html#l00200">smacc::WalkStatesExecutor&lt; InitialStateType &gt;::walkStates()</a>.</p>
+<p>References <a class="el" href="smacc__state__machine__info_8h_source.html#l00244">smacc::WalkStatesExecutor&lt; InitialStateType &gt;::walkStates()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    WalkStatesExecutor&lt;T&gt;::walkStates(parentState, <span class="keyword">false</span>);</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div></div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -367,7 +441,7 @@ template&lt;typename Ev , typename Dst &gt; </div>
 
 <p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00153">153</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
 
-<p>References <a class="el" href="common_8h_source.html#l00137">demangleSymbol()</a>, and <a class="el" href="smacc__state__machine__info_8h_source.html#l00200">smacc::WalkStatesExecutor&lt; InitialStateType &gt;::walkStates()</a>.</p>
+<p>References <a class="el" href="common_8h_source.html#l00137">demangleSymbol()</a>, and <a class="el" href="smacc__state__machine__info_8h_source.html#l00244">smacc::WalkStatesExecutor&lt; InitialStateType &gt;::walkStates()</a>.</p>
 
 <p>Referenced by <a class="el" href="smacc__state__machine__info_8h_source.html#l00185">processTransitions()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;{</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    ROS_INFO(<span class="stringliteral">&quot;State %s Walker transition: %s&quot;</span>, sourceState-&gt;toShortName().c_str(), <a class="code" href="common_8h.html#a401d7e4f000fd4246a20be1e7d5ec2fc">demangleSymbol</a>(<span class="keyword">typeid</span>(Ev).name()).c_str());</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">if</span> (!sourceState-&gt;stateMachine_-&gt;containsState&lt;Dst&gt;())</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    {</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keyword">auto</span> siblingnode = sourceState-&gt;stateMachine_-&gt;createState&lt;Dst&gt;(sourceState-&gt;parentState_);</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        WalkStatesExecutor&lt;Dst&gt;::walkStates(siblingnode, <span class="keyword">true</span>);</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        sourceState-&gt;declareTransition&lt;Ev&gt;(siblingnode);</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    {</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keyword">auto</span> siblingnode = sourceState-&gt;stateMachine_-&gt;getState&lt;Dst&gt;();</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        sourceState-&gt;declareTransition&lt;Ev&gt;(siblingnode);</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;}</div><div class="ttc" id="common_8h_html_a401d7e4f000fd4246a20be1e7d5ec2fc"><div class="ttname"><a href="common_8h.html#a401d7e4f000fd4246a20be1e7d5ec2fc">demangleSymbol</a></div><div class="ttdeci">std::string demangleSymbol(const char *name)</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00137">common.h:137</a></div></div>

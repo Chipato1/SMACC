@@ -63,7 +63,7 @@ Definition at line 10 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 )}\hypertarget{classsmacc_1_1SmaccStateMachineInfo_a188e81067d4a693ce479518dc87cf89b}{}\label{classsmacc_1_1SmaccStateMachineInfo_a188e81067d4a693ce479518dc87cf89b}
 
 
-Definition at line 263 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 312 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 
@@ -75,9 +75,9 @@ Referenced by create\+State(), and get\+State().
 
 
 \begin{DoxyCode}
-264 \{
-265     \hyperlink{classsmacc_1_1SmaccStateMachineInfo_a8d6f1a9ce60f39835e7aa2179139977f}{states}[state->fullStateName] = state;
-266 \}
+313 \{
+314     \hyperlink{classsmacc_1_1SmaccStateMachineInfo_a8d6f1a9ce60f39835e7aa2179139977f}{states}[state->fullStateName] = state;
+315 \}
 \end{DoxyCode}
 
 
@@ -100,7 +100,7 @@ Here is the caller graph for this function\+:
 )}\hypertarget{classsmacc_1_1SmaccStateMachineInfo_abef92b54a5e643232491db968de4aff0}{}\label{classsmacc_1_1SmaccStateMachineInfo_abef92b54a5e643232491db968de4aff0}
 
 
-Definition at line 233 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 282 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 
@@ -108,11 +108,11 @@ References smacc\+::\+Walk\+States\+Executor$<$ Initial\+State\+Type $>$\+::walk
 
 
 \begin{DoxyCode}
-234 \{
-235     \textcolor{keyword}{auto} initialState = this->createState<InitialStateType>(\textcolor{keyword}{nullptr});
-236     \hyperlink{structsmacc_1_1WalkStatesExecutor_a11a2b02eafb62ec298bcf5ffbb32848b}{WalkStatesExecutor<InitialStateType>::walkStates}(
+283 \{
+284     \textcolor{keyword}{auto} initialState = this->createState<InitialStateType>(\textcolor{keyword}{nullptr});
+285     \hyperlink{structsmacc_1_1WalkStatesExecutor_a11a2b02eafb62ec298bcf5ffbb32848b}{WalkStatesExecutor<InitialStateType>::walkStates}(
       initialState, \textcolor{keyword}{true});
-237 \}
+286 \}
 \end{DoxyCode}
 
 
@@ -154,7 +154,7 @@ Definition at line 22 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 )}\hypertarget{classsmacc_1_1SmaccStateMachineInfo_a2d5759ccb5a8296debcc5dec741d3b42}{}\label{classsmacc_1_1SmaccStateMachineInfo_a2d5759ccb5a8296debcc5dec741d3b42}
 
 
-Definition at line 240 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 289 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 
@@ -162,26 +162,26 @@ References add\+State().
 
 
 \begin{DoxyCode}
-241 \{
-242     \textcolor{keyword}{auto} thisptr = this->shared\_from\_this();
-243     \textcolor{keyword}{auto} state = std::shared\_ptr<SmaccStateInfo>(\textcolor{keyword}{new} SmaccStateInfo(parent, thisptr));
-244     state->demangledStateName = demangledTypeName<StateType>();
-245     state->fullStateName = \textcolor{keyword}{typeid}(StateType).name();
-246 
-247     std::vector<std::string> strs;
-248     boost::split(strs, state->demangledStateName, boost::is\_any\_of(\textcolor{stringliteral}{":"}));
-249 
-250     state->demangledStateName = strs.back();
-251 
-252     \textcolor{keywordflow}{if} (parent != \textcolor{keyword}{nullptr})
-253     \{
-254         parent->children\_.push\_back(state);
-255     \}
-256 
-257     this->\hyperlink{classsmacc_1_1SmaccStateMachineInfo_a188e81067d4a693ce479518dc87cf89b}{addState}(state);
-258 
-259     \textcolor{keywordflow}{return} state;
-260 \}
+290 \{
+291     \textcolor{keyword}{auto} thisptr = this->shared\_from\_this();
+292     \textcolor{keyword}{auto} state = std::shared\_ptr<SmaccStateInfo>(\textcolor{keyword}{new} SmaccStateInfo(parent, thisptr));
+293     state->demangledStateName = demangledTypeName<StateType>();
+294     state->fullStateName = \textcolor{keyword}{typeid}(StateType).name();
+295 
+296     std::vector<std::string> strs;
+297     boost::split(strs, state->demangledStateName, boost::is\_any\_of(\textcolor{stringliteral}{":"}));
+298 
+299     state->demangledStateName = strs.back();
+300 
+301     \textcolor{keywordflow}{if} (parent != \textcolor{keyword}{nullptr})
+302     \{
+303         parent->children\_.push\_back(state);
+304     \}
+305 
+306     this->\hyperlink{classsmacc_1_1SmaccStateMachineInfo_a188e81067d4a693ce479518dc87cf89b}{addState}(state);
+307 
+308     \textcolor{keywordflow}{return} state;
+309 \}
 \end{DoxyCode}
 
 

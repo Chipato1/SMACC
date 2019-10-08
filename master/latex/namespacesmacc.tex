@@ -29,6 +29,8 @@ struct \hyperlink{structsmacc_1_1EvTopicMessage}{Ev\+Topic\+Message}
 \item 
 struct \hyperlink{structsmacc_1_1EvTopicMessageTimeout}{Ev\+Topic\+Message\+Timeout}
 \item 
+class \hyperlink{classsmacc_1_1HasOnDefinition}{Has\+On\+Definition}
+\item 
 struct \hyperlink{structsmacc_1_1IActionResult}{I\+Action\+Result}
 \item 
 class \hyperlink{classsmacc_1_1ISmaccActionClient}{I\+Smacc\+Action\+Client}
@@ -77,6 +79,8 @@ class \hyperlink{classsmacc_1_1SmaccTopicPublisherClient}{Smacc\+Topic\+Publishe
 \item 
 class \hyperlink{classsmacc_1_1SmaccTopicSubscriberClient}{Smacc\+Topic\+Subscriber\+Client}
 \item 
+struct \hyperlink{structsmacc_1_1StateBehaviorInfoEntry}{State\+Behavior\+Info\+Entry}
+\item 
 class \hyperlink{classsmacc_1_1Timer}{Timer}
 \item 
 struct \hyperlink{structsmacc_1_1TimerTickEvent}{Timer\+Tick\+Event}
@@ -110,6 +114,10 @@ std\+::string \hyperlink{namespacesmacc_a09b297b1cdb9aae93a958f323431464a}{clean
 {\footnotesize template$<$typename Ev $>$ }\\void \hyperlink{namespacesmacc_a1f165532f9a9126db41900fbf23a985d}{process\+Transition} (statechart\+::custom\+\_\+reaction$<$ Ev $>$ $\ast$, std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \&source\+State)
 \item 
 {\footnotesize template$<$typename T $>$ }\\disable\+\_\+if$<$ boost\+::mpl\+::is\+\_\+sequence$<$ T $>$ $>$\+::type \hyperlink{namespacesmacc_a097ffb8059d48bbe45ee8321e92e8878}{process\+Transitions} (std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \&source\+State)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::enable\+\_\+if$<$ \hyperlink{classsmacc_1_1HasOnDefinition}{Has\+On\+Definition}$<$ T $>$\+::value, void $>$\+::type \hyperlink{namespacesmacc_a380bcca82a996c6c88868251206ad420}{Call\+On\+Definition} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::enable\+\_\+if$<$!\hyperlink{classsmacc_1_1HasOnDefinition}{Has\+On\+Definition}$<$ T $>$\+::value, void $>$\+::type \hyperlink{namespacesmacc_a52c5d314d71f6a1d8658c6f1d26d9135}{Call\+On\+Definition} ()
 \end{DoxyCompactItemize}
 
 
@@ -140,6 +148,77 @@ Definition at line 127 of file common.\+h.
 
 
 \subsection{Function Documentation}
+\index{smacc@{smacc}!Call\+On\+Definition@{Call\+On\+Definition}}
+\index{Call\+On\+Definition@{Call\+On\+Definition}!smacc@{smacc}}
+\subsubsection[{\texorpdfstring{Call\+On\+Definition()}{CallOnDefinition()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\+::enable\+\_\+if$<${\bf Has\+On\+Definition}$<$T$>$\+::value, void$>$\+::type smacc\+::\+Call\+On\+Definition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc_a380bcca82a996c6c88868251206ad420}{}\label{namespacesmacc_a380bcca82a996c6c88868251206ad420}
+
+
+Definition at line 221 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+References demangle\+Symbol().
+
+
+\begin{DoxyCode}
+221                    \{
+222    \textcolor{comment}{/* something when T has toString ... */}
+223    ROS\_INFO\_STREAM(\textcolor{stringliteral}{"EXECUTING ONDEFINITION: "} << \hyperlink{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{demangleSymbol}(\textcolor{keyword}{typeid}(T).name()));
+224    T::onDefinition();
+225 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{namespacesmacc_a380bcca82a996c6c88868251206ad420_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc@{smacc}!Call\+On\+Definition@{Call\+On\+Definition}}
+\index{Call\+On\+Definition@{Call\+On\+Definition}!smacc@{smacc}}
+\subsubsection[{\texorpdfstring{Call\+On\+Definition()}{CallOnDefinition()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\+::enable\+\_\+if$<$!{\bf Has\+On\+Definition}$<$T$>$\+::value, void$>$\+::type smacc\+::\+Call\+On\+Definition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc_a52c5d314d71f6a1d8658c6f1d26d9135}{}\label{namespacesmacc_a52c5d314d71f6a1d8658c6f1d26d9135}
+
+
+Definition at line 229 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+References demangle\+Symbol().
+
+
+\begin{DoxyCode}
+229                    \{
+230     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"static OnDefinition: dont exist for "} << \hyperlink{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{demangleSymbol}(\textcolor{keyword}{typeid}(T).name()
+      ));
+231    \textcolor{comment}{/* something when T has toString ... */}
+232    
+233 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{namespacesmacc_a52c5d314d71f6a1d8658c6f1d26d9135_cgraph}
+\end{center}
+\end{figure}
+
+
 \index{smacc@{smacc}!clean\+Short\+Type\+Name@{clean\+Short\+Type\+Name}}
 \index{clean\+Short\+Type\+Name@{clean\+Short\+Type\+Name}!smacc@{smacc}}
 \subsubsection[{\texorpdfstring{clean\+Short\+Type\+Name(const std\+::type\+\_\+info \&tinfo)}{cleanShortTypeName(const std::type_info &tinfo)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::clean\+Short\+Type\+Name (

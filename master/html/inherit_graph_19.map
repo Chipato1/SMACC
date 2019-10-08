@@ -1,11 +1,14 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classsmacc_1_1Orthogonal.html" title="smacc::Orthogonal" alt="" coords="5,183,148,209"/>
-<area shape="rect" id="node2" href="$classInputDeviceOrthogonal.html" title="InputDeviceOrthogonal" alt="" coords="221,5,389,32"/>
-<area shape="rect" id="node3" href="$classKeyboardOrthogonal.html" title="KeyboardOrthogonal" alt="" coords="229,56,381,83"/>
-<area shape="rect" id="node4" href="$classNavigationOrthogonal.html" title="NavigationOrthogonal" alt="" coords="224,107,385,133"/>
-<area shape="rect" id="node5" href="$classObstaclePerceptionOrthogonal.html" title="ObstaclePerceptionOrthogonal" alt="" coords="196,157,413,184"/>
-<area shape="rect" id="node6" href="$classPublisherOrthogonal.html" title="PublisherOrthogonal" alt="" coords="229,208,380,235"/>
-<area shape="rect" id="node7" href="$classSensorOrthogonal.html" title="SensorOrthogonal" alt="" coords="235,259,374,285"/>
-<area shape="rect" id="node8" href="$classService3Orthogonal.html" title="Service3Orthogonal" alt="" coords="231,309,379,336"/>
-<area shape="rect" id="node9" href="$classToolOrthogonal.html" title="ToolOrthogonal" alt="" coords="246,360,363,387"/>
+<area shape="rect" id="node2" href="$structsmacc_1_1SmaccStateMachineBase.html" title="State Machine. " alt="" coords="300,5,511,61"/>
+<area shape="rect" id="node3" href="$structsmacc_1_1SmaccStateMachineBase.html" title="smacc::SmaccStateMachine\lBase\&lt; KeyboardStateMachine,\l KeyboardState \&gt;" alt="" coords="295,85,515,141"/>
+<area shape="rect" id="node5" href="$structsmacc_1_1SmaccStateMachineBase.html" title="smacc::SmaccStateMachine\lBase\&lt; RadialMotionStateMachine,\l RadialMotionSuperState \&gt;" alt="" coords="284,165,527,221"/>
+<area shape="rect" id="node7" href="$structsmacc_1_1SmaccStateMachineBase.html" title="smacc::SmaccStateMachine\lBase\&lt; SensorStateMachine,\l SensorState \&gt;" alt="" coords="302,245,509,301"/>
+<area shape="rect" id="node9" href="$structsmacc_1_1SmaccStateMachineBase.html" title="smacc::SmaccStateMachine\lBase\&lt; SmDanceBot, StAcquireSensors \&gt;" alt="" coords="260,325,551,366"/>
+<area shape="rect" id="node11" href="$structsmacc_1_1SmaccStateMachineBase.html" title="smacc::SmaccStateMachine\lBase\&lt; TimerStateMachine,\l TimerState \&gt;" alt="" coords="303,389,507,445"/>
+<area shape="rect" id="node4" href="$structKeyboardStateMachine.html" title="KeyboardStateMachine" alt="" coords="609,100,779,127"/>
+<area shape="rect" id="node6" href="$structRadialMotionStateMachine.html" title="RadialMotionStateMachine" alt="" coords="599,180,789,207"/>
+<area shape="rect" id="node8" href="$structSensorStateMachine.html" title="SensorStateMachine" alt="" coords="617,260,771,287"/>
+<area shape="rect" id="node10" href="$structSmDanceBot.html" title="SmDanceBot" alt="" coords="641,332,747,359"/>
+<area shape="rect" id="node12" href="$structTimerStateMachine.html" title="TimerStateMachine" alt="" coords="621,404,767,431"/>
+<area shape="rect" id="node13" href="$classsmacc_1_1ISmaccStateMachine.html" title="smacc::ISmaccStateMachine" alt="" coords="5,255,212,281"/>
 </map>

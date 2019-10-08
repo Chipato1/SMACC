@@ -12,6 +12,7 @@ var searchData=
   ['openrequests_5f',['openRequests_',['../classsmacc_1_1SignalDetector.html#a3f7e46b9fa9fcac9f5bc72a95ab20ca9',1,'smacc::SignalDetector']]],
   ['orthogonal',['Orthogonal',['../Global_01Transition_01Rules_8txt.html#a2e1cdec29dad5013e514270d0a78fe22',1,'Global Transition Rules.txt']]],
   ['orthogonals_5f',['orthogonals_',['../classsmacc_1_1ISmaccStateMachine.html#ae8e5c25d0aecd91fe496df13751bc667',1,'smacc::ISmaccStateMachine']]],
+  ['orthogonaltype',['orthogonalType',['../structsmacc_1_1StateBehaviorInfoEntry.html#aefc43616f2bd059594b3b90d6ad47916',1,'smacc::StateBehaviorInfoEntry']]],
   ['outcomes_5ffrom',['outcomes_from',['../namespacefake__sm__publisher.html#a355cab829d8e0a4361917acecce8fe22',1,'fake_sm_publisher']]],
   ['outcomes_5fto',['outcomes_to',['../namespacefake__sm__publisher.html#a6ae0e1e0afdba1d1e558ea87bf79df4c',1,'fake_sm_publisher']]],
   ['outfile',['outfile',['../namespacegenerate__main__index.html#a19a514ee39deee84f7fd96349f2f0ee3',1,'generate_main_index']]]

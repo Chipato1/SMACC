@@ -199,6 +199,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsmacc_1_1WalkStatesExecutor.html">smacc::WalkStatesExecutor&lt; InitialStateType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1HasOnDefinition.html">smacc::HasOnDefinition&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -225,6 +227,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a097ffb8059d48bbe45ee8321e92e8878"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a097ffb8059d48bbe45ee8321e92e8878"><td class="memTemplItemLeft" align="right" valign="top">disable_if&lt; boost::mpl::is_sequence&lt; T &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacesmacc.html#a097ffb8059d48bbe45ee8321e92e8878">smacc::processTransitions</a> (std::shared_ptr&lt; SmaccStateInfo &gt; &amp;sourceState)</td></tr>
 <tr class="separator:a097ffb8059d48bbe45ee8321e92e8878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a380bcca82a996c6c88868251206ad420"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a380bcca82a996c6c88868251206ad420"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; HasOnDefinition&lt; T &gt;::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacesmacc.html#a380bcca82a996c6c88868251206ad420">smacc::CallOnDefinition</a> ()</td></tr>
+<tr class="separator:a380bcca82a996c6c88868251206ad420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52c5d314d71f6a1d8658c6f1d26d9135"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a52c5d314d71f6a1d8658c6f1d26d9135"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt;!HasOnDefinition&lt; T &gt;::value, void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacesmacc.html#a52c5d314d71f6a1d8658c6f1d26d9135">smacc::CallOnDefinition</a> ()</td></tr>
+<tr class="separator:a52c5d314d71f6a1d8658c6f1d26d9135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
