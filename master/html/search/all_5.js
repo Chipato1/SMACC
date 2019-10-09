@@ -25,6 +25,7 @@ var searchData=
   ['evcustomtemperaturealert',['EvCustomTemperatureAlert',['../structEvCustomTemperatureAlert.html',1,'']]],
   ['event_5ftypes_5fcount',['event_types_count',['../classAllEventAggregator.html#a8b64cd4c8d8592916a19c628b61606cd',1,'AllEventAggregator']]],
   ['events',['events',['../classAllEventAggregator.html#af9de1c3e60421aa0b1a4979340fc4765',1,'AllEventAggregator']]],
+  ['eventtype',['eventType',['../structsmacc_1_1SmaccTransitionInfo.html#aed5d6efa53816d840b1f7e254ebb6134',1,'smacc::SmaccTransitionInfo']]],
   ['evkeypressa',['EvKeyPressA',['../structdance__bot_1_1EvKeyPressA.html',1,'dance_bot']]],
   ['evkeypressb',['EvKeyPressB',['../structdance__bot_1_1EvKeyPressB.html',1,'dance_bot']]],
   ['evkeypressc',['EvKeyPressC',['../structdance__bot_1_1EvKeyPressC.html',1,'dance_bot']]],

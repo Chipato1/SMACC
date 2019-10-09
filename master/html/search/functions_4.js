@@ -1,7 +1,7 @@
 var searchData=
 [
   ['damages',['DAMAGES',['../LICENSE_8txt.html#ae4e5ba7d6e99370d4c12feff5651d808',1,'LICENSE.txt']]],
-  ['declaretransition',['declareTransition',['../classsmacc_1_1SmaccStateInfo.html#ad5228fe261f574c95b82641699bbf9dd',1,'smacc::SmaccStateInfo']]],
+  ['declaretransition',['declareTransition',['../classsmacc_1_1SmaccStateInfo.html#ad5228fe261f574c95b82641699bbf9dd',1,'smacc::SmaccStateInfo::declareTransition(std::shared_ptr&lt; SmaccStateInfo &gt; &amp;dstState)'],['../classsmacc_1_1SmaccStateInfo.html#a71b660891b6ae6be2163b78971facd81',1,'smacc::SmaccStateInfo::declareTransition(std::shared_ptr&lt; SmaccStateInfo &gt; &amp;dstState)']]],
   ['deep_5fconstruct',['deep_construct',['../classsmacc_1_1SmaccState.html#aac23d8a6909f75c5e5fca2a7c09b5368',1,'smacc::SmaccState']]],
   ['defaultbackwardcmd',['defaultBackwardCmd',['../classbackward__local__planner_1_1BackwardLocalPlanner.html#aeeb7c645f6965c3c400a948d74cdc7b1',1,'backward_local_planner::BackwardLocalPlanner']]],
   ['demangledtypename',['demangledTypeName',['../common_8h.html#ac3e1038dcfa388433ad35e76ce86c747',1,'common.h']]],

@@ -79,6 +79,8 @@ class \hyperlink{classsmacc_1_1SmaccTopicPublisherClient}{Smacc\+Topic\+Publishe
 \item 
 class \hyperlink{classsmacc_1_1SmaccTopicSubscriberClient}{Smacc\+Topic\+Subscriber\+Client}
 \item 
+struct \hyperlink{structsmacc_1_1SmaccTransitionInfo}{Smacc\+Transition\+Info}
+\item 
 struct \hyperlink{structsmacc_1_1StateBehaviorInfoEntry}{State\+Behavior\+Info\+Entry}
 \item 
 class \hyperlink{classsmacc_1_1Timer}{Timer}
@@ -157,7 +159,7 @@ Definition at line 127 of file common.\+h.
 )}\hypertarget{namespacesmacc_a380bcca82a996c6c88868251206ad420}{}\label{namespacesmacc_a380bcca82a996c6c88868251206ad420}
 
 
-Definition at line 221 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 242 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 
@@ -165,11 +167,11 @@ References demangle\+Symbol().
 
 
 \begin{DoxyCode}
-221                    \{
-222    \textcolor{comment}{/* something when T has toString ... */}
-223    ROS\_INFO\_STREAM(\textcolor{stringliteral}{"EXECUTING ONDEFINITION: "} << \hyperlink{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{demangleSymbol}(\textcolor{keyword}{typeid}(T).name()));
-224    T::onDefinition();
-225 \}
+242                    \{
+243    \textcolor{comment}{/* something when T has toString ... */}
+244    ROS\_INFO\_STREAM(\textcolor{stringliteral}{"EXECUTING ONDEFINITION: "} << \hyperlink{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{demangleSymbol}(\textcolor{keyword}{typeid}(T).name()));
+245    T::onDefinition();
+246 \}
 \end{DoxyCode}
 
 
@@ -192,7 +194,7 @@ Here is the call graph for this function\+:
 )}\hypertarget{namespacesmacc_a52c5d314d71f6a1d8658c6f1d26d9135}{}\label{namespacesmacc_a52c5d314d71f6a1d8658c6f1d26d9135}
 
 
-Definition at line 229 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 250 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 
@@ -200,12 +202,12 @@ References demangle\+Symbol().
 
 
 \begin{DoxyCode}
-229                    \{
-230     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"static OnDefinition: dont exist for "} << \hyperlink{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{demangleSymbol}(\textcolor{keyword}{typeid}(T).name()
+250                    \{
+251     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"static OnDefinition: dont exist for "} << \hyperlink{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{demangleSymbol}(\textcolor{keyword}{typeid}(T).name()
       ));
-231    \textcolor{comment}{/* something when T has toString ... */}
-232    
-233 \}
+252    \textcolor{comment}{/* something when T has toString ... */}
+253    
+254 \}
 \end{DoxyCode}
 
 
@@ -284,7 +286,7 @@ Here is the caller graph for this function\+:
 )}\hypertarget{namespacesmacc_a5cafbc92a9118372bd260f6a6f0cc585}{}\label{namespacesmacc_a5cafbc92a9118372bd260f6a6f0cc585}
 
 
-Definition at line 128 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 130 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 
@@ -292,9 +294,9 @@ References smacc\+::\+Walk\+States\+Executor$<$ Initial\+State\+Type $>$\+::walk
 
 
 \begin{DoxyCode}
-129 \{
-130     WalkStatesExecutor<T>::walkStates(parentState, \textcolor{keyword}{false});
-131 \}
+131 \{
+132     WalkStatesExecutor<T>::walkStates(parentState, \textcolor{keyword}{false});
+133 \}
 \end{DoxyCode}
 
 
@@ -317,15 +319,15 @@ Here is the call graph for this function\+:
 )}\hypertarget{namespacesmacc_ad37426186f133b3653e9adae5b313699}{}\label{namespacesmacc_ad37426186f133b3653e9adae5b313699}
 
 
-Definition at line 135 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 137 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 \begin{DoxyCode}
-136 \{
-137     \textcolor{keyword}{using} boost::mpl::\_1;
-138     \textcolor{keyword}{using} wrappedList = \textcolor{keyword}{typename} boost::mpl::transform<T, add\_type\_wrapper<\_1>>::type;
-139     boost::mpl::for\_each<wrappedList>(AddSubState(parentState));
-140 \}
+138 \{
+139     \textcolor{keyword}{using} boost::mpl::\_1;
+140     \textcolor{keyword}{using} wrappedList = \textcolor{keyword}{typename} boost::mpl::transform<T, add\_type\_wrapper<\_1>>::type;
+141     boost::mpl::for\_each<wrappedList>(AddSubState(parentState));
+142 \}
 \end{DoxyCode}
 \index{smacc@{smacc}!process\+Transition@{process\+Transition}}
 \index{process\+Transition@{process\+Transition}!smacc@{smacc}}
@@ -337,7 +339,7 @@ Definition at line 135 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 )}\hypertarget{namespacesmacc_a89246662ad7a95c78e6fa5eedf0c01a5}{}\label{namespacesmacc_a89246662ad7a95c78e6fa5eedf0c01a5}
 
 
-Definition at line 153 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 155 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 
@@ -349,22 +351,22 @@ Referenced by process\+Transitions().
 
 
 \begin{DoxyCode}
-154 \{
-155     ROS\_INFO(\textcolor{stringliteral}{"State %s Walker transition: %s"}, sourceState->toShortName().c\_str(), 
+156 \{
+157     ROS\_INFO(\textcolor{stringliteral}{"State %s Walker transition: %s"}, sourceState->toShortName().c\_str(), 
       \hyperlink{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{demangleSymbol}(\textcolor{keyword}{typeid}(Ev).name()).c\_str());
-156 
-157     \textcolor{keywordflow}{if} (!sourceState->stateMachine\_->containsState<Dst>())
-158     \{
-159         \textcolor{keyword}{auto} siblingnode = sourceState->stateMachine\_->createState<Dst>(sourceState->parentState\_);
-160         WalkStatesExecutor<Dst>::walkStates(siblingnode, \textcolor{keyword}{true});
-161         sourceState->declareTransition<Ev>(siblingnode);
-162     \}
-163     \textcolor{keywordflow}{else}
-164     \{
-165         \textcolor{keyword}{auto} siblingnode = sourceState->stateMachine\_->getState<Dst>();
-166         sourceState->declareTransition<Ev>(siblingnode);
-167     \}
-168 \}
+158 
+159     \textcolor{keywordflow}{if} (!sourceState->stateMachine\_->containsState<Dst>())
+160     \{
+161         \textcolor{keyword}{auto} siblingnode = sourceState->stateMachine\_->createState<Dst>(sourceState->parentState\_);
+162         WalkStatesExecutor<Dst>::walkStates(siblingnode, \textcolor{keyword}{true});
+163         sourceState->declareTransition<Ev>(siblingnode);
+164     \}
+165     \textcolor{keywordflow}{else}
+166     \{
+167         \textcolor{keyword}{auto} siblingnode = sourceState->stateMachine\_->getState<Dst>();
+168         sourceState->declareTransition<Ev>(siblingnode);
+169     \}
+170 \}
 \end{DoxyCode}
 
 
@@ -400,13 +402,13 @@ Here is the caller graph for this function\+:
 )}\hypertarget{namespacesmacc_a1f165532f9a9126db41900fbf23a985d}{}\label{namespacesmacc_a1f165532f9a9126db41900fbf23a985d}
 
 
-Definition at line 178 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 201 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 \begin{DoxyCode}
-179 \{
-180     \textcolor{comment}{//ROS\_INFO\_STREAM("GOTCHA");}
-181 \}
+202 \{
+203     \textcolor{comment}{//ROS\_INFO\_STREAM("GOTCHA");}
+204 \}
 \end{DoxyCode}
 \index{smacc@{smacc}!process\+Transitions@{process\+Transitions}}
 \index{process\+Transitions@{process\+Transitions}!smacc@{smacc}}
@@ -417,16 +419,16 @@ Definition at line 178 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 )}\hypertarget{namespacesmacc_aa41f91df712a86c870af2816553f478e}{}\label{namespacesmacc_aa41f91df712a86c870af2816553f478e}
 
 
-Definition at line 144 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 146 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 \begin{DoxyCode}
-145 \{
-146     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"State %s Walker has transition list"});
-147     \textcolor{keyword}{using} boost::mpl::\_1;
-148     \textcolor{keyword}{using} wrappedList = \textcolor{keyword}{typename} boost::mpl::transform<T, add\_type\_wrapper<\_1>>::type;
-149     boost::mpl::for\_each<wrappedList>(AddTransition(sourceState));
-150 \}
+147 \{
+148     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"State %s Walker has transition list"});
+149     \textcolor{keyword}{using} boost::mpl::\_1;
+150     \textcolor{keyword}{using} wrappedList = \textcolor{keyword}{typename} boost::mpl::transform<T, add\_type\_wrapper<\_1>>::type;
+151     boost::mpl::for\_each<wrappedList>(AddTransition(sourceState));
+152 \}
 \end{DoxyCode}
 \index{smacc@{smacc}!process\+Transitions@{process\+Transitions}}
 \index{process\+Transitions@{process\+Transitions}!smacc@{smacc}}
@@ -437,7 +439,7 @@ Definition at line 144 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 )}\hypertarget{namespacesmacc_a097ffb8059d48bbe45ee8321e92e8878}{}\label{namespacesmacc_a097ffb8059d48bbe45ee8321e92e8878}
 
 
-Definition at line 185 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 208 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 
@@ -445,12 +447,12 @@ References process\+Transition().
 
 
 \begin{DoxyCode}
-186 \{
-187     \textcolor{comment}{//ROS\_INFO\_STREAM("state transition from: " << sourceState->demangledStateName << " of type: " <<
+209 \{
+210     \textcolor{comment}{//ROS\_INFO\_STREAM("state transition from: " << sourceState->demangledStateName << " of type: " <<
        demangledTypeName<T>());}
-188     T *dummy;
-189     \hyperlink{namespacesmacc_a1f165532f9a9126db41900fbf23a985d}{processTransition}(dummy, sourceState);
-190 \}
+211     T *dummy;
+212     \hyperlink{namespacesmacc_a1f165532f9a9126db41900fbf23a985d}{processTransition}(dummy, sourceState);
+213 \}
 \end{DoxyCode}
 
 

@@ -63,7 +63,7 @@ Definition at line 10 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 )}\hypertarget{classsmacc_1_1SmaccStateMachineInfo_a188e81067d4a693ce479518dc87cf89b}{}\label{classsmacc_1_1SmaccStateMachineInfo_a188e81067d4a693ce479518dc87cf89b}
 
 
-Definition at line 312 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 333 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 
@@ -75,9 +75,9 @@ Referenced by create\+State(), and get\+State().
 
 
 \begin{DoxyCode}
-313 \{
-314     \hyperlink{classsmacc_1_1SmaccStateMachineInfo_a8d6f1a9ce60f39835e7aa2179139977f}{states}[state->fullStateName] = state;
-315 \}
+334 \{
+335     \hyperlink{classsmacc_1_1SmaccStateMachineInfo_a8d6f1a9ce60f39835e7aa2179139977f}{states}[state->fullStateName] = state;
+336 \}
 \end{DoxyCode}
 
 
@@ -100,7 +100,7 @@ Here is the caller graph for this function\+:
 )}\hypertarget{classsmacc_1_1SmaccStateMachineInfo_abef92b54a5e643232491db968de4aff0}{}\label{classsmacc_1_1SmaccStateMachineInfo_abef92b54a5e643232491db968de4aff0}
 
 
-Definition at line 282 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 303 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 
@@ -108,11 +108,11 @@ References smacc\+::\+Walk\+States\+Executor$<$ Initial\+State\+Type $>$\+::walk
 
 
 \begin{DoxyCode}
-283 \{
-284     \textcolor{keyword}{auto} initialState = this->createState<InitialStateType>(\textcolor{keyword}{nullptr});
-285     \hyperlink{structsmacc_1_1WalkStatesExecutor_a11a2b02eafb62ec298bcf5ffbb32848b}{WalkStatesExecutor<InitialStateType>::walkStates}(
+304 \{
+305     \textcolor{keyword}{auto} initialState = this->createState<InitialStateType>(\textcolor{keyword}{nullptr});
+306     \hyperlink{structsmacc_1_1WalkStatesExecutor_a11a2b02eafb62ec298bcf5ffbb32848b}{WalkStatesExecutor<InitialStateType>::walkStates}(
       initialState, \textcolor{keyword}{true});
-286 \}
+307 \}
 \end{DoxyCode}
 
 
@@ -154,7 +154,7 @@ Definition at line 22 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 )}\hypertarget{classsmacc_1_1SmaccStateMachineInfo_a2d5759ccb5a8296debcc5dec741d3b42}{}\label{classsmacc_1_1SmaccStateMachineInfo_a2d5759ccb5a8296debcc5dec741d3b42}
 
 
-Definition at line 289 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 310 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 
@@ -162,26 +162,26 @@ References add\+State().
 
 
 \begin{DoxyCode}
-290 \{
-291     \textcolor{keyword}{auto} thisptr = this->shared\_from\_this();
-292     \textcolor{keyword}{auto} state = std::shared\_ptr<SmaccStateInfo>(\textcolor{keyword}{new} SmaccStateInfo(parent, thisptr));
-293     state->demangledStateName = demangledTypeName<StateType>();
-294     state->fullStateName = \textcolor{keyword}{typeid}(StateType).name();
-295 
-296     std::vector<std::string> strs;
-297     boost::split(strs, state->demangledStateName, boost::is\_any\_of(\textcolor{stringliteral}{":"}));
-298 
-299     state->demangledStateName = strs.back();
-300 
-301     \textcolor{keywordflow}{if} (parent != \textcolor{keyword}{nullptr})
-302     \{
-303         parent->children\_.push\_back(state);
-304     \}
-305 
-306     this->\hyperlink{classsmacc_1_1SmaccStateMachineInfo_a188e81067d4a693ce479518dc87cf89b}{addState}(state);
-307 
-308     \textcolor{keywordflow}{return} state;
-309 \}
+311 \{
+312     \textcolor{keyword}{auto} thisptr = this->shared\_from\_this();
+313     \textcolor{keyword}{auto} state = std::shared\_ptr<SmaccStateInfo>(\textcolor{keyword}{new} SmaccStateInfo(parent, thisptr));
+314     state->demangledStateName = demangledTypeName<StateType>();
+315     state->fullStateName = \textcolor{keyword}{typeid}(StateType).name();
+316 
+317     std::vector<std::string> strs;
+318     boost::split(strs, state->demangledStateName, boost::is\_any\_of(\textcolor{stringliteral}{":"}));
+319 
+320     state->demangledStateName = strs.back();
+321 
+322     \textcolor{keywordflow}{if} (parent != \textcolor{keyword}{nullptr})
+323     \{
+324         parent->children\_.push\_back(state);
+325     \}
+326 
+327     this->\hyperlink{classsmacc_1_1SmaccStateMachineInfo_a188e81067d4a693ce479518dc87cf89b}{addState}(state);
+328 
+329     \textcolor{keywordflow}{return} state;
+330 \}
 \end{DoxyCode}
 
 
@@ -244,6 +244,10 @@ Here is the call graph for this function\+:
 Definition at line 42 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
+
+References demangle\+Symbol().
+
+
 \begin{DoxyCode}
 43     \{
 44         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &val : this->\hyperlink{classsmacc_1_1SmaccStateMachineInfo_a8d6f1a9ce60f39835e7aa2179139977f}{states})
@@ -265,15 +269,30 @@ Definition at line 42 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 60 
 61                 \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &transition : state->transitions\_)
 62                 \{
-63                     ss << \textcolor{stringliteral}{" - "} << transition.first << \textcolor{stringliteral}{" -> "} << transition.second->demangledStateName << 
-      std::endl;
-64                 \}
-65 
-66                 ROS\_INFO\_STREAM(ss.str());
-67             \}
-68         \}
-69     \}
+63                     \textcolor{keyword}{auto} eventTypeName = \hyperlink{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{demangleSymbol}(transition.eventType->name());
+64 
+65                     ss << \textcolor{stringliteral}{" - Transition. Index: "}<< transition.index <<\textcolor{stringliteral}{", Event Type Name:"} << 
+      eventTypeName << \textcolor{stringliteral}{", Destiny State: "} <<  transition.destinyState->demangledStateName<< \textcolor{stringliteral}{", Source State: "} <<  
+      transition.sourceState->demangledStateName << std::endl;
+66                 \}
+67 
+68                 ROS\_INFO\_STREAM(ss.str());
+69             \}
+70         \}
+71     \}
 \end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SmaccStateMachineInfo_a9f7848e013ff10b06f5a32cf81bd108f_cgraph}
+\end{center}
+\end{figure}
+
+
 
 
 \subsection{Member Data Documentation}

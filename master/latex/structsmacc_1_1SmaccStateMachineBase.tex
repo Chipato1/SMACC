@@ -143,7 +143,7 @@ Definition at line 69 of file smacc\+\_\+state\+\_\+machine\+\_\+base.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsmacc_1_1SmaccStateMachineBase_a060a552dce399a974a8e68d498fdfb6b}{}\label{structsmacc_1_1SmaccStateMachineBase_a060a552dce399a974a8e68d498fdfb6b}
 
 
-Definition at line 109 of file smacc\+\_\+state\+\_\+machine\+\_\+base.\+h.
+Definition at line 108 of file smacc\+\_\+state\+\_\+machine\+\_\+base.\+h.
 
 
 
@@ -151,73 +151,74 @@ Referenced by smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sensor\+State\+Machine, 
 
 
 \begin{DoxyCode}
-110     \{
-111         \textcolor{keywordflow}{if}(deep ==0)
-112         \{
-113             \textcolor{keywordflow}{return};
-114         \}
-115 
-116         smacc\_msgs::SmaccContainerStructure structure\_msg;
-117         structure\_msg.header.stamp = ros::Time::now();
-118 
-119         std::string currentpathprefix;
-120         
-121         \textcolor{comment}{// ROOT STATE}
-122         \textcolor{keywordflow}{if}(container==\textcolor{keyword}{nullptr})
-123         \{
-124             \textcolor{comment}{// THE NAME OF THE STATE MACHINE WITH A PREFIX '/' CHARACTER}
-125             currentpathprefix = \textcolor{stringliteral}{"/"} + currentPath;
-126             structure\_msg.path= currentpathprefix;
-127         \}
-128         \textcolor{keywordflow}{else} \textcolor{comment}{// IT IS A SUBSTATE}
-129         \{
-130             \textcolor{keywordflow}{if}(currentPath!=\textcolor{stringliteral}{""})
-131                 currentpathprefix = currentPath + \textcolor{stringliteral}{"/"}  ;
-132             \textcolor{keywordflow}{else}
-133                 currentpathprefix = \textcolor{stringliteral}{"/"};
-134 
-135             structure\_msg.path = currentpathprefix + container->demangledStateName;
-136         \}
-137 
-138         \textcolor{keyword}{static} \textcolor{keywordtype}{int} i =0;
-139         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& val: \hyperlink{classsmacc_1_1ISmaccStateMachine_a5ec3201cbddab4f062f572fb33021041}{info\_}->states)
-140         \{
-141             \textcolor{comment}{// childstate}
-142             \textcolor{keyword}{auto} state = val.second;
-143             std::stringstream ss;
-144             \textcolor{keywordflow}{if}(state->parentState\_== container)
-145             \{
-146                 structure\_msg.children.push\_back(state->toShortName());    
-147 
-148                 \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& transition: state->transitions\_)
-149                 \{
-150                     structure\_msg.internal\_outcomes.push\_back(\textcolor{stringliteral}{"success"});\textcolor{comment}{//transition.first);  }
-151                     structure\_msg.outcomes\_to.push\_back(transition.second->toShortName());
-152                     structure\_msg.outcomes\_from.push\_back(state->toShortName());
-153                 \}
-154 
-155                 \textcolor{keywordflow}{if}(state->parentState\_!=\textcolor{keyword}{nullptr})
-156                 \{
-157                     structure\_msg.outcomes\_to.push\_back(\textcolor{stringliteral}{"success"});
-158                     structure\_msg.outcomes\_from.push\_back(state->toShortName());
-159                     structure\_msg.container\_outcomes.push\_back(\textcolor{stringliteral}{"success"});
-160                 \}
-161                 \textcolor{comment}{/*}
-162 \textcolor{comment}{                if(state->transitions\_.size() > 0)}
-163 \textcolor{comment}{                    structure\_msg.container\_outcomes.push\_back(state->transitions\_.begin()->first); }
-164 \textcolor{comment}{                else if( state->parentState\_!=nullptr && state->parentState\_->transitions\_.size()>0)}
-165 \textcolor{comment}{                   
+109     \{
+110         \textcolor{keywordflow}{if}(deep ==0)
+111         \{
+112             \textcolor{keywordflow}{return};
+113         \}
+114 
+115         smacc\_msgs::SmaccContainerStructure structure\_msg;
+116         structure\_msg.header.stamp = ros::Time::now();
+117 
+118         std::string currentpathprefix;
+119         
+120         \textcolor{comment}{// ROOT STATE}
+121         \textcolor{keywordflow}{if}(container==\textcolor{keyword}{nullptr})
+122         \{
+123             \textcolor{comment}{// THE NAME OF THE STATE MACHINE WITH A PREFIX '/' CHARACTER}
+124             currentpathprefix = \textcolor{stringliteral}{"/"} + currentPath;
+125             structure\_msg.path= currentpathprefix;
+126         \}
+127         \textcolor{keywordflow}{else} \textcolor{comment}{// IT IS A SUBSTATE}
+128         \{
+129             \textcolor{keywordflow}{if}(currentPath!=\textcolor{stringliteral}{""})
+130                 currentpathprefix = currentPath + \textcolor{stringliteral}{"/"}  ;
+131             \textcolor{keywordflow}{else}
+132                 currentpathprefix = \textcolor{stringliteral}{"/"};
+133 
+134             structure\_msg.path = currentpathprefix + container->demangledStateName;
+135         \}
+136 
+137         \textcolor{keyword}{static} \textcolor{keywordtype}{int} i =0;
+138         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& val: \hyperlink{classsmacc_1_1ISmaccStateMachine_a5ec3201cbddab4f062f572fb33021041}{info\_}->states)
+139         \{
+140             \textcolor{comment}{// childstate}
+141             \textcolor{keyword}{auto} state = val.second;
+142             std::stringstream ss;
+143             \textcolor{keywordflow}{if}(state->parentState\_== container)
+144             \{
+145                 structure\_msg.children.push\_back(state->toShortName());    
+146 
+147                 \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& transition: state->transitions\_)
+148                 \{
+149                     structure\_msg.internal\_outcomes.push\_back(\textcolor{stringliteral}{"success"});\textcolor{comment}{//transition.first);  }
+150                     structure\_msg.outcomes\_to.push\_back(transition.destinyState->toShortName());
+151                     structure\_msg.outcomes\_from.push\_back(state->toShortName()); \textcolor{comment}{// or
+       transition.sourceState}
+152                 \}
+153 
+154                 \textcolor{keywordflow}{if}(state->parentState\_!=\textcolor{keyword}{nullptr})
+155                 \{
+156                     structure\_msg.outcomes\_to.push\_back(\textcolor{stringliteral}{"success"});
+157                     structure\_msg.outcomes\_from.push\_back(state->toShortName());
+158                     structure\_msg.container\_outcomes.push\_back(\textcolor{stringliteral}{"success"});
+159                 \}
+160                 \textcolor{comment}{/*}
+161 \textcolor{comment}{                if(state->transitions\_.size() > 0)}
+162 \textcolor{comment}{                    structure\_msg.container\_outcomes.push\_back(state->transitions\_.begin()->first); }
+163 \textcolor{comment}{                else if( state->parentState\_!=nullptr && state->parentState\_->transitions\_.size()>0)}
+164 \textcolor{comment}{                   
        structure\_msg.container\_outcomes.push\_back(state->parentState\_->transitions\_.begin()->first); }
-166 \textcolor{comment}{}
-167 \textcolor{comment}{                */}
-168                 
-169                 \hyperlink{structsmacc_1_1SmaccStateMachineBase_a060a552dce399a974a8e68d498fdfb6b}{createStructureMessage}(state, structure\_msg.path, structure\_msgs, 
+165 \textcolor{comment}{}
+166 \textcolor{comment}{                */}
+167                 
+168                 \hyperlink{structsmacc_1_1SmaccStateMachineBase_a060a552dce399a974a8e68d498fdfb6b}{createStructureMessage}(state, structure\_msg.path, structure\_msgs, 
       deep -1);
-170             \}
-171         \}
-172 
-173         structure\_msgs.push\_back(structure\_msg);
-174     \}
+169             \}
+170         \}
+171 
+172         structure\_msgs.push\_back(structure\_msg);
+173     \}
 \end{DoxyCode}
 
 
@@ -263,13 +264,13 @@ Definition at line 47 of file smacc\+\_\+state\+\_\+machine\+\_\+base.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsmacc_1_1SmaccStateMachineBase_a5529364d7f90edb802221536402e838a}{}\label{structsmacc_1_1SmaccStateMachineBase_a5529364d7f90edb802221536402e838a}
 
 
-Definition at line 90 of file smacc\+\_\+state\+\_\+machine\+\_\+base.\+h.
+Definition at line 89 of file smacc\+\_\+state\+\_\+machine\+\_\+base.\+h.
 
 
 \begin{DoxyCode}
-91     \{
-92         \textcolor{keywordflow}{return} \hyperlink{structsmacc_1_1SmaccStateMachineBase_a191b29227e32c440c936ac05359e9cd5}{nh}.getParam(param\_name, param\_storage);
-93     \}
+90     \{
+91         \textcolor{keywordflow}{return} \hyperlink{structsmacc_1_1SmaccStateMachineBase_a191b29227e32c440c936ac05359e9cd5}{nh}.getParam(param\_name, param\_storage);
+92     \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+State\+Machine\+Base@{smacc\+::\+Smacc\+State\+Machine\+Base}!initiate\+\_\+impl@{initiate\+\_\+impl}}
 \index{initiate\+\_\+impl@{initiate\+\_\+impl}!smacc\+::\+Smacc\+State\+Machine\+Base@{smacc\+::\+Smacc\+State\+Machine\+Base}}
@@ -297,8 +298,7 @@ Definition at line 75 of file smacc\+\_\+state\+\_\+machine\+\_\+base.\+h.
       smacc\_msgs::SmaccContainerStructure>(\textcolor{stringliteral}{"/"}+ stateMachineName + \textcolor{stringliteral}{"/smacc/container\_structure"},1);
 84         \hyperlink{structsmacc_1_1SmaccStateMachineBase_a7c76e7a7d6c00d9831472297ff51e38c}{stateMachineStatePub\_} = \hyperlink{structsmacc_1_1SmaccStateMachineBase_a191b29227e32c440c936ac05359e9cd5}{nh}.advertise<smacc\_msgs::SmaccContainerStatus>(\textcolor{stringliteral}{"/"}+ 
       stateMachineName + \textcolor{stringliteral}{"/smacc/container\_status"},1);     
-85 
-86     \}
+85     \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+State\+Machine\+Base@{smacc\+::\+Smacc\+State\+Machine\+Base}!param@{param}}
 \index{param@{param}!smacc\+::\+Smacc\+State\+Machine\+Base@{smacc\+::\+Smacc\+State\+Machine\+Base}}
@@ -311,13 +311,13 @@ Definition at line 75 of file smacc\+\_\+state\+\_\+machine\+\_\+base.\+h.
 ) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsmacc_1_1SmaccStateMachineBase_a9a074f2e5be33064796ad6df2d6231b7}{}\label{structsmacc_1_1SmaccStateMachineBase_a9a074f2e5be33064796ad6df2d6231b7}
 
 
-Definition at line 104 of file smacc\+\_\+state\+\_\+machine\+\_\+base.\+h.
+Definition at line 103 of file smacc\+\_\+state\+\_\+machine\+\_\+base.\+h.
 
 
 \begin{DoxyCode}
-105     \{
-106         \textcolor{keywordflow}{return} \hyperlink{structsmacc_1_1SmaccStateMachineBase_a191b29227e32c440c936ac05359e9cd5}{nh}.param(param\_name, param\_val, default\_val);
-107     \}
+104     \{
+105         \textcolor{keywordflow}{return} \hyperlink{structsmacc_1_1SmaccStateMachineBase_a191b29227e32c440c936ac05359e9cd5}{nh}.param(param\_name, param\_val, default\_val);
+106     \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+State\+Machine\+Base@{smacc\+::\+Smacc\+State\+Machine\+Base}!recursive\+Publish\+Status@{recursive\+Publish\+Status}}
 \index{recursive\+Publish\+Status@{recursive\+Publish\+Status}!smacc\+::\+Smacc\+State\+Machine\+Base@{smacc\+::\+Smacc\+State\+Machine\+Base}}
@@ -328,7 +328,7 @@ Definition at line 104 of file smacc\+\_\+state\+\_\+machine\+\_\+base.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsmacc_1_1SmaccStateMachineBase_a5c078ef0eec2c64ecd9a31b46341b13c}{}\label{structsmacc_1_1SmaccStateMachineBase_a5c078ef0eec2c64ecd9a31b46341b13c}
 
 
-Definition at line 176 of file smacc\+\_\+state\+\_\+machine\+\_\+base.\+h.
+Definition at line 175 of file smacc\+\_\+state\+\_\+machine\+\_\+base.\+h.
 
 
 
@@ -336,92 +336,88 @@ Referenced by smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sensor\+State\+Machine, 
 
 
 \begin{DoxyCode}
-177     \{
-178         \textcolor{comment}{//ROS\_WARN\_STREAM("*" + parentstate->toShortName());}
-179         smacc\_msgs::SmaccContainerStatus status\_msg;
-180         status\_msg.header.stamp = ros::Time::now();
-181         \textcolor{keyword}{auto} stateMachineName = this->\hyperlink{classsmacc_1_1ISmaccStateMachine_a2d0b1742f17dd77d5df217153e8b5259}{getStateMachineName}();
-182 
-183         \textcolor{keywordflow}{if}(parentstate==\textcolor{keyword}{nullptr})
-184         \{
-185             
-186 
-187             status\_msg.path = \textcolor{stringliteral}{"/"} + stateMachineName;
-188 
-189             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& val: \hyperlink{classsmacc_1_1ISmaccStateMachine_a5ec3201cbddab4f062f572fb33021041}{info\_}->states)
-190             \{
-191                 \textcolor{keyword}{auto} state = val.second;
-192 
-193                 \textcolor{keywordflow}{if}(state->parentState\_!=\textcolor{keyword}{nullptr} \textcolor{comment}{// only root elements}
-194                     || !state->active\_ )
-195                         \textcolor{keywordflow}{continue};     
-196 
-197                 \textcolor{comment}{//ROS\_WARN\_STREAM("active root state: " << state->toShortName());}
-198                 status\_msg.active\_states.push\_back(state->toShortName());
-199             \}
-200 
-201             status\_msg.info = \textcolor{stringliteral}{"HEART BEAT"};
-202     
-203             status\_msg.local\_data.resize(6);
-204             status\_msg.local\_data[0] = 0x80;
-205             status\_msg.local\_data[1] = 0x02;
-206             status\_msg.local\_data[2] = 0x7d;
-207             status\_msg.local\_data[3] = 0x71;
-208             status\_msg.local\_data[4] = 0x00;
-209             status\_msg.local\_data[5] = 0x2e;
-210 
-211             \hyperlink{structsmacc_1_1SmaccStateMachineBase_a7c76e7a7d6c00d9831472297ff51e38c}{stateMachineStatePub\_}.publish(status\_msg);
-212 
-213             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& val: \hyperlink{classsmacc_1_1ISmaccStateMachine_a5ec3201cbddab4f062f572fb33021041}{info\_}->states)
-214             \{
-215                 \textcolor{keyword}{auto} state = val.second;
-216 
-217                 \textcolor{keywordflow}{if}(state->parentState\_!=\textcolor{keyword}{nullptr} \textcolor{comment}{// only root elements}
-218                     || !state->active\_ )
-219                         \textcolor{keywordflow}{continue};     
-220 
-221                 \hyperlink{structsmacc_1_1SmaccStateMachineBase_a5c078ef0eec2c64ecd9a31b46341b13c}{recursivePublishStatus}(state);
-222             \}
-223 
+176     \{
+177         \textcolor{comment}{//ROS\_WARN\_STREAM("*" + parentstate->toShortName());}
+178         smacc\_msgs::SmaccContainerStatus status\_msg;
+179         status\_msg.header.stamp = ros::Time::now();
+180         \textcolor{keyword}{auto} stateMachineName = this->\hyperlink{classsmacc_1_1ISmaccStateMachine_a2d0b1742f17dd77d5df217153e8b5259}{getStateMachineName}();
+181 
+182         \textcolor{keywordflow}{if}(parentstate==\textcolor{keyword}{nullptr})
+183         \{
+184             status\_msg.path = \textcolor{stringliteral}{"/"} + stateMachineName;
+185 
+186             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& val: \hyperlink{classsmacc_1_1ISmaccStateMachine_a5ec3201cbddab4f062f572fb33021041}{info\_}->states)
+187             \{
+188                 \textcolor{keyword}{auto} state = val.second;
+189 
+190                 \textcolor{keywordflow}{if}(state->parentState\_!=\textcolor{keyword}{nullptr} \textcolor{comment}{// only root elements}
+191                     || !state->active\_ )
+192                         \textcolor{keywordflow}{continue};     
+193 
+194                 \textcolor{comment}{//ROS\_WARN\_STREAM("active root state: " << state->toShortName());}
+195                 status\_msg.active\_states.push\_back(state->toShortName());
+196             \}
+197 
+198             status\_msg.info = \textcolor{stringliteral}{"HEART BEAT"};
+199     
+200             status\_msg.local\_data.resize(6);
+201             status\_msg.local\_data[0] = 0x80;
+202             status\_msg.local\_data[1] = 0x02;
+203             status\_msg.local\_data[2] = 0x7d;
+204             status\_msg.local\_data[3] = 0x71;
+205             status\_msg.local\_data[4] = 0x00;
+206             status\_msg.local\_data[5] = 0x2e;
+207 
+208             \hyperlink{structsmacc_1_1SmaccStateMachineBase_a7c76e7a7d6c00d9831472297ff51e38c}{stateMachineStatePub\_}.publish(status\_msg);
+209 
+210             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& val: \hyperlink{classsmacc_1_1ISmaccStateMachine_a5ec3201cbddab4f062f572fb33021041}{info\_}->states)
+211             \{
+212                 \textcolor{keyword}{auto} state = val.second;
+213 
+214                 \textcolor{keywordflow}{if}(state->parentState\_!=\textcolor{keyword}{nullptr} \textcolor{comment}{// only root elements}
+215                     || !state->active\_ )
+216                         \textcolor{keywordflow}{continue};     
+217 
+218                 \hyperlink{structsmacc_1_1SmaccStateMachineBase_a5c078ef0eec2c64ecd9a31b46341b13c}{recursivePublishStatus}(state);
+219             \}
+220         \}
+221         \textcolor{keywordflow}{else}
+222         \{
+223             status\_msg.path = \textcolor{stringliteral}{"/"} + stateMachineName + \textcolor{stringliteral}{"/"} + parentstate->getFullPath();
 224 
-225         \}
-226         \textcolor{keywordflow}{else}
-227         \{
-228             status\_msg.path = \textcolor{stringliteral}{"/"} + stateMachineName + \textcolor{stringliteral}{"/"} + parentstate->getFullPath();
-229 
-230             \textcolor{comment}{//status\_msg.initial\_states.push\_back("NavigateToRadialStart");}
-231             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& child: parentstate->children\_)
-232             \{
-233                 \textcolor{keywordflow}{if}(child->active\_)
-234                 \{
-235                     \textcolor{comment}{//ROS\_WARN\_STREAM("active child state ("<< parentstate->toShortName()<<"): " <<
+225             \textcolor{comment}{//status\_msg.initial\_states.push\_back("NavigateToRadialStart");}
+226             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& child: parentstate->children\_)
+227             \{
+228                 \textcolor{keywordflow}{if}(child->active\_)
+229                 \{
+230                     \textcolor{comment}{//ROS\_WARN\_STREAM("active child state ("<< parentstate->toShortName()<<"): " <<
        child->toShortName());}
-236                     status\_msg.active\_states.push\_back(child->toShortName());
-237                 \}
-238             \}
-239 
-240              status\_msg.info = \textcolor{stringliteral}{"HEART BEAT"};
-241         
-242             status\_msg.local\_data.resize(6);
-243             status\_msg.local\_data[0] = 0x80;
-244             status\_msg.local\_data[1] = 0x02;
-245             status\_msg.local\_data[2] = 0x7d;
-246             status\_msg.local\_data[3] = 0x71;
-247             status\_msg.local\_data[4] = 0x00;
-248             status\_msg.local\_data[5] = 0x2e;
-249 
-250 
-251             \hyperlink{structsmacc_1_1SmaccStateMachineBase_a7c76e7a7d6c00d9831472297ff51e38c}{stateMachineStatePub\_}.publish(status\_msg);
-252 
-253             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& child: parentstate->children\_)
-254             \{
-255                 \textcolor{keywordflow}{if}(child->active\_ && !child->children\_.empty())
-256                 \{
-257                     \hyperlink{structsmacc_1_1SmaccStateMachineBase_a5c078ef0eec2c64ecd9a31b46341b13c}{recursivePublishStatus}(child);
-258                 \}
-259             \}
-260         \}
-261     \}
+231                     status\_msg.active\_states.push\_back(child->toShortName());
+232                 \}
+233             \}
+234 
+235              status\_msg.info = \textcolor{stringliteral}{"HEART BEAT"};
+236         
+237             status\_msg.local\_data.resize(6);
+238             status\_msg.local\_data[0] = 0x80;
+239             status\_msg.local\_data[1] = 0x02;
+240             status\_msg.local\_data[2] = 0x7d;
+241             status\_msg.local\_data[3] = 0x71;
+242             status\_msg.local\_data[4] = 0x00;
+243             status\_msg.local\_data[5] = 0x2e;
+244 
+245 
+246             \hyperlink{structsmacc_1_1SmaccStateMachineBase_a7c76e7a7d6c00d9831472297ff51e38c}{stateMachineStatePub\_}.publish(status\_msg);
+247 
+248             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& child: parentstate->children\_)
+249             \{
+250                 \textcolor{keywordflow}{if}(child->active\_ && !child->children\_.empty())
+251                 \{
+252                     \hyperlink{structsmacc_1_1SmaccStateMachineBase_a5c078ef0eec2c64ecd9a31b46341b13c}{recursivePublishStatus}(child);
+253                 \}
+254             \}
+255         \}
+256     \}
 \end{DoxyCode}
 
 
@@ -468,13 +464,13 @@ Definition at line 34 of file smacc\+\_\+state\+\_\+machine\+\_\+base.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsmacc_1_1SmaccStateMachineBase_a30d76661005a2bdff68c802cdab42fcf}{}\label{structsmacc_1_1SmaccStateMachineBase_a30d76661005a2bdff68c802cdab42fcf}
 
 
-Definition at line 97 of file smacc\+\_\+state\+\_\+machine\+\_\+base.\+h.
+Definition at line 96 of file smacc\+\_\+state\+\_\+machine\+\_\+base.\+h.
 
 
 \begin{DoxyCode}
-98     \{
-99         \textcolor{keywordflow}{return} \hyperlink{structsmacc_1_1SmaccStateMachineBase_a191b29227e32c440c936ac05359e9cd5}{nh}.setParam(param\_name, param\_val);
-100     \}
+97     \{
+98         \textcolor{keywordflow}{return} \hyperlink{structsmacc_1_1SmaccStateMachineBase_a191b29227e32c440c936ac05359e9cd5}{nh}.setParam(param\_name, param\_val);
+99     \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+State\+Machine\+Base@{smacc\+::\+Smacc\+State\+Machine\+Base}!state\+\_\+machine\+\_\+visualization@{state\+\_\+machine\+\_\+visualization}}
 \index{state\+\_\+machine\+\_\+visualization@{state\+\_\+machine\+\_\+visualization}!smacc\+::\+Smacc\+State\+Machine\+Base@{smacc\+::\+Smacc\+State\+Machine\+Base}}
@@ -485,114 +481,114 @@ Definition at line 97 of file smacc\+\_\+state\+\_\+machine\+\_\+base.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsmacc_1_1SmaccStateMachineBase_afcee04fc4d307b31d7d0fac932d7d90f}{}\label{structsmacc_1_1SmaccStateMachineBase_afcee04fc4d307b31d7d0fac932d7d90f}
 
 
-Definition at line 263 of file smacc\+\_\+state\+\_\+machine\+\_\+base.\+h.
+Definition at line 258 of file smacc\+\_\+state\+\_\+machine\+\_\+base.\+h.
 
 
 \begin{DoxyCode}
-264     \{
-265     \textcolor{comment}{/*}
-266 \textcolor{comment}{    header: }
-267 \textcolor{comment}{    seq: 24}
-268 \textcolor{comment}{    stamp: }
-269 \textcolor{comment}{        secs: 1545148095}
-270 \textcolor{comment}{        nsecs: 148165941}
-271 \textcolor{comment}{    frame\_id: ''}
-272 \textcolor{comment}{    path: "/SM\_ROOT"}
-273 \textcolor{comment}{    children: [FOO, BAR]}
-274 \textcolor{comment}{    internal\_outcomes: [outcome1, outcome2, outcome2]}
-275 \textcolor{comment}{    outcomes\_from: [FOO, FOO, BAR]}
-276 \textcolor{comment}{    outcomes\_to: [BAR, outcome4, FOO]}
-277 \textcolor{comment}{    container\_outcomes: [outcome4, outcome5]}
-278 \textcolor{comment}{    */}
-279 
-280     std::vector<smacc\_msgs::SmaccContainerStructure> structure\_msgs;
-281     \textcolor{keyword}{auto} stateMachineName = this->\hyperlink{classsmacc_1_1ISmaccStateMachine_a2d0b1742f17dd77d5df217153e8b5259}{getStateMachineName}();
-282     \hyperlink{structsmacc_1_1SmaccStateMachineBase_a060a552dce399a974a8e68d498fdfb6b}{createStructureMessage}(\textcolor{keyword}{nullptr}, stateMachineName , structure\_msgs,-1);
-283 
-284     \textcolor{comment}{/*}
-285 \textcolor{comment}{    structure\_msg.children.push\_back("NavigateToEndPoint");}
-286 \textcolor{comment}{    structure\_msg.children.push\_back("NavigateToRadialStart");}
-287 \textcolor{comment}{    structure\_msg.children.push\_back("ReturnToRadialStart");}
-288 \textcolor{comment}{    structure\_msg.children.push\_back("RotateDegress");         }
-289 \textcolor{comment}{    */}
-290 
-291     \textcolor{comment}{/*}
-292 \textcolor{comment}{    structure\_msg.container\_outcomes.push\_back("ev1");}
-293 \textcolor{comment}{    structure\_msg.container\_outcomes.push\_back("ev2");}
-294 \textcolor{comment}{    structure\_msg.container\_outcomes.push\_back("ev3");}
-295 \textcolor{comment}{    structure\_msg.container\_outcomes.push\_back("ev4");}
-296 \textcolor{comment}{    */}
-297     
-298     \textcolor{comment}{/*structure\_msg.internal\_outcomes.push\_back("ev1");}
-299 \textcolor{comment}{    structure\_msg.internal\_outcomes.push\_back("ev2");}
-300 \textcolor{comment}{    structure\_msg.internal\_outcomes.push\_back("ev2");}
-301 \textcolor{comment}{    structure\_msg.internal\_outcomes.push\_back("ev2");}
+259     \{
+260     \textcolor{comment}{/*}
+261 \textcolor{comment}{    header: }
+262 \textcolor{comment}{    seq: 24}
+263 \textcolor{comment}{    stamp: }
+264 \textcolor{comment}{        secs: 1545148095}
+265 \textcolor{comment}{        nsecs: 148165941}
+266 \textcolor{comment}{    frame\_id: ''}
+267 \textcolor{comment}{    path: "/SM\_ROOT"}
+268 \textcolor{comment}{    children: [FOO, BAR]}
+269 \textcolor{comment}{    internal\_outcomes: [outcome1, outcome2, outcome2]}
+270 \textcolor{comment}{    outcomes\_from: [FOO, FOO, BAR]}
+271 \textcolor{comment}{    outcomes\_to: [BAR, outcome4, FOO]}
+272 \textcolor{comment}{    container\_outcomes: [outcome4, outcome5]}
+273 \textcolor{comment}{    */}
+274 
+275     std::vector<smacc\_msgs::SmaccContainerStructure> structure\_msgs;
+276     \textcolor{keyword}{auto} stateMachineName = this->\hyperlink{classsmacc_1_1ISmaccStateMachine_a2d0b1742f17dd77d5df217153e8b5259}{getStateMachineName}();
+277     \hyperlink{structsmacc_1_1SmaccStateMachineBase_a060a552dce399a974a8e68d498fdfb6b}{createStructureMessage}(\textcolor{keyword}{nullptr}, stateMachineName , structure\_msgs,-1);
+278 
+279     \textcolor{comment}{/*}
+280 \textcolor{comment}{    structure\_msg.children.push\_back("NavigateToEndPoint");}
+281 \textcolor{comment}{    structure\_msg.children.push\_back("NavigateToRadialStart");}
+282 \textcolor{comment}{    structure\_msg.children.push\_back("ReturnToRadialStart");}
+283 \textcolor{comment}{    structure\_msg.children.push\_back("RotateDegress");         }
+284 \textcolor{comment}{    */}
+285 
+286     \textcolor{comment}{/*}
+287 \textcolor{comment}{    structure\_msg.container\_outcomes.push\_back("ev1");}
+288 \textcolor{comment}{    structure\_msg.container\_outcomes.push\_back("ev2");}
+289 \textcolor{comment}{    structure\_msg.container\_outcomes.push\_back("ev3");}
+290 \textcolor{comment}{    structure\_msg.container\_outcomes.push\_back("ev4");}
+291 \textcolor{comment}{    */}
+292     
+293     \textcolor{comment}{/*structure\_msg.internal\_outcomes.push\_back("ev1");}
+294 \textcolor{comment}{    structure\_msg.internal\_outcomes.push\_back("ev2");}
+295 \textcolor{comment}{    structure\_msg.internal\_outcomes.push\_back("ev2");}
+296 \textcolor{comment}{    structure\_msg.internal\_outcomes.push\_back("ev2");}
+297 \textcolor{comment}{}
+298 \textcolor{comment}{    structure\_msg.outcomes\_from.push\_back("NavigateToEndPoint");}
+299 \textcolor{comment}{    structure\_msg.outcomes\_from.push\_back("NavigateToRadialStart");}
+300 \textcolor{comment}{    structure\_msg.outcomes\_from.push\_back("ReturnToRadialStart");}
+301 \textcolor{comment}{    structure\_msg.outcomes\_from.push\_back("RotateDegress");}
 302 \textcolor{comment}{}
-303 \textcolor{comment}{    structure\_msg.outcomes\_from.push\_back("NavigateToEndPoint");}
-304 \textcolor{comment}{    structure\_msg.outcomes\_from.push\_back("NavigateToRadialStart");}
-305 \textcolor{comment}{    structure\_msg.outcomes\_from.push\_back("ReturnToRadialStart");}
-306 \textcolor{comment}{    structure\_msg.outcomes\_from.push\_back("RotateDegress");}
-307 \textcolor{comment}{}
-308 \textcolor{comment}{    structure\_msg.outcomes\_to.push\_back("ReturnToRadialStart");}
-309 \textcolor{comment}{    structure\_msg.outcomes\_to.push\_back("NavigateToEndPoint");}
-310 \textcolor{comment}{    structure\_msg.outcomes\_to.push\_back("RotateDegress");}
-311 \textcolor{comment}{    structure\_msg.outcomes\_to.push\_back("NavigateToEndPoint");}
-312 \textcolor{comment}{*/}
-313     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i= structure\_msgs.size() -1 ; i >= 0 ; i--)
-314     \{
-315         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& structure\_msg: structure\_msgs)
-316         \{
-317             \hyperlink{structsmacc_1_1SmaccStateMachineBase_af586b32d0f79caba26c2dbca76a55767}{stateMachineStructurePub\_}.publish(structure\_msgs[i]);
-318         \}
-319     \}
-320 
-321     
-322     \hyperlink{structsmacc_1_1SmaccStateMachineBase_a5c078ef0eec2c64ecd9a31b46341b13c}{recursivePublishStatus}(\textcolor{keyword}{nullptr});
-323     
-324 
-325     \textcolor{comment}{/*    }
-326 \textcolor{comment}{    if(currentState\_ !=nullptr && currentState\_->parentState\_==nullptr)}
-327 \textcolor{comment}{    \{        }
-328 \textcolor{comment}{        smacc\_msgs::SmaccContainerStatus status\_msg;}
-329 \textcolor{comment}{        status\_msg.header.stamp = ros::Time::now();}
-330 \textcolor{comment}{}
-331 \textcolor{comment}{        status\_msg.path = "/RadialMotion";}
-332 \textcolor{comment}{        status\_msg.initial\_states.push\_back("NavigateToRadialStart");}
-333 \textcolor{comment}{        status\_msg.active\_states.push\_back(currentState\_->toShortName());}
-334 \textcolor{comment}{        status\_msg.info = "HEART BEAT";}
-335 \textcolor{comment}{        }
-336 \textcolor{comment}{        status\_msg.local\_data.resize(6);}
-337 \textcolor{comment}{        status\_msg.local\_data[0] = 0x80;}
-338 \textcolor{comment}{        status\_msg.local\_data[1] = 0x02;}
-339 \textcolor{comment}{        status\_msg.local\_data[2] = 0x7d;}
-340 \textcolor{comment}{        status\_msg.local\_data[3] =  0x71;}
-341 \textcolor{comment}{        status\_msg.local\_data[4] = 0x00;}
-342 \textcolor{comment}{        status\_msg.local\_data[5] = 0x2e;}
-343 \textcolor{comment}{}
-344 \textcolor{comment}{}
-345 \textcolor{comment}{        stateMachineStatePub\_.publish(status\_msg);}
-346 \textcolor{comment}{    \}*/}
-347 
-348 \textcolor{comment}{//}
-349 
-350 
-351     \textcolor{comment}{/*}
-352 \textcolor{comment}{    ---}
-353 \textcolor{comment}{    header: }
-354 \textcolor{comment}{    seq: 316}
-355 \textcolor{comment}{    stamp: }
-356 \textcolor{comment}{        secs: 1545154196}
-357 \textcolor{comment}{        nsecs: 289685964}
-358 \textcolor{comment}{    frame\_id: ''}
-359 \textcolor{comment}{    path: "/SM\_ROOT"}
-360 \textcolor{comment}{    initial\_states: [FOO]}
-361 \textcolor{comment}{    active\_states: [None]}
-362 \textcolor{comment}{    local\_data: !!binary |}
-363 \textcolor{comment}{    gAJ9cQAu}
-364 \textcolor{comment}{    info: "HEART BEAT"}
-365 \textcolor{comment}{    */}
-366     
-367 \}      
+303 \textcolor{comment}{    structure\_msg.outcomes\_to.push\_back("ReturnToRadialStart");}
+304 \textcolor{comment}{    structure\_msg.outcomes\_to.push\_back("NavigateToEndPoint");}
+305 \textcolor{comment}{    structure\_msg.outcomes\_to.push\_back("RotateDegress");}
+306 \textcolor{comment}{    structure\_msg.outcomes\_to.push\_back("NavigateToEndPoint");}
+307 \textcolor{comment}{*/}
+308     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i= structure\_msgs.size() -1 ; i >= 0 ; i--)
+309     \{
+310         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& structure\_msg: structure\_msgs)
+311         \{
+312             \hyperlink{structsmacc_1_1SmaccStateMachineBase_af586b32d0f79caba26c2dbca76a55767}{stateMachineStructurePub\_}.publish(structure\_msgs[i]);
+313         \}
+314     \}
+315 
+316     
+317     \hyperlink{structsmacc_1_1SmaccStateMachineBase_a5c078ef0eec2c64ecd9a31b46341b13c}{recursivePublishStatus}(\textcolor{keyword}{nullptr});
+318     
+319 
+320     \textcolor{comment}{/*    }
+321 \textcolor{comment}{    if(currentState\_ !=nullptr && currentState\_->parentState\_==nullptr)}
+322 \textcolor{comment}{    \{        }
+323 \textcolor{comment}{        smacc\_msgs::SmaccContainerStatus status\_msg;}
+324 \textcolor{comment}{        status\_msg.header.stamp = ros::Time::now();}
+325 \textcolor{comment}{}
+326 \textcolor{comment}{        status\_msg.path = "/RadialMotion";}
+327 \textcolor{comment}{        status\_msg.initial\_states.push\_back("NavigateToRadialStart");}
+328 \textcolor{comment}{        status\_msg.active\_states.push\_back(currentState\_->toShortName());}
+329 \textcolor{comment}{        status\_msg.info = "HEART BEAT";}
+330 \textcolor{comment}{        }
+331 \textcolor{comment}{        status\_msg.local\_data.resize(6);}
+332 \textcolor{comment}{        status\_msg.local\_data[0] = 0x80;}
+333 \textcolor{comment}{        status\_msg.local\_data[1] = 0x02;}
+334 \textcolor{comment}{        status\_msg.local\_data[2] = 0x7d;}
+335 \textcolor{comment}{        status\_msg.local\_data[3] =  0x71;}
+336 \textcolor{comment}{        status\_msg.local\_data[4] = 0x00;}
+337 \textcolor{comment}{        status\_msg.local\_data[5] = 0x2e;}
+338 \textcolor{comment}{}
+339 \textcolor{comment}{}
+340 \textcolor{comment}{        stateMachineStatePub\_.publish(status\_msg);}
+341 \textcolor{comment}{    \}*/}
+342 
+343 \textcolor{comment}{//}
+344 
+345 
+346     \textcolor{comment}{/*}
+347 \textcolor{comment}{    ---}
+348 \textcolor{comment}{    header: }
+349 \textcolor{comment}{    seq: 316}
+350 \textcolor{comment}{    stamp: }
+351 \textcolor{comment}{        secs: 1545154196}
+352 \textcolor{comment}{        nsecs: 289685964}
+353 \textcolor{comment}{    frame\_id: ''}
+354 \textcolor{comment}{    path: "/SM\_ROOT"}
+355 \textcolor{comment}{    initial\_states: [FOO]}
+356 \textcolor{comment}{    active\_states: [None]}
+357 \textcolor{comment}{    local\_data: !!binary |}
+358 \textcolor{comment}{    gAJ9cQAu}
+359 \textcolor{comment}{    info: "HEART BEAT"}
+360 \textcolor{comment}{    */}
+361     
+362 \}      
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+State\+Machine\+Base@{smacc\+::\+Smacc\+State\+Machine\+Base}!Stop@{Stop}}
 \index{Stop@{Stop}!smacc\+::\+Smacc\+State\+Machine\+Base@{smacc\+::\+Smacc\+State\+Machine\+Base}}

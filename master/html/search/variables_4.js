@@ -11,6 +11,7 @@ var searchData=
   ['description',['description',['../classrosdoc__lite_1_1rdcore_1_1PackageInformation.html#a579d2604f2cfac815e8e3072c0833360',1,'rosdoc_lite::rdcore::PackageInformation']]],
   ['desired_5fglobal_5fplanner_5f',['desired_global_planner_',['../classsmacc__planner__switcher_1_1PlannerSwitcher.html#aed229df648a0903e3cdf77682220efb5',1,'smacc_planner_switcher::PlannerSwitcher']]],
   ['desired_5flocal_5fplanner_5f',['desired_local_planner_',['../classsmacc__planner__switcher_1_1PlannerSwitcher.html#aecc5958653ed39dd7611783043d23345',1,'smacc_planner_switcher::PlannerSwitcher']]],
+  ['destinystate',['destinyState',['../structsmacc_1_1SmaccTransitionInfo.html#a3deee8ced495b363eeca7f0e53d9a5af',1,'smacc::SmaccTransitionInfo']]],
   ['digraph',['DIGRAPH',['../namespacesmacc__viewer_1_1xdot_1_1xdot.html#ac721dad3413937230beb24eecaa8e31e',1,'smacc_viewer.xdot.xdot.DIGRAPH()'],['../namespacesmacc__viewer_1_1xdot_1_1xdot__qt.html#a5ced3213c63b1c0deccb1133553959c5',1,'smacc_viewer.xdot.xdot_qt.DIGRAPH()']]],
   ['direct',['DIRECT',['../LICENSE_8txt.html#a34cac86a32266331f931bceaa138a96d',1,'LICENSE.txt']]],
   ['direction',['direction',['../structSS4_1_1SsFPattern1.html#a4f18d9734ab8894ffcdbdaa3673af910',1,'SS4::SsFPattern1::direction()'],['../structSS5_1_1SsSPattern1.html#aaf02559c717760bb2711dd53101c833b',1,'SS5::SsSPattern1::direction()']]],
