@@ -11,7 +11,7 @@ Collaboration diagram for smacc\+:\+:Add\+Sub\+State\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=214pt]{structsmacc_1_1AddSubState__coll__graph}
+\includegraphics[width=200pt]{structsmacc_1_1AddSubState__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -31,7 +31,7 @@ std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1SmaccStateInfo}{Smacc\+State\
 \subsection{Detailed Description}
 
 
-Definition at line 89 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 57 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 
@@ -45,13 +45,13 @@ Definition at line 89 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsmacc_1_1AddSubState_a2110c7ebd1833484f328bed15e1a988c}{}\label{structsmacc_1_1AddSubState_a2110c7ebd1833484f328bed15e1a988c}
 
 
-Definition at line 92 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 60 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 \begin{DoxyCode}
-93         : \hyperlink{structsmacc_1_1AddSubState_a24aaa4e3dbe9722ce100f24b73207cd6}{parentState\_}(parentState)
-94     \{
-95     \}
+61         : \hyperlink{structsmacc_1_1AddSubState_a24aaa4e3dbe9722ce100f24b73207cd6}{parentState\_}(parentState)
+62     \{
+63     \}
 \end{DoxyCode}
 
 
@@ -65,7 +65,7 @@ Definition at line 92 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 )}\hypertarget{structsmacc_1_1AddSubState_a24b6d9a40ca08289e36562d26f1b863c}{}\label{structsmacc_1_1AddSubState_a24b6d9a40ca08289e36562d26f1b863c}
 
 
-Definition at line 121 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 98 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 
@@ -73,12 +73,12 @@ References smacc\+::\+Walk\+States\+Executor$<$ Initial\+State\+Type $>$\+::walk
 
 
 \begin{DoxyCode}
-122 \{
-123     \textcolor{keyword}{using} type\_t = \textcolor{keyword}{typename} T::type;
-124     \textcolor{comment}{//auto childState = this->parentState\_->createChildState<type\_t>()}
-125     \hyperlink{structsmacc_1_1WalkStatesExecutor_a11a2b02eafb62ec298bcf5ffbb32848b}{WalkStatesExecutor<type\_t>::walkStates}(
+99 \{
+100     \textcolor{keyword}{using} type\_t = \textcolor{keyword}{typename} T::type;
+101     \textcolor{comment}{//auto childState = this->parentState\_->createChildState<type\_t>()}
+102     \hyperlink{structsmacc_1_1WalkStatesExecutor_a11a2b02eafb62ec298bcf5ffbb32848b}{WalkStatesExecutor<type\_t>::walkStates}(
       \hyperlink{structsmacc_1_1AddSubState_a24aaa4e3dbe9722ce100f24b73207cd6}{parentState\_}, \textcolor{keyword}{false});
-126 \}
+103 \}
 \end{DoxyCode}
 
 
@@ -100,10 +100,10 @@ Here is the call graph for this function\+:
 \subsubsection[{\texorpdfstring{parent\+State\+\_\+}{parentState_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Smacc\+State\+Info}$>$\& smacc\+::\+Add\+Sub\+State\+::parent\+State\+\_\+}\hypertarget{structsmacc_1_1AddSubState_a24aaa4e3dbe9722ce100f24b73207cd6}{}\label{structsmacc_1_1AddSubState_a24aaa4e3dbe9722ce100f24b73207cd6}
 
 
-Definition at line 91 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 59 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-smacc/include/smacc/\hyperlink{smacc__state__machine__info_8h}{smacc\+\_\+state\+\_\+machine\+\_\+info.\+h}\end{DoxyCompactItemize}
+smacc/include/smacc/introspection/\hyperlink{smacc__state__machine__info_8h}{smacc\+\_\+state\+\_\+machine\+\_\+info.\+h}\end{DoxyCompactItemize}

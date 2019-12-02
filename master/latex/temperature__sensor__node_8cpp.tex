@@ -1,5 +1,5 @@
-\hypertarget{temperature__sensor__node_8cpp}{}\section{smacc\+\_\+sm\+\_\+examples/sm\+\_\+dance\+\_\+bot/test/temperature\+\_\+sensor\+\_\+node/src/temperature\+\_\+sensor\+\_\+node.cpp File Reference}
-\label{temperature__sensor__node_8cpp}\index{smacc\+\_\+sm\+\_\+examples/sm\+\_\+dance\+\_\+bot/test/temperature\+\_\+sensor\+\_\+node/src/temperature\+\_\+sensor\+\_\+node.\+cpp@{smacc\+\_\+sm\+\_\+examples/sm\+\_\+dance\+\_\+bot/test/temperature\+\_\+sensor\+\_\+node/src/temperature\+\_\+sensor\+\_\+node.\+cpp}}
+\hypertarget{temperature__sensor__node_8cpp}{}\section{smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/test/temperature\+\_\+sensor\+\_\+node/src/temperature\+\_\+sensor\+\_\+node.cpp File Reference}
+\label{temperature__sensor__node_8cpp}\index{smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/test/temperature\+\_\+sensor\+\_\+node/src/temperature\+\_\+sensor\+\_\+node.\+cpp@{smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/test/temperature\+\_\+sensor\+\_\+node/src/temperature\+\_\+sensor\+\_\+node.\+cpp}}
 {\ttfamily \#include $<$ros/ros.\+h$>$}\\*
 {\ttfamily \#include $<$sensor\+\_\+msgs/\+Temperature.\+h$>$}\\*
 Include dependency graph for temperature\+\_\+sensor\+\_\+node.\+cpp\+:
@@ -7,22 +7,22 @@ Include dependency graph for temperature\+\_\+sensor\+\_\+node.\+cpp\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=310pt]{temperature__sensor__node_8cpp__incl}
+\includegraphics[width=294pt]{temperature__sensor__node_8cpp__incl}
 \end{center}
 \end{figure}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classint}{int} \hyperlink{temperature__sensor__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (\hyperlink{classint}{int} argc, char $\ast$$\ast$argv)
+int \hyperlink{temperature__sensor__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
 \index{temperature\+\_\+sensor\+\_\+node.\+cpp@{temperature\+\_\+sensor\+\_\+node.\+cpp}!main@{main}}
 \index{main@{main}!temperature\+\_\+sensor\+\_\+node.\+cpp@{temperature\+\_\+sensor\+\_\+node.\+cpp}}
-\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} main (
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
 \begin{DoxyParamCaption}
-\item[{{\bf int}}]{argc, }
+\item[{int}]{argc, }
 \item[{char $\ast$$\ast$}]{argv}
 \end{DoxyParamCaption}
 )}\hypertarget{temperature__sensor__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{temperature__sensor__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
@@ -37,7 +37,7 @@ References keyboard\+\_\+node\+::msg, and keyboard\+\_\+node\+::pub.
 
 \begin{DoxyCode}
 5 \{
-6     ros::init(argc,\hyperlink{namespacesmacc__viewer_a641e44a1c9c09b36c59a0651d01d4d97}{argv}, \textcolor{stringliteral}{"temperature\_sensor\_node"});
+6     ros::init(argc,argv, \textcolor{stringliteral}{"temperature\_sensor\_node"});
 7 
 8     ros::NodeHandle nh;
 9     \textcolor{keyword}{auto} \hyperlink{namespacekeyboard__node_af6db75302d320b64f2d03f7b84404a9f}{pub} = nh.advertise<sensor\_msgs::Temperature>(\textcolor{stringliteral}{"/temperature"},1);

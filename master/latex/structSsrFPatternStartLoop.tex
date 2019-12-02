@@ -1,0 +1,153 @@
+\hypertarget{structSsrFPatternStartLoop}{}\section{Ssr\+F\+Pattern\+Start\+Loop Struct Reference}
+\label{structSsrFPatternStartLoop}\index{Ssr\+F\+Pattern\+Start\+Loop@{Ssr\+F\+Pattern\+Start\+Loop}}
+
+
+{\ttfamily \#include $<$ssr\+\_\+fpattern\+\_\+loop\+\_\+start.\+h$>$}
+
+
+
+Inheritance diagram for Ssr\+F\+Pattern\+Start\+Loop\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structSsrFPatternStartLoop__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Ssr\+F\+Pattern\+Start\+Loop\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structSsrFPatternStartLoop__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Loop\+Continue$<$ \hyperlink{structSsrFPatternStartLoop}{Ssr\+F\+Pattern\+Start\+Loop} $>$, \hyperlink{structSsrFPatternRotate1}{Ssr\+F\+Pattern\+Rotate1}, C\+O\+N\+T\+I\+N\+U\+E\+L\+O\+OP $>$ \hyperlink{structSsrFPatternStartLoop_aac85f43e96a9f790df66bf07d1dffc75}{reactions}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbool}{bool} \hyperlink{structSsrFPatternStartLoop_a990075c43854e419831b1d9b0e8fed06}{loop\+Condition} ()
+\item 
+void \hyperlink{structSsrFPatternStartLoop_a03c8e22081b280dde05b22ebf707eb30}{on\+Entry} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{structSsrFPatternStartLoop_aec64b36b1a0cc9a9449ad4cbc648f4d2}{on\+Definition} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1 of file ssr\+\_\+fpattern\+\_\+loop\+\_\+start.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{Ssr\+F\+Pattern\+Start\+Loop@{Ssr\+F\+Pattern\+Start\+Loop}!reactions@{reactions}}
+\index{reactions@{reactions}!Ssr\+F\+Pattern\+Start\+Loop@{Ssr\+F\+Pattern\+Start\+Loop}}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf smacc\+::transition}$<$Ev\+Loop\+Continue$<${\bf Ssr\+F\+Pattern\+Start\+Loop}$>$, {\bf Ssr\+F\+Pattern\+Rotate1}, C\+O\+N\+T\+I\+N\+U\+E\+L\+O\+OP$>$ {\bf Ssr\+F\+Pattern\+Start\+Loop\+::reactions}}\hypertarget{structSsrFPatternStartLoop_aac85f43e96a9f790df66bf07d1dffc75}{}\label{structSsrFPatternStartLoop_aac85f43e96a9f790df66bf07d1dffc75}
+
+
+Definition at line 5 of file ssr\+\_\+fpattern\+\_\+loop\+\_\+start.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Ssr\+F\+Pattern\+Start\+Loop@{Ssr\+F\+Pattern\+Start\+Loop}!loop\+Condition@{loop\+Condition}}
+\index{loop\+Condition@{loop\+Condition}!Ssr\+F\+Pattern\+Start\+Loop@{Ssr\+F\+Pattern\+Start\+Loop}}
+\subsubsection[{\texorpdfstring{loop\+Condition()}{loopCondition()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool} Ssr\+F\+Pattern\+Start\+Loop\+::loop\+Condition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structSsrFPatternStartLoop_a990075c43854e419831b1d9b0e8fed06}{}\label{structSsrFPatternStartLoop_a990075c43854e419831b1d9b0e8fed06}
+
+
+Definition at line 11 of file ssr\+\_\+fpattern\+\_\+loop\+\_\+start.\+h.
+
+
+
+Referenced by on\+Entry().
+
+
+\begin{DoxyCode}
+12   \{
+13     \textcolor{keyword}{auto} &superstate = this->context<SS>();
+14     \textcolor{keywordflow}{return} ++superstate.iteration\_count < SS::total\_iterations();
+15   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{structSsrFPatternStartLoop_a990075c43854e419831b1d9b0e8fed06_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Ssr\+F\+Pattern\+Start\+Loop@{Ssr\+F\+Pattern\+Start\+Loop}!on\+Definition@{on\+Definition}}
+\index{on\+Definition@{on\+Definition}!Ssr\+F\+Pattern\+Start\+Loop@{Ssr\+F\+Pattern\+Start\+Loop}}
+\subsubsection[{\texorpdfstring{on\+Definition()}{onDefinition()}}]{\setlength{\rightskip}{0pt plus 5cm}static void Ssr\+F\+Pattern\+Start\+Loop\+::on\+Definition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structSsrFPatternStartLoop_aec64b36b1a0cc9a9449ad4cbc648f4d2}{}\label{structSsrFPatternStartLoop_aec64b36b1a0cc9a9449ad4cbc648f4d2}
+
+
+Definition at line 7 of file ssr\+\_\+fpattern\+\_\+loop\+\_\+start.\+h.
+
+
+\begin{DoxyCode}
+8   \{
+9   \}
+\end{DoxyCode}
+\index{Ssr\+F\+Pattern\+Start\+Loop@{Ssr\+F\+Pattern\+Start\+Loop}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!Ssr\+F\+Pattern\+Start\+Loop@{Ssr\+F\+Pattern\+Start\+Loop}}
+\subsubsection[{\texorpdfstring{on\+Entry()}{onEntry()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ssr\+F\+Pattern\+Start\+Loop\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structSsrFPatternStartLoop_a03c8e22081b280dde05b22ebf707eb30}{}\label{structSsrFPatternStartLoop_a03c8e22081b280dde05b22ebf707eb30}
+
+
+Definition at line 17 of file ssr\+\_\+fpattern\+\_\+loop\+\_\+start.\+h.
+
+
+
+References loop\+Condition(), and smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::throw\+Loop\+Event\+From\+Condition().
+
+
+\begin{DoxyCode}
+18   \{
+19     \hyperlink{classsmacc_1_1SmaccState_a4f3083a54914820cd7b9eb5a6221f29f}{throwLoopEventFromCondition}(&
+      \hyperlink{structSsrFPatternStartLoop_a990075c43854e419831b1d9b0e8fed06}{SsrFPatternStartLoop::loopCondition});
+20   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structSsrFPatternStartLoop_a03c8e22081b280dde05b22ebf707eb30_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/superstate\+\_\+routines/f\+\_\+pattern/\hyperlink{ssr__fpattern__loop__start_8h}{ssr\+\_\+fpattern\+\_\+loop\+\_\+start.\+h}\end{DoxyCompactItemize}

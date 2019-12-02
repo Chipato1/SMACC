@@ -12,16 +12,16 @@ Include dependency graph for timer\+\_\+main.\+cpp\+:
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classint}{int} \hyperlink{timer__main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (\hyperlink{classint}{int} argc, char $\ast$$\ast$argv)
+int \hyperlink{timer__main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
 \index{timer\+\_\+main.\+cpp@{timer\+\_\+main.\+cpp}!main@{main}}
 \index{main@{main}!timer\+\_\+main.\+cpp@{timer\+\_\+main.\+cpp}}
-\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} main (
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
 \begin{DoxyParamCaption}
-\item[{{\bf int}}]{argc, }
+\item[{int}]{argc, }
 \item[{char $\ast$$\ast$}]{argv}
 \end{DoxyParamCaption}
 )}\hypertarget{timer__main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{timer__main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
@@ -32,6 +32,6 @@ Definition at line 3 of file timer\+\_\+main.\+cpp.
 
 \begin{DoxyCode}
 4 \{
-5   ros::init(argc, \hyperlink{namespacesmacc__viewer_a641e44a1c9c09b36c59a0651d01d4d97}{argv}, \textcolor{stringliteral}{"timer\_state\_machine"});
+5   ros::init(argc, argv, \textcolor{stringliteral}{"timer\_state\_machine"});
 6   smacc::run<TimerStateMachine>();
 7 \}\end{DoxyCode}

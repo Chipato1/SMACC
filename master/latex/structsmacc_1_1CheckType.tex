@@ -1,0 +1,98 @@
+\hypertarget{structsmacc_1_1CheckType}{}\section{smacc\+:\+:Check\+Type$<$ T\+Transition $>$ Struct Template Reference}
+\label{structsmacc_1_1CheckType}\index{smacc\+::\+Check\+Type$<$ T\+Transition $>$@{smacc\+::\+Check\+Type$<$ T\+Transition $>$}}
+
+
+{\ttfamily \#include $<$introspection.\+h$>$}
+
+
+
+Collaboration diagram for smacc\+:\+:Check\+Type$<$ T\+Transition $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{structsmacc_1_1CheckType__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structsmacc_1_1CheckType_a0123f874439e9da1c33a23cd7b33e413}{Check\+Type} (std\+::string $\ast$\hyperlink{structsmacc_1_1CheckType_a6402dc8352758d361781773dc1e8523f}{transition\+Type\+Name})
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{structsmacc_1_1CheckType_aafa40f91456602c5cf5eda7c1f553f7b}{operator()} (T)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string $\ast$ \hyperlink{structsmacc_1_1CheckType_a6402dc8352758d361781773dc1e8523f}{transition\+Type\+Name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T\+Transition$>$\\*
+struct smacc\+::\+Check\+Type$<$ T\+Transition $>$}
+
+
+
+Definition at line 203 of file introspection.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+::\+Check\+Type@{smacc\+::\+Check\+Type}!Check\+Type@{Check\+Type}}
+\index{Check\+Type@{Check\+Type}!smacc\+::\+Check\+Type@{smacc\+::\+Check\+Type}}
+\subsubsection[{\texorpdfstring{Check\+Type(std\+::string $\ast$transition\+Type\+Name)}{CheckType(std::string *transitionTypeName)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Transition$>$ {\bf smacc\+::\+Check\+Type}$<$ T\+Transition $>$\+::{\bf Check\+Type} (
+\begin{DoxyParamCaption}
+\item[{std\+::string $\ast$}]{transition\+Type\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsmacc_1_1CheckType_a0123f874439e9da1c33a23cd7b33e413}{}\label{structsmacc_1_1CheckType_a0123f874439e9da1c33a23cd7b33e413}
+
+
+Definition at line 205 of file introspection.\+h.
+
+
+\begin{DoxyCode}
+206     \{
+207         this->\hyperlink{structsmacc_1_1CheckType_a6402dc8352758d361781773dc1e8523f}{transitionTypeName} = \hyperlink{structsmacc_1_1CheckType_a6402dc8352758d361781773dc1e8523f}{transitionTypeName};
+208     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::\+Check\+Type@{smacc\+::\+Check\+Type}!operator()@{operator()}}
+\index{operator()@{operator()}!smacc\+::\+Check\+Type@{smacc\+::\+Check\+Type}}
+\subsubsection[{\texorpdfstring{operator()(\+T)}{operator()(T)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Transition$>$ template$<$typename T $>$ void {\bf smacc\+::\+Check\+Type}$<$ T\+Transition $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{T}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsmacc_1_1CheckType_aafa40f91456602c5cf5eda7c1f553f7b}{}\label{structsmacc_1_1CheckType_aafa40f91456602c5cf5eda7c1f553f7b}
+
+
+Definition at line 212 of file introspection.\+h.
+
+
+\begin{DoxyCode}
+213     \{
+214         \textcolor{comment}{//ROS\_INFO\_STREAM("comparing.."<< demangleSymbol<T>() <<" vs " << demangleSymbol<TTransition>() );}
+215         \textcolor{keywordflow}{if} (std::is\_base\_of<T, TTransition>::value || std::is\_same<T, TTransition>::value)
+216         \{
+217             *(this->\hyperlink{structsmacc_1_1CheckType_a6402dc8352758d361781773dc1e8523f}{transitionTypeName}) = demangledTypeName<T>();
+218             \textcolor{comment}{//ROS\_INFO("YESS!");}
+219         \}
+220     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+::\+Check\+Type@{smacc\+::\+Check\+Type}!transition\+Type\+Name@{transition\+Type\+Name}}
+\index{transition\+Type\+Name@{transition\+Type\+Name}!smacc\+::\+Check\+Type@{smacc\+::\+Check\+Type}}
+\subsubsection[{\texorpdfstring{transition\+Type\+Name}{transitionTypeName}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Transition$>$ std\+::string$\ast$ {\bf smacc\+::\+Check\+Type}$<$ T\+Transition $>$\+::transition\+Type\+Name}\hypertarget{structsmacc_1_1CheckType_a6402dc8352758d361781773dc1e8523f}{}\label{structsmacc_1_1CheckType_a6402dc8352758d361781773dc1e8523f}
+
+
+Definition at line 210 of file introspection.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc/include/smacc/introspection/\hyperlink{introspection_8h}{introspection.\+h}\end{DoxyCompactItemize}

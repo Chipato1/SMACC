@@ -89,6 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
@@ -111,16 +112,21 @@ Collaboration diagram for smacc::SmaccStateInfo:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsmacc_1_1SmaccStateInfo__coll__graph.png" border="0" usemap="#smacc_1_1SmaccStateInfo_coll__map" alt="Collaboration graph"/></div>
 <map name="smacc_1_1SmaccStateInfo_coll__map" id="smacc_1_1SmaccStateInfo_coll__map">
-<area shape="rect" id="node6" href="classint.html" title="{int\n||}" alt="" coords="954,27,993,105"/>
-<area shape="rect" id="node8" href="classbool.html" title="{bool\n||}" alt="" coords="1133,27,1182,105"/>
 </map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a25245e3ff2ffe691f365875f8004ce4d"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="classsmacc_1_1SmaccStateInfo.html">SmaccStateInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#a25245e3ff2ffe691f365875f8004ce4d">Ptr</a></td></tr>
+<tr class="separator:a25245e3ff2ffe691f365875f8004ce4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2be1e3db5d31a7e2491a25eafc87671e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#a2be1e3db5d31a7e2491a25eafc87671e">SmaccStateInfo</a> (std::shared_ptr&lt; <a class="el" href="classsmacc_1_1SmaccStateInfo.html">SmaccStateInfo</a> &gt; parentState, std::shared_ptr&lt; <a class="el" href="classsmacc_1_1SmaccStateMachineInfo.html">SmaccStateMachineInfo</a> &gt; stateMachineInfo)</td></tr>
-<tr class="separator:a2be1e3db5d31a7e2491a25eafc87671e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2abede9fd08d8954c3e392a053d50533"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#a2abede9fd08d8954c3e392a053d50533">depth</a> () const </td></tr>
+<tr class="memitem:a262bc6242d8a3b2c29c34b4cf325dfb4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#a262bc6242d8a3b2c29c34b4cf325dfb4">SmaccStateInfo</a> (const std::type_info *tid, std::shared_ptr&lt; <a class="el" href="classsmacc_1_1SmaccStateInfo.html">SmaccStateInfo</a> &gt; parentState, std::shared_ptr&lt; <a class="el" href="classsmacc_1_1SmaccStateMachineInfo.html">SmaccStateMachineInfo</a> &gt; stateMachineInfo)</td></tr>
+<tr class="separator:a262bc6242d8a3b2c29c34b4cf325dfb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a360141a4883f0122a9f5e8b7de456084"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesmacc.html#a63f5f7aae7e563619d0886fca83612cc">SmaccStateType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#a360141a4883f0122a9f5e8b7de456084">getStateLevel</a> ()</td></tr>
+<tr class="separator:a360141a4883f0122a9f5e8b7de456084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2abede9fd08d8954c3e392a053d50533"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#a2abede9fd08d8954c3e392a053d50533">depth</a> () const </td></tr>
 <tr class="separator:a2abede9fd08d8954c3e392a053d50533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca52fb4c1c3f5f35e3292bd7d6d6c66d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#aca52fb4c1c3f5f35e3292bd7d6d6c66d">getAncestors</a> (std::list&lt; std::shared_ptr&lt; <a class="el" href="classsmacc_1_1SmaccStateInfo.html">SmaccStateInfo</a> &gt;&gt; &amp;ancestorsList)</td></tr>
 <tr class="separator:aca52fb4c1c3f5f35e3292bd7d6d6c66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,19 +135,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1c935c77640d496f22f5f48d78ddb296"><td class="memTemplParams" colspan="2">template&lt;typename StateType &gt; </td></tr>
 <tr class="memitem:a1c935c77640d496f22f5f48d78ddb296"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classsmacc_1_1SmaccStateInfo.html">SmaccStateInfo</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#a1c935c77640d496f22f5f48d78ddb296">createChildState</a> ()</td></tr>
 <tr class="separator:a1c935c77640d496f22f5f48d78ddb296"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5228fe261f574c95b82641699bbf9dd"><td class="memTemplParams" colspan="2">template&lt;typename EvType &gt; </td></tr>
-<tr class="memitem:ad5228fe261f574c95b82641699bbf9dd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#ad5228fe261f574c95b82641699bbf9dd">declareTransition</a> (std::shared_ptr&lt; <a class="el" href="classsmacc_1_1SmaccStateInfo.html">SmaccStateInfo</a> &gt; &amp;dstState)</td></tr>
-<tr class="separator:ad5228fe261f574c95b82641699bbf9dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71b660891b6ae6be2163b78971facd81"><td class="memTemplParams" colspan="2">template&lt;typename EvSource , template&lt; typename &gt; typename EvType&gt; </td></tr>
-<tr class="memitem:a71b660891b6ae6be2163b78971facd81"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#a71b660891b6ae6be2163b78971facd81">declareTransition</a> (std::shared_ptr&lt; <a class="el" href="classsmacc_1_1SmaccStateInfo.html">SmaccStateInfo</a> &gt; &amp;dstState)</td></tr>
-<tr class="separator:a71b660891b6ae6be2163b78971facd81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f8166e666014cce41b2c076abfaebac"><td class="memTemplParams" colspan="2">template&lt;typename EvType &gt; </td></tr>
+<tr class="memitem:a3f8166e666014cce41b2c076abfaebac"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#a3f8166e666014cce41b2c076abfaebac">declareTransition</a> (std::shared_ptr&lt; <a class="el" href="classsmacc_1_1SmaccStateInfo.html">SmaccStateInfo</a> &gt; &amp;dstState, std::string transitionTag, std::string transitionType, <a class="el" href="classbool.html">bool</a> history, <a class="el" href="classsmacc_1_1TypeInfo.html#aca0cd51c7c9ef85f6c98dc32878af226">smacc::TypeInfo::Ptr</a> transitionTypeInfo)</td></tr>
+<tr class="separator:a3f8166e666014cce41b2c076abfaebac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa43c3733427618a141c3f6803913a88b"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#aa43c3733427618a141c3f6803913a88b">toShortName</a> () const </td></tr>
 <tr class="separator:aa43c3733427618a141c3f6803913a88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e7951d11da45516080103959b88c17"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#a84e7951d11da45516080103959b88c17">getDemangledFullName</a> () const </td></tr>
+<tr class="separator:a84e7951d11da45516080103959b88c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a12b5db7f92c7d1bbef492b6f33d2680d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#a12b5db7f92c7d1bbef492b6f33d2680d">active_</a></td></tr>
-<tr class="separator:a12b5db7f92c7d1bbef492b6f33d2680d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43292879ca69576cb835a1cf3f119826"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#a43292879ca69576cb835a1cf3f119826">stateIndex_</a></td></tr>
+<tr class="separator:a43292879ca69576cb835a1cf3f119826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d9d81ebeda351fba21665bb7b9ff148"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#a3d9d81ebeda351fba21665bb7b9ff148">fullStateName</a></td></tr>
 <tr class="separator:a3d9d81ebeda351fba21665bb7b9ff148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad36e29f3984e40d36664567f9703239a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#ad36e29f3984e40d36664567f9703239a">demangledStateName</a></td></tr>
@@ -154,25 +159,50 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab7945472d7b14c50c908b1d1d0c87866"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7773f1d9e865a839b0bfed087bbb93ba"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classsmacc_1_1SmaccStateInfo.html">SmaccStateInfo</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#a7773f1d9e865a839b0bfed087bbb93ba">children_</a></td></tr>
 <tr class="separator:a7773f1d9e865a839b0bfed087bbb93ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f44d5af069d0f37ed63b3101b330a65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classint.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#a3f44d5af069d0f37ed63b3101b330a65">depth_</a></td></tr>
+<tr class="memitem:a3f44d5af069d0f37ed63b3101b330a65"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#a3f44d5af069d0f37ed63b3101b330a65">depth_</a></td></tr>
 <tr class="separator:a3f44d5af069d0f37ed63b3101b330a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaed55d2f9b823cd2ff0df04aaab1d1c"><td class="memItemLeft" align="right" valign="top">const std::type_info *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#adaed55d2f9b823cd2ff0df04aaab1d1c">tid_</a></td></tr>
+<tr class="separator:adaed55d2f9b823cd2ff0df04aaab1d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ab677bfb55816d8af9fc0871136bff58a"><td class="memItemLeft" align="right" valign="top">static std::map&lt; const std::type_info *, std::shared_ptr&lt; std::vector&lt; <a class="el" href="structsmacc_1_1StateBehaviorInfoEntry.html">StateBehaviorInfoEntry</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#ab677bfb55816d8af9fc0871136bff58a">staticBehaviorInfo</a></td></tr>
-<tr class="separator:ab677bfb55816d8af9fc0871136bff58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc62c6c9dec1a4f5294f8430efb71f2"><td class="memItemLeft" align="right" valign="top">static std::map&lt; const std::type_info *, std::vector&lt; <a class="el" href="structsmacc_1_1StateBehaviorInfoEntry.html">StateBehaviorInfoEntry</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#a2cc62c6c9dec1a4f5294f8430efb71f2">staticBehaviorInfo</a></td></tr>
+<tr class="separator:a2cc62c6c9dec1a4f5294f8430efb71f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a22f3c1ea22042a19f897db4ecfeb67"><td class="memItemLeft" align="right" valign="top">static std::map&lt; const std::type_info *, std::vector&lt; <a class="el" href="structsmacc_1_1SmaccLogicUnitInfo.html">SmaccLogicUnitInfo</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateInfo.html#a7a22f3c1ea22042a19f897db4ecfeb67">logicUnitsInfo</a></td></tr>
+<tr class="separator:a7a22f3c1ea22042a19f897db4ecfeb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00029">29</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a2be1e3db5d31a7e2491a25eafc87671e"></a>
+<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00069">69</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a25245e3ff2ffe691f365875f8004ce4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::shared_ptr&lt;<a class="el" href="classsmacc_1_1SmaccStateInfo.html">SmaccStateInfo</a>&gt; <a class="el" href="classsmacc_1_1SmaccStateInfo.html#a25245e3ff2ffe691f365875f8004ce4d">smacc::SmaccStateInfo::Ptr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00073">73</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a262bc6242d8a3b2c29c34b4cf325dfb4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">smacc::SmaccStateInfo::SmaccStateInfo </td>
           <td>(</td>
+          <td class="paramtype">const std::type_info *&#160;</td>
+          <td class="paramname"><em>tid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classsmacc_1_1SmaccStateInfo.html">SmaccStateInfo</a> &gt;&#160;</td>
           <td class="paramname"><em>parentState</em>, </td>
         </tr>
@@ -190,12 +220,13 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__state__info_8cpp_source.html#l00008">8</a> of file <a class="el" href="smacc__state__info_8cpp_source.html">smacc_state_info.cpp</a>.</p>
+<p>Definition at line <a class="el" href="smacc__state__info_8cpp_source.html#l00011">11</a> of file <a class="el" href="smacc__state__info_8cpp_source.html">smacc_state_info.cpp</a>.</p>
 
-<p>References <a class="el" href="smacc__state__info_8h_source.html#l00043">depth_</a>, <a class="el" href="smacc__state__info_8h_source.html#l00039">parentState_</a>, and <a class="el" href="smacc__state__info_8h_source.html#l00038">stateMachine_</a>.</p>
-<div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="classsmacc_1_1SmaccStateInfo.html#ae19f4efbeb2ca665b320df80766d9209">parentState_</a> = parentState;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="classsmacc_1_1SmaccStateInfo.html#af9884b3fda41fbc87abf9908b8bd72e7">stateMachine_</a> = stateMachineInfo;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classsmacc_1_1SmaccStateInfo.html#ae19f4efbeb2ca665b320df80766d9209">parentState_</a> != <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <a class="code" href="classsmacc_1_1SmaccStateInfo.html#a3f44d5af069d0f37ed63b3101b330a65">depth_</a> = parentState-&gt;depth_ + 1;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div><div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_a3f44d5af069d0f37ed63b3101b330a65"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#a3f44d5af069d0f37ed63b3101b330a65">smacc::SmaccStateInfo::depth_</a></div><div class="ttdeci">int depth_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8h_source.html#l00043">smacc_state_info.h:43</a></div></div>
-<div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_ae19f4efbeb2ca665b320df80766d9209"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#ae19f4efbeb2ca665b320df80766d9209">smacc::SmaccStateInfo::parentState_</a></div><div class="ttdeci">std::shared_ptr&lt; SmaccStateInfo &gt; parentState_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8h_source.html#l00039">smacc_state_info.h:39</a></div></div>
-<div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_af9884b3fda41fbc87abf9908b8bd72e7"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#af9884b3fda41fbc87abf9908b8bd72e7">smacc::SmaccStateInfo::stateMachine_</a></div><div class="ttdeci">std::shared_ptr&lt; SmaccStateMachineInfo &gt; stateMachine_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8h_source.html#l00038">smacc_state_info.h:38</a></div></div>
+<p>References <a class="el" href="smacc__state__info_8h_source.html#l00087">depth_</a>, <a class="el" href="smacc__state__info_8h_source.html#l00083">parentState_</a>, <a class="el" href="smacc__state__info_8h_source.html#l00082">stateMachine_</a>, and <a class="el" href="smacc__state__info_8h_source.html#l00088">tid_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classsmacc_1_1SmaccStateInfo.html#adaed55d2f9b823cd2ff0df04aaab1d1c">tid_</a> = tid;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classsmacc_1_1SmaccStateInfo.html#ae19f4efbeb2ca665b320df80766d9209">parentState_</a> = parentState;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classsmacc_1_1SmaccStateInfo.html#af9884b3fda41fbc87abf9908b8bd72e7">stateMachine_</a> = stateMachineInfo;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classsmacc_1_1SmaccStateInfo.html#ae19f4efbeb2ca665b320df80766d9209">parentState_</a> != <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="classsmacc_1_1SmaccStateInfo.html#a3f44d5af069d0f37ed63b3101b330a65">depth_</a> = parentState-&gt;depth_ + 1;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div><div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_a3f44d5af069d0f37ed63b3101b330a65"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#a3f44d5af069d0f37ed63b3101b330a65">smacc::SmaccStateInfo::depth_</a></div><div class="ttdeci">int depth_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8h_source.html#l00087">smacc_state_info.h:87</a></div></div>
+<div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_ae19f4efbeb2ca665b320df80766d9209"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#ae19f4efbeb2ca665b320df80766d9209">smacc::SmaccStateInfo::parentState_</a></div><div class="ttdeci">std::shared_ptr&lt; SmaccStateInfo &gt; parentState_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8h_source.html#l00083">smacc_state_info.h:83</a></div></div>
+<div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_af9884b3fda41fbc87abf9908b8bd72e7"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#af9884b3fda41fbc87abf9908b8bd72e7">smacc::SmaccStateInfo::stateMachine_</a></div><div class="ttdeci">std::shared_ptr&lt; SmaccStateMachineInfo &gt; stateMachine_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8h_source.html#l00082">smacc_state_info.h:82</a></div></div>
+<div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_adaed55d2f9b823cd2ff0df04aaab1d1c"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#adaed55d2f9b823cd2ff0df04aaab1d1c">smacc::SmaccStateInfo::tid_</a></div><div class="ttdeci">const std::type_info * tid_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8h_source.html#l00088">smacc_state_info.h:88</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -215,12 +246,12 @@ template&lt;typename StateType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00339">339</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;{</div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keyword">auto</span> childState = this-&gt;<a class="code" href="classsmacc_1_1SmaccStateInfo.html#af9884b3fda41fbc87abf9908b8bd72e7">stateMachine_</a>-&gt;createState&lt;StateType&gt;(shared_from_this());</div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="comment">//this-&gt;stateMachine_-&gt;addState(childState);</span></div><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="comment">//stateMachineInfo.addState(stateMachineInfo)</span></div><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="comment">//stateNames.push_back(currentname);</span></div><div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="comment">//ROS_INFO(&quot;------------&quot;);</span></div><div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="comment">//ROS_INFO_STREAM(&quot;** STATE state: &quot;&lt;&lt; this-&gt;demangledStateName);</span></div><div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div><div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordflow">return</span> childState;</div><div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;}</div><div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_af9884b3fda41fbc87abf9908b8bd72e7"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#af9884b3fda41fbc87abf9908b8bd72e7">smacc::SmaccStateInfo::stateMachine_</a></div><div class="ttdeci">std::shared_ptr&lt; SmaccStateMachineInfo &gt; stateMachine_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8h_source.html#l00038">smacc_state_info.h:38</a></div></div>
+<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00438">438</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;{</div><div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="keyword">auto</span> realparentState = this-&gt;<a class="code" href="classsmacc_1_1SmaccStateInfo.html#af9884b3fda41fbc87abf9908b8bd72e7">stateMachine_</a>-&gt;getState&lt;<span class="keyword">typename</span> StateType::TContext&gt;();</div><div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;</div><div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    <span class="keyword">auto</span> childState = this-&gt;<a class="code" href="classsmacc_1_1SmaccStateInfo.html#af9884b3fda41fbc87abf9908b8bd72e7">stateMachine_</a>-&gt;createState&lt;StateType&gt;(realparentState);</div><div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;</div><div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    ROS_ERROR_STREAM(<span class="stringliteral">&quot;Real parent state&gt; &quot;</span> &lt;&lt; demangleSymbol&lt;typename StateType::TContext&gt;());</div><div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;</div><div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    <span class="comment">/*auto contextInfo = smacc::TypeInfo::getTypeInfoFromType&lt;InitialStateType&gt;();</span></div><div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="comment">    auto parentState2= getState&lt;InitialStateType::TContext&gt;();</span></div><div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="comment">    parentState2-&gt;createChildState&lt;InitialStateType&gt;();*/</span></div><div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;</div><div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="comment">//this-&gt;stateMachine_-&gt;addState(childState);</span></div><div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="comment">//stateMachineInfo.addState(stateMachineInfo)</span></div><div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    <span class="comment">//stateNames.push_back(currentname);</span></div><div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <span class="comment">//ROS_INFO(&quot;------------&quot;);</span></div><div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    <span class="comment">//ROS_INFO_STREAM(&quot;** STATE state: &quot;&lt;&lt; this-&gt;demangledStateName);</span></div><div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;</div><div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    <span class="keywordflow">return</span> childState;</div><div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;}</div><div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_af9884b3fda41fbc87abf9908b8bd72e7"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#af9884b3fda41fbc87abf9908b8bd72e7">smacc::SmaccStateInfo::stateMachine_</a></div><div class="ttdeci">std::shared_ptr&lt; SmaccStateMachineInfo &gt; stateMachine_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8h_source.html#l00082">smacc_state_info.h:82</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="ad5228fe261f574c95b82641699bbf9dd"></a>
+<a class="anchor" id="a3f8166e666014cce41b2c076abfaebac"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -230,39 +261,44 @@ template&lt;typename EvType &gt; </div>
           <td class="memname">void smacc::SmaccStateInfo::declareTransition </td>
           <td>(</td>
           <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classsmacc_1_1SmaccStateInfo.html">SmaccStateInfo</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>dstState</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>dstState</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00173">173</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
-
-<p>References <a class="el" href="smacc__state__info_8h_source.html#l00023">smacc::SmaccTransitionInfo::index</a>.</p>
-<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;{</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keyword">auto</span> evtype = demangledTypeName&lt;EvType&gt;();</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    SmaccTransitionInfo transitionInfo;</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    transitionInfo.index = <a class="code" href="classsmacc_1_1SmaccStateInfo.html#ab7945472d7b14c50c908b1d1d0c87866">transitions_</a>.size();</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    transitionInfo.sourceState = shared_from_this();</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    transitionInfo.destinyState = dstState;</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    transitionInfo.eventType = &amp;(<span class="keyword">typeid</span>(EvType));</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <a class="code" href="classsmacc_1_1SmaccStateInfo.html#ab7945472d7b14c50c908b1d1d0c87866">transitions_</a>.push_back(transitionInfo);</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;}</div><div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_ab7945472d7b14c50c908b1d1d0c87866"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#ab7945472d7b14c50c908b1d1d0c87866">smacc::SmaccStateInfo::transitions_</a></div><div class="ttdeci">std::vector&lt; SmaccTransitionInfo &gt; transitions_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8h_source.html#l00040">smacc_state_info.h:40</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a71b660891b6ae6be2163b78971facd81"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TevSource , template&lt; typename &gt; typename EvType&gt; </div>
-      <table class="memname">
         <tr>
-          <td class="memname">void smacc::SmaccStateInfo::declareTransition </td>
-          <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classsmacc_1_1SmaccStateInfo.html">SmaccStateInfo</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>dstState</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>transitionTag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>transitionType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classbool.html">bool</a>&#160;</td>
+          <td class="paramname"><em>history</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classsmacc_1_1TypeInfo.html#aca0cd51c7c9ef85f6c98dc32878af226">smacc::TypeInfo::Ptr</a>&#160;</td>
+          <td class="paramname"><em>transitionTypeInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00187">187</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00194">194</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
 
-<p>References <a class="el" href="smacc__state__info_8h_source.html#l00023">smacc::SmaccTransitionInfo::index</a>.</p>
-<div class="fragment"><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;{</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keyword">auto</span> evtype = demangledTypeName&lt;EvType&lt;TevSource&gt;&gt;();</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    SmaccTransitionInfo transitionInfo;</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    transitionInfo.index = <a class="code" href="classsmacc_1_1SmaccStateInfo.html#ab7945472d7b14c50c908b1d1d0c87866">transitions_</a>.size();</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    transitionInfo.sourceState = shared_from_this();</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    transitionInfo.destinyState = dstState;</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    transitionInfo.eventType = &amp;(<span class="keyword">typeid</span>(EvType&lt;TevSource&gt;));</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <a class="code" href="classsmacc_1_1SmaccStateInfo.html#ab7945472d7b14c50c908b1d1d0c87866">transitions_</a>.push_back(transitionInfo);</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;}</div><div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_ab7945472d7b14c50c908b1d1d0c87866"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#ab7945472d7b14c50c908b1d1d0c87866">smacc::SmaccStateInfo::transitions_</a></div><div class="ttdeci">std::vector&lt; SmaccTransitionInfo &gt; transitions_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8h_source.html#l00040">smacc_state_info.h:40</a></div></div>
+<p>References <a class="el" href="smacc__state__info_8h_source.html#l00041">smacc::SmaccTransitionInfo::index</a>.</p>
+<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;{</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keyword">auto</span> evtype = demangledTypeName&lt;EvType&gt;();</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    SmaccTransitionInfo transitionInfo;</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    transitionInfo.index = <a class="code" href="classsmacc_1_1SmaccStateInfo.html#ab7945472d7b14c50c908b1d1d0c87866">transitions_</a>.size();</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    transitionInfo.sourceState = shared_from_this();</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    transitionInfo.destinyState = dstState;</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    transitionInfo.transitionTypeInfo = transitionTypeInfo;</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordflow">if</span> (transitionTag != <span class="stringliteral">&quot;&quot;</span>)</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        transitionInfo.transitionTag = transitionTag;</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        transitionInfo.transitionTag = <span class="stringliteral">&quot;Transition_&quot;</span> + std::to_string(transitionInfo.index);</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    transitionInfo.transitionType = transitionType;</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    transitionInfo.historyNode = history;</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    transitionInfo.eventInfo = std::make_shared&lt;SmaccEventInfo&gt;(transitionTypeInfo-&gt;templateParameters.front());</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    EventLabel&lt;EvType&gt;(transitionInfo.eventInfo-&gt;label);</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    ROS_ERROR_STREAM(<span class="stringliteral">&quot;LABEL: &quot;</span> &lt;&lt; transitionInfo.eventInfo-&gt;label);</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <a class="code" href="classsmacc_1_1SmaccStateInfo.html#ab7945472d7b14c50c908b1d1d0c87866">transitions_</a>.push_back(transitionInfo);</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;}</div><div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_ab7945472d7b14c50c908b1d1d0c87866"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#ab7945472d7b14c50c908b1d1d0c87866">smacc::SmaccStateInfo::transitions_</a></div><div class="ttdeci">std::vector&lt; SmaccTransitionInfo &gt; transitions_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8h_source.html#l00084">smacc_state_info.h:84</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -274,7 +310,7 @@ template&lt;typename TevSource , template&lt; typename &gt; typename EvType&gt; 
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classint.html">int</a> smacc::SmaccStateInfo::depth </td>
+          <td class="memname">int smacc::SmaccStateInfo::depth </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -287,8 +323,8 @@ template&lt;typename TevSource , template&lt; typename &gt; typename EvType&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00047">47</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classsmacc_1_1SmaccStateInfo.html#a3f44d5af069d0f37ed63b3101b330a65">depth_</a>; }</div><div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_a3f44d5af069d0f37ed63b3101b330a65"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#a3f44d5af069d0f37ed63b3101b330a65">smacc::SmaccStateInfo::depth_</a></div><div class="ttdeci">int depth_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8h_source.html#l00043">smacc_state_info.h:43</a></div></div>
+<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00094">94</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classsmacc_1_1SmaccStateInfo.html#a3f44d5af069d0f37ed63b3101b330a65">depth_</a>; }</div><div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_a3f44d5af069d0f37ed63b3101b330a65"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#a3f44d5af069d0f37ed63b3101b330a65">smacc::SmaccStateInfo::depth_</a></div><div class="ttdeci">int depth_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8h_source.html#l00087">smacc_state_info.h:87</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -306,11 +342,42 @@ template&lt;typename TevSource , template&lt; typename &gt; typename EvType&gt; 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__state__info_8cpp_source.html#l00017">17</a> of file <a class="el" href="smacc__state__info_8cpp_source.html">smacc_state_info.cpp</a>.</p>
+<p>Definition at line <a class="el" href="smacc__state__info_8cpp_source.html#l00021">21</a> of file <a class="el" href="smacc__state__info_8cpp_source.html">smacc_state_info.cpp</a>.</p>
 
-<p>References <a class="el" href="smacc__state__info_8h_source.html#l00039">parentState_</a>.</p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    ancestorsList.push_front(shared_from_this());</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classsmacc_1_1SmaccStateInfo.html#ae19f4efbeb2ca665b320df80766d9209">parentState_</a> != <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        this-&gt;<a class="code" href="classsmacc_1_1SmaccStateInfo.html#ae19f4efbeb2ca665b320df80766d9209">parentState_</a>-&gt;getAncestors(ancestorsList);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div><div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_ae19f4efbeb2ca665b320df80766d9209"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#ae19f4efbeb2ca665b320df80766d9209">smacc::SmaccStateInfo::parentState_</a></div><div class="ttdeci">std::shared_ptr&lt; SmaccStateInfo &gt; parentState_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8h_source.html#l00039">smacc_state_info.h:39</a></div></div>
+<p>References <a class="el" href="smacc__state__info_8h_source.html#l00083">parentState_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    ancestorsList.push_front(shared_from_this());</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classsmacc_1_1SmaccStateInfo.html#ae19f4efbeb2ca665b320df80766d9209">parentState_</a> != <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        this-&gt;<a class="code" href="classsmacc_1_1SmaccStateInfo.html#ae19f4efbeb2ca665b320df80766d9209">parentState_</a>-&gt;getAncestors(ancestorsList);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div><div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_ae19f4efbeb2ca665b320df80766d9209"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#ae19f4efbeb2ca665b320df80766d9209">smacc::SmaccStateInfo::parentState_</a></div><div class="ttdeci">std::shared_ptr&lt; SmaccStateInfo &gt; parentState_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8h_source.html#l00083">smacc_state_info.h:83</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a84e7951d11da45516080103959b88c17"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string smacc::SmaccStateInfo::getDemangledFullName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="smacc__state__info_8cpp_source.html#l00062">62</a> of file <a class="el" href="smacc__state__info_8cpp_source.html">smacc_state_info.cpp</a>.</p>
+
+<p>References <a class="el" href="introspection_8h_source.html#l00042">smacc::demangleSymbol()</a>, and <a class="el" href="smacc__state__info_8h_source.html#l00079">fullStateName</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacesmacc.html#a458f5e70d468824fbcd66cc7729deaa8">demangleSymbol</a>(this-&gt;<a class="code" href="classsmacc_1_1SmaccStateInfo.html#a3d9d81ebeda351fba21665bb7b9ff148">fullStateName</a>.c_str());</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div><div class="ttc" id="namespacesmacc_html_a458f5e70d468824fbcd66cc7729deaa8"><div class="ttname"><a href="namespacesmacc.html#a458f5e70d468824fbcd66cc7729deaa8">smacc::demangleSymbol</a></div><div class="ttdeci">std::string demangleSymbol(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="introspection_8h_source.html#l00042">introspection.h:42</a></div></div>
+<div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_a3d9d81ebeda351fba21665bb7b9ff148"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#a3d9d81ebeda351fba21665bb7b9ff148">smacc::SmaccStateInfo::fullStateName</a></div><div class="ttdeci">std::string fullStateName</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8h_source.html#l00079">smacc_state_info.h:79</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classsmacc_1_1SmaccStateInfo_a84e7951d11da45516080103959b88c17_cgraph.png" border="0" usemap="#classsmacc_1_1SmaccStateInfo_a84e7951d11da45516080103959b88c17_cgraph" alt=""/></div>
+<map name="classsmacc_1_1SmaccStateInfo_a84e7951d11da45516080103959b88c17_cgraph" id="classsmacc_1_1SmaccStateInfo_a84e7951d11da45516080103959b88c17_cgraph">
+<area shape="rect" id="node2" href="namespacesmacc.html#a458f5e70d468824fbcd66cc7729deaa8" title="smacc::demangleSymbol" alt="" coords="224,13,393,39"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a22e625806a74808ee272df5c034d122e"></a>
@@ -326,22 +393,46 @@ template&lt;typename TevSource , template&lt; typename &gt; typename EvType&gt; 
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__state__info_8cpp_source.html#l00026">26</a> of file <a class="el" href="smacc__state__info_8cpp_source.html">smacc_state_info.cpp</a>.</p>
+<p>Definition at line <a class="el" href="smacc__state__info_8cpp_source.html#l00049">49</a> of file <a class="el" href="smacc__state__info_8cpp_source.html">smacc_state_info.cpp</a>.</p>
 
-<p>References <a class="el" href="smacc__state__info_8h_source.html#l00039">parentState_</a>, and <a class="el" href="smacc__state__info_8cpp_source.html#l00034">toShortName()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classsmacc_1_1SmaccStateInfo.html#ae19f4efbeb2ca665b320df80766d9209">parentState_</a> == <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="classsmacc_1_1SmaccStateInfo.html#aa43c3733427618a141c3f6803913a88b">toShortName</a>();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="classsmacc_1_1SmaccStateInfo.html#ae19f4efbeb2ca665b320df80766d9209">parentState_</a>-&gt;getFullPath() + <span class="stringliteral">&quot;/&quot;</span> + this-&gt;<a class="code" href="classsmacc_1_1SmaccStateInfo.html#aa43c3733427618a141c3f6803913a88b">toShortName</a>();</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div><div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_aa43c3733427618a141c3f6803913a88b"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#aa43c3733427618a141c3f6803913a88b">smacc::SmaccStateInfo::toShortName</a></div><div class="ttdeci">const std::string &amp; toShortName() const </div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8cpp_source.html#l00034">smacc_state_info.cpp:34</a></div></div>
-<div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_ae19f4efbeb2ca665b320df80766d9209"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#ae19f4efbeb2ca665b320df80766d9209">smacc::SmaccStateInfo::parentState_</a></div><div class="ttdeci">std::shared_ptr&lt; SmaccStateInfo &gt; parentState_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8h_source.html#l00039">smacc_state_info.h:39</a></div></div>
+<p>References <a class="el" href="smacc__state__info_8h_source.html#l00083">parentState_</a>, and <a class="el" href="smacc__state__info_8cpp_source.html#l00057">toShortName()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classsmacc_1_1SmaccStateInfo.html#ae19f4efbeb2ca665b320df80766d9209">parentState_</a> == <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="classsmacc_1_1SmaccStateInfo.html#aa43c3733427618a141c3f6803913a88b">toShortName</a>();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="classsmacc_1_1SmaccStateInfo.html#ae19f4efbeb2ca665b320df80766d9209">parentState_</a>-&gt;getFullPath() + <span class="stringliteral">&quot;/&quot;</span> + this-&gt;<a class="code" href="classsmacc_1_1SmaccStateInfo.html#aa43c3733427618a141c3f6803913a88b">toShortName</a>();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div><div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_aa43c3733427618a141c3f6803913a88b"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#aa43c3733427618a141c3f6803913a88b">smacc::SmaccStateInfo::toShortName</a></div><div class="ttdeci">const std::string &amp; toShortName() const </div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8cpp_source.html#l00057">smacc_state_info.cpp:57</a></div></div>
+<div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_ae19f4efbeb2ca665b320df80766d9209"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#ae19f4efbeb2ca665b320df80766d9209">smacc::SmaccStateInfo::parentState_</a></div><div class="ttdeci">std::shared_ptr&lt; SmaccStateInfo &gt; parentState_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8h_source.html#l00083">smacc_state_info.h:83</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsmacc_1_1SmaccStateInfo_a22e625806a74808ee272df5c034d122e_cgraph.png" border="0" usemap="#classsmacc_1_1SmaccStateInfo_a22e625806a74808ee272df5c034d122e_cgraph" alt=""/></div>
 <map name="classsmacc_1_1SmaccStateInfo_a22e625806a74808ee272df5c034d122e_cgraph" id="classsmacc_1_1SmaccStateInfo_a22e625806a74808ee272df5c034d122e_cgraph">
-<area shape="rect" id="node2" href="classsmacc_1_1SmaccStateInfo.html#aa43c3733427618a141c3f6803913a88b" title="smacc::SmaccStateInfo\l::toShortName" alt="" coords="228,5,403,47"/>
+<area shape="rect" id="node2" href="classsmacc_1_1SmaccStateInfo.html#aa43c3733427618a141c3f6803913a88b" title="smacc::SmaccStateInfo\l::toShortName" alt="" coords="216,5,379,47"/>
 </map>
 </div>
 </p>
 
+</div>
+</div>
+<a class="anchor" id="a360141a4883f0122a9f5e8b7de456084"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacesmacc.html#a63f5f7aae7e563619d0886fca83612cc">SmaccStateType</a> smacc::SmaccStateInfo::getStateLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="smacc__state__info_8cpp_source.html#l00030">30</a> of file <a class="el" href="smacc__state__info_8cpp_source.html">smacc_state_info.cpp</a>.</p>
+
+<p>References <a class="el" href="smacc__state__info_8h_source.html#l00086">children_</a>, <a class="el" href="smacc__state__info_8h_source.html#l00083">parentState_</a>, <a class="el" href="namespacesmacc.html#a63f5f7aae7e563619d0886fca83612cca2b848a8cc886d253d21a77c43cd50aae">smacc::STATE</a>, <a class="el" href="namespacesmacc.html#a63f5f7aae7e563619d0886fca83612cca4da54a31b31f1c863864fdee05fc35c8">smacc::SUPERSTATE</a>, and <a class="el" href="namespacesmacc.html#a63f5f7aae7e563619d0886fca83612cca6d39c20504d2f2afe9c8c27351e61d20">smacc::SUPERSTATE_ROUTINE</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classsmacc_1_1SmaccStateInfo.html#a7773f1d9e865a839b0bfed087bbb93ba">children_</a>.size() == 0)</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classsmacc_1_1SmaccStateInfo.html#ae19f4efbeb2ca665b320df80766d9209">parentState_</a> != <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        {</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespacesmacc.html#a63f5f7aae7e563619d0886fca83612cca6d39c20504d2f2afe9c8c27351e61d20">SmaccStateType::SUPERSTATE_ROUTINE</a>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">else</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        {</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespacesmacc.html#a63f5f7aae7e563619d0886fca83612cca2b848a8cc886d253d21a77c43cd50aae">SmaccStateType::STATE</a>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespacesmacc.html#a63f5f7aae7e563619d0886fca83612cca4da54a31b31f1c863864fdee05fc35c8">SmaccStateType::SUPERSTATE</a>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div><div class="ttc" id="namespacesmacc_html_a63f5f7aae7e563619d0886fca83612cca2b848a8cc886d253d21a77c43cd50aae"><div class="ttname"><a href="namespacesmacc.html#a63f5f7aae7e563619d0886fca83612cca2b848a8cc886d253d21a77c43cd50aae">smacc::SmaccStateType::STATE</a></div></div>
+<div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_ae19f4efbeb2ca665b320df80766d9209"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#ae19f4efbeb2ca665b320df80766d9209">smacc::SmaccStateInfo::parentState_</a></div><div class="ttdeci">std::shared_ptr&lt; SmaccStateInfo &gt; parentState_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8h_source.html#l00083">smacc_state_info.h:83</a></div></div>
+<div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_a7773f1d9e865a839b0bfed087bbb93ba"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#a7773f1d9e865a839b0bfed087bbb93ba">smacc::SmaccStateInfo::children_</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; SmaccStateInfo &gt; &gt; children_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8h_source.html#l00086">smacc_state_info.h:86</a></div></div>
+<div class="ttc" id="namespacesmacc_html_a63f5f7aae7e563619d0886fca83612cca4da54a31b31f1c863864fdee05fc35c8"><div class="ttname"><a href="namespacesmacc.html#a63f5f7aae7e563619d0886fca83612cca4da54a31b31f1c863864fdee05fc35c8">smacc::SmaccStateType::SUPERSTATE</a></div></div>
+<div class="ttc" id="namespacesmacc_html_a63f5f7aae7e563619d0886fca83612cca6d39c20504d2f2afe9c8c27351e61d20"><div class="ttname"><a href="namespacesmacc.html#a63f5f7aae7e563619d0886fca83612cca6d39c20504d2f2afe9c8c27351e61d20">smacc::SmaccStateType::SUPERSTATE_ROUTINE</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aa43c3733427618a141c3f6803913a88b"></a>
@@ -357,19 +448,19 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__state__info_8cpp_source.html#l00034">34</a> of file <a class="el" href="smacc__state__info_8cpp_source.html">smacc_state_info.cpp</a>.</p>
+<p>Definition at line <a class="el" href="smacc__state__info_8cpp_source.html#l00057">57</a> of file <a class="el" href="smacc__state__info_8cpp_source.html">smacc_state_info.cpp</a>.</p>
 
-<p>References <a class="el" href="smacc__state__info_8h_source.html#l00036">demangledStateName</a>.</p>
+<p>References <a class="el" href="smacc__state__info_8h_source.html#l00080">demangledStateName</a>.</p>
 
-<p>Referenced by <a class="el" href="smacc__state__info_8cpp_source.html#l00026">getFullPath()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classsmacc_1_1SmaccStateInfo.html#ad36e29f3984e40d36664567f9703239a">demangledStateName</a>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div><div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_ad36e29f3984e40d36664567f9703239a"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#ad36e29f3984e40d36664567f9703239a">smacc::SmaccStateInfo::demangledStateName</a></div><div class="ttdeci">std::string demangledStateName</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8h_source.html#l00036">smacc_state_info.h:36</a></div></div>
+<p>Referenced by <a class="el" href="smacc__state__info_8cpp_source.html#l00049">getFullPath()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="classsmacc_1_1SmaccStateInfo.html#ad36e29f3984e40d36664567f9703239a">demangledStateName</a>;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div><div class="ttc" id="classsmacc_1_1SmaccStateInfo_html_ad36e29f3984e40d36664567f9703239a"><div class="ttname"><a href="classsmacc_1_1SmaccStateInfo.html#ad36e29f3984e40d36664567f9703239a">smacc::SmaccStateInfo::demangledStateName</a></div><div class="ttdeci">std::string demangledStateName</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__info_8h_source.html#l00080">smacc_state_info.h:80</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsmacc_1_1SmaccStateInfo_aa43c3733427618a141c3f6803913a88b_icgraph.png" border="0" usemap="#classsmacc_1_1SmaccStateInfo_aa43c3733427618a141c3f6803913a88b_icgraph" alt=""/></div>
 <map name="classsmacc_1_1SmaccStateInfo_aa43c3733427618a141c3f6803913a88b_icgraph" id="classsmacc_1_1SmaccStateInfo_aa43c3733427618a141c3f6803913a88b_icgraph">
-<area shape="rect" id="node2" href="classsmacc_1_1SmaccStateInfo.html#a22e625806a74808ee272df5c034d122e" title="smacc::SmaccStateInfo\l::getFullPath" alt="" coords="228,5,403,47"/>
+<area shape="rect" id="node2" href="classsmacc_1_1SmaccStateInfo.html#a22e625806a74808ee272df5c034d122e" title="smacc::SmaccStateInfo\l::getFullPath" alt="" coords="216,5,379,47"/>
 </map>
 </div>
 </p>
@@ -377,20 +468,6 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a12b5db7f92c7d1bbef492b6f33d2680d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classbool.html">bool</a> smacc::SmaccStateInfo::active_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00034">34</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a7773f1d9e865a839b0bfed087bbb93ba"></a>
 <div class="memitem">
 <div class="memproto">
@@ -401,7 +478,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00042">42</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00086">86</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
+
+<p>Referenced by <a class="el" href="smacc__state__info_8cpp_source.html#l00030">getStateLevel()</a>.</p>
 
 </div>
 </div>
@@ -415,9 +494,9 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00036">36</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00080">80</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
 
-<p>Referenced by <a class="el" href="smacc__state__info_8cpp_source.html#l00034">toShortName()</a>.</p>
+<p>Referenced by <a class="el" href="smacc__state__info_8cpp_source.html#l00057">toShortName()</a>.</p>
 
 </div>
 </div>
@@ -426,14 +505,14 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classint.html">int</a> smacc::SmaccStateInfo::depth_</td>
+          <td class="memname">int smacc::SmaccStateInfo::depth_</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00043">43</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00087">87</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
 
-<p>Referenced by <a class="el" href="smacc__state__info_8cpp_source.html#l00008">SmaccStateInfo()</a>.</p>
+<p>Referenced by <a class="el" href="smacc__state__info_8cpp_source.html#l00011">SmaccStateInfo()</a>.</p>
 
 </div>
 </div>
@@ -447,7 +526,33 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00035">35</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00079">79</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
+
+<p>Referenced by <a class="el" href="smacc__state__info_8cpp_source.html#l00062">getDemangledFullName()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7a22f3c1ea22042a19f897db4ecfeb67"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; const std::type_info *, std::vector&lt; <a class="el" href="structsmacc_1_1SmaccLogicUnitInfo.html">SmaccLogicUnitInfo</a> &gt; &gt; smacc::SmaccStateInfo::logicUnitsInfo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00076">76</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
+
+<p>Referenced by <a class="el" href="smacc__state__machine__info_8cpp_source.html#l00006">smacc::SmaccStateMachineInfo::assembleSMStructureMessage()</a>, <a class="el" href="smacc__state__base_8h_source.html#l00060">smacc::SmaccState&lt; SsrFPatternStartLoop, SS &gt;::SmaccState()</a>, and <a class="el" href="smacc__state__base_8h_source.html#l00257">smacc::SmaccState&lt; SsrFPatternStartLoop, SS &gt;::static_createLogicUnit()</a>.</p>
 
 </div>
 </div>
@@ -461,9 +566,23 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00039">39</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00083">83</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
 
-<p>Referenced by <a class="el" href="smacc__state__info_8cpp_source.html#l00017">getAncestors()</a>, <a class="el" href="smacc__state__info_8cpp_source.html#l00026">getFullPath()</a>, and <a class="el" href="smacc__state__info_8cpp_source.html#l00008">SmaccStateInfo()</a>.</p>
+<p>Referenced by <a class="el" href="smacc__state__info_8cpp_source.html#l00021">getAncestors()</a>, <a class="el" href="smacc__state__info_8cpp_source.html#l00049">getFullPath()</a>, <a class="el" href="smacc__state__info_8cpp_source.html#l00030">getStateLevel()</a>, and <a class="el" href="smacc__state__info_8cpp_source.html#l00011">SmaccStateInfo()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a43292879ca69576cb835a1cf3f119826"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int smacc::SmaccStateInfo::stateIndex_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00078">78</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
 
 </div>
 </div>
@@ -477,13 +596,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00038">38</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00082">82</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
 
-<p>Referenced by <a class="el" href="smacc__state__info_8cpp_source.html#l00008">SmaccStateInfo()</a>.</p>
+<p>Referenced by <a class="el" href="smacc__state__info_8cpp_source.html#l00011">SmaccStateInfo()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab677bfb55816d8af9fc0871136bff58a"></a>
+<a class="anchor" id="a2cc62c6c9dec1a4f5294f8430efb71f2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -491,7 +610,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt; const std::type_info *, std::shared_ptr&lt; std::vector&lt; <a class="el" href="structsmacc_1_1StateBehaviorInfoEntry.html">StateBehaviorInfoEntry</a> &gt; &gt; &gt; smacc::SmaccStateInfo::staticBehaviorInfo</td>
+          <td class="memname">std::map&lt; const std::type_info *, std::vector&lt; <a class="el" href="structsmacc_1_1StateBehaviorInfoEntry.html">StateBehaviorInfoEntry</a> &gt; &gt; smacc::SmaccStateInfo::staticBehaviorInfo</td>
         </tr>
       </table>
   </td>
@@ -501,9 +620,25 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00032">32</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00075">75</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
 
-<p>Referenced by <a class="el" href="smacc__state__base_8h_source.html#l00060">smacc::SmaccState&lt; StNavigateForward1, SmDanceBot &gt;::SmaccState()</a>, and <a class="el" href="smacc__state__base_8h_source.html#l00199">smacc::SmaccState&lt; StNavigateForward1, SmDanceBot &gt;::static_configure()</a>.</p>
+<p>Referenced by <a class="el" href="smacc__state__machine__info_8cpp_source.html#l00006">smacc::SmaccStateMachineInfo::assembleSMStructureMessage()</a>, <a class="el" href="smacc__state__base_8h_source.html#l00060">smacc::SmaccState&lt; SsrFPatternStartLoop, SS &gt;::SmaccState()</a>, and <a class="el" href="smacc__state__base_8h_source.html#l00203">smacc::SmaccState&lt; SsrFPatternStartLoop, SS &gt;::static_configure()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adaed55d2f9b823cd2ff0df04aaab1d1c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::type_info* smacc::SmaccStateInfo::tid_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00088">88</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
+
+<p>Referenced by <a class="el" href="smacc__state__info_8cpp_source.html#l00011">SmaccStateInfo()</a>.</p>
 
 </div>
 </div>
@@ -517,13 +652,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00040">40</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__state__info_8h_source.html#l00084">84</a> of file <a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>smacc/include/smacc/<a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a></li>
-<li>smacc/include/smacc/<a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a></li>
+<li>smacc/include/smacc/introspection/<a class="el" href="smacc__state__info_8h_source.html">smacc_state_info.h</a></li>
+<li>smacc/include/smacc/introspection/<a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a></li>
 <li>smacc/src/smacc/<a class="el" href="smacc__state__info_8cpp_source.html">smacc_state_info.cpp</a></li>
 </ul>
 </div><!-- contents -->

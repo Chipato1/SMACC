@@ -102,12 +102,12 @@ Definition at line 30 of file smacc\+\_\+component.\+cpp.
 
 
 
-References demangle\+Symbol().
+References smacc\+::demangle\+Symbol().
 
 
 \begin{DoxyCode}
 31 \{
-32     std::string keyname = \hyperlink{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{demangleSymbol}(\textcolor{keyword}{typeid}(*this).name());
+32     std::string keyname = \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(*this).name());
 33     \textcolor{keywordflow}{return} keyname;
 34 \}
 \end{DoxyCode}
@@ -157,9 +157,9 @@ References smacc\+::\+I\+Smacc\+State\+Machine\+::post\+Event(), and state\+Mach
 
 
 \begin{DoxyCode}
-10     \{
-11         \hyperlink{classsmacc_1_1ISmaccComponent_ae3f37acc1679f79299b86872d4b1f80f}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_ad80cdd7bbc9a9f3b221c625754fed1ed}{postEvent}(ev);
-12     \}
+10 \{
+11     \hyperlink{classsmacc_1_1ISmaccComponent_ae3f37acc1679f79299b86872d4b1f80f}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_ad80cdd7bbc9a9f3b221c625754fed1ed}{postEvent}(ev);
+12 \}
 \end{DoxyCode}
 
 

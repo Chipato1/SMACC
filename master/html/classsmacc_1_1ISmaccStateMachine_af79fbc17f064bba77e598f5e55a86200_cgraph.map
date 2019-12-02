@@ -1,16 +1,5 @@
 <map id="smacc::ISmaccStateMachine::EStop" name="smacc::ISmaccStateMachine::EStop">
-<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccStateMachine.html#a66a6732a48dbc0bc7a95b57fba5ec980" title="smacc::ISmaccStateMachine\l::getOrthogonal" alt="" coords="260,5,467,47"/>
-<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccStateMachine.html#aab812187ecb452771e91f0003b257cd2" title="smacc::ISmaccStateMachine\l::notifyOnStateEntry" alt="" coords="260,71,467,112"/>
-<area shape="rect" id="node4" href="$classsmacc_1_1ISmaccStateMachine.html#a9c499f2e3df95a9f72731d2d0d1de0e6" title="smacc::ISmaccStateMachine\l::notifyOnStateExit" alt="" coords="260,136,467,177"/>
-<area shape="rect" id="node5" href="$classsmacc_1_1ISmaccStateMachine.html#ad80cdd7bbc9a9f3b221c625754fed1ed" title="smacc::ISmaccStateMachine\l::postEvent" alt="" coords="260,201,467,243"/>
-<area shape="rect" id="node15" href="$classsmacc_1_1ISmaccStateMachine.html#a729d0bcb3c4894e33f0696e0b1aeb155" title="smacc::ISmaccStateMachine\l::requiresComponent" alt="" coords="515,281,721,323"/>
-<area shape="rect" id="node6" href="$classsmacc_1_1SignalDetector.html#a6ab99d99cef8d101e39797a72daeb2b7" title="smacc::SignalDetector\l::postEvent" alt="" coords="535,193,701,235"/>
-<area shape="rect" id="node7" href="$classsmacc_1_1SignalDetector.html#af455ae5187fc9405d790992060af647b" title="smacc::SignalDetector\l::finalizeRequest" alt="" coords="789,169,956,211"/>
-<area shape="rect" id="node12" href="$classsmacc_1_1SignalDetector.html#a2c848e6d3bc64996cf8f7e56f3de1ee6" title="smacc::SignalDetector\l::notifyFeedback" alt="" coords="789,265,956,307"/>
-<area shape="rect" id="node14" href="$classsmacc_1_1SignalDetector.html#a9a28cc1e9dcf7d204f3589fad8291bfd" title="smacc::SignalDetector\l::registerActionClientRequest" alt="" coords="769,88,976,129"/>
-<area shape="rect" id="node8" href="$classsmacc_1_1ISmaccClient.html#a20846aabfd1de832aa27d7a8237a1742" title="smacc::ISmaccClient\l::getName" alt="" coords="1044,72,1199,113"/>
-<area shape="rect" id="node10" href="$classsmacc_1_1ISmaccActionClient.html#a272349b93828674d57fb48070f4edebf" title="smacc::ISmaccActionClient\l::getState" alt="" coords="1024,137,1219,179"/>
-<area shape="rect" id="node11" href="$classsmacc_1_1ISmaccActionClient.html#a5d7d401ab20e1354348848f427a603ed" title="smacc::ISmaccActionClient\l::postEvent" alt="" coords="1024,203,1219,244"/>
-<area shape="rect" id="node9" href="$common_8h.html#a401d7e4f000fd4246a20be1e7d5ec2fc" title="demangleSymbol" alt="" coords="1267,207,1401,234"/>
-<area shape="rect" id="node13" href="$classsmacc_1_1ISmaccActionClient.html#af3b9ad387577ce3edcf4f0a93cf87599" title="smacc::ISmaccActionClient\l::postFeedbackEvent" alt="" coords="1024,268,1219,309"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccStateMachine.html#a66a6732a48dbc0bc7a95b57fba5ec980" title="smacc::ISmaccStateMachine\l::getOrthogonal" alt="" coords="248,5,443,47"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccStateMachine.html#aab812187ecb452771e91f0003b257cd2" title="smacc::ISmaccStateMachine\l::notifyOnStateEntry" alt="" coords="248,71,443,112"/>
+<area shape="rect" id="node4" href="$classsmacc_1_1ISmaccStateMachine.html#a9c499f2e3df95a9f72731d2d0d1de0e6" title="smacc::ISmaccStateMachine\l::notifyOnStateExit" alt="" coords="248,136,443,177"/>
 </map>

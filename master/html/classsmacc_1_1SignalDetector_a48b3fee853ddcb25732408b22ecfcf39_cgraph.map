@@ -1,11 +1,4 @@
 <map id="smacc::SignalDetector::runThread" name="smacc::SignalDetector::runThread">
-<area shape="rect" id="node2" href="$classsmacc_1_1SignalDetector.html#a2665e66cdae9f6533c64bbcecf3fa199" title="smacc::SignalDetector\l::pollingLoop" alt="" coords="220,129,387,171"/>
-<area shape="rect" id="node3" href="$classsmacc_1_1SignalDetector.html#a9a116479e23259f3a5d5d4a47278afd5" title="smacc::SignalDetector\l::pollOnce" alt="" coords="435,129,601,171"/>
-<area shape="rect" id="node4" href="$classsmacc_1_1SignalDetector.html#af455ae5187fc9405d790992060af647b" title="smacc::SignalDetector\l::finalizeRequest" alt="" coords="649,88,816,129"/>
-<area shape="rect" id="node9" href="$classsmacc_1_1SignalDetector.html#a2c848e6d3bc64996cf8f7e56f3de1ee6" title="smacc::SignalDetector\l::notifyFeedback" alt="" coords="649,169,816,211"/>
-<area shape="rect" id="node5" href="$classsmacc_1_1ISmaccClient.html#a20846aabfd1de832aa27d7a8237a1742" title="smacc::ISmaccClient\l::getName" alt="" coords="884,5,1039,47"/>
-<area shape="rect" id="node7" href="$classsmacc_1_1ISmaccActionClient.html#a272349b93828674d57fb48070f4edebf" title="smacc::ISmaccActionClient\l::getState" alt="" coords="864,71,1059,112"/>
-<area shape="rect" id="node8" href="$classsmacc_1_1ISmaccActionClient.html#a5d7d401ab20e1354348848f427a603ed" title="smacc::ISmaccActionClient\l::postEvent" alt="" coords="864,136,1059,177"/>
-<area shape="rect" id="node6" href="$common_8h.html#a401d7e4f000fd4246a20be1e7d5ec2fc" title="demangleSymbol" alt="" coords="1107,13,1241,39"/>
-<area shape="rect" id="node10" href="$classsmacc_1_1ISmaccActionClient.html#af3b9ad387577ce3edcf4f0a93cf87599" title="smacc::ISmaccActionClient\l::postFeedbackEvent" alt="" coords="864,201,1059,243"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1SignalDetector.html#a2665e66cdae9f6533c64bbcecf3fa199" title="smacc::SignalDetector\l::pollingLoop" alt="" coords="208,5,363,47"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1SignalDetector.html#a9a116479e23259f3a5d5d4a47278afd5" title="smacc::SignalDetector\l::pollOnce" alt="" coords="411,5,565,47"/>
 </map>

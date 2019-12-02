@@ -1,5 +1,0 @@
-<map id="ServiceClient3" name="ServiceClient3">
-<area shape="rect" id="node2" href="$classsmacc_1_1SmaccServiceClient.html" title="{smacc::SmaccServiceClient\l\&lt; std_srvs::SetBool \&gt;\n|+ serviceName_\l# nh_\l# client_\l# initialized_\l|+ SmaccServiceClient()\l+ initialize()\l+ call()\l}" alt="" coords="5,433,204,599"/>
-<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccClient.html" title="{smacc::ISmaccClient\n|# stateMachine_\l|+ ISmaccClient()\l+ ~ISmaccClient()\l+ initialize()\l+ setStateMachine()\l+ getName()\l+ postEvent()\l}" alt="" coords="47,5,202,156"/>
-<area shape="rect" id="node4" href="$classsmacc_1_1SmaccServiceClient.html" title="{smacc::SmaccServiceClient\l\&lt; ServiceType \&gt;\n|+ serviceName_\l# nh_\l# client_\l# initialized_\l|+ SmaccServiceClient()\l+ initialize()\l+ call()\l}" alt="" coords="120,205,319,371"/>
-</map>

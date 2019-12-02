@@ -1,9 +1,9 @@
 <map id="smacc_rviz_plugin::SmaccRvizDisplay::SmaccRvizDisplay" name="smacc_rviz_plugin::SmaccRvizDisplay::SmaccRvizDisplay">
-<area shape="rect" id="node2" href="$classsmacc__rviz__plugin_1_1SmaccRvizDisplay.html#a6031090e46077a5e95754b5f70ea639a" title="smacc_rviz_plugin::\lSmaccRvizDisplay::updateCurrent\lState" alt="" coords="267,5,504,61"/>
-<area shape="rect" id="node3" href="$classsmacc__rviz__plugin_1_1SmaccRvizDisplay.html#adf332ae95bd83969b33ba713a60832fd" title="smacc_rviz_plugin::\lSmaccRvizDisplay::updateTopic" alt="" coords="275,85,495,126"/>
-<area shape="rect" id="node4" href="$classsmacc__rviz__plugin_1_1SmaccRvizDisplay.html#a49a35acd10a664a8335ef5852f8c115c" title="smacc_rviz_plugin::\lSmaccRvizDisplay::unsubscribe" alt="" coords="552,19,773,61"/>
-<area shape="rect" id="node5" href="$classsmacc__rviz__plugin_1_1SmaccRvizDisplay.html#af9cf4f5ef4f5fdb2fcb1bf1a81cdac4d" title="smacc_rviz_plugin::\lSmaccRvizDisplay::reset" alt="" coords="574,85,751,126"/>
-<area shape="rect" id="node6" href="$classsmacc__rviz__plugin_1_1SmaccRvizDisplay.html#ad774027ba3eda277c991619332495cbb" title="smacc_rviz_plugin::\lSmaccRvizDisplay::subscribe" alt="" coords="560,150,765,191"/>
-<area shape="rect" id="node7" href="$classsmacc__rviz__plugin_1_1SmaccRvizDisplay.html#acc7281b99c92fa89f7494f6ca53e4905" title="smacc_rviz_plugin::\lSmaccRvizDisplay::processMessage" alt="" coords="821,150,1072,191"/>
-<area shape="rect" id="node8" href="$backward__global__planner_8cpp.html#ab281ed1637a6dd4beeba422e1b280061" title="PLUGINLIB_EXPORT_CLASS" alt="" coords="1120,157,1313,184"/>
+<area shape="rect" id="node2" href="$classsmacc__rviz__plugin_1_1SmaccRvizDisplay.html#a6031090e46077a5e95754b5f70ea639a" title="smacc_rviz_plugin::\lSmaccRvizDisplay::updateCurrent\lState" alt="" coords="264,5,488,61"/>
+<area shape="rect" id="node3" href="$classsmacc__rviz__plugin_1_1SmaccRvizDisplay.html#adf332ae95bd83969b33ba713a60832fd" title="smacc_rviz_plugin::\lSmaccRvizDisplay::updateTopic" alt="" coords="269,85,483,126"/>
+<area shape="rect" id="node4" href="$classsmacc__rviz__plugin_1_1SmaccRvizDisplay.html#a49a35acd10a664a8335ef5852f8c115c" title="smacc_rviz_plugin::\lSmaccRvizDisplay::unsubscribe" alt="" coords="536,19,748,61"/>
+<area shape="rect" id="node5" href="$classsmacc__rviz__plugin_1_1SmaccRvizDisplay.html#af9cf4f5ef4f5fdb2fcb1bf1a81cdac4d" title="smacc_rviz_plugin::\lSmaccRvizDisplay::reset" alt="" coords="557,85,727,126"/>
+<area shape="rect" id="node6" href="$classsmacc__rviz__plugin_1_1SmaccRvizDisplay.html#ad774027ba3eda277c991619332495cbb" title="smacc_rviz_plugin::\lSmaccRvizDisplay::subscribe" alt="" coords="543,150,741,191"/>
+<area shape="rect" id="node7" href="$classsmacc__rviz__plugin_1_1SmaccRvizDisplay.html#acc7281b99c92fa89f7494f6ca53e4905" title="smacc_rviz_plugin::\lSmaccRvizDisplay::processMessage" alt="" coords="796,150,1037,191"/>
+<area shape="rect" id="node8" href="$backward__global__planner_8cpp.html#ab281ed1637a6dd4beeba422e1b280061" title="PLUGINLIB_EXPORT_CLASS" alt="" coords="1085,157,1291,184"/>
 </map>

@@ -59,9 +59,9 @@ void \hyperlink{classbackward__local__planner_1_1BackwardLocalPlanner_a11bb84f64
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{sm__radial__motion_2test_2tool__action__server_2src_2tool__action__server__node_8cpp_ab5d66ae48b02f831fb527e5260ce1ed2}{dynamic\+\_\+reconfigure\+::\+Server}$<$ backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+Config $>$ \hyperlink{classbackward__local__planner_1_1BackwardLocalPlanner_a953b593550c975f1c9caf0ed0c3143a5}{param\+Server\+\_\+}
+\hyperlink{tool__action__server__node_8cpp_ab5d66ae48b02f831fb527e5260ce1ed2}{dynamic\+\_\+reconfigure\+::\+Server}$<$ backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+Config $>$ \hyperlink{classbackward__local__planner_1_1BackwardLocalPlanner_a953b593550c975f1c9caf0ed0c3143a5}{param\+Server\+\_\+}
 \item 
-\hyperlink{sm__radial__motion_2test_2tool__action__server_2src_2tool__action__server__node_8cpp_ab5d66ae48b02f831fb527e5260ce1ed2}{dynamic\+\_\+reconfigure\+::\+Server}$<$ backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+Config $>$\+::Callback\+Type \hyperlink{classbackward__local__planner_1_1BackwardLocalPlanner_a6ef8d7b45a368abb6561ffd76f46f098}{f}
+\hyperlink{tool__action__server__node_8cpp_ab5d66ae48b02f831fb527e5260ce1ed2}{dynamic\+\_\+reconfigure\+::\+Server}$<$ backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+Config $>$\+::Callback\+Type \hyperlink{classbackward__local__planner_1_1BackwardLocalPlanner_a6ef8d7b45a368abb6561ffd76f46f098}{f}
 \item 
 std\+::vector$<$ geometry\+\_\+msgs\+::\+Pose\+Stamped $>$ \hyperlink{classbackward__local__planner_1_1BackwardLocalPlanner_aaa37c16e1735cb440986b3d41e6ef8e6}{backwards\+Plan\+Path\+\_\+}
 \item 
@@ -97,7 +97,7 @@ double \hyperlink{classbackward__local__planner_1_1BackwardLocalPlanner_a649fccd
 \item 
 double \hyperlink{classbackward__local__planner_1_1BackwardLocalPlanner_a737a0163525aae9afb44bd17f9e013ad}{max\+\_\+angular\+\_\+z\+\_\+speed\+\_\+}
 \item 
-\hyperlink{classint}{int} \hyperlink{classbackward__local__planner_1_1BackwardLocalPlanner_af2485562720c0ce3c895debdbdfc89f3}{current\+Pose\+Index\+\_\+}
+int \hyperlink{classbackward__local__planner_1_1BackwardLocalPlanner_af2485562720c0ce3c895debdbdfc89f3}{current\+Pose\+Index\+\_\+}
 \end{DoxyCompactItemize}
 
 
@@ -679,7 +679,7 @@ Definition at line 410 of file backward\+\_\+curved\+\_\+local\+\_\+planner.\+cp
 
 
 
-References goal\+Marker\+Publisher\+\_\+, smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt\+::x, and smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt\+::y.
+References goal\+Marker\+Publisher\+\_\+.
 
 
 
@@ -707,11 +707,11 @@ Referenced by compute\+Velocity\+Commands().
 428     marker.color.b = 0;
 429 
 430     geometry\_msgs::Point start,end;
-431     start.x = \hyperlink{namespacesmacc__viewer_1_1xdot_1_1xdot__qt_a1dd3d4e1f636ed9ebbed9b32d4c196df}{x};
-432     start.y = \hyperlink{namespacesmacc__viewer_1_1xdot_1_1xdot__qt_a784c76c541d5dd5940e217a1aa54f256}{y};
+431     start.x = x;
+432     start.y = y;
 433 
-434     end.x = \hyperlink{namespacesmacc__viewer_1_1xdot_1_1xdot__qt_a1dd3d4e1f636ed9ebbed9b32d4c196df}{x} + 0.5 * cos(phi);
-435     end.y = \hyperlink{namespacesmacc__viewer_1_1xdot_1_1xdot__qt_a784c76c541d5dd5940e217a1aa54f256}{y} + 0.5 * sin(phi);
+434     end.x = x + 0.5 * cos(phi);
+435     end.y = y + 0.5 * sin(phi);
 436 
 437     marker.points.push\_back(start);
 438     marker.points.push\_back(end);
@@ -971,7 +971,7 @@ Referenced by compute\+Velocity\+Commands(), and initialize().
 
 \index{backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!current\+Pose\+Index\+\_\+@{current\+Pose\+Index\+\_\+}}
 \index{current\+Pose\+Index\+\_\+@{current\+Pose\+Index\+\_\+}!backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
-\subsubsection[{\texorpdfstring{current\+Pose\+Index\+\_\+}{currentPoseIndex_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::current\+Pose\+Index\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classbackward__local__planner_1_1BackwardLocalPlanner_af2485562720c0ce3c895debdbdfc89f3}{}\label{classbackward__local__planner_1_1BackwardLocalPlanner_af2485562720c0ce3c895debdbdfc89f3}
+\subsubsection[{\texorpdfstring{current\+Pose\+Index\+\_\+}{currentPoseIndex_}}]{\setlength{\rightskip}{0pt plus 5cm}int backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::current\+Pose\+Index\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classbackward__local__planner_1_1BackwardLocalPlanner_af2485562720c0ce3c895debdbdfc89f3}{}\label{classbackward__local__planner_1_1BackwardLocalPlanner_af2485562720c0ce3c895debdbdfc89f3}
 
 
 Definition at line 100 of file backward\+\_\+local\+\_\+planner.\+h.

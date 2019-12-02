@@ -21,18 +21,23 @@ Collaboration diagram for Ssr\+F\+Pattern\+Forward2\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{structSsrFPatternForward2__coll__graph}
+\includegraphics[height=550pt]{structSsrFPatternForward2__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef sc\+::transition$<$ Ev\+Action\+Succeded$<$ smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result $>$, \hyperlink{structSsrFPatternRotate1}{Ssr\+F\+Pattern\+Rotate1} $>$ \hyperlink{structSsrFPatternForward2_afc14834e634fa4fc628a1e283898ca1d}{reactions}
+typedef \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Succeeded$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $>$, \hyperlink{structSsrFPatternStartLoop}{Ssr\+F\+Pattern\+Start\+Loop} $>$ \hyperlink{structSsrFPatternForward2_a99e7488097a68de736567e9f7da6d77f}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{structSsrFPatternForward2_a81c19ada428b305cef1e21f39a090fa8}{on\+Initialize} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{structSsrFPatternForward2_a631add10c8ff5c96d45d54bdc5d918fc}{on\+Definition} ()
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -47,7 +52,7 @@ Definition at line 1 of file ssr\+\_\+fpattern\+\_\+forward\+\_\+2.\+h.
 \subsection{Member Typedef Documentation}
 \index{Ssr\+F\+Pattern\+Forward2@{Ssr\+F\+Pattern\+Forward2}!reactions@{reactions}}
 \index{reactions@{reactions}!Ssr\+F\+Pattern\+Forward2@{Ssr\+F\+Pattern\+Forward2}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef sc\+::transition$<$Ev\+Action\+Succeded$<$smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result$>$, {\bf Ssr\+F\+Pattern\+Rotate1}$>$ {\bf Ssr\+F\+Pattern\+Forward2\+::reactions}}\hypertarget{structSsrFPatternForward2_afc14834e634fa4fc628a1e283898ca1d}{}\label{structSsrFPatternForward2_afc14834e634fa4fc628a1e283898ca1d}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf smacc\+::transition}$<$Ev\+Action\+Succeeded$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}$>$, {\bf Ssr\+F\+Pattern\+Start\+Loop}$>$ {\bf Ssr\+F\+Pattern\+Forward2\+::reactions}}\hypertarget{structSsrFPatternForward2_a99e7488097a68de736567e9f7da6d77f}{}\label{structSsrFPatternForward2_a99e7488097a68de736567e9f7da6d77f}
 
 
 Definition at line 5 of file ssr\+\_\+fpattern\+\_\+forward\+\_\+2.\+h.
@@ -55,6 +60,22 @@ Definition at line 5 of file ssr\+\_\+fpattern\+\_\+forward\+\_\+2.\+h.
 
 
 \subsection{Member Function Documentation}
+\index{Ssr\+F\+Pattern\+Forward2@{Ssr\+F\+Pattern\+Forward2}!on\+Definition@{on\+Definition}}
+\index{on\+Definition@{on\+Definition}!Ssr\+F\+Pattern\+Forward2@{Ssr\+F\+Pattern\+Forward2}}
+\subsubsection[{\texorpdfstring{on\+Definition()}{onDefinition()}}]{\setlength{\rightskip}{0pt plus 5cm}static void Ssr\+F\+Pattern\+Forward2\+::on\+Definition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structSsrFPatternForward2_a631add10c8ff5c96d45d54bdc5d918fc}{}\label{structSsrFPatternForward2_a631add10c8ff5c96d45d54bdc5d918fc}
+
+
+Definition at line 7 of file ssr\+\_\+fpattern\+\_\+forward\+\_\+2.\+h.
+
+
+\begin{DoxyCode}
+8   \{
+9   \}
+\end{DoxyCode}
 \index{Ssr\+F\+Pattern\+Forward2@{Ssr\+F\+Pattern\+Forward2}!on\+Initialize@{on\+Initialize}}
 \index{on\+Initialize@{on\+Initialize}!Ssr\+F\+Pattern\+Forward2@{Ssr\+F\+Pattern\+Forward2}}
 \subsubsection[{\texorpdfstring{on\+Initialize()}{onInitialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ssr\+F\+Pattern\+Forward2\+::on\+Initialize (
@@ -64,25 +85,21 @@ Definition at line 5 of file ssr\+\_\+fpattern\+\_\+forward\+\_\+2.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structSsrFPatternForward2_a81c19ada428b305cef1e21f39a090fa8}{}\label{structSsrFPatternForward2_a81c19ada428b305cef1e21f39a090fa8}
 
 
-Definition at line 7 of file ssr\+\_\+fpattern\+\_\+forward\+\_\+2.\+h.
+Definition at line 11 of file ssr\+\_\+fpattern\+\_\+forward\+\_\+2.\+h.
 
 
 \begin{DoxyCode}
-8   \{
-9     \textcolor{keyword}{auto} &superstate = this->context<SS>();
-10     ROS\_INFO(\textcolor{stringliteral}{"[SsrFpattern] Fpattern rotate: SS current iteration: %d/%d"}, superstate.iteration\_count, 
-      superstate.total\_iterations);
-11 
-12     \textcolor{keywordflow}{if} (superstate.iteration\_count < superstate.total\_iterations)
-13     \{
-14       this->configure<NavigationOrthogonal>(std::make\_shared<SbNavigateForward>(superstate.
-      pitch\_lenght\_meters));
-15       this->configure<ToolOrthogonal>(std::make\_shared<SbToolStop>());
-16     \}
-17   \}
+12   \{
+13     \textcolor{keyword}{auto} &superstate = this->context<SS>();
+14     ROS\_INFO(\textcolor{stringliteral}{"[SsrFpattern] Fpattern rotate: SS current iteration: %d/%d"}, superstate.iteration\_count, 
+      superstate.total\_iterations());
+15 
+16     this->configure<NavigationOrthogonal>(std::make\_shared<SbNavigateForward>(SS::pitch\_lenght\_meters()));
+17     this->configure<ToolOrthogonal>(std::make\_shared<SbToolStop>());
+18   \}
 \end{DoxyCode}
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-smacc\+\_\+sm\+\_\+examples/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/superstate\+\_\+routines/f\+\_\+pattern/\hyperlink{ssr__fpattern__forward__2_8h}{ssr\+\_\+fpattern\+\_\+forward\+\_\+2.\+h}\end{DoxyCompactItemize}
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/superstate\+\_\+routines/f\+\_\+pattern/\hyperlink{ssr__fpattern__forward__2_8h}{ssr\+\_\+fpattern\+\_\+forward\+\_\+2.\+h}\end{DoxyCompactItemize}

@@ -1,5 +1,0 @@
-<map id="smacc::SmaccTopicPublisherClient&lt; MessageType &gt;" name="smacc::SmaccTopicPublisherClient&lt; MessageType &gt;">
-<area shape="rect" id="node3" href="$classsmacc_1_1SmaccTopicPublisherClient.html" title="{smacc::SmaccTopicPublisher\lClient\&lt; std_msgs::String \&gt;\n|+ topicName\l+ queueSize\l# nh_\l# pub_\l&#45; initialized_\l|+ SmaccTopicPublisherClient()\l+ ~SmaccTopicPublisherClient()\l+ initialize()\l+ publish()\l}" alt="" coords="5,463,232,657"/>
-<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccClient.html" title="{smacc::ISmaccClient\n|# stateMachine_\l|+ ISmaccClient()\l+ ~ISmaccClient()\l+ initialize()\l+ setStateMachine()\l+ getName()\l+ postEvent()\l}" alt="" coords="41,5,196,156"/>
-<area shape="rect" id="node4" href="$classdance__bot_1_1StringPublisherClient.html" title="{dance_bot::StringPublisher\lClient\n||}" alt="" coords="22,707,215,799"/>
-</map>

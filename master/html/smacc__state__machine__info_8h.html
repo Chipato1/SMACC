@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>SMACC: smacc/include/smacc/smacc_state_machine_info.h File Reference</title>
+<title>SMACC: smacc/include/smacc/introspection/smacc_state_machine_info.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_6e3e4532ae0db906acb0c92fce514b9e.html">smacc</a></li><li class="navelem"><a class="el" href="dir_af83d609eca54628b06583fa4d095eed.html">include</a></li><li class="navelem"><a class="el" href="dir_b7711d4fdb9c7f5ffaefaee577cae4c6.html">smacc</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_6e3e4532ae0db906acb0c92fce514b9e.html">smacc</a></li><li class="navelem"><a class="el" href="dir_af83d609eca54628b06583fa4d095eed.html">include</a></li><li class="navelem"><a class="el" href="dir_b7711d4fdb9c7f5ffaefaee577cae4c6.html">smacc</a></li><li class="navelem"><a class="el" href="dir_b3c484ab7249692fea394a4ac7ddd21b.html">introspection</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -94,92 +94,151 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">smacc_state_machine_info.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;map&gt;</code><br />
-<code>#include &lt;<a class="el" href="common_8h_source.html">smacc/common.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="common_8h_source.html">smacc/common.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="smacc__orthogonal_8h_source.html">smacc/smacc_orthogonal.h</a>&gt;</code><br />
+<code>#include &lt;smacc_msgs/SmaccState.h&gt;</code><br />
+<code>#include &lt;smacc_msgs/SmaccTransition.h&gt;</code><br />
+<code>#include &lt;smacc_msgs/SmaccOrthogonal.h&gt;</code><br />
+<code>#include &lt;smacc_msgs/SmaccLogicUnit.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for smacc_state_machine_info.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="smacc__state__machine__info_8h__incl.png" border="0" usemap="#smacc_2include_2smacc_2smacc__state__machine__info_8h" alt=""/></div>
-<map name="smacc_2include_2smacc_2smacc__state__machine__info_8h" id="smacc_2include_2smacc_2smacc__state__machine__info_8h">
-<area shape="rect" id="node4" href="common_8h.html" title="smacc/common.h" alt="" coords="1537,109,1675,136"/>
+<div class="center"><img src="smacc__state__machine__info_8h__incl.png" border="0" usemap="#smacc_2include_2smacc_2introspection_2smacc__state__machine__info_8h" alt=""/></div>
+<map name="smacc_2include_2smacc_2introspection_2smacc__state__machine__info_8h" id="smacc_2include_2smacc_2introspection_2smacc__state__machine__info_8h">
+<area shape="rect" id="node2" href="common_8h.html" title="smacc/common.h" alt="" coords="1472,184,1598,211"/>
+<area shape="rect" id="node38" href="smacc__orthogonal_8h.html" title="smacc/smacc_orthogonal.h" alt="" coords="2098,109,2281,136"/>
+<area shape="rect" id="node18" href="smacc__fifo__scheduler_8h.html" title="smacc/smacc_fifo_scheduler.h" alt="" coords="2559,266,2762,293"/>
+<area shape="rect" id="node22" href="smacc__types_8h.html" title="smacc/smacc_types.h" alt="" coords="388,527,543,553"/>
+<area shape="rect" id="node24" href="introspection_8h.html" title="smacc/introspection\l/introspection.h" alt="" coords="812,348,951,389"/>
+<area shape="rect" id="node36" href="smacc__default__events_8h.html" title="smacc/smacc_default\l_events.h" alt="" coords="44,348,194,389"/>
+<area shape="rect" id="node37" href="smacc__transition_8h.html" title="smacc/smacc_transition.h" alt="" coords="449,266,624,293"/>
+<area shape="rect" id="node20" href="smacc__fifo__worker_8h.html" title="smacc/smacc_fifo_worker.h" alt="" coords="2671,355,2858,382"/>
+<area shape="rect" id="node27" href="string__type__walker_8h.html" title="smacc/introspection\l/string_type_walker.h" alt="" coords="1068,437,1215,479"/>
+<area shape="rect" id="node34" href="smacc__state__info_8h.html" title="smacc/introspection\l/smacc_state_info.h" alt="" coords="900,437,1040,479"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="smacc__state__machine__info_8h__dep__incl.png" border="0" usemap="#smacc_2include_2smacc_2smacc__state__machine__info_8hdep" alt=""/></div>
-<map name="smacc_2include_2smacc_2smacc__state__machine__info_8hdep" id="smacc_2include_2smacc_2smacc__state__machine__info_8hdep">
-<area shape="rect" id="node2" href="smacc__state__machine__impl_8h.html" title="smacc/include/smacc\l/impl/smacc_state_machine\l_impl.h" alt="" coords="1347,109,1548,165"/>
-<area shape="rect" id="node8" href="smacc__state__machine__base_8h.html" title="smacc/include/smacc\l/smacc_state_machine\l_base.h" alt="" coords="34,777,205,833"/>
-<area shape="rect" id="node3" href="smacc__client__impl_8h.html" title="smacc/include/smacc\l/impl/smacc_client_impl.h" alt="" coords="1354,221,1541,262"/>
-<area shape="rect" id="node6" href="smacc__state_8h.html" title="smacc/include/smacc\l/smacc_state.h" alt="" coords="46,518,204,559"/>
-<area shape="rect" id="node23" href="orthogonal_8cpp.html" title="smacc/src/smacc/orthogonal.cpp" alt="" coords="1756,525,1990,552"/>
-<area shape="rect" id="node57" href="smacc__component__impl_8h.html" title="smacc/include/smacc\l/impl/smacc_component\l_impl.h" alt="" coords="1677,213,1856,269"/>
-<area shape="rect" id="node4" href="smacc__state__machine_8h.html" title="smacc/include/smacc\l/smacc_state_machine.h" alt="" coords="1551,317,1734,359"/>
-<area shape="rect" id="node56" href="client_8cpp.html" title="smacc/src/smacc/client.cpp" alt="" coords="1328,325,1527,351"/>
-<area shape="rect" id="node5" href="orthogonal_8h.html" title="smacc/include/smacc\l/orthogonal.h" alt="" coords="1234,407,1392,448"/>
-<area shape="rect" id="node24" href="smacc__state__machine_8cpp.html" title="smacc/src/smacc/smacc\l_state_machine.cpp" alt="" coords="1553,518,1732,559"/>
-<area shape="rect" id="node39" href="smacc__substate__behavior_8h.html" title="smacc/include/smacc\l/smacc_substate_behavior.h" alt="" coords="2300,407,2504,448"/>
-<area shape="rect" id="node25" href="input__device__orthogonal_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/keyboard_listener_example\l/include/orthogonals/input\l_device_orthogonal.h" alt="" coords="222,1037,423,1122"/>
-<area shape="rect" id="node26" href="smacc__client__library_2smacc__sensors_2examples_2sensor__substate__example_2include_2orthogonala707cfaad3235c00883bb2c73667eac3.html" title="smacc_client_library\l/smacc_sensors/examples\l/sensor_substate_example\l/include/orthogonals/obstacle\l_perception_orthogonal.h" alt="" coords="280,496,490,581"/>
-<area shape="rect" id="node27" href="smacc__client__library_2smacc__sensors_2examples_2sensor__substate__example_2include_2orthogonals_2sensor__orthogonal_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/sensor_substate_example\l/include/orthogonals/sensor\l_orthogonal.h" alt="" coords="514,496,712,581"/>
-<area shape="rect" id="node28" href="smacc__client__library_2smacc__sensors_2examples_2timer__substate__example_2include_2orthogonals_2navigation__orthogonal_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/timer_substate_example\l/include/orthogonals/navigation\l_orthogonal.h" alt="" coords="737,496,958,581"/>
-<area shape="rect" id="node29" href="smacc__client__library_2smacc__sensors_2examples_2timer__substate__example_2include_2orthogonals_2tool__orthogonal_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/timer_substate_example\l/include/orthogonals/tool\l_orthogonal.h" alt="" coords="983,496,1174,581"/>
-<area shape="rect" id="node30" href="keyboard__orthogonal_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/orthogonals\l/keyboard_orthogonal.h" alt="" coords="1638,637,1822,707"/>
-<area shape="rect" id="node31" href="smacc__sm__examples_2sm__dance__bot_2include_2sm__dance__bot_2orthogonals_2navigation__orthogonal_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/orthogonals\l/navigation_orthogonal.h" alt="" coords="1808,770,1992,841"/>
-<area shape="rect" id="node32" href="smacc__sm__examples_2sm__dance__bot_2include_2sm__dance__bot_2orthogonals_2obstacle__perception__orthogonal_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/orthogonals\l/obstacle_perception_orthogonal.h" alt="" coords="725,903,968,974"/>
-<area shape="rect" id="node33" href="publisher__orthogonal_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/orthogonals\l/publisher_orthogonal.h" alt="" coords="1380,637,1564,707"/>
-<area shape="rect" id="node34" href="smacc__sm__examples_2sm__dance__bot_2include_2sm__dance__bot_2orthogonals_2sensor__orthogonal_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/orthogonals\l/sensor_orthogonal.h" alt="" coords="992,903,1176,974"/>
-<area shape="rect" id="node35" href="service3__orthogonal_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/orthogonals\l/service3_orthogonal.h" alt="" coords="1121,637,1305,707"/>
-<area shape="rect" id="node36" href="smacc__sm__examples_2sm__dance__bot_2include_2sm__dance__bot_2orthogonals_2tool__orthogonal_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/orthogonals\l/tool_orthogonal.h" alt="" coords="2066,770,2250,841"/>
-<area shape="rect" id="node37" href="smacc__sm__examples_2sm__radial__motion_2include_2sm__radial__motion_2orthogonals_2navigation__orthogonal_8h.html" title="smacc_sm_examples/sm\l_radial_motion/include\l/sm_radial_motion/orthogonals\l/navigation_orthogonal.h" alt="" coords="3220,903,3440,974"/>
-<area shape="rect" id="node38" href="smacc__sm__examples_2sm__radial__motion_2include_2sm__radial__motion_2orthogonals_2tool__orthogonal_8h.html" title="smacc_sm_examples/sm\l_radial_motion/include\l/sm_radial_motion/orthogonals\l/tool_orthogonal.h" alt="" coords="5334,770,5554,841"/>
-<area shape="rect" id="node7" href="smacc__state__base_8h.html" title="smacc/include/smacc\l/smacc_state_base.h" alt="" coords="46,651,204,693"/>
-<area shape="rect" id="node9" href="smacc_8h.html" title="smacc/include/smacc\l/smacc.h" alt="" coords="1302,918,1460,959"/>
-<area shape="rect" id="node10" href="keyboard__state__machine_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/keyboard_listener_example\l/include/keyboard_state_machine.h" alt="" coords="578,1044,826,1115"/>
-<area shape="rect" id="node13" href="sensor__state__machine_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/sensor_substate_example\l/include/sensor_state_machine.h" alt="" coords="1301,1044,1533,1115"/>
-<area shape="rect" id="node16" href="timer__state__machine_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/timer_substate_example\l/include/timer_state_machine.h" alt="" coords="1647,1044,1870,1115"/>
-<area shape="rect" id="node19" href="sm__dance__bot_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/sm_dance_bot.h" alt="" coords="1996,1051,2203,1107"/>
-<area shape="rect" id="node21" href="radial__motion_8h.html" title="smacc_sm_examples/sm\l_radial_motion/include\l/sm_radial_motion/radial\l_motion.h" alt="" coords="3684,1044,3868,1115"/>
-<area shape="rect" id="node11" href="keyboard__state_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/keyboard_listener_example\l/include/states/keyboard_state.h" alt="" coords="426,1177,656,1248"/>
-<area shape="rect" id="node12" href="keyboard__main_8cpp.html" title="smacc_client_library\l/smacc_sensors/examples\l/keyboard_listener_example\l/src/keyboard_main.cpp" alt="" coords="680,1177,882,1248"/>
-<area shape="rect" id="node14" href="sensor__state_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/sensor_substate_example\l/include/states/sensor_state.h" alt="" coords="1031,1177,1246,1248"/>
-<area shape="rect" id="node15" href="sensor__main_8cpp.html" title="smacc_client_library\l/smacc_sensors/examples\l/sensor_substate_example\l/src/sensor_main.cpp" alt="" coords="1320,1177,1514,1248"/>
-<area shape="rect" id="node17" href="timer__state_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/timer_substate_example\l/include/states/timer_state.h" alt="" coords="1826,1177,2032,1248"/>
-<area shape="rect" id="node18" href="timer__main_8cpp.html" title="smacc_client_library\l/smacc_sensors/examples\l/timer_substate_example\l/src/timer_main.cpp" alt="" coords="1611,1177,1802,1248"/>
-<area shape="rect" id="node20" href="sm__dance__bot_8cpp.html" title="smacc_sm_examples/sm\l_dance_bot/src/sm_dance\l_bot.cpp" alt="" coords="2056,1185,2245,1241"/>
-<area shape="rect" id="node22" href="radial__motion_8cpp.html" title="smacc_sm_examples/sm\l_radial_motion/src/radial\l_motion.cpp" alt="" coords="3684,1185,3868,1241"/>
-<area shape="rect" id="node40" href="sensor__substate_8h.html" title="smacc_client_library\l/smacc_interface_components\l/include/smacc_interface\l_components/substate_behaviors\l/sensor_substate.h" alt="" coords="1494,763,1732,848"/>
-<area shape="rect" id="node43" href="keyboard__substate_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/keyboard_listener_example\l/include/substates_behaviors\l/input_device/keyboard_substate.h" alt="" coords="438,896,682,981"/>
-<area shape="rect" id="node44" href="timer__substate_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/timer_substate_example\l/include/substates_behaviors\l/navigation/timer_substate.h" alt="" coords="3275,1037,3482,1122"/>
-<area shape="rect" id="node45" href="keyboard__client_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/substate_behaviors\l/keyboard/keyboard_client.h" alt="" coords="2115,503,2340,574"/>
-<area shape="rect" id="node46" href="sb__keyboard__substate_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/substate_behaviors\l/keyboard/sb_keyboard_substate.h" alt="" coords="2196,637,2441,707"/>
-<area shape="rect" id="node47" href="sb__navigate__global__position_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/substate_behaviors\l/navigation/sb_navigate_global\l_position.h" alt="" coords="2970,763,3195,848"/>
-<area shape="rect" id="node48" href="sb__rotate_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/substate_behaviors\l/navigation/sb_rotate.h" alt="" coords="2426,770,2651,841"/>
-<area shape="rect" id="node49" href="sb__undo__path__backwards_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/substate_behaviors\l/navigation/sb_undo_path_backwards.h" alt="" coords="2674,770,2946,841"/>
-<area shape="rect" id="node50" href="sb__string__publisher_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/substate_behaviors\l/publisher/sb_string_publisher.h" alt="" coords="1896,637,2122,707"/>
-<area shape="rect" id="node51" href="service3__behavior_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/substate_behaviors\l/service_client/service3_behavior.h" alt="" coords="2516,503,2758,574"/>
-<area shape="rect" id="node52" href="navigate__global__position_8h.html" title="smacc_sm_examples/sm\l_radial_motion/include\l/sm_radial_motion/substates\l_behaviors/navigation/navigate\l_global_position.h" alt="" coords="3904,763,4124,848"/>
-<area shape="rect" id="node54" href="rotate_8h.html" title="smacc_sm_examples/sm\l_radial_motion/include\l/sm_radial_motion/substates\l_behaviors/navigation/rotate.h" alt="" coords="4149,770,4365,841"/>
-<area shape="rect" id="node55" href="undo__path__backwards_8h.html" title="smacc_sm_examples/sm\l_radial_motion/include\l/sm_radial_motion/substates\l_behaviors/navigation/undo\l_path_backwards.h" alt="" coords="4390,763,4596,848"/>
-<area shape="rect" id="node41" href="custom__condition__temperature__sensor_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/sensor_substate_example\l/include/substates_behaviors\l/sensor/custom_condition_temperature\l_sensor.h" alt="" coords="952,1029,1226,1129"/>
-<area shape="rect" id="node42" href="sb__custom__condition__temperature__sensor_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/substate_behaviors\l/temperature_sensor/sb_custom\l_condition_temperature_sensor.h" alt="" coords="1636,896,1872,981"/>
-<area shape="rect" id="node53" href="substate__behaviors_8h.html" title="smacc_sm_examples/sm\l_radial_motion/include\l/sm_radial_motion/substate\l_behaviors.h" alt="" coords="4157,903,4357,974"/>
-<area shape="rect" id="node58" href="smacc__action__client__base_8h.html" title="smacc/include/smacc\l/interface_components\l/smacc_action_client_base.h" alt="" coords="4437,511,4642,567"/>
-<area shape="rect" id="node71" href="smacc__component_8cpp.html" title="smacc/src/smacc/smacc\l_component.cpp" alt="" coords="1758,317,1937,359"/>
-<area shape="rect" id="node59" href="common_8cpp.html" title="smacc/src/smacc/common.cpp" alt="" coords="4690,659,4912,685"/>
-<area shape="rect" id="node60" href="signal__detector_8cpp.html" title="smacc/src/smacc/signal\l_detector.cpp" alt="" coords="4936,651,5111,693"/>
-<area shape="rect" id="node61" href="smacc__tool__plugin_8h.html" title="smacc_client_library\l/smacc_action_client\l_generic/include/smacc\l_action_client_generic\l/smacc_tool_plugin.h" alt="" coords="4445,629,4616,715"/>
-<area shape="rect" id="node66" href="move__base__to__goal_8h.html" title="smacc_client_library\l/smacc_navigation/smacc\l_navigation_plugin/include\l/smacc_navigation_plugin/move\l_base_to_goal.h" alt="" coords="3220,629,3446,715"/>
-<area shape="rect" id="node62" href="smacc__tool__plugin_8cpp.html" title="smacc_client_library\l/smacc_action_client\l_generic/src/smacc_tool\l_plugin.cpp" alt="" coords="5133,770,5309,841"/>
-<area shape="rect" id="node63" href="sb__tool__start_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/substate_behaviors\l/tool/sb_tool_start.h" alt="" coords="4682,903,4907,974"/>
-<area shape="rect" id="node64" href="tool__start_8h.html" title="smacc_sm_examples/sm\l_radial_motion/include\l/sm_radial_motion/substates\l_behaviors/tool/tool_start.h" alt="" coords="4620,770,4827,841"/>
-<area shape="rect" id="node65" href="tool__stop_8h.html" title="smacc_sm_examples/sm\l_radial_motion/include\l/sm_radial_motion/substates\l_behaviors/tool/tool_stop.h" alt="" coords="4851,770,5058,841"/>
-<area shape="rect" id="node67" href="smacc__navigation__plugin_8cpp.html" title="smacc_client_library\l/smacc_navigation/smacc\l_navigation_plugin/src\l/smacc_navigation_plugin.cpp" alt="" coords="3370,770,3584,841"/>
-<area shape="rect" id="node68" href="sb__navigate__backward_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/substate_behaviors\l/navigation/sb_navigate_backward.h" alt="" coords="2678,903,2930,974"/>
-<area shape="rect" id="node69" href="sb__navigate__forward_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/substate_behaviors\l/navigation/sb_navigate_forward.h" alt="" coords="2956,903,3195,974"/>
-<area shape="rect" id="node70" href="navigate__forward_8h.html" title="smacc_sm_examples/sm\l_radial_motion/include\l/sm_radial_motion/substates\l_behaviors/navigation/navigate\l_forward.h" alt="" coords="3608,763,3828,848"/>
+<div class="center"><img src="smacc__state__machine__info_8h__dep__incl.png" border="0" usemap="#smacc_2include_2smacc_2introspection_2smacc__state__machine__info_8hdep" alt=""/></div>
+<map name="smacc_2include_2smacc_2introspection_2smacc__state__machine__info_8hdep" id="smacc_2include_2smacc_2introspection_2smacc__state__machine__info_8hdep">
+<area shape="rect" id="node2" href="introspection_8h.html" title="smacc/include/smacc\l/introspection/introspection.h" alt="" coords="4285,109,4474,151"/>
+<area shape="rect" id="node3" href="common_8h.html" title="smacc/include/smacc\l/common.h" alt="" coords="4305,288,4454,329"/>
+<area shape="rect" id="node6" href="smacc__state__machine_8h.html" title="smacc/include/smacc\l/smacc_state_machine.h" alt="" coords="4595,622,4763,663"/>
+<area shape="rect" id="node7" href="smacc__state__machine__impl_8h.html" title="smacc/include/smacc\l/impl/smacc_state_machine\l_impl.h" alt="" coords="5236,748,5421,804"/>
+<area shape="rect" id="node62" href="smacc__state__machine__info_8cpp.html" title="smacc/src/smacc/smacc\l_state_machine_info.cpp" alt="" coords="3769,755,3939,797"/>
+<area shape="rect" id="node109" href="smacc__state__info_8cpp.html" title="smacc/src/smacc/smacc\l_state_info.cpp" alt="" coords="3125,377,3295,419"/>
+<area shape="rect" id="node115" href="logic__unit__base_8h.html" title="smacc/include/smacc\l/logic_units/logic_unit\l_base.h" alt="" coords="4010,481,4159,537"/>
+<area shape="rect" id="node117" href="smacc__transition_8h.html" title="smacc/include/smacc\l/smacc_transition.h" alt="" coords="4305,199,4454,240"/>
+<area shape="rect" id="node118" href="reflection_8cpp.html" title="smacc/src/smacc/reflection.cpp" alt="" coords="4478,206,4686,233"/>
+<area shape="rect" id="node4" href="component_8h.html" title="smacc/include/smacc\l/component.h" alt="" coords="5062,377,5211,419"/>
+<area shape="rect" id="node11" href="smacc__state__machine__base_8h.html" title="smacc/include/smacc\l/smacc_state_machine\l_base.h" alt="" coords="4101,748,4258,804"/>
+<area shape="rect" id="node12" href="smacc_8h.html" title="smacc/include/smacc\l/smacc.h" alt="" coords="3959,889,4109,930"/>
+<area shape="rect" id="node64" href="odom__tracker_8h.html" title="smacc_client_library\l/smacc_navigation/smacc\l_odom_tracker/include/smacc\l_odom_tracker/odom_tracker.h" alt="" coords="8745,874,8947,945"/>
+<area shape="rect" id="node70" href="smacc__client_8h.html" title="smacc/include/smacc\l/smacc_client.h" alt="" coords="6587,489,6737,530"/>
+<area shape="rect" id="node73" href="common_8cpp.html" title="smacc/src/smacc/common.cpp" alt="" coords="5367,896,5573,923"/>
+<area shape="rect" id="node101" href="smacc__orthogonal_8h.html" title="smacc/include/smacc\l/smacc_orthogonal.h" alt="" coords="6406,377,6555,419"/>
+<area shape="rect" id="node106" href="smacc__signal__detector_8h.html" title="smacc/include/smacc\l/smacc_signal_detector.h" alt="" coords="5595,622,5766,663"/>
+<area shape="rect" id="node107" href="smacc__state_8h.html" title="smacc/include/smacc\l/smacc_state.h" alt="" coords="4435,489,4585,530"/>
+<area shape="rect" id="node110" href="string__type__walker_8cpp.html" title="smacc/src/smacc/string\l_type_walker.cpp" alt="" coords="4198,377,4361,419"/>
+<area shape="rect" id="node111" href="lu__all__events__go_8h.html" title="smacc_logic_unit_library\l/all_events_go/include\l/all_events_go/lu_all_events_go.h" alt="" coords="3102,615,3321,671"/>
+<area shape="rect" id="node112" href="lu__all__events__go_8cpp.html" title="smacc_logic_unit_library\l/all_events_go/src/all\l_events_go/lu_all_events_go.cpp" alt="" coords="5,748,220,804"/>
+<area shape="rect" id="node113" href="event__countdown_8h.html" title="smacc_logic_unit_library\l/event_countdown/include\l/event_countdown/event_countdown.h" alt="" coords="4051,615,4297,671"/>
+<area shape="rect" id="node114" href="event__countdown_8cpp.html" title="smacc_logic_unit_library\l/event_countdown/src/event\l_countdown/event_countdown.cpp" alt="" coords="3472,748,3695,804"/>
+<area shape="rect" id="node5" href="smacc__component__impl_8h.html" title="smacc/include/smacc\l/impl/smacc_component\l_impl.h" alt="" coords="4945,481,5109,537"/>
+<area shape="rect" id="node43" href="smacc__substate__behavior_8h.html" title="smacc/include/smacc\l/smacc_substate_behavior.h" alt="" coords="5103,889,5293,930"/>
+<area shape="rect" id="node63" href="smacc__component_8cpp.html" title="smacc/src/smacc/smacc\l_component.cpp" alt="" coords="4991,622,5160,663"/>
+<area shape="rect" id="node60" href="smacc__state_8cpp.html" title="smacc/src/smacc/smacc\l_state.cpp" alt="" coords="4472,755,4641,797"/>
+<area shape="rect" id="node61" href="smacc__state__machine_8cpp.html" title="smacc/src/smacc/smacc\l_state_machine.cpp" alt="" coords="5791,755,5960,797"/>
+<area shape="rect" id="node8" href="smacc__client__impl_8h.html" title="smacc/include/smacc\l/impl/smacc_client_impl.h" alt="" coords="5597,889,5770,930"/>
+<area shape="rect" id="node10" href="orthogonal_8cpp.html" title="smacc/src/smacc/orthogonal.cpp" alt="" coords="5981,1029,6196,1056"/>
+<area shape="rect" id="node9" href="client_8cpp.html" title="smacc/src/smacc/client.cpp" alt="" coords="6597,1029,6783,1056"/>
+<area shape="rect" id="node13" href="keyboard__state__machine_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/keyboard_listener_example\l/include/keyboard_state_machine.h" alt="" coords="4429,1007,4655,1078"/>
+<area shape="rect" id="node16" href="timer__state__machine_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/timer_substate_example\l/include/timer_state_machine.h" alt="" coords="4978,1007,5181,1078"/>
+<area shape="rect" id="node19" href="smacc__sm__reference__library_2sm__atomic_2include_2sm__atomic_2orthogonals_2navigation__orthogonal_8h.html" title="smacc_sm_reference\l_library/sm_atomic/include\l/sm_atomic/orthogonals/navigation\l_orthogonal.h" alt="" coords="3466,1007,3690,1078"/>
+<area shape="rect" id="node20" href="sm__atomic_8h.html" title="smacc_sm_reference\l_library/sm_atomic/include\l/sm_atomic/sm_atomic.h" alt="" coords="3369,1155,3547,1211"/>
+<area shape="rect" id="node22" href="sm__atomic_2include_2sm__atomic_2states_2st__state__1_8h.html" title="smacc_sm_reference\l_library/sm_atomic/include\l/sm_atomic/states/st_state_1.h" alt="" coords="3715,1015,3921,1071"/>
+<area shape="rect" id="node23" href="sm__atomic_2include_2sm__atomic_2states_2st__state__2_8h.html" title="smacc_sm_reference\l_library/sm_atomic/include\l/sm_atomic/states/st_state_2.h" alt="" coords="2952,1015,3159,1071"/>
+<area shape="rect" id="node24" href="sb__state__1_8h.html" title="smacc_sm_reference\l_library/sm_atomic/include\l/sm_atomic/substate_behaviors\l/sb_state_1.h" alt="" coords="3235,1007,3441,1078"/>
+<area shape="rect" id="node25" href="sm__dance__bot_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/sm_dance_bot.h" alt="" coords="7899,1281,8055,1352"/>
+<area shape="rect" id="node27" href="keyboard__client_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/keyboard\l/keyboard_client.h" alt="" coords="5573,1000,5769,1085"/>
+<area shape="rect" id="node30" href="sb__timer__substate_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/timer\l/sb_timer_substate.h" alt="" coords="7680,1000,7852,1085"/>
+<area shape="rect" id="node31" href="sb__tool__start_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/tool\l/sb_tool_start.h" alt="" coords="5793,1000,5957,1085"/>
+<area shape="rect" id="node32" href="sb__tool__stop_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/tool\l/sb_tool_stop.h" alt="" coords="6220,1000,6384,1085"/>
+<area shape="rect" id="node33" href="sm__three__some_8h.html" title="smacc_sm_reference\l_library/sm_three_some\l/include/sm_three_some\l/sm_three_some.h" alt="" coords="913,1148,1077,1219"/>
+<area shape="rect" id="node35" href="ms__recovery__mode_8h.html" title="smacc_sm_reference\l_library/sm_viewer_sim\l/include/sm_viewer_sim\l/mode_states/ms_recovery_mode.h" alt="" coords="2697,1007,2928,1078"/>
+<area shape="rect" id="node36" href="sm__viewer__sim_8h.html" title="smacc_sm_reference\l_library/sm_viewer_sim\l/include/sm_viewer_sim\l/sm_viewer_sim.h" alt="" coords="2323,1148,2486,1219"/>
+<area shape="rect" id="node38" href="ms__run__mode_8h.html" title="smacc_sm_reference\l_library/sm_viewer_sim\l/include/sm_viewer_sim\l/mode_states/ms_run_mode.h" alt="" coords="1913,1007,2112,1078"/>
+<area shape="rect" id="node39" href="smacc__sm__reference__library_2sm__viewer__sim_2include_2sm__viewer__sim_2orthogonals_2navigation__orthogonal_8h.html" title="smacc_sm_reference\l_library/sm_viewer_sim\l/include/sm_viewer_sim\l/orthogonals/navigation\l_orthogonal.h" alt="" coords="3946,1000,4109,1085"/>
+<area shape="rect" id="node40" href="st__st1_8h.html" title="smacc_sm_reference\l_library/sm_viewer_sim\l/include/sm_viewer_sim\l/states/st_st1.h" alt="" coords="2137,1007,2299,1078"/>
+<area shape="rect" id="node41" href="st__st2_8h.html" title="smacc_sm_reference\l_library/sm_viewer_sim\l/include/sm_viewer_sim\l/states/st_st2.h" alt="" coords="2323,1007,2486,1078"/>
+<area shape="rect" id="node42" href="st__st3_8h.html" title="smacc_sm_reference\l_library/sm_viewer_sim\l/include/sm_viewer_sim\l/states/st_st3.h" alt="" coords="2510,1007,2673,1078"/>
+<area shape="rect" id="node14" href="keyboard__state_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/keyboard_listener_example\l/include/states/keyboard_state.h" alt="" coords="4557,1148,4767,1219"/>
+<area shape="rect" id="node15" href="keyboard__main_8cpp.html" title="smacc_client_library\l/smacc_sensors/examples\l/keyboard_listener_example\l/src/keyboard_main.cpp" alt="" coords="4349,1148,4533,1219"/>
+<area shape="rect" id="node17" href="timer__state_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/timer_substate_example\l/include/states/timer_state.h" alt="" coords="4791,1148,4978,1219"/>
+<area shape="rect" id="node18" href="timer__main_8cpp.html" title="smacc_client_library\l/smacc_sensors/examples\l/timer_substate_example\l/src/timer_main.cpp" alt="" coords="5002,1148,5181,1219"/>
+<area shape="rect" id="node21" href="sm__atomic__node_8cpp.html" title="smacc_sm_reference\l_library/sm_atomic/src\l/sm_atomic_node.cpp" alt="" coords="3381,1289,3535,1345"/>
+<area shape="rect" id="node26" href="sm__dance__bot_8cpp.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/src/sm_dance_bot.cpp" alt="" coords="7897,1400,8056,1456"/>
+<area shape="rect" id="node28" href="keyboard__orthogonal_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/orthogonals/keyboard_orthogonal.h" alt="" coords="6623,1148,6851,1219"/>
+<area shape="rect" id="node29" href="sb__keyboard__substate_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/keyboard\l/sb_keyboard_substate.h" alt="" coords="5573,1141,5769,1226"/>
+<area shape="rect" id="node34" href="sm__three__some__node_8cpp.html" title="smacc_sm_reference\l_library/sm_three_some\l/src/sm_three_some_node.cpp" alt="" coords="895,1289,1096,1345"/>
+<area shape="rect" id="node37" href="sm__viewer__sim_8cpp.html" title="smacc_sm_reference\l_library/sm_viewer_sim\l/src/sm_viewer_sim.cpp" alt="" coords="2323,1289,2487,1345"/>
+<area shape="rect" id="node44" href="smacc__state__impl_8h.html" title="smacc/include/smacc\l/impl/smacc_state_impl.h" alt="" coords="762,1022,933,1063"/>
+<area shape="rect" id="node45" href="smacc__substate__behavior_8cpp.html" title="smacc/src/smacc/smacc\l_substate_behavior.cpp" alt="" coords="4184,1022,4353,1063"/>
+<area shape="rect" id="node46" href="sensor__substate_8h.html" title="smacc_client_library\l/smacc_interface_components\l/include/smacc_interface\l_components/substate_behaviors\l/sensor_substate.h" alt="" coords="6859,1000,7076,1085"/>
+<area shape="rect" id="node49" href="keyboard__substate_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/keyboard_listener_example\l/include/substates_behaviors\l/input_device/keyboard_substate.h" alt="" coords="4730,1000,4954,1085"/>
+<area shape="rect" id="node50" href="timer__substate_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/timer_substate_example\l/include/substates_behaviors\l/navigation/timer_substate.h" alt="" coords="5256,1000,5447,1085"/>
+<area shape="rect" id="node51" href="sb__navigate__global__position_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/navigation\l/sb_navigate_global_position.h" alt="" coords="8770,1000,8973,1085"/>
+<area shape="rect" id="node52" href="sb__rotate_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/navigation\l/sb_rotate.h" alt="" coords="7877,1000,8079,1085"/>
+<area shape="rect" id="node53" href="sb__undo__path__backwards_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/navigation\l/sb_undo_path_backwards.h" alt="" coords="8543,1000,8746,1085"/>
+<area shape="rect" id="node54" href="sb__string__publisher_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/publisher\l/sb_string_publisher.h" alt="" coords="8103,1000,8298,1085"/>
+<area shape="rect" id="node55" href="service3__behavior_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/service\l_client/service3_behavior.h" alt="" coords="8997,1000,9183,1085"/>
+<area shape="rect" id="node56" href="substate__behavior__1_8h.html" title="smacc_sm_reference\l_library/sm_three_some\l/include/sm_three_some\l/substate_behaviors/client\l_1/substate_behavior_1.h" alt="" coords="1664,1000,1839,1085"/>
+<area shape="rect" id="node57" href="substate__behavior__1b_8h.html" title="smacc_sm_reference\l_library/sm_three_some\l/include/sm_three_some\l/substate_behaviors/client\l_1/substate_behavior_1b.h" alt="" coords="1058,1000,1237,1085"/>
+<area shape="rect" id="node58" href="substate__behavior__2_8h.html" title="smacc_sm_reference\l_library/sm_three_some\l/include/sm_three_some\l/substate_behaviors/client\l_2/substate_behavior_2.h" alt="" coords="1261,1000,1436,1085"/>
+<area shape="rect" id="node59" href="substate__behavior__2b_8h.html" title="smacc_sm_reference\l_library/sm_three_some\l/include/sm_three_some\l/substate_behaviors/client\l_2/substate_behavior_2b.h" alt="" coords="1461,1000,1639,1085"/>
+<area shape="rect" id="node47" href="sb__lidar__sensor_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/lidar\l_sensor/sb_lidar_sensor.h" alt="" coords="7263,1141,7437,1226"/>
+<area shape="rect" id="node48" href="sb__custom__condition__temperature__sensor_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/temperature\l_sensor/sb_custom_condition\l_temperature_sensor.h" alt="" coords="7027,1133,7239,1233"/>
+<area shape="rect" id="node65" href="odom__tracker_8cpp.html" title="smacc_client_library\l/smacc_navigation/smacc\l_odom_tracker/src/odom\l_tracker.cpp" alt="" coords="9661,1007,9836,1078"/>
+<area shape="rect" id="node66" href="odom__tracker__node_8cpp.html" title="smacc_client_library\l/smacc_navigation/smacc\l_odom_tracker/src/odom\l_tracker_node.cpp" alt="" coords="10040,1007,10215,1078"/>
+<area shape="rect" id="node67" href="smacc__sm__reference__library_2sm__dance__bot_2include_2sm__dance__bot_2orthogonals_2navigation__orthogonal_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/orthogonals/navigation\l_orthogonal.h" alt="" coords="9860,1000,10016,1085"/>
+<area shape="rect" id="node68" href="sb__navigate__backward_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/navigation\l/sb_navigate_backward.h" alt="" coords="9434,1000,9637,1085"/>
+<area shape="rect" id="node69" href="sb__navigate__forward_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/navigation\l/sb_navigate_forward.h" alt="" coords="9207,1000,9410,1085"/>
+<area shape="rect" id="node71" href="smacc__action__client_8h.html" title="smacc/include/smacc\l/client_bases/smacc\l_action_client.h" alt="" coords="6269,615,6418,671"/>
+<area shape="rect" id="node85" href="smacc__publisher__client_8h.html" title="smacc/include/smacc\l/client_bases/smacc\l_publisher_client.h" alt="" coords="6727,615,6877,671"/>
+<area shape="rect" id="node88" href="smacc__service__client_8h.html" title="smacc/include/smacc\l/client_bases/smacc\l_service_client.h" alt="" coords="7679,615,7829,671"/>
+<area shape="rect" id="node91" href="smacc__subscriber__client_8h.html" title="smacc/include/smacc\l/client_bases/smacc\l_subscriber_client.h" alt="" coords="6503,748,6653,804"/>
+<area shape="rect" id="node99" href="timer__client_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/timer\l/timer_client.h" alt="" coords="7853,600,8025,685"/>
+<area shape="rect" id="node72" href="smacc__action__client__base_8h.html" title="smacc/include/smacc\l/client_bases/smacc\l_action_client_base.h" alt="" coords="6085,748,6234,804"/>
+<area shape="rect" id="node82" href="src_2smacc_2smacc__action__client_8cpp.html" title="smacc/src/smacc/smacc\l_action_client.cpp" alt="" coords="6259,755,6428,797"/>
+<area shape="rect" id="node83" href="planner__switcher_8h.html" title="smacc_client_library\l/smacc_navigation/smacc\l_planner_switcher/include\l/smacc_planner_switcher/planner\l_switcher.h" alt="" coords="7862,733,8078,819"/>
+<area shape="rect" id="node74" href="signal__detector_8cpp.html" title="smacc/src/smacc/signal\l_detector.cpp" alt="" coords="5795,889,5959,930"/>
+<area shape="rect" id="node75" href="smacc__tool__plugin_8h.html" title="smacc_client_library\l/smacc_action_client\l_generic/include/smacc\l_action_client_generic\l/smacc_tool_plugin.h" alt="" coords="6223,867,6381,952"/>
+<area shape="rect" id="node78" href="move__base__action__client_8h.html" title="smacc_client_library\l/smacc_navigation/smacc\l_navigation_plugin/include\l/smacc_navigation_plugin/move\l_base_action_client.h" alt="" coords="7730,867,7938,952"/>
+<area shape="rect" id="node80" href="client__2_8h.html" title="smacc_sm_reference\l_library/sm_three_some\l/include/sm_three_some\l/clients/client_2.h" alt="" coords="3771,874,3935,945"/>
+<area shape="rect" id="node76" href="smacc__tool__plugin_8cpp.html" title="smacc_client_library\l/smacc_action_client\l_generic/src/smacc_tool\l_plugin.cpp" alt="" coords="6408,1007,6572,1078"/>
+<area shape="rect" id="node77" href="smacc__sm__reference__library_2sm__dance__bot_2include_2sm__dance__bot_2orthogonals_2tool__orthogonal_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/orthogonals/tool_orthogonal.h" alt="" coords="10291,1007,10487,1078"/>
+<area shape="rect" id="node79" href="smacc__navigation__plugin_8cpp.html" title="smacc_client_library\l/smacc_navigation/smacc\l_navigation_plugin/src\l/smacc_navigation_plugin.cpp" alt="" coords="8322,1007,8519,1078"/>
+<area shape="rect" id="node81" href="orthogonal__2_8h.html" title="smacc_sm_reference\l_library/sm_three_some\l/include/sm_three_some\l/orthogonals/orthogonal_2.h" alt="" coords="555,1007,737,1078"/>
+<area shape="rect" id="node84" href="planner__switcher_8cpp.html" title="smacc_client_library\l/smacc_navigation/smacc\l_planner_switcher/src/planner\l_switcher.cpp" alt="" coords="7962,874,8157,945"/>
+<area shape="rect" id="node86" href="string__publisher__client_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/publisher\l/string_publisher_client.h" alt="" coords="8102,733,8297,819"/>
+<area shape="rect" id="node87" href="publisher__orthogonal_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/orthogonals/publisher\l_orthogonal.h" alt="" coords="10793,867,10949,952"/>
+<area shape="rect" id="node89" href="service3__client_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/service\l_client/service3_client.h" alt="" coords="9023,867,9208,952"/>
+<area shape="rect" id="node90" href="service3__orthogonal_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/orthogonals/service3_orthogonal.h" alt="" coords="10511,1007,10735,1078"/>
+<area shape="rect" id="node92" href="sensor__client_8h.html" title="smacc_client_library\l/smacc_interface_components\l/include/smacc_interface\l_components/clients/sensor\l_client.h" alt="" coords="7106,867,7306,952"/>
+<area shape="rect" id="node97" href="client__1_8h.html" title="smacc_sm_reference\l_library/sm_three_some\l/include/sm_three_some\l/clients/client_1.h" alt="" coords="3183,874,3347,945"/>
+<area shape="rect" id="node93" href="sensor__orthogonal_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/orthogonals/sensor_orthogonal.h" alt="" coords="7461,1148,7676,1219"/>
+<area shape="rect" id="node94" href="lidar__client_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/lidar\l_sensor/lidar_client.h" alt="" coords="7387,1000,7553,1085"/>
+<area shape="rect" id="node96" href="temperature__sensor_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/temperature\l_sensor/temperature_sensor.h" alt="" coords="7100,1000,7312,1085"/>
+<area shape="rect" id="node95" href="obstacle__perception__orthogonal_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/orthogonals/obstacle_perception\l_orthogonal.h" alt="" coords="7701,1141,7914,1226"/>
+<area shape="rect" id="node98" href="orthogonal__1_8h.html" title="smacc_sm_reference\l_library/sm_three_some\l/include/sm_three_some\l/orthogonals/orthogonal_1.h" alt="" coords="296,1007,479,1078"/>
+<area shape="rect" id="node100" href="timer__orthogonal_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/orthogonals/timer_orthogonal.h" alt="" coords="9636,741,9840,811"/>
+<area shape="rect" id="node102" href="smacc__orthogonal__impl_8h.html" title="smacc/include/smacc\l/impl/smacc_orthogonal\l_impl.h" alt="" coords="4761,481,4921,537"/>
+<area shape="rect" id="node103" href="input__device__orthogonal_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/keyboard_listener_example\l/include/orthogonals/input\l_device_orthogonal.h" alt="" coords="5337,467,5521,552"/>
+<area shape="rect" id="node104" href="smacc__client__library_2smacc__sensors_2examples_2timer__substate__example_2include_2orthogonals_2navigation__orthogonal_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/timer_substate_example\l/include/orthogonals/navigation\l_orthogonal.h" alt="" coords="9335,467,9536,552"/>
+<area shape="rect" id="node105" href="smacc__client__library_2smacc__sensors_2examples_2timer__substate__example_2include_2orthogonals_2tool__orthogonal_8h.html" title="smacc_client_library\l/smacc_sensors/examples\l/timer_substate_example\l/include/orthogonals/tool\l_orthogonal.h" alt="" coords="9561,467,9739,552"/>
+<area shape="rect" id="node108" href="smacc__state__base_8h.html" title="smacc/include/smacc\l/smacc_state_base.h" alt="" coords="4321,622,4470,663"/>
+<area shape="rect" id="node116" href="logic__unit__base_8cpp.html" title="smacc/src/smacc/logic\l_unit_base.cpp" alt="" coords="3870,622,4027,663"/>
 </map>
 </div>
 </div>
@@ -188,10 +247,6 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccStateMachineInfo.html">smacc::SmaccStateMachineInfo</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsmacc_1_1type__.html">smacc::type_&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsmacc_1_1add__type__wrapper.html">smacc::add_type_wrapper&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsmacc_1_1AddSubState.html">smacc::AddSubState</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,6 +273,15 @@ Functions</h2></td></tr>
 <tr class="memitem:aa41f91df712a86c870af2816553f478e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa41f91df712a86c870af2816553f478e"><td class="memTemplItemLeft" align="right" valign="top">enable_if&lt; boost::mpl::is_sequence&lt; T &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacesmacc.html#aa41f91df712a86c870af2816553f478e">smacc::processTransitions</a> (std::shared_ptr&lt; SmaccStateInfo &gt; &amp;sourceState)</td></tr>
 <tr class="separator:aa41f91df712a86c870af2816553f478e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad68e98e3ceef730b5724cf0b59b0d6fd"><td class="memTemplParams" colspan="2">template&lt;typename Ev , typename Dst , typename Tag &gt; </td></tr>
+<tr class="memitem:ad68e98e3ceef730b5724cf0b59b0d6fd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacesmacc.html#ad68e98e3ceef730b5724cf0b59b0d6fd">smacc::processTransition</a> (<a class="el" href="classsmacc_1_1transition.html">smacc::transition</a>&lt; Ev, boost::statechart::deep_history&lt; Dst &gt;, Tag &gt; *, std::shared_ptr&lt; SmaccStateInfo &gt; &amp;sourceState)</td></tr>
+<tr class="separator:ad68e98e3ceef730b5724cf0b59b0d6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac7476bd76db0cc08bba3231d8a5e7fe"><td class="memTemplParams" colspan="2">template&lt;typename Ev , typename Dst , typename Tag &gt; </td></tr>
+<tr class="memitem:aac7476bd76db0cc08bba3231d8a5e7fe"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacesmacc.html#aac7476bd76db0cc08bba3231d8a5e7fe">smacc::processTransition</a> (<a class="el" href="classsmacc_1_1transition.html">smacc::transition</a>&lt; Ev, Dst, Tag &gt; *t, std::shared_ptr&lt; SmaccStateInfo &gt; &amp;sourceState)</td></tr>
+<tr class="separator:aac7476bd76db0cc08bba3231d8a5e7fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb513df154ddf19911dacd40d463015a"><td class="memTemplParams" colspan="2">template&lt;typename Ev , typename Dst , typename Tag &gt; </td></tr>
+<tr class="memitem:aeb513df154ddf19911dacd40d463015a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacesmacc.html#aeb513df154ddf19911dacd40d463015a">smacc::processTransitionAux</a> (<a class="el" href="classsmacc_1_1transition.html">smacc::transition</a>&lt; Ev, Dst, Tag &gt; *, std::shared_ptr&lt; SmaccStateInfo &gt; &amp;sourceState, <a class="el" href="classbool.html">bool</a> history, <a class="el" href="classsmacc_1_1TypeInfo.html#aca0cd51c7c9ef85f6c98dc32878af226">smacc::TypeInfo::Ptr</a> &amp;transitionTypeInfo)</td></tr>
+<tr class="separator:aeb513df154ddf19911dacd40d463015a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89246662ad7a95c78e6fa5eedf0c01a5"><td class="memTemplParams" colspan="2">template&lt;typename Ev , typename Dst &gt; </td></tr>
 <tr class="memitem:a89246662ad7a95c78e6fa5eedf0c01a5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacesmacc.html#a89246662ad7a95c78e6fa5eedf0c01a5">smacc::processTransition</a> (statechart::transition&lt; Ev, Dst &gt; *, std::shared_ptr&lt; SmaccStateInfo &gt; &amp;sourceState)</td></tr>
 <tr class="separator:a89246662ad7a95c78e6fa5eedf0c01a5"><td class="memSeparator" colspan="2">&#160;</td></tr>

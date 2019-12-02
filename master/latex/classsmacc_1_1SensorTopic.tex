@@ -1,22 +1,22 @@
-\hypertarget{classsmacc_1_1SensorTopic}{}\section{smacc\+:\+:Sensor\+Topic$<$ Message\+Type $>$ Class Template Reference}
-\label{classsmacc_1_1SensorTopic}\index{smacc\+::\+Sensor\+Topic$<$ Message\+Type $>$@{smacc\+::\+Sensor\+Topic$<$ Message\+Type $>$}}
+\hypertarget{classsmacc_1_1SensorTopic}{}\section{smacc\+:\+:Sensor\+Topic$<$ Derived, Message\+Type, Client\+Type $>$ Class Template Reference}
+\label{classsmacc_1_1SensorTopic}\index{smacc\+::\+Sensor\+Topic$<$ Derived, Message\+Type, Client\+Type $>$@{smacc\+::\+Sensor\+Topic$<$ Derived, Message\+Type, Client\+Type $>$}}
 
 
 {\ttfamily \#include $<$sensor\+\_\+substate.\+h$>$}
 
 
 
-Inheritance diagram for smacc\+:\+:Sensor\+Topic$<$ Message\+Type $>$\+:
+Inheritance diagram for smacc\+:\+:Sensor\+Topic$<$ Derived, Message\+Type, Client\+Type $>$\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classsmacc_1_1SensorTopic__inherit__graph}
+\includegraphics[height=550pt]{classsmacc_1_1SensorTopic__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for smacc\+:\+:Sensor\+Topic$<$ Message\+Type $>$\+:
+Collaboration diagram for smacc\+:\+:Sensor\+Topic$<$ Derived, Message\+Type, Client\+Type $>$\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -27,83 +27,85 @@ Collaboration diagram for smacc\+:\+:Sensor\+Topic$<$ Message\+Type $>$\+:
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef Message\+Type \hyperlink{classsmacc_1_1SensorTopic_a5ba13cdfe30513184afe37aeaa5bbe88}{T\+Message\+Type}
+typedef Message\+Type \hyperlink{classsmacc_1_1SensorTopic_adbe35371b4599a2705deeb76a11cb1ea}{T\+Message\+Type}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classsmacc_1_1SensorTopic_a0b58c3efc7254341a8fb7b47605c0096}{Sensor\+Topic} ()
+\hyperlink{classsmacc_1_1SensorTopic_ac215722d9003b7c45554d6963cc39c07}{Sensor\+Topic} ()
 \item 
-void \hyperlink{classsmacc_1_1SensorTopic_a27fe3515e3981a5a393dea193902cbd0}{on\+Entry} ()
+virtual void \hyperlink{classsmacc_1_1SensorTopic_a9c196c5c73faffcaffba3f8934bae191}{on\+Entry} () override
 \item 
-void \hyperlink{classsmacc_1_1SensorTopic_a2c24a982994de572831b5fa67e5df417}{on\+Exit} ()
+void \hyperlink{classsmacc_1_1SensorTopic_a07256412cede49676b38cfd5b5aa1ce3}{on\+Exit} ()
 \item 
-virtual void \hyperlink{classsmacc_1_1SensorTopic_a1160ef981ab390d75d862a6067615e41}{on\+Message\+Callback} (const Message\+Type \&msg)
+virtual void \hyperlink{classsmacc_1_1SensorTopic_abf9e11f5097d4581818e045738bec552}{on\+Message\+Callback} (const Message\+Type \&msg)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \hyperlink{classsmacc_1_1SensorTopic_a67bfe4ce61a385b4b5b734af9314b7b0}{get\+Event\+Label} ()
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classsmacc_1_1SensorClient}{Sensor\+Client}$<$ Message\+Type $>$ $\ast$ \hyperlink{classsmacc_1_1SensorTopic_a0f51a83e96f6b735033a8474ef1c4191}{sensor\+\_\+}
+Client\+Type $\ast$ \hyperlink{classsmacc_1_1SensorTopic_a9a4d3eab86b06e9470f61e65c2e46321}{sensor\+\_\+}
 \item 
-boost\+::signals2\+::scoped\+\_\+connection \hyperlink{classsmacc_1_1SensorTopic_a3c27b66b1bd8bc850875d95ad5a41041}{c1\+\_\+}
+boost\+::signals2\+::scoped\+\_\+connection \hyperlink{classsmacc_1_1SensorTopic_a26de37f4a91948deb46498183fb83b2f}{c1\+\_\+}
 \item 
-boost\+::signals2\+::scoped\+\_\+connection \hyperlink{classsmacc_1_1SensorTopic_a7d93fd46086bf098cf75a12c27976a8e}{c2\+\_\+}
+boost\+::signals2\+::scoped\+\_\+connection \hyperlink{classsmacc_1_1SensorTopic_a1af6969425c827ae3e00121ba9da6a57}{c2\+\_\+}
 \item 
-boost\+::signals2\+::scoped\+\_\+connection \hyperlink{classsmacc_1_1SensorTopic_a2e54533c2a0e0daec10eec3f69ff63d6}{c3\+\_\+}
+boost\+::signals2\+::scoped\+\_\+connection \hyperlink{classsmacc_1_1SensorTopic_ab204e71b44588ca208e2986e56dd3b87}{c3\+\_\+}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\subsubsection*{template$<$typename Message\+Type$>$\\*
-class smacc\+::\+Sensor\+Topic$<$ Message\+Type $>$}
+\subsubsection*{template$<$typename Derived, typename Message\+Type, typename Client\+Type$>$\\*
+class smacc\+::\+Sensor\+Topic$<$ Derived, Message\+Type, Client\+Type $>$}
 
 
 
-Definition at line 10 of file sensor\+\_\+substate.\+h.
+Definition at line 9 of file sensor\+\_\+substate.\+h.
 
 
 
 \subsection{Member Typedef Documentation}
 \index{smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}!T\+Message\+Type@{T\+Message\+Type}}
 \index{T\+Message\+Type@{T\+Message\+Type}!smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}}
-\subsubsection[{\texorpdfstring{T\+Message\+Type}{TMessageType}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ typedef Message\+Type {\bf smacc\+::\+Sensor\+Topic}$<$ Message\+Type $>$\+::{\bf T\+Message\+Type}}\hypertarget{classsmacc_1_1SensorTopic_a5ba13cdfe30513184afe37aeaa5bbe88}{}\label{classsmacc_1_1SensorTopic_a5ba13cdfe30513184afe37aeaa5bbe88}
+\subsubsection[{\texorpdfstring{T\+Message\+Type}{TMessageType}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived, typename Message\+Type, typename Client\+Type$>$ typedef Message\+Type {\bf smacc\+::\+Sensor\+Topic}$<$ Derived, Message\+Type, Client\+Type $>$\+::{\bf T\+Message\+Type}}\hypertarget{classsmacc_1_1SensorTopic_adbe35371b4599a2705deeb76a11cb1ea}{}\label{classsmacc_1_1SensorTopic_adbe35371b4599a2705deeb76a11cb1ea}
 
 
-Definition at line 13 of file sensor\+\_\+substate.\+h.
+Definition at line 12 of file sensor\+\_\+substate.\+h.
 
 
 
 \subsection{Constructor \& Destructor Documentation}
 \index{smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}!Sensor\+Topic@{Sensor\+Topic}}
 \index{Sensor\+Topic@{Sensor\+Topic}!smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}}
-\subsubsection[{\texorpdfstring{Sensor\+Topic()}{SensorTopic()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ {\bf smacc\+::\+Sensor\+Topic}$<$ Message\+Type $>$\+::{\bf Sensor\+Topic} (
+\subsubsection[{\texorpdfstring{Sensor\+Topic()}{SensorTopic()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived, typename Message\+Type, typename Client\+Type$>$ {\bf smacc\+::\+Sensor\+Topic}$<$ Derived, Message\+Type, Client\+Type $>$\+::{\bf Sensor\+Topic} (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SensorTopic_a0b58c3efc7254341a8fb7b47605c0096}{}\label{classsmacc_1_1SensorTopic_a0b58c3efc7254341a8fb7b47605c0096}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SensorTopic_ac215722d9003b7c45554d6963cc39c07}{}\label{classsmacc_1_1SensorTopic_ac215722d9003b7c45554d6963cc39c07}
 
 
-Definition at line 21 of file sensor\+\_\+substate.\+h.
+Definition at line 20 of file sensor\+\_\+substate.\+h.
 
 
 \begin{DoxyCode}
-22   \{
+21   \{
+22     \hyperlink{classsmacc_1_1SensorTopic_a9a4d3eab86b06e9470f61e65c2e46321}{sensor\_}=\textcolor{keyword}{nullptr};
 23   \}
 \end{DoxyCode}
 
 
 \subsection{Member Function Documentation}
-\index{smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}!on\+Entry@{on\+Entry}}
-\index{on\+Entry@{on\+Entry}!smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}}
-\subsubsection[{\texorpdfstring{on\+Entry()}{onEntry()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ void {\bf smacc\+::\+Sensor\+Topic}$<$ Message\+Type $>$\+::on\+Entry (
+\index{smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}!get\+Event\+Label@{get\+Event\+Label}}
+\index{get\+Event\+Label@{get\+Event\+Label}!smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}}
+\subsubsection[{\texorpdfstring{get\+Event\+Label()}{getEventLabel()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived, typename Message\+Type, typename Client\+Type$>$ static std\+::string {\bf smacc\+::\+Sensor\+Topic}$<$ Derived, Message\+Type, Client\+Type $>$\+::get\+Event\+Label (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1SensorTopic_a27fe3515e3981a5a393dea193902cbd0}{}\label{classsmacc_1_1SensorTopic_a27fe3515e3981a5a393dea193902cbd0}
-
-
-Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_a7c28e1c46238bbb2c2e0450573c6de94}{smacc\+::\+Smacc\+Sub\+State\+Behavior}.
-
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classsmacc_1_1SensorTopic_a67bfe4ce61a385b4b5b734af9314b7b0}{}\label{classsmacc_1_1SensorTopic_a67bfe4ce61a385b4b5b734af9314b7b0}
 
 
 Definition at line 25 of file sensor\+\_\+substate.\+h.
@@ -111,101 +113,154 @@ Definition at line 25 of file sensor\+\_\+substate.\+h.
 
 \begin{DoxyCode}
 26   \{
-27     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_ae8361a9e794b02f9f3d962b881e4fd7d}{requiresClient}(\hyperlink{classsmacc_1_1SensorTopic_a0f51a83e96f6b735033a8474ef1c4191}{sensor\_});
-28 
-29     \hyperlink{classsmacc_1_1SensorTopic_a3c27b66b1bd8bc850875d95ad5a41041}{c1\_} = \hyperlink{classsmacc_1_1SensorTopic_a0f51a83e96f6b735033a8474ef1c4191}{sensor\_}->onMessageReceived.connect(
-30         [\textcolor{keyword}{this}](\textcolor{keyword}{auto} &\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{
-31           \textcolor{keyword}{auto} *ev2 = \textcolor{keyword}{new} EvTopicMessage<SensorTopic<MessageType>>();
-32           this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a8538664f9828247727a27446112788a2}{postEvent}(ev2);
-33         \});
-34 
-35     \hyperlink{classsmacc_1_1SensorTopic_a7d93fd46086bf098cf75a12c27976a8e}{c2\_} = \hyperlink{classsmacc_1_1SensorTopic_a0f51a83e96f6b735033a8474ef1c4191}{sensor\_}->onFirstMessageReceived.connect(
-36         [\textcolor{keyword}{this}](\textcolor{keyword}{auto} &\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{
-37           \textcolor{keyword}{auto} \textcolor{keyword}{event} = \textcolor{keyword}{new} EvTopicInitialMessage<SensorTopic<MessageType>>();
-38           this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a8538664f9828247727a27446112788a2}{postEvent}(event);
-39         \});
-40 
-41     \hyperlink{classsmacc_1_1SensorTopic_a2e54533c2a0e0daec10eec3f69ff63d6}{c3\_} = \hyperlink{classsmacc_1_1SensorTopic_a0f51a83e96f6b735033a8474ef1c4191}{sensor\_}->onMessageTimeout.connect(
-42         [\textcolor{keyword}{this}](\textcolor{keyword}{auto} &\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{
-43           \textcolor{keyword}{auto} \textcolor{keyword}{event} = \textcolor{keyword}{new} EvTopicMessageTimeout<SensorTopic<MessageType>>();
-44           this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a8538664f9828247727a27446112788a2}{postEvent}(event);
-45         \});
-46 
-47     \hyperlink{classsmacc_1_1SensorTopic_a0f51a83e96f6b735033a8474ef1c4191}{sensor\_}->initialize();
-48   \}
+27     \textcolor{comment}{// show ros message type}
+28     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(MessageType).name());
+29   \}
 \end{DoxyCode}
-\index{smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}!on\+Exit@{on\+Exit}}
-\index{on\+Exit@{on\+Exit}!smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}}
-\subsubsection[{\texorpdfstring{on\+Exit()}{onExit()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ void {\bf smacc\+::\+Sensor\+Topic}$<$ Message\+Type $>$\+::on\+Exit (
+\index{smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}}
+\subsubsection[{\texorpdfstring{on\+Entry() override}{onEntry() override}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived, typename Message\+Type, typename Client\+Type$>$ virtual void {\bf smacc\+::\+Sensor\+Topic}$<$ Derived, Message\+Type, Client\+Type $>$\+::on\+Entry (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1SensorTopic_a2c24a982994de572831b5fa67e5df417}{}\label{classsmacc_1_1SensorTopic_a2c24a982994de572831b5fa67e5df417}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1SensorTopic_a9c196c5c73faffcaffba3f8934bae191}{}\label{classsmacc_1_1SensorTopic_a9c196c5c73faffcaffba3f8934bae191}
 
 
-Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_a1f87ab55c1805b2a2fd9c022807d35b9}{smacc\+::\+Smacc\+Sub\+State\+Behavior}.
+Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_a47eb8983afa8e1d312873a9a297b84f3}{smacc\+::\+Smacc\+Sub\+State\+Behavior}.
 
 
 
-Definition at line 50 of file sensor\+\_\+substate.\+h.
+Reimplemented in \hyperlink{structsm__dance__bot_1_1SbLidarSensor_ac38f11a8a77f8a14cf2c780a8ff20f4a}{sm\+\_\+dance\+\_\+bot\+::\+Sb\+Lidar\+Sensor}.
+
+
+
+Definition at line 31 of file sensor\+\_\+substate.\+h.
+
+
+
+Referenced by sm\+\_\+dance\+\_\+bot\+::\+Sb\+Lidar\+Sensor\+::on\+Entry().
 
 
 \begin{DoxyCode}
-51   \{
-52   \}
+32   \{
+33     ROS\_INFO(\textcolor{stringliteral}{"SensorTopic onEntry. Requires client:"});
+34 
+35     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_ae8361a9e794b02f9f3d962b881e4fd7d}{requiresClient}(\hyperlink{classsmacc_1_1SensorTopic_a9a4d3eab86b06e9470f61e65c2e46321}{sensor\_});
+36 
+37     \textcolor{keywordflow}{if}(\hyperlink{classsmacc_1_1SensorTopic_a9a4d3eab86b06e9470f61e65c2e46321}{sensor\_}==\textcolor{keyword}{nullptr})
+38     \{
+39       ROS\_FATAL\_STREAM(\textcolor{stringliteral}{"Sensor Substate behavior needs a client of type: "}<< demangleSymbol<ClientType>()<<
+       \textcolor{stringliteral}{" but it is not found."});
+40     \}
+41     \textcolor{keywordflow}{else}
+42     \{
+43       \textcolor{comment}{// just propagate the client events from this substate behavior source. }
+44       \hyperlink{classsmacc_1_1SensorTopic_a26de37f4a91948deb46498183fb83b2f}{c1\_} = \hyperlink{classsmacc_1_1SensorTopic_a9a4d3eab86b06e9470f61e65c2e46321}{sensor\_}->onMessageReceived.connect(
+45           [\textcolor{keyword}{this}](\textcolor{keyword}{auto} &\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{
+46             \textcolor{keyword}{auto} *ev2 = \textcolor{keyword}{new} EvTopicMessage<Derived>();
+47             this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a8538664f9828247727a27446112788a2}{postEvent}(ev2);
+48           \});
+49 
+50       \hyperlink{classsmacc_1_1SensorTopic_a1af6969425c827ae3e00121ba9da6a57}{c2\_} = \hyperlink{classsmacc_1_1SensorTopic_a9a4d3eab86b06e9470f61e65c2e46321}{sensor\_}->onFirstMessageReceived.connect(
+51           [\textcolor{keyword}{this}](\textcolor{keyword}{auto} &\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{
+52             \textcolor{keyword}{auto} \textcolor{keyword}{event} = \textcolor{keyword}{new} EvTopicInitialMessage<Derived>();
+53             this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a8538664f9828247727a27446112788a2}{postEvent}(event);
+54           \});
+55 
+56       \hyperlink{classsmacc_1_1SensorTopic_ab204e71b44588ca208e2986e56dd3b87}{c3\_} = \hyperlink{classsmacc_1_1SensorTopic_a9a4d3eab86b06e9470f61e65c2e46321}{sensor\_}->onMessageTimeout.connect(
+57           [\textcolor{keyword}{this}](\textcolor{keyword}{auto} &\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{
+58             \textcolor{keyword}{auto} \textcolor{keyword}{event} = \textcolor{keyword}{new} EvTopicMessageTimeout<Derived>();
+59             this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a8538664f9828247727a27446112788a2}{postEvent}(event);
+60           \});
+61 
+62       ROS\_INFO(\textcolor{stringliteral}{"SensorTopic onEntry. sensor initialize"});
+63       \hyperlink{classsmacc_1_1SensorTopic_a9a4d3eab86b06e9470f61e65c2e46321}{sensor\_}->initialize();
+64     \}
+65   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SensorTopic_a9c196c5c73faffcaffba3f8934bae191_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}!on\+Exit@{on\+Exit}}
+\index{on\+Exit@{on\+Exit}!smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}}
+\subsubsection[{\texorpdfstring{on\+Exit()}{onExit()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived, typename Message\+Type, typename Client\+Type$>$ void {\bf smacc\+::\+Sensor\+Topic}$<$ Derived, Message\+Type, Client\+Type $>$\+::on\+Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1SensorTopic_a07256412cede49676b38cfd5b5aa1ce3}{}\label{classsmacc_1_1SensorTopic_a07256412cede49676b38cfd5b5aa1ce3}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_afaeb44666136c5ae47a53dde89fa5d31}{smacc\+::\+Smacc\+Sub\+State\+Behavior}.
+
+
+
+Definition at line 67 of file sensor\+\_\+substate.\+h.
+
+
+\begin{DoxyCode}
+68   \{
+69   \}
 \end{DoxyCode}
 \index{smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}!on\+Message\+Callback@{on\+Message\+Callback}}
 \index{on\+Message\+Callback@{on\+Message\+Callback}!smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}}
-\subsubsection[{\texorpdfstring{on\+Message\+Callback(const Message\+Type \&msg)}{onMessageCallback(const MessageType &msg)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ virtual void {\bf smacc\+::\+Sensor\+Topic}$<$ Message\+Type $>$\+::on\+Message\+Callback (
+\subsubsection[{\texorpdfstring{on\+Message\+Callback(const Message\+Type \&msg)}{onMessageCallback(const MessageType &msg)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived, typename Message\+Type, typename Client\+Type$>$ virtual void {\bf smacc\+::\+Sensor\+Topic}$<$ Derived, Message\+Type, Client\+Type $>$\+::on\+Message\+Callback (
 \begin{DoxyParamCaption}
 \item[{const Message\+Type \&}]{msg}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1SensorTopic_a1160ef981ab390d75d862a6067615e41}{}\label{classsmacc_1_1SensorTopic_a1160ef981ab390d75d862a6067615e41}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1SensorTopic_abf9e11f5097d4581818e045738bec552}{}\label{classsmacc_1_1SensorTopic_abf9e11f5097d4581818e045738bec552}
 
 
-Reimplemented in \hyperlink{classSbConditionTemperatureSensor_a0bacff918eeb167bd115c4d8041c3055}{Sb\+Condition\+Temperature\+Sensor}, and \hyperlink{classCustomConditionTemperatureSensor_a34847ebb7d87c53d332e1b8c956e9720}{Custom\+Condition\+Temperature\+Sensor}.
+Reimplemented in \hyperlink{structsm__dance__bot_1_1SbLidarSensor_a12bb8b4a9e2a9dd4d77c0e9f51762f8f}{sm\+\_\+dance\+\_\+bot\+::\+Sb\+Lidar\+Sensor}, and \hyperlink{classsm__dance__bot_1_1SbConditionTemperatureSensor_a0c846902177cb808d008ebc409c237f2}{sm\+\_\+dance\+\_\+bot\+::\+Sb\+Condition\+Temperature\+Sensor}.
 
 
 
-Definition at line 54 of file sensor\+\_\+substate.\+h.
+Definition at line 71 of file sensor\+\_\+substate.\+h.
 
 
 \begin{DoxyCode}
-55   \{
-56 
-57     \textcolor{comment}{// empty to fill by sensor customization based on inheritance}
-58   \}
+72   \{
+73     \textcolor{comment}{// empty to fill by sensor customization based on inheritance}
+74   \}
 \end{DoxyCode}
 
 
 \subsection{Member Data Documentation}
 \index{smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}!c1\+\_\+@{c1\+\_\+}}
 \index{c1\+\_\+@{c1\+\_\+}!smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}}
-\subsubsection[{\texorpdfstring{c1\+\_\+}{c1_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ boost\+::signals2\+::scoped\+\_\+connection {\bf smacc\+::\+Sensor\+Topic}$<$ Message\+Type $>$\+::c1\+\_\+}\hypertarget{classsmacc_1_1SensorTopic_a3c27b66b1bd8bc850875d95ad5a41041}{}\label{classsmacc_1_1SensorTopic_a3c27b66b1bd8bc850875d95ad5a41041}
+\subsubsection[{\texorpdfstring{c1\+\_\+}{c1_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived, typename Message\+Type, typename Client\+Type$>$ boost\+::signals2\+::scoped\+\_\+connection {\bf smacc\+::\+Sensor\+Topic}$<$ Derived, Message\+Type, Client\+Type $>$\+::c1\+\_\+}\hypertarget{classsmacc_1_1SensorTopic_a26de37f4a91948deb46498183fb83b2f}{}\label{classsmacc_1_1SensorTopic_a26de37f4a91948deb46498183fb83b2f}
+
+
+Definition at line 16 of file sensor\+\_\+substate.\+h.
+
+\index{smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}!c2\+\_\+@{c2\+\_\+}}
+\index{c2\+\_\+@{c2\+\_\+}!smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}}
+\subsubsection[{\texorpdfstring{c2\+\_\+}{c2_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived, typename Message\+Type, typename Client\+Type$>$ boost\+::signals2\+::scoped\+\_\+connection {\bf smacc\+::\+Sensor\+Topic}$<$ Derived, Message\+Type, Client\+Type $>$\+::c2\+\_\+}\hypertarget{classsmacc_1_1SensorTopic_a1af6969425c827ae3e00121ba9da6a57}{}\label{classsmacc_1_1SensorTopic_a1af6969425c827ae3e00121ba9da6a57}
 
 
 Definition at line 17 of file sensor\+\_\+substate.\+h.
 
-\index{smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}!c2\+\_\+@{c2\+\_\+}}
-\index{c2\+\_\+@{c2\+\_\+}!smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}}
-\subsubsection[{\texorpdfstring{c2\+\_\+}{c2_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ boost\+::signals2\+::scoped\+\_\+connection {\bf smacc\+::\+Sensor\+Topic}$<$ Message\+Type $>$\+::c2\+\_\+}\hypertarget{classsmacc_1_1SensorTopic_a7d93fd46086bf098cf75a12c27976a8e}{}\label{classsmacc_1_1SensorTopic_a7d93fd46086bf098cf75a12c27976a8e}
+\index{smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}!c3\+\_\+@{c3\+\_\+}}
+\index{c3\+\_\+@{c3\+\_\+}!smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}}
+\subsubsection[{\texorpdfstring{c3\+\_\+}{c3_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived, typename Message\+Type, typename Client\+Type$>$ boost\+::signals2\+::scoped\+\_\+connection {\bf smacc\+::\+Sensor\+Topic}$<$ Derived, Message\+Type, Client\+Type $>$\+::c3\+\_\+}\hypertarget{classsmacc_1_1SensorTopic_ab204e71b44588ca208e2986e56dd3b87}{}\label{classsmacc_1_1SensorTopic_ab204e71b44588ca208e2986e56dd3b87}
 
 
 Definition at line 18 of file sensor\+\_\+substate.\+h.
 
-\index{smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}!c3\+\_\+@{c3\+\_\+}}
-\index{c3\+\_\+@{c3\+\_\+}!smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}}
-\subsubsection[{\texorpdfstring{c3\+\_\+}{c3_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ boost\+::signals2\+::scoped\+\_\+connection {\bf smacc\+::\+Sensor\+Topic}$<$ Message\+Type $>$\+::c3\+\_\+}\hypertarget{classsmacc_1_1SensorTopic_a2e54533c2a0e0daec10eec3f69ff63d6}{}\label{classsmacc_1_1SensorTopic_a2e54533c2a0e0daec10eec3f69ff63d6}
-
-
-Definition at line 19 of file sensor\+\_\+substate.\+h.
-
 \index{smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}!sensor\+\_\+@{sensor\+\_\+}}
 \index{sensor\+\_\+@{sensor\+\_\+}!smacc\+::\+Sensor\+Topic@{smacc\+::\+Sensor\+Topic}}
-\subsubsection[{\texorpdfstring{sensor\+\_\+}{sensor_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ {\bf Sensor\+Client}$<$Message\+Type$>$$\ast$ {\bf smacc\+::\+Sensor\+Topic}$<$ Message\+Type $>$\+::sensor\+\_\+}\hypertarget{classsmacc_1_1SensorTopic_a0f51a83e96f6b735033a8474ef1c4191}{}\label{classsmacc_1_1SensorTopic_a0f51a83e96f6b735033a8474ef1c4191}
+\subsubsection[{\texorpdfstring{sensor\+\_\+}{sensor_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Derived, typename Message\+Type, typename Client\+Type$>$ Client\+Type$\ast$ {\bf smacc\+::\+Sensor\+Topic}$<$ Derived, Message\+Type, Client\+Type $>$\+::sensor\+\_\+}\hypertarget{classsmacc_1_1SensorTopic_a9a4d3eab86b06e9470f61e65c2e46321}{}\label{classsmacc_1_1SensorTopic_a9a4d3eab86b06e9470f61e65c2e46321}
 
 
-Definition at line 15 of file sensor\+\_\+substate.\+h.
+Definition at line 14 of file sensor\+\_\+substate.\+h.
 
 
 

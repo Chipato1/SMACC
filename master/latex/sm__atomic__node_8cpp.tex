@@ -1,0 +1,39 @@
+\hypertarget{sm__atomic__node_8cpp}{}\section{smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+atomic/src/sm\+\_\+atomic\+\_\+node.cpp File Reference}
+\label{sm__atomic__node_8cpp}\index{smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+atomic/src/sm\+\_\+atomic\+\_\+node.\+cpp@{smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+atomic/src/sm\+\_\+atomic\+\_\+node.\+cpp}}
+{\ttfamily \#include $<$sm\+\_\+atomic/sm\+\_\+atomic.\+h$>$}\\*
+Include dependency graph for sm\+\_\+atomic\+\_\+node.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sm__atomic__node_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{sm__atomic__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{sm\+\_\+atomic\+\_\+node.\+cpp@{sm\+\_\+atomic\+\_\+node.\+cpp}!main@{main}}
+\index{main@{main}!sm\+\_\+atomic\+\_\+node.\+cpp@{sm\+\_\+atomic\+\_\+node.\+cpp}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\hypertarget{sm__atomic__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{sm__atomic__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Definition at line 4 of file sm\+\_\+atomic\+\_\+node.\+cpp.
+
+
+\begin{DoxyCode}
+5 \{
+6     ros::init(argc, argv, \textcolor{stringliteral}{"tutorial"});
+7     ros::NodeHandle nh;
+8 
+9     smacc::run<sm\_atomic::BaseStateMachine>();
+10 \}\end{DoxyCode}

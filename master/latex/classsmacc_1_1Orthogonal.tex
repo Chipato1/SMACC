@@ -2,7 +2,7 @@
 \label{classsmacc_1_1Orthogonal}\index{smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}}
 
 
-{\ttfamily \#include $<$orthogonal.\+h$>$}
+{\ttfamily \#include $<$smacc\+\_\+orthogonal.\+h$>$}
 
 
 
@@ -37,11 +37,13 @@ void \hyperlink{classsmacc_1_1Orthogonal_a71c0df3d9e8327e65286e1ce0a3a7043}{on\+
 \item 
 virtual std\+::string \hyperlink{classsmacc_1_1Orthogonal_ae1ad57a2fda4d7f2ecf708c342fc1bb9}{get\+Name} () const 
 \item 
-{\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{classsmacc_1_1Orthogonal_a7e1a5d0cf9fc07e4b6052c692aa73b1d}{create\+Client} ()
+{\footnotesize template$<$typename T , typename... T\+Args$>$ }\\T $\ast$ \hyperlink{classsmacc_1_1Orthogonal_a67ed4baa8cc385e42ba4a588e8686268}{create\+Client} (T\+Args...\+args)
 \item 
 {\footnotesize template$<$typename Smacc\+Component\+Type $>$ }\\void \hyperlink{classsmacc_1_1Orthogonal_a098b5be0f89d0911afc44c10b756ef2a}{requires\+Component} (Smacc\+Component\+Type $\ast$\&storage, \hyperlink{classbool}{bool} verbose=false)
 \item 
 {\footnotesize template$<$typename Smacc\+Client\+Type $>$ }\\void \hyperlink{classsmacc_1_1Orthogonal_af6f6d9cc5bf5433f5fe3b640a6a0b8aa}{requires\+Client} (Smacc\+Client\+Type $\ast$\&storage, \hyperlink{classbool}{bool} verbose=false)
+\item 
+const std\+::vector$<$ \hyperlink{classsmacc_1_1ISmaccClient}{smacc\+::\+I\+Smacc\+Client} $\ast$ $>$ \& \hyperlink{classsmacc_1_1Orthogonal_afc4e584a7bdb47f9c4e217a8eaf2505d}{get\+Clients} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -62,21 +64,21 @@ std\+::vector$<$ \hyperlink{classsmacc_1_1ISmaccClient}{smacc\+::\+I\+Smacc\+Cli
 \subsection{Detailed Description}
 
 
-Definition at line 8 of file orthogonal.\+h.
+Definition at line 8 of file smacc\+\_\+orthogonal.\+h.
 
 
 
 \subsection{Member Function Documentation}
 \index{smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}!create\+Client@{create\+Client}}
 \index{create\+Client@{create\+Client}!smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}}
-\subsubsection[{\texorpdfstring{create\+Client()}{createClient()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T$\ast$ smacc\+::\+Orthogonal\+::create\+Client (
+\subsubsection[{\texorpdfstring{create\+Client(\+T\+Args...\+args)}{createClient(TArgs...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename... T\+Args$>$ T $\ast$ smacc\+::\+Orthogonal\+::create\+Client (
 \begin{DoxyParamCaption}
-{}
+\item[{T\+Args...}]{args}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1Orthogonal_a7e1a5d0cf9fc07e4b6052c692aa73b1d}{}\label{classsmacc_1_1Orthogonal_a7e1a5d0cf9fc07e4b6052c692aa73b1d}
+)}\hypertarget{classsmacc_1_1Orthogonal_a67ed4baa8cc385e42ba4a588e8686268}{}\label{classsmacc_1_1Orthogonal_a67ed4baa8cc385e42ba4a588e8686268}
 
 
-Definition at line 22 of file orthogonal.\+h.
+Definition at line 7 of file smacc\+\_\+orthogonal\+\_\+impl.\+h.
 
 
 
@@ -84,14 +86,47 @@ References clients\+\_\+, and state\+Machine\+\_\+.
 
 
 \begin{DoxyCode}
-23     \{
-24         \textcolor{keyword}{auto} *client = \textcolor{keyword}{new} T();
-25         client->setStateMachine(\hyperlink{classsmacc_1_1Orthogonal_acea2058ac94667e46fc60ed3d4f524f7}{stateMachine\_});
-26         
-27         \hyperlink{classsmacc_1_1Orthogonal_acdcb1b5dca84a6521ef25f07212afa5e}{clients\_}.push\_back(client);
-28         \textcolor{keywordflow}{return} client;
-29     \}
+8 \{
+9     \textcolor{keyword}{auto} *client = \textcolor{keyword}{new} T(args...);
+10     client->setStateMachine(\hyperlink{classsmacc_1_1Orthogonal_acea2058ac94667e46fc60ed3d4f524f7}{stateMachine\_});
+11 
+12     \hyperlink{classsmacc_1_1Orthogonal_acdcb1b5dca84a6521ef25f07212afa5e}{clients\_}.push\_back(client);
+13     \textcolor{keywordflow}{return} client;
+14 \}
 \end{DoxyCode}
+\index{smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}!get\+Clients@{get\+Clients}}
+\index{get\+Clients@{get\+Clients}!smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}}
+\subsubsection[{\texorpdfstring{get\+Clients()}{getClients()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<${\bf smacc\+::\+I\+Smacc\+Client} $\ast$$>$\& smacc\+::\+Orthogonal\+::get\+Clients (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1Orthogonal_afc4e584a7bdb47f9c4e217a8eaf2505d}{}\label{classsmacc_1_1Orthogonal_afc4e584a7bdb47f9c4e217a8eaf2505d}
+
+
+Definition at line 30 of file smacc\+\_\+orthogonal.\+h.
+
+
+
+References clients\+\_\+, and on\+Initialize().
+
+
+\begin{DoxyCode}
+31     \{
+32         \textcolor{keywordflow}{return} \hyperlink{classsmacc_1_1Orthogonal_acdcb1b5dca84a6521ef25f07212afa5e}{clients\_};
+33     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classsmacc_1_1Orthogonal_afc4e584a7bdb47f9c4e217a8eaf2505d_cgraph}
+\end{center}
+\end{figure}
+
+
 \index{smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}!get\+Name@{get\+Name}}
 \index{get\+Name@{get\+Name}!smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}}
 \subsubsection[{\texorpdfstring{get\+Name() const }{getName() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::\+Orthogonal\+::get\+Name (
@@ -105,7 +140,7 @@ Definition at line 34 of file orthogonal.\+cpp.
 
 
 
-References demangle\+Symbol().
+References smacc\+::demangle\+Symbol().
 
 
 
@@ -114,7 +149,7 @@ Referenced by on\+Entry(), on\+Exit(), and set\+State\+Behavior().
 
 \begin{DoxyCode}
 35 \{
-36     \textcolor{keywordflow}{return} \hyperlink{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{demangleSymbol}(\textcolor{keyword}{typeid}(*this).name());
+36     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(*this).name());
 37 \}
 \end{DoxyCode}
 
@@ -124,7 +159,7 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=330pt]{classsmacc_1_1Orthogonal_ae1ad57a2fda4d7f2ecf708c342fc1bb9_cgraph}
+\includegraphics[width=348pt]{classsmacc_1_1Orthogonal_ae1ad57a2fda4d7f2ecf708c342fc1bb9_cgraph}
 \end{center}
 \end{figure}
 
@@ -136,7 +171,7 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=342pt]{classsmacc_1_1Orthogonal_ae1ad57a2fda4d7f2ecf708c342fc1bb9_icgraph}
+\includegraphics[width=326pt]{classsmacc_1_1Orthogonal_ae1ad57a2fda4d7f2ecf708c342fc1bb9_icgraph}
 \end{center}
 \end{figure}
 
@@ -238,7 +273,7 @@ Here is the call graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{}\label{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}
 
 
-Reimplemented in \hyperlink{classObstaclePerceptionOrthogonal_a75913ace603e86139b11bb1045ef600b}{Obstacle\+Perception\+Orthogonal}, \hyperlink{classSensorOrthogonal_a1e02d800b8f8ee7c5aeab4e6ff74cbba}{Sensor\+Orthogonal}, \hyperlink{classNavigationOrthogonal_a1d9e825be23c75d7baf594a8c1f0fb74}{Navigation\+Orthogonal}, \hyperlink{classObstaclePerceptionOrthogonal_a75913ace603e86139b11bb1045ef600b}{Obstacle\+Perception\+Orthogonal}, \hyperlink{classSensorOrthogonal_a1e02d800b8f8ee7c5aeab4e6ff74cbba}{Sensor\+Orthogonal}, \hyperlink{classNavigationOrthogonal_a1d9e825be23c75d7baf594a8c1f0fb74}{Navigation\+Orthogonal}, \hyperlink{classKeyboardOrthogonal_a7b4dbf9306a1b30653cf39b89dea30c1}{Keyboard\+Orthogonal}, \hyperlink{classPublisherOrthogonal_ab4ab0ba34c2c185c384ed09b3eb37e89}{Publisher\+Orthogonal}, \hyperlink{classService3Orthogonal_a1fe134dedc312ffd28aed35685e4414b}{Service3\+Orthogonal}, \hyperlink{classToolOrthogonal_a7b8a7ef7c7bc4d71946264286400ea3e}{Tool\+Orthogonal}, and \hyperlink{classToolOrthogonal_a7b8a7ef7c7bc4d71946264286400ea3e}{Tool\+Orthogonal}.
+Reimplemented in \hyperlink{classsm__dance__bot_1_1SensorOrthogonal_acdd1f07f01d995c31f9d7a44b6d218f3}{sm\+\_\+dance\+\_\+bot\+::\+Sensor\+Orthogonal}, \hyperlink{classsm__dance__bot_1_1NavigationOrthogonal_a2087b378406e35f0c7e6e31f21d37958}{sm\+\_\+dance\+\_\+bot\+::\+Navigation\+Orthogonal}, \hyperlink{classsm__dance__bot_1_1ObstaclePerceptionOrthogonal_a45afedc40daa31ef7d0ab65709cfacaf}{sm\+\_\+dance\+\_\+bot\+::\+Obstacle\+Perception\+Orthogonal}, \hyperlink{classsm__dance__bot_1_1Service3Orthogonal_a565ca9868dc8b5f7e59632ea9d44aa11}{sm\+\_\+dance\+\_\+bot\+::\+Service3\+Orthogonal}, \hyperlink{classsm__three__some_1_1Orthogonal1_a20770e36bac2180c6e189cc07d873fdd}{sm\+\_\+three\+\_\+some\+::\+Orthogonal1}, \hyperlink{classsm__three__some_1_1Orthogonal2_a8f43a6b50b05fe24789c2cfe88719dbe}{sm\+\_\+three\+\_\+some\+::\+Orthogonal2}, \hyperlink{classsm__dance__bot_1_1KeyboardOrthogonal_a6678d68d92627e41507436ea6eeed7ab}{sm\+\_\+dance\+\_\+bot\+::\+Keyboard\+Orthogonal}, \hyperlink{classsm__dance__bot_1_1PublisherOrthogonal_a09cff1848856d6e5f295b9efa7b735d2}{sm\+\_\+dance\+\_\+bot\+::\+Publisher\+Orthogonal}, \hyperlink{classsm__dance__bot_1_1TimerOrthogonal_a73193496f7e43010b477f00fb81f54b7}{sm\+\_\+dance\+\_\+bot\+::\+Timer\+Orthogonal}, \hyperlink{classsm__dance__bot_1_1ToolOrthogonal_a6305e62dbb969692773d510896fcfaca}{sm\+\_\+dance\+\_\+bot\+::\+Tool\+Orthogonal}, \hyperlink{classsm__atomic_1_1NavigationOrthogonal_a3149566fdb2ca239d1cd181c9c13b5d3}{sm\+\_\+atomic\+::\+Navigation\+Orthogonal}, and \hyperlink{classsm__viewer__sim_1_1NavigationOrthogonal_a97f7e637ef4f0a0011400234a0ec101d}{sm\+\_\+viewer\+\_\+sim\+::\+Navigation\+Orthogonal}.
 
 
 
@@ -246,7 +281,7 @@ Definition at line 29 of file orthogonal.\+cpp.
 
 
 
-Referenced by requires\+Client(), and set\+State\+Machine().
+Referenced by get\+Clients(), and set\+State\+Machine().
 
 
 \begin{DoxyCode}
@@ -273,14 +308,14 @@ Here is the caller graph for this function\+:
 \item[{Smacc\+Client\+Type $\ast$\&}]{storage, }
 \item[{{\bf bool}}]{verbose = {\ttfamily false}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1Orthogonal_af6f6d9cc5bf5433f5fe3b640a6a0b8aa}{}\label{classsmacc_1_1Orthogonal_af6f6d9cc5bf5433f5fe3b640a6a0b8aa}
+)}\hypertarget{classsmacc_1_1Orthogonal_af6f6d9cc5bf5433f5fe3b640a6a0b8aa}{}\label{classsmacc_1_1Orthogonal_af6f6d9cc5bf5433f5fe3b640a6a0b8aa}
 
 
-Definition at line 45 of file orthogonal.\+h.
+Definition at line 30 of file smacc\+\_\+orthogonal\+\_\+impl.\+h.
 
 
 
-References clients\+\_\+, and on\+Initialize().
+References clients\+\_\+.
 
 
 
@@ -288,27 +323,15 @@ Referenced by smacc\+::\+Smacc\+Sub\+State\+Behavior\+::requires\+Client().
 
 
 \begin{DoxyCode}
-46     \{
-47         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} *client : \hyperlink{classsmacc_1_1Orthogonal_acdcb1b5dca84a6521ef25f07212afa5e}{clients\_})
-48         \{
-49             storage = \textcolor{keyword}{dynamic\_cast<}SmaccClientType *\textcolor{keyword}{>}(client);
-50             \textcolor{keywordflow}{if} (storage != \textcolor{keyword}{nullptr})
-51                 \textcolor{keywordflow}{break};
-52         \}
-53     \}
+31 \{
+32     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} *client : \hyperlink{classsmacc_1_1Orthogonal_acdcb1b5dca84a6521ef25f07212afa5e}{clients\_})
+33     \{
+34         storage = \textcolor{keyword}{dynamic\_cast<}SmaccClientType *\textcolor{keyword}{>}(client);
+35         \textcolor{keywordflow}{if} (storage != \textcolor{keyword}{nullptr})
+36             \textcolor{keywordflow}{break};
+37     \}
+38 \}
 \end{DoxyCode}
-
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=342pt]{classsmacc_1_1Orthogonal_af6f6d9cc5bf5433f5fe3b640a6a0b8aa_cgraph}
-\end{center}
-\end{figure}
-
-
 
 
 Here is the caller graph for this function\+:
@@ -328,10 +351,10 @@ Here is the caller graph for this function\+:
 \item[{Smacc\+Component\+Type $\ast$\&}]{storage, }
 \item[{{\bf bool}}]{verbose = {\ttfamily false}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1Orthogonal_a098b5be0f89d0911afc44c10b756ef2a}{}\label{classsmacc_1_1Orthogonal_a098b5be0f89d0911afc44c10b756ef2a}
+)}\hypertarget{classsmacc_1_1Orthogonal_a098b5be0f89d0911afc44c10b756ef2a}{}\label{classsmacc_1_1Orthogonal_a098b5be0f89d0911afc44c10b756ef2a}
 
 
-Definition at line 32 of file orthogonal.\+h.
+Definition at line 17 of file smacc\+\_\+orthogonal\+\_\+impl.\+h.
 
 
 
@@ -339,21 +362,20 @@ References smacc\+::\+I\+Smacc\+State\+Machine\+::requires\+Component(), and sta
 
 
 
-Referenced by Navigation\+Orthogonal\+::on\+Initialize().
+Referenced by sm\+\_\+dance\+\_\+bot\+::\+Navigation\+Orthogonal\+::on\+Initialize().
 
 
 \begin{DoxyCode}
-33     \{
-34         \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1Orthogonal_acea2058ac94667e46fc60ed3d4f524f7}{stateMachine\_} == \textcolor{keyword}{nullptr})
-35         \{
-36             ROS\_ERROR(\textcolor{stringliteral}{"Cannot use the requiresComponent funcionality from an orthogonal before onInitialize
-      "});
-37         \}
-38         \textcolor{keywordflow}{else}
-39         \{
-40             \hyperlink{classsmacc_1_1Orthogonal_acea2058ac94667e46fc60ed3d4f524f7}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_a729d0bcb3c4894e33f0696e0b1aeb155}{requiresComponent}(storage, verbose);
-41         \}
-42     \}
+18 \{
+19     \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1Orthogonal_acea2058ac94667e46fc60ed3d4f524f7}{stateMachine\_} == \textcolor{keyword}{nullptr})
+20     \{
+21         ROS\_ERROR(\textcolor{stringliteral}{"Cannot use the requiresComponent funcionality from an orthogonal before onInitialize"});
+22     \}
+23     \textcolor{keywordflow}{else}
+24     \{
+25         \hyperlink{classsmacc_1_1Orthogonal_acea2058ac94667e46fc60ed3d4f524f7}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_a729d0bcb3c4894e33f0696e0b1aeb155}{requiresComponent}(storage, verbose);
+26     \}
+27 \}
 \end{DoxyCode}
 
 
@@ -457,7 +479,7 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=342pt]{classsmacc_1_1Orthogonal_a05f65c01344a6c8593f7f88c0ca19654_cgraph}
+\includegraphics[width=326pt]{classsmacc_1_1Orthogonal_a05f65c01344a6c8593f7f88c0ca19654_cgraph}
 \end{center}
 \end{figure}
 
@@ -482,18 +504,18 @@ Here is the caller graph for this function\+:
 \subsubsection[{\texorpdfstring{clients\+\_\+}{clients_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf smacc\+::\+I\+Smacc\+Client} $\ast$$>$ smacc\+::\+Orthogonal\+::clients\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1Orthogonal_acdcb1b5dca84a6521ef25f07212afa5e}{}\label{classsmacc_1_1Orthogonal_acdcb1b5dca84a6521ef25f07212afa5e}
 
 
-Definition at line 63 of file orthogonal.\+h.
+Definition at line 42 of file smacc\+\_\+orthogonal.\+h.
 
 
 
-Referenced by create\+Client(), and requires\+Client().
+Referenced by create\+Client(), get\+Clients(), and requires\+Client().
 
 \index{smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}!current\+Behavior\+\_\+@{current\+Behavior\+\_\+}}
 \index{current\+Behavior\+\_\+@{current\+Behavior\+\_\+}!smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}}
 \subsubsection[{\texorpdfstring{current\+Behavior\+\_\+}{currentBehavior_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf smacc\+::\+Smacc\+Sub\+State\+Behavior}$>$ smacc\+::\+Orthogonal\+::current\+Behavior\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1Orthogonal_a4b393107861122834613734f499ccaeb}{}\label{classsmacc_1_1Orthogonal_a4b393107861122834613734f499ccaeb}
 
 
-Definition at line 61 of file orthogonal.\+h.
+Definition at line 40 of file smacc\+\_\+orthogonal.\+h.
 
 
 
@@ -504,7 +526,7 @@ Referenced by on\+Entry(), on\+Exit(), and set\+State\+Behavior().
 \subsubsection[{\texorpdfstring{state\+Machine\+\_\+}{stateMachine_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Smacc\+State\+Machine}$\ast$ smacc\+::\+Orthogonal\+::state\+Machine\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1Orthogonal_acea2058ac94667e46fc60ed3d4f524f7}{}\label{classsmacc_1_1Orthogonal_acea2058ac94667e46fc60ed3d4f524f7}
 
 
-Definition at line 59 of file orthogonal.\+h.
+Definition at line 38 of file smacc\+\_\+orthogonal.\+h.
 
 
 
@@ -514,5 +536,6 @@ Referenced by create\+Client(), requires\+Component(), set\+State\+Behavior(), a
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-smacc/include/smacc/\hyperlink{orthogonal_8h}{orthogonal.\+h}\item 
+smacc/include/smacc/\hyperlink{smacc__orthogonal_8h}{smacc\+\_\+orthogonal.\+h}\item 
+smacc/include/smacc/impl/\hyperlink{smacc__orthogonal__impl_8h}{smacc\+\_\+orthogonal\+\_\+impl.\+h}\item 
 smacc/src/smacc/\hyperlink{orthogonal_8cpp}{orthogonal.\+cpp}\end{DoxyCompactItemize}

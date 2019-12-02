@@ -1,0 +1,206 @@
+\hypertarget{structsmacc_1_1SmaccEventInfo}{}\section{smacc\+:\+:Smacc\+Event\+Info Struct Reference}
+\label{structsmacc_1_1SmaccEventInfo}\index{smacc\+::\+Smacc\+Event\+Info@{smacc\+::\+Smacc\+Event\+Info}}
+
+
+{\ttfamily \#include $<$smacc\+\_\+state\+\_\+info.\+h$>$}
+
+
+
+Collaboration diagram for smacc\+:\+:Smacc\+Event\+Info\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{structsmacc_1_1SmaccEventInfo__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structsmacc_1_1SmaccEventInfo_adb157317435016e17767e984f912ca7e}{Smacc\+Event\+Info} (std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1TypeInfo}{smacc\+::\+Type\+Info} $>$ \hyperlink{structsmacc_1_1SmaccEventInfo_a42df97fc9a9a817ca841427358002930}{event\+Type})
+\item 
+std\+::string \hyperlink{structsmacc_1_1SmaccEventInfo_ae0ed6a9506dbe526269a0bd956a71044}{get\+Event\+Type\+Name} ()
+\item 
+std\+::string \hyperlink{structsmacc_1_1SmaccEventInfo_af9e90a557f8f62069a17234f79bcefa0}{get\+Event\+Source\+Name} ()
+\item 
+std\+::string \hyperlink{structsmacc_1_1SmaccEventInfo_a0aa5d15822e7642079f375ee0f4ff096}{get\+Object\+Tag\+Name} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{structsmacc_1_1SmaccEventInfo_a74bc1c4062af64481d4fdd40b66237bb}{label}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1TypeInfo}{smacc\+::\+Type\+Info} $>$ \hyperlink{structsmacc_1_1SmaccEventInfo_a42df97fc9a9a817ca841427358002930}{event\+Type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file smacc\+\_\+state\+\_\+info.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+::\+Smacc\+Event\+Info@{smacc\+::\+Smacc\+Event\+Info}!Smacc\+Event\+Info@{Smacc\+Event\+Info}}
+\index{Smacc\+Event\+Info@{Smacc\+Event\+Info}!smacc\+::\+Smacc\+Event\+Info@{smacc\+::\+Smacc\+Event\+Info}}
+\subsubsection[{\texorpdfstring{Smacc\+Event\+Info(std\+::shared\+\_\+ptr$<$ smacc\+::\+Type\+Info $>$ event\+Type)}{SmaccEventInfo(std::shared_ptr< smacc::TypeInfo > eventType)}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+::\+Smacc\+Event\+Info\+::\+Smacc\+Event\+Info (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf smacc\+::\+Type\+Info} $>$}]{event\+Type}
+\end{DoxyParamCaption}
+)}\hypertarget{structsmacc_1_1SmaccEventInfo_adb157317435016e17767e984f912ca7e}{}\label{structsmacc_1_1SmaccEventInfo_adb157317435016e17767e984f912ca7e}
+
+
+Definition at line 67 of file smacc\+\_\+state\+\_\+info.\+cpp.
+
+
+\begin{DoxyCode}
+68 \{
+69     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"CREATING EVENT INFO: "} << \hyperlink{structsmacc_1_1SmaccEventInfo_a42df97fc9a9a817ca841427358002930}{eventType}->getFullName());
+70 
+71     this->\hyperlink{structsmacc_1_1SmaccEventInfo_a42df97fc9a9a817ca841427358002930}{eventType} = \hyperlink{structsmacc_1_1SmaccEventInfo_a42df97fc9a9a817ca841427358002930}{eventType};
+72 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::\+Smacc\+Event\+Info@{smacc\+::\+Smacc\+Event\+Info}!get\+Event\+Source\+Name@{get\+Event\+Source\+Name}}
+\index{get\+Event\+Source\+Name@{get\+Event\+Source\+Name}!smacc\+::\+Smacc\+Event\+Info@{smacc\+::\+Smacc\+Event\+Info}}
+\subsubsection[{\texorpdfstring{get\+Event\+Source\+Name()}{getEventSourceName()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::\+Smacc\+Event\+Info\+::get\+Event\+Source\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{structsmacc_1_1SmaccEventInfo_af9e90a557f8f62069a17234f79bcefa0}{}\label{structsmacc_1_1SmaccEventInfo_af9e90a557f8f62069a17234f79bcefa0}
+
+
+Definition at line 74 of file smacc\+\_\+state\+\_\+info.\+cpp.
+
+
+
+References smacc\+::demangle\+Symbol().
+
+
+\begin{DoxyCode}
+75 \{
+76     \textcolor{keywordflow}{if} (\hyperlink{structsmacc_1_1SmaccEventInfo_a42df97fc9a9a817ca841427358002930}{eventType}->templateParameters.size() > 0)
+77     \{
+78         \textcolor{keyword}{auto} eventsourcename = \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\hyperlink{structsmacc_1_1SmaccEventInfo_a42df97fc9a9a817ca841427358002930}{eventType}->templateParameters[0]->
+      getFullName().c\_str());
+79         ROS\_ERROR\_STREAM(\textcolor{stringliteral}{"EVENT SOURCE NAME -------------"} << eventsourcename);
+80         \textcolor{keywordflow}{return} eventsourcename;
+81     \}
+82     \textcolor{keywordflow}{else}
+83     \{
+84         \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
+85     \}
+86 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsmacc_1_1SmaccEventInfo_af9e90a557f8f62069a17234f79bcefa0_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Smacc\+Event\+Info@{smacc\+::\+Smacc\+Event\+Info}!get\+Event\+Type\+Name@{get\+Event\+Type\+Name}}
+\index{get\+Event\+Type\+Name@{get\+Event\+Type\+Name}!smacc\+::\+Smacc\+Event\+Info@{smacc\+::\+Smacc\+Event\+Info}}
+\subsubsection[{\texorpdfstring{get\+Event\+Type\+Name()}{getEventTypeName()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::\+Smacc\+Event\+Info\+::get\+Event\+Type\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{structsmacc_1_1SmaccEventInfo_ae0ed6a9506dbe526269a0bd956a71044}{}\label{structsmacc_1_1SmaccEventInfo_ae0ed6a9506dbe526269a0bd956a71044}
+
+
+Definition at line 88 of file smacc\+\_\+state\+\_\+info.\+cpp.
+
+
+
+References smacc\+::demangle\+Symbol().
+
+
+\begin{DoxyCode}
+89 \{
+90     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\hyperlink{structsmacc_1_1SmaccEventInfo_a42df97fc9a9a817ca841427358002930}{eventType}->getNonTemplatetypename().c\_str());
+91 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsmacc_1_1SmaccEventInfo_ae0ed6a9506dbe526269a0bd956a71044_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Smacc\+Event\+Info@{smacc\+::\+Smacc\+Event\+Info}!get\+Object\+Tag\+Name@{get\+Object\+Tag\+Name}}
+\index{get\+Object\+Tag\+Name@{get\+Object\+Tag\+Name}!smacc\+::\+Smacc\+Event\+Info@{smacc\+::\+Smacc\+Event\+Info}}
+\subsubsection[{\texorpdfstring{get\+Object\+Tag\+Name()}{getObjectTagName()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::\+Smacc\+Event\+Info\+::get\+Object\+Tag\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{structsmacc_1_1SmaccEventInfo_a0aa5d15822e7642079f375ee0f4ff096}{}\label{structsmacc_1_1SmaccEventInfo_a0aa5d15822e7642079f375ee0f4ff096}
+
+
+Definition at line 93 of file smacc\+\_\+state\+\_\+info.\+cpp.
+
+
+
+References smacc\+::demangle\+Symbol().
+
+
+\begin{DoxyCode}
+94 \{
+95     \textcolor{keywordflow}{if} (\hyperlink{structsmacc_1_1SmaccEventInfo_a42df97fc9a9a817ca841427358002930}{eventType}->templateParameters.size() > 1)
+96     \{
+97         \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\hyperlink{structsmacc_1_1SmaccEventInfo_a42df97fc9a9a817ca841427358002930}{eventType}->templateParameters[1]->getFullName().c\_str(
+      ));
+98     \}
+99     \textcolor{keywordflow}{else}
+100     \{
+101         \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
+102     \}
+103 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsmacc_1_1SmaccEventInfo_a0aa5d15822e7642079f375ee0f4ff096_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+::\+Smacc\+Event\+Info@{smacc\+::\+Smacc\+Event\+Info}!event\+Type@{event\+Type}}
+\index{event\+Type@{event\+Type}!smacc\+::\+Smacc\+Event\+Info@{smacc\+::\+Smacc\+Event\+Info}}
+\subsubsection[{\texorpdfstring{event\+Type}{eventType}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf smacc\+::\+Type\+Info}$>$ smacc\+::\+Smacc\+Event\+Info\+::event\+Type}\hypertarget{structsmacc_1_1SmaccEventInfo_a42df97fc9a9a817ca841427358002930}{}\label{structsmacc_1_1SmaccEventInfo_a42df97fc9a9a817ca841427358002930}
+
+
+Definition at line 29 of file smacc\+\_\+state\+\_\+info.\+h.
+
+\index{smacc\+::\+Smacc\+Event\+Info@{smacc\+::\+Smacc\+Event\+Info}!label@{label}}
+\index{label@{label}!smacc\+::\+Smacc\+Event\+Info@{smacc\+::\+Smacc\+Event\+Info}}
+\subsubsection[{\texorpdfstring{label}{label}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::\+Smacc\+Event\+Info\+::label}\hypertarget{structsmacc_1_1SmaccEventInfo_a74bc1c4062af64481d4fdd40b66237bb}{}\label{structsmacc_1_1SmaccEventInfo_a74bc1c4062af64481d4fdd40b66237bb}
+
+
+Definition at line 27 of file smacc\+\_\+state\+\_\+info.\+h.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+smacc/include/smacc/introspection/\hyperlink{smacc__state__info_8h}{smacc\+\_\+state\+\_\+info.\+h}\item 
+smacc/src/smacc/\hyperlink{smacc__state__info_8cpp}{smacc\+\_\+state\+\_\+info.\+cpp}\end{DoxyCompactItemize}

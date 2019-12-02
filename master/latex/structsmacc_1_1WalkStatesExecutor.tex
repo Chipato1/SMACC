@@ -11,7 +11,7 @@ Collaboration diagram for smacc\+:\+:Walk\+States\+Executor$<$ Initial\+State\+T
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=229pt]{structsmacc_1_1WalkStatesExecutor__coll__graph}
+\includegraphics[width=222pt]{structsmacc_1_1WalkStatesExecutor__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Static Public Member Functions}
@@ -27,7 +27,7 @@ struct smacc\+::\+Walk\+States\+Executor$<$ Initial\+State\+Type $>$}
 
 
 
-Definition at line 115 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 91 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 
@@ -42,46 +42,46 @@ Definition at line 115 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 )\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structsmacc_1_1WalkStatesExecutor_a11a2b02eafb62ec298bcf5ffbb32848b}{}\label{structsmacc_1_1WalkStatesExecutor_a11a2b02eafb62ec298bcf5ffbb32848b}
 
 
-Definition at line 265 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 364 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 
-Referenced by smacc\+::\+Smacc\+State\+Machine\+Info\+::build\+State\+Machine\+Info(), smacc\+::\+Add\+Sub\+State\+::operator()(), smacc\+::process\+Sub\+State(), and smacc\+::process\+Transition().
+Referenced by smacc\+::\+Smacc\+State\+Machine\+Info\+::build\+State\+Machine\+Info(), smacc\+::\+Add\+Sub\+State\+::operator()(), smacc\+::process\+Sub\+State(), and smacc\+::process\+Transition\+Aux().
 
 
 \begin{DoxyCode}
-266 \{
-267     \textcolor{comment}{//ros::Duration(1).sleep();}
-268     \textcolor{keyword}{auto} currentname = demangledTypeName<InitialStateType>();
-269 
-270     std::shared\_ptr<SmaccStateInfo> targetState;
-271 
-272     \textcolor{keywordflow}{if} (!rootInitialNode)
-273     \{
-274         \textcolor{keywordflow}{if} (parentState->stateMachine\_->containsState<InitialStateType>())
-275         \{
-276             \textcolor{comment}{// it already exist: break;}
-277             \textcolor{keywordflow}{return};
-278         \}
-279 
-280         targetState = parentState->createChildState<InitialStateType>();
-281     \}
-282     \textcolor{keywordflow}{else}
-283     \{
-284         targetState = parentState;
-285     \}
-286     
-287     CallOnDefinition<InitialStateType>();
-288 
-289     \textcolor{keyword}{typedef} \textcolor{keyword}{typename} std::remove\_pointer<decltype(InitialStateType::smacc\_inner\_type)>::type InnerType;
-290     processSubState<InnerType>(targetState);
-291 
-292     \textcolor{comment}{// -------------------- REACTIONS --------------------}
-293     \textcolor{keyword}{typedef} \textcolor{keyword}{typename} InitialStateType::reactions reactions;
-294     \textcolor{comment}{//ROS\_INFO\_STREAM("state machine initial state reactions: "<< demangledTypeName<reactions>());}
-295 
-296     processTransitions<reactions>(targetState);
-297 \}
+365 \{
+366     \textcolor{comment}{//ros::Duration(1).sleep();}
+367     \textcolor{keyword}{auto} currentname = demangledTypeName<InitialStateType>();
+368 
+369     std::shared\_ptr<SmaccStateInfo> targetState;
+370 
+371     \textcolor{keywordflow}{if} (!rootInitialNode)
+372     \{
+373         \textcolor{keywordflow}{if} (parentState->stateMachine\_->containsState<InitialStateType>())
+374         \{
+375             \textcolor{comment}{// it already exist: break;}
+376             \textcolor{keywordflow}{return};
+377         \}
+378 
+379         targetState = parentState->createChildState<InitialStateType>();
+380     \}
+381     \textcolor{keywordflow}{else}
+382     \{
+383         targetState = parentState;
+384     \}
+385 
+386     CallOnDefinition<InitialStateType>();
+387 
+388     \textcolor{keyword}{typedef} \textcolor{keyword}{typename} std::remove\_pointer<decltype(InitialStateType::smacc\_inner\_type)>::type InnerType;
+389     processSubState<InnerType>(targetState);
+390 
+391     \textcolor{comment}{// -------------------- REACTIONS --------------------}
+392     \textcolor{keyword}{typedef} \textcolor{keyword}{typename} InitialStateType::reactions reactions;
+393     \textcolor{comment}{//ROS\_INFO\_STREAM("state machine initial state reactions: "<< demangledTypeName<reactions>());}
+394 
+395     processTransitions<reactions>(targetState);
+396 \}
 \end{DoxyCode}
 
 
@@ -99,4 +99,4 @@ Here is the caller graph for this function\+:
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-smacc/include/smacc/\hyperlink{smacc__state__machine__info_8h}{smacc\+\_\+state\+\_\+machine\+\_\+info.\+h}\end{DoxyCompactItemize}
+smacc/include/smacc/introspection/\hyperlink{smacc__state__machine__info_8h}{smacc\+\_\+state\+\_\+machine\+\_\+info.\+h}\end{DoxyCompactItemize}

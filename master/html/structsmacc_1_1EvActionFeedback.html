@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="common_8h_source.html">common.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="smacc__default__events_8h_source.html">smacc_default_events.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for smacc::EvActionFeedback&lt; ActionFeedback &gt;:</div>
 <div class="dyncontent">
@@ -109,10 +109,11 @@ Collaboration diagram for smacc::EvActionFeedback&lt; ActionFeedback &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="structsmacc_1_1EvActionFeedback__coll__graph.png" border="0" usemap="#smacc_1_1EvActionFeedback_3_01ActionFeedback_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="smacc_1_1EvActionFeedback_3_01ActionFeedback_01_4_coll__map" id="smacc_1_1EvActionFeedback_3_01ActionFeedback_01_4_coll__map">
-<area shape="rect" id="node4" href="classsmacc_1_1ISmaccActionClient.html" title="{smacc::ISmaccActionClient\n||+ ISmaccActionClient()\l+ ~ISmaccActionClient()\l+ getState()\l+ hasFeedback()\l+ getNamespace()\l# postEvent()\l# postFeedbackEvent()\l}" alt="" coords="365,880,559,1045"/>
-<area shape="rect" id="node5" href="classsmacc_1_1ISmaccClient.html" title="{smacc::ISmaccClient\n||+ ISmaccClient()\l+ ~ISmaccClient()\l+ initialize()\l+ setStateMachine()\l+ getName()\l+ postEvent()\l}" alt="" coords="298,615,453,766"/>
-<area shape="rect" id="node6" href="classsmacc_1_1ISmaccStateMachine.html" title="{smacc::ISmaccStateMachine\n||+ ISmaccStateMachine()\l+ ~ISmaccStateMachine()\l+ Reset()\l+ Stop()\l+ EStop()\l+ notifyOnStateEntry()\l+ notifyOnStateExit()\l+ getOrthogonal()\l+ requiresComponent()\l+ postEvent()\l+ getGlobalSMData()\l+ setGlobalSMData()\l+ registerActionClientRequest()\l+ mapBehavior()\l+ updateCurrentState()\l+ getStateMachineName()\l# createOrthogonal()\l}" alt="" coords="516,189,739,501"/>
-<area shape="rect" id="node11" href="classsmacc_1_1SignalDetector.html" title="{smacc::SignalDetector\n||+ SignalDetector()\l+ initialize()\l+ setProcessorHandle()\l+ runThread()\l+ join()\l+ stop()\l+ toString()\l+ pollingLoop()\l+ pollOnce()\l+ postEvent()\l&#45; finalizeRequest()\l&#45; notifyFeedback()\l&#45; registerActionClientRequest()\l}" alt="" coords="1048,564,1265,817"/>
+<area shape="rect" id="node4" href="classsmacc_1_1ISmaccActionClient.html" title="{smacc::ISmaccActionClient\n||+ ISmaccActionClient()\l+ ~ISmaccActionClient()\l+ getNamespace()\l+ cancelGoal()\l+ getState()\l}" alt="" coords="727,1313,913,1449"/>
+<area shape="rect" id="node5" href="classsmacc_1_1ISmaccClient.html" title="{smacc::ISmaccClient\n||+ ISmaccClient()\l+ ~ISmaccClient()\l+ initialize()\l+ setStateMachine()\l+ getName()\l+ postEvent()\l}" alt="" coords="663,1078,811,1229"/>
+<area shape="rect" id="node6" href="classsmacc_1_1ISmaccStateMachine.html" title="{smacc::ISmaccStateMachine\n||+ ISmaccStateMachine()\l+ ~ISmaccStateMachine()\l+ Reset()\l+ Stop()\l+ EStop()\l+ notifyOnStateEntry()\l+ notifyOnStateExit()\l+ getOrthogonal()\l+ getOrthogonals()\l+ requiresComponent()\l+ postEvent()\l+ getGlobalSMData()\l+ setGlobalSMData()\l+ mapBehavior()\l+ updateCurrentState()\l+ updateStatusMessage()\l+ getStateMachineName()\l+ state_machine_visualization()\l+ getCurrentState()\l+ getCurrentStateInfo()\l+ publishTransition()\l# initializeRosComponents()\l# createOrthogonal()\l# getParam()\l# setParam()\l# param()\l}" alt="" coords="850,549,1057,993"/>
+<area shape="rect" id="node14" href="classsmacc_1_1SignalDetector.html" title="{smacc::SignalDetector\n||+ SignalDetector()\l+ initialize()\l+ setProcessorHandle()\l+ runThread()\l+ join()\l+ stop()\l+ pollingLoop()\l+ pollOnce()\l+ postEvent()\l}" alt="" coords="1384,1056,1544,1251"/>
+<area shape="rect" id="node21" href="classsmacc_1_1ISmaccState.html" title="{smacc::ISmaccState\n||+ getParam()\l+ setParam()\l+ param()\l+ getStateMachine()\l+ getClassName()\l+ configure()\l+ requiresComponent()\l+ requiresClient()\l+ getGlobalSMData()\l+ setGlobalSMData()\l+ createLogicUnit()\l+ postEvent()\l+ notifyTransition()\l+ notifyTransitionFromTransition\lTypeInfo()\l}" alt="" coords="5,160,216,443"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -128,7 +129,7 @@ Public Attributes</h2></td></tr>
 struct smacc::EvActionFeedback&lt; ActionFeedback &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="common_8h_source.html#l00117">117</a> of file <a class="el" href="common_8h_source.html">common.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__default__events_8h_source.html#l00012">12</a> of file <a class="el" href="smacc__default__events_8h_source.html">smacc_default_events.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a79bd45568b39330df89f45d138ace141"></a>
 <div class="memitem">
@@ -142,9 +143,9 @@ template&lt;typename ActionFeedback &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="common_8h_source.html#l00119">119</a> of file <a class="el" href="common_8h_source.html">common.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__default__events_8h_source.html#l00014">14</a> of file <a class="el" href="smacc__default__events_8h_source.html">smacc_default_events.h</a>.</p>
 
-<p>Referenced by <a class="el" href="smacc__action__client__base_8h_source.html#l00196">smacc::SmaccActionClientBase&lt; move_base_msgs::MoveBaseAction &gt;::postFeedbackEvent()</a>.</p>
+<p>Referenced by <a class="el" href="smacc__action__client__base_8h_source.html#l00088">smacc::SmaccActionClientBase&lt; Client2, move_base_msgs::MoveBaseAction &gt;::onFeedback()</a>.</p>
 
 </div>
 </div>
@@ -160,12 +161,12 @@ template&lt;typename ActionFeedback &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="common_8h_source.html#l00120">120</a> of file <a class="el" href="common_8h_source.html">common.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__default__events_8h_source.html#l00015">15</a> of file <a class="el" href="smacc__default__events_8h_source.html">smacc_default_events.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>smacc/include/smacc/<a class="el" href="common_8h_source.html">common.h</a></li>
+<li>smacc/include/smacc/<a class="el" href="smacc__default__events_8h_source.html">smacc_default_events.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

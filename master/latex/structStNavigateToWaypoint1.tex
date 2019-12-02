@@ -21,18 +21,23 @@ Collaboration diagram for St\+Navigate\+To\+Waypoint1\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{structStNavigateToWaypoint1__coll__graph}
+\includegraphics[height=550pt]{structStNavigateToWaypoint1__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef mpl\+::list$<$ sc\+::transition$<$ Ev\+Action\+Succeded$<$ smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result $>$, \hyperlink{structStNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$, sc\+::transition$<$ Ev\+Key\+PressP$<$ Sb\+Keyboard $>$, \hyperlink{structStNavigateReverse2}{St\+Navigate\+Reverse2} $>$, sc\+::transition$<$ \hyperlink{structsmacc_1_1EvTopicMessageTimeout}{smacc\+::\+Ev\+Topic\+Message\+Timeout}$<$ \hyperlink{sensor__state_8h_a9db9e1944f88de79507758d08e4a2ee3}{Lidar\+Sensor} $>$, \hyperlink{structStAcquireSensors}{St\+Acquire\+Sensors} $>$, sc\+::transition$<$ Ev\+Action\+Aborted$<$ smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result $>$, \hyperlink{structStNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$ $>$ \hyperlink{structStNavigateToWaypoint1_aa6eccd5225b9a5a208126ec518defdd5}{reactions}
+typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Succeeded$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $>$, \hyperlink{structStNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Key\+PressP$<$ Sb\+Keyboard $>$, \hyperlink{structStNavigateReverse2}{St\+Navigate\+Reverse2} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Aborted$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $>$, \hyperlink{structStNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$ $>$ \hyperlink{structStNavigateToWaypoint1_a6db6fed7b236ffe258ec296fc3d73b90}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{structStNavigateToWaypoint1_abf862e4062f5c46d80c0779db4485387}{on\+Initialize} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{structStNavigateToWaypoint1_a03056daef3018d51d81cee694ec305ce}{on\+Definition} ()
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -47,7 +52,7 @@ Definition at line 1 of file st\+\_\+navigate\+\_\+to\+\_\+waypoint\+\_\+1.\+h.
 \subsection{Member Typedef Documentation}
 \index{St\+Navigate\+To\+Waypoint1@{St\+Navigate\+To\+Waypoint1}!reactions@{reactions}}
 \index{reactions@{reactions}!St\+Navigate\+To\+Waypoint1@{St\+Navigate\+To\+Waypoint1}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ sc\+::transition$<$Ev\+Action\+Succeded$<$smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$, sc\+::transition$<$Ev\+Key\+PressP$<$Sb\+Keyboard$>$,{\bf St\+Navigate\+Reverse2}$>$, sc\+::transition$<${\bf smacc\+::\+Ev\+Topic\+Message\+Timeout}$<${\bf Lidar\+Sensor}$>$, {\bf St\+Acquire\+Sensors}$>$, sc\+::transition$<$Ev\+Action\+Aborted$<$smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$ $>$ {\bf St\+Navigate\+To\+Waypoint1\+::reactions}}\hypertarget{structStNavigateToWaypoint1_aa6eccd5225b9a5a208126ec518defdd5}{}\label{structStNavigateToWaypoint1_aa6eccd5225b9a5a208126ec518defdd5}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ {\bf smacc\+::transition}$<$Ev\+Action\+Succeeded$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$, {\bf smacc\+::transition}$<$Ev\+Key\+PressP$<$Sb\+Keyboard$>$, {\bf St\+Navigate\+Reverse2}$>$, {\bf smacc\+::transition}$<$Ev\+Action\+Aborted$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$ $>$ {\bf St\+Navigate\+To\+Waypoint1\+::reactions}}\hypertarget{structStNavigateToWaypoint1_a6db6fed7b236ffe258ec296fc3d73b90}{}\label{structStNavigateToWaypoint1_a6db6fed7b236ffe258ec296fc3d73b90}
 
 
 Definition at line 15 of file st\+\_\+navigate\+\_\+to\+\_\+waypoint\+\_\+1.\+h.
@@ -55,6 +60,27 @@ Definition at line 15 of file st\+\_\+navigate\+\_\+to\+\_\+waypoint\+\_\+1.\+h.
 
 
 \subsection{Member Function Documentation}
+\index{St\+Navigate\+To\+Waypoint1@{St\+Navigate\+To\+Waypoint1}!on\+Definition@{on\+Definition}}
+\index{on\+Definition@{on\+Definition}!St\+Navigate\+To\+Waypoint1@{St\+Navigate\+To\+Waypoint1}}
+\subsubsection[{\texorpdfstring{on\+Definition()}{onDefinition()}}]{\setlength{\rightskip}{0pt plus 5cm}static void St\+Navigate\+To\+Waypoint1\+::on\+Definition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structStNavigateToWaypoint1_a03056daef3018d51d81cee694ec305ce}{}\label{structStNavigateToWaypoint1_a03056daef3018d51d81cee694ec305ce}
+
+
+Definition at line 17 of file st\+\_\+navigate\+\_\+to\+\_\+waypoint\+\_\+1.\+h.
+
+
+\begin{DoxyCode}
+18   \{
+19     static\_configure<NavigationOrthogonal, SbNavigateGlobalPosition>(0, 0, 0);
+20     static\_configure<ToolOrthogonal, SbToolStart>();
+21     static\_configure<KeyboardOrthogonal, SbKeyboard>();
+22     static\_configure<PublisherOrthogonal, SbStringPublisher>(\textcolor{stringliteral}{"All Done!"});
+23     static\_configure<ObstaclePerceptionOrthogonal, SbLidarSensor>();
+24   \}
+\end{DoxyCode}
 \index{St\+Navigate\+To\+Waypoint1@{St\+Navigate\+To\+Waypoint1}!on\+Initialize@{on\+Initialize}}
 \index{on\+Initialize@{on\+Initialize}!St\+Navigate\+To\+Waypoint1@{St\+Navigate\+To\+Waypoint1}}
 \subsubsection[{\texorpdfstring{on\+Initialize()}{onInitialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void St\+Navigate\+To\+Waypoint1\+::on\+Initialize (
@@ -64,19 +90,16 @@ Definition at line 15 of file st\+\_\+navigate\+\_\+to\+\_\+waypoint\+\_\+1.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structStNavigateToWaypoint1_abf862e4062f5c46d80c0779db4485387}{}\label{structStNavigateToWaypoint1_abf862e4062f5c46d80c0779db4485387}
 
 
-Definition at line 17 of file st\+\_\+navigate\+\_\+to\+\_\+waypoint\+\_\+1.\+h.
+Definition at line 26 of file st\+\_\+navigate\+\_\+to\+\_\+waypoint\+\_\+1.\+h.
 
 
 \begin{DoxyCode}
-18   \{
-19      this->configure<NavigationOrthogonal>(std::make\_shared<SbNavigateGlobalPosition>(0, 0, 0));
-20      this->configure<ToolOrthogonal>(std::make\_shared<SbToolStart>());
-21      this->configure<KeyboardOrthogonal>(std::make\_shared<SbKeyboard>());
-22      this->configure<PublisherOrthogonal>(std::make\_shared<SbStringPublisher>(\textcolor{stringliteral}{"All Done!"}));
-23   \}
+27   \{
+28     
+29   \}
 \end{DoxyCode}
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-smacc\+\_\+sm\+\_\+examples/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/states/\hyperlink{st__navigate__to__waypoint__1_8h}{st\+\_\+navigate\+\_\+to\+\_\+waypoint\+\_\+1.\+h}\end{DoxyCompactItemize}
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/states/\hyperlink{st__navigate__to__waypoint__1_8h}{st\+\_\+navigate\+\_\+to\+\_\+waypoint\+\_\+1.\+h}\end{DoxyCompactItemize}

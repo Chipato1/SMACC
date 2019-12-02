@@ -141,7 +141,7 @@ References base\+Trajectory\+\_\+, m\+\_\+mutex\+\_\+, and rt\+Publish\+Paths().
 
 
 
-Referenced by Sb\+Navigate\+Forward\+::on\+Entry(), Navigate\+Forward\+::on\+Entry(), and Sb\+Navigate\+Backwards\+::on\+Entry().
+Referenced by sm\+\_\+dance\+\_\+bot\+::\+Sb\+Navigate\+Forward\+::on\+Entry(), and sm\+\_\+dance\+\_\+bot\+::\+Sb\+Navigate\+Backwards\+::on\+Entry().
 
 
 \begin{DoxyCode}
@@ -193,7 +193,7 @@ References base\+Trajectory\+\_\+, and m\+\_\+mutex\+\_\+.
 
 
 
-Referenced by Sb\+Undo\+Path\+Backwards\+::on\+Entry(), and Undo\+Path\+Backwards\+::on\+Entry().
+Referenced by sm\+\_\+dance\+\_\+bot\+::\+Sb\+Undo\+Path\+Backwards\+::on\+Entry().
 
 
 \begin{DoxyCode}
@@ -235,7 +235,7 @@ References min\+Point\+Angular\+Distance\+Backward\+Thresh\+\_\+, min\+Point\+An
 
 
 
-Referenced by Navigation\+Orthogonal\+::on\+Initialize().
+Referenced by sm\+\_\+dance\+\_\+bot\+::\+Navigation\+Orthogonal\+::on\+Initialize().
 
 
 \begin{DoxyCode}
@@ -561,7 +561,7 @@ References base\+Trajectory\+\_\+, and m\+\_\+mutex\+\_\+.
 
 
 
-Referenced by Sb\+Navigate\+Forward\+::on\+Entry(), Navigate\+Forward\+::on\+Entry(), and Sb\+Navigate\+Backwards\+::on\+Entry().
+Referenced by sm\+\_\+dance\+\_\+bot\+::\+Sb\+Navigate\+Forward\+::on\+Entry(), and sm\+\_\+dance\+\_\+bot\+::\+Sb\+Navigate\+Backwards\+::on\+Entry().
 
 
 \begin{DoxyCode}
@@ -606,14 +606,14 @@ References m\+\_\+mutex\+\_\+, and working\+Mode\+\_\+.
 
 
 
-Referenced by Odom\+Tracker\+Action\+Server\+::execute(), Undo\+Path\+Backwards\+::on\+Entry(), Sb\+Undo\+Path\+Backwards\+::on\+Entry(), Navigate\+Global\+Position\+::on\+Entry(), Sb\+Navigate\+Global\+Position\+::on\+Entry(), Sb\+Navigate\+Forward\+::on\+Entry(), Navigate\+Forward\+::on\+Entry(), Sb\+Navigate\+Backwards\+::on\+Entry(), Sb\+Navigate\+Forward\+::on\+Exit(), and Sb\+Navigate\+Backwards\+::on\+Exit().
+Referenced by Odom\+Tracker\+Action\+Server\+::execute(), sm\+\_\+dance\+\_\+bot\+::\+Sb\+Undo\+Path\+Backwards\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Sb\+Navigate\+Global\+Position\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Sb\+Navigate\+Forward\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Sb\+Navigate\+Backwards\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Sb\+Navigate\+Forward\+::on\+Exit(), and sm\+\_\+dance\+\_\+bot\+::\+Sb\+Navigate\+Backwards\+::on\+Exit().
 
 
 \begin{DoxyCode}
 64 \{
 65     \textcolor{comment}{//ROS\_INFO("odom\_tracker m\_mutex acquire");}
 66     std::lock\_guard<std::mutex> lock(\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_ad65e52bfd236e073940808c35f2bed8c}{m\_mutex\_});
-67     ROS\_INFO(\textcolor{stringliteral}{"[OdomTracker] setting working mode to: %d"}, workingMode);
+67     ROS\_INFO(\textcolor{stringliteral}{"[OdomTracker] setting working mode to: %d"}, (uint8\_t)workingMode);
 68     \hyperlink{classsmacc__odom__tracker_1_1OdomTracker_ad011432ae35a533fd61bae43179c3c36}{workingMode\_} = workingMode;
 69     \textcolor{comment}{//ROS\_INFO("odom\_tracker m\_mutex release");}
 70 \}

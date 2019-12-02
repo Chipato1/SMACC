@@ -1,0 +1,69 @@
+\hypertarget{classsm__dance__bot_1_1Service3Orthogonal}{}\section{sm\+\_\+dance\+\_\+bot\+:\+:Service3\+Orthogonal Class Reference}
+\label{classsm__dance__bot_1_1Service3Orthogonal}\index{sm\+\_\+dance\+\_\+bot\+::\+Service3\+Orthogonal@{sm\+\_\+dance\+\_\+bot\+::\+Service3\+Orthogonal}}
+
+
+{\ttfamily \#include $<$service3\+\_\+orthogonal.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+dance\+\_\+bot\+:\+:Service3\+Orthogonal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classsm__dance__bot_1_1Service3Orthogonal__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+dance\+\_\+bot\+:\+:Service3\+Orthogonal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot_1_1Service3Orthogonal__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classsm__dance__bot_1_1Service3Orthogonal_a565ca9868dc8b5f7e59632ea9d44aa11}{on\+Initialize} () override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file service3\+\_\+orthogonal.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+::\+Service3\+Orthogonal@{sm\+\_\+dance\+\_\+bot\+::\+Service3\+Orthogonal}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!sm\+\_\+dance\+\_\+bot\+::\+Service3\+Orthogonal@{sm\+\_\+dance\+\_\+bot\+::\+Service3\+Orthogonal}}
+\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+dance\+\_\+bot\+::\+Service3\+Orthogonal\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__dance__bot_1_1Service3Orthogonal_a565ca9868dc8b5f7e59632ea9d44aa11}{}\label{classsm__dance__bot_1_1Service3Orthogonal_a565ca9868dc8b5f7e59632ea9d44aa11}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+
+
+
+Definition at line 11 of file service3\+\_\+orthogonal.\+h.
+
+
+\begin{DoxyCode}
+12     \{
+13         \textcolor{keyword}{auto} *serviceClient = this->createClient<ServiceClient3>();
+14         serviceClient->serviceName\_ = \textcolor{stringliteral}{"/service\_node3"};
+15         serviceClient->initialize();
+16     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/orthogonals/\hyperlink{service3__orthogonal_8h}{service3\+\_\+orthogonal.\+h}\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['readme',['readme',['../md_smacc_diagnostics_readme.html',1,'']]]
+  ['travis_20ci_3a',['Travis CI:',['../md_README.html',1,'']]]
 ];

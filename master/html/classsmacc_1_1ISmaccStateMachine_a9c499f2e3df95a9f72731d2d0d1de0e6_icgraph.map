@@ -1,5 +1,5 @@
 <map id="smacc::ISmaccStateMachine::notifyOnStateExit" name="smacc::ISmaccStateMachine::notifyOnStateExit">
-<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccStateMachine.html#af79fbc17f064bba77e598f5e55a86200" title="smacc::ISmaccStateMachine\l::EStop" alt="" coords="269,13,475,54"/>
-<area shape="rect" id="node4" href="$classsmacc_1_1SmaccState.html#a41b2515faf76648c6d69fe09108d2691" title="smacc::SmaccState\&lt;\l StNavigateForward1,\l SmDanceBot \&gt;::~SmaccState" alt="" coords="260,77,484,133"/>
-<area shape="rect" id="node3" href="$structsmacc_1_1SmaccStateMachineBase.html#aa585d63332b29a61555468874b49aad3" title="smacc::SmaccStateMachine\lBase\&lt; SensorStateMachine,\l SensorState \&gt;::EStop" alt="" coords="532,5,739,61"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccStateMachine.html#af79fbc17f064bba77e598f5e55a86200" title="smacc::ISmaccStateMachine\l::EStop" alt="" coords="248,13,443,54"/>
+<area shape="rect" id="node4" href="$classsmacc_1_1SmaccState.html#a41b2515faf76648c6d69fe09108d2691" title="smacc::SmaccState\&lt;\l SsrFPatternStartLoop,\l SS \&gt;::~SmaccState" alt="" coords="267,77,423,133"/>
+<area shape="rect" id="node3" href="$structsmacc_1_1SmaccStateMachineBase.html#af1d145820c98089389e7de97a6744231" title="smacc::SmaccStateMachine\lBase\&lt; TimerStateMachine,\l TimerState \&gt;::EStop" alt="" coords="491,5,681,61"/>
 </map>

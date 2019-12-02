@@ -21,49 +21,50 @@ Collaboration diagram for St\+Acquire\+Sensors\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{structStAcquireSensors__coll__graph}
+\includegraphics[height=550pt]{structStAcquireSensors__coll__graph}
 \end{center}
 \end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structStAcquireSensors_1_1ON__KEYBOARD}{O\+N\+\_\+\+K\+E\+Y\+B\+O\+A\+RD}
+\item 
+struct \hyperlink{structStAcquireSensors_1_1ON__KEYBOARD2}{O\+N\+\_\+\+K\+E\+Y\+B\+O\+A\+R\+D2}
+\item 
+struct \hyperlink{structStAcquireSensors_1_1ON__SENSORS__AVAILABLE}{O\+N\+\_\+\+S\+E\+N\+S\+O\+R\+S\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE}
+\end{DoxyCompactItemize}
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef mpl\+::list$<$ sc\+::transition$<$ \hyperlink{structsmacc_1_1EvStateFinish}{Ev\+State\+Finish}$<$ \hyperlink{structStAcquireSensors}{St\+Acquire\+Sensors} $>$, \hyperlink{structStNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$, sc\+::transition$<$ Ev\+Key\+PressN$<$ Sb\+Keyboard $>$, \hyperlink{structStNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$, sc\+::custom\+\_\+reaction$<$ \hyperlink{structsmacc_1_1EvTopicMessage}{Ev\+Topic\+Message}$<$ \hyperlink{sensor__state_8h_a9db9e1944f88de79507758d08e4a2ee3}{Lidar\+Sensor} $>$ $>$, sc\+::custom\+\_\+reaction$<$ \hyperlink{structsmacc_1_1EvTopicMessage}{Ev\+Topic\+Message}$<$ \hyperlink{classsmacc_1_1SensorTopic}{smacc\+::\+Sensor\+Topic}$<$ sensor\+\_\+msgs\+::\+Temperature $>$ $>$ $>$ $>$ \hyperlink{structStAcquireSensors_a2e405e02a34cab31c6c05351e092e235}{reactions}
+typedef mpl\+::list$<$ transition$<$ Ev\+All$<$ Lu\+All\+Events\+Go, Unit1 $>$, \hyperlink{structStEventCountDown}{St\+Event\+Count\+Down}, \hyperlink{structStAcquireSensors_1_1ON__SENSORS__AVAILABLE}{O\+N\+\_\+\+S\+E\+N\+S\+O\+R\+S\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Global\+Error, sc\+::deep\+\_\+history$<$ \hyperlink{structStAcquireSensors}{St\+Acquire\+Sensors} $>$ $>$ $>$ \hyperlink{structStAcquireSensors_a3ea94ff0790c9954462b78aaebe36b30}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{structStAcquireSensors_af25bdea33dab12d2c37301eb999ac6e8}{on\+Initialize} ()
-\item 
-sc\+::result \hyperlink{structStAcquireSensors_aa3c461ccdb69aa4c7d09b88dae21c646}{react} (const \hyperlink{structsmacc_1_1EvTopicMessage}{Ev\+Topic\+Message}$<$ \hyperlink{sensor__state_8h_a9db9e1944f88de79507758d08e4a2ee3}{Lidar\+Sensor} $>$ \&ev)
-\item 
-sc\+::result \hyperlink{structStAcquireSensors_af69db5f01143f5b9267fbd39fc566be8}{react} (const \hyperlink{structsmacc_1_1EvTopicMessage}{Ev\+Topic\+Message}$<$ \hyperlink{classsmacc_1_1SensorTopic}{smacc\+::\+Sensor\+Topic}$<$ sensor\+\_\+msgs\+::\+Temperature $>$$>$ \&ev)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static void \hyperlink{structStAcquireSensors_a4f638e39d921300d4dcbc9ce5fa8d1c8}{on\+Definition} ()
 \end{DoxyCompactItemize}
-\subsection*{Public Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\hyperlink{classAllEventAggregator}{All\+Event\+Aggregator} \hyperlink{structStAcquireSensors_adc57ee1bdc2d1622b65811366f70845b}{all\+Sensors\+Ready}
-\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 3 of file st\+\_\+acquire\+\_\+sensors.\+h.
+Definition at line 1 of file st\+\_\+acquire\+\_\+sensors.\+h.
 
 
 
 \subsection{Member Typedef Documentation}
 \index{St\+Acquire\+Sensors@{St\+Acquire\+Sensors}!reactions@{reactions}}
 \index{reactions@{reactions}!St\+Acquire\+Sensors@{St\+Acquire\+Sensors}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ sc\+::transition$<${\bf Ev\+State\+Finish}$<${\bf St\+Acquire\+Sensors}$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$, sc\+::transition$<$Ev\+Key\+PressN$<$Sb\+Keyboard$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$, sc\+::custom\+\_\+reaction$<${\bf Ev\+Topic\+Message}$<${\bf Lidar\+Sensor}$>$ $>$, sc\+::custom\+\_\+reaction$<${\bf Ev\+Topic\+Message}$<${\bf smacc\+::\+Sensor\+Topic}$<$sensor\+\_\+msgs\+::\+Temperature$>$ $>$ $>$ $>$ {\bf St\+Acquire\+Sensors\+::reactions}}\hypertarget{structStAcquireSensors_a2e405e02a34cab31c6c05351e092e235}{}\label{structStAcquireSensors_a2e405e02a34cab31c6c05351e092e235}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ transition$<$Ev\+All$<$Lu\+All\+Events\+Go, Unit1$>$, {\bf St\+Event\+Count\+Down}, {\bf O\+N\+\_\+\+S\+E\+N\+S\+O\+R\+S\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE}$>$, {\bf smacc\+::transition}$<$Ev\+Global\+Error, sc\+::deep\+\_\+history$<${\bf St\+Acquire\+Sensors}$>$ $>$ $>$ {\bf St\+Acquire\+Sensors\+::reactions}}\hypertarget{structStAcquireSensors_a3ea94ff0790c9954462b78aaebe36b30}{}\label{structStAcquireSensors_a3ea94ff0790c9954462b78aaebe36b30}
 
 
-Definition at line 18 of file st\+\_\+acquire\+\_\+sensors.\+h.
+Definition at line 25 of file st\+\_\+acquire\+\_\+sensors.\+h.
 
 
 
@@ -77,23 +78,39 @@ Definition at line 18 of file st\+\_\+acquire\+\_\+sensors.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structStAcquireSensors_a4f638e39d921300d4dcbc9ce5fa8d1c8}{}\label{structStAcquireSensors_a4f638e39d921300d4dcbc9ce5fa8d1c8}
 
 
-Definition at line 22 of file st\+\_\+acquire\+\_\+sensors.\+h.
+Definition at line 27 of file st\+\_\+acquire\+\_\+sensors.\+h.
 
 
 
-References S\+E\+R\+V\+I\+C\+E3\+\_\+\+ON.
+References smacc\+::\+Smacc\+State$<$ St\+Acquire\+Sensors, Ms\+Dance\+Bot\+Run\+Mode $>$\+::static\+\_\+create\+Logic\+Unit().
 
 
 \begin{DoxyCode}
-23    \{
-24       static\_configure<ObstaclePerceptionOrthogonal, LidarSensor>();
-25       static\_configure<KeyboardOrthogonal, SbKeyboard>();
-26       static\_configure<PublisherOrthogonal, SbStringPublisher>(\textcolor{stringliteral}{"Hello World!"});
-27       static\_configure<SensorOrthogonal, SbConditionTemperatureSensor>();
-28       static\_configure<Service3Orthogonal, Service3Behavior>(
-      \hyperlink{service3__behavior_8h_a220998b2c3cad22a21ce6676b2478543a13cdca48a01bbb44fa8fb35567fbc58e}{Service3Command::SERVICE3\_ON});
-29    \}
+28    \{
+29       static\_configure<ObstaclePerceptionOrthogonal, SbLidarSensor>();
+30       static\_configure<KeyboardOrthogonal, SbKeyboard>();
+31       static\_configure<PublisherOrthogonal, SbStringPublisher>(\textcolor{stringliteral}{"Hello World!"});
+32       static\_configure<SensorOrthogonal, SbConditionTemperatureSensor>();
+33       static\_configure<Service3Orthogonal, Service3Behavior>(Service3Command::SERVICE3\_ON);
+34 
+35       \hyperlink{classsmacc_1_1SmaccState_a6fc90cf59c60c749e82f49aafb079b23}{static\_createLogicUnit}<LuAllEventsGo, 
+36                               EvAll<LuAllEventsGo, Unit1>, 
+37                               mpl::list<EvTopicMessage<SbLidarSensor>, 
+      EvTopicMessage<SbConditionTemperatureSensor>> >();
+38    \}
 \end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structStAcquireSensors_a4f638e39d921300d4dcbc9ce5fa8d1c8_cgraph}
+\end{center}
+\end{figure}
+
+
 \index{St\+Acquire\+Sensors@{St\+Acquire\+Sensors}!on\+Initialize@{on\+Initialize}}
 \index{on\+Initialize@{on\+Initialize}!St\+Acquire\+Sensors@{St\+Acquire\+Sensors}}
 \subsubsection[{\texorpdfstring{on\+Initialize()}{onInitialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void St\+Acquire\+Sensors\+::on\+Initialize (
@@ -103,117 +120,16 @@ References S\+E\+R\+V\+I\+C\+E3\+\_\+\+ON.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structStAcquireSensors_af25bdea33dab12d2c37301eb999ac6e8}{}\label{structStAcquireSensors_af25bdea33dab12d2c37301eb999ac6e8}
 
 
-Definition at line 31 of file st\+\_\+acquire\+\_\+sensors.\+h.
-
-
-
-References All\+Event\+Aggregator\+::set\+Trigger\+Event\+Types\+Count().
+Definition at line 40 of file st\+\_\+acquire\+\_\+sensors.\+h.
 
 
 \begin{DoxyCode}
-32    \{
-33       \hyperlink{structStAcquireSensors_adc57ee1bdc2d1622b65811366f70845b}{allSensorsReady}.\hyperlink{classAllEventAggregator_ab9d6e59d70fd564ffa2333a30c9a41de}{setTriggerEventTypesCount}(2);
-34    \}
+41    \{
+42       \textcolor{comment}{//allSensorsReady.setTriggerEventTypesCount(2);}
+43    \}
 \end{DoxyCode}
-
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{structStAcquireSensors_af25bdea33dab12d2c37301eb999ac6e8_cgraph}
-\end{center}
-\end{figure}
-
-
-\index{St\+Acquire\+Sensors@{St\+Acquire\+Sensors}!react@{react}}
-\index{react@{react}!St\+Acquire\+Sensors@{St\+Acquire\+Sensors}}
-\subsubsection[{\texorpdfstring{react(const Ev\+Topic\+Message$<$ Lidar\+Sensor $>$ \&ev)}{react(const EvTopicMessage< LidarSensor > &ev)}}]{\setlength{\rightskip}{0pt plus 5cm}sc\+::result St\+Acquire\+Sensors\+::react (
-\begin{DoxyParamCaption}
-\item[{const {\bf Ev\+Topic\+Message}$<$ {\bf Lidar\+Sensor} $>$ \&}]{ev}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structStAcquireSensors_aa3c461ccdb69aa4c7d09b88dae21c646}{}\label{structStAcquireSensors_aa3c461ccdb69aa4c7d09b88dae21c646}
-
-
-Definition at line 36 of file st\+\_\+acquire\+\_\+sensors.\+h.
-
-
-
-References All\+Event\+Aggregator\+::notify().
-
-
-\begin{DoxyCode}
-37    \{
-38       ROS\_INFO\_ONCE(\textcolor{stringliteral}{"Lidar sensor is ready"});
-39 
-40       \textcolor{keywordflow}{if} (\hyperlink{structStAcquireSensors_adc57ee1bdc2d1622b65811366f70845b}{allSensorsReady}.\hyperlink{classAllEventAggregator_aec3ce484f803c39cb1fddefb07611e45}{notify}(ev))
-41          this->\hyperlink{classsmacc_1_1SmaccState_a56ccdfaf818ed6409dcbd4ab8b01c60e}{throwFinishEvent}();
-42 
-43       \textcolor{keywordflow}{return} discard\_event();
-44    \}
-\end{DoxyCode}
-
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{structStAcquireSensors_aa3c461ccdb69aa4c7d09b88dae21c646_cgraph}
-\end{center}
-\end{figure}
-
-
-\index{St\+Acquire\+Sensors@{St\+Acquire\+Sensors}!react@{react}}
-\index{react@{react}!St\+Acquire\+Sensors@{St\+Acquire\+Sensors}}
-\subsubsection[{\texorpdfstring{react(const Ev\+Topic\+Message$<$ smacc\+::\+Sensor\+Topic$<$ sensor\+\_\+msgs\+::\+Temperature $>$$>$ \&ev)}{react(const EvTopicMessage< smacc::SensorTopic< sensor_msgs::Temperature >> &ev)}}]{\setlength{\rightskip}{0pt plus 5cm}sc\+::result St\+Acquire\+Sensors\+::react (
-\begin{DoxyParamCaption}
-\item[{const {\bf Ev\+Topic\+Message}$<$ {\bf smacc\+::\+Sensor\+Topic}$<$ sensor\+\_\+msgs\+::\+Temperature $>$$>$ \&}]{ev}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structStAcquireSensors_af69db5f01143f5b9267fbd39fc566be8}{}\label{structStAcquireSensors_af69db5f01143f5b9267fbd39fc566be8}
-
-
-Definition at line 46 of file st\+\_\+acquire\+\_\+sensors.\+h.
-
-
-
-References All\+Event\+Aggregator\+::notify().
-
-
-\begin{DoxyCode}
-47    \{
-48       ROS\_INFO\_ONCE(\textcolor{stringliteral}{"Temperature sensor is ready"});
-49       \textcolor{keywordflow}{if} (\hyperlink{structStAcquireSensors_adc57ee1bdc2d1622b65811366f70845b}{allSensorsReady}.\hyperlink{classAllEventAggregator_aec3ce484f803c39cb1fddefb07611e45}{notify}(ev))
-50          this->\hyperlink{classsmacc_1_1SmaccState_a56ccdfaf818ed6409dcbd4ab8b01c60e}{throwFinishEvent}();
-51 
-52       \textcolor{keywordflow}{return} discard\_event();
-53    \}
-\end{DoxyCode}
-
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{structStAcquireSensors_af69db5f01143f5b9267fbd39fc566be8_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-\subsection{Member Data Documentation}
-\index{St\+Acquire\+Sensors@{St\+Acquire\+Sensors}!all\+Sensors\+Ready@{all\+Sensors\+Ready}}
-\index{all\+Sensors\+Ready@{all\+Sensors\+Ready}!St\+Acquire\+Sensors@{St\+Acquire\+Sensors}}
-\subsubsection[{\texorpdfstring{all\+Sensors\+Ready}{allSensorsReady}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf All\+Event\+Aggregator} St\+Acquire\+Sensors\+::all\+Sensors\+Ready}\hypertarget{structStAcquireSensors_adc57ee1bdc2d1622b65811366f70845b}{}\label{structStAcquireSensors_adc57ee1bdc2d1622b65811366f70845b}
-
-
-Definition at line 20 of file st\+\_\+acquire\+\_\+sensors.\+h.
-
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-smacc\+\_\+sm\+\_\+examples/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/states/\hyperlink{st__acquire__sensors_8h}{st\+\_\+acquire\+\_\+sensors.\+h}\end{DoxyCompactItemize}
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/states/\hyperlink{st__acquire__sensors_8h}{st\+\_\+acquire\+\_\+sensors.\+h}\end{DoxyCompactItemize}

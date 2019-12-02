@@ -1,0 +1,89 @@
+\hypertarget{structsm__viewer__sim_1_1SmViewerSim}{}\section{sm\+\_\+viewer\+\_\+sim\+:\+:Sm\+Viewer\+Sim Struct Reference}
+\label{structsm__viewer__sim_1_1SmViewerSim}\index{sm\+\_\+viewer\+\_\+sim\+::\+Sm\+Viewer\+Sim@{sm\+\_\+viewer\+\_\+sim\+::\+Sm\+Viewer\+Sim}}
+
+
+{\ttfamily \#include $<$sm\+\_\+viewer\+\_\+sim.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+viewer\+\_\+sim\+:\+:Sm\+Viewer\+Sim\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structsm__viewer__sim_1_1SmViewerSim__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+viewer\+\_\+sim\+:\+:Sm\+Viewer\+Sim\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsm__viewer__sim_1_1SmViewerSim__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{structsm__viewer__sim_1_1SmViewerSim_a1ad4e963a078af53a55097c6eb78cae0}{on\+Initialize} () override
+\item 
+void \hyperlink{structsm__viewer__sim_1_1SmViewerSim_a7b9ef19f73db25f93b1b540eb744365b}{unconsumed\+\_\+event} (const sc\+::event\+\_\+base \&)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 48 of file sm\+\_\+viewer\+\_\+sim.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+viewer\+\_\+sim\+::\+Sm\+Viewer\+Sim@{sm\+\_\+viewer\+\_\+sim\+::\+Sm\+Viewer\+Sim}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!sm\+\_\+viewer\+\_\+sim\+::\+Sm\+Viewer\+Sim@{sm\+\_\+viewer\+\_\+sim\+::\+Sm\+Viewer\+Sim}}
+\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+viewer\+\_\+sim\+::\+Sm\+Viewer\+Sim\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{structsm__viewer__sim_1_1SmViewerSim_a1ad4e963a078af53a55097c6eb78cae0}{}\label{structsm__viewer__sim_1_1SmViewerSim_a1ad4e963a078af53a55097c6eb78cae0}
+
+
+Reimplemented from \hyperlink{structsmacc_1_1SmaccStateMachineBase_a50b87e60fe9d1ed4dddd703ccf1390ae}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Viewer\+Sim, Ms\+Run\+Mode $>$}.
+
+
+
+Definition at line 52 of file sm\+\_\+viewer\+\_\+sim.\+h.
+
+
+\begin{DoxyCode}
+53     \{
+54         this->createOrthogonal<NavigationOrthogonal>();
+55         \textcolor{keywordtype}{int} initialcounterValue = 0;
+56         \textcolor{comment}{//this->setGlobalSMData("St2Attempts", initialcounterValue);}
+57     \}
+\end{DoxyCode}
+\index{sm\+\_\+viewer\+\_\+sim\+::\+Sm\+Viewer\+Sim@{sm\+\_\+viewer\+\_\+sim\+::\+Sm\+Viewer\+Sim}!unconsumed\+\_\+event@{unconsumed\+\_\+event}}
+\index{unconsumed\+\_\+event@{unconsumed\+\_\+event}!sm\+\_\+viewer\+\_\+sim\+::\+Sm\+Viewer\+Sim@{sm\+\_\+viewer\+\_\+sim\+::\+Sm\+Viewer\+Sim}}
+\subsubsection[{\texorpdfstring{unconsumed\+\_\+event(const sc\+::event\+\_\+base \&)}{unconsumed_event(const sc::event_base &)}}]{\setlength{\rightskip}{0pt plus 5cm}void sm\+\_\+viewer\+\_\+sim\+::\+Sm\+Viewer\+Sim\+::unconsumed\+\_\+event (
+\begin{DoxyParamCaption}
+\item[{const sc\+::event\+\_\+base \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsm__viewer__sim_1_1SmViewerSim_a7b9ef19f73db25f93b1b540eb744365b}{}\label{structsm__viewer__sim_1_1SmViewerSim_a7b9ef19f73db25f93b1b540eb744365b}
+
+
+Definition at line 59 of file sm\+\_\+viewer\+\_\+sim.\+h.
+
+
+\begin{DoxyCode}
+60     \{
+61         \textcolor{keywordflow}{throw} std::runtime\_error(\textcolor{stringliteral}{"Event was not consumed!"});
+62     \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+viewer\+\_\+sim/include/sm\+\_\+viewer\+\_\+sim/\hyperlink{sm__viewer__sim_8h}{sm\+\_\+viewer\+\_\+sim.\+h}\end{DoxyCompactItemize}

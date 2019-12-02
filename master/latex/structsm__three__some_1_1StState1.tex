@@ -1,0 +1,101 @@
+\hypertarget{structsm__three__some_1_1StState1}{}\section{sm\+\_\+three\+\_\+some\+:\+:St\+State1 Struct Reference}
+\label{structsm__three__some_1_1StState1}\index{sm\+\_\+three\+\_\+some\+::\+St\+State1@{sm\+\_\+three\+\_\+some\+::\+St\+State1}}
+
+
+{\ttfamily \#include $<$st\+\_\+state\+\_\+1.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+three\+\_\+some\+:\+:St\+State1\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structsm__three__some_1_1StState1__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+three\+\_\+some\+:\+:St\+State1\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structsm__three__some_1_1StState1__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ \hyperlink{structsmacc_1_1EvTopicMessage}{smacc\+::\+Ev\+Topic\+Message}$<$ \hyperlink{classsm__three__some_1_1Client1}{Client1} $>$, \hyperlink{structsm__three__some_1_1StState2}{St\+State2} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ \hyperlink{structsmacc_1_1EvTopicMessage}{smacc\+::\+Ev\+Topic\+Message}$<$ \hyperlink{classsm__three__some_1_1SbBehavior2}{Sb\+Behavior2} $>$, \hyperlink{structsm__three__some_1_1StState3}{St\+State3} $>$ $>$ \hyperlink{structsm__three__some_1_1StState1_ab9c849d08a55f31395e2cafe759a9f1f}{reactions}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structsm__three__some_1_1StState1_ac57412e5c59fa38f9a58be3b56b62762}{on\+Initialize} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{structsm__three__some_1_1StState1_a69bbe0bcf47acd2ea803972785c23589}{on\+Definition} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 3 of file st\+\_\+state\+\_\+1.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{sm\+\_\+three\+\_\+some\+::\+St\+State1@{sm\+\_\+three\+\_\+some\+::\+St\+State1}!reactions@{reactions}}
+\index{reactions@{reactions}!sm\+\_\+three\+\_\+some\+::\+St\+State1@{sm\+\_\+three\+\_\+some\+::\+St\+State1}}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<${\bf smacc\+::transition}$<${\bf smacc\+::\+Ev\+Topic\+Message}$<${\bf Client1}$>$, {\bf St\+State2}$>$, {\bf smacc\+::transition}$<${\bf smacc\+::\+Ev\+Topic\+Message}$<${\bf Sb\+Behavior2}$>$, {\bf St\+State3}$>$ $>$ {\bf sm\+\_\+three\+\_\+some\+::\+St\+State1\+::reactions}}\hypertarget{structsm__three__some_1_1StState1_ab9c849d08a55f31395e2cafe759a9f1f}{}\label{structsm__three__some_1_1StState1_ab9c849d08a55f31395e2cafe759a9f1f}
+
+
+Definition at line 9 of file st\+\_\+state\+\_\+1.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+three\+\_\+some\+::\+St\+State1@{sm\+\_\+three\+\_\+some\+::\+St\+State1}!on\+Definition@{on\+Definition}}
+\index{on\+Definition@{on\+Definition}!sm\+\_\+three\+\_\+some\+::\+St\+State1@{sm\+\_\+three\+\_\+some\+::\+St\+State1}}
+\subsubsection[{\texorpdfstring{on\+Definition()}{onDefinition()}}]{\setlength{\rightskip}{0pt plus 5cm}static void sm\+\_\+three\+\_\+some\+::\+St\+State1\+::on\+Definition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structsm__three__some_1_1StState1_a69bbe0bcf47acd2ea803972785c23589}{}\label{structsm__three__some_1_1StState1_a69bbe0bcf47acd2ea803972785c23589}
+
+
+Definition at line 11 of file st\+\_\+state\+\_\+1.\+h.
+
+
+\begin{DoxyCode}
+12     \{
+13         static\_configure<Orthogonal1, SbBehavior1>();
+14         static\_configure<Orthogonal2, SbBehavior2>();
+15     \}
+\end{DoxyCode}
+\index{sm\+\_\+three\+\_\+some\+::\+St\+State1@{sm\+\_\+three\+\_\+some\+::\+St\+State1}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!sm\+\_\+three\+\_\+some\+::\+St\+State1@{sm\+\_\+three\+\_\+some\+::\+St\+State1}}
+\subsubsection[{\texorpdfstring{on\+Initialize()}{onInitialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void sm\+\_\+three\+\_\+some\+::\+St\+State1\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsm__three__some_1_1StState1_ac57412e5c59fa38f9a58be3b56b62762}{}\label{structsm__three__some_1_1StState1_ac57412e5c59fa38f9a58be3b56b62762}
+
+
+Definition at line 17 of file st\+\_\+state\+\_\+1.\+h.
+
+
+\begin{DoxyCode}
+18     \{
+19     \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+three\+\_\+some/include/sm\+\_\+three\+\_\+some/states/\hyperlink{sm__three__some_2include_2sm__three__some_2states_2st__state__1_8h}{st\+\_\+state\+\_\+1.\+h}\end{DoxyCompactItemize}

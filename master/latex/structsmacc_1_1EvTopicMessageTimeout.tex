@@ -1,39 +1,67 @@
-\hypertarget{structsmacc_1_1EvTopicMessageTimeout}{}\section{smacc\+:\+:Ev\+Topic\+Message\+Timeout$<$ Sensor\+Behavior\+Type $>$ Struct Template Reference}
-\label{structsmacc_1_1EvTopicMessageTimeout}\index{smacc\+::\+Ev\+Topic\+Message\+Timeout$<$ Sensor\+Behavior\+Type $>$@{smacc\+::\+Ev\+Topic\+Message\+Timeout$<$ Sensor\+Behavior\+Type $>$}}
+\hypertarget{structsmacc_1_1EvTopicMessageTimeout}{}\section{smacc\+:\+:Ev\+Topic\+Message\+Timeout$<$ T\+Source $>$ Struct Template Reference}
+\label{structsmacc_1_1EvTopicMessageTimeout}\index{smacc\+::\+Ev\+Topic\+Message\+Timeout$<$ T\+Source $>$@{smacc\+::\+Ev\+Topic\+Message\+Timeout$<$ T\+Source $>$}}
 
 
 {\ttfamily \#include $<$sensor\+\_\+client.\+h$>$}
 
 
 
-Inheritance diagram for smacc\+:\+:Ev\+Topic\+Message\+Timeout$<$ Sensor\+Behavior\+Type $>$\+:
+Inheritance diagram for smacc\+:\+:Ev\+Topic\+Message\+Timeout$<$ T\+Source $>$\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=251pt]{structsmacc_1_1EvTopicMessageTimeout__inherit__graph}
+\includegraphics[width=243pt]{structsmacc_1_1EvTopicMessageTimeout__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for smacc\+:\+:Ev\+Topic\+Message\+Timeout$<$ Sensor\+Behavior\+Type $>$\+:
+Collaboration diagram for smacc\+:\+:Ev\+Topic\+Message\+Timeout$<$ T\+Source $>$\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=251pt]{structsmacc_1_1EvTopicMessageTimeout__coll__graph}
+\includegraphics[width=243pt]{structsmacc_1_1EvTopicMessageTimeout__coll__graph}
 \end{center}
 \end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \hyperlink{structsmacc_1_1EvTopicMessageTimeout_a81f0e1e52aa1ed9d6ec67200b3b013ef}{get\+Event\+Label} ()
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\subsubsection*{template$<$typename Sensor\+Behavior\+Type$>$\\*
-struct smacc\+::\+Ev\+Topic\+Message\+Timeout$<$ Sensor\+Behavior\+Type $>$}
+\subsubsection*{template$<$typename T\+Source$>$\\*
+struct smacc\+::\+Ev\+Topic\+Message\+Timeout$<$ T\+Source $>$}
 
 
 
 Definition at line 15 of file sensor\+\_\+client.\+h.
 
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::\+Ev\+Topic\+Message\+Timeout@{smacc\+::\+Ev\+Topic\+Message\+Timeout}!get\+Event\+Label@{get\+Event\+Label}}
+\index{get\+Event\+Label@{get\+Event\+Label}!smacc\+::\+Ev\+Topic\+Message\+Timeout@{smacc\+::\+Ev\+Topic\+Message\+Timeout}}
+\subsubsection[{\texorpdfstring{get\+Event\+Label()}{getEventLabel()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Source$>$ static std\+::string {\bf smacc\+::\+Ev\+Topic\+Message\+Timeout}$<$ T\+Source $>$\+::get\+Event\+Label (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structsmacc_1_1EvTopicMessageTimeout_a81f0e1e52aa1ed9d6ec67200b3b013ef}{}\label{structsmacc_1_1EvTopicMessageTimeout_a81f0e1e52aa1ed9d6ec67200b3b013ef}
+
+
+Definition at line 17 of file sensor\+\_\+client.\+h.
+
+
+\begin{DoxyCode}
+18   \{
+19     \textcolor{keyword}{auto} typeinfo = TypeInfo::getTypeInfoFromType<typename TSource::TMessageType>();
+20 
+21     std::string label = typeinfo->getNonTemplatetypename();
+22     \textcolor{keywordflow}{return} label;
+23   \}
+\end{DoxyCode}
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}

@@ -103,7 +103,7 @@ Inheritance diagram for smacc::ISmaccComponent:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsmacc_1_1ISmaccComponent__inherit__graph.png" border="0" usemap="#smacc_1_1ISmaccComponent_inherit__map" alt="Inheritance graph"/></div>
 <map name="smacc_1_1ISmaccComponent_inherit__map" id="smacc_1_1ISmaccComponent_inherit__map">
-<area shape="rect" id="node2" href="classsmacc__odom__tracker_1_1OdomTracker.html" title="This class track the required distance of the cord based on the external localization system..." alt="" coords="5,204,264,677"/>
+<area shape="rect" id="node2" href="classsmacc__odom__tracker_1_1OdomTracker.html" title="This class track the required distance of the cord based on the external localization system..." alt="" coords="5,204,244,677"/>
 </map>
 </div>
 <div class="dynheader">
@@ -111,8 +111,9 @@ Collaboration diagram for smacc::ISmaccComponent:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsmacc_1_1ISmaccComponent__coll__graph.png" border="0" usemap="#smacc_1_1ISmaccComponent_coll__map" alt="Collaboration graph"/></div>
 <map name="smacc_1_1ISmaccComponent_coll__map" id="smacc_1_1ISmaccComponent_coll__map">
-<area shape="rect" id="node2" href="classsmacc_1_1ISmaccStateMachine.html" title="{smacc::ISmaccStateMachine\n||+ ISmaccStateMachine()\l+ ~ISmaccStateMachine()\l+ Reset()\l+ Stop()\l+ EStop()\l+ notifyOnStateEntry()\l+ notifyOnStateExit()\l+ getOrthogonal()\l+ requiresComponent()\l+ postEvent()\l+ getGlobalSMData()\l+ setGlobalSMData()\l+ registerActionClientRequest()\l+ mapBehavior()\l+ updateCurrentState()\l+ getStateMachineName()\l# createOrthogonal()\l}" alt="" coords="446,189,669,501"/>
-<area shape="rect" id="node7" href="classsmacc_1_1SignalDetector.html" title="{smacc::SignalDetector\n||+ SignalDetector()\l+ initialize()\l+ setProcessorHandle()\l+ runThread()\l+ join()\l+ stop()\l+ toString()\l+ pollingLoop()\l+ pollOnce()\l+ postEvent()\l&#45; finalizeRequest()\l&#45; notifyFeedback()\l&#45; registerActionClientRequest()\l}" alt="" coords="978,564,1195,817"/>
+<area shape="rect" id="node2" href="classsmacc_1_1ISmaccStateMachine.html" title="{smacc::ISmaccStateMachine\n||+ ISmaccStateMachine()\l+ ~ISmaccStateMachine()\l+ Reset()\l+ Stop()\l+ EStop()\l+ notifyOnStateEntry()\l+ notifyOnStateExit()\l+ getOrthogonal()\l+ getOrthogonals()\l+ requiresComponent()\l+ postEvent()\l+ getGlobalSMData()\l+ setGlobalSMData()\l+ mapBehavior()\l+ updateCurrentState()\l+ updateStatusMessage()\l+ getStateMachineName()\l+ state_machine_visualization()\l+ getCurrentState()\l+ getCurrentStateInfo()\l+ publishTransition()\l# initializeRosComponents()\l# createOrthogonal()\l# getParam()\l# setParam()\l# param()\l}" alt="" coords="850,549,1057,993"/>
+<area shape="rect" id="node10" href="classsmacc_1_1SignalDetector.html" title="{smacc::SignalDetector\n||+ SignalDetector()\l+ initialize()\l+ setProcessorHandle()\l+ runThread()\l+ join()\l+ stop()\l+ pollingLoop()\l+ pollOnce()\l+ postEvent()\l}" alt="" coords="1384,1056,1544,1251"/>
+<area shape="rect" id="node17" href="classsmacc_1_1ISmaccState.html" title="{smacc::ISmaccState\n||+ getParam()\l+ setParam()\l+ param()\l+ getStateMachine()\l+ getClassName()\l+ configure()\l+ requiresComponent()\l+ requiresClient()\l+ getGlobalSMData()\l+ setGlobalSMData()\l+ createLogicUnit()\l+ postEvent()\l+ notifyTransition()\l+ notifyTransitionFromTransition\lTypeInfo()\l}" alt="" coords="5,160,216,443"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -207,15 +208,15 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="smacc__component_8cpp_source.html#l00030">30</a> of file <a class="el" href="smacc__component_8cpp_source.html">smacc_component.cpp</a>.</p>
 
-<p>References <a class="el" href="common_8h_source.html#l00137">demangleSymbol()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::string keyname = <a class="code" href="common_8h.html#a401d7e4f000fd4246a20be1e7d5ec2fc">demangleSymbol</a>(<span class="keyword">typeid</span>(*this).name());</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> keyname;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div><div class="ttc" id="common_8h_html_a401d7e4f000fd4246a20be1e7d5ec2fc"><div class="ttname"><a href="common_8h.html#a401d7e4f000fd4246a20be1e7d5ec2fc">demangleSymbol</a></div><div class="ttdeci">std::string demangleSymbol(const char *name)</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00137">common.h:137</a></div></div>
+<p>References <a class="el" href="introspection_8h_source.html#l00042">smacc::demangleSymbol()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::string keyname = <a class="code" href="namespacesmacc.html#a458f5e70d468824fbcd66cc7729deaa8">demangleSymbol</a>(<span class="keyword">typeid</span>(*this).name());</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> keyname;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div><div class="ttc" id="namespacesmacc_html_a458f5e70d468824fbcd66cc7729deaa8"><div class="ttname"><a href="namespacesmacc.html#a458f5e70d468824fbcd66cc7729deaa8">smacc::demangleSymbol</a></div><div class="ttdeci">std::string demangleSymbol(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="introspection_8h_source.html#l00042">introspection.h:42</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsmacc_1_1ISmaccComponent_aa314809a7fd3516461e31cc120d0cfe7_cgraph.png" border="0" usemap="#classsmacc_1_1ISmaccComponent_aa314809a7fd3516461e31cc120d0cfe7_cgraph" alt=""/></div>
 <map name="classsmacc_1_1ISmaccComponent_aa314809a7fd3516461e31cc120d0cfe7_cgraph" id="classsmacc_1_1ISmaccComponent_aa314809a7fd3516461e31cc120d0cfe7_cgraph">
-<area shape="rect" id="node2" href="common_8h.html#a401d7e4f000fd4246a20be1e7d5ec2fc" title="demangleSymbol" alt="" coords="248,13,383,39"/>
+<area shape="rect" id="node2" href="namespacesmacc.html#a458f5e70d468824fbcd66cc7729deaa8" title="smacc::demangleSymbol" alt="" coords="235,13,404,39"/>
 </map>
 </div>
 </p>
@@ -265,25 +266,17 @@ template&lt;typename EventType &gt; </div>
 
 <p>Definition at line <a class="el" href="smacc__component__impl_8h_source.html#l00009">9</a> of file <a class="el" href="smacc__component__impl_8h_source.html">smacc_component_impl.h</a>.</p>
 
-<p>References <a class="el" href="smacc__state__machine__impl_8h_source.html#l00103">smacc::ISmaccStateMachine::postEvent()</a>, and <a class="el" href="component_8h_source.html#l00031">stateMachine_</a>.</p>
-<div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    {</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <a class="code" href="classsmacc_1_1ISmaccComponent.html#ae3f37acc1679f79299b86872d4b1f80f">stateMachine_</a>-&gt;<a class="code" href="classsmacc_1_1ISmaccStateMachine.html#ad80cdd7bbc9a9f3b221c625754fed1ed">postEvent</a>(ev);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    }</div><div class="ttc" id="classsmacc_1_1ISmaccComponent_html_ae3f37acc1679f79299b86872d4b1f80f"><div class="ttname"><a href="classsmacc_1_1ISmaccComponent.html#ae3f37acc1679f79299b86872d4b1f80f">smacc::ISmaccComponent::stateMachine_</a></div><div class="ttdeci">ISmaccStateMachine * stateMachine_</div><div class="ttdef"><b>Definition:</b> <a href="component_8h_source.html#l00031">component.h:31</a></div></div>
-<div class="ttc" id="classsmacc_1_1ISmaccStateMachine_html_ad80cdd7bbc9a9f3b221c625754fed1ed"><div class="ttname"><a href="classsmacc_1_1ISmaccStateMachine.html#ad80cdd7bbc9a9f3b221c625754fed1ed">smacc::ISmaccStateMachine::postEvent</a></div><div class="ttdeci">void postEvent(EventType *ev)</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__machine__impl_8h_source.html#l00103">smacc_state_machine_impl.h:103</a></div></div>
+<p>References <a class="el" href="smacc__state__machine__impl_8h_source.html#l00104">smacc::ISmaccStateMachine::postEvent()</a>, and <a class="el" href="component_8h_source.html#l00031">stateMachine_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="classsmacc_1_1ISmaccComponent.html#ae3f37acc1679f79299b86872d4b1f80f">stateMachine_</a>-&gt;<a class="code" href="classsmacc_1_1ISmaccStateMachine.html#ad80cdd7bbc9a9f3b221c625754fed1ed">postEvent</a>(ev);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div><div class="ttc" id="classsmacc_1_1ISmaccComponent_html_ae3f37acc1679f79299b86872d4b1f80f"><div class="ttname"><a href="classsmacc_1_1ISmaccComponent.html#ae3f37acc1679f79299b86872d4b1f80f">smacc::ISmaccComponent::stateMachine_</a></div><div class="ttdeci">ISmaccStateMachine * stateMachine_</div><div class="ttdef"><b>Definition:</b> <a href="component_8h_source.html#l00031">component.h:31</a></div></div>
+<div class="ttc" id="classsmacc_1_1ISmaccStateMachine_html_ad80cdd7bbc9a9f3b221c625754fed1ed"><div class="ttname"><a href="classsmacc_1_1ISmaccStateMachine.html#ad80cdd7bbc9a9f3b221c625754fed1ed">smacc::ISmaccStateMachine::postEvent</a></div><div class="ttdeci">void postEvent(EventType *ev)</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__machine__impl_8h_source.html#l00104">smacc_state_machine_impl.h:104</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsmacc_1_1ISmaccComponent_a687dead5b87a3b9781b9bf6ab0b7afa5_cgraph.png" border="0" usemap="#classsmacc_1_1ISmaccComponent_a687dead5b87a3b9781b9bf6ab0b7afa5_cgraph" alt=""/></div>
 <map name="classsmacc_1_1ISmaccComponent_a687dead5b87a3b9781b9bf6ab0b7afa5_cgraph" id="classsmacc_1_1ISmaccComponent_a687dead5b87a3b9781b9bf6ab0b7afa5_cgraph">
-<area shape="rect" id="node2" href="classsmacc_1_1ISmaccStateMachine.html#ad80cdd7bbc9a9f3b221c625754fed1ed" title="smacc::ISmaccStateMachine\l::postEvent" alt="" coords="248,71,455,112"/>
-<area shape="rect" id="node3" href="classsmacc_1_1SignalDetector.html#a6ab99d99cef8d101e39797a72daeb2b7" title="smacc::SignalDetector\l::postEvent" alt="" coords="503,71,669,112"/>
-<area shape="rect" id="node4" href="classsmacc_1_1SignalDetector.html#af455ae5187fc9405d790992060af647b" title="smacc::SignalDetector\l::finalizeRequest" alt="" coords="737,71,904,112"/>
-<area shape="rect" id="node9" href="classsmacc_1_1SignalDetector.html#a2c848e6d3bc64996cf8f7e56f3de1ee6" title="smacc::SignalDetector\l::notifyFeedback" alt="" coords="737,168,904,209"/>
-<area shape="rect" id="node11" href="classsmacc_1_1SignalDetector.html#a9a28cc1e9dcf7d204f3589fad8291bfd" title="smacc::SignalDetector\l::registerActionClientRequest" alt="" coords="717,5,924,47"/>
-<area shape="rect" id="node5" href="classsmacc_1_1ISmaccClient.html#a20846aabfd1de832aa27d7a8237a1742" title="smacc::ISmaccClient\l::getName" alt="" coords="992,5,1147,47"/>
-<area shape="rect" id="node7" href="classsmacc_1_1ISmaccActionClient.html#a272349b93828674d57fb48070f4edebf" title="smacc::ISmaccActionClient\l::getState" alt="" coords="972,71,1167,112"/>
-<area shape="rect" id="node8" href="classsmacc_1_1ISmaccActionClient.html#a5d7d401ab20e1354348848f427a603ed" title="smacc::ISmaccActionClient\l::postEvent" alt="" coords="972,136,1167,177"/>
-<area shape="rect" id="node6" href="common_8h.html#a401d7e4f000fd4246a20be1e7d5ec2fc" title="demangleSymbol" alt="" coords="1215,13,1349,39"/>
-<area shape="rect" id="node10" href="classsmacc_1_1ISmaccActionClient.html#af3b9ad387577ce3edcf4f0a93cf87599" title="smacc::ISmaccActionClient\l::postFeedbackEvent" alt="" coords="972,201,1167,243"/>
+<area shape="rect" id="node2" href="classsmacc_1_1ISmaccStateMachine.html#ad80cdd7bbc9a9f3b221c625754fed1ed" title="smacc::ISmaccStateMachine\l::postEvent" alt="" coords="235,5,429,47"/>
+<area shape="rect" id="node3" href="classsmacc_1_1SignalDetector.html#a6ab99d99cef8d101e39797a72daeb2b7" title="smacc::SignalDetector\l::postEvent" alt="" coords="477,5,632,47"/>
 </map>
 </div>
 </p>

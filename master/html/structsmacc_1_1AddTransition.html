@@ -110,9 +110,18 @@ Collaboration diagram for smacc::AddTransition:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aaca309ef77d327ac3ac9c45af7d9b902"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsmacc_1_1AddTransition.html#aaca309ef77d327ac3ac9c45af7d9b902">AddTransition</a> (std::shared_ptr&lt; <a class="el" href="classsmacc_1_1SmaccStateInfo.html">SmaccStateInfo</a> &gt; &amp;currentState)</td></tr>
 <tr class="separator:aaca309ef77d327ac3ac9c45af7d9b902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5b84d0a9d5975bcbd895310e9d39aa0"><td class="memTemplParams" colspan="2">template&lt;template&lt; typename, typename, typename &gt; typename TTransition, typename TevSource , template&lt; typename &gt; typename EvType, typename Tag , typename DestinyState &gt; </td></tr>
+<tr class="memitem:ad5b84d0a9d5975bcbd895310e9d39aa0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structsmacc_1_1AddTransition.html#ad5b84d0a9d5975bcbd895310e9d39aa0">operator()</a> (TTransition&lt; EvType&lt; TevSource &gt;, DestinyState, Tag &gt;)</td></tr>
+<tr class="separator:ad5b84d0a9d5975bcbd895310e9d39aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcbe483fb0ee38710ad8861549b3a53c"><td class="memTemplParams" colspan="2">template&lt;template&lt; typename, typename &gt; typename TTransition, typename TevSource , template&lt; typename &gt; typename EvType, typename DestinyState &gt; </td></tr>
+<tr class="memitem:afcbe483fb0ee38710ad8861549b3a53c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structsmacc_1_1AddTransition.html#afcbe483fb0ee38710ad8861549b3a53c">operator()</a> (TTransition&lt; EvType&lt; TevSource &gt;, DestinyState &gt;)</td></tr>
+<tr class="separator:afcbe483fb0ee38710ad8861549b3a53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d4ece2e48045d830fc924b094522d36"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a4d4ece2e48045d830fc924b094522d36"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structsmacc_1_1AddTransition.html#a4d4ece2e48045d830fc924b094522d36">operator()</a> (T)</td></tr>
 <tr class="separator:a4d4ece2e48045d830fc924b094522d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca537c29c2dad6c0844032dee56b31a9"><td class="memTemplParams" colspan="2">template&lt;typename TTrans&gt; </td></tr>
+<tr class="memitem:aca537c29c2dad6c0844032dee56b31a9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structsmacc_1_1AddTransition.html#aca537c29c2dad6c0844032dee56b31a9">operator()</a> (TTrans)</td></tr>
+<tr class="separator:aca537c29c2dad6c0844032dee56b31a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -121,7 +130,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00101">101</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00070">70</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aaca309ef77d327ac3ac9c45af7d9b902"></a>
 <div class="memitem">
@@ -145,12 +154,54 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00105">105</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        : <a class="code" href="structsmacc_1_1AddTransition.html#a0fd1d2d424ac74b700a46f8409fc8353">currentState_</a>(currentState)</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    {</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div><div class="ttc" id="structsmacc_1_1AddTransition_html_a0fd1d2d424ac74b700a46f8409fc8353"><div class="ttname"><a href="structsmacc_1_1AddTransition.html#a0fd1d2d424ac74b700a46f8409fc8353">smacc::AddTransition::currentState_</a></div><div class="ttdeci">std::shared_ptr&lt; SmaccStateInfo &gt; &amp; currentState_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__machine__info_8h_source.html#l00103">smacc_state_machine_info.h:103</a></div></div>
+<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00074">74</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        : <a class="code" href="structsmacc_1_1AddTransition.html#a0fd1d2d424ac74b700a46f8409fc8353">currentState_</a>(currentState)</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div><div class="ttc" id="structsmacc_1_1AddTransition_html_a0fd1d2d424ac74b700a46f8409fc8353"><div class="ttname"><a href="structsmacc_1_1AddTransition.html#a0fd1d2d424ac74b700a46f8409fc8353">smacc::AddTransition::currentState_</a></div><div class="ttdeci">std::shared_ptr&lt; SmaccStateInfo &gt; &amp; currentState_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__machine__info_8h_source.html#l00072">smacc_state_machine_info.h:72</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad5b84d0a9d5975bcbd895310e9d39aa0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; typename, typename, typename &gt; typename TTransition, typename TevSource , template&lt; typename &gt; typename EvType, typename Tag , typename DestinyState &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void smacc::AddTransition::operator() </td>
+          <td>(</td>
+          <td class="paramtype">TTransition&lt; EvType&lt; TevSource &gt;, DestinyState, Tag &gt;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00297">297</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;{</div><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    processTransitions&lt;TTransition&lt;EvType&lt;TevSource&gt;, DestinyState, Tag&gt;&gt;(<a class="code" href="structsmacc_1_1AddTransition.html#a0fd1d2d424ac74b700a46f8409fc8353">currentState_</a>);</div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;}</div><div class="ttc" id="structsmacc_1_1AddTransition_html_a0fd1d2d424ac74b700a46f8409fc8353"><div class="ttname"><a href="structsmacc_1_1AddTransition.html#a0fd1d2d424ac74b700a46f8409fc8353">smacc::AddTransition::currentState_</a></div><div class="ttdeci">std::shared_ptr&lt; SmaccStateInfo &gt; &amp; currentState_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__machine__info_8h_source.html#l00072">smacc_state_machine_info.h:72</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="afcbe483fb0ee38710ad8861549b3a53c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; typename, typename &gt; typename TTransition, typename TevSource , template&lt; typename &gt; typename EvType, typename DestinyState &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void smacc::AddTransition::operator() </td>
+          <td>(</td>
+          <td class="paramtype">TTransition&lt; EvType&lt; TevSource &gt;, DestinyState &gt;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00305">305</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;{</div><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    processTransitions&lt;TTransition&lt;EvType&lt;TevSource&gt;, DestinyState&gt;&gt;(<a class="code" href="structsmacc_1_1AddTransition.html#a0fd1d2d424ac74b700a46f8409fc8353">currentState_</a>);</div><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;}</div><div class="ttc" id="structsmacc_1_1AddTransition_html_a0fd1d2d424ac74b700a46f8409fc8353"><div class="ttname"><a href="structsmacc_1_1AddTransition.html#a0fd1d2d424ac74b700a46f8409fc8353">smacc::AddTransition::currentState_</a></div><div class="ttdeci">std::shared_ptr&lt; SmaccStateInfo &gt; &amp; currentState_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__machine__info_8h_source.html#l00072">smacc_state_machine_info.h:72</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a class="anchor" id="a4d4ece2e48045d830fc924b094522d36"></a>
 <div class="memitem">
 <div class="memproto">
@@ -167,8 +218,26 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00216">216</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;{</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keyword">using</span> type_t = <span class="keyword">typename</span> T::type;</div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    processTransitions&lt;type_t&gt;(<a class="code" href="structsmacc_1_1AddTransition.html#a0fd1d2d424ac74b700a46f8409fc8353">currentState_</a>);</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;}</div><div class="ttc" id="structsmacc_1_1AddTransition_html_a0fd1d2d424ac74b700a46f8409fc8353"><div class="ttname"><a href="structsmacc_1_1AddTransition.html#a0fd1d2d424ac74b700a46f8409fc8353">smacc::AddTransition::currentState_</a></div><div class="ttdeci">std::shared_ptr&lt; SmaccStateInfo &gt; &amp; currentState_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__machine__info_8h_source.html#l00103">smacc_state_machine_info.h:103</a></div></div>
+</div>
+</div>
+<a class="anchor" id="aca537c29c2dad6c0844032dee56b31a9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TTrans&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void smacc::AddTransition::operator() </td>
+          <td>(</td>
+          <td class="paramtype">TTrans&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00311">311</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;{</div><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keyword">using</span> type_t = <span class="keyword">typename</span> TTrans::type;</div><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    processTransitions&lt;type_t&gt;(<a class="code" href="structsmacc_1_1AddTransition.html#a0fd1d2d424ac74b700a46f8409fc8353">currentState_</a>);</div><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;}</div><div class="ttc" id="structsmacc_1_1AddTransition_html_a0fd1d2d424ac74b700a46f8409fc8353"><div class="ttname"><a href="structsmacc_1_1AddTransition.html#a0fd1d2d424ac74b700a46f8409fc8353">smacc::AddTransition::currentState_</a></div><div class="ttdeci">std::shared_ptr&lt; SmaccStateInfo &gt; &amp; currentState_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__machine__info_8h_source.html#l00072">smacc_state_machine_info.h:72</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -183,12 +252,12 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00103">103</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00072">72</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>smacc/include/smacc/<a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a></li>
+<li>smacc/include/smacc/introspection/<a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

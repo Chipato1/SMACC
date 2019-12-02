@@ -1,6 +1,6 @@
 \hypertarget{sensor__client_8h}{}\section{smacc\+\_\+client\+\_\+library/smacc\+\_\+interface\+\_\+components/include/smacc\+\_\+interface\+\_\+components/clients/sensor\+\_\+client.h File Reference}
 \label{sensor__client_8h}\index{smacc\+\_\+client\+\_\+library/smacc\+\_\+interface\+\_\+components/include/smacc\+\_\+interface\+\_\+components/clients/sensor\+\_\+client.\+h@{smacc\+\_\+client\+\_\+library/smacc\+\_\+interface\+\_\+components/include/smacc\+\_\+interface\+\_\+components/clients/sensor\+\_\+client.\+h}}
-{\ttfamily \#include $<$smacc/interface\+\_\+components/smacc\+\_\+topic\+\_\+subscriber.\+h$>$}\\*
+{\ttfamily \#include $<$smacc/client\+\_\+bases/smacc\+\_\+subscriber\+\_\+client.\+h$>$}\\*
 {\ttfamily \#include $<$boost/statechart/event.\+hpp$>$}\\*
 {\ttfamily \#include $<$ros/ros.\+h$>$}\\*
 {\ttfamily \#include $<$ros/duration.\+h$>$}\\*
@@ -25,9 +25,9 @@ This graph shows which files directly or indirectly include this file\+:
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-struct \hyperlink{structsmacc_1_1EvTopicMessageTimeout}{smacc\+::\+Ev\+Topic\+Message\+Timeout$<$ Sensor\+Behavior\+Type $>$}
+struct \hyperlink{structsmacc_1_1EvTopicMessageTimeout}{smacc\+::\+Ev\+Topic\+Message\+Timeout$<$ T\+Source $>$}
 \item 
-class \hyperlink{classsmacc_1_1SensorClient}{smacc\+::\+Sensor\+Client$<$ Message\+Type $>$}
+class \hyperlink{classsmacc_1_1SensorClient}{smacc\+::\+Sensor\+Client$<$ T\+Derived, Message\+Type $>$}
 \end{DoxyCompactItemize}
 \subsection*{Namespaces}
 \begin{DoxyCompactItemize}

@@ -1,22 +1,25 @@
 \hypertarget{common_8h}{}\section{smacc/include/smacc/common.h File Reference}
 \label{common_8h}\index{smacc/include/smacc/common.\+h@{smacc/include/smacc/common.\+h}}
-{\ttfamily \#include $<$ros/ros.\+h$>$}\\*
 {\ttfamily \#include $<$boost/statechart/state.\+hpp$>$}\\*
 {\ttfamily \#include $<$boost/statechart/simple\+\_\+state.\+hpp$>$}\\*
 {\ttfamily \#include $<$boost/statechart/event.\+hpp$>$}\\*
-{\ttfamily \#include $<$boost/statechart/fifo\+\_\+scheduler.\+hpp$>$}\\*
 {\ttfamily \#include $<$boost/statechart/asynchronous\+\_\+state\+\_\+machine.\+hpp$>$}\\*
 {\ttfamily \#include $<$boost/statechart/custom\+\_\+reaction.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/statechart/deep\+\_\+history.\+hpp$>$}\\*
 {\ttfamily \#include $<$boost/config.\+hpp$>$}\\*
 {\ttfamily \#include $<$boost/intrusive\+\_\+ptr.\+hpp$>$}\\*
-{\ttfamily \#include $<$boost/mpl/list.\+hpp$>$}\\*
 {\ttfamily \#include $<$boost/function.\+hpp$>$}\\*
 {\ttfamily \#include $<$boost/signals2.\+hpp$>$}\\*
-{\ttfamily \#include $<$actionlib/client/simple\+\_\+action\+\_\+client.\+h$>$}\\*
-{\ttfamily \#include $<$boost/statechart/termination.\+hpp$>$}\\*
-{\ttfamily \#include $<$boost/statechart/transition.\+hpp$>$}\\*
+{\ttfamily \#include $<$boost/mpl/list.\+hpp$>$}\\*
 {\ttfamily \#include $<$boost/any.\+hpp$>$}\\*
 {\ttfamily \#include $<$boost/algorithm/string.\+hpp$>$}\\*
+{\ttfamily \#include $<$ros/ros.\+h$>$}\\*
+{\ttfamily \#include $<$actionlib/client/simple\+\_\+action\+\_\+client.\+h$>$}\\*
+{\ttfamily \#include $<$smacc/smacc\+\_\+fifo\+\_\+scheduler.\+h$>$}\\*
+{\ttfamily \#include $<$smacc/smacc\+\_\+types.\+h$>$}\\*
+{\ttfamily \#include $<$smacc/introspection/introspection.\+h$>$}\\*
+{\ttfamily \#include $<$smacc/smacc\+\_\+default\+\_\+events.\+h$>$}\\*
+{\ttfamily \#include $<$smacc/smacc\+\_\+transition.\+h$>$}\\*
 Include dependency graph for common.\+h\+:
 \nopagebreak
 \begin{figure}[H]
@@ -37,20 +40,6 @@ This graph shows which files directly or indirectly include this file\+:
 \begin{DoxyCompactItemize}
 \item 
 struct \hyperlink{structsmacc_1_1IActionResult}{smacc\+::\+I\+Action\+Result}
-\item 
-struct \hyperlink{structsmacc_1_1EvActionResult}{smacc\+::\+Ev\+Action\+Result$<$ Action\+Result $>$}
-\item 
-struct \hyperlink{structsmacc_1_1EvActionSucceded}{smacc\+::\+Ev\+Action\+Succeded$<$ Action\+Result $>$}
-\item 
-struct \hyperlink{structsmacc_1_1EvActionAborted}{smacc\+::\+Ev\+Action\+Aborted$<$ Action\+Result $>$}
-\item 
-struct \hyperlink{structsmacc_1_1EvActionPreempted}{smacc\+::\+Ev\+Action\+Preempted$<$ Action\+Result $>$}
-\item 
-struct \hyperlink{structsmacc_1_1EvActionRejected}{smacc\+::\+Ev\+Action\+Rejected$<$ Action\+Result $>$}
-\item 
-struct \hyperlink{structsmacc_1_1EvStateFinish}{smacc\+::\+Ev\+State\+Finish$<$ State\+Type $>$}
-\item 
-struct \hyperlink{structsmacc_1_1EvActionFeedback}{smacc\+::\+Ev\+Action\+Feedback$<$ Action\+Feedback $>$}
 \end{DoxyCompactItemize}
 \subsection*{Namespaces}
 \begin{DoxyCompactItemize}
@@ -59,10 +48,6 @@ struct \hyperlink{structsmacc_1_1EvActionFeedback}{smacc\+::\+Ev\+Action\+Feedba
 \end{DoxyCompactItemize}
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
-\item 
-typedef sc\+::fifo\+\_\+scheduler \hyperlink{common_8h_a13d01c0cecec33c3093445edab0a7eb4}{Smacc\+Scheduler}
-\item 
-typedef std\+::allocator$<$ void $>$ \hyperlink{common_8h_a024d7d2c189a8e4765411b7119d0460c}{Smacc\+Allocator}
 \item 
 typedef boost\+::statechart\+::processor\+\_\+container$<$ boost\+::statechart\+::fifo\+\_\+scheduler$<$$>$, boost\+::function0$<$ void $>$, std\+::allocator$<$ void $>$ $>$\+::processor\+\_\+context \hyperlink{common_8h_af2dcacead80d69b96952496fe413bbfe}{my\+\_\+context}
 \end{DoxyCompactItemize}
@@ -76,17 +61,9 @@ enum \hyperlink{namespacesmacc_a3e4f79486ea6ea6342dd3c712d16a4f6}{smacc\+::\+S\+
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$class T $>$ }\\auto \hyperlink{common_8h_a06e61136ca4cfcec8bc85b07744e6cd6}{optional\+Node\+Handle} (boost\+::intrusive\+\_\+ptr$<$ T $>$ \&obj) -\/$>$ decltype(obj-\/$>$nh)
-\item 
-{\footnotesize template$<$class T $>$ }\\auto \hyperlink{common_8h_a6b29a1260bf193d507eb985e3092a505}{optional\+Node\+Handle} (T $\ast$) -\/$>$ ros\+::\+Node\+Handle
-\item 
 std\+::string \hyperlink{namespacesmacc_a09b297b1cdb9aae93a958f323431464a}{smacc\+::clean\+Short\+Type\+Name} (const std\+::type\+\_\+info \&tinfo)
 \item 
 {\footnotesize template$<$typename State\+Machine\+Type $>$ }\\void \hyperlink{namespacesmacc_a47ac3b8d2968b1ba4152afd64ab66bd0}{smacc\+::run} ()
-\item 
-std\+::string \hyperlink{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{demangle\+Symbol} (const char $\ast$name)
-\item 
-{\footnotesize template$<$class T $>$ }\\std\+::string \hyperlink{common_8h_ac3e1038dcfa388433ad35e76ce86c747}{demangled\+Type\+Name} ()
 \end{DoxyCompactItemize}
 
 
@@ -96,153 +73,5 @@ std\+::string \hyperlink{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{demangle\+
 \subsubsection[{\texorpdfstring{my\+\_\+context}{my_context}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::statechart\+::processor\+\_\+container$<$boost\+::statechart\+::fifo\+\_\+scheduler$<$$>$, boost\+::function0$<$void$>$, std\+::allocator$<$void$>$ $>$\+::processor\+\_\+context {\bf my\+\_\+context}}\hypertarget{common_8h_af2dcacead80d69b96952496fe413bbfe}{}\label{common_8h_af2dcacead80d69b96952496fe413bbfe}
 
 
-Definition at line 58 of file common.\+h.
+Definition at line 31 of file common.\+h.
 
-\index{common.\+h@{common.\+h}!Smacc\+Allocator@{Smacc\+Allocator}}
-\index{Smacc\+Allocator@{Smacc\+Allocator}!common.\+h@{common.\+h}}
-\subsubsection[{\texorpdfstring{Smacc\+Allocator}{SmaccAllocator}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::allocator$<$void$>$ {\bf Smacc\+Allocator}}\hypertarget{common_8h_a024d7d2c189a8e4765411b7119d0460c}{}\label{common_8h_a024d7d2c189a8e4765411b7119d0460c}
-
-
-Definition at line 36 of file common.\+h.
-
-\index{common.\+h@{common.\+h}!Smacc\+Scheduler@{Smacc\+Scheduler}}
-\index{Smacc\+Scheduler@{Smacc\+Scheduler}!common.\+h@{common.\+h}}
-\subsubsection[{\texorpdfstring{Smacc\+Scheduler}{SmaccScheduler}}]{\setlength{\rightskip}{0pt plus 5cm}typedef sc\+::fifo\+\_\+scheduler {\bf Smacc\+Scheduler}}\hypertarget{common_8h_a13d01c0cecec33c3093445edab0a7eb4}{}\label{common_8h_a13d01c0cecec33c3093445edab0a7eb4}
-
-
-Definition at line 34 of file common.\+h.
-
-
-
-\subsection{Function Documentation}
-\index{common.\+h@{common.\+h}!demangled\+Type\+Name@{demangled\+Type\+Name}}
-\index{demangled\+Type\+Name@{demangled\+Type\+Name}!common.\+h@{common.\+h}}
-\subsubsection[{\texorpdfstring{demangled\+Type\+Name()}{demangledTypeName()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ std\+::string demangled\+Type\+Name (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{common_8h_ac3e1038dcfa388433ad35e76ce86c747}{}\label{common_8h_ac3e1038dcfa388433ad35e76ce86c747}
-
-
-Definition at line 155 of file common.\+h.
-
-
-
-References demangle\+Symbol().
-
-
-\begin{DoxyCode}
-156 \{
-157   \textcolor{keywordflow}{return} \hyperlink{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{demangleSymbol}(\textcolor{keyword}{typeid}(T).name());
-158 \}
-\end{DoxyCode}
-
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=338pt]{common_8h_ac3e1038dcfa388433ad35e76ce86c747_cgraph}
-\end{center}
-\end{figure}
-
-
-\index{common.\+h@{common.\+h}!demangle\+Symbol@{demangle\+Symbol}}
-\index{demangle\+Symbol@{demangle\+Symbol}!common.\+h@{common.\+h}}
-\subsubsection[{\texorpdfstring{demangle\+Symbol(const char $\ast$name)}{demangleSymbol(const char *name)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string demangle\+Symbol (
-\begin{DoxyParamCaption}
-\item[{const char $\ast$}]{name}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}{}\label{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc}
-
-
-Definition at line 137 of file common.\+h.
-
-
-
-Referenced by smacc\+::\+Call\+On\+Definition(), smacc\+::clean\+Short\+Type\+Name(), demangled\+Type\+Name(), smacc\+::\+Smacc\+State$<$ St\+Navigate\+Forward1, Sm\+Dance\+Bot $>$\+::get\+Full\+Name(), smacc\+::\+Orthogonal\+::get\+Name(), smacc\+::\+I\+Smacc\+Client\+::get\+Name(), smacc\+::\+I\+Smacc\+Component\+::get\+Name(), smacc\+::\+Smacc\+Sub\+State\+Behavior\+::get\+Name(), smacc\+::\+I\+Smacc\+State\+Machine\+::get\+State\+Machine\+Name(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::initialize(), smacc\+::\+I\+Smacc\+State\+Machine\+::map\+Behavior(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::post\+Event(), dance\+\_\+bot\+::\+Sb\+Keyboard\+::post\+Key\+Event(), dance\+\_\+bot\+::\+Keyboard\+Client\+::post\+Key\+Event(), smacc\+::\+Smacc\+State\+Machine\+Info\+::print\+All\+States(), smacc\+::process\+Transition(), smacc\+::\+I\+Smacc\+State\+Machine\+::requires\+Component(), smacc\+::\+Smacc\+State$<$ St\+Navigate\+Forward1, Sm\+Dance\+Bot $>$\+::\+Smacc\+State(), smacc\+::\+Smacc\+State$<$ St\+Navigate\+Forward1, Sm\+Dance\+Bot $>$\+::static\+\_\+configure(), smacc\+::\+I\+Smacc\+State\+Machine\+::update\+Current\+State(), and smacc\+::\+Smacc\+State$<$ St\+Navigate\+Forward1, Sm\+Dance\+Bot $>$\+::$\sim$\+Smacc\+State().
-
-
-\begin{DoxyCode}
-138 \{
-139 \textcolor{preprocessor}{#if (\_\_GNUC\_\_ && \_\_cplusplus && \_\_GNUC\_\_ >= 3)}
-140   \textcolor{keywordtype}{int} status;
-141   \textcolor{keywordtype}{char} *res = abi::\_\_cxa\_demangle(name, 0, 0, &status);
-142   \textcolor{keywordflow}{if} (res)
-143   \{
-144     \textcolor{keyword}{const} std::string demangled\_name(res);
-145     std::free(res);
-146     \textcolor{keywordflow}{return} demangled\_name;
-147   \}
-148   \textcolor{comment}{// Demangling failed, fallback to mangled name}
-149   \textcolor{keywordflow}{return} std::string(name);
-150 \textcolor{preprocessor}{#else}
-151   \textcolor{keywordflow}{return} std::string(name);
-152 \textcolor{preprocessor}{#endif}
-153 \}
-\end{DoxyCode}
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{common_8h_a401d7e4f000fd4246a20be1e7d5ec2fc_icgraph}
-\end{center}
-\end{figure}
-
-
-\index{common.\+h@{common.\+h}!optional\+Node\+Handle@{optional\+Node\+Handle}}
-\index{optional\+Node\+Handle@{optional\+Node\+Handle}!common.\+h@{common.\+h}}
-\subsubsection[{\texorpdfstring{optional\+Node\+Handle(boost\+::intrusive\+\_\+ptr$<$ T $>$ \&obj) -\/$>$ decltype(obj-\/$>$nh)}{optionalNodeHandle(boost::intrusive_ptr< T > &obj) -> decltype(obj->nh)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ auto optional\+Node\+Handle (
-\begin{DoxyParamCaption}
-\item[{boost\+::intrusive\+\_\+ptr$<$ T $>$ \&}]{obj}
-\end{DoxyParamCaption}
-) -\/$>$ decltype(obj-\/$>$nh)
-}\hypertarget{common_8h_a06e61136ca4cfcec8bc85b07744e6cd6}{}\label{common_8h_a06e61136ca4cfcec8bc85b07744e6cd6}
-
-
-Definition at line 39 of file common.\+h.
-
-
-
-Referenced by smacc\+::\+Smacc\+State$<$ St\+Navigate\+Forward1, Sm\+Dance\+Bot $>$\+::\+Smacc\+State().
-
-
-\begin{DoxyCode}
-41 \{
-42   \textcolor{keywordflow}{return} obj->nh;
-43 \}
-\end{DoxyCode}
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{common_8h_a06e61136ca4cfcec8bc85b07744e6cd6_icgraph}
-\end{center}
-\end{figure}
-
-
-\index{common.\+h@{common.\+h}!optional\+Node\+Handle@{optional\+Node\+Handle}}
-\index{optional\+Node\+Handle@{optional\+Node\+Handle}!common.\+h@{common.\+h}}
-\subsubsection[{\texorpdfstring{optional\+Node\+Handle(\+T $\ast$) -\/$>$ ros\+::\+Node\+Handle}{optionalNodeHandle(T *) -> ros::NodeHandle}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ auto optional\+Node\+Handle (
-\begin{DoxyParamCaption}
-\item[{T $\ast$}]{}
-\end{DoxyParamCaption}
-) -\/$>$ ros\+::\+Node\+Handle
-}\hypertarget{common_8h_a6b29a1260bf193d507eb985e3092a505}{}\label{common_8h_a6b29a1260bf193d507eb985e3092a505}
-
-
-Definition at line 46 of file common.\+h.
-
-
-\begin{DoxyCode}
-47 \{
-48   \textcolor{keywordflow}{return} ros::NodeHandle(\textcolor{stringliteral}{""});
-49 \}
-\end{DoxyCode}

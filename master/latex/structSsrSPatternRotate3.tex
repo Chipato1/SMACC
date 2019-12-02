@@ -21,18 +21,23 @@ Collaboration diagram for Ssr\+S\+Pattern\+Rotate3\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{structSsrSPatternRotate3__coll__graph}
+\includegraphics[height=550pt]{structSsrSPatternRotate3__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef sc\+::transition$<$ Ev\+Action\+Succeded$<$ smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result $>$, \hyperlink{structSsrSPatternForward3}{Ssr\+S\+Pattern\+Forward3} $>$ \hyperlink{structSsrSPatternRotate3_a3f44f9cc9f30f1791bb8af5a789094ea}{reactions}
+typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Succeeded$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $>$, \hyperlink{structSsrSPatternForward3}{Ssr\+S\+Pattern\+Forward3} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Aborted$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $>$, \hyperlink{structSsrSPatternForward2}{Ssr\+S\+Pattern\+Forward2} $>$ $>$ \hyperlink{structSsrSPatternRotate3_ac0a1840dc4d2ddc813d76475ddf7a082}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{structSsrSPatternRotate3_a343a04a297e2b3801e4f7224fa6517a5}{on\+Initialize} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{structSsrSPatternRotate3_abd553dc366393f10fb622eb717b92f1b}{on\+Definition} ()
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -47,14 +52,30 @@ Definition at line 1 of file ssr\+\_\+spattern\+\_\+rotate\+\_\+3.\+h.
 \subsection{Member Typedef Documentation}
 \index{Ssr\+S\+Pattern\+Rotate3@{Ssr\+S\+Pattern\+Rotate3}!reactions@{reactions}}
 \index{reactions@{reactions}!Ssr\+S\+Pattern\+Rotate3@{Ssr\+S\+Pattern\+Rotate3}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef sc\+::transition$<$Ev\+Action\+Succeded$<$smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result$>$, {\bf Ssr\+S\+Pattern\+Forward3}$>$ {\bf Ssr\+S\+Pattern\+Rotate3\+::reactions}}\hypertarget{structSsrSPatternRotate3_a3f44f9cc9f30f1791bb8af5a789094ea}{}\label{structSsrSPatternRotate3_a3f44f9cc9f30f1791bb8af5a789094ea}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<${\bf smacc\+::transition}$<$Ev\+Action\+Succeeded$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}$>$, {\bf Ssr\+S\+Pattern\+Forward3}$>$, {\bf smacc\+::transition}$<$Ev\+Action\+Aborted$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}$>$, {\bf Ssr\+S\+Pattern\+Forward2}$>$ $>$ {\bf Ssr\+S\+Pattern\+Rotate3\+::reactions}}\hypertarget{structSsrSPatternRotate3_ac0a1840dc4d2ddc813d76475ddf7a082}{}\label{structSsrSPatternRotate3_ac0a1840dc4d2ddc813d76475ddf7a082}
 
 
-Definition at line 5 of file ssr\+\_\+spattern\+\_\+rotate\+\_\+3.\+h.
+Definition at line 7 of file ssr\+\_\+spattern\+\_\+rotate\+\_\+3.\+h.
 
 
 
 \subsection{Member Function Documentation}
+\index{Ssr\+S\+Pattern\+Rotate3@{Ssr\+S\+Pattern\+Rotate3}!on\+Definition@{on\+Definition}}
+\index{on\+Definition@{on\+Definition}!Ssr\+S\+Pattern\+Rotate3@{Ssr\+S\+Pattern\+Rotate3}}
+\subsubsection[{\texorpdfstring{on\+Definition()}{onDefinition()}}]{\setlength{\rightskip}{0pt plus 5cm}static void Ssr\+S\+Pattern\+Rotate3\+::on\+Definition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structSsrSPatternRotate3_abd553dc366393f10fb622eb717b92f1b}{}\label{structSsrSPatternRotate3_abd553dc366393f10fb622eb717b92f1b}
+
+
+Definition at line 9 of file ssr\+\_\+spattern\+\_\+rotate\+\_\+3.\+h.
+
+
+\begin{DoxyCode}
+10     \{
+11     \}
+\end{DoxyCode}
 \index{Ssr\+S\+Pattern\+Rotate3@{Ssr\+S\+Pattern\+Rotate3}!on\+Initialize@{on\+Initialize}}
 \index{on\+Initialize@{on\+Initialize}!Ssr\+S\+Pattern\+Rotate3@{Ssr\+S\+Pattern\+Rotate3}}
 \subsubsection[{\texorpdfstring{on\+Initialize()}{onInitialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ssr\+S\+Pattern\+Rotate3\+::on\+Initialize (
@@ -64,27 +85,27 @@ Definition at line 5 of file ssr\+\_\+spattern\+\_\+rotate\+\_\+3.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structSsrSPatternRotate3_a343a04a297e2b3801e4f7224fa6517a5}{}\label{structSsrSPatternRotate3_a343a04a297e2b3801e4f7224fa6517a5}
 
 
-Definition at line 7 of file ssr\+\_\+spattern\+\_\+rotate\+\_\+3.\+h.
+Definition at line 13 of file ssr\+\_\+spattern\+\_\+rotate\+\_\+3.\+h.
 
 
 \begin{DoxyCode}
-8     \{
-9         \textcolor{keyword}{auto} &superstate = this->context<SS>();
-10         ROS\_INFO(\textcolor{stringliteral}{"[SsrSPatternRotate] SpatternRotate rotate: SS current iteration: %d/%d"}, superstate.
-      iteration\_count, superstate.total\_iterations);
-11 
-12         \textcolor{keywordtype}{float} angle = 0;
-13         \textcolor{keywordflow}{if} (superstate.direction == TDirection::LEFT)
-14             angle = -90;
-15         \textcolor{keywordflow}{else}
-16             angle = 90;
+14     \{
+15         \textcolor{keyword}{auto} &superstate = this->context<SS>();
+16         ROS\_INFO(\textcolor{stringliteral}{"[SsrSPatternRotate] SpatternRotate rotate: SS current iteration: %d/%d"}, superstate.
+      iteration\_count, SS::total\_iterations());
 17 
-18         this->configure<NavigationOrthogonal>(std::make\_shared<SbRotate>(angle));
-19         this->configure<ToolOrthogonal>(std::make\_shared<SbToolStop>());
-20     \}
+18         \textcolor{keywordtype}{float} angle = 0;
+19         \textcolor{keywordflow}{if} (superstate.direction() == TDirection::LEFT)
+20             angle = -90;
+21         \textcolor{keywordflow}{else}
+22             angle = 90;
+23 
+24         this->configure<NavigationOrthogonal>(std::make\_shared<SbRotate>(angle));
+25         this->configure<ToolOrthogonal>(std::make\_shared<SbToolStop>());
+26     \}
 \end{DoxyCode}
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-smacc\+\_\+sm\+\_\+examples/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/superstate\+\_\+routines/s\+\_\+pattern/\hyperlink{ssr__spattern__rotate__3_8h}{ssr\+\_\+spattern\+\_\+rotate\+\_\+3.\+h}\end{DoxyCompactItemize}
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/superstate\+\_\+routines/s\+\_\+pattern/\hyperlink{ssr__spattern__rotate__3_8h}{ssr\+\_\+spattern\+\_\+rotate\+\_\+3.\+h}\end{DoxyCompactItemize}

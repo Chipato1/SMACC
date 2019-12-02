@@ -1,10 +1,8 @@
-\hypertarget{smacc__state__info_8h}{}\section{smacc/include/smacc/smacc\+\_\+state\+\_\+info.h File Reference}
-\label{smacc__state__info_8h}\index{smacc/include/smacc/smacc\+\_\+state\+\_\+info.\+h@{smacc/include/smacc/smacc\+\_\+state\+\_\+info.\+h}}
+\hypertarget{smacc__state__info_8h}{}\section{smacc/include/smacc/introspection/smacc\+\_\+state\+\_\+info.h File Reference}
+\label{smacc__state__info_8h}\index{smacc/include/smacc/introspection/smacc\+\_\+state\+\_\+info.\+h@{smacc/include/smacc/introspection/smacc\+\_\+state\+\_\+info.\+h}}
 {\ttfamily \#include $<$memory$>$}\\*
-{\ttfamily \#include $<$map$>$}\\*
 {\ttfamily \#include $<$functional$>$}\\*
-{\ttfamily \#include $<$vector$>$}\\*
-{\ttfamily \#include $<$list$>$}\\*
+{\ttfamily \#include $<$smacc/smacc\+\_\+types.\+h$>$}\\*
 Include dependency graph for smacc\+\_\+state\+\_\+info.\+h\+:
 \nopagebreak
 \begin{figure}[H]
@@ -26,7 +24,11 @@ This graph shows which files directly or indirectly include this file\+:
 \item 
 struct \hyperlink{structsmacc_1_1StateBehaviorInfoEntry}{smacc\+::\+State\+Behavior\+Info\+Entry}
 \item 
+struct \hyperlink{structsmacc_1_1SmaccEventInfo}{smacc\+::\+Smacc\+Event\+Info}
+\item 
 struct \hyperlink{structsmacc_1_1SmaccTransitionInfo}{smacc\+::\+Smacc\+Transition\+Info}
+\item 
+struct \hyperlink{structsmacc_1_1SmaccLogicUnitInfo}{smacc\+::\+Smacc\+Logic\+Unit\+Info}
 \item 
 class \hyperlink{classsmacc_1_1SmaccStateInfo}{smacc\+::\+Smacc\+State\+Info}
 \end{DoxyCompactItemize}
@@ -34,4 +36,12 @@ class \hyperlink{classsmacc_1_1SmaccStateInfo}{smacc\+::\+Smacc\+State\+Info}
 \begin{DoxyCompactItemize}
 \item 
  \hyperlink{namespacesmacc}{smacc}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacesmacc_a63f5f7aae7e563619d0886fca83612cc}{smacc\+::\+Smacc\+State\+Type} \{ \hyperlink{namespacesmacc_a63f5f7aae7e563619d0886fca83612cca4da54a31b31f1c863864fdee05fc35c8}{smacc\+::\+Smacc\+State\+Type\+::\+S\+U\+P\+E\+R\+S\+T\+A\+TE} = 2, 
+\hyperlink{namespacesmacc_a63f5f7aae7e563619d0886fca83612cca2b848a8cc886d253d21a77c43cd50aae}{smacc\+::\+Smacc\+State\+Type\+::\+S\+T\+A\+TE} = 1, 
+\hyperlink{namespacesmacc_a63f5f7aae7e563619d0886fca83612cca6d39c20504d2f2afe9c8c27351e61d20}{smacc\+::\+Smacc\+State\+Type\+::\+S\+U\+P\+E\+R\+S\+T\+A\+T\+E\+\_\+\+R\+O\+U\+T\+I\+NE} = 1
+ \}
 \end{DoxyCompactItemize}

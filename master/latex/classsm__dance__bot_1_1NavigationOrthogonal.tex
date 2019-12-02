@@ -1,0 +1,89 @@
+\hypertarget{classsm__dance__bot_1_1NavigationOrthogonal}{}\section{sm\+\_\+dance\+\_\+bot\+:\+:Navigation\+Orthogonal Class Reference}
+\label{classsm__dance__bot_1_1NavigationOrthogonal}\index{sm\+\_\+dance\+\_\+bot\+::\+Navigation\+Orthogonal@{sm\+\_\+dance\+\_\+bot\+::\+Navigation\+Orthogonal}}
+
+
+{\ttfamily \#include $<$navigation\+\_\+orthogonal.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+dance\+\_\+bot\+:\+:Navigation\+Orthogonal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classsm__dance__bot_1_1NavigationOrthogonal__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+dance\+\_\+bot\+:\+:Navigation\+Orthogonal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot_1_1NavigationOrthogonal__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classsm__dance__bot_1_1NavigationOrthogonal_a2087b378406e35f0c7e6e31f21d37958}{on\+Initialize} () override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file navigation\+\_\+orthogonal.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+::\+Navigation\+Orthogonal@{sm\+\_\+dance\+\_\+bot\+::\+Navigation\+Orthogonal}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!sm\+\_\+dance\+\_\+bot\+::\+Navigation\+Orthogonal@{sm\+\_\+dance\+\_\+bot\+::\+Navigation\+Orthogonal}}
+\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+dance\+\_\+bot\+::\+Navigation\+Orthogonal\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__dance__bot_1_1NavigationOrthogonal_a2087b378406e35f0c7e6e31f21d37958}{}\label{classsm__dance__bot_1_1NavigationOrthogonal_a2087b378406e35f0c7e6e31f21d37958}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+
+
+
+Definition at line 12 of file navigation\+\_\+orthogonal.\+h.
+
+
+
+References smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::initialize(), and smacc\+::\+Orthogonal\+::requires\+Component().
+
+
+\begin{DoxyCode}
+13     \{
+14         \textcolor{keyword}{auto} *client = this->createClient<smacc::SmaccMoveBaseActionClient>();
+15         client->name\_ = \textcolor{stringliteral}{"move\_base"};
+16         client->initialize();
+17 
+18         \hyperlink{classsmacc__odom__tracker_1_1OdomTracker}{smacc\_odom\_tracker::OdomTracker} *odomtracker;
+19         this->\hyperlink{classsmacc_1_1Orthogonal_a098b5be0f89d0911afc44c10b756ef2a}{requiresComponent}(odomtracker);
+20         odomtracker->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a4b3ff3f659474cb7bdd6b4b54dcc0a53}{initialize}(\textcolor{stringliteral}{"/"});
+21     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot_1_1NavigationOrthogonal_a2087b378406e35f0c7e6e31f21d37958_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/orthogonals/\hyperlink{smacc__sm__reference__library_2sm__dance__bot_2include_2sm__dance__bot_2orthogonals_2navigation__orthogonal_8h}{navigation\+\_\+orthogonal.\+h}\end{DoxyCompactItemize}

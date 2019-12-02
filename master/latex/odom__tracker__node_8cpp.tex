@@ -25,7 +25,7 @@ typedef actionlib\+::\+Simple\+Action\+Server$<$ smacc\+\_\+odom\+\_\+tracker\+:
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classint}{int} \hyperlink{odom__tracker__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (\hyperlink{classint}{int} argc, char $\ast$$\ast$argv)
+int \hyperlink{odom__tracker__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
 \end{DoxyCompactItemize}
 
 
@@ -42,9 +42,9 @@ Definition at line 11 of file odom\+\_\+tracker\+\_\+node.\+cpp.
 \subsection{Function Documentation}
 \index{odom\+\_\+tracker\+\_\+node.\+cpp@{odom\+\_\+tracker\+\_\+node.\+cpp}!main@{main}}
 \index{main@{main}!odom\+\_\+tracker\+\_\+node.\+cpp@{odom\+\_\+tracker\+\_\+node.\+cpp}}
-\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} main (
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
 \begin{DoxyParamCaption}
-\item[{{\bf int}}]{argc, }
+\item[{int}]{argc, }
 \item[{char $\ast$$\ast$}]{argv}
 \end{DoxyParamCaption}
 )}\hypertarget{odom__tracker__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{odom__tracker__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
@@ -59,7 +59,7 @@ References Odom\+Tracker\+Action\+Server\+::run().
 
 \begin{DoxyCode}
 101 \{
-102     ros::init(argc,\hyperlink{namespacesmacc__viewer_a641e44a1c9c09b36c59a0651d01d4d97}{argv},\textcolor{stringliteral}{"odom\_tracker\_node"});
+102     ros::init(argc,argv,\textcolor{stringliteral}{"odom\_tracker\_node"});
 103     \hyperlink{classOdomTrackerActionServer}{OdomTrackerActionServer} as;
 104 
 105     as.\hyperlink{classOdomTrackerActionServer_a8ab6984c7383949a048d72437e9f79d3}{run}();

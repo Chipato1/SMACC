@@ -21,18 +21,23 @@ Collaboration diagram for Ssr\+Radial\+Rotate\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{structSsrRadialRotate__coll__graph}
+\includegraphics[height=550pt]{structSsrRadialRotate__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef mpl\+::list$<$ sc\+::transition$<$ Ev\+Action\+Succeded$<$ smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result $>$, \hyperlink{structSsrRadialEndPoint}{Ssr\+Radial\+End\+Point} $>$ $>$ \hyperlink{structSsrRadialRotate_a78a12dfae235f78a6bb41651fb6e74e5}{reactions}
+typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Succeeded$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $>$, \hyperlink{structSsrRadialEndPoint}{Ssr\+Radial\+End\+Point}, \hyperlink{classSUCCESS}{S\+U\+C\+C\+E\+SS} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Aborted$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $>$, \hyperlink{structSsrRadialLoopStart}{Ssr\+Radial\+Loop\+Start}, \hyperlink{classABORT}{A\+B\+O\+RT} $>$ $>$ \hyperlink{structSsrRadialRotate_aa245c3696d8d119ec6f2ea5573f6b7ea}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{structSsrRadialRotate_a91b3de3b25e4cf0d3a672f6ea344abea}{on\+Initialize} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{structSsrRadialRotate_a96e76900952f342ee6591b84168f927f}{on\+Definition} ()
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -47,14 +52,32 @@ Definition at line 1 of file ssr\+\_\+radial\+\_\+rotate.\+h.
 \subsection{Member Typedef Documentation}
 \index{Ssr\+Radial\+Rotate@{Ssr\+Radial\+Rotate}!reactions@{reactions}}
 \index{reactions@{reactions}!Ssr\+Radial\+Rotate@{Ssr\+Radial\+Rotate}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$sc\+::transition$<$Ev\+Action\+Succeded$<$smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Result$>$, {\bf Ssr\+Radial\+End\+Point}$>$ $>$ {\bf Ssr\+Radial\+Rotate\+::reactions}}\hypertarget{structSsrRadialRotate_a78a12dfae235f78a6bb41651fb6e74e5}{}\label{structSsrRadialRotate_a78a12dfae235f78a6bb41651fb6e74e5}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ {\bf smacc\+::transition}$<$Ev\+Action\+Succeeded$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}$>$, {\bf Ssr\+Radial\+End\+Point}, {\bf S\+U\+C\+C\+E\+SS}$>$, {\bf smacc\+::transition}$<$Ev\+Action\+Aborted$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}$>$, {\bf Ssr\+Radial\+Loop\+Start}, {\bf A\+B\+O\+RT}$>$ $>$ {\bf Ssr\+Radial\+Rotate\+::reactions}}\hypertarget{structSsrRadialRotate_aa245c3696d8d119ec6f2ea5573f6b7ea}{}\label{structSsrRadialRotate_aa245c3696d8d119ec6f2ea5573f6b7ea}
 
 
-Definition at line 5 of file ssr\+\_\+radial\+\_\+rotate.\+h.
+Definition at line 8 of file ssr\+\_\+radial\+\_\+rotate.\+h.
 
 
 
 \subsection{Member Function Documentation}
+\index{Ssr\+Radial\+Rotate@{Ssr\+Radial\+Rotate}!on\+Definition@{on\+Definition}}
+\index{on\+Definition@{on\+Definition}!Ssr\+Radial\+Rotate@{Ssr\+Radial\+Rotate}}
+\subsubsection[{\texorpdfstring{on\+Definition()}{onDefinition()}}]{\setlength{\rightskip}{0pt plus 5cm}static void Ssr\+Radial\+Rotate\+::on\+Definition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structSsrRadialRotate_a96e76900952f342ee6591b84168f927f}{}\label{structSsrRadialRotate_a96e76900952f342ee6591b84168f927f}
+
+
+Definition at line 10 of file ssr\+\_\+radial\+\_\+rotate.\+h.
+
+
+\begin{DoxyCode}
+11   \{
+12     static\_configure<NavigationOrthogonal, SbRotate>(SS::ray\_angle\_increment\_degree());
+13     static\_configure<ToolOrthogonal, SbToolStop>();
+14   \}
+\end{DoxyCode}
 \index{Ssr\+Radial\+Rotate@{Ssr\+Radial\+Rotate}!on\+Initialize@{on\+Initialize}}
 \index{on\+Initialize@{on\+Initialize}!Ssr\+Radial\+Rotate@{Ssr\+Radial\+Rotate}}
 \subsubsection[{\texorpdfstring{on\+Initialize()}{onInitialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ssr\+Radial\+Rotate\+::on\+Initialize (
@@ -64,25 +87,15 @@ Definition at line 5 of file ssr\+\_\+radial\+\_\+rotate.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structSsrRadialRotate_a91b3de3b25e4cf0d3a672f6ea344abea}{}\label{structSsrRadialRotate_a91b3de3b25e4cf0d3a672f6ea344abea}
 
 
-Definition at line 7 of file ssr\+\_\+radial\+\_\+rotate.\+h.
+Definition at line 16 of file ssr\+\_\+radial\+\_\+rotate.\+h.
 
 
 \begin{DoxyCode}
-8   \{
-9     \textcolor{keyword}{auto}& superstate = this->context<SS>();
-10     
-11     ROS\_INFO(\textcolor{stringliteral}{"[SsrRadialRotate] Radial rotate: SS current iteration: %d/%d"}, superstate.iteration\_count , 
-      superstate.total\_iterations);
-12     \textcolor{keywordflow}{if}(superstate.iteration\_count < superstate.total\_iterations)
-13     \{
-14         this->configure<NavigationOrthogonal>(std::make\_shared<SbRotate>(superstate.
-      ray\_angle\_increment\_degree));
-15         this->configure<ToolOrthogonal>(std::make\_shared<SbToolStop>());
-16     \}
-17   \}
+17   \{
+18   \}
 \end{DoxyCode}
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-smacc\+\_\+sm\+\_\+examples/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/superstate\+\_\+routines/radial\+\_\+motion/\hyperlink{ssr__radial__rotate_8h}{ssr\+\_\+radial\+\_\+rotate.\+h}\end{DoxyCompactItemize}
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/superstate\+\_\+routines/radial\+\_\+motion/\hyperlink{ssr__radial__rotate_8h}{ssr\+\_\+radial\+\_\+rotate.\+h}\end{DoxyCompactItemize}

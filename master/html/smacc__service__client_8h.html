@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>SMACC: smacc/include/smacc/interface_components/smacc_service_client.h File Reference</title>
+<title>SMACC: smacc/include/smacc/client_bases/smacc_service_client.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_6e3e4532ae0db906acb0c92fce514b9e.html">smacc</a></li><li class="navelem"><a class="el" href="dir_af83d609eca54628b06583fa4d095eed.html">include</a></li><li class="navelem"><a class="el" href="dir_b7711d4fdb9c7f5ffaefaee577cae4c6.html">smacc</a></li><li class="navelem"><a class="el" href="dir_f5b335a933d12a910b225ef5bf0d7738.html">interface_components</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_6e3e4532ae0db906acb0c92fce514b9e.html">smacc</a></li><li class="navelem"><a class="el" href="dir_af83d609eca54628b06583fa4d095eed.html">include</a></li><li class="navelem"><a class="el" href="dir_b7711d4fdb9c7f5ffaefaee577cae4c6.html">smacc</a></li><li class="navelem"><a class="el" href="dir_09e5fb7469a4fb9ae9d6a0fce1688aa5.html">client_bases</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -93,27 +93,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">smacc_service_client.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="client_8h_source.html">smacc/client.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="smacc__client_8h_source.html">smacc/smacc_client.h</a>&gt;</code><br />
 <code>#include &lt;boost/optional/optional_io.hpp&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for smacc_service_client.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="smacc__service__client_8h__incl.png" border="0" usemap="#smacc_2include_2smacc_2interface__components_2smacc__service__client_8h" alt=""/></div>
-<map name="smacc_2include_2smacc_2interface__components_2smacc__service__client_8h" id="smacc_2include_2smacc_2interface__components_2smacc__service__client_8h">
-<area shape="rect" id="node2" href="client_8h.html" title="smacc/client.h" alt="" coords="1549,117,1663,143"/>
-<area shape="rect" id="node3" href="common_8h.html" title="smacc/common.h" alt="" coords="1537,199,1675,225"/>
+<div class="center"><img src="smacc__service__client_8h__incl.png" border="0" usemap="#smacc_2include_2smacc_2client__bases_2smacc__service__client_8h" alt=""/></div>
+<map name="smacc_2include_2smacc_2client__bases_2smacc__service__client_8h" id="smacc_2include_2smacc_2client__bases_2smacc__service__client_8h">
+<area shape="rect" id="node2" href="smacc__client_8h.html" title="smacc/smacc_client.h" alt="" coords="1649,117,1802,143"/>
+<area shape="rect" id="node3" href="common_8h.html" title="smacc/common.h" alt="" coords="1662,199,1789,225"/>
+<area shape="rect" id="node19" href="smacc__fifo__scheduler_8h.html" title="smacc/smacc_fifo_scheduler.h" alt="" coords="3403,281,3606,307"/>
+<area shape="rect" id="node23" href="smacc__types_8h.html" title="smacc/smacc_types.h" alt="" coords="263,556,418,583"/>
+<area shape="rect" id="node25" href="introspection_8h.html" title="smacc/introspection\l/introspection.h" alt="" coords="1063,363,1202,404"/>
+<area shape="rect" id="node43" href="smacc__default__events_8h.html" title="smacc/smacc_default\l_events.h" alt="" coords="250,363,401,404"/>
+<area shape="rect" id="node44" href="smacc__transition_8h.html" title="smacc/smacc_transition.h" alt="" coords="1257,281,1432,307"/>
+<area shape="rect" id="node21" href="smacc__fifo__worker_8h.html" title="smacc/smacc_fifo_worker.h" alt="" coords="3504,370,3691,397"/>
+<area shape="rect" id="node28" href="string__type__walker_8h.html" title="smacc/introspection\l/string_type_walker.h" alt="" coords="1230,459,1376,501"/>
+<area shape="rect" id="node35" href="smacc__state__info_8h.html" title="smacc/introspection\l/smacc_state_info.h" alt="" coords="878,459,1018,501"/>
+<area shape="rect" id="node37" href="smacc__state__machine__info_8h.html" title="smacc/introspection\l/smacc_state_machine\l_info.h" alt="" coords="1699,452,1856,508"/>
+<area shape="rect" id="node38" href="smacc__orthogonal_8h.html" title="smacc/smacc_orthogonal.h" alt="" coords="2317,556,2500,583"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="smacc__service__client_8h__dep__incl.png" border="0" usemap="#smacc_2include_2smacc_2interface__components_2smacc__service__client_8hdep" alt=""/></div>
-<map name="smacc_2include_2smacc_2interface__components_2smacc__service__client_8hdep" id="smacc_2include_2smacc_2interface__components_2smacc__service__client_8hdep">
-<area shape="rect" id="node2" href="service3__client_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/substate_behaviors\l/service_client/service3_client.h" alt="" coords="114,109,339,180"/>
-<area shape="rect" id="node3" href="service3__orthogonal_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/orthogonals\l/service3_orthogonal.h" alt="" coords="5,228,189,299"/>
-<area shape="rect" id="node4" href="sm__dance__bot_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/sm_dance_bot.h" alt="" coords="123,347,330,403"/>
-<area shape="rect" id="node6" href="service3__behavior_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/substate_behaviors\l/service_client/service3_behavior.h" alt="" coords="264,228,507,299"/>
-<area shape="rect" id="node5" href="sm__dance__bot_8cpp.html" title="smacc_sm_examples/sm\l_dance_bot/src/sm_dance\l_bot.cpp" alt="" coords="132,451,321,507"/>
+<div class="center"><img src="smacc__service__client_8h__dep__incl.png" border="0" usemap="#smacc_2include_2smacc_2client__bases_2smacc__service__client_8hdep" alt=""/></div>
+<map name="smacc_2include_2smacc_2client__bases_2smacc__service__client_8hdep" id="smacc_2include_2smacc_2client__bases_2smacc__service__client_8hdep">
+<area shape="rect" id="node2" href="service3__client_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/service\l_client/service3_client.h" alt="" coords="174,109,359,195"/>
+<area shape="rect" id="node3" href="service3__orthogonal_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/orthogonals/service3_orthogonal.h" alt="" coords="5,250,229,321"/>
+<area shape="rect" id="node4" href="sm__dance__bot_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/sm_dance_bot.h" alt="" coords="189,376,345,447"/>
+<area shape="rect" id="node6" href="service3__behavior_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/service\l_client/service3_behavior.h" alt="" coords="305,243,490,328"/>
+<area shape="rect" id="node5" href="sm__dance__bot_8cpp.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/src/sm_dance_bot.cpp" alt="" coords="187,495,346,551"/>
 </map>
 </div>
 </div>

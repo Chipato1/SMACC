@@ -1,5 +1,0 @@
-<map id="dance_bot::StringPublisherClient" name="dance_bot::StringPublisherClient">
-<area shape="rect" id="node2" href="$classsmacc_1_1SmaccTopicPublisherClient.html" title="{smacc::SmaccTopicPublisher\lClient\&lt; std_msgs::String \&gt;\n|+ topicName\l+ queueSize\l# nh_\l# pub_\l&#45; initialized_\l|+ SmaccTopicPublisherClient()\l+ ~SmaccTopicPublisherClient()\l+ initialize()\l+ publish()\l}" alt="" coords="5,463,232,657"/>
-<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccClient.html" title="{smacc::ISmaccClient\n|# stateMachine_\l|+ ISmaccClient()\l+ ~ISmaccClient()\l+ initialize()\l+ setStateMachine()\l+ getName()\l+ postEvent()\l}" alt="" coords="65,5,220,156"/>
-<area shape="rect" id="node4" href="$classsmacc_1_1SmaccTopicPublisherClient.html" title="{smacc::SmaccTopicPublisher\lClient\&lt; MessageType \&gt;\n|+ topicName\l+ queueSize\l# nh_\l# pub_\l&#45; initialized_\l|+ SmaccTopicPublisherClient()\l+ ~SmaccTopicPublisherClient()\l+ initialize()\l+ publish()\l}" alt="" coords="135,205,361,400"/>
-</map>

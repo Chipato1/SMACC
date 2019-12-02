@@ -1,13 +1,8 @@
 <map id="smacc_client_library/smacc_action_client_generic/include/smacc_action_client_generic/smacc_tool_plugin.h" name="smacc_client_library/smacc_action_client_generic/include/smacc_action_client_generic/smacc_tool_plugin.h">
-<area shape="rect" id="node2" href="$smacc__tool__plugin_8cpp.html" title="smacc_client_library\l/smacc_action_client\l_generic/src/smacc_tool\l_plugin.cpp" alt="" coords="5,139,181,209"/>
-<area shape="rect" id="node3" href="$smacc__sm__examples_2sm__dance__bot_2include_2sm__dance__bot_2orthogonals_2tool__orthogonal_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/orthogonals\l/tool_orthogonal.h" alt="" coords="205,139,389,209"/>
-<area shape="rect" id="node6" href="$sb__tool__start_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/substate_behaviors\l/tool/sb_tool_start.h" alt="" coords="414,139,639,209"/>
-<area shape="rect" id="node7" href="$smacc__sm__examples_2sm__radial__motion_2include_2sm__radial__motion_2orthogonals_2tool__orthogonal_8h.html" title="smacc_sm_examples/sm\l_radial_motion/include\l/sm_radial_motion/orthogonals\l/tool_orthogonal.h" alt="" coords="566,257,786,328"/>
-<area shape="rect" id="node10" href="$tool__start_8h.html" title="smacc_sm_examples/sm\l_radial_motion/include\l/sm_radial_motion/substates\l_behaviors/tool/tool_start.h" alt="" coords="714,139,921,209"/>
-<area shape="rect" id="node12" href="$tool__stop_8h.html" title="smacc_sm_examples/sm\l_radial_motion/include\l/sm_radial_motion/substates\l_behaviors/tool/tool_stop.h" alt="" coords="945,139,1151,209"/>
-<area shape="rect" id="node4" href="$sm__dance__bot_8h.html" title="smacc_sm_examples/sm\l_dance_bot/include/sm\l_dance_bot/sm_dance_bot.h" alt="" coords="265,265,471,321"/>
-<area shape="rect" id="node5" href="$sm__dance__bot_8cpp.html" title="smacc_sm_examples/sm\l_dance_bot/src/sm_dance\l_bot.cpp" alt="" coords="273,383,463,439"/>
-<area shape="rect" id="node8" href="$radial__motion_8h.html" title="smacc_sm_examples/sm\l_radial_motion/include\l/sm_radial_motion/radial\l_motion.h" alt="" coords="701,376,885,447"/>
-<area shape="rect" id="node9" href="$radial__motion_8cpp.html" title="smacc_sm_examples/sm\l_radial_motion/src/radial\l_motion.cpp" alt="" coords="701,495,885,551"/>
-<area shape="rect" id="node11" href="$substate__behaviors_8h.html" title="smacc_sm_examples/sm\l_radial_motion/include\l/sm_radial_motion/substate\l_behaviors.h" alt="" coords="811,257,1011,328"/>
+<area shape="rect" id="node2" href="$smacc__tool__plugin_8cpp.html" title="smacc_client_library\l/smacc_action_client\l_generic/src/smacc_tool\l_plugin.cpp" alt="" coords="5,146,169,217"/>
+<area shape="rect" id="node3" href="$smacc__sm__reference__library_2sm__dance__bot_2include_2sm__dance__bot_2orthogonals_2tool__orthogonal_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/orthogonals/tool_orthogonal.h" alt="" coords="193,146,389,217"/>
+<area shape="rect" id="node6" href="$sb__tool__start_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/tool\l/sb_tool_start.h" alt="" coords="413,139,577,224"/>
+<area shape="rect" id="node7" href="$sb__tool__stop_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/tool\l/sb_tool_stop.h" alt="" coords="601,139,765,224"/>
+<area shape="rect" id="node4" href="$sm__dance__bot_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/sm_dance_bot.h" alt="" coords="417,272,573,343"/>
+<area shape="rect" id="node5" href="$sm__dance__bot_8cpp.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/src/sm_dance_bot.cpp" alt="" coords="416,391,575,447"/>
 </map>

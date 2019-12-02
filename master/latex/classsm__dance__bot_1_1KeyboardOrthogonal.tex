@@ -1,0 +1,71 @@
+\hypertarget{classsm__dance__bot_1_1KeyboardOrthogonal}{}\section{sm\+\_\+dance\+\_\+bot\+:\+:Keyboard\+Orthogonal Class Reference}
+\label{classsm__dance__bot_1_1KeyboardOrthogonal}\index{sm\+\_\+dance\+\_\+bot\+::\+Keyboard\+Orthogonal@{sm\+\_\+dance\+\_\+bot\+::\+Keyboard\+Orthogonal}}
+
+
+{\ttfamily \#include $<$keyboard\+\_\+orthogonal.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+dance\+\_\+bot\+:\+:Keyboard\+Orthogonal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{classsm__dance__bot_1_1KeyboardOrthogonal__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+dance\+\_\+bot\+:\+:Keyboard\+Orthogonal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot_1_1KeyboardOrthogonal__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classsm__dance__bot_1_1KeyboardOrthogonal_a6678d68d92627e41507436ea6eeed7ab}{on\+Initialize} () override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file keyboard\+\_\+orthogonal.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+::\+Keyboard\+Orthogonal@{sm\+\_\+dance\+\_\+bot\+::\+Keyboard\+Orthogonal}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!sm\+\_\+dance\+\_\+bot\+::\+Keyboard\+Orthogonal@{sm\+\_\+dance\+\_\+bot\+::\+Keyboard\+Orthogonal}}
+\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+dance\+\_\+bot\+::\+Keyboard\+Orthogonal\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__dance__bot_1_1KeyboardOrthogonal_a6678d68d92627e41507436ea6eeed7ab}{}\label{classsm__dance__bot_1_1KeyboardOrthogonal_a6678d68d92627e41507436ea6eeed7ab}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+
+
+
+Definition at line 10 of file keyboard\+\_\+orthogonal.\+h.
+
+
+\begin{DoxyCode}
+11     \{
+12         \textcolor{keyword}{auto} keyboardClient = this->createClient<sm\_dance\_bot::KeyboardClient>();
+13         keyboardClient->topicName = \textcolor{stringliteral}{"/keyboard\_unicode"};
+14 
+15         \textcolor{comment}{//keyboardClient.queueSize = 1;}
+16         keyboardClient->initialize();
+17     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/orthogonals/\hyperlink{keyboard__orthogonal_8h}{keyboard\+\_\+orthogonal.\+h}\end{DoxyCompactItemize}

@@ -1,5 +1,5 @@
 <map id="forward_global_planner::ForwardGlobalPlanner::makePlan" name="forward_global_planner::ForwardGlobalPlanner::makePlan">
-<area shape="rect" id="node2" href="$namespacereel__path__tools.html#a3fccdb259ebb9a3530e2341142b68d1e" title="reel_path_tools::makePure\lSpinningSubPlan" alt="" coords="227,5,420,47"/>
-<area shape="rect" id="node3" href="$namespacereel__path__tools.html#a5d207487104c71b1d9c4fb12975bbf82" title="reel_path_tools::makePure\lStraightSubPlan" alt="" coords="227,71,420,112"/>
-<area shape="rect" id="node4" href="$namespaceforward__global__planner.html#a08190a0dc15750553f51ebdf4472398a" title="forward_global_planner\l::PLUGINLIB_EXPORT_CLASS" alt="" coords="223,136,424,177"/>
+<area shape="rect" id="node2" href="$namespacesmacc__move__base__client.html#aa30beab025bcffa7f321d40dbb5e8970" title="smacc_move_base_client\l::makePureSpinningSubPlan" alt="" coords="225,5,413,47"/>
+<area shape="rect" id="node3" href="$namespacesmacc__move__base__client.html#a75b92d6b95689fb8f73cdca23291fdb9" title="smacc_move_base_client\l::makePureStraightSubPlan" alt="" coords="227,71,410,112"/>
+<area shape="rect" id="node4" href="$namespaceforward__global__planner.html#a08190a0dc15750553f51ebdf4472398a" title="forward_global_planner\l::PLUGINLIB_EXPORT_CLASS" alt="" coords="212,136,425,177"/>
 </map>

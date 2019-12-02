@@ -1,7 +1,7 @@
 <map id="smacc::IActionResult" name="smacc::IActionResult">
-<area shape="rect" id="node2" href="$structsmacc_1_1EvActionAborted.html" title="{smacc::EvActionAborted\l\&lt; ActionResult \&gt;\n|+ resultMessage\l|}" alt="" coords="5,131,184,223"/>
-<area shape="rect" id="node3" href="$structsmacc_1_1EvActionPreempted.html" title="{smacc::EvActionPreempted\l\&lt; ActionResult \&gt;\n|+ resultMessage\l|}" alt="" coords="209,131,407,223"/>
-<area shape="rect" id="node4" href="$structsmacc_1_1EvActionRejected.html" title="{smacc::EvActionRejected\l\&lt; ActionResult \&gt;\n|+ resultMessage\l|}" alt="" coords="432,131,613,223"/>
-<area shape="rect" id="node5" href="$structsmacc_1_1EvActionResult.html" title="{smacc::EvActionResult\l\&lt; ActionResult \&gt;\n|+ resultMessage\l|}" alt="" coords="637,131,803,223"/>
-<area shape="rect" id="node6" href="$structsmacc_1_1EvActionSucceded.html" title="{smacc::EvActionSucceded\l\&lt; ActionResult \&gt;\n|+ resultMessage\l|}" alt="" coords="827,131,1018,223"/>
+<area shape="rect" id="node2" href="$structsmacc_1_1EvActionAborted.html" title="{smacc::EvActionAborted\l\&lt; TSource \&gt;\n|+ resultMessage\l|+ getEventLabel()\l+ getDefaultTransitionTag()\l+ getDefaultTransitionType()\l}" alt="" coords="5,131,193,252"/>
+<area shape="rect" id="node3" href="$structsmacc_1_1EvActionPreempted.html" title="{smacc::EvActionPreempted\l\&lt; TSource \&gt;\n|+ resultMessage\l|+ getEventLabel()\l+ getDefaultTransitionTag()\l+ getDefaultTransitionType()\l}" alt="" coords="217,131,405,252"/>
+<area shape="rect" id="node4" href="$structsmacc_1_1EvActionRejected.html" title="{smacc::EvActionRejected\l\&lt; TSource \&gt;\n|+ resultMessage\l|+ getEventLabel()\l+ getDefaultTransitionTag()\l+ getDefaultTransitionType()\l}" alt="" coords="429,131,617,252"/>
+<area shape="rect" id="node5" href="$structsmacc_1_1EvActionResult.html" title="{smacc::EvActionResult\l\&lt; TSource, TObjectTag \&gt;\n|+ resultMessage\l|}" alt="" coords="642,145,813,237"/>
+<area shape="rect" id="node6" href="$structsmacc_1_1EvActionSucceeded.html" title="{smacc::EvActionSucceeded\l\&lt; TSource \&gt;\n|+ resultMessage\l|+ getEventLabel()\l+ getDefaultTransitionTag()\l+ getDefaultTransitionType()\l}" alt="" coords="837,131,1025,252"/>
 </map>

@@ -2,7 +2,7 @@
 \label{classsmacc_1_1SmaccMoveBaseActionClient}\index{smacc\+::\+Smacc\+Move\+Base\+Action\+Client@{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}}
 
 
-{\ttfamily \#include $<$move\+\_\+base\+\_\+to\+\_\+goal.\+h$>$}
+{\ttfamily \#include $<$move\+\_\+base\+\_\+action\+\_\+client.\+h$>$}
 
 
 
@@ -43,7 +43,7 @@ std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc__planner__switcher_1_1PlannerSwi
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef \hyperlink{classsmacc_1_1SmaccActionClientBase}{Smacc\+Action\+Client\+Base}$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient_ad64340f7f8ac723bdb639c2c830975a7}{Base}
+typedef \hyperlink{classsmacc_1_1SmaccActionClientBase}{Smacc\+Action\+Client\+Base}$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{Smacc\+Move\+Base\+Action\+Client}, move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient_a076cd5f05503e4689c9c34c4a8add1b8}{Base}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -51,17 +51,17 @@ typedef \hyperlink{classsmacc_1_1SmaccActionClientBase}{Smacc\+Action\+Client\+B
 \subsection{Detailed Description}
 
 
-Definition at line 14 of file move\+\_\+base\+\_\+to\+\_\+goal.\+h.
+Definition at line 14 of file move\+\_\+base\+\_\+action\+\_\+client.\+h.
 
 
 
 \subsection{Member Typedef Documentation}
 \index{smacc\+::\+Smacc\+Move\+Base\+Action\+Client@{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}!Base@{Base}}
 \index{Base@{Base}!smacc\+::\+Smacc\+Move\+Base\+Action\+Client@{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}}
-\subsubsection[{\texorpdfstring{Base}{Base}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Smacc\+Action\+Client\+Base}$<$move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action$>$ {\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Base}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SmaccMoveBaseActionClient_ad64340f7f8ac723bdb639c2c830975a7}{}\label{classsmacc_1_1SmaccMoveBaseActionClient_ad64340f7f8ac723bdb639c2c830975a7}
+\subsubsection[{\texorpdfstring{Base}{Base}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Smacc\+Action\+Client\+Base}$<${\bf Smacc\+Move\+Base\+Action\+Client}, move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action$>$ {\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::\+Base}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SmaccMoveBaseActionClient_a076cd5f05503e4689c9c34c4a8add1b8}{}\label{classsmacc_1_1SmaccMoveBaseActionClient_a076cd5f05503e4689c9c34c4a8add1b8}
 
 
-Definition at line 16 of file move\+\_\+base\+\_\+to\+\_\+goal.\+h.
+Definition at line 16 of file move\+\_\+base\+\_\+action\+\_\+client.\+h.
 
 
 
@@ -81,8 +81,7 @@ Definition at line 12 of file smacc\+\_\+navigation\+\_\+plugin.\+cpp.
 \begin{DoxyCode}
 13 \{
 14     \textcolor{comment}{//ROS\_INFO("Smacc Move Base Action Client");}
-15     
-16 \}
+15 \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+Move\+Base\+Action\+Client@{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}!````~Smacc\+Move\+Base\+Action\+Client@{$\sim$\+Smacc\+Move\+Base\+Action\+Client}}
 \index{````~Smacc\+Move\+Base\+Action\+Client@{$\sim$\+Smacc\+Move\+Base\+Action\+Client}!smacc\+::\+Smacc\+Move\+Base\+Action\+Client@{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}}
@@ -93,7 +92,7 @@ Definition at line 12 of file smacc\+\_\+navigation\+\_\+plugin.\+cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classsmacc_1_1SmaccMoveBaseActionClient_a10e2971e7ff4b55a1861abe233d3c24f}{}\label{classsmacc_1_1SmaccMoveBaseActionClient_a10e2971e7ff4b55a1861abe233d3c24f}
 
 
-Definition at line 29 of file smacc\+\_\+navigation\+\_\+plugin.\+cpp.
+Definition at line 28 of file smacc\+\_\+navigation\+\_\+plugin.\+cpp.
 
 
 
@@ -101,8 +100,8 @@ References P\+L\+U\+G\+I\+N\+L\+I\+B\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+C\+L\+A\+S\+
 
 
 \begin{DoxyCode}
-30 \{   
-31 \}
+29 \{   
+30 \}
 \end{DoxyCode}
 
 
@@ -132,13 +131,13 @@ Reimplemented from \hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7
 
 
 
-Definition at line 18 of file smacc\+\_\+navigation\+\_\+plugin.\+cpp.
+Definition at line 17 of file smacc\+\_\+navigation\+\_\+plugin.\+cpp.
 
 
 \begin{DoxyCode}
-19 \{
-20     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"MOVE BASE ACTION CLIENT"};
-21 \}
+18 \{
+19     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"MOVE BASE ACTION CLIENT"};
+20 \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+Move\+Base\+Action\+Client@{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}!initialize@{initialize}}
 \index{initialize@{initialize}!smacc\+::\+Smacc\+Move\+Base\+Action\+Client@{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}}
@@ -149,24 +148,25 @@ Definition at line 18 of file smacc\+\_\+navigation\+\_\+plugin.\+cpp.
 )\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1SmaccMoveBaseActionClient_ae520045638a5f722ad1367f6d705b7c4}{}\label{classsmacc_1_1SmaccMoveBaseActionClient_ae520045638a5f722ad1367f6d705b7c4}
 
 
-Reimplemented from \hyperlink{classsmacc_1_1SmaccActionClientBase_a0224d7482b50a706f99bd280495ef1af}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$}.
+Reimplemented from \hyperlink{classsmacc_1_1SmaccActionClientBase_a717b234a3e26ea778cce7635fb924e59}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ Smacc\+Move\+Base\+Action\+Client, move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$}.
 
 
 
-Definition at line 23 of file smacc\+\_\+navigation\+\_\+plugin.\+cpp.
+Definition at line 22 of file smacc\+\_\+navigation\+\_\+plugin.\+cpp.
 
 
 
-References smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::initialize(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::name\+\_\+, and planner\+Switcher\+\_\+.
+References smacc\+::\+Smacc\+Action\+Client\+Base$<$ T\+Derived, Action\+Type $>$\+::initialize(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ Smacc\+Move\+Base\+Action\+Client, move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::name\+\_\+, and planner\+Switcher\+\_\+.
 
 
 \begin{DoxyCode}
-24 \{
-25     \hyperlink{classsmacc_1_1SmaccActionClientBase_a0224d7482b50a706f99bd280495ef1af}{SmaccActionClientBase<move\_base\_msgs::MoveBaseAction>::initialize}
+23 \{
+24     
+      \hyperlink{classsmacc_1_1SmaccActionClientBase_a717b234a3e26ea778cce7635fb924e59}{SmaccActionClientBase<SmaccMoveBaseActionClient, move\_base\_msgs::MoveBaseAction>::initialize}
       ();
-26     \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient_ae24164268108abf0b35cf51bfba5ec67}{plannerSwitcher\_} = std::make\_shared<smacc\_planner\_switcher::PlannerSwitcher>(*(this->
-      \hyperlink{classsmacc_1_1SmaccActionClientBase_a8464e3ec514e57333339fc538a2203f4}{name\_}));
-27 \}
+25     \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient_ae24164268108abf0b35cf51bfba5ec67}{plannerSwitcher\_} = std::make\_shared<smacc\_planner\_switcher::PlannerSwitcher>(*(this->
+      \hyperlink{classsmacc_1_1SmaccActionClientBase_a7fa0e4b63069bea12d47a83bd0be73d7}{name\_}));
+26 \}
 \end{DoxyCode}
 
 
@@ -188,15 +188,15 @@ Here is the call graph for this function\+:
 \subsubsection[{\texorpdfstring{planner\+Switcher\+\_\+}{plannerSwitcher_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}$>$ smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::planner\+Switcher\+\_\+}\hypertarget{classsmacc_1_1SmaccMoveBaseActionClient_ae24164268108abf0b35cf51bfba5ec67}{}\label{classsmacc_1_1SmaccMoveBaseActionClient_ae24164268108abf0b35cf51bfba5ec67}
 
 
-Definition at line 19 of file move\+\_\+base\+\_\+to\+\_\+goal.\+h.
+Definition at line 19 of file move\+\_\+base\+\_\+action\+\_\+client.\+h.
 
 
 
-Referenced by initialize(), Undo\+Path\+Backwards\+::on\+Entry(), Sb\+Undo\+Path\+Backwards\+::on\+Entry(), Navigate\+Global\+Position\+::on\+Entry(), Sb\+Rotate\+::on\+Entry(), Rotate\+::on\+Entry(), Sb\+Navigate\+Global\+Position\+::on\+Entry(), Sb\+Navigate\+Forward\+::on\+Entry(), Navigate\+Forward\+::on\+Entry(), and Sb\+Navigate\+Backwards\+::on\+Entry().
+Referenced by initialize(), sm\+\_\+dance\+\_\+bot\+::\+Sb\+Undo\+Path\+Backwards\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Sb\+Rotate\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Sb\+Navigate\+Global\+Position\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Sb\+Navigate\+Forward\+::on\+Entry(), and sm\+\_\+dance\+\_\+bot\+::\+Sb\+Navigate\+Backwards\+::on\+Entry().
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-smacc\+\_\+client\+\_\+library/smacc\+\_\+navigation/smacc\+\_\+navigation\+\_\+plugin/include/smacc\+\_\+navigation\+\_\+plugin/\hyperlink{move__base__to__goal_8h}{move\+\_\+base\+\_\+to\+\_\+goal.\+h}\item 
+smacc\+\_\+client\+\_\+library/smacc\+\_\+navigation/smacc\+\_\+navigation\+\_\+plugin/include/smacc\+\_\+navigation\+\_\+plugin/\hyperlink{move__base__action__client_8h}{move\+\_\+base\+\_\+action\+\_\+client.\+h}\item 
 smacc\+\_\+client\+\_\+library/smacc\+\_\+navigation/smacc\+\_\+navigation\+\_\+plugin/src/\hyperlink{smacc__navigation__plugin_8cpp}{smacc\+\_\+navigation\+\_\+plugin.\+cpp}\end{DoxyCompactItemize}

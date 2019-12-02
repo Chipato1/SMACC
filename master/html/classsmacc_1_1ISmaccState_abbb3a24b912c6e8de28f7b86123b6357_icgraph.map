@@ -1,8 +1,5 @@
 <map id="smacc::ISmaccState::getParam" name="smacc::ISmaccState::getParam">
-<area shape="rect" id="node2" href="$classNavigateGlobalPosition.html#a7f59ee188413d4f4b006549ba6d3d3f8" title="NavigateGlobalPosition\l::readStartPoseFromParameter\lServer" alt="" coords="229,5,450,61"/>
-<area shape="rect" id="node5" href="$classSbNavigateGlobalPosition.html#a497b26df556f99524164619deb5b2352" title="SbNavigateGlobalPosition\l::readStartPoseFromParameterServer" alt="" coords="208,85,471,126"/>
-<area shape="rect" id="node3" href="$classNavigateGlobalPosition.html#a5181e70601da336334f25a95840fd878" title="NavigateGlobalPosition\l::goToRadialStart" alt="" coords="527,13,697,54"/>
-<area shape="rect" id="node4" href="$classNavigateGlobalPosition.html#a80962ce5bba51285565e360872f58c47" title="NavigateGlobalPosition\l::onEntry" alt="" coords="762,13,931,54"/>
-<area shape="rect" id="node6" href="$classSbNavigateGlobalPosition.html#a37b56e88ae4b01413c8fff19ee319769" title="SbNavigateGlobalPosition\l::goToRadialStart" alt="" coords="519,85,705,126"/>
-<area shape="rect" id="node7" href="$classSbNavigateGlobalPosition.html#ae4c1f2e5de1077ee88d506eb69099f0c" title="SbNavigateGlobalPosition\l::onEntry" alt="" coords="753,85,940,126"/>
+<area shape="rect" id="node2" href="$classsm__dance__bot_1_1SbNavigateGlobalPosition.html#adc268e278b7de844202959036f424a91" title="sm_dance_bot::SbNavigate\lGlobalPosition::readStartPose\lFromParameterServer" alt="" coords="199,5,396,61"/>
+<area shape="rect" id="node3" href="$classsm__dance__bot_1_1SbNavigateGlobalPosition.html#ab923d1e3c346506417d18f0ebbfd33ec" title="sm_dance_bot::SbNavigate\lGlobalPosition::goToRadialStart" alt="" coords="444,13,652,54"/>
+<area shape="rect" id="node4" href="$classsm__dance__bot_1_1SbNavigateGlobalPosition.html#af5bbe5fa0319ba2f8e5e3cbd40527a43" title="sm_dance_bot::SbNavigate\lGlobalPosition::onEntry" alt="" coords="700,13,883,54"/>
 </map>

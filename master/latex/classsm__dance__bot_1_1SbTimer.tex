@@ -1,0 +1,128 @@
+\hypertarget{classsm__dance__bot_1_1SbTimer}{}\section{sm\+\_\+dance\+\_\+bot\+:\+:Sb\+Timer Class Reference}
+\label{classsm__dance__bot_1_1SbTimer}\index{sm\+\_\+dance\+\_\+bot\+::\+Sb\+Timer@{sm\+\_\+dance\+\_\+bot\+::\+Sb\+Timer}}
+
+
+{\ttfamily \#include $<$sb\+\_\+timer\+\_\+substate.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+dance\+\_\+bot\+:\+:Sb\+Timer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{classsm__dance__bot_1_1SbTimer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+dance\+\_\+bot\+:\+:Sb\+Timer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot_1_1SbTimer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classsm__dance__bot_1_1SbTimer_adcdc9217d65a9531bbaba4f7d26781c4}{on\+Entry} () override
+\item 
+virtual void \hyperlink{classsm__dance__bot_1_1SbTimer_a6af85e286033a9ea453bf7516ebe573f}{on\+Exit} () override
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc_1_1SmaccTimerClient}{smacc\+::\+Smacc\+Timer\+Client} $\ast$ \hyperlink{classsm__dance__bot_1_1SbTimer_a6e0d4c7dbb3d78b9df61761d2df4a469}{timer\+Client\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file sb\+\_\+timer\+\_\+substate.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+::\+Sb\+Timer@{sm\+\_\+dance\+\_\+bot\+::\+Sb\+Timer}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!sm\+\_\+dance\+\_\+bot\+::\+Sb\+Timer@{sm\+\_\+dance\+\_\+bot\+::\+Sb\+Timer}}
+\subsubsection[{\texorpdfstring{on\+Entry() override}{onEntry() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+dance\+\_\+bot\+::\+Sb\+Timer\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__dance__bot_1_1SbTimer_adcdc9217d65a9531bbaba4f7d26781c4}{}\label{classsm__dance__bot_1_1SbTimer_adcdc9217d65a9531bbaba4f7d26781c4}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_a47eb8983afa8e1d312873a9a297b84f3}{smacc\+::\+Smacc\+Sub\+State\+Behavior}.
+
+
+
+Definition at line 13 of file sb\+\_\+timer\+\_\+substate.\+h.
+
+
+
+References smacc\+::\+Smacc\+Timer\+Client\+::on\+Timer\+Tick, smacc\+::\+Smacc\+Sub\+State\+Behavior\+::post\+Event(), and smacc\+::\+Smacc\+Sub\+State\+Behavior\+::requires\+Client().
+
+
+\begin{DoxyCode}
+14   \{
+15     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_ae8361a9e794b02f9f3d962b881e4fd7d}{requiresClient}(\hyperlink{classsm__dance__bot_1_1SbTimer_a6e0d4c7dbb3d78b9df61761d2df4a469}{timerClient\_});
+16 
+17     \hyperlink{classsm__dance__bot_1_1SbTimer_a6e0d4c7dbb3d78b9df61761d2df4a469}{timerClient\_}->\hyperlink{classsmacc_1_1SmaccTimerClient_a956acd3689ff143d52066fddc884072f}{onTimerTick}.connect(
+18         [&](\textcolor{keyword}{auto} *ev) \{
+19           \textcolor{keyword}{auto} ev2 = \textcolor{keyword}{new} \hyperlink{structsmacc_1_1EvTimer}{smacc::EvTimer<SbTimer>}();
+20           this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a8538664f9828247727a27446112788a2}{postEvent}(ev2);
+21         \});
+22 
+23     \textcolor{comment}{//this->propagatesEvents<EvTimer<SmaccTimer>>(timerClient\_);}
+24   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot_1_1SbTimer_adcdc9217d65a9531bbaba4f7d26781c4_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{sm\+\_\+dance\+\_\+bot\+::\+Sb\+Timer@{sm\+\_\+dance\+\_\+bot\+::\+Sb\+Timer}!on\+Exit@{on\+Exit}}
+\index{on\+Exit@{on\+Exit}!sm\+\_\+dance\+\_\+bot\+::\+Sb\+Timer@{sm\+\_\+dance\+\_\+bot\+::\+Sb\+Timer}}
+\subsubsection[{\texorpdfstring{on\+Exit() override}{onExit() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+dance\+\_\+bot\+::\+Sb\+Timer\+::on\+Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__dance__bot_1_1SbTimer_a6af85e286033a9ea453bf7516ebe573f}{}\label{classsm__dance__bot_1_1SbTimer_a6af85e286033a9ea453bf7516ebe573f}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_afaeb44666136c5ae47a53dde89fa5d31}{smacc\+::\+Smacc\+Sub\+State\+Behavior}.
+
+
+
+Definition at line 26 of file sb\+\_\+timer\+\_\+substate.\+h.
+
+
+\begin{DoxyCode}
+27   \{
+28   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+::\+Sb\+Timer@{sm\+\_\+dance\+\_\+bot\+::\+Sb\+Timer}!timer\+Client\+\_\+@{timer\+Client\+\_\+}}
+\index{timer\+Client\+\_\+@{timer\+Client\+\_\+}!sm\+\_\+dance\+\_\+bot\+::\+Sb\+Timer@{sm\+\_\+dance\+\_\+bot\+::\+Sb\+Timer}}
+\subsubsection[{\texorpdfstring{timer\+Client\+\_\+}{timerClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+::\+Smacc\+Timer\+Client}$\ast$ sm\+\_\+dance\+\_\+bot\+::\+Sb\+Timer\+::timer\+Client\+\_\+}\hypertarget{classsm__dance__bot_1_1SbTimer_a6e0d4c7dbb3d78b9df61761d2df4a469}{}\label{classsm__dance__bot_1_1SbTimer_a6e0d4c7dbb3d78b9df61761d2df4a469}
+
+
+Definition at line 11 of file sb\+\_\+timer\+\_\+substate.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/substate\+\_\+behaviors/timer/\hyperlink{sb__timer__substate_8h}{sb\+\_\+timer\+\_\+substate.\+h}\end{DoxyCompactItemize}

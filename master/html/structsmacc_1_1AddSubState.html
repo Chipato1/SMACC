@@ -121,7 +121,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00089">89</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00057">57</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2110c7ebd1833484f328bed15e1a988c"></a>
 <div class="memitem">
@@ -145,8 +145,8 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00092">92</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        : <a class="code" href="structsmacc_1_1AddSubState.html#a24aaa4e3dbe9722ce100f24b73207cd6">parentState_</a>(parentState)</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    {</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div><div class="ttc" id="structsmacc_1_1AddSubState_html_a24aaa4e3dbe9722ce100f24b73207cd6"><div class="ttname"><a href="structsmacc_1_1AddSubState.html#a24aaa4e3dbe9722ce100f24b73207cd6">smacc::AddSubState::parentState_</a></div><div class="ttdeci">std::shared_ptr&lt; SmaccStateInfo &gt; &amp; parentState_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__machine__info_8h_source.html#l00091">smacc_state_machine_info.h:91</a></div></div>
+<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00060">60</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        : <a class="code" href="structsmacc_1_1AddSubState.html#a24aaa4e3dbe9722ce100f24b73207cd6">parentState_</a>(parentState)</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div><div class="ttc" id="structsmacc_1_1AddSubState_html_a24aaa4e3dbe9722ce100f24b73207cd6"><div class="ttname"><a href="structsmacc_1_1AddSubState.html#a24aaa4e3dbe9722ce100f24b73207cd6">smacc::AddSubState::parentState_</a></div><div class="ttdeci">std::shared_ptr&lt; SmaccStateInfo &gt; &amp; parentState_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__machine__info_8h_source.html#l00059">smacc_state_machine_info.h:59</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -167,18 +167,18 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00121">121</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00098">98</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
 
-<p>References <a class="el" href="smacc__state__machine__info_8h_source.html#l00265">smacc::WalkStatesExecutor&lt; InitialStateType &gt;::walkStates()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;{</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">using</span> type_t = <span class="keyword">typename</span> T::type;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="comment">//auto childState = this-&gt;parentState_-&gt;createChildState&lt;type_t&gt;()</span></div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="structsmacc_1_1WalkStatesExecutor.html#a11a2b02eafb62ec298bcf5ffbb32848b">WalkStatesExecutor&lt;type_t&gt;::walkStates</a>(<a class="code" href="structsmacc_1_1AddSubState.html#a24aaa4e3dbe9722ce100f24b73207cd6">parentState_</a>, <span class="keyword">false</span>);</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div><div class="ttc" id="structsmacc_1_1AddSubState_html_a24aaa4e3dbe9722ce100f24b73207cd6"><div class="ttname"><a href="structsmacc_1_1AddSubState.html#a24aaa4e3dbe9722ce100f24b73207cd6">smacc::AddSubState::parentState_</a></div><div class="ttdeci">std::shared_ptr&lt; SmaccStateInfo &gt; &amp; parentState_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__machine__info_8h_source.html#l00091">smacc_state_machine_info.h:91</a></div></div>
-<div class="ttc" id="structsmacc_1_1WalkStatesExecutor_html_a11a2b02eafb62ec298bcf5ffbb32848b"><div class="ttname"><a href="structsmacc_1_1WalkStatesExecutor.html#a11a2b02eafb62ec298bcf5ffbb32848b">smacc::WalkStatesExecutor::walkStates</a></div><div class="ttdeci">static void walkStates(std::shared_ptr&lt; SmaccStateInfo &gt; &amp;currentState, bool rootInitialNode)</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__machine__info_8h_source.html#l00265">smacc_state_machine_info.h:265</a></div></div>
+<p>References <a class="el" href="smacc__state__machine__info_8h_source.html#l00364">smacc::WalkStatesExecutor&lt; InitialStateType &gt;::walkStates()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">using</span> type_t = <span class="keyword">typename</span> T::type;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">//auto childState = this-&gt;parentState_-&gt;createChildState&lt;type_t&gt;()</span></div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="structsmacc_1_1WalkStatesExecutor.html#a11a2b02eafb62ec298bcf5ffbb32848b">WalkStatesExecutor&lt;type_t&gt;::walkStates</a>(<a class="code" href="structsmacc_1_1AddSubState.html#a24aaa4e3dbe9722ce100f24b73207cd6">parentState_</a>, <span class="keyword">false</span>);</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div><div class="ttc" id="structsmacc_1_1AddSubState_html_a24aaa4e3dbe9722ce100f24b73207cd6"><div class="ttname"><a href="structsmacc_1_1AddSubState.html#a24aaa4e3dbe9722ce100f24b73207cd6">smacc::AddSubState::parentState_</a></div><div class="ttdeci">std::shared_ptr&lt; SmaccStateInfo &gt; &amp; parentState_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__machine__info_8h_source.html#l00059">smacc_state_machine_info.h:59</a></div></div>
+<div class="ttc" id="structsmacc_1_1WalkStatesExecutor_html_a11a2b02eafb62ec298bcf5ffbb32848b"><div class="ttname"><a href="structsmacc_1_1WalkStatesExecutor.html#a11a2b02eafb62ec298bcf5ffbb32848b">smacc::WalkStatesExecutor::walkStates</a></div><div class="ttdeci">static void walkStates(std::shared_ptr&lt; SmaccStateInfo &gt; &amp;currentState, bool rootInitialNode)</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__machine__info_8h_source.html#l00364">smacc_state_machine_info.h:364</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="structsmacc_1_1AddSubState_a24b6d9a40ca08289e36562d26f1b863c_cgraph.png" border="0" usemap="#structsmacc_1_1AddSubState_a24b6d9a40ca08289e36562d26f1b863c_cgraph" alt=""/></div>
 <map name="structsmacc_1_1AddSubState_a24b6d9a40ca08289e36562d26f1b863c_cgraph" id="structsmacc_1_1AddSubState_a24b6d9a40ca08289e36562d26f1b863c_cgraph">
-<area shape="rect" id="node2" href="structsmacc_1_1WalkStatesExecutor.html#a11a2b02eafb62ec298bcf5ffbb32848b" title="smacc::WalkStatesExecutor\l::walkStates" alt="" coords="211,5,409,47"/>
+<area shape="rect" id="node2" href="structsmacc_1_1WalkStatesExecutor.html#a11a2b02eafb62ec298bcf5ffbb32848b" title="smacc::WalkStatesExecutor\l::walkStates" alt="" coords="200,5,389,47"/>
 </map>
 </div>
 </p>
@@ -196,12 +196,12 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00091">91</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__state__machine__info_8h_source.html#l00059">59</a> of file <a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>smacc/include/smacc/<a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a></li>
+<li>smacc/include/smacc/introspection/<a class="el" href="smacc__state__machine__info_8h_source.html">smacc_state_machine_info.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

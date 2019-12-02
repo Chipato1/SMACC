@@ -1,0 +1,84 @@
+\hypertarget{structsmacc_1_1transition_1_1reactions}{}\section{smacc\+:\+:transition$<$ Event, Destination, Tag, Transition\+Context, p\+Transition\+Action $>$\+:\+:reactions$<$ State $>$ Struct Template Reference}
+\label{structsmacc_1_1transition_1_1reactions}\index{smacc\+::transition$<$ Event, Destination, Tag, Transition\+Context, p\+Transition\+Action $>$\+::reactions$<$ State $>$@{smacc\+::transition$<$ Event, Destination, Tag, Transition\+Context, p\+Transition\+Action $>$\+::reactions$<$ State $>$}}
+
+
+Collaboration diagram for smacc\+:\+:transition$<$ Event, Destination, Tag, Transition\+Context, p\+Transition\+Action $>$\+:\+:reactions$<$ State $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{structsmacc_1_1transition_1_1reactions__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boost\+::statechart\+::result \hyperlink{structsmacc_1_1transition_1_1reactions_a2298b392deaaae5c0f75aaa6a3713093}{react\+\_\+without\+\_\+action} (State \&stt)
+\item 
+static boost\+::statechart\+::result \hyperlink{structsmacc_1_1transition_1_1reactions_aae5893338403bed6dfdc3ee3d5bc9c42}{react\+\_\+with\+\_\+action} (State \&stt, const Event \&evt)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Event, class Destination, typename Tag, class Transition\+Context, void(\+Transition\+Context\+::$\ast$)(const Event \&) p\+Transition\+Action$>$\\*
+template$<$class State$>$\\*
+struct smacc\+::transition$<$ Event, Destination, Tag, Transition\+Context, p\+Transition\+Action $>$\+::reactions$<$ State $>$}
+
+
+
+Definition at line 22 of file smacc\+\_\+transition.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::transition\+::reactions@{smacc\+::transition\+::reactions}!react\+\_\+with\+\_\+action@{react\+\_\+with\+\_\+action}}
+\index{react\+\_\+with\+\_\+action@{react\+\_\+with\+\_\+action}!smacc\+::transition\+::reactions@{smacc\+::transition\+::reactions}}
+\subsubsection[{\texorpdfstring{react\+\_\+with\+\_\+action(\+State \&stt, const Event \&evt)}{react_with_action(State &stt, const Event &evt)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Event, class Destination, typename Tag, class Transition\+Context, void(\+Transition\+Context\+::$\ast$)(const Event \&) p\+Transition\+Action$>$ template$<$class State $>$ static boost\+::statechart\+::result {\bf smacc\+::transition}$<$ Event, Destination, Tag, Transition\+Context, p\+Transition\+Action $>$\+::{\bf reactions}$<$ State $>$\+::react\+\_\+with\+\_\+action (
+\begin{DoxyParamCaption}
+\item[{State \&}]{stt, }
+\item[{const Event \&}]{evt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structsmacc_1_1transition_1_1reactions_aae5893338403bed6dfdc3ee3d5bc9c42}{}\label{structsmacc_1_1transition_1_1reactions_aae5893338403bed6dfdc3ee3d5bc9c42}
+
+
+Definition at line 33 of file smacc\+\_\+transition.\+h.
+
+
+\begin{DoxyCode}
+34     \{
+35       ROS\_ERROR(\textcolor{stringliteral}{"REACT WITH ACTION AND EVENT"});
+36       \textcolor{keyword}{typedef} 
+      \hyperlink{classsmacc_1_1transition}{smacc::transition<Event, Destination, Tag, TransitionContext, pTransitionAction>}
+       Transtype;
+37       stt.template notifyTransition<Transtype>();
+38       \textcolor{keywordflow}{return} stt.template transit<Destination>(pTransitionAction, evt);
+39     \}
+\end{DoxyCode}
+\index{smacc\+::transition\+::reactions@{smacc\+::transition\+::reactions}!react\+\_\+without\+\_\+action@{react\+\_\+without\+\_\+action}}
+\index{react\+\_\+without\+\_\+action@{react\+\_\+without\+\_\+action}!smacc\+::transition\+::reactions@{smacc\+::transition\+::reactions}}
+\subsubsection[{\texorpdfstring{react\+\_\+without\+\_\+action(\+State \&stt)}{react_without_action(State &stt)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Event, class Destination, typename Tag, class Transition\+Context, void(\+Transition\+Context\+::$\ast$)(const Event \&) p\+Transition\+Action$>$ template$<$class State $>$ static boost\+::statechart\+::result {\bf smacc\+::transition}$<$ Event, Destination, Tag, Transition\+Context, p\+Transition\+Action $>$\+::{\bf reactions}$<$ State $>$\+::react\+\_\+without\+\_\+action (
+\begin{DoxyParamCaption}
+\item[{State \&}]{stt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structsmacc_1_1transition_1_1reactions_a2298b392deaaae5c0f75aaa6a3713093}{}\label{structsmacc_1_1transition_1_1reactions_a2298b392deaaae5c0f75aaa6a3713093}
+
+
+Definition at line 24 of file smacc\+\_\+transition.\+h.
+
+
+\begin{DoxyCode}
+25     \{
+26       ROS\_ERROR(\textcolor{stringliteral}{"REACT WITHOUT ACTION"});
+27       \textcolor{keyword}{typedef} 
+      \hyperlink{classsmacc_1_1transition}{smacc::transition<Event, Destination, Tag, TransitionContext, pTransitionAction>}
+       Transtype;
+28 
+29       stt.template notifyTransition<Transtype>();
+30       \textcolor{keywordflow}{return} stt.template transit<Destination>();
+31     \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc/include/smacc/\hyperlink{smacc__transition_8h}{smacc\+\_\+transition.\+h}\end{DoxyCompactItemize}

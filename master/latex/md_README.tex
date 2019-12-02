@@ -168,7 +168,7 @@ For the previous state machine, this would be the initial S\+M\+A\+CC State. It 
   \}
 \};
 
-\textcolor{keywordtype}{int} \hyperlink{namespacerosdoc__lite_af17b2a5046f7827add27b1cc8deb06a0}{main}(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} **\hyperlink{namespacesmacc__viewer_a641e44a1c9c09b36c59a0651d01d4d97}{argv}) \{
+\textcolor{keywordtype}{int} \hyperlink{odom__tracker__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} **argv) \{
   \textcolor{comment}{// initialize the ros node}
   ros::init(argc, argv, \textcolor{stringliteral}{"example1"});
   ros::NodeHandle nh;
@@ -223,7 +223,7 @@ The code would be the following\+:
     goal.target\_pose.pose.orientation =
         tf::createQuaternionMsgFromRollPitchYaw(0, 0, M\_PI);
 
-    moveBaseClient\_->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
+    moveBaseClient\_->\hyperlink{classsmacc_1_1SmaccActionClientBase_a2ec9e5fb96ecc517a815cda209eb1b51}{sendGoal}(goal);
   \}
 \};
 \end{DoxyCode}

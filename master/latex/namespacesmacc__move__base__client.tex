@@ -1,0 +1,150 @@
+\hypertarget{namespacesmacc__move__base__client}{}\section{smacc\+\_\+move\+\_\+base\+\_\+client Namespace Reference}
+\label{namespacesmacc__move__base__client}\index{smacc\+\_\+move\+\_\+base\+\_\+client@{smacc\+\_\+move\+\_\+base\+\_\+client}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+geometry\+\_\+msgs\+::\+Pose\+Stamped \hyperlink{namespacesmacc__move__base__client_aa30beab025bcffa7f321d40dbb5e8970}{make\+Pure\+Spinning\+Sub\+Plan} (const geometry\+\_\+msgs\+::\+Pose\+Stamped \&start, double dst\+Rads, std\+::vector$<$ geometry\+\_\+msgs\+::\+Pose\+Stamped $>$ \&plan, double pures\+Spinning\+Rad\+Step=1000)
+\item 
+geometry\+\_\+msgs\+::\+Pose\+Stamped \hyperlink{namespacesmacc__move__base__client_a75b92d6b95689fb8f73cdca23291fdb9}{make\+Pure\+Straight\+Sub\+Plan} (const geometry\+\_\+msgs\+::\+Pose\+Stamped \&start\+Oriented\+Pose, const geometry\+\_\+msgs\+::\+Point \&goal, double lenght, std\+::vector$<$ geometry\+\_\+msgs\+::\+Pose\+Stamped $>$ \&plan)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{smacc\+\_\+move\+\_\+base\+\_\+client@{smacc\+\_\+move\+\_\+base\+\_\+client}!make\+Pure\+Spinning\+Sub\+Plan@{make\+Pure\+Spinning\+Sub\+Plan}}
+\index{make\+Pure\+Spinning\+Sub\+Plan@{make\+Pure\+Spinning\+Sub\+Plan}!smacc\+\_\+move\+\_\+base\+\_\+client@{smacc\+\_\+move\+\_\+base\+\_\+client}}
+\subsubsection[{\texorpdfstring{make\+Pure\+Spinning\+Sub\+Plan(const geometry\+\_\+msgs\+::\+Pose\+Stamped \&start, double dst\+Rads, std\+::vector$<$ geometry\+\_\+msgs\+::\+Pose\+Stamped $>$ \&plan, double pures\+Spinning\+Rad\+Step=1000)}{makePureSpinningSubPlan(const geometry_msgs::PoseStamped &start, double dstRads, std::vector< geometry_msgs::PoseStamped > &plan, double puresSpinningRadStep=1000)}}]{\setlength{\rightskip}{0pt plus 5cm}geometry\+\_\+msgs\+::\+Pose\+Stamped smacc\+\_\+move\+\_\+base\+\_\+client\+::make\+Pure\+Spinning\+Sub\+Plan (
+\begin{DoxyParamCaption}
+\item[{const geometry\+\_\+msgs\+::\+Pose\+Stamped \&}]{start, }
+\item[{double}]{dst\+Rads, }
+\item[{std\+::vector$<$ geometry\+\_\+msgs\+::\+Pose\+Stamped $>$ \&}]{plan, }
+\item[{double}]{pures\+Spinning\+Rad\+Step = {\ttfamily 1000}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc__move__base__client_aa30beab025bcffa7f321d40dbb5e8970}{}\label{namespacesmacc__move__base__client_aa30beab025bcffa7f321d40dbb5e8970}
+
+
+Definition at line 13 of file reel\+\_\+path\+\_\+tools.\+cpp.
+
+
+
+Referenced by backward\+\_\+global\+\_\+planner\+::\+Backward\+Global\+Planner\+::create\+Pure\+Spining\+And\+Stragiht\+Line\+Backward\+Path(), and forward\+\_\+global\+\_\+planner\+::\+Forward\+Global\+Planner\+::make\+Plan().
+
+
+\begin{DoxyCode}
+14     \{
+15         \textcolor{keywordtype}{double} startYaw = tf::getYaw(start.pose.orientation);
+16         \textcolor{comment}{//ROS\_INFO("pure spining start yaw: %lf", startYaw);}
+17         \textcolor{comment}{//ROS\_INFO("pure spining goal yaw: %lf", dstRads);}
+18         \textcolor{comment}{//ROS\_WARN\_STREAM("pure spinning start pose: " << start);}
+19 
+20         \textcolor{keywordtype}{double} goalAngleOffset = angles::shortest\_angular\_distance(startYaw, dstRads);
+21         \textcolor{comment}{//ROS\_INFO("shortest angle: %lf", goalAngleOffset);}
+22 
+23         \textcolor{keywordtype}{double} radstep = 0.005;
+24 
+25         \textcolor{keywordflow}{if}( goalAngleOffset>=0) 
+26         \{
+27             \textcolor{comment}{// angle positive turn counterclockwise}
+28             \textcolor{comment}{//ROS\_INFO("pure spining counterclockwise");}
+29             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{double} dangle = 0; dangle <= goalAngleOffset;dangle+=radstep )
+30             \{
+31                 geometry\_msgs::PoseStamped p= start;
+32                 \textcolor{keywordtype}{double} yaw = startYaw+ dangle;
+33                 \textcolor{comment}{//ROS\_INFO("pure spining counterclockwise, current path yaw: %lf, dangle: %lf, angleoffset
+       %lf, radstep %lf pathsize(%ld)", yaw, dangle, goalAngleOffset, radstep, plan.size());}
+34                 p.pose.orientation = tf::createQuaternionMsgFromYaw(yaw);
+35                 plan.push\_back(p);
+36             \}     
+37         \}
+38         \textcolor{keywordflow}{else}
+39         \{
+40             \textcolor{comment}{// angle positive turn clockwise}
+41             \textcolor{comment}{//ROS\_INFO("pure spining clockwise");}
+42             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{double} dangle = 0; dangle >= goalAngleOffset;dangle-=radstep )
+43             \{
+44                 \textcolor{comment}{//ROS\_INFO("dangle: %lf", dangle);}
+45                 geometry\_msgs::PoseStamped p= start;
+46                 \textcolor{keywordtype}{double} yaw = startYaw+ dangle;
+47                 \textcolor{comment}{//ROS\_INFO("pure spining clockwise, yaw: %lf, dangle: %lf, angleoffset %lf radstep %lf",
+       yaw, dangle, goalAngleOffset,radstep);}
+48                 p.pose.orientation = tf::createQuaternionMsgFromYaw(yaw);
+49                 plan.push\_back(p);
+50             \}     
+51         \}
+52 
+53         \textcolor{comment}{//ROS\_INFO("pure spining end yaw: %lf", dstRads);        }
+54         geometry\_msgs::PoseStamped end= start;
+55         end.pose.orientation = tf::createQuaternionMsgFromYaw(dstRads);
+56         plan.push\_back(end);
+57 
+58         \textcolor{keywordflow}{return} end;
+59     \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesmacc__move__base__client_aa30beab025bcffa7f321d40dbb5e8970_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+\_\+move\+\_\+base\+\_\+client@{smacc\+\_\+move\+\_\+base\+\_\+client}!make\+Pure\+Straight\+Sub\+Plan@{make\+Pure\+Straight\+Sub\+Plan}}
+\index{make\+Pure\+Straight\+Sub\+Plan@{make\+Pure\+Straight\+Sub\+Plan}!smacc\+\_\+move\+\_\+base\+\_\+client@{smacc\+\_\+move\+\_\+base\+\_\+client}}
+\subsubsection[{\texorpdfstring{make\+Pure\+Straight\+Sub\+Plan(const geometry\+\_\+msgs\+::\+Pose\+Stamped \&start\+Oriented\+Pose, const geometry\+\_\+msgs\+::\+Point \&goal, double lenght, std\+::vector$<$ geometry\+\_\+msgs\+::\+Pose\+Stamped $>$ \&plan)}{makePureStraightSubPlan(const geometry_msgs::PoseStamped &startOrientedPose, const geometry_msgs::Point &goal, double lenght, std::vector< geometry_msgs::PoseStamped > &plan)}}]{\setlength{\rightskip}{0pt plus 5cm}geometry\+\_\+msgs\+::\+Pose\+Stamped smacc\+\_\+move\+\_\+base\+\_\+client\+::make\+Pure\+Straight\+Sub\+Plan (
+\begin{DoxyParamCaption}
+\item[{const geometry\+\_\+msgs\+::\+Pose\+Stamped \&}]{start\+Oriented\+Pose, }
+\item[{const geometry\+\_\+msgs\+::\+Point \&}]{goal, }
+\item[{double}]{lenght, }
+\item[{std\+::vector$<$ geometry\+\_\+msgs\+::\+Pose\+Stamped $>$ \&}]{plan}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc__move__base__client_a75b92d6b95689fb8f73cdca23291fdb9}{}\label{namespacesmacc__move__base__client_a75b92d6b95689fb8f73cdca23291fdb9}
+
+
+Definition at line 61 of file reel\+\_\+path\+\_\+tools.\+cpp.
+
+
+
+Referenced by backward\+\_\+global\+\_\+planner\+::\+Backward\+Global\+Planner\+::create\+Pure\+Spining\+And\+Stragiht\+Line\+Backward\+Path(), and forward\+\_\+global\+\_\+planner\+::\+Forward\+Global\+Planner\+::make\+Plan().
+
+
+\begin{DoxyCode}
+65     \{
+66         \textcolor{keywordtype}{double} dx = 0.01; \textcolor{comment}{// 1 cm}
+67         \textcolor{keywordtype}{double} steps = lenght /dx;
+68         \textcolor{keywordtype}{double} dt = 1.0/steps;
+69 
+70         \textcolor{comment}{// geometry\_msgs::PoseStamped end;}
+71         \textcolor{comment}{// end.pose.orientation = startOrientedPose.pose.orientation;}
+72         \textcolor{comment}{//end.pose.position = goal;}
+73         plan.push\_back(startOrientedPose);
+74 
+75         \textcolor{comment}{//ROS\_INFO\_STREAM("Pure straight, start: " << startOrientedPose << std::endl << "end: " << goal);}
+76         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{double} t=0; t <=1.0; t+=dt)
+77         \{
+78             geometry\_msgs::PoseStamped p = startOrientedPose;
+79             
+80             p.pose.position.x =  startOrientedPose.pose.position.x *(1 - t) + goal.x * t;
+81             p.pose.position.y =  startOrientedPose.pose.position.y *(1 - t) + goal.y * t;
+82             p.pose.orientation = startOrientedPose.pose.orientation;
+83             
+84             plan.push\_back(p);
+85         \}
+86     
+87         \textcolor{keywordflow}{return} plan.back();
+88     \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesmacc__move__base__client_a75b92d6b95689fb8f73cdca23291fdb9_icgraph}
+\end{center}
+\end{figure}
+
+

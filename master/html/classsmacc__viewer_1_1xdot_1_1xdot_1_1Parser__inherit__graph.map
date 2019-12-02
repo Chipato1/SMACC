@@ -1,4 +1,0 @@
-<map id="smacc_viewer.xdot.xdot.Parser" name="smacc_viewer.xdot.xdot.Parser">
-<area shape="rect" id="node2" href="$classsmacc__viewer_1_1xdot_1_1xdot_1_1DotParser.html" title="{smacc_viewer.xdot.xdot.Dot\lParser\n|+ graph_attrs\l+ node_attrs\l+ edge_attrs\l|+ __init__()\l+ parse()\l+ parse_graph()\l+ parse_subgraph()\l+ parse_stmt()\l+ parse_attrs()\l+ parse_attr()\l+ parse_node_id()\l+ parse_id()\l+ handle_graph()\l+ handle_node()\l+ handle_edge()\l}" alt="" coords="14,189,215,472"/>
-<area shape="rect" id="node3" href="$classsmacc__viewer_1_1xdot_1_1xdot_1_1XDotParser.html" title="{smacc_viewer.xdot.xdot.XDot\lParser\n|+ nodes\l+ edges\l+ shapes\l+ node_by_name\l+ top_graph\l+ subgraph_shapes\l+ xoffset\l+ yoffset\l+ xscale\l+ yscale\l+ width\l+ height\l|+ __init__()\l+ handle_graph()\l+ handle_node()\l+ handle_edge()\l+ parse()\l+ parse_node_pos()\l+ parse_edge_pos()\l+ transform()\l}" alt="" coords="10,520,219,876"/>
-</map>

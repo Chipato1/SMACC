@@ -11,7 +11,7 @@ Inheritance diagram for forward\+\_\+local\+\_\+planner\+:\+:Forward\+Local\+Pla
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=250pt]{classforward__local__planner_1_1ForwardLocalPlanner__inherit__graph}
+\includegraphics[width=235pt]{classforward__local__planner_1_1ForwardLocalPlanner__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -79,7 +79,7 @@ double \hyperlink{classforward__local__planner_1_1ForwardLocalPlanner_a20ac6eadd
 \item 
 double \hyperlink{classforward__local__planner_1_1ForwardLocalPlanner_a1fe410ab94742dceb111ce44c01c12f9}{max\+\_\+linear\+\_\+x\+\_\+speed\+\_\+}
 \item 
-\hyperlink{classint}{int} \hyperlink{classforward__local__planner_1_1ForwardLocalPlanner_a38a9662e8603f91d372759331b152077}{current\+Pose\+Index\+\_\+}
+int \hyperlink{classforward__local__planner_1_1ForwardLocalPlanner_a38a9662e8603f91d372759331b152077}{current\+Pose\+Index\+\_\+}
 \item 
 std\+::vector$<$ geometry\+\_\+msgs\+::\+Pose\+Stamped $>$ \hyperlink{classforward__local__planner_1_1ForwardLocalPlanner_a64a6d7c51bafd57b02b9d098ac24dd45}{plan\+\_\+}
 \end{DoxyCompactItemize}
@@ -445,7 +445,7 @@ Definition at line 84 of file forward\+\_\+local\+\_\+planner.\+cpp.
 
 
 
-References forward\+\_\+local\+\_\+planner\+::optional\+Robot\+Pose(), smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt\+::x, and smacc\+\_\+viewer.\+xdot.\+xdot\+\_\+qt\+::y.
+References forward\+\_\+local\+\_\+planner\+::optional\+Robot\+Pose().
 
 
 \begin{DoxyCode}
@@ -466,11 +466,11 @@ References forward\+\_\+local\+\_\+planner\+::optional\+Robot\+Pose(), smacc\+\_
 99     marker.color.b = 1.0;
 100 
 101     geometry\_msgs::Point start,end;
-102     start.x= \hyperlink{namespacesmacc__viewer_1_1xdot_1_1xdot__qt_a1dd3d4e1f636ed9ebbed9b32d4c196df}{x};
-103     start.y =\hyperlink{namespacesmacc__viewer_1_1xdot_1_1xdot__qt_a784c76c541d5dd5940e217a1aa54f256}{y};
+102     start.x= x;
+103     start.y =y;
 104 
-105     end.x= \hyperlink{namespacesmacc__viewer_1_1xdot_1_1xdot__qt_a1dd3d4e1f636ed9ebbed9b32d4c196df}{x} + 0.5 * cos(phi);
-106     end.y =\hyperlink{namespacesmacc__viewer_1_1xdot_1_1xdot__qt_a784c76c541d5dd5940e217a1aa54f256}{y} + 0.5 * sin(phi);
+105     end.x= x + 0.5 * cos(phi);
+106     end.y =y + 0.5 * sin(phi);
 107 
 108     marker.points.push\_back(start);
 109     marker.points.push\_back(end);
@@ -488,7 +488,7 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classforward__local__planner_1_1ForwardLocalPlanner_a31958a73b1082a6d42ee6ff157c10c58_cgraph}
+\includegraphics[width=341pt]{classforward__local__planner_1_1ForwardLocalPlanner_a31958a73b1082a6d42ee6ff157c10c58_cgraph}
 \end{center}
 \end{figure}
 
@@ -564,7 +564,7 @@ Definition at line 62 of file forward\+\_\+local\+\_\+planner.\+h.
 
 \index{forward\+\_\+local\+\_\+planner\+::\+Forward\+Local\+Planner@{forward\+\_\+local\+\_\+planner\+::\+Forward\+Local\+Planner}!current\+Pose\+Index\+\_\+@{current\+Pose\+Index\+\_\+}}
 \index{current\+Pose\+Index\+\_\+@{current\+Pose\+Index\+\_\+}!forward\+\_\+local\+\_\+planner\+::\+Forward\+Local\+Planner@{forward\+\_\+local\+\_\+planner\+::\+Forward\+Local\+Planner}}
-\subsubsection[{\texorpdfstring{current\+Pose\+Index\+\_\+}{currentPoseIndex_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} forward\+\_\+local\+\_\+planner\+::\+Forward\+Local\+Planner\+::current\+Pose\+Index\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classforward__local__planner_1_1ForwardLocalPlanner_a38a9662e8603f91d372759331b152077}{}\label{classforward__local__planner_1_1ForwardLocalPlanner_a38a9662e8603f91d372759331b152077}
+\subsubsection[{\texorpdfstring{current\+Pose\+Index\+\_\+}{currentPoseIndex_}}]{\setlength{\rightskip}{0pt plus 5cm}int forward\+\_\+local\+\_\+planner\+::\+Forward\+Local\+Planner\+::current\+Pose\+Index\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classforward__local__planner_1_1ForwardLocalPlanner_a38a9662e8603f91d372759331b152077}{}\label{classforward__local__planner_1_1ForwardLocalPlanner_a38a9662e8603f91d372759331b152077}
 
 
 Definition at line 84 of file forward\+\_\+local\+\_\+planner.\+h.

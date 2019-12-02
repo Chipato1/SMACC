@@ -11,7 +11,7 @@ Inheritance diagram for Navigation\+Orthogonal\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=211pt]{classNavigationOrthogonal__inherit__graph}
+\includegraphics[width=196pt]{classNavigationOrthogonal__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -24,108 +24,13 @@ Collaboration diagram for Navigation\+Orthogonal\+:
 \includegraphics[width=350pt]{classNavigationOrthogonal__coll__graph}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-virtual void \hyperlink{classNavigationOrthogonal_a1d9e825be23c75d7baf594a8c1f0fb74}{on\+Initialize} () override
-\item 
-virtual void \hyperlink{classNavigationOrthogonal_a1d9e825be23c75d7baf594a8c1f0fb74}{on\+Initialize} () override
-\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
 
 
 Definition at line 5 of file navigation\+\_\+orthogonal.\+h.
-
-
-
-\subsection{Member Function Documentation}
-\index{Navigation\+Orthogonal@{Navigation\+Orthogonal}!on\+Initialize@{on\+Initialize}}
-\index{on\+Initialize@{on\+Initialize}!Navigation\+Orthogonal@{Navigation\+Orthogonal}}
-\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Navigation\+Orthogonal\+::on\+Initialize (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classNavigationOrthogonal_a1d9e825be23c75d7baf594a8c1f0fb74}{}\label{classNavigationOrthogonal_a1d9e825be23c75d7baf594a8c1f0fb74}
-
-
-Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
-
-
-
-Definition at line 10 of file navigation\+\_\+orthogonal.\+h.
-
-
-
-References smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::initialize(), and smacc\+::\+Orthogonal\+::requires\+Component().
-
-
-\begin{DoxyCode}
-11     \{
-12         \textcolor{keyword}{auto}* client = this->createClient<smacc::SmaccMoveBaseActionClient>();       
-13         client->name\_ = \textcolor{stringliteral}{"move\_base"};
-14         client->initialize();
-15 
-16         \hyperlink{classsmacc__odom__tracker_1_1OdomTracker}{smacc\_odom\_tracker::OdomTracker}* odomtracker;
-17         this->\hyperlink{classsmacc_1_1Orthogonal_a098b5be0f89d0911afc44c10b756ef2a}{requiresComponent}(odomtracker);
-18         odomtracker->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a4b3ff3f659474cb7bdd6b4b54dcc0a53}{initialize}(\textcolor{stringliteral}{"/"});
-19     \}
-\end{DoxyCode}
-
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classNavigationOrthogonal_a1d9e825be23c75d7baf594a8c1f0fb74_cgraph}
-\end{center}
-\end{figure}
-
-
-\index{Navigation\+Orthogonal@{Navigation\+Orthogonal}!on\+Initialize@{on\+Initialize}}
-\index{on\+Initialize@{on\+Initialize}!Navigation\+Orthogonal@{Navigation\+Orthogonal}}
-\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Navigation\+Orthogonal\+::on\+Initialize (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classNavigationOrthogonal_a1d9e825be23c75d7baf594a8c1f0fb74}{}\label{classNavigationOrthogonal_a1d9e825be23c75d7baf594a8c1f0fb74}
-
-
-Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
-
-
-
-Definition at line 10 of file navigation\+\_\+orthogonal.\+h.
-
-
-
-References smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::initialize(), and smacc\+::\+Orthogonal\+::requires\+Component().
-
-
-\begin{DoxyCode}
-11     \{
-12         \textcolor{keyword}{auto}* client = this->createClient<smacc::SmaccMoveBaseActionClient>();       
-13         client->name\_ = \textcolor{stringliteral}{"move\_base"};
-14         client->initialize();
-15 
-16         \hyperlink{classsmacc__odom__tracker_1_1OdomTracker}{smacc\_odom\_tracker::OdomTracker}* odomtracker;
-17         this->\hyperlink{classsmacc_1_1Orthogonal_a098b5be0f89d0911afc44c10b756ef2a}{requiresComponent}(odomtracker);
-18         odomtracker->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a4b3ff3f659474cb7bdd6b4b54dcc0a53}{initialize}(\textcolor{stringliteral}{"move\_base"});
-19     \}
-\end{DoxyCode}
-
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classNavigationOrthogonal_a1d9e825be23c75d7baf594a8c1f0fb74_cgraph}
-\end{center}
-\end{figure}
-
 
 
 

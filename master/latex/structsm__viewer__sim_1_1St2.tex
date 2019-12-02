@@ -1,0 +1,123 @@
+\hypertarget{structsm__viewer__sim_1_1St2}{}\section{sm\+\_\+viewer\+\_\+sim\+:\+:St2 Struct Reference}
+\label{structsm__viewer__sim_1_1St2}\index{sm\+\_\+viewer\+\_\+sim\+::\+St2@{sm\+\_\+viewer\+\_\+sim\+::\+St2}}
+
+
+{\ttfamily \#include $<$st\+\_\+st2.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+viewer\+\_\+sim\+:\+:St2\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structsm__viewer__sim_1_1St2__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+viewer\+\_\+sim\+:\+:St2\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structsm__viewer__sim_1_1St2__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ \hyperlink{structsm__viewer__sim_1_1Ev2}{Ev2}, \hyperlink{structsm__viewer__sim_1_1St3}{St3}, \hyperlink{structsmacc_1_1SUCCESS}{smacc\+::\+S\+U\+C\+C\+E\+SS} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ \hyperlink{structsm__viewer__sim_1_1EvFail}{Ev\+Fail}, \hyperlink{structsm__viewer__sim_1_1MsRecoveryMode}{Ms\+Recovery\+Mode}, \hyperlink{structsmacc_1_1ABORT}{smacc\+::\+A\+B\+O\+RT} $>$ $>$ \hyperlink{structsm__viewer__sim_1_1St2_adef5108438c9d8891229f9d247bd5995}{reactions}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structsm__viewer__sim_1_1St2_af71699583a65b935221621956c6900da}{on\+Entry} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{structsm__viewer__sim_1_1St2_ab488bf5ee92dbf4652b5b01830b37849}{counter} = 0
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 5 of file st\+\_\+st2.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{sm\+\_\+viewer\+\_\+sim\+::\+St2@{sm\+\_\+viewer\+\_\+sim\+::\+St2}!reactions@{reactions}}
+\index{reactions@{reactions}!sm\+\_\+viewer\+\_\+sim\+::\+St2@{sm\+\_\+viewer\+\_\+sim\+::\+St2}}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<${\bf smacc\+::transition}$<${\bf Ev2}, {\bf St3}, {\bf smacc\+::\+S\+U\+C\+C\+E\+SS}$>$, {\bf smacc\+::transition}$<${\bf Ev\+Fail}, {\bf Ms\+Recovery\+Mode}, {\bf smacc\+::\+A\+B\+O\+RT}$>$ $>$ {\bf sm\+\_\+viewer\+\_\+sim\+::\+St2\+::reactions}}\hypertarget{structsm__viewer__sim_1_1St2_adef5108438c9d8891229f9d247bd5995}{}\label{structsm__viewer__sim_1_1St2_adef5108438c9d8891229f9d247bd5995}
+
+
+Definition at line 10 of file st\+\_\+st2.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+viewer\+\_\+sim\+::\+St2@{sm\+\_\+viewer\+\_\+sim\+::\+St2}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!sm\+\_\+viewer\+\_\+sim\+::\+St2@{sm\+\_\+viewer\+\_\+sim\+::\+St2}}
+\subsubsection[{\texorpdfstring{on\+Entry()}{onEntry()}}]{\setlength{\rightskip}{0pt plus 5cm}void sm\+\_\+viewer\+\_\+sim\+::\+St2\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsm__viewer__sim_1_1St2_af71699583a65b935221621956c6900da}{}\label{structsm__viewer__sim_1_1St2_af71699583a65b935221621956c6900da}
+
+
+Definition at line 14 of file st\+\_\+st2.\+h.
+
+
+
+References counter, and smacc\+::\+Smacc\+State$<$ St2, Ms\+Run\+Mode $>$\+::set\+Global\+S\+M\+Data().
+
+
+\begin{DoxyCode}
+15     \{
+16         ROS\_INFO(\textcolor{stringliteral}{"St2"});
+17 
+18         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"counter: "} << \hyperlink{structsm__viewer__sim_1_1St2_ab488bf5ee92dbf4652b5b01830b37849}{counter});
+19         \textcolor{keywordflow}{if} (\hyperlink{structsm__viewer__sim_1_1St2_ab488bf5ee92dbf4652b5b01830b37849}{counter} % 2 == 0)
+20             delayedPostEvent<EvFail>(\textcolor{keyword}{this}, 3);
+21         \textcolor{keywordflow}{else}
+22             delayedPostEvent<Ev2>(\textcolor{keyword}{this}, 3);
+23 
+24         \hyperlink{structsm__viewer__sim_1_1St2_ab488bf5ee92dbf4652b5b01830b37849}{counter}++;
+25         this->\hyperlink{classsmacc_1_1SmaccState_a98f2673b257479e0a3615d5d8279a591}{setGlobalSMData}(\textcolor{stringliteral}{"St2Attempts"}, counter);
+26     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsm__viewer__sim_1_1St2_af71699583a65b935221621956c6900da_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{sm\+\_\+viewer\+\_\+sim\+::\+St2@{sm\+\_\+viewer\+\_\+sim\+::\+St2}!counter@{counter}}
+\index{counter@{counter}!sm\+\_\+viewer\+\_\+sim\+::\+St2@{sm\+\_\+viewer\+\_\+sim\+::\+St2}}
+\subsubsection[{\texorpdfstring{counter}{counter}}]{\setlength{\rightskip}{0pt plus 5cm}int sm\+\_\+viewer\+\_\+sim\+::\+St2\+::counter = 0\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structsm__viewer__sim_1_1St2_ab488bf5ee92dbf4652b5b01830b37849}{}\label{structsm__viewer__sim_1_1St2_ab488bf5ee92dbf4652b5b01830b37849}
+
+
+Definition at line 7 of file st\+\_\+st2.\+h.
+
+
+
+Referenced by on\+Entry().
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+viewer\+\_\+sim/include/sm\+\_\+viewer\+\_\+sim/states/\hyperlink{st__st2_8h}{st\+\_\+st2.\+h}\end{DoxyCompactItemize}
