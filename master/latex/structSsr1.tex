@@ -27,12 +27,16 @@ Collaboration diagram for Ssr1\+:
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Topic\+Message$<$ Sb\+Behavior1b $>$, \hyperlink{structSsr2}{Ssr2} $>$ \hyperlink{structSsr1_a3235ebe7e1d5b4d482fb531680f1c395}{reactions}
+typedef \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Loop\+Continue$<$ \hyperlink{structSsr1}{Ssr1} $>$, \hyperlink{structSsr2}{Ssr2}, C\+O\+N\+T\+I\+N\+U\+E\+L\+O\+OP $>$ \hyperlink{structSsr1_a111c7f967fc4bfa3c4bc59453707ecf0}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{structSsr1_a59439edce482be88854d1efb41f9e676}{on\+Initialize} ()
+\item 
+\hyperlink{classbool}{bool} \hyperlink{structSsr1_af522c34c975a4d564c63e98383eb3292}{loop\+While\+Condition} ()
+\item 
+void \hyperlink{structSsr1_a115e61af7af5332f6e38350adea3cf39}{on\+Entry} ()
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -52,7 +56,7 @@ Definition at line 1 of file ssr\+\_\+1.\+h.
 \subsection{Member Typedef Documentation}
 \index{Ssr1@{Ssr1}!reactions@{reactions}}
 \index{reactions@{reactions}!Ssr1@{Ssr1}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf smacc\+::transition}$<$Ev\+Topic\+Message$<$Sb\+Behavior1b$>$, {\bf Ssr2}$>$ {\bf Ssr1\+::reactions}}\hypertarget{structSsr1_a3235ebe7e1d5b4d482fb531680f1c395}{}\label{structSsr1_a3235ebe7e1d5b4d482fb531680f1c395}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf smacc\+::transition}$<$Ev\+Loop\+Continue$<${\bf Ssr1}$>$, {\bf Ssr2}, C\+O\+N\+T\+I\+N\+U\+E\+L\+O\+OP$>$ {\bf Ssr1\+::reactions}}\hypertarget{structSsr1_a111c7f967fc4bfa3c4bc59453707ecf0}{}\label{structSsr1_a111c7f967fc4bfa3c4bc59453707ecf0}
 
 
 Definition at line 6 of file ssr\+\_\+1.\+h.
@@ -60,6 +64,43 @@ Definition at line 6 of file ssr\+\_\+1.\+h.
 
 
 \subsection{Member Function Documentation}
+\index{Ssr1@{Ssr1}!loop\+While\+Condition@{loop\+While\+Condition}}
+\index{loop\+While\+Condition@{loop\+While\+Condition}!Ssr1@{Ssr1}}
+\subsubsection[{\texorpdfstring{loop\+While\+Condition()}{loopWhileCondition()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool} Ssr1\+::loop\+While\+Condition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structSsr1_af522c34c975a4d564c63e98383eb3292}{}\label{structSsr1_af522c34c975a4d564c63e98383eb3292}
+
+
+Definition at line 18 of file ssr\+\_\+1.\+h.
+
+
+
+Referenced by on\+Entry().
+
+
+\begin{DoxyCode}
+19   \{
+20     \textcolor{keyword}{auto} &superstate = this->context<SS>();
+21 
+22     ROS\_INFO(\textcolor{stringliteral}{"Loop start, current iterations: %d, total iterations: %d"}, superstate.iteration\_count, 
+      superstate.total\_iterations());
+23     \textcolor{keywordflow}{return} superstate.iteration\_count++ < superstate.total\_iterations();
+24   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{structSsr1_af522c34c975a4d564c63e98383eb3292_icgraph}
+\end{center}
+\end{figure}
+
+
 \index{Ssr1@{Ssr1}!on\+Definition@{on\+Definition}}
 \index{on\+Definition@{on\+Definition}!Ssr1@{Ssr1}}
 \subsubsection[{\texorpdfstring{on\+Definition()}{onDefinition()}}]{\setlength{\rightskip}{0pt plus 5cm}static void Ssr1\+::on\+Definition (
@@ -74,10 +115,43 @@ Definition at line 9 of file ssr\+\_\+1.\+h.
 
 \begin{DoxyCode}
 10   \{
-11     static\_configure<Orthogonal1, SbBehavior1b>();
-12     static\_configure<Orthogonal2, SbBehavior2b>();
-13   \}
+11   \}
 \end{DoxyCode}
+\index{Ssr1@{Ssr1}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!Ssr1@{Ssr1}}
+\subsubsection[{\texorpdfstring{on\+Entry()}{onEntry()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ssr1\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structSsr1_a115e61af7af5332f6e38350adea3cf39}{}\label{structSsr1_a115e61af7af5332f6e38350adea3cf39}
+
+
+Definition at line 26 of file ssr\+\_\+1.\+h.
+
+
+
+References loop\+While\+Condition(), and smacc\+::\+Smacc\+State$<$ Ssr1, S\+S $>$\+::throw\+Loop\+Event\+From\+Condition().
+
+
+\begin{DoxyCode}
+27   \{
+28     ROS\_INFO(\textcolor{stringliteral}{"LOOP START ON ENTRY"});
+29     \hyperlink{classsmacc_1_1SmaccState_a4f3083a54914820cd7b9eb5a6221f29f}{throwLoopEventFromCondition}(&
+      \hyperlink{structSsr1_af522c34c975a4d564c63e98383eb3292}{Ssr1::loopWhileCondition});
+30   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structSsr1_a115e61af7af5332f6e38350adea3cf39_cgraph}
+\end{center}
+\end{figure}
+
+
 \index{Ssr1@{Ssr1}!on\+Initialize@{on\+Initialize}}
 \index{on\+Initialize@{on\+Initialize}!Ssr1@{Ssr1}}
 \subsubsection[{\texorpdfstring{on\+Initialize()}{onInitialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ssr1\+::on\+Initialize (
@@ -87,12 +161,12 @@ Definition at line 9 of file ssr\+\_\+1.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structSsr1_a59439edce482be88854d1efb41f9e676}{}\label{structSsr1_a59439edce482be88854d1efb41f9e676}
 
 
-Definition at line 16 of file ssr\+\_\+1.\+h.
+Definition at line 14 of file ssr\+\_\+1.\+h.
 
 
 \begin{DoxyCode}
-17   \{
-18   \}
+15   \{
+16   \}
 \end{DoxyCode}
 
 

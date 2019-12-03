@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>SMACC: smacc_sm_reference_library/sm_dance_bot/include/sm_dance_bot/substate_behaviors/timer/timer_client.h File Reference</title>
+<title>SMACC: smacc_client_library/ros_timer_client/include/ros_timer_client/timer_client.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_3116918a71a2a4b42f3c57bdcb44396a.html">smacc_sm_reference_library</a></li><li class="navelem"><a class="el" href="dir_70a3b8cf9de6a57ca2051f7f8fecf73e.html">sm_dance_bot</a></li><li class="navelem"><a class="el" href="dir_5758aea145ad4bd8b187d0c809c851a9.html">include</a></li><li class="navelem"><a class="el" href="dir_9997afd9a25667f540a0b89a46eddc34.html">sm_dance_bot</a></li><li class="navelem"><a class="el" href="dir_f588526fe5c75547845d1f7a2f1b0589.html">substate_behaviors</a></li><li class="navelem"><a class="el" href="dir_1bf6a30a72d3d669528cd34286bbecc1.html">timer</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_362d4678eed7ce374bc07bff496f870d.html">smacc_client_library</a></li><li class="navelem"><a class="el" href="dir_f863da7322c18074f3c440a7d56ff4cf.html">ros_timer_client</a></li><li class="navelem"><a class="el" href="dir_5021b71ed3854d2b7eeca16e5c6a5b70.html">include</a></li><li class="navelem"><a class="el" href="dir_e6d29801b203547890a3fca1904d5ec7.html">ros_timer_client</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -93,37 +93,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">timer_client.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="smacc__client_8h_source.html">smacc/smacc_client.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="smacc_8h_source.html">smacc/smacc.h</a>&gt;</code><br />
 <code>#include &lt;boost/signals2.hpp&gt;</code><br />
 <code>#include &lt;boost/optional/optional_io.hpp&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for timer_client.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="timer__client_8h__incl.png" border="0" usemap="#smacc__sm__reference__library_2sm__dance__bot_2include_2sm__dance__bot_2substate__behaviors_2timer_2timer__client_8h" alt=""/></div>
-<map name="smacc__sm__reference__library_2sm__dance__bot_2include_2sm__dance__bot_2substate__behaviors_2timer_2timer__client_8h" id="smacc__sm__reference__library_2sm__dance__bot_2include_2sm__dance__bot_2substate__behaviors_2timer_2timer__client_8h">
-<area shape="rect" id="node2" href="smacc__client_8h.html" title="smacc/smacc_client.h" alt="" coords="2017,146,2170,173"/>
-<area shape="rect" id="node3" href="common_8h.html" title="smacc/common.h" alt="" coords="1357,228,1483,255"/>
-<area shape="rect" id="node19" href="smacc__fifo__scheduler_8h.html" title="smacc/smacc_fifo_scheduler.h" alt="" coords="2589,310,2792,337"/>
-<area shape="rect" id="node23" href="smacc__types_8h.html" title="smacc/smacc_types.h" alt="" coords="231,585,385,612"/>
-<area shape="rect" id="node25" href="introspection_8h.html" title="smacc/introspection\l/introspection.h" alt="" coords="668,392,807,433"/>
-<area shape="rect" id="node43" href="smacc__default__events_8h.html" title="smacc/smacc_default\l_events.h" alt="" coords="354,392,505,433"/>
-<area shape="rect" id="node44" href="smacc__transition_8h.html" title="smacc/smacc_transition.h" alt="" coords="631,310,806,337"/>
-<area shape="rect" id="node21" href="smacc__fifo__worker_8h.html" title="smacc/smacc_fifo_worker.h" alt="" coords="2768,399,2955,426"/>
-<area shape="rect" id="node28" href="string__type__walker_8h.html" title="smacc/introspection\l/string_type_walker.h" alt="" coords="1213,489,1360,530"/>
-<area shape="rect" id="node35" href="smacc__state__info_8h.html" title="smacc/introspection\l/smacc_state_info.h" alt="" coords="679,489,819,530"/>
-<area shape="rect" id="node37" href="smacc__state__machine__info_8h.html" title="smacc/introspection\l/smacc_state_machine\l_info.h" alt="" coords="1991,481,2148,537"/>
-<area shape="rect" id="node38" href="smacc__orthogonal_8h.html" title="smacc/smacc_orthogonal.h" alt="" coords="2453,585,2635,612"/>
+<div class="center"><img src="timer__client_8h__incl.png" border="0" usemap="#smacc__client__library_2ros__timer__client_2include_2ros__timer__client_2timer__client_8h" alt=""/></div>
+<map name="smacc__client__library_2ros__timer__client_2include_2ros__timer__client_2timer__client_8h" id="smacc__client__library_2ros__timer__client_2include_2ros__timer__client_2timer__client_8h">
+<area shape="rect" id="node2" href="smacc_8h.html" title="smacc/smacc.h" alt="" coords="2734,131,2857,158"/>
+<area shape="rect" id="node3" href="common_8h.html" title="smacc/common.h" alt="" coords="1895,660,2032,687"/>
+<area shape="rect" id="node45" href="smacc__state__machine__base_8h.html" title="smacc/smacc_state_machine\l_base.h" alt="" coords="1072,213,1284,255"/>
+<area shape="rect" id="node62" href="smacc__signal__detector_8h.html" title="smacc/smacc_signal\l_detector.h" alt="" coords="1518,571,1673,612"/>
+<area shape="rect" id="node19" href="smacc__fifo__scheduler_8h.html" title="smacc/smacc_fifo_scheduler.h" alt="" coords="2910,742,3126,769"/>
+<area shape="rect" id="node23" href="smacc__types_8h.html" title="smacc/smacc_types.h" alt="" coords="1469,1017,1633,1044"/>
+<area shape="rect" id="node25" href="introspection_8h.html" title="smacc/introspection\l/introspection.h" alt="" coords="1017,824,1168,865"/>
+<area shape="rect" id="node43" href="smacc__default__events_8h.html" title="smacc/smacc_default\l_events.h" alt="" coords="1564,824,1725,865"/>
+<area shape="rect" id="node44" href="smacc__transition_8h.html" title="smacc/smacc_transition.h" alt="" coords="998,742,1187,769"/>
+<area shape="rect" id="node21" href="smacc__fifo__worker_8h.html" title="smacc/smacc_fifo_worker.h" alt="" coords="2929,831,3125,858"/>
+<area shape="rect" id="node28" href="string__type__walker_8h.html" title="smacc/introspection\l/string_type_walker.h" alt="" coords="135,921,290,962"/>
+<area shape="rect" id="node35" href="smacc__state__info_8h.html" title="smacc/introspection\l/smacc_state_info.h" alt="" coords="996,921,1147,962"/>
+<area shape="rect" id="node37" href="smacc__state__machine__info_8h.html" title="smacc/introspection\l/smacc_state_machine\l_info.h" alt="" coords="3129,913,3299,969"/>
+<area shape="rect" id="node38" href="smacc__orthogonal_8h.html" title="smacc/smacc_orthogonal.h" alt="" coords="557,1017,756,1044"/>
+<area shape="rect" id="node46" href="smacc__state__base_8h.html" title="smacc/smacc_state_base.h" alt="" coords="217,489,417,515"/>
+<area shape="rect" id="node50" href="smacc__state__machine_8h.html" title="smacc/smacc_state_machine.h" alt="" coords="1066,310,1290,337"/>
+<area shape="rect" id="node47" href="smacc__state_8h.html" title="smacc/smacc_state.h" alt="" coords="846,578,1009,605"/>
+<area shape="rect" id="node48" href="logic__unit__base_8h.html" title="smacc/logic_units/logic\l_unit_base.h" alt="" coords="190,571,358,612"/>
+<area shape="rect" id="node56" href="smacc__state__impl_8h.html" title="smacc/impl/smacc_state\l_impl.h" alt="" coords="783,392,965,433"/>
+<area shape="rect" id="node59" href="smacc__client__impl_8h.html" title="smacc/impl/smacc_client\l_impl.h" alt="" coords="1387,392,1569,433"/>
+<area shape="rect" id="node66" href="smacc__component__impl_8h.html" title="smacc/impl/smacc_component\l_impl.h" alt="" coords="1141,392,1362,433"/>
+<area shape="rect" id="node67" href="smacc__orthogonal__impl_8h.html" title="smacc/impl/smacc_orthogonal\l_impl.h" alt="" coords="492,481,709,523"/>
+<area shape="rect" id="node57" href="smacc__substate__behavior_8h.html" title="smacc/smacc_substate\l_behavior.h" alt="" coords="1571,481,1745,523"/>
+<area shape="rect" id="node58" href="component_8h.html" title="smacc/component.h" alt="" coords="1697,578,1851,605"/>
+<area shape="rect" id="node60" href="smacc__client_8h.html" title="smacc/smacc_client.h" alt="" coords="1769,489,1931,515"/>
+<area shape="rect" id="node61" href="smacc__state__machine__impl_8h.html" title="smacc/impl/smacc_state\l_machine_impl.h" alt="" coords="1095,481,1277,523"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="timer__client_8h__dep__incl.png" border="0" usemap="#smacc__sm__reference__library_2sm__dance__bot_2include_2sm__dance__bot_2substate__behaviors_2timer_2timer__client_8hdep" alt=""/></div>
-<map name="smacc__sm__reference__library_2sm__dance__bot_2include_2sm__dance__bot_2substate__behaviors_2timer_2timer__client_8hdep" id="smacc__sm__reference__library_2sm__dance__bot_2include_2sm__dance__bot_2substate__behaviors_2timer_2timer__client_8hdep">
-<area shape="rect" id="node2" href="timer__orthogonal_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/orthogonals/timer_orthogonal.h" alt="" coords="5,146,209,217"/>
-<area shape="rect" id="node5" href="sb__timer__substate_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/substate_behaviors/timer\l/sb_timer_substate.h" alt="" coords="233,139,405,224"/>
-<area shape="rect" id="node3" href="sm__dance__bot_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/sm_dance_bot.h" alt="" coords="135,272,291,343"/>
-<area shape="rect" id="node4" href="sm__dance__bot_8cpp.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/src/sm_dance_bot.cpp" alt="" coords="133,391,292,447"/>
+<div class="center"><img src="timer__client_8h__dep__incl.png" border="0" usemap="#smacc__client__library_2ros__timer__client_2include_2ros__timer__client_2timer__client_8hdep" alt=""/></div>
+<map name="smacc__client__library_2ros__timer__client_2include_2ros__timer__client_2timer__client_8hdep" id="smacc__client__library_2ros__timer__client_2include_2ros__timer__client_2timer__client_8hdep">
+<area shape="rect" id="node2" href="sb__timer__substate_8h.html" title="smacc_client_library\l/ros_timer_client/include\l/ros_timer_client/sb_timer\l_substate.h" alt="" coords="5,124,193,195"/>
+<area shape="rect" id="node6" href="timer__client_8cpp.html" title="smacc_client_library\l/ros_timer_client/src\l/ros_timer_client/timer\l_client.cpp" alt="" coords="217,124,384,195"/>
+<area shape="rect" id="node7" href="timer__orthogonal_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/orthogonals/timer_orthogonal.h" alt="" coords="408,124,636,195"/>
+<area shape="rect" id="node3" href="sb__timer__substate_8cpp.html" title="smacc_client_library\l/ros_timer_client/src\l/ros_timer_client/sb_timer\l_substate.cpp" alt="" coords="5,243,193,313"/>
+<area shape="rect" id="node4" href="sm__dance__bot_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/sm_dance_bot.h" alt="" coords="327,243,496,313"/>
+<area shape="rect" id="node5" href="sm__dance__bot_8cpp.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/src/sm_dance_bot.cpp" alt="" coords="326,361,497,417"/>
 </map>
 </div>
 </div>
@@ -131,14 +147,14 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsmacc_1_1EvTimer.html">smacc::EvTimer&lt; TSource &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structros__timer__client_1_1EvTimer.html">ros_timer_client::EvTimer&lt; TSource &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccTimerClient.html">smacc::SmaccTimerClient</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classros__timer__client_1_1SmaccTimerClient.html">ros_timer_client::SmaccTimerClient</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacesmacc"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesmacc.html">smacc</a></td></tr>
+<tr class="memitem:namespaceros__timer__client"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceros__timer__client.html">ros_timer_client</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

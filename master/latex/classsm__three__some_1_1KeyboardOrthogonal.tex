@@ -1,0 +1,71 @@
+\hypertarget{classsm__three__some_1_1KeyboardOrthogonal}{}\section{sm\+\_\+three\+\_\+some\+:\+:Keyboard\+Orthogonal Class Reference}
+\label{classsm__three__some_1_1KeyboardOrthogonal}\index{sm\+\_\+three\+\_\+some\+::\+Keyboard\+Orthogonal@{sm\+\_\+three\+\_\+some\+::\+Keyboard\+Orthogonal}}
+
+
+{\ttfamily \#include $<$keyboard\+\_\+orthogonal.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+three\+\_\+some\+:\+:Keyboard\+Orthogonal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{classsm__three__some_1_1KeyboardOrthogonal__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+three\+\_\+some\+:\+:Keyboard\+Orthogonal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__three__some_1_1KeyboardOrthogonal__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classsm__three__some_1_1KeyboardOrthogonal_a3e1216abeba9eb4e5473e7aa8e426cfc}{on\+Initialize} () override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file keyboard\+\_\+orthogonal.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+three\+\_\+some\+::\+Keyboard\+Orthogonal@{sm\+\_\+three\+\_\+some\+::\+Keyboard\+Orthogonal}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!sm\+\_\+three\+\_\+some\+::\+Keyboard\+Orthogonal@{sm\+\_\+three\+\_\+some\+::\+Keyboard\+Orthogonal}}
+\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+three\+\_\+some\+::\+Keyboard\+Orthogonal\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__three__some_1_1KeyboardOrthogonal_a3e1216abeba9eb4e5473e7aa8e426cfc}{}\label{classsm__three__some_1_1KeyboardOrthogonal_a3e1216abeba9eb4e5473e7aa8e426cfc}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+
+
+
+Definition at line 10 of file keyboard\+\_\+orthogonal.\+h.
+
+
+\begin{DoxyCode}
+11     \{
+12         \textcolor{keyword}{auto} keyboardClient = this->createClient<sm\_three\_some::KeyboardClient>();
+13         keyboardClient->topicName = \textcolor{stringliteral}{"/keyboard\_unicode"};
+14 
+15         \textcolor{comment}{//keyboardClient.queueSize = 1;}
+16         keyboardClient->initialize();
+17     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+three\+\_\+some/include/sm\+\_\+three\+\_\+some/orthogonals/\hyperlink{keyboard__orthogonal_8h}{keyboard\+\_\+orthogonal.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,277 @@
+\hypertarget{classros__timer__client_1_1SmaccTimerClient}{}\section{ros\+\_\+timer\+\_\+client\+:\+:Smacc\+Timer\+Client Class Reference}
+\label{classros__timer__client_1_1SmaccTimerClient}\index{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client@{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client}}
+
+
+{\ttfamily \#include $<$timer\+\_\+client.\+h$>$}
+
+
+
+Inheritance diagram for ros\+\_\+timer\+\_\+client\+:\+:Smacc\+Timer\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{classros__timer__client_1_1SmaccTimerClient__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ros\+\_\+timer\+\_\+client\+:\+:Smacc\+Timer\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classros__timer__client_1_1SmaccTimerClient__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classros__timer__client_1_1SmaccTimerClient_a1cdcbcbf8263680ebc38e475a04c5e4f}{Smacc\+Timer\+Client} (ros\+::\+Duration \hyperlink{classros__timer__client_1_1SmaccTimerClient_afa4e91d5da885c59306d74c7b6e85052}{duration}, \hyperlink{classbool}{bool} \hyperlink{classros__timer__client_1_1SmaccTimerClient_a34bff666381b2a35860a7cf9ab6427e9}{oneshot}=false)
+\item 
+virtual \hyperlink{classros__timer__client_1_1SmaccTimerClient_a15ee3829b6f6179e91ceb943644a2be6}{$\sim$\+Smacc\+Timer\+Client} ()
+\item 
+virtual void \hyperlink{classros__timer__client_1_1SmaccTimerClient_a23ca454fd2d9035bb5142c0b9261635a}{initialize} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::signals2\+::signal$<$ void(\hyperlink{structros__timer__client_1_1EvTimer}{Ev\+Timer}$<$ \hyperlink{classros__timer__client_1_1SmaccTimerClient}{Smacc\+Timer\+Client} $>$ $\ast$)$>$ \hyperlink{classros__timer__client_1_1SmaccTimerClient_aa9219b9e3278fcbd3f8fbe82bfc7a33f}{on\+Timer\+Tick}
+\item 
+boost\+::signals2\+::scoped\+\_\+connection \hyperlink{classros__timer__client_1_1SmaccTimerClient_a71473af935673138cb1f93a16c8fe37f}{c\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classros__timer__client_1_1SmaccTimerClient_ab6a461bedfad7a1842d27249008cae4d}{timer\+Callback} (const ros\+::\+Timer\+Event \&timedata)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ros\+::\+Node\+Handle \hyperlink{classros__timer__client_1_1SmaccTimerClient_a34ff27bc5f75446dfc8128bfeabce3fc}{nh\+\_\+}
+\item 
+ros\+::\+Timer \hyperlink{classros__timer__client_1_1SmaccTimerClient_a950dfb5b2a2c699d2f260b1acda4fd93}{timer}
+\item 
+ros\+::\+Duration \hyperlink{classros__timer__client_1_1SmaccTimerClient_afa4e91d5da885c59306d74c7b6e85052}{duration}
+\item 
+\hyperlink{classbool}{bool} \hyperlink{classros__timer__client_1_1SmaccTimerClient_a34bff666381b2a35860a7cf9ab6427e9}{oneshot}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file timer\+\_\+client.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client@{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client}!Smacc\+Timer\+Client@{Smacc\+Timer\+Client}}
+\index{Smacc\+Timer\+Client@{Smacc\+Timer\+Client}!ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client@{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client}}
+\subsubsection[{\texorpdfstring{Smacc\+Timer\+Client(ros\+::\+Duration duration, bool oneshot=false)}{SmaccTimerClient(ros::Duration duration, bool oneshot=false)}}]{\setlength{\rightskip}{0pt plus 5cm}ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client\+::\+Smacc\+Timer\+Client (
+\begin{DoxyParamCaption}
+\item[{ros\+::\+Duration}]{duration, }
+\item[{{\bf bool}}]{oneshot = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{classros__timer__client_1_1SmaccTimerClient_a1cdcbcbf8263680ebc38e475a04c5e4f}{}\label{classros__timer__client_1_1SmaccTimerClient_a1cdcbcbf8263680ebc38e475a04c5e4f}
+
+
+Definition at line 6 of file timer\+\_\+client.\+cpp.
+
+
+
+References duration, and oneshot.
+
+
+\begin{DoxyCode}
+7 \{
+8     this->\hyperlink{classros__timer__client_1_1SmaccTimerClient_afa4e91d5da885c59306d74c7b6e85052}{duration} = \hyperlink{classros__timer__client_1_1SmaccTimerClient_afa4e91d5da885c59306d74c7b6e85052}{duration};
+9     this->oneshot = \hyperlink{classros__timer__client_1_1SmaccTimerClient_a34bff666381b2a35860a7cf9ab6427e9}{oneshot};
+10 \}
+\end{DoxyCode}
+\index{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client@{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client}!````~Smacc\+Timer\+Client@{$\sim$\+Smacc\+Timer\+Client}}
+\index{````~Smacc\+Timer\+Client@{$\sim$\+Smacc\+Timer\+Client}!ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client@{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client}}
+\subsubsection[{\texorpdfstring{$\sim$\+Smacc\+Timer\+Client()}{~SmaccTimerClient()}}]{\setlength{\rightskip}{0pt plus 5cm}ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client\+::$\sim$\+Smacc\+Timer\+Client (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classros__timer__client_1_1SmaccTimerClient_a15ee3829b6f6179e91ceb943644a2be6}{}\label{classros__timer__client_1_1SmaccTimerClient_a15ee3829b6f6179e91ceb943644a2be6}
+
+
+Definition at line 12 of file timer\+\_\+client.\+cpp.
+
+
+
+References timer.
+
+
+\begin{DoxyCode}
+13 \{
+14     \hyperlink{classros__timer__client_1_1SmaccTimerClient_a950dfb5b2a2c699d2f260b1acda4fd93}{timer}.stop();
+15 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client@{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client}!initialize@{initialize}}
+\index{initialize@{initialize}!ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client@{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client}}
+\subsubsection[{\texorpdfstring{initialize()}{initialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client\+::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classros__timer__client_1_1SmaccTimerClient_a23ca454fd2d9035bb5142c0b9261635a}{}\label{classros__timer__client_1_1SmaccTimerClient_a23ca454fd2d9035bb5142c0b9261635a}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1ISmaccClient_a974ebb6ad6cf812e7b9de6b78b3d901f}{smacc\+::\+I\+Smacc\+Client}.
+
+
+
+Definition at line 17 of file timer\+\_\+client.\+cpp.
+
+
+
+References duration, nh\+\_\+, oneshot, timer, and timer\+Callback().
+
+
+\begin{DoxyCode}
+18 \{
+19     \hyperlink{classros__timer__client_1_1SmaccTimerClient_a950dfb5b2a2c699d2f260b1acda4fd93}{timer} = \hyperlink{classros__timer__client_1_1SmaccTimerClient_a34ff27bc5f75446dfc8128bfeabce3fc}{nh\_}.createTimer(\hyperlink{classros__timer__client_1_1SmaccTimerClient_afa4e91d5da885c59306d74c7b6e85052}{duration}, boost::bind(&
+      \hyperlink{classros__timer__client_1_1SmaccTimerClient_ab6a461bedfad7a1842d27249008cae4d}{SmaccTimerClient::timerCallback}, \textcolor{keyword}{this}, \_1), 
+      \hyperlink{classros__timer__client_1_1SmaccTimerClient_a34bff666381b2a35860a7cf9ab6427e9}{oneshot});
+20 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classros__timer__client_1_1SmaccTimerClient_a23ca454fd2d9035bb5142c0b9261635a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client@{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client}!timer\+Callback@{timer\+Callback}}
+\index{timer\+Callback@{timer\+Callback}!ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client@{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client}}
+\subsubsection[{\texorpdfstring{timer\+Callback(const ros\+::\+Timer\+Event \&timedata)}{timerCallback(const ros::TimerEvent &timedata)}}]{\setlength{\rightskip}{0pt plus 5cm}void ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client\+::timer\+Callback (
+\begin{DoxyParamCaption}
+\item[{const ros\+::\+Timer\+Event \&}]{timedata}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classros__timer__client_1_1SmaccTimerClient_ab6a461bedfad7a1842d27249008cae4d}{}\label{classros__timer__client_1_1SmaccTimerClient_ab6a461bedfad7a1842d27249008cae4d}
+
+
+Definition at line 22 of file timer\+\_\+client.\+cpp.
+
+
+
+References on\+Timer\+Tick, and smacc\+::\+I\+Smacc\+Client\+::post\+Event().
+
+
+
+Referenced by initialize().
+
+
+\begin{DoxyCode}
+23 \{
+24     \textcolor{comment}{//auto *event = new EvTimer<SmaccTimerClient>(this, timedata);}
+25     \textcolor{keyword}{auto} *\textcolor{keyword}{event} = \textcolor{keyword}{new} EvTimer<SmaccTimerClient>();
+26     this->\hyperlink{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80}{postEvent}(event);
+27     \hyperlink{classros__timer__client_1_1SmaccTimerClient_aa9219b9e3278fcbd3f8fbe82bfc7a33f}{onTimerTick}(event);
+28 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classros__timer__client_1_1SmaccTimerClient_ab6a461bedfad7a1842d27249008cae4d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classros__timer__client_1_1SmaccTimerClient_ab6a461bedfad7a1842d27249008cae4d_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client@{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client}!c\+\_\+@{c\+\_\+}}
+\index{c\+\_\+@{c\+\_\+}!ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client@{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client}}
+\subsubsection[{\texorpdfstring{c\+\_\+}{c_}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::signals2\+::scoped\+\_\+connection ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client\+::c\+\_\+}\hypertarget{classros__timer__client_1_1SmaccTimerClient_a71473af935673138cb1f93a16c8fe37f}{}\label{classros__timer__client_1_1SmaccTimerClient_a71473af935673138cb1f93a16c8fe37f}
+
+
+Definition at line 28 of file timer\+\_\+client.\+h.
+
+\index{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client@{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client}!duration@{duration}}
+\index{duration@{duration}!ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client@{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client}}
+\subsubsection[{\texorpdfstring{duration}{duration}}]{\setlength{\rightskip}{0pt plus 5cm}ros\+::\+Duration ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client\+::duration\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classros__timer__client_1_1SmaccTimerClient_afa4e91d5da885c59306d74c7b6e85052}{}\label{classros__timer__client_1_1SmaccTimerClient_afa4e91d5da885c59306d74c7b6e85052}
+
+
+Definition at line 40 of file timer\+\_\+client.\+h.
+
+
+
+Referenced by initialize(), and Smacc\+Timer\+Client().
+
+\index{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client@{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client}!nh\+\_\+@{nh\+\_\+}}
+\index{nh\+\_\+@{nh\+\_\+}!ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client@{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client}}
+\subsubsection[{\texorpdfstring{nh\+\_\+}{nh_}}]{\setlength{\rightskip}{0pt plus 5cm}ros\+::\+Node\+Handle ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client\+::nh\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classros__timer__client_1_1SmaccTimerClient_a34ff27bc5f75446dfc8128bfeabce3fc}{}\label{classros__timer__client_1_1SmaccTimerClient_a34ff27bc5f75446dfc8128bfeabce3fc}
+
+
+Definition at line 37 of file timer\+\_\+client.\+h.
+
+
+
+Referenced by initialize().
+
+\index{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client@{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client}!oneshot@{oneshot}}
+\index{oneshot@{oneshot}!ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client@{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client}}
+\subsubsection[{\texorpdfstring{oneshot}{oneshot}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool} ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client\+::oneshot\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classros__timer__client_1_1SmaccTimerClient_a34bff666381b2a35860a7cf9ab6427e9}{}\label{classros__timer__client_1_1SmaccTimerClient_a34bff666381b2a35860a7cf9ab6427e9}
+
+
+Definition at line 41 of file timer\+\_\+client.\+h.
+
+
+
+Referenced by initialize(), and Smacc\+Timer\+Client().
+
+\index{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client@{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client}!on\+Timer\+Tick@{on\+Timer\+Tick}}
+\index{on\+Timer\+Tick@{on\+Timer\+Tick}!ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client@{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client}}
+\subsubsection[{\texorpdfstring{on\+Timer\+Tick}{onTimerTick}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::signals2\+::signal$<$void({\bf Ev\+Timer}$<${\bf Smacc\+Timer\+Client}$>$ $\ast$)$>$ ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client\+::on\+Timer\+Tick}\hypertarget{classros__timer__client_1_1SmaccTimerClient_aa9219b9e3278fcbd3f8fbe82bfc7a33f}{}\label{classros__timer__client_1_1SmaccTimerClient_aa9219b9e3278fcbd3f8fbe82bfc7a33f}
+
+
+Definition at line 27 of file timer\+\_\+client.\+h.
+
+
+
+Referenced by ros\+\_\+timer\+\_\+client\+::\+Sb\+Timer\+::on\+Entry(), and timer\+Callback().
+
+\index{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client@{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client}!timer@{timer}}
+\index{timer@{timer}!ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client@{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client}}
+\subsubsection[{\texorpdfstring{timer}{timer}}]{\setlength{\rightskip}{0pt plus 5cm}ros\+::\+Timer ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client\+::timer\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classros__timer__client_1_1SmaccTimerClient_a950dfb5b2a2c699d2f260b1acda4fd93}{}\label{classros__timer__client_1_1SmaccTimerClient_a950dfb5b2a2c699d2f260b1acda4fd93}
+
+
+Definition at line 39 of file timer\+\_\+client.\+h.
+
+
+
+Referenced by initialize(), and $\sim$\+Smacc\+Timer\+Client().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+client\+\_\+library/ros\+\_\+timer\+\_\+client/include/ros\+\_\+timer\+\_\+client/\hyperlink{timer__client_8h}{timer\+\_\+client.\+h}\item 
+smacc\+\_\+client\+\_\+library/ros\+\_\+timer\+\_\+client/src/ros\+\_\+timer\+\_\+client/\hyperlink{timer__client_8cpp}{timer\+\_\+client.\+cpp}\end{DoxyCompactItemize}

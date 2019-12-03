@@ -21,13 +21,13 @@ Collaboration diagram for sm\+\_\+three\+\_\+some\+:\+:St\+State2\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{structsm__three__some_1_1StState2__coll__graph}
+\includegraphics[width=350pt]{structsm__three__some_1_1StState2__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ \hyperlink{structsmacc_1_1EvActionSucceeded}{smacc\+::\+Ev\+Action\+Succeeded}$<$ \hyperlink{classsm__three__some_1_1Client2}{Client2} $>$, \hyperlink{structsm__three__some_1_1SS1_1_1Ss1}{S\+S1\+::\+Ss1} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+All$<$ Lu\+All\+Events\+Go $>$, \hyperlink{structsm__three__some_1_1StState1}{St\+State1} $>$ $>$ \hyperlink{structsm__three__some_1_1StState2_aff5814455fcaa1a472e061028a4afccd}{reactions}
+typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+All$<$ Lu\+All\+Events\+Go $>$, \hyperlink{structsm__three__some_1_1StState3}{St\+State3} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ \hyperlink{structsm__three__some_1_1EvKeyPressP}{Ev\+Key\+PressP}$<$ \hyperlink{classsm__three__some_1_1SbKeyboard}{Sb\+Keyboard} $>$, \hyperlink{structsm__three__some_1_1StState1}{St\+State1} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ \hyperlink{structsm__three__some_1_1EvKeyPressN}{Ev\+Key\+PressN}$<$ \hyperlink{classsm__three__some_1_1SbKeyboard}{Sb\+Keyboard} $>$, \hyperlink{structsm__three__some_1_1StState3}{St\+State3} $>$ $>$ \hyperlink{structsm__three__some_1_1StState2_a9627f8a90cbf6f192b892e29a1280dd2}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -52,10 +52,10 @@ Definition at line 3 of file st\+\_\+state\+\_\+2.\+h.
 \subsection{Member Typedef Documentation}
 \index{sm\+\_\+three\+\_\+some\+::\+St\+State2@{sm\+\_\+three\+\_\+some\+::\+St\+State2}!reactions@{reactions}}
 \index{reactions@{reactions}!sm\+\_\+three\+\_\+some\+::\+St\+State2@{sm\+\_\+three\+\_\+some\+::\+St\+State2}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ {\bf smacc\+::transition}$<${\bf smacc\+::\+Ev\+Action\+Succeeded}$<${\bf Client2}$>$, {\bf S\+S1\+::\+Ss1}$>$, {\bf smacc\+::transition}$<$Ev\+All$<$Lu\+All\+Events\+Go$>$, {\bf St\+State1}$>$ $>$ {\bf sm\+\_\+three\+\_\+some\+::\+St\+State2\+::reactions}}\hypertarget{structsm__three__some_1_1StState2_aff5814455fcaa1a472e061028a4afccd}{}\label{structsm__three__some_1_1StState2_aff5814455fcaa1a472e061028a4afccd}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ {\bf smacc\+::transition}$<$Ev\+All$<$Lu\+All\+Events\+Go$>$, {\bf St\+State3}$>$, {\bf smacc\+::transition}$<${\bf Ev\+Key\+PressP}$<${\bf Sb\+Keyboard}$>$, {\bf St\+State1}$>$, {\bf smacc\+::transition}$<${\bf Ev\+Key\+PressN}$<${\bf Sb\+Keyboard}$>$, {\bf St\+State3}$>$ $>$ {\bf sm\+\_\+three\+\_\+some\+::\+St\+State2\+::reactions}}\hypertarget{structsm__three__some_1_1StState2_a9627f8a90cbf6f192b892e29a1280dd2}{}\label{structsm__three__some_1_1StState2_a9627f8a90cbf6f192b892e29a1280dd2}
 
 
-Definition at line 10 of file st\+\_\+state\+\_\+2.\+h.
+Definition at line 14 of file st\+\_\+state\+\_\+2.\+h.
 
 
 
@@ -69,17 +69,18 @@ Definition at line 10 of file st\+\_\+state\+\_\+2.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structsm__three__some_1_1StState2_a6fbadc32e16e7c1defafe35a6e1b08da}{}\label{structsm__three__some_1_1StState2_a6fbadc32e16e7c1defafe35a6e1b08da}
 
 
-Definition at line 12 of file st\+\_\+state\+\_\+2.\+h.
+Definition at line 16 of file st\+\_\+state\+\_\+2.\+h.
 
 
 \begin{DoxyCode}
-13     \{
-14         static\_configure<Orthogonal1, SbBehavior1b>();
-15         static\_configure<Orthogonal2, SbBehavior2b>();
-16 
-17         static\_createLogicUnit<LuAllEventsGo, EvAll<LuAllEventsGo>, mpl::list<EvTopicMessage<SbBehavior1b>,
+17     \{
+18         static\_configure<Orthogonal1, SbBehavior1b>();
+19         static\_configure<Orthogonal2, SbBehavior2b>();
+20         static\_configure<KeyboardOrthogonal, SbKeyboard>();
+21 
+22         static\_createLogicUnit<LuAllEventsGo, EvAll<LuAllEventsGo>, mpl::list<EvTopicMessage<SbBehavior1b>,
        EvTopicMessage<Client1>>>();
-18     \}
+23     \}
 \end{DoxyCode}
 \index{sm\+\_\+three\+\_\+some\+::\+St\+State2@{sm\+\_\+three\+\_\+some\+::\+St\+State2}!on\+Initialize@{on\+Initialize}}
 \index{on\+Initialize@{on\+Initialize}!sm\+\_\+three\+\_\+some\+::\+St\+State2@{sm\+\_\+three\+\_\+some\+::\+St\+State2}}
@@ -90,12 +91,12 @@ Definition at line 12 of file st\+\_\+state\+\_\+2.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsm__three__some_1_1StState2_a31e1bc14ec72b4fa9dcc6a11d8e77762}{}\label{structsm__three__some_1_1StState2_a31e1bc14ec72b4fa9dcc6a11d8e77762}
 
 
-Definition at line 20 of file st\+\_\+state\+\_\+2.\+h.
+Definition at line 25 of file st\+\_\+state\+\_\+2.\+h.
 
 
 \begin{DoxyCode}
-21     \{
-22     \}
+26     \{
+27     \}
 \end{DoxyCode}
 
 

@@ -1,8 +1,8 @@
 <map id="smacc::transitionInfoToMsg" name="smacc::transitionInfoToMsg">
-<area shape="rect" id="node2" href="$classsmacc_1_1SmaccStateMachineInfo.html#a6758065a8d1faaa7c3688cf0dffe9334" title="smacc::SmaccStateMachine\lInfo::assembleSMStructureMessage" alt="" coords="237,5,472,47"/>
-<area shape="rect" id="node4" href="$classsmacc_1_1ISmaccStateMachine.html#ab61bff5b3c49c4bfc17972e2de8d4fd5" title="smacc::ISmaccStateMachine\l::publishTransition" alt="" coords="257,71,452,112"/>
-<area shape="rect" id="node3" href="$classsmacc_1_1SmaccStateMachineInfo.html#afa2c7dbb9dd235d2e10f69691a035c1c" title="smacc::SmaccStateMachine\lInfo::computeAllStateMessage" alt="" coords="520,5,721,47"/>
-<area shape="rect" id="node5" href="$classsmacc_1_1ISmaccStateMachine.html#a1c455c0f33506e59a7f4389e3fe99ffe" title="smacc::ISmaccStateMachine\l::getCurrentStateInfo" alt="" coords="523,71,718,112"/>
-<area shape="rect" id="node6" href="$classsmacc_1_1ISmaccState.html#a46ec42e07b8c68e8ddb7dd3472e91214" title="smacc::ISmaccState\l::notifyTransitionFromTransition\lTypeInfo" alt="" coords="769,93,976,149"/>
-<area shape="rect" id="node7" href="$classsmacc_1_1ISmaccState.html#a98df316afd79180d3c27a15a7d5dd1cf" title="smacc::ISmaccState\l::notifyTransition" alt="" coords="1024,100,1169,141"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1SmaccStateMachineInfo.html#a6758065a8d1faaa7c3688cf0dffe9334" title="smacc::SmaccStateMachine\lInfo::assembleSMStructureMessage" alt="" coords="248,5,500,47"/>
+<area shape="rect" id="node4" href="$classsmacc_1_1ISmaccStateMachine.html#ab61bff5b3c49c4bfc17972e2de8d4fd5" title="smacc::ISmaccStateMachine\l::publishTransition" alt="" coords="271,71,477,112"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1SmaccStateMachineInfo.html#afa2c7dbb9dd235d2e10f69691a035c1c" title="smacc::SmaccStateMachine\lInfo::computeAllStateMessage" alt="" coords="548,5,765,47"/>
+<area shape="rect" id="node5" href="$classsmacc_1_1ISmaccStateMachine.html#a1c455c0f33506e59a7f4389e3fe99ffe" title="smacc::ISmaccStateMachine\l::getCurrentStateInfo" alt="" coords="553,71,760,112"/>
+<area shape="rect" id="node6" href="$classsmacc_1_1ISmaccState.html#a46ec42e07b8c68e8ddb7dd3472e91214" title="smacc::ISmaccState\l::notifyTransitionFromTransition\lTypeInfo" alt="" coords="813,93,1031,149"/>
+<area shape="rect" id="node7" href="$classsmacc_1_1ISmaccState.html#a98df316afd79180d3c27a15a7d5dd1cf" title="smacc::ISmaccState\l::notifyTransition" alt="" coords="1079,100,1233,141"/>
 </map>

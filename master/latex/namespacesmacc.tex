@@ -47,8 +47,6 @@ struct \hyperlink{structsmacc_1_1EvLoopEnd}{Ev\+Loop\+End}
 \item 
 struct \hyperlink{structsmacc_1_1EvStateFinish}{Ev\+State\+Finish}
 \item 
-struct \hyperlink{structsmacc_1_1EvTimer}{Ev\+Timer}
-\item 
 struct \hyperlink{structsmacc_1_1EvTopicInitialMessage}{Ev\+Topic\+Initial\+Message}
 \item 
 struct \hyperlink{structsmacc_1_1EvTopicMessage}{Ev\+Topic\+Message}
@@ -120,8 +118,6 @@ class \hyperlink{classsmacc_1_1SmaccStateMachineInfo}{Smacc\+State\+Machine\+Inf
 class \hyperlink{classsmacc_1_1SmaccSubscriberClient}{Smacc\+Subscriber\+Client}
 \item 
 class \hyperlink{classsmacc_1_1SmaccSubStateBehavior}{Smacc\+Sub\+State\+Behavior}
-\item 
-class \hyperlink{classsmacc_1_1SmaccTimerClient}{Smacc\+Timer\+Client}
 \item 
 class \hyperlink{classsmacc_1_1SmaccToolActionClient}{Smacc\+Tool\+Action\+Client}
 \item 
@@ -537,7 +533,7 @@ Definition at line 42 of file introspection.\+h.
 
 
 
-Referenced by smacc\+::\+Smacc\+State\+Machine\+Info\+::assemble\+S\+M\+Structure\+Message(), Call\+On\+Definition(), clean\+Short\+Type\+Name(), demangled\+Type\+Name(), demangle\+Symbol(), smacc\+::\+I\+Smacc\+State\+::get\+Class\+Name(), smacc\+::\+Smacc\+State\+Info\+::get\+Demangled\+Full\+Name(), smacc\+::\+Sensor\+Topic$<$ Sb\+Lidar\+Sensor, sensor\+\_\+msgs\+::\+Laser\+Scan, Laser\+Sensor $>$\+::get\+Event\+Label(), smacc\+::\+Smacc\+Event\+Info\+::get\+Event\+Source\+Name(), smacc\+::\+Smacc\+Event\+Info\+::get\+Event\+Type\+Name(), smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::get\+Full\+Name(), smacc\+::\+Orthogonal\+::get\+Name(), smacc\+::\+I\+Smacc\+Component\+::get\+Name(), smacc\+::\+I\+Smacc\+Client\+::get\+Name(), smacc\+::\+Smacc\+Sub\+State\+Behavior\+::get\+Name(), smacc\+::\+Smacc\+Event\+Info\+::get\+Object\+Tag\+Name(), smacc\+::\+I\+Smacc\+State\+Machine\+::get\+State\+Machine\+Name(), smacc\+::\+Type\+Info\+::get\+Type\+Info\+From\+Typeid(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ Client2, move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::initialize(), smacc\+::\+I\+Smacc\+State\+Machine\+::map\+Behavior(), smacc\+::\+Lu\+All\+Events\+Go\+::on\+Event\+Notified(), smacc\+::\+Lu\+Event\+Countdown\+::on\+Event\+Notified(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ Client2, move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::on\+Result(), sm\+\_\+dance\+\_\+bot\+::\+Sb\+Keyboard\+::post\+Key\+Event(), sm\+\_\+dance\+\_\+bot\+::\+Keyboard\+Client\+::post\+Key\+Event(), process\+Transition\+Aux(), smacc\+::\+I\+Smacc\+State\+Machine\+::requires\+Component(), smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::\+Smacc\+State(), smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::static\+\_\+configure(), and smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::$\sim$\+Smacc\+State().
+Referenced by smacc\+::\+Smacc\+State\+Machine\+Info\+::assemble\+S\+M\+Structure\+Message(), Call\+On\+Definition(), clean\+Short\+Type\+Name(), demangled\+Type\+Name(), demangle\+Symbol(), smacc\+::\+I\+Smacc\+State\+::get\+Class\+Name(), smacc\+::\+Smacc\+State\+Info\+::get\+Demangled\+Full\+Name(), smacc\+::\+Sensor\+Topic$<$ Sb\+Lidar\+Sensor, sensor\+\_\+msgs\+::\+Laser\+Scan, Laser\+Sensor $>$\+::get\+Event\+Label(), smacc\+::\+Smacc\+Event\+Info\+::get\+Event\+Source\+Name(), smacc\+::\+Smacc\+Event\+Info\+::get\+Event\+Type\+Name(), smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::get\+Full\+Name(), smacc\+::\+Orthogonal\+::get\+Name(), smacc\+::\+I\+Smacc\+Component\+::get\+Name(), smacc\+::\+I\+Smacc\+Client\+::get\+Name(), smacc\+::\+Smacc\+Sub\+State\+Behavior\+::get\+Name(), smacc\+::\+Smacc\+Event\+Info\+::get\+Object\+Tag\+Name(), smacc\+::\+I\+Smacc\+State\+Machine\+::get\+State\+Machine\+Name(), smacc\+::\+Type\+Info\+::get\+Type\+Info\+From\+Typeid(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ Client2, move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::initialize(), smacc\+::\+I\+Smacc\+State\+Machine\+::map\+Behavior(), smacc\+::\+Lu\+All\+Events\+Go\+::on\+Event\+Notified(), smacc\+::\+Lu\+Event\+Countdown\+::on\+Event\+Notified(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ Client2, move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::on\+Result(), sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard\+::post\+Key\+Event(), sm\+\_\+three\+\_\+some\+::\+Keyboard\+Client\+::post\+Key\+Event(), process\+Transition\+Aux(), smacc\+::\+I\+Smacc\+State\+Machine\+::requires\+Component(), smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::\+Smacc\+State(), smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::static\+\_\+configure(), and smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::$\sim$\+Smacc\+State().
 
 
 \begin{DoxyCode}
@@ -1145,7 +1141,7 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=309pt]{namespacesmacc_a72fcb6f2d23e716a772176e79495bc53_cgraph}
+\includegraphics[width=322pt]{namespacesmacc_a72fcb6f2d23e716a772176e79495bc53_cgraph}
 \end{center}
 \end{figure}
 

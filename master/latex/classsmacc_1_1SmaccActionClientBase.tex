@@ -300,7 +300,9 @@ Definition at line 88 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 92         actionFeedbackEvent->feedbackMessage = *feedback\_msg;
 93         this->\hyperlink{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80}{postEvent}(actionFeedbackEvent);
 94         ROS\_WARN(\textcolor{stringliteral}{"FEEDBACK EVENT"});
-95     \}
+95 
+96         \textcolor{comment}{//invokeOurFeedbackSignal(feedback\_msg);}
+97     \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!on\+Result@{on\+Result}}
 \index{on\+Result@{on\+Result}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
@@ -312,72 +314,74 @@ Definition at line 88 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_ab04cd1fa7f5417df74c28e44cfdc15c5}{}\label{classsmacc_1_1SmaccActionClientBase_ab04cd1fa7f5417df74c28e44cfdc15c5}
 
 
-Definition at line 97 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+Definition at line 99 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 
 
 \begin{DoxyCode}
-98     \{
-99         \textcolor{keyword}{auto} *actionResultEvent = \textcolor{keyword}{new} EvActionResult<TDerived>();
-100         actionResultEvent->client = \textcolor{keyword}{this};
-101         actionResultEvent->resultMessage = *result\_msg;
-102 
-103         \textcolor{keyword}{const} \textcolor{keyword}{auto} &resultType = actionResultEvent->getResultState();
-104         ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: %s"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str(), resultType.toString().c\_str());
-105 
-106         \textcolor{keywordflow}{if} (resultType == actionlib::SimpleClientGoalState::SUCCEEDED)
-107         \{
-108             ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: Success"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str());
-109             \textcolor{keyword}{auto} *successEvent = \textcolor{keyword}{new} EvActionSucceeded<TDerived>();
-110 
-111             successEvent->client = \textcolor{keyword}{this};
-112             successEvent->resultMessage = *result\_msg;
-113 
-114             ROS\_INFO(\textcolor{stringliteral}{"Posting EVENT %s"}, \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(successEvent).name()).c\_str())
+100     \{
+101         \textcolor{keyword}{auto} *actionResultEvent = \textcolor{keyword}{new} EvActionResult<TDerived>();
+102         actionResultEvent->client = \textcolor{keyword}{this};
+103         actionResultEvent->resultMessage = *result\_msg;
+104 
+105         \textcolor{keyword}{const} \textcolor{keyword}{auto} &resultType = actionResultEvent->getResultState();
+106         ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: %s"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str(), resultType.toString().c\_str());
+107 
+108         \textcolor{keywordflow}{if} (resultType == actionlib::SimpleClientGoalState::SUCCEEDED)
+109         \{
+110             ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: Success"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str());
+111             \textcolor{keyword}{auto} *successEvent = \textcolor{keyword}{new} EvActionSucceeded<TDerived>();
+112 
+113             successEvent->client = \textcolor{keyword}{this};
+114             successEvent->resultMessage = *result\_msg;
+115 
+116             ROS\_INFO(\textcolor{stringliteral}{"Posting EVENT %s"}, \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(successEvent).name()).c\_str())
       ;
-115             this->\hyperlink{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80}{postEvent}(successEvent);
-116         \}
-117         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (resultType == actionlib::SimpleClientGoalState::ABORTED)
-118         \{
-119             ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: Aborted"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str());
-120             \textcolor{keyword}{auto} *abortedEvent = \textcolor{keyword}{new} EvActionAborted<TDerived>();
-121 
-122             abortedEvent->client = \textcolor{keyword}{this};
-123             abortedEvent->resultMessage = *result\_msg;
-124 
-125             ROS\_INFO(\textcolor{stringliteral}{"[%s] Posting EVENT %s"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str(), 
+117             this->\hyperlink{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80}{postEvent}(successEvent);
+118             
+119             \textcolor{comment}{//invokeOurSuccessSignal(feedback\_msg);}
+120         \}
+121         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (resultType == actionlib::SimpleClientGoalState::ABORTED)
+122         \{
+123             ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: Aborted"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str());
+124             \textcolor{keyword}{auto} *abortedEvent = \textcolor{keyword}{new} EvActionAborted<TDerived>();
+125 
+126             abortedEvent->client = \textcolor{keyword}{this};
+127             abortedEvent->resultMessage = *result\_msg;
+128 
+129             ROS\_INFO(\textcolor{stringliteral}{"[%s] Posting EVENT %s"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str(), 
       \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(abortedEvent).name()).c\_str());
-126             this->\hyperlink{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80}{postEvent}(abortedEvent);
-127         \}
-128         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (resultType == actionlib::SimpleClientGoalState::REJECTED)
-129         \{
-130             ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: Rejected"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str());
-131             \textcolor{keyword}{auto} *rejectedEvent = \textcolor{keyword}{new} EvActionRejected<TDerived>();
-132 
-133             rejectedEvent->client = \textcolor{keyword}{this};
-134             rejectedEvent->resultMessage = *result\_msg;
-135 
-136             ROS\_INFO(\textcolor{stringliteral}{"Posting EVENT %s"}, \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(rejectedEvent).name()).c\_str()
+130             this->\hyperlink{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80}{postEvent}(abortedEvent);
+131         \}
+132         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (resultType == actionlib::SimpleClientGoalState::REJECTED)
+133         \{
+134             ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: Rejected"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str());
+135             \textcolor{keyword}{auto} *rejectedEvent = \textcolor{keyword}{new} EvActionRejected<TDerived>();
+136 
+137             rejectedEvent->client = \textcolor{keyword}{this};
+138             rejectedEvent->resultMessage = *result\_msg;
+139 
+140             ROS\_INFO(\textcolor{stringliteral}{"Posting EVENT %s"}, \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(rejectedEvent).name()).c\_str()
       );
-137             this->\hyperlink{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80}{postEvent}(rejectedEvent);
-138         \}
-139         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (resultType == actionlib::SimpleClientGoalState::PREEMPTED)
-140         \{
-141             ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: Preempted"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str());
-142             \textcolor{keyword}{auto} *preemtedEvent = \textcolor{keyword}{new} EvActionPreempted<TDerived>();
-143 
-144             preemtedEvent->client = \textcolor{keyword}{this};
-145             preemtedEvent->resultMessage = *result\_msg;
-146 
-147             ROS\_INFO(\textcolor{stringliteral}{"Posting EVENT %s"}, \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(preemtedEvent).name()).c\_str()
+141             this->\hyperlink{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80}{postEvent}(rejectedEvent);
+142         \}
+143         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (resultType == actionlib::SimpleClientGoalState::PREEMPTED)
+144         \{
+145             ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: Preempted"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str());
+146             \textcolor{keyword}{auto} *preemtedEvent = \textcolor{keyword}{new} EvActionPreempted<TDerived>();
+147 
+148             preemtedEvent->client = \textcolor{keyword}{this};
+149             preemtedEvent->resultMessage = *result\_msg;
+150 
+151             ROS\_INFO(\textcolor{stringliteral}{"Posting EVENT %s"}, \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(preemtedEvent).name()).c\_str()
       );
-148             this->\hyperlink{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80}{postEvent}(preemtedEvent);
-149         \}
-150         \textcolor{keywordflow}{else}
-151         \{
-152             ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: NOT HANDLED TYPE: %s"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str(), 
-      resultType.toString().c\_str());
+152             this->\hyperlink{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80}{postEvent}(preemtedEvent);
 153         \}
-154     \}
+154         \textcolor{keywordflow}{else}
+155         \{
+156             ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: NOT HANDLED TYPE: %s"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str(), 
+      resultType.toString().c\_str());
+157         \}
+158     \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!send\+Goal@{send\+Goal}}
 \index{send\+Goal@{send\+Goal}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}

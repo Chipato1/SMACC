@@ -1,11 +1,11 @@
 <map id="sm_dance_bot::NavigationOrthogonal::onInitialize" name="sm_dance_bot::NavigationOrthogonal::onInitialize">
-<area shape="rect" id="node2" href="$classsmacc__odom__tracker_1_1OdomTracker.html#a4b3ff3f659474cb7bdd6b4b54dcc0a53" title="Must be called at the begining of the execution. " alt="" coords="231,89,395,131"/>
-<area shape="rect" id="node8" href="$classsmacc_1_1Orthogonal.html#a098b5be0f89d0911afc44c10b756ef2a" title="smacc::Orthogonal::\lrequiresComponent" alt="" coords="243,160,383,201"/>
-<area shape="rect" id="node3" href="$classsmacc__odom__tracker_1_1OdomTracker.html#adef7b87ba453ca86886239d875344de1" title="odom callback: Updates the path &#45; this must be called periodically for each odometry message..." alt="" coords="443,77,663,133"/>
-<area shape="rect" id="node4" href="$classsmacc__odom__tracker_1_1OdomTracker.html#a7ef4ecc171a6fd37b2ed3c96a58e0659" title="smacc_odom_tracker\l::OdomTracker::updateForward" alt="" coords="717,5,919,47"/>
-<area shape="rect" id="node6" href="$classsmacc__odom__tracker_1_1OdomTracker.html#a3a47119be9af27de9115b043d1f76fe7" title="smacc_odom_tracker\l::OdomTracker::updateBackward" alt="" coords="711,71,925,112"/>
-<area shape="rect" id="node7" href="$classsmacc__odom__tracker_1_1OdomTracker.html#a8c9144a9d8b9ede7f45d06492496564c" title="smacc_odom_tracker\l::OdomTracker::rtPublishPaths" alt="" coords="717,136,919,177"/>
-<area shape="rect" id="node5" href="$namespacesmacc__odom__tracker.html#a93496d9bf987249b884e9b0e60778a11" title="smacc_odom_tracker\l::p2pDistance" alt="" coords="973,39,1120,80"/>
-<area shape="rect" id="node9" href="$classsmacc_1_1ISmaccStateMachine.html#a729d0bcb3c4894e33f0696e0b1aeb155" title="smacc::ISmaccStateMachine\l::requiresComponent" alt="" coords="455,169,650,211"/>
-<area shape="rect" id="node10" href="$namespacesmacc.html#a458f5e70d468824fbcd66cc7729deaa8" title="smacc::demangleSymbol" alt="" coords="733,202,903,229"/>
+<area shape="rect" id="node2" href="$classsmacc__odom__tracker_1_1OdomTracker.html#a4b3ff3f659474cb7bdd6b4b54dcc0a53" title="Must be called at the begining of the execution. " alt="" coords="245,89,419,131"/>
+<area shape="rect" id="node8" href="$classsmacc_1_1Orthogonal.html#a098b5be0f89d0911afc44c10b756ef2a" title="smacc::Orthogonal::\lrequiresComponent" alt="" coords="257,160,407,201"/>
+<area shape="rect" id="node3" href="$classsmacc__odom__tracker_1_1OdomTracker.html#adef7b87ba453ca86886239d875344de1" title="odom callback: Updates the path &#45; this must be called periodically for each odometry message..." alt="" coords="467,77,703,133"/>
+<area shape="rect" id="node4" href="$classsmacc__odom__tracker_1_1OdomTracker.html#a7ef4ecc171a6fd37b2ed3c96a58e0659" title="smacc_odom_tracker\l::OdomTracker::updateForward" alt="" coords="756,5,973,47"/>
+<area shape="rect" id="node6" href="$classsmacc__odom__tracker_1_1OdomTracker.html#a3a47119be9af27de9115b043d1f76fe7" title="smacc_odom_tracker\l::OdomTracker::updateBackward" alt="" coords="751,71,979,112"/>
+<area shape="rect" id="node7" href="$classsmacc__odom__tracker_1_1OdomTracker.html#a8c9144a9d8b9ede7f45d06492496564c" title="smacc_odom_tracker\l::OdomTracker::rtPublishPaths" alt="" coords="759,136,971,177"/>
+<area shape="rect" id="node5" href="$namespacesmacc__odom__tracker.html#a93496d9bf987249b884e9b0e60778a11" title="smacc_odom_tracker\l::p2pDistance" alt="" coords="1027,39,1187,80"/>
+<area shape="rect" id="node9" href="$classsmacc_1_1ISmaccStateMachine.html#a729d0bcb3c4894e33f0696e0b1aeb155" title="smacc::ISmaccStateMachine\l::requiresComponent" alt="" coords="481,169,688,211"/>
+<area shape="rect" id="node10" href="$namespacesmacc.html#a458f5e70d468824fbcd66cc7729deaa8" title="smacc::demangleSymbol" alt="" coords="773,202,957,229"/>
 </map>

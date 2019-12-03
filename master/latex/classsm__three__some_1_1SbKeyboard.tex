@@ -1,0 +1,236 @@
+\hypertarget{classsm__three__some_1_1SbKeyboard}{}\section{sm\+\_\+three\+\_\+some\+:\+:Sb\+Keyboard Class Reference}
+\label{classsm__three__some_1_1SbKeyboard}\index{sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard@{sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard}}
+
+
+{\ttfamily \#include $<$sb\+\_\+keyboard\+\_\+substate.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+three\+\_\+some\+:\+:Sb\+Keyboard\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{classsm__three__some_1_1SbKeyboard__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+three\+\_\+some\+:\+:Sb\+Keyboard\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__three__some_1_1SbKeyboard__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classsm__three__some_1_1SbKeyboard_a1ff464d5b807b874f2936fb93871f872}{on\+Entry} ()
+\item 
+void \hyperlink{classsm__three__some_1_1SbKeyboard_a486cad3628282fc8414afff3d3c6e2dc}{On\+Key\+Press} (char character)
+\item 
+{\footnotesize template$<$typename T\+Ev $>$ }\\void \hyperlink{classsm__three__some_1_1SbKeyboard_aac527a1d8a3b9cdd186614713f77ce96}{post\+Key\+Event} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsm__three__some_1_1KeyboardClient}{Keyboard\+Client} $\ast$ \hyperlink{classsm__three__some_1_1SbKeyboard_a9db2d2dd752cca859c1aa71c665991a8}{keyboard\+Client\+\_\+}
+\item 
+boost\+::signals2\+::scoped\+\_\+connection \hyperlink{classsm__three__some_1_1SbKeyboard_a3b384b219aad93ff23a9bcdb5cab5a80}{c\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file sb\+\_\+keyboard\+\_\+substate.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard@{sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard@{sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard}}
+\subsubsection[{\texorpdfstring{on\+Entry()}{onEntry()}}]{\setlength{\rightskip}{0pt plus 5cm}void sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classsm__three__some_1_1SbKeyboard_a1ff464d5b807b874f2936fb93871f872}{}\label{classsm__three__some_1_1SbKeyboard_a1ff464d5b807b874f2936fb93871f872}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_a47eb8983afa8e1d312873a9a297b84f3}{smacc\+::\+Smacc\+Sub\+State\+Behavior}.
+
+
+
+Definition at line 16 of file sb\+\_\+keyboard\+\_\+substate.\+h.
+
+
+
+References On\+Key\+Press(), sm\+\_\+three\+\_\+some\+::\+Keyboard\+Client\+::\+On\+Key\+Press, and smacc\+::\+Smacc\+Sub\+State\+Behavior\+::requires\+Client().
+
+
+\begin{DoxyCode}
+17         \{
+18                 this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_ae8361a9e794b02f9f3d962b881e4fd7d}{requiresClient}(\hyperlink{classsm__three__some_1_1SbKeyboard_a9db2d2dd752cca859c1aa71c665991a8}{keyboardClient\_});
+19 
+20                 \hyperlink{classsm__three__some_1_1SbKeyboard_a3b384b219aad93ff23a9bcdb5cab5a80}{c\_} = this->\hyperlink{classsm__three__some_1_1SbKeyboard_a9db2d2dd752cca859c1aa71c665991a8}{keyboardClient\_}->\hyperlink{classsm__three__some_1_1KeyboardClient_a96b6b8220c64a1e33480d5ac75c3b8e0}{OnKeyPress}.connect(
+21                     [\textcolor{keyword}{this}](\textcolor{keywordtype}{char} character) \{
+22                             this->\hyperlink{classsm__three__some_1_1SbKeyboard_a486cad3628282fc8414afff3d3c6e2dc}{OnKeyPress}(character);
+23                     \});
+24         \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__three__some_1_1SbKeyboard_a1ff464d5b807b874f2936fb93871f872_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard@{sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard}!On\+Key\+Press@{On\+Key\+Press}}
+\index{On\+Key\+Press@{On\+Key\+Press}!sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard@{sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard}}
+\subsubsection[{\texorpdfstring{On\+Key\+Press(char character)}{OnKeyPress(char character)}}]{\setlength{\rightskip}{0pt plus 5cm}void sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard\+::\+On\+Key\+Press (
+\begin{DoxyParamCaption}
+\item[{char}]{character}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsm__three__some_1_1SbKeyboard_a486cad3628282fc8414afff3d3c6e2dc}{}\label{classsm__three__some_1_1SbKeyboard_a486cad3628282fc8414afff3d3c6e2dc}
+
+
+Definition at line 26 of file sb\+\_\+keyboard\+\_\+substate.\+h.
+
+
+
+Referenced by on\+Entry().
+
+
+\begin{DoxyCode}
+27         \{
+28                 \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'a'})
+29                         postKeyEvent<EvKeyPressA<SbKeyboard>>();
+30                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'b'})
+31                         postKeyEvent<EvKeyPressB<SbKeyboard>>();
+32                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'c'})
+33                         postKeyEvent<EvKeyPressC<SbKeyboard>>();
+34                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'d'})
+35                         postKeyEvent<EvKeyPressD<SbKeyboard>>();
+36                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'e'})
+37                         postKeyEvent<EvKeyPressE<SbKeyboard>>();
+38                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'f'})
+39                         postKeyEvent<EvKeyPressF<SbKeyboard>>();
+40                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'g'})
+41                         postKeyEvent<EvKeyPressG<SbKeyboard>>();
+42                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'h'})
+43                         postKeyEvent<EvKeyPressH<SbKeyboard>>();
+44                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'y'})
+45                         postKeyEvent<EvKeyPressI<SbKeyboard>>();
+46                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'j'})
+47                         postKeyEvent<EvKeyPressJ<SbKeyboard>>();
+48                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'k'})
+49                         postKeyEvent<EvKeyPressK<SbKeyboard>>();
+50                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'l'})
+51                         postKeyEvent<EvKeyPressL<SbKeyboard>>();
+52                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'m'})
+53                         postKeyEvent<EvKeyPressM<SbKeyboard>>();
+54                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'n'})
+55                         postKeyEvent<EvKeyPressN<SbKeyboard>>();
+56                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'o'})
+57                         postKeyEvent<EvKeyPressO<SbKeyboard>>();
+58                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'p'})
+59                         postKeyEvent<EvKeyPressP<SbKeyboard>>();
+60                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'q'})
+61                         postKeyEvent<EvKeyPressQ<SbKeyboard>>();
+62                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'r'})
+63                         postKeyEvent<EvKeyPressR<SbKeyboard>>();
+64                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'s'})
+65                         postKeyEvent<EvKeyPressS<SbKeyboard>>();
+66                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'t'})
+67                         postKeyEvent<EvKeyPressT<SbKeyboard>>();
+68                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'u'})
+69                         postKeyEvent<EvKeyPressU<SbKeyboard>>();
+70                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'v'})
+71                         postKeyEvent<EvKeyPressV<SbKeyboard>>();
+72                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'w'})
+73                         postKeyEvent<EvKeyPressW<SbKeyboard>>();
+74                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'x'})
+75                         postKeyEvent<EvKeyPressX<SbKeyboard>>();
+76                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'y'})
+77                         postKeyEvent<EvKeyPressY<SbKeyboard>>();
+78                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'z'})
+79                         postKeyEvent<EvKeyPressZ<SbKeyboard>>();
+80         \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__three__some_1_1SbKeyboard_a486cad3628282fc8414afff3d3c6e2dc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard@{sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard}!post\+Key\+Event@{post\+Key\+Event}}
+\index{post\+Key\+Event@{post\+Key\+Event}!sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard@{sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard}}
+\subsubsection[{\texorpdfstring{post\+Key\+Event()}{postKeyEvent()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Ev $>$ void sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard\+::post\+Key\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsm__three__some_1_1SbKeyboard_aac527a1d8a3b9cdd186614713f77ce96}{}\label{classsm__three__some_1_1SbKeyboard_aac527a1d8a3b9cdd186614713f77ce96}
+
+
+Definition at line 83 of file sb\+\_\+keyboard\+\_\+substate.\+h.
+
+
+
+References smacc\+::demangle\+Symbol(), and smacc\+::\+Smacc\+Sub\+State\+Behavior\+::post\+Event().
+
+
+\begin{DoxyCode}
+84         \{
+85                 ROS\_WARN(\textcolor{stringliteral}{"SbKeyboard %ld ev: %s"}, (\textcolor{keywordtype}{long})(\textcolor{keywordtype}{void} *)\textcolor{keyword}{this}, 
+      \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{smacc::demangleSymbol}(\textcolor{keyword}{typeid}(TEv).name()).c\_str());
+86                 \textcolor{keyword}{auto} \textcolor{keyword}{event} = \textcolor{keyword}{new} TEv();
+87                 this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a8538664f9828247727a27446112788a2}{postEvent}(event);
+88         \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__three__some_1_1SbKeyboard_aac527a1d8a3b9cdd186614713f77ce96_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard@{sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard}!c\+\_\+@{c\+\_\+}}
+\index{c\+\_\+@{c\+\_\+}!sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard@{sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard}}
+\subsubsection[{\texorpdfstring{c\+\_\+}{c_}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::signals2\+::scoped\+\_\+connection sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard\+::c\+\_\+}\hypertarget{classsm__three__some_1_1SbKeyboard_a3b384b219aad93ff23a9bcdb5cab5a80}{}\label{classsm__three__some_1_1SbKeyboard_a3b384b219aad93ff23a9bcdb5cab5a80}
+
+
+Definition at line 14 of file sb\+\_\+keyboard\+\_\+substate.\+h.
+
+\index{sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard@{sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard}!keyboard\+Client\+\_\+@{keyboard\+Client\+\_\+}}
+\index{keyboard\+Client\+\_\+@{keyboard\+Client\+\_\+}!sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard@{sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard}}
+\subsubsection[{\texorpdfstring{keyboard\+Client\+\_\+}{keyboardClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Keyboard\+Client}$\ast$ sm\+\_\+three\+\_\+some\+::\+Sb\+Keyboard\+::keyboard\+Client\+\_\+}\hypertarget{classsm__three__some_1_1SbKeyboard_a9db2d2dd752cca859c1aa71c665991a8}{}\label{classsm__three__some_1_1SbKeyboard_a9db2d2dd752cca859c1aa71c665991a8}
+
+
+Definition at line 13 of file sb\+\_\+keyboard\+\_\+substate.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+three\+\_\+some/include/sm\+\_\+three\+\_\+some/substate\+\_\+behaviors/keyboard/\hyperlink{sb__keyboard__substate_8h}{sb\+\_\+keyboard\+\_\+substate.\+h}\end{DoxyCompactItemize}

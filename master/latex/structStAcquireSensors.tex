@@ -21,7 +21,7 @@ Collaboration diagram for St\+Acquire\+Sensors\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{structStAcquireSensors__coll__graph}
+\includegraphics[width=350pt]{structStAcquireSensors__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Classes}
@@ -88,16 +88,15 @@ References smacc\+::\+Smacc\+State$<$ St\+Acquire\+Sensors, Ms\+Dance\+Bot\+Run\
 \begin{DoxyCode}
 28    \{
 29       static\_configure<ObstaclePerceptionOrthogonal, SbLidarSensor>();
-30       static\_configure<KeyboardOrthogonal, SbKeyboard>();
-31       static\_configure<PublisherOrthogonal, SbStringPublisher>(\textcolor{stringliteral}{"Hello World!"});
-32       static\_configure<SensorOrthogonal, SbConditionTemperatureSensor>();
-33       static\_configure<Service3Orthogonal, Service3Behavior>(Service3Command::SERVICE3\_ON);
-34 
-35       \hyperlink{classsmacc_1_1SmaccState_a6fc90cf59c60c749e82f49aafb079b23}{static\_createLogicUnit}<LuAllEventsGo, 
-36                               EvAll<LuAllEventsGo, Unit1>, 
-37                               mpl::list<EvTopicMessage<SbLidarSensor>, 
+30       static\_configure<PublisherOrthogonal, SbStringPublisher>(\textcolor{stringliteral}{"Hello World!"});
+31       static\_configure<SensorOrthogonal, SbConditionTemperatureSensor>();
+32       static\_configure<Service3Orthogonal, Service3Behavior>(Service3Command::SERVICE3\_ON);
+33 
+34       \hyperlink{classsmacc_1_1SmaccState_a6fc90cf59c60c749e82f49aafb079b23}{static\_createLogicUnit}<LuAllEventsGo, 
+35                               EvAll<LuAllEventsGo, Unit1>, 
+36                               mpl::list<EvTopicMessage<SbLidarSensor>, 
       EvTopicMessage<SbConditionTemperatureSensor>> >();
-38    \}
+37    \}
 \end{DoxyCode}
 
 
@@ -120,13 +119,13 @@ Here is the call graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structStAcquireSensors_af25bdea33dab12d2c37301eb999ac6e8}{}\label{structStAcquireSensors_af25bdea33dab12d2c37301eb999ac6e8}
 
 
-Definition at line 40 of file st\+\_\+acquire\+\_\+sensors.\+h.
+Definition at line 39 of file st\+\_\+acquire\+\_\+sensors.\+h.
 
 
 \begin{DoxyCode}
-41    \{
-42       \textcolor{comment}{//allSensorsReady.setTriggerEventTypesCount(2);}
-43    \}
+40    \{
+41       \textcolor{comment}{//allSensorsReady.setTriggerEventTypesCount(2);}
+42    \}
 \end{DoxyCode}
 
 

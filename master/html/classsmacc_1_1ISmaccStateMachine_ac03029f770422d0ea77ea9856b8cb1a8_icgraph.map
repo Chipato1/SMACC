@@ -1,8 +1,8 @@
 <map id="smacc::ISmaccStateMachine::state_machine_visualization" name="smacc::ISmaccStateMachine::state_machine_visualization">
-<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccStateMachine.html#a2d0b1742f17dd77d5df217153e8b5259" title="smacc::ISmaccStateMachine\l::getStateMachineName" alt="" coords="248,5,443,47"/>
-<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccStateMachine.html#ad71ca51c9b46ccc013df766a1fcfe93f" title="smacc::ISmaccStateMachine\l::initializeRosComponents" alt="" coords="248,71,443,112"/>
-<area shape="rect" id="node4" href="$classsmacc_1_1ISmaccStateMachine.html#a1c455c0f33506e59a7f4389e3fe99ffe" title="smacc::ISmaccStateMachine\l::getCurrentStateInfo" alt="" coords="491,35,685,76"/>
-<area shape="rect" id="node7" href="$structsmacc_1_1SmaccStateMachineBase.html#a2dc1cd9a25b80f00602f1faab9b01e7b" title="smacc::SmaccStateMachine\lBase\&lt; TimerStateMachine,\l TimerState \&gt;::initiate_impl" alt="" coords="493,99,683,155"/>
-<area shape="rect" id="node5" href="$classsmacc_1_1ISmaccState.html#a46ec42e07b8c68e8ddb7dd3472e91214" title="smacc::ISmaccState\l::notifyTransitionFromTransition\lTypeInfo" alt="" coords="733,27,940,83"/>
-<area shape="rect" id="node6" href="$classsmacc_1_1ISmaccState.html#a98df316afd79180d3c27a15a7d5dd1cf" title="smacc::ISmaccState\l::notifyTransition" alt="" coords="988,35,1133,76"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccStateMachine.html#a2d0b1742f17dd77d5df217153e8b5259" title="smacc::ISmaccStateMachine\l::getStateMachineName" alt="" coords="264,5,471,47"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccStateMachine.html#ad71ca51c9b46ccc013df766a1fcfe93f" title="smacc::ISmaccStateMachine\l::initializeRosComponents" alt="" coords="264,71,471,112"/>
+<area shape="rect" id="node4" href="$classsmacc_1_1ISmaccStateMachine.html#a1c455c0f33506e59a7f4389e3fe99ffe" title="smacc::ISmaccStateMachine\l::getCurrentStateInfo" alt="" coords="519,35,725,76"/>
+<area shape="rect" id="node7" href="$structsmacc_1_1SmaccStateMachineBase.html#a2dc1cd9a25b80f00602f1faab9b01e7b" title="smacc::SmaccStateMachine\lBase\&lt; TimerStateMachine,\l TimerState \&gt;::initiate_impl" alt="" coords="520,99,724,155"/>
+<area shape="rect" id="node5" href="$classsmacc_1_1ISmaccState.html#a46ec42e07b8c68e8ddb7dd3472e91214" title="smacc::ISmaccState\l::notifyTransitionFromTransition\lTypeInfo" alt="" coords="773,27,991,83"/>
+<area shape="rect" id="node6" href="$classsmacc_1_1ISmaccState.html#a98df316afd79180d3c27a15a7d5dd1cf" title="smacc::ISmaccState\l::notifyTransition" alt="" coords="1039,35,1193,76"/>
 </map>

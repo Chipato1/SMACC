@@ -1,7 +1,7 @@
 <map id="smacc::ISmaccClient::getName" name="smacc::ISmaccClient::getName">
-<area shape="rect" id="node2" href="$classsmacc_1_1SmaccActionClientBase.html#a3d5f2229c16bb64a41bf05087fe8a0c0" title="smacc::SmaccActionClient\lBase\&lt; Client2, move_base\l_msgs::MoveBaseAction \&gt;\l::cancelGoal" alt="" coords="211,5,392,76"/>
-<area shape="rect" id="node3" href="$classsmacc_1_1SmaccServiceClient.html#a9ac26f1ca1e661e6b393ce7605166bdc" title="smacc::SmaccServiceClient\l\&lt; std_srvs::SetBool \&gt;::\linitialize" alt="" coords="207,101,395,157"/>
-<area shape="rect" id="node4" href="$classsmacc_1_1SmaccPublisherClient.html#ac1b9a683a411f4957411fcbdb3980233" title="smacc::SmaccPublisherClient\l\&lt; std_msgs::String \&gt;::initialize" alt="" coords="201,180,401,221"/>
-<area shape="rect" id="node5" href="$classsmacc_1_1SmaccActionClientBase.html#ab04cd1fa7f5417df74c28e44cfdc15c5" title="smacc::SmaccActionClient\lBase\&lt; Client2, move_base\l_msgs::MoveBaseAction \&gt;\l::onResult" alt="" coords="211,245,392,316"/>
-<area shape="rect" id="node6" href="$classsmacc_1_1SmaccActionClientBase.html#a2ec9e5fb96ecc517a815cda209eb1b51" title="smacc::SmaccActionClient\lBase\&lt; Client2, move_base\l_msgs::MoveBaseAction \&gt;\l::sendGoal" alt="" coords="211,340,392,411"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1SmaccActionClientBase.html#a3d5f2229c16bb64a41bf05087fe8a0c0" title="smacc::SmaccActionClient\lBase\&lt; Client2, move_base\l_msgs::MoveBaseAction \&gt;\l::cancelGoal" alt="" coords="220,5,415,76"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1SmaccServiceClient.html#a9ac26f1ca1e661e6b393ce7605166bdc" title="smacc::SmaccServiceClient\l\&lt; std_srvs::SetBool \&gt;::\linitialize" alt="" coords="218,101,417,157"/>
+<area shape="rect" id="node4" href="$classsmacc_1_1SmaccPublisherClient.html#ac1b9a683a411f4957411fcbdb3980233" title="smacc::SmaccPublisherClient\l\&lt; std_msgs::String \&gt;::initialize" alt="" coords="208,180,427,221"/>
+<area shape="rect" id="node5" href="$classsmacc_1_1SmaccActionClientBase.html#ab04cd1fa7f5417df74c28e44cfdc15c5" title="smacc::SmaccActionClient\lBase\&lt; Client2, move_base\l_msgs::MoveBaseAction \&gt;\l::onResult" alt="" coords="220,245,415,316"/>
+<area shape="rect" id="node6" href="$classsmacc_1_1SmaccActionClientBase.html#a2ec9e5fb96ecc517a815cda209eb1b51" title="smacc::SmaccActionClient\lBase\&lt; Client2, move_base\l_msgs::MoveBaseAction \&gt;\l::sendGoal" alt="" coords="220,340,415,411"/>
 </map>

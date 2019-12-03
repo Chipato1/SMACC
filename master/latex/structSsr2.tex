@@ -27,7 +27,7 @@ Collaboration diagram for Ssr2\+:
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Topic\+Message$<$ Sb\+Behavior2b $>$, \hyperlink{structSsr3}{Ssr3} $>$ \hyperlink{structSsr2_a70cc14170685fc98f9256e45cdc058c0}{reactions}
+typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Topic\+Message$<$ Sb\+Behavior2b $>$, \hyperlink{structSsr3}{Ssr3} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Key\+PressN$<$ Sb\+Keyboard $>$, \hyperlink{structSsr3}{Ssr3} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Key\+PressP$<$ Sb\+Keyboard $>$, \hyperlink{structSsr1}{Ssr1} $>$ $>$ \hyperlink{structSsr2_a1256e60dc7ca7df354864b8ebf9a5140}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -52,10 +52,10 @@ Definition at line 1 of file ssr\+\_\+2.\+h.
 \subsection{Member Typedef Documentation}
 \index{Ssr2@{Ssr2}!reactions@{reactions}}
 \index{reactions@{reactions}!Ssr2@{Ssr2}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf smacc\+::transition}$<$Ev\+Topic\+Message$<$Sb\+Behavior2b$>$, {\bf Ssr3}$>$ {\bf Ssr2\+::reactions}}\hypertarget{structSsr2_a70cc14170685fc98f9256e45cdc058c0}{}\label{structSsr2_a70cc14170685fc98f9256e45cdc058c0}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ {\bf smacc\+::transition}$<$Ev\+Topic\+Message$<$Sb\+Behavior2b$>$, {\bf Ssr3}$>$, {\bf smacc\+::transition}$<$Ev\+Key\+PressN$<$Sb\+Keyboard$>$, {\bf Ssr3}$>$, {\bf smacc\+::transition}$<$Ev\+Key\+PressP$<$Sb\+Keyboard$>$, {\bf Ssr1}$>$ $>$ {\bf Ssr2\+::reactions}}\hypertarget{structSsr2_a1256e60dc7ca7df354864b8ebf9a5140}{}\label{structSsr2_a1256e60dc7ca7df354864b8ebf9a5140}
 
 
-Definition at line 5 of file ssr\+\_\+2.\+h.
+Definition at line 10 of file ssr\+\_\+2.\+h.
 
 
 
@@ -69,14 +69,15 @@ Definition at line 5 of file ssr\+\_\+2.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structSsr2_ab5924184e178dac57b8f6737bb61cbc6}{}\label{structSsr2_ab5924184e178dac57b8f6737bb61cbc6}
 
 
-Definition at line 8 of file ssr\+\_\+2.\+h.
+Definition at line 13 of file ssr\+\_\+2.\+h.
 
 
 \begin{DoxyCode}
-9   \{
-10     static\_configure<Orthogonal1, SbBehavior1>();
-11     static\_configure<Orthogonal2, SbBehavior2b>();
-12   \}
+14   \{
+15     static\_configure<Orthogonal1, SbBehavior1>();
+16     static\_configure<Orthogonal2, SbBehavior2b>();
+17     static\_configure<KeyboardOrthogonal, SbKeyboard>();
+18   \}
 \end{DoxyCode}
 \index{Ssr2@{Ssr2}!on\+Initialize@{on\+Initialize}}
 \index{on\+Initialize@{on\+Initialize}!Ssr2@{Ssr2}}
@@ -87,12 +88,12 @@ Definition at line 8 of file ssr\+\_\+2.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structSsr2_a2cf5995600fcc702887dde10aee84902}{}\label{structSsr2_a2cf5995600fcc702887dde10aee84902}
 
 
-Definition at line 15 of file ssr\+\_\+2.\+h.
+Definition at line 21 of file ssr\+\_\+2.\+h.
 
 
 \begin{DoxyCode}
-16   \{
-17   \}
+22   \{
+23   \}
 \end{DoxyCode}
 
 

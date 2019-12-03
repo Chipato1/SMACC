@@ -1,0 +1,617 @@
+\hypertarget{namespacerosdoc__lite}{}\section{rosdoc\+\_\+lite Namespace Reference}
+\label{namespacerosdoc__lite}\index{rosdoc\+\_\+lite@{rosdoc\+\_\+lite}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacerosdoc__lite_1_1doxygenator}{doxygenator}
+\item 
+ \hyperlink{namespacerosdoc__lite_1_1epyenator}{epyenator}
+\item 
+ \hyperlink{namespacerosdoc__lite_1_1landing__page}{landing\+\_\+page}
+\item 
+ \hyperlink{namespacerosdoc__lite_1_1msgenator}{msgenator}
+\item 
+ \hyperlink{namespacerosdoc__lite_1_1python__paths}{python\+\_\+paths}
+\item 
+ \hyperlink{namespacerosdoc__lite_1_1rdcore}{rdcore}
+\item 
+ \hyperlink{namespacerosdoc__lite_1_1sphinxenator}{sphinxenator}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacerosdoc__lite_a4f69c4f772f803a650eb21293add04fb}{get\+\_\+optparse} (name)
+\item 
+def \hyperlink{namespacerosdoc__lite_a6fc9bd97d3d23ecd8dcb06dcc5b32f73}{load\+\_\+rd\+\_\+config} (path, manifest)
+\item 
+def \hyperlink{namespacerosdoc__lite_a7a0d37797437270150ffb62125868be6}{generate\+\_\+build\+\_\+params} (rd\+\_\+config, package)
+\item 
+def \hyperlink{namespacerosdoc__lite_afe958f791ef5c66777c758593e3151cd}{build\+\_\+manifest\+\_\+yaml} (manifest, msgs, srvs, actions, output\+\_\+dir)
+\item 
+def \hyperlink{namespacerosdoc__lite_a412f06a0ad22f22a437a925f90722ac5}{generate\+\_\+docs} (path, package, manifest, output\+\_\+dir, tagfile, generate\+\_\+tagfile, generate\+\_\+qhp=False, quiet=True)
+\item 
+def \hyperlink{namespacerosdoc__lite_a347844d5121ce4dcba0c45b96b81467a}{is\+\_\+catkin} (path)
+\item 
+def \hyperlink{namespacerosdoc__lite_af17b2a5046f7827add27b1cc8deb06a0}{main} ()
+\item 
+def \hyperlink{namespacerosdoc__lite_a1bd136953d9747e7e0ac2471b48e9030}{get\+\_\+pkg\+\_\+desc} (path)
+\item 
+def \hyperlink{namespacerosdoc__lite_a6989fe38bd215d8c83b7d0a1a86aa600}{get\+\_\+generator\+\_\+output\+\_\+folders} (path)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespacerosdoc__lite_ac37840c9b7dc02eeeca2fa97cbd04020}{N\+A\+ME} = \textquotesingle{}rosdoc\+\_\+lite\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{rosdoc\+\_\+lite@{rosdoc\+\_\+lite}!build\+\_\+manifest\+\_\+yaml@{build\+\_\+manifest\+\_\+yaml}}
+\index{build\+\_\+manifest\+\_\+yaml@{build\+\_\+manifest\+\_\+yaml}!rosdoc\+\_\+lite@{rosdoc\+\_\+lite}}
+\subsubsection[{\texorpdfstring{build\+\_\+manifest\+\_\+yaml(manifest, msgs, srvs, actions, output\+\_\+dir)}{build_manifest_yaml(manifest, msgs, srvs, actions, output_dir)}}]{\setlength{\rightskip}{0pt plus 5cm}def rosdoc\+\_\+lite.\+build\+\_\+manifest\+\_\+yaml (
+\begin{DoxyParamCaption}
+\item[{}]{manifest, }
+\item[{}]{msgs, }
+\item[{}]{srvs, }
+\item[{}]{actions, }
+\item[{}]{output\+\_\+dir}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerosdoc__lite_afe958f791ef5c66777c758593e3151cd}{}\label{namespacerosdoc__lite_afe958f791ef5c66777c758593e3151cd}
+
+
+Definition at line 122 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+
+
+Referenced by generate\+\_\+docs().
+
+
+\begin{DoxyCode}
+122 \textcolor{keyword}{def }\hyperlink{namespacerosdoc__lite_afe958f791ef5c66777c758593e3151cd}{build\_manifest\_yaml}(manifest, msgs, srvs, actions, output\_dir):
+123     \textcolor{comment}{# by default, assume that packages are on wiki}
+124     m\_yaml = \{\}
+125     m\_yaml[\textcolor{stringliteral}{'authors'}] = manifest.author \textcolor{keywordflow}{or} \textcolor{stringliteral}{''}
+126     m\_yaml[\textcolor{stringliteral}{'maintainers'}] = manifest.maintainer \textcolor{keywordflow}{or} \textcolor{stringliteral}{''}
+127     m\_yaml[\textcolor{stringliteral}{'brief'}] = manifest.brief \textcolor{keywordflow}{or} \textcolor{stringliteral}{''}
+128     m\_yaml[\textcolor{stringliteral}{'depends'}] = manifest.depends \textcolor{keywordflow}{or} \textcolor{stringliteral}{''}
+129     m\_yaml[\textcolor{stringliteral}{'description'}] = manifest.description \textcolor{keywordflow}{or} \textcolor{stringliteral}{''}
+130     m\_yaml[\textcolor{stringliteral}{'license'}] = manifest.license \textcolor{keywordflow}{or} \textcolor{stringliteral}{''}
+131     m\_yaml[\textcolor{stringliteral}{'msgs'}] = msgs
+132     m\_yaml[\textcolor{stringliteral}{'srvs'}] = srvs
+133     m\_yaml[\textcolor{stringliteral}{'actions'}] = actions
+134     m\_yaml[\textcolor{stringliteral}{'url'}] = manifest.url \textcolor{keywordflow}{or} \textcolor{stringliteral}{''}
+135     m\_yaml[\textcolor{stringliteral}{'bugtracker'}] = manifest.bugtracker \textcolor{keywordflow}{or} \textcolor{stringliteral}{''}
+136     m\_yaml[\textcolor{stringliteral}{'repo\_url'}] = manifest.repo\_url \textcolor{keywordflow}{or} \textcolor{stringliteral}{''}
+137     external\_docs = manifest.get\_export(\textcolor{stringliteral}{'doxymaker'}, \textcolor{stringliteral}{'external'})
+138     \textcolor{keywordflow}{if} external\_docs:
+139         m\_yaml[\textcolor{stringliteral}{'external\_docmentation'}] = external\_docs
+140 
+141     metapackage = [e \textcolor{keywordflow}{for} e \textcolor{keywordflow}{in} manifest.exports \textcolor{keywordflow}{if} e.tagname == \textcolor{stringliteral}{'metapackage'}]
+142     \textcolor{keywordflow}{if} metapackage:
+143         m\_yaml[\textcolor{stringliteral}{'package\_type'}] = \textcolor{stringliteral}{'metapackage'}
+144     \textcolor{keywordflow}{else}:
+145         m\_yaml[\textcolor{stringliteral}{'package\_type'}] = \textcolor{stringliteral}{'package'}
+146 
+147     deprecated = [e \textcolor{keywordflow}{for} e \textcolor{keywordflow}{in} manifest.exports \textcolor{keywordflow}{if} e.tagname == \textcolor{stringliteral}{'deprecated'}]
+148     \textcolor{keywordflow}{if} deprecated:
+149         m\_yaml[\textcolor{stringliteral}{'deprecated'}] = deprecated[0].content \textcolor{keywordflow}{or} \textcolor{stringliteral}{"This package is deprecated."}
+150 
+151     with open(os.path.join(output\_dir, \textcolor{stringliteral}{'manifest.yaml'}), \textcolor{stringliteral}{'w'}) \textcolor{keyword}{as} f:
+152         yaml.safe\_dump(m\_yaml, f, default\_flow\_style=\textcolor{keyword}{False})
+153 
+154 
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerosdoc__lite_afe958f791ef5c66777c758593e3151cd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{rosdoc\+\_\+lite@{rosdoc\+\_\+lite}!generate\+\_\+build\+\_\+params@{generate\+\_\+build\+\_\+params}}
+\index{generate\+\_\+build\+\_\+params@{generate\+\_\+build\+\_\+params}!rosdoc\+\_\+lite@{rosdoc\+\_\+lite}}
+\subsubsection[{\texorpdfstring{generate\+\_\+build\+\_\+params(rd\+\_\+config, package)}{generate_build_params(rd_config, package)}}]{\setlength{\rightskip}{0pt plus 5cm}def rosdoc\+\_\+lite.\+generate\+\_\+build\+\_\+params (
+\begin{DoxyParamCaption}
+\item[{}]{rd\+\_\+config, }
+\item[{}]{package}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerosdoc__lite_a7a0d37797437270150ffb62125868be6}{}\label{namespacerosdoc__lite_a7a0d37797437270150ffb62125868be6}
+
+
+Definition at line 99 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+
+
+Referenced by generate\+\_\+docs(), and get\+\_\+generator\+\_\+output\+\_\+folders().
+
+
+\begin{DoxyCode}
+99 \textcolor{keyword}{def }\hyperlink{namespacerosdoc__lite_a7a0d37797437270150ffb62125868be6}{generate\_build\_params}(rd\_config, package):
+100     build\_params = \{\}
+101     \textcolor{comment}{#if there's no config, we'll just build doxygen with the defaults}
+102     \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} rd\_config:
+103         build\_params[\textcolor{stringliteral}{'doxygen'}] = \{\textcolor{stringliteral}{'builder'}: \textcolor{stringliteral}{'doxygen'}, \textcolor{stringliteral}{'output\_dir'}: \textcolor{stringliteral}{'.'}\}
+104     \textcolor{comment}{#make sure that we have a valid rd\_config}
+105     \textcolor{keywordflow}{elif} type(rd\_config) != list:
+106         sys.stderr.write(\textcolor{stringliteral}{"WARNING: package [%s] had an invalid rosdoc config\(\backslash\)n"} % (package))
+107         build\_params[\textcolor{stringliteral}{'doxygen'}] = \{\textcolor{stringliteral}{'builder'}: \textcolor{stringliteral}{'doxygen'}, \textcolor{stringliteral}{'output\_dir'}: \textcolor{stringliteral}{'.'}\}
+108     \textcolor{comment}{#generate build parameters for the different types of builders}
+109     \textcolor{keywordflow}{else}:
+110         \textcolor{keywordflow}{try}:
+111             \textcolor{keywordflow}{for} target \textcolor{keywordflow}{in} rd\_config:
+112                 build\_params[target[\textcolor{stringliteral}{'builder'}]] = target
+113         \textcolor{keywordflow}{except} KeyError:
+114             sys.stderr.write(\textcolor{stringliteral}{"config file for [%s] is invalid, missing required 'builder' key\(\backslash\)n"} % (package
+      ))
+115         \textcolor{keywordflow}{except}:
+116             sys.stderr.write(\textcolor{stringliteral}{"config file for [%s] is invalid\(\backslash\)n"} % (package))
+117             \textcolor{keywordflow}{raise}
+118 
+119     \textcolor{keywordflow}{return} build\_params
+120 
+121 
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerosdoc__lite_a7a0d37797437270150ffb62125868be6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{rosdoc\+\_\+lite@{rosdoc\+\_\+lite}!generate\+\_\+docs@{generate\+\_\+docs}}
+\index{generate\+\_\+docs@{generate\+\_\+docs}!rosdoc\+\_\+lite@{rosdoc\+\_\+lite}}
+\subsubsection[{\texorpdfstring{generate\+\_\+docs(path, package, manifest, output\+\_\+dir, tagfile, generate\+\_\+tagfile, generate\+\_\+qhp=\+False, quiet=\+True)}{generate_docs(path, package, manifest, output_dir, tagfile, generate_tagfile, generate_qhp=False, quiet=True)}}]{\setlength{\rightskip}{0pt plus 5cm}def rosdoc\+\_\+lite.\+generate\+\_\+docs (
+\begin{DoxyParamCaption}
+\item[{}]{path, }
+\item[{}]{package, }
+\item[{}]{manifest, }
+\item[{}]{output\+\_\+dir, }
+\item[{}]{tagfile, }
+\item[{}]{generate\+\_\+tagfile, }
+\item[{}]{generate\+\_\+qhp = {\ttfamily False}, }
+\item[{}]{quiet = {\ttfamily True}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerosdoc__lite_a412f06a0ad22f22a437a925f90722ac5}{}\label{namespacerosdoc__lite_a412f06a0ad22f22a437a925f90722ac5}
+\begin{DoxyVerb}Generates API docs by invoking plugins with context
+
+:returns: a list of filenames/paths that is the union set of all results of plugin invocations
+\end{DoxyVerb}
+ 
+
+Definition at line 155 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+
+
+References build\+\_\+manifest\+\_\+yaml(), generate\+\_\+build\+\_\+params(), and load\+\_\+rd\+\_\+config().
+
+
+
+Referenced by main().
+
+
+\begin{DoxyCode}
+155 \textcolor{keyword}{def }\hyperlink{namespacerosdoc__lite_a412f06a0ad22f22a437a925f90722ac5}{generate\_docs}(path, package, manifest, output\_dir, tagfile, generate\_tagfile, 
+      generate\_qhp=False, quiet=True):
+156     \textcolor{stringliteral}{"""}
+157 \textcolor{stringliteral}{    Generates API docs by invoking plugins with context}
+158 \textcolor{stringliteral}{}
+159 \textcolor{stringliteral}{    :returns: a list of filenames/paths that is the union set of all results of plugin invocations}
+160 \textcolor{stringliteral}{    """}
+161     plugins = [
+162         (\textcolor{stringliteral}{'doxygen'}, doxygenator.generate\_doxygen),
+163         (\textcolor{stringliteral}{'epydoc'}, epyenator.generate\_epydoc),
+164         (\textcolor{stringliteral}{'sphinx'}, sphinxenator.generate\_sphinx)
+165                ]
+166 
+167     \textcolor{comment}{#load any rosdoc configuration files}
+168     rd\_config = \hyperlink{namespacerosdoc__lite_a6fc9bd97d3d23ecd8dcb06dcc5b32f73}{load\_rd\_config}(path, manifest)
+169 
+170     \textcolor{comment}{#put the rd\_config into a form that's easier to use with plugins}
+171     build\_params = \hyperlink{namespacerosdoc__lite_a7a0d37797437270150ffb62125868be6}{generate\_build\_params}(rd\_config, package)
+172 
+173     \textcolor{comment}{#throw in tagfiles for doxygen if it is going to be built}
+174     \textcolor{keywordflow}{if} \textcolor{stringliteral}{'doxygen'} \textcolor{keywordflow}{in} build\_params:
+175         \textcolor{keywordflow}{if} tagfile:
+176             build\_params[\textcolor{stringliteral}{'doxygen'}][\textcolor{stringliteral}{'tagfile\_spec'}] = tagfile
+177 
+178         \textcolor{keywordflow}{if} generate\_tagfile:
+179             build\_params[\textcolor{stringliteral}{'doxygen'}][\textcolor{stringliteral}{'generate\_tagfile'}] = generate\_tagfile
+180 
+181         \textcolor{keywordflow}{if} generate\_qhp:
+182             build\_params[\textcolor{stringliteral}{'doxygen'}][\textcolor{stringliteral}{'generate\_qhp'}] = generate\_qhp
+183 
+184     print(build\_params)
+185 
+186     html\_dir = os.path.join(output\_dir, \textcolor{stringliteral}{'html'})
+187 
+188     \textcolor{keywordflow}{for} plugin\_name, plugin \textcolor{keywordflow}{in} plugins:
+189         \textcolor{comment}{#check to see if we're supposed to build each plugin}
+190         \textcolor{keywordflow}{if} plugin\_name \textcolor{keywordflow}{in} build\_params:
+191             \textcolor{keywordflow}{try}:
+192                 plugin(path, package, manifest, build\_params[plugin\_name], html\_dir, quiet)
+193             \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:
+194                 traceback.print\_exc()
+195                 print(\textcolor{stringliteral}{"plugin [%s] failed"} % (plugin\_name), file=sys.stderr)
+196 
+197     \textcolor{comment}{#Generate a landing page for the package, requires passing all the build\_parameters on}
+198     landing\_page.generate\_landing\_page(package, manifest, build\_params, html\_dir)
+199 
+200     \textcolor{comment}{#Generate documentation for messages and store the messages successfully generated}
+201     \textcolor{keyword}{from} . \textcolor{keyword}{import} msgenator
+202     msgs, srvs, actions = msgenator.generate\_msg\_docs(package, path, manifest, html\_dir)
+203 
+204     \textcolor{comment}{#Write meta data for the package to a yaml file for use by external tools}
+205     \hyperlink{namespacerosdoc__lite_afe958f791ef5c66777c758593e3151cd}{build\_manifest\_yaml}(manifest, msgs, srvs, actions, output\_dir)
+206 
+207     \textcolor{comment}{#We'll also write the message stylesheet that the landing page and message docs use}
+208     styles\_name = \textcolor{stringliteral}{'msg-styles.css'}
+209     styles\_in = os.path.join(rdcore.get\_templates\_dir(), styles\_name)
+210     styles\_css = os.path.join(html\_dir, styles\_name)
+211     print(\textcolor{stringliteral}{"copying %s to %s"} % (styles\_in, styles\_css))
+212     shutil.copyfile(styles\_in, styles\_css)
+213 
+214 
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerosdoc__lite_a412f06a0ad22f22a437a925f90722ac5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerosdoc__lite_a412f06a0ad22f22a437a925f90722ac5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{rosdoc\+\_\+lite@{rosdoc\+\_\+lite}!get\+\_\+generator\+\_\+output\+\_\+folders@{get\+\_\+generator\+\_\+output\+\_\+folders}}
+\index{get\+\_\+generator\+\_\+output\+\_\+folders@{get\+\_\+generator\+\_\+output\+\_\+folders}!rosdoc\+\_\+lite@{rosdoc\+\_\+lite}}
+\subsubsection[{\texorpdfstring{get\+\_\+generator\+\_\+output\+\_\+folders(path)}{get_generator_output_folders(path)}}]{\setlength{\rightskip}{0pt plus 5cm}def rosdoc\+\_\+lite.\+get\+\_\+generator\+\_\+output\+\_\+folders (
+\begin{DoxyParamCaption}
+\item[{}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerosdoc__lite_a6989fe38bd215d8c83b7d0a1a86aa600}{}\label{namespacerosdoc__lite_a6989fe38bd215d8c83b7d0a1a86aa600}
+
+
+Definition at line 265 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+
+
+References generate\+\_\+build\+\_\+params(), get\+\_\+pkg\+\_\+desc(), and load\+\_\+rd\+\_\+config().
+
+
+\begin{DoxyCode}
+265 \textcolor{keyword}{def }\hyperlink{namespacerosdoc__lite_a6989fe38bd215d8c83b7d0a1a86aa600}{get\_generator\_output\_folders}(path):
+266     pkg\_desc = \hyperlink{namespacerosdoc__lite_a1bd136953d9747e7e0ac2471b48e9030}{get\_pkg\_desc}(path)
+267     manifest = \hyperlink{classrosdoc__lite_1_1rdcore_1_1PackageInformation}{rdcore.PackageInformation}(pkg\_desc)
+268 
+269     \textcolor{comment}{# load any rosdoc configuration files}
+270     rd\_config = \hyperlink{namespacerosdoc__lite_a6fc9bd97d3d23ecd8dcb06dcc5b32f73}{load\_rd\_config}(path, manifest)
+271 
+272     \textcolor{comment}{# put the rd\_config into a form that's easier to use with plugins}
+273     package = os.path.basename(path)
+274     build\_params = \hyperlink{namespacerosdoc__lite_a7a0d37797437270150ffb62125868be6}{generate\_build\_params}(rd\_config, package)
+275     print(\textcolor{stringliteral}{'build\_params'}, build\_params)
+276 
+277     data = \{\}
+278     \textcolor{keywordflow}{for} builder, params \textcolor{keywordflow}{in} build\_params.items():
+279         \textcolor{keywordflow}{if} \textcolor{stringliteral}{'output\_dir'} \textcolor{keywordflow}{in} params:
+280             output\_dir = params[\textcolor{stringliteral}{'output\_dir'}]
+281             \textcolor{keywordflow}{if} output\_dir != \textcolor{stringliteral}{'.'}:
+282                 data[builder] = output\_dir
+283     \textcolor{keywordflow}{return} data
+284 \end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerosdoc__lite_a6989fe38bd215d8c83b7d0a1a86aa600_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{rosdoc\+\_\+lite@{rosdoc\+\_\+lite}!get\+\_\+optparse@{get\+\_\+optparse}}
+\index{get\+\_\+optparse@{get\+\_\+optparse}!rosdoc\+\_\+lite@{rosdoc\+\_\+lite}}
+\subsubsection[{\texorpdfstring{get\+\_\+optparse(name)}{get_optparse(name)}}]{\setlength{\rightskip}{0pt plus 5cm}def rosdoc\+\_\+lite.\+get\+\_\+optparse (
+\begin{DoxyParamCaption}
+\item[{}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerosdoc__lite_a4f69c4f772f803a650eb21293add04fb}{}\label{namespacerosdoc__lite_a4f69c4f772f803a650eb21293add04fb}
+\begin{DoxyVerb}Retrieve default option parser for rosdoc. Useful if building an
+extended rosdoc tool with additional options.
+\end{DoxyVerb}
+ 
+
+Definition at line 55 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+
+
+Referenced by main().
+
+
+\begin{DoxyCode}
+55 \textcolor{keyword}{def }\hyperlink{namespacerosdoc__lite_a4f69c4f772f803a650eb21293add04fb}{get\_optparse}(name):
+56     \textcolor{stringliteral}{"""}
+57 \textcolor{stringliteral}{    Retrieve default option parser for rosdoc. Useful if building an}
+58 \textcolor{stringliteral}{    extended rosdoc tool with additional options.}
+59 \textcolor{stringliteral}{    """}
+60     \textcolor{keyword}{from} optparse \textcolor{keyword}{import} OptionParser
+61     parser = OptionParser(usage=\textcolor{stringliteral}{"usage: %prog [options] [package\_path]"}, prog=name)
+62     parser.add\_option(\textcolor{stringliteral}{"-q"}, \textcolor{stringliteral}{"--quiet"}, action=\textcolor{stringliteral}{"store\_true"}, default=\textcolor{keyword}{False},
+63                       dest=\textcolor{stringliteral}{"quiet"},
+64                       help=\textcolor{stringliteral}{"Suppress doxygen errors."})
+65     parser.add\_option(\textcolor{stringliteral}{"-o"}, metavar=\textcolor{stringliteral}{"OUTPUT\_DIRECTORY"},
+66                       dest=\textcolor{stringliteral}{"docdir"}, default=\textcolor{stringliteral}{'doc'},
+67                       help=\textcolor{stringliteral}{"The directory to write documentation to."})
+68     parser.add\_option(\textcolor{stringliteral}{"-t"}, \textcolor{stringliteral}{"--tagfile"}, metavar=\textcolor{stringliteral}{"TAGFILE"}, dest=\textcolor{stringliteral}{"tagfile"}, default=\textcolor{keywordtype}{None},
+69                       help=\textcolor{stringliteral}{"Path to tag configuration file for Doxygen cross referencing support. Ex:
+       /home/user/tagfiles\_list.yaml"})
+70     parser.add\_option(\textcolor{stringliteral}{"-g"}, \textcolor{stringliteral}{"--generate\_tagfile"}, default=\textcolor{keywordtype}{None}, dest=\textcolor{stringliteral}{"generate\_tagfile"},
+71                       help=\textcolor{stringliteral}{"If specified, will generate a doxygen tagfile in this location. Ex:
+       /home/user/tags/package.tag"})
+72     parser.add\_option(\textcolor{stringliteral}{"-p"}, \textcolor{stringliteral}{"--generate\_qhp"}, action=\textcolor{stringliteral}{"store\_true"}, default=\textcolor{keyword}{False}, dest=\textcolor{stringliteral}{"generate\_qhp"},
+73                       help=\textcolor{stringliteral}{"If specified, will generate the Qt Help Project file index.qhp"})
+74     \textcolor{keywordflow}{return} parser
+75 
+76 
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{namespacerosdoc__lite_a4f69c4f772f803a650eb21293add04fb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{rosdoc\+\_\+lite@{rosdoc\+\_\+lite}!get\+\_\+pkg\+\_\+desc@{get\+\_\+pkg\+\_\+desc}}
+\index{get\+\_\+pkg\+\_\+desc@{get\+\_\+pkg\+\_\+desc}!rosdoc\+\_\+lite@{rosdoc\+\_\+lite}}
+\subsubsection[{\texorpdfstring{get\+\_\+pkg\+\_\+desc(path)}{get_pkg_desc(path)}}]{\setlength{\rightskip}{0pt plus 5cm}def rosdoc\+\_\+lite.\+get\+\_\+pkg\+\_\+desc (
+\begin{DoxyParamCaption}
+\item[{}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerosdoc__lite_a1bd136953d9747e7e0ac2471b48e9030}{}\label{namespacerosdoc__lite_a1bd136953d9747e7e0ac2471b48e9030}
+
+
+Definition at line 243 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+
+
+References is\+\_\+catkin().
+
+
+
+Referenced by get\+\_\+generator\+\_\+output\+\_\+folders(), and main().
+
+
+\begin{DoxyCode}
+243 \textcolor{keyword}{def }\hyperlink{namespacerosdoc__lite_a1bd136953d9747e7e0ac2471b48e9030}{get\_pkg\_desc}(path):
+244     \textcolor{comment}{#Check whether we've got a catkin or non-catkin package}
+245     \textcolor{keywordflow}{if} \hyperlink{namespacerosdoc__lite_a347844d5121ce4dcba0c45b96b81467a}{is\_catkin}(path):
+246         pkg\_desc = parse\_package(path)
+247         print(\textcolor{stringliteral}{"Documenting a catkin package"})
+248     \textcolor{keywordflow}{else}:
+249         rp = rospkg.RosPack()
+250         package = os.path.basename(path)
+251         \textcolor{keywordflow}{try}:
+252             ros\_path = os.path.realpath(rp.get\_path(package))
+253         \textcolor{keywordflow}{except} rospkg.common.ResourceNotFound \textcolor{keyword}{as} e:
+254             sys.stderr.write(\textcolor{stringliteral}{"Rospack could not find the %s. Are you sure it's on your ROS\_PACKAGE\_PATH?\(\backslash\)n"}
+       % package)
+255             sys.exit(1)
+256         \textcolor{keywordflow}{if} ros\_path != path:
+257             sys.stderr.write(\textcolor{stringliteral}{"The path passed in does not match that returned \(\backslash\)}
+258 \textcolor{stringliteral}{                             by rospack. Requested path: %s. Rospack path: %s.\(\backslash\)n"} % (path, ros\_path))
+259             sys.exit(1)
+260         pkg\_desc = rp.get\_manifest(package)
+261         print(\textcolor{stringliteral}{"Documenting a non-catkin package"})
+262     \textcolor{keywordflow}{return} pkg\_desc
+263 
+264 
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerosdoc__lite_a1bd136953d9747e7e0ac2471b48e9030_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerosdoc__lite_a1bd136953d9747e7e0ac2471b48e9030_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{rosdoc\+\_\+lite@{rosdoc\+\_\+lite}!is\+\_\+catkin@{is\+\_\+catkin}}
+\index{is\+\_\+catkin@{is\+\_\+catkin}!rosdoc\+\_\+lite@{rosdoc\+\_\+lite}}
+\subsubsection[{\texorpdfstring{is\+\_\+catkin(path)}{is_catkin(path)}}]{\setlength{\rightskip}{0pt plus 5cm}def rosdoc\+\_\+lite.\+is\+\_\+catkin (
+\begin{DoxyParamCaption}
+\item[{}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerosdoc__lite_a347844d5121ce4dcba0c45b96b81467a}{}\label{namespacerosdoc__lite_a347844d5121ce4dcba0c45b96b81467a}
+
+
+Definition at line 215 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+
+
+Referenced by get\+\_\+pkg\+\_\+desc().
+
+
+\begin{DoxyCode}
+215 \textcolor{keyword}{def }\hyperlink{namespacerosdoc__lite_a347844d5121ce4dcba0c45b96b81467a}{is\_catkin}(path):
+216     \textcolor{keywordflow}{return} os.path.isfile(os.path.join(path, \textcolor{stringliteral}{'package.xml'}))
+217 
+218 
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerosdoc__lite_a347844d5121ce4dcba0c45b96b81467a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{rosdoc\+\_\+lite@{rosdoc\+\_\+lite}!load\+\_\+rd\+\_\+config@{load\+\_\+rd\+\_\+config}}
+\index{load\+\_\+rd\+\_\+config@{load\+\_\+rd\+\_\+config}!rosdoc\+\_\+lite@{rosdoc\+\_\+lite}}
+\subsubsection[{\texorpdfstring{load\+\_\+rd\+\_\+config(path, manifest)}{load_rd_config(path, manifest)}}]{\setlength{\rightskip}{0pt plus 5cm}def rosdoc\+\_\+lite.\+load\+\_\+rd\+\_\+config (
+\begin{DoxyParamCaption}
+\item[{}]{path, }
+\item[{}]{manifest}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerosdoc__lite_a6fc9bd97d3d23ecd8dcb06dcc5b32f73}{}\label{namespacerosdoc__lite_a6fc9bd97d3d23ecd8dcb06dcc5b32f73}
+
+
+Definition at line 77 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+
+
+Referenced by generate\+\_\+docs(), and get\+\_\+generator\+\_\+output\+\_\+folders().
+
+
+\begin{DoxyCode}
+77 \textcolor{keyword}{def }\hyperlink{namespacerosdoc__lite_a6fc9bd97d3d23ecd8dcb06dcc5b32f73}{load\_rd\_config}(path, manifest):
+78     \textcolor{comment}{#load in any external config files}
+79     rd\_config = \{\}
+80     exported\_configs = manifest.get\_export(\textcolor{stringliteral}{'rosdoc'}, \textcolor{stringliteral}{'config'})
+81     \textcolor{keywordflow}{if} exported\_configs:
+82         \textcolor{comment}{#This just takes the last listed config export}
+83         \textcolor{keywordflow}{for} exported\_config \textcolor{keywordflow}{in} manifest.get\_export(\textcolor{stringliteral}{'rosdoc'}, \textcolor{stringliteral}{'config'}):
+84             \textcolor{keywordflow}{try}:
+85                 exported\_config = exported\_config.replace(\textcolor{stringliteral}{'$\{prefix\}'}, path)
+86                 config\_path = os.path.join(path, exported\_config)
+87                 with open(config\_path, \textcolor{stringliteral}{'r') as config\_file:}
+88 \textcolor{stringliteral}{                    rd\_config = yaml.safe\_load(config\_file)}
+89 \textcolor{stringliteral}{            }\textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:
+90                 sys.stderr.write(\textcolor{stringliteral}{"ERROR: unable to load rosdoc config file [%s]: %s\(\backslash\)n"} % (config\_path, str(
+      e)))
+91     \textcolor{comment}{#we'll check if a 'rosdoc.yaml' file exists in the directory}
+92     \textcolor{keywordflow}{elif} os.path.isfile(os.path.join(path, \textcolor{stringliteral}{'rosdoc.yaml'})):
+93         with open(os.path.join(path, \textcolor{stringliteral}{'rosdoc.yaml'}), \textcolor{stringliteral}{'r') as config\_file:}
+94 \textcolor{stringliteral}{            rd\_config = yaml.safe\_load(config\_file)}
+95 \textcolor{stringliteral}{}
+96 \textcolor{stringliteral}{    }\textcolor{keywordflow}{return} rd\_config
+97 
+98 
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerosdoc__lite_a6fc9bd97d3d23ecd8dcb06dcc5b32f73_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{rosdoc\+\_\+lite@{rosdoc\+\_\+lite}!main@{main}}
+\index{main@{main}!rosdoc\+\_\+lite@{rosdoc\+\_\+lite}}
+\subsubsection[{\texorpdfstring{main()}{main()}}]{\setlength{\rightskip}{0pt plus 5cm}def rosdoc\+\_\+lite.\+main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerosdoc__lite_af17b2a5046f7827add27b1cc8deb06a0}{}\label{namespacerosdoc__lite_af17b2a5046f7827add27b1cc8deb06a0}
+
+
+Definition at line 219 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+
+
+References generate\+\_\+docs(), get\+\_\+optparse(), and get\+\_\+pkg\+\_\+desc().
+
+
+\begin{DoxyCode}
+219 \textcolor{keyword}{def }\hyperlink{namespacerosdoc__lite_af17b2a5046f7827add27b1cc8deb06a0}{main}():
+220     parser = \hyperlink{namespacerosdoc__lite_a4f69c4f772f803a650eb21293add04fb}{get\_optparse}(NAME)
+221     options, args = parser.parse\_args()
+222 
+223     \textcolor{keywordflow}{if} len(args) != 1:
+224         print(\textcolor{stringliteral}{"Please give %s exactly one package path"} % NAME)
+225         parser.print\_help()
+226         sys.exit(1)
+227 
+228     path = os.path.realpath(args[0])
+229     package = os.path.basename(path)
+230     pkg\_desc = \hyperlink{namespacerosdoc__lite_a1bd136953d9747e7e0ac2471b48e9030}{get\_pkg\_desc}(path)
+231 
+232     manifest = \hyperlink{classrosdoc__lite_1_1rdcore_1_1PackageInformation}{rdcore.PackageInformation}(pkg\_desc)
+233     print(\textcolor{stringliteral}{"Documenting %s located here: %s"} % (package, path))
+234 
+235     \textcolor{keywordflow}{try}:
+236         \hyperlink{namespacerosdoc__lite_a412f06a0ad22f22a437a925f90722ac5}{generate\_docs}(path, package, manifest, options.docdir, options.tagfile, 
+      options.generate\_tagfile, options.generate\_qhp, options.quiet)
+237         print(\textcolor{stringliteral}{"Done documenting %s you can find your documentation here: %s"} % (package, os.path.realpath(
+      options.docdir)))
+238     \textcolor{keywordflow}{except}:
+239         traceback.print\_exc()
+240         sys.exit(1)
+241 
+242 
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerosdoc__lite_af17b2a5046f7827add27b1cc8deb06a0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{rosdoc\+\_\+lite@{rosdoc\+\_\+lite}!N\+A\+ME@{N\+A\+ME}}
+\index{N\+A\+ME@{N\+A\+ME}!rosdoc\+\_\+lite@{rosdoc\+\_\+lite}}
+\subsubsection[{\texorpdfstring{N\+A\+ME}{NAME}}]{\setlength{\rightskip}{0pt plus 5cm}string rosdoc\+\_\+lite.\+N\+A\+ME = \textquotesingle{}rosdoc\+\_\+lite\textquotesingle{}}\hypertarget{namespacerosdoc__lite_ac37840c9b7dc02eeeca2fa97cbd04020}{}\label{namespacerosdoc__lite_ac37840c9b7dc02eeeca2fa97cbd04020}
+
+
+Definition at line 42 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+

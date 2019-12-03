@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['regex_5ftemplate',['regex_template',['../namespaceregex__template.html',1,'']]]
+  ['keyboard_5fnode',['keyboard_node',['../namespacekeyboard__node.html',1,'']]]
 ];
