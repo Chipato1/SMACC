@@ -1,0 +1,103 @@
+\hypertarget{structsm__dance__bot_1_1StNavigateReverse1}{}\section{sm\+\_\+dance\+\_\+bot\+:\+:St\+Navigate\+Reverse1 Struct Reference}
+\label{structsm__dance__bot_1_1StNavigateReverse1}\index{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse1@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse1}}
+
+
+{\ttfamily \#include $<$st\+\_\+navigate\+\_\+reverse\+\_\+1.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+dance\+\_\+bot\+:\+:St\+Navigate\+Reverse1\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structsm__dance__bot_1_1StNavigateReverse1__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+dance\+\_\+bot\+:\+:St\+Navigate\+Reverse1\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsm__dance__bot_1_1StNavigateReverse1__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Succeeded$<$ Smacc\+Move\+Base\+Action\+Client $>$, \hyperlink{structsm__dance__bot_1_1StRotateDegrees3}{St\+Rotate\+Degrees3} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Aborted$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $>$, \hyperlink{structsm__dance__bot_1_1StNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$ $>$ \hyperlink{structsm__dance__bot_1_1StNavigateReverse1_af9793a3c1ad0fa78b326f838719d9554}{reactions}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structsm__dance__bot_1_1StNavigateReverse1_accb981b02a307421a227dba807b64680}{on\+Initialize} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{structsm__dance__bot_1_1StNavigateReverse1_a612201aa6860794cad9c4be82c705233}{on\+Definition} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 4 of file st\+\_\+navigate\+\_\+reverse\+\_\+1.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse1@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse1}!reactions@{reactions}}
+\index{reactions@{reactions}!sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse1@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse1}}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ {\bf smacc\+::transition}$<$Ev\+Action\+Succeeded$<$Smacc\+Move\+Base\+Action\+Client$>$, {\bf St\+Rotate\+Degrees3}$>$, {\bf smacc\+::transition}$<$Ev\+Action\+Aborted$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$ $>$ {\bf sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse1\+::reactions}}\hypertarget{structsm__dance__bot_1_1StNavigateReverse1_af9793a3c1ad0fa78b326f838719d9554}{}\label{structsm__dance__bot_1_1StNavigateReverse1_af9793a3c1ad0fa78b326f838719d9554}
+
+
+Definition at line 15 of file st\+\_\+navigate\+\_\+reverse\+\_\+1.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse1@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse1}!on\+Definition@{on\+Definition}}
+\index{on\+Definition@{on\+Definition}!sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse1@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse1}}
+\subsubsection[{\texorpdfstring{on\+Definition()}{onDefinition()}}]{\setlength{\rightskip}{0pt plus 5cm}static void sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse1\+::on\+Definition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structsm__dance__bot_1_1StNavigateReverse1_a612201aa6860794cad9c4be82c705233}{}\label{structsm__dance__bot_1_1StNavigateReverse1_a612201aa6860794cad9c4be82c705233}
+
+
+Definition at line 17 of file st\+\_\+navigate\+\_\+reverse\+\_\+1.\+h.
+
+
+\begin{DoxyCode}
+18    \{
+19       static\_configure<NavigationOrthogonal, SbNavigateBackwards>(2);
+20       static\_configure<ToolOrthogonal, SbToolStop>();
+21       static\_configure<ObstaclePerceptionOrthogonal, SbLidarSensor>();
+22    \}
+\end{DoxyCode}
+\index{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse1@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse1}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse1@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse1}}
+\subsubsection[{\texorpdfstring{on\+Initialize()}{onInitialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse1\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsm__dance__bot_1_1StNavigateReverse1_accb981b02a307421a227dba807b64680}{}\label{structsm__dance__bot_1_1StNavigateReverse1_accb981b02a307421a227dba807b64680}
+
+
+Definition at line 24 of file st\+\_\+navigate\+\_\+reverse\+\_\+1.\+h.
+
+
+\begin{DoxyCode}
+25    \{
+26  
+27    \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/states/\hyperlink{st__navigate__reverse__1_8h}{st\+\_\+navigate\+\_\+reverse\+\_\+1.\+h}\end{DoxyCompactItemize}

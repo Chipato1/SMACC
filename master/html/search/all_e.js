@@ -2,7 +2,7 @@ var searchData=
 [
   ['name',['NAME',['../namespacerosdoc__lite.html#ac37840c9b7dc02eeeca2fa97cbd04020',1,'rosdoc_lite']]],
   ['name_5f',['name_',['../classsmacc_1_1ISmaccActionClient.html#aec84a0169bf40d394207540ad75b364e',1,'smacc::ISmaccActionClient::name_()'],['../classsmacc_1_1SmaccActionClientBase.html#a7fa0e4b63069bea12d47a83bd0be73d7',1,'smacc::SmaccActionClientBase::name_()']]],
-  ['navigatestate',['navigateState',['../structStNavigateToWaypointsX.html#a0df2892ed95cae253b2ae0c09c850268',1,'StNavigateToWaypointsX']]],
+  ['navigatestate',['navigateState',['../structsm__dance__bot_1_1StNavigateToWaypointsX.html#a453c27db2a9318c65fe0f4a5abbadf3a',1,'sm_dance_bot::StNavigateToWaypointsX']]],
   ['navigation_5forthogonal_2eh',['navigation_orthogonal.h',['../smacc__sm__reference__library_2sm__viewer__sim_2include_2sm__viewer__sim_2orthogonals_2navigation__orthogonal_8h.html',1,'']]],
   ['navigation_5forthogonal_2eh',['navigation_orthogonal.h',['../smacc__client__library_2smacc__sensors_2examples_2timer__substate__example_2include_2orthogonals_2navigation__orthogonal_8h.html',1,'']]],
   ['navigation_5forthogonal_2eh',['navigation_orthogonal.h',['../smacc__sm__reference__library_2sm__atomic_2include_2sm__atomic_2orthogonals_2navigation__orthogonal_8h.html',1,'']]],

@@ -1,0 +1,88 @@
+\hypertarget{structsm__dance__bot_1_1StEventCountDown}{}\section{sm\+\_\+dance\+\_\+bot\+:\+:St\+Event\+Count\+Down Struct Reference}
+\label{structsm__dance__bot_1_1StEventCountDown}\index{sm\+\_\+dance\+\_\+bot\+::\+St\+Event\+Count\+Down@{sm\+\_\+dance\+\_\+bot\+::\+St\+Event\+Count\+Down}}
+
+
+{\ttfamily \#include $<$st\+\_\+event\+\_\+count\+\_\+down.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+dance\+\_\+bot\+:\+:St\+Event\+Count\+Down\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structsm__dance__bot_1_1StEventCountDown__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+dance\+\_\+bot\+:\+:St\+Event\+Count\+Down\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsm__dance__bot_1_1StEventCountDown__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef mpl\+::list$<$ transition$<$ Ev\+Countdown\+End$<$ Lu\+Event\+Countdown $>$, \hyperlink{structsm__dance__bot_1_1StNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ \hyperlink{structsm__dance__bot_1_1EvGlobalError}{Ev\+Global\+Error}, sc\+::deep\+\_\+history$<$ \hyperlink{structsm__dance__bot_1_1StAcquireSensors}{St\+Acquire\+Sensors} $>$ $>$ $>$ \hyperlink{structsm__dance__bot_1_1StEventCountDown_a1dda165c92b9e4dfb9f3bf4e5db4c90d}{reactions}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{structsm__dance__bot_1_1StEventCountDown_a93bb32fa9321d2babd851833eac44a6f}{on\+Definition} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 4 of file st\+\_\+event\+\_\+count\+\_\+down.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+::\+St\+Event\+Count\+Down@{sm\+\_\+dance\+\_\+bot\+::\+St\+Event\+Count\+Down}!reactions@{reactions}}
+\index{reactions@{reactions}!sm\+\_\+dance\+\_\+bot\+::\+St\+Event\+Count\+Down@{sm\+\_\+dance\+\_\+bot\+::\+St\+Event\+Count\+Down}}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ transition$<$Ev\+Countdown\+End$<$Lu\+Event\+Countdown$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$, {\bf smacc\+::transition}$<${\bf Ev\+Global\+Error}, sc\+::deep\+\_\+history$<${\bf St\+Acquire\+Sensors}$>$ $>$ $>$ {\bf sm\+\_\+dance\+\_\+bot\+::\+St\+Event\+Count\+Down\+::reactions}}\hypertarget{structsm__dance__bot_1_1StEventCountDown_a1dda165c92b9e4dfb9f3bf4e5db4c90d}{}\label{structsm__dance__bot_1_1StEventCountDown_a1dda165c92b9e4dfb9f3bf4e5db4c90d}
+
+
+Definition at line 13 of file st\+\_\+event\+\_\+count\+\_\+down.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+::\+St\+Event\+Count\+Down@{sm\+\_\+dance\+\_\+bot\+::\+St\+Event\+Count\+Down}!on\+Definition@{on\+Definition}}
+\index{on\+Definition@{on\+Definition}!sm\+\_\+dance\+\_\+bot\+::\+St\+Event\+Count\+Down@{sm\+\_\+dance\+\_\+bot\+::\+St\+Event\+Count\+Down}}
+\subsubsection[{\texorpdfstring{on\+Definition()}{onDefinition()}}]{\setlength{\rightskip}{0pt plus 5cm}static void sm\+\_\+dance\+\_\+bot\+::\+St\+Event\+Count\+Down\+::on\+Definition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structsm__dance__bot_1_1StEventCountDown_a93bb32fa9321d2babd851833eac44a6f}{}\label{structsm__dance__bot_1_1StEventCountDown_a93bb32fa9321d2babd851833eac44a6f}
+
+
+Definition at line 15 of file st\+\_\+event\+\_\+count\+\_\+down.\+h.
+
+
+\begin{DoxyCode}
+16     \{
+17         \textcolor{comment}{//   static\_configure<ObstaclePerceptionOrthogonal, SbLidarSensor>();}
+18         \textcolor{comment}{//   static\_configure<PublisherOrthogonal, SbStringPublisher>("Hello World!");}
+19         \textcolor{comment}{//   static\_configure<SensorOrthogonal, SbConditionTemperatureSensor>();}
+20         \textcolor{comment}{//   static\_configure<Service3Orthogonal, Service3Behavior>(Service3Command::SERVICE3\_ON);}
+21 
+22         static\_createLogicUnit<LuEventCountdown, EvCountdownEnd<LuEventCountdown>, 
+      mpl::list<EvTimer<SmaccTimerClient>>>(5);
+23 
+24         \textcolor{comment}{//static\_createLogicUnit<LuEventCountdown, EvCountdownEnd<LuEventCountdown>,
+       mpl::list<EvActionFeedback<smacc::SmaccMoveBaseActionClient>>>(100);}
+25     \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/states/\hyperlink{st__event__count__down_8h}{st\+\_\+event\+\_\+count\+\_\+down.\+h}\end{DoxyCompactItemize}

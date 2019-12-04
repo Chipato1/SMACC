@@ -80,7 +80,7 @@ var searchData=
   ['createstate',['createState',['../classsmacc_1_1SmaccStateMachineInfo.html#a2d5759ccb5a8296debcc5dec741d3b42',1,'smacc::SmaccStateMachineInfo']]],
   ['current_5fstate_5f',['current_state_',['../classsmacc__rviz__plugin_1_1SmaccRvizDisplay.html#a342ff238c1dfaa427f09ee205a9e92d5',1,'smacc_rviz_plugin::SmaccRvizDisplay']]],
   ['currentbehavior_5f',['currentBehavior_',['../classsmacc_1_1Orthogonal.html#a4b393107861122834613734f499ccaeb',1,'smacc::Orthogonal']]],
-  ['currentiteration',['currentIteration',['../structStNavigateToWaypointsX.html#a2f597fd0ee0258ef66506e98d55e8060',1,'StNavigateToWaypointsX']]],
+  ['currentiteration',['currentIteration',['../structsm__dance__bot_1_1StNavigateToWaypointsX.html#ac282dc1978f30ad53499dbfddd80ecdc',1,'sm_dance_bot::StNavigateToWaypointsX']]],
   ['currentorthogonal',['currentOrthogonal',['../classsmacc_1_1SmaccSubStateBehavior.html#a40aac919bb306d95838fdfcc34cfe391',1,'smacc::SmaccSubStateBehavior']]],
   ['currentposeindex_5f',['currentPoseIndex_',['../classbackward__local__planner_1_1BackwardLocalPlanner.html#af2485562720c0ce3c895debdbdfc89f3',1,'backward_local_planner::BackwardLocalPlanner::currentPoseIndex_()'],['../classforward__local__planner_1_1ForwardLocalPlanner.html#a38a9662e8603f91d372759331b152077',1,'forward_local_planner::ForwardLocalPlanner::currentPoseIndex_()']]],
   ['currentstate',['currentState',['../classsmacc_1_1SmaccSubStateBehavior.html#a62e2b9da4a446f09396d0b4c01659b88',1,'smacc::SmaccSubStateBehavior']]],
