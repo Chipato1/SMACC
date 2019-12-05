@@ -2,7 +2,7 @@
 <area shape="rect" id="node2" href="$classsmacc_1_1SmaccStateMachineInfo.html#a6758065a8d1faaa7c3688cf0dffe9334" title="smacc::SmaccStateMachine\lInfo::assembleSMStructureMessage" alt="" coords="867,285,1119,327"/>
 <area shape="rect" id="node4" href="$namespacesmacc.html#a380bcca82a996c6c88868251206ad420" title="smacc::CallOnDefinition" alt="" coords="267,562,440,589"/>
 <area shape="rect" id="node5" href="$namespacesmacc.html#a09b297b1cdb9aae93a958f323431464a" title="smacc::cleanShortTypeName" alt="" coords="249,613,457,639"/>
-<area shape="rect" id="node7" href="$classsmacc_1_1SmaccState.html#adc225018fe91da47e6e9f1d20150b26a" title="smacc::SmaccState\&lt;\l SsrFPatternStartLoop,\l SS \&gt;::SmaccState" alt="" coords="585,747,751,803"/>
+<area shape="rect" id="node8" href="$classsmacc_1_1SmaccState.html#adc225018fe91da47e6e9f1d20150b26a" title="smacc::SmaccState\&lt;\l SsrFPatternStartLoop,\l SS \&gt;::SmaccState" alt="" coords="585,747,751,803"/>
 <area shape="rect" id="node9" href="$namespacesmacc.html#a78b16538b666c48efe324eec61cc15d7" title="smacc::demangledTypeName" alt="" coords="248,714,459,741"/>
 <area shape="rect" id="node10" href="$namespacesmacc.html#a4dd421d5d4e7617fcf4a9a756797adda" title="smacc::demangleSymbol" alt="" coords="261,765,445,791"/>
 <area shape="rect" id="node11" href="$classsmacc_1_1ISmaccState.html#a5bf0b49d5ea6b9e8f45c26fa155b2664" title="smacc::ISmaccState\l::getClassName" alt="" coords="276,816,431,857"/>
@@ -31,7 +31,7 @@
 <area shape="rect" id="node58" href="$classsmacc_1_1SmaccState.html#a41b2515faf76648c6d69fe09108d2691" title="smacc::SmaccState\&lt;\l SsrFPatternStartLoop,\l SS \&gt;::~SmaccState" alt="" coords="270,2182,437,2238"/>
 <area shape="rect" id="node3" href="$classsmacc_1_1SmaccStateMachineInfo.html#afa2c7dbb9dd235d2e10f69691a035c1c" title="smacc::SmaccStateMachine\lInfo::computeAllStateMessage" alt="" coords="1167,285,1384,327"/>
 <area shape="rect" id="node6" href="$classsmacc_1_1SmaccState.html#a4db028a85244653e48957d2b3371413d" title="smacc::SmaccState\&lt;\l SsrFPatternStartLoop,\l SS \&gt;::getShortName" alt="" coords="585,587,751,643"/>
-<area shape="rect" id="node8" href="$structsmacc_1_1SmaccStateMachineBase.html#a47508a2d301007546d4c70dedd2ade4b" title="smacc::SmaccStateMachine\lBase\&lt; TimerStateMachine,\l TimerState \&gt;::SmaccStateMachineBase" alt="" coords="526,667,810,723"/>
+<area shape="rect" id="node7" href="$structsmacc_1_1SmaccStateMachineBase.html#a2dc1cd9a25b80f00602f1faab9b01e7b" title="smacc::SmaccStateMachine\lBase\&lt; TimerStateMachine,\l TimerState \&gt;::initiate_impl" alt="" coords="566,667,770,723"/>
 <area shape="rect" id="node18" href="$classsmacc_1_1Orthogonal.html#a0476ba0e6575824893947918567ebbaa" title="smacc::Orthogonal::\lsetStateBehavior" alt="" coords="593,1003,743,1044"/>
 <area shape="rect" id="node19" href="$classsmacc_1_1Orthogonal.html#a77888104f276bdbd177d69cf23f11a56" title="smacc::Orthogonal::\lonEntry" alt="" coords="593,1068,743,1109"/>
 <area shape="rect" id="node20" href="$classsmacc_1_1Orthogonal.html#a71c0df3d9e8327e65286e1ce0a3a7043" title="smacc::Orthogonal::\lonExit" alt="" coords="593,1133,743,1175"/>

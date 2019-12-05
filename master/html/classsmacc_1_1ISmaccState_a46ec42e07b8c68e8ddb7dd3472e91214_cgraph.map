@@ -1,11 +1,13 @@
 <map id="smacc::ISmaccState::notifyTransitionFromTransitionTypeInfo" name="smacc::ISmaccState::notifyTransitionFromTransitionTypeInfo">
-<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccStateMachine.html#a1c455c0f33506e59a7f4389e3fe99ffe" title="smacc::ISmaccStateMachine\l::getCurrentStateInfo" alt="" coords="271,68,477,109"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccStateMachine.html#a1c455c0f33506e59a7f4389e3fe99ffe" title="smacc::ISmaccStateMachine\l::getCurrentStateInfo" alt="" coords="271,108,477,149"/>
 <area shape="rect" id="node3" href="$classsmacc_1_1ISmaccStateMachine.html#ab61bff5b3c49c4bfc17972e2de8d4fd5" title="smacc::ISmaccStateMachine\l::publishTransition" alt="" coords="525,5,732,47"/>
-<area shape="rect" id="node10" href="$classsmacc_1_1ISmaccState.html#a562bb3f9a3ac16b8be71e4794c9e7523" title="smacc::ISmaccState\l::getStateMachine" alt="" coords="297,133,451,175"/>
-<area shape="rect" id="node5" href="$classsmacc_1_1ISmaccStateMachine.html#ad71ca51c9b46ccc013df766a1fcfe93f" title="smacc::ISmaccStateMachine\l::initializeRosComponents" alt="" coords="525,71,732,112"/>
-<area shape="rect" id="node7" href="$classsmacc_1_1ISmaccStateMachine.html#a9155cf3d1877255d70b0bd71648734a3" title="smacc::ISmaccStateMachine\l::createOrthogonal" alt="" coords="525,136,732,177"/>
+<area shape="rect" id="node12" href="$classsmacc_1_1ISmaccState.html#a562bb3f9a3ac16b8be71e4794c9e7523" title="smacc::ISmaccState\l::getStateMachine" alt="" coords="297,173,451,215"/>
+<area shape="rect" id="node5" href="$classsmacc_1_1ISmaccStateMachine.html#ac2982c6c8283663e5e1e8a7c82f511ec" title="this function should be implemented by the user to create the orthogonals " alt="" coords="782,93,989,135"/>
+<area shape="rect" id="node6" href="$classsmacc_1_1ISmaccStateMachine.html#ae8c9c79ca6cd77c975f5d9cda33a6d5e" title="smacc::ISmaccStateMachine\l::onInitializing" alt="" coords="525,123,732,164"/>
+<area shape="rect" id="node7" href="$classsmacc_1_1ISmaccStateMachine.html#a95e7f71d0d88fffd0afebb1f9ccdade5" title="smacc::ISmaccStateMachine\l::onInitialized" alt="" coords="525,188,732,229"/>
+<area shape="rect" id="node9" href="$classsmacc_1_1ISmaccStateMachine.html#a9155cf3d1877255d70b0bd71648734a3" title="smacc::ISmaccStateMachine\l::createOrthogonal" alt="" coords="525,253,732,295"/>
 <area shape="rect" id="node4" href="$namespacesmacc.html#a6cda75a51f4a5e29d0a64effb800fb61" title="smacc::transitionInfoToMsg" alt="" coords="788,13,983,39"/>
-<area shape="rect" id="node6" href="$classsmacc_1_1ISmaccStateMachine.html#ac03029f770422d0ea77ea9856b8cb1a8" title="smacc::ISmaccStateMachine\l::state_machine_visualization" alt="" coords="780,71,991,112"/>
-<area shape="rect" id="node8" href="$classsmacc_1_1Orthogonal.html#a05f65c01344a6c8593f7f88c0ca19654" title="smacc::Orthogonal::\lsetStateMachine" alt="" coords="810,136,961,177"/>
-<area shape="rect" id="node9" href="$classsmacc_1_1Orthogonal.html#a7a3da420b1554e20aea3ed01067df05c" title="smacc::Orthogonal::\lonInitialize" alt="" coords="1039,136,1189,177"/>
+<area shape="rect" id="node8" href="$classsmacc_1_1ISmaccStateMachine.html#ac03029f770422d0ea77ea9856b8cb1a8" title="smacc::ISmaccStateMachine\l::state_machine_visualization" alt="" coords="780,188,991,229"/>
+<area shape="rect" id="node10" href="$classsmacc_1_1Orthogonal.html#a05f65c01344a6c8593f7f88c0ca19654" title="smacc::Orthogonal::\lsetStateMachine" alt="" coords="810,253,961,295"/>
+<area shape="rect" id="node11" href="$classsmacc_1_1Orthogonal.html#a7a3da420b1554e20aea3ed01067df05c" title="smacc::Orthogonal::\lonInitialize" alt="" coords="1039,253,1189,295"/>
 </map>

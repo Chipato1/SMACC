@@ -1,4 +1,4 @@
-<map id="smacc::ISmaccStateMachine::initializeRosComponents" name="smacc::ISmaccStateMachine::initializeRosComponents">
+<map id="smacc::ISmaccStateMachine::onInitialized" name="smacc::ISmaccStateMachine::onInitialized">
 <area shape="rect" id="node2" href="$classsmacc_1_1ISmaccStateMachine.html#a1c455c0f33506e59a7f4389e3fe99ffe" title="smacc::ISmaccStateMachine\l::getCurrentStateInfo" alt="" coords="260,13,467,54"/>
 <area shape="rect" id="node5" href="$structsmacc_1_1SmaccStateMachineBase.html#a2dc1cd9a25b80f00602f1faab9b01e7b" title="smacc::SmaccStateMachine\lBase\&lt; TimerStateMachine,\l TimerState \&gt;::initiate_impl" alt="" coords="261,77,465,133"/>
 <area shape="rect" id="node3" href="$classsmacc_1_1ISmaccState.html#a46ec42e07b8c68e8ddb7dd3472e91214" title="smacc::ISmaccState\l::notifyTransitionFromTransition\lTypeInfo" alt="" coords="515,5,732,61"/>
