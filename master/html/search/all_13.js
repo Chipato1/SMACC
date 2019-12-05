@@ -394,7 +394,7 @@ var searchData=
   ['stnavigatereverse3',['StNavigateReverse3',['../structsm__dance__bot_1_1StNavigateReverse3.html',1,'sm_dance_bot']]],
   ['stnavigatetowaypoint1',['StNavigateToWaypoint1',['../structsm__dance__bot_1_1StNavigateToWaypoint1.html',1,'sm_dance_bot']]],
   ['stnavigatetowaypointsx',['StNavigateToWaypointsX',['../structsm__dance__bot_1_1StNavigateToWaypointsX.html',1,'sm_dance_bot']]],
-  ['stop',['Stop',['../classsmacc_1_1ISmaccStateMachine.html#a45032346275dcc8e23abece4d524ca3c',1,'smacc::ISmaccStateMachine::Stop()'],['../structsmacc_1_1SmaccStateMachineBase.html#a9c7c7b8d814a8cb1b741c7675dc2a9f7',1,'smacc::SmaccStateMachineBase::Stop()'],['../classsmacc_1_1SignalDetector.html#a536ea005ea4ef4632c0c9c1c62c557a3',1,'smacc::SignalDetector::stop()']]],
+  ['stop',['stop',['../classsmacc_1_1SignalDetector.html#a536ea005ea4ef4632c0c9c1c62c557a3',1,'smacc::SignalDetector::stop()'],['../classsmacc_1_1ISmaccStateMachine.html#a45032346275dcc8e23abece4d524ca3c',1,'smacc::ISmaccStateMachine::Stop()'],['../structsmacc_1_1SmaccStateMachineBase.html#a9c7c7b8d814a8cb1b741c7675dc2a9f7',1,'smacc::SmaccStateMachineBase::Stop()']]],
   ['string_5fpublisher_5fclient_2eh',['string_publisher_client.h',['../string__publisher__client_8h.html',1,'']]],
   ['string_5ftype_5fwalker_2ecpp',['string_type_walker.cpp',['../string__type__walker_8cpp.html',1,'']]],
   ['string_5ftype_5fwalker_2eh',['string_type_walker.h',['../string__type__walker_8h.html',1,'']]],

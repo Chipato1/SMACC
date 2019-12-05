@@ -65,6 +65,7 @@ var searchData=
   ['transition_5f4',['TRANSITION_4',['../structsm__dance__bot_1_1StNavigateToWaypointsX_1_1TRANSITION__4.html',1,'sm_dance_bot::StNavigateToWaypointsX']]],
   ['transition_5f5',['TRANSITION_5',['../structsm__dance__bot_1_1StNavigateToWaypointsX_1_1TRANSITION__5.html',1,'sm_dance_bot::StNavigateToWaypointsX']]],
   ['transition_5ftag',['TRANSITION_TAG',['../classsmacc_1_1transition.html#a54c8023d8bdcdddfb18c3f5b7a9d2e32',1,'smacc::transition']]],
+  ['transitionhistoryservice_5f',['transitionHistoryService_',['../classsmacc_1_1ISmaccStateMachine.html#a73e2a7ca89c3d807eafe5cfb1e86ea05',1,'smacc::ISmaccStateMachine']]],
   ['transitioninfotomsg',['transitionInfoToMsg',['../namespacesmacc.html#a6cda75a51f4a5e29d0a64effb800fb61',1,'smacc']]],
   ['transitionloghistory_5f',['transitionLogHistory_',['../classsmacc_1_1ISmaccStateMachine.html#af682d5fce5bb7c959e2b8814dae50023',1,'smacc::ISmaccStateMachine']]],
   ['transitionlogpub_5f',['transitionLogPub_',['../classsmacc_1_1ISmaccStateMachine.html#acc42eb050325c1edc77d81675fb1286a',1,'smacc::ISmaccStateMachine']]],

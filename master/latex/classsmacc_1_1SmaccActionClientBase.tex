@@ -11,7 +11,7 @@ Inheritance diagram for smacc\+:\+:Smacc\+Action\+Client\+Base$<$ T\+Derived, Ac
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classsmacc_1_1SmaccActionClientBase__inherit__graph}
+\includegraphics[height=550pt]{classsmacc_1_1SmaccActionClientBase__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -44,9 +44,29 @@ typedef Action\+Client\+::\+Simple\+Feedback\+Callback \hyperlink{classsmacc_1_1
 \item 
 \hyperlink{classsmacc_1_1SmaccActionClientBase_a1c3fa6bf380750b16f2ded87dd60860f}{Smacc\+Action\+Client\+Base} ()
 \item 
+virtual \hyperlink{classsmacc_1_1SmaccActionClientBase_a97241a2fa0bcbc6029f2749175623582}{$\sim$\+Smacc\+Action\+Client\+Base} ()
+\item 
 virtual void \hyperlink{classsmacc_1_1SmaccActionClientBase_a717b234a3e26ea778cce7635fb924e59}{initialize} () override
 \item 
-virtual \hyperlink{classsmacc_1_1SmaccActionClientBase_a97241a2fa0bcbc6029f2749175623582}{$\sim$\+Smacc\+Action\+Client\+Base} ()
+{\footnotesize template$<$typename T $>$ }\\connection \hyperlink{classsmacc_1_1SmaccActionClientBase_a2763202f0f75d0138978760aa434f9f9}{on\+Succeeded} (void(T\+::$\ast$callback)(Result\+Const\+Ptr \&), T $\ast$\hyperlink{classobject}{object})
+\item 
+{\footnotesize template$<$typename T $>$ }\\connection \hyperlink{classsmacc_1_1SmaccActionClientBase_a594eb41ba186940d54c1e163a66e3c5d}{on\+Succeeded} (std\+::function$<$ void(Result\+Const\+Ptr \&)$>$ callback)
+\item 
+{\footnotesize template$<$typename T $>$ }\\connection \hyperlink{classsmacc_1_1SmaccActionClientBase_aa7e6f12e9e2ff5749c35c3716a87cb14}{on\+Aborted} (void(T\+::$\ast$callback)(Result\+Const\+Ptr \&), T $\ast$\hyperlink{classobject}{object})
+\item 
+{\footnotesize template$<$typename T $>$ }\\connection \hyperlink{classsmacc_1_1SmaccActionClientBase_a19cc3c0b968646bdbbbb73974f050ecb}{on\+Aborted} (std\+::function$<$ void(Result\+Const\+Ptr \&)$>$ callback)
+\item 
+{\footnotesize template$<$typename T $>$ }\\connection \hyperlink{classsmacc_1_1SmaccActionClientBase_a9ae575716757722c401c825f773f08dd}{on\+Preempted} (void(T\+::$\ast$callback)(Result\+Const\+Ptr \&), T $\ast$\hyperlink{classobject}{object})
+\item 
+{\footnotesize template$<$typename T $>$ }\\connection \hyperlink{classsmacc_1_1SmaccActionClientBase_ab1f136064ef934192ef83346fe665d02}{on\+Preempted} (std\+::function$<$ void(Result\+Const\+Ptr \&)$>$ callback)
+\item 
+{\footnotesize template$<$typename T $>$ }\\connection \hyperlink{classsmacc_1_1SmaccActionClientBase_af745f6c891cf386e4d5609ef6405c9b2}{on\+Cancelled} (void(T\+::$\ast$callback)(Result\+Const\+Ptr \&), T $\ast$\hyperlink{classobject}{object})
+\item 
+{\footnotesize template$<$typename T $>$ }\\connection \hyperlink{classsmacc_1_1SmaccActionClientBase_a9703eb07313b31f760b0374a54de4193}{on\+Cancelled} (std\+::function$<$ void(Result\+Const\+Ptr \&)$>$ callback)
+\item 
+{\footnotesize template$<$typename T $>$ }\\connection \hyperlink{classsmacc_1_1SmaccActionClientBase_abe5bbda2edcfe851d41868250dfabde4}{on\+Rejected} (void(T\+::$\ast$callback)(Result\+Const\+Ptr \&), T $\ast$\hyperlink{classobject}{object})
+\item 
+{\footnotesize template$<$typename T $>$ }\\connection \hyperlink{classsmacc_1_1SmaccActionClientBase_aca79d34dfacbf4de54a2f60d7789a872}{on\+Rejected} (std\+::function$<$ void(Result\+Const\+Ptr \&)$>$ callback)
 \item 
 virtual void \hyperlink{classsmacc_1_1SmaccActionClientBase_a3d5f2229c16bb64a41bf05087fe8a0c0}{cancel\+Goal} () override
 \item 
@@ -63,7 +83,7 @@ static std\+::string \hyperlink{classsmacc_1_1SmaccActionClientBase_a3f925bb2c5c
 \begin{DoxyCompactItemize}
 \item 
 boost\+::optional$<$ std\+::string $>$ \hyperlink{classsmacc_1_1SmaccActionClientBase_a7fa0e4b63069bea12d47a83bd0be73d7}{name\+\_\+}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em rosnamespace path \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -75,6 +95,16 @@ void \hyperlink{classsmacc_1_1SmaccActionClientBase_ab04cd1fa7f5417df74c28e44cfd
 \begin{DoxyCompactItemize}
 \item 
 std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1SmaccActionClientBase_a87770be9a701846564593ce36d79cfa2}{Action\+Client} $>$ \hyperlink{classsmacc_1_1SmaccActionClientBase_a5ec5c74015ea4e8b61d017f666a4ce17}{client\+\_\+}
+\item 
+signal$<$ void(const Result\+Const\+Ptr \&)$>$ \hyperlink{classsmacc_1_1SmaccActionClientBase_a033d789a6688b5064be4843a82fa007f}{on\+Succeeded\+\_\+}
+\item 
+signal$<$ void(const Result\+Const\+Ptr \&)$>$ \hyperlink{classsmacc_1_1SmaccActionClientBase_acb66868d20faa3c5d7065991b4a306ec}{on\+Aborted\+\_\+}
+\item 
+signal$<$ void(const Result\+Const\+Ptr \&)$>$ \hyperlink{classsmacc_1_1SmaccActionClientBase_afa8833dad78e3e3991cfec0e396b24c9}{on\+Preempted\+\_\+}
+\item 
+signal$<$ void(const Result\+Const\+Ptr \&)$>$ \hyperlink{classsmacc_1_1SmaccActionClientBase_a5b27bf8941692efb4f98d0747bcbfb7e}{on\+Cancelled\+\_\+}
+\item 
+signal$<$ void(const Result\+Const\+Ptr \&)$>$ \hyperlink{classsmacc_1_1SmaccActionClientBase_a729484addba07d0eaf253f22456615fd}{on\+Rejected\+\_\+}
 \end{DoxyCompactItemize}
 
 
@@ -84,7 +114,7 @@ class smacc\+::\+Smacc\+Action\+Client\+Base$<$ T\+Derived, Action\+Type $>$}
 
 
 
-Definition at line 11 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+Definition at line 12 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 
 
 
@@ -94,35 +124,35 @@ Definition at line 11 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 \subsubsection[{\texorpdfstring{Action\+Client}{ActionClient}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived, typename Action\+Type$>$ typedef actionlib\+::\+Simple\+Action\+Client$<$Action\+Type$>$ {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ T\+Derived, Action\+Type $>$\+::{\bf Action\+Client}}\hypertarget{classsmacc_1_1SmaccActionClientBase_a87770be9a701846564593ce36d79cfa2}{}\label{classsmacc_1_1SmaccActionClientBase_a87770be9a701846564593ce36d79cfa2}
 
 
-Definition at line 16 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+Definition at line 17 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 
 \index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!Goal\+Handle@{Goal\+Handle}}
 \index{Goal\+Handle@{Goal\+Handle}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
 \subsubsection[{\texorpdfstring{Goal\+Handle}{GoalHandle}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived, typename Action\+Type$>$ typedef actionlib\+::\+Simple\+Action\+Client$<$Action\+Type$>$ {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ T\+Derived, Action\+Type $>$\+::{\bf Goal\+Handle}}\hypertarget{classsmacc_1_1SmaccActionClientBase_ab63abc710289c0d22114ad3aec45c916}{}\label{classsmacc_1_1SmaccActionClientBase_ab63abc710289c0d22114ad3aec45c916}
 
 
-Definition at line 17 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+Definition at line 18 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 
 \index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!Simple\+Active\+Callback@{Simple\+Active\+Callback}}
 \index{Simple\+Active\+Callback@{Simple\+Active\+Callback}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
 \subsubsection[{\texorpdfstring{Simple\+Active\+Callback}{SimpleActiveCallback}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived, typename Action\+Type$>$ typedef Action\+Client\+::\+Simple\+Active\+Callback {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ T\+Derived, Action\+Type $>$\+::{\bf Simple\+Active\+Callback}}\hypertarget{classsmacc_1_1SmaccActionClientBase_ae5aaa9660a758a113f72359a5cf3884e}{}\label{classsmacc_1_1SmaccActionClientBase_ae5aaa9660a758a113f72359a5cf3884e}
 
 
-Definition at line 20 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+Definition at line 21 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 
 \index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!Simple\+Done\+Callback@{Simple\+Done\+Callback}}
 \index{Simple\+Done\+Callback@{Simple\+Done\+Callback}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
 \subsubsection[{\texorpdfstring{Simple\+Done\+Callback}{SimpleDoneCallback}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived, typename Action\+Type$>$ typedef Action\+Client\+::\+Simple\+Done\+Callback {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ T\+Derived, Action\+Type $>$\+::{\bf Simple\+Done\+Callback}}\hypertarget{classsmacc_1_1SmaccActionClientBase_a2cad0a2256df0161c60af458161edbfb}{}\label{classsmacc_1_1SmaccActionClientBase_a2cad0a2256df0161c60af458161edbfb}
 
 
-Definition at line 19 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+Definition at line 20 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 
 \index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!Simple\+Feedback\+Callback@{Simple\+Feedback\+Callback}}
 \index{Simple\+Feedback\+Callback@{Simple\+Feedback\+Callback}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
 \subsubsection[{\texorpdfstring{Simple\+Feedback\+Callback}{SimpleFeedbackCallback}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived, typename Action\+Type$>$ typedef Action\+Client\+::\+Simple\+Feedback\+Callback {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ T\+Derived, Action\+Type $>$\+::{\bf Simple\+Feedback\+Callback}}\hypertarget{classsmacc_1_1SmaccActionClientBase_a6be950ca9b2ba07005d50731ed7b5ff8}{}\label{classsmacc_1_1SmaccActionClientBase_a6be950ca9b2ba07005d50731ed7b5ff8}
 
 
-Definition at line 21 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+Definition at line 22 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 
 
 
@@ -136,13 +166,13 @@ Definition at line 21 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_a1c3fa6bf380750b16f2ded87dd60860f}{}\label{classsmacc_1_1SmaccActionClientBase_a1c3fa6bf380750b16f2ded87dd60860f}
 
 
-Definition at line 23 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+Definition at line 24 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 
 
 \begin{DoxyCode}
-24         : \hyperlink{classsmacc_1_1ISmaccActionClient_a42e3f1a869fd7ec6805437989ba58abc}{ISmaccActionClient}()
-25     \{
-26     \}
+25         : \hyperlink{classsmacc_1_1ISmaccActionClient_a42e3f1a869fd7ec6805437989ba58abc}{ISmaccActionClient}()
+26     \{
+27     \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!````~Smacc\+Action\+Client\+Base@{$\sim$\+Smacc\+Action\+Client\+Base}}
 \index{````~Smacc\+Action\+Client\+Base@{$\sim$\+Smacc\+Action\+Client\+Base}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
@@ -153,12 +183,12 @@ Definition at line 23 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_a97241a2fa0bcbc6029f2749175623582}{}\label{classsmacc_1_1SmaccActionClientBase_a97241a2fa0bcbc6029f2749175623582}
 
 
-Definition at line 50 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+Definition at line 35 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 
 
 \begin{DoxyCode}
-51     \{
-52     \}
+36     \{
+37     \}
 \end{DoxyCode}
 
 
@@ -183,14 +213,14 @@ Implements \hyperlink{classsmacc_1_1ISmaccActionClient_a863837a6fc352c2659818ca0
 
 
 
-Definition at line 54 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+Definition at line 116 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 
 
 \begin{DoxyCode}
-55     \{
-56         ROS\_INFO(\textcolor{stringliteral}{"Cancelling goal of %s"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str());
-57         \hyperlink{classsmacc_1_1SmaccActionClientBase_a5ec5c74015ea4e8b61d017f666a4ce17}{client\_}->cancelGoal();
-58     \}
+117     \{
+118         ROS\_INFO(\textcolor{stringliteral}{"Cancelling goal of %s"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str());
+119         \hyperlink{classsmacc_1_1SmaccActionClientBase_a5ec5c74015ea4e8b61d017f666a4ce17}{client\_}->cancelGoal();
+120     \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!get\+Event\+Label@{get\+Event\+Label}}
 \index{get\+Event\+Label@{get\+Event\+Label}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
@@ -201,14 +231,14 @@ Definition at line 54 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_a3f925bb2c5cfe0dc7937ad7da755209a}{}\label{classsmacc_1_1SmaccActionClientBase_a3f925bb2c5cfe0dc7937ad7da755209a}
 
 
-Definition at line 28 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+Definition at line 29 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 
 
 \begin{DoxyCode}
-29     \{
-30         \textcolor{keyword}{auto} type = TypeInfo::getTypeInfoFromType<ActionType>();
-31         \textcolor{keywordflow}{return} type->getNonTemplatetypename();
-32     \}
+30     \{
+31         \textcolor{keyword}{auto} type = TypeInfo::getTypeInfoFromType<ActionType>();
+32         \textcolor{keywordflow}{return} type->getNonTemplatetypename();
+33     \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!get\+State@{get\+State}}
 \index{get\+State@{get\+State}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
@@ -223,13 +253,13 @@ Implements \hyperlink{classsmacc_1_1ISmaccActionClient_a272349b93828674d57fb4807
 
 
 
-Definition at line 60 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+Definition at line 122 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 
 
 \begin{DoxyCode}
-61     \{
-62         \textcolor{keywordflow}{return} \hyperlink{classsmacc_1_1SmaccActionClientBase_a5ec5c74015ea4e8b61d017f666a4ce17}{client\_}->getState();
-63     \}
+123     \{
+124         \textcolor{keywordflow}{return} \hyperlink{classsmacc_1_1SmaccActionClientBase_a5ec5c74015ea4e8b61d017f666a4ce17}{client\_}->getState();
+125     \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!initialize@{initialize}}
 \index{initialize@{initialize}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
@@ -248,7 +278,7 @@ Reimplemented in \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient_ae520045638a
 
 
 
-Definition at line 36 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+Definition at line 42 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 
 
 
@@ -256,18 +286,18 @@ Referenced by smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::initialize().
 
 
 \begin{DoxyCode}
-37     \{
-38         \textcolor{keywordflow}{if} (!\hyperlink{classsmacc_1_1SmaccActionClientBase_a7fa0e4b63069bea12d47a83bd0be73d7}{name\_})
-39         \{
-40             \hyperlink{classsmacc_1_1SmaccActionClientBase_a7fa0e4b63069bea12d47a83bd0be73d7}{name\_} = \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(*this).name());
-41             std::vector<std::string> strs;
-42             boost::split(strs, *\hyperlink{classsmacc_1_1SmaccActionClientBase_a7fa0e4b63069bea12d47a83bd0be73d7}{name\_}, boost::is\_any\_of(\textcolor{stringliteral}{"::"}));
-43             std::string classname = strs.back();
-44             \hyperlink{classsmacc_1_1SmaccActionClientBase_a7fa0e4b63069bea12d47a83bd0be73d7}{name\_} = classname;
-45         \}
-46 
-47         \hyperlink{classsmacc_1_1SmaccActionClientBase_a5ec5c74015ea4e8b61d017f666a4ce17}{client\_} = std::make\_shared<ActionClient>(*name\_);
-48     \}
+43     \{
+44         \textcolor{keywordflow}{if} (!\hyperlink{classsmacc_1_1SmaccActionClientBase_a7fa0e4b63069bea12d47a83bd0be73d7}{name\_})
+45         \{
+46             \hyperlink{classsmacc_1_1SmaccActionClientBase_a7fa0e4b63069bea12d47a83bd0be73d7}{name\_} = \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(*this).name());
+47             std::vector<std::string> strs;
+48             boost::split(strs, *\hyperlink{classsmacc_1_1SmaccActionClientBase_a7fa0e4b63069bea12d47a83bd0be73d7}{name\_}, boost::is\_any\_of(\textcolor{stringliteral}{"::"}));
+49             std::string classname = strs.back();
+50             \hyperlink{classsmacc_1_1SmaccActionClientBase_a7fa0e4b63069bea12d47a83bd0be73d7}{name\_} = classname;
+51         \}
+52 
+53         \hyperlink{classsmacc_1_1SmaccActionClientBase_a5ec5c74015ea4e8b61d017f666a4ce17}{client\_} = std::make\_shared<ActionClient>(*name\_);
+54     \}
 \end{DoxyCode}
 
 
@@ -281,6 +311,78 @@ Here is the caller graph for this function\+:
 \end{figure}
 
 
+\index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!on\+Aborted@{on\+Aborted}}
+\index{on\+Aborted@{on\+Aborted}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
+\subsubsection[{\texorpdfstring{on\+Aborted(void(\+T\+::$\ast$callback)(\+Result\+Const\+Ptr \&), T $\ast$object)}{onAborted(void(T::*callback)(ResultConstPtr &), T *object)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived, typename Action\+Type$>$ template$<$typename T $>$ connection {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ T\+Derived, Action\+Type $>$\+::on\+Aborted (
+\begin{DoxyParamCaption}
+\item[{void(T\+::$\ast$)(Result\+Const\+Ptr \&)}]{callback, }
+\item[{T $\ast$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_aa7e6f12e9e2ff5749c35c3716a87cb14}{}\label{classsmacc_1_1SmaccActionClientBase_aa7e6f12e9e2ff5749c35c3716a87cb14}
+
+
+Definition at line 69 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+
+
+\begin{DoxyCode}
+70     \{
+71         \textcolor{keywordflow}{return} this->\hyperlink{classsmacc_1_1SmaccActionClientBase_acb66868d20faa3c5d7065991b4a306ec}{onAborted\_}.connect([&](\textcolor{keyword}{auto} \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{ (\textcolor{keywordtype}{object}->*callback)(
+      \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}); \});
+72     \}
+\end{DoxyCode}
+\index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!on\+Aborted@{on\+Aborted}}
+\index{on\+Aborted@{on\+Aborted}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
+\subsubsection[{\texorpdfstring{on\+Aborted(std\+::function$<$ void(\+Result\+Const\+Ptr \&)$>$ callback)}{onAborted(std::function< void(ResultConstPtr &)> callback)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived, typename Action\+Type$>$ template$<$typename T $>$ connection {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ T\+Derived, Action\+Type $>$\+::on\+Aborted (
+\begin{DoxyParamCaption}
+\item[{std\+::function$<$ void(Result\+Const\+Ptr \&)$>$}]{callback}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_a19cc3c0b968646bdbbbb73974f050ecb}{}\label{classsmacc_1_1SmaccActionClientBase_a19cc3c0b968646bdbbbb73974f050ecb}
+
+
+Definition at line 75 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+
+
+\begin{DoxyCode}
+76     \{
+77         \textcolor{keywordflow}{return} this->\hyperlink{classsmacc_1_1SmaccActionClientBase_acb66868d20faa3c5d7065991b4a306ec}{onAborted\_}.connect(callback);
+78     \}
+\end{DoxyCode}
+\index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!on\+Cancelled@{on\+Cancelled}}
+\index{on\+Cancelled@{on\+Cancelled}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
+\subsubsection[{\texorpdfstring{on\+Cancelled(void(\+T\+::$\ast$callback)(\+Result\+Const\+Ptr \&), T $\ast$object)}{onCancelled(void(T::*callback)(ResultConstPtr &), T *object)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived, typename Action\+Type$>$ template$<$typename T $>$ connection {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ T\+Derived, Action\+Type $>$\+::on\+Cancelled (
+\begin{DoxyParamCaption}
+\item[{void(T\+::$\ast$)(Result\+Const\+Ptr \&)}]{callback, }
+\item[{T $\ast$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_af745f6c891cf386e4d5609ef6405c9b2}{}\label{classsmacc_1_1SmaccActionClientBase_af745f6c891cf386e4d5609ef6405c9b2}
+
+
+Definition at line 93 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+
+
+\begin{DoxyCode}
+94     \{
+95         \textcolor{keywordflow}{return} this->\hyperlink{classsmacc_1_1SmaccActionClientBase_a5b27bf8941692efb4f98d0747bcbfb7e}{onCancelled\_}.connect([&](\textcolor{keyword}{auto} \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{ (\textcolor{keywordtype}{object}->*callback)(
+      \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}); \});
+96     \}
+\end{DoxyCode}
+\index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!on\+Cancelled@{on\+Cancelled}}
+\index{on\+Cancelled@{on\+Cancelled}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
+\subsubsection[{\texorpdfstring{on\+Cancelled(std\+::function$<$ void(\+Result\+Const\+Ptr \&)$>$ callback)}{onCancelled(std::function< void(ResultConstPtr &)> callback)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived, typename Action\+Type$>$ template$<$typename T $>$ connection {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ T\+Derived, Action\+Type $>$\+::on\+Cancelled (
+\begin{DoxyParamCaption}
+\item[{std\+::function$<$ void(Result\+Const\+Ptr \&)$>$}]{callback}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_a9703eb07313b31f760b0374a54de4193}{}\label{classsmacc_1_1SmaccActionClientBase_a9703eb07313b31f760b0374a54de4193}
+
+
+Definition at line 99 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+
+
+\begin{DoxyCode}
+100     \{
+101         \textcolor{keywordflow}{return} this->\hyperlink{classsmacc_1_1SmaccActionClientBase_a5b27bf8941692efb4f98d0747bcbfb7e}{onCancelled\_}.connect(callback);
+102     \}
+\end{DoxyCode}
 \index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!on\+Feedback@{on\+Feedback}}
 \index{on\+Feedback@{on\+Feedback}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
 \subsubsection[{\texorpdfstring{on\+Feedback(const Feedback\+Const\+Ptr \&feedback\+\_\+msg)}{onFeedback(const FeedbackConstPtr &feedback_msg)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived, typename Action\+Type$>$ void {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ T\+Derived, Action\+Type $>$\+::on\+Feedback (
@@ -290,19 +392,91 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_ab65d16595371809927fdffe8c20c9bd0}{}\label{classsmacc_1_1SmaccActionClientBase_ab65d16595371809927fdffe8c20c9bd0}
 
 
-Definition at line 88 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+Definition at line 156 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 
 
 \begin{DoxyCode}
-89     \{
-90         \textcolor{keyword}{auto} actionFeedbackEvent = \textcolor{keyword}{new} EvActionFeedback<Feedback>();
-91         actionFeedbackEvent->client = \textcolor{keyword}{this};
-92         actionFeedbackEvent->feedbackMessage = *feedback\_msg;
-93         this->\hyperlink{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80}{postEvent}(actionFeedbackEvent);
-94         ROS\_WARN(\textcolor{stringliteral}{"FEEDBACK EVENT"});
-95 
-96         \textcolor{comment}{//invokeOurFeedbackSignal(feedback\_msg);}
-97     \}
+157     \{
+158         \textcolor{keyword}{auto} actionFeedbackEvent = \textcolor{keyword}{new} EvActionFeedback<Feedback>();
+159         actionFeedbackEvent->client = \textcolor{keyword}{this};
+160         actionFeedbackEvent->feedbackMessage = *feedback\_msg;
+161         this->\hyperlink{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80}{postEvent}(actionFeedbackEvent);
+162         ROS\_WARN(\textcolor{stringliteral}{"FEEDBACK EVENT"});
+163 
+164         \textcolor{comment}{//invokeOurFeedbackSignal(feedback\_msg);}
+165     \}
+\end{DoxyCode}
+\index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!on\+Preempted@{on\+Preempted}}
+\index{on\+Preempted@{on\+Preempted}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
+\subsubsection[{\texorpdfstring{on\+Preempted(void(\+T\+::$\ast$callback)(\+Result\+Const\+Ptr \&), T $\ast$object)}{onPreempted(void(T::*callback)(ResultConstPtr &), T *object)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived, typename Action\+Type$>$ template$<$typename T $>$ connection {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ T\+Derived, Action\+Type $>$\+::on\+Preempted (
+\begin{DoxyParamCaption}
+\item[{void(T\+::$\ast$)(Result\+Const\+Ptr \&)}]{callback, }
+\item[{T $\ast$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_a9ae575716757722c401c825f773f08dd}{}\label{classsmacc_1_1SmaccActionClientBase_a9ae575716757722c401c825f773f08dd}
+
+
+Definition at line 81 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+
+
+\begin{DoxyCode}
+82     \{
+83         \textcolor{keywordflow}{return} this->\hyperlink{classsmacc_1_1SmaccActionClientBase_afa8833dad78e3e3991cfec0e396b24c9}{onPreempted\_}.connect([&](\textcolor{keyword}{auto} \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{ (\textcolor{keywordtype}{object}->*callback)(
+      \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}); \});
+84     \}
+\end{DoxyCode}
+\index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!on\+Preempted@{on\+Preempted}}
+\index{on\+Preempted@{on\+Preempted}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
+\subsubsection[{\texorpdfstring{on\+Preempted(std\+::function$<$ void(\+Result\+Const\+Ptr \&)$>$ callback)}{onPreempted(std::function< void(ResultConstPtr &)> callback)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived, typename Action\+Type$>$ template$<$typename T $>$ connection {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ T\+Derived, Action\+Type $>$\+::on\+Preempted (
+\begin{DoxyParamCaption}
+\item[{std\+::function$<$ void(Result\+Const\+Ptr \&)$>$}]{callback}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_ab1f136064ef934192ef83346fe665d02}{}\label{classsmacc_1_1SmaccActionClientBase_ab1f136064ef934192ef83346fe665d02}
+
+
+Definition at line 87 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+
+
+\begin{DoxyCode}
+88     \{
+89         \textcolor{keywordflow}{return} this->\hyperlink{classsmacc_1_1SmaccActionClientBase_afa8833dad78e3e3991cfec0e396b24c9}{onPreempted\_}.connect(callback);
+90     \}
+\end{DoxyCode}
+\index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!on\+Rejected@{on\+Rejected}}
+\index{on\+Rejected@{on\+Rejected}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
+\subsubsection[{\texorpdfstring{on\+Rejected(void(\+T\+::$\ast$callback)(\+Result\+Const\+Ptr \&), T $\ast$object)}{onRejected(void(T::*callback)(ResultConstPtr &), T *object)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived, typename Action\+Type$>$ template$<$typename T $>$ connection {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ T\+Derived, Action\+Type $>$\+::on\+Rejected (
+\begin{DoxyParamCaption}
+\item[{void(T\+::$\ast$)(Result\+Const\+Ptr \&)}]{callback, }
+\item[{T $\ast$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_abe5bbda2edcfe851d41868250dfabde4}{}\label{classsmacc_1_1SmaccActionClientBase_abe5bbda2edcfe851d41868250dfabde4}
+
+
+Definition at line 105 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+
+
+\begin{DoxyCode}
+106     \{
+107         \textcolor{keywordflow}{return} this->\hyperlink{classsmacc_1_1SmaccActionClientBase_a729484addba07d0eaf253f22456615fd}{onRejected\_}.connect([&](\textcolor{keyword}{auto} \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{ (\textcolor{keywordtype}{object}->*callback)(
+      \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}); \});
+108     \}
+\end{DoxyCode}
+\index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!on\+Rejected@{on\+Rejected}}
+\index{on\+Rejected@{on\+Rejected}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
+\subsubsection[{\texorpdfstring{on\+Rejected(std\+::function$<$ void(\+Result\+Const\+Ptr \&)$>$ callback)}{onRejected(std::function< void(ResultConstPtr &)> callback)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived, typename Action\+Type$>$ template$<$typename T $>$ connection {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ T\+Derived, Action\+Type $>$\+::on\+Rejected (
+\begin{DoxyParamCaption}
+\item[{std\+::function$<$ void(Result\+Const\+Ptr \&)$>$}]{callback}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_aca79d34dfacbf4de54a2f60d7789a872}{}\label{classsmacc_1_1SmaccActionClientBase_aca79d34dfacbf4de54a2f60d7789a872}
+
+
+Definition at line 111 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+
+
+\begin{DoxyCode}
+112     \{
+113         \textcolor{keywordflow}{return} this->\hyperlink{classsmacc_1_1SmaccActionClientBase_a729484addba07d0eaf253f22456615fd}{onRejected\_}.connect(callback);
+114     \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!on\+Result@{on\+Result}}
 \index{on\+Result@{on\+Result}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
@@ -314,74 +488,113 @@ Definition at line 88 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_ab04cd1fa7f5417df74c28e44cfdc15c5}{}\label{classsmacc_1_1SmaccActionClientBase_ab04cd1fa7f5417df74c28e44cfdc15c5}
 
 
-Definition at line 99 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+Definition at line 167 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 
 
 \begin{DoxyCode}
-100     \{
-101         \textcolor{keyword}{auto} *actionResultEvent = \textcolor{keyword}{new} EvActionResult<TDerived>();
-102         actionResultEvent->client = \textcolor{keyword}{this};
-103         actionResultEvent->resultMessage = *result\_msg;
-104 
-105         \textcolor{keyword}{const} \textcolor{keyword}{auto} &resultType = actionResultEvent->getResultState();
-106         ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: %s"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str(), resultType.toString().c\_str());
-107 
-108         \textcolor{keywordflow}{if} (resultType == actionlib::SimpleClientGoalState::SUCCEEDED)
-109         \{
-110             ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: Success"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str());
-111             \textcolor{keyword}{auto} *successEvent = \textcolor{keyword}{new} EvActionSucceeded<TDerived>();
-112 
-113             successEvent->client = \textcolor{keyword}{this};
-114             successEvent->resultMessage = *result\_msg;
-115 
-116             ROS\_INFO(\textcolor{stringliteral}{"Posting EVENT %s"}, \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(successEvent).name()).c\_str())
+168     \{
+169         \textcolor{keyword}{auto} *actionResultEvent = \textcolor{keyword}{new} EvActionResult<TDerived>();
+170         actionResultEvent->client = \textcolor{keyword}{this};
+171         actionResultEvent->resultMessage = *result\_msg;
+172 
+173         \textcolor{keyword}{const} \textcolor{keyword}{auto} &resultType = actionResultEvent->getResultState();
+174         ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: %s"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str(), resultType.toString().c\_str());
+175 
+176         \textcolor{keywordflow}{if} (resultType == actionlib::SimpleClientGoalState::SUCCEEDED)
+177         \{
+178             ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: Success"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str());
+179             \hyperlink{classsmacc_1_1SmaccActionClientBase_a033d789a6688b5064be4843a82fa007f}{onSucceeded\_}(result\_msg);
+180 
+181             \textcolor{keyword}{auto} *successEvent = \textcolor{keyword}{new} EvActionSucceeded<TDerived>();
+182             successEvent->client = \textcolor{keyword}{this};
+183             successEvent->resultMessage = *result\_msg;
+184 
+185             ROS\_INFO(\textcolor{stringliteral}{"Posting EVENT %s"}, \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(successEvent).name()).c\_str())
       ;
-117             this->\hyperlink{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80}{postEvent}(successEvent);
-118             
-119             \textcolor{comment}{//invokeOurSuccessSignal(feedback\_msg);}
-120         \}
-121         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (resultType == actionlib::SimpleClientGoalState::ABORTED)
-122         \{
-123             ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: Aborted"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str());
-124             \textcolor{keyword}{auto} *abortedEvent = \textcolor{keyword}{new} EvActionAborted<TDerived>();
-125 
-126             abortedEvent->client = \textcolor{keyword}{this};
-127             abortedEvent->resultMessage = *result\_msg;
-128 
-129             ROS\_INFO(\textcolor{stringliteral}{"[%s] Posting EVENT %s"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str(), 
+186             this->\hyperlink{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80}{postEvent}(successEvent);
+187 
+188             \textcolor{comment}{//invokeOurSuccessSignal(feedback\_msg);}
+189         \}
+190         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (resultType == actionlib::SimpleClientGoalState::ABORTED)
+191         \{
+192             ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: Aborted"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str());
+193             \hyperlink{classsmacc_1_1SmaccActionClientBase_acb66868d20faa3c5d7065991b4a306ec}{onAborted\_}(result\_msg);
+194 
+195             \textcolor{keyword}{auto} *abortedEvent = \textcolor{keyword}{new} EvActionAborted<TDerived>();
+196             abortedEvent->client = \textcolor{keyword}{this};
+197             abortedEvent->resultMessage = *result\_msg;
+198 
+199             ROS\_INFO(\textcolor{stringliteral}{"[%s] Posting EVENT %s"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str(), 
       \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(abortedEvent).name()).c\_str());
-130             this->\hyperlink{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80}{postEvent}(abortedEvent);
-131         \}
-132         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (resultType == actionlib::SimpleClientGoalState::REJECTED)
-133         \{
-134             ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: Rejected"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str());
-135             \textcolor{keyword}{auto} *rejectedEvent = \textcolor{keyword}{new} EvActionRejected<TDerived>();
-136 
-137             rejectedEvent->client = \textcolor{keyword}{this};
-138             rejectedEvent->resultMessage = *result\_msg;
-139 
-140             ROS\_INFO(\textcolor{stringliteral}{"Posting EVENT %s"}, \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(rejectedEvent).name()).c\_str()
+200             this->\hyperlink{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80}{postEvent}(abortedEvent);
+201         \}
+202         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (resultType == actionlib::SimpleClientGoalState::REJECTED)
+203         \{
+204             ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: Rejected"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str());
+205             \hyperlink{classsmacc_1_1SmaccActionClientBase_a729484addba07d0eaf253f22456615fd}{onRejected\_}(result\_msg);
+206 
+207             \textcolor{keyword}{auto} *rejectedEvent = \textcolor{keyword}{new} EvActionRejected<TDerived>();
+208             rejectedEvent->client = \textcolor{keyword}{this};
+209             rejectedEvent->resultMessage = *result\_msg;
+210 
+211             ROS\_INFO(\textcolor{stringliteral}{"Posting EVENT %s"}, \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(rejectedEvent).name()).c\_str()
       );
-141             this->\hyperlink{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80}{postEvent}(rejectedEvent);
-142         \}
-143         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (resultType == actionlib::SimpleClientGoalState::PREEMPTED)
-144         \{
-145             ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: Preempted"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str());
-146             \textcolor{keyword}{auto} *preemtedEvent = \textcolor{keyword}{new} EvActionPreempted<TDerived>();
-147 
-148             preemtedEvent->client = \textcolor{keyword}{this};
-149             preemtedEvent->resultMessage = *result\_msg;
-150 
-151             ROS\_INFO(\textcolor{stringliteral}{"Posting EVENT %s"}, \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(preemtedEvent).name()).c\_str()
+212             this->\hyperlink{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80}{postEvent}(rejectedEvent);
+213         \}
+214         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (resultType == actionlib::SimpleClientGoalState::PREEMPTED)
+215         \{
+216             ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: Preempted"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str());
+217             \hyperlink{classsmacc_1_1SmaccActionClientBase_afa8833dad78e3e3991cfec0e396b24c9}{onPreempted\_}(result\_msg);
+218 
+219             \textcolor{keyword}{auto} *preemtedEvent = \textcolor{keyword}{new} EvActionPreempted<TDerived>();
+220             preemtedEvent->client = \textcolor{keyword}{this};
+221             preemtedEvent->resultMessage = *result\_msg;
+222             ROS\_INFO(\textcolor{stringliteral}{"Posting EVENT %s"}, \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(preemtedEvent).name()).c\_str()
       );
-152             this->\hyperlink{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80}{postEvent}(preemtedEvent);
-153         \}
-154         \textcolor{keywordflow}{else}
-155         \{
-156             ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: NOT HANDLED TYPE: %s"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str(), 
+223             this->\hyperlink{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80}{postEvent}(preemtedEvent);
+224         \}
+225         \textcolor{keywordflow}{else}
+226         \{
+227             ROS\_INFO(\textcolor{stringliteral}{"[%s] request result: NOT HANDLED TYPE: %s"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str(), 
       resultType.toString().c\_str());
-157         \}
-158     \}
+228         \}
+229     \}
+\end{DoxyCode}
+\index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!on\+Succeeded@{on\+Succeeded}}
+\index{on\+Succeeded@{on\+Succeeded}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
+\subsubsection[{\texorpdfstring{on\+Succeeded(void(\+T\+::$\ast$callback)(\+Result\+Const\+Ptr \&), T $\ast$object)}{onSucceeded(void(T::*callback)(ResultConstPtr &), T *object)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived, typename Action\+Type$>$ template$<$typename T $>$ connection {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ T\+Derived, Action\+Type $>$\+::on\+Succeeded (
+\begin{DoxyParamCaption}
+\item[{void(T\+::$\ast$)(Result\+Const\+Ptr \&)}]{callback, }
+\item[{T $\ast$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_a2763202f0f75d0138978760aa434f9f9}{}\label{classsmacc_1_1SmaccActionClientBase_a2763202f0f75d0138978760aa434f9f9}
+
+
+Definition at line 57 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+
+
+\begin{DoxyCode}
+58     \{
+59         \textcolor{keywordflow}{return} this->\hyperlink{classsmacc_1_1SmaccActionClientBase_a033d789a6688b5064be4843a82fa007f}{onSucceeded\_}.connect([&](\textcolor{keyword}{auto} \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{ (\textcolor{keywordtype}{object}->*callback)(
+      \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}); \});
+60     \}
+\end{DoxyCode}
+\index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!on\+Succeeded@{on\+Succeeded}}
+\index{on\+Succeeded@{on\+Succeeded}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
+\subsubsection[{\texorpdfstring{on\+Succeeded(std\+::function$<$ void(\+Result\+Const\+Ptr \&)$>$ callback)}{onSucceeded(std::function< void(ResultConstPtr &)> callback)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived, typename Action\+Type$>$ template$<$typename T $>$ connection {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ T\+Derived, Action\+Type $>$\+::on\+Succeeded (
+\begin{DoxyParamCaption}
+\item[{std\+::function$<$ void(Result\+Const\+Ptr \&)$>$}]{callback}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_a594eb41ba186940d54c1e163a66e3c5d}{}\label{classsmacc_1_1SmaccActionClientBase_a594eb41ba186940d54c1e163a66e3c5d}
+
+
+Definition at line 63 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+
+
+\begin{DoxyCode}
+64     \{
+65         \textcolor{keywordflow}{return} this->\hyperlink{classsmacc_1_1SmaccActionClientBase_a033d789a6688b5064be4843a82fa007f}{onSucceeded\_}.connect(callback);
+66     \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!send\+Goal@{send\+Goal}}
 \index{send\+Goal@{send\+Goal}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
@@ -392,7 +605,7 @@ Definition at line 99 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_a2ec9e5fb96ecc517a815cda209eb1b51}{}\label{classsmacc_1_1SmaccActionClientBase_a2ec9e5fb96ecc517a815cda209eb1b51}
 
 
-Definition at line 65 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+Definition at line 127 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 
 
 
@@ -400,30 +613,30 @@ Referenced by sm\+\_\+atomic\+::\+Sb\+State1\+::go\+To\+End\+Point(), sm\+\_\+da
 
 
 \begin{DoxyCode}
-66     \{
-67         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"Sending goal to actionserver located in "} << *(this->
+128     \{
+129         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"Sending goal to actionserver located in "} << *(this->
       \hyperlink{classsmacc_1_1SmaccActionClientBase_a7fa0e4b63069bea12d47a83bd0be73d7}{name\_}) << \textcolor{stringliteral}{"\(\backslash\)""});
-68 
-69         \textcolor{keywordflow}{if} (!\hyperlink{classsmacc_1_1SmaccActionClientBase_a5ec5c74015ea4e8b61d017f666a4ce17}{client\_}->isServerConnected())
-70         \{
-71             ROS\_INFO(\textcolor{stringliteral}{"%s [at %s]: not connected with actionserver, waiting ..."}, 
+130 
+131         \textcolor{keywordflow}{if} (!\hyperlink{classsmacc_1_1SmaccActionClientBase_a5ec5c74015ea4e8b61d017f666a4ce17}{client\_}->isServerConnected())
+132         \{
+133             ROS\_INFO(\textcolor{stringliteral}{"%s [at %s]: not connected with actionserver, waiting ..."}, 
       \hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str(), \hyperlink{classsmacc_1_1ISmaccActionClient_ac9355b793956473a52879a9638601f02}{getNamespace}().c\_str());
-72             \hyperlink{classsmacc_1_1SmaccActionClientBase_a5ec5c74015ea4e8b61d017f666a4ce17}{client\_}->waitForServer();
-73         \}
-74 
-75         ROS\_INFO\_STREAM(\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}() << \textcolor{stringliteral}{": Goal Value: "} << std::endl
-76                                   << goal);
-77 
-78         \hyperlink{classsmacc_1_1SmaccActionClientBase_a2cad0a2256df0161c60af458161edbfb}{SimpleDoneCallback} done\_cb = boost::bind(&
+134             \hyperlink{classsmacc_1_1SmaccActionClientBase_a5ec5c74015ea4e8b61d017f666a4ce17}{client\_}->waitForServer();
+135         \}
+136 
+137         ROS\_INFO\_STREAM(\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}() << \textcolor{stringliteral}{": Goal Value: "} << std::endl
+138                                   << goal);
+139 
+140         \hyperlink{classsmacc_1_1SmaccActionClientBase_a2cad0a2256df0161c60af458161edbfb}{SimpleDoneCallback} done\_cb = boost::bind(&
       \hyperlink{classsmacc_1_1SmaccActionClientBase_ab04cd1fa7f5417df74c28e44cfdc15c5}{SmaccActionClientBase<TDerived, ActionType>::onResult},
        \textcolor{keyword}{this}, \_1, \_2);
-79         \hyperlink{classsmacc_1_1SmaccActionClientBase_ae5aaa9660a758a113f72359a5cf3884e}{SimpleActiveCallback} active\_cb;
-80         \hyperlink{classsmacc_1_1SmaccActionClientBase_a6be950ca9b2ba07005d50731ed7b5ff8}{SimpleFeedbackCallback} feedback\_cb = boost::bind(&
+141         \hyperlink{classsmacc_1_1SmaccActionClientBase_ae5aaa9660a758a113f72359a5cf3884e}{SimpleActiveCallback} active\_cb;
+142         \hyperlink{classsmacc_1_1SmaccActionClientBase_a6be950ca9b2ba07005d50731ed7b5ff8}{SimpleFeedbackCallback} feedback\_cb = boost::bind(&
       \hyperlink{classsmacc_1_1SmaccActionClientBase_ab65d16595371809927fdffe8c20c9bd0}{SmaccActionClientBase<TDerived, ActionType>::onFeedback}
       , \textcolor{keyword}{this}, \_1);
-81 
-82         \hyperlink{classsmacc_1_1SmaccActionClientBase_a5ec5c74015ea4e8b61d017f666a4ce17}{client\_}->sendGoal(goal, done\_cb, active\_cb, feedback\_cb);
-83     \}
+143 
+144         \hyperlink{classsmacc_1_1SmaccActionClientBase_a5ec5c74015ea4e8b61d017f666a4ce17}{client\_}->sendGoal(goal, done\_cb, active\_cb, feedback\_cb);
+145     \}
 \end{DoxyCode}
 
 
@@ -445,18 +658,53 @@ Here is the caller graph for this function\+:
 \subsubsection[{\texorpdfstring{client\+\_\+}{client_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived, typename Action\+Type$>$ std\+::shared\+\_\+ptr$<${\bf Action\+Client}$>$ {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ T\+Derived, Action\+Type $>$\+::client\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_a5ec5c74015ea4e8b61d017f666a4ce17}{}\label{classsmacc_1_1SmaccActionClientBase_a5ec5c74015ea4e8b61d017f666a4ce17}
 
 
-Definition at line 86 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
-
-
-
-Referenced by smacc\+::\+Smacc\+Action\+Client\+Base$<$ Client2, move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::cancel\+Goal(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ Client2, move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::get\+State(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ Client2, move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::initialize(), and smacc\+::\+Smacc\+Action\+Client\+Base$<$ Client2, move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::send\+Goal().
+Definition at line 148 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 
 \index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!name\+\_\+@{name\+\_\+}}
 \index{name\+\_\+@{name\+\_\+}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
 \subsubsection[{\texorpdfstring{name\+\_\+}{name_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived, typename Action\+Type$>$ boost\+::optional$<$std\+::string$>$ {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ T\+Derived, Action\+Type $>$\+::name\+\_\+}\hypertarget{classsmacc_1_1SmaccActionClientBase_a7fa0e4b63069bea12d47a83bd0be73d7}{}\label{classsmacc_1_1SmaccActionClientBase_a7fa0e4b63069bea12d47a83bd0be73d7}
 
 
-Definition at line 34 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+rosnamespace path 
+
+
+
+Definition at line 40 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+
+\index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!on\+Aborted\+\_\+@{on\+Aborted\+\_\+}}
+\index{on\+Aborted\+\_\+@{on\+Aborted\+\_\+}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
+\subsubsection[{\texorpdfstring{on\+Aborted\+\_\+}{onAborted_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived, typename Action\+Type$>$ signal$<$void(const Result\+Const\+Ptr \&)$>$ {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ T\+Derived, Action\+Type $>$\+::on\+Aborted\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_acb66868d20faa3c5d7065991b4a306ec}{}\label{classsmacc_1_1SmaccActionClientBase_acb66868d20faa3c5d7065991b4a306ec}
+
+
+Definition at line 151 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+
+\index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!on\+Cancelled\+\_\+@{on\+Cancelled\+\_\+}}
+\index{on\+Cancelled\+\_\+@{on\+Cancelled\+\_\+}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
+\subsubsection[{\texorpdfstring{on\+Cancelled\+\_\+}{onCancelled_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived, typename Action\+Type$>$ signal$<$void(const Result\+Const\+Ptr \&)$>$ {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ T\+Derived, Action\+Type $>$\+::on\+Cancelled\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_a5b27bf8941692efb4f98d0747bcbfb7e}{}\label{classsmacc_1_1SmaccActionClientBase_a5b27bf8941692efb4f98d0747bcbfb7e}
+
+
+Definition at line 153 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+
+\index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!on\+Preempted\+\_\+@{on\+Preempted\+\_\+}}
+\index{on\+Preempted\+\_\+@{on\+Preempted\+\_\+}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
+\subsubsection[{\texorpdfstring{on\+Preempted\+\_\+}{onPreempted_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived, typename Action\+Type$>$ signal$<$void(const Result\+Const\+Ptr \&)$>$ {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ T\+Derived, Action\+Type $>$\+::on\+Preempted\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_afa8833dad78e3e3991cfec0e396b24c9}{}\label{classsmacc_1_1SmaccActionClientBase_afa8833dad78e3e3991cfec0e396b24c9}
+
+
+Definition at line 152 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+
+\index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!on\+Rejected\+\_\+@{on\+Rejected\+\_\+}}
+\index{on\+Rejected\+\_\+@{on\+Rejected\+\_\+}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
+\subsubsection[{\texorpdfstring{on\+Rejected\+\_\+}{onRejected_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived, typename Action\+Type$>$ signal$<$void(const Result\+Const\+Ptr \&)$>$ {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ T\+Derived, Action\+Type $>$\+::on\+Rejected\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_a729484addba07d0eaf253f22456615fd}{}\label{classsmacc_1_1SmaccActionClientBase_a729484addba07d0eaf253f22456615fd}
+
+
+Definition at line 154 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+
+\index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!on\+Succeeded\+\_\+@{on\+Succeeded\+\_\+}}
+\index{on\+Succeeded\+\_\+@{on\+Succeeded\+\_\+}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
+\subsubsection[{\texorpdfstring{on\+Succeeded\+\_\+}{onSucceeded_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived, typename Action\+Type$>$ signal$<$void(const Result\+Const\+Ptr \&)$>$ {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ T\+Derived, Action\+Type $>$\+::on\+Succeeded\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_a033d789a6688b5064be4843a82fa007f}{}\label{classsmacc_1_1SmaccActionClientBase_a033d789a6688b5064be4843a82fa007f}
+
+
+Definition at line 150 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 
 
 

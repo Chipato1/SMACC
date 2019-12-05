@@ -51,6 +51,7 @@ var searchData=
   ['getstatelevel',['getStateLevel',['../classsmacc_1_1SmaccStateInfo.html#a360141a4883f0122a9f5e8b7de456084',1,'smacc::SmaccStateInfo']]],
   ['getstatemachine',['getStateMachine',['../classsmacc_1_1ISmaccState.html#a562bb3f9a3ac16b8be71e4794c9e7523',1,'smacc::ISmaccState::getStateMachine()'],['../classsmacc_1_1SmaccState.html#afc39f8e0ca4001b2159a100da2fccd0e',1,'smacc::SmaccState::getStateMachine()']]],
   ['getstatemachinename',['getStateMachineName',['../classsmacc_1_1ISmaccStateMachine.html#a2d0b1742f17dd77d5df217153e8b5259',1,'smacc::ISmaccStateMachine']]],
+  ['gettransitionloghistory',['getTransitionLogHistory',['../classsmacc_1_1ISmaccStateMachine.html#ae7c08fc2addf8ee4785f721050e6a763',1,'smacc::ISmaccStateMachine::getTransitionLogHistory()'],['../classsmacc_1_1ISmaccStateMachine.html#a7508f4e398e263cdce308c8074bd5151',1,'smacc::ISmaccStateMachine::getTransitionLogHistory(smacc_msgs::SmaccGetTransitionHistory::Request &amp;req, smacc_msgs::SmaccGetTransitionHistory::Response &amp;res)']]],
   ['gettransitiontype',['getTransitionType',['../namespacesmacc.html#a5d1b815313414070438b55ce88c82591',1,'smacc']]],
   ['gettypeinfofromstring',['getTypeInfoFromString',['../classsmacc_1_1TypeInfo.html#a9bff1505e37e69b869d686a30c507033',1,'smacc::TypeInfo']]],
   ['gettypeinfofromtype',['getTypeInfoFromType',['../classsmacc_1_1TypeInfo.html#a6107f1c622531f8bef0eec683480cb2c',1,'smacc::TypeInfo']]],

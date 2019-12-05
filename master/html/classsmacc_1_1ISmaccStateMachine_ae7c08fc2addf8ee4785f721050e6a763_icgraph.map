@@ -1,0 +1,12 @@
+<map id="smacc::ISmaccStateMachine::getTransitionLogHistory" name="smacc::ISmaccStateMachine::getTransitionLogHistory">
+<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccStateMachine.html#a1c455c0f33506e59a7f4389e3fe99ffe" title="smacc::ISmaccStateMachine\l::getCurrentStateInfo" alt="" coords="537,140,744,181"/>
+<area shape="rect" id="node5" href="$classsmacc_1_1ISmaccStateMachine.html#a257783850ae41274f8b7ccbcdafb3f15" title="smacc::ISmaccStateMachine\l::getOrthogonals" alt="" coords="260,71,467,112"/>
+<area shape="rect" id="node10" href="$classsmacc_1_1ISmaccStateMachine.html#ae8c9c79ca6cd77c975f5d9cda33a6d5e" title="smacc::ISmaccStateMachine\l::onInitializing" alt="" coords="260,192,467,233"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccState.html#a46ec42e07b8c68e8ddb7dd3472e91214" title="smacc::ISmaccState\l::notifyTransitionFromTransition\lTypeInfo" alt="" coords="825,135,1043,191"/>
+<area shape="rect" id="node4" href="$classsmacc_1_1ISmaccState.html#a98df316afd79180d3c27a15a7d5dd1cf" title="smacc::ISmaccState\l::notifyTransition" alt="" coords="1101,143,1256,184"/>
+<area shape="rect" id="node6" href="$classsmacc_1_1SmaccStateMachineInfo.html#a6758065a8d1faaa7c3688cf0dffe9334" title="smacc::SmaccStateMachine\lInfo::assembleSMStructureMessage" alt="" coords="515,71,767,112"/>
+<area shape="rect" id="node8" href="$classsmacc_1_1ISmaccState.html#a0f116de85bbc91d94e1eb2f74502acd8" title="smacc::ISmaccState\l::requiresClient" alt="" coords="563,5,718,47"/>
+<area shape="rect" id="node7" href="$classsmacc_1_1SmaccStateMachineInfo.html#afa2c7dbb9dd235d2e10f69691a035c1c" title="smacc::SmaccStateMachine\lInfo::computeAllStateMessage" alt="" coords="825,71,1043,112"/>
+<area shape="rect" id="node9" href="$structsm__dance__bot_1_1StAcquireSensors.html#a520b68731dc5d92ff1c9aa1f1963cfe5" title="sm_dance_bot::StAcquireSensors\l::onInitialize" alt="" coords="815,5,1053,47"/>
+<area shape="rect" id="node11" href="$structsmacc_1_1SmaccStateMachineBase.html#a2dc1cd9a25b80f00602f1faab9b01e7b" title="smacc::SmaccStateMachine\lBase\&lt; TimerStateMachine,\l TimerState \&gt;::initiate_impl" alt="" coords="539,205,743,261"/>
+</map>

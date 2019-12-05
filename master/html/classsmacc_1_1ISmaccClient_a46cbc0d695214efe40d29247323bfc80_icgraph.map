@@ -1,6 +1,4 @@
 <map id="smacc::ISmaccClient::postEvent" name="smacc::ISmaccClient::postEvent">
-<area shape="rect" id="node2" href="$classsmacc_1_1SmaccActionClientBase.html#ab65d16595371809927fdffe8c20c9bd0" title="smacc::SmaccActionClient\lBase\&lt; Client2, move_base\l_msgs::MoveBaseAction \&gt;\l::onFeedback" alt="" coords="217,5,411,76"/>
-<area shape="rect" id="node3" href="$classsmacc_1_1SmaccActionClientBase.html#ab04cd1fa7f5417df74c28e44cfdc15c5" title="smacc::SmaccActionClient\lBase\&lt; Client2, move_base\l_msgs::MoveBaseAction \&gt;\l::onResult" alt="" coords="217,100,411,171"/>
-<area shape="rect" id="node4" href="$classros__timer__client_1_1SmaccTimerClient.html#ab6a461bedfad7a1842d27249008cae4d" title="ros_timer_client::SmaccTimer\lClient::timerCallback" alt="" coords="208,195,420,236"/>
-<area shape="rect" id="node5" href="$classros__timer__client_1_1SmaccTimerClient.html#a23ca454fd2d9035bb5142c0b9261635a" title="ros_timer_client::SmaccTimer\lClient::initialize" alt="" coords="468,195,680,236"/>
+<area shape="rect" id="node2" href="$classros__timer__client_1_1SmaccTimerClient.html#ab6a461bedfad7a1842d27249008cae4d" title="ros_timer_client::SmaccTimer\lClient::timerCallback" alt="" coords="208,5,420,47"/>
+<area shape="rect" id="node3" href="$classros__timer__client_1_1SmaccTimerClient.html#a23ca454fd2d9035bb5142c0b9261635a" title="ros_timer_client::SmaccTimer\lClient::initialize" alt="" coords="468,5,680,47"/>
 </map>
