@@ -103,7 +103,7 @@ Collaboration diagram for smacc::LogicUnit::AddTEventType&lt; TEventList &gt;:</
 <div class="dyncontent">
 <div class="center"><img src="structsmacc_1_1LogicUnit_1_1AddTEventType__coll__graph.png" border="0" usemap="#smacc_1_1LogicUnit_1_1AddTEventType_3_01TEventList_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="smacc_1_1LogicUnit_1_1AddTEventType_3_01TEventList_01_4_coll__map" id="smacc_1_1LogicUnit_1_1AddTEventType_3_01TEventList_01_4_coll__map">
-<area shape="rect" id="node2" href="classsmacc_1_1LogicUnit.html" title="{smacc::LogicUnit\n||+ LogicUnit()\l+ onInitialized()\l+ initialize()\l+ notifyEvent()\l+ onEventNotified()\l+ update()\l+ triggers()\l+ declarePostEvent()\l}" alt="" coords="197,505,356,685"/>
+<area shape="rect" id="node2" href="classsmacc_1_1LogicUnit.html" title="{smacc::LogicUnit\n||+ LogicUnit()\l+ onInitialized()\l+ initialize()\l+ notifyEvent()\l+ onEventNotified()\l+ createEventCallback()\l+ createEventCallback()\l+ update()\l+ triggers()\l+ declarePostEvent()\l}" alt="" coords="336,505,513,715"/>
 <area shape="rect" id="node4" href="classsmacc_1_1ISmaccState.html" title="{smacc::ISmaccState\n||+ getParam()\l+ setParam()\l+ param()\l+ getStateMachine()\l+ getClassName()\l+ configure()\l+ requiresComponent()\l+ requiresClient()\l+ getGlobalSMData()\l+ setGlobalSMData()\l+ createLogicUnit()\l+ postEvent()\l+ notifyTransition()\l+ notifyTransitionFromTransition\lTypeInfo()\l}" alt="" coords="165,160,389,443"/>
 </map>
 </div>
@@ -126,7 +126,7 @@ Public Attributes</h2></td></tr>
 struct smacc::LogicUnit::AddTEventType&lt; TEventList &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="logic__unit__base_8h_source.html#l00029">29</a> of file <a class="el" href="logic__unit__base_8h_source.html">logic_unit_base.h</a>.</p>
+<p>Definition at line <a class="el" href="logic__unit__base_8h_source.html#l00032">32</a> of file <a class="el" href="logic__unit__base_8h_source.html">logic_unit_base.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9eaeba0a2daf1ef60b96cee216f9383d"></a>
 <div class="memitem">
@@ -152,8 +152,8 @@ template&lt;typename TEventList&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="logic__unit__base_8h_source.html#l00032">32</a> of file <a class="el" href="logic__unit__base_8h_source.html">logic_unit_base.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                       :</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <a class="code" href="structsmacc_1_1LogicUnit_1_1AddTEventType.html#a6da43b333ecdf77bde453cd289b4d325">owner_</a>(owner)</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div><div class="ttc" id="structsmacc_1_1LogicUnit_1_1AddTEventType_html_a6da43b333ecdf77bde453cd289b4d325"><div class="ttname"><a href="structsmacc_1_1LogicUnit_1_1AddTEventType.html#a6da43b333ecdf77bde453cd289b4d325">smacc::LogicUnit::AddTEventType::owner_</a></div><div class="ttdeci">LogicUnit * owner_</div><div class="ttdef"><b>Definition:</b> <a href="logic__unit__base_8h_source.html#l00031">logic_unit_base.h:31</a></div></div>
+<p>Definition at line <a class="el" href="logic__unit__base_8h_source.html#l00035">35</a> of file <a class="el" href="logic__unit__base_8h_source.html">logic_unit_base.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                       :</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="structsmacc_1_1LogicUnit_1_1AddTEventType.html#a6da43b333ecdf77bde453cd289b4d325">owner_</a>(owner)</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        {</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div><div class="ttc" id="structsmacc_1_1LogicUnit_1_1AddTEventType_html_a6da43b333ecdf77bde453cd289b4d325"><div class="ttname"><a href="structsmacc_1_1LogicUnit_1_1AddTEventType.html#a6da43b333ecdf77bde453cd289b4d325">smacc::LogicUnit::AddTEventType::owner_</a></div><div class="ttdeci">LogicUnit * owner_</div><div class="ttdef"><b>Definition:</b> <a href="logic__unit__base_8h_source.html#l00034">logic_unit_base.h:34</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -184,11 +184,11 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="logic__unit__base_8h_source.html#l00039">39</a> of file <a class="el" href="logic__unit__base_8h_source.html">logic_unit_base.h</a>.</p>
+<p>Definition at line <a class="el" href="logic__unit__base_8h_source.html#l00042">42</a> of file <a class="el" href="logic__unit__base_8h_source.html">logic_unit_base.h</a>.</p>
 
-<p>References <a class="el" href="logic__unit__base_8h_source.html#l00022">smacc::LogicUnit::eventTypes</a>.</p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        {</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="structsmacc_1_1LogicUnit_1_1AddTEventType.html#a6da43b333ecdf77bde453cd289b4d325">owner_</a>-&gt;<a class="code" href="classsmacc_1_1LogicUnit.html#a6f02a49da9b408b54a2755c18c5616a8">eventTypes</a>.push_back(&amp;<span class="keyword">typeid</span>(T));</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div><div class="ttc" id="structsmacc_1_1LogicUnit_1_1AddTEventType_html_a6da43b333ecdf77bde453cd289b4d325"><div class="ttname"><a href="structsmacc_1_1LogicUnit_1_1AddTEventType.html#a6da43b333ecdf77bde453cd289b4d325">smacc::LogicUnit::AddTEventType::owner_</a></div><div class="ttdeci">LogicUnit * owner_</div><div class="ttdef"><b>Definition:</b> <a href="logic__unit__base_8h_source.html#l00031">logic_unit_base.h:31</a></div></div>
-<div class="ttc" id="classsmacc_1_1LogicUnit_html_a6f02a49da9b408b54a2755c18c5616a8"><div class="ttname"><a href="classsmacc_1_1LogicUnit.html#a6f02a49da9b408b54a2755c18c5616a8">smacc::LogicUnit::eventTypes</a></div><div class="ttdeci">std::vector&lt; const std::type_info * &gt; eventTypes</div><div class="ttdef"><b>Definition:</b> <a href="logic__unit__base_8h_source.html#l00022">logic_unit_base.h:22</a></div></div>
+<p>References <a class="el" href="logic__unit__base_8h_source.html#l00024">smacc::LogicUnit::eventTypes</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="structsmacc_1_1LogicUnit_1_1AddTEventType.html#a6da43b333ecdf77bde453cd289b4d325">owner_</a>-&gt;<a class="code" href="classsmacc_1_1LogicUnit.html#a6f02a49da9b408b54a2755c18c5616a8">eventTypes</a>.push_back(&amp;<span class="keyword">typeid</span>(T));</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div><div class="ttc" id="structsmacc_1_1LogicUnit_1_1AddTEventType_html_a6da43b333ecdf77bde453cd289b4d325"><div class="ttname"><a href="structsmacc_1_1LogicUnit_1_1AddTEventType.html#a6da43b333ecdf77bde453cd289b4d325">smacc::LogicUnit::AddTEventType::owner_</a></div><div class="ttdeci">LogicUnit * owner_</div><div class="ttdef"><b>Definition:</b> <a href="logic__unit__base_8h_source.html#l00034">logic_unit_base.h:34</a></div></div>
+<div class="ttc" id="classsmacc_1_1LogicUnit_html_a6f02a49da9b408b54a2755c18c5616a8"><div class="ttname"><a href="classsmacc_1_1LogicUnit.html#a6f02a49da9b408b54a2755c18c5616a8">smacc::LogicUnit::eventTypes</a></div><div class="ttdeci">std::vector&lt; const std::type_info * &gt; eventTypes</div><div class="ttdef"><b>Definition:</b> <a href="logic__unit__base_8h_source.html#l00024">logic_unit_base.h:24</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -205,7 +205,7 @@ template&lt;typename TEventList&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="logic__unit__base_8h_source.html#l00031">31</a> of file <a class="el" href="logic__unit__base_8h_source.html">logic_unit_base.h</a>.</p>
+<p>Definition at line <a class="el" href="logic__unit__base_8h_source.html#l00034">34</a> of file <a class="el" href="logic__unit__base_8h_source.html">logic_unit_base.h</a>.</p>
 
 </div>
 </div>

@@ -394,7 +394,7 @@ var searchData=
   ['stnavigatereverse3',['StNavigateReverse3',['../structsm__dance__bot_1_1StNavigateReverse3.html',1,'sm_dance_bot']]],
   ['stnavigatetowaypoint1',['StNavigateToWaypoint1',['../structsm__dance__bot_1_1StNavigateToWaypoint1.html',1,'sm_dance_bot']]],
   ['stnavigatetowaypointsx',['StNavigateToWaypointsX',['../structsm__dance__bot_1_1StNavigateToWaypointsX.html',1,'sm_dance_bot']]],
-  ['stop',['stop',['../classsmacc_1_1SignalDetector.html#a536ea005ea4ef4632c0c9c1c62c557a3',1,'smacc::SignalDetector::stop()'],['../classsmacc_1_1ISmaccStateMachine.html#a45032346275dcc8e23abece4d524ca3c',1,'smacc::ISmaccStateMachine::Stop()'],['../structsmacc_1_1SmaccStateMachineBase.html#a9c7c7b8d814a8cb1b741c7675dc2a9f7',1,'smacc::SmaccStateMachineBase::Stop()']]],
+  ['stop',['Stop',['../classsmacc_1_1ISmaccStateMachine.html#a45032346275dcc8e23abece4d524ca3c',1,'smacc::ISmaccStateMachine::Stop()'],['../structsmacc_1_1SmaccStateMachineBase.html#a9c7c7b8d814a8cb1b741c7675dc2a9f7',1,'smacc::SmaccStateMachineBase::Stop()'],['../classsmacc_1_1SignalDetector.html#a536ea005ea4ef4632c0c9c1c62c557a3',1,'smacc::SignalDetector::stop()']]],
   ['string_5fpublisher_5fclient_2eh',['string_publisher_client.h',['../string__publisher__client_8h.html',1,'']]],
   ['string_5ftype_5fwalker_2ecpp',['string_type_walker.cpp',['../string__type__walker_8cpp.html',1,'']]],
   ['string_5ftype_5fwalker_2eh',['string_type_walker.h',['../string__type__walker_8h.html',1,'']]],
@@ -416,8 +416,8 @@ var searchData=
   ['substate_5fbehavior_5f1b_2eh',['substate_behavior_1b.h',['../substate__behavior__1b_8h.html',1,'']]],
   ['substate_5fbehavior_5f2_2eh',['substate_behavior_2.h',['../substate__behavior__2_8h.html',1,'']]],
   ['substate_5fbehavior_5f2b_2eh',['substate_behavior_2b.h',['../substate__behavior__2b_8h.html',1,'']]],
-  ['success',['SUCCESS',['../classSUCCESS.html',1,'']]],
   ['success',['SUCCESS',['../structsmacc_1_1SUCCESS.html',1,'smacc']]],
+  ['success',['SUCCESS',['../classSUCCESS.html',1,'']]],
   ['superstate',['SUPERSTATE',['../namespacesmacc.html#a63f5f7aae7e563619d0886fca83612cca4da54a31b31f1c863864fdee05fc35c8',1,'smacc']]],
   ['superstate_5froutine',['SUPERSTATE_ROUTINE',['../namespacesmacc.html#a63f5f7aae7e563619d0886fca83612cca6d39c20504d2f2afe9c8c27351e61d20',1,'smacc']]],
   ['superstates',['superstates',['../Global_01Transition_01Rules_8txt.html#af31ae27f561335eed0d5161d8ee256f8',1,'Global Transition Rules.txt']]]

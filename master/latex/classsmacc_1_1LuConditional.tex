@@ -1,0 +1,149 @@
+\hypertarget{classsmacc_1_1LuConditional}{}\section{smacc\+:\+:Lu\+Conditional Class Reference}
+\label{classsmacc_1_1LuConditional}\index{smacc\+::\+Lu\+Conditional@{smacc\+::\+Lu\+Conditional}}
+
+
+{\ttfamily \#include $<$lu\+\_\+conditional.\+h$>$}
+
+
+
+Inheritance diagram for smacc\+:\+:Lu\+Conditional\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classsmacc_1_1LuConditional__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+:\+:Lu\+Conditional\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1LuConditional__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T\+Ev $>$ }\\\hyperlink{classsmacc_1_1LuConditional_a0667a61296163c249ea203dd95c71448}{Lu\+Conditional} (std\+::function$<$ \hyperlink{classbool}{bool}(T\+Ev $\ast$)$>$ conditional\+Function)
+\item 
+\hyperlink{classsmacc_1_1LuConditional_addfe549d9f8511075ef6e6c73aa93562}{$\sim$\+Lu\+Conditional} ()
+\item 
+virtual \hyperlink{classbool}{bool} \hyperlink{classsmacc_1_1LuConditional_ab7e894c1d6a0bf0c96d9c2ea0a08fed7}{triggers} () override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ const std\+::type\+\_\+info $\ast$, \hyperlink{classbool}{bool} $>$ \hyperlink{classsmacc_1_1LuConditional_a0bc63c3144980b6ae65c91a6722ec87e}{triggered\+Events}
+\item 
+\hyperlink{classbool}{bool} \hyperlink{classsmacc_1_1LuConditional_aa4ba603a8ae5544b298ec6254c103b56}{condition\+Flag}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file lu\+\_\+conditional.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+::\+Lu\+Conditional@{smacc\+::\+Lu\+Conditional}!Lu\+Conditional@{Lu\+Conditional}}
+\index{Lu\+Conditional@{Lu\+Conditional}!smacc\+::\+Lu\+Conditional@{smacc\+::\+Lu\+Conditional}}
+\subsubsection[{\texorpdfstring{Lu\+Conditional(std\+::function$<$ bool(\+T\+Ev $\ast$)$>$ conditional\+Function)}{LuConditional(std::function< bool(TEv *)> conditionalFunction)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Ev $>$ smacc\+::\+Lu\+Conditional\+::\+Lu\+Conditional (
+\begin{DoxyParamCaption}
+\item[{std\+::function$<$ {\bf bool}(T\+Ev $\ast$)$>$}]{conditional\+Function}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1LuConditional_a0667a61296163c249ea203dd95c71448}{}\label{classsmacc_1_1LuConditional_a0667a61296163c249ea203dd95c71448}
+
+
+Definition at line 25 of file lu\+\_\+conditional.\+h.
+
+
+\begin{DoxyCode}
+26     \{
+27         std::function<void(TEv*)> callback= 
+28             [=](TEv* ev)
+29             \{
+30                 \textcolor{keywordtype}{bool} condition = conditionalFunction(ev);
+31                 this->\hyperlink{classsmacc_1_1LuConditional_aa4ba603a8ae5544b298ec6254c103b56}{conditionFlag} = condition;
+32             \};
+33 
+34         this->\hyperlink{classsmacc_1_1LogicUnit_a58683bd62b8100434dd4a2e4df5382b9}{createEventCallback}(callback);
+35     \}
+\end{DoxyCode}
+\index{smacc\+::\+Lu\+Conditional@{smacc\+::\+Lu\+Conditional}!````~Lu\+Conditional@{$\sim$\+Lu\+Conditional}}
+\index{````~Lu\+Conditional@{$\sim$\+Lu\+Conditional}!smacc\+::\+Lu\+Conditional@{smacc\+::\+Lu\+Conditional}}
+\subsubsection[{\texorpdfstring{$\sim$\+Lu\+Conditional()}{~LuConditional()}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+::\+Lu\+Conditional\+::$\sim$\+Lu\+Conditional (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1LuConditional_addfe549d9f8511075ef6e6c73aa93562}{}\label{classsmacc_1_1LuConditional_addfe549d9f8511075ef6e6c73aa93562}
+
+
+Definition at line 6 of file conditional.\+cpp.
+
+
+\begin{DoxyCode}
+7 \{
+8 
+9 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::\+Lu\+Conditional@{smacc\+::\+Lu\+Conditional}!triggers@{triggers}}
+\index{triggers@{triggers}!smacc\+::\+Lu\+Conditional@{smacc\+::\+Lu\+Conditional}}
+\subsubsection[{\texorpdfstring{triggers() override}{triggers() override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool} smacc\+::\+Lu\+Conditional\+::triggers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1LuConditional_ab7e894c1d6a0bf0c96d9c2ea0a08fed7}{}\label{classsmacc_1_1LuConditional_ab7e894c1d6a0bf0c96d9c2ea0a08fed7}
+
+
+Implements \hyperlink{classsmacc_1_1LogicUnit_ae975a96f0210412e1cb4a7b5b948ade6}{smacc\+::\+Logic\+Unit}.
+
+
+
+Definition at line 12 of file conditional.\+cpp.
+
+
+
+References condition\+Flag.
+
+
+\begin{DoxyCode}
+13 \{
+14     \textcolor{keywordflow}{return} this->\hyperlink{classsmacc_1_1LuConditional_aa4ba603a8ae5544b298ec6254c103b56}{conditionFlag};
+15 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+::\+Lu\+Conditional@{smacc\+::\+Lu\+Conditional}!condition\+Flag@{condition\+Flag}}
+\index{condition\+Flag@{condition\+Flag}!smacc\+::\+Lu\+Conditional@{smacc\+::\+Lu\+Conditional}}
+\subsubsection[{\texorpdfstring{condition\+Flag}{conditionFlag}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool} smacc\+::\+Lu\+Conditional\+::condition\+Flag\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1LuConditional_aa4ba603a8ae5544b298ec6254c103b56}{}\label{classsmacc_1_1LuConditional_aa4ba603a8ae5544b298ec6254c103b56}
+
+
+Definition at line 21 of file lu\+\_\+conditional.\+h.
+
+
+
+Referenced by triggers().
+
+\index{smacc\+::\+Lu\+Conditional@{smacc\+::\+Lu\+Conditional}!triggered\+Events@{triggered\+Events}}
+\index{triggered\+Events@{triggered\+Events}!smacc\+::\+Lu\+Conditional@{smacc\+::\+Lu\+Conditional}}
+\subsubsection[{\texorpdfstring{triggered\+Events}{triggeredEvents}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$const std\+::type\+\_\+info $\ast$, {\bf bool}$>$ smacc\+::\+Lu\+Conditional\+::triggered\+Events\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1LuConditional_a0bc63c3144980b6ae65c91a6722ec87e}{}\label{classsmacc_1_1LuConditional_a0bc63c3144980b6ae65c91a6722ec87e}
+
+
+Definition at line 20 of file lu\+\_\+conditional.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+logic\+\_\+unit\+\_\+library/conditional/include/conditional/\hyperlink{lu__conditional_8h}{lu\+\_\+conditional.\+h}\item 
+smacc\+\_\+logic\+\_\+unit\+\_\+library/conditional/src/conditional/\hyperlink{conditional_8cpp}{conditional.\+cpp}\end{DoxyCompactItemize}

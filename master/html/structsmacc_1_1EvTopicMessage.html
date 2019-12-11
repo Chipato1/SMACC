@@ -90,6 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structsmacc_1_1EvTopicMessage-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">smacc::EvTopicMessage&lt; TSource &gt; Struct Template Reference</div>  </div>
@@ -116,6 +117,11 @@ Collaboration diagram for smacc::EvTopicMessage&lt; TSource &gt;:</div>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9f4f3bbf71df53085b64a31359c2df9"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsmacc_1_1EvTopicMessage.html#ae9f4f3bbf71df53085b64a31359c2df9">getEventLabel</a> ()</td></tr>
 <tr class="separator:ae9f4f3bbf71df53085b64a31359c2df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aff4421ef3bb469c7f91f0a7ad7a20819"><td class="memItemLeft" align="right" valign="top">TSource::TMessageType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsmacc_1_1EvTopicMessage.html#aff4421ef3bb469c7f91f0a7ad7a20819">msgData</a></td></tr>
+<tr class="separator:aff4421ef3bb469c7f91f0a7ad7a20819"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename TSource&gt;<br />
@@ -149,6 +155,23 @@ template&lt;typename TSource&gt; </div>
 
 <p>Definition at line <a class="el" href="smacc__subscriber__client_8h_source.html#l00025">25</a> of file <a class="el" href="smacc__subscriber__client_8h_source.html">smacc_subscriber_client.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  {</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">auto</span> typeinfo = TypeInfo::getTypeInfoFromType&lt;typename TSource::TMessageType&gt;();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    std::string label = typeinfo-&gt;getNonTemplatetypename();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> label;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  }</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aff4421ef3bb469c7f91f0a7ad7a20819"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TSource&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">TSource::TMessageType <a class="el" href="structsmacc_1_1EvTopicMessage.html">smacc::EvTopicMessage</a>&lt; TSource &gt;::msgData</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="smacc__subscriber__client_8h_source.html#l00033">33</a> of file <a class="el" href="smacc__subscriber__client_8h_source.html">smacc_subscriber_client.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>

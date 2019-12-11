@@ -21,6 +21,7 @@ var searchData=
   ['createchildstate',['createChildState',['../classsmacc_1_1SmaccStateInfo.html#a1c935c77640d496f22f5f48d78ddb296',1,'smacc::SmaccStateInfo']]],
   ['createclient',['createClient',['../classsmacc_1_1Orthogonal.html#a67ed4baa8cc385e42ba4a588e8686268',1,'smacc::Orthogonal']]],
   ['createdefaultbackwardpath',['createDefaultBackwardPath',['../classbackward__global__planner_1_1BackwardGlobalPlanner.html#a625dba5902c088241ab25c9fb628fd04',1,'backward_global_planner::BackwardGlobalPlanner']]],
+  ['createeventcallback',['createEventCallback',['../classsmacc_1_1LogicUnit.html#a58683bd62b8100434dd4a2e4df5382b9',1,'smacc::LogicUnit::createEventCallback(void(TClass::*callback)(T *), TClass *object)'],['../classsmacc_1_1LogicUnit.html#a42103eec6907aaa60f297145ba6ca123',1,'smacc::LogicUnit::createEventCallback(std::function&lt; void(T *)&gt; callback)']]],
   ['createlogicunit',['createLogicUnit',['../classsmacc_1_1ISmaccState.html#a0a0a7d4b6d35bd9008448c6f63713fb2',1,'smacc::ISmaccState']]],
   ['createorthogonal',['createOrthogonal',['../classsmacc_1_1ISmaccStateMachine.html#a9155cf3d1877255d70b0bd71648734a3',1,'smacc::ISmaccStateMachine']]],
   ['createpurespiningandstragihtlinebackwardpath',['createPureSpiningAndStragihtLineBackwardPath',['../classbackward__global__planner_1_1BackwardGlobalPlanner.html#ad0caebe12fdd6cfe66d353bc7b772718',1,'backward_global_planner::BackwardGlobalPlanner']]],
