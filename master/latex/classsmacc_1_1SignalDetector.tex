@@ -129,18 +129,20 @@ Referenced by poll\+Once().
 71     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} pair : this->\hyperlink{classsmacc_1_1SignalDetector_a46025de6ac7b5980e22144f9703236a4}{smaccStateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_a262b3f2d15af019190fa69b7c0df00f8}{getOrthogonals}())
 72     \{
 73         \textcolor{keyword}{auto} &orthogonal = pair.second;
-74         \textcolor{keyword}{auto} *currentBehavior = orthogonal->getCurrentBehavior();
+74         \textcolor{keyword}{auto} &behaviors = orthogonal->getClientBehaviors();
 75 
-76         \textcolor{keywordflow}{if} (currentBehavior == \textcolor{keyword}{nullptr})
-77             \textcolor{keywordflow}{continue};
-78 
-79         ISmaccUpdatable *updatableClientBehavior = \textcolor{keyword}{dynamic\_cast<}ISmaccUpdatable *\textcolor{keyword}{>}(currentBehavior);
-80 
-81         \textcolor{keywordflow}{if} (updatableClientBehavior != \textcolor{keyword}{nullptr})
-82         \{
-83             ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"Adding updatable behavior: "} << \hyperlink{namespacesmacc_a792e7a3ea0843e87543a465b446ae730}{demangleType}(\textcolor{keyword}{typeid}(
+76         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}& currentBehavior : behaviors)
+77         \{
+78             ISmaccUpdatable *updatableClientBehavior = \textcolor{keyword}{dynamic\_cast<}ISmaccUpdatable *\textcolor{keyword}{>}(currentBehavior.get(
+      ));
+79 
+80             \textcolor{keywordflow}{if} (updatableClientBehavior != \textcolor{keyword}{nullptr})
+81             \{
+82                 ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"Adding updatable behavior: "} << \hyperlink{namespacesmacc_a792e7a3ea0843e87543a465b446ae730}{demangleType}(\textcolor{keyword}{typeid}(
       updatableClientBehavior)));
-84             this->\hyperlink{classsmacc_1_1SignalDetector_a777b671ca6bbedd2fdc83f60f9ec8f83}{updatableClientBehaviors\_}.push\_back(updatableClientBehavior);
+83                 this->\hyperlink{classsmacc_1_1SignalDetector_a777b671ca6bbedd2fdc83f60f9ec8f83}{updatableClientBehaviors\_}.push\_back(updatableClientBehavior)
+      ;
+84             \}
 85         \}
 86     \}
 87 \}

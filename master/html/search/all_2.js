@@ -13,7 +13,7 @@ var searchData=
   ['backwardlocalplanner',['BackwardLocalPlanner',['../classbackward__local__planner_1_1BackwardLocalPlanner.html#a54905830515c7e8ffeecdae050ce08d8',1,'backward_local_planner::BackwardLocalPlanner']]],
   ['backwardspeed',['backwardSpeed',['../classsm__dance__bot_1_1CbNavigateBackwards.html#ac61b513376e38ae6eb3eb9c9ebf1dd8e',1,'sm_dance_bot::CbNavigateBackwards']]],
   ['backwardsplanpath_5f',['backwardsPlanPath_',['../classbackward__local__planner_1_1BackwardLocalPlanner.html#aaa37c16e1735cb440986b3d41e6ef8e6',1,'backward_local_planner::BackwardLocalPlanner']]],
-  ['base',['Base',['../classsmacc_1_1SmaccMoveBaseActionClient.html#ad64340f7f8ac723bdb639c2c830975a7',1,'smacc::SmaccMoveBaseActionClient::Base()'],['../structsm__dance__bot_1_1SmDanceBot.html#a33b03e67fc72482c067af48e1f9d95a3',1,'sm_dance_bot::SmDanceBot::base()']]],
+  ['base',['Base',['../classsmacc_1_1ClMoveBaseZ.html#a87baee189885db32480cb8f90f425528',1,'smacc::ClMoveBaseZ::Base()'],['../structsm__dance__bot_1_1SmDanceBot.html#a33b03e67fc72482c067af48e1f9d95a3',1,'sm_dance_bot::SmDanceBot::base()']]],
   ['base_5ftype',['base_type',['../classsmacc_1_1SmaccState.html#a68f547c6fe147554bbe607b6fcd8e40a',1,'smacc::SmaccState']]],
   ['basetrajectory_5f',['baseTrajectory_',['../classsmacc__odom__tracker_1_1OdomTracker.html#ac3a17be46ab833632c5f63e75c840dc7',1,'smacc_odom_tracker::OdomTracker']]],
   ['behaviortype',['behaviorType',['../structsmacc_1_1StateBehaviorInfoEntry.html#a9f77a396b80171e010b3c30778b2f3f0',1,'smacc::StateBehaviorInfoEntry']]],

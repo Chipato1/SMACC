@@ -27,7 +27,7 @@ Collaboration diagram for Ssr\+S\+Pattern\+Forward3\+:
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Succeeded$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, \hyperlink{classNavigationOrthogonal}{Navigation\+Orthogonal} $>$, \hyperlink{structSsrSPatternRotate4}{Ssr\+S\+Pattern\+Rotate4} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Aborted$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, \hyperlink{classNavigationOrthogonal}{Navigation\+Orthogonal} $>$, \hyperlink{structSsrSPatternRotate3}{Ssr\+S\+Pattern\+Rotate3} $>$ $>$ \hyperlink{structSsrSPatternForward3_ae9f5e625bcb7c0b7f04ad2cf6b37b13f}{reactions}
+typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Succeeded$<$ \hyperlink{classsmacc_1_1ClMoveBaseZ}{smacc\+::\+Cl\+Move\+BaseZ}, \hyperlink{classOrNavigation}{Or\+Navigation} $>$, \hyperlink{structSsrSPatternRotate4}{Ssr\+S\+Pattern\+Rotate4} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Aborted$<$ \hyperlink{classsmacc_1_1ClMoveBaseZ}{smacc\+::\+Cl\+Move\+BaseZ}, \hyperlink{classOrNavigation}{Or\+Navigation} $>$, \hyperlink{structSsrSPatternRotate3}{Ssr\+S\+Pattern\+Rotate3} $>$ $>$ \hyperlink{structSsrSPatternForward3_a37f21050153ee9cdbb6fef930b00a52d}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -52,7 +52,7 @@ Definition at line 1 of file ssr\+\_\+spattern\+\_\+forward\+\_\+3.\+h.
 \subsection{Member Typedef Documentation}
 \index{Ssr\+S\+Pattern\+Forward3@{Ssr\+S\+Pattern\+Forward3}!reactions@{reactions}}
 \index{reactions@{reactions}!Ssr\+S\+Pattern\+Forward3@{Ssr\+S\+Pattern\+Forward3}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<${\bf smacc\+::transition}$<$Ev\+Action\+Succeeded$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, {\bf Navigation\+Orthogonal}$>$, {\bf Ssr\+S\+Pattern\+Rotate4}$>$, {\bf smacc\+::transition}$<$Ev\+Action\+Aborted$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, {\bf Navigation\+Orthogonal}$>$, {\bf Ssr\+S\+Pattern\+Rotate3}$>$ $>$ {\bf Ssr\+S\+Pattern\+Forward3\+::reactions}}\hypertarget{structSsrSPatternForward3_ae9f5e625bcb7c0b7f04ad2cf6b37b13f}{}\label{structSsrSPatternForward3_ae9f5e625bcb7c0b7f04ad2cf6b37b13f}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<${\bf smacc\+::transition}$<$Ev\+Action\+Succeeded$<${\bf smacc\+::\+Cl\+Move\+BaseZ}, {\bf Or\+Navigation}$>$, {\bf Ssr\+S\+Pattern\+Rotate4}$>$, {\bf smacc\+::transition}$<$Ev\+Action\+Aborted$<${\bf smacc\+::\+Cl\+Move\+BaseZ}, {\bf Or\+Navigation}$>$, {\bf Ssr\+S\+Pattern\+Rotate3}$>$ $>$ {\bf Ssr\+S\+Pattern\+Forward3\+::reactions}}\hypertarget{structSsrSPatternForward3_a37f21050153ee9cdbb6fef930b00a52d}{}\label{structSsrSPatternForward3_a37f21050153ee9cdbb6fef930b00a52d}
 
 
 Definition at line 7 of file ssr\+\_\+spattern\+\_\+forward\+\_\+3.\+h.
@@ -74,8 +74,8 @@ Definition at line 9 of file ssr\+\_\+spattern\+\_\+forward\+\_\+3.\+h.
 
 \begin{DoxyCode}
 10   \{
-11     static\_configure<NavigationOrthogonal, CbNavigateForward>(SS::pitch2\_lenght\_meters());
-12     static\_configure<ToolOrthogonal, CbToolStart>();
+11     static\_configure<OrNavigation, CbNavigateForward>(SS::pitch2\_lenght\_meters());
+12     static\_configure<OrTool, CbToolStart>();
 13   \}
 \end{DoxyCode}
 \index{Ssr\+S\+Pattern\+Forward3@{Ssr\+S\+Pattern\+Forward3}!on\+Initialize@{on\+Initialize}}

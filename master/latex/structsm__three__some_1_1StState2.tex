@@ -27,7 +27,7 @@ Collaboration diagram for sm\+\_\+three\+\_\+some\+:\+:St\+State2\+:
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+All$<$ Lu\+All\+Events\+Go $>$, \hyperlink{structsm__three__some_1_1StState3}{St\+State3} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ \hyperlink{structsm__three__some_1_1EvKeyPressP}{Ev\+Key\+PressP}$<$ \hyperlink{classsm__three__some_1_1CbKeyboard}{Cb\+Keyboard}, \hyperlink{classsm__three__some_1_1KeyboardOrthogonal}{Keyboard\+Orthogonal} $>$, \hyperlink{structsm__three__some_1_1StState1}{St\+State1} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ \hyperlink{structsm__three__some_1_1EvKeyPressN}{Ev\+Key\+PressN}$<$ \hyperlink{classsm__three__some_1_1CbKeyboard}{Cb\+Keyboard}, \hyperlink{classsm__three__some_1_1KeyboardOrthogonal}{Keyboard\+Orthogonal} $>$, \hyperlink{structsm__three__some_1_1StState3}{St\+State3} $>$ $>$ \hyperlink{structsm__three__some_1_1StState2_afd45ee8d9aa8e149a4e7cc199e97807b}{reactions}
+typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+All$<$ Lu\+All\+Events\+Go $>$, \hyperlink{structsm__three__some_1_1StState3}{St\+State3} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ \hyperlink{structsm__three__some_1_1EvKeyPressP}{Ev\+Key\+PressP}$<$ \hyperlink{classsm__three__some_1_1CbKeyboard}{Cb\+Keyboard}, \hyperlink{classsm__three__some_1_1OrKeyboard}{Or\+Keyboard} $>$, \hyperlink{structsm__three__some_1_1StState1}{St\+State1} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ \hyperlink{structsm__three__some_1_1EvKeyPressN}{Ev\+Key\+PressN}$<$ \hyperlink{classsm__three__some_1_1CbKeyboard}{Cb\+Keyboard}, \hyperlink{classsm__three__some_1_1OrKeyboard}{Or\+Keyboard} $>$, \hyperlink{structsm__three__some_1_1StState3}{St\+State3} $>$ $>$ \hyperlink{structsm__three__some_1_1StState2_af65c43ecaaeffbe895d4186333cd403f}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -52,7 +52,7 @@ Definition at line 3 of file st\+\_\+state\+\_\+2.\+h.
 \subsection{Member Typedef Documentation}
 \index{sm\+\_\+three\+\_\+some\+::\+St\+State2@{sm\+\_\+three\+\_\+some\+::\+St\+State2}!reactions@{reactions}}
 \index{reactions@{reactions}!sm\+\_\+three\+\_\+some\+::\+St\+State2@{sm\+\_\+three\+\_\+some\+::\+St\+State2}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ {\bf smacc\+::transition}$<$Ev\+All$<$Lu\+All\+Events\+Go$>$, {\bf St\+State3}$>$, {\bf smacc\+::transition}$<${\bf Ev\+Key\+PressP}$<${\bf Cb\+Keyboard}, {\bf Keyboard\+Orthogonal}$>$, {\bf St\+State1}$>$, {\bf smacc\+::transition}$<${\bf Ev\+Key\+PressN}$<${\bf Cb\+Keyboard}, {\bf Keyboard\+Orthogonal}$>$, {\bf St\+State3}$>$ $>$ {\bf sm\+\_\+three\+\_\+some\+::\+St\+State2\+::reactions}}\hypertarget{structsm__three__some_1_1StState2_afd45ee8d9aa8e149a4e7cc199e97807b}{}\label{structsm__three__some_1_1StState2_afd45ee8d9aa8e149a4e7cc199e97807b}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ {\bf smacc\+::transition}$<$Ev\+All$<$Lu\+All\+Events\+Go$>$, {\bf St\+State3}$>$, {\bf smacc\+::transition}$<${\bf Ev\+Key\+PressP}$<${\bf Cb\+Keyboard}, {\bf Or\+Keyboard}$>$, {\bf St\+State1}$>$, {\bf smacc\+::transition}$<${\bf Ev\+Key\+PressN}$<${\bf Cb\+Keyboard}, {\bf Or\+Keyboard}$>$, {\bf St\+State3}$>$ $>$ {\bf sm\+\_\+three\+\_\+some\+::\+St\+State2\+::reactions}}\hypertarget{structsm__three__some_1_1StState2_af65c43ecaaeffbe895d4186333cd403f}{}\label{structsm__three__some_1_1StState2_af65c43ecaaeffbe895d4186333cd403f}
 
 
 Definition at line 13 of file st\+\_\+state\+\_\+2.\+h.
@@ -74,12 +74,12 @@ Definition at line 15 of file st\+\_\+state\+\_\+2.\+h.
 
 \begin{DoxyCode}
 16     \{
-17         static\_configure<Orthogonal1, CbBehavior1b>();
-18         static\_configure<Orthogonal2, CbBehavior2b>();
-19         static\_configure<KeyboardOrthogonal, CbKeyboard>();
+17         static\_configure<OrOrthogonal1, CbBehavior1b>();
+18         static\_configure<OrOrthogonal2, CbBehavior2b>();
+19         static\_configure<OrKeyboard, CbKeyboard>();
 20 
 21         static\_createLogicUnit<LuAllEventsGo, EvAll<LuAllEventsGo>, mpl::list<EvTopicMessage<CbBehavior1b,
-       Orthogonal1>, EvTopicMessage<Client1, Orthogonal1>>>();
+       OrOrthogonal1>, EvTopicMessage<ClClient1, OrOrthogonal1>>>();
 22     \}
 \end{DoxyCode}
 \index{sm\+\_\+three\+\_\+some\+::\+St\+State2@{sm\+\_\+three\+\_\+some\+::\+St\+State2}!on\+Initialize@{on\+Initialize}}

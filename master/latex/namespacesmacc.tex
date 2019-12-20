@@ -13,6 +13,8 @@ struct \hyperlink{structsmacc_1_1AddTransition}{Add\+Transition}
 \item 
 struct \hyperlink{structsmacc_1_1CheckType}{Check\+Type}
 \item 
+class \hyperlink{classsmacc_1_1ClMoveBaseZ}{Cl\+Move\+BaseZ}
+\item 
 struct \hyperlink{structsmacc_1_1CONTINUELOOP}{C\+O\+N\+T\+I\+N\+U\+E\+L\+O\+OP}
 \item 
 struct \hyperlink{structsmacc_1_1DEFAULT}{D\+E\+F\+A\+U\+LT}
@@ -120,8 +122,6 @@ class \hyperlink{classsmacc_1_1SmaccClientBehavior}{Smacc\+Client\+Behavior}
 struct \hyperlink{structsmacc_1_1SmaccEventInfo}{Smacc\+Event\+Info}
 \item 
 struct \hyperlink{structsmacc_1_1SmaccLogicUnitInfo}{Smacc\+Logic\+Unit\+Info}
-\item 
-class \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{Smacc\+Move\+Base\+Action\+Client}
 \item 
 class \hyperlink{classsmacc_1_1SmaccPublisherClient}{Smacc\+Publisher\+Client}
 \item 
@@ -247,7 +247,7 @@ std\+::string \hyperlink{namespacesmacc_a792e7a3ea0843e87543a465b446ae730}{deman
 \item 
 std\+::string \hyperlink{namespacesmacc_a72fcb6f2d23e716a772176e79495bc53}{replace\+\_\+back} (std\+::string roottype, std\+::map$<$ std\+::string, std\+::string $>$ \&typesdict)
 \item 
-{\footnotesize template$<$typename T\+Ev $>$ }\\void \hyperlink{namespacesmacc_a76eb4f8e5dabc432d2e68c56113c73e8}{configure\+Post\+Ev\+Waypoint} (std\+::function$<$ void()$>$ $\ast$fntarget, \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{Smacc\+Move\+Base\+Action\+Client} $\ast$client, int index)
+{\footnotesize template$<$typename T\+Ev $>$ }\\void \hyperlink{namespacesmacc_a12e26ded70efbdd533dc8573f9068991}{configure\+Post\+Ev\+Waypoint} (std\+::function$<$ void()$>$ $\ast$fntarget, \hyperlink{classsmacc_1_1ClMoveBaseZ}{Cl\+Move\+BaseZ} $\ast$client, int index)
 \end{DoxyCompactItemize}
 
 
@@ -517,13 +517,13 @@ Here is the caller graph for this function\+:
 
 \index{smacc@{smacc}!configure\+Post\+Ev\+Waypoint@{configure\+Post\+Ev\+Waypoint}}
 \index{configure\+Post\+Ev\+Waypoint@{configure\+Post\+Ev\+Waypoint}!smacc@{smacc}}
-\subsubsection[{\texorpdfstring{configure\+Post\+Ev\+Waypoint(std\+::function$<$ void()$>$ $\ast$fntarget, Smacc\+Move\+Base\+Action\+Client $\ast$client, int index)}{configurePostEvWaypoint(std::function< void()> *fntarget, SmaccMoveBaseActionClient *client, int index)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Ev $>$ void smacc\+::configure\+Post\+Ev\+Waypoint (
+\subsubsection[{\texorpdfstring{configure\+Post\+Ev\+Waypoint(std\+::function$<$ void()$>$ $\ast$fntarget, Cl\+Move\+Base\+Z $\ast$client, int index)}{configurePostEvWaypoint(std::function< void()> *fntarget, ClMoveBaseZ *client, int index)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Ev $>$ void smacc\+::configure\+Post\+Ev\+Waypoint (
 \begin{DoxyParamCaption}
 \item[{std\+::function$<$ void()$>$ $\ast$}]{fntarget, }
-\item[{{\bf Smacc\+Move\+Base\+Action\+Client} $\ast$}]{client, }
+\item[{{\bf Cl\+Move\+BaseZ} $\ast$}]{client, }
 \item[{int}]{index}
 \end{DoxyParamCaption}
-)}\hypertarget{namespacesmacc_a76eb4f8e5dabc432d2e68c56113c73e8}{}\label{namespacesmacc_a76eb4f8e5dabc432d2e68c56113c73e8}
+)}\hypertarget{namespacesmacc_a12e26ded70efbdd533dc8573f9068991}{}\label{namespacesmacc_a12e26ded70efbdd533dc8573f9068991}
 
 
 Definition at line 24 of file move\+\_\+base\+\_\+action\+\_\+client\+\_\+impl.\+h.
@@ -582,7 +582,7 @@ Definition at line 43 of file introspection.\+h.
 
 
 
-Referenced by smacc\+::\+Smacc\+State\+Machine\+Info\+::assemble\+S\+M\+Structure\+Message(), Call\+On\+Definition(), clean\+Short\+Type\+Name(), demangled\+Type\+Name(), demangle\+Symbol(), demangle\+Type(), smacc\+::\+I\+Smacc\+State\+::get\+Class\+Name(), smacc\+::\+Smacc\+State\+Info\+::get\+Demangled\+Full\+Name(), smacc\+::\+Sensor\+Topic$<$ Laser\+Sensor $>$\+::get\+Event\+Label(), smacc\+::\+Smacc\+Event\+Info\+::get\+Event\+Source\+Name(), smacc\+::\+Smacc\+Event\+Info\+::get\+Event\+Type\+Name(), smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::get\+Full\+Name(), smacc\+::\+Orthogonal\+::get\+Name(), smacc\+::\+I\+Smacc\+Component\+::get\+Name(), smacc\+::\+I\+Smacc\+Client\+::get\+Name(), smacc\+::\+Smacc\+Client\+Behavior\+::get\+Name(), smacc\+::\+Smacc\+Event\+Info\+::get\+Object\+Tag\+Name(), smacc\+::\+I\+Smacc\+State\+Machine\+::get\+State\+Machine\+Name(), smacc\+::\+Type\+Info\+::get\+Type\+Info\+From\+Typeid(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::initialize(), smacc\+::\+I\+Smacc\+State\+Machine\+::map\+Behavior(), smacc\+::\+Lu\+All\+Events\+Go\+::on\+Event\+Notified(), smacc\+::\+Lu\+Event\+Countdown\+::on\+Event\+Notified(), sm\+\_\+three\+\_\+some\+::\+Cb\+Keyboard\+::post\+Key\+Event(), sm\+\_\+three\+\_\+some\+::\+Keyboard\+Client\+::post\+Key\+Event(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::post\+Result\+Event(), process\+Transition\+Aux(), smacc\+::\+I\+Smacc\+State\+Machine\+::requires\+Component(), smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::\+Smacc\+State(), smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::static\+\_\+configure(), and smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::$\sim$\+Smacc\+State().
+Referenced by smacc\+::\+Smacc\+State\+Machine\+Info\+::assemble\+S\+M\+Structure\+Message(), Call\+On\+Definition(), clean\+Short\+Type\+Name(), demangled\+Type\+Name(), demangle\+Symbol(), demangle\+Type(), smacc\+::\+I\+Smacc\+State\+::get\+Class\+Name(), smacc\+::\+Smacc\+State\+Info\+::get\+Demangled\+Full\+Name(), smacc\+::\+Sensor\+Topic$<$ Cl\+Temperature\+Sensor $>$\+::get\+Event\+Label(), smacc\+::\+Smacc\+Event\+Info\+::get\+Event\+Source\+Name(), smacc\+::\+Smacc\+Event\+Info\+::get\+Event\+Type\+Name(), smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::get\+Full\+Name(), smacc\+::\+Orthogonal\+::get\+Name(), smacc\+::\+I\+Smacc\+Component\+::get\+Name(), smacc\+::\+I\+Smacc\+Client\+::get\+Name(), smacc\+::\+Smacc\+Client\+Behavior\+::get\+Name(), smacc\+::\+Smacc\+Event\+Info\+::get\+Object\+Tag\+Name(), smacc\+::\+I\+Smacc\+State\+Machine\+::get\+State\+Machine\+Name(), smacc\+::\+Type\+Info\+::get\+Type\+Info\+From\+Typeid(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::initialize(), smacc\+::\+I\+Smacc\+State\+Machine\+::map\+Behavior(), smacc\+::\+Lu\+All\+Events\+Go\+::on\+Event\+Notified(), smacc\+::\+Lu\+Event\+Countdown\+::on\+Event\+Notified(), sm\+\_\+three\+\_\+some\+::\+Cb\+Keyboard\+::post\+Key\+Event(), sm\+\_\+three\+\_\+some\+::\+Cl\+Keyboard\+::post\+Key\+Event(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::post\+Result\+Event(), process\+Transition\+Aux(), smacc\+::\+I\+Smacc\+State\+Machine\+::requires\+Component(), smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::\+Smacc\+State(), smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::static\+\_\+configure(), and smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::$\sim$\+Smacc\+State().
 
 
 \begin{DoxyCode}

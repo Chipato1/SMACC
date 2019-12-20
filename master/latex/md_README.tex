@@ -197,7 +197,7 @@ The code would be the following\+:
   \textcolor{comment}{// This is the smacc component (it basically is a wrapper of the ROS Action Client for move base), please
        check the SMACC}
   \textcolor{comment}{// code to see how to implement your own action client}
-  \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc::SmaccMoveBaseActionClient} *moveBaseClient\_;
+  smacc::SmaccMoveBaseActionClient *moveBaseClient\_;
 
   \textcolor{keyword}{using} SmaccState::SmaccState;
   \textcolor{keywordtype}{void} onEntry()
@@ -223,7 +223,7 @@ The code would be the following\+:
     goal.target\_pose.pose.orientation =
         tf::createQuaternionMsgFromRollPitchYaw(0, 0, M\_PI);
 
-    moveBaseClient\_->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
+    moveBaseClient\_->sendGoal(goal);
   \}
 \};
 \end{DoxyCode}
@@ -398,7 +398,7 @@ S\+M\+A\+CC proposes to work in different orthogonal lines\+: Navigation, Tool1,
 
  
 
-First we will define the \hyperlink{classNavigationOrthogonal}{Navigation\+Orthogonal} line line with a simple Tool\+Sub\+State\+:
+First we will define the Navigation\+Orthogonal line line with a simple Tool\+Sub\+State\+:
 
 
 \begin{DoxyCode}

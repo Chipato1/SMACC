@@ -12,6 +12,6 @@ var searchData=
   ['destinystate',['destinyState',['../structsmacc_1_1SmaccTransitionInfo.html#a3deee8ced495b363eeca7f0e53d9a5af',1,'smacc::SmaccTransitionInfo']]],
   ['direct',['DIRECT',['../LICENSE_8txt.html#a34cac86a32266331f931bceaa138a96d',1,'LICENSE.txt']]],
   ['done_5fcb',['done_cb',['../classsmacc_1_1SmaccActionClientBase.html#aea7036326fe0f2bb9355c71e80e36516',1,'smacc::SmaccActionClientBase']]],
-  ['duration',['duration',['../classros__timer__client_1_1SmaccTimerClient.html#afa4e91d5da885c59306d74c7b6e85052',1,'ros_timer_client::SmaccTimerClient::duration()'],['../classsmacc_1_1Timer.html#a564c0bbd2b12909d61a1345358c641fc',1,'smacc::Timer::duration()']]],
+  ['duration',['duration',['../classros__timer__client_1_1ClRosTimer.html#a79df7a52481e520ba959f3e6afb0a817',1,'ros_timer_client::ClRosTimer::duration()'],['../classsmacc_1_1Timer.html#a564c0bbd2b12909d61a1345358c641fc',1,'smacc::Timer::duration()']]],
   ['dynrecofsub_5f',['dynrecofSub_',['../classsmacc__planner__switcher_1_1PlannerSwitcher.html#a3ac34789d0fc620bb2bd27f984486ba9',1,'smacc_planner_switcher::PlannerSwitcher']]]
 ];

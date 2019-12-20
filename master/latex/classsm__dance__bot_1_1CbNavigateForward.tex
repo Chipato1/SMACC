@@ -44,7 +44,7 @@ boost\+::optional$<$ float $>$ \hyperlink{classsm__dance__bot_1_1CbNavigateForwa
 \item 
 tf\+::\+Transform\+Listener \hyperlink{classsm__dance__bot_1_1CbNavigateForward_a7bda457757f10a2e71eb15c07bf707b4}{listener}
 \item 
-\hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $\ast$ \hyperlink{classsm__dance__bot_1_1CbNavigateForward_a5c07ee051da501dec97105fd66633259}{move\+Base\+Client\+\_\+}
+\hyperlink{classsmacc_1_1ClMoveBaseZ}{smacc\+::\+Cl\+Move\+BaseZ} $\ast$ \hyperlink{classsm__dance__bot_1_1CbNavigateForward_aa1cd872e92fca83c44ff0430bda061a7}{move\+Base\+Client\+\_\+}
 \item 
 \hyperlink{classsmacc__odom__tracker_1_1OdomTracker}{smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker} $\ast$ \hyperlink{classsm__dance__bot_1_1CbNavigateForward_acaa4978c23fbc57fee5ee13a12842e7d}{odom\+Tracker\+\_\+}
 \end{DoxyCompactItemize}
@@ -115,7 +115,7 @@ Definition at line 35 of file cb\+\_\+navigate\+\_\+forward.\+h.
 
 
 
-References smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::clear\+Path(), smacc\+::\+Smacc\+Client\+Behavior\+::current\+State, forward\+Distance, smacc\+::\+I\+Smacc\+State\+::param(), smacc\+::\+Smacc\+Move\+Base\+Action\+Client\+::planner\+Switcher\+\_\+, smacc\+\_\+odom\+\_\+tracker\+::\+R\+E\+C\+O\+R\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+O\+R\+W\+A\+RD, smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client(), smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Component(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal(), smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Start\+Point(), and smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Working\+Mode().
+References smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::clear\+Path(), smacc\+::\+Smacc\+Client\+Behavior\+::current\+State, forward\+Distance, smacc\+::\+I\+Smacc\+State\+::param(), smacc\+::\+Cl\+Move\+Base\+Z\+::planner\+Switcher\+\_\+, smacc\+\_\+odom\+\_\+tracker\+::\+R\+E\+C\+O\+R\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+O\+R\+W\+A\+RD, smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client(), smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Component(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal(), smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Start\+Point(), and smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Working\+Mode().
 
 
 \begin{DoxyCode}
@@ -134,7 +134,7 @@ References smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::clear\+Path(), sma
 48 
 49         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"Straight motion distance: "} << dist);
 50 
-51         this->\hyperlink{classsmacc_1_1SmaccClientBehavior_adc21bbd45d36bd81ca6f778ed161807a}{requiresClient}(\hyperlink{classsm__dance__bot_1_1CbNavigateForward_a5c07ee051da501dec97105fd66633259}{moveBaseClient\_});
+51         this->\hyperlink{classsmacc_1_1SmaccClientBehavior_adc21bbd45d36bd81ca6f778ed161807a}{requiresClient}(\hyperlink{classsm__dance__bot_1_1CbNavigateForward_aa1cd872e92fca83c44ff0430bda061a7}{moveBaseClient\_});
 52         this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a011246bb1424f8bf8c9322f652db9d88}{requiresComponent}(\hyperlink{classsm__dance__bot_1_1CbNavigateForward_acaa4978c23fbc57fee5ee13a12842e7d}{odomTracker\_});
 53 
 54         \textcolor{comment}{//this should work better with a coroutine and await}
@@ -163,7 +163,7 @@ References smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::clear\+Path(), sma
 77 
 78         tf::Transform targetPose = currentPose * forwardDeltaTransform;
 79 
-80         smacc::SmaccMoveBaseActionClient::Goal goal;
+80         smacc::ClMoveBaseZ::Goal goal;
 81         goal.target\_pose.header.frame\_id = \textcolor{stringliteral}{"/odom"};
 82         goal.target\_pose.header.stamp = ros::Time::now();
 83         tf::poseTFToMsg(targetPose, goal.target\_pose.pose);
@@ -180,9 +180,9 @@ References smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::clear\+Path(), sma
 94         this->\hyperlink{classsm__dance__bot_1_1CbNavigateForward_acaa4978c23fbc57fee5ee13a12842e7d}{odomTracker\_}->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a38fbca999297c46dc95628cc60851a45}{setWorkingMode}(
       \hyperlink{namespacesmacc__odom__tracker_ade9730dd5cc10ccfad9362176cf46c33a989d06a586bcf9520889228da7faa643}{smacc\_odom\_tracker::WorkingMode::RECORD\_PATH\_FORWARD});
 95 
-96         \hyperlink{classsm__dance__bot_1_1CbNavigateForward_a5c07ee051da501dec97105fd66633259}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccMoveBaseActionClient_ae24164268108abf0b35cf51bfba5ec67}{plannerSwitcher\_}->setForwardPlanner();
+96         \hyperlink{classsm__dance__bot_1_1CbNavigateForward_aa1cd872e92fca83c44ff0430bda061a7}{moveBaseClient\_}->\hyperlink{classsmacc_1_1ClMoveBaseZ_a1a20609e1b4a9406cd6cece0d74acfe5}{plannerSwitcher\_}->setForwardPlanner();
 97 
-98         \hyperlink{classsm__dance__bot_1_1CbNavigateForward_a5c07ee051da501dec97105fd66633259}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
+98         \hyperlink{classsm__dance__bot_1_1CbNavigateForward_aa1cd872e92fca83c44ff0430bda061a7}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
 99     \}
 \end{DoxyCode}
 
@@ -265,7 +265,7 @@ Definition at line 20 of file cb\+\_\+navigate\+\_\+forward.\+h.
 
 \index{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Forward@{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Forward}!move\+Base\+Client\+\_\+@{move\+Base\+Client\+\_\+}}
 \index{move\+Base\+Client\+\_\+@{move\+Base\+Client\+\_\+}!sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Forward@{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Forward}}
-\subsubsection[{\texorpdfstring{move\+Base\+Client\+\_\+}{moveBaseClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}$\ast$ sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Forward\+::move\+Base\+Client\+\_\+}\hypertarget{classsm__dance__bot_1_1CbNavigateForward_a5c07ee051da501dec97105fd66633259}{}\label{classsm__dance__bot_1_1CbNavigateForward_a5c07ee051da501dec97105fd66633259}
+\subsubsection[{\texorpdfstring{move\+Base\+Client\+\_\+}{moveBaseClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+::\+Cl\+Move\+BaseZ}$\ast$ sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Forward\+::move\+Base\+Client\+\_\+}\hypertarget{classsm__dance__bot_1_1CbNavigateForward_aa1cd872e92fca83c44ff0430bda061a7}{}\label{classsm__dance__bot_1_1CbNavigateForward_aa1cd872e92fca83c44ff0430bda061a7}
 
 
 Definition at line 22 of file cb\+\_\+navigate\+\_\+forward.\+h.
@@ -281,4 +281,4 @@ Definition at line 24 of file cb\+\_\+navigate\+\_\+forward.\+h.
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/client\+\_\+behaviors/navigation/\hyperlink{cb__navigate__forward_8h}{cb\+\_\+navigate\+\_\+forward.\+h}\end{DoxyCompactItemize}
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/client\+\_\+behaviors/navigation\+\_\+client\+\_\+behaviors/\hyperlink{cb__navigate__forward_8h}{cb\+\_\+navigate\+\_\+forward.\+h}\end{DoxyCompactItemize}

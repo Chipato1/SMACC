@@ -14,7 +14,7 @@ var searchData=
   ['waypoints_5fnavigator_5fcomponent_2ecpp',['waypoints_navigator_component.cpp',['../waypoints__navigator__component_8cpp.html',1,'']]],
   ['waypoints_5fnavigator_5fcomponent_2eh',['waypoints_navigator_component.h',['../waypoints__navigator__component_8h.html',1,'']]],
   ['waypointseventdispatcher',['waypointsEventDispatcher',['../classsmacc_1_1WaypointNavigator.html#aab7ff616b0eba7a5ad5f03113f2de8fd',1,'smacc::WaypointNavigator']]],
-  ['waypointsnavigator_5f',['waypointsNavigator_',['../classsmacc_1_1SmaccMoveBaseActionClient.html#a59b095c4c17b17dc28f4a21417b88333',1,'smacc::SmaccMoveBaseActionClient']]],
+  ['waypointsnavigator_5f',['waypointsNavigator_',['../classsmacc_1_1ClMoveBaseZ.html#a9df38a2b5fb0e0ed23a00d66fb9b9c20',1,'smacc::ClMoveBaseZ']]],
   ['workingmode',['WorkingMode',['../namespacesmacc__odom__tracker.html#ade9730dd5cc10ccfad9362176cf46c33',1,'smacc_odom_tracker']]],
   ['workingmode_5f',['workingMode_',['../classsmacc__odom__tracker_1_1OdomTracker.html#ad011432ae35a533fd61bae43179c3c36',1,'smacc_odom_tracker::OdomTracker']]],
   ['write_5fto_5ffile',['write_to_file',['../namespacerosdoc__lite_1_1doxygenator.html#ac4fd4990b71ec3d49d1639ef63bd0630',1,'rosdoc_lite::doxygenator']]]

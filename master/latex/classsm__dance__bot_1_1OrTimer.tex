@@ -1,0 +1,68 @@
+\hypertarget{classsm__dance__bot_1_1OrTimer}{}\section{sm\+\_\+dance\+\_\+bot\+:\+:Or\+Timer Class Reference}
+\label{classsm__dance__bot_1_1OrTimer}\index{sm\+\_\+dance\+\_\+bot\+::\+Or\+Timer@{sm\+\_\+dance\+\_\+bot\+::\+Or\+Timer}}
+
+
+{\ttfamily \#include $<$or\+\_\+timer.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+dance\+\_\+bot\+:\+:Or\+Timer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classsm__dance__bot_1_1OrTimer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+dance\+\_\+bot\+:\+:Or\+Timer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot_1_1OrTimer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classsm__dance__bot_1_1OrTimer_aa0091c17ca7ff4c71badd03085272cc4}{on\+Initialize} () override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file or\+\_\+timer.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+::\+Or\+Timer@{sm\+\_\+dance\+\_\+bot\+::\+Or\+Timer}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!sm\+\_\+dance\+\_\+bot\+::\+Or\+Timer@{sm\+\_\+dance\+\_\+bot\+::\+Or\+Timer}}
+\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+dance\+\_\+bot\+::\+Or\+Timer\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__dance__bot_1_1OrTimer_aa0091c17ca7ff4c71badd03085272cc4}{}\label{classsm__dance__bot_1_1OrTimer_aa0091c17ca7ff4c71badd03085272cc4}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+
+
+
+Definition at line 10 of file or\+\_\+timer.\+h.
+
+
+\begin{DoxyCode}
+11     \{
+12         \textcolor{keyword}{auto} actionclient = this->createClient<OrTimer, ros\_timer\_client::ClRosTimer>(ros::Duration(0.5));
+13         actionclient->initialize();
+14     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/orthogonals/\hyperlink{or__timer_8h}{or\+\_\+timer.\+h}\end{DoxyCompactItemize}

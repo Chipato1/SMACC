@@ -38,7 +38,7 @@ void \hyperlink{classsm__three__some_1_1CbKeyboard_a28bdbe8a69cabc44933f60106133
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classsm__three__some_1_1KeyboardClient}{Keyboard\+Client} $\ast$ \hyperlink{classsm__three__some_1_1CbKeyboard_a00f70614cf0c1e10f4214cf24b1d4013}{keyboard\+Client\+\_\+}
+\hyperlink{classsm__three__some_1_1ClKeyboard}{Cl\+Keyboard} $\ast$ \hyperlink{classsm__three__some_1_1CbKeyboard_adbbfdbe9e4dc267a55e85f19683131fc}{Cl\+Keyboard\+\_\+}
 \item 
 boost\+::signals2\+::scoped\+\_\+connection \hyperlink{classsm__three__some_1_1CbKeyboard_a6b6a885c39f32f29e907cfbc37b08b6f}{c\+\_\+}
 \item 
@@ -141,14 +141,14 @@ Definition at line 16 of file cb\+\_\+keyboard\+\_\+behavior.\+h.
 
 
 
-References On\+Key\+Press(), sm\+\_\+three\+\_\+some\+::\+Keyboard\+Client\+::\+On\+Key\+Press, and smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client().
+References On\+Key\+Press(), sm\+\_\+three\+\_\+some\+::\+Cl\+Keyboard\+::\+On\+Key\+Press, and smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client().
 
 
 \begin{DoxyCode}
 17         \{
-18                 this->\hyperlink{classsmacc_1_1SmaccClientBehavior_adc21bbd45d36bd81ca6f778ed161807a}{requiresClient}(\hyperlink{classsm__three__some_1_1CbKeyboard_a00f70614cf0c1e10f4214cf24b1d4013}{keyboardClient\_});
+18                 this->\hyperlink{classsmacc_1_1SmaccClientBehavior_adc21bbd45d36bd81ca6f778ed161807a}{requiresClient}(\hyperlink{classsm__three__some_1_1CbKeyboard_adbbfdbe9e4dc267a55e85f19683131fc}{ClKeyboard\_});
 19 
-20                 \hyperlink{classsm__three__some_1_1CbKeyboard_a6b6a885c39f32f29e907cfbc37b08b6f}{c\_} = this->\hyperlink{classsm__three__some_1_1CbKeyboard_a00f70614cf0c1e10f4214cf24b1d4013}{keyboardClient\_}->\hyperlink{classsm__three__some_1_1KeyboardClient_a96b6b8220c64a1e33480d5ac75c3b8e0}{OnKeyPress}.connect(
+20                 \hyperlink{classsm__three__some_1_1CbKeyboard_a6b6a885c39f32f29e907cfbc37b08b6f}{c\_} = this->\hyperlink{classsm__three__some_1_1CbKeyboard_adbbfdbe9e4dc267a55e85f19683131fc}{ClKeyboard\_}->\hyperlink{classsm__three__some_1_1ClKeyboard_a7784f67d867d66f36a2389b7939dffa2}{OnKeyPress}.connect(
 21                     [\textcolor{keyword}{this}](\textcolor{keywordtype}{char} character) \{
 22                             this->\hyperlink{classsm__three__some_1_1CbKeyboard_a28bdbe8a69cabc44933f601061331cbf}{OnKeyPress}(character);
 23                     \});
@@ -249,9 +249,9 @@ Here is the call graph for this function\+:
 
 Definition at line 14 of file cb\+\_\+keyboard\+\_\+behavior.\+h.
 
-\index{sm\+\_\+three\+\_\+some\+::\+Cb\+Keyboard@{sm\+\_\+three\+\_\+some\+::\+Cb\+Keyboard}!keyboard\+Client\+\_\+@{keyboard\+Client\+\_\+}}
-\index{keyboard\+Client\+\_\+@{keyboard\+Client\+\_\+}!sm\+\_\+three\+\_\+some\+::\+Cb\+Keyboard@{sm\+\_\+three\+\_\+some\+::\+Cb\+Keyboard}}
-\subsubsection[{\texorpdfstring{keyboard\+Client\+\_\+}{keyboardClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Keyboard\+Client}$\ast$ sm\+\_\+three\+\_\+some\+::\+Cb\+Keyboard\+::keyboard\+Client\+\_\+}\hypertarget{classsm__three__some_1_1CbKeyboard_a00f70614cf0c1e10f4214cf24b1d4013}{}\label{classsm__three__some_1_1CbKeyboard_a00f70614cf0c1e10f4214cf24b1d4013}
+\index{sm\+\_\+three\+\_\+some\+::\+Cb\+Keyboard@{sm\+\_\+three\+\_\+some\+::\+Cb\+Keyboard}!Cl\+Keyboard\+\_\+@{Cl\+Keyboard\+\_\+}}
+\index{Cl\+Keyboard\+\_\+@{Cl\+Keyboard\+\_\+}!sm\+\_\+three\+\_\+some\+::\+Cb\+Keyboard@{sm\+\_\+three\+\_\+some\+::\+Cb\+Keyboard}}
+\subsubsection[{\texorpdfstring{Cl\+Keyboard\+\_\+}{ClKeyboard_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cl\+Keyboard}$\ast$ sm\+\_\+three\+\_\+some\+::\+Cb\+Keyboard\+::\+Cl\+Keyboard\+\_\+}\hypertarget{classsm__three__some_1_1CbKeyboard_adbbfdbe9e4dc267a55e85f19683131fc}{}\label{classsm__three__some_1_1CbKeyboard_adbbfdbe9e4dc267a55e85f19683131fc}
 
 
 Definition at line 13 of file cb\+\_\+keyboard\+\_\+behavior.\+h.

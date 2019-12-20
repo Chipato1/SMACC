@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['waypoints_5feventcount',['WAYPOINTS_EVENTCOUNT',['../waypoints__event__dispatcher_8h.html#add4ce0c5d955be6047a4820c63e7df08',1,'waypoints_event_dispatcher.h']]]
+  ['have_5fnew_5fyamlcpp',['HAVE_NEW_YAMLCPP',['../waypoints__navigator__component_8cpp.html#a8f298134094422968fe45aeb8b32b9aa',1,'waypoints_navigator_component.cpp']]]
 ];

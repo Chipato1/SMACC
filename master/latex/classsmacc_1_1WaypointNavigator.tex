@@ -29,7 +29,7 @@ Collaboration diagram for smacc\+:\+:Waypoint\+Navigator\+:
 \item 
 \hyperlink{classsmacc_1_1WaypointNavigator_a8924fe11db589727a91048ffdba2a85f}{Waypoint\+Navigator} ()
 \item 
-{\footnotesize template$<$typename T\+Derived , typename T\+Object\+Tag $>$ }\\void \hyperlink{classsmacc_1_1WaypointNavigator_abf6fa4d0d15b75cc83864d99dcee4b5c}{assign\+To\+Orthogonal} (\hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{Smacc\+Move\+Base\+Action\+Client} $\ast$client)
+{\footnotesize template$<$typename T\+Derived , typename T\+Object\+Tag $>$ }\\void \hyperlink{classsmacc_1_1WaypointNavigator_a8a192da9336c99bf05dc65a12e70e936}{assign\+To\+Orthogonal} (\hyperlink{classsmacc_1_1ClMoveBaseZ}{Cl\+Move\+BaseZ} $\ast$client)
 \item 
 void \hyperlink{classsmacc_1_1WaypointNavigator_abdcd86738247eccaf849903881247b0d}{insert\+Waypoint} (int index, geometry\+\_\+msgs\+::\+Pose \&newpose)
 \item 
@@ -52,12 +52,12 @@ long \hyperlink{classsmacc_1_1WaypointNavigator_a6da63a864cb26b56922ca8c685e1a49
 \item 
 \hyperlink{classsmacc_1_1WaypointEventDispatcher}{Waypoint\+Event\+Dispatcher} \hyperlink{classsmacc_1_1WaypointNavigator_aab7ff616b0eba7a5ad5f03113f2de8fd}{waypoints\+Event\+Dispatcher}
 \item 
-\hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{Smacc\+Move\+Base\+Action\+Client} $\ast$ \hyperlink{classsmacc_1_1WaypointNavigator_a0eaab4d0459b0120b0a08b19e329a2c9}{client\+\_\+}
+\hyperlink{classsmacc_1_1ClMoveBaseZ}{Cl\+Move\+BaseZ} $\ast$ \hyperlink{classsmacc_1_1WaypointNavigator_a2bdb0d4aea851d877fcb20e6d0897bb8}{client\+\_\+}
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classsmacc_1_1WaypointNavigator_a230458880035b8d027657658239aa3e9}{on\+Goal\+Reached} (\hyperlink{classsmacc_1_1SmaccMoveBaseActionClient_a5a725caf88fe59bbf5300c1a33e193fc}{Smacc\+Move\+Base\+Action\+Client\+::\+Result\+Const\+Ptr} \&res)
+void \hyperlink{classsmacc_1_1WaypointNavigator_ae60d62eec927560048258a4b8f355506}{on\+Goal\+Reached} (\hyperlink{classsmacc_1_1ClMoveBaseZ_a0389d198a678c4561d7ac7abca76f143}{Cl\+Move\+Base\+Z\+::\+Result\+Const\+Ptr} \&res)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -101,11 +101,11 @@ Definition at line 11 of file waypoints\+\_\+navigator\+\_\+component.\+cpp.
 \subsection{Member Function Documentation}
 \index{smacc\+::\+Waypoint\+Navigator@{smacc\+::\+Waypoint\+Navigator}!assign\+To\+Orthogonal@{assign\+To\+Orthogonal}}
 \index{assign\+To\+Orthogonal@{assign\+To\+Orthogonal}!smacc\+::\+Waypoint\+Navigator@{smacc\+::\+Waypoint\+Navigator}}
-\subsubsection[{\texorpdfstring{assign\+To\+Orthogonal(\+Smacc\+Move\+Base\+Action\+Client $\ast$client)}{assignToOrthogonal(SmaccMoveBaseActionClient *client)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived , typename T\+Object\+Tag $>$ void smacc\+::\+Waypoint\+Navigator\+::assign\+To\+Orthogonal (
+\subsubsection[{\texorpdfstring{assign\+To\+Orthogonal(\+Cl\+Move\+Base\+Z $\ast$client)}{assignToOrthogonal(ClMoveBaseZ *client)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived , typename T\+Object\+Tag $>$ void smacc\+::\+Waypoint\+Navigator\+::assign\+To\+Orthogonal (
 \begin{DoxyParamCaption}
-\item[{{\bf Smacc\+Move\+Base\+Action\+Client} $\ast$}]{client}
+\item[{{\bf Cl\+Move\+BaseZ} $\ast$}]{client}
 \end{DoxyParamCaption}
-)}\hypertarget{classsmacc_1_1WaypointNavigator_abf6fa4d0d15b75cc83864d99dcee4b5c}{}\label{classsmacc_1_1WaypointNavigator_abf6fa4d0d15b75cc83864d99dcee4b5c}
+)}\hypertarget{classsmacc_1_1WaypointNavigator_a8a192da9336c99bf05dc65a12e70e936}{}\label{classsmacc_1_1WaypointNavigator_a8a192da9336c99bf05dc65a12e70e936}
 
 
 Definition at line 10 of file move\+\_\+base\+\_\+action\+\_\+client\+\_\+impl.\+h.
@@ -117,8 +117,8 @@ References client\+\_\+, smacc\+::\+Waypoint\+Event\+Dispatcher\+::initialize(),
 
 \begin{DoxyCode}
 11 \{
-12     \hyperlink{classsmacc_1_1WaypointNavigator_a0eaab4d0459b0120b0a08b19e329a2c9}{client\_} = client;
-13     \hyperlink{classsmacc_1_1WaypointNavigator_aab7ff616b0eba7a5ad5f03113f2de8fd}{waypointsEventDispatcher}.\hyperlink{classsmacc_1_1WaypointEventDispatcher_a583966b07c927526f592437da657f24a}{initialize}<TDerived, TObjectTag>(client);
+12     \hyperlink{classsmacc_1_1WaypointNavigator_a2bdb0d4aea851d877fcb20e6d0897bb8}{client\_} = client;
+13     \hyperlink{classsmacc_1_1WaypointNavigator_aab7ff616b0eba7a5ad5f03113f2de8fd}{waypointsEventDispatcher}.\hyperlink{classsmacc_1_1WaypointEventDispatcher_ad68384f96ef92ade4942320f898cdd3b}{initialize}<TDerived, TObjectTag>(client);
 14 \}
 \end{DoxyCode}
 
@@ -128,7 +128,7 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classsmacc_1_1WaypointNavigator_abf6fa4d0d15b75cc83864d99dcee4b5c_cgraph}
+\includegraphics[width=350pt]{classsmacc_1_1WaypointNavigator_a8a192da9336c99bf05dc65a12e70e936_cgraph}
 \end{center}
 \end{figure}
 
@@ -209,65 +209,69 @@ References waypoints\+\_\+.
 )}\hypertarget{classsmacc_1_1WaypointNavigator_a3324ee12d697827e242b48ab3fd23edb}{}\label{classsmacc_1_1WaypointNavigator_a3324ee12d697827e242b48ab3fd23edb}
 
 
-Definition at line 85 of file waypoints\+\_\+navigator\+\_\+component.\+cpp.
+Definition at line 86 of file waypoints\+\_\+navigator\+\_\+component.\+cpp.
+
+
+
+References waypoints\+\_\+.
 
 
 \begin{DoxyCode}
-86 \{
-87   \textcolor{comment}{//   std::ifstream ifs(filepath.c\_str(), std::ifstream::in);}
-88   \textcolor{comment}{//   if (ifs.good() == false)}
-89   \textcolor{comment}{//   \{}
-90   \textcolor{comment}{//     throw std::string("Waypoints file not found");}
-91   \textcolor{comment}{//   \}}
-92 
-93   \textcolor{comment}{// #ifdef HAVE\_NEW\_YAMLCPP}
-94   \textcolor{comment}{//   node = YAML::Load(ifs);}
-95   \textcolor{comment}{// #else}
-96   \textcolor{comment}{//   YAML::Parser parser(ifs);}
-97   \textcolor{comment}{//   parser.GetNextDocument(node);}
-98   \textcolor{comment}{// #endif}
-99 
-100   \textcolor{comment}{// #ifdef HAVE\_NEW\_YAMLCPP}
-101   \textcolor{comment}{//   const YAML::Node &wp\_node\_tmp = node["waypoints"];}
-102   \textcolor{comment}{//   const YAML::Node *wp\_node = wp\_node\_tmp ? &wp\_node\_tmp : NULL;}
-103   \textcolor{comment}{// #else}
-104   \textcolor{comment}{//   const YAML::Node *wp\_node = node.FindValue("waypoints");}
-105   \textcolor{comment}{// #endif}
-106 
-107   \textcolor{comment}{//   if (wp\_node != NULL)}
-108   \textcolor{comment}{//   \{}
-109   \textcolor{comment}{//     for (unsigned int i = 0; i < wp\_node->size(); ++i)}
-110   \textcolor{comment}{//     \{}
-111   \textcolor{comment}{//       // Parse waypoint entries on YAML}
-112   \textcolor{comment}{//       yocs\_msgs::Waypoint wp;}
-113 
-114   \textcolor{comment}{//       (*wp\_node)[i]["name"] >> wp.name;}
-115   \textcolor{comment}{//       (*wp\_node)[i]["frame\_id"] >> wp.header.frame\_id;}
-116   \textcolor{comment}{//       (*wp\_node)[i]["pose"]["position"]["x"] >> wp.pose.position.x;}
-117   \textcolor{comment}{//       (*wp\_node)[i]["pose"]["position"]["y"] >> wp.pose.position.y;}
-118   \textcolor{comment}{//       (*wp\_node)[i]["pose"]["position"]["z"] >> wp.pose.position.z;}
-119   \textcolor{comment}{//       (*wp\_node)[i]["pose"]["orientation"]["x"] >> wp.pose.orientation.x;}
-120   \textcolor{comment}{//       (*wp\_node)[i]["pose"]["orientation"]["y"] >> wp.pose.orientation.y;}
-121   \textcolor{comment}{//       (*wp\_node)[i]["pose"]["orientation"]["z"] >> wp.pose.orientation.z;}
-122   \textcolor{comment}{//       (*wp\_node)[i]["pose"]["orientation"]["w"] >> wp.pose.orientation.w;}
-123 
-124   \textcolor{comment}{//       wps.waypoints.push\_back(wp);}
-125   \textcolor{comment}{//     \}}
-126   \textcolor{comment}{//     ROS\_INFO\_STREAM("Parsed " << wps.waypoints.size() << " waypoints.");}
-127   \textcolor{comment}{//   \}}
-128   \textcolor{comment}{//   else}
-129   \textcolor{comment}{//   \{}
-130   \textcolor{comment}{//     ROS\_WARN\_STREAM("Couldn't find any waypoints in the provided yaml file.");}
-131   \textcolor{comment}{//   \}}
-132 \}
+87 \{
+88   std::ifstream ifs(filepath.c\_str(), std::ifstream::in);
+89   \textcolor{keywordflow}{if} (ifs.good() == \textcolor{keyword}{false})
+90   \{
+91     \textcolor{keywordflow}{throw} std::string(\textcolor{stringliteral}{"Waypoints file not found"});
+92   \}
+93 
+94 \textcolor{preprocessor}{#ifdef HAVE\_NEW\_YAMLCPP}
+95   YAML::Node node = YAML::Load(ifs);
+96 \textcolor{preprocessor}{#else}
+97   YAML::Parser parser(ifs);
+98   parser.GetNextDocument(node);
+99 \textcolor{preprocessor}{#endif}
+100 
+101 \textcolor{preprocessor}{#ifdef HAVE\_NEW\_YAMLCPP}
+102   \textcolor{keyword}{const} YAML::Node &wp\_node\_tmp = node[\textcolor{stringliteral}{"waypoints"}];
+103   \textcolor{keyword}{const} YAML::Node *wp\_node = wp\_node\_tmp ? &wp\_node\_tmp : NULL;
+104 \textcolor{preprocessor}{#else}
+105   \textcolor{keyword}{const} YAML::Node *wp\_node = node.FindValue(\textcolor{stringliteral}{"waypoints"});
+106 \textcolor{preprocessor}{#endif}
+107 
+108   \textcolor{keywordflow}{if} (wp\_node != NULL)
+109   \{
+110     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < wp\_node->size(); ++i)
+111     \{
+112       \textcolor{comment}{// Parse waypoint entries on YAML}
+113       geometry\_msgs::Pose wp;
+114 
+115       \textcolor{comment}{// (*wp\_node)[i]["name"] >> wp.name;}
+116       \textcolor{comment}{// (*wp\_node)[i]["frame\_id"] >> wp.header.frame\_id;}
+117       wp.position.x = (*wp\_node)[i][\textcolor{stringliteral}{"pose"}][\textcolor{stringliteral}{"position"}][\textcolor{stringliteral}{"x"}].as<\textcolor{keywordtype}{double}>();
+118       wp.position.y = (*wp\_node)[i][\textcolor{stringliteral}{"pose"}][\textcolor{stringliteral}{"position"}][\textcolor{stringliteral}{"y"}].as<\textcolor{keywordtype}{double}>();
+119       wp.position.z = (*wp\_node)[i][\textcolor{stringliteral}{"pose"}][\textcolor{stringliteral}{"position"}][\textcolor{stringliteral}{"z"}].as<\textcolor{keywordtype}{double}>();
+120       wp.orientation.x = (*wp\_node)[i][\textcolor{stringliteral}{"pose"}][\textcolor{stringliteral}{"orientation"}][\textcolor{stringliteral}{"x"}].as<\textcolor{keywordtype}{double}>();
+121       wp.orientation.y = (*wp\_node)[i][\textcolor{stringliteral}{"pose"}][\textcolor{stringliteral}{"orientation"}][\textcolor{stringliteral}{"y"}].as<\textcolor{keywordtype}{double}>();
+122       wp.orientation.z = (*wp\_node)[i][\textcolor{stringliteral}{"pose"}][\textcolor{stringliteral}{"orientation"}][\textcolor{stringliteral}{"z"}].as<\textcolor{keywordtype}{double}>();
+123       wp.orientation.w = (*wp\_node)[i][\textcolor{stringliteral}{"pose"}][\textcolor{stringliteral}{"orientation"}][\textcolor{stringliteral}{"w"}].as<\textcolor{keywordtype}{double}>();
+124 
+125       this->\hyperlink{classsmacc_1_1WaypointNavigator_a59d691f2177430c407b8e27df07552e9}{waypoints\_}.push\_back(wp);
+126     \}
+127     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"Parsed "} << this->\hyperlink{classsmacc_1_1WaypointNavigator_a59d691f2177430c407b8e27df07552e9}{waypoints\_}.size() << \textcolor{stringliteral}{" waypoints."});
+128   \}
+129   \textcolor{keywordflow}{else}
+130   \{
+131     ROS\_WARN\_STREAM(\textcolor{stringliteral}{"Couldn't find any waypoints in the provided yaml file."});
+132   \}
+133 \}
 \end{DoxyCode}
 \index{smacc\+::\+Waypoint\+Navigator@{smacc\+::\+Waypoint\+Navigator}!on\+Goal\+Reached@{on\+Goal\+Reached}}
 \index{on\+Goal\+Reached@{on\+Goal\+Reached}!smacc\+::\+Waypoint\+Navigator@{smacc\+::\+Waypoint\+Navigator}}
-\subsubsection[{\texorpdfstring{on\+Goal\+Reached(\+Smacc\+Move\+Base\+Action\+Client\+::\+Result\+Const\+Ptr \&res)}{onGoalReached(SmaccMoveBaseActionClient::ResultConstPtr &res)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Waypoint\+Navigator\+::on\+Goal\+Reached (
+\subsubsection[{\texorpdfstring{on\+Goal\+Reached(\+Cl\+Move\+Base\+Z\+::\+Result\+Const\+Ptr \&res)}{onGoalReached(ClMoveBaseZ::ResultConstPtr &res)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Waypoint\+Navigator\+::on\+Goal\+Reached (
 \begin{DoxyParamCaption}
-\item[{{\bf Smacc\+Move\+Base\+Action\+Client\+::\+Result\+Const\+Ptr} \&}]{res}
+\item[{{\bf Cl\+Move\+Base\+Z\+::\+Result\+Const\+Ptr} \&}]{res}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1WaypointNavigator_a230458880035b8d027657658239aa3e9}{}\label{classsmacc_1_1WaypointNavigator_a230458880035b8d027657658239aa3e9}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1WaypointNavigator_ae60d62eec927560048258a4b8f355506}{}\label{classsmacc_1_1WaypointNavigator_ae60d62eec927560048258a4b8f355506}
 
 
 Definition at line 16 of file waypoints\+\_\+navigator\+\_\+component.\+cpp.
@@ -296,7 +300,7 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classsmacc_1_1WaypointNavigator_a230458880035b8d027657658239aa3e9_cgraph}
+\includegraphics[width=350pt]{classsmacc_1_1WaypointNavigator_ae60d62eec927560048258a4b8f355506_cgraph}
 \end{center}
 \end{figure}
 
@@ -308,7 +312,7 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classsmacc_1_1WaypointNavigator_a230458880035b8d027657658239aa3e9_icgraph}
+\includegraphics[width=350pt]{classsmacc_1_1WaypointNavigator_ae60d62eec927560048258a4b8f355506_icgraph}
 \end{center}
 \end{figure}
 
@@ -360,14 +364,14 @@ References client\+\_\+, current\+Waypoint\+\_\+, on\+Goal\+Reached(), smacc\+::
 26   \{
 27     \textcolor{keyword}{auto} &next = \hyperlink{classsmacc_1_1WaypointNavigator_a59d691f2177430c407b8e27df07552e9}{waypoints\_}[\hyperlink{classsmacc_1_1WaypointNavigator_a9a0102946593081338f7bd259f4670bc}{currentWaypoint\_}];
 28 
-29     smacc::SmaccMoveBaseActionClient::Goal goal;
+29     smacc::ClMoveBaseZ::Goal goal;
 30     goal.target\_pose.header.frame\_id = \textcolor{stringliteral}{"/odom"};
 31     goal.target\_pose.header.stamp = ros::Time::now();
 32     goal.target\_pose.pose = next;
 33 
-34     this->\hyperlink{classsmacc_1_1WaypointNavigator_a932d5378c3ef5bd4e8e3152ac657112f}{succeddedConnection\_} = \hyperlink{classsmacc_1_1WaypointNavigator_a0eaab4d0459b0120b0a08b19e329a2c9}{client\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_ae84ce50f0bdd42c5d32a631b4e9b8b6a}{onSucceeded}(&
-      \hyperlink{classsmacc_1_1WaypointNavigator_a230458880035b8d027657658239aa3e9}{WaypointNavigator::onGoalReached}, \textcolor{keyword}{this});
-35     \hyperlink{classsmacc_1_1WaypointNavigator_a0eaab4d0459b0120b0a08b19e329a2c9}{client\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
+34     this->\hyperlink{classsmacc_1_1WaypointNavigator_a932d5378c3ef5bd4e8e3152ac657112f}{succeddedConnection\_} = \hyperlink{classsmacc_1_1WaypointNavigator_a2bdb0d4aea851d877fcb20e6d0897bb8}{client\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_ae84ce50f0bdd42c5d32a631b4e9b8b6a}{onSucceeded}(&
+      \hyperlink{classsmacc_1_1WaypointNavigator_ae60d62eec927560048258a4b8f355506}{WaypointNavigator::onGoalReached}, \textcolor{keyword}{this});
+35     \hyperlink{classsmacc_1_1WaypointNavigator_a2bdb0d4aea851d877fcb20e6d0897bb8}{client\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
 36   \}
 37 \}
 \end{DoxyCode}
@@ -440,7 +444,7 @@ References waypoints\+\_\+.
 \subsection{Member Data Documentation}
 \index{smacc\+::\+Waypoint\+Navigator@{smacc\+::\+Waypoint\+Navigator}!client\+\_\+@{client\+\_\+}}
 \index{client\+\_\+@{client\+\_\+}!smacc\+::\+Waypoint\+Navigator@{smacc\+::\+Waypoint\+Navigator}}
-\subsubsection[{\texorpdfstring{client\+\_\+}{client_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Smacc\+Move\+Base\+Action\+Client}$\ast$ smacc\+::\+Waypoint\+Navigator\+::client\+\_\+}\hypertarget{classsmacc_1_1WaypointNavigator_a0eaab4d0459b0120b0a08b19e329a2c9}{}\label{classsmacc_1_1WaypointNavigator_a0eaab4d0459b0120b0a08b19e329a2c9}
+\subsubsection[{\texorpdfstring{client\+\_\+}{client_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cl\+Move\+BaseZ}$\ast$ smacc\+::\+Waypoint\+Navigator\+::client\+\_\+}\hypertarget{classsmacc_1_1WaypointNavigator_a2bdb0d4aea851d877fcb20e6d0897bb8}{}\label{classsmacc_1_1WaypointNavigator_a2bdb0d4aea851d877fcb20e6d0897bb8}
 
 
 Definition at line 32 of file waypoints\+\_\+navigator\+\_\+component.\+h.
@@ -480,7 +484,7 @@ Definition at line 58 of file waypoints\+\_\+navigator\+\_\+component.\+h.
 
 
 
-Referenced by get\+Waypoints(), insert\+Waypoint(), remove\+Waypoint(), send\+Next\+Goal(), and set\+Waypoints().
+Referenced by get\+Waypoints(), insert\+Waypoint(), load\+Way\+Points\+From\+File(), remove\+Waypoint(), send\+Next\+Goal(), and set\+Waypoints().
 
 \index{smacc\+::\+Waypoint\+Navigator@{smacc\+::\+Waypoint\+Navigator}!waypoints\+Event\+Dispatcher@{waypoints\+Event\+Dispatcher}}
 \index{waypoints\+Event\+Dispatcher@{waypoints\+Event\+Dispatcher}!smacc\+::\+Waypoint\+Navigator@{smacc\+::\+Waypoint\+Navigator}}

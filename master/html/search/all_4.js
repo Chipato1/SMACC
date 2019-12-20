@@ -30,7 +30,7 @@ var searchData=
   ['direction',['direction',['../structsm__dance__bot_1_1SS4_1_1SsFPattern1.html#a4d286cea10dd7a14743a89f5a2131dc5',1,'sm_dance_bot::SS4::SsFPattern1::direction()'],['../structsm__dance__bot_1_1SS5_1_1SsSPattern1.html#abe6ab6e7e6630e67566c0fee58ce565f',1,'sm_dance_bot::SS5::SsSPattern1::direction()']]],
   ['done_5fcb',['done_cb',['../classsmacc_1_1SmaccActionClientBase.html#aea7036326fe0f2bb9355c71e80e36516',1,'smacc::SmaccActionClientBase']]],
   ['doxygenator_2epy',['doxygenator.py',['../doxygenator_8py.html',1,'']]],
-  ['duration',['duration',['../classros__timer__client_1_1SmaccTimerClient.html#afa4e91d5da885c59306d74c7b6e85052',1,'ros_timer_client::SmaccTimerClient::duration()'],['../classsmacc_1_1Timer.html#a564c0bbd2b12909d61a1345358c641fc',1,'smacc::Timer::duration()']]],
+  ['duration',['duration',['../classros__timer__client_1_1ClRosTimer.html#a79df7a52481e520ba959f3e6afb0a817',1,'ros_timer_client::ClRosTimer::duration()'],['../classsmacc_1_1Timer.html#a564c0bbd2b12909d61a1345358c641fc',1,'smacc::Timer::duration()']]],
   ['dynrecofsub_5f',['dynrecofSub_',['../classsmacc__planner__switcher_1_1PlannerSwitcher.html#a3ac34789d0fc620bb2bd27f984486ba9',1,'smacc_planner_switcher::PlannerSwitcher']]],
   ['dynreconfcallback',['dynreconfCallback',['../classsmacc__planner__switcher_1_1PlannerSwitcher.html#a19328a8a844797e39dd24736872bd442',1,'smacc_planner_switcher::PlannerSwitcher']]],
   ['dance_20bot_20state_20machine',['Dance Bot State Machine',['../md_smacc_sm_reference_library_sm_dance_bot_launch_readme.html',1,'']]]

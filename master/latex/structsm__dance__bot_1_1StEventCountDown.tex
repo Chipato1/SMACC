@@ -69,16 +69,16 @@ Definition at line 15 of file st\+\_\+event\+\_\+count\+\_\+down.\+h.
 
 \begin{DoxyCode}
 16     \{
-17         \textcolor{comment}{//   static\_configure<ObstaclePerceptionOrthogonal, CbLidarSensor>();}
-18         \textcolor{comment}{//   static\_configure<PublisherOrthogonal, CbStringPublisher>("Hello World!");}
-19         \textcolor{comment}{//   static\_configure<SensorOrthogonal, CbConditionTemperatureSensor>();}
-20         \textcolor{comment}{//   static\_configure<Service3Orthogonal, Service3Behavior>(Service3Command::SERVICE3\_ON);}
+17         \textcolor{comment}{//   static\_configure<OrObstaclePerception, CbLidarSensor>();}
+18         \textcolor{comment}{//   static\_configure<OrStringPublisher, CbStringPublisher>("Hello World!");}
+19         \textcolor{comment}{//   static\_configure<OrClTemperatureSensor, CbConditionClTemperatureSensor>();}
+20         \textcolor{comment}{//   static\_configure<OrService3, CbService3>(Service3Command::SERVICE3\_ON);}
 21 
 22         static\_createLogicUnit<LuEventCountdown, EvCountdownEnd<LuEventCountdown>, 
-      mpl::list<EvTimer<SmaccTimerClient>>>(5);
+      mpl::list<EvTimer<ClRosTimer>>>(5);
 23 
 24         \textcolor{comment}{//static\_createLogicUnit<LuEventCountdown, EvCountdownEnd<LuEventCountdown>,
-       mpl::list<EvActionFeedback<smacc::SmaccMoveBaseActionClient>>>(100);}
+       mpl::list<EvActionFeedback<smacc::ClMoveBaseZ>>>(100);}
 25     \}
 \end{DoxyCode}
 

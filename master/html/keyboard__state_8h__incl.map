@@ -1,7 +1,7 @@
 <map id="smacc_client_library/smacc_sensors/examples/keyboard_listener_example/include/states/keyboard_state.h" name="smacc_client_library/smacc_sensors/examples/keyboard_listener_example/include/states/keyboard_state.h">
 <area shape="rect" id="node2" href="$keyboard__state__machine_8h.html" title="keyboard_state_machine.h" alt="" coords="3507,124,3702,151"/>
-<area shape="rect" id="node73" href="$input__device__orthogonal_8h.html" title="orthogonals/input_device\l_orthogonal.h" alt="" coords="3648,199,3831,240"/>
-<area shape="rect" id="node74" href="$keyboard__substate_8h.html" title="client_behaviors/input\l_device/keyboard_substate.h" alt="" coords="3781,541,3989,583"/>
+<area shape="rect" id="node73" href="$or__input__device_8h.html" title="orthogonals/or_input\l_device.h" alt="" coords="3662,199,3817,240"/>
+<area shape="rect" id="node74" href="$keyboard__substate_8h.html" title="client_behaviors/input\l_device/keyboard_substate.h" alt="" coords="3774,541,3982,583"/>
 <area shape="rect" id="node3" href="$smacc_8h.html" title="smacc/smacc.h" alt="" coords="1519,206,1642,233"/>
 <area shape="rect" id="node4" href="$common_8h.html" title="smacc/common.h" alt="" coords="1499,727,1636,754"/>
 <area shape="rect" id="node47" href="$smacc__state__machine__base_8h.html" title="smacc/smacc_state_machine\l_base.h" alt="" coords="1784,288,1996,329"/>

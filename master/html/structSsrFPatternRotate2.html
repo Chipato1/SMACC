@@ -120,8 +120,8 @@ Collaboration diagram for SsrFPatternRotate2:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:abd351e2ecdac7b34778f5b4e9fbeda9b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classsmacc_1_1transition.html">smacc::transition</a>&lt; EvActionSucceeded&lt; <a class="el" href="classsmacc_1_1SmaccMoveBaseActionClient.html">smacc::SmaccMoveBaseActionClient</a>, <a class="el" href="classNavigationOrthogonal.html">NavigationOrthogonal</a> &gt;, <a class="el" href="structSsrFPatternForward2.html">SsrFPatternForward2</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSsrFPatternRotate2.html#abd351e2ecdac7b34778f5b4e9fbeda9b">reactions</a></td></tr>
-<tr class="separator:abd351e2ecdac7b34778f5b4e9fbeda9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7415aa59cf273cef36f62fe1a796bb48"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classsmacc_1_1transition.html">smacc::transition</a>&lt; EvActionSucceeded&lt; <a class="el" href="classsmacc_1_1ClMoveBaseZ.html">smacc::ClMoveBaseZ</a>, <a class="el" href="classOrNavigation.html">OrNavigation</a> &gt;, <a class="el" href="structSsrFPatternForward2.html">SsrFPatternForward2</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSsrFPatternRotate2.html#a7415aa59cf273cef36f62fe1a796bb48">reactions</a></td></tr>
+<tr class="separator:a7415aa59cf273cef36f62fe1a796bb48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classsmacc_1_1SmaccState"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classsmacc_1_1SmaccState')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classsmacc_1_1SmaccState.html">smacc::SmaccState&lt; SsrFPatternRotate2, SS &gt;</a></td></tr>
 <tr class="memitem:a9953ba0428a8c46f7d72c70bc3f87db4 inherit pub_types_classsmacc_1_1SmaccState"><td class="memItemLeft" align="right" valign="top">typedef SS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccState.html#a9953ba0428a8c46f7d72c70bc3f87db4">TContext</a></td></tr>
 <tr class="separator:a9953ba0428a8c46f7d72c70bc3f87db4 inherit pub_types_classsmacc_1_1SmaccState"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -250,12 +250,12 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock">
 <p>Definition at line <a class="el" href="ssr__fpattern__rotate__2_8h_source.html#l00001">1</a> of file <a class="el" href="ssr__fpattern__rotate__2_8h_source.html">ssr_fpattern_rotate_2.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="abd351e2ecdac7b34778f5b4e9fbeda9b"></a>
+<a class="anchor" id="a7415aa59cf273cef36f62fe1a796bb48"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classsmacc_1_1transition.html">smacc::transition</a>&lt;EvActionSucceeded&lt;<a class="el" href="classsmacc_1_1SmaccMoveBaseActionClient.html">smacc::SmaccMoveBaseActionClient</a>, <a class="el" href="classNavigationOrthogonal.html">NavigationOrthogonal</a>&gt;, <a class="el" href="structSsrFPatternForward2.html">SsrFPatternForward2</a>&gt; <a class="el" href="structSsrFPatternRotate2.html#abd351e2ecdac7b34778f5b4e9fbeda9b">SsrFPatternRotate2::reactions</a></td>
+          <td class="memname">typedef <a class="el" href="classsmacc_1_1transition.html">smacc::transition</a>&lt;EvActionSucceeded&lt;<a class="el" href="classsmacc_1_1ClMoveBaseZ.html">smacc::ClMoveBaseZ</a>, <a class="el" href="classOrNavigation.html">OrNavigation</a>&gt;, <a class="el" href="structSsrFPatternForward2.html">SsrFPatternForward2</a>&gt; <a class="el" href="structSsrFPatternRotate2.html#a7415aa59cf273cef36f62fe1a796bb48">SsrFPatternRotate2::reactions</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -287,7 +287,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="ssr__fpattern__rotate__2_8h_source.html#l00007">7</a> of file <a class="el" href="ssr__fpattern__rotate__2_8h_source.html">ssr_fpattern_rotate_2.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  {</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordtype">float</span> angle = 0;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">if</span> (SS::direction() == TDirection::LEFT)</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;      angle = -90;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      angle = 90;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    static_configure&lt;NavigationOrthogonal, CbRotate&gt;(angle);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    static_configure&lt;ToolOrthogonal, CbToolStop&gt;();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  }</div></div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  {</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordtype">float</span> angle = 0;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">if</span> (SS::direction() == TDirection::LEFT)</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;      angle = -90;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      angle = 90;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    static_configure&lt;OrNavigation, CbRotate&gt;(angle);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    static_configure&lt;OrTool, CbToolStop&gt;();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="af062537a9565259e197c1241c9c9d9b0"></a>

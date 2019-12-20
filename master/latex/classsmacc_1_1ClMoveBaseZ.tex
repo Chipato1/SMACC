@@ -1,0 +1,265 @@
+\hypertarget{classsmacc_1_1ClMoveBaseZ}{}\section{smacc\+:\+:Cl\+Move\+BaseZ Class Reference}
+\label{classsmacc_1_1ClMoveBaseZ}\index{smacc\+::\+Cl\+Move\+BaseZ@{smacc\+::\+Cl\+Move\+BaseZ}}
+
+
+{\ttfamily \#include $<$move\+\_\+base\+\_\+action\+\_\+client.\+h$>$}
+
+
+
+Inheritance diagram for smacc\+:\+:Cl\+Move\+BaseZ\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classsmacc_1_1ClMoveBaseZ__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+:\+:Cl\+Move\+BaseZ\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1ClMoveBaseZ__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classsmacc_1_1SmaccActionClientBase}{Smacc\+Action\+Client\+Base}$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::\hyperlink{classsmacc_1_1ClMoveBaseZ_a0389d198a678c4561d7ac7abca76f143}{Result\+Const\+Ptr} \hyperlink{classsmacc_1_1ClMoveBaseZ_a0389d198a678c4561d7ac7abca76f143}{Result\+Const\+Ptr}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc_1_1ClMoveBaseZ_ab8c94cd18bdd7ca437d5ad37483271b4}{Cl\+Move\+BaseZ} ()
+\item 
+virtual void \hyperlink{classsmacc_1_1ClMoveBaseZ_a0eb8e4a0e80456fa534bbef7b2e330a5}{initialize} () override
+\item 
+virtual std\+::string \hyperlink{classsmacc_1_1ClMoveBaseZ_aa0292ad4bf6ddd4591d239c71ae0d06a}{get\+Name} () const override
+\item 
+virtual \hyperlink{classsmacc_1_1ClMoveBaseZ_a74912dd617e43a30376c9c94ab522ca0}{$\sim$\+Cl\+Move\+BaseZ} ()
+\item 
+{\footnotesize template$<$typename T\+Derived , typename T\+Object\+Tag $>$ }\\void \hyperlink{classsmacc_1_1ClMoveBaseZ_a35b43d1746802c1180baf14b27f7302a}{assign\+To\+Orthogonal} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc__planner__switcher_1_1PlannerSwitcher}{smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher} $>$ \hyperlink{classsmacc_1_1ClMoveBaseZ_a1a20609e1b4a9406cd6cece0d74acfe5}{planner\+Switcher\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1WaypointNavigator}{smacc\+::\+Waypoint\+Navigator} $>$ \hyperlink{classsmacc_1_1ClMoveBaseZ_a9df38a2b5fb0e0ed23a00d66fb9b9c20}{waypoints\+Navigator\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classsmacc_1_1SmaccActionClientBase}{Smacc\+Action\+Client\+Base}$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$ \hyperlink{classsmacc_1_1ClMoveBaseZ_a87baee189885db32480cb8f90f425528}{Base}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::function$<$ void(int index)$>$ \hyperlink{classsmacc_1_1ClMoveBaseZ_a085a93e68532a6c66e9499d9a1318668}{post\+Way\+Point\+Event}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file move\+\_\+base\+\_\+action\+\_\+client.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{smacc\+::\+Cl\+Move\+BaseZ@{smacc\+::\+Cl\+Move\+BaseZ}!Base@{Base}}
+\index{Base@{Base}!smacc\+::\+Cl\+Move\+BaseZ@{smacc\+::\+Cl\+Move\+BaseZ}}
+\subsubsection[{\texorpdfstring{Base}{Base}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Smacc\+Action\+Client\+Base}$<$move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action$>$ {\bf smacc\+::\+Cl\+Move\+Base\+Z\+::\+Base}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1ClMoveBaseZ_a87baee189885db32480cb8f90f425528}{}\label{classsmacc_1_1ClMoveBaseZ_a87baee189885db32480cb8f90f425528}
+
+
+Definition at line 20 of file move\+\_\+base\+\_\+action\+\_\+client.\+h.
+
+\index{smacc\+::\+Cl\+Move\+BaseZ@{smacc\+::\+Cl\+Move\+BaseZ}!Result\+Const\+Ptr@{Result\+Const\+Ptr}}
+\index{Result\+Const\+Ptr@{Result\+Const\+Ptr}!smacc\+::\+Cl\+Move\+BaseZ@{smacc\+::\+Cl\+Move\+BaseZ}}
+\subsubsection[{\texorpdfstring{Result\+Const\+Ptr}{ResultConstPtr}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Smacc\+Action\+Client\+Base}$<$move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action$>$\+::{\bf Result\+Const\+Ptr} {\bf smacc\+::\+Cl\+Move\+Base\+Z\+::\+Result\+Const\+Ptr}}\hypertarget{classsmacc_1_1ClMoveBaseZ_a0389d198a678c4561d7ac7abca76f143}{}\label{classsmacc_1_1ClMoveBaseZ_a0389d198a678c4561d7ac7abca76f143}
+
+
+Definition at line 23 of file move\+\_\+base\+\_\+action\+\_\+client.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+::\+Cl\+Move\+BaseZ@{smacc\+::\+Cl\+Move\+BaseZ}!Cl\+Move\+BaseZ@{Cl\+Move\+BaseZ}}
+\index{Cl\+Move\+BaseZ@{Cl\+Move\+BaseZ}!smacc\+::\+Cl\+Move\+BaseZ@{smacc\+::\+Cl\+Move\+BaseZ}}
+\subsubsection[{\texorpdfstring{Cl\+Move\+Base\+Z()}{ClMoveBaseZ()}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+::\+Cl\+Move\+Base\+Z\+::\+Cl\+Move\+BaseZ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1ClMoveBaseZ_ab8c94cd18bdd7ca437d5ad37483271b4}{}\label{classsmacc_1_1ClMoveBaseZ_ab8c94cd18bdd7ca437d5ad37483271b4}
+
+
+Definition at line 14 of file smacc\+\_\+navigation\+\_\+plugin.\+cpp.
+
+
+
+References waypoints\+Navigator\+\_\+.
+
+
+\begin{DoxyCode}
+15 \{
+16     \textcolor{comment}{//ROS\_INFO("Smacc Move Base Action Client");}
+17     \hyperlink{classsmacc_1_1ClMoveBaseZ_a9df38a2b5fb0e0ed23a00d66fb9b9c20}{waypointsNavigator\_} = std::make\_shared<smacc::WaypointNavigator>();
+18 \}
+\end{DoxyCode}
+\index{smacc\+::\+Cl\+Move\+BaseZ@{smacc\+::\+Cl\+Move\+BaseZ}!````~Cl\+Move\+BaseZ@{$\sim$\+Cl\+Move\+BaseZ}}
+\index{````~Cl\+Move\+BaseZ@{$\sim$\+Cl\+Move\+BaseZ}!smacc\+::\+Cl\+Move\+BaseZ@{smacc\+::\+Cl\+Move\+BaseZ}}
+\subsubsection[{\texorpdfstring{$\sim$\+Cl\+Move\+Base\+Z()}{~ClMoveBaseZ()}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+::\+Cl\+Move\+Base\+Z\+::$\sim$\+Cl\+Move\+BaseZ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classsmacc_1_1ClMoveBaseZ_a74912dd617e43a30376c9c94ab522ca0}{}\label{classsmacc_1_1ClMoveBaseZ_a74912dd617e43a30376c9c94ab522ca0}
+
+
+Definition at line 31 of file smacc\+\_\+navigation\+\_\+plugin.\+cpp.
+
+
+
+References P\+L\+U\+G\+I\+N\+L\+I\+B\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+C\+L\+A\+S\+S().
+
+
+\begin{DoxyCode}
+32 \{
+33 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1ClMoveBaseZ_a74912dd617e43a30376c9c94ab522ca0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::\+Cl\+Move\+BaseZ@{smacc\+::\+Cl\+Move\+BaseZ}!assign\+To\+Orthogonal@{assign\+To\+Orthogonal}}
+\index{assign\+To\+Orthogonal@{assign\+To\+Orthogonal}!smacc\+::\+Cl\+Move\+BaseZ@{smacc\+::\+Cl\+Move\+BaseZ}}
+\subsubsection[{\texorpdfstring{assign\+To\+Orthogonal()}{assignToOrthogonal()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived , typename T\+Object\+Tag $>$ void smacc\+::\+Cl\+Move\+Base\+Z\+::assign\+To\+Orthogonal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1ClMoveBaseZ_a35b43d1746802c1180baf14b27f7302a}{}\label{classsmacc_1_1ClMoveBaseZ_a35b43d1746802c1180baf14b27f7302a}
+
+
+Definition at line 17 of file move\+\_\+base\+\_\+action\+\_\+client\+\_\+impl.\+h.
+
+
+\begin{DoxyCode}
+18 \{
+19     \hyperlink{classsmacc_1_1SmaccActionClientBase_a84bea7f9efe0829272c2221651553260}{SmaccActionClientBase<move\_base\_msgs::MoveBaseAction>::assignToOrthogonal}
+      <TDerived, TObjectTag>();
+20     \hyperlink{classsmacc_1_1ClMoveBaseZ_a9df38a2b5fb0e0ed23a00d66fb9b9c20}{waypointsNavigator\_}->template assignToOrthogonal<TDerived, TObjectTag>(\textcolor{keyword}{this});
+21 \}
+\end{DoxyCode}
+\index{smacc\+::\+Cl\+Move\+BaseZ@{smacc\+::\+Cl\+Move\+BaseZ}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!smacc\+::\+Cl\+Move\+BaseZ@{smacc\+::\+Cl\+Move\+BaseZ}}
+\subsubsection[{\texorpdfstring{get\+Name() const override}{getName() const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::\+Cl\+Move\+Base\+Z\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1ClMoveBaseZ_aa0292ad4bf6ddd4591d239c71ae0d06a}{}\label{classsmacc_1_1ClMoveBaseZ_aa0292ad4bf6ddd4591d239c71ae0d06a}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{smacc\+::\+I\+Smacc\+Client}.
+
+
+
+Definition at line 20 of file smacc\+\_\+navigation\+\_\+plugin.\+cpp.
+
+
+\begin{DoxyCode}
+21 \{
+22     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"MOVE BASE ACTION CLIENT"};
+23 \}
+\end{DoxyCode}
+\index{smacc\+::\+Cl\+Move\+BaseZ@{smacc\+::\+Cl\+Move\+BaseZ}!initialize@{initialize}}
+\index{initialize@{initialize}!smacc\+::\+Cl\+Move\+BaseZ@{smacc\+::\+Cl\+Move\+BaseZ}}
+\subsubsection[{\texorpdfstring{initialize() override}{initialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Cl\+Move\+Base\+Z\+::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1ClMoveBaseZ_a0eb8e4a0e80456fa534bbef7b2e330a5}{}\label{classsmacc_1_1ClMoveBaseZ_a0eb8e4a0e80456fa534bbef7b2e330a5}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccActionClientBase_a0224d7482b50a706f99bd280495ef1af}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$}.
+
+
+
+Definition at line 25 of file smacc\+\_\+navigation\+\_\+plugin.\+cpp.
+
+
+
+References smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::initialize(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::name\+\_\+, and planner\+Switcher\+\_\+.
+
+
+\begin{DoxyCode}
+26 \{
+27     \hyperlink{classsmacc_1_1ClMoveBaseZ_a1a20609e1b4a9406cd6cece0d74acfe5}{plannerSwitcher\_} = std::make\_shared<smacc\_planner\_switcher::PlannerSwitcher>(*(this->
+      \hyperlink{classsmacc_1_1SmaccActionClientBase_a8464e3ec514e57333339fc538a2203f4}{name\_}));
+28     \hyperlink{classsmacc_1_1SmaccActionClientBase_a0224d7482b50a706f99bd280495ef1af}{SmaccActionClientBase<move\_base\_msgs::MoveBaseAction>::initialize}
+      ();
+29 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1ClMoveBaseZ_a0eb8e4a0e80456fa534bbef7b2e330a5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+::\+Cl\+Move\+BaseZ@{smacc\+::\+Cl\+Move\+BaseZ}!planner\+Switcher\+\_\+@{planner\+Switcher\+\_\+}}
+\index{planner\+Switcher\+\_\+@{planner\+Switcher\+\_\+}!smacc\+::\+Cl\+Move\+BaseZ@{smacc\+::\+Cl\+Move\+BaseZ}}
+\subsubsection[{\texorpdfstring{planner\+Switcher\+\_\+}{plannerSwitcher_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf smacc\+\_\+planner\+\_\+switcher\+::\+Planner\+Switcher}$>$ smacc\+::\+Cl\+Move\+Base\+Z\+::planner\+Switcher\+\_\+}\hypertarget{classsmacc_1_1ClMoveBaseZ_a1a20609e1b4a9406cd6cece0d74acfe5}{}\label{classsmacc_1_1ClMoveBaseZ_a1a20609e1b4a9406cd6cece0d74acfe5}
+
+
+Definition at line 25 of file move\+\_\+base\+\_\+action\+\_\+client.\+h.
+
+
+
+Referenced by initialize(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Undo\+Path\+Backwards\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Rotate\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Global\+Position\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Forward\+::on\+Entry(), and sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards\+::on\+Entry().
+
+\index{smacc\+::\+Cl\+Move\+BaseZ@{smacc\+::\+Cl\+Move\+BaseZ}!post\+Way\+Point\+Event@{post\+Way\+Point\+Event}}
+\index{post\+Way\+Point\+Event@{post\+Way\+Point\+Event}!smacc\+::\+Cl\+Move\+BaseZ@{smacc\+::\+Cl\+Move\+BaseZ}}
+\subsubsection[{\texorpdfstring{post\+Way\+Point\+Event}{postWayPointEvent}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::function$<$void(int index)$>$ smacc\+::\+Cl\+Move\+Base\+Z\+::post\+Way\+Point\+Event\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1ClMoveBaseZ_a085a93e68532a6c66e9499d9a1318668}{}\label{classsmacc_1_1ClMoveBaseZ_a085a93e68532a6c66e9499d9a1318668}
+
+
+Definition at line 41 of file move\+\_\+base\+\_\+action\+\_\+client.\+h.
+
+\index{smacc\+::\+Cl\+Move\+BaseZ@{smacc\+::\+Cl\+Move\+BaseZ}!waypoints\+Navigator\+\_\+@{waypoints\+Navigator\+\_\+}}
+\index{waypoints\+Navigator\+\_\+@{waypoints\+Navigator\+\_\+}!smacc\+::\+Cl\+Move\+BaseZ@{smacc\+::\+Cl\+Move\+BaseZ}}
+\subsubsection[{\texorpdfstring{waypoints\+Navigator\+\_\+}{waypointsNavigator_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf smacc\+::\+Waypoint\+Navigator}$>$ smacc\+::\+Cl\+Move\+Base\+Z\+::waypoints\+Navigator\+\_\+}\hypertarget{classsmacc_1_1ClMoveBaseZ_a9df38a2b5fb0e0ed23a00d66fb9b9c20}{}\label{classsmacc_1_1ClMoveBaseZ_a9df38a2b5fb0e0ed23a00d66fb9b9c20}
+
+
+Definition at line 27 of file move\+\_\+base\+\_\+action\+\_\+client.\+h.
+
+
+
+Referenced by Cl\+Move\+Base\+Z().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+client\+\_\+library/smacc\+\_\+navigation/smacc\+\_\+navigation\+\_\+plugin/include/smacc\+\_\+navigation\+\_\+plugin/\hyperlink{move__base__action__client_8h}{move\+\_\+base\+\_\+action\+\_\+client.\+h}\item 
+smacc\+\_\+client\+\_\+library/smacc\+\_\+navigation/smacc\+\_\+navigation\+\_\+plugin/include/smacc\+\_\+navigation\+\_\+plugin/impl/\hyperlink{move__base__action__client__impl_8h}{move\+\_\+base\+\_\+action\+\_\+client\+\_\+impl.\+h}\item 
+smacc\+\_\+client\+\_\+library/smacc\+\_\+navigation/smacc\+\_\+navigation\+\_\+plugin/src/\hyperlink{smacc__navigation__plugin_8cpp}{smacc\+\_\+navigation\+\_\+plugin.\+cpp}\end{DoxyCompactItemize}

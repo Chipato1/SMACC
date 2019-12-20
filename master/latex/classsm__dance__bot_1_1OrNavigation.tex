@@ -1,0 +1,98 @@
+\hypertarget{classsm__dance__bot_1_1OrNavigation}{}\section{sm\+\_\+dance\+\_\+bot\+:\+:Or\+Navigation Class Reference}
+\label{classsm__dance__bot_1_1OrNavigation}\index{sm\+\_\+dance\+\_\+bot\+::\+Or\+Navigation@{sm\+\_\+dance\+\_\+bot\+::\+Or\+Navigation}}
+
+
+{\ttfamily \#include $<$or\+\_\+navigation.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+dance\+\_\+bot\+:\+:Or\+Navigation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classsm__dance__bot_1_1OrNavigation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+dance\+\_\+bot\+:\+:Or\+Navigation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot_1_1OrNavigation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classsm__dance__bot_1_1OrNavigation_a9f87c78f5af67024c9eda25097a135ac}{on\+Initialize} () override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file or\+\_\+navigation.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+::\+Or\+Navigation@{sm\+\_\+dance\+\_\+bot\+::\+Or\+Navigation}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!sm\+\_\+dance\+\_\+bot\+::\+Or\+Navigation@{sm\+\_\+dance\+\_\+bot\+::\+Or\+Navigation}}
+\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+dance\+\_\+bot\+::\+Or\+Navigation\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__dance__bot_1_1OrNavigation_a9f87c78f5af67024c9eda25097a135ac}{}\label{classsm__dance__bot_1_1OrNavigation_a9f87c78f5af67024c9eda25097a135ac}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+
+
+
+Definition at line 12 of file or\+\_\+navigation.\+h.
+
+
+
+References smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::initialize(), and smacc\+::\+Orthogonal\+::requires\+Component().
+
+
+\begin{DoxyCode}
+13     \{
+14         \textcolor{comment}{//what we had}
+15         \textcolor{comment}{//auto client = this->createClient<smacc::ClMoveBaseZ>(23,24);}
+16 
+17         \textcolor{keyword}{auto} movebaseClient = this->createClient<OrNavigation, smacc::ClMoveBaseZ>();
+18         \textcolor{comment}{//auto client = createClient<smacc::ClMoveBaseZ>(this, 23, 234);}
+19         \textcolor{comment}{//auto client = CREATE\_CLIENT(smacc::ClMoveBaseZ, 23, 234);}
+20 
+21         movebaseClient->name\_ = \textcolor{stringliteral}{"move\_base"};
+22         movebaseClient->initialize();
+23 
+24         \hyperlink{classsmacc__odom__tracker_1_1OdomTracker}{smacc\_odom\_tracker::OdomTracker} *odomtracker;
+25         this->\hyperlink{classsmacc_1_1Orthogonal_a098b5be0f89d0911afc44c10b756ef2a}{requiresComponent}(odomtracker);
+26         odomtracker->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a4b3ff3f659474cb7bdd6b4b54dcc0a53}{initialize}(\textcolor{stringliteral}{"/"});
+27 
+28         \textcolor{comment}{// auto odomtracker = movebaseClient->createComponent<OdomTracker>();}
+29         \textcolor{comment}{// odomtracker->initialize("/");}
+30     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot_1_1OrNavigation_a9f87c78f5af67024c9eda25097a135ac_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/orthogonals/\hyperlink{smacc__sm__reference__library_2sm__dance__bot_2include_2sm__dance__bot_2orthogonals_2or__navigation_8h}{or\+\_\+navigation.\+h}\end{DoxyCompactItemize}

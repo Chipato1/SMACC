@@ -1,7 +1,7 @@
 <map id="smacc/include/smacc/client_bases/smacc_service_client.h" name="smacc/include/smacc/client_bases/smacc_service_client.h">
-<area shape="rect" id="node2" href="$service3__client_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/client_behaviors/service\l_client/service3_client.h" alt="" coords="147,109,326,195"/>
-<area shape="rect" id="node3" href="$service3__behavior_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/client_behaviors/service\l_client/service3_behavior.h" alt="" coords="5,243,199,328"/>
-<area shape="rect" id="node4" href="$sm__dance__bot_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/sm_dance_bot.h" alt="" coords="152,376,321,447"/>
-<area shape="rect" id="node6" href="$service3__orthogonal_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/orthogonals/service3_orthogonal.h" alt="" coords="273,250,520,321"/>
-<area shape="rect" id="node5" href="$sm__dance__bot_8cpp.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/src/sm_dance_bot.cpp" alt="" coords="151,495,322,551"/>
+<area shape="rect" id="node2" href="$cl__service3_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/clients/cl_service3.h" alt="" coords="147,109,316,180"/>
+<area shape="rect" id="node3" href="$cb__service3_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/client_behaviors/service3\l_client_behaviors/cb_service3.h" alt="" coords="5,228,228,313"/>
+<area shape="rect" id="node6" href="$or__service3_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/orthogonals/or_service3.h" alt="" coords="252,235,443,306"/>
+<area shape="rect" id="node4" href="$sm__dance__bot_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/sm_dance_bot.h" alt="" coords="147,361,316,432"/>
+<area shape="rect" id="node5" href="$sm__dance__bot_8cpp.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/src/sm_dance_bot.cpp" alt="" coords="146,480,317,536"/>
 </map>

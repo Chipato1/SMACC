@@ -34,7 +34,7 @@ void \hyperlink{structsm__atomic_1_1CbState1_ae27f060a983c1128d3c928eed45eae6b}{
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $\ast$ \hyperlink{structsm__atomic_1_1CbState1_a55e7ec48d2662baa9c40ee3c54fb5a64}{move\+Base\+Client\+\_\+}
+\hyperlink{classsmacc_1_1ClMoveBaseZ}{smacc\+::\+Cl\+Move\+BaseZ} $\ast$ \hyperlink{structsm__atomic_1_1CbState1_a8b4b01655654c03cd1f01ad7cf3feb02}{move\+Base\+Client\+\_\+}
 \end{DoxyCompactItemize}
 
 
@@ -70,7 +70,7 @@ Referenced by on\+Entry().
 19     \{
 20         geometry\_msgs::PoseStamped radialStartPose;
 21 
-22         smacc::SmaccMoveBaseActionClient::Goal goal;
+22         smacc::ClMoveBaseZ::Goal goal;
 23         goal.target\_pose.header.stamp = ros::Time::now();
 24 
 25         goal.target\_pose = radialStartPose;
@@ -79,7 +79,7 @@ Referenced by on\+Entry().
 28         goal.target\_pose.pose.orientation =
 29             tf::createQuaternionMsgFromRollPitchYaw(0, 0, M\_PI);
 30 
-31         \hyperlink{structsm__atomic_1_1CbState1_a55e7ec48d2662baa9c40ee3c54fb5a64}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
+31         \hyperlink{structsm__atomic_1_1CbState1_a8b4b01655654c03cd1f01ad7cf3feb02}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
 32     \}
 \end{DoxyCode}
 
@@ -129,7 +129,7 @@ References go\+To\+End\+Point(), and smacc\+::\+Smacc\+Client\+Behavior\+::requi
 \begin{DoxyCode}
 12     \{
 13         ROS\_INFO(\textcolor{stringliteral}{"Entering State1"});
-14         this->\hyperlink{classsmacc_1_1SmaccClientBehavior_adc21bbd45d36bd81ca6f778ed161807a}{requiresClient}(\hyperlink{structsm__atomic_1_1CbState1_a55e7ec48d2662baa9c40ee3c54fb5a64}{moveBaseClient\_});
+14         this->\hyperlink{classsmacc_1_1SmaccClientBehavior_adc21bbd45d36bd81ca6f778ed161807a}{requiresClient}(\hyperlink{structsm__atomic_1_1CbState1_a8b4b01655654c03cd1f01ad7cf3feb02}{moveBaseClient\_});
 15         \hyperlink{structsm__atomic_1_1CbState1_ae27f060a983c1128d3c928eed45eae6b}{goToEndPoint}();
 16     \}
 \end{DoxyCode}
@@ -150,7 +150,7 @@ Here is the call graph for this function\+:
 \subsection{Member Data Documentation}
 \index{sm\+\_\+atomic\+::\+Cb\+State1@{sm\+\_\+atomic\+::\+Cb\+State1}!move\+Base\+Client\+\_\+@{move\+Base\+Client\+\_\+}}
 \index{move\+Base\+Client\+\_\+@{move\+Base\+Client\+\_\+}!sm\+\_\+atomic\+::\+Cb\+State1@{sm\+\_\+atomic\+::\+Cb\+State1}}
-\subsubsection[{\texorpdfstring{move\+Base\+Client\+\_\+}{moveBaseClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}$\ast$ sm\+\_\+atomic\+::\+Cb\+State1\+::move\+Base\+Client\+\_\+}\hypertarget{structsm__atomic_1_1CbState1_a55e7ec48d2662baa9c40ee3c54fb5a64}{}\label{structsm__atomic_1_1CbState1_a55e7ec48d2662baa9c40ee3c54fb5a64}
+\subsubsection[{\texorpdfstring{move\+Base\+Client\+\_\+}{moveBaseClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+::\+Cl\+Move\+BaseZ}$\ast$ sm\+\_\+atomic\+::\+Cb\+State1\+::move\+Base\+Client\+\_\+}\hypertarget{structsm__atomic_1_1CbState1_a8b4b01655654c03cd1f01ad7cf3feb02}{}\label{structsm__atomic_1_1CbState1_a8b4b01655654c03cd1f01ad7cf3feb02}
 
 
 Definition at line 9 of file cb\+\_\+state\+\_\+1.\+h.

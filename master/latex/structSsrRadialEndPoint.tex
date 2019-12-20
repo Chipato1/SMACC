@@ -27,7 +27,7 @@ Collaboration diagram for Ssr\+Radial\+End\+Point\+:
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Succeeded$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, \hyperlink{classNavigationOrthogonal}{Navigation\+Orthogonal} $>$, \hyperlink{structSsrRadialReturn}{Ssr\+Radial\+Return}, \hyperlink{classSUCCESS}{S\+U\+C\+C\+E\+SS} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Aborted$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, \hyperlink{classNavigationOrthogonal}{Navigation\+Orthogonal} $>$, \hyperlink{structSsrRadialRotate}{Ssr\+Radial\+Rotate}, \hyperlink{classABORT}{A\+B\+O\+RT} $>$ $>$ \hyperlink{structSsrRadialEndPoint_aaa701389e60073938c8c33132baaf9c4}{reactions}
+typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Succeeded$<$ \hyperlink{classsmacc_1_1ClMoveBaseZ}{smacc\+::\+Cl\+Move\+BaseZ}, \hyperlink{classOrNavigation}{Or\+Navigation} $>$, \hyperlink{structSsrRadialReturn}{Ssr\+Radial\+Return}, \hyperlink{classSUCCESS}{S\+U\+C\+C\+E\+SS} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Aborted$<$ \hyperlink{classsmacc_1_1ClMoveBaseZ}{smacc\+::\+Cl\+Move\+BaseZ}, \hyperlink{classOrNavigation}{Or\+Navigation} $>$, \hyperlink{structSsrRadialRotate}{Ssr\+Radial\+Rotate}, \hyperlink{classABORT}{A\+B\+O\+RT} $>$ $>$ \hyperlink{structSsrRadialEndPoint_ae5df9b6ac600ded3e01032e784941959}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -52,7 +52,7 @@ Definition at line 1 of file ssr\+\_\+radial\+\_\+end\+\_\+point.\+h.
 \subsection{Member Typedef Documentation}
 \index{Ssr\+Radial\+End\+Point@{Ssr\+Radial\+End\+Point}!reactions@{reactions}}
 \index{reactions@{reactions}!Ssr\+Radial\+End\+Point@{Ssr\+Radial\+End\+Point}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ {\bf smacc\+::transition}$<$Ev\+Action\+Succeeded$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, {\bf Navigation\+Orthogonal}$>$, {\bf Ssr\+Radial\+Return}, {\bf S\+U\+C\+C\+E\+SS}$>$, {\bf smacc\+::transition}$<$Ev\+Action\+Aborted$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, {\bf Navigation\+Orthogonal}$>$, {\bf Ssr\+Radial\+Rotate}, {\bf A\+B\+O\+RT}$>$ $>$ {\bf Ssr\+Radial\+End\+Point\+::reactions}}\hypertarget{structSsrRadialEndPoint_aaa701389e60073938c8c33132baaf9c4}{}\label{structSsrRadialEndPoint_aaa701389e60073938c8c33132baaf9c4}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ {\bf smacc\+::transition}$<$Ev\+Action\+Succeeded$<${\bf smacc\+::\+Cl\+Move\+BaseZ}, {\bf Or\+Navigation}$>$, {\bf Ssr\+Radial\+Return}, {\bf S\+U\+C\+C\+E\+SS}$>$, {\bf smacc\+::transition}$<$Ev\+Action\+Aborted$<${\bf smacc\+::\+Cl\+Move\+BaseZ}, {\bf Or\+Navigation}$>$, {\bf Ssr\+Radial\+Rotate}, {\bf A\+B\+O\+RT}$>$ $>$ {\bf Ssr\+Radial\+End\+Point\+::reactions}}\hypertarget{structSsrRadialEndPoint_ae5df9b6ac600ded3e01032e784941959}{}\label{structSsrRadialEndPoint_ae5df9b6ac600ded3e01032e784941959}
 
 
 Definition at line 8 of file ssr\+\_\+radial\+\_\+end\+\_\+point.\+h.
@@ -75,8 +75,8 @@ Definition at line 10 of file ssr\+\_\+radial\+\_\+end\+\_\+point.\+h.
 \begin{DoxyCode}
 11   \{
 12     ROS\_INFO(\textcolor{stringliteral}{"ssr radial end point, distance in meters: %lf"}, SS::ray\_length\_meters());
-13     static\_configure<NavigationOrthogonal, CbNavigateForward>(SS::ray\_length\_meters());
-14     static\_configure<ToolOrthogonal, CbToolStop>();
+13     static\_configure<OrNavigation, CbNavigateForward>(SS::ray\_length\_meters());
+14     static\_configure<OrTool, CbToolStop>();
 15   \}
 \end{DoxyCode}
 \index{Ssr\+Radial\+End\+Point@{Ssr\+Radial\+End\+Point}!on\+Initialize@{on\+Initialize}}

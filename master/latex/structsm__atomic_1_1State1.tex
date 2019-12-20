@@ -27,7 +27,7 @@ Collaboration diagram for sm\+\_\+atomic\+:\+:State1\+:
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ \hyperlink{structsmacc_1_1EvActionSucceeded}{smacc\+::\+Ev\+Action\+Succeeded}$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, \hyperlink{classsm__atomic_1_1NavigationOrthogonal}{Navigation\+Orthogonal} $>$, \hyperlink{structsm__atomic_1_1State2}{State2} $>$ $>$ \hyperlink{structsm__atomic_1_1State1_a9615e991bc5dfcfebc8b9746f0e174d8}{reactions}
+typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ \hyperlink{structsmacc_1_1EvActionSucceeded}{smacc\+::\+Ev\+Action\+Succeeded}$<$ \hyperlink{classsmacc_1_1ClMoveBaseZ}{smacc\+::\+Cl\+Move\+BaseZ}, \hyperlink{classsm__atomic_1_1OrNavigation}{Or\+Navigation} $>$, \hyperlink{structsm__atomic_1_1State2}{State2} $>$ $>$ \hyperlink{structsm__atomic_1_1State1_a8fd5bedce645146375953c898002d051}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -52,7 +52,7 @@ Definition at line 6 of file st\+\_\+state\+\_\+1.\+h.
 \subsection{Member Typedef Documentation}
 \index{sm\+\_\+atomic\+::\+State1@{sm\+\_\+atomic\+::\+State1}!reactions@{reactions}}
 \index{reactions@{reactions}!sm\+\_\+atomic\+::\+State1@{sm\+\_\+atomic\+::\+State1}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<${\bf smacc\+::transition}$<${\bf smacc\+::\+Ev\+Action\+Succeeded}$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, {\bf Navigation\+Orthogonal}$>$, {\bf State2}$>$ $>$ {\bf sm\+\_\+atomic\+::\+State1\+::reactions}}\hypertarget{structsm__atomic_1_1State1_a9615e991bc5dfcfebc8b9746f0e174d8}{}\label{structsm__atomic_1_1State1_a9615e991bc5dfcfebc8b9746f0e174d8}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<${\bf smacc\+::transition}$<${\bf smacc\+::\+Ev\+Action\+Succeeded}$<${\bf smacc\+::\+Cl\+Move\+BaseZ}, {\bf Or\+Navigation}$>$, {\bf State2}$>$ $>$ {\bf sm\+\_\+atomic\+::\+State1\+::reactions}}\hypertarget{structsm__atomic_1_1State1_a8fd5bedce645146375953c898002d051}{}\label{structsm__atomic_1_1State1_a8fd5bedce645146375953c898002d051}
 
 
 Definition at line 9 of file st\+\_\+state\+\_\+1.\+h.
@@ -74,7 +74,7 @@ Definition at line 13 of file st\+\_\+state\+\_\+1.\+h.
 
 \begin{DoxyCode}
 14     \{
-15         static\_configure<NavigationOrthogonal, CbState1>();
+15         static\_configure<OrNavigation, CbState1>();
 16     \}
 \end{DoxyCode}
 \index{sm\+\_\+atomic\+::\+State1@{sm\+\_\+atomic\+::\+State1}!on\+Initialize@{on\+Initialize}}

@@ -120,8 +120,8 @@ Collaboration diagram for SsrFPatternForward2:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ac0a963e017b7e9b15e6dd7c1b063d453"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classsmacc_1_1transition.html">smacc::transition</a>&lt; EvActionSucceeded&lt; <a class="el" href="classsmacc_1_1SmaccMoveBaseActionClient.html">smacc::SmaccMoveBaseActionClient</a>, <a class="el" href="classNavigationOrthogonal.html">NavigationOrthogonal</a> &gt;, <a class="el" href="structSsrFPatternStartLoop.html">SsrFPatternStartLoop</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSsrFPatternForward2.html#ac0a963e017b7e9b15e6dd7c1b063d453">reactions</a></td></tr>
-<tr class="separator:ac0a963e017b7e9b15e6dd7c1b063d453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc3056f3a7551d387d3c1b8dae279e3b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classsmacc_1_1transition.html">smacc::transition</a>&lt; EvActionSucceeded&lt; <a class="el" href="classsmacc_1_1ClMoveBaseZ.html">smacc::ClMoveBaseZ</a>, <a class="el" href="classOrNavigation.html">OrNavigation</a> &gt;, <a class="el" href="structSsrFPatternStartLoop.html">SsrFPatternStartLoop</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSsrFPatternForward2.html#adc3056f3a7551d387d3c1b8dae279e3b">reactions</a></td></tr>
+<tr class="separator:adc3056f3a7551d387d3c1b8dae279e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classsmacc_1_1SmaccState"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classsmacc_1_1SmaccState')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classsmacc_1_1SmaccState.html">smacc::SmaccState&lt; SsrFPatternForward2, SS &gt;</a></td></tr>
 <tr class="memitem:a9953ba0428a8c46f7d72c70bc3f87db4 inherit pub_types_classsmacc_1_1SmaccState"><td class="memItemLeft" align="right" valign="top">typedef SS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccState.html#a9953ba0428a8c46f7d72c70bc3f87db4">TContext</a></td></tr>
 <tr class="separator:a9953ba0428a8c46f7d72c70bc3f87db4 inherit pub_types_classsmacc_1_1SmaccState"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -250,12 +250,12 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock">
 <p>Definition at line <a class="el" href="ssr__fpattern__forward__2_8h_source.html#l00001">1</a> of file <a class="el" href="ssr__fpattern__forward__2_8h_source.html">ssr_fpattern_forward_2.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="ac0a963e017b7e9b15e6dd7c1b063d453"></a>
+<a class="anchor" id="adc3056f3a7551d387d3c1b8dae279e3b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classsmacc_1_1transition.html">smacc::transition</a>&lt;EvActionSucceeded&lt;<a class="el" href="classsmacc_1_1SmaccMoveBaseActionClient.html">smacc::SmaccMoveBaseActionClient</a>, <a class="el" href="classNavigationOrthogonal.html">NavigationOrthogonal</a>&gt;, <a class="el" href="structSsrFPatternStartLoop.html">SsrFPatternStartLoop</a>&gt; <a class="el" href="structSsrFPatternForward2.html#ac0a963e017b7e9b15e6dd7c1b063d453">SsrFPatternForward2::reactions</a></td>
+          <td class="memname">typedef <a class="el" href="classsmacc_1_1transition.html">smacc::transition</a>&lt;EvActionSucceeded&lt;<a class="el" href="classsmacc_1_1ClMoveBaseZ.html">smacc::ClMoveBaseZ</a>, <a class="el" href="classOrNavigation.html">OrNavigation</a>&gt;, <a class="el" href="structSsrFPatternStartLoop.html">SsrFPatternStartLoop</a>&gt; <a class="el" href="structSsrFPatternForward2.html#adc3056f3a7551d387d3c1b8dae279e3b">SsrFPatternForward2::reactions</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -312,7 +312,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="ssr__fpattern__forward__2_8h_source.html#l00011">11</a> of file <a class="el" href="ssr__fpattern__forward__2_8h_source.html">ssr_fpattern_forward_2.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  {</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">auto</span> &amp;superstate = this-&gt;context&lt;SS&gt;();</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    ROS_INFO(<span class="stringliteral">&quot;[SsrFpattern] Fpattern rotate: SS current iteration: %d/%d&quot;</span>, superstate.iteration_count, superstate.total_iterations());</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    this-&gt;configure&lt;NavigationOrthogonal, CbNavigateForward&gt;(SS::pitch_lenght_meters());</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    this-&gt;configure&lt;ToolOrthogonal, CbToolStop&gt;();</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  }</div></div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  {</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">auto</span> &amp;superstate = this-&gt;context&lt;SS&gt;();</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    ROS_INFO(<span class="stringliteral">&quot;[SsrFpattern] Fpattern rotate: SS current iteration: %d/%d&quot;</span>, superstate.iteration_count, superstate.total_iterations());</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    this-&gt;configure&lt;OrNavigation, CbNavigateForward&gt;(SS::pitch_lenght_meters());</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    this-&gt;configure&lt;OrTool, CbToolStop&gt;();</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>

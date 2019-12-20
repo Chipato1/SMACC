@@ -101,9 +101,9 @@ References smacc\+::\+I\+Smacc\+State\+Machine\+::get\+Orthogonal(), and get\+St
 43     std::shared\_ptr<TOrthogonal> orthogonal;
 44     \textcolor{keywordflow}{if} (this->\hyperlink{classsmacc_1_1ISmaccState_a562bb3f9a3ac16b8be71e4794c9e7523}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_a66a6732a48dbc0bc7a95b57fba5ec980}{getOrthogonal}<TOrthogonal>(orthogonal))
 45     \{
-46         \textcolor{keyword}{auto} smaccBehavior = std::shared\_ptr<TBehavior>(\textcolor{keyword}{new} TBehavior(args...));
-47         smaccBehavior->template assignToOrthogonal<TBehavior, TOrthogonal>();
-48         orthogonal->setStateBehavior(smaccBehavior);
+46         \textcolor{keyword}{auto} clientBehavior = std::shared\_ptr<TBehavior>(\textcolor{keyword}{new} TBehavior(args...));
+47         clientBehavior->template assignToOrthogonal<TBehavior, TOrthogonal>();
+48         orthogonal->addClientBehavior(clientBehavior);
 49     \}
 50     \textcolor{keywordflow}{else}
 51     \{

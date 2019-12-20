@@ -27,7 +27,7 @@ Collaboration diagram for sm\+\_\+dance\+\_\+bot\+:\+:St\+Navigate\+Reverse2\+:
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Succeeded$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, \hyperlink{classsm__dance__bot_1_1NavigationOrthogonal}{Navigation\+Orthogonal} $>$, \hyperlink{structsm__dance__bot_1_1StNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Aborted$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, \hyperlink{classsm__dance__bot_1_1NavigationOrthogonal}{Navigation\+Orthogonal} $>$, \hyperlink{structsm__dance__bot_1_1StNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$ $>$ \hyperlink{structsm__dance__bot_1_1StNavigateReverse2_a2302e6affa2aa33f2cc667a491ac3aba}{reactions}
+typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Succeeded$<$ \hyperlink{classsmacc_1_1ClMoveBaseZ}{smacc\+::\+Cl\+Move\+BaseZ}, \hyperlink{classsm__dance__bot_1_1OrNavigation}{Or\+Navigation} $>$, \hyperlink{structsm__dance__bot_1_1StNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Aborted$<$ \hyperlink{classsmacc_1_1ClMoveBaseZ}{smacc\+::\+Cl\+Move\+BaseZ}, \hyperlink{classsm__dance__bot_1_1OrNavigation}{Or\+Navigation} $>$, \hyperlink{structsm__dance__bot_1_1StNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$ $>$ \hyperlink{structsm__dance__bot_1_1StNavigateReverse2_a072c8736a8ca0c6a9771a6e6cf817ba0}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -52,7 +52,7 @@ Definition at line 4 of file st\+\_\+navigate\+\_\+reverse\+\_\+2.\+h.
 \subsection{Member Typedef Documentation}
 \index{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse2@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse2}!reactions@{reactions}}
 \index{reactions@{reactions}!sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse2@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse2}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ {\bf smacc\+::transition}$<$Ev\+Action\+Succeeded$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, {\bf Navigation\+Orthogonal}$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$, {\bf smacc\+::transition}$<$Ev\+Action\+Aborted$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, {\bf Navigation\+Orthogonal}$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$ $>$ {\bf sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse2\+::reactions}}\hypertarget{structsm__dance__bot_1_1StNavigateReverse2_a2302e6affa2aa33f2cc667a491ac3aba}{}\label{structsm__dance__bot_1_1StNavigateReverse2_a2302e6affa2aa33f2cc667a491ac3aba}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ {\bf smacc\+::transition}$<$Ev\+Action\+Succeeded$<${\bf smacc\+::\+Cl\+Move\+BaseZ}, {\bf Or\+Navigation}$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$, {\bf smacc\+::transition}$<$Ev\+Action\+Aborted$<${\bf smacc\+::\+Cl\+Move\+BaseZ}, {\bf Or\+Navigation}$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$ $>$ {\bf sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse2\+::reactions}}\hypertarget{structsm__dance__bot_1_1StNavigateReverse2_a072c8736a8ca0c6a9771a6e6cf817ba0}{}\label{structsm__dance__bot_1_1StNavigateReverse2_a072c8736a8ca0c6a9771a6e6cf817ba0}
 
 
 Definition at line 15 of file st\+\_\+navigate\+\_\+reverse\+\_\+2.\+h.
@@ -74,9 +74,9 @@ Definition at line 17 of file st\+\_\+navigate\+\_\+reverse\+\_\+2.\+h.
 
 \begin{DoxyCode}
 18    \{
-19       static\_configure<NavigationOrthogonal, CbNavigateBackwards>(2);
-20       static\_configure<ToolOrthogonal, CbToolStop>();
-21       static\_configure<ObstaclePerceptionOrthogonal, CbLidarSensor>();
+19       static\_configure<OrNavigation, CbNavigateBackwards>(2);
+20       static\_configure<OrTool, CbToolStop>();
+21       static\_configure<OrObstaclePerception, CbLidarSensor>();
 22    \}
 \end{DoxyCode}
 \index{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse2@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Reverse2}!on\+Initialize@{on\+Initialize}}

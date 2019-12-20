@@ -5,7 +5,7 @@ var searchData=
   ['scheduler_5f',['scheduler_',['../classsmacc_1_1SignalDetector.html#adaee5b9b91d0e6305dc1ab30f7ab566d',1,'smacc::SignalDetector']]],
   ['sender',['sender',['../structsmacc_1_1TimerTickEvent.html#adeac356195d07acbee0ec2e02bf2d500',1,'smacc::TimerTickEvent']]],
   ['sensor_5f',['sensor_',['../classsmacc_1_1SensorTopic.html#affbf010b80f779369dd14d786c1ed9e3',1,'smacc::SensorTopic']]],
-  ['serviceclient_5f',['serviceClient_',['../classsm__dance__bot_1_1Service3Behavior.html#afe77243f8c5938cf9c754897d41cceff',1,'sm_dance_bot::Service3Behavior']]],
+  ['serviceclient_5f',['serviceClient_',['../classsm__dance__bot_1_1CbService3.html#a23064503560f82cf5d6e24e393c2aa9c',1,'sm_dance_bot::CbService3']]],
   ['servicename_5f',['serviceName_',['../classsmacc_1_1SmaccServiceClient.html#a93cf1653e9d7a0f4aa25dbb8ae7d07fc',1,'smacc::SmaccServiceClient']]],
   ['set_5fplanners_5fmode_5fflag',['set_planners_mode_flag',['../classsmacc__planner__switcher_1_1PlannerSwitcher.html#a266b7a17a8c92bda2d74a7c8991a4a61',1,'smacc_planner_switcher::PlannerSwitcher']]],
   ['settings',['settings',['../namespacekeyboard__node.html#aaf29d185963f7dbed690d072de1a0b17',1,'keyboard_node']]],

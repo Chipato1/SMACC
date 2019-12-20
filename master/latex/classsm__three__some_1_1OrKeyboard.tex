@@ -1,0 +1,87 @@
+\hypertarget{classsm__three__some_1_1OrKeyboard}{}\section{sm\+\_\+three\+\_\+some\+:\+:Or\+Keyboard Class Reference}
+\label{classsm__three__some_1_1OrKeyboard}\index{sm\+\_\+three\+\_\+some\+::\+Or\+Keyboard@{sm\+\_\+three\+\_\+some\+::\+Or\+Keyboard}}
+
+
+{\ttfamily \#include $<$or\+\_\+keyboard\+\_\+orthogonal.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+three\+\_\+some\+:\+:Or\+Keyboard\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classsm__three__some_1_1OrKeyboard__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+three\+\_\+some\+:\+:Or\+Keyboard\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__three__some_1_1OrKeyboard__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classsm__three__some_1_1OrKeyboard_af49faa7c511ae0232ed0931ce8c85b56}{on\+Initialize} () override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file or\+\_\+keyboard\+\_\+orthogonal.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+three\+\_\+some\+::\+Or\+Keyboard@{sm\+\_\+three\+\_\+some\+::\+Or\+Keyboard}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!sm\+\_\+three\+\_\+some\+::\+Or\+Keyboard@{sm\+\_\+three\+\_\+some\+::\+Or\+Keyboard}}
+\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+three\+\_\+some\+::\+Or\+Keyboard\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__three__some_1_1OrKeyboard_af49faa7c511ae0232ed0931ce8c85b56}{}\label{classsm__three__some_1_1OrKeyboard_af49faa7c511ae0232ed0931ce8c85b56}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+
+
+
+Definition at line 10 of file or\+\_\+keyboard\+\_\+orthogonal.\+h.
+
+
+
+References sm\+\_\+three\+\_\+some\+::\+Cl\+Keyboard\+::initialize(), and smacc\+::\+Smacc\+Subscriber\+Client$<$ Message\+Type $>$\+::topic\+Name.
+
+
+\begin{DoxyCode}
+11     \{
+12         \textcolor{keyword}{auto} ClKeyboard = this->createClient<OrKeyboard, sm\_three\_some::ClKeyboard>();
+13         ClKeyboard->topicName = \textcolor{stringliteral}{"/keyboard\_unicode"};
+14 
+15         \textcolor{comment}{//ClKeyboard.queueSize = 1;}
+16         ClKeyboard->initialize();
+17     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__three__some_1_1OrKeyboard_af49faa7c511ae0232ed0931ce8c85b56_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+three\+\_\+some/include/sm\+\_\+three\+\_\+some/orthogonals/\hyperlink{or__keyboard__orthogonal_8h}{or\+\_\+keyboard\+\_\+orthogonal.\+h}\end{DoxyCompactItemize}

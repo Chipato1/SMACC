@@ -1,0 +1,69 @@
+\hypertarget{classsm__viewer__sim_1_1OrNavigation}{}\section{sm\+\_\+viewer\+\_\+sim\+:\+:Or\+Navigation Class Reference}
+\label{classsm__viewer__sim_1_1OrNavigation}\index{sm\+\_\+viewer\+\_\+sim\+::\+Or\+Navigation@{sm\+\_\+viewer\+\_\+sim\+::\+Or\+Navigation}}
+
+
+{\ttfamily \#include $<$or\+\_\+navigation.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+viewer\+\_\+sim\+:\+:Or\+Navigation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classsm__viewer__sim_1_1OrNavigation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+viewer\+\_\+sim\+:\+:Or\+Navigation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__viewer__sim_1_1OrNavigation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classsm__viewer__sim_1_1OrNavigation_a6f39ecbb3c1ad253c283588df860a8c4}{on\+Initialize} () override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 6 of file or\+\_\+navigation.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+viewer\+\_\+sim\+::\+Or\+Navigation@{sm\+\_\+viewer\+\_\+sim\+::\+Or\+Navigation}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!sm\+\_\+viewer\+\_\+sim\+::\+Or\+Navigation@{sm\+\_\+viewer\+\_\+sim\+::\+Or\+Navigation}}
+\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+viewer\+\_\+sim\+::\+Or\+Navigation\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__viewer__sim_1_1OrNavigation_a6f39ecbb3c1ad253c283588df860a8c4}{}\label{classsm__viewer__sim_1_1OrNavigation_a6f39ecbb3c1ad253c283588df860a8c4}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+
+
+
+Definition at line 9 of file or\+\_\+navigation.\+h.
+
+
+\begin{DoxyCode}
+10     \{
+11         \textcolor{keyword}{auto} client = this->createClient<OrNavigation, smacc::ClMoveBaseZ>();
+12         client->name\_ = \textcolor{stringliteral}{"move\_base"};
+13         client->initialize();
+14     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+viewer\+\_\+sim/include/sm\+\_\+viewer\+\_\+sim/orthogonals/\hyperlink{smacc__sm__reference__library_2sm__viewer__sim_2include_2sm__viewer__sim_2orthogonals_2or__navigation_8h}{or\+\_\+navigation.\+h}\end{DoxyCompactItemize}

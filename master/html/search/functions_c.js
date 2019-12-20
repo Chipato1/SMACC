@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['lasersensor',['LaserSensor',['../classsm__dance__bot_1_1LaserSensor.html#a0481dda00cf1487cf8673400f0e1c0aa',1,'sm_dance_bot::LaserSensor']]],
   ['link_5fname',['link_name',['../namespacerosdoc__lite_1_1landing__page.html#a36213cc50ea95b4e8ae862879455f4aa',1,'rosdoc_lite::landing_page']]],
   ['load_5fmanifest_5fvars',['load_manifest_vars',['../namespacerosdoc__lite_1_1doxygenator.html#ae886aaa38bf22f9047d23714844fdd8a',1,'rosdoc_lite::doxygenator']]],
   ['load_5frd_5fconfig',['load_rd_config',['../namespacerosdoc__lite.html#a6fc9bd97d3d23ecd8dcb06dcc5b32f73',1,'rosdoc_lite']]],

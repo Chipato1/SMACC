@@ -87,21 +87,20 @@ References sm\+\_\+dance\+\_\+bot\+::\+S\+E\+R\+V\+I\+C\+E3\+\_\+\+ON, and smacc
 
 \begin{DoxyCode}
 34    \{
-35       static\_configure<ObstaclePerceptionOrthogonal, CbLidarSensor>();
-36       static\_configure<PublisherOrthogonal, CbStringPublisher>(\textcolor{stringliteral}{"Hello World!"});
-37       static\_configure<SensorOrthogonal, CbConditionTemperatureSensor>();
-38       static\_configure<Service3Orthogonal, Service3Behavior>(
-      \hyperlink{namespacesm__dance__bot_a2d0902aa29698165effd2c3248a9c8ffa13cdca48a01bbb44fa8fb35567fbc58e}{Service3Command::SERVICE3\_ON});
-39       static\_configure<UpdatablePublisherOrthogonal, CbUpdatableStringPublisher>();
+35       static\_configure<OrObstaclePerception, CbLidarSensor>();
+36       static\_configure<OrStringPublisher, CbStringPublisher>(\textcolor{stringliteral}{"Hello World!"});
+37       static\_configure<OrClTemperatureSensor, CbConditionClTemperatureSensor>();
+38       static\_configure<OrService3, CbService3>(\hyperlink{namespacesm__dance__bot_a2d0902aa29698165effd2c3248a9c8ffa13cdca48a01bbb44fa8fb35567fbc58e}{Service3Command::SERVICE3\_ON});
+39       static\_configure<OrUpdatablePublisher, CbUpdatableStringPublisher>();
 40 
 41       \hyperlink{classsmacc_1_1SmaccState_a6fc90cf59c60c749e82f49aafb079b23}{static\_createLogicUnit}<LuAllEventsGo,
 42                              EvAll<LuAllEventsGo, Unit1>,
-43                              mpl::list<EvTopicMessage<CbLidarSensor, ObstaclePerceptionOrthogonal>, 
-      EvTopicMessage<CbConditionTemperatureSensor, SensorOrthogonal>>>();
+43                              mpl::list<EvTopicMessage<CbLidarSensor, OrObstaclePerception>, 
+      EvTopicMessage<CbConditionClTemperatureSensor, OrClTemperatureSensor>>>();
 44 
 45       \textcolor{comment}{// auto luall = static\_createLogicUnit<LuAllEventsGo>();}
-46       \textcolor{comment}{// luall->enablesOn<EvTopicMessage<CbLidarSensor, ObstaclePerceptionOrthogonal>,
-       EvTopicMessage<CbConditionTemperatureSensor, SensorOrthogonal>>();}
+46       \textcolor{comment}{// luall->enablesOn<EvTopicMessage<CbLidarSensor, OrObstaclePerception>,
+       EvTopicMessage<CbConditionClTemperatureSensor, OrClTemperatureSensor>>();}
 47       \textcolor{comment}{// luall->throwsEvent<EvAll<LuAllEventsGo, Unit1>>();}
 48    \}
 \end{DoxyCode}
