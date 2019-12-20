@@ -67,7 +67,7 @@ Definition at line 15 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 )}\hypertarget{classsmacc_1_1SmaccStateMachineInfo_a188e81067d4a693ce479518dc87cf89b}{}\label{classsmacc_1_1SmaccStateMachineInfo_a188e81067d4a693ce479518dc87cf89b}
 
 
-Definition at line 432 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 431 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 
@@ -79,9 +79,9 @@ Referenced by create\+State(), and get\+State().
 
 
 \begin{DoxyCode}
-433 \{
-434     \hyperlink{classsmacc_1_1SmaccStateMachineInfo_a8d6f1a9ce60f39835e7aa2179139977f}{states}[state->fullStateName] = state;
-435 \}
+432 \{
+433     \hyperlink{classsmacc_1_1SmaccStateMachineInfo_a8d6f1a9ce60f39835e7aa2179139977f}{states}[state->fullStateName] = state;
+434 \}
 \end{DoxyCode}
 
 
@@ -209,20 +209,20 @@ Referenced by compute\+All\+State\+Message().
 93                 \textcolor{keyword}{auto} &behaviors = smaccBehaviorInfoMappingByOrthogonalType[orthogonaltid];
 94                 \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &bhinfo : behaviors)
 95                 \{
-96                     \textcolor{keyword}{auto} substateBehaviorName = \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(bhinfo->behaviorType->name());
-97                     orthogonalMsg.substate\_behavior\_names.push\_back(substateBehaviorName);
-98                     ss << \textcolor{stringliteral}{"          - substate behavior: "} << substateBehaviorName << std::endl;
+96                     \textcolor{keyword}{auto} ClientBehaviorName = \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(bhinfo->behaviorType->name());
+97                     orthogonalMsg.client\_behavior\_names.push\_back(ClientBehaviorName);
+98                     ss << \textcolor{stringliteral}{"          - client behavior: "} << ClientBehaviorName << std::endl;
 99                 \}
 100             \}
 101             \textcolor{keywordflow}{else}
 102             \{
-103                 ss << \textcolor{stringliteral}{"          - NO SUBSTATE BEHAVIORS -"} << std::endl;
+103                 ss << \textcolor{stringliteral}{"          - NO Client BEHAVIORS -"} << std::endl;
 104             \}
 105 
 106             \textcolor{keyword}{auto} &clients = orthogonal.second->getClients();
 107             \textcolor{keywordflow}{if} (clients.size() > 0)
 108             \{
-109                 \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} *client : clients)
+109                 \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}& client : clients)
 110                 \{
 111                     \textcolor{keyword}{auto} clientTid = &(\textcolor{keyword}{typeid}(*client));
 112                     \textcolor{keyword}{auto} clientName = \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(clientTid->name());
@@ -325,7 +325,7 @@ Here is the caller graph for this function\+:
 )}\hypertarget{classsmacc_1_1SmaccStateMachineInfo_abef92b54a5e643232491db968de4aff0}{}\label{classsmacc_1_1SmaccStateMachineInfo_abef92b54a5e643232491db968de4aff0}
 
 
-Definition at line 401 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 400 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 
@@ -333,11 +333,11 @@ References smacc\+::\+Walk\+States\+Executor$<$ Initial\+State\+Type $>$\+::walk
 
 
 \begin{DoxyCode}
-402 \{
-403     \textcolor{keyword}{auto} initialState = this->createState<InitialStateType>(\textcolor{keyword}{nullptr});
-404     \hyperlink{structsmacc_1_1WalkStatesExecutor_a11a2b02eafb62ec298bcf5ffbb32848b}{WalkStatesExecutor<InitialStateType>::walkStates}(
+401 \{
+402     \textcolor{keyword}{auto} initialState = this->createState<InitialStateType>(\textcolor{keyword}{nullptr});
+403     \hyperlink{structsmacc_1_1WalkStatesExecutor_a11a2b02eafb62ec298bcf5ffbb32848b}{WalkStatesExecutor<InitialStateType>::walkStates}(
       initialState, \textcolor{keyword}{true});
-405 \}
+404 \}
 \end{DoxyCode}
 
 
@@ -411,7 +411,7 @@ Definition at line 29 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 )}\hypertarget{classsmacc_1_1SmaccStateMachineInfo_a2d5759ccb5a8296debcc5dec741d3b42}{}\label{classsmacc_1_1SmaccStateMachineInfo_a2d5759ccb5a8296debcc5dec741d3b42}
 
 
-Definition at line 408 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 407 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 
@@ -419,27 +419,27 @@ References add\+State(), and states.
 
 
 \begin{DoxyCode}
-409 \{
-410     \textcolor{keyword}{auto} thisptr = this->shared\_from\_this();
-411     \textcolor{keyword}{auto} *statetid = &(\textcolor{keyword}{typeid}(StateType));
-412 
-413     \textcolor{keyword}{auto} demangledName = demangledTypeName<StateType>();
-414     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"Creating State Info: "} << demangledName);
-415 
-416     \textcolor{keyword}{auto} state = std::make\_shared<SmaccStateInfo>(statetid, parent, thisptr);
-417     state->demangledStateName = demangledName;
-418     state->fullStateName = \textcolor{keyword}{typeid}(StateType).name();
-419     state->stateIndex\_ = \hyperlink{classsmacc_1_1SmaccStateMachineInfo_a8d6f1a9ce60f39835e7aa2179139977f}{states}.size();
-420 
-421     \textcolor{keywordflow}{if} (parent != \textcolor{keyword}{nullptr})
-422     \{
-423         parent->children\_.push\_back(state);
-424     \}
-425 
-426     this->\hyperlink{classsmacc_1_1SmaccStateMachineInfo_a188e81067d4a693ce479518dc87cf89b}{addState}(state);
-427 
-428     \textcolor{keywordflow}{return} state;
-429 \}
+408 \{
+409     \textcolor{keyword}{auto} thisptr = this->shared\_from\_this();
+410     \textcolor{keyword}{auto} *statetid = &(\textcolor{keyword}{typeid}(StateType));
+411 
+412     \textcolor{keyword}{auto} demangledName = demangledTypeName<StateType>();
+413     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"Creating State Info: "} << demangledName);
+414 
+415     \textcolor{keyword}{auto} state = std::make\_shared<SmaccStateInfo>(statetid, parent, thisptr);
+416     state->demangledStateName = demangledName;
+417     state->fullStateName = \textcolor{keyword}{typeid}(StateType).name();
+418     state->stateIndex\_ = \hyperlink{classsmacc_1_1SmaccStateMachineInfo_a8d6f1a9ce60f39835e7aa2179139977f}{states}.size();
+419 
+420     \textcolor{keywordflow}{if} (parent != \textcolor{keyword}{nullptr})
+421     \{
+422         parent->children\_.push\_back(state);
+423     \}
+424 
+425     this->\hyperlink{classsmacc_1_1SmaccStateMachineInfo_a188e81067d4a693ce479518dc87cf89b}{addState}(state);
+426 
+427     \textcolor{keywordflow}{return} state;
+428 \}
 \end{DoxyCode}
 
 

@@ -1,4 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classsmacc_1_1ISmaccComponent.html" title="smacc::ISmaccComponent" alt="" coords="5,13,200,39"/>
-<area shape="rect" id="node2" href="$classsmacc__odom__tracker_1_1OdomTracker.html" title="This class track the required distance of the cord based on the external localization system..." alt="" coords="248,5,408,47"/>
+<area shape="rect" id="node1" href="$classsmacc_1_1ISmaccComponent.html" title="smacc::ISmaccComponent" alt="" coords="5,35,200,61"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1WaypointNavigator.html" title="smacc::WaypointNavigator" alt="" coords="248,5,439,32"/>
+<area shape="rect" id="node3" href="$classsmacc__odom__tracker_1_1OdomTracker.html" title="This class track the required distance of the cord based on the external localization system..." alt="" coords="263,57,423,98"/>
 </map>

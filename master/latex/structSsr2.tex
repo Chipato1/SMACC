@@ -27,7 +27,7 @@ Collaboration diagram for Ssr2\+:
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Topic\+Message$<$ Sb\+Behavior2b $>$, \hyperlink{structSsr3}{Ssr3} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Key\+PressN$<$ Sb\+Keyboard $>$, \hyperlink{structSsr3}{Ssr3} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Key\+PressP$<$ Sb\+Keyboard $>$, \hyperlink{structSsr1}{Ssr1} $>$ $>$ \hyperlink{structSsr2_a1256e60dc7ca7df354864b8ebf9a5140}{reactions}
+typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Topic\+Message$<$ Cb\+Behavior2b, Orthogonal2 $>$, \hyperlink{structSsr3}{Ssr3} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Key\+PressN$<$ Cb\+Keyboard, Keyboard\+Orthogonal $>$, \hyperlink{structSsr3}{Ssr3} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Key\+PressP$<$ Cb\+Keyboard, Keyboard\+Orthogonal $>$, \hyperlink{structSsr1}{Ssr1} $>$ $>$ \hyperlink{structSsr2_ae5ede00900d85079cb8c764b3f0fa53e}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -52,7 +52,7 @@ Definition at line 1 of file ssr\+\_\+2.\+h.
 \subsection{Member Typedef Documentation}
 \index{Ssr2@{Ssr2}!reactions@{reactions}}
 \index{reactions@{reactions}!Ssr2@{Ssr2}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ {\bf smacc\+::transition}$<$Ev\+Topic\+Message$<$Sb\+Behavior2b$>$, {\bf Ssr3}$>$, {\bf smacc\+::transition}$<$Ev\+Key\+PressN$<$Sb\+Keyboard$>$, {\bf Ssr3}$>$, {\bf smacc\+::transition}$<$Ev\+Key\+PressP$<$Sb\+Keyboard$>$, {\bf Ssr1}$>$ $>$ {\bf Ssr2\+::reactions}}\hypertarget{structSsr2_a1256e60dc7ca7df354864b8ebf9a5140}{}\label{structSsr2_a1256e60dc7ca7df354864b8ebf9a5140}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ {\bf smacc\+::transition}$<$Ev\+Topic\+Message$<$Cb\+Behavior2b, Orthogonal2$>$, {\bf Ssr3}$>$, {\bf smacc\+::transition}$<$Ev\+Key\+PressN$<$Cb\+Keyboard, Keyboard\+Orthogonal$>$, {\bf Ssr3}$>$, {\bf smacc\+::transition}$<$Ev\+Key\+PressP$<$Cb\+Keyboard, Keyboard\+Orthogonal$>$, {\bf Ssr1}$>$ $>$ {\bf Ssr2\+::reactions}}\hypertarget{structSsr2_ae5ede00900d85079cb8c764b3f0fa53e}{}\label{structSsr2_ae5ede00900d85079cb8c764b3f0fa53e}
 
 
 Definition at line 10 of file ssr\+\_\+2.\+h.
@@ -74,9 +74,9 @@ Definition at line 13 of file ssr\+\_\+2.\+h.
 
 \begin{DoxyCode}
 14   \{
-15     static\_configure<Orthogonal1, SbBehavior1>();
-16     static\_configure<Orthogonal2, SbBehavior2b>();
-17     static\_configure<KeyboardOrthogonal, SbKeyboard>();
+15     static\_configure<Orthogonal1, CbBehavior1>();
+16     static\_configure<Orthogonal2, CbBehavior2b>();
+17     static\_configure<KeyboardOrthogonal, CbKeyboard>();
 18   \}
 \end{DoxyCode}
 \index{Ssr2@{Ssr2}!on\+Initialize@{on\+Initialize}}

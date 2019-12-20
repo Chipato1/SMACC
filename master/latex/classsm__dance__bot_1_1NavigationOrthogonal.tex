@@ -61,14 +61,23 @@ References smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::initialize(), and 
 
 \begin{DoxyCode}
 13     \{
-14         \textcolor{keyword}{auto} *client = this->createClient<smacc::SmaccMoveBaseActionClient>();
-15         client->name\_ = \textcolor{stringliteral}{"move\_base"};
-16         client->initialize();
-17 
-18         \hyperlink{classsmacc__odom__tracker_1_1OdomTracker}{smacc\_odom\_tracker::OdomTracker} *odomtracker;
-19         this->\hyperlink{classsmacc_1_1Orthogonal_a098b5be0f89d0911afc44c10b756ef2a}{requiresComponent}(odomtracker);
-20         odomtracker->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a4b3ff3f659474cb7bdd6b4b54dcc0a53}{initialize}(\textcolor{stringliteral}{"/"});
-21     \}
+14         \textcolor{comment}{//what we had}
+15         \textcolor{comment}{//auto client = this->createClient<smacc::SmaccMoveBaseActionClient>(23,24);}
+16 
+17         \textcolor{keyword}{auto} movebaseClient = this->createClient<NavigationOrthogonal, smacc::SmaccMoveBaseActionClient>();
+18         \textcolor{comment}{//auto client = createClient<smacc::SmaccMoveBaseActionClient>(this, 23, 234);}
+19         \textcolor{comment}{//auto client = CREATE\_CLIENT(smacc::SmaccMoveBaseActionClient, 23, 234);}
+20 
+21         movebaseClient->name\_ = \textcolor{stringliteral}{"move\_base"};
+22         movebaseClient->initialize();
+23 
+24         \hyperlink{classsmacc__odom__tracker_1_1OdomTracker}{smacc\_odom\_tracker::OdomTracker} *odomtracker;
+25         this->\hyperlink{classsmacc_1_1Orthogonal_a098b5be0f89d0911afc44c10b756ef2a}{requiresComponent}(odomtracker);
+26         odomtracker->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a4b3ff3f659474cb7bdd6b4b54dcc0a53}{initialize}(\textcolor{stringliteral}{"/"});
+27 
+28         \textcolor{comment}{// auto odomtracker = movebaseClient->createComponent<OdomTracker>();}
+29         \textcolor{comment}{// odomtracker->initialize("/");}
+30     \}
 \end{DoxyCode}
 
 

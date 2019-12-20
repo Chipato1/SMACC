@@ -57,7 +57,7 @@ Definition at line 10 of file keyboard\+\_\+orthogonal.\+h.
 
 \begin{DoxyCode}
 11     \{
-12         \textcolor{keyword}{auto} keyboardClient = this->createClient<sm\_three\_some::KeyboardClient>();
+12         \textcolor{keyword}{auto} keyboardClient = this->createClient<KeyboardOrthogonal, sm\_three\_some::KeyboardClient>();
 13         keyboardClient->topicName = \textcolor{stringliteral}{"/keyboard\_unicode"};
 14 
 15         \textcolor{comment}{//keyboardClient.queueSize = 1;}

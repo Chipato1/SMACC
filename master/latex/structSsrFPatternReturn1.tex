@@ -27,7 +27,7 @@ Collaboration diagram for Ssr\+F\+Pattern\+Return1\+:
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Succeeded$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $>$, \hyperlink{structSsrFPatternRotate2}{Ssr\+F\+Pattern\+Rotate2} $>$ \hyperlink{structSsrFPatternReturn1_a8880356d06b1fa1aa432952cf3886702}{reactions}
+typedef \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Succeeded$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, \hyperlink{classNavigationOrthogonal}{Navigation\+Orthogonal} $>$, \hyperlink{structSsrFPatternRotate2}{Ssr\+F\+Pattern\+Rotate2} $>$ \hyperlink{structSsrFPatternReturn1_a81c1b84527bc40fc910c7327df687650}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -52,7 +52,7 @@ Definition at line 1 of file ssr\+\_\+fpattern\+\_\+return\+\_\+1.\+h.
 \subsection{Member Typedef Documentation}
 \index{Ssr\+F\+Pattern\+Return1@{Ssr\+F\+Pattern\+Return1}!reactions@{reactions}}
 \index{reactions@{reactions}!Ssr\+F\+Pattern\+Return1@{Ssr\+F\+Pattern\+Return1}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf smacc\+::transition}$<$Ev\+Action\+Succeeded$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}$>$, {\bf Ssr\+F\+Pattern\+Rotate2}$>$ {\bf Ssr\+F\+Pattern\+Return1\+::reactions}}\hypertarget{structSsrFPatternReturn1_a8880356d06b1fa1aa432952cf3886702}{}\label{structSsrFPatternReturn1_a8880356d06b1fa1aa432952cf3886702}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf smacc\+::transition}$<$Ev\+Action\+Succeeded$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, {\bf Navigation\+Orthogonal}$>$, {\bf Ssr\+F\+Pattern\+Rotate2}$>$ {\bf Ssr\+F\+Pattern\+Return1\+::reactions}}\hypertarget{structSsrFPatternReturn1_a81c1b84527bc40fc910c7327df687650}{}\label{structSsrFPatternReturn1_a81c1b84527bc40fc910c7327df687650}
 
 
 Definition at line 5 of file ssr\+\_\+fpattern\+\_\+return\+\_\+1.\+h.
@@ -74,8 +74,8 @@ Definition at line 7 of file ssr\+\_\+fpattern\+\_\+return\+\_\+1.\+h.
 
 \begin{DoxyCode}
 8   \{
-9     static\_configure<NavigationOrthogonal, SbUndoPathBackwards>();
-10     static\_configure<ToolOrthogonal, SbToolStart>();
+9     static\_configure<NavigationOrthogonal, CbUndoPathBackwards>();
+10     static\_configure<ToolOrthogonal, CbToolStart>();
 11   \}
 \end{DoxyCode}
 \index{Ssr\+F\+Pattern\+Return1@{Ssr\+F\+Pattern\+Return1}!on\+Initialize@{on\+Initialize}}

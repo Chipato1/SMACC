@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ismaccstatemachine',['ISmaccStateMachine',['../classsmacc_1_1SignalDetector.html#a0e71d23a61c07d55f419d02237d03b6a',1,'smacc::SignalDetector']]]
+  ['ismaccstate',['ISmaccState',['../classsmacc_1_1SmaccClientBehavior.html#ab907e4cdbf326246355f56640780162e',1,'smacc::SmaccClientBehavior::ISmaccState()'],['../classsmacc_1_1ISmaccStateMachine.html#ab907e4cdbf326246355f56640780162e',1,'smacc::ISmaccStateMachine::ISmaccState()']]]
 ];

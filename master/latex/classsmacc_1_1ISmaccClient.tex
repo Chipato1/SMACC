@@ -38,11 +38,23 @@ void \hyperlink{classsmacc_1_1ISmaccClient_a28fd6ca2bcf9c5e57f3cc16fb0a076d3}{se
 virtual std\+::string \hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{get\+Name} () const 
 \item 
 {\footnotesize template$<$typename Event\+Type $>$ }\\void \hyperlink{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80}{post\+Event} (const Event\+Type \&ev)
+\item 
+{\footnotesize template$<$typename Event\+Type $>$ }\\void \hyperlink{classsmacc_1_1ISmaccClient_a21a79203cb44fc717d4d977c190327c6}{post\+Event} ()
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classsmacc_1_1ISmaccStateMachine}{I\+Smacc\+State\+Machine} $\ast$ \hyperlink{classsmacc_1_1ISmaccClient_a926e4f2ae796def63d48dca389a48c47}{state\+Machine\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T\+Derived , typename T\+Object\+Tag $>$ }\\void \hyperlink{classsmacc_1_1ISmaccClient_a53f449a5c815711ed43f39b0b6795f22}{assign\+To\+Orthogonal} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsmacc_1_1ISmaccClient_ab3e0a1388d84ea577a59f487cbfc08e3}{Orthogonal}
 \end{DoxyCompactItemize}
 
 
@@ -90,6 +102,21 @@ Definition at line 11 of file client.\+cpp.
 
 
 \subsection{Member Function Documentation}
+\index{smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}!assign\+To\+Orthogonal@{assign\+To\+Orthogonal}}
+\index{assign\+To\+Orthogonal@{assign\+To\+Orthogonal}!smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}}
+\subsubsection[{\texorpdfstring{assign\+To\+Orthogonal()}{assignToOrthogonal()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived , typename T\+Object\+Tag $>$ void smacc\+::\+I\+Smacc\+Client\+::assign\+To\+Orthogonal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classsmacc_1_1ISmaccClient_a53f449a5c815711ed43f39b0b6795f22}{}\label{classsmacc_1_1ISmaccClient_a53f449a5c815711ed43f39b0b6795f22}
+
+
+Definition at line 38 of file smacc\+\_\+client.\+h.
+
+
+\begin{DoxyCode}
+38 \{\}
+\end{DoxyCode}
 \index{smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}!get\+Name@{get\+Name}}
 \index{get\+Name@{get\+Name}!smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}}
 \subsubsection[{\texorpdfstring{get\+Name() const }{getName() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::\+I\+Smacc\+Client\+::get\+Name (
@@ -153,7 +180,7 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classsmacc_1_1ISmaccClient_a974ebb6ad6cf812e7b9de6b78b3d901f}{}\label{classsmacc_1_1ISmaccClient_a974ebb6ad6cf812e7b9de6b78b3d901f}
 
 
-Reimplemented in \hyperlink{classsm__three__some_1_1KeyboardClient_a8a74266ba37df7f09518b9689ddee828}{sm\+\_\+three\+\_\+some\+::\+Keyboard\+Client}, \hyperlink{classsmacc_1_1SmaccSubscriberClient_afc2e5523c38250722e7197dd535599ce}{smacc\+::\+Smacc\+Subscriber\+Client$<$ T\+Derived, Message\+Type $>$}, \hyperlink{classsmacc_1_1SmaccSubscriberClient_afc2e5523c38250722e7197dd535599ce}{smacc\+::\+Smacc\+Subscriber\+Client$<$ Temperature\+Sensor, sensor\+\_\+msgs\+::\+Temperature $>$}, \hyperlink{classsmacc_1_1SmaccSubscriberClient_afc2e5523c38250722e7197dd535599ce}{smacc\+::\+Smacc\+Subscriber\+Client$<$ Client1, std\+\_\+msgs\+::\+U\+Int16 $>$}, \hyperlink{classsmacc_1_1SmaccSubscriberClient_afc2e5523c38250722e7197dd535599ce}{smacc\+::\+Smacc\+Subscriber\+Client$<$ Laser\+Sensor, sensor\+\_\+msgs\+::\+Laser\+Scan $>$}, \hyperlink{classsmacc_1_1SmaccSubscriberClient_afc2e5523c38250722e7197dd535599ce}{smacc\+::\+Smacc\+Subscriber\+Client$<$ Keyboard\+Client, std\+\_\+msgs\+::\+U\+Int16 $>$}, \hyperlink{classsmacc_1_1SmaccActionClientBase_a717b234a3e26ea778cce7635fb924e59}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ T\+Derived, Action\+Type $>$}, \hyperlink{classsmacc_1_1SmaccActionClientBase_a717b234a3e26ea778cce7635fb924e59}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ Smacc\+Move\+Base\+Action\+Client, move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$}, \hyperlink{classsmacc_1_1SmaccActionClientBase_a717b234a3e26ea778cce7635fb924e59}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ Smacc\+Tool\+Action\+Client, smacc\+\_\+action\+\_\+client\+\_\+generic\+::\+Tool\+Control\+Action $>$}, \hyperlink{classsmacc_1_1SmaccActionClientBase_a717b234a3e26ea778cce7635fb924e59}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ Client2, move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$}, \hyperlink{classsmacc_1_1SensorClient_ab772bc1d3e1db37a39d3d1992b06cec2}{smacc\+::\+Sensor\+Client$<$ T\+Derived, Message\+Type $>$}, \hyperlink{classsmacc_1_1SensorClient_ab772bc1d3e1db37a39d3d1992b06cec2}{smacc\+::\+Sensor\+Client$<$ Temperature\+Sensor, sensor\+\_\+msgs\+::\+Temperature $>$}, \hyperlink{classsmacc_1_1SensorClient_ab772bc1d3e1db37a39d3d1992b06cec2}{smacc\+::\+Sensor\+Client$<$ Laser\+Sensor, sensor\+\_\+msgs\+::\+Laser\+Scan $>$}, \hyperlink{classros__timer__client_1_1SmaccTimerClient_a23ca454fd2d9035bb5142c0b9261635a}{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client}, \hyperlink{classsmacc_1_1SmaccPublisherClient_ac1b9a683a411f4957411fcbdb3980233}{smacc\+::\+Smacc\+Publisher\+Client$<$ Message\+Type $>$}, \hyperlink{classsmacc_1_1SmaccPublisherClient_ac1b9a683a411f4957411fcbdb3980233}{smacc\+::\+Smacc\+Publisher\+Client$<$ std\+\_\+msgs\+::\+String $>$}, \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient_ae520045638a5f722ad1367f6d705b7c4}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, \hyperlink{classsmacc_1_1SmaccServiceClient_a9ac26f1ca1e661e6b393ce7605166bdc}{smacc\+::\+Smacc\+Service\+Client$<$ Service\+Type $>$}, and \hyperlink{classsmacc_1_1SmaccServiceClient_a9ac26f1ca1e661e6b393ce7605166bdc}{smacc\+::\+Smacc\+Service\+Client$<$ std\+\_\+srvs\+::\+Set\+Bool $>$}.
+Reimplemented in \hyperlink{classsm__three__some_1_1KeyboardClient_a8a74266ba37df7f09518b9689ddee828}{sm\+\_\+three\+\_\+some\+::\+Keyboard\+Client}, \hyperlink{classsmacc_1_1SmaccSubscriberClient_acfa97685ecc588fe61eb57002354b58a}{smacc\+::\+Smacc\+Subscriber\+Client$<$ Message\+Type $>$}, \hyperlink{classsmacc_1_1SmaccSubscriberClient_acfa97685ecc588fe61eb57002354b58a}{smacc\+::\+Smacc\+Subscriber\+Client$<$ sensor\+\_\+msgs\+::\+Laser\+Scan $>$}, \hyperlink{classsmacc_1_1SmaccSubscriberClient_acfa97685ecc588fe61eb57002354b58a}{smacc\+::\+Smacc\+Subscriber\+Client$<$ std\+\_\+msgs\+::\+U\+Int16 $>$}, \hyperlink{classsmacc_1_1SmaccSubscriberClient_acfa97685ecc588fe61eb57002354b58a}{smacc\+::\+Smacc\+Subscriber\+Client$<$ sensor\+\_\+msgs\+::\+Temperature $>$}, \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e533ef8}{smacc\+::\+Sensor\+Client$<$ Message\+Type $>$}, \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e533ef8}{smacc\+::\+Sensor\+Client$<$ sensor\+\_\+msgs\+::\+Laser\+Scan $>$}, \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e533ef8}{smacc\+::\+Sensor\+Client$<$ sensor\+\_\+msgs\+::\+Temperature $>$}, \hyperlink{classsmacc_1_1SmaccActionClientBase_a0224d7482b50a706f99bd280495ef1af}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$}, \hyperlink{classsmacc_1_1SmaccActionClientBase_a0224d7482b50a706f99bd280495ef1af}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ smacc\+\_\+action\+\_\+client\+\_\+generic\+::\+Tool\+Control\+Action $>$}, \hyperlink{classsmacc_1_1SmaccActionClientBase_a0224d7482b50a706f99bd280495ef1af}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$}, \hyperlink{classros__timer__client_1_1SmaccTimerClient_a23ca454fd2d9035bb5142c0b9261635a}{ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client}, \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient_ae520045638a5f722ad1367f6d705b7c4}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, \hyperlink{classsmacc_1_1SmaccPublisherClient_ac1b9a683a411f4957411fcbdb3980233}{smacc\+::\+Smacc\+Publisher\+Client$<$ Message\+Type $>$}, \hyperlink{classsmacc_1_1SmaccPublisherClient_ac1b9a683a411f4957411fcbdb3980233}{smacc\+::\+Smacc\+Publisher\+Client$<$ std\+\_\+msgs\+::\+String $>$}, \hyperlink{classsmacc_1_1SmaccServiceClient_a9ac26f1ca1e661e6b393ce7605166bdc}{smacc\+::\+Smacc\+Service\+Client$<$ Service\+Type $>$}, and \hyperlink{classsmacc_1_1SmaccServiceClient_a9ac26f1ca1e661e6b393ce7605166bdc}{smacc\+::\+Smacc\+Service\+Client$<$ std\+\_\+srvs\+::\+Set\+Bool $>$}.
 
 
 
@@ -180,10 +207,6 @@ Definition at line 9 of file smacc\+\_\+client\+\_\+impl.\+h.
 References smacc\+::\+I\+Smacc\+State\+Machine\+::post\+Event(), and state\+Machine\+\_\+.
 
 
-
-Referenced by ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client\+::timer\+Callback().
-
-
 \begin{DoxyCode}
 10 \{
 11     \hyperlink{classsmacc_1_1ISmaccClient_a926e4f2ae796def63d48dca389a48c47}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_ad80cdd7bbc9a9f3b221c625754fed1ed}{postEvent}(ev);
@@ -201,6 +224,44 @@ Here is the call graph for this function\+:
 \end{figure}
 
 
+\index{smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}!post\+Event@{post\+Event}}
+\index{post\+Event@{post\+Event}!smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}}
+\subsubsection[{\texorpdfstring{post\+Event()}{postEvent()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Event\+Type $>$ void smacc\+::\+I\+Smacc\+Client\+::post\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1ISmaccClient_a21a79203cb44fc717d4d977c190327c6}{}\label{classsmacc_1_1ISmaccClient_a21a79203cb44fc717d4d977c190327c6}
+
+
+Definition at line 15 of file smacc\+\_\+client\+\_\+impl.\+h.
+
+
+
+References smacc\+::\+I\+Smacc\+State\+Machine\+::post\+Event(), and state\+Machine\+\_\+.
+
+
+
+Referenced by ros\+\_\+timer\+\_\+client\+::\+Smacc\+Timer\+Client\+::timer\+Callback().
+
+
+\begin{DoxyCode}
+16 \{
+17     \textcolor{keyword}{auto}* ev = \textcolor{keyword}{new} EventType();
+18     \hyperlink{classsmacc_1_1ISmaccClient_a926e4f2ae796def63d48dca389a48c47}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_ad80cdd7bbc9a9f3b221c625754fed1ed}{postEvent}(ev);
+19 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1ISmaccClient_a21a79203cb44fc717d4d977c190327c6_cgraph}
+\end{center}
+\end{figure}
+
+
 
 
 Here is the caller graph for this function\+:
@@ -208,7 +269,7 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80_icgraph}
+\includegraphics[width=350pt]{classsmacc_1_1ISmaccClient_a21a79203cb44fc717d4d977c190327c6_icgraph}
 \end{center}
 \end{figure}
 
@@ -234,6 +295,16 @@ References state\+Machine\+\_\+.
 27     \hyperlink{classsmacc_1_1ISmaccClient_a926e4f2ae796def63d48dca389a48c47}{stateMachine\_} = stateMachine;
 28 \}
 \end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}!Orthogonal@{Orthogonal}}
+\index{Orthogonal@{Orthogonal}!smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}}
+\subsubsection[{\texorpdfstring{Orthogonal}{Orthogonal}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Orthogonal}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classsmacc_1_1ISmaccClient_ab3e0a1388d84ea577a59f487cbfc08e3}{}\label{classsmacc_1_1ISmaccClient_ab3e0a1388d84ea577a59f487cbfc08e3}
+
+
+Definition at line 40 of file smacc\+\_\+client.\+h.
+
 
 
 \subsection{Member Data Documentation}

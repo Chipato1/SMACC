@@ -86,7 +86,7 @@ Referenced by on\+Entry().
 18 
 19     ROS\_INFO(\textcolor{stringliteral}{"Loop start, current iterations: %d, total iterations: %d"}, superstate.iteration\_count, 
       superstate.total\_iterations());
-20     \textcolor{keywordflow}{return} ++superstate.iteration\_count < superstate.total\_iterations();
+20     \textcolor{keywordflow}{return} superstate.iteration\_count++ < superstate.total\_iterations();
 21   \}
 \end{DoxyCode}
 

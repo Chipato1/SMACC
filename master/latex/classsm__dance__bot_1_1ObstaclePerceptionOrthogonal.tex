@@ -57,7 +57,7 @@ Definition at line 11 of file obstacle\+\_\+perception\+\_\+orthogonal.\+h.
 
 \begin{DoxyCode}
 12     \{
-13         \textcolor{keyword}{auto} *lidarClient = this->createClient<sm\_dance\_bot::LaserSensor>();
+13         \textcolor{keyword}{auto} lidarClient = this->createClient<ObstaclePerceptionOrthogonal, sm\_dance\_bot::LaserSensor>();
 14 
 15         lidarClient->topicName = \textcolor{stringliteral}{"/front/scan"};
 16         \textcolor{comment}{//lidarClient->queueSize = "/front/scan";}

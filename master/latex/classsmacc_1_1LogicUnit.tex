@@ -154,17 +154,17 @@ References keyboard\+\_\+node\+::msg.
 )}\hypertarget{classsmacc_1_1LogicUnit_a76ef62bbd4dccf3da2c03032616b3ef6}{}\label{classsmacc_1_1LogicUnit_a76ef62bbd4dccf3da2c03032616b3ef6}
 
 
-Definition at line 130 of file smacc\+\_\+state\+\_\+impl.\+h.
+Definition at line 134 of file smacc\+\_\+state\+\_\+impl.\+h.
 
 
 \begin{DoxyCode}
-131 \{
-132     this->\hyperlink{classsmacc_1_1LogicUnit_ac75aaeeea0e8d3667763a332ecfd65f7}{postEventFn} = [\textcolor{keyword}{this}]() \{
-133         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"[Logic Unit Base] postingfn posting event: "} << demangleSymbol<TEv>());
-134         \textcolor{keyword}{auto} *ev = \textcolor{keyword}{new} TEv();
-135         this->\hyperlink{classsmacc_1_1LogicUnit_a8863d227f46868876632b07b500f27d6}{ownerState}->\hyperlink{classsmacc_1_1ISmaccState_a562bb3f9a3ac16b8be71e4794c9e7523}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_ad80cdd7bbc9a9f3b221c625754fed1ed}{postEvent}(ev);
-136     \};
-137 \}
+135 \{
+136     this->\hyperlink{classsmacc_1_1LogicUnit_ac75aaeeea0e8d3667763a332ecfd65f7}{postEventFn} = [\textcolor{keyword}{this}]() \{
+137         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"[Logic Unit Base] postingfn posting event: "} << demangleSymbol<TEv>());
+138         \textcolor{keyword}{auto} *ev = \textcolor{keyword}{new} TEv();
+139         this->\hyperlink{classsmacc_1_1LogicUnit_a8863d227f46868876632b07b500f27d6}{ownerState}->\hyperlink{classsmacc_1_1ISmaccState_a562bb3f9a3ac16b8be71e4794c9e7523}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_ad80cdd7bbc9a9f3b221c625754fed1ed}{postEvent}(ev);
+140     \};
+141 \}
 \end{DoxyCode}
 \index{smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}!initialize@{initialize}}
 \index{initialize@{initialize}!smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}}

@@ -15,7 +15,7 @@ var searchData=
   ['keyboard_5fsubstate_2eh',['keyboard_substate.h',['../keyboard__substate_8h.html',1,'']]],
   ['keyboardclient',['KeyboardClient',['../classsm__three__some_1_1KeyboardClient.html',1,'sm_three_some']]],
   ['keyboardclient',['KeyboardClient',['../classsm__three__some_1_1KeyboardClient.html#a8f7227b0fc8f987406ad9b3e56c6294e',1,'sm_three_some::KeyboardClient']]],
-  ['keyboardclient_5f',['keyboardClient_',['../classsm__three__some_1_1SbKeyboard.html#a9db2d2dd752cca859c1aa71c665991a8',1,'sm_three_some::SbKeyboard']]],
+  ['keyboardclient_5f',['keyboardClient_',['../classsm__three__some_1_1CbKeyboard.html#a00f70614cf0c1e10f4214cf24b1d4013',1,'sm_three_some::CbKeyboard']]],
   ['keyboardlistenerloop',['keyboardListenerLoop',['../classsmacc_1_1Keyboard.html#a46ee02152cd0f2300242e4383c3e46af',1,'smacc::Keyboard']]],
   ['keyboardorthogonal',['KeyboardOrthogonal',['../classsm__three__some_1_1KeyboardOrthogonal.html',1,'sm_three_some']]],
   ['keyboardstate',['KeyboardState',['../structKeyboardState.html',1,'']]],

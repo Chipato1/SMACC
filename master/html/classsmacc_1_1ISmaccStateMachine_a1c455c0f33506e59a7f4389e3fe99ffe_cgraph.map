@@ -1,12 +1,7 @@
 <map id="smacc::ISmaccStateMachine::getCurrentStateInfo" name="smacc::ISmaccStateMachine::getCurrentStateInfo">
-<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccStateMachine.html#a9155cf3d1877255d70b0bd71648734a3" title="smacc::ISmaccStateMachine\l::createOrthogonal" alt="" coords="260,5,467,47"/>
-<area shape="rect" id="node5" href="$classsmacc_1_1ISmaccStateMachine.html#ae7c08fc2addf8ee4785f721050e6a763" title="smacc::ISmaccStateMachine\l::getTransitionLogHistory" alt="" coords="517,89,723,131"/>
-<area shape="rect" id="node6" href="$classsmacc_1_1ISmaccStateMachine.html#ac2982c6c8283663e5e1e8a7c82f511ec" title="this function should be implemented by the user to create the orthogonals " alt="" coords="517,165,723,207"/>
-<area shape="rect" id="node7" href="$classsmacc_1_1ISmaccStateMachine.html#a95e7f71d0d88fffd0afebb1f9ccdade5" title="smacc::ISmaccStateMachine\l::onInitialized" alt="" coords="260,240,467,281"/>
-<area shape="rect" id="node9" href="$classsmacc_1_1ISmaccStateMachine.html#ae8c9c79ca6cd77c975f5d9cda33a6d5e" title="smacc::ISmaccStateMachine\l::onInitializing" alt="" coords="260,123,467,164"/>
-<area shape="rect" id="node10" href="$classsmacc_1_1ISmaccStateMachine.html#ab61bff5b3c49c4bfc17972e2de8d4fd5" title="smacc::ISmaccStateMachine\l::publishTransition" alt="" coords="260,305,467,347"/>
-<area shape="rect" id="node3" href="$classsmacc_1_1Orthogonal.html#a05f65c01344a6c8593f7f88c0ca19654" title="smacc::Orthogonal::\lsetStateMachine" alt="" coords="545,5,695,47"/>
-<area shape="rect" id="node4" href="$classsmacc_1_1Orthogonal.html#a7a3da420b1554e20aea3ed01067df05c" title="smacc::Orthogonal::\lonInitialize" alt="" coords="773,5,924,47"/>
-<area shape="rect" id="node8" href="$classsmacc_1_1ISmaccStateMachine.html#ac03029f770422d0ea77ea9856b8cb1a8" title="smacc::ISmaccStateMachine\l::state_machine_visualization" alt="" coords="515,240,725,281"/>
-<area shape="rect" id="node11" href="$namespacesmacc.html#a6cda75a51f4a5e29d0a64effb800fb61" title="smacc::transitionInfoToMsg" alt="" coords="523,313,717,339"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccStateMachine.html#adf0f42ade0c65cc471960fe2a7c42da2" title="smacc::ISmaccStateMachine\l::createSignalConnection" alt="" coords="260,5,467,47"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccStateMachine.html#ae7c08fc2addf8ee4785f721050e6a763" title="smacc::ISmaccStateMachine\l::getTransitionLogHistory" alt="" coords="260,71,467,112"/>
+<area shape="rect" id="node4" href="$classsmacc_1_1ISmaccStateMachine.html#ac2982c6c8283663e5e1e8a7c82f511ec" title="this function should be implemented by the user to create the orthogonals " alt="" coords="260,136,467,177"/>
+<area shape="rect" id="node5" href="$classsmacc_1_1ISmaccStateMachine.html#ab61bff5b3c49c4bfc17972e2de8d4fd5" title="smacc::ISmaccStateMachine\l::publishTransition" alt="" coords="260,201,467,243"/>
+<area shape="rect" id="node6" href="$namespacesmacc.html#a6cda75a51f4a5e29d0a64effb800fb61" title="smacc::transitionInfoToMsg" alt="" coords="515,209,709,235"/>
 </map>

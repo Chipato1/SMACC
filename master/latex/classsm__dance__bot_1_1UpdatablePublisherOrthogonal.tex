@@ -1,0 +1,70 @@
+\hypertarget{classsm__dance__bot_1_1UpdatablePublisherOrthogonal}{}\section{sm\+\_\+dance\+\_\+bot\+:\+:Updatable\+Publisher\+Orthogonal Class Reference}
+\label{classsm__dance__bot_1_1UpdatablePublisherOrthogonal}\index{sm\+\_\+dance\+\_\+bot\+::\+Updatable\+Publisher\+Orthogonal@{sm\+\_\+dance\+\_\+bot\+::\+Updatable\+Publisher\+Orthogonal}}
+
+
+{\ttfamily \#include $<$updatable\+\_\+publisher\+\_\+orthogonal.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+dance\+\_\+bot\+:\+:Updatable\+Publisher\+Orthogonal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{classsm__dance__bot_1_1UpdatablePublisherOrthogonal__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+dance\+\_\+bot\+:\+:Updatable\+Publisher\+Orthogonal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot_1_1UpdatablePublisherOrthogonal__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classsm__dance__bot_1_1UpdatablePublisherOrthogonal_af15b10bcebf79adc4d5bd85de808b13a}{on\+Initialize} () override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file updatable\+\_\+publisher\+\_\+orthogonal.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+::\+Updatable\+Publisher\+Orthogonal@{sm\+\_\+dance\+\_\+bot\+::\+Updatable\+Publisher\+Orthogonal}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!sm\+\_\+dance\+\_\+bot\+::\+Updatable\+Publisher\+Orthogonal@{sm\+\_\+dance\+\_\+bot\+::\+Updatable\+Publisher\+Orthogonal}}
+\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+dance\+\_\+bot\+::\+Updatable\+Publisher\+Orthogonal\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__dance__bot_1_1UpdatablePublisherOrthogonal_af15b10bcebf79adc4d5bd85de808b13a}{}\label{classsm__dance__bot_1_1UpdatablePublisherOrthogonal_af15b10bcebf79adc4d5bd85de808b13a}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+
+
+
+Definition at line 11 of file updatable\+\_\+publisher\+\_\+orthogonal.\+h.
+
+
+\begin{DoxyCode}
+12     \{
+13         \textcolor{keyword}{auto} publisherClient\_ = this->createClient<UpdatablePublisherOrthogonal,
+       sm\_dance\_bot::UpdatableStringPublisherClient>();
+14         publisherClient\_->topicName = \textcolor{stringliteral}{"/updatable\_string\_publisher\_out"};
+15         publisherClient\_->initialize();
+16     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/orthogonals/\hyperlink{updatable__publisher__orthogonal_8h}{updatable\+\_\+publisher\+\_\+orthogonal.\+h}\end{DoxyCompactItemize}

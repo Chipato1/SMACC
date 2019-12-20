@@ -27,7 +27,7 @@ Collaboration diagram for sm\+\_\+dance\+\_\+bot\+:\+:St\+Rotate\+Degrees3\+:
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Succeeded$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $>$, \hyperlink{structsm__dance__bot_1_1StNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Aborted$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $>$, \hyperlink{structsm__dance__bot_1_1StNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$ $>$ \hyperlink{structsm__dance__bot_1_1StRotateDegrees3_a37a19ba4e7baf865a637b2bfad52bcd6}{reactions}
+typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Succeeded$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, \hyperlink{classsm__dance__bot_1_1NavigationOrthogonal}{Navigation\+Orthogonal} $>$, \hyperlink{structsm__dance__bot_1_1StNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Aborted$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, \hyperlink{classsm__dance__bot_1_1NavigationOrthogonal}{Navigation\+Orthogonal} $>$, \hyperlink{structsm__dance__bot_1_1StNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$ $>$ \hyperlink{structsm__dance__bot_1_1StRotateDegrees3_a1c1dc9f8f83122f3edd39075db335447}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -52,7 +52,7 @@ Definition at line 4 of file st\+\_\+rotate\+\_\+degrees\+\_\+3.\+h.
 \subsection{Member Typedef Documentation}
 \index{sm\+\_\+dance\+\_\+bot\+::\+St\+Rotate\+Degrees3@{sm\+\_\+dance\+\_\+bot\+::\+St\+Rotate\+Degrees3}!reactions@{reactions}}
 \index{reactions@{reactions}!sm\+\_\+dance\+\_\+bot\+::\+St\+Rotate\+Degrees3@{sm\+\_\+dance\+\_\+bot\+::\+St\+Rotate\+Degrees3}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ {\bf smacc\+::transition}$<$Ev\+Action\+Succeeded$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$, {\bf smacc\+::transition}$<$Ev\+Action\+Aborted$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$ $>$ {\bf sm\+\_\+dance\+\_\+bot\+::\+St\+Rotate\+Degrees3\+::reactions}}\hypertarget{structsm__dance__bot_1_1StRotateDegrees3_a37a19ba4e7baf865a637b2bfad52bcd6}{}\label{structsm__dance__bot_1_1StRotateDegrees3_a37a19ba4e7baf865a637b2bfad52bcd6}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ {\bf smacc\+::transition}$<$Ev\+Action\+Succeeded$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, {\bf Navigation\+Orthogonal}$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$, {\bf smacc\+::transition}$<$Ev\+Action\+Aborted$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, {\bf Navigation\+Orthogonal}$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$ $>$ {\bf sm\+\_\+dance\+\_\+bot\+::\+St\+Rotate\+Degrees3\+::reactions}}\hypertarget{structsm__dance__bot_1_1StRotateDegrees3_a1c1dc9f8f83122f3edd39075db335447}{}\label{structsm__dance__bot_1_1StRotateDegrees3_a1c1dc9f8f83122f3edd39075db335447}
 
 
 Definition at line 15 of file st\+\_\+rotate\+\_\+degrees\+\_\+3.\+h.
@@ -74,9 +74,9 @@ Definition at line 17 of file st\+\_\+rotate\+\_\+degrees\+\_\+3.\+h.
 
 \begin{DoxyCode}
 18   \{
-19     static\_configure<NavigationOrthogonal, SbRotate>(\textcolor{comment}{/*30*/} 180);
-20     static\_configure<ToolOrthogonal, SbToolStop>();
-21     static\_configure<ObstaclePerceptionOrthogonal, SbLidarSensor>();
+19     static\_configure<NavigationOrthogonal, CbRotate>(\textcolor{comment}{/*30*/} 180);
+20     static\_configure<ToolOrthogonal, CbToolStop>();
+21     static\_configure<ObstaclePerceptionOrthogonal, CbLidarSensor>();
 22   \}
 \end{DoxyCode}
 \index{sm\+\_\+dance\+\_\+bot\+::\+St\+Rotate\+Degrees3@{sm\+\_\+dance\+\_\+bot\+::\+St\+Rotate\+Degrees3}!on\+Initialize@{on\+Initialize}}

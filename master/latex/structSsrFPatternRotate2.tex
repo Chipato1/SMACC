@@ -27,7 +27,7 @@ Collaboration diagram for Ssr\+F\+Pattern\+Rotate2\+:
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Succeeded$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $>$, \hyperlink{structSsrFPatternForward2}{Ssr\+F\+Pattern\+Forward2} $>$ \hyperlink{structSsrFPatternRotate2_a3445f798fb3d6c6f2b468aefc7cf9ecb}{reactions}
+typedef \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Succeeded$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, \hyperlink{classNavigationOrthogonal}{Navigation\+Orthogonal} $>$, \hyperlink{structSsrFPatternForward2}{Ssr\+F\+Pattern\+Forward2} $>$ \hyperlink{structSsrFPatternRotate2_abd351e2ecdac7b34778f5b4e9fbeda9b}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -52,7 +52,7 @@ Definition at line 1 of file ssr\+\_\+fpattern\+\_\+rotate\+\_\+2.\+h.
 \subsection{Member Typedef Documentation}
 \index{Ssr\+F\+Pattern\+Rotate2@{Ssr\+F\+Pattern\+Rotate2}!reactions@{reactions}}
 \index{reactions@{reactions}!Ssr\+F\+Pattern\+Rotate2@{Ssr\+F\+Pattern\+Rotate2}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf smacc\+::transition}$<$Ev\+Action\+Succeeded$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}$>$, {\bf Ssr\+F\+Pattern\+Forward2}$>$ {\bf Ssr\+F\+Pattern\+Rotate2\+::reactions}}\hypertarget{structSsrFPatternRotate2_a3445f798fb3d6c6f2b468aefc7cf9ecb}{}\label{structSsrFPatternRotate2_a3445f798fb3d6c6f2b468aefc7cf9ecb}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf smacc\+::transition}$<$Ev\+Action\+Succeeded$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, {\bf Navigation\+Orthogonal}$>$, {\bf Ssr\+F\+Pattern\+Forward2}$>$ {\bf Ssr\+F\+Pattern\+Rotate2\+::reactions}}\hypertarget{structSsrFPatternRotate2_abd351e2ecdac7b34778f5b4e9fbeda9b}{}\label{structSsrFPatternRotate2_abd351e2ecdac7b34778f5b4e9fbeda9b}
 
 
 Definition at line 5 of file ssr\+\_\+fpattern\+\_\+rotate\+\_\+2.\+h.
@@ -80,8 +80,8 @@ Definition at line 7 of file ssr\+\_\+fpattern\+\_\+rotate\+\_\+2.\+h.
 12     \textcolor{keywordflow}{else}
 13       angle = 90;
 14 
-15     static\_configure<NavigationOrthogonal, SbRotate>(angle);
-16     static\_configure<ToolOrthogonal, SbToolStop>();
+15     static\_configure<NavigationOrthogonal, CbRotate>(angle);
+16     static\_configure<ToolOrthogonal, CbToolStop>();
 17   \}
 \end{DoxyCode}
 \index{Ssr\+F\+Pattern\+Rotate2@{Ssr\+F\+Pattern\+Rotate2}!on\+Initialize@{on\+Initialize}}

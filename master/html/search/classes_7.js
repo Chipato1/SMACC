@@ -7,5 +7,6 @@ var searchData=
   ['ismaccclient',['ISmaccClient',['../classsmacc_1_1ISmaccClient.html',1,'smacc']]],
   ['ismacccomponent',['ISmaccComponent',['../classsmacc_1_1ISmaccComponent.html',1,'smacc']]],
   ['ismaccstate',['ISmaccState',['../classsmacc_1_1ISmaccState.html',1,'smacc']]],
-  ['ismaccstatemachine',['ISmaccStateMachine',['../classsmacc_1_1ISmaccStateMachine.html',1,'smacc']]]
+  ['ismaccstatemachine',['ISmaccStateMachine',['../classsmacc_1_1ISmaccStateMachine.html',1,'smacc']]],
+  ['ismaccupdatable',['ISmaccUpdatable',['../classsmacc_1_1ISmaccUpdatable.html',1,'smacc']]]
 ];

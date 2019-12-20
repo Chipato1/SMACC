@@ -86,14 +86,13 @@ References smacc\+::demangle\+Symbol().
 77     \{
 78         \textcolor{keyword}{auto} eventsourcename = \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\hyperlink{structsmacc_1_1SmaccEventInfo_a42df97fc9a9a817ca841427358002930}{eventType}->templateParameters[0]->
       getFullName().c\_str());
-79         ROS\_ERROR\_STREAM(\textcolor{stringliteral}{"EVENT SOURCE NAME -------------"} << eventsourcename);
-80         \textcolor{keywordflow}{return} eventsourcename;
-81     \}
-82     \textcolor{keywordflow}{else}
-83     \{
-84         \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
-85     \}
-86 \}
+79         \textcolor{keywordflow}{return} eventsourcename;
+80     \}
+81     \textcolor{keywordflow}{else}
+82     \{
+83         \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
+84     \}
+85 \}
 \end{DoxyCode}
 
 
@@ -116,7 +115,7 @@ Here is the call graph for this function\+:
 )}\hypertarget{structsmacc_1_1SmaccEventInfo_ae0ed6a9506dbe526269a0bd956a71044}{}\label{structsmacc_1_1SmaccEventInfo_ae0ed6a9506dbe526269a0bd956a71044}
 
 
-Definition at line 88 of file smacc\+\_\+state\+\_\+info.\+cpp.
+Definition at line 87 of file smacc\+\_\+state\+\_\+info.\+cpp.
 
 
 
@@ -124,9 +123,9 @@ References smacc\+::demangle\+Symbol().
 
 
 \begin{DoxyCode}
-89 \{
-90     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\hyperlink{structsmacc_1_1SmaccEventInfo_a42df97fc9a9a817ca841427358002930}{eventType}->getNonTemplatetypename().c\_str());
-91 \}
+88 \{
+89     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\hyperlink{structsmacc_1_1SmaccEventInfo_a42df97fc9a9a817ca841427358002930}{eventType}->getNonTemplatetypename().c\_str());
+90 \}
 \end{DoxyCode}
 
 
@@ -149,7 +148,7 @@ Here is the call graph for this function\+:
 )}\hypertarget{structsmacc_1_1SmaccEventInfo_a0aa5d15822e7642079f375ee0f4ff096}{}\label{structsmacc_1_1SmaccEventInfo_a0aa5d15822e7642079f375ee0f4ff096}
 
 
-Definition at line 93 of file smacc\+\_\+state\+\_\+info.\+cpp.
+Definition at line 92 of file smacc\+\_\+state\+\_\+info.\+cpp.
 
 
 
@@ -157,17 +156,17 @@ References smacc\+::demangle\+Symbol().
 
 
 \begin{DoxyCode}
-94 \{
-95     \textcolor{keywordflow}{if} (\hyperlink{structsmacc_1_1SmaccEventInfo_a42df97fc9a9a817ca841427358002930}{eventType}->templateParameters.size() > 1)
-96     \{
-97         \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\hyperlink{structsmacc_1_1SmaccEventInfo_a42df97fc9a9a817ca841427358002930}{eventType}->templateParameters[1]->getFullName().c\_str(
+93 \{
+94     \textcolor{keywordflow}{if} (\hyperlink{structsmacc_1_1SmaccEventInfo_a42df97fc9a9a817ca841427358002930}{eventType}->templateParameters.size() > 1)
+95     \{
+96         \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\hyperlink{structsmacc_1_1SmaccEventInfo_a42df97fc9a9a817ca841427358002930}{eventType}->templateParameters[1]->getFullName().c\_str(
       ));
-98     \}
-99     \textcolor{keywordflow}{else}
-100     \{
-101         \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
-102     \}
-103 \}
+97     \}
+98     \textcolor{keywordflow}{else}
+99     \{
+100         \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
+101     \}
+102 \}
 \end{DoxyCode}
 
 

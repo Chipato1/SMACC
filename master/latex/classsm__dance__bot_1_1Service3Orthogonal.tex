@@ -57,7 +57,7 @@ Definition at line 11 of file service3\+\_\+orthogonal.\+h.
 
 \begin{DoxyCode}
 12     \{
-13         \textcolor{keyword}{auto} *serviceClient = this->createClient<ServiceClient3>();
+13         \textcolor{keyword}{auto} serviceClient = this->createClient<Service3Orthogonal, ServiceClient3>();
 14         serviceClient->serviceName\_ = \textcolor{stringliteral}{"/service\_node3"};
 15         serviceClient->initialize();
 16     \}

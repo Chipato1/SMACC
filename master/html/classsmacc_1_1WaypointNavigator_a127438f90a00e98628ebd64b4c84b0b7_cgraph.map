@@ -1,0 +1,6 @@
+<map id="smacc::WaypointNavigator::sendNextGoal" name="smacc::WaypointNavigator::sendNextGoal">
+<area shape="rect" id="node2" href="$classsmacc_1_1WaypointNavigator.html#a230458880035b8d027657658239aa3e9" title="smacc::WaypointNavigator\l::onGoalReached" alt="" coords="245,5,435,47"/>
+<area shape="rect" id="node4" href="$classsmacc_1_1SmaccActionClientBase.html#ae84ce50f0bdd42c5d32a631b4e9b8b6a" title="smacc::SmaccActionClient\lBase::onSucceeded" alt="" coords="244,71,436,112"/>
+<area shape="rect" id="node5" href="$classsmacc_1_1SmaccActionClientBase.html#a58c67a87c5fb8ea1633573c58fe3eee1" title="smacc::SmaccActionClient\lBase::sendGoal" alt="" coords="244,136,436,177"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1WaypointEventDispatcher.html#a6bd85034cb55795930741301a6077fe5" title="smacc::WaypointEventDispatcher\l::postWaypointEvent" alt="" coords="484,5,719,47"/>
+</map>

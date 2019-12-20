@@ -8,6 +8,7 @@ var searchData=
   ['delayedpostevent',['delayedPostEvent',['../namespacesm__viewer__sim.html#a19b5db17983d5b9bbf21e96ecf9ab5c8',1,'sm_viewer_sim']]],
   ['demangledtypename',['demangledTypeName',['../namespacesmacc.html#a78b16538b666c48efe324eec61cc15d7',1,'smacc']]],
   ['demanglesymbol',['demangleSymbol',['../namespacesmacc.html#a458f5e70d468824fbcd66cc7729deaa8',1,'smacc::demangleSymbol(const std::string &amp;name)'],['../namespacesmacc.html#a0b2684b209c8ebb043e0cff3800cc299',1,'smacc::demangleSymbol(const char *name)'],['../namespacesmacc.html#a4dd421d5d4e7617fcf4a9a756797adda',1,'smacc::demangleSymbol()']]],
+  ['demangletype',['demangleType',['../namespacesmacc.html#a792e7a3ea0843e87543a465b446ae730',1,'smacc']]],
   ['depth',['depth',['../classsmacc_1_1SmaccStateInfo.html#a2abede9fd08d8954c3e392a053d50533',1,'smacc::SmaccStateInfo']]],
   ['direction',['direction',['../structsm__dance__bot_1_1SS4_1_1SsFPattern1.html#a4d286cea10dd7a14743a89f5a2131dc5',1,'sm_dance_bot::SS4::SsFPattern1::direction()'],['../structsm__dance__bot_1_1SS5_1_1SsSPattern1.html#abe6ab6e7e6630e67566c0fee58ce565f',1,'sm_dance_bot::SS5::SsSPattern1::direction()']]],
   ['dynreconfcallback',['dynreconfCallback',['../classsmacc__planner__switcher_1_1PlannerSwitcher.html#a19328a8a844797e39dd24736872bd442',1,'smacc_planner_switcher::PlannerSwitcher']]]

@@ -42,7 +42,7 @@ Definition at line 91 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 )\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structsmacc_1_1WalkStatesExecutor_a11a2b02eafb62ec298bcf5ffbb32848b}{}\label{structsmacc_1_1WalkStatesExecutor_a11a2b02eafb62ec298bcf5ffbb32848b}
 
 
-Definition at line 364 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+Definition at line 363 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 
 
 
@@ -50,38 +50,38 @@ Referenced by smacc\+::\+Smacc\+State\+Machine\+Info\+::build\+State\+Machine\+I
 
 
 \begin{DoxyCode}
-365 \{
-366     \textcolor{comment}{//ros::Duration(1).sleep();}
-367     \textcolor{keyword}{auto} currentname = demangledTypeName<InitialStateType>();
-368 
-369     std::shared\_ptr<SmaccStateInfo> targetState;
-370 
-371     \textcolor{keywordflow}{if} (!rootInitialNode)
-372     \{
-373         \textcolor{keywordflow}{if} (parentState->stateMachine\_->containsState<InitialStateType>())
-374         \{
-375             \textcolor{comment}{// it already exist: break;}
-376             \textcolor{keywordflow}{return};
-377         \}
-378 
-379         targetState = parentState->createChildState<InitialStateType>();
-380     \}
-381     \textcolor{keywordflow}{else}
-382     \{
-383         targetState = parentState;
-384     \}
-385 
-386     CallOnDefinition<InitialStateType>();
-387 
-388     \textcolor{keyword}{typedef} \textcolor{keyword}{typename} std::remove\_pointer<decltype(InitialStateType::smacc\_inner\_type)>::type InnerType;
-389     processSubState<InnerType>(targetState);
-390 
-391     \textcolor{comment}{// -------------------- REACTIONS --------------------}
-392     \textcolor{keyword}{typedef} \textcolor{keyword}{typename} InitialStateType::reactions reactions;
-393     \textcolor{comment}{//ROS\_INFO\_STREAM("state machine initial state reactions: "<< demangledTypeName<reactions>());}
-394 
-395     processTransitions<reactions>(targetState);
-396 \}
+364 \{
+365     \textcolor{comment}{//ros::Duration(1).sleep();}
+366     \textcolor{keyword}{auto} currentname = demangledTypeName<InitialStateType>();
+367 
+368     std::shared\_ptr<SmaccStateInfo> targetState;
+369 
+370     \textcolor{keywordflow}{if} (!rootInitialNode)
+371     \{
+372         \textcolor{keywordflow}{if} (parentState->stateMachine\_->containsState<InitialStateType>())
+373         \{
+374             \textcolor{comment}{// it already exist: break;}
+375             \textcolor{keywordflow}{return};
+376         \}
+377 
+378         targetState = parentState->createChildState<InitialStateType>();
+379     \}
+380     \textcolor{keywordflow}{else}
+381     \{
+382         targetState = parentState;
+383     \}
+384 
+385     CallOnDefinition<InitialStateType>();
+386 
+387     \textcolor{keyword}{typedef} \textcolor{keyword}{typename} std::remove\_pointer<decltype(InitialStateType::smacc\_inner\_type)>::type InnerType;
+388     processSubState<InnerType>(targetState);
+389 
+390     \textcolor{comment}{// -------------------- REACTIONS --------------------}
+391     \textcolor{keyword}{typedef} \textcolor{keyword}{typename} InitialStateType::reactions reactions;
+392     \textcolor{comment}{//ROS\_INFO\_STREAM("state machine initial state reactions: "<< demangledTypeName<reactions>());}
+393 
+394     processTransitions<reactions>(targetState);
+395 \}
 \end{DoxyCode}
 
 

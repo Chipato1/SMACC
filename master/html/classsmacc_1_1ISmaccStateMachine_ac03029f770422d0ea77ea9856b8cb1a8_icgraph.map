@@ -1,8 +1,9 @@
 <map id="smacc::ISmaccStateMachine::state_machine_visualization" name="smacc::ISmaccStateMachine::state_machine_visualization">
-<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccStateMachine.html#a2d0b1742f17dd77d5df217153e8b5259" title="smacc::ISmaccStateMachine\l::getStateMachineName" alt="" coords="264,5,471,47"/>
-<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccStateMachine.html#a95e7f71d0d88fffd0afebb1f9ccdade5" title="smacc::ISmaccStateMachine\l::onInitialized" alt="" coords="264,71,471,112"/>
-<area shape="rect" id="node4" href="$classsmacc_1_1ISmaccStateMachine.html#a1c455c0f33506e59a7f4389e3fe99ffe" title="smacc::ISmaccStateMachine\l::getCurrentStateInfo" alt="" coords="519,35,725,76"/>
-<area shape="rect" id="node7" href="$structsmacc_1_1SmaccStateMachineBase.html#a2dc1cd9a25b80f00602f1faab9b01e7b" title="smacc::SmaccStateMachine\lBase\&lt; TimerStateMachine,\l TimerState \&gt;::initiate_impl" alt="" coords="520,99,724,155"/>
-<area shape="rect" id="node5" href="$classsmacc_1_1ISmaccState.html#a46ec42e07b8c68e8ddb7dd3472e91214" title="smacc::ISmaccState\l::notifyTransitionFromTransition\lTypeInfo" alt="" coords="773,27,991,83"/>
-<area shape="rect" id="node6" href="$classsmacc_1_1ISmaccState.html#a98df316afd79180d3c27a15a7d5dd1cf" title="smacc::ISmaccState\l::notifyTransition" alt="" coords="1039,35,1193,76"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccStateMachine.html#a95e7f71d0d88fffd0afebb1f9ccdade5" title="smacc::ISmaccStateMachine\l::onInitialized" alt="" coords="264,63,471,105"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccStateMachine.html#a8c39c1eedb7236e67739dab6e2229511" title="smacc::ISmaccStateMachine\l::getCurrentState" alt="" coords="519,27,725,69"/>
+<area shape="rect" id="node8" href="$structsmacc_1_1SmaccStateMachineBase.html#a2dc1cd9a25b80f00602f1faab9b01e7b" title="smacc::SmaccStateMachine\lBase\&lt; TimerStateMachine,\l TimerState \&gt;::initiate_impl" alt="" coords="520,92,724,148"/>
+<area shape="rect" id="node4" href="$classsmacc_1_1SignalDetector.html#a9a116479e23259f3a5d5d4a47278afd5" title="smacc::SignalDetector\l::pollOnce" alt="" coords="773,27,940,69"/>
+<area shape="rect" id="node5" href="$classsmacc_1_1SignalDetector.html#a2665e66cdae9f6533c64bbcecf3fa199" title="smacc::SignalDetector\l::pollingLoop" alt="" coords="988,27,1155,69"/>
+<area shape="rect" id="node6" href="$namespacesmacc.html#a47ac3b8d2968b1ba4152afd64ab66bd0" title="smacc::run" alt="" coords="1239,5,1333,32"/>
+<area shape="rect" id="node7" href="$classsmacc_1_1SignalDetector.html#a48b3fee853ddcb25732408b22ecfcf39" title="smacc::SignalDetector\l::runThread" alt="" coords="1203,57,1369,98"/>
 </map>

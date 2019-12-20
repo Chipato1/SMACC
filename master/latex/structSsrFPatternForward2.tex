@@ -27,7 +27,7 @@ Collaboration diagram for Ssr\+F\+Pattern\+Forward2\+:
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Succeeded$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $>$, \hyperlink{structSsrFPatternStartLoop}{Ssr\+F\+Pattern\+Start\+Loop} $>$ \hyperlink{structSsrFPatternForward2_a99e7488097a68de736567e9f7da6d77f}{reactions}
+typedef \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Succeeded$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, \hyperlink{classNavigationOrthogonal}{Navigation\+Orthogonal} $>$, \hyperlink{structSsrFPatternStartLoop}{Ssr\+F\+Pattern\+Start\+Loop} $>$ \hyperlink{structSsrFPatternForward2_ac0a963e017b7e9b15e6dd7c1b063d453}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -52,7 +52,7 @@ Definition at line 1 of file ssr\+\_\+fpattern\+\_\+forward\+\_\+2.\+h.
 \subsection{Member Typedef Documentation}
 \index{Ssr\+F\+Pattern\+Forward2@{Ssr\+F\+Pattern\+Forward2}!reactions@{reactions}}
 \index{reactions@{reactions}!Ssr\+F\+Pattern\+Forward2@{Ssr\+F\+Pattern\+Forward2}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf smacc\+::transition}$<$Ev\+Action\+Succeeded$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}$>$, {\bf Ssr\+F\+Pattern\+Start\+Loop}$>$ {\bf Ssr\+F\+Pattern\+Forward2\+::reactions}}\hypertarget{structSsrFPatternForward2_a99e7488097a68de736567e9f7da6d77f}{}\label{structSsrFPatternForward2_a99e7488097a68de736567e9f7da6d77f}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf smacc\+::transition}$<$Ev\+Action\+Succeeded$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, {\bf Navigation\+Orthogonal}$>$, {\bf Ssr\+F\+Pattern\+Start\+Loop}$>$ {\bf Ssr\+F\+Pattern\+Forward2\+::reactions}}\hypertarget{structSsrFPatternForward2_ac0a963e017b7e9b15e6dd7c1b063d453}{}\label{structSsrFPatternForward2_ac0a963e017b7e9b15e6dd7c1b063d453}
 
 
 Definition at line 5 of file ssr\+\_\+fpattern\+\_\+forward\+\_\+2.\+h.
@@ -94,8 +94,8 @@ Definition at line 11 of file ssr\+\_\+fpattern\+\_\+forward\+\_\+2.\+h.
 14     ROS\_INFO(\textcolor{stringliteral}{"[SsrFpattern] Fpattern rotate: SS current iteration: %d/%d"}, superstate.iteration\_count, 
       superstate.total\_iterations());
 15 
-16     this->configure<NavigationOrthogonal>(std::make\_shared<SbNavigateForward>(SS::pitch\_lenght\_meters()));
-17     this->configure<ToolOrthogonal>(std::make\_shared<SbToolStop>());
+16     this->configure<NavigationOrthogonal, CbNavigateForward>(SS::pitch\_lenght\_meters());
+17     this->configure<ToolOrthogonal, CbToolStop>();
 18   \}
 \end{DoxyCode}
 

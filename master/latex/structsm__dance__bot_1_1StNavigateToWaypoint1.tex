@@ -27,7 +27,7 @@ Collaboration diagram for sm\+\_\+dance\+\_\+bot\+:\+:St\+Navigate\+To\+Waypoint
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Succeeded$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $>$, \hyperlink{structsm__dance__bot_1_1StNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Aborted$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $>$, \hyperlink{structsm__dance__bot_1_1StNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$ $>$ \hyperlink{structsm__dance__bot_1_1StNavigateToWaypoint1_a862635c188fcb82195c97223b2d6dd66}{reactions}
+typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Succeeded$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, \hyperlink{classsm__dance__bot_1_1NavigationOrthogonal}{Navigation\+Orthogonal} $>$, \hyperlink{structsm__dance__bot_1_1StNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Aborted$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, \hyperlink{classsm__dance__bot_1_1NavigationOrthogonal}{Navigation\+Orthogonal} $>$, \hyperlink{structsm__dance__bot_1_1StNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX} $>$ $>$ \hyperlink{structsm__dance__bot_1_1StNavigateToWaypoint1_aa93482927046308891923d15a115356f}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -52,7 +52,7 @@ Definition at line 4 of file st\+\_\+navigate\+\_\+to\+\_\+waypoint\+\_\+1.\+h.
 \subsection{Member Typedef Documentation}
 \index{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+Waypoint1@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+Waypoint1}!reactions@{reactions}}
 \index{reactions@{reactions}!sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+Waypoint1@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+Waypoint1}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ {\bf smacc\+::transition}$<$Ev\+Action\+Succeeded$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$, {\bf smacc\+::transition}$<$Ev\+Action\+Aborted$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$ $>$ {\bf sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+Waypoint1\+::reactions}}\hypertarget{structsm__dance__bot_1_1StNavigateToWaypoint1_a862635c188fcb82195c97223b2d6dd66}{}\label{structsm__dance__bot_1_1StNavigateToWaypoint1_a862635c188fcb82195c97223b2d6dd66}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ {\bf smacc\+::transition}$<$Ev\+Action\+Succeeded$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, {\bf Navigation\+Orthogonal}$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$, {\bf smacc\+::transition}$<$Ev\+Action\+Aborted$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, {\bf Navigation\+Orthogonal}$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$ $>$ {\bf sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+Waypoint1\+::reactions}}\hypertarget{structsm__dance__bot_1_1StNavigateToWaypoint1_aa93482927046308891923d15a115356f}{}\label{structsm__dance__bot_1_1StNavigateToWaypoint1_aa93482927046308891923d15a115356f}
 
 
 Definition at line 15 of file st\+\_\+navigate\+\_\+to\+\_\+waypoint\+\_\+1.\+h.
@@ -74,10 +74,10 @@ Definition at line 17 of file st\+\_\+navigate\+\_\+to\+\_\+waypoint\+\_\+1.\+h.
 
 \begin{DoxyCode}
 18   \{
-19     static\_configure<NavigationOrthogonal, SbNavigateGlobalPosition>(0, 0, 0);
-20     static\_configure<ToolOrthogonal, SbToolStart>();
-21     static\_configure<PublisherOrthogonal, SbStringPublisher>(\textcolor{stringliteral}{"All Done!"});
-22     static\_configure<ObstaclePerceptionOrthogonal, SbLidarSensor>();
+19     static\_configure<NavigationOrthogonal, CbNavigateGlobalPosition>(0, 0, 0);
+20     static\_configure<ToolOrthogonal, CbToolStart>();
+21     static\_configure<PublisherOrthogonal, CbStringPublisher>(\textcolor{stringliteral}{"All Done!"});
+22     static\_configure<ObstaclePerceptionOrthogonal, CbLidarSensor>();
 23   \}
 \end{DoxyCode}
 \index{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+Waypoint1@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+Waypoint1}!on\+Initialize@{on\+Initialize}}

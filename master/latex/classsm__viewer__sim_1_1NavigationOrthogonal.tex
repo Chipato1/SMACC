@@ -57,7 +57,7 @@ Definition at line 9 of file navigation\+\_\+orthogonal.\+h.
 
 \begin{DoxyCode}
 10     \{
-11         \textcolor{keyword}{auto} *client = this->createClient<smacc::SmaccMoveBaseActionClient>();
+11         \textcolor{keyword}{auto} client = this->createClient<NavigationOrthogonal, smacc::SmaccMoveBaseActionClient>();
 12         client->name\_ = \textcolor{stringliteral}{"move\_base"};
 13         client->initialize();
 14     \}

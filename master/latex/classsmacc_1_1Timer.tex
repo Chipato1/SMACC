@@ -2,7 +2,7 @@
 \label{classsmacc_1_1Timer}\index{smacc\+::\+Timer@{smacc\+::\+Timer}}
 
 
-{\ttfamily \#include $<$timer\+\_\+substate.\+h$>$}
+{\ttfamily \#include $<$cb\+\_\+timer.\+h$>$}
 
 
 
@@ -11,7 +11,7 @@ Inheritance diagram for smacc\+:\+:Timer\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=254pt]{classsmacc_1_1Timer__inherit__graph}
+\includegraphics[width=236pt]{classsmacc_1_1Timer__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -56,7 +56,7 @@ ros\+::\+Duration \hyperlink{classsmacc_1_1Timer_a564c0bbd2b12909d61a1345358c641
 \subsection{Detailed Description}
 
 
-Definition at line 28 of file timer\+\_\+substate.\+h.
+Definition at line 28 of file cb\+\_\+timer.\+h.
 
 
 
@@ -66,7 +66,7 @@ Definition at line 28 of file timer\+\_\+substate.\+h.
 \subsubsection[{\texorpdfstring{Tick\+Event}{TickEvent}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Timer\+Tick\+Event} {\bf smacc\+::\+Timer\+::\+Tick\+Event}}\hypertarget{classsmacc_1_1Timer_a6f72664250a9ee757619db1605529b98}{}\label{classsmacc_1_1Timer_a6f72664250a9ee757619db1605529b98}
 
 
-Definition at line 32 of file timer\+\_\+substate.\+h.
+Definition at line 32 of file cb\+\_\+timer.\+h.
 
 
 
@@ -81,7 +81,7 @@ Definition at line 32 of file timer\+\_\+substate.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1Timer_afcfaad17f6105255a438b2b442bd0cdf}{}\label{classsmacc_1_1Timer_afcfaad17f6105255a438b2b442bd0cdf}
 
 
-Definition at line 39 of file timer\+\_\+substate.\+h.
+Definition at line 39 of file cb\+\_\+timer.\+h.
 
 
 \begin{DoxyCode}
@@ -102,11 +102,11 @@ Definition at line 39 of file timer\+\_\+substate.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1Timer_ab99111438ad35cf740ed4bd8c136ff6a}{}\label{classsmacc_1_1Timer_ab99111438ad35cf740ed4bd8c136ff6a}
 
 
-Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_a47eb8983afa8e1d312873a9a297b84f3}{smacc\+::\+Smacc\+Sub\+State\+Behavior}.
+Reimplemented from \hyperlink{classsmacc_1_1SmaccClientBehavior_a7962382f93987c720ad432fef55b123f}{smacc\+::\+Smacc\+Client\+Behavior}.
 
 
 
-Definition at line 45 of file timer\+\_\+substate.\+h.
+Definition at line 45 of file cb\+\_\+timer.\+h.
 
 
 
@@ -140,11 +140,11 @@ Here is the call graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1Timer_a5b207b96df3c5a698706da5cde0c711a}{}\label{classsmacc_1_1Timer_a5b207b96df3c5a698706da5cde0c711a}
 
 
-Reimplemented from \hyperlink{classsmacc_1_1SmaccSubStateBehavior_afaeb44666136c5ae47a53dde89fa5d31}{smacc\+::\+Smacc\+Sub\+State\+Behavior}.
+Reimplemented from \hyperlink{classsmacc_1_1SmaccClientBehavior_ac0cd72d42bd00425362a97c9803ecce5}{smacc\+::\+Smacc\+Client\+Behavior}.
 
 
 
-Definition at line 50 of file timer\+\_\+substate.\+h.
+Definition at line 50 of file cb\+\_\+timer.\+h.
 
 
 \begin{DoxyCode}
@@ -161,7 +161,7 @@ Definition at line 50 of file timer\+\_\+substate.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1Timer_a3939cbeb19e5a7d9c02c56064805b242}{}\label{classsmacc_1_1Timer_a3939cbeb19e5a7d9c02c56064805b242}
 
 
-Definition at line 55 of file timer\+\_\+substate.\+h.
+Definition at line 55 of file cb\+\_\+timer.\+h.
 
 
 
@@ -175,7 +175,7 @@ Referenced by on\+Entry().
 \begin{DoxyCode}
 56   \{
 57     TimerTickEvent* \textcolor{keyword}{event}= \textcolor{keyword}{new} TimerTickEvent(\textcolor{keyword}{this}, timedata);
-58     this->\hyperlink{classsmacc_1_1SmaccSubStateBehavior_a8538664f9828247727a27446112788a2}{postEvent}(event);
+58     this->\hyperlink{classsmacc_1_1SmaccClientBehavior_ab29b23145ea074ad69340fc0af6fbb75}{postEvent}(event);
 59   \}   
 \end{DoxyCode}
 
@@ -210,31 +210,31 @@ Here is the caller graph for this function\+:
 \subsubsection[{\texorpdfstring{duration}{duration}}]{\setlength{\rightskip}{0pt plus 5cm}ros\+::\+Duration smacc\+::\+Timer\+::duration}\hypertarget{classsmacc_1_1Timer_a564c0bbd2b12909d61a1345358c641fc}{}\label{classsmacc_1_1Timer_a564c0bbd2b12909d61a1345358c641fc}
 
 
-Definition at line 36 of file timer\+\_\+substate.\+h.
+Definition at line 36 of file cb\+\_\+timer.\+h.
 
 \index{smacc\+::\+Timer@{smacc\+::\+Timer}!nh@{nh}}
 \index{nh@{nh}!smacc\+::\+Timer@{smacc\+::\+Timer}}
 \subsubsection[{\texorpdfstring{nh}{nh}}]{\setlength{\rightskip}{0pt plus 5cm}ros\+::\+Node\+Handle smacc\+::\+Timer\+::nh}\hypertarget{classsmacc_1_1Timer_a84b2854ae319292c9351325d98615a66}{}\label{classsmacc_1_1Timer_a84b2854ae319292c9351325d98615a66}
 
 
-Definition at line 34 of file timer\+\_\+substate.\+h.
+Definition at line 34 of file cb\+\_\+timer.\+h.
 
 \index{smacc\+::\+Timer@{smacc\+::\+Timer}!oneshot@{oneshot}}
 \index{oneshot@{oneshot}!smacc\+::\+Timer@{smacc\+::\+Timer}}
 \subsubsection[{\texorpdfstring{oneshot}{oneshot}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool} smacc\+::\+Timer\+::oneshot}\hypertarget{classsmacc_1_1Timer_a8b460b006b7173f718dfa5868c0eb59d}{}\label{classsmacc_1_1Timer_a8b460b006b7173f718dfa5868c0eb59d}
 
 
-Definition at line 37 of file timer\+\_\+substate.\+h.
+Definition at line 37 of file cb\+\_\+timer.\+h.
 
 \index{smacc\+::\+Timer@{smacc\+::\+Timer}!timer@{timer}}
 \index{timer@{timer}!smacc\+::\+Timer@{smacc\+::\+Timer}}
 \subsubsection[{\texorpdfstring{timer}{timer}}]{\setlength{\rightskip}{0pt plus 5cm}ros\+::\+Timer smacc\+::\+Timer\+::timer}\hypertarget{classsmacc_1_1Timer_a1376795baefaab38614fc108aeb4f36c}{}\label{classsmacc_1_1Timer_a1376795baefaab38614fc108aeb4f36c}
 
 
-Definition at line 35 of file timer\+\_\+substate.\+h.
+Definition at line 35 of file cb\+\_\+timer.\+h.
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-smacc\+\_\+client\+\_\+library/smacc\+\_\+sensors/examples/timer\+\_\+substate\+\_\+example/include/substates\+\_\+behaviors/navigation/\hyperlink{timer__substate_8h}{timer\+\_\+substate.\+h}\end{DoxyCompactItemize}
+smacc\+\_\+client\+\_\+library/smacc\+\_\+sensors/examples/timer\+\_\+substate\+\_\+example/include/client\+\_\+behaviors/navigation/\hyperlink{smacc__sensors_2examples_2timer__substate__example_2include_2client__behaviors_2navigation_2cb__timer_8h}{cb\+\_\+timer.\+h}\end{DoxyCompactItemize}

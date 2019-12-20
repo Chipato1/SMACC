@@ -37,15 +37,15 @@ I\+D\+LE\hypertarget{namespacesmacc__odom__tracker_ade9730dd5cc10ccfad9362176cf4
 \end{Desc}
 
 
-Definition at line 28 of file odom\+\_\+tracker.\+h.
+Definition at line 27 of file odom\+\_\+tracker.\+h.
 
 
 \begin{DoxyCode}
-28                        : uint8\_t \{
-29     \hyperlink{namespacesmacc__odom__tracker_ade9730dd5cc10ccfad9362176cf46c33a989d06a586bcf9520889228da7faa643}{RECORD\_PATH\_FORWARD} = 0,
-30     \hyperlink{namespacesmacc__odom__tracker_ade9730dd5cc10ccfad9362176cf46c33a0cf8f27617189e35619df3c18bda6274}{CLEAR\_PATH\_BACKWARD} = 1,
-31     \hyperlink{namespacesmacc__odom__tracker_ade9730dd5cc10ccfad9362176cf46c33aa5daf7f2ebbba4975d61dab1c40188c7}{IDLE} = 2
-32 \};
+27                        : uint8\_t \{
+28     \hyperlink{namespacesmacc__odom__tracker_ade9730dd5cc10ccfad9362176cf46c33a989d06a586bcf9520889228da7faa643}{RECORD\_PATH\_FORWARD} = 0,
+29     \hyperlink{namespacesmacc__odom__tracker_ade9730dd5cc10ccfad9362176cf46c33a0cf8f27617189e35619df3c18bda6274}{CLEAR\_PATH\_BACKWARD} = 1,
+30     \hyperlink{namespacesmacc__odom__tracker_ade9730dd5cc10ccfad9362176cf46c33aa5daf7f2ebbba4975d61dab1c40188c7}{IDLE} = 2
+31 \};
 \end{DoxyCode}
 
 
@@ -60,7 +60,7 @@ Definition at line 28 of file odom\+\_\+tracker.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacesmacc__odom__tracker_a93496d9bf987249b884e9b0e60778a11}{}\label{namespacesmacc__odom__tracker_a93496d9bf987249b884e9b0e60778a11}
 \hyperlink{namespacesmacc__odom__tracker_a93496d9bf987249b884e9b0e60778a11}{p2p\+Distance()} 
 
-Definition at line 127 of file odom\+\_\+tracker.\+h.
+Definition at line 126 of file odom\+\_\+tracker.\+h.
 
 
 
@@ -68,13 +68,13 @@ Referenced by smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::update\+Backwar
 
 
 \begin{DoxyCode}
-128     \{
-129         \textcolor{keywordtype}{double} dx = (p1.x - p2.x);
-130         \textcolor{keywordtype}{double} dy = (p1.y - p2.y);
-131         \textcolor{keywordtype}{double} dz = (p2.z - p2.z);
-132         \textcolor{keywordtype}{double} dist = sqrt(dx*dx + dy*dy+dz*dz);
-133         \textcolor{keywordflow}{return} dist;
-134     \}
+127     \{
+128         \textcolor{keywordtype}{double} dx = (p1.x - p2.x);
+129         \textcolor{keywordtype}{double} dy = (p1.y - p2.y);
+130         \textcolor{keywordtype}{double} dz = (p2.z - p2.z);
+131         \textcolor{keywordtype}{double} dist = sqrt(dx*dx + dy*dy+dz*dz);
+132         \textcolor{keywordflow}{return} dist;
+133     \}
 \end{DoxyCode}
 
 

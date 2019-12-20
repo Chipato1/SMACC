@@ -3,14 +3,15 @@
 {\ttfamily \#include $<$boost/statechart/state.\+hpp$>$}\\*
 {\ttfamily \#include $<$boost/statechart/simple\+\_\+state.\+hpp$>$}\\*
 {\ttfamily \#include $<$boost/statechart/event.\+hpp$>$}\\*
+{\ttfamily \#include $<$ros/ros.\+h$>$}\\*
+{\ttfamily \#include $<$typeinfo$>$}\\*
 {\ttfamily \#include $<$boost/mpl/list.\+hpp$>$}\\*
 {\ttfamily \#include $<$boost/mpl/for\+\_\+each.\+hpp$>$}\\*
 {\ttfamily \#include $<$boost/mpl/transform.\+hpp$>$}\\*
 {\ttfamily \#include $<$smacc/smacc\+\_\+types.\+h$>$}\\*
 {\ttfamily \#include $<$smacc/introspection/string\+\_\+type\+\_\+walker.\+h$>$}\\*
-{\ttfamily \#include $<$smacc\+\_\+msgs/\+Smacc\+Transition.\+h$>$}\\*
-{\ttfamily \#include $<$ros/ros.\+h$>$}\\*
 {\ttfamily \#include $<$smacc/introspection/smacc\+\_\+state\+\_\+info.\+h$>$}\\*
+{\ttfamily \#include $<$smacc\+\_\+msgs/\+Smacc\+Transition.\+h$>$}\\*
 {\ttfamily \#include $<$smacc/introspection/smacc\+\_\+state\+\_\+machine\+\_\+info.\+h$>$}\\*
 Include dependency graph for introspection.\+h\+:
 \nopagebreak
@@ -73,6 +74,8 @@ std\+::string \hyperlink{namespacesmacc_a0b2684b209c8ebb043e0cff3800cc299}{smacc
 {\footnotesize template$<$typename T $>$ }\\std\+::string \hyperlink{namespacesmacc_a4dd421d5d4e7617fcf4a9a756797adda}{smacc\+::demangle\+Symbol} ()
 \item 
 {\footnotesize template$<$class T $>$ }\\std\+::string \hyperlink{namespacesmacc_a78b16538b666c48efe324eec61cc15d7}{smacc\+::demangled\+Type\+Name} ()
+\item 
+std\+::string \hyperlink{namespacesmacc_a792e7a3ea0843e87543a465b446ae730}{smacc\+::demangle\+Type} (const std\+::type\+\_\+info \&tinfo)
 \item 
 {\footnotesize template$<$typename T $>$ }\\std\+::enable\+\_\+if$<$ Has\+Event\+Label$<$ T $>$\+::value, void $>$\+::type \hyperlink{namespacesmacc_a718cd7f34605a7d59777341924cbfe7e}{smacc\+::\+Event\+Label} (std\+::string \&label)
 \item 

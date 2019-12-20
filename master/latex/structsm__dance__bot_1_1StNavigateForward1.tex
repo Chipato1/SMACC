@@ -27,12 +27,14 @@ Collaboration diagram for sm\+\_\+dance\+\_\+bot\+:\+:St\+Navigate\+Forward1\+:
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef mpl\+::list$<$ transition$<$ Ev\+Action\+Succeeded$<$ Smacc\+Move\+Base\+Action\+Client $>$, \hyperlink{structsm__dance__bot_1_1StRotateDegrees2}{St\+Rotate\+Degrees2} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Aborted$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $>$, \hyperlink{structsm__dance__bot_1_1StNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX}, \hyperlink{classABORT}{A\+B\+O\+RT} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Preempted$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client} $>$, \hyperlink{structsm__dance__bot_1_1StNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX}, \hyperlink{classPREEMPT}{P\+R\+E\+E\+M\+PT} $>$ $>$ \hyperlink{structsm__dance__bot_1_1StNavigateForward1_a64003d8942b0ce293c006f1b26bca640}{reactions}
+typedef mpl\+::list$<$ transition$<$ Ev\+Action\+Succeeded$<$ Smacc\+Move\+Base\+Action\+Client, \hyperlink{classsm__dance__bot_1_1NavigationOrthogonal}{Navigation\+Orthogonal} $>$, \hyperlink{structsm__dance__bot_1_1StRotateDegrees2}{St\+Rotate\+Degrees2} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Aborted$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, \hyperlink{classsm__dance__bot_1_1NavigationOrthogonal}{Navigation\+Orthogonal} $>$, \hyperlink{structsm__dance__bot_1_1StNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX}, \hyperlink{classABORT}{A\+B\+O\+RT} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Action\+Preempted$<$ \hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, \hyperlink{classsm__dance__bot_1_1NavigationOrthogonal}{Navigation\+Orthogonal} $>$, \hyperlink{structsm__dance__bot_1_1StNavigateToWaypointsX}{St\+Navigate\+To\+WaypointsX}, \hyperlink{classPREEMPT}{P\+R\+E\+E\+M\+PT} $>$ $>$ \hyperlink{structsm__dance__bot_1_1StNavigateForward1_a444670aefb79b460181dd41dba6a4432}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{structsm__dance__bot_1_1StNavigateForward1_aca9caa8bd74d17b2d735db4cfb3cfe4c}{on\+Initialize} ()
+\item 
+void \hyperlink{structsm__dance__bot_1_1StNavigateForward1_a182b23337261f2887307d935066cd156}{on\+Action\+Client\+Succeded} (Smacc\+Move\+Base\+Action\+Client\+::\+Result\+Const\+Ptr \&msg)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -52,7 +54,7 @@ Definition at line 4 of file st\+\_\+navigate\+\_\+forward\+\_\+1.\+h.
 \subsection{Member Typedef Documentation}
 \index{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Forward1@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Forward1}!reactions@{reactions}}
 \index{reactions@{reactions}!sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Forward1@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Forward1}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ transition$<$Ev\+Action\+Succeeded$<$Smacc\+Move\+Base\+Action\+Client$>$, {\bf St\+Rotate\+Degrees2}$>$, {\bf smacc\+::transition}$<$Ev\+Action\+Aborted$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}$>$, {\bf St\+Navigate\+To\+WaypointsX}, {\bf A\+B\+O\+RT}$>$, {\bf smacc\+::transition}$<$Ev\+Action\+Preempted$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}$>$, {\bf St\+Navigate\+To\+WaypointsX}, {\bf P\+R\+E\+E\+M\+PT}$>$ $>$ {\bf sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Forward1\+::reactions}}\hypertarget{structsm__dance__bot_1_1StNavigateForward1_a64003d8942b0ce293c006f1b26bca640}{}\label{structsm__dance__bot_1_1StNavigateForward1_a64003d8942b0ce293c006f1b26bca640}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ transition$<$Ev\+Action\+Succeeded$<$Smacc\+Move\+Base\+Action\+Client, {\bf Navigation\+Orthogonal}$>$, {\bf St\+Rotate\+Degrees2}$>$, {\bf smacc\+::transition}$<$Ev\+Action\+Aborted$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, {\bf Navigation\+Orthogonal}$>$, {\bf St\+Navigate\+To\+WaypointsX}, {\bf A\+B\+O\+RT}$>$, {\bf smacc\+::transition}$<$Ev\+Action\+Preempted$<${\bf smacc\+::\+Smacc\+Move\+Base\+Action\+Client}, {\bf Navigation\+Orthogonal}$>$, {\bf St\+Navigate\+To\+WaypointsX}, {\bf P\+R\+E\+E\+M\+PT}$>$ $>$ {\bf sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Forward1\+::reactions}}\hypertarget{structsm__dance__bot_1_1StNavigateForward1_a444670aefb79b460181dd41dba6a4432}{}\label{structsm__dance__bot_1_1StNavigateForward1_a444670aefb79b460181dd41dba6a4432}
 
 
 Definition at line 14 of file st\+\_\+navigate\+\_\+forward\+\_\+1.\+h.
@@ -60,6 +62,40 @@ Definition at line 14 of file st\+\_\+navigate\+\_\+forward\+\_\+1.\+h.
 
 
 \subsection{Member Function Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Forward1@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Forward1}!on\+Action\+Client\+Succeded@{on\+Action\+Client\+Succeded}}
+\index{on\+Action\+Client\+Succeded@{on\+Action\+Client\+Succeded}!sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Forward1@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Forward1}}
+\subsubsection[{\texorpdfstring{on\+Action\+Client\+Succeded(\+Smacc\+Move\+Base\+Action\+Client\+::\+Result\+Const\+Ptr \&msg)}{onActionClientSucceded(SmaccMoveBaseActionClient::ResultConstPtr &msg)}}]{\setlength{\rightskip}{0pt plus 5cm}void sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Forward1\+::on\+Action\+Client\+Succeded (
+\begin{DoxyParamCaption}
+\item[{Smacc\+Move\+Base\+Action\+Client\+::\+Result\+Const\+Ptr \&}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsm__dance__bot_1_1StNavigateForward1_a182b23337261f2887307d935066cd156}{}\label{structsm__dance__bot_1_1StNavigateForward1_a182b23337261f2887307d935066cd156}
+
+
+Definition at line 34 of file st\+\_\+navigate\+\_\+forward\+\_\+1.\+h.
+
+
+
+Referenced by on\+Initialize().
+
+
+\begin{DoxyCode}
+35   \{
+36     ROS\_INFO\_STREAM(\textcolor{stringliteral}{" [Callback SmaccSignal] Success Detected from StAquireSensors (connected to client
+       signal), result data: "} << *\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg});
+37   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsm__dance__bot_1_1StNavigateForward1_a182b23337261f2887307d935066cd156_icgraph}
+\end{center}
+\end{figure}
+
+
 \index{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Forward1@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Forward1}!on\+Definition@{on\+Definition}}
 \index{on\+Definition@{on\+Definition}!sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Forward1@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Forward1}}
 \subsubsection[{\texorpdfstring{on\+Definition()}{onDefinition()}}]{\setlength{\rightskip}{0pt plus 5cm}static void sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Forward1\+::on\+Definition (
@@ -74,9 +110,9 @@ Definition at line 18 of file st\+\_\+navigate\+\_\+forward\+\_\+1.\+h.
 
 \begin{DoxyCode}
 19   \{
-20     static\_configure<NavigationOrthogonal, SbNavigateForward>(1);
-21     static\_configure<ToolOrthogonal, SbToolStop>();
-22     static\_configure<ObstaclePerceptionOrthogonal, SbLidarSensor>();
+20     static\_configure<NavigationOrthogonal, CbNavigateForward>(1);
+21     static\_configure<ToolOrthogonal, CbToolStop>();
+22     static\_configure<ObstaclePerceptionOrthogonal, CbLidarSensor>();
 23   \}
 \end{DoxyCode}
 \index{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Forward1@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Forward1}!on\+Initialize@{on\+Initialize}}
@@ -91,10 +127,32 @@ Definition at line 18 of file st\+\_\+navigate\+\_\+forward\+\_\+1.\+h.
 Definition at line 25 of file st\+\_\+navigate\+\_\+forward\+\_\+1.\+h.
 
 
+
+References on\+Action\+Client\+Succeded(), and smacc\+::\+I\+Smacc\+State\+::requires\+Client().
+
+
 \begin{DoxyCode}
 26   \{
-27   \}
+27     SmaccMoveBaseActionClient *move\_base\_action\_client;
+28     this->\hyperlink{classsmacc_1_1ISmaccState_a0f116de85bbc91d94e1eb2f74502acd8}{requiresClient}(move\_base\_action\_client);
+29 
+30     \textcolor{comment}{// we careful with the lifetime of the callbac, us a scoped connection if is not forever}
+31     move\_base\_action\_client->onSucceeded(&
+      \hyperlink{structsm__dance__bot_1_1StNavigateForward1_a182b23337261f2887307d935066cd156}{StNavigateForward1::onActionClientSucceded}, \textcolor{keyword}{this});
+32   \}
 \end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsm__dance__bot_1_1StNavigateForward1_aca9caa8bd74d17b2d735db4cfb3cfe4c_cgraph}
+\end{center}
+\end{figure}
+
+
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}

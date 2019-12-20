@@ -1,0 +1,143 @@
+\hypertarget{classsmacc_1_1WaypointEventDispatcher}{}\section{smacc\+:\+:Waypoint\+Event\+Dispatcher Class Reference}
+\label{classsmacc_1_1WaypointEventDispatcher}\index{smacc\+::\+Waypoint\+Event\+Dispatcher@{smacc\+::\+Waypoint\+Event\+Dispatcher}}
+
+
+{\ttfamily \#include $<$waypoints\+\_\+event\+\_\+dispatcher.\+h$>$}
+
+
+
+Collaboration diagram for smacc\+:\+:Waypoint\+Event\+Dispatcher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classsmacc_1_1WaypointEventDispatcher__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T\+Derived , typename T\+Object\+Tag $>$ }\\void \hyperlink{classsmacc_1_1WaypointEventDispatcher_a583966b07c927526f592437da657f24a}{initialize} (\hyperlink{classsmacc_1_1SmaccMoveBaseActionClient}{Smacc\+Move\+Base\+Action\+Client} $\ast$client)
+\item 
+void \hyperlink{classsmacc_1_1WaypointEventDispatcher_a6bd85034cb55795930741301a6077fe5}{post\+Waypoint\+Event} (int index)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::function$<$ void()$>$ \hyperlink{classsmacc_1_1WaypointEventDispatcher_a6bccf6a93a827634b7b5e67ac0e4ec57}{post\+Waypoint\+Fn} \mbox{[}\hyperlink{waypoints__event__dispatcher_8h_add4ce0c5d955be6047a4820c63e7df08}{W\+A\+Y\+P\+O\+I\+N\+T\+S\+\_\+\+E\+V\+E\+N\+T\+C\+O\+U\+NT}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 42 of file waypoints\+\_\+event\+\_\+dispatcher.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::\+Waypoint\+Event\+Dispatcher@{smacc\+::\+Waypoint\+Event\+Dispatcher}!initialize@{initialize}}
+\index{initialize@{initialize}!smacc\+::\+Waypoint\+Event\+Dispatcher@{smacc\+::\+Waypoint\+Event\+Dispatcher}}
+\subsubsection[{\texorpdfstring{initialize(\+Smacc\+Move\+Base\+Action\+Client $\ast$client)}{initialize(SmaccMoveBaseActionClient *client)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived , typename T\+Object\+Tag $>$ void smacc\+::\+Waypoint\+Event\+Dispatcher\+::initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Smacc\+Move\+Base\+Action\+Client} $\ast$}]{client}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1WaypointEventDispatcher_a583966b07c927526f592437da657f24a}{}\label{classsmacc_1_1WaypointEventDispatcher_a583966b07c927526f592437da657f24a}
+
+
+Definition at line 32 of file move\+\_\+base\+\_\+action\+\_\+client\+\_\+impl.\+h.
+
+
+
+Referenced by smacc\+::\+Waypoint\+Navigator\+::assign\+To\+Orthogonal().
+
+
+\begin{DoxyCode}
+33 \{
+34     configurePostEvWaypoint<EvWaypoint0<TDerived, TObjectTag>>(\hyperlink{classsmacc_1_1WaypointEventDispatcher_a6bccf6a93a827634b7b5e67ac0e4ec57}{postWaypointFn}, client, 0);
+35     configurePostEvWaypoint<EvWaypoint1<TDerived, TObjectTag>>(\hyperlink{classsmacc_1_1WaypointEventDispatcher_a6bccf6a93a827634b7b5e67ac0e4ec57}{postWaypointFn}, client, 1);
+36     configurePostEvWaypoint<EvWaypoint2<TDerived, TObjectTag>>(\hyperlink{classsmacc_1_1WaypointEventDispatcher_a6bccf6a93a827634b7b5e67ac0e4ec57}{postWaypointFn}, client, 2);
+37     configurePostEvWaypoint<EvWaypoint3<TDerived, TObjectTag>>(\hyperlink{classsmacc_1_1WaypointEventDispatcher_a6bccf6a93a827634b7b5e67ac0e4ec57}{postWaypointFn}, client, 3);
+38     configurePostEvWaypoint<EvWaypoint4<TDerived, TObjectTag>>(\hyperlink{classsmacc_1_1WaypointEventDispatcher_a6bccf6a93a827634b7b5e67ac0e4ec57}{postWaypointFn}, client, 4);
+39 
+40     \textcolor{comment}{// postWaypointFn[0] = [=]() \{}
+41     \textcolor{comment}{//     client->template postEvent<EvWaypoint0<TDerived, TObjectTag>>();}
+42     \textcolor{comment}{// \};}
+43 
+44     \textcolor{comment}{// postWaypointFn[1] = [=]() \{}
+45     \textcolor{comment}{//     client->template postEvent<EvWaypoint1<TDerived, TObjectTag>>();}
+46     \textcolor{comment}{// \};}
+47 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1WaypointEventDispatcher_a583966b07c927526f592437da657f24a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Waypoint\+Event\+Dispatcher@{smacc\+::\+Waypoint\+Event\+Dispatcher}!post\+Waypoint\+Event@{post\+Waypoint\+Event}}
+\index{post\+Waypoint\+Event@{post\+Waypoint\+Event}!smacc\+::\+Waypoint\+Event\+Dispatcher@{smacc\+::\+Waypoint\+Event\+Dispatcher}}
+\subsubsection[{\texorpdfstring{post\+Waypoint\+Event(int index)}{postWaypointEvent(int index)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Waypoint\+Event\+Dispatcher\+::post\+Waypoint\+Event (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1WaypointEventDispatcher_a6bd85034cb55795930741301a6077fe5}{}\label{classsmacc_1_1WaypointEventDispatcher_a6bd85034cb55795930741301a6077fe5}
+
+
+Definition at line 5 of file waypoints\+\_\+event\+\_\+dispatcher.\+cpp.
+
+
+
+References post\+Waypoint\+Fn, and W\+A\+Y\+P\+O\+I\+N\+T\+S\+\_\+\+E\+V\+E\+N\+T\+C\+O\+U\+NT.
+
+
+
+Referenced by smacc\+::\+Waypoint\+Navigator\+::on\+Goal\+Reached().
+
+
+\begin{DoxyCode}
+6 \{
+7     \textcolor{keyword}{auto}& fn = \hyperlink{classsmacc_1_1WaypointEventDispatcher_a6bccf6a93a827634b7b5e67ac0e4ec57}{postWaypointFn}[index % \hyperlink{waypoints__event__dispatcher_8h_add4ce0c5d955be6047a4820c63e7df08}{WAYPOINTS\_EVENTCOUNT}];
+8     \textcolor{keywordflow}{if}(fn!=\textcolor{keyword}{nullptr})
+9         fn();
+10 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1WaypointEventDispatcher_a6bd85034cb55795930741301a6077fe5_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+::\+Waypoint\+Event\+Dispatcher@{smacc\+::\+Waypoint\+Event\+Dispatcher}!post\+Waypoint\+Fn@{post\+Waypoint\+Fn}}
+\index{post\+Waypoint\+Fn@{post\+Waypoint\+Fn}!smacc\+::\+Waypoint\+Event\+Dispatcher@{smacc\+::\+Waypoint\+Event\+Dispatcher}}
+\subsubsection[{\texorpdfstring{post\+Waypoint\+Fn}{postWaypointFn}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::function$<$void()$>$ smacc\+::\+Waypoint\+Event\+Dispatcher\+::post\+Waypoint\+Fn\mbox{[}{\bf W\+A\+Y\+P\+O\+I\+N\+T\+S\+\_\+\+E\+V\+E\+N\+T\+C\+O\+U\+NT}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1WaypointEventDispatcher_a6bccf6a93a827634b7b5e67ac0e4ec57}{}\label{classsmacc_1_1WaypointEventDispatcher_a6bccf6a93a827634b7b5e67ac0e4ec57}
+
+
+Definition at line 44 of file waypoints\+\_\+event\+\_\+dispatcher.\+h.
+
+
+
+Referenced by post\+Waypoint\+Event().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+client\+\_\+library/smacc\+\_\+navigation/smacc\+\_\+navigation\+\_\+plugin/include/smacc\+\_\+navigation\+\_\+plugin/\hyperlink{waypoints__event__dispatcher_8h}{waypoints\+\_\+event\+\_\+dispatcher.\+h}\item 
+smacc\+\_\+client\+\_\+library/smacc\+\_\+navigation/smacc\+\_\+navigation\+\_\+plugin/include/smacc\+\_\+navigation\+\_\+plugin/impl/\hyperlink{move__base__action__client__impl_8h}{move\+\_\+base\+\_\+action\+\_\+client\+\_\+impl.\+h}\item 
+smacc\+\_\+client\+\_\+library/smacc\+\_\+navigation/smacc\+\_\+navigation\+\_\+plugin/src/\hyperlink{waypoints__event__dispatcher_8cpp}{waypoints\+\_\+event\+\_\+dispatcher.\+cpp}\end{DoxyCompactItemize}

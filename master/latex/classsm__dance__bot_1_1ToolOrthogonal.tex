@@ -57,7 +57,7 @@ Definition at line 10 of file tool\+\_\+orthogonal.\+h.
 
 \begin{DoxyCode}
 11     \{
-12         \textcolor{keyword}{auto} *actionclient = this->createClient<smacc::SmaccToolActionClient>();
+12         \textcolor{keyword}{auto} actionclient = this->createClient<ToolOrthogonal, smacc::SmaccToolActionClient>();
 13         actionclient->name\_ = \textcolor{stringliteral}{"tool\_action\_server"};
 14         actionclient->initialize();
 15     \}

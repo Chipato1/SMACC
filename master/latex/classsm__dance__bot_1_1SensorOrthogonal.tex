@@ -57,7 +57,7 @@ Definition at line 13 of file sensor\+\_\+orthogonal.\+h.
 
 \begin{DoxyCode}
 14     \{
-15         \textcolor{keyword}{auto} *temperatureSensor = this->createClient<sm\_dance\_bot::TemperatureSensor>();
+15         \textcolor{keyword}{auto} temperatureSensor = this->createClient<SensorOrthogonal, sm\_dance\_bot::TemperatureSensor>();
 16 
 17         temperatureSensor->topicName = \textcolor{stringliteral}{"/temperature"};
 18         \textcolor{comment}{//temperatureSensor->queueSize = "/front/scan";}

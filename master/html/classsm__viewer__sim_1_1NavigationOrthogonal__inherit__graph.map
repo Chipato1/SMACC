@@ -1,3 +1,3 @@
 <map id="sm_viewer_sim::NavigationOrthogonal" name="sm_viewer_sim::NavigationOrthogonal">
-<area shape="rect" id="node2" href="$classsmacc_1_1Orthogonal.html" title="{smacc::Orthogonal\n|&#45; stateMachine_\l&#45; currentBehavior_\l&#45; clients_\l|+ setStateMachine()\l+ setStateBehavior()\l+ onEntry()\l+ onExit()\l+ getName()\l+ createClient()\l+ requiresComponent()\l+ requiresClient()\l+ getClients()\l&#45; onInitialize()\l}" alt="" coords="15,5,190,244"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1Orthogonal.html" title="{smacc::Orthogonal\n|&#45; stateMachine_\l&#45; currentBehavior_\l&#45; clients_\l|+ setStateMachine()\l+ setStateBehavior()\l+ onEntry()\l+ onExit()\l+ getName()\l+ createClient()\l+ requiresComponent()\l+ requiresClient()\l+ getClients()\l+ getCurrentBehavior()\l&#45; onInitialize()\l}" alt="" coords="15,5,190,259"/>
 </map>

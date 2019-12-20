@@ -35,12 +35,23 @@ void \hyperlink{classsmacc_1_1SignalDetector_a9a116479e23259f3a5d5d4a47278afd5}{
 \item 
 {\footnotesize template$<$typename Event\+Type $>$ }\\void \hyperlink{classsmacc_1_1SignalDetector_a6ab99d99cef8d101e39797a72daeb2b7}{post\+Event} (Event\+Type $\ast$ev)
 \end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classsmacc_1_1SignalDetector_a47ec2df560e2e33758ce3975bece9385}{find\+Updatable\+Clients} ()
+\item 
+void \hyperlink{classsmacc_1_1SignalDetector_a7e1301b9d23a522f18385368421c83f5}{find\+Updatable\+Behaviors} ()
+\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classsmacc_1_1ISmaccStateMachine}{I\+Smacc\+State\+Machine} $\ast$ \hyperlink{classsmacc_1_1SignalDetector_a46025de6ac7b5980e22144f9703236a4}{smacc\+State\+Machine\+\_\+}
 \item 
-std\+::vector$<$ \hyperlink{classsmacc_1_1ISmaccActionClient}{I\+Smacc\+Action\+Client} $\ast$ $>$ \hyperlink{classsmacc_1_1SignalDetector_ac1b45dada88384ad38a12eea2d53205a}{open\+Requests\+\_\+}
+std\+::vector$<$ \hyperlink{classsmacc_1_1ISmaccUpdatable}{I\+Smacc\+Updatable} $\ast$ $>$ \hyperlink{classsmacc_1_1SignalDetector_a36a702afabbc335cbdb1e8699b669323}{updatable\+Clients\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{classsmacc_1_1ISmaccUpdatable}{I\+Smacc\+Updatable} $\ast$ $>$ \hyperlink{classsmacc_1_1SignalDetector_a777b671ca6bbedd2fdc83f60f9ec8f83}{updatable\+Client\+Behaviors\+\_\+}
+\item 
+std\+::atomic$<$ unsigned long $>$ \hyperlink{classsmacc_1_1SignalDetector_a72293ed0e98f4200fbe75b53f1e41eab}{last\+State\+\_\+}
 \item 
 double \hyperlink{classsmacc_1_1SignalDetector_a41a2ae4262ed350f46d8b886bdc1dfa5}{loop\+\_\+rate\+\_\+hz}
 \item 
@@ -55,11 +66,6 @@ ros\+::\+Publisher \hyperlink{classsmacc_1_1SignalDetector_ae065bbd4e699e5fce00f
 Smacc\+Fifo\+Scheduler\+::processor\+\_\+handle \hyperlink{classsmacc_1_1SignalDetector_a9a77dc9f0e9f8f56dff5e76077abcb78}{processor\+Handle\+\_\+}
 \item 
 boost\+::thread \hyperlink{classsmacc_1_1SignalDetector_a4346a400cd37eafc5d1d2e63d975785e}{signal\+Detector\+Thread\+\_\+}
-\end{DoxyCompactItemize}
-\subsection*{Friends}
-\begin{DoxyCompactItemize}
-\item 
-class \hyperlink{classsmacc_1_1SignalDetector_a0e71d23a61c07d55f419d02237d03b6a}{I\+Smacc\+State\+Machine}
 \end{DoxyCompactItemize}
 
 
@@ -80,7 +86,7 @@ Definition at line 14 of file smacc\+\_\+signal\+\_\+detector.\+h.
 )}\hypertarget{classsmacc_1_1SignalDetector_a24914014feb0ab01e2452af705ef2774}{}\label{classsmacc_1_1SignalDetector_a24914014feb0ab01e2452af705ef2774}
 \hyperlink{classsmacc_1_1SignalDetector_a24914014feb0ab01e2452af705ef2774}{Signal\+Detector()} 
 
-Definition at line 16 of file signal\+\_\+detector.\+cpp.
+Definition at line 18 of file signal\+\_\+detector.\+cpp.
 
 
 
@@ -88,15 +94,147 @@ References end\+\_\+, loop\+\_\+rate\+\_\+hz, and scheduler\+\_\+.
 
 
 \begin{DoxyCode}
-17 \{
-18     \hyperlink{classsmacc_1_1SignalDetector_adaee5b9b91d0e6305dc1ab30f7ab566d}{scheduler\_} = scheduler;
-19     \hyperlink{classsmacc_1_1SignalDetector_a41a2ae4262ed350f46d8b886bdc1dfa5}{loop\_rate\_hz} = 10.0;
-20     \hyperlink{classsmacc_1_1SignalDetector_aaee266393c01693528a2d74b1f2354a2}{end\_}= \textcolor{keyword}{false};
-21 \}
+19 \{
+20     \hyperlink{classsmacc_1_1SignalDetector_adaee5b9b91d0e6305dc1ab30f7ab566d}{scheduler\_} = scheduler;
+21     \hyperlink{classsmacc_1_1SignalDetector_a41a2ae4262ed350f46d8b886bdc1dfa5}{loop\_rate\_hz} = 10.0;
+22     \hyperlink{classsmacc_1_1SignalDetector_aaee266393c01693528a2d74b1f2354a2}{end\_} = \textcolor{keyword}{false};
+23 \}
 \end{DoxyCode}
 
 
 \subsection{Member Function Documentation}
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!find\+Updatable\+Behaviors@{find\+Updatable\+Behaviors}}
+\index{find\+Updatable\+Behaviors@{find\+Updatable\+Behaviors}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{find\+Updatable\+Behaviors()}{findUpdatableBehaviors()}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Signal\+Detector\+::find\+Updatable\+Behaviors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_a7e1301b9d23a522f18385368421c83f5}{}\label{classsmacc_1_1SignalDetector_a7e1301b9d23a522f18385368421c83f5}
+find\+Updatable\+Client\+Behaviors() 
+
+Definition at line 68 of file signal\+\_\+detector.\+cpp.
+
+
+
+References smacc\+::demangle\+Type(), smacc\+::\+I\+Smacc\+State\+Machine\+::get\+Orthogonals(), smacc\+State\+Machine\+\_\+, and updatable\+Client\+Behaviors\+\_\+.
+
+
+
+Referenced by poll\+Once().
+
+
+\begin{DoxyCode}
+69 \{
+70     this->\hyperlink{classsmacc_1_1SignalDetector_a777b671ca6bbedd2fdc83f60f9ec8f83}{updatableClientBehaviors\_}.clear();
+71     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} pair : this->\hyperlink{classsmacc_1_1SignalDetector_a46025de6ac7b5980e22144f9703236a4}{smaccStateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_a262b3f2d15af019190fa69b7c0df00f8}{getOrthogonals}())
+72     \{
+73         \textcolor{keyword}{auto} &orthogonal = pair.second;
+74         \textcolor{keyword}{auto} *currentBehavior = orthogonal->getCurrentBehavior();
+75 
+76         \textcolor{keywordflow}{if} (currentBehavior == \textcolor{keyword}{nullptr})
+77             \textcolor{keywordflow}{continue};
+78 
+79         ISmaccUpdatable *updatableClientBehavior = \textcolor{keyword}{dynamic\_cast<}ISmaccUpdatable *\textcolor{keyword}{>}(currentBehavior);
+80 
+81         \textcolor{keywordflow}{if} (updatableClientBehavior != \textcolor{keyword}{nullptr})
+82         \{
+83             ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"Adding updatable behavior: "} << \hyperlink{namespacesmacc_a792e7a3ea0843e87543a465b446ae730}{demangleType}(\textcolor{keyword}{typeid}(
+      updatableClientBehavior)));
+84             this->\hyperlink{classsmacc_1_1SignalDetector_a777b671ca6bbedd2fdc83f60f9ec8f83}{updatableClientBehaviors\_}.push\_back(updatableClientBehavior);
+85         \}
+86     \}
+87 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SignalDetector_a7e1301b9d23a522f18385368421c83f5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SignalDetector_a7e1301b9d23a522f18385368421c83f5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!find\+Updatable\+Clients@{find\+Updatable\+Clients}}
+\index{find\+Updatable\+Clients@{find\+Updatable\+Clients}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{find\+Updatable\+Clients()}{findUpdatableClients()}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Signal\+Detector\+::find\+Updatable\+Clients (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_a47ec2df560e2e33758ce3975bece9385}{}\label{classsmacc_1_1SignalDetector_a47ec2df560e2e33758ce3975bece9385}
+\hyperlink{classsmacc_1_1SignalDetector_a47ec2df560e2e33758ce3975bece9385}{find\+Updatable\+Clients()} 
+
+Definition at line 42 of file signal\+\_\+detector.\+cpp.
+
+
+
+References smacc\+::demangle\+Type(), smacc\+::\+I\+Smacc\+State\+Machine\+::get\+Orthogonals(), smacc\+State\+Machine\+\_\+, and updatable\+Clients\+\_\+.
+
+
+
+Referenced by initialize().
+
+
+\begin{DoxyCode}
+43 \{
+44     this->\hyperlink{classsmacc_1_1SignalDetector_a36a702afabbc335cbdb1e8699b669323}{updatableClients\_}.clear();
+45     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} pair : this->\hyperlink{classsmacc_1_1SignalDetector_a46025de6ac7b5980e22144f9703236a4}{smaccStateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_a262b3f2d15af019190fa69b7c0df00f8}{getOrthogonals}())
+46     \{
+47         \textcolor{keyword}{auto} &orthogonal = pair.second;
+48         \textcolor{keyword}{auto} &clients = orthogonal->getClients();
+49 
+50         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &client : clients)
+51         \{
+52             \textcolor{keyword}{auto} updatableClient = \textcolor{keyword}{dynamic\_cast<}ISmaccUpdatable *\textcolor{keyword}{>}(client.get());
+53 
+54             \textcolor{keywordflow}{if} (updatableClient != \textcolor{keyword}{nullptr})
+55             \{
+56                 ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"Adding updatable client: "} << \hyperlink{namespacesmacc_a792e7a3ea0843e87543a465b446ae730}{demangleType}(\textcolor{keyword}{typeid}(
+      updatableClient)));
+57                 this->\hyperlink{classsmacc_1_1SignalDetector_a36a702afabbc335cbdb1e8699b669323}{updatableClients\_}.push\_back(updatableClient);
+58             \}
+59         \}
+60     \}
+61 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SignalDetector_a47ec2df560e2e33758ce3975bece9385_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SignalDetector_a47ec2df560e2e33758ce3975bece9385_icgraph}
+\end{center}
+\end{figure}
+
+
 \index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!initialize@{initialize}}
 \index{initialize@{initialize}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
 \subsubsection[{\texorpdfstring{initialize(\+I\+Smacc\+State\+Machine $\ast$state\+Machine)}{initialize(ISmaccStateMachine *stateMachine)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Signal\+Detector\+::initialize (
@@ -106,11 +244,11 @@ References end\+\_\+, loop\+\_\+rate\+\_\+hz, and scheduler\+\_\+.
 )}\hypertarget{classsmacc_1_1SignalDetector_a91ab3cd92d8095cdaf8610b50731f04b}{}\label{classsmacc_1_1SignalDetector_a91ab3cd92d8095cdaf8610b50731f04b}
 \hyperlink{classsmacc_1_1SignalDetector_a91ab3cd92d8095cdaf8610b50731f04b}{initialize()} 
 
-Definition at line 28 of file signal\+\_\+detector.\+cpp.
+Definition at line 30 of file signal\+\_\+detector.\+cpp.
 
 
 
-References smacc\+State\+Machine\+\_\+.
+References find\+Updatable\+Clients(), last\+State\+\_\+, and smacc\+State\+Machine\+\_\+.
 
 
 
@@ -118,10 +256,24 @@ Referenced by smacc\+::\+I\+Smacc\+State\+Machine\+::\+I\+Smacc\+State\+Machine(
 
 
 \begin{DoxyCode}
-29 \{
-30     \hyperlink{classsmacc_1_1SignalDetector_a46025de6ac7b5980e22144f9703236a4}{smaccStateMachine\_} = stateMachine;
-31 \}
+31 \{
+32     \hyperlink{classsmacc_1_1SignalDetector_a46025de6ac7b5980e22144f9703236a4}{smaccStateMachine\_} = stateMachine;
+33     \hyperlink{classsmacc_1_1SignalDetector_a72293ed0e98f4200fbe75b53f1e41eab}{lastState\_} = std::numeric\_limits<unsigned long>::quiet\_NaN();
+34     \hyperlink{classsmacc_1_1SignalDetector_a47ec2df560e2e33758ce3975bece9385}{findUpdatableClients}();
+35 \}
 \end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SignalDetector_a91ab3cd92d8095cdaf8610b50731f04b_cgraph}
+\end{center}
+\end{figure}
+
+
 
 
 Here is the caller graph for this function\+:
@@ -143,7 +295,7 @@ Here is the caller graph for this function\+:
 )}\hypertarget{classsmacc_1_1SignalDetector_a636f704e469bf74b4a9fdb15bd63d5be}{}\label{classsmacc_1_1SignalDetector_a636f704e469bf74b4a9fdb15bd63d5be}
 \hyperlink{classsmacc_1_1SignalDetector_a636f704e469bf74b4a9fdb15bd63d5be}{join()} 
 
-Definition at line 58 of file signal\+\_\+detector.\+cpp.
+Definition at line 114 of file signal\+\_\+detector.\+cpp.
 
 
 
@@ -151,9 +303,9 @@ References signal\+Detector\+Thread\+\_\+.
 
 
 \begin{DoxyCode}
-59 \{
-60     \hyperlink{classsmacc_1_1SignalDetector_a4346a400cd37eafc5d1d2e63d975785e}{signalDetectorThread\_}.join();
-61 \}
+115 \{
+116     \hyperlink{classsmacc_1_1SignalDetector_a4346a400cd37eafc5d1d2e63d975785e}{signalDetectorThread\_}.join();
+117 \}
 \end{DoxyCode}
 \index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!polling\+Loop@{polling\+Loop}}
 \index{polling\+Loop@{polling\+Loop}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
@@ -164,7 +316,7 @@ References signal\+Detector\+Thread\+\_\+.
 )}\hypertarget{classsmacc_1_1SignalDetector_a2665e66cdae9f6533c64bbcecf3fa199}{}\label{classsmacc_1_1SignalDetector_a2665e66cdae9f6533c64bbcecf3fa199}
 \hyperlink{classsmacc_1_1SignalDetector_a2665e66cdae9f6533c64bbcecf3fa199}{polling\+Loop()} 
 
-Definition at line 87 of file signal\+\_\+detector.\+cpp.
+Definition at line 197 of file signal\+\_\+detector.\+cpp.
 
 
 
@@ -176,27 +328,26 @@ Referenced by smacc\+::run(), and run\+Thread().
 
 
 \begin{DoxyCode}
-88 \{
-89     ros::NodeHandle nh(\textcolor{stringliteral}{"~"});
-90 
-91     \textcolor{keywordflow}{if} (!nh.param(\textcolor{stringliteral}{"signal\_detector\_loop\_freq"}, this->loop\_rate\_hz))
-92     \{
-93     \}
-94 
-95     nh.setParam(\textcolor{stringliteral}{"signal\_detector\_loop\_freq"}, this->\hyperlink{classsmacc_1_1SignalDetector_a41a2ae4262ed350f46d8b886bdc1dfa5}{loop\_rate\_hz});
-96 
-97     ros::Rate r(\hyperlink{classsmacc_1_1SignalDetector_a41a2ae4262ed350f46d8b886bdc1dfa5}{loop\_rate\_hz});
-98 
-99     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"[SignalDetector] loop rate hz:"} << \hyperlink{classsmacc_1_1SignalDetector_a41a2ae4262ed350f46d8b886bdc1dfa5}{loop\_rate\_hz});
-100     \textcolor{keywordflow}{while} (ros::ok() && !\hyperlink{classsmacc_1_1SignalDetector_aaee266393c01693528a2d74b1f2354a2}{end\_})
-101     \{
-102         ROS\_INFO\_STREAM\_THROTTLE(10, \textcolor{stringliteral}{"[SignalDetector] heartbeat"});
-103 
-104         \hyperlink{classsmacc_1_1SignalDetector_a9a116479e23259f3a5d5d4a47278afd5}{pollOnce}();
-105         ros::spinOnce();
-106         r.sleep();
-107     \}
-108 \}
+198 \{
+199     ros::NodeHandle nh(\textcolor{stringliteral}{"~"});
+200 
+201     \textcolor{keywordflow}{if} (!nh.param(\textcolor{stringliteral}{"signal\_detector\_loop\_freq"}, this->loop\_rate\_hz))
+202     \{
+203     \}
+204 
+205     nh.setParam(\textcolor{stringliteral}{"signal\_detector\_loop\_freq"}, this->\hyperlink{classsmacc_1_1SignalDetector_a41a2ae4262ed350f46d8b886bdc1dfa5}{loop\_rate\_hz});
+206 
+207     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"[SignalDetector] loop rate hz:"} << \hyperlink{classsmacc_1_1SignalDetector_a41a2ae4262ed350f46d8b886bdc1dfa5}{loop\_rate\_hz});
+208 
+209     ros::Rate r(\hyperlink{classsmacc_1_1SignalDetector_a41a2ae4262ed350f46d8b886bdc1dfa5}{loop\_rate\_hz});
+210     \textcolor{keywordflow}{while} (ros::ok() && !\hyperlink{classsmacc_1_1SignalDetector_aaee266393c01693528a2d74b1f2354a2}{end\_})
+211     \{
+212         ROS\_INFO\_STREAM\_THROTTLE(10, \textcolor{stringliteral}{"[SignalDetector] heartbeat"});
+213         \hyperlink{classsmacc_1_1SignalDetector_a9a116479e23259f3a5d5d4a47278afd5}{pollOnce}();
+214         ros::spinOnce();
+215         r.sleep();
+216     \}
+217 \}
 \end{DoxyCode}
 
 
@@ -231,7 +382,11 @@ Here is the caller graph for this function\+:
 )}\hypertarget{classsmacc_1_1SignalDetector_a9a116479e23259f3a5d5d4a47278afd5}{}\label{classsmacc_1_1SignalDetector_a9a116479e23259f3a5d5d4a47278afd5}
 poll() 
 
-Definition at line 78 of file signal\+\_\+detector.\+cpp.
+Definition at line 134 of file signal\+\_\+detector.\+cpp.
+
+
+
+References smacc\+::demangle\+Type(), find\+Updatable\+Behaviors(), smacc\+::\+I\+Smacc\+State\+Machine\+::get\+Current\+State(), smacc\+::\+I\+Smacc\+State\+Machine\+::get\+Current\+State\+Counter(), last\+State\+\_\+, smacc\+::\+I\+Smacc\+State\+Machine\+::lock\+State\+Machine(), smacc\+State\+Machine\+\_\+, smacc\+::\+I\+Smacc\+State\+Machine\+::unlock\+State\+Machine(), updatable\+Client\+Behaviors\+\_\+, and updatable\+Clients\+\_\+.
 
 
 
@@ -239,9 +394,80 @@ Referenced by polling\+Loop().
 
 
 \begin{DoxyCode}
-79 \{
-80 \}
+135 \{
+136     \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1SignalDetector_a46025de6ac7b5980e22144f9703236a4}{smaccStateMachine\_} == \textcolor{keyword}{nullptr})
+137     \{
+138         ROS\_DEBUG(\textcolor{stringliteral}{"[PollOnce] update but state machine is not yet set."});
+139         \textcolor{keywordflow}{return};
+140     \}
+141 
+142     \textcolor{keywordflow}{try}
+143     \{
+144         \hyperlink{classsmacc_1_1SignalDetector_a46025de6ac7b5980e22144f9703236a4}{smaccStateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_a5c8d4c9a4b11c7950266a00e48080ce3}{lockStateMachine}(\textcolor{stringliteral}{"update behaviors"});
+145 
+146         ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"updatable clients: "} << this->\hyperlink{classsmacc_1_1SignalDetector_a36a702afabbc335cbdb1e8699b669323}{updatableClients\_}.size());
+147 
+148         \textcolor{keywordflow}{if} (this->\hyperlink{classsmacc_1_1SignalDetector_a36a702afabbc335cbdb1e8699b669323}{updatableClients\_}.size())
+149         \{
+150             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} *updatableClient : this->\hyperlink{classsmacc_1_1SignalDetector_a36a702afabbc335cbdb1e8699b669323}{updatableClients\_})
+151             \{
+152                 ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"[PollOnce] update client call:  "} << 
+      \hyperlink{namespacesmacc_a792e7a3ea0843e87543a465b446ae730}{demangleType}(\textcolor{keyword}{typeid}(updatableClient)));
+153                 updatableClient->update();
+154             \}
+155         \}
+156 
+157         \textcolor{keywordtype}{long} currentStateIndex = \hyperlink{classsmacc_1_1SignalDetector_a46025de6ac7b5980e22144f9703236a4}{smaccStateMachine\_}->
+      \hyperlink{classsmacc_1_1ISmaccStateMachine_a03966e531cefc1e096bffa46111871d2}{getCurrentStateCounter}();
+158 
+159         ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"[PollOnce] update behaviors. checking current state"});
+160 
+161         \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1SignalDetector_a46025de6ac7b5980e22144f9703236a4}{smaccStateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_a8c39c1eedb7236e67739dab6e2229511}{getCurrentState}() != \textcolor{keyword}{nullptr})
+162         \{
+163             ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"[PollOnce] current state: "} << currentStateIndex);
+164             ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"[PollOnce] last state: "} << this->\hyperlink{classsmacc_1_1SignalDetector_a72293ed0e98f4200fbe75b53f1e41eab}{lastState\_});
+165 
+166             \textcolor{keywordflow}{if} (currentStateIndex != 0)
+167             \{
+168                 \textcolor{keywordflow}{if} (currentStateIndex != this->\hyperlink{classsmacc_1_1SignalDetector_a72293ed0e98f4200fbe75b53f1e41eab}{lastState\_})
+169                 \{
+170                     ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"[PollOnce] detected new state, refreshing updatable client behavior
+       table"});
+171                     \textcolor{comment}{// we are in a new state, refresh the updatable client behaviors table}
+172                     this->\hyperlink{classsmacc_1_1SignalDetector_a72293ed0e98f4200fbe75b53f1e41eab}{lastState\_} = currentStateIndex;
+173                     this->\hyperlink{classsmacc_1_1SignalDetector_a7e1301b9d23a522f18385368421c83f5}{findUpdatableBehaviors}();
+174                 \}
+175 
+176                 ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"updatable client\_behaviors: "} << this->
+      \hyperlink{classsmacc_1_1SignalDetector_a777b671ca6bbedd2fdc83f60f9ec8f83}{updatableClientBehaviors\_}.size());
+177                 \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} *updatableBehavior : this->\hyperlink{classsmacc_1_1SignalDetector_a777b671ca6bbedd2fdc83f60f9ec8f83}{updatableClientBehaviors\_})
+178                 \{
+179                     ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"pollOnce update client behavior call: "} << 
+      \hyperlink{namespacesmacc_a792e7a3ea0843e87543a465b446ae730}{demangleType}(\textcolor{keyword}{typeid}(*updatableBehavior)));
+180                     updatableBehavior->update();
+181                 \}
+182             \}
+183         \}
+184     \}
+185     \textcolor{keywordflow}{catch} (...)
+186     \{
+187         ROS\_ERROR(\textcolor{stringliteral}{"Exception during Signal Detector update loop."});
+188     \}
+189     \hyperlink{classsmacc_1_1SignalDetector_a46025de6ac7b5980e22144f9703236a4}{smaccStateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_ae2e3ceb87bfe3f9d8bf320e36071fdc7}{unlockStateMachine}(\textcolor{stringliteral}{"update behaviors"});
+190 \}
 \end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1SignalDetector_a9a116479e23259f3a5d5d4a47278afd5_cgraph}
+\end{center}
+\end{figure}
+
+
 
 
 Here is the caller graph for this function\+:
@@ -301,7 +527,7 @@ Here is the caller graph for this function\+:
 )}\hypertarget{classsmacc_1_1SignalDetector_a48b3fee853ddcb25732408b22ecfcf39}{}\label{classsmacc_1_1SignalDetector_a48b3fee853ddcb25732408b22ecfcf39}
 \hyperlink{classsmacc_1_1SignalDetector_a48b3fee853ddcb25732408b22ecfcf39}{run\+Thread()} 
 
-Definition at line 48 of file signal\+\_\+detector.\+cpp.
+Definition at line 104 of file signal\+\_\+detector.\+cpp.
 
 
 
@@ -309,10 +535,10 @@ References polling\+Loop(), and signal\+Detector\+Thread\+\_\+.
 
 
 \begin{DoxyCode}
-49 \{
-50     \hyperlink{classsmacc_1_1SignalDetector_a4346a400cd37eafc5d1d2e63d975785e}{signalDetectorThread\_} = boost::thread(boost::bind(&
+105 \{
+106     \hyperlink{classsmacc_1_1SignalDetector_a4346a400cd37eafc5d1d2e63d975785e}{signalDetectorThread\_} = boost::thread(boost::bind(&
       \hyperlink{classsmacc_1_1SignalDetector_a2665e66cdae9f6533c64bbcecf3fa199}{SignalDetector::pollingLoop}, \textcolor{keyword}{this}));
-51 \}
+107 \}
 \end{DoxyCode}
 
 
@@ -335,7 +561,7 @@ Here is the call graph for this function\+:
 )}\hypertarget{classsmacc_1_1SignalDetector_ac1197a77c32a3b817005391e550ce646}{}\label{classsmacc_1_1SignalDetector_ac1197a77c32a3b817005391e550ce646}
 \hyperlink{classsmacc_1_1SignalDetector_ac1197a77c32a3b817005391e550ce646}{set\+Processor\+Handle()} 
 
-Definition at line 38 of file signal\+\_\+detector.\+cpp.
+Definition at line 94 of file signal\+\_\+detector.\+cpp.
 
 
 
@@ -347,9 +573,9 @@ Referenced by smacc\+::run().
 
 
 \begin{DoxyCode}
-39 \{
-40     \hyperlink{classsmacc_1_1SignalDetector_a9a77dc9f0e9f8f56dff5e76077abcb78}{processorHandle\_} = processorHandle;
-41 \}
+95 \{
+96     \hyperlink{classsmacc_1_1SignalDetector_a9a77dc9f0e9f8f56dff5e76077abcb78}{processorHandle\_} = processorHandle;
+97 \}
 \end{DoxyCode}
 
 
@@ -372,7 +598,7 @@ Here is the caller graph for this function\+:
 )}\hypertarget{classsmacc_1_1SignalDetector_a536ea005ea4ef4632c0c9c1c62c557a3}{}\label{classsmacc_1_1SignalDetector_a536ea005ea4ef4632c0c9c1c62c557a3}
 \hyperlink{classsmacc_1_1SignalDetector_a536ea005ea4ef4632c0c9c1c62c557a3}{stop()} 
 
-Definition at line 68 of file signal\+\_\+detector.\+cpp.
+Definition at line 124 of file signal\+\_\+detector.\+cpp.
 
 
 
@@ -380,20 +606,10 @@ References end\+\_\+.
 
 
 \begin{DoxyCode}
-69 \{
-70     \hyperlink{classsmacc_1_1SignalDetector_aaee266393c01693528a2d74b1f2354a2}{end\_}=\textcolor{keyword}{true};
-71 \}
+125 \{
+126     \hyperlink{classsmacc_1_1SignalDetector_aaee266393c01693528a2d74b1f2354a2}{end\_} = \textcolor{keyword}{true};
+127 \}
 \end{DoxyCode}
-
-
-\subsection{Friends And Related Function Documentation}
-\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!I\+Smacc\+State\+Machine@{I\+Smacc\+State\+Machine}}
-\index{I\+Smacc\+State\+Machine@{I\+Smacc\+State\+Machine}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
-\subsubsection[{\texorpdfstring{I\+Smacc\+State\+Machine}{ISmaccStateMachine}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf I\+Smacc\+State\+Machine}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classsmacc_1_1SignalDetector_a0e71d23a61c07d55f419d02237d03b6a}{}\label{classsmacc_1_1SignalDetector_a0e71d23a61c07d55f419d02237d03b6a}
-
-
-Definition at line 66 of file smacc\+\_\+signal\+\_\+detector.\+h.
-
 
 
 \subsection{Member Data Documentation}
@@ -402,18 +618,29 @@ Definition at line 66 of file smacc\+\_\+signal\+\_\+detector.\+h.
 \subsubsection[{\texorpdfstring{end\+\_\+}{end_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::atomic$<${\bf bool}$>$ smacc\+::\+Signal\+Detector\+::end\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_aaee266393c01693528a2d74b1f2354a2}{}\label{classsmacc_1_1SignalDetector_aaee266393c01693528a2d74b1f2354a2}
 
 
-Definition at line 52 of file smacc\+\_\+signal\+\_\+detector.\+h.
+Definition at line 58 of file smacc\+\_\+signal\+\_\+detector.\+h.
 
 
 
 Referenced by polling\+Loop(), Signal\+Detector(), and stop().
+
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!last\+State\+\_\+@{last\+State\+\_\+}}
+\index{last\+State\+\_\+@{last\+State\+\_\+}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{last\+State\+\_\+}{lastState_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::atomic$<$unsigned long$>$ smacc\+::\+Signal\+Detector\+::last\+State\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_a72293ed0e98f4200fbe75b53f1e41eab}{}\label{classsmacc_1_1SignalDetector_a72293ed0e98f4200fbe75b53f1e41eab}
+
+
+Definition at line 50 of file smacc\+\_\+signal\+\_\+detector.\+h.
+
+
+
+Referenced by initialize(), and poll\+Once().
 
 \index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!loop\+\_\+rate\+\_\+hz@{loop\+\_\+rate\+\_\+hz}}
 \index{loop\+\_\+rate\+\_\+hz@{loop\+\_\+rate\+\_\+hz}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
 \subsubsection[{\texorpdfstring{loop\+\_\+rate\+\_\+hz}{loop_rate_hz}}]{\setlength{\rightskip}{0pt plus 5cm}double smacc\+::\+Signal\+Detector\+::loop\+\_\+rate\+\_\+hz\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_a41a2ae4262ed350f46d8b886bdc1dfa5}{}\label{classsmacc_1_1SignalDetector_a41a2ae4262ed350f46d8b886bdc1dfa5}
 
 
-Definition at line 50 of file smacc\+\_\+signal\+\_\+detector.\+h.
+Definition at line 56 of file smacc\+\_\+signal\+\_\+detector.\+h.
 
 
 
@@ -424,21 +651,14 @@ Referenced by polling\+Loop(), and Signal\+Detector().
 \subsubsection[{\texorpdfstring{nh\+\_\+}{nh_}}]{\setlength{\rightskip}{0pt plus 5cm}ros\+::\+Node\+Handle smacc\+::\+Signal\+Detector\+::nh\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_a5c416677fd537afc79f2fbc2e68b2dee}{}\label{classsmacc_1_1SignalDetector_a5c416677fd537afc79f2fbc2e68b2dee}
 
 
-Definition at line 54 of file smacc\+\_\+signal\+\_\+detector.\+h.
-
-\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!open\+Requests\+\_\+@{open\+Requests\+\_\+}}
-\index{open\+Requests\+\_\+@{open\+Requests\+\_\+}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
-\subsubsection[{\texorpdfstring{open\+Requests\+\_\+}{openRequests_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf I\+Smacc\+Action\+Client} $\ast$$>$ smacc\+::\+Signal\+Detector\+::open\+Requests\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_ac1b45dada88384ad38a12eea2d53205a}{}\label{classsmacc_1_1SignalDetector_ac1b45dada88384ad38a12eea2d53205a}
-
-
-Definition at line 47 of file smacc\+\_\+signal\+\_\+detector.\+h.
+Definition at line 60 of file smacc\+\_\+signal\+\_\+detector.\+h.
 
 \index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!processor\+Handle\+\_\+@{processor\+Handle\+\_\+}}
 \index{processor\+Handle\+\_\+@{processor\+Handle\+\_\+}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
 \subsubsection[{\texorpdfstring{processor\+Handle\+\_\+}{processorHandle_}}]{\setlength{\rightskip}{0pt plus 5cm}Smacc\+Fifo\+Scheduler\+::processor\+\_\+handle smacc\+::\+Signal\+Detector\+::processor\+Handle\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_a9a77dc9f0e9f8f56dff5e76077abcb78}{}\label{classsmacc_1_1SignalDetector_a9a77dc9f0e9f8f56dff5e76077abcb78}
 
 
-Definition at line 62 of file smacc\+\_\+signal\+\_\+detector.\+h.
+Definition at line 68 of file smacc\+\_\+signal\+\_\+detector.\+h.
 
 
 
@@ -449,7 +669,7 @@ Referenced by post\+Event(), and set\+Processor\+Handle().
 \subsubsection[{\texorpdfstring{scheduler\+\_\+}{scheduler_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Smacc\+Fifo\+Scheduler}$\ast$ smacc\+::\+Signal\+Detector\+::scheduler\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_adaee5b9b91d0e6305dc1ab30f7ab566d}{}\label{classsmacc_1_1SignalDetector_adaee5b9b91d0e6305dc1ab30f7ab566d}
 
 
-Definition at line 60 of file smacc\+\_\+signal\+\_\+detector.\+h.
+Definition at line 66 of file smacc\+\_\+signal\+\_\+detector.\+h.
 
 
 
@@ -460,7 +680,7 @@ Referenced by post\+Event(), and Signal\+Detector().
 \subsubsection[{\texorpdfstring{signal\+Detector\+Thread\+\_\+}{signalDetectorThread_}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::thread smacc\+::\+Signal\+Detector\+::signal\+Detector\+Thread\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_a4346a400cd37eafc5d1d2e63d975785e}{}\label{classsmacc_1_1SignalDetector_a4346a400cd37eafc5d1d2e63d975785e}
 
 
-Definition at line 64 of file smacc\+\_\+signal\+\_\+detector.\+h.
+Definition at line 70 of file smacc\+\_\+signal\+\_\+detector.\+h.
 
 
 
@@ -475,14 +695,36 @@ Definition at line 44 of file smacc\+\_\+signal\+\_\+detector.\+h.
 
 
 
-Referenced by initialize().
+Referenced by find\+Updatable\+Behaviors(), find\+Updatable\+Clients(), initialize(), and poll\+Once().
 
 \index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!status\+Pub\+\_\+@{status\+Pub\+\_\+}}
 \index{status\+Pub\+\_\+@{status\+Pub\+\_\+}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
 \subsubsection[{\texorpdfstring{status\+Pub\+\_\+}{statusPub_}}]{\setlength{\rightskip}{0pt plus 5cm}ros\+::\+Publisher smacc\+::\+Signal\+Detector\+::status\+Pub\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_ae065bbd4e699e5fce00fbc508dedd4c1}{}\label{classsmacc_1_1SignalDetector_ae065bbd4e699e5fce00fbc508dedd4c1}
 
 
-Definition at line 56 of file smacc\+\_\+signal\+\_\+detector.\+h.
+Definition at line 62 of file smacc\+\_\+signal\+\_\+detector.\+h.
+
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!updatable\+Client\+Behaviors\+\_\+@{updatable\+Client\+Behaviors\+\_\+}}
+\index{updatable\+Client\+Behaviors\+\_\+@{updatable\+Client\+Behaviors\+\_\+}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{updatable\+Client\+Behaviors\+\_\+}{updatableClientBehaviors_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf I\+Smacc\+Updatable}$\ast$$>$ smacc\+::\+Signal\+Detector\+::updatable\+Client\+Behaviors\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_a777b671ca6bbedd2fdc83f60f9ec8f83}{}\label{classsmacc_1_1SignalDetector_a777b671ca6bbedd2fdc83f60f9ec8f83}
+
+
+Definition at line 48 of file smacc\+\_\+signal\+\_\+detector.\+h.
+
+
+
+Referenced by find\+Updatable\+Behaviors(), and poll\+Once().
+
+\index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!updatable\+Clients\+\_\+@{updatable\+Clients\+\_\+}}
+\index{updatable\+Clients\+\_\+@{updatable\+Clients\+\_\+}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
+\subsubsection[{\texorpdfstring{updatable\+Clients\+\_\+}{updatableClients_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf I\+Smacc\+Updatable}$\ast$$>$ smacc\+::\+Signal\+Detector\+::updatable\+Clients\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SignalDetector_a36a702afabbc335cbdb1e8699b669323}{}\label{classsmacc_1_1SignalDetector_a36a702afabbc335cbdb1e8699b669323}
+
+
+Definition at line 46 of file smacc\+\_\+signal\+\_\+detector.\+h.
+
+
+
+Referenced by find\+Updatable\+Clients(), and poll\+Once().
 
 
 
