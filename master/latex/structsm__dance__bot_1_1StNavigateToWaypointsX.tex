@@ -68,7 +68,7 @@ Definition at line 6 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h.
 \subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ {\bf smacc\+::transition}$<$Ev\+Waypoint0$<$Cl\+Move\+BaseZ, {\bf Or\+Navigation}$>$, {\bf sm\+\_\+dance\+\_\+bot\+::\+S\+S1\+::\+Ss\+Radial\+Pattern1}, {\bf T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+1}$>$, {\bf smacc\+::transition}$<$Ev\+Waypoint1$<$Cl\+Move\+BaseZ, {\bf Or\+Navigation}$>$, {\bf sm\+\_\+dance\+\_\+bot\+::\+S\+S2\+::\+Ss\+Radial\+Pattern2}, {\bf T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+2}$>$, {\bf smacc\+::transition}$<$Ev\+Waypoint2$<$Cl\+Move\+BaseZ, {\bf Or\+Navigation}$>$, {\bf sm\+\_\+dance\+\_\+bot\+::\+S\+S3\+::\+Ss\+Radial\+Pattern3}, {\bf T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+3}$>$, {\bf smacc\+::transition}$<$Ev\+Waypoint3$<$Cl\+Move\+BaseZ, {\bf Or\+Navigation}$>$, {\bf sm\+\_\+dance\+\_\+bot\+::\+S\+S4\+::\+Ss\+F\+Pattern1}, {\bf T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+4}$>$, {\bf smacc\+::transition}$<$Ev\+Waypoint4$<$Cl\+Move\+BaseZ, {\bf Or\+Navigation}$>$, {\bf sm\+\_\+dance\+\_\+bot\+::\+S\+S5\+::\+Ss\+S\+Pattern1}, {\bf T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+5}$>$, {\bf smacc\+::transition}$<$Ev\+Action\+Aborted$<${\bf smacc\+::\+Cl\+Move\+BaseZ}, {\bf Or\+Navigation}$>$, {\bf St\+Navigate\+To\+WaypointsX}$>$ $>$ {\bf sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+Waypoints\+X\+::reactions}}\hypertarget{structsm__dance__bot_1_1StNavigateToWaypointsX_af39e27baae658e0ea8085eb3a04e67f5}{}\label{structsm__dance__bot_1_1StNavigateToWaypointsX_af39e27baae658e0ea8085eb3a04e67f5}
 
 
-Definition at line 42 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h.
+Definition at line 41 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h.
 
 
 
@@ -82,77 +82,77 @@ Definition at line 42 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structsm__dance__bot_1_1StNavigateToWaypointsX_abfa4eb3045794e95b79852f0c328b03e}{}\label{structsm__dance__bot_1_1StNavigateToWaypointsX_abfa4eb3045794e95b79852f0c328b03e}
 
 
-Definition at line 46 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h.
+Definition at line 45 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h.
 
 
 \begin{DoxyCode}
-47   \{
-48     static\_configure<OrTool, CbToolStart>();
-49     static\_configure<OrObstaclePerception, CbLidarSensor>();
-50     
-51     \textcolor{comment}{// example for temperature sensor}
-52 
-53     \textcolor{comment}{//std::function<bool(EvTopicMessage<CbConditionClTemperatureSensor> *)> temperatureWarningCondition =
+46   \{
+47     static\_configure<OrTool, CbToolStart>();
+48     static\_configure<OrObstaclePerception, CbLidarSensor>();
+49     
+50     \textcolor{comment}{// example for temperature sensor}
+51 
+52     \textcolor{comment}{//std::function<bool(EvTopicMessage<CbConditionClTemperatureSensor> *)> temperatureWarningCondition =
        ([](EvTopicMessage<CbConditionClTemperatureSensor> *ev) \{}
-54     \textcolor{comment}{//  return ev->msgData.temperature > 30;}
-55     \textcolor{comment}{//\});}
-56     \textcolor{comment}{//static\_createLogicUnit<LuConditional, EvTrue<LuConditional>,
+53     \textcolor{comment}{//  return ev->msgData.temperature > 30;}
+54     \textcolor{comment}{//\});}
+55     \textcolor{comment}{//static\_createLogicUnit<LuConditional, EvTrue<LuConditional>,
        mpl::list<EvTopicMessage<CbConditionClTemperatureSensor>>>(temperatureWarningCondition);}
-57 
-58     \textcolor{comment}{//smacc::transition<EvTrue<LuConditional>, StNavigateToWaypointsX>>}
-59 
-60     \textcolor{comment}{/*}
-61 \textcolor{comment}{    std::vector<Pose2D> waypoints =}
-62 \textcolor{comment}{        \{}
-63 \textcolor{comment}{            \{3.0, -2.0, 0\},}
-64 \textcolor{comment}{            \{-5.5, 3.0, 0\},}
-65 \textcolor{comment}{            \{-11.0, -5.0, 0\},}
-66 \textcolor{comment}{            \{2.0, -8.58, 0\},}
-67 \textcolor{comment}{            \{-10.0, 14.5, 0\}\};}
-68 \textcolor{comment}{*/}
-69     \textcolor{comment}{//static\_configure<OrNavigation, CbWaypointsNavigator>(waypoints);}
-70 
-71     \textcolor{comment}{/*}
-72 \textcolor{comment}{    static\_createLogicUnit<LuRoundRobin, }
-73 \textcolor{comment}{                              mpl::list<}
-74 \textcolor{comment}{                                   EvWaypoint1<StNavigateToWaypointsX>,}
-75 \textcolor{comment}{                                   EvWaypoint2<StNavigateToWaypointsX>,}
-76 \textcolor{comment}{                                   EvWaypoint3<StNavigateToWaypointsX>, }
-77 \textcolor{comment}{                                   EvWaypoint4<StNavigateToWaypointsX>,}
-78 \textcolor{comment}{                                   EvWaypoint5<StNavigateToWaypointsX>}
-79 \textcolor{comment}{                                  >, }
-80 \textcolor{comment}{                         mpl::list<EvActionSucceeded<smacc::ClMoveBaseZ, OrNavigation>>();}
-81 \textcolor{comment}{                         */}
-82 
-83     \textcolor{comment}{// what about persistence}
-84     \textcolor{comment}{// would we have any output event?}
-85 
-86     \textcolor{comment}{// WaypointNaigator}
-87     \textcolor{comment}{// it is a logic unit}
-88     \textcolor{comment}{// it does not contain the transition table internally}
-89 
-90     \textcolor{comment}{// static\_transition\_dynamic\_logic\_unit< sm\_dance\_bot::SS1::SsRadialPattern1,}
-91     \textcolor{comment}{//                                       sm\_dance\_bot::SS2::SsRadialPattern2,}
-92     \textcolor{comment}{//                                       sm\_dance\_bot::SS2::SsRadialPattern3>();}
-93 
-94     \textcolor{comment}{// static\_createLogicUnit<lusource, outevent, invent, dststate1, dststate2 ...>();}
-95     \textcolor{comment}{// static\_createLogicUnit<LuCounter, EvCountFinish<LuCounter>,    >();}
-96     \textcolor{comment}{// function<T1, T2, Targs...>}
-97     \textcolor{comment}{// function<T1, T2, TOutEvents..., TInEvents...>}
-98 
-99     \textcolor{comment}{// function<LogicUnitType, mpl::list<>, mpl::list<>>();}
-100     \textcolor{comment}{// function<LogicUnitType, TEvOut, mpl::list<>>();}
-101     \textcolor{comment}{// function<LogicUnitType, mpl::list<>, TEvIn>();}
-102 
-103     \textcolor{comment}{// static\_transition(}
-104     \textcolor{comment}{// (}
-105     \textcolor{comment}{//   \{}
-106     \textcolor{comment}{//     \{0, typeid(SS1::SsRadialPattern1)\},}
-107     \textcolor{comment}{//     \{1, typeid(SS1::SsRadialPattern2)\}}
-108     \textcolor{comment}{//     \{3, typeid(SS1::SsRadialPattern3)\}}
-109     \textcolor{comment}{//   \}}
-110     \textcolor{comment}{// ));}
-111   \}
+56 
+57     \textcolor{comment}{//smacc::transition<EvTrue<LuConditional>, StNavigateToWaypointsX>>}
+58 
+59     \textcolor{comment}{/*}
+60 \textcolor{comment}{    std::vector<Pose2D> waypoints =}
+61 \textcolor{comment}{        \{}
+62 \textcolor{comment}{            \{3.0, -2.0, 0\},}
+63 \textcolor{comment}{            \{-5.5, 3.0, 0\},}
+64 \textcolor{comment}{            \{-11.0, -5.0, 0\},}
+65 \textcolor{comment}{            \{2.0, -8.58, 0\},}
+66 \textcolor{comment}{            \{-10.0, 14.5, 0\}\};}
+67 \textcolor{comment}{*/}
+68     \textcolor{comment}{//static\_configure<OrNavigation, CbWaypointsNavigator>(waypoints);}
+69 
+70     \textcolor{comment}{/*}
+71 \textcolor{comment}{    static\_createLogicUnit<LuRoundRobin, }
+72 \textcolor{comment}{                              mpl::list<}
+73 \textcolor{comment}{                                   EvWaypoint1<StNavigateToWaypointsX>,}
+74 \textcolor{comment}{                                   EvWaypoint2<StNavigateToWaypointsX>,}
+75 \textcolor{comment}{                                   EvWaypoint3<StNavigateToWaypointsX>, }
+76 \textcolor{comment}{                                   EvWaypoint4<StNavigateToWaypointsX>,}
+77 \textcolor{comment}{                                   EvWaypoint5<StNavigateToWaypointsX>}
+78 \textcolor{comment}{                                  >, }
+79 \textcolor{comment}{                         mpl::list<EvActionSucceeded<smacc::ClMoveBaseZ, OrNavigation>>();}
+80 \textcolor{comment}{                         */}
+81 
+82     \textcolor{comment}{// what about persistence}
+83     \textcolor{comment}{// would we have any output event?}
+84 
+85     \textcolor{comment}{// WaypointNaigator}
+86     \textcolor{comment}{// it is a logic unit}
+87     \textcolor{comment}{// it does not contain the transition table internally}
+88 
+89     \textcolor{comment}{// static\_transition\_dynamic\_logic\_unit< sm\_dance\_bot::SS1::SsRadialPattern1,}
+90     \textcolor{comment}{//                                       sm\_dance\_bot::SS2::SsRadialPattern2,}
+91     \textcolor{comment}{//                                       sm\_dance\_bot::SS2::SsRadialPattern3>();}
+92 
+93     \textcolor{comment}{// static\_createLogicUnit<lusource, outevent, invent, dststate1, dststate2 ...>();}
+94     \textcolor{comment}{// static\_createLogicUnit<LuCounter, EvCountFinish<LuCounter>,    >();}
+95     \textcolor{comment}{// function<T1, T2, Targs...>}
+96     \textcolor{comment}{// function<T1, T2, TOutEvents..., TInEvents...>}
+97 
+98     \textcolor{comment}{// function<LogicUnitType, mpl::list<>, mpl::list<>>();}
+99     \textcolor{comment}{// function<LogicUnitType, TEvOut, mpl::list<>>();}
+100     \textcolor{comment}{// function<LogicUnitType, mpl::list<>, TEvIn>();}
+101 
+102     \textcolor{comment}{// static\_transition(}
+103     \textcolor{comment}{// (}
+104     \textcolor{comment}{//   \{}
+105     \textcolor{comment}{//     \{0, typeid(SS1::SsRadialPattern1)\},}
+106     \textcolor{comment}{//     \{1, typeid(SS1::SsRadialPattern2)\}}
+107     \textcolor{comment}{//     \{3, typeid(SS1::SsRadialPattern3)\}}
+108     \textcolor{comment}{//   \}}
+109     \textcolor{comment}{// ));}
+110   \}
 \end{DoxyCode}
 \index{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+WaypointsX@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+WaypointsX}!on\+Initialize@{on\+Initialize}}
 \index{on\+Initialize@{on\+Initialize}!sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+WaypointsX@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+WaypointsX}}
@@ -163,7 +163,7 @@ Definition at line 46 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsm__dance__bot_1_1StNavigateToWaypointsX_a5954a62667839c5b56ff07ebd26541d7}{}\label{structsm__dance__bot_1_1StNavigateToWaypointsX_a5954a62667839c5b56ff07ebd26541d7}
 
 
-Definition at line 113 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h.
+Definition at line 112 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h.
 
 
 
@@ -171,53 +171,53 @@ References smacc\+::\+I\+Smacc\+State\+::requires\+Client().
 
 
 \begin{DoxyCode}
-114   \{
-115     \textcolor{comment}{// this->currentIteration = 0;}
-116 
-117     \textcolor{comment}{// // IDEA: this->declarePersistentVariable(&currentIteration)}
-118     \textcolor{comment}{// this->getGlobalSMData("navigation\_x\_iteration", currentIteration);}
-119 
-120     \textcolor{comment}{//ROS\_INFO("current iteration waypoints x: %d", currentIteration);}
-121 
-122     ClMoveBaseZ *move\_base;
-123     this->\hyperlink{classsmacc_1_1ISmaccState_a0f116de85bbc91d94e1eb2f74502acd8}{requiresClient}(move\_base);
-124 
-125     \textcolor{keywordflow}{if} (move\_base->waypointsNavigator\_->getWaypoints().size() == 0)
-126     \{
-127       std::vector<Pose2D> waypoints3d =
-128           \{
-129               \{3.0, -2.0, 0\},
-130               \{-5.5, 3.0, 0\},
-131               \{-11.0, -5.0, 0\},
-132               \{2.0, -8.58, 0\},
-133               \{-10.0, 14.5, 0\}\};
-134 
-135       move\_base->waypointsNavigator\_->setWaypoints(waypoints3d);
-136     \}
-137 
-138     \textcolor{comment}{//this->configure<OrNavigation, CbNavigateGlobalPosition>(target.x\_, target.y\_, target.yaw\_);}
-139 
-140     move\_base->waypointsNavigator\_->sendNextGoal();
-141 
-142     ROS\_INFO(\textcolor{stringliteral}{"current iteration waypoints x: %ld"}, move\_base->waypointsNavigator\_->getCurrentWaypointIndex(
+113   \{
+114     \textcolor{comment}{// this->currentIteration = 0;}
+115 
+116     \textcolor{comment}{// // IDEA: this->declarePersistentVariable(&currentIteration)}
+117     \textcolor{comment}{// this->getGlobalSMData("navigation\_x\_iteration", currentIteration);}
+118 
+119     \textcolor{comment}{//ROS\_INFO("current iteration waypoints x: %d", currentIteration);}
+120 
+121     ClMoveBaseZ *move\_base;
+122     this->\hyperlink{classsmacc_1_1ISmaccState_a0f116de85bbc91d94e1eb2f74502acd8}{requiresClient}(move\_base);
+123 
+124     \textcolor{keywordflow}{if} (move\_base->waypointsNavigator\_->getWaypoints().size() == 0)
+125     \{
+126       std::vector<Pose2D> waypoints3d =
+127           \{
+128               \{3.0, -2.0, 0\},
+129               \{-5.5, 3.0, 0\},
+130               \{-11.0, -5.0, 0\},
+131               \{2.0, -8.58, 0\},
+132               \{-10.0, 14.5, 0\}\};
+133 
+134       move\_base->waypointsNavigator\_->setWaypoints(waypoints3d);
+135     \}
+136 
+137     \textcolor{comment}{//this->configure<OrNavigation, CbNavigateGlobalPosition>(target.x\_, target.y\_, target.yaw\_);}
+138 
+139     move\_base->waypointsNavigator\_->sendNextGoal();
+140 
+141     ROS\_INFO(\textcolor{stringliteral}{"current iteration waypoints x: %ld"}, move\_base->waypointsNavigator\_->getCurrentWaypointIndex(
       ));
-143 
-144     \textcolor{comment}{// x, y, yaw (orientation)}
-145 
-146     \textcolor{comment}{// if (currentIteration > waypoints.size())}
-147     \textcolor{comment}{// \{}
-148     \textcolor{comment}{//   ROS\_FATAL("[WaypointsX] Out of range of waypoint list. Cannot go to waypoint %d.",
+142 
+143     \textcolor{comment}{// x, y, yaw (orientation)}
+144 
+145     \textcolor{comment}{// if (currentIteration > waypoints.size())}
+146     \textcolor{comment}{// \{}
+147     \textcolor{comment}{//   ROS\_FATAL("[WaypointsX] Out of range of waypoint list. Cannot go to waypoint %d.",
        this->currentIteration);}
-149     \textcolor{comment}{//   this->throwFinishEvent();}
-150     \textcolor{comment}{// \}}
-151     \textcolor{comment}{// else}
-152     \textcolor{comment}{// \{}
-153     \textcolor{comment}{//   auto &target = waypoints[currentIteration];}
-154 
-155     \textcolor{comment}{//   ROS\_INFO("[NavigateWaypointsX] navigating to %lf %lf yaw: %lf", target.x\_, target.y\_,
+148     \textcolor{comment}{//   this->throwFinishEvent();}
+149     \textcolor{comment}{// \}}
+150     \textcolor{comment}{// else}
+151     \textcolor{comment}{// \{}
+152     \textcolor{comment}{//   auto &target = waypoints[currentIteration];}
+153 
+154     \textcolor{comment}{//   ROS\_INFO("[NavigateWaypointsX] navigating to %lf %lf yaw: %lf", target.x\_, target.y\_,
        target.yaw\_);}
-156     \textcolor{comment}{// \}}
-157   \}
+155     \textcolor{comment}{// \}}
+156   \}
 \end{DoxyCode}
 
 
