@@ -40,16 +40,22 @@ virtual std\+::string \hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa2
 {\footnotesize template$<$typename Event\+Type $>$ }\\void \hyperlink{classsmacc_1_1ISmaccClient_a46cbc0d695214efe40d29247323bfc80}{post\+Event} (const Event\+Type \&ev)
 \item 
 {\footnotesize template$<$typename Event\+Type $>$ }\\void \hyperlink{classsmacc_1_1ISmaccClient_a21a79203cb44fc717d4d977c190327c6}{post\+Event} ()
+\item 
+{\footnotesize template$<$typename T\+Component $>$ }\\T\+Component $\ast$ \hyperlink{classsmacc_1_1ISmaccClient_adef78db601749ca63c19e74a27cb88cc}{get\+Component} ()
+\item 
+{\footnotesize template$<$typename T\+Component $>$ }\\T\+Component $\ast$ \hyperlink{classsmacc_1_1ISmaccClient_a8c58945bc0d007239076d964e9ab15cd}{create\+Component} ()
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classsmacc_1_1ISmaccStateMachine}{I\+Smacc\+State\+Machine} $\ast$ \hyperlink{classsmacc_1_1ISmaccClient_a926e4f2ae796def63d48dca389a48c47}{state\+Machine\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{classsmacc_1_1ISmaccComponent}{I\+Smacc\+Component} $\ast$ $>$ \hyperlink{classsmacc_1_1ISmaccClient_ab0b212380d3e16ffbd338034ce54073a}{components\+\_\+}
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$typename T\+Derived , typename T\+Object\+Tag $>$ }\\void \hyperlink{classsmacc_1_1ISmaccClient_a53f449a5c815711ed43f39b0b6795f22}{assign\+To\+Orthogonal} ()
+{\footnotesize template$<$typename T\+Derived , typename T\+Object\+Tag $>$ }\\void \hyperlink{classsmacc_1_1ISmaccClient_a643285b93f2bd33987e0d0d1a12caf10}{configure\+Event\+Source\+Types} ()
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -61,7 +67,7 @@ class \hyperlink{classsmacc_1_1ISmaccClient_ab3e0a1388d84ea577a59f487cbfc08e3}{O
 \subsection{Detailed Description}
 
 
-Definition at line 12 of file smacc\+\_\+client.\+h.
+Definition at line 13 of file smacc\+\_\+client.\+h.
 
 
 
@@ -102,20 +108,86 @@ Definition at line 11 of file client.\+cpp.
 
 
 \subsection{Member Function Documentation}
-\index{smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}!assign\+To\+Orthogonal@{assign\+To\+Orthogonal}}
-\index{assign\+To\+Orthogonal@{assign\+To\+Orthogonal}!smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}}
-\subsubsection[{\texorpdfstring{assign\+To\+Orthogonal()}{assignToOrthogonal()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived , typename T\+Object\+Tag $>$ void smacc\+::\+I\+Smacc\+Client\+::assign\+To\+Orthogonal (
+\index{smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}!configure\+Event\+Source\+Types@{configure\+Event\+Source\+Types}}
+\index{configure\+Event\+Source\+Types@{configure\+Event\+Source\+Types}!smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}}
+\subsubsection[{\texorpdfstring{configure\+Event\+Source\+Types()}{configureEventSourceTypes()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived , typename T\+Object\+Tag $>$ void smacc\+::\+I\+Smacc\+Client\+::configure\+Event\+Source\+Types (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classsmacc_1_1ISmaccClient_a53f449a5c815711ed43f39b0b6795f22}{}\label{classsmacc_1_1ISmaccClient_a53f449a5c815711ed43f39b0b6795f22}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classsmacc_1_1ISmaccClient_a643285b93f2bd33987e0d0d1a12caf10}{}\label{classsmacc_1_1ISmaccClient_a643285b93f2bd33987e0d0d1a12caf10}
 
 
-Definition at line 38 of file smacc\+\_\+client.\+h.
+Definition at line 47 of file smacc\+\_\+client.\+h.
 
 
 \begin{DoxyCode}
-38 \{\}
+47 \{\}
+\end{DoxyCode}
+\index{smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}!create\+Component@{create\+Component}}
+\index{create\+Component@{create\+Component}!smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}}
+\subsubsection[{\texorpdfstring{create\+Component()}{createComponent()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Component $>$ T\+Component $\ast$ smacc\+::\+I\+Smacc\+Client\+::create\+Component (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1ISmaccClient_a8c58945bc0d007239076d964e9ab15cd}{}\label{classsmacc_1_1ISmaccClient_a8c58945bc0d007239076d964e9ab15cd}
+
+
+Definition at line 37 of file smacc\+\_\+client\+\_\+impl.\+h.
+
+
+
+References components\+\_\+, smacc\+::\+I\+Smacc\+State\+Machine\+::requires\+Component(), and state\+Machine\+\_\+.
+
+
+\begin{DoxyCode}
+38 \{
+39     TComponent *component;
+40     \hyperlink{classsmacc_1_1ISmaccClient_a926e4f2ae796def63d48dca389a48c47}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_a21aae3a3134367aed33c47d55c452e95}{requiresComponent}(component);
+41     \hyperlink{classsmacc_1_1ISmaccClient_ab0b212380d3e16ffbd338034ce54073a}{components\_}.push\_back(component);
+42     \textcolor{keywordflow}{return} component;
+43 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1ISmaccClient_a8c58945bc0d007239076d964e9ab15cd_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}!get\+Component@{get\+Component}}
+\index{get\+Component@{get\+Component}!smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}}
+\subsubsection[{\texorpdfstring{get\+Component()}{getComponent()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Component $>$ T\+Component $\ast$ smacc\+::\+I\+Smacc\+Client\+::get\+Component (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1ISmaccClient_adef78db601749ca63c19e74a27cb88cc}{}\label{classsmacc_1_1ISmaccClient_adef78db601749ca63c19e74a27cb88cc}
+
+
+Definition at line 22 of file smacc\+\_\+client\+\_\+impl.\+h.
+
+
+
+References components\+\_\+.
+
+
+\begin{DoxyCode}
+23 \{
+24     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} *component : \hyperlink{classsmacc_1_1ISmaccClient_ab0b212380d3e16ffbd338034ce54073a}{components\_})
+25     \{
+26         \textcolor{keyword}{auto} *tcomponent = \textcolor{keyword}{dynamic\_cast<}TComponent *\textcolor{keyword}{>}(component);
+27         \textcolor{keywordflow}{if} (tcomponent != \textcolor{keyword}{nullptr})
+28         \{
+29             \textcolor{keywordflow}{return} tcomponent;
+30         \}
+31     \}
+32 
+33     \textcolor{keywordflow}{return} \textcolor{keyword}{nullptr};
+34 \}
 \end{DoxyCode}
 \index{smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}!get\+Name@{get\+Name}}
 \index{get\+Name@{get\+Name}!smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}}
@@ -246,7 +318,7 @@ Referenced by ros\+\_\+timer\+\_\+client\+::\+Cl\+Ros\+Timer\+::timer\+Callback(
 
 \begin{DoxyCode}
 16 \{
-17     \textcolor{keyword}{auto}* ev = \textcolor{keyword}{new} EventType();
+17     \textcolor{keyword}{auto} *ev = \textcolor{keyword}{new} EventType();
 18     \hyperlink{classsmacc_1_1ISmaccClient_a926e4f2ae796def63d48dca389a48c47}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_ad80cdd7bbc9a9f3b221c625754fed1ed}{postEvent}(ev);
 19 \}
 \end{DoxyCode}
@@ -303,21 +375,32 @@ References state\+Machine\+\_\+.
 \subsubsection[{\texorpdfstring{Orthogonal}{Orthogonal}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Orthogonal}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classsmacc_1_1ISmaccClient_ab3e0a1388d84ea577a59f487cbfc08e3}{}\label{classsmacc_1_1ISmaccClient_ab3e0a1388d84ea577a59f487cbfc08e3}
 
 
-Definition at line 40 of file smacc\+\_\+client.\+h.
+Definition at line 49 of file smacc\+\_\+client.\+h.
 
 
 
 \subsection{Member Data Documentation}
+\index{smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}!components\+\_\+@{components\+\_\+}}
+\index{components\+\_\+@{components\+\_\+}!smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}}
+\subsubsection[{\texorpdfstring{components\+\_\+}{components_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf I\+Smacc\+Component} $\ast$$>$ smacc\+::\+I\+Smacc\+Client\+::components\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classsmacc_1_1ISmaccClient_ab0b212380d3e16ffbd338034ce54073a}{}\label{classsmacc_1_1ISmaccClient_ab0b212380d3e16ffbd338034ce54073a}
+
+
+Definition at line 43 of file smacc\+\_\+client.\+h.
+
+
+
+Referenced by create\+Component(), and get\+Component().
+
 \index{smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}!state\+Machine\+\_\+@{state\+Machine\+\_\+}}
 \index{state\+Machine\+\_\+@{state\+Machine\+\_\+}!smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}}
 \subsubsection[{\texorpdfstring{state\+Machine\+\_\+}{stateMachine_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Smacc\+State\+Machine}$\ast$ smacc\+::\+I\+Smacc\+Client\+::state\+Machine\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classsmacc_1_1ISmaccClient_a926e4f2ae796def63d48dca389a48c47}{}\label{classsmacc_1_1ISmaccClient_a926e4f2ae796def63d48dca389a48c47}
 
 
-Definition at line 34 of file smacc\+\_\+client.\+h.
+Definition at line 41 of file smacc\+\_\+client.\+h.
 
 
 
-Referenced by post\+Event(), and set\+State\+Machine().
+Referenced by create\+Component(), post\+Event(), and set\+State\+Machine().
 
 
 

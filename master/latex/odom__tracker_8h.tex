@@ -1,5 +1,5 @@
-\hypertarget{odom__tracker_8h}{}\section{smacc\+\_\+client\+\_\+library/smacc\+\_\+navigation/smacc\+\_\+odom\+\_\+tracker/include/smacc\+\_\+odom\+\_\+tracker/odom\+\_\+tracker.h File Reference}
-\label{odom__tracker_8h}\index{smacc\+\_\+client\+\_\+library/smacc\+\_\+navigation/smacc\+\_\+odom\+\_\+tracker/include/smacc\+\_\+odom\+\_\+tracker/odom\+\_\+tracker.\+h@{smacc\+\_\+client\+\_\+library/smacc\+\_\+navigation/smacc\+\_\+odom\+\_\+tracker/include/smacc\+\_\+odom\+\_\+tracker/odom\+\_\+tracker.\+h}}
+\hypertarget{odom__tracker_8h}{}\section{smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/odom\+\_\+tracker/include/odom\+\_\+tracker/odom\+\_\+tracker.h File Reference}
+\label{odom__tracker_8h}\index{smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/odom\+\_\+tracker/include/odom\+\_\+tracker/odom\+\_\+tracker.\+h@{smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/odom\+\_\+tracker/include/odom\+\_\+tracker/odom\+\_\+tracker.\+h}}
 {\ttfamily \#include $<$smacc/common.\+h$>$}\\*
 {\ttfamily \#include $<$smacc/component.\+h$>$}\\*
 {\ttfamily \#include $<$move\+\_\+base\+\_\+msgs/\+Move\+Base\+Action.\+h$>$}\\*
@@ -32,23 +32,23 @@ This graph shows which files directly or indirectly include this file\+:
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classsmacc__odom__tracker_1_1OdomTracker}{smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker}
+class \hyperlink{classodom__tracker_1_1OdomTracker}{odom\+\_\+tracker\+::\+Odom\+Tracker}
 \begin{DoxyCompactList}\small\item\em This class track the required distance of the cord based on the external localization system. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
- \hyperlink{namespacesmacc__odom__tracker}{smacc\+\_\+odom\+\_\+tracker}
+ \hyperlink{namespaceodom__tracker}{odom\+\_\+tracker}
 \end{DoxyCompactItemize}
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-enum \hyperlink{namespacesmacc__odom__tracker_ade9730dd5cc10ccfad9362176cf46c33}{smacc\+\_\+odom\+\_\+tracker\+::\+Working\+Mode} \+: uint8\+\_\+t \{ \hyperlink{namespacesmacc__odom__tracker_ade9730dd5cc10ccfad9362176cf46c33a989d06a586bcf9520889228da7faa643}{smacc\+\_\+odom\+\_\+tracker\+::\+Working\+Mode\+::\+R\+E\+C\+O\+R\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+O\+R\+W\+A\+RD} = 0, 
-\hyperlink{namespacesmacc__odom__tracker_ade9730dd5cc10ccfad9362176cf46c33a0cf8f27617189e35619df3c18bda6274}{smacc\+\_\+odom\+\_\+tracker\+::\+Working\+Mode\+::\+C\+L\+E\+A\+R\+\_\+\+P\+A\+T\+H\+\_\+\+B\+A\+C\+K\+W\+A\+RD} = 1, 
-\hyperlink{namespacesmacc__odom__tracker_ade9730dd5cc10ccfad9362176cf46c33aa5daf7f2ebbba4975d61dab1c40188c7}{smacc\+\_\+odom\+\_\+tracker\+::\+Working\+Mode\+::\+I\+D\+LE} = 2
+enum \hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88}{odom\+\_\+tracker\+::\+Working\+Mode} \+: uint8\+\_\+t \{ \hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88a989d06a586bcf9520889228da7faa643}{odom\+\_\+tracker\+::\+Working\+Mode\+::\+R\+E\+C\+O\+R\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+O\+R\+W\+A\+RD} = 0, 
+\hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88a0cf8f27617189e35619df3c18bda6274}{odom\+\_\+tracker\+::\+Working\+Mode\+::\+C\+L\+E\+A\+R\+\_\+\+P\+A\+T\+H\+\_\+\+B\+A\+C\+K\+W\+A\+RD} = 1, 
+\hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88aa5daf7f2ebbba4975d61dab1c40188c7}{odom\+\_\+tracker\+::\+Working\+Mode\+::\+I\+D\+LE} = 2
  \}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-double \hyperlink{namespacesmacc__odom__tracker_a93496d9bf987249b884e9b0e60778a11}{smacc\+\_\+odom\+\_\+tracker\+::p2p\+Distance} (const geometry\+\_\+msgs\+::\+Point \&p1, const geometry\+\_\+msgs\+::\+Point \&p2)
+double \hyperlink{namespaceodom__tracker_a18caccd20c7915e29706a95860e34cca}{odom\+\_\+tracker\+::p2p\+Distance} (const geometry\+\_\+msgs\+::\+Point \&p1, const geometry\+\_\+msgs\+::\+Point \&p2)
 \end{DoxyCompactItemize}

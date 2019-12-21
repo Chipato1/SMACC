@@ -141,7 +141,7 @@ References clients\+\_\+, smacc\+::demangle\+Type(), and state\+Machine\+\_\+.
 14     \textcolor{keyword}{auto} client = std::make\_shared<TClient>(args...);
 15     client->setStateMachine(\hyperlink{classsmacc_1_1Orthogonal_acea2058ac94667e46fc60ed3d4f524f7}{stateMachine\_});
 16 
-17     client->template assignToOrthogonal<TClient, TObjectTag>();
+17     client->template configureEventSourceTypes<TClient, TObjectTag>();
 18     \hyperlink{classsmacc_1_1Orthogonal_a361fd1c4a5b0e6eadd55e919c19969cc}{clients\_}.push\_back(client);
 19     \textcolor{keywordflow}{return} client;
 20 \}
@@ -363,7 +363,7 @@ Here is the call graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{}\label{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}
 
 
-Reimplemented in \hyperlink{classsm__dance__bot_1_1OrClTemperatureSensor_adf83577acca3fd2193d6ca7ba0736484}{sm\+\_\+dance\+\_\+bot\+::\+Or\+Cl\+Temperature\+Sensor}, \hyperlink{classsm__dance__bot_1_1OrNavigation_a9f87c78f5af67024c9eda25097a135ac}{sm\+\_\+dance\+\_\+bot\+::\+Or\+Navigation}, \hyperlink{classsm__dance__bot_1_1OrObstaclePerception_a4597fbab143e9bc3e350dfa730242a08}{sm\+\_\+dance\+\_\+bot\+::\+Or\+Obstacle\+Perception}, \hyperlink{classsm__dance__bot_1_1OrService3_a394d93c4a340257b8b1b941adeed8cd9}{sm\+\_\+dance\+\_\+bot\+::\+Or\+Service3}, \hyperlink{classsm__dance__bot_1_1OrUpdatablePublisher_a7de06135fd7ddea74ad9bb547fb6e79a}{sm\+\_\+dance\+\_\+bot\+::\+Or\+Updatable\+Publisher}, \hyperlink{classsm__three__some_1_1OrOrthogonal1_ad9dec970afcae7347e3bf2e48e7f8314}{sm\+\_\+three\+\_\+some\+::\+Or\+Orthogonal1}, \hyperlink{classsm__three__some_1_1OrOrthogonal2_a97037952a7372ce6cdb920b1b1c0b72c}{sm\+\_\+three\+\_\+some\+::\+Or\+Orthogonal2}, \hyperlink{classsm__dance__bot_1_1OrStringPublisher_a61cf6dcd0726eb1191dd0a110237968e}{sm\+\_\+dance\+\_\+bot\+::\+Or\+String\+Publisher}, \hyperlink{classsm__dance__bot_1_1OrTimer_aa0091c17ca7ff4c71badd03085272cc4}{sm\+\_\+dance\+\_\+bot\+::\+Or\+Timer}, \hyperlink{classsm__dance__bot_1_1OrTool_a78a07c94234ff0e07450b1e5115fb6a8}{sm\+\_\+dance\+\_\+bot\+::\+Or\+Tool}, \hyperlink{classsm__three__some_1_1OrKeyboard_af49faa7c511ae0232ed0931ce8c85b56}{sm\+\_\+three\+\_\+some\+::\+Or\+Keyboard}, \hyperlink{classsm__atomic_1_1OrNavigation_ac1b6e1922f3d106e3b4429bd50eef474}{sm\+\_\+atomic\+::\+Or\+Navigation}, and \hyperlink{classsm__viewer__sim_1_1OrNavigation_a6f39ecbb3c1ad253c283588df860a8c4}{sm\+\_\+viewer\+\_\+sim\+::\+Or\+Navigation}.
+Reimplemented in \hyperlink{classsm__dance__bot_1_1OrNavigation_a9f87c78f5af67024c9eda25097a135ac}{sm\+\_\+dance\+\_\+bot\+::\+Or\+Navigation}, \hyperlink{classsm__dance__bot_1_1OrClTemperatureSensor_adf83577acca3fd2193d6ca7ba0736484}{sm\+\_\+dance\+\_\+bot\+::\+Or\+Cl\+Temperature\+Sensor}, \hyperlink{classsm__dance__bot_1_1OrObstaclePerception_a4597fbab143e9bc3e350dfa730242a08}{sm\+\_\+dance\+\_\+bot\+::\+Or\+Obstacle\+Perception}, \hyperlink{classsm__dance__bot_1_1OrService3_a394d93c4a340257b8b1b941adeed8cd9}{sm\+\_\+dance\+\_\+bot\+::\+Or\+Service3}, \hyperlink{classsm__dance__bot_1_1OrUpdatablePublisher_a7de06135fd7ddea74ad9bb547fb6e79a}{sm\+\_\+dance\+\_\+bot\+::\+Or\+Updatable\+Publisher}, \hyperlink{classsm__three__some_1_1OrOrthogonal1_ad9dec970afcae7347e3bf2e48e7f8314}{sm\+\_\+three\+\_\+some\+::\+Or\+Orthogonal1}, \hyperlink{classsm__three__some_1_1OrOrthogonal2_a97037952a7372ce6cdb920b1b1c0b72c}{sm\+\_\+three\+\_\+some\+::\+Or\+Orthogonal2}, \hyperlink{classsm__dance__bot_1_1OrStringPublisher_a61cf6dcd0726eb1191dd0a110237968e}{sm\+\_\+dance\+\_\+bot\+::\+Or\+String\+Publisher}, \hyperlink{classsm__dance__bot_1_1OrTimer_aa0091c17ca7ff4c71badd03085272cc4}{sm\+\_\+dance\+\_\+bot\+::\+Or\+Timer}, \hyperlink{classsm__dance__bot_1_1OrTool_a78a07c94234ff0e07450b1e5115fb6a8}{sm\+\_\+dance\+\_\+bot\+::\+Or\+Tool}, \hyperlink{classsm__three__some_1_1OrKeyboard_af49faa7c511ae0232ed0931ce8c85b56}{sm\+\_\+three\+\_\+some\+::\+Or\+Keyboard}, \hyperlink{classsm__atomic_1_1OrNavigation_ac1b6e1922f3d106e3b4429bd50eef474}{sm\+\_\+atomic\+::\+Or\+Navigation}, and \hyperlink{classsm__viewer__sim_1_1OrNavigation_a6f39ecbb3c1ad253c283588df860a8c4}{sm\+\_\+viewer\+\_\+sim\+::\+Or\+Navigation}.
 
 
 
@@ -454,10 +454,6 @@ Definition at line 23 of file smacc\+\_\+orthogonal\+\_\+impl.\+h.
 References smacc\+::\+I\+Smacc\+State\+Machine\+::requires\+Component(), and state\+Machine\+\_\+.
 
 
-
-Referenced by sm\+\_\+dance\+\_\+bot\+::\+Or\+Navigation\+::on\+Initialize().
-
-
 \begin{DoxyCode}
 24 \{
 25     \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1Orthogonal_acea2058ac94667e46fc60ed3d4f524f7}{stateMachine\_} == \textcolor{keyword}{nullptr})
@@ -466,7 +462,7 @@ Referenced by sm\+\_\+dance\+\_\+bot\+::\+Or\+Navigation\+::on\+Initialize().
 28     \}
 29     \textcolor{keywordflow}{else}
 30     \{
-31         \hyperlink{classsmacc_1_1Orthogonal_acea2058ac94667e46fc60ed3d4f524f7}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_a729d0bcb3c4894e33f0696e0b1aeb155}{requiresComponent}(storage, verbose);
+31         \hyperlink{classsmacc_1_1Orthogonal_acea2058ac94667e46fc60ed3d4f524f7}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_a21aae3a3134367aed33c47d55c452e95}{requiresComponent}(storage, verbose);
 32     \}
 33 \}
 \end{DoxyCode}
@@ -478,18 +474,6 @@ Here is the call graph for this function\+:
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classsmacc_1_1Orthogonal_a098b5be0f89d0911afc44c10b756ef2a_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classsmacc_1_1Orthogonal_a098b5be0f89d0911afc44c10b756ef2a_icgraph}
 \end{center}
 \end{figure}
 

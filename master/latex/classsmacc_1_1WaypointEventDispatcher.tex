@@ -31,7 +31,7 @@ std\+::function$<$ void()$>$ \hyperlink{classsmacc_1_1WaypointEventDispatcher_a6
 \subsection{Detailed Description}
 
 
-Definition at line 42 of file waypoints\+\_\+event\+\_\+dispatcher.\+h.
+Definition at line 43 of file waypoints\+\_\+event\+\_\+dispatcher.\+h.
 
 
 
@@ -45,29 +45,29 @@ Definition at line 42 of file waypoints\+\_\+event\+\_\+dispatcher.\+h.
 )}\hypertarget{classsmacc_1_1WaypointEventDispatcher_ad68384f96ef92ade4942320f898cdd3b}{}\label{classsmacc_1_1WaypointEventDispatcher_ad68384f96ef92ade4942320f898cdd3b}
 
 
-Definition at line 32 of file move\+\_\+base\+\_\+action\+\_\+client\+\_\+impl.\+h.
+Definition at line 63 of file waypoints\+\_\+event\+\_\+dispatcher.\+h.
 
 
 
-Referenced by smacc\+::\+Waypoint\+Navigator\+::assign\+To\+Orthogonal().
+Referenced by smacc\+::\+Waypoint\+Navigator\+::configure\+Event\+Source\+Types().
 
 
 \begin{DoxyCode}
-33 \{
-34     configurePostEvWaypoint<EvWaypoint0<TDerived, TObjectTag>>(\hyperlink{classsmacc_1_1WaypointEventDispatcher_a6bccf6a93a827634b7b5e67ac0e4ec57}{postWaypointFn}, client, 0);
-35     configurePostEvWaypoint<EvWaypoint1<TDerived, TObjectTag>>(\hyperlink{classsmacc_1_1WaypointEventDispatcher_a6bccf6a93a827634b7b5e67ac0e4ec57}{postWaypointFn}, client, 1);
-36     configurePostEvWaypoint<EvWaypoint2<TDerived, TObjectTag>>(\hyperlink{classsmacc_1_1WaypointEventDispatcher_a6bccf6a93a827634b7b5e67ac0e4ec57}{postWaypointFn}, client, 2);
-37     configurePostEvWaypoint<EvWaypoint3<TDerived, TObjectTag>>(\hyperlink{classsmacc_1_1WaypointEventDispatcher_a6bccf6a93a827634b7b5e67ac0e4ec57}{postWaypointFn}, client, 3);
-38     configurePostEvWaypoint<EvWaypoint4<TDerived, TObjectTag>>(\hyperlink{classsmacc_1_1WaypointEventDispatcher_a6bccf6a93a827634b7b5e67ac0e4ec57}{postWaypointFn}, client, 4);
-39 
-40     \textcolor{comment}{// postWaypointFn[0] = [=]() \{}
-41     \textcolor{comment}{//     client->template postEvent<EvWaypoint0<TDerived, TObjectTag>>();}
-42     \textcolor{comment}{// \};}
-43 
-44     \textcolor{comment}{// postWaypointFn[1] = [=]() \{}
-45     \textcolor{comment}{//     client->template postEvent<EvWaypoint1<TDerived, TObjectTag>>();}
-46     \textcolor{comment}{// \};}
-47 \}
+64 \{
+65     configurePostEvWaypoint<EvWaypoint0<TDerived, TObjectTag>>(\hyperlink{classsmacc_1_1WaypointEventDispatcher_a6bccf6a93a827634b7b5e67ac0e4ec57}{postWaypointFn}, client, 0);
+66     configurePostEvWaypoint<EvWaypoint1<TDerived, TObjectTag>>(\hyperlink{classsmacc_1_1WaypointEventDispatcher_a6bccf6a93a827634b7b5e67ac0e4ec57}{postWaypointFn}, client, 1);
+67     configurePostEvWaypoint<EvWaypoint2<TDerived, TObjectTag>>(\hyperlink{classsmacc_1_1WaypointEventDispatcher_a6bccf6a93a827634b7b5e67ac0e4ec57}{postWaypointFn}, client, 2);
+68     configurePostEvWaypoint<EvWaypoint3<TDerived, TObjectTag>>(\hyperlink{classsmacc_1_1WaypointEventDispatcher_a6bccf6a93a827634b7b5e67ac0e4ec57}{postWaypointFn}, client, 3);
+69     configurePostEvWaypoint<EvWaypoint4<TDerived, TObjectTag>>(\hyperlink{classsmacc_1_1WaypointEventDispatcher_a6bccf6a93a827634b7b5e67ac0e4ec57}{postWaypointFn}, client, 4);
+70 
+71     \textcolor{comment}{// postWaypointFn[0] = [=]() \{}
+72     \textcolor{comment}{//     client->template postEvent<EvWaypoint0<TDerived, TObjectTag>>();}
+73     \textcolor{comment}{// \};}
+74 
+75     \textcolor{comment}{// postWaypointFn[1] = [=]() \{}
+76     \textcolor{comment}{//     client->template postEvent<EvWaypoint1<TDerived, TObjectTag>>();}
+77     \textcolor{comment}{// \};}
+78 \}
 \end{DoxyCode}
 
 
@@ -128,7 +128,7 @@ Here is the caller graph for this function\+:
 \subsubsection[{\texorpdfstring{post\+Waypoint\+Fn}{postWaypointFn}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::function$<$void()$>$ smacc\+::\+Waypoint\+Event\+Dispatcher\+::post\+Waypoint\+Fn\mbox{[}{\bf W\+A\+Y\+P\+O\+I\+N\+T\+S\+\_\+\+E\+V\+E\+N\+T\+C\+O\+U\+NT}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1WaypointEventDispatcher_a6bccf6a93a827634b7b5e67ac0e4ec57}{}\label{classsmacc_1_1WaypointEventDispatcher_a6bccf6a93a827634b7b5e67ac0e4ec57}
 
 
-Definition at line 44 of file waypoints\+\_\+event\+\_\+dispatcher.\+h.
+Definition at line 45 of file waypoints\+\_\+event\+\_\+dispatcher.\+h.
 
 
 
@@ -138,6 +138,5 @@ Referenced by post\+Waypoint\+Event().
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-smacc\+\_\+client\+\_\+library/smacc\+\_\+navigation/smacc\+\_\+navigation\+\_\+plugin/include/smacc\+\_\+navigation\+\_\+plugin/\hyperlink{waypoints__event__dispatcher_8h}{waypoints\+\_\+event\+\_\+dispatcher.\+h}\item 
-smacc\+\_\+client\+\_\+library/smacc\+\_\+navigation/smacc\+\_\+navigation\+\_\+plugin/include/smacc\+\_\+navigation\+\_\+plugin/impl/\hyperlink{move__base__action__client__impl_8h}{move\+\_\+base\+\_\+action\+\_\+client\+\_\+impl.\+h}\item 
-smacc\+\_\+client\+\_\+library/smacc\+\_\+navigation/smacc\+\_\+navigation\+\_\+plugin/src/\hyperlink{waypoints__event__dispatcher_8cpp}{waypoints\+\_\+event\+\_\+dispatcher.\+cpp}\end{DoxyCompactItemize}
+smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/waypoints\+\_\+navigator/include/waypoints\+\_\+navigator/\hyperlink{waypoints__event__dispatcher_8h}{waypoints\+\_\+event\+\_\+dispatcher.\+h}\item 
+smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/waypoints\+\_\+navigator/src/\hyperlink{waypoints__event__dispatcher_8cpp}{waypoints\+\_\+event\+\_\+dispatcher.\+cpp}\end{DoxyCompactItemize}

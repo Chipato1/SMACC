@@ -89,10 +89,6 @@ class \hyperlink{classsmacc_1_1ISmaccStateMachine}{I\+Smacc\+State\+Machine}
 \item 
 class \hyperlink{classsmacc_1_1ISmaccUpdatable}{I\+Smacc\+Updatable}
 \item 
-class \hyperlink{classsmacc_1_1Keyboard}{Keyboard}
-\item 
-struct \hyperlink{structsmacc_1_1KeyPressEvent}{Key\+Press\+Event}
-\item 
 class \hyperlink{classsmacc_1_1LogicUnit}{Logic\+Unit}
 \item 
 class \hyperlink{classsmacc_1_1LuAllEventsGo}{Lu\+All\+Events\+Go}
@@ -146,10 +142,6 @@ struct \hyperlink{structsmacc_1_1SmaccTransitionInfo}{Smacc\+Transition\+Info}
 struct \hyperlink{structsmacc_1_1StateBehaviorInfoEntry}{State\+Behavior\+Info\+Entry}
 \item 
 struct \hyperlink{structsmacc_1_1SUCCESS}{S\+U\+C\+C\+E\+SS}
-\item 
-class \hyperlink{classsmacc_1_1Timer}{Timer}
-\item 
-struct \hyperlink{structsmacc_1_1TimerTickEvent}{Timer\+Tick\+Event}
 \item 
 class \hyperlink{classsmacc_1_1transition}{transition}
 \item 
@@ -476,7 +468,7 @@ References demangle\+Symbol().
 
 
 
-Referenced by smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::get\+Short\+Name(), smacc\+::\+Smacc\+State\+Machine\+Base$<$ Timer\+State\+Machine, Timer\+State $>$\+::initiate\+\_\+impl(), and smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::\+Smacc\+State().
+Referenced by smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::get\+Short\+Name(), smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Atomic\+State\+Machine, State1 $>$\+::initiate\+\_\+impl(), and smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::\+Smacc\+State().
 
 
 \begin{DoxyCode}
@@ -526,15 +518,15 @@ Here is the caller graph for this function\+:
 )}\hypertarget{namespacesmacc_a12e26ded70efbdd533dc8573f9068991}{}\label{namespacesmacc_a12e26ded70efbdd533dc8573f9068991}
 
 
-Definition at line 24 of file move\+\_\+base\+\_\+action\+\_\+client\+\_\+impl.\+h.
+Definition at line 55 of file waypoints\+\_\+event\+\_\+dispatcher.\+h.
 
 
 \begin{DoxyCode}
-25 \{
-26     fntarget[index] = [=]() \{
-27         client->template postEvent<TEv>();
-28     \};
-29 \}
+56 \{
+57     fntarget[index] = [=]() \{
+58         client->template postEvent<TEv>();
+59     \};
+60 \}
 \end{DoxyCode}
 \index{smacc@{smacc}!demangled\+Type\+Name@{demangled\+Type\+Name}}
 \index{demangled\+Type\+Name@{demangled\+Type\+Name}!smacc@{smacc}}
@@ -682,7 +674,7 @@ References demangle\+Symbol().
 
 
 
-Referenced by smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::assign\+To\+Orthogonal(), smacc\+::\+Orthogonal\+::create\+Client(), smacc\+::\+Signal\+Detector\+::find\+Updatable\+Behaviors(), smacc\+::\+Signal\+Detector\+::find\+Updatable\+Clients(), and smacc\+::\+Signal\+Detector\+::poll\+Once().
+Referenced by smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::configure\+Event\+Source\+Types(), smacc\+::\+Orthogonal\+::create\+Client(), smacc\+::\+Signal\+Detector\+::find\+Updatable\+Behaviors(), smacc\+::\+Signal\+Detector\+::find\+Updatable\+Clients(), and smacc\+::\+Signal\+Detector\+::poll\+Once().
 
 
 \begin{DoxyCode}

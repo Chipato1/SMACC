@@ -1,9 +1,9 @@
 <map id="smacc::ISmaccStateMachine::state_machine_visualization" name="smacc::ISmaccStateMachine::state_machine_visualization">
 <area shape="rect" id="node2" href="$classsmacc_1_1ISmaccStateMachine.html#a95e7f71d0d88fffd0afebb1f9ccdade5" title="smacc::ISmaccStateMachine\l::onInitialized" alt="" coords="264,63,471,105"/>
-<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccStateMachine.html#a8c39c1eedb7236e67739dab6e2229511" title="smacc::ISmaccStateMachine\l::getCurrentState" alt="" coords="519,27,725,69"/>
-<area shape="rect" id="node8" href="$structsmacc_1_1SmaccStateMachineBase.html#a2dc1cd9a25b80f00602f1faab9b01e7b" title="smacc::SmaccStateMachine\lBase\&lt; TimerStateMachine,\l TimerState \&gt;::initiate_impl" alt="" coords="520,92,724,148"/>
-<area shape="rect" id="node4" href="$classsmacc_1_1SignalDetector.html#a9a116479e23259f3a5d5d4a47278afd5" title="smacc::SignalDetector\l::pollOnce" alt="" coords="773,27,940,69"/>
-<area shape="rect" id="node5" href="$classsmacc_1_1SignalDetector.html#a2665e66cdae9f6533c64bbcecf3fa199" title="smacc::SignalDetector\l::pollingLoop" alt="" coords="988,27,1155,69"/>
-<area shape="rect" id="node6" href="$namespacesmacc.html#a47ac3b8d2968b1ba4152afd64ab66bd0" title="smacc::run" alt="" coords="1239,5,1333,32"/>
-<area shape="rect" id="node7" href="$classsmacc_1_1SignalDetector.html#a48b3fee853ddcb25732408b22ecfcf39" title="smacc::SignalDetector\l::runThread" alt="" coords="1203,57,1369,98"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccStateMachine.html#a8c39c1eedb7236e67739dab6e2229511" title="smacc::ISmaccStateMachine\l::getCurrentState" alt="" coords="529,27,736,69"/>
+<area shape="rect" id="node8" href="$structsmacc_1_1SmaccStateMachineBase.html#a2dc1cd9a25b80f00602f1faab9b01e7b" title="smacc::SmaccStateMachine\lBase\&lt; SmAtomicStateMachine,\l State1 \&gt;::initiate_impl" alt="" coords="519,92,747,148"/>
+<area shape="rect" id="node4" href="$classsmacc_1_1SignalDetector.html#a9a116479e23259f3a5d5d4a47278afd5" title="smacc::SignalDetector\l::pollOnce" alt="" coords="795,27,961,69"/>
+<area shape="rect" id="node5" href="$classsmacc_1_1SignalDetector.html#a2665e66cdae9f6533c64bbcecf3fa199" title="smacc::SignalDetector\l::pollingLoop" alt="" coords="1009,27,1176,69"/>
+<area shape="rect" id="node6" href="$namespacesmacc.html#a47ac3b8d2968b1ba4152afd64ab66bd0" title="smacc::run" alt="" coords="1261,5,1354,32"/>
+<area shape="rect" id="node7" href="$classsmacc_1_1SignalDetector.html#a48b3fee853ddcb25732408b22ecfcf39" title="smacc::SignalDetector\l::runThread" alt="" coords="1224,57,1391,98"/>
 </map>

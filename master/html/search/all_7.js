@@ -24,6 +24,7 @@ var searchData=
   ['getclassname',['getClassName',['../classsmacc_1_1ISmaccState.html#a5bf0b49d5ea6b9e8f45c26fa155b2664',1,'smacc::ISmaccState']]],
   ['getclientbehaviors',['getClientBehaviors',['../classsmacc_1_1Orthogonal.html#a9c0939a24078adfb96c4c1d198cea038',1,'smacc::Orthogonal']]],
   ['getclients',['getClients',['../classsmacc_1_1Orthogonal.html#aee5bcdacccdc3450785983fe58e11d1b',1,'smacc::Orthogonal']]],
+  ['getcomponent',['getComponent',['../classsmacc_1_1ISmaccClient.html#adef78db601749ca63c19e74a27cb88cc',1,'smacc::ISmaccClient']]],
   ['getcurrentstate',['getCurrentState',['../classsmacc_1_1ISmaccStateMachine.html#a8c39c1eedb7236e67739dab6e2229511',1,'smacc::ISmaccStateMachine']]],
   ['getcurrentstatecounter',['getCurrentStateCounter',['../classsmacc_1_1ISmaccStateMachine.html#a03966e531cefc1e096bffa46111871d2',1,'smacc::ISmaccStateMachine']]],
   ['getcurrentstateinfo',['getCurrentStateInfo',['../classsmacc_1_1ISmaccStateMachine.html#a1c455c0f33506e59a7f4389e3fe99ffe',1,'smacc::ISmaccStateMachine']]],
@@ -40,14 +41,14 @@ var searchData=
   ['getglobalsmdata',['getGlobalSMData',['../classsmacc_1_1ISmaccState.html#ad6811b03329d9e694e78bc4b1220c2c0',1,'smacc::ISmaccState::getGlobalSMData()'],['../classsmacc_1_1SmaccState.html#ad53b5be2760eb7ffb50f3b2e542b65f1',1,'smacc::SmaccState::getGlobalSMData()'],['../classsmacc_1_1ISmaccStateMachine.html#aeda2d6813c6c428bf318a5792e014b61',1,'smacc::ISmaccStateMachine::getGlobalSMData()']]],
   ['getkey',['getKey',['../namespacekeyboard__node.html#a14d63e075186fe8cedf60ed3524811f5',1,'keyboard_node']]],
   ['getlogicunits',['getLogicUnits',['../classsmacc_1_1ISmaccState.html#afeb001de0ad472535e5edfda46749683',1,'smacc::ISmaccState']]],
-  ['getname',['getName',['../classsmacc_1_1ISmaccComponent.html#aa314809a7fd3516461e31cc120d0cfe7',1,'smacc::ISmaccComponent::getName()'],['../classsmacc_1_1ISmaccClient.html#a20846aabfd1de832aa27d7a8237a1742',1,'smacc::ISmaccClient::getName()'],['../classsmacc_1_1SmaccClientBehavior.html#a3bdd13bc7822f75bdb64a1f23bcf9d6c',1,'smacc::SmaccClientBehavior::getName()'],['../classsmacc_1_1Orthogonal.html#ae1ad57a2fda4d7f2ecf708c342fc1bb9',1,'smacc::Orthogonal::getName()'],['../classsmacc_1_1SmaccToolActionClient.html#a07ee35b66e8e8e28c9e39052835515c9',1,'smacc::SmaccToolActionClient::getName()'],['../classsmacc_1_1ClMoveBaseZ.html#aa0292ad4bf6ddd4591d239c71ae0d06a',1,'smacc::ClMoveBaseZ::getName()']]],
+  ['getname',['getName',['../classsmacc_1_1ISmaccComponent.html#aa314809a7fd3516461e31cc120d0cfe7',1,'smacc::ISmaccComponent::getName()'],['../classsmacc_1_1ISmaccClient.html#a20846aabfd1de832aa27d7a8237a1742',1,'smacc::ISmaccClient::getName()'],['../classsmacc_1_1SmaccClientBehavior.html#a3bdd13bc7822f75bdb64a1f23bcf9d6c',1,'smacc::SmaccClientBehavior::getName()'],['../classsmacc_1_1Orthogonal.html#ae1ad57a2fda4d7f2ecf708c342fc1bb9',1,'smacc::Orthogonal::getName()'],['../classsmacc_1_1ClMoveBaseZ.html#aa0292ad4bf6ddd4591d239c71ae0d06a',1,'smacc::ClMoveBaseZ::getName()'],['../classsmacc_1_1SmaccToolActionClient.html#a07ee35b66e8e8e28c9e39052835515c9',1,'smacc::SmaccToolActionClient::getName()']]],
   ['getnamespace',['getNamespace',['../classsmacc_1_1ISmaccActionClient.html#ac9355b793956473a52879a9638601f02',1,'smacc::ISmaccActionClient']]],
   ['getnontemplatetypename',['getNonTemplatetypename',['../classsmacc_1_1TypeInfo.html#a0b84bf2a0da639a7754536424e11d460',1,'smacc::TypeInfo']]],
   ['getobjecttagname',['getObjectTagName',['../structsmacc_1_1SmaccEventInfo.html#a0aa5d15822e7642079f375ee0f4ff096',1,'smacc::SmaccEventInfo']]],
   ['getorthogonal',['getOrthogonal',['../classsmacc_1_1ISmaccStateMachine.html#a66a6732a48dbc0bc7a95b57fba5ec980',1,'smacc::ISmaccStateMachine']]],
   ['getorthogonals',['getOrthogonals',['../classsmacc_1_1ISmaccStateMachine.html#a262b3f2d15af019190fa69b7c0df00f8',1,'smacc::ISmaccStateMachine']]],
   ['getparam',['getParam',['../classsmacc_1_1ISmaccState.html#abbb3a24b912c6e8de28f7b86123b6357',1,'smacc::ISmaccState::getParam()'],['../classsmacc_1_1ISmaccStateMachine.html#ac9fda4abe36f62db5ae231289afa4665',1,'smacc::ISmaccStateMachine::getParam()']]],
-  ['getpath',['getPath',['../classsmacc__odom__tracker_1_1OdomTracker.html#ace0762f93bc272a426d3038f74dc8752',1,'smacc_odom_tracker::OdomTracker']]],
+  ['getpath',['getPath',['../classodom__tracker_1_1OdomTracker.html#a33cb7ab3947b27bf61fabb5be2dd87c9',1,'odom_tracker::OdomTracker']]],
   ['getresultstate',['getResultState',['../structsmacc_1_1IActionResult.html#af33869a3b1711af070597b8fe605ce70',1,'smacc::IActionResult']]],
   ['getroottypeinfo',['getRootTypeInfo',['../namespaceregex__template.html#a13dc0843d7416b24f99bcffd147c3d79',1,'regex_template']]],
   ['getshortname',['getShortName',['../classsmacc_1_1SmaccState.html#a4db028a85244653e48957d2b3371413d',1,'smacc::SmaccState']]],
@@ -67,5 +68,5 @@ var searchData=
   ['goalmarkerpublisher_5f',['goalMarkerPublisher_',['../classbackward__local__planner_1_1BackwardLocalPlanner.html#aec215b9441f9ac359ea6a531339ac4f8',1,'backward_local_planner::BackwardLocalPlanner::goalMarkerPublisher_()'],['../classforward__local__planner_1_1ForwardLocalPlanner.html#aa0248e082872c2e4f594269e5a785188',1,'forward_local_planner::ForwardLocalPlanner::goalMarkerPublisher_()']]],
   ['goalreached_5f',['goalReached_',['../classbackward__local__planner_1_1BackwardLocalPlanner.html#a42fdfaf0d3eb1edb71a225ec7caf62d0',1,'backward_local_planner::BackwardLocalPlanner::goalReached_()'],['../classforward__local__planner_1_1ForwardLocalPlanner.html#a2041c1e8216fd7b6e9e00489fc463d4c',1,'forward_local_planner::ForwardLocalPlanner::goalReached_()']]],
   ['gotoendpoint',['goToEndPoint',['../structsm__atomic_1_1CbState1.html#ae27f060a983c1128d3c928eed45eae6b',1,'sm_atomic::CbState1']]],
-  ['gotoradialstart',['goToRadialStart',['../classsm__dance__bot_1_1CbNavigateGlobalPosition.html#a0832f7a7f205cc483be012aef9501312',1,'sm_dance_bot::CbNavigateGlobalPosition']]]
+  ['gotoradialstart',['goToRadialStart',['../classsm__dance__bot_1_1CbNavigateGlobalPosition.html#a0832f7a7f205cc483be012aef9501312',1,'sm_dance_bot::CbNavigateGlobalPosition::goToRadialStart()'],['../classsm__dance__bot_1_1CbNavigateGlobalPosition.html#a0832f7a7f205cc483be012aef9501312',1,'sm_dance_bot::CbNavigateGlobalPosition::goToRadialStart()']]]
 ];

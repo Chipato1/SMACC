@@ -89,7 +89,7 @@ Definition at line 45 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h
 46   \{
 47     static\_configure<OrTool, CbToolStart>();
 48     static\_configure<OrObstaclePerception, CbLidarSensor>();
-49     
+49 
 50     \textcolor{comment}{// example for temperature sensor}
 51 
 52     \textcolor{comment}{//std::function<bool(EvTopicMessage<CbConditionClTemperatureSensor> *)> temperatureWarningCondition =
@@ -182,42 +182,45 @@ References smacc\+::\+I\+Smacc\+State\+::requires\+Client().
 121     ClMoveBaseZ *move\_base;
 122     this->\hyperlink{classsmacc_1_1ISmaccState_a0f116de85bbc91d94e1eb2f74502acd8}{requiresClient}(move\_base);
 123 
-124     \textcolor{keywordflow}{if} (move\_base->waypointsNavigator\_->getWaypoints().size() == 0)
-125     \{
-126       std::vector<Pose2D> waypoints3d =
-127           \{
-128               \{3.0, -2.0, 0\},
-129               \{-5.5, 3.0, 0\},
-130               \{-11.0, -5.0, 0\},
-131               \{2.0, -8.58, 0\},
-132               \{-10.0, 14.5, 0\}\};
-133 
-134       move\_base->waypointsNavigator\_->setWaypoints(waypoints3d);
-135     \}
-136 
-137     \textcolor{comment}{//this->configure<OrNavigation, CbNavigateGlobalPosition>(target.x\_, target.y\_, target.yaw\_);}
-138 
-139     move\_base->waypointsNavigator\_->sendNextGoal();
+124     \textcolor{keyword}{auto} waypointsNavigator = move\_base->getComponent<WaypointNavigator>();
+125 
+126     \textcolor{comment}{//this->requiresComponent(waypointsNavigator);}
+127 
+128     \textcolor{keywordflow}{if} (waypointsNavigator->getWaypoints().size() == 0)
+129     \{
+130       std::vector<Pose2D> waypoints3d =
+131           \{
+132               \{3.0, -2.0, 0\},
+133               \{-5.5, 3.0, 0\},
+134               \{-11.0, -5.0, 0\},
+135               \{2.0, -8.58, 0\},
+136               \{-10.0, 14.5, 0\}\};
+137 
+138       waypointsNavigator->setWaypoints(waypoints3d);
+139     \}
 140 
-141     ROS\_INFO(\textcolor{stringliteral}{"current iteration waypoints x: %ld"}, move\_base->waypointsNavigator\_->getCurrentWaypointIndex(
-      ));
+141     \textcolor{comment}{//this->configure<OrNavigation, CbNavigateGlobalPosition>(target.x\_, target.y\_, target.yaw\_);}
 142 
-143     \textcolor{comment}{// x, y, yaw (orientation)}
+143     waypointsNavigator->sendNextGoal();
 144 
-145     \textcolor{comment}{// if (currentIteration > waypoints.size())}
-146     \textcolor{comment}{// \{}
-147     \textcolor{comment}{//   ROS\_FATAL("[WaypointsX] Out of range of waypoint list. Cannot go to waypoint %d.",
+145     ROS\_INFO(\textcolor{stringliteral}{"current iteration waypoints x: %ld"}, waypointsNavigator->getCurrentWaypointIndex());
+146 
+147     \textcolor{comment}{// x, y, yaw (orientation)}
+148 
+149     \textcolor{comment}{// if (currentIteration > waypoints.size())}
+150     \textcolor{comment}{// \{}
+151     \textcolor{comment}{//   ROS\_FATAL("[WaypointsX] Out of range of waypoint list. Cannot go to waypoint %d.",
        this->currentIteration);}
-148     \textcolor{comment}{//   this->throwFinishEvent();}
-149     \textcolor{comment}{// \}}
-150     \textcolor{comment}{// else}
-151     \textcolor{comment}{// \{}
-152     \textcolor{comment}{//   auto &target = waypoints[currentIteration];}
-153 
-154     \textcolor{comment}{//   ROS\_INFO("[NavigateWaypointsX] navigating to %lf %lf yaw: %lf", target.x\_, target.y\_,
+152     \textcolor{comment}{//   this->throwFinishEvent();}
+153     \textcolor{comment}{// \}}
+154     \textcolor{comment}{// else}
+155     \textcolor{comment}{// \{}
+156     \textcolor{comment}{//   auto &target = waypoints[currentIteration];}
+157 
+158     \textcolor{comment}{//   ROS\_INFO("[NavigateWaypointsX] navigating to %lf %lf yaw: %lf", target.x\_, target.y\_,
        target.yaw\_);}
-155     \textcolor{comment}{// \}}
-156   \}
+159     \textcolor{comment}{// \}}
+160   \}
 \end{DoxyCode}
 
 

@@ -1,10 +1,10 @@
 <map id="smacc::ISmaccStateMachine::postEvent" name="smacc::ISmaccStateMachine::postEvent">
-<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccClient.html#a46cbc0d695214efe40d29247323bfc80" title="smacc::ISmaccClient\l::postEvent" alt="" coords="287,5,441,47"/>
-<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccComponent.html#a687dead5b87a3b9781b9bf6ab0b7afa5" title="smacc::ISmaccComponent\l::postEvent" alt="" coords="267,71,461,112"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccComponent.html#a687dead5b87a3b9781b9bf6ab0b7afa5" title="smacc::ISmaccComponent\l::postEvent" alt="" coords="267,5,461,47"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccClient.html#a46cbc0d695214efe40d29247323bfc80" title="smacc::ISmaccClient\l::postEvent" alt="" coords="287,71,441,112"/>
 <area shape="rect" id="node4" href="$classsmacc_1_1SmaccClientBehavior.html#ab29b23145ea074ad69340fc0af6fbb75" title="smacc::SmaccClientBehavior\l::postEvent" alt="" coords="260,136,468,177"/>
 <area shape="rect" id="node8" href="$classsmacc_1_1ISmaccState.html#acef404ab3766ddf2892e8dad14a4a7cf" title="smacc::ISmaccState\l::postEvent" alt="" coords="287,273,441,315"/>
 <area shape="rect" id="node5" href="$classros__timer__client_1_1CbTimer.html#a25c086b5988642602938d92f9555ce18" title="ros_timer_client::CbTimer\l::onEntry" alt="" coords="554,28,739,69"/>
-<area shape="rect" id="node6" href="$classsmacc_1_1SensorTopic.html#a8d736f546d14cad5ed69c3ced3e4e788" title="smacc::SensorTopic\l\&lt; ClTemperatureSensor\l \&gt;::assignToOrthogonal" alt="" coords="559,93,734,149"/>
+<area shape="rect" id="node6" href="$classsmacc_1_1SensorTopic.html#a642f1ced7db66cd92a2ec43e128b4fd1" title="smacc::SensorTopic\l\&lt; ClTemperatureSensor\l \&gt;::configureEventSourceTypes" alt="" coords="537,93,757,149"/>
 <area shape="rect" id="node7" href="$classsm__three__some_1_1CbKeyboard.html#a02cbcf0db3b509c78b545e9f1d3ef313" title="sm_three_some::CbKeyboard\l::postKeyEvent" alt="" coords="541,172,752,213"/>
 <area shape="rect" id="node9" href="$namespacesm__viewer__sim.html#a19b5db17983d5b9bbf21e96ecf9ab5c8" title="sm_viewer_sim::delayedPost\lEvent" alt="" coords="544,237,749,279"/>
 <area shape="rect" id="node10" href="$classsmacc_1_1SmaccState.html#a56ccdfaf818ed6409dcbd4ab8b01c60e" title="smacc::SmaccState\&lt;\l SsrFPatternStartLoop,\l SS \&gt;::throwFinishEvent" alt="" coords="560,302,733,358"/>

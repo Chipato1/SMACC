@@ -11,7 +11,7 @@ Inheritance diagram for sm\+\_\+dance\+\_\+bot\+:\+:Cb\+Navigate\+Backwards\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=236pt]{classsm__dance__bot_1_1CbNavigateBackwards__inherit__graph}
+\includegraphics[width=242pt]{classsm__dance__bot_1_1CbNavigateBackwards__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -27,7 +27,15 @@ Collaboration diagram for sm\+\_\+dance\+\_\+bot\+:\+:Cb\+Navigate\+Backwards\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_aa5bcc8ba901c4464370399158d5818b6}{Cb\+Navigate\+Backwards} (float \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ad5b1a7d85676aefa31f966baf61b6378}{backward\+Distance})
+\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_aa5bcc8ba901c4464370399158d5818b6}{Cb\+Navigate\+Backwards} (float \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ace20c1dfa7b8e84c754aedbd3dd00fdf}{backward\+Distance})
+\item 
+\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ac2a9b5ab4d13f2af824511c9385c2d6d}{Cb\+Navigate\+Backwards} ()
+\item 
+virtual void \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_a5d7816a541c5f7121c9909d5b43a81c8}{on\+Entry} () override
+\item 
+virtual void \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ac85cc397d597120fc8906b98d4241fe8}{on\+Exit} () override
+\item 
+\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_aa5bcc8ba901c4464370399158d5818b6}{Cb\+Navigate\+Backwards} (float \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ace20c1dfa7b8e84c754aedbd3dd00fdf}{backward\+Distance})
 \item 
 \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ac2a9b5ab4d13f2af824511c9385c2d6d}{Cb\+Navigate\+Backwards} ()
 \item 
@@ -38,15 +46,15 @@ virtual void \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ac85cc397d597
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-boost\+::optional$<$ float $>$ \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ad5b1a7d85676aefa31f966baf61b6378}{backward\+Distance}
+boost\+::optional$<$ float $>$ \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ace20c1dfa7b8e84c754aedbd3dd00fdf}{backward\+Distance}
 \item 
-boost\+::optional$<$ float $>$ \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ac61b513376e38ae6eb3eb9c9ebf1dd8e}{backward\+Speed}
+boost\+::optional$<$ float $>$ \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_a329c8dbb9c52b3b69393800872cc6e60}{backward\+Speed}
 \item 
 tf\+::\+Transform\+Listener \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_a4ec9af0d5b94c5e0654a768c36bec85b}{listener}
 \item 
-\hyperlink{classsmacc_1_1ClMoveBaseZ}{smacc\+::\+Cl\+Move\+BaseZ} $\ast$ \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_a8dea4225f55f14bf0a941baae383b07f}{move\+Base\+Client\+\_\+}
+\hyperlink{classsmacc_1_1ClMoveBaseZ}{smacc\+::\+Cl\+Move\+BaseZ} $\ast$ \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ae4cd503172b4f5c7b0dba49aec08885e}{move\+Base\+Client\+\_\+}
 \item 
-\hyperlink{classsmacc__odom__tracker_1_1OdomTracker}{smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker} $\ast$ \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_a2fd4de5f0f4f7bf374d8bfbfd87c6bf2}{odom\+Tracker\+\_\+}
+\hyperlink{classodom__tracker_1_1OdomTracker}{odom\+\_\+tracker\+::\+Odom\+Tracker} $\ast$ \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ad3e1305c551fe5dcbfb92b1e080f382d}{odom\+Tracker\+\_\+}
 \end{DoxyCompactItemize}
 
 
@@ -76,12 +84,54 @@ References backward\+Distance.
 
 \begin{DoxyCode}
 27     \{
-28         \textcolor{keywordflow}{if} (\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ad5b1a7d85676aefa31f966baf61b6378}{backwardDistance} < 0)
+28         \textcolor{keywordflow}{if} (\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ace20c1dfa7b8e84c754aedbd3dd00fdf}{backwardDistance} < 0)
 29         \{
 30             ROS\_ERROR(\textcolor{stringliteral}{"cb backward: distance must be greater or equal than 0"});
-31             this->\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ad5b1a7d85676aefa31f966baf61b6378}{backwardDistance} = 0;
+31             this->\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ace20c1dfa7b8e84c754aedbd3dd00fdf}{backwardDistance} = 0;
 32         \}
-33         this->\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ad5b1a7d85676aefa31f966baf61b6378}{backwardDistance} = \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ad5b1a7d85676aefa31f966baf61b6378}{backwardDistance};
+33         this->\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ace20c1dfa7b8e84c754aedbd3dd00fdf}{backwardDistance} = \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ace20c1dfa7b8e84c754aedbd3dd00fdf}{backwardDistance};
+34     \}
+\end{DoxyCode}
+\index{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards@{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}!Cb\+Navigate\+Backwards@{Cb\+Navigate\+Backwards}}
+\index{Cb\+Navigate\+Backwards@{Cb\+Navigate\+Backwards}!sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards@{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}}
+\subsubsection[{\texorpdfstring{Cb\+Navigate\+Backwards()}{CbNavigateBackwards()}}]{\setlength{\rightskip}{0pt plus 5cm}sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards\+::\+Cb\+Navigate\+Backwards (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsm__dance__bot_1_1CbNavigateBackwards_ac2a9b5ab4d13f2af824511c9385c2d6d}{}\label{classsm__dance__bot_1_1CbNavigateBackwards_ac2a9b5ab4d13f2af824511c9385c2d6d}
+
+
+Definition at line 36 of file cb\+\_\+navigate\+\_\+backward.\+h.
+
+
+\begin{DoxyCode}
+37     \{
+38     \}
+\end{DoxyCode}
+\index{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards@{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}!Cb\+Navigate\+Backwards@{Cb\+Navigate\+Backwards}}
+\index{Cb\+Navigate\+Backwards@{Cb\+Navigate\+Backwards}!sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards@{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}}
+\subsubsection[{\texorpdfstring{Cb\+Navigate\+Backwards(float backward\+Distance)}{CbNavigateBackwards(float backwardDistance)}}]{\setlength{\rightskip}{0pt plus 5cm}sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards\+::\+Cb\+Navigate\+Backwards (
+\begin{DoxyParamCaption}
+\item[{float}]{backward\+Distance}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsm__dance__bot_1_1CbNavigateBackwards_aa5bcc8ba901c4464370399158d5818b6}{}\label{classsm__dance__bot_1_1CbNavigateBackwards_aa5bcc8ba901c4464370399158d5818b6}
+
+
+Definition at line 26 of file cb\+\_\+navigate\+\_\+backward.\+h.
+
+
+
+References backward\+Distance.
+
+
+\begin{DoxyCode}
+27     \{
+28         \textcolor{keywordflow}{if} (\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ace20c1dfa7b8e84c754aedbd3dd00fdf}{backwardDistance} < 0)
+29         \{
+30             ROS\_ERROR(\textcolor{stringliteral}{"cb backward: distance must be greater or equal than 0"});
+31             this->\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ace20c1dfa7b8e84c754aedbd3dd00fdf}{backwardDistance} = 0;
+32         \}
+33         this->\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ace20c1dfa7b8e84c754aedbd3dd00fdf}{backwardDistance} = \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ace20c1dfa7b8e84c754aedbd3dd00fdf}{backwardDistance};
 34     \}
 \end{DoxyCode}
 \index{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards@{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}!Cb\+Navigate\+Backwards@{Cb\+Navigate\+Backwards}}
@@ -120,7 +170,7 @@ Definition at line 40 of file cb\+\_\+navigate\+\_\+backward.\+h.
 
 
 
-References backward\+Distance, smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::clear\+Path(), smacc\+::\+Smacc\+Client\+Behavior\+::current\+State, smacc\+::\+I\+Smacc\+State\+::param(), smacc\+::\+Cl\+Move\+Base\+Z\+::planner\+Switcher\+\_\+, smacc\+\_\+odom\+\_\+tracker\+::\+R\+E\+C\+O\+R\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+O\+R\+W\+A\+RD, smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client(), smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Component(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal(), smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Start\+Point(), and smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Working\+Mode().
+References backward\+Distance, odom\+\_\+tracker\+::\+Odom\+Tracker\+::clear\+Path(), smacc\+::\+Smacc\+Client\+Behavior\+::current\+State, smacc\+::\+I\+Smacc\+State\+::param(), smacc\+::\+Cl\+Move\+Base\+Z\+::planner\+Switcher\+\_\+, odom\+\_\+tracker\+::\+R\+E\+C\+O\+R\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+O\+R\+W\+A\+RD, smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client(), smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Component(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal(), odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Start\+Point(), and odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Working\+Mode().
 
 
 \begin{DoxyCode}
@@ -128,20 +178,20 @@ References backward\+Distance, smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+
 42         \textcolor{comment}{// straight motion distance}
 43         \textcolor{keywordtype}{double} dist;
 44 
-45         \textcolor{keywordflow}{if} (!\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ad5b1a7d85676aefa31f966baf61b6378}{backwardDistance})
+45         \textcolor{keywordflow}{if} (!\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ace20c1dfa7b8e84c754aedbd3dd00fdf}{backwardDistance})
 46         \{
 47             this->\hyperlink{classsmacc_1_1SmaccClientBehavior_af76fc9b877542ed5caf033f820c107d0}{currentState}->\hyperlink{classsmacc_1_1ISmaccState_a4982f2187ed6da337462721146e8ef70}{param}(\textcolor{stringliteral}{"straight\_motion\_distance"}, dist, 3.5);
 48         \}
 49         \textcolor{keywordflow}{else}
 50         \{
-51             dist = *\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ad5b1a7d85676aefa31f966baf61b6378}{backwardDistance};
+51             dist = *\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ace20c1dfa7b8e84c754aedbd3dd00fdf}{backwardDistance};
 52         \}
 53 
 54         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"Straight motion distance: "} << dist);
 55 
-56         this->\hyperlink{classsmacc_1_1SmaccClientBehavior_adc21bbd45d36bd81ca6f778ed161807a}{requiresClient}(\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_a8dea4225f55f14bf0a941baae383b07f}{moveBaseClient\_});
+56         this->\hyperlink{classsmacc_1_1SmaccClientBehavior_adc21bbd45d36bd81ca6f778ed161807a}{requiresClient}(\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ae4cd503172b4f5c7b0dba49aec08885e}{moveBaseClient\_});
 57 
-58         this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a011246bb1424f8bf8c9322f652db9d88}{requiresComponent}(\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_a2fd4de5f0f4f7bf374d8bfbfd87c6bf2}{odomTracker\_});
+58         this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a011246bb1424f8bf8c9322f652db9d88}{requiresComponent}(\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ad3e1305c551fe5dcbfb92b1e080f382d}{odomTracker\_});
 59 
 60         \textcolor{comment}{//this should work better with a coroutine and await}
 61         ros::Rate rate(10.0);
@@ -176,19 +226,119 @@ References backward\+Distance, smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+
 90 
 91         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"TARGET POSE FORWARD: "} << goal.target\_pose.pose);
 92         ros::Duration(10).sleep();
-93         this->\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_a2fd4de5f0f4f7bf374d8bfbfd87c6bf2}{odomTracker\_}->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a81ef228f0c2659e1bf9f8fdcb03fc7ae}{clearPath}();
+93         this->\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ad3e1305c551fe5dcbfb92b1e080f382d}{odomTracker\_}->\hyperlink{classodom__tracker_1_1OdomTracker_a03c47908606d48e20b3b7e7b583b341d}{clearPath}();
 94 
 95         geometry\_msgs::PoseStamped currentPoseMsg;
 96         currentPoseMsg.header.frame\_id = \textcolor{stringliteral}{"/odom"};
 97         currentPoseMsg.header.stamp = ros::Time::now();
 98         tf::poseTFToMsg(currentPose, currentPoseMsg.pose);
-99         this->\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_a2fd4de5f0f4f7bf374d8bfbfd87c6bf2}{odomTracker\_}->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a5ac7c4770b3e29b74571ef65377048ee}{setStartPoint}(currentPoseMsg);
-100         this->\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_a2fd4de5f0f4f7bf374d8bfbfd87c6bf2}{odomTracker\_}->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a38fbca999297c46dc95628cc60851a45}{setWorkingMode}(
-      \hyperlink{namespacesmacc__odom__tracker_ade9730dd5cc10ccfad9362176cf46c33a989d06a586bcf9520889228da7faa643}{smacc\_odom\_tracker::WorkingMode::RECORD\_PATH\_FORWARD});
+99         this->\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ad3e1305c551fe5dcbfb92b1e080f382d}{odomTracker\_}->\hyperlink{classodom__tracker_1_1OdomTracker_ac927dff2231f73384e54d114d56e61e3}{setStartPoint}(currentPoseMsg);
+100         this->\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ad3e1305c551fe5dcbfb92b1e080f382d}{odomTracker\_}->\hyperlink{classodom__tracker_1_1OdomTracker_ac001a40d1107ef0d88aa7db03cafb08c}{setWorkingMode}(
+      \hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88a989d06a586bcf9520889228da7faa643}{odom\_tracker::WorkingMode::RECORD\_PATH\_FORWARD});
 101 
-102         \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_a8dea4225f55f14bf0a941baae383b07f}{moveBaseClient\_}->\hyperlink{classsmacc_1_1ClMoveBaseZ_a1a20609e1b4a9406cd6cece0d74acfe5}{plannerSwitcher\_}->setBackwardPlanner();
+102         \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ae4cd503172b4f5c7b0dba49aec08885e}{moveBaseClient\_}->\hyperlink{classsmacc_1_1ClMoveBaseZ_a712e0df77c9629930e03cbb4c539b485}{plannerSwitcher\_}->setBackwardPlanner();
 103 
-104         \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_a8dea4225f55f14bf0a941baae383b07f}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
+104         \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ae4cd503172b4f5c7b0dba49aec08885e}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
+105     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot_1_1CbNavigateBackwards_a5d7816a541c5f7121c9909d5b43a81c8_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards@{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards@{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}}
+\subsubsection[{\texorpdfstring{on\+Entry() override}{onEntry() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__dance__bot_1_1CbNavigateBackwards_a5d7816a541c5f7121c9909d5b43a81c8}{}\label{classsm__dance__bot_1_1CbNavigateBackwards_a5d7816a541c5f7121c9909d5b43a81c8}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccClientBehavior_a7962382f93987c720ad432fef55b123f}{smacc\+::\+Smacc\+Client\+Behavior}.
+
+
+
+Definition at line 40 of file cb\+\_\+navigate\+\_\+backward.\+h.
+
+
+
+References backward\+Distance, odom\+\_\+tracker\+::\+Odom\+Tracker\+::clear\+Path(), smacc\+::\+Smacc\+Client\+Behavior\+::current\+State, smacc\+::\+I\+Smacc\+State\+::param(), smacc\+::\+Cl\+Move\+Base\+Z\+::planner\+Switcher\+\_\+, odom\+\_\+tracker\+::\+R\+E\+C\+O\+R\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+O\+R\+W\+A\+RD, smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client(), smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Component(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal(), odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Start\+Point(), and odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Working\+Mode().
+
+
+\begin{DoxyCode}
+41     \{
+42         \textcolor{comment}{// straight motion distance}
+43         \textcolor{keywordtype}{double} dist;
+44 
+45         \textcolor{keywordflow}{if} (!\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ace20c1dfa7b8e84c754aedbd3dd00fdf}{backwardDistance})
+46         \{
+47             this->\hyperlink{classsmacc_1_1SmaccClientBehavior_af76fc9b877542ed5caf033f820c107d0}{currentState}->\hyperlink{classsmacc_1_1ISmaccState_a4982f2187ed6da337462721146e8ef70}{param}(\textcolor{stringliteral}{"straight\_motion\_distance"}, dist, 3.5);
+48         \}
+49         \textcolor{keywordflow}{else}
+50         \{
+51             dist = *\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ace20c1dfa7b8e84c754aedbd3dd00fdf}{backwardDistance};
+52         \}
+53 
+54         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"Straight motion distance: "} << dist);
+55 
+56         this->\hyperlink{classsmacc_1_1SmaccClientBehavior_adc21bbd45d36bd81ca6f778ed161807a}{requiresClient}(\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ae4cd503172b4f5c7b0dba49aec08885e}{moveBaseClient\_});
+57 
+58         this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a011246bb1424f8bf8c9322f652db9d88}{requiresComponent}(\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ad3e1305c551fe5dcbfb92b1e080f382d}{odomTracker\_});
+59 
+60         \textcolor{comment}{//this should work better with a coroutine and await}
+61         ros::Rate rate(10.0);
+62         tf::StampedTransform currentPose;
+63 
+64         \textcolor{keywordflow}{while} (ros::ok())
+65         \{
+66             \textcolor{keywordflow}{try}
+67             \{
+68                 \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_a4ec9af0d5b94c5e0654a768c36bec85b}{listener}.lookupTransform(\textcolor{stringliteral}{"/odom"}, \textcolor{stringliteral}{"/base\_link"},
+69                                          ros::Time(0), currentPose);
+70 
+71                 \textcolor{keywordflow}{break};
+72             \}
+73             \textcolor{keywordflow}{catch} (tf::TransformException ex)
+74             \{
+75                 ROS\_ERROR(\textcolor{stringliteral}{"%s"}, ex.what());
+76                 ros::Duration(1.0).sleep();
+77             \}
+78         \}
+79 
+80         tf::Transform forwardDeltaTransform;
+81         forwardDeltaTransform.setIdentity();
+82         forwardDeltaTransform.setOrigin(tf::Vector3(-dist, 0, 0));
+83 
+84         tf::Transform targetPose = currentPose * forwardDeltaTransform;
+85 
+86         smacc::ClMoveBaseZ::Goal goal;
+87         goal.target\_pose.header.frame\_id = \textcolor{stringliteral}{"/odom"};
+88         goal.target\_pose.header.stamp = ros::Time::now();
+89         tf::poseTFToMsg(targetPose, goal.target\_pose.pose);
+90 
+91         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"TARGET POSE FORWARD: "} << goal.target\_pose.pose);
+92         ros::Duration(10).sleep();
+93         this->\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ad3e1305c551fe5dcbfb92b1e080f382d}{odomTracker\_}->\hyperlink{classodom__tracker_1_1OdomTracker_a03c47908606d48e20b3b7e7b583b341d}{clearPath}();
+94 
+95         geometry\_msgs::PoseStamped currentPoseMsg;
+96         currentPoseMsg.header.frame\_id = \textcolor{stringliteral}{"/odom"};
+97         currentPoseMsg.header.stamp = ros::Time::now();
+98         tf::poseTFToMsg(currentPose, currentPoseMsg.pose);
+99         this->\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ad3e1305c551fe5dcbfb92b1e080f382d}{odomTracker\_}->\hyperlink{classodom__tracker_1_1OdomTracker_ac927dff2231f73384e54d114d56e61e3}{setStartPoint}(currentPoseMsg);
+100         this->\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ad3e1305c551fe5dcbfb92b1e080f382d}{odomTracker\_}->\hyperlink{classodom__tracker_1_1OdomTracker_ac001a40d1107ef0d88aa7db03cafb08c}{setWorkingMode}(
+      \hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88a989d06a586bcf9520889228da7faa643}{odom\_tracker::WorkingMode::RECORD\_PATH\_FORWARD});
+101 
+102         \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ae4cd503172b4f5c7b0dba49aec08885e}{moveBaseClient\_}->\hyperlink{classsmacc_1_1ClMoveBaseZ_a712e0df77c9629930e03cbb4c539b485}{plannerSwitcher\_}->setBackwardPlanner();
+103 
+104         \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ae4cd503172b4f5c7b0dba49aec08885e}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
 105     \}
 \end{DoxyCode}
 
@@ -220,13 +370,51 @@ Definition at line 107 of file cb\+\_\+navigate\+\_\+backward.\+h.
 
 
 
-References smacc\+\_\+odom\+\_\+tracker\+::\+I\+D\+LE, and smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Working\+Mode().
+References odom\+\_\+tracker\+::\+I\+D\+LE, and odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Working\+Mode().
 
 
 \begin{DoxyCode}
 108     \{
-109         this->\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_a2fd4de5f0f4f7bf374d8bfbfd87c6bf2}{odomTracker\_}->\hyperlink{classsmacc__odom__tracker_1_1OdomTracker_a38fbca999297c46dc95628cc60851a45}{setWorkingMode}(
-      \hyperlink{namespacesmacc__odom__tracker_ade9730dd5cc10ccfad9362176cf46c33aa5daf7f2ebbba4975d61dab1c40188c7}{smacc\_odom\_tracker::WorkingMode::IDLE});
+109         this->\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ad3e1305c551fe5dcbfb92b1e080f382d}{odomTracker\_}->\hyperlink{classodom__tracker_1_1OdomTracker_ac001a40d1107ef0d88aa7db03cafb08c}{setWorkingMode}(
+      \hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88aa5daf7f2ebbba4975d61dab1c40188c7}{odom\_tracker::WorkingMode::IDLE});
+110     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot_1_1CbNavigateBackwards_ac85cc397d597120fc8906b98d4241fe8_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards@{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}!on\+Exit@{on\+Exit}}
+\index{on\+Exit@{on\+Exit}!sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards@{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}}
+\subsubsection[{\texorpdfstring{on\+Exit() override}{onExit() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards\+::on\+Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__dance__bot_1_1CbNavigateBackwards_ac85cc397d597120fc8906b98d4241fe8}{}\label{classsm__dance__bot_1_1CbNavigateBackwards_ac85cc397d597120fc8906b98d4241fe8}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccClientBehavior_ac0cd72d42bd00425362a97c9803ecce5}{smacc\+::\+Smacc\+Client\+Behavior}.
+
+
+
+Definition at line 107 of file cb\+\_\+navigate\+\_\+backward.\+h.
+
+
+
+References odom\+\_\+tracker\+::\+I\+D\+LE, and odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Working\+Mode().
+
+
+\begin{DoxyCode}
+108     \{
+109         this->\hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ad3e1305c551fe5dcbfb92b1e080f382d}{odomTracker\_}->\hyperlink{classodom__tracker_1_1OdomTracker_ac001a40d1107ef0d88aa7db03cafb08c}{setWorkingMode}(
+      \hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88aa5daf7f2ebbba4975d61dab1c40188c7}{odom\_tracker::WorkingMode::IDLE});
 110     \}
 \end{DoxyCode}
 
@@ -246,7 +434,7 @@ Here is the call graph for this function\+:
 \subsection{Member Data Documentation}
 \index{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards@{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}!backward\+Distance@{backward\+Distance}}
 \index{backward\+Distance@{backward\+Distance}!sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards@{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}}
-\subsubsection[{\texorpdfstring{backward\+Distance}{backwardDistance}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::optional$<$float$>$ sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards\+::backward\+Distance}\hypertarget{classsm__dance__bot_1_1CbNavigateBackwards_ad5b1a7d85676aefa31f966baf61b6378}{}\label{classsm__dance__bot_1_1CbNavigateBackwards_ad5b1a7d85676aefa31f966baf61b6378}
+\subsubsection[{\texorpdfstring{backward\+Distance}{backwardDistance}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::optional$<$ float $>$ sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards\+::backward\+Distance}\hypertarget{classsm__dance__bot_1_1CbNavigateBackwards_ace20c1dfa7b8e84c754aedbd3dd00fdf}{}\label{classsm__dance__bot_1_1CbNavigateBackwards_ace20c1dfa7b8e84c754aedbd3dd00fdf}
 
 
 Definition at line 15 of file cb\+\_\+navigate\+\_\+backward.\+h.
@@ -257,7 +445,7 @@ Referenced by Cb\+Navigate\+Backwards(), and on\+Entry().
 
 \index{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards@{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}!backward\+Speed@{backward\+Speed}}
 \index{backward\+Speed@{backward\+Speed}!sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards@{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}}
-\subsubsection[{\texorpdfstring{backward\+Speed}{backwardSpeed}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::optional$<$float$>$ sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards\+::backward\+Speed}\hypertarget{classsm__dance__bot_1_1CbNavigateBackwards_ac61b513376e38ae6eb3eb9c9ebf1dd8e}{}\label{classsm__dance__bot_1_1CbNavigateBackwards_ac61b513376e38ae6eb3eb9c9ebf1dd8e}
+\subsubsection[{\texorpdfstring{backward\+Speed}{backwardSpeed}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::optional$<$ float $>$ sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards\+::backward\+Speed}\hypertarget{classsm__dance__bot_1_1CbNavigateBackwards_a329c8dbb9c52b3b69393800872cc6e60}{}\label{classsm__dance__bot_1_1CbNavigateBackwards_a329c8dbb9c52b3b69393800872cc6e60}
 
 
 Definition at line 18 of file cb\+\_\+navigate\+\_\+backward.\+h.
@@ -271,14 +459,14 @@ Definition at line 20 of file cb\+\_\+navigate\+\_\+backward.\+h.
 
 \index{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards@{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}!move\+Base\+Client\+\_\+@{move\+Base\+Client\+\_\+}}
 \index{move\+Base\+Client\+\_\+@{move\+Base\+Client\+\_\+}!sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards@{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}}
-\subsubsection[{\texorpdfstring{move\+Base\+Client\+\_\+}{moveBaseClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+::\+Cl\+Move\+BaseZ}$\ast$ sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards\+::move\+Base\+Client\+\_\+}\hypertarget{classsm__dance__bot_1_1CbNavigateBackwards_a8dea4225f55f14bf0a941baae383b07f}{}\label{classsm__dance__bot_1_1CbNavigateBackwards_a8dea4225f55f14bf0a941baae383b07f}
+\subsubsection[{\texorpdfstring{move\+Base\+Client\+\_\+}{moveBaseClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+::\+Cl\+Move\+BaseZ} $\ast$ sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards\+::move\+Base\+Client\+\_\+}\hypertarget{classsm__dance__bot_1_1CbNavigateBackwards_ae4cd503172b4f5c7b0dba49aec08885e}{}\label{classsm__dance__bot_1_1CbNavigateBackwards_ae4cd503172b4f5c7b0dba49aec08885e}
 
 
 Definition at line 22 of file cb\+\_\+navigate\+\_\+backward.\+h.
 
 \index{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards@{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}!odom\+Tracker\+\_\+@{odom\+Tracker\+\_\+}}
 \index{odom\+Tracker\+\_\+@{odom\+Tracker\+\_\+}!sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards@{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}}
-\subsubsection[{\texorpdfstring{odom\+Tracker\+\_\+}{odomTracker_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+\_\+odom\+\_\+tracker\+::\+Odom\+Tracker}$\ast$ sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards\+::odom\+Tracker\+\_\+}\hypertarget{classsm__dance__bot_1_1CbNavigateBackwards_a2fd4de5f0f4f7bf374d8bfbfd87c6bf2}{}\label{classsm__dance__bot_1_1CbNavigateBackwards_a2fd4de5f0f4f7bf374d8bfbfd87c6bf2}
+\subsubsection[{\texorpdfstring{odom\+Tracker\+\_\+}{odomTracker_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf odom\+\_\+tracker\+::\+Odom\+Tracker} $\ast$ sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards\+::odom\+Tracker\+\_\+}\hypertarget{classsm__dance__bot_1_1CbNavigateBackwards_ad3e1305c551fe5dcbfb92b1e080f382d}{}\label{classsm__dance__bot_1_1CbNavigateBackwards_ad3e1305c551fe5dcbfb92b1e080f382d}
 
 
 Definition at line 24 of file cb\+\_\+navigate\+\_\+backward.\+h.
@@ -287,4 +475,4 @@ Definition at line 24 of file cb\+\_\+navigate\+\_\+backward.\+h.
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/client\+\_\+behaviors/navigation\+\_\+client\+\_\+behaviors/\hyperlink{cb__navigate__backward_8h}{cb\+\_\+navigate\+\_\+backward.\+h}\end{DoxyCompactItemize}
+smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin/include/move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin/client\+\_\+behaviors/\hyperlink{smacc__client__library_2move__base__z__client_2move__base__z__client__plugin_2include_2move__basef18dba82c6c9ec751438c97ecb125e5}{cb\+\_\+navigate\+\_\+backward.\+h}\end{DoxyCompactItemize}

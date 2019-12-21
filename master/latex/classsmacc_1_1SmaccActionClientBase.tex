@@ -50,7 +50,7 @@ virtual void \hyperlink{classsmacc_1_1SmaccActionClientBase_a0224d7482b50a706f99
 \item 
 {\footnotesize template$<$typename Ev\+Type $>$ }\\void \hyperlink{classsmacc_1_1SmaccActionClientBase_ac04bb114099687d213d40a885d11b259}{post\+Result\+Event} (Result\+Const\+Ptr result)
 \item 
-{\footnotesize template$<$typename T\+Derived , typename T\+Object\+Tag $>$ }\\void \hyperlink{classsmacc_1_1SmaccActionClientBase_a84bea7f9efe0829272c2221651553260}{assign\+To\+Orthogonal} ()
+{\footnotesize template$<$typename T\+Derived , typename T\+Object\+Tag $>$ }\\void \hyperlink{classsmacc_1_1SmaccActionClientBase_a2b73288ec8aeb2622164d2f814654a97}{configure\+Event\+Source\+Types} ()
 \item 
 {\footnotesize template$<$typename T $>$ }\\boost\+::signals2\+::connection \hyperlink{classsmacc_1_1SmaccActionClientBase_ae84ce50f0bdd42c5d32a631b4e9b8b6a}{on\+Succeeded} (void(T\+::$\ast$callback)(Result\+Const\+Ptr \&), T $\ast$\hyperlink{classobject}{object})
 \item 
@@ -214,13 +214,35 @@ Definition at line 36 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 \item[{Action\+Type}]{}
 \end{DoxyParamCaption}
 )}\hypertarget{classsmacc_1_1SmaccActionClientBase_aee053cafcc5c2e56c3c60a7de16be31a}{}\label{classsmacc_1_1SmaccActionClientBase_aee053cafcc5c2e56c3c60a7de16be31a}
-\index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!assign\+To\+Orthogonal@{assign\+To\+Orthogonal}}
-\index{assign\+To\+Orthogonal@{assign\+To\+Orthogonal}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
-\subsubsection[{\texorpdfstring{assign\+To\+Orthogonal()}{assignToOrthogonal()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Action\+Type$>$ template$<$typename T\+Derived , typename T\+Object\+Tag $>$ void {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ Action\+Type $>$\+::assign\+To\+Orthogonal (
+\index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!cancel\+Goal@{cancel\+Goal}}
+\index{cancel\+Goal@{cancel\+Goal}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
+\subsubsection[{\texorpdfstring{cancel\+Goal() override}{cancelGoal() override}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Action\+Type$>$ virtual void {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ Action\+Type $>$\+::cancel\+Goal (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_a84bea7f9efe0829272c2221651553260}{}\label{classsmacc_1_1SmaccActionClientBase_a84bea7f9efe0829272c2221651553260}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_a65a485ac208c3b3cd85b40a7d88989ec}{}\label{classsmacc_1_1SmaccActionClientBase_a65a485ac208c3b3cd85b40a7d88989ec}
+
+
+Implements \hyperlink{classsmacc_1_1ISmaccActionClient_a863837a6fc352c2659818ca03d5e4281}{smacc\+::\+I\+Smacc\+Action\+Client}.
+
+
+
+Definition at line 153 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
+
+
+\begin{DoxyCode}
+154     \{
+155         ROS\_INFO(\textcolor{stringliteral}{"Cancelling goal of %s"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str());
+156         \hyperlink{classsmacc_1_1SmaccActionClientBase_a10d3b707b855c6d360aeeb35e50cd0c7}{client\_}->cancelGoal();
+157     \}
+\end{DoxyCode}
+\index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!configure\+Event\+Source\+Types@{configure\+Event\+Source\+Types}}
+\index{configure\+Event\+Source\+Types@{configure\+Event\+Source\+Types}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
+\subsubsection[{\texorpdfstring{configure\+Event\+Source\+Types()}{configureEventSourceTypes()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Action\+Type$>$ template$<$typename T\+Derived , typename T\+Object\+Tag $>$ void {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ Action\+Type $>$\+::configure\+Event\+Source\+Types (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_a2b73288ec8aeb2622164d2f814654a97}{}\label{classsmacc_1_1SmaccActionClientBase_a2b73288ec8aeb2622164d2f814654a97}
 
 
 Definition at line 85 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
@@ -251,28 +273,6 @@ Definition at line 85 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 102         \hyperlink{classsmacc_1_1SmaccActionClientBase_a64651f1579824551fb7a3b4862d4373d}{feedback\_cb} = boost::bind(&
       \hyperlink{classsmacc_1_1SmaccActionClientBase_a83aeadef81ec8991e37d8e15f4f8c75d}{SmaccActionClientBase<ActionType>::onFeedback}, \textcolor{keyword}{this}, \_1);
 103     \}
-\end{DoxyCode}
-\index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!cancel\+Goal@{cancel\+Goal}}
-\index{cancel\+Goal@{cancel\+Goal}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
-\subsubsection[{\texorpdfstring{cancel\+Goal() override}{cancelGoal() override}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Action\+Type$>$ virtual void {\bf smacc\+::\+Smacc\+Action\+Client\+Base}$<$ Action\+Type $>$\+::cancel\+Goal (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1SmaccActionClientBase_a65a485ac208c3b3cd85b40a7d88989ec}{}\label{classsmacc_1_1SmaccActionClientBase_a65a485ac208c3b3cd85b40a7d88989ec}
-
-
-Implements \hyperlink{classsmacc_1_1ISmaccActionClient_a863837a6fc352c2659818ca03d5e4281}{smacc\+::\+I\+Smacc\+Action\+Client}.
-
-
-
-Definition at line 153 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
-
-
-\begin{DoxyCode}
-154     \{
-155         ROS\_INFO(\textcolor{stringliteral}{"Cancelling goal of %s"}, this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}().c\_str());
-156         \hyperlink{classsmacc_1_1SmaccActionClientBase_a10d3b707b855c6d360aeeb35e50cd0c7}{client\_}->cancelGoal();
-157     \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}!get\+Event\+Label@{get\+Event\+Label}}
 \index{get\+Event\+Label@{get\+Event\+Label}!smacc\+::\+Smacc\+Action\+Client\+Base@{smacc\+::\+Smacc\+Action\+Client\+Base}}
@@ -631,7 +631,7 @@ Definition at line 164 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 
 
 
-Referenced by sm\+\_\+atomic\+::\+Cb\+State1\+::go\+To\+End\+Point(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Global\+Position\+::go\+To\+Radial\+Start(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Tool\+Stop\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Tool\+Start\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Undo\+Path\+Backwards\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Rotate\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Forward\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards\+::on\+Entry(), and smacc\+::\+Waypoint\+Navigator\+::send\+Next\+Goal().
+Referenced by sm\+\_\+atomic\+::\+Cb\+State1\+::go\+To\+End\+Point(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Global\+Position\+::go\+To\+Radial\+Start(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Tool\+Start\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Tool\+Stop\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Undo\+Path\+Backwards\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Rotate\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Forward\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards\+::on\+Entry(), and smacc\+::\+Waypoint\+Navigator\+::send\+Next\+Goal().
 
 
 \begin{DoxyCode}

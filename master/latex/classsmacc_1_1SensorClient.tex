@@ -34,7 +34,7 @@ typedef Message\+Type \hyperlink{classsmacc_1_1SensorClient_a5a35234e021e849d213
 \item 
 \hyperlink{classsmacc_1_1SensorClient_a3d33430d7b925d88d816d384d3c533c1}{Sensor\+Client} ()
 \item 
-{\footnotesize template$<$typename T\+Derived , typename T\+Object\+Tag $>$ }\\void \hyperlink{classsmacc_1_1SensorClient_a8da4944515317f35d0b7d5759b59efe1}{assign\+To\+Orthogonal} ()
+{\footnotesize template$<$typename T\+Derived , typename T\+Object\+Tag $>$ }\\void \hyperlink{classsmacc_1_1SensorClient_ae1384ddfe1fab2c119be52b587dd6071}{configure\+Event\+Source\+Types} ()
 \item 
 virtual void \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e533ef8}{initialize} () override
 \end{DoxyCompactItemize}
@@ -105,13 +105,13 @@ Definition at line 28 of file sensor\+\_\+client.\+h.
 
 
 \subsection{Member Function Documentation}
-\index{smacc\+::\+Sensor\+Client@{smacc\+::\+Sensor\+Client}!assign\+To\+Orthogonal@{assign\+To\+Orthogonal}}
-\index{assign\+To\+Orthogonal@{assign\+To\+Orthogonal}!smacc\+::\+Sensor\+Client@{smacc\+::\+Sensor\+Client}}
-\subsubsection[{\texorpdfstring{assign\+To\+Orthogonal()}{assignToOrthogonal()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ template$<$typename T\+Derived , typename T\+Object\+Tag $>$ void {\bf smacc\+::\+Sensor\+Client}$<$ Message\+Type $>$\+::assign\+To\+Orthogonal (
+\index{smacc\+::\+Sensor\+Client@{smacc\+::\+Sensor\+Client}!configure\+Event\+Source\+Types@{configure\+Event\+Source\+Types}}
+\index{configure\+Event\+Source\+Types@{configure\+Event\+Source\+Types}!smacc\+::\+Sensor\+Client@{smacc\+::\+Sensor\+Client}}
+\subsubsection[{\texorpdfstring{configure\+Event\+Source\+Types()}{configureEventSourceTypes()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ template$<$typename T\+Derived , typename T\+Object\+Tag $>$ void {\bf smacc\+::\+Sensor\+Client}$<$ Message\+Type $>$\+::configure\+Event\+Source\+Types (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SensorClient_a8da4944515317f35d0b7d5759b59efe1}{}\label{classsmacc_1_1SensorClient_a8da4944515317f35d0b7d5759b59efe1}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SensorClient_ae1384ddfe1fab2c119be52b587dd6071}{}\label{classsmacc_1_1SensorClient_ae1384ddfe1fab2c119be52b587dd6071}
 
 
 Definition at line 38 of file sensor\+\_\+client.\+h.
@@ -119,7 +119,7 @@ Definition at line 38 of file sensor\+\_\+client.\+h.
 
 \begin{DoxyCode}
 39   \{
-40     SmaccSubscriberClient<MessageType>::template assignToOrthogonal<TDerived, TObjectTag>();
+40     SmaccSubscriberClient<MessageType>::template configureEventSourceTypes<TDerived, TObjectTag>();
 41 
 42     this->\hyperlink{classsmacc_1_1SensorClient_ad2c6d9f2e7ceddac26024cd5901a6739}{postTimeoutMessageEvent} = [=](\textcolor{keyword}{auto} &timerdata) \{
 43       \textcolor{keyword}{auto} \textcolor{keyword}{event} = \textcolor{keyword}{new} EvTopicMessageTimeout<TDerived, TObjectTag>();

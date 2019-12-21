@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['workingmode',['WorkingMode',['../namespacesmacc__odom__tracker.html#ade9730dd5cc10ccfad9362176cf46c33',1,'smacc_odom_tracker']]]
+  ['workingmode',['WorkingMode',['../namespaceodom__tracker.html#a4daf27fd157b1a481fdfd6f90de00b88',1,'odom_tracker']]]
 ];

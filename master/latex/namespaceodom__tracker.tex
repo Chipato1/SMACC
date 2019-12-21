@@ -1,0 +1,90 @@
+\hypertarget{namespaceodom__tracker}{}\section{odom\+\_\+tracker Namespace Reference}
+\label{namespaceodom__tracker}\index{odom\+\_\+tracker@{odom\+\_\+tracker}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classodom__tracker_1_1OdomTracker}{Odom\+Tracker}
+\begin{DoxyCompactList}\small\item\em This class track the required distance of the cord based on the external localization system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88}{Working\+Mode} \+: uint8\+\_\+t \{ \hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88a989d06a586bcf9520889228da7faa643}{Working\+Mode\+::\+R\+E\+C\+O\+R\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+O\+R\+W\+A\+RD} = 0, 
+\hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88a0cf8f27617189e35619df3c18bda6274}{Working\+Mode\+::\+C\+L\+E\+A\+R\+\_\+\+P\+A\+T\+H\+\_\+\+B\+A\+C\+K\+W\+A\+RD} = 1, 
+\hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88aa5daf7f2ebbba4975d61dab1c40188c7}{Working\+Mode\+::\+I\+D\+LE} = 2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{namespaceodom__tracker_a18caccd20c7915e29706a95860e34cca}{p2p\+Distance} (const geometry\+\_\+msgs\+::\+Point \&p1, const geometry\+\_\+msgs\+::\+Point \&p2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\index{odom\+\_\+tracker@{odom\+\_\+tracker}!Working\+Mode@{Working\+Mode}}
+\index{Working\+Mode@{Working\+Mode}!odom\+\_\+tracker@{odom\+\_\+tracker}}
+\subsubsection[{\texorpdfstring{Working\+Mode}{WorkingMode}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf odom\+\_\+tracker\+::\+Working\+Mode} \+: uint8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}\hypertarget{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88}{}\label{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{R\+E\+C\+O\+R\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+O\+R\+W\+A\+RD@{R\+E\+C\+O\+R\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+O\+R\+W\+A\+RD}!odom\+\_\+tracker@{odom\+\_\+tracker}}\index{odom\+\_\+tracker@{odom\+\_\+tracker}!R\+E\+C\+O\+R\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+O\+R\+W\+A\+RD@{R\+E\+C\+O\+R\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+O\+R\+W\+A\+RD}}\item[{\em 
+R\+E\+C\+O\+R\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+O\+R\+W\+A\+RD\hypertarget{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88a989d06a586bcf9520889228da7faa643}{}\label{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88a989d06a586bcf9520889228da7faa643}
+}]\index{C\+L\+E\+A\+R\+\_\+\+P\+A\+T\+H\+\_\+\+B\+A\+C\+K\+W\+A\+RD@{C\+L\+E\+A\+R\+\_\+\+P\+A\+T\+H\+\_\+\+B\+A\+C\+K\+W\+A\+RD}!odom\+\_\+tracker@{odom\+\_\+tracker}}\index{odom\+\_\+tracker@{odom\+\_\+tracker}!C\+L\+E\+A\+R\+\_\+\+P\+A\+T\+H\+\_\+\+B\+A\+C\+K\+W\+A\+RD@{C\+L\+E\+A\+R\+\_\+\+P\+A\+T\+H\+\_\+\+B\+A\+C\+K\+W\+A\+RD}}\item[{\em 
+C\+L\+E\+A\+R\+\_\+\+P\+A\+T\+H\+\_\+\+B\+A\+C\+K\+W\+A\+RD\hypertarget{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88a0cf8f27617189e35619df3c18bda6274}{}\label{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88a0cf8f27617189e35619df3c18bda6274}
+}]\index{I\+D\+LE@{I\+D\+LE}!odom\+\_\+tracker@{odom\+\_\+tracker}}\index{odom\+\_\+tracker@{odom\+\_\+tracker}!I\+D\+LE@{I\+D\+LE}}\item[{\em 
+I\+D\+LE\hypertarget{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88aa5daf7f2ebbba4975d61dab1c40188c7}{}\label{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88aa5daf7f2ebbba4975d61dab1c40188c7}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 27 of file odom\+\_\+tracker.\+h.
+
+
+\begin{DoxyCode}
+27                        : uint8\_t \{
+28     \hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88a989d06a586bcf9520889228da7faa643}{RECORD\_PATH\_FORWARD} = 0,
+29     \hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88a0cf8f27617189e35619df3c18bda6274}{CLEAR\_PATH\_BACKWARD} = 1,
+30     \hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88aa5daf7f2ebbba4975d61dab1c40188c7}{IDLE} = 2
+31 \};
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\index{odom\+\_\+tracker@{odom\+\_\+tracker}!p2p\+Distance@{p2p\+Distance}}
+\index{p2p\+Distance@{p2p\+Distance}!odom\+\_\+tracker@{odom\+\_\+tracker}}
+\subsubsection[{\texorpdfstring{p2p\+Distance(const geometry\+\_\+msgs\+::\+Point \&p1, const geometry\+\_\+msgs\+::\+Point \&p2)}{p2pDistance(const geometry_msgs::Point &p1, const geometry_msgs::Point &p2)}}]{\setlength{\rightskip}{0pt plus 5cm}double odom\+\_\+tracker\+::p2p\+Distance (
+\begin{DoxyParamCaption}
+\item[{const geometry\+\_\+msgs\+::\+Point \&}]{p1, }
+\item[{const geometry\+\_\+msgs\+::\+Point \&}]{p2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceodom__tracker_a18caccd20c7915e29706a95860e34cca}{}\label{namespaceodom__tracker_a18caccd20c7915e29706a95860e34cca}
+\hyperlink{namespaceodom__tracker_a18caccd20c7915e29706a95860e34cca}{p2p\+Distance()} 
+
+Definition at line 126 of file odom\+\_\+tracker.\+h.
+
+
+
+Referenced by odom\+\_\+tracker\+::\+Odom\+Tracker\+::update\+Backward(), and odom\+\_\+tracker\+::\+Odom\+Tracker\+::update\+Forward().
+
+
+\begin{DoxyCode}
+127     \{
+128         \textcolor{keywordtype}{double} dx = (p1.x - p2.x);
+129         \textcolor{keywordtype}{double} dy = (p1.y - p2.y);
+130         \textcolor{keywordtype}{double} dz = (p2.z - p2.z);
+131         \textcolor{keywordtype}{double} dist = sqrt(dx*dx + dy*dy+dz*dz);
+132         \textcolor{keywordflow}{return} dist;
+133     \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceodom__tracker_a18caccd20c7915e29706a95860e34cca_icgraph}
+\end{center}
+\end{figure}
+
+

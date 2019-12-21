@@ -11,11 +11,10 @@ var searchData=
   ['waypoints_5fevent_5fdispatcher_2ecpp',['waypoints_event_dispatcher.cpp',['../waypoints__event__dispatcher_8cpp.html',1,'']]],
   ['waypoints_5fevent_5fdispatcher_2eh',['waypoints_event_dispatcher.h',['../waypoints__event__dispatcher_8h.html',1,'']]],
   ['waypoints_5feventcount',['WAYPOINTS_EVENTCOUNT',['../waypoints__event__dispatcher_8h.html#add4ce0c5d955be6047a4820c63e7df08',1,'waypoints_event_dispatcher.h']]],
-  ['waypoints_5fnavigator_5fcomponent_2ecpp',['waypoints_navigator_component.cpp',['../waypoints__navigator__component_8cpp.html',1,'']]],
-  ['waypoints_5fnavigator_5fcomponent_2eh',['waypoints_navigator_component.h',['../waypoints__navigator__component_8h.html',1,'']]],
+  ['waypoints_5fnavigator_2ecpp',['waypoints_navigator.cpp',['../waypoints__navigator_8cpp.html',1,'']]],
+  ['waypoints_5fnavigator_2eh',['waypoints_navigator.h',['../waypoints__navigator_8h.html',1,'']]],
   ['waypointseventdispatcher',['waypointsEventDispatcher',['../classsmacc_1_1WaypointNavigator.html#aab7ff616b0eba7a5ad5f03113f2de8fd',1,'smacc::WaypointNavigator']]],
-  ['waypointsnavigator_5f',['waypointsNavigator_',['../classsmacc_1_1ClMoveBaseZ.html#a9df38a2b5fb0e0ed23a00d66fb9b9c20',1,'smacc::ClMoveBaseZ']]],
-  ['workingmode',['WorkingMode',['../namespacesmacc__odom__tracker.html#ade9730dd5cc10ccfad9362176cf46c33',1,'smacc_odom_tracker']]],
-  ['workingmode_5f',['workingMode_',['../classsmacc__odom__tracker_1_1OdomTracker.html#ad011432ae35a533fd61bae43179c3c36',1,'smacc_odom_tracker::OdomTracker']]],
+  ['workingmode',['WorkingMode',['../namespaceodom__tracker.html#a4daf27fd157b1a481fdfd6f90de00b88',1,'odom_tracker']]],
+  ['workingmode_5f',['workingMode_',['../classodom__tracker_1_1OdomTracker.html#ab3b29200405d9a88cf3213656b14d7c0',1,'odom_tracker::OdomTracker']]],
   ['write_5fto_5ffile',['write_to_file',['../namespacerosdoc__lite_1_1doxygenator.html#ac4fd4990b71ec3d49d1639ef63bd0630',1,'rosdoc_lite::doxygenator']]]
 ];

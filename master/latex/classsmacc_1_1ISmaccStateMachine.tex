@@ -41,7 +41,7 @@ virtual void \hyperlink{classsmacc_1_1ISmaccStateMachine_a3c5aab001d1bb7edcb3741
 \item 
 const std\+::map$<$ std\+::string, std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1Orthogonal}{smacc\+::\+Orthogonal} $>$ $>$ \& \hyperlink{classsmacc_1_1ISmaccStateMachine_a262b3f2d15af019190fa69b7c0df00f8}{get\+Orthogonals} () const 
 \item 
-{\footnotesize template$<$typename Smacc\+Component\+Type $>$ }\\void \hyperlink{classsmacc_1_1ISmaccStateMachine_a729d0bcb3c4894e33f0696e0b1aeb155}{requires\+Component} (Smacc\+Component\+Type $\ast$\&storage, \hyperlink{classbool}{bool} verbose)
+{\footnotesize template$<$typename Smacc\+Component\+Type $>$ }\\void \hyperlink{classsmacc_1_1ISmaccStateMachine_a21aae3a3134367aed33c47d55c452e95}{requires\+Component} (Smacc\+Component\+Type $\ast$\&storage, \hyperlink{classbool}{bool} verbose=false)
 \item 
 {\footnotesize template$<$typename Event\+Type $>$ }\\void \hyperlink{classsmacc_1_1ISmaccStateMachine_ad80cdd7bbc9a9f3b221c625754fed1ed}{post\+Event} (Event\+Type $\ast$ev)
 \item 
@@ -399,7 +399,7 @@ Definition at line 223 of file smacc\+\_\+state\+\_\+machine\+\_\+impl.\+h.
 )\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classsmacc_1_1ISmaccStateMachine_a3c5aab001d1bb7edcb37413404e4a7c2}{}\label{classsmacc_1_1ISmaccStateMachine_a3c5aab001d1bb7edcb37413404e4a7c2}
 
 
-Reimplemented in \hyperlink{structsmacc_1_1SmaccStateMachineBase_af1d145820c98089389e7de97a6744231}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Derived\+State\+Machine, Initial\+State\+Type $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_af1d145820c98089389e7de97a6744231}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Dance\+Bot, Ms\+Dance\+Bot\+Run\+Mode $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_af1d145820c98089389e7de97a6744231}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Three\+Some, St\+State1 $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_af1d145820c98089389e7de97a6744231}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Keyboard\+State\+Machine, Keyboard\+State $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_af1d145820c98089389e7de97a6744231}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Viewer\+Sim, Ms\+Run\+Mode $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_af1d145820c98089389e7de97a6744231}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Atomic\+State\+Machine, State1 $>$}, and \hyperlink{structsmacc_1_1SmaccStateMachineBase_af1d145820c98089389e7de97a6744231}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Timer\+State\+Machine, Timer\+State $>$}.
+Reimplemented in \hyperlink{structsmacc_1_1SmaccStateMachineBase_af1d145820c98089389e7de97a6744231}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Derived\+State\+Machine, Initial\+State\+Type $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_af1d145820c98089389e7de97a6744231}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Dance\+Bot, Ms\+Dance\+Bot\+Run\+Mode $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_af1d145820c98089389e7de97a6744231}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Three\+Some, St\+State1 $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_af1d145820c98089389e7de97a6744231}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Viewer\+Sim, Ms\+Run\+Mode $>$}, and \hyperlink{structsmacc_1_1SmaccStateMachineBase_af1d145820c98089389e7de97a6744231}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Atomic\+State\+Machine, State1 $>$}.
 
 
 
@@ -407,7 +407,7 @@ Definition at line 56 of file smacc\+\_\+state\+\_\+machine.\+cpp.
 
 
 
-Referenced by smacc\+::\+Smacc\+State\+Machine\+Base$<$ Timer\+State\+Machine, Timer\+State $>$\+::\+E\+Stop().
+Referenced by smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Atomic\+State\+Machine, State1 $>$\+::\+E\+Stop().
 
 
 \begin{DoxyCode}
@@ -447,7 +447,7 @@ Referenced by smacc\+::\+Signal\+Detector\+::poll\+Once().
 
 
 \begin{DoxyCode}
-109 \{\textcolor{keywordflow}{return} this->\hyperlink{classsmacc_1_1ISmaccStateMachine_a9c6e7745205bcce80a301f2fbe8f7e99}{currentState\_};\}
+109 \{ \textcolor{keywordflow}{return} this->\hyperlink{classsmacc_1_1ISmaccStateMachine_a9c6e7745205bcce80a301f2fbe8f7e99}{currentState\_}; \}
 \end{DoxyCode}
 
 
@@ -494,7 +494,7 @@ Referenced by smacc\+::\+Signal\+Detector\+::poll\+Once().
 
 
 \begin{DoxyCode}
-107 \{\textcolor{keywordflow}{return} this->\hyperlink{classsmacc_1_1ISmaccStateMachine_ab41ee07d20715142e2f7c92d551b2bd6}{stateSeqCounter\_};\}
+107 \{ \textcolor{keywordflow}{return} this->\hyperlink{classsmacc_1_1ISmaccStateMachine_ab41ee07d20715142e2f7c92d551b2bd6}{stateSeqCounter\_}; \}
 \end{DoxyCode}
 
 
@@ -908,7 +908,7 @@ References smacc\+::demangle\+Symbol(), get\+Global\+S\+M\+Data(), requires\+Com
 193         \textcolor{comment}{// Using the requires component approach, we force a unique existence}
 194         \textcolor{comment}{// of this component}
 195         BehaviorType *behavior;
-196         this->\hyperlink{classsmacc_1_1ISmaccStateMachine_a729d0bcb3c4894e33f0696e0b1aeb155}{requiresComponent}(behavior);
+196         this->\hyperlink{classsmacc_1_1ISmaccStateMachine_a21aae3a3134367aed33c47d55c452e95}{requiresComponent}(behavior);
 197         globalreference = \textcolor{keyword}{dynamic\_cast<}SmaccClientBehavior *\textcolor{keyword}{>}(behavior);
 198 
 199         this->\hyperlink{classsmacc_1_1ISmaccStateMachine_a8588f9e580fbb95b53e2bd2ca3ff1f98}{setGlobalSMData}(stateFieldName, globalreference);
@@ -1137,7 +1137,7 @@ References nh\+\_\+, state\+\_\+machine\+\_\+visualization(), and timer\+\_\+.
 
 
 
-Referenced by get\+Current\+State(), and smacc\+::\+Smacc\+State\+Machine\+Base$<$ Timer\+State\+Machine, Timer\+State $>$\+::initiate\+\_\+impl().
+Referenced by get\+Current\+State(), and smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Atomic\+State\+Machine, State1 $>$\+::initiate\+\_\+impl().
 
 
 \begin{DoxyCode}
@@ -1187,7 +1187,7 @@ References get\+Transition\+Log\+History(), nh\+\_\+, on\+Initialize(), state\+M
 
 
 
-Referenced by get\+Current\+State(), and smacc\+::\+Smacc\+State\+Machine\+Base$<$ Timer\+State\+Machine, Timer\+State $>$\+::initiate\+\_\+impl().
+Referenced by get\+Current\+State(), and smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Atomic\+State\+Machine, State1 $>$\+::initiate\+\_\+impl().
 
 
 \begin{DoxyCode}
@@ -1289,7 +1289,7 @@ References current\+State\+\_\+, m\+\_\+mutex\+\_\+, smacc\+::\+Signal\+Detector
 
 
 
-Referenced by smacc\+::\+I\+Smacc\+Client\+::post\+Event(), smacc\+::\+I\+Smacc\+Component\+::post\+Event(), smacc\+::\+Smacc\+Client\+Behavior\+::post\+Event(), and smacc\+::\+I\+Smacc\+State\+::post\+Event().
+Referenced by smacc\+::\+I\+Smacc\+Component\+::post\+Event(), smacc\+::\+I\+Smacc\+Client\+::post\+Event(), smacc\+::\+Smacc\+Client\+Behavior\+::post\+Event(), and smacc\+::\+I\+Smacc\+State\+::post\+Event().
 
 
 \begin{DoxyCode}
@@ -1393,12 +1393,12 @@ Here is the caller graph for this function\+:
 
 \index{smacc\+::\+I\+Smacc\+State\+Machine@{smacc\+::\+I\+Smacc\+State\+Machine}!requires\+Component@{requires\+Component}}
 \index{requires\+Component@{requires\+Component}!smacc\+::\+I\+Smacc\+State\+Machine@{smacc\+::\+I\+Smacc\+State\+Machine}}
-\subsubsection[{\texorpdfstring{requires\+Component(\+Smacc\+Component\+Type $\ast$\&storage, bool verbose)}{requiresComponent(SmaccComponentType *&storage, bool verbose)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Smacc\+Component\+Type $>$ void smacc\+::\+I\+Smacc\+State\+Machine\+::requires\+Component (
+\subsubsection[{\texorpdfstring{requires\+Component(\+Smacc\+Component\+Type $\ast$\&storage, bool verbose=false)}{requiresComponent(SmaccComponentType *&storage, bool verbose=false)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Smacc\+Component\+Type $>$ void smacc\+::\+I\+Smacc\+State\+Machine\+::requires\+Component (
 \begin{DoxyParamCaption}
 \item[{Smacc\+Component\+Type $\ast$\&}]{storage, }
-\item[{{\bf bool}}]{verbose}
+\item[{{\bf bool}}]{verbose = {\ttfamily false}}
 \end{DoxyParamCaption}
-)}\hypertarget{classsmacc_1_1ISmaccStateMachine_a729d0bcb3c4894e33f0696e0b1aeb155}{}\label{classsmacc_1_1ISmaccStateMachine_a729d0bcb3c4894e33f0696e0b1aeb155}
+)}\hypertarget{classsmacc_1_1ISmaccStateMachine_a21aae3a3134367aed33c47d55c452e95}{}\label{classsmacc_1_1ISmaccStateMachine_a21aae3a3134367aed33c47d55c452e95}
 
 
 Definition at line 79 of file smacc\+\_\+state\+\_\+machine\+\_\+impl.\+h.
@@ -1409,7 +1409,7 @@ References smacc\+::demangle\+Symbol(), m\+\_\+mutex\+\_\+, and plugins\+\_\+.
 
 
 
-Referenced by map\+Behavior(), smacc\+::\+Orthogonal\+::requires\+Component(), smacc\+::\+I\+Smacc\+State\+::requires\+Component(), and smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Component().
+Referenced by smacc\+::\+I\+Smacc\+Client\+::create\+Component(), map\+Behavior(), smacc\+::\+Orthogonal\+::requires\+Component(), smacc\+::\+I\+Smacc\+State\+::requires\+Component(), and smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Component().
 
 
 \begin{DoxyCode}
@@ -1448,7 +1448,7 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classsmacc_1_1ISmaccStateMachine_a729d0bcb3c4894e33f0696e0b1aeb155_cgraph}
+\includegraphics[width=350pt]{classsmacc_1_1ISmaccStateMachine_a21aae3a3134367aed33c47d55c452e95_cgraph}
 \end{center}
 \end{figure}
 
@@ -1460,7 +1460,7 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classsmacc_1_1ISmaccStateMachine_a729d0bcb3c4894e33f0696e0b1aeb155_icgraph}
+\includegraphics[width=350pt]{classsmacc_1_1ISmaccStateMachine_a21aae3a3134367aed33c47d55c452e95_icgraph}
 \end{center}
 \end{figure}
 
@@ -1474,7 +1474,7 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classsmacc_1_1ISmaccStateMachine_ae175edef7aba48a1ac82e8401632c5fa}{}\label{classsmacc_1_1ISmaccStateMachine_ae175edef7aba48a1ac82e8401632c5fa}
 
 
-Reimplemented in \hyperlink{structsmacc_1_1SmaccStateMachineBase_a150ec7ab023a6d1d028387b2da907e9d}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Derived\+State\+Machine, Initial\+State\+Type $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_a150ec7ab023a6d1d028387b2da907e9d}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Dance\+Bot, Ms\+Dance\+Bot\+Run\+Mode $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_a150ec7ab023a6d1d028387b2da907e9d}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Three\+Some, St\+State1 $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_a150ec7ab023a6d1d028387b2da907e9d}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Keyboard\+State\+Machine, Keyboard\+State $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_a150ec7ab023a6d1d028387b2da907e9d}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Viewer\+Sim, Ms\+Run\+Mode $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_a150ec7ab023a6d1d028387b2da907e9d}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Atomic\+State\+Machine, State1 $>$}, and \hyperlink{structsmacc_1_1SmaccStateMachineBase_a150ec7ab023a6d1d028387b2da907e9d}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Timer\+State\+Machine, Timer\+State $>$}.
+Reimplemented in \hyperlink{structsmacc_1_1SmaccStateMachineBase_a150ec7ab023a6d1d028387b2da907e9d}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Derived\+State\+Machine, Initial\+State\+Type $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_a150ec7ab023a6d1d028387b2da907e9d}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Dance\+Bot, Ms\+Dance\+Bot\+Run\+Mode $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_a150ec7ab023a6d1d028387b2da907e9d}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Three\+Some, St\+State1 $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_a150ec7ab023a6d1d028387b2da907e9d}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Viewer\+Sim, Ms\+Run\+Mode $>$}, and \hyperlink{structsmacc_1_1SmaccStateMachineBase_a150ec7ab023a6d1d028387b2da907e9d}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Atomic\+State\+Machine, State1 $>$}.
 
 
 
@@ -1482,7 +1482,7 @@ Definition at line 48 of file smacc\+\_\+state\+\_\+machine.\+cpp.
 
 
 
-Referenced by smacc\+::\+Smacc\+State\+Machine\+Base$<$ Timer\+State\+Machine, Timer\+State $>$\+::\+Reset().
+Referenced by smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Atomic\+State\+Machine, State1 $>$\+::\+Reset().
 
 
 \begin{DoxyCode}
@@ -1656,7 +1656,7 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classsmacc_1_1ISmaccStateMachine_a8f353fcf0686b1dacb57458da882c89b}{}\label{classsmacc_1_1ISmaccStateMachine_a8f353fcf0686b1dacb57458da882c89b}
 
 
-Reimplemented in \hyperlink{structsmacc_1_1SmaccStateMachineBase_a9c7c7b8d814a8cb1b741c7675dc2a9f7}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Derived\+State\+Machine, Initial\+State\+Type $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_a9c7c7b8d814a8cb1b741c7675dc2a9f7}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Dance\+Bot, Ms\+Dance\+Bot\+Run\+Mode $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_a9c7c7b8d814a8cb1b741c7675dc2a9f7}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Three\+Some, St\+State1 $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_a9c7c7b8d814a8cb1b741c7675dc2a9f7}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Keyboard\+State\+Machine, Keyboard\+State $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_a9c7c7b8d814a8cb1b741c7675dc2a9f7}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Viewer\+Sim, Ms\+Run\+Mode $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_a9c7c7b8d814a8cb1b741c7675dc2a9f7}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Atomic\+State\+Machine, State1 $>$}, and \hyperlink{structsmacc_1_1SmaccStateMachineBase_a9c7c7b8d814a8cb1b741c7675dc2a9f7}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Timer\+State\+Machine, Timer\+State $>$}.
+Reimplemented in \hyperlink{structsmacc_1_1SmaccStateMachineBase_a9c7c7b8d814a8cb1b741c7675dc2a9f7}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Derived\+State\+Machine, Initial\+State\+Type $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_a9c7c7b8d814a8cb1b741c7675dc2a9f7}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Dance\+Bot, Ms\+Dance\+Bot\+Run\+Mode $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_a9c7c7b8d814a8cb1b741c7675dc2a9f7}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Three\+Some, St\+State1 $>$}, \hyperlink{structsmacc_1_1SmaccStateMachineBase_a9c7c7b8d814a8cb1b741c7675dc2a9f7}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Viewer\+Sim, Ms\+Run\+Mode $>$}, and \hyperlink{structsmacc_1_1SmaccStateMachineBase_a9c7c7b8d814a8cb1b741c7675dc2a9f7}{smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Atomic\+State\+Machine, State1 $>$}.
 
 
 
@@ -1664,7 +1664,7 @@ Definition at line 52 of file smacc\+\_\+state\+\_\+machine.\+cpp.
 
 
 
-Referenced by smacc\+::\+Smacc\+State\+Machine\+Base$<$ Timer\+State\+Machine, Timer\+State $>$\+::\+Stop().
+Referenced by smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Atomic\+State\+Machine, State1 $>$\+::\+Stop().
 
 
 \begin{DoxyCode}
@@ -1845,7 +1845,7 @@ Definition at line 173 of file smacc\+\_\+state\+\_\+machine.\+h.
 
 
 
-Referenced by smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::get\+Full\+Path\+Name(), smacc\+::\+Smacc\+State\+Machine\+Base$<$ Timer\+State\+Machine, Timer\+State $>$\+::initiate\+\_\+impl(), notify\+On\+State\+Entry\+Start(), and state\+\_\+machine\+\_\+visualization().
+Referenced by smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::get\+Full\+Path\+Name(), smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Atomic\+State\+Machine, State1 $>$\+::initiate\+\_\+impl(), notify\+On\+State\+Entry\+Start(), and state\+\_\+machine\+\_\+visualization().
 
 \index{smacc\+::\+I\+Smacc\+State\+Machine@{smacc\+::\+I\+Smacc\+State\+Machine}!m\+\_\+mutex\+\_\+@{m\+\_\+mutex\+\_\+}}
 \index{m\+\_\+mutex\+\_\+@{m\+\_\+mutex\+\_\+}!smacc\+::\+I\+Smacc\+State\+Machine@{smacc\+::\+I\+Smacc\+State\+Machine}}
