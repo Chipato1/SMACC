@@ -41,7 +41,7 @@ virtual std\+::string \hyperlink{classsmacc_1_1ISmaccState_a5bf0b49d5ea6b9e8f45c
 \item 
 {\footnotesize template$<$typename Smacc\+Component\+Type $>$ }\\void \hyperlink{classsmacc_1_1ISmaccState_afd5264c36403d22e124eea89a0122e59}{requires\+Component} (Smacc\+Component\+Type $\ast$\&storage)
 \item 
-{\footnotesize template$<$typename Smacc\+Client\+Type $>$ }\\void \hyperlink{classsmacc_1_1ISmaccState_a0f116de85bbc91d94e1eb2f74502acd8}{requires\+Client} (Smacc\+Client\+Type $\ast$\&storage, \hyperlink{classbool}{bool} verbose=false)
+{\footnotesize template$<$typename Smacc\+Client\+Type $>$ }\\void \hyperlink{classsmacc_1_1ISmaccState_a7f95c9f0a6ea2d6f18d1aec0519de4ac}{requires\+Client} (Smacc\+Client\+Type $\ast$\&storage)
 \item 
 {\footnotesize template$<$typename T $>$ }\\\hyperlink{classbool}{bool} \hyperlink{classsmacc_1_1ISmaccState_ad6811b03329d9e694e78bc4b1220c2c0}{get\+Global\+S\+M\+Data} (std\+::string name, T \&ret)
 \item 
@@ -502,12 +502,11 @@ Here is the caller graph for this function\+:
 
 \index{smacc\+::\+I\+Smacc\+State@{smacc\+::\+I\+Smacc\+State}!requires\+Client@{requires\+Client}}
 \index{requires\+Client@{requires\+Client}!smacc\+::\+I\+Smacc\+State@{smacc\+::\+I\+Smacc\+State}}
-\subsubsection[{\texorpdfstring{requires\+Client(\+Smacc\+Client\+Type $\ast$\&storage, bool verbose=false)}{requiresClient(SmaccClientType *&storage, bool verbose=false)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Smacc\+Client\+Type $>$ void smacc\+::\+I\+Smacc\+State\+::requires\+Client (
+\subsubsection[{\texorpdfstring{requires\+Client(\+Smacc\+Client\+Type $\ast$\&storage)}{requiresClient(SmaccClientType *&storage)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Smacc\+Client\+Type $>$ void smacc\+::\+I\+Smacc\+State\+::requires\+Client (
 \begin{DoxyParamCaption}
-\item[{Smacc\+Client\+Type $\ast$\&}]{storage, }
-\item[{{\bf bool}}]{verbose = {\ttfamily false}}
+\item[{Smacc\+Client\+Type $\ast$\&}]{storage}
 \end{DoxyParamCaption}
-)}\hypertarget{classsmacc_1_1ISmaccState_a0f116de85bbc91d94e1eb2f74502acd8}{}\label{classsmacc_1_1ISmaccState_a0f116de85bbc91d94e1eb2f74502acd8}
+)}\hypertarget{classsmacc_1_1ISmaccState_a7f95c9f0a6ea2d6f18d1aec0519de4ac}{}\label{classsmacc_1_1ISmaccState_a7f95c9f0a6ea2d6f18d1aec0519de4ac}
 
 
 Definition at line 65 of file smacc\+\_\+state\+\_\+impl.\+h.
@@ -527,7 +526,7 @@ Referenced by sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+Forward1\+::on\+Initiali
 68     \textcolor{keyword}{auto} &orthogonals = this->\hyperlink{classsmacc_1_1ISmaccState_a562bb3f9a3ac16b8be71e4794c9e7523}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_a262b3f2d15af019190fa69b7c0df00f8}{getOrthogonals}();
 69     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &ortho : orthogonals)
 70     \{
-71         ortho.second->requiresClient(storage, verbose);
+71         ortho.second->requiresClient(storage);
 72         \textcolor{keywordflow}{if} (storage != \textcolor{keyword}{nullptr})
 73             \textcolor{keywordflow}{return};
 74     \}
@@ -543,7 +542,7 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classsmacc_1_1ISmaccState_a0f116de85bbc91d94e1eb2f74502acd8_cgraph}
+\includegraphics[width=350pt]{classsmacc_1_1ISmaccState_a7f95c9f0a6ea2d6f18d1aec0519de4ac_cgraph}
 \end{center}
 \end{figure}
 
@@ -555,7 +554,7 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classsmacc_1_1ISmaccState_a0f116de85bbc91d94e1eb2f74502acd8_icgraph}
+\includegraphics[width=350pt]{classsmacc_1_1ISmaccState_a7f95c9f0a6ea2d6f18d1aec0519de4ac_icgraph}
 \end{center}
 \end{figure}
 
@@ -578,7 +577,7 @@ References get\+State\+Machine(), and smacc\+::\+I\+Smacc\+State\+Machine\+::req
 
 \begin{DoxyCode}
 59 \{
-60     this->\hyperlink{classsmacc_1_1ISmaccState_a562bb3f9a3ac16b8be71e4794c9e7523}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_a21aae3a3134367aed33c47d55c452e95}{requiresComponent}(storage);
+60     this->\hyperlink{classsmacc_1_1ISmaccState_a562bb3f9a3ac16b8be71e4794c9e7523}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_aa6b25e28f3bce24c4b356dc865a9eb7b}{requiresComponent}(storage);
 61 \}
 \end{DoxyCode}
 

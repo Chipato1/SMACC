@@ -62,8 +62,6 @@ boost\+::optional$<$ float $>$ \hyperlink{classsm__dance__bot_1_1CbNavigateGloba
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classsmacc_1_1ClMoveBaseZ}{smacc\+::\+Cl\+Move\+BaseZ} $\ast$ \hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a6b070ea39c113269c9b7f7732cb9e033}{move\+Base\+Client\+\_\+}
-\item 
-\hyperlink{classodom__tracker_1_1OdomTracker}{odom\+\_\+tracker\+::\+Odom\+Tracker} $\ast$ \hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a95241571dd7b9af5b7e723d63e8325a3}{odom\+Tracker\+\_\+}
 \end{DoxyCompactItemize}
 
 
@@ -275,7 +273,7 @@ Definition at line 32 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
 
 
 
-References go\+To\+Radial\+Start(), move\+Base\+Client\+\_\+, odom\+Tracker\+\_\+, smacc\+::\+Cl\+Move\+Base\+Z\+::planner\+Switcher\+\_\+, odom\+\_\+tracker\+::\+R\+E\+C\+O\+R\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+O\+R\+W\+A\+RD, smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client(), smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Component(), and odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Working\+Mode().
+References go\+To\+Radial\+Start(), move\+Base\+Client\+\_\+, smacc\+::\+Cl\+Move\+Base\+Z\+::planner\+Switcher\+\_\+, odom\+\_\+tracker\+::\+R\+E\+C\+O\+R\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+O\+R\+W\+A\+RD, and smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client().
 
 
 \begin{DoxyCode}
@@ -284,13 +282,13 @@ References go\+To\+Radial\+Start(), move\+Base\+Client\+\_\+, odom\+Tracker\+\_\
 35 
 36     \textcolor{comment}{// this substate will need access to the "MoveBase" resource or plugin. In this line}
 37     \textcolor{comment}{// you get the reference to this resource.}
-38     this->\hyperlink{classsmacc_1_1SmaccClientBehavior_adc21bbd45d36bd81ca6f778ed161807a}{requiresClient}(\hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a6b070ea39c113269c9b7f7732cb9e033}{moveBaseClient\_});
-39     this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a011246bb1424f8bf8c9322f652db9d88}{requiresComponent}(\hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a95241571dd7b9af5b7e723d63e8325a3}{odomTracker\_});
+38     this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a917f001e763a1059af337bf4e164f542}{requiresClient}(\hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a6b070ea39c113269c9b7f7732cb9e033}{moveBaseClient\_});
+39     \textcolor{keyword}{auto}* odomTracker\_ = this->getComponent<odom\_tracker::OdomTracker>();
 40 
 41     ROS\_INFO(\textcolor{stringliteral}{"Component requirements completed"});
 42 
 43     \hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a6b070ea39c113269c9b7f7732cb9e033}{moveBaseClient\_}->\hyperlink{classsmacc_1_1ClMoveBaseZ_a712e0df77c9629930e03cbb4c539b485}{plannerSwitcher\_}->setDefaultPlanners();
-44     this->\hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a95241571dd7b9af5b7e723d63e8325a3}{odomTracker\_}->\hyperlink{classodom__tracker_1_1OdomTracker_ac001a40d1107ef0d88aa7db03cafb08c}{setWorkingMode}(
+44     this->odomTracker\_->setWorkingMode(
       \hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88a989d06a586bcf9520889228da7faa643}{odom\_tracker::WorkingMode::RECORD\_PATH\_FORWARD});
 45 
 46     \hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a0832f7a7f205cc483be012aef9501312}{goToRadialStart}();
@@ -325,7 +323,7 @@ Definition at line 32 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
 
 
 
-References go\+To\+Radial\+Start(), move\+Base\+Client\+\_\+, odom\+Tracker\+\_\+, smacc\+::\+Cl\+Move\+Base\+Z\+::planner\+Switcher\+\_\+, odom\+\_\+tracker\+::\+R\+E\+C\+O\+R\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+O\+R\+W\+A\+RD, smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client(), smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Component(), and odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Working\+Mode().
+References smacc\+::\+I\+Smacc\+Client\+::get\+Component(), go\+To\+Radial\+Start(), move\+Base\+Client\+\_\+, smacc\+::\+Cl\+Move\+Base\+Z\+::planner\+Switcher\+\_\+, odom\+\_\+tracker\+::\+R\+E\+C\+O\+R\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+O\+R\+W\+A\+RD, and smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client().
 
 
 \begin{DoxyCode}
@@ -334,14 +332,15 @@ References go\+To\+Radial\+Start(), move\+Base\+Client\+\_\+, odom\+Tracker\+\_\
 35 
 36     \textcolor{comment}{// this substate will need access to the "MoveBase" resource or plugin. In this line}
 37     \textcolor{comment}{// you get the reference to this resource.}
-38     this->\hyperlink{classsmacc_1_1SmaccClientBehavior_adc21bbd45d36bd81ca6f778ed161807a}{requiresClient}(\hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a6b070ea39c113269c9b7f7732cb9e033}{moveBaseClient\_});
-39     this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a011246bb1424f8bf8c9322f652db9d88}{requiresComponent}(\hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a95241571dd7b9af5b7e723d63e8325a3}{odomTracker\_});
+38     this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a917f001e763a1059af337bf4e164f542}{requiresClient}(\hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a6b070ea39c113269c9b7f7732cb9e033}{moveBaseClient\_});
+39     \textcolor{keyword}{auto}* odomTracker = \hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a6b070ea39c113269c9b7f7732cb9e033}{moveBaseClient\_}->\hyperlink{classsmacc_1_1ISmaccClient_adef78db601749ca63c19e74a27cb88cc}{getComponent}<
+      \hyperlink{classodom__tracker_1_1OdomTracker}{odom\_tracker::OdomTracker}>();
 40 
 41     ROS\_INFO(\textcolor{stringliteral}{"Component requirements completed"});
 42 
 43     \hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a6b070ea39c113269c9b7f7732cb9e033}{moveBaseClient\_}->\hyperlink{classsmacc_1_1ClMoveBaseZ_a712e0df77c9629930e03cbb4c539b485}{plannerSwitcher\_}->setDefaultPlanners();
-44     this->\hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a95241571dd7b9af5b7e723d63e8325a3}{odomTracker\_}->\hyperlink{classodom__tracker_1_1OdomTracker_ac001a40d1107ef0d88aa7db03cafb08c}{setWorkingMode}(
-      \hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88a989d06a586bcf9520889228da7faa643}{odom\_tracker::WorkingMode::RECORD\_PATH\_FORWARD});
+44     odomTracker->setWorkingMode(\hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88a989d06a586bcf9520889228da7faa643}{odom\_tracker::WorkingMode::RECORD\_PATH\_FORWARD}
+      );
 45 
 46     \hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a0832f7a7f205cc483be012aef9501312}{goToRadialStart}();
 47   \}
@@ -396,7 +395,7 @@ Definition at line 87 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
 
 
 
-References move\+Base\+Client\+\_\+, and odom\+Tracker\+\_\+.
+References move\+Base\+Client\+\_\+.
 
 
 \begin{DoxyCode}
@@ -553,17 +552,6 @@ Definition at line 95 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
 
 
 Referenced by go\+To\+Radial\+Start(), on\+Entry(), and on\+Exit().
-
-\index{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Global\+Position@{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Global\+Position}!odom\+Tracker\+\_\+@{odom\+Tracker\+\_\+}}
-\index{odom\+Tracker\+\_\+@{odom\+Tracker\+\_\+}!sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Global\+Position@{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Global\+Position}}
-\subsubsection[{\texorpdfstring{odom\+Tracker\+\_\+}{odomTracker_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf odom\+\_\+tracker\+::\+Odom\+Tracker} $\ast$ sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Global\+Position\+::odom\+Tracker\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsm__dance__bot_1_1CbNavigateGlobalPosition_a95241571dd7b9af5b7e723d63e8325a3}{}\label{classsm__dance__bot_1_1CbNavigateGlobalPosition_a95241571dd7b9af5b7e723d63e8325a3}
-
-
-Definition at line 97 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
-
-
-
-Referenced by on\+Entry(), and on\+Exit().
 
 
 

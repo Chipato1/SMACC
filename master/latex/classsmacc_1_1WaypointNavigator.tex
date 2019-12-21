@@ -29,7 +29,7 @@ Collaboration diagram for smacc\+:\+:Waypoint\+Navigator\+:
 \item 
 \hyperlink{classsmacc_1_1WaypointNavigator_a8924fe11db589727a91048ffdba2a85f}{Waypoint\+Navigator} ()
 \item 
-virtual void \hyperlink{classsmacc_1_1WaypointNavigator_a415aca03983319611e6872fb8c6e313f}{initialize} (\hyperlink{classsmacc_1_1ISmaccComponent}{I\+Smacc\+Component} $\ast$owner) override
+virtual void \hyperlink{classsmacc_1_1WaypointNavigator_a3b6358de6088ba60937e0748bb9af0cb}{initialize} (\hyperlink{classsmacc_1_1ISmaccClient}{I\+Smacc\+Client} $\ast$owner) override
 \item 
 void \hyperlink{classsmacc_1_1WaypointNavigator_abdcd86738247eccaf849903881247b0d}{insert\+Waypoint} (int index, geometry\+\_\+msgs\+::\+Pose \&newpose)
 \item 
@@ -117,10 +117,6 @@ Definition at line 58 of file waypoints\+\_\+navigator.\+h.
 References smacc\+::\+Waypoint\+Event\+Dispatcher\+::initialize().
 
 
-
-Referenced by sm\+\_\+dance\+\_\+bot\+::\+Or\+Navigation\+::on\+Initialize().
-
-
 \begin{DoxyCode}
 59   \{
 60     \hyperlink{classsmacc_1_1WaypointNavigator_aab7ff616b0eba7a5ad5f03113f2de8fd}{waypointsEventDispatcher}.\hyperlink{classsmacc_1_1WaypointEventDispatcher_ad68384f96ef92ade4942320f898cdd3b}{initialize}<TDerived, TObjectTag>(
@@ -135,18 +131,6 @@ Here is the call graph for this function\+:
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classsmacc_1_1WaypointNavigator_a7fc69e48021d638d86bcc8dff18f723a_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classsmacc_1_1WaypointNavigator_a7fc69e48021d638d86bcc8dff18f723a_icgraph}
 \end{center}
 \end{figure}
 
@@ -195,14 +179,14 @@ References waypoints\+\_\+.
 \end{DoxyCode}
 \index{smacc\+::\+Waypoint\+Navigator@{smacc\+::\+Waypoint\+Navigator}!initialize@{initialize}}
 \index{initialize@{initialize}!smacc\+::\+Waypoint\+Navigator@{smacc\+::\+Waypoint\+Navigator}}
-\subsubsection[{\texorpdfstring{initialize(\+I\+Smacc\+Component $\ast$owner) override}{initialize(ISmaccComponent *owner) override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void smacc\+::\+Waypoint\+Navigator\+::initialize (
+\subsubsection[{\texorpdfstring{initialize(\+I\+Smacc\+Client $\ast$owner) override}{initialize(ISmaccClient *owner) override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void smacc\+::\+Waypoint\+Navigator\+::initialize (
 \begin{DoxyParamCaption}
-\item[{{\bf I\+Smacc\+Component} $\ast$}]{owner}
+\item[{{\bf I\+Smacc\+Client} $\ast$}]{owner}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1WaypointNavigator_a415aca03983319611e6872fb8c6e313f}{}\label{classsmacc_1_1WaypointNavigator_a415aca03983319611e6872fb8c6e313f}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1WaypointNavigator_a3b6358de6088ba60937e0748bb9af0cb}{}\label{classsmacc_1_1WaypointNavigator_a3b6358de6088ba60937e0748bb9af0cb}
 
 
-Reimplemented from \hyperlink{classsmacc_1_1ISmaccComponent_a15c111f1a7c6fe37e77351b382d2f095}{smacc\+::\+I\+Smacc\+Component}.
+Reimplemented from \hyperlink{classsmacc_1_1ISmaccComponent_a3378552cb1a86aa26a07c0edc057448b}{smacc\+::\+I\+Smacc\+Component}.
 
 
 

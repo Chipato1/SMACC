@@ -31,7 +31,7 @@ Collaboration diagram for smacc\+:\+:I\+Smacc\+Component\+:
 \item 
 virtual \hyperlink{classsmacc_1_1ISmaccComponent_a46f5cfc6a308de938b6ee3a5e80a8fe9}{$\sim$\+I\+Smacc\+Component} ()
 \item 
-virtual void \hyperlink{classsmacc_1_1ISmaccComponent_a15c111f1a7c6fe37e77351b382d2f095}{initialize} (\hyperlink{classsmacc_1_1ISmaccComponent}{I\+Smacc\+Component} $\ast$owner)
+virtual void \hyperlink{classsmacc_1_1ISmaccComponent_a3378552cb1a86aa26a07c0edc057448b}{initialize} (\hyperlink{classsmacc_1_1ISmaccClient}{I\+Smacc\+Client} $\ast$owner)
 \item 
 void \hyperlink{classsmacc_1_1ISmaccComponent_afe57665a6982475e8f9c2a5885e986e1}{set\+State\+Machine} (\hyperlink{classsmacc_1_1ISmaccStateMachine}{I\+Smacc\+State\+Machine} $\ast$state\+Machine)
 \item 
@@ -51,7 +51,7 @@ virtual std\+::string \hyperlink{classsmacc_1_1ISmaccComponent_aa314809a7fd35164
 \item 
 \hyperlink{classsmacc_1_1ISmaccStateMachine}{I\+Smacc\+State\+Machine} $\ast$ \hyperlink{classsmacc_1_1ISmaccComponent_ae3f37acc1679f79299b86872d4b1f80f}{state\+Machine\+\_\+}
 \item 
-\hyperlink{classsmacc_1_1ISmaccComponent}{I\+Smacc\+Component} $\ast$ \hyperlink{classsmacc_1_1ISmaccComponent_a8e1a9eacb9208d727756349c19f68abb}{owner\+\_\+}
+\hyperlink{classsmacc_1_1ISmaccClient}{I\+Smacc\+Client} $\ast$ \hyperlink{classsmacc_1_1ISmaccComponent_a909590e672450ce0eb0d8facb45c737a}{owner\+\_\+}
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -63,7 +63,7 @@ class \hyperlink{classsmacc_1_1ISmaccComponent_ab3e0a1388d84ea577a59f487cbfc08e3
 \subsection{Detailed Description}
 
 
-Definition at line 11 of file component.\+h.
+Definition at line 14 of file component.\+h.
 
 
 
@@ -81,7 +81,7 @@ Definition at line 15 of file smacc\+\_\+component.\+cpp.
 
 
 \begin{DoxyCode}
-16     : \hyperlink{classsmacc_1_1ISmaccComponent_a8e1a9eacb9208d727756349c19f68abb}{owner\_}(\textcolor{keyword}{nullptr})
+16     : \hyperlink{classsmacc_1_1ISmaccComponent_a909590e672450ce0eb0d8facb45c737a}{owner\_}(\textcolor{keyword}{nullptr})
 17 \{
 18 \}
 \end{DoxyCode}
@@ -113,12 +113,28 @@ Definition at line 11 of file smacc\+\_\+component.\+cpp.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classsmacc_1_1ISmaccComponent_ad1c9ede43be1f83c10c6e7a2e14db8d3}{}\label{classsmacc_1_1ISmaccComponent_ad1c9ede43be1f83c10c6e7a2e14db8d3}
 
 
-Definition at line 39 of file component.\+h.
+Definition at line 42 of file component.\+h.
+
+
+
+Referenced by sm\+\_\+dance\+\_\+bot\+::\+Or\+Navigation\+::on\+Initialize().
 
 
 \begin{DoxyCode}
-39 \{\}
+42 \{\}
 \end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1ISmaccComponent_ad1c9ede43be1f83c10c6e7a2e14db8d3_icgraph}
+\end{center}
+\end{figure}
+
+
 \index{smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}!get\+Name@{get\+Name}}
 \index{get\+Name@{get\+Name}!smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}}
 \subsubsection[{\texorpdfstring{get\+Name() const }{getName() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::\+I\+Smacc\+Component\+::get\+Name (
@@ -155,14 +171,14 @@ Here is the call graph for this function\+:
 
 \index{smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}!initialize@{initialize}}
 \index{initialize@{initialize}!smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}}
-\subsubsection[{\texorpdfstring{initialize(\+I\+Smacc\+Component $\ast$owner)}{initialize(ISmaccComponent *owner)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+I\+Smacc\+Component\+::initialize (
+\subsubsection[{\texorpdfstring{initialize(\+I\+Smacc\+Client $\ast$owner)}{initialize(ISmaccClient *owner)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+I\+Smacc\+Component\+::initialize (
 \begin{DoxyParamCaption}
-\item[{{\bf I\+Smacc\+Component} $\ast$}]{owner}
+\item[{{\bf I\+Smacc\+Client} $\ast$}]{owner}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classsmacc_1_1ISmaccComponent_a15c111f1a7c6fe37e77351b382d2f095}{}\label{classsmacc_1_1ISmaccComponent_a15c111f1a7c6fe37e77351b382d2f095}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classsmacc_1_1ISmaccComponent_a3378552cb1a86aa26a07c0edc057448b}{}\label{classsmacc_1_1ISmaccComponent_a3378552cb1a86aa26a07c0edc057448b}
 
 
-Reimplemented in \hyperlink{classsmacc_1_1WaypointNavigator_a415aca03983319611e6872fb8c6e313f}{smacc\+::\+Waypoint\+Navigator}.
+Reimplemented in \hyperlink{classsmacc_1_1WaypointNavigator_a3b6358de6088ba60937e0748bb9af0cb}{smacc\+::\+Waypoint\+Navigator}.
 
 
 
@@ -175,7 +191,7 @@ References owner\+\_\+.
 
 \begin{DoxyCode}
 21 \{
-22     \hyperlink{classsmacc_1_1ISmaccComponent_a8e1a9eacb9208d727756349c19f68abb}{owner\_} = owner;
+22     \hyperlink{classsmacc_1_1ISmaccComponent_a909590e672450ce0eb0d8facb45c737a}{owner\_} = owner;
 23 \}
 \end{DoxyCode}
 \index{smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}!post\+Event@{post\+Event}}
@@ -247,17 +263,17 @@ References state\+Machine\+\_\+.
 \subsubsection[{\texorpdfstring{Orthogonal}{Orthogonal}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Orthogonal}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classsmacc_1_1ISmaccComponent_ab3e0a1388d84ea577a59f487cbfc08e3}{}\label{classsmacc_1_1ISmaccComponent_ab3e0a1388d84ea577a59f487cbfc08e3}
 
 
-Definition at line 41 of file component.\+h.
+Definition at line 44 of file component.\+h.
 
 
 
 \subsection{Member Data Documentation}
 \index{smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}!owner\+\_\+@{owner\+\_\+}}
 \index{owner\+\_\+@{owner\+\_\+}!smacc\+::\+I\+Smacc\+Component@{smacc\+::\+I\+Smacc\+Component}}
-\subsubsection[{\texorpdfstring{owner\+\_\+}{owner_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Smacc\+Component}$\ast$ smacc\+::\+I\+Smacc\+Component\+::owner\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classsmacc_1_1ISmaccComponent_a8e1a9eacb9208d727756349c19f68abb}{}\label{classsmacc_1_1ISmaccComponent_a8e1a9eacb9208d727756349c19f68abb}
+\subsubsection[{\texorpdfstring{owner\+\_\+}{owner_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Smacc\+Client}$\ast$ smacc\+::\+I\+Smacc\+Component\+::owner\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classsmacc_1_1ISmaccComponent_a909590e672450ce0eb0d8facb45c737a}{}\label{classsmacc_1_1ISmaccComponent_a909590e672450ce0eb0d8facb45c737a}
 
 
-Definition at line 36 of file component.\+h.
+Definition at line 39 of file component.\+h.
 
 
 
@@ -268,7 +284,7 @@ Referenced by initialize().
 \subsubsection[{\texorpdfstring{state\+Machine\+\_\+}{stateMachine_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Smacc\+State\+Machine}$\ast$ smacc\+::\+I\+Smacc\+Component\+::state\+Machine\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classsmacc_1_1ISmaccComponent_ae3f37acc1679f79299b86872d4b1f80f}{}\label{classsmacc_1_1ISmaccComponent_ae3f37acc1679f79299b86872d4b1f80f}
 
 
-Definition at line 34 of file component.\+h.
+Definition at line 37 of file component.\+h.
 
 
 

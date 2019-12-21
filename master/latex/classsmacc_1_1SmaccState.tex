@@ -55,7 +55,7 @@ typedef base\+\_\+type\+::inner\+\_\+initial\+\_\+list \hyperlink{classsmacc_1_1
 \item 
 {\footnotesize template$<$typename T $>$ }\\void \hyperlink{classsmacc_1_1SmaccState_a98f2673b257479e0a3615d5d8279a591}{set\+Global\+S\+M\+Data} (std\+::string name, T value)
 \item 
-{\footnotesize template$<$typename Smacc\+Component\+Type $>$ }\\void \hyperlink{classsmacc_1_1SmaccState_a04f2f600546025915e32a305e5a86a72}{requires\+Component} (Smacc\+Component\+Type $\ast$\&storage, \hyperlink{classbool}{bool} verbose=false)
+{\footnotesize template$<$typename Smacc\+Component\+Type $>$ }\\void \hyperlink{classsmacc_1_1SmaccState_a2febb778d5c3d80b9c034576b5a92b65}{requires\+Component} (Smacc\+Component\+Type $\ast$\&storage)
 \item 
 virtual \hyperlink{classsmacc_1_1ISmaccStateMachine}{I\+Smacc\+State\+Machine} \& \hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{get\+State\+Machine} ()
 \item 
@@ -580,12 +580,11 @@ Here is the caller graph for this function\+:
 
 \index{smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}!requires\+Component@{requires\+Component}}
 \index{requires\+Component@{requires\+Component}!smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}}
-\subsubsection[{\texorpdfstring{requires\+Component(\+Smacc\+Component\+Type $\ast$\&storage, bool verbose=false)}{requiresComponent(SmaccComponentType *&storage, bool verbose=false)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Most\+Derived, class Context, class Inner\+Initial = mpl\+::list$<$$>$, sc\+::history\+\_\+mode history\+Mode = sc\+::has\+\_\+deep\+\_\+history$>$ template$<$typename Smacc\+Component\+Type $>$ void {\bf smacc\+::\+Smacc\+State}$<$ Most\+Derived, Context, Inner\+Initial, history\+Mode $>$\+::requires\+Component (
+\subsubsection[{\texorpdfstring{requires\+Component(\+Smacc\+Component\+Type $\ast$\&storage)}{requiresComponent(SmaccComponentType *&storage)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Most\+Derived, class Context, class Inner\+Initial = mpl\+::list$<$$>$, sc\+::history\+\_\+mode history\+Mode = sc\+::has\+\_\+deep\+\_\+history$>$ template$<$typename Smacc\+Component\+Type $>$ void {\bf smacc\+::\+Smacc\+State}$<$ Most\+Derived, Context, Inner\+Initial, history\+Mode $>$\+::requires\+Component (
 \begin{DoxyParamCaption}
-\item[{Smacc\+Component\+Type $\ast$\&}]{storage, }
-\item[{{\bf bool}}]{verbose = {\ttfamily false}}
+\item[{Smacc\+Component\+Type $\ast$\&}]{storage}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccState_a04f2f600546025915e32a305e5a86a72}{}\label{classsmacc_1_1SmaccState_a04f2f600546025915e32a305e5a86a72}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SmaccState_a2febb778d5c3d80b9c034576b5a92b65}{}\label{classsmacc_1_1SmaccState_a2febb778d5c3d80b9c034576b5a92b65}
 
 
 Definition at line 45 of file smacc\+\_\+state\+\_\+base.\+h.
@@ -593,7 +592,7 @@ Definition at line 45 of file smacc\+\_\+state\+\_\+base.\+h.
 
 \begin{DoxyCode}
 46   \{
-47     base\_type::outermost\_context().requiresComponent(storage, verbose);
+47     base\_type::outermost\_context().requiresComponent(storage);
 48   \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}!set\+Global\+S\+M\+Data@{set\+Global\+S\+M\+Data}}

@@ -41,11 +41,12 @@ Definition at line 27 of file odom\+\_\+tracker.\+h.
 
 
 \begin{DoxyCode}
-27                        : uint8\_t \{
-28     \hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88a989d06a586bcf9520889228da7faa643}{RECORD\_PATH\_FORWARD} = 0,
-29     \hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88a0cf8f27617189e35619df3c18bda6274}{CLEAR\_PATH\_BACKWARD} = 1,
-30     \hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88aa5daf7f2ebbba4975d61dab1c40188c7}{IDLE} = 2
-31 \};
+27                        : uint8\_t
+28 \{
+29     \hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88a989d06a586bcf9520889228da7faa643}{RECORD\_PATH\_FORWARD} = 0,
+30     \hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88a0cf8f27617189e35619df3c18bda6274}{CLEAR\_PATH\_BACKWARD} = 1,
+31     \hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88aa5daf7f2ebbba4975d61dab1c40188c7}{IDLE} = 2
+32 \};
 \end{DoxyCode}
 
 
@@ -60,7 +61,7 @@ Definition at line 27 of file odom\+\_\+tracker.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespaceodom__tracker_a18caccd20c7915e29706a95860e34cca}{}\label{namespaceodom__tracker_a18caccd20c7915e29706a95860e34cca}
 \hyperlink{namespaceodom__tracker_a18caccd20c7915e29706a95860e34cca}{p2p\+Distance()} 
 
-Definition at line 126 of file odom\+\_\+tracker.\+h.
+Definition at line 122 of file odom\+\_\+tracker.\+h.
 
 
 
@@ -68,13 +69,13 @@ Referenced by odom\+\_\+tracker\+::\+Odom\+Tracker\+::update\+Backward(), and od
 
 
 \begin{DoxyCode}
-127     \{
-128         \textcolor{keywordtype}{double} dx = (p1.x - p2.x);
-129         \textcolor{keywordtype}{double} dy = (p1.y - p2.y);
-130         \textcolor{keywordtype}{double} dz = (p2.z - p2.z);
-131         \textcolor{keywordtype}{double} dist = sqrt(dx*dx + dy*dy+dz*dz);
-132         \textcolor{keywordflow}{return} dist;
-133     \}
+123 \{
+124     \textcolor{keywordtype}{double} dx = (p1.x - p2.x);
+125     \textcolor{keywordtype}{double} dy = (p1.y - p2.y);
+126     \textcolor{keywordtype}{double} dz = (p2.z - p2.z);
+127     \textcolor{keywordtype}{double} dist = sqrt(dx * dx + dy * dy + dz * dz);
+128     \textcolor{keywordflow}{return} dist;
+129 \}
 \end{DoxyCode}
 
 

@@ -56,7 +56,7 @@ Definition at line 14 of file or\+\_\+navigation.\+h.
 
 
 
-References smacc\+::\+Waypoint\+Navigator\+::configure\+Event\+Source\+Types(), and odom\+\_\+tracker\+::\+Odom\+Tracker\+::initialize().
+References smacc\+::\+I\+Smacc\+Component\+::configure\+Event\+Source\+Types().
 
 
 \begin{DoxyCode}
@@ -65,15 +65,18 @@ References smacc\+::\+Waypoint\+Navigator\+::configure\+Event\+Source\+Types(), 
 17         movebaseClient->name\_ = \textcolor{stringliteral}{"move\_base"};
 18         movebaseClient->initialize();
 19 
-20         \textcolor{keyword}{auto} odomtracker = movebaseClient->createComponent<
-      \hyperlink{classodom__tracker_1_1OdomTracker}{odom\_tracker::OdomTracker}>();
-21         odomtracker->\hyperlink{classodom__tracker_1_1OdomTracker_a4442b3d434ea81dcfeb22331f01d9db7}{initialize}(\textcolor{stringliteral}{"/"});
-22 
-23         \textcolor{keyword}{auto} waypointsNavigator\_ = movebaseClient->createComponent<
+20         \textcolor{comment}{// create odom tracker}
+21         movebaseClient->createComponent<\hyperlink{classodom__tracker_1_1OdomTracker}{odom\_tracker::OdomTracker}>(\textcolor{stringliteral}{"/"});
+22         
+23         \textcolor{comment}{// create waypoints navigator component}
+24         \textcolor{keyword}{auto} waypointsNavigator\_ = movebaseClient->createComponent<
       \hyperlink{classsmacc_1_1WaypointNavigator}{smacc::WaypointNavigator}>();
-24         waypointsNavigator\_->\hyperlink{classsmacc_1_1WaypointNavigator_a7fc69e48021d638d86bcc8dff18f723a}{configureEventSourceTypes}<OrNavigation, 
+25         waypointsNavigator\_->\hyperlink{classsmacc_1_1ISmaccComponent_ad1c9ede43be1f83c10c6e7a2e14db8d3}{configureEventSourceTypes}<OrNavigation, 
       \hyperlink{classsmacc_1_1ClMoveBaseZ}{smacc::ClMoveBaseZ}>();
-25     \}
+26 
+27         \textcolor{comment}{//odomtracker->initialize("/");}
+28         \textcolor{comment}{//this->createComponent<OrNavigation, smacc::WaypointNavigator, >(movebaseClient);}
+29     \}
 \end{DoxyCode}
 
 

@@ -1,10 +1,7 @@
 <map id="sm_dance_bot::CbUndoPathBackwards::onEntry" name="sm_dance_bot::CbUndoPathBackwards::onEntry">
-<area shape="rect" id="node2" href="$classodom__tracker_1_1OdomTracker.html#a33cb7ab3947b27bf61fabb5be2dd87c9" title="odom_tracker::OdomTracker\l::getPath" alt="" coords="259,5,461,47"/>
-<area shape="rect" id="node3" href="$classsmacc_1_1SmaccClientBehavior.html#adc21bbd45d36bd81ca6f778ed161807a" title="smacc::SmaccClientBehavior\l::requiresClient" alt="" coords="256,71,464,112"/>
-<area shape="rect" id="node5" href="$classsmacc_1_1SmaccClientBehavior.html#a011246bb1424f8bf8c9322f652db9d88" title="smacc::SmaccClientBehavior\l::requiresComponent" alt="" coords="256,136,464,177"/>
-<area shape="rect" id="node8" href="$classsmacc_1_1SmaccActionClientBase.html#a58c67a87c5fb8ea1633573c58fe3eee1" title="smacc::SmaccActionClient\lBase::sendGoal" alt="" coords="264,201,456,243"/>
-<area shape="rect" id="node9" href="$classodom__tracker_1_1OdomTracker.html#ac001a40d1107ef0d88aa7db03cafb08c" title="odom_tracker::OdomTracker\l::setWorkingMode" alt="" coords="259,267,461,308"/>
-<area shape="rect" id="node4" href="$classsmacc_1_1Orthogonal.html#af6f6d9cc5bf5433f5fe3b640a6a0b8aa" title="smacc::Orthogonal::\lrequiresClient" alt="" coords="540,71,691,112"/>
-<area shape="rect" id="node6" href="$classsmacc_1_1ISmaccStateMachine.html#a21aae3a3134367aed33c47d55c452e95" title="smacc::ISmaccStateMachine\l::requiresComponent" alt="" coords="512,136,719,177"/>
-<area shape="rect" id="node7" href="$namespacesmacc.html#a458f5e70d468824fbcd66cc7729deaa8" title="smacc::demangleSymbol" alt="" coords="767,143,951,170"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccClient.html#adef78db601749ca63c19e74a27cb88cc" title="smacc::ISmaccClient\l::getComponent" alt="" coords="283,5,437,47"/>
+<area shape="rect" id="node3" href="$classodom__tracker_1_1OdomTracker.html#a33cb7ab3947b27bf61fabb5be2dd87c9" title="odom_tracker::OdomTracker\l::getPath" alt="" coords="259,71,461,112"/>
+<area shape="rect" id="node4" href="$classsmacc_1_1SmaccClientBehavior.html#a917f001e763a1059af337bf4e164f542" title="smacc::SmaccClientBehavior\l::requiresClient" alt="" coords="256,136,464,177"/>
+<area shape="rect" id="node6" href="$classsmacc_1_1SmaccActionClientBase.html#a58c67a87c5fb8ea1633573c58fe3eee1" title="smacc::SmaccActionClient\lBase::sendGoal" alt="" coords="264,201,456,243"/>
+<area shape="rect" id="node5" href="$classsmacc_1_1Orthogonal.html#abcde9f489cdf94acca381ea67649a723" title="smacc::Orthogonal::\lrequiresClient" alt="" coords="512,136,663,177"/>
 </map>
