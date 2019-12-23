@@ -102,7 +102,7 @@ References smacc\+::\+I\+Smacc\+State\+Machine\+::get\+Orthogonal(), and get\+St
 44     \textcolor{keywordflow}{if} (this->\hyperlink{classsmacc_1_1ISmaccState_a562bb3f9a3ac16b8be71e4794c9e7523}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_a66a6732a48dbc0bc7a95b57fba5ec980}{getOrthogonal}<TOrthogonal>(orthogonal))
 45     \{
 46         \textcolor{keyword}{auto} clientBehavior = std::shared\_ptr<TBehavior>(\textcolor{keyword}{new} TBehavior(args...));
-47         clientBehavior->template configureEventSourceTypes<TBehavior, TOrthogonal>();
+47         clientBehavior->template configureEventSourceTypes<TOrthogonal, TBehavior>();
 48         orthogonal->addClientBehavior(clientBehavior);
 49     \}
 50     \textcolor{keywordflow}{else}
@@ -687,7 +687,7 @@ Definition at line 61 of file smacc\+\_\+state.\+h.
 
 
 
-Referenced by get\+Param(), param(), set\+Param(), and smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::\+Smacc\+State().
+Referenced by get\+Param(), sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+Waypoints\+X\+::load\+Waypoints\+First\+Time(), param(), set\+Param(), and smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::\+Smacc\+State().
 
 
 

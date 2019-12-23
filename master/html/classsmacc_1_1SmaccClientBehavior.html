@@ -174,7 +174,7 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a532a84b947599545a9955949c3b76648"><td class="memTemplParams" colspan="2">template&lt;typename TDerived , typename TObjectTag &gt; </td></tr>
+<tr class="memitem:a532a84b947599545a9955949c3b76648"><td class="memTemplParams" colspan="2">template&lt;typename TObjectTag , typename TDerived &gt; </td></tr>
 <tr class="memitem:a532a84b947599545a9955949c3b76648"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccClientBehavior.html#a532a84b947599545a9955949c3b76648">configureEventSourceTypes</a> ()</td></tr>
 <tr class="separator:a532a84b947599545a9955949c3b76648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -238,7 +238,7 @@ Friends</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TDerived , typename TObjectTag &gt; </div>
+template&lt;typename TObjectTag , typename TDerived &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -453,11 +453,11 @@ template&lt;typename SmaccClientType &gt; </div>
 
 <p>Definition at line <a class="el" href="smacc__client__behavior__impl_8h_source.html#l00023">23</a> of file <a class="el" href="smacc__client__behavior__impl_8h_source.html">smacc_client_behavior_impl.h</a>.</p>
 
-<p>References <a class="el" href="smacc__client__behavior_8h_source.html#l00020">currentOrthogonal</a>, and <a class="el" href="smacc__orthogonal__impl_8h_source.html#l00058">smacc::Orthogonal::requiresClient()</a>.</p>
+<p>References <a class="el" href="smacc__client__behavior_8h_source.html#l00020">currentOrthogonal</a>, and <a class="el" href="smacc__orthogonal__impl_8h_source.html#l00067">smacc::Orthogonal::requiresClient()</a>.</p>
 
 <p>Referenced by <a class="el" href="cb__timer_8cpp_source.html#l00005">ros_timer_client::CbTimer::onEntry()</a>, <a class="el" href="cb__state__1_8h_source.html#l00011">sm_atomic::CbState1::onEntry()</a>, <a class="el" href="cb__tool__start_8h_source.html#l00013">sm_dance_bot::CbToolStart::onEntry()</a>, <a class="el" href="cb__tool__stop_8h_source.html#l00013">sm_dance_bot::CbToolStop::onEntry()</a>, <a class="el" href="smacc__client__library_2move__base__z__client_2move__base__z__client__plugin_2include_2move__bascbc9ae7d3990516ddb2c98e15a09bcd2_source.html#l00016">sm_dance_bot::CbUndoPathBackwards::onEntry()</a>, <a class="el" href="cb__keyboard__behavior_8h_source.html#l00016">sm_three_some::CbKeyboard::onEntry()</a>, <a class="el" href="cb__updatable__publisher_8h_source.html#l00018">sm_dance_bot::CbUpdatableStringPublisher::onEntry()</a>, <a class="el" href="cb__string__publisher_8h_source.html#l00021">sm_dance_bot::CbStringPublisher::onEntry()</a>, <a class="el" href="smacc__client__library_2move__base__z__client_2move__base__z__client__plugin_2include_2move__bas2ff277154dfb9bba8a39d43e74a5a16e_source.html#l00030">sm_dance_bot::CbRotate::onEntry()</a>, <a class="el" href="smacc__client__library_2move__base__z__client_2move__base__z__client__plugin_2include_2move__base314f1b987667b08527fd8e96cdcf0a7_source.html#l00032">sm_dance_bot::CbNavigateGlobalPosition::onEntry()</a>, <a class="el" href="smacc__client__library_2move__base__z__client_2move__base__z__client__plugin_2include_2move__bas3f31d4d52bbf09e30133b849422d4b0f_source.html#l00033">sm_dance_bot::CbNavigateForward::onEntry()</a>, <a class="el" href="smacc__client__library_2move__base__z__client_2move__base__z__client__plugin_2include_2move__basef18dba82c6c9ec751438c97ecb125e5_source.html#l00038">sm_dance_bot::CbNavigateBackwards::onEntry()</a>, and <a class="el" href="cb__sensor__base_8h_source.html#l00058">smacc::SensorTopic&lt; ClTemperatureSensor &gt;::onEntry()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classsmacc_1_1SmaccClientBehavior.html#a642742da14ffa20e323a03eefecfc8b2">currentOrthogonal</a>-&gt;<a class="code" href="classsmacc_1_1Orthogonal.html#abcde9f489cdf94acca381ea67649a723">requiresClient</a>(storage);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div><div class="ttc" id="classsmacc_1_1SmaccClientBehavior_html_a642742da14ffa20e323a03eefecfc8b2"><div class="ttname"><a href="classsmacc_1_1SmaccClientBehavior.html#a642742da14ffa20e323a03eefecfc8b2">smacc::SmaccClientBehavior::currentOrthogonal</a></div><div class="ttdeci">smacc::Orthogonal * currentOrthogonal</div><div class="ttdef"><b>Definition:</b> <a href="smacc__client__behavior_8h_source.html#l00020">smacc_client_behavior.h:20</a></div></div>
-<div class="ttc" id="classsmacc_1_1Orthogonal_html_abcde9f489cdf94acca381ea67649a723"><div class="ttname"><a href="classsmacc_1_1Orthogonal.html#abcde9f489cdf94acca381ea67649a723">smacc::Orthogonal::requiresClient</a></div><div class="ttdeci">void requiresClient(SmaccClientType *&amp;storage)</div><div class="ttdef"><b>Definition:</b> <a href="smacc__orthogonal__impl_8h_source.html#l00058">smacc_orthogonal_impl.h:58</a></div></div>
+<div class="ttc" id="classsmacc_1_1Orthogonal_html_abcde9f489cdf94acca381ea67649a723"><div class="ttname"><a href="classsmacc_1_1Orthogonal.html#abcde9f489cdf94acca381ea67649a723">smacc::Orthogonal::requiresClient</a></div><div class="ttdeci">void requiresClient(SmaccClientType *&amp;storage)</div><div class="ttdef"><b>Definition:</b> <a href="smacc__orthogonal__impl_8h_source.html#l00067">smacc_orthogonal_impl.h:67</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>

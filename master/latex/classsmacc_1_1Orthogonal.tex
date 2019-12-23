@@ -125,7 +125,7 @@ Here is the call graph for this function\+:
 )}\hypertarget{classsmacc_1_1Orthogonal_a8676cb5a7fe77d5ba1ddca2c2f4946df}{}\label{classsmacc_1_1Orthogonal_a8676cb5a7fe77d5ba1ddca2c2f4946df}
 
 
-Definition at line 28 of file smacc\+\_\+orthogonal\+\_\+impl.\+h.
+Definition at line 29 of file smacc\+\_\+orthogonal\+\_\+impl.\+h.
 
 
 
@@ -133,20 +133,31 @@ References smacc\+::demangle\+Type().
 
 
 \begin{DoxyCode}
-29 \{
-30     ROS\_INFO(\textcolor{stringliteral}{"[%s] creates a client of type '%s' and object tag '%s'"},
-31              \hyperlink{namespacesmacc_a792e7a3ea0843e87543a465b446ae730}{demangleType}(\textcolor{keyword}{typeid}(*\textcolor{keyword}{this})).c\_str(),
-32              demangledTypeName<TClient>().c\_str(),
-33              demangledTypeName<TObjectTag>().c\_str());
-34     \textcolor{keyword}{auto} client = std::make\_shared<TClient>(args...);
-35     client->setStateMachine(\hyperlink{classsmacc_1_1Orthogonal_acea2058ac94667e46fc60ed3d4f524f7}{stateMachine\_});
-36 
-37     client->template configureEventSourceTypes<TClient, TObjectTag>();
-38     EventFactory<TClient, TObjectTag> eventfactory;
-39 
-40     \hyperlink{classsmacc_1_1Orthogonal_a361fd1c4a5b0e6eadd55e919c19969cc}{clients\_}.push\_back(client);
-41     \textcolor{keywordflow}{return} client;
-42 \}
+30 \{
+31     static\_assert(std::is\_base\_of<Orthogonal, TObjectTag>::value, \textcolor{stringliteral}{"The object Tag must be the orthogonal
+       type where the client was created"});
+32     \textcolor{keywordflow}{if}(\textcolor{keyword}{typeid}(*\textcolor{keyword}{this}) != \textcolor{keyword}{typeid}(TObjectTag))
+33     \{
+34         ROS\_ERROR\_STREAM(\textcolor{stringliteral}{"Error creating client. The object Tag must be the type of the orthogonal where
+       the client was created:"} << \hyperlink{namespacesmacc_a792e7a3ea0843e87543a465b446ae730}{demangleType}(\textcolor{keyword}{typeid}(*\textcolor{keyword}{this})) << \textcolor{stringliteral}{". The object creation was skipped and
+       a nullptr was returned"});
+35         \textcolor{keywordflow}{return} \textcolor{keyword}{nullptr};
+36     \}
+37     
+38     ROS\_INFO(\textcolor{stringliteral}{"[%s] creates a client of type '%s' and object tag '%s'"},
+39              \hyperlink{namespacesmacc_a792e7a3ea0843e87543a465b446ae730}{demangleType}(\textcolor{keyword}{typeid}(*\textcolor{keyword}{this})).c\_str(),
+40              demangledTypeName<TClient>().c\_str(),
+41              demangledTypeName<TObjectTag>().c\_str());
+42 
+43     \textcolor{keyword}{auto} client = std::make\_shared<TClient>(args...);
+44     client->setStateMachine(\hyperlink{classsmacc_1_1Orthogonal_acea2058ac94667e46fc60ed3d4f524f7}{stateMachine\_});
+45 
+46     client->template configureEventSourceTypes<TObjectTag, TClient>();
+47     EventFactory<TClient, TObjectTag> eventfactory;
+48 
+49     \hyperlink{classsmacc_1_1Orthogonal_a361fd1c4a5b0e6eadd55e919c19969cc}{clients\_}.push\_back(client);
+50     \textcolor{keywordflow}{return} client;
+51 \}
 \end{DoxyCode}
 
 
@@ -401,7 +412,7 @@ Here is the caller graph for this function\+:
 )}\hypertarget{classsmacc_1_1Orthogonal_abcde9f489cdf94acca381ea67649a723}{}\label{classsmacc_1_1Orthogonal_abcde9f489cdf94acca381ea67649a723}
 
 
-Definition at line 58 of file smacc\+\_\+orthogonal\+\_\+impl.\+h.
+Definition at line 67 of file smacc\+\_\+orthogonal\+\_\+impl.\+h.
 
 
 
@@ -409,18 +420,14 @@ Referenced by smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client().
 
 
 \begin{DoxyCode}
-59 \{
-60     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &client : \hyperlink{classsmacc_1_1Orthogonal_a361fd1c4a5b0e6eadd55e919c19969cc}{clients\_})
-61     \{
-62         storage = \textcolor{keyword}{dynamic\_cast<}SmaccClientType *\textcolor{keyword}{>}(client.get());
-63         \textcolor{keywordflow}{if} (storage != \textcolor{keyword}{nullptr})
-64             \textcolor{keywordflow}{return};
-65     \}
-66 
-67     ROS\_ERROR(\textcolor{stringliteral}{"[Client requirement] Client of type '%s' not found in any orthogonal of the current state
-       machine. This may produce a segmentation fault in some posterior code."}, demangleSymbol<SmaccClientType>().
-      c\_str());
-68 \}
+68 \{
+69     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &client : \hyperlink{classsmacc_1_1Orthogonal_a361fd1c4a5b0e6eadd55e919c19969cc}{clients\_})
+70     \{
+71         storage = \textcolor{keyword}{dynamic\_cast<}SmaccClientType *\textcolor{keyword}{>}(client.get());
+72         \textcolor{keywordflow}{if} (storage != \textcolor{keyword}{nullptr})
+73             \textcolor{keywordflow}{return};
+74     \}
+75 \}
 \end{DoxyCode}
 
 
@@ -443,20 +450,20 @@ Here is the caller graph for this function\+:
 )}\hypertarget{classsmacc_1_1Orthogonal_a433bda80701bebd5d801685d31b08115}{}\label{classsmacc_1_1Orthogonal_a433bda80701bebd5d801685d31b08115}
 
 
-Definition at line 45 of file smacc\+\_\+orthogonal\+\_\+impl.\+h.
+Definition at line 54 of file smacc\+\_\+orthogonal\+\_\+impl.\+h.
 
 
 \begin{DoxyCode}
-46 \{
-47     \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1Orthogonal_acea2058ac94667e46fc60ed3d4f524f7}{stateMachine\_} == \textcolor{keyword}{nullptr})
-48     \{
-49         ROS\_ERROR(\textcolor{stringliteral}{"Cannot use the requiresComponent funcionality from an orthogonal before onInitialize"});
-50     \}
-51     \textcolor{keywordflow}{else}
-52     \{
-53         \hyperlink{classsmacc_1_1Orthogonal_acea2058ac94667e46fc60ed3d4f524f7}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_aa6b25e28f3bce24c4b356dc865a9eb7b}{requiresComponent}(storage);
-54     \}
-55 \}
+55 \{
+56     \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1Orthogonal_acea2058ac94667e46fc60ed3d4f524f7}{stateMachine\_} == \textcolor{keyword}{nullptr})
+57     \{
+58         ROS\_ERROR(\textcolor{stringliteral}{"Cannot use the requiresComponent funcionality from an orthogonal before onInitialize"});
+59     \}
+60     \textcolor{keywordflow}{else}
+61     \{
+62         \hyperlink{classsmacc_1_1Orthogonal_acea2058ac94667e46fc60ed3d4f524f7}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_aa6b25e28f3bce24c4b356dc865a9eb7b}{requiresComponent}(storage);
+63     \}
+64 \}
 \end{DoxyCode}
 \index{smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}!set\+State\+Machine@{set\+State\+Machine}}
 \index{set\+State\+Machine@{set\+State\+Machine}!smacc\+::\+Orthogonal@{smacc\+::\+Orthogonal}}

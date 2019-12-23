@@ -1,12 +1,12 @@
-\hypertarget{classsmacc_1_1EventFactory}{}\section{smacc\+:\+:Event\+Factory$<$ T\+Derived, T\+Object\+Tag $>$ Class Template Reference}
-\label{classsmacc_1_1EventFactory}\index{smacc\+::\+Event\+Factory$<$ T\+Derived, T\+Object\+Tag $>$@{smacc\+::\+Event\+Factory$<$ T\+Derived, T\+Object\+Tag $>$}}
+\hypertarget{classsmacc_1_1EventFactory}{}\section{smacc\+:\+:Event\+Factory$<$ T\+Object\+Tag, T\+Derived $>$ Class Template Reference}
+\label{classsmacc_1_1EventFactory}\index{smacc\+::\+Event\+Factory$<$ T\+Object\+Tag, T\+Derived $>$@{smacc\+::\+Event\+Factory$<$ T\+Object\+Tag, T\+Derived $>$}}
 
 
 {\ttfamily \#include $<$smacc\+\_\+orthogonal\+\_\+impl.\+h$>$}
 
 
 
-Collaboration diagram for smacc\+:\+:Event\+Factory$<$ T\+Derived, T\+Object\+Tag $>$\+:
+Collaboration diagram for smacc\+:\+:Event\+Factory$<$ T\+Object\+Tag, T\+Derived $>$\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -17,52 +17,52 @@ Collaboration diagram for smacc\+:\+:Event\+Factory$<$ T\+Derived, T\+Object\+Ta
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$typename T\+Component $>$ }\\void \hyperlink{classsmacc_1_1EventFactory_a394d4e1f425d841e72619270cc6b874a}{on\+Component\+Added} (T\+Component $\ast$t)
+{\footnotesize template$<$typename T\+Component $>$ }\\void \hyperlink{classsmacc_1_1EventFactory_ad5cb419271a1cd8d6fddd58bda12a2ca}{on\+Component\+Added} (T\+Component $\ast$t)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::function$<$ void()$>$ \hyperlink{classsmacc_1_1EventFactory_ac0b34b9a502aca2c5614f0d45c0a9a58}{post\+Event}
+std\+::function$<$ void()$>$ \hyperlink{classsmacc_1_1EventFactory_ad633758137e9574e942422889952a3ba}{post\+Event}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\subsubsection*{template$<$typename T\+Derived, typename T\+Object\+Tag$>$\\*
-class smacc\+::\+Event\+Factory$<$ T\+Derived, T\+Object\+Tag $>$}
+\subsubsection*{template$<$typename T\+Object\+Tag, typename T\+Derived$>$\\*
+class smacc\+::\+Event\+Factory$<$ T\+Object\+Tag, T\+Derived $>$}
 
 
 
-Definition at line 16 of file smacc\+\_\+orthogonal\+\_\+impl.\+h.
+Definition at line 17 of file smacc\+\_\+orthogonal\+\_\+impl.\+h.
 
 
 
 \subsection{Member Function Documentation}
 \index{smacc\+::\+Event\+Factory@{smacc\+::\+Event\+Factory}!on\+Component\+Added@{on\+Component\+Added}}
 \index{on\+Component\+Added@{on\+Component\+Added}!smacc\+::\+Event\+Factory@{smacc\+::\+Event\+Factory}}
-\subsubsection[{\texorpdfstring{on\+Component\+Added(\+T\+Component $\ast$t)}{onComponentAdded(TComponent *t)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived , typename T\+Object\+Tag $>$ template$<$typename T\+Component $>$ void {\bf smacc\+::\+Event\+Factory}$<$ T\+Derived, T\+Object\+Tag $>$\+::on\+Component\+Added (
+\subsubsection[{\texorpdfstring{on\+Component\+Added(\+T\+Component $\ast$t)}{onComponentAdded(TComponent *t)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Object\+Tag , typename T\+Derived $>$ template$<$typename T\+Component $>$ void {\bf smacc\+::\+Event\+Factory}$<$ T\+Object\+Tag, T\+Derived $>$\+::on\+Component\+Added (
 \begin{DoxyParamCaption}
 \item[{T\+Component $\ast$}]{t}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classsmacc_1_1EventFactory_a394d4e1f425d841e72619270cc6b874a}{}\label{classsmacc_1_1EventFactory_a394d4e1f425d841e72619270cc6b874a}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classsmacc_1_1EventFactory_ad5cb419271a1cd8d6fddd58bda12a2ca}{}\label{classsmacc_1_1EventFactory_ad5cb419271a1cd8d6fddd58bda12a2ca}
 
 
-Definition at line 21 of file smacc\+\_\+orthogonal\+\_\+impl.\+h.
+Definition at line 22 of file smacc\+\_\+orthogonal\+\_\+impl.\+h.
 
 
 \begin{DoxyCode}
-22     \{
-23         t->configureEventSourceTypes(\textcolor{keyword}{this});
-24     \}
+23     \{
+24         t->configureEventSourceTypes(\textcolor{keyword}{this});
+25     \}
 \end{DoxyCode}
 
 
 \subsection{Member Data Documentation}
 \index{smacc\+::\+Event\+Factory@{smacc\+::\+Event\+Factory}!post\+Event@{post\+Event}}
 \index{post\+Event@{post\+Event}!smacc\+::\+Event\+Factory@{smacc\+::\+Event\+Factory}}
-\subsubsection[{\texorpdfstring{post\+Event}{postEvent}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived , typename T\+Object\+Tag $>$ std\+::function$<$void()$>$ {\bf smacc\+::\+Event\+Factory}$<$ T\+Derived, T\+Object\+Tag $>$\+::post\+Event\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1EventFactory_ac0b34b9a502aca2c5614f0d45c0a9a58}{}\label{classsmacc_1_1EventFactory_ac0b34b9a502aca2c5614f0d45c0a9a58}
+\subsubsection[{\texorpdfstring{post\+Event}{postEvent}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Object\+Tag , typename T\+Derived $>$ std\+::function$<$void()$>$ {\bf smacc\+::\+Event\+Factory}$<$ T\+Object\+Tag, T\+Derived $>$\+::post\+Event\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1EventFactory_ad633758137e9574e942422889952a3ba}{}\label{classsmacc_1_1EventFactory_ad633758137e9574e942422889952a3ba}
 
 
-Definition at line 18 of file smacc\+\_\+orthogonal\+\_\+impl.\+h.
+Definition at line 19 of file smacc\+\_\+orthogonal\+\_\+impl.\+h.
 
 
 
