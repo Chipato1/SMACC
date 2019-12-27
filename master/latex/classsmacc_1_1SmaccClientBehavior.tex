@@ -39,6 +39,8 @@ virtual void \hyperlink{classsmacc_1_1SmaccClientBehavior_ac0cd72d42bd00425362a9
 \item 
 {\footnotesize template$<$typename Event\+Type $>$ }\\void \hyperlink{classsmacc_1_1SmaccClientBehavior_ab29b23145ea074ad69340fc0af6fbb75}{post\+Event} (const Event\+Type \&ev)
 \item 
+{\footnotesize template$<$typename Event\+Type $>$ }\\void \hyperlink{classsmacc_1_1SmaccClientBehavior_a3152cd2215ebc0e387a8a546de07cded}{post\+Event} ()
+\item 
 {\footnotesize template$<$typename Smacc\+Client\+Type $>$ }\\void \hyperlink{classsmacc_1_1SmaccClientBehavior_a917f001e763a1059af337bf4e164f542}{requires\+Client} (Smacc\+Client\+Type $\ast$\&storage)
 \item 
 {\footnotesize template$<$typename Smacc\+Component\+Type $>$ }\\void \hyperlink{classsmacc_1_1SmaccClientBehavior_adee6abe3a28aa6b47d3dd5267e264b4d}{requires\+Component} (Smacc\+Component\+Type $\ast$\&storage)
@@ -46,7 +48,7 @@ virtual void \hyperlink{classsmacc_1_1SmaccClientBehavior_ac0cd72d42bd00425362a9
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classsmacc_1_1ISmaccStateMachine}{I\+Smacc\+State\+Machine} $\ast$ \hyperlink{classsmacc_1_1SmaccClientBehavior_aa1c28c177d50a471c88c6a577cd6077e}{state\+Machine}
+\hyperlink{classsmacc_1_1ISmaccStateMachine}{I\+Smacc\+State\+Machine} $\ast$ \hyperlink{classsmacc_1_1SmaccClientBehavior_a7950b5684d6de0a8e8959c0936ce9a19}{state\+Machine\+\_\+}
 \item 
 \hyperlink{classsmacc_1_1ISmaccState}{I\+Smacc\+State} $\ast$ \hyperlink{classsmacc_1_1SmaccClientBehavior_af76fc9b877542ed5caf033f820c107d0}{current\+State}
 \item 
@@ -85,12 +87,12 @@ Definition at line 5 of file smacc\+\_\+substate\+\_\+behavior.\+cpp.
 
 
 
-References current\+State, and state\+Machine.
+References current\+State, and state\+Machine\+\_\+.
 
 
 \begin{DoxyCode}
 6 \{
-7     \hyperlink{classsmacc_1_1SmaccClientBehavior_aa1c28c177d50a471c88c6a577cd6077e}{stateMachine} = \textcolor{keyword}{nullptr};
+7     \hyperlink{classsmacc_1_1SmaccClientBehavior_a7950b5684d6de0a8e8959c0936ce9a19}{stateMachine\_} = \textcolor{keyword}{nullptr};
 8     \hyperlink{classsmacc_1_1SmaccClientBehavior_af76fc9b877542ed5caf033f820c107d0}{currentState} = \textcolor{keyword}{nullptr};
 9 \}
 \end{DoxyCode}
@@ -123,11 +125,11 @@ Definition at line 11 of file smacc\+\_\+substate\+\_\+behavior.\+cpp.
 )\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SmaccClientBehavior_a532a84b947599545a9955949c3b76648}{}\label{classsmacc_1_1SmaccClientBehavior_a532a84b947599545a9955949c3b76648}
 
 
-Definition at line 42 of file smacc\+\_\+client\+\_\+behavior\+\_\+impl.\+h.
+Definition at line 55 of file smacc\+\_\+client\+\_\+behavior\+\_\+impl.\+h.
 
 
 \begin{DoxyCode}
-42 \{\}
+55 \{\}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+Client\+Behavior@{smacc\+::\+Smacc\+Client\+Behavior}!get\+Name@{get\+Name}}
 \index{get\+Name@{get\+Name}!smacc\+::\+Smacc\+Client\+Behavior@{smacc\+::\+Smacc\+Client\+Behavior}}
@@ -187,7 +189,7 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classsmacc_1_1SmaccClientBehavior_a7962382f93987c720ad432fef55b123f}{}\label{classsmacc_1_1SmaccClientBehavior_a7962382f93987c720ad432fef55b123f}
 
 
-Reimplemented in \hyperlink{classsmacc_1_1SensorTopic_aa18961f866b7427973acb2660c8e39ee}{smacc\+::\+Sensor\+Topic$<$ Client\+Type $>$}, \hyperlink{classsmacc_1_1SensorTopic_aa18961f866b7427973acb2660c8e39ee}{smacc\+::\+Sensor\+Topic$<$ Cl\+Laser\+Sensor $>$}, \hyperlink{classsmacc_1_1SensorTopic_aa18961f866b7427973acb2660c8e39ee}{smacc\+::\+Sensor\+Topic$<$ Cl\+Temperature\+Sensor $>$}, \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_a5d7816a541c5f7121c9909d5b43a81c8}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}, \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_a5d7816a541c5f7121c9909d5b43a81c8}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}, \hyperlink{classsm__dance__bot_1_1CbNavigateForward_a8dd85c804a3d69587d0d6b7a1c4bc6a3}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Forward}, \hyperlink{classsm__dance__bot_1_1CbNavigateForward_a8dd85c804a3d69587d0d6b7a1c4bc6a3}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Forward}, \hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a281fe5c962ca5004f44e929159991c6a}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Global\+Position}, \hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a281fe5c962ca5004f44e929159991c6a}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Global\+Position}, \hyperlink{classsm__dance__bot_1_1CbRotate_ad4e05a82d567baea5e373b7eec187760}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Rotate}, \hyperlink{classsm__dance__bot_1_1CbRotate_ad4e05a82d567baea5e373b7eec187760}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Rotate}, \hyperlink{classsm__dance__bot_1_1CbService3_ad55a19f6755b493f9cef0f7620cd382c}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Service3}, \hyperlink{classsm__dance__bot_1_1CbStringPublisher_af1f114aba3bb34d40f4e3b3fb00809e9}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+String\+Publisher}, \hyperlink{classsm__dance__bot_1_1CbUpdatableStringPublisher_a9167c33305953b7aed74bf7f35f1eae8}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Updatable\+String\+Publisher}, \hyperlink{structsm__dance__bot_1_1CbLidarSensor_ab3d6ddb06d7c9777f8522c89f40b0606}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Lidar\+Sensor}, \hyperlink{classsm__dance__bot_1_1CbUndoPathBackwards_a5ecdf83df96ab3d74eb4e4febea7fa74}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Undo\+Path\+Backwards}, \hyperlink{classsm__dance__bot_1_1CbUndoPathBackwards_a5ecdf83df96ab3d74eb4e4febea7fa74}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Undo\+Path\+Backwards}, \hyperlink{classsm__three__some_1_1CbKeyboard_af5fe2932db5f471afa125cae35362ba7}{sm\+\_\+three\+\_\+some\+::\+Cb\+Keyboard}, \hyperlink{classsm__dance__bot_1_1CbToolStart_ada528d3305c51d88ee9dace1087b258a}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Tool\+Start}, \hyperlink{classsm__dance__bot_1_1CbToolStop_a453bebcefc3f8217bfe37f85a29ecf25}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Tool\+Stop}, \hyperlink{classsm__three__some_1_1CbBehavior1_a6cf4b84d690a925083bbe38f28830fd6}{sm\+\_\+three\+\_\+some\+::\+Cb\+Behavior1}, \hyperlink{classros__timer__client_1_1CbTimer_a25c086b5988642602938d92f9555ce18}{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer}, \hyperlink{structsm__atomic_1_1CbState1_afdd883f27c415d8485658c74fae1008e}{sm\+\_\+atomic\+::\+Cb\+State1}, \hyperlink{classsm__three__some_1_1CbBehavior1b_a82e1a5a580ccaf3130c2cb3cd638309d}{sm\+\_\+three\+\_\+some\+::\+Cb\+Behavior1b}, \hyperlink{classsm__three__some_1_1CbBehavior2b_ab04f8cba845a4300f475af94441a4030}{sm\+\_\+three\+\_\+some\+::\+Cb\+Behavior2b}, and \hyperlink{classsm__three__some_1_1CbBehavior2_afe7a4515a9bca7459a2544bd4ec1db44}{sm\+\_\+three\+\_\+some\+::\+Cb\+Behavior2}.
+Reimplemented in \hyperlink{classsmacc_1_1SensorTopic_aa18961f866b7427973acb2660c8e39ee}{smacc\+::\+Sensor\+Topic$<$ Client\+Type $>$}, \hyperlink{classsmacc_1_1SensorTopic_aa18961f866b7427973acb2660c8e39ee}{smacc\+::\+Sensor\+Topic$<$ Cl\+Laser\+Sensor $>$}, \hyperlink{classsmacc_1_1SensorTopic_aa18961f866b7427973acb2660c8e39ee}{smacc\+::\+Sensor\+Topic$<$ Cl\+Temperature\+Sensor $>$}, \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_a5d7816a541c5f7121c9909d5b43a81c8}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}, \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_a5d7816a541c5f7121c9909d5b43a81c8}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}, \hyperlink{classsm__dance__bot_1_1CbNavigateForward_a8dd85c804a3d69587d0d6b7a1c4bc6a3}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Forward}, \hyperlink{classsm__dance__bot_1_1CbNavigateForward_a8dd85c804a3d69587d0d6b7a1c4bc6a3}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Forward}, \hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a281fe5c962ca5004f44e929159991c6a}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Global\+Position}, \hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a281fe5c962ca5004f44e929159991c6a}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Global\+Position}, \hyperlink{classsm__dance__bot_1_1CbRotate_ad4e05a82d567baea5e373b7eec187760}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Rotate}, \hyperlink{classsm__dance__bot_1_1CbRotate_ad4e05a82d567baea5e373b7eec187760}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Rotate}, \hyperlink{classsm__dance__bot_1_1CbService3_ad55a19f6755b493f9cef0f7620cd382c}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Service3}, \hyperlink{classsm__dance__bot_1_1CbStringPublisher_af1f114aba3bb34d40f4e3b3fb00809e9}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+String\+Publisher}, \hyperlink{classsm__dance__bot_1_1CbUpdatableStringPublisher_a9167c33305953b7aed74bf7f35f1eae8}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Updatable\+String\+Publisher}, \hyperlink{structsm__dance__bot_1_1CbLidarSensor_ab3d6ddb06d7c9777f8522c89f40b0606}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Lidar\+Sensor}, \hyperlink{classsm__dance__bot_1_1CbUndoPathBackwards_a5ecdf83df96ab3d74eb4e4febea7fa74}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Undo\+Path\+Backwards}, \hyperlink{classsm__dance__bot_1_1CbUndoPathBackwards_a5ecdf83df96ab3d74eb4e4febea7fa74}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Undo\+Path\+Backwards}, \hyperlink{classsm__three__some_1_1CbKeyboard_af5fe2932db5f471afa125cae35362ba7}{sm\+\_\+three\+\_\+some\+::\+Cb\+Keyboard}, \hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_a605db5c7a861d214d5f9bccfbab5c9ab}{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}, \hyperlink{classros__timer__client_1_1CbTimerSingleCountdown_aa0b720ca2a29214476f03be27d8c466c}{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Single\+Countdown}, \hyperlink{classsm__dance__bot_1_1CbToolStart_ada528d3305c51d88ee9dace1087b258a}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Tool\+Start}, \hyperlink{classsm__dance__bot_1_1CbToolStop_a453bebcefc3f8217bfe37f85a29ecf25}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Tool\+Stop}, \hyperlink{classsm__three__some_1_1CbBehavior1_a6cf4b84d690a925083bbe38f28830fd6}{sm\+\_\+three\+\_\+some\+::\+Cb\+Behavior1}, \hyperlink{classros__timer__client_1_1CbTimer_a25c086b5988642602938d92f9555ce18}{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer}, \hyperlink{classsm__three__some_1_1CbBehavior1b_a82e1a5a580ccaf3130c2cb3cd638309d}{sm\+\_\+three\+\_\+some\+::\+Cb\+Behavior1b}, \hyperlink{classsm__three__some_1_1CbBehavior2b_ab04f8cba845a4300f475af94441a4030}{sm\+\_\+three\+\_\+some\+::\+Cb\+Behavior2b}, and \hyperlink{classsm__three__some_1_1CbBehavior2_afe7a4515a9bca7459a2544bd4ec1db44}{sm\+\_\+three\+\_\+some\+::\+Cb\+Behavior2}.
 
 
 
@@ -224,7 +226,7 @@ Here is the call graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classsmacc_1_1SmaccClientBehavior_ac0cd72d42bd00425362a97c9803ecce5}{}\label{classsmacc_1_1SmaccClientBehavior_ac0cd72d42bd00425362a97c9803ecce5}
 
 
-Reimplemented in \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ac85cc397d597120fc8906b98d4241fe8}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}, \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ac85cc397d597120fc8906b98d4241fe8}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}, \hyperlink{classsm__dance__bot_1_1CbNavigateForward_abd291ba77cd42537324eb9fbfc44cd22}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Forward}, \hyperlink{classsm__dance__bot_1_1CbNavigateForward_abd291ba77cd42537324eb9fbfc44cd22}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Forward}, \hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a63737ce810efefc8c29e6b1b332d2e11}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Global\+Position}, \hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a63737ce810efefc8c29e6b1b332d2e11}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Global\+Position}, \hyperlink{classsmacc_1_1SensorTopic_a3d667ad8340bd04a8a6b84eccfebe3f0}{smacc\+::\+Sensor\+Topic$<$ Client\+Type $>$}, \hyperlink{classsmacc_1_1SensorTopic_a3d667ad8340bd04a8a6b84eccfebe3f0}{smacc\+::\+Sensor\+Topic$<$ Cl\+Laser\+Sensor $>$}, \hyperlink{classsmacc_1_1SensorTopic_a3d667ad8340bd04a8a6b84eccfebe3f0}{smacc\+::\+Sensor\+Topic$<$ Cl\+Temperature\+Sensor $>$}, \hyperlink{classsm__dance__bot_1_1CbStringPublisher_a487d8302e60f01401a7d189382ba5f73}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+String\+Publisher}, \hyperlink{classsm__dance__bot_1_1CbUpdatableStringPublisher_a16af5659caeae65c4782a4fcf82ac05e}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Updatable\+String\+Publisher}, \hyperlink{classsm__dance__bot_1_1CbToolStart_a5cb9f2b22b8039e3745f997cd2301775}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Tool\+Start}, \hyperlink{classsm__dance__bot_1_1CbToolStop_a84f13b3392558cdabd7a141445b0fa02}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Tool\+Stop}, and \hyperlink{classros__timer__client_1_1CbTimer_a27d62ebacf667d4c2518c0416ee7b25b}{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer}.
+Reimplemented in \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ac85cc397d597120fc8906b98d4241fe8}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}, \hyperlink{classsm__dance__bot_1_1CbNavigateBackwards_ac85cc397d597120fc8906b98d4241fe8}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards}, \hyperlink{classsm__dance__bot_1_1CbNavigateForward_abd291ba77cd42537324eb9fbfc44cd22}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Forward}, \hyperlink{classsm__dance__bot_1_1CbNavigateForward_abd291ba77cd42537324eb9fbfc44cd22}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Forward}, \hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a63737ce810efefc8c29e6b1b332d2e11}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Global\+Position}, \hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a63737ce810efefc8c29e6b1b332d2e11}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Global\+Position}, \hyperlink{classsmacc_1_1SensorTopic_a3d667ad8340bd04a8a6b84eccfebe3f0}{smacc\+::\+Sensor\+Topic$<$ Client\+Type $>$}, \hyperlink{classsmacc_1_1SensorTopic_a3d667ad8340bd04a8a6b84eccfebe3f0}{smacc\+::\+Sensor\+Topic$<$ Cl\+Laser\+Sensor $>$}, \hyperlink{classsmacc_1_1SensorTopic_a3d667ad8340bd04a8a6b84eccfebe3f0}{smacc\+::\+Sensor\+Topic$<$ Cl\+Temperature\+Sensor $>$}, \hyperlink{classsm__dance__bot_1_1CbStringPublisher_a487d8302e60f01401a7d189382ba5f73}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+String\+Publisher}, \hyperlink{classsm__dance__bot_1_1CbUpdatableStringPublisher_a16af5659caeae65c4782a4fcf82ac05e}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Updatable\+String\+Publisher}, \hyperlink{classsm__dance__bot_1_1CbToolStart_a5cb9f2b22b8039e3745f997cd2301775}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Tool\+Start}, \hyperlink{classsm__dance__bot_1_1CbToolStop_a84f13b3392558cdabd7a141445b0fa02}{sm\+\_\+dance\+\_\+bot\+::\+Cb\+Tool\+Stop}, \hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_ac03676bee050ee3978267f352af80b3a}{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}, \hyperlink{classros__timer__client_1_1CbTimerSingleCountdown_a05b5b753c65e4f071670e85e1b7a3302}{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Single\+Countdown}, and \hyperlink{classros__timer__client_1_1CbTimer_a27d62ebacf667d4c2518c0416ee7b25b}{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer}.
 
 
 
@@ -265,23 +267,19 @@ Definition at line 10 of file smacc\+\_\+client\+\_\+behavior\+\_\+impl.\+h.
 
 
 
-References smacc\+::\+I\+Smacc\+State\+Machine\+::post\+Event(), and state\+Machine.
-
-
-
-Referenced by smacc\+::\+Sensor\+Topic$<$ Cl\+Temperature\+Sensor $>$\+::configure\+Event\+Source\+Types(), ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+::on\+Entry(), and sm\+\_\+three\+\_\+some\+::\+Cb\+Keyboard\+::post\+Key\+Event().
+References smacc\+::\+I\+Smacc\+State\+Machine\+::post\+Event(), and state\+Machine\+\_\+.
 
 
 \begin{DoxyCode}
 11 \{
-12     \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1SmaccClientBehavior_aa1c28c177d50a471c88c6a577cd6077e}{stateMachine} == \textcolor{keyword}{nullptr})
+12     \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1SmaccClientBehavior_a7950b5684d6de0a8e8959c0936ce9a19}{stateMachine\_} == \textcolor{keyword}{nullptr})
 13     \{
 14         ROS\_ERROR(\textcolor{stringliteral}{"The client behavior cannot post events before being assigned to an orthogonal. Ignoring
        post event call."});
 15     \}
 16     \textcolor{keywordflow}{else}
 17     \{
-18         \hyperlink{classsmacc_1_1SmaccClientBehavior_aa1c28c177d50a471c88c6a577cd6077e}{stateMachine}->\hyperlink{classsmacc_1_1ISmaccStateMachine_ad80cdd7bbc9a9f3b221c625754fed1ed}{postEvent}(ev);
+18         \hyperlink{classsmacc_1_1SmaccClientBehavior_a7950b5684d6de0a8e8959c0936ce9a19}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_ad80cdd7bbc9a9f3b221c625754fed1ed}{postEvent}(ev);
 19     \}
 20 \}
 \end{DoxyCode}
@@ -297,6 +295,39 @@ Here is the call graph for this function\+:
 \end{figure}
 
 
+\index{smacc\+::\+Smacc\+Client\+Behavior@{smacc\+::\+Smacc\+Client\+Behavior}!post\+Event@{post\+Event}}
+\index{post\+Event@{post\+Event}!smacc\+::\+Smacc\+Client\+Behavior@{smacc\+::\+Smacc\+Client\+Behavior}}
+\subsubsection[{\texorpdfstring{post\+Event()}{postEvent()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Event\+Type $>$ void smacc\+::\+Smacc\+Client\+Behavior\+::post\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1SmaccClientBehavior_a3152cd2215ebc0e387a8a546de07cded}{}\label{classsmacc_1_1SmaccClientBehavior_a3152cd2215ebc0e387a8a546de07cded}
+
+
+Definition at line 23 of file smacc\+\_\+client\+\_\+behavior\+\_\+impl.\+h.
+
+
+
+References state\+Machine\+\_\+.
+
+
+
+Referenced by smacc\+::\+Sensor\+Topic$<$ Cl\+Temperature\+Sensor $>$\+::configure\+Event\+Source\+Types(), and sm\+\_\+three\+\_\+some\+::\+Cb\+Keyboard\+::post\+Key\+Event().
+
+
+\begin{DoxyCode}
+24 \{
+25     \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1SmaccClientBehavior_a7950b5684d6de0a8e8959c0936ce9a19}{stateMachine\_} == \textcolor{keyword}{nullptr})
+26     \{
+27         ROS\_ERROR(\textcolor{stringliteral}{"The client behavior cannot post events before being assigned to an orthogonal. Ignoring
+       post event call."});
+28     \}
+29     \textcolor{keywordflow}{else}
+30     \{
+31         \hyperlink{classsmacc_1_1SmaccClientBehavior_a7950b5684d6de0a8e8959c0936ce9a19}{stateMachine\_}->template postEvent<EventType>();
+32     \}
+33 \}
+\end{DoxyCode}
 
 
 Here is the caller graph for this function\+:
@@ -304,7 +335,7 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classsmacc_1_1SmaccClientBehavior_ab29b23145ea074ad69340fc0af6fbb75_icgraph}
+\includegraphics[width=350pt]{classsmacc_1_1SmaccClientBehavior_a3152cd2215ebc0e387a8a546de07cded_icgraph}
 \end{center}
 \end{figure}
 
@@ -318,7 +349,7 @@ Here is the caller graph for this function\+:
 )}\hypertarget{classsmacc_1_1SmaccClientBehavior_a917f001e763a1059af337bf4e164f542}{}\label{classsmacc_1_1SmaccClientBehavior_a917f001e763a1059af337bf4e164f542}
 
 
-Definition at line 23 of file smacc\+\_\+client\+\_\+behavior\+\_\+impl.\+h.
+Definition at line 36 of file smacc\+\_\+client\+\_\+behavior\+\_\+impl.\+h.
 
 
 
@@ -326,13 +357,13 @@ References current\+Orthogonal, and smacc\+::\+Orthogonal\+::requires\+Client().
 
 
 
-Referenced by ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+::on\+Entry(), sm\+\_\+atomic\+::\+Cb\+State1\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Tool\+Start\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Tool\+Stop\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Undo\+Path\+Backwards\+::on\+Entry(), sm\+\_\+three\+\_\+some\+::\+Cb\+Keyboard\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Updatable\+String\+Publisher\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+String\+Publisher\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Rotate\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Global\+Position\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Forward\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards\+::on\+Entry(), and smacc\+::\+Sensor\+Topic$<$ Cl\+Temperature\+Sensor $>$\+::on\+Entry().
+Referenced by ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+::on\+Entry(), ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Single\+Countdown\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Tool\+Start\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Tool\+Stop\+::on\+Entry(), ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown\+::on\+Entry(), sm\+\_\+three\+\_\+some\+::\+Cb\+Keyboard\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Undo\+Path\+Backwards\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Updatable\+String\+Publisher\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+String\+Publisher\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Rotate\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Global\+Position\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Forward\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards\+::on\+Entry(), and smacc\+::\+Sensor\+Topic$<$ Cl\+Temperature\+Sensor $>$\+::on\+Entry().
 
 
 \begin{DoxyCode}
-24 \{
-25     \hyperlink{classsmacc_1_1SmaccClientBehavior_a642742da14ffa20e323a03eefecfc8b2}{currentOrthogonal}->\hyperlink{classsmacc_1_1Orthogonal_abcde9f489cdf94acca381ea67649a723}{requiresClient}(storage);
-26 \}
+37 \{
+38     \hyperlink{classsmacc_1_1SmaccClientBehavior_a642742da14ffa20e323a03eefecfc8b2}{currentOrthogonal}->\hyperlink{classsmacc_1_1Orthogonal_abcde9f489cdf94acca381ea67649a723}{requiresClient}(storage);
+39 \}
 \end{DoxyCode}
 
 
@@ -367,25 +398,25 @@ Here is the caller graph for this function\+:
 )}\hypertarget{classsmacc_1_1SmaccClientBehavior_adee6abe3a28aa6b47d3dd5267e264b4d}{}\label{classsmacc_1_1SmaccClientBehavior_adee6abe3a28aa6b47d3dd5267e264b4d}
 
 
-Definition at line 29 of file smacc\+\_\+client\+\_\+behavior\+\_\+impl.\+h.
+Definition at line 42 of file smacc\+\_\+client\+\_\+behavior\+\_\+impl.\+h.
 
 
 
-References smacc\+::\+I\+Smacc\+State\+Machine\+::requires\+Component(), and state\+Machine.
+References smacc\+::\+I\+Smacc\+State\+Machine\+::requires\+Component(), and state\+Machine\+\_\+.
 
 
 \begin{DoxyCode}
-30 \{
-31     \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1SmaccClientBehavior_aa1c28c177d50a471c88c6a577cd6077e}{stateMachine} == \textcolor{keyword}{nullptr})
-32     \{
-33         ROS\_ERROR(\textcolor{stringliteral}{"Cannot use the requiresComponent funcionality before asigning the client behavior to an
+43 \{
+44     \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1SmaccClientBehavior_a7950b5684d6de0a8e8959c0936ce9a19}{stateMachine\_} == \textcolor{keyword}{nullptr})
+45     \{
+46         ROS\_ERROR(\textcolor{stringliteral}{"Cannot use the requiresComponent funcionality before asigning the client behavior to an
        orthogonal. Try using the OnEntry method to capture required components."});
-34     \}
-35     \textcolor{keywordflow}{else}
-36     \{
-37         \hyperlink{classsmacc_1_1SmaccClientBehavior_aa1c28c177d50a471c88c6a577cd6077e}{stateMachine}->\hyperlink{classsmacc_1_1ISmaccStateMachine_aa6b25e28f3bce24c4b356dc865a9eb7b}{requiresComponent}(storage);
-38     \}
-39 \}
+47     \}
+48     \textcolor{keywordflow}{else}
+49     \{
+50         \hyperlink{classsmacc_1_1SmaccClientBehavior_a7950b5684d6de0a8e8959c0936ce9a19}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_aa6b25e28f3bce24c4b356dc865a9eb7b}{requiresComponent}(storage);
+51     \}
+52 \}
 \end{DoxyCode}
 
 
@@ -407,7 +438,7 @@ Here is the call graph for this function\+:
 \subsubsection[{\texorpdfstring{I\+Smacc\+State}{ISmaccState}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf I\+Smacc\+State}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classsmacc_1_1SmaccClientBehavior_ab907e4cdbf326246355f56640780162e}{}\label{classsmacc_1_1SmaccClientBehavior_ab907e4cdbf326246355f56640780162e}
 
 
-Definition at line 45 of file smacc\+\_\+client\+\_\+behavior.\+h.
+Definition at line 48 of file smacc\+\_\+client\+\_\+behavior.\+h.
 
 
 
@@ -434,16 +465,16 @@ Definition at line 18 of file smacc\+\_\+client\+\_\+behavior.\+h.
 
 Referenced by sm\+\_\+dance\+\_\+bot\+::\+Cb\+Rotate\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Forward\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Backwards\+::on\+Entry(), sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Global\+Position\+::read\+Start\+Pose\+From\+Parameter\+Server(), and Smacc\+Client\+Behavior().
 
-\index{smacc\+::\+Smacc\+Client\+Behavior@{smacc\+::\+Smacc\+Client\+Behavior}!state\+Machine@{state\+Machine}}
-\index{state\+Machine@{state\+Machine}!smacc\+::\+Smacc\+Client\+Behavior@{smacc\+::\+Smacc\+Client\+Behavior}}
-\subsubsection[{\texorpdfstring{state\+Machine}{stateMachine}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Smacc\+State\+Machine}$\ast$ smacc\+::\+Smacc\+Client\+Behavior\+::state\+Machine}\hypertarget{classsmacc_1_1SmaccClientBehavior_aa1c28c177d50a471c88c6a577cd6077e}{}\label{classsmacc_1_1SmaccClientBehavior_aa1c28c177d50a471c88c6a577cd6077e}
+\index{smacc\+::\+Smacc\+Client\+Behavior@{smacc\+::\+Smacc\+Client\+Behavior}!state\+Machine\+\_\+@{state\+Machine\+\_\+}}
+\index{state\+Machine\+\_\+@{state\+Machine\+\_\+}!smacc\+::\+Smacc\+Client\+Behavior@{smacc\+::\+Smacc\+Client\+Behavior}}
+\subsubsection[{\texorpdfstring{state\+Machine\+\_\+}{stateMachine_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Smacc\+State\+Machine}$\ast$ smacc\+::\+Smacc\+Client\+Behavior\+::state\+Machine\+\_\+}\hypertarget{classsmacc_1_1SmaccClientBehavior_a7950b5684d6de0a8e8959c0936ce9a19}{}\label{classsmacc_1_1SmaccClientBehavior_a7950b5684d6de0a8e8959c0936ce9a19}
 
 
 Definition at line 15 of file smacc\+\_\+client\+\_\+behavior.\+h.
 
 
 
-Referenced by sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Global\+Position\+::go\+To\+Radial\+Start(), post\+Event(), requires\+Component(), and Smacc\+Client\+Behavior().
+Referenced by sm\+\_\+dance\+\_\+bot\+::\+Cb\+Navigate\+Global\+Position\+::go\+To\+Radial\+Start(), ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Single\+Countdown\+::on\+Timer\+Tick(), ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown\+::on\+Timer\+Tick(), post\+Event(), requires\+Component(), and Smacc\+Client\+Behavior().
 
 
 

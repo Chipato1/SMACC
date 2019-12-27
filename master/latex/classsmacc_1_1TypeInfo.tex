@@ -350,22 +350,22 @@ Referenced by get\+Non\+Templatetypename(), get\+Type\+Info\+From\+Typeid(), and
 225                       \textcolor{keywordflow}{return} a.first <= b.first;
 226                   \});
 227 
-228         ROS\_ERROR\_STREAM(\textcolor{stringliteral}{"------------------"});
-229         ROS\_ERROR\_STREAM(\textcolor{stringliteral}{"CREATING TYPE:"} << t->getFullName());
+228         ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"------------------"});
+229         ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"CREATING TYPE:"} << t->getFullName());
 230 
 231         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &item : unorderedTemplateParameters)
 232         \{
-233             ROS\_ERROR\_STREAM(\textcolor{stringliteral}{" - template paramter: "} << item.second->getFullName());
+233             ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{" - template paramter: "} << item.second->getFullName());
 234             t->templateParameters.push\_back(item.second);
 235         \}
-236         ROS\_ERROR\_STREAM(\textcolor{stringliteral}{"------------------"});
+236         ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"------------------"});
 237     \}
 238 
-239     ROS\_ERROR\_STREAM(\textcolor{stringliteral}{"ADDING TYPE TO DATABASE: "}<< \hyperlink{namespaceregex__template_a5e23ed7a5dae7db8eb3cdae8fb3e3230}{inputtext});
-240     ROS\_ERROR\_STREAM(\textcolor{stringliteral}{"Current Database"});
+239     ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"ADDING TYPE TO DATABASE: "}<< \hyperlink{namespaceregex__template_a5e23ed7a5dae7db8eb3cdae8fb3e3230}{inputtext});
+240     ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"Current Database"});
 241     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& en : \hyperlink{classsmacc_1_1TypeInfo_a5dafa5950a93f6cd5b88d5ea573a504c}{typeInfoDatabase})
 242     \{
-243         ROS\_ERROR\_STREAM(\textcolor{stringliteral}{"- "} << en.first);
+243         ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"- "} << en.first);
 244     \}
 245 
 246     typeInfoDatabase[originalinputtext] = roottype;

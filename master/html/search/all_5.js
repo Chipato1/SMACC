@@ -21,7 +21,6 @@ var searchData=
   ['event_5fcountdown_2eh',['event_countdown.h',['../event__countdown_8h.html',1,'']]],
   ['eventcallbacks_5f',['eventCallbacks_',['../classsmacc_1_1LogicUnit.html#ad1b222b3b2bb175d9e8166433e434fab',1,'smacc::LogicUnit']]],
   ['eventcount_5f',['eventCount_',['../classsmacc_1_1LuEventCountdown.html#a3ede7931d5c6fea0fd41c3aadea01599',1,'smacc::LuEventCountdown']]],
-  ['eventfactory',['EventFactory',['../classsmacc_1_1EventFactory.html',1,'smacc']]],
   ['eventinfo',['eventInfo',['../structsmacc_1_1SmaccTransitionInfo.html#af5a6bb0957a17556f96bad8e00bc7a23',1,'smacc::SmaccTransitionInfo']]],
   ['eventlabel',['EventLabel',['../namespacesmacc.html#a718cd7f34605a7d59777341924cbfe7e',1,'smacc::EventLabel(std::string &amp;label)'],['../namespacesmacc.html#a0f6450535eeea3a584472406ba961f46',1,'smacc::EventLabel(std::string &amp;label)']]],
   ['eventtype',['eventType',['../structsmacc_1_1SmaccEventInfo.html#a42df97fc9a9a817ca841427358002930',1,'smacc::SmaccEventInfo']]],

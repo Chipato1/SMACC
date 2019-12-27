@@ -167,7 +167,7 @@ Definition at line 50 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
 
 
 
-References move\+Base\+Client\+\_\+, read\+Start\+Pose\+From\+Parameter\+Server(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal(), smacc\+::\+I\+Smacc\+State\+Machine\+::set\+Global\+S\+M\+Data(), and smacc\+::\+Smacc\+Client\+Behavior\+::state\+Machine.
+References move\+Base\+Client\+\_\+, read\+Start\+Pose\+From\+Parameter\+Server(), and smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal().
 
 
 
@@ -184,7 +184,7 @@ Referenced by on\+Entry().
 57 
 58     \textcolor{comment}{// store the start pose on the state machine storage so that it can}
 59     \textcolor{comment}{// be referenced from other states (for example return to radial start)}
-60     this->\hyperlink{classsmacc_1_1SmaccClientBehavior_aa1c28c177d50a471c88c6a577cd6077e}{stateMachine}->\hyperlink{classsmacc_1_1ISmaccStateMachine_a8588f9e580fbb95b53e2bd2ca3ff1f98}{setGlobalSMData}(\textcolor{stringliteral}{"radial\_start\_pose"}, goal.target\_pose);
+60     this->stateMachine->setGlobalSMData(\textcolor{stringliteral}{"radial\_start\_pose"}, goal.target\_pose);
 61 
 62     \hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a6b070ea39c113269c9b7f7732cb9e033}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
 63   \}
@@ -226,7 +226,7 @@ Definition at line 50 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
 
 
 
-References move\+Base\+Client\+\_\+, read\+Start\+Pose\+From\+Parameter\+Server(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal(), smacc\+::\+I\+Smacc\+State\+Machine\+::set\+Global\+S\+M\+Data(), and smacc\+::\+Smacc\+Client\+Behavior\+::state\+Machine.
+References move\+Base\+Client\+\_\+, read\+Start\+Pose\+From\+Parameter\+Server(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal(), smacc\+::\+I\+Smacc\+State\+Machine\+::set\+Global\+S\+M\+Data(), and smacc\+::\+Smacc\+Client\+Behavior\+::state\+Machine\+\_\+.
 
 
 \begin{DoxyCode}
@@ -239,7 +239,8 @@ References move\+Base\+Client\+\_\+, read\+Start\+Pose\+From\+Parameter\+Server(
 57 
 58     \textcolor{comment}{// store the start pose on the state machine storage so that it can}
 59     \textcolor{comment}{// be referenced from other states (for example return to radial start)}
-60     this->\hyperlink{classsmacc_1_1SmaccClientBehavior_aa1c28c177d50a471c88c6a577cd6077e}{stateMachine}->\hyperlink{classsmacc_1_1ISmaccStateMachine_a8588f9e580fbb95b53e2bd2ca3ff1f98}{setGlobalSMData}(\textcolor{stringliteral}{"radial\_start\_pose"}, goal.target\_pose);
+60     this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a7950b5684d6de0a8e8959c0936ce9a19}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_a8588f9e580fbb95b53e2bd2ca3ff1f98}{setGlobalSMData}(\textcolor{stringliteral}{"radial\_start\_pose"}, goal.target\_pose)
+      ;
 61 
 62     \hyperlink{classsm__dance__bot_1_1CbNavigateGlobalPosition_a6b070ea39c113269c9b7f7732cb9e033}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
 63   \}

@@ -1,7 +1,5 @@
 <map id="ros_timer_client::CbTimer::onEntry" name="ros_timer_client::CbTimer::onEntry">
-<area shape="rect" id="node2" href="$classsmacc_1_1SmaccClientBehavior.html#ab29b23145ea074ad69340fc0af6fbb75" title="smacc::SmaccClientBehavior\l::postEvent" alt="" coords="239,5,447,47"/>
-<area shape="rect" id="node5" href="$classsmacc_1_1SmaccClientBehavior.html#a917f001e763a1059af337bf4e164f542" title="smacc::SmaccClientBehavior\l::requiresClient" alt="" coords="239,71,447,112"/>
-<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccStateMachine.html#ad80cdd7bbc9a9f3b221c625754fed1ed" title="smacc::ISmaccStateMachine\l::postEvent" alt="" coords="495,5,701,47"/>
-<area shape="rect" id="node4" href="$classsmacc_1_1SignalDetector.html#a6ab99d99cef8d101e39797a72daeb2b7" title="smacc::SignalDetector\l::postEvent" alt="" coords="749,5,916,47"/>
-<area shape="rect" id="node6" href="$classsmacc_1_1Orthogonal.html#abcde9f489cdf94acca381ea67649a723" title="smacc::Orthogonal::\lrequiresClient" alt="" coords="523,71,673,112"/>
+<area shape="rect" id="node2" href="$classros__timer__client_1_1ClRosTimer.html#a06ecf6427b5df59f29879ab3bd1f120c" title="ros_timer_client::ClRosTimer\l::onTimerTick" alt="" coords="241,5,444,47"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1SmaccClientBehavior.html#a917f001e763a1059af337bf4e164f542" title="smacc::SmaccClientBehavior\l::requiresClient" alt="" coords="239,71,447,112"/>
+<area shape="rect" id="node4" href="$classsmacc_1_1Orthogonal.html#abcde9f489cdf94acca381ea67649a723" title="smacc::Orthogonal::\lrequiresClient" alt="" coords="495,71,645,112"/>
 </map>

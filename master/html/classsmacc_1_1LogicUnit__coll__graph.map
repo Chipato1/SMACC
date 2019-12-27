@@ -1,3 +1,3 @@
 <map id="smacc::LogicUnit" name="smacc::LogicUnit">
-<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccState.html" title="{smacc::ISmaccState\n||+ getParam()\l+ setParam()\l+ param()\l+ getStateMachine()\l+ getClassName()\l+ configure()\l+ requiresComponent()\l+ requiresClient()\l+ getGlobalSMData()\l+ setGlobalSMData()\l+ createLogicUnit()\l+ postEvent()\l+ notifyTransition()\l+ notifyTransitionFromTransition\lTypeInfo()\l+ getLogicUnits()\l}" alt="" coords="165,160,389,457"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccState.html" title="{smacc::ISmaccState\n||+ getStateMachine()\l+ getParentState()\l+ getClassName()\l+ configure()\l+ requiresComponent()\l+ requiresClient()\l+ getGlobalSMData()\l+ setGlobalSMData()\l+ createLogicUnit()\l+ postEvent()\l+ notifyTransition()\l+ notifyTransitionFromTransition\lTypeInfo()\l+ getLogicUnits()\l+ getParam()\l+ setParam()\l+ param()\l+ getROSNode()\l}" alt="" coords="165,160,389,487"/>
 </map>

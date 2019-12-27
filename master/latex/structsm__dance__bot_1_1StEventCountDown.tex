@@ -75,7 +75,7 @@ Definition at line 15 of file st\+\_\+event\+\_\+count\+\_\+down.\+h.
 20         \textcolor{comment}{//   static\_configure<OrService3, CbService3>(Service3Command::SERVICE3\_ON);}
 21 
 22         static\_createLogicUnit<LuEventCountdown, EvCountdownEnd<LuEventCountdown>, 
-      mpl::list<EvTimer<ClRosTimer>>>(5);
+      mpl::list<EvTimer<ClRosTimer, OrTimer>>>(5);
 23 
 24         \textcolor{comment}{//static\_createLogicUnit<LuEventCountdown, EvCountdownEnd<LuEventCountdown>,
        mpl::list<EvActionFeedback<smacc::ClMoveBaseZ>>>(100);}

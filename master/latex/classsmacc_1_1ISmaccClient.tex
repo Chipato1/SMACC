@@ -132,7 +132,7 @@ Definition at line 49 of file smacc\+\_\+client.\+h.
 )}\hypertarget{classsmacc_1_1ISmaccClient_aef02e196c5537837558cacea53b12f2f}{}\label{classsmacc_1_1ISmaccClient_aef02e196c5537837558cacea53b12f2f}
 
 
-Definition at line 37 of file smacc\+\_\+client\+\_\+impl.\+h.
+Definition at line 36 of file smacc\+\_\+client\+\_\+impl.\+h.
 
 
 
@@ -140,34 +140,34 @@ References components\+\_\+, and state\+Machine\+\_\+.
 
 
 \begin{DoxyCode}
-38 \{
-39     \textcolor{keyword}{const} std::type\_info *componentkey = &\textcolor{keyword}{typeid}(SmaccComponentType);
-40     std::shared\_ptr<SmaccComponentType> ret;
-41 
-42     \textcolor{keyword}{auto} it = \hyperlink{classsmacc_1_1ISmaccClient_ab983e85d296c9660f5943c1d511634ce}{components\_}.find(componentkey);
-43 
-44     \textcolor{keywordflow}{if} (it == \hyperlink{classsmacc_1_1ISmaccClient_ab983e85d296c9660f5943c1d511634ce}{components\_}.end())
-45     \{
-46         \textcolor{keyword}{auto} tname = demangledTypeName<SmaccComponentType>();
-47         ROS\_DEBUG(\textcolor{stringliteral}{"%s smacc component is required. Creating a new instance."}, tname.c\_str());
-48 
-49         ret = std::shared\_ptr<SmaccComponentType>(\textcolor{keyword}{new} SmaccComponentType(targs...));
-50         ret->initialize(\textcolor{keyword}{this});
-51         ret->setStateMachine(\hyperlink{classsmacc_1_1ISmaccClient_a926e4f2ae796def63d48dca389a48c47}{stateMachine\_});
-52 
-53         \hyperlink{classsmacc_1_1ISmaccClient_ab983e85d296c9660f5943c1d511634ce}{components\_}[componentkey] = ret; \textcolor{comment}{//
+37 \{
+38     \textcolor{keyword}{const} std::type\_info *componentkey = &\textcolor{keyword}{typeid}(SmaccComponentType);
+39     std::shared\_ptr<SmaccComponentType> ret;
+40 
+41     \textcolor{keyword}{auto} it = \hyperlink{classsmacc_1_1ISmaccClient_ab983e85d296c9660f5943c1d511634ce}{components\_}.find(componentkey);
+42 
+43     \textcolor{keywordflow}{if} (it == \hyperlink{classsmacc_1_1ISmaccClient_ab983e85d296c9660f5943c1d511634ce}{components\_}.end())
+44     \{
+45         \textcolor{keyword}{auto} tname = demangledTypeName<SmaccComponentType>();
+46         ROS\_DEBUG(\textcolor{stringliteral}{"%s smacc component is required. Creating a new instance."}, tname.c\_str());
+47 
+48         ret = std::shared\_ptr<SmaccComponentType>(\textcolor{keyword}{new} SmaccComponentType(targs...));
+49         ret->initialize(\textcolor{keyword}{this});
+50         ret->setStateMachine(\hyperlink{classsmacc_1_1ISmaccClient_a926e4f2ae796def63d48dca389a48c47}{stateMachine\_});
+51 
+52         \hyperlink{classsmacc_1_1ISmaccClient_ab983e85d296c9660f5943c1d511634ce}{components\_}[componentkey] = ret; \textcolor{comment}{//
       std::dynamic\_pointer\_cast<smacc::ISmaccComponent>(ret);}
-54         ROS\_DEBUG(\textcolor{stringliteral}{"%s resource is required. Done."}, tname.c\_str());
-55     \}
-56     \textcolor{keywordflow}{else}
-57     \{
-58         ROS\_DEBUG(\textcolor{stringliteral}{"%s resource is required. Found resource in cache."}, 
+53         ROS\_DEBUG(\textcolor{stringliteral}{"%s resource is required. Done."}, tname.c\_str());
+54     \}
+55     \textcolor{keywordflow}{else}
+56     \{
+57         ROS\_DEBUG(\textcolor{stringliteral}{"%s resource is required. Found resource in cache."}, 
       demangledTypeName<SmaccComponentType>().c\_str());
-59         ret = dynamic\_pointer\_cast<SmaccComponentType>(it->second);
-60     \}
-61 
-62     \textcolor{keywordflow}{return} ret.get();
-63 \}
+58         ret = dynamic\_pointer\_cast<SmaccComponentType>(it->second);
+59     \}
+60 
+61     \textcolor{keywordflow}{return} ret.get();
+62 \}
 \end{DoxyCode}
 \index{smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}!get\+Component@{get\+Component}}
 \index{get\+Component@{get\+Component}!smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}}
@@ -178,7 +178,7 @@ References components\+\_\+, and state\+Machine\+\_\+.
 )}\hypertarget{classsmacc_1_1ISmaccClient_adef78db601749ca63c19e74a27cb88cc}{}\label{classsmacc_1_1ISmaccClient_adef78db601749ca63c19e74a27cb88cc}
 
 
-Definition at line 22 of file smacc\+\_\+client\+\_\+impl.\+h.
+Definition at line 21 of file smacc\+\_\+client\+\_\+impl.\+h.
 
 
 
@@ -190,18 +190,18 @@ Referenced by sm\+\_\+dance\+\_\+bot\+::\+Cb\+Undo\+Path\+Backwards\+::on\+Entry
 
 
 \begin{DoxyCode}
-23 \{
-24     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &component : \hyperlink{classsmacc_1_1ISmaccClient_ab983e85d296c9660f5943c1d511634ce}{components\_})
-25     \{
-26         \textcolor{keyword}{auto} *tcomponent = \textcolor{keyword}{dynamic\_cast<}TComponent *\textcolor{keyword}{>}(component.second.get());
-27         \textcolor{keywordflow}{if} (tcomponent != \textcolor{keyword}{nullptr})
-28         \{
-29             \textcolor{keywordflow}{return} tcomponent;
-30         \}
-31     \}
-32 
-33     \textcolor{keywordflow}{return} \textcolor{keyword}{nullptr};
-34 \}
+22 \{
+23     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &component : \hyperlink{classsmacc_1_1ISmaccClient_ab983e85d296c9660f5943c1d511634ce}{components\_})
+24     \{
+25         \textcolor{keyword}{auto} *tcomponent = \textcolor{keyword}{dynamic\_cast<}TComponent *\textcolor{keyword}{>}(component.second.get());
+26         \textcolor{keywordflow}{if} (tcomponent != \textcolor{keyword}{nullptr})
+27         \{
+28             \textcolor{keywordflow}{return} tcomponent;
+29         \}
+30     \}
+31 
+32     \textcolor{keywordflow}{return} \textcolor{keyword}{nullptr};
+33 \}
 \end{DoxyCode}
 
 
@@ -278,7 +278,7 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classsmacc_1_1ISmaccClient_a974ebb6ad6cf812e7b9de6b78b3d901f}{}\label{classsmacc_1_1ISmaccClient_a974ebb6ad6cf812e7b9de6b78b3d901f}
 
 
-Reimplemented in \hyperlink{classsm__three__some_1_1ClKeyboard_adbc06c9dc3a4a5b266ff70a4300dcdeb}{sm\+\_\+three\+\_\+some\+::\+Cl\+Keyboard}, \hyperlink{classsmacc_1_1SmaccSubscriberClient_acfa97685ecc588fe61eb57002354b58a}{smacc\+::\+Smacc\+Subscriber\+Client$<$ Message\+Type $>$}, \hyperlink{classsmacc_1_1SmaccSubscriberClient_acfa97685ecc588fe61eb57002354b58a}{smacc\+::\+Smacc\+Subscriber\+Client$<$ sensor\+\_\+msgs\+::\+Laser\+Scan $>$}, \hyperlink{classsmacc_1_1SmaccSubscriberClient_acfa97685ecc588fe61eb57002354b58a}{smacc\+::\+Smacc\+Subscriber\+Client$<$ std\+\_\+msgs\+::\+U\+Int16 $>$}, \hyperlink{classsmacc_1_1SmaccSubscriberClient_acfa97685ecc588fe61eb57002354b58a}{smacc\+::\+Smacc\+Subscriber\+Client$<$ sensor\+\_\+msgs\+::\+Temperature $>$}, \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e533ef8}{smacc\+::\+Sensor\+Client$<$ Message\+Type $>$}, \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e533ef8}{smacc\+::\+Sensor\+Client$<$ sensor\+\_\+msgs\+::\+Laser\+Scan $>$}, \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e533ef8}{smacc\+::\+Sensor\+Client$<$ sensor\+\_\+msgs\+::\+Temperature $>$}, \hyperlink{classsmacc_1_1SmaccActionClientBase_a0224d7482b50a706f99bd280495ef1af}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$}, \hyperlink{classsmacc_1_1SmaccActionClientBase_a0224d7482b50a706f99bd280495ef1af}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ smacc\+\_\+action\+\_\+client\+\_\+generic\+::\+Tool\+Control\+Action $>$}, \hyperlink{classsmacc_1_1SmaccActionClientBase_a0224d7482b50a706f99bd280495ef1af}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$}, \hyperlink{classros__timer__client_1_1ClRosTimer_a2d290d2a5d0afa7cdab543b17dbddbff}{ros\+\_\+timer\+\_\+client\+::\+Cl\+Ros\+Timer}, \hyperlink{classsmacc_1_1ClMoveBaseZ_a0eb8e4a0e80456fa534bbef7b2e330a5}{smacc\+::\+Cl\+Move\+BaseZ}, \hyperlink{classsmacc_1_1SmaccPublisherClient_ac1b9a683a411f4957411fcbdb3980233}{smacc\+::\+Smacc\+Publisher\+Client$<$ Message\+Type $>$}, \hyperlink{classsmacc_1_1SmaccPublisherClient_ac1b9a683a411f4957411fcbdb3980233}{smacc\+::\+Smacc\+Publisher\+Client$<$ std\+\_\+msgs\+::\+String $>$}, \hyperlink{classsmacc_1_1SmaccServiceClient_a9ac26f1ca1e661e6b393ce7605166bdc}{smacc\+::\+Smacc\+Service\+Client$<$ Service\+Type $>$}, and \hyperlink{classsmacc_1_1SmaccServiceClient_a9ac26f1ca1e661e6b393ce7605166bdc}{smacc\+::\+Smacc\+Service\+Client$<$ std\+\_\+srvs\+::\+Set\+Bool $>$}.
+Reimplemented in \hyperlink{classsm__three__some_1_1ClKeyboard_adbc06c9dc3a4a5b266ff70a4300dcdeb}{sm\+\_\+three\+\_\+some\+::\+Cl\+Keyboard}, \hyperlink{classsmacc_1_1SmaccSubscriberClient_acfa97685ecc588fe61eb57002354b58a}{smacc\+::\+Smacc\+Subscriber\+Client$<$ Message\+Type $>$}, \hyperlink{classsmacc_1_1SmaccSubscriberClient_acfa97685ecc588fe61eb57002354b58a}{smacc\+::\+Smacc\+Subscriber\+Client$<$ sensor\+\_\+msgs\+::\+Laser\+Scan $>$}, \hyperlink{classsmacc_1_1SmaccSubscriberClient_acfa97685ecc588fe61eb57002354b58a}{smacc\+::\+Smacc\+Subscriber\+Client$<$ std\+\_\+msgs\+::\+U\+Int16 $>$}, \hyperlink{classsmacc_1_1SmaccSubscriberClient_acfa97685ecc588fe61eb57002354b58a}{smacc\+::\+Smacc\+Subscriber\+Client$<$ sensor\+\_\+msgs\+::\+Temperature $>$}, \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e533ef8}{smacc\+::\+Sensor\+Client$<$ Message\+Type $>$}, \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e533ef8}{smacc\+::\+Sensor\+Client$<$ sensor\+\_\+msgs\+::\+Laser\+Scan $>$}, \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e533ef8}{smacc\+::\+Sensor\+Client$<$ sensor\+\_\+msgs\+::\+Temperature $>$}, \hyperlink{classros__timer__client_1_1ClRosTimer_a2d290d2a5d0afa7cdab543b17dbddbff}{ros\+\_\+timer\+\_\+client\+::\+Cl\+Ros\+Timer}, \hyperlink{classsmacc_1_1SmaccActionClientBase_a0224d7482b50a706f99bd280495ef1af}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$}, \hyperlink{classsmacc_1_1SmaccActionClientBase_a0224d7482b50a706f99bd280495ef1af}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ smacc\+\_\+action\+\_\+client\+\_\+generic\+::\+Tool\+Control\+Action $>$}, \hyperlink{classsmacc_1_1SmaccActionClientBase_a0224d7482b50a706f99bd280495ef1af}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$}, \hyperlink{classsmacc_1_1ClMoveBaseZ_a0eb8e4a0e80456fa534bbef7b2e330a5}{smacc\+::\+Cl\+Move\+BaseZ}, \hyperlink{classsmacc_1_1SmaccPublisherClient_ac1b9a683a411f4957411fcbdb3980233}{smacc\+::\+Smacc\+Publisher\+Client$<$ Message\+Type $>$}, \hyperlink{classsmacc_1_1SmaccPublisherClient_ac1b9a683a411f4957411fcbdb3980233}{smacc\+::\+Smacc\+Publisher\+Client$<$ std\+\_\+msgs\+::\+String $>$}, \hyperlink{classsmacc_1_1SmaccServiceClient_a9ac26f1ca1e661e6b393ce7605166bdc}{smacc\+::\+Smacc\+Service\+Client$<$ Service\+Type $>$}, and \hyperlink{classsmacc_1_1SmaccServiceClient_a9ac26f1ca1e661e6b393ce7605166bdc}{smacc\+::\+Smacc\+Service\+Client$<$ std\+\_\+srvs\+::\+Set\+Bool $>$}.
 
 
 
@@ -338,15 +338,10 @@ Definition at line 15 of file smacc\+\_\+client\+\_\+impl.\+h.
 References smacc\+::\+I\+Smacc\+State\+Machine\+::post\+Event(), and state\+Machine\+\_\+.
 
 
-
-Referenced by ros\+\_\+timer\+\_\+client\+::\+Cl\+Ros\+Timer\+::timer\+Callback().
-
-
 \begin{DoxyCode}
 16 \{
-17     \textcolor{keyword}{auto} *ev = \textcolor{keyword}{new} EventType();
-18     \hyperlink{classsmacc_1_1ISmaccClient_a926e4f2ae796def63d48dca389a48c47}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_ad80cdd7bbc9a9f3b221c625754fed1ed}{postEvent}(ev);
-19 \}
+17     \hyperlink{classsmacc_1_1ISmaccClient_a926e4f2ae796def63d48dca389a48c47}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_ad80cdd7bbc9a9f3b221c625754fed1ed}{postEvent}<EventType>();
+18 \}
 \end{DoxyCode}
 
 
@@ -356,18 +351,6 @@ Here is the call graph for this function\+:
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classsmacc_1_1ISmaccClient_a21a79203cb44fc717d4d977c190327c6_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classsmacc_1_1ISmaccClient_a21a79203cb44fc717d4d977c190327c6_icgraph}
 \end{center}
 \end{figure}
 

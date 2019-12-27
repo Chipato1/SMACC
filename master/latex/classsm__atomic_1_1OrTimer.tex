@@ -1,0 +1,68 @@
+\hypertarget{classsm__atomic_1_1OrTimer}{}\section{sm\+\_\+atomic\+:\+:Or\+Timer Class Reference}
+\label{classsm__atomic_1_1OrTimer}\index{sm\+\_\+atomic\+::\+Or\+Timer@{sm\+\_\+atomic\+::\+Or\+Timer}}
+
+
+{\ttfamily \#include $<$or\+\_\+timer.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+atomic\+:\+:Or\+Timer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classsm__atomic_1_1OrTimer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+atomic\+:\+:Or\+Timer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__atomic_1_1OrTimer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classsm__atomic_1_1OrTimer_a509b0d9ce7c6ed9e0c291decaf6dd280}{on\+Initialize} () override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 6 of file or\+\_\+timer.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+atomic\+::\+Or\+Timer@{sm\+\_\+atomic\+::\+Or\+Timer}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!sm\+\_\+atomic\+::\+Or\+Timer@{sm\+\_\+atomic\+::\+Or\+Timer}}
+\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+atomic\+::\+Or\+Timer\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__atomic_1_1OrTimer_a509b0d9ce7c6ed9e0c291decaf6dd280}{}\label{classsm__atomic_1_1OrTimer_a509b0d9ce7c6ed9e0c291decaf6dd280}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+
+
+
+Definition at line 9 of file or\+\_\+timer.\+h.
+
+
+\begin{DoxyCode}
+10     \{
+11         \textcolor{keyword}{auto} client = this->createClient<OrTimer, ros\_timer\_client::ClRosTimer>(ros::Duration(1));
+12         client->initialize();
+13     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+atomic/include/sm\+\_\+atomic/orthogonals/\hyperlink{sm__atomic_2include_2sm__atomic_2orthogonals_2or__timer_8h}{or\+\_\+timer.\+h}\end{DoxyCompactItemize}

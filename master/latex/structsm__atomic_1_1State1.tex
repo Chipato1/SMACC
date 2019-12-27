@@ -21,18 +21,24 @@ Collaboration diagram for sm\+\_\+atomic\+:\+:State1\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{structsm__atomic_1_1State1__coll__graph}
+\includegraphics[height=550pt]{structsm__atomic_1_1State1__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ \hyperlink{structsmacc_1_1EvActionSucceeded}{smacc\+::\+Ev\+Action\+Succeeded}$<$ \hyperlink{classsmacc_1_1ClMoveBaseZ}{smacc\+::\+Cl\+Move\+BaseZ}, \hyperlink{classsm__atomic_1_1OrNavigation}{Or\+Navigation} $>$, \hyperlink{structsm__atomic_1_1State2}{State2} $>$ $>$ \hyperlink{structsm__atomic_1_1State1_a8fd5bedce645146375953c898002d051}{reactions}
+typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ \hyperlink{structros__timer__client_1_1EvTimer}{Ev\+Timer}$<$ \hyperlink{classros__timer__client_1_1CbTimerSingleCountdown}{Cb\+Timer\+Single\+Countdown}, \hyperlink{classsm__atomic_1_1OrTimer}{Or\+Timer} $>$, \hyperlink{structsm__atomic_1_1State2}{State2} $>$ $>$ \hyperlink{structsm__atomic_1_1State1_ab64bac9f9f51137165167b2d850bcb32}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{structsm__atomic_1_1State1_a13084492414b7b478f9f4b78a749c020}{on\+Initialize} ()
+\item 
+void \hyperlink{structsm__atomic_1_1State1_adea28f0a0fcedb210a29656f53aeee09}{on\+Timer\+Client\+Tick\+Callback} ()
+\item 
+void \hyperlink{structsm__atomic_1_1State1_a9d2c943f02a8e0f1d7b86132ada1c6e0}{on\+Repeat\+Behavior\+Tick\+Callback} ()
+\item 
+void \hyperlink{structsm__atomic_1_1State1_a9cb95d91cf5a22f0d9d079dc04bf58aa}{on\+Single\+Behavior\+Tick\+Callback} ()
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -45,17 +51,17 @@ static void \hyperlink{structsm__atomic_1_1State1_ad422837dc6136634e7fc8253658ec
 \subsection{Detailed Description}
 
 
-Definition at line 6 of file st\+\_\+state\+\_\+1.\+h.
+Definition at line 7 of file st\+\_\+state\+\_\+1.\+h.
 
 
 
 \subsection{Member Typedef Documentation}
 \index{sm\+\_\+atomic\+::\+State1@{sm\+\_\+atomic\+::\+State1}!reactions@{reactions}}
 \index{reactions@{reactions}!sm\+\_\+atomic\+::\+State1@{sm\+\_\+atomic\+::\+State1}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<${\bf smacc\+::transition}$<${\bf smacc\+::\+Ev\+Action\+Succeeded}$<${\bf smacc\+::\+Cl\+Move\+BaseZ}, {\bf Or\+Navigation}$>$, {\bf State2}$>$ $>$ {\bf sm\+\_\+atomic\+::\+State1\+::reactions}}\hypertarget{structsm__atomic_1_1State1_a8fd5bedce645146375953c898002d051}{}\label{structsm__atomic_1_1State1_a8fd5bedce645146375953c898002d051}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<${\bf smacc\+::transition}$<${\bf Ev\+Timer}$<${\bf Cb\+Timer\+Single\+Countdown}, {\bf Or\+Timer}$>$, {\bf State2}$>$ $>$ {\bf sm\+\_\+atomic\+::\+State1\+::reactions}}\hypertarget{structsm__atomic_1_1State1_ab64bac9f9f51137165167b2d850bcb32}{}\label{structsm__atomic_1_1State1_ab64bac9f9f51137165167b2d850bcb32}
 
 
-Definition at line 9 of file st\+\_\+state\+\_\+1.\+h.
+Definition at line 10 of file st\+\_\+state\+\_\+1.\+h.
 
 
 
@@ -69,13 +75,14 @@ Definition at line 9 of file st\+\_\+state\+\_\+1.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structsm__atomic_1_1State1_ad422837dc6136634e7fc8253658ec612}{}\label{structsm__atomic_1_1State1_ad422837dc6136634e7fc8253658ec612}
 
 
-Definition at line 13 of file st\+\_\+state\+\_\+1.\+h.
+Definition at line 14 of file st\+\_\+state\+\_\+1.\+h.
 
 
 \begin{DoxyCode}
-14     \{
-15         static\_configure<OrNavigation, CbState1>();
-16     \}
+15     \{
+16         static\_configure<OrTimer, CbTimerRepeatCountdown>(3); \textcolor{comment}{// triggers each 3 client ticks}
+17         static\_configure<OrTimer, CbTimerSingleCountdown>(10); \textcolor{comment}{// triggers once at 10 client ticks}
+18     \}
 \end{DoxyCode}
 \index{sm\+\_\+atomic\+::\+State1@{sm\+\_\+atomic\+::\+State1}!on\+Initialize@{on\+Initialize}}
 \index{on\+Initialize@{on\+Initialize}!sm\+\_\+atomic\+::\+State1@{sm\+\_\+atomic\+::\+State1}}
@@ -86,13 +93,152 @@ Definition at line 13 of file st\+\_\+state\+\_\+1.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsm__atomic_1_1State1_a13084492414b7b478f9f4b78a749c020}{}\label{structsm__atomic_1_1State1_a13084492414b7b478f9f4b78a749c020}
 
 
-Definition at line 18 of file st\+\_\+state\+\_\+1.\+h.
+Definition at line 20 of file st\+\_\+state\+\_\+1.\+h.
+
+
+
+References on\+Repeat\+Behavior\+Tick\+Callback(), on\+Single\+Behavior\+Tick\+Callback(), on\+Timer\+Client\+Tick\+Callback(), and ros\+\_\+timer\+\_\+client\+::\+Cl\+Ros\+Timer\+::on\+Timer\+Tick().
 
 
 \begin{DoxyCode}
-19     \{
-20     \}
+21     \{
+22         \textcolor{comment}{// get reference to the client}
+23         \hyperlink{classros__timer__client_1_1ClRosTimer}{ClRosTimer} *client;
+24         this->\hyperlink{classsmacc_1_1ISmaccState_a7f95c9f0a6ea2d6f18d1aec0519de4ac}{requiresClient}(client);
+25 
+26         \textcolor{comment}{// subscribe to the timer client callback}
+27         client->\hyperlink{classros__timer__client_1_1ClRosTimer_a06ecf6427b5df59f29879ab3bd1f120c}{onTimerTick}(&\hyperlink{structsm__atomic_1_1State1_adea28f0a0fcedb210a29656f53aeee09}{State1::onTimerClientTickCallback},
+       \textcolor{keyword}{this});
+28 
+29 
+30         \textcolor{comment}{// getting reference to the repeat countdown behavior}
+31         \textcolor{keyword}{auto}* cbrepeat = this->\hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_a38b8b6e3d65b7de33020c9c397cf29bb}{getOrthogonal}<OrTimer>()
+32                                ->getClientBehavior<CbTimerRepeatCountdown>();
+33 
+34         \textcolor{comment}{// subscribe to the repeat countdown behavior callback}
+35         cbrepeat->onTimerTick(&\hyperlink{structsm__atomic_1_1State1_a9d2c943f02a8e0f1d7b86132ada1c6e0}{State1::onRepeatBehaviorTickCallback}, \textcolor{keyword}{
+      this});
+36 
+37         \textcolor{comment}{// getting reference to the single countdown behavior}
+38         \textcolor{keyword}{auto}* cbsingle = this->\hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_a38b8b6e3d65b7de33020c9c397cf29bb}{getOrthogonal}<OrTimer>()
+39                                ->getClientBehavior<CbTimerSingleCountdown>();
+40 
+41         \textcolor{comment}{// subscribe to the single countdown behavior callback}
+42         cbsingle->onTimerTick(&\hyperlink{structsm__atomic_1_1State1_a9cb95d91cf5a22f0d9d079dc04bf58aa}{State1::onSingleBehaviorTickCallback}, \textcolor{keyword}{
+      this});
+43     \}
 \end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsm__atomic_1_1State1_a13084492414b7b478f9f4b78a749c020_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{sm\+\_\+atomic\+::\+State1@{sm\+\_\+atomic\+::\+State1}!on\+Repeat\+Behavior\+Tick\+Callback@{on\+Repeat\+Behavior\+Tick\+Callback}}
+\index{on\+Repeat\+Behavior\+Tick\+Callback@{on\+Repeat\+Behavior\+Tick\+Callback}!sm\+\_\+atomic\+::\+State1@{sm\+\_\+atomic\+::\+State1}}
+\subsubsection[{\texorpdfstring{on\+Repeat\+Behavior\+Tick\+Callback()}{onRepeatBehaviorTickCallback()}}]{\setlength{\rightskip}{0pt plus 5cm}void sm\+\_\+atomic\+::\+State1\+::on\+Repeat\+Behavior\+Tick\+Callback (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsm__atomic_1_1State1_a9d2c943f02a8e0f1d7b86132ada1c6e0}{}\label{structsm__atomic_1_1State1_a9d2c943f02a8e0f1d7b86132ada1c6e0}
+
+
+Definition at line 50 of file st\+\_\+state\+\_\+1.\+h.
+
+
+
+Referenced by on\+Initialize().
+
+
+\begin{DoxyCode}
+51     \{
+52         ROS\_INFO(\textcolor{stringliteral}{"repeat behavior tick!"});
+53     \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsm__atomic_1_1State1_a9d2c943f02a8e0f1d7b86132ada1c6e0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{sm\+\_\+atomic\+::\+State1@{sm\+\_\+atomic\+::\+State1}!on\+Single\+Behavior\+Tick\+Callback@{on\+Single\+Behavior\+Tick\+Callback}}
+\index{on\+Single\+Behavior\+Tick\+Callback@{on\+Single\+Behavior\+Tick\+Callback}!sm\+\_\+atomic\+::\+State1@{sm\+\_\+atomic\+::\+State1}}
+\subsubsection[{\texorpdfstring{on\+Single\+Behavior\+Tick\+Callback()}{onSingleBehaviorTickCallback()}}]{\setlength{\rightskip}{0pt plus 5cm}void sm\+\_\+atomic\+::\+State1\+::on\+Single\+Behavior\+Tick\+Callback (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsm__atomic_1_1State1_a9cb95d91cf5a22f0d9d079dc04bf58aa}{}\label{structsm__atomic_1_1State1_a9cb95d91cf5a22f0d9d079dc04bf58aa}
+
+
+Definition at line 55 of file st\+\_\+state\+\_\+1.\+h.
+
+
+
+Referenced by on\+Initialize().
+
+
+\begin{DoxyCode}
+56     \{
+57         ROS\_INFO(\textcolor{stringliteral}{"single behavior tick!"});
+58     \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsm__atomic_1_1State1_a9cb95d91cf5a22f0d9d079dc04bf58aa_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{sm\+\_\+atomic\+::\+State1@{sm\+\_\+atomic\+::\+State1}!on\+Timer\+Client\+Tick\+Callback@{on\+Timer\+Client\+Tick\+Callback}}
+\index{on\+Timer\+Client\+Tick\+Callback@{on\+Timer\+Client\+Tick\+Callback}!sm\+\_\+atomic\+::\+State1@{sm\+\_\+atomic\+::\+State1}}
+\subsubsection[{\texorpdfstring{on\+Timer\+Client\+Tick\+Callback()}{onTimerClientTickCallback()}}]{\setlength{\rightskip}{0pt plus 5cm}void sm\+\_\+atomic\+::\+State1\+::on\+Timer\+Client\+Tick\+Callback (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsm__atomic_1_1State1_adea28f0a0fcedb210a29656f53aeee09}{}\label{structsm__atomic_1_1State1_adea28f0a0fcedb210a29656f53aeee09}
+
+
+Definition at line 45 of file st\+\_\+state\+\_\+1.\+h.
+
+
+
+Referenced by on\+Initialize().
+
+
+\begin{DoxyCode}
+46     \{
+47         ROS\_INFO(\textcolor{stringliteral}{"timer client tick!"});
+48     \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsm__atomic_1_1State1_adea28f0a0fcedb210a29656f53aeee09_icgraph}
+\end{center}
+\end{figure}
+
+
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}

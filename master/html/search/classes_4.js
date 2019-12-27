@@ -14,7 +14,6 @@ var searchData=
   ['evall',['EvAll',['../structsmacc_1_1EvAll.html',1,'smacc']]],
   ['evcountdownend',['EvCountdownEnd',['../structsmacc_1_1EvCountdownEnd.html',1,'smacc']]],
   ['evcustomtemperaturealert',['EvCustomTemperatureAlert',['../structsm__dance__bot_1_1EvCustomTemperatureAlert.html',1,'sm_dance_bot']]],
-  ['eventfactory',['EventFactory',['../classsmacc_1_1EventFactory.html',1,'smacc']]],
   ['evfail',['EvFail',['../structsm__viewer__sim_1_1EvFail.html',1,'sm_viewer_sim']]],
   ['evglobalerror',['EvGlobalError',['../structsm__dance__bot_1_1EvGlobalError.html',1,'sm_dance_bot']]],
   ['evkeypressa',['EvKeyPressA',['../structsm__three__some_1_1EvKeyPressA.html',1,'sm_three_some']]],

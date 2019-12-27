@@ -11,6 +11,12 @@ struct \hyperlink{structsmacc_1_1AddSubState}{Add\+Sub\+State}
 \item 
 struct \hyperlink{structsmacc_1_1AddTransition}{Add\+Transition}
 \item 
+struct \hyperlink{structsmacc_1_1Bind}{Bind}
+\item 
+struct \hyperlink{structsmacc_1_1Bind_3_011_01_4}{Bind$<$ 1 $>$}
+\item 
+struct \hyperlink{structsmacc_1_1Bind_3_012_01_4}{Bind$<$ 2 $>$}
+\item 
 struct \hyperlink{structsmacc_1_1CheckType}{Check\+Type}
 \item 
 class \hyperlink{classsmacc_1_1ClMoveBaseZ}{Cl\+Move\+BaseZ}
@@ -42,8 +48,6 @@ struct \hyperlink{structsmacc_1_1EvActionSucceeded}{Ev\+Action\+Succeeded}
 struct \hyperlink{structsmacc_1_1EvAll}{Ev\+All}
 \item 
 struct \hyperlink{structsmacc_1_1EvCountdownEnd}{Ev\+Countdown\+End}
-\item 
-class \hyperlink{classsmacc_1_1EventFactory}{Event\+Factory}
 \item 
 struct \hyperlink{structsmacc_1_1EvLoopContinue}{Ev\+Loop\+Continue}
 \item 
@@ -693,7 +697,7 @@ std\+::string \hyperlink{namespacesmacc_a09b297b1cdb9aae93a958f323431464a}{clean
 \item 
 void \hyperlink{namespacesmacc_a6cda75a51f4a5e29d0a64effb800fb61}{transition\+Info\+To\+Msg} (const \hyperlink{structsmacc_1_1SmaccTransitionInfo}{Smacc\+Transition\+Info} \&\hyperlink{classsmacc_1_1transition}{transition}, smacc\+\_\+msgs\+::\+Smacc\+Transition \&transition\+Msg)
 \item 
-{\footnotesize template$<$class T $>$ }\\auto \hyperlink{namespacesmacc_aaf5c46d2834edc391571efd0acd05e6f}{optional\+Node\+Handle} (boost\+::intrusive\+\_\+ptr$<$ T $>$ \&obj) -\/$>$ decltype(obj-\/$>$nh)
+{\footnotesize template$<$class T $>$ }\\auto \hyperlink{namespacesmacc_a80d4b85f76c7059b35e3d16ec34ea675}{optional\+Node\+Handle} (boost\+::intrusive\+\_\+ptr$<$ T $>$ \&obj) -\/$>$ ros\+::\+Node\+Handle
 \item 
 {\footnotesize template$<$class T $>$ }\\auto \hyperlink{namespacesmacc_aae43df8cb9ee66ed75e049cb8a7db33c}{optional\+Node\+Handle} (T $\ast$) -\/$>$ ros\+::\+Node\+Handle
 \item 
@@ -976,7 +980,7 @@ References demangle\+Symbol().
 
 
 
-Referenced by smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::get\+Short\+Name(), smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Atomic\+State\+Machine, State1 $>$\+::initiate\+\_\+impl(), and smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::\+Smacc\+State().
+Referenced by smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::get\+Short\+Name(), smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Viewer\+Sim, Ms\+Run\+Mode $>$\+::initiate\+\_\+impl(), and smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\+::\+Smacc\+State().
 
 
 \begin{DoxyCode}
@@ -1273,12 +1277,12 @@ Definition at line 230 of file introspection.\+h.
 \end{DoxyCode}
 \index{smacc@{smacc}!optional\+Node\+Handle@{optional\+Node\+Handle}}
 \index{optional\+Node\+Handle@{optional\+Node\+Handle}!smacc@{smacc}}
-\subsubsection[{\texorpdfstring{optional\+Node\+Handle(boost\+::intrusive\+\_\+ptr$<$ T $>$ \&obj) -\/$>$ decltype(obj-\/$>$nh)}{optionalNodeHandle(boost::intrusive_ptr< T > &obj) -> decltype(obj->nh)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ auto smacc\+::optional\+Node\+Handle (
+\subsubsection[{\texorpdfstring{optional\+Node\+Handle(boost\+::intrusive\+\_\+ptr$<$ T $>$ \&obj) -\/$>$ ros\+::\+Node\+Handle}{optionalNodeHandle(boost::intrusive_ptr< T > &obj) -> ros::NodeHandle}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ auto smacc\+::optional\+Node\+Handle (
 \begin{DoxyParamCaption}
 \item[{boost\+::intrusive\+\_\+ptr$<$ T $>$ \&}]{obj}
 \end{DoxyParamCaption}
-) -\/$>$ decltype(obj-\/$>$nh)
-}\hypertarget{namespacesmacc_aaf5c46d2834edc391571efd0acd05e6f}{}\label{namespacesmacc_aaf5c46d2834edc391571efd0acd05e6f}
+) -\/$>$ ros\+::\+Node\+Handle
+}\hypertarget{namespacesmacc_a80d4b85f76c7059b35e3d16ec34ea675}{}\label{namespacesmacc_a80d4b85f76c7059b35e3d16ec34ea675}
 
 
 Definition at line 31 of file introspection.\+h.
@@ -1290,7 +1294,7 @@ Referenced by smacc\+::\+Smacc\+State$<$ Ssr\+F\+Pattern\+Start\+Loop, S\+S $>$\
 
 \begin{DoxyCode}
 33 \{
-34     \textcolor{keywordflow}{return} obj->nh;
+34     \textcolor{keywordflow}{return} obj->getROSNode();
 35 \}
 \end{DoxyCode}
 
@@ -1300,7 +1304,7 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{namespacesmacc_aaf5c46d2834edc391571efd0acd05e6f_icgraph}
+\includegraphics[width=350pt]{namespacesmacc_a80d4b85f76c7059b35e3d16ec34ea675_icgraph}
 \end{center}
 \end{figure}
 
@@ -1533,7 +1537,7 @@ Referenced by process\+Transition().
 158     \{
 159         transitionTag = demangleSymbol<Tag>();
 160         transitionType = getTransitionType<Tag>();
-161         ROS\_ERROR\_STREAM(\textcolor{stringliteral}{"TRANSITION TYPE:"} << transitionType);
+161         ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"TRANSITION TYPE:"} << transitionType);
 162     \}
 163     \textcolor{keywordflow}{else}
 164     \{

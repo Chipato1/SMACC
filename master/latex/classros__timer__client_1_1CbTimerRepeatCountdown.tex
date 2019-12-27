@@ -1,0 +1,313 @@
+\hypertarget{classros__timer__client_1_1CbTimerRepeatCountdown}{}\section{ros\+\_\+timer\+\_\+client\+:\+:Cb\+Timer\+Repeat\+Countdown Class Reference}
+\label{classros__timer__client_1_1CbTimerRepeatCountdown}\index{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown@{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}}
+
+
+{\ttfamily \#include $<$cb\+\_\+timer\+\_\+repeat\+\_\+countdown.\+h$>$}
+
+
+
+Inheritance diagram for ros\+\_\+timer\+\_\+client\+:\+:Cb\+Timer\+Repeat\+Countdown\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classros__timer__client_1_1CbTimerRepeatCountdown__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ros\+\_\+timer\+\_\+client\+:\+:Cb\+Timer\+Repeat\+Countdown\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classros__timer__client_1_1CbTimerRepeatCountdown__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_a26a8ca055744f353adfbba4a3e3faf3b}{Cb\+Timer\+Repeat\+Countdown} (unsigned long trigger\+Tick\+Count)
+\item 
+virtual void \hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_a605db5c7a861d214d5f9bccfbab5c9ab}{on\+Entry} () override
+\item 
+virtual void \hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_ac03676bee050ee3978267f352af80b3a}{on\+Exit} () override
+\item 
+{\footnotesize template$<$typename T\+Object\+Tag , typename T\+Derived $>$ }\\void \hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_a1ff1893e9a864a4c6bdcbec3cb9ebf07}{configure\+Event\+Source\+Types} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\boost\+::signals2\+::connection \hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_a33ce52ebbad96fc31b74c957bfddf0c1}{on\+Timer\+Tick} (void(T\+::$\ast$callback)(), T $\ast$\hyperlink{classobject}{object})
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_ab9fdad214cdb0f504cbbe68692cacd4e}{on\+Client\+Timer\+Tick\+Callback} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long \hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_a8984335d1a5b7a1da50cd1698047125f}{tick\+Counter\+\_\+}
+\item 
+unsigned long \hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_a6e32f68d5e54787ee80732c1ce4b08f4}{tick\+Trigger\+Count\+\_\+}
+\item 
+\hyperlink{classros__timer__client_1_1ClRosTimer}{Cl\+Ros\+Timer} $\ast$ \hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_aa75e5963e7a1593d7f71ff821a5127b0}{timer\+Client\+\_\+}
+\item 
+std\+::function$<$ void()$>$ \hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_a007a6b8bb86c71b670b56851533a5ea9}{post\+Count\+Down\+Event\+\_\+}
+\item 
+\hyperlink{classsmacc_1_1SmaccSignal}{smacc\+::\+Smacc\+Signal}$<$ void()$>$ \hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_a22def81dfff50bf7a7d733e16cf14ce7}{on\+Timer\+Tick\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file cb\+\_\+timer\+\_\+repeat\+\_\+countdown.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown@{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}!Cb\+Timer\+Repeat\+Countdown@{Cb\+Timer\+Repeat\+Countdown}}
+\index{Cb\+Timer\+Repeat\+Countdown@{Cb\+Timer\+Repeat\+Countdown}!ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown@{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}}
+\subsubsection[{\texorpdfstring{Cb\+Timer\+Repeat\+Countdown(unsigned long trigger\+Tick\+Count)}{CbTimerRepeatCountdown(unsigned long triggerTickCount)}}]{\setlength{\rightskip}{0pt plus 5cm}ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown\+::\+Cb\+Timer\+Repeat\+Countdown (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{trigger\+Tick\+Count}
+\end{DoxyParamCaption}
+)}\hypertarget{classros__timer__client_1_1CbTimerRepeatCountdown_a26a8ca055744f353adfbba4a3e3faf3b}{}\label{classros__timer__client_1_1CbTimerRepeatCountdown_a26a8ca055744f353adfbba4a3e3faf3b}
+
+
+Definition at line 6 of file cb\+\_\+timer\+\_\+repeat\+\_\+countdown.\+cpp.
+
+
+\begin{DoxyCode}
+7     : \hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_a6e32f68d5e54787ee80732c1ce4b08f4}{tickTriggerCount\_}(triggerTickCount),
+8       \hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_a8984335d1a5b7a1da50cd1698047125f}{tickCounter\_}(0)
+9 \{
+10 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown@{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}!configure\+Event\+Source\+Types@{configure\+Event\+Source\+Types}}
+\index{configure\+Event\+Source\+Types@{configure\+Event\+Source\+Types}!ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown@{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}}
+\subsubsection[{\texorpdfstring{configure\+Event\+Source\+Types()}{configureEventSourceTypes()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Object\+Tag , typename T\+Derived $>$ void ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown\+::configure\+Event\+Source\+Types (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classros__timer__client_1_1CbTimerRepeatCountdown_a1ff1893e9a864a4c6bdcbec3cb9ebf07}{}\label{classros__timer__client_1_1CbTimerRepeatCountdown_a1ff1893e9a864a4c6bdcbec3cb9ebf07}
+
+
+Definition at line 18 of file cb\+\_\+timer\+\_\+repeat\+\_\+countdown.\+h.
+
+
+
+References post\+Count\+Down\+Event\+\_\+.
+
+
+\begin{DoxyCode}
+19     \{
+20         this->\hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_a007a6b8bb86c71b670b56851533a5ea9}{postCountDownEvent\_} = [=]() \{
+21             this->\textcolor{keyword}{template} postEvent<EvTimer<TDerived, TObjectTag>>();
+22         \};
+23     \}
+\end{DoxyCode}
+\index{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown@{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}!on\+Client\+Timer\+Tick\+Callback@{on\+Client\+Timer\+Tick\+Callback}}
+\index{on\+Client\+Timer\+Tick\+Callback@{on\+Client\+Timer\+Tick\+Callback}!ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown@{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}}
+\subsubsection[{\texorpdfstring{on\+Client\+Timer\+Tick\+Callback()}{onClientTimerTickCallback()}}]{\setlength{\rightskip}{0pt plus 5cm}void ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown\+::on\+Client\+Timer\+Tick\+Callback (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classros__timer__client_1_1CbTimerRepeatCountdown_ab9fdad214cdb0f504cbbe68692cacd4e}{}\label{classros__timer__client_1_1CbTimerRepeatCountdown_ab9fdad214cdb0f504cbbe68692cacd4e}
+
+
+Definition at line 12 of file cb\+\_\+timer\+\_\+repeat\+\_\+countdown.\+cpp.
+
+
+
+References on\+Timer\+Tick\+\_\+, post\+Count\+Down\+Event\+\_\+, tick\+Counter\+\_\+, and tick\+Trigger\+Count\+\_\+.
+
+
+
+Referenced by on\+Entry().
+
+
+\begin{DoxyCode}
+13 \{
+14     \hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_a8984335d1a5b7a1da50cd1698047125f}{tickCounter\_}++;
+15 
+16     \textcolor{keywordflow}{if} (\hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_a8984335d1a5b7a1da50cd1698047125f}{tickCounter\_} % \hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_a6e32f68d5e54787ee80732c1ce4b08f4}{tickTriggerCount\_} == 0)
+17     \{
+18         \hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_a22def81dfff50bf7a7d733e16cf14ce7}{onTimerTick\_}();
+19         \hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_a007a6b8bb86c71b670b56851533a5ea9}{postCountDownEvent\_}();
+20     \}
+21 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classros__timer__client_1_1CbTimerRepeatCountdown_ab9fdad214cdb0f504cbbe68692cacd4e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown@{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown@{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}}
+\subsubsection[{\texorpdfstring{on\+Entry() override}{onEntry() override}}]{\setlength{\rightskip}{0pt plus 5cm}void ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classros__timer__client_1_1CbTimerRepeatCountdown_a605db5c7a861d214d5f9bccfbab5c9ab}{}\label{classros__timer__client_1_1CbTimerRepeatCountdown_a605db5c7a861d214d5f9bccfbab5c9ab}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccClientBehavior_a7962382f93987c720ad432fef55b123f}{smacc\+::\+Smacc\+Client\+Behavior}.
+
+
+
+Definition at line 23 of file cb\+\_\+timer\+\_\+repeat\+\_\+countdown.\+cpp.
+
+
+
+References on\+Client\+Timer\+Tick\+Callback(), ros\+\_\+timer\+\_\+client\+::\+Cl\+Ros\+Timer\+::on\+Timer\+Tick(), smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client(), and timer\+Client\+\_\+.
+
+
+\begin{DoxyCode}
+24 \{
+25     this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a917f001e763a1059af337bf4e164f542}{requiresClient}(\hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_aa75e5963e7a1593d7f71ff821a5127b0}{timerClient\_});
+26     \hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_aa75e5963e7a1593d7f71ff821a5127b0}{timerClient\_}->\hyperlink{classros__timer__client_1_1ClRosTimer_a06ecf6427b5df59f29879ab3bd1f120c}{onTimerTick}(&
+      \hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_ab9fdad214cdb0f504cbbe68692cacd4e}{CbTimerRepeatCountdown::onClientTimerTickCallback}, \textcolor{keyword}{this});
+27 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classros__timer__client_1_1CbTimerRepeatCountdown_a605db5c7a861d214d5f9bccfbab5c9ab_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown@{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}!on\+Exit@{on\+Exit}}
+\index{on\+Exit@{on\+Exit}!ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown@{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}}
+\subsubsection[{\texorpdfstring{on\+Exit() override}{onExit() override}}]{\setlength{\rightskip}{0pt plus 5cm}void ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown\+::on\+Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classros__timer__client_1_1CbTimerRepeatCountdown_ac03676bee050ee3978267f352af80b3a}{}\label{classros__timer__client_1_1CbTimerRepeatCountdown_ac03676bee050ee3978267f352af80b3a}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccClientBehavior_ac0cd72d42bd00425362a97c9803ecce5}{smacc\+::\+Smacc\+Client\+Behavior}.
+
+
+
+Definition at line 29 of file cb\+\_\+timer\+\_\+repeat\+\_\+countdown.\+cpp.
+
+
+\begin{DoxyCode}
+30 \{
+31 \}
+\end{DoxyCode}
+\index{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown@{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}!on\+Timer\+Tick@{on\+Timer\+Tick}}
+\index{on\+Timer\+Tick@{on\+Timer\+Tick}!ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown@{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}}
+\subsubsection[{\texorpdfstring{on\+Timer\+Tick(void(\+T\+::$\ast$callback)(), T $\ast$object)}{onTimerTick(void(T::*callback)(), T *object)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ boost\+::signals2\+::connection ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown\+::on\+Timer\+Tick (
+\begin{DoxyParamCaption}
+\item[{void(T\+::$\ast$)()}]{callback, }
+\item[{T $\ast$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classros__timer__client_1_1CbTimerRepeatCountdown_a33ce52ebbad96fc31b74c957bfddf0c1}{}\label{classros__timer__client_1_1CbTimerRepeatCountdown_a33ce52ebbad96fc31b74c957bfddf0c1}
+
+
+Definition at line 26 of file cb\+\_\+timer\+\_\+repeat\+\_\+countdown.\+h.
+
+
+
+References smacc\+::\+I\+Smacc\+State\+Machine\+::create\+Signal\+Connection(), on\+Timer\+Tick\+\_\+, and smacc\+::\+Smacc\+Client\+Behavior\+::state\+Machine\+\_\+.
+
+
+\begin{DoxyCode}
+27     \{
+28         \textcolor{keywordflow}{return} \hyperlink{classsmacc_1_1SmaccClientBehavior_a7950b5684d6de0a8e8959c0936ce9a19}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_adf0f42ade0c65cc471960fe2a7c42da2}{createSignalConnection}(
+      \hyperlink{classros__timer__client_1_1CbTimerRepeatCountdown_a22def81dfff50bf7a7d733e16cf14ce7}{onTimerTick\_}, callback, \textcolor{keywordtype}{object});
+29     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classros__timer__client_1_1CbTimerRepeatCountdown_a33ce52ebbad96fc31b74c957bfddf0c1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown@{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}!on\+Timer\+Tick\+\_\+@{on\+Timer\+Tick\+\_\+}}
+\index{on\+Timer\+Tick\+\_\+@{on\+Timer\+Tick\+\_\+}!ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown@{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}}
+\subsubsection[{\texorpdfstring{on\+Timer\+Tick\+\_\+}{onTimerTick_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+::\+Smacc\+Signal}$<$void()$>$ ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown\+::on\+Timer\+Tick\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classros__timer__client_1_1CbTimerRepeatCountdown_a22def81dfff50bf7a7d733e16cf14ce7}{}\label{classros__timer__client_1_1CbTimerRepeatCountdown_a22def81dfff50bf7a7d733e16cf14ce7}
+
+
+Definition at line 37 of file cb\+\_\+timer\+\_\+repeat\+\_\+countdown.\+h.
+
+
+
+Referenced by on\+Client\+Timer\+Tick\+Callback(), and on\+Timer\+Tick().
+
+\index{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown@{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}!post\+Count\+Down\+Event\+\_\+@{post\+Count\+Down\+Event\+\_\+}}
+\index{post\+Count\+Down\+Event\+\_\+@{post\+Count\+Down\+Event\+\_\+}!ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown@{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}}
+\subsubsection[{\texorpdfstring{post\+Count\+Down\+Event\+\_\+}{postCountDownEvent_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::function$<$void()$>$ ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown\+::post\+Count\+Down\+Event\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classros__timer__client_1_1CbTimerRepeatCountdown_a007a6b8bb86c71b670b56851533a5ea9}{}\label{classros__timer__client_1_1CbTimerRepeatCountdown_a007a6b8bb86c71b670b56851533a5ea9}
+
+
+Definition at line 36 of file cb\+\_\+timer\+\_\+repeat\+\_\+countdown.\+h.
+
+
+
+Referenced by configure\+Event\+Source\+Types(), and on\+Client\+Timer\+Tick\+Callback().
+
+\index{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown@{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}!tick\+Counter\+\_\+@{tick\+Counter\+\_\+}}
+\index{tick\+Counter\+\_\+@{tick\+Counter\+\_\+}!ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown@{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}}
+\subsubsection[{\texorpdfstring{tick\+Counter\+\_\+}{tickCounter_}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown\+::tick\+Counter\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classros__timer__client_1_1CbTimerRepeatCountdown_a8984335d1a5b7a1da50cd1698047125f}{}\label{classros__timer__client_1_1CbTimerRepeatCountdown_a8984335d1a5b7a1da50cd1698047125f}
+
+
+Definition at line 32 of file cb\+\_\+timer\+\_\+repeat\+\_\+countdown.\+h.
+
+
+
+Referenced by on\+Client\+Timer\+Tick\+Callback().
+
+\index{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown@{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}!tick\+Trigger\+Count\+\_\+@{tick\+Trigger\+Count\+\_\+}}
+\index{tick\+Trigger\+Count\+\_\+@{tick\+Trigger\+Count\+\_\+}!ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown@{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}}
+\subsubsection[{\texorpdfstring{tick\+Trigger\+Count\+\_\+}{tickTriggerCount_}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown\+::tick\+Trigger\+Count\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classros__timer__client_1_1CbTimerRepeatCountdown_a6e32f68d5e54787ee80732c1ce4b08f4}{}\label{classros__timer__client_1_1CbTimerRepeatCountdown_a6e32f68d5e54787ee80732c1ce4b08f4}
+
+
+Definition at line 33 of file cb\+\_\+timer\+\_\+repeat\+\_\+countdown.\+h.
+
+
+
+Referenced by on\+Client\+Timer\+Tick\+Callback().
+
+\index{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown@{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}!timer\+Client\+\_\+@{timer\+Client\+\_\+}}
+\index{timer\+Client\+\_\+@{timer\+Client\+\_\+}!ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown@{ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown}}
+\subsubsection[{\texorpdfstring{timer\+Client\+\_\+}{timerClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cl\+Ros\+Timer}$\ast$ ros\+\_\+timer\+\_\+client\+::\+Cb\+Timer\+Repeat\+Countdown\+::timer\+Client\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classros__timer__client_1_1CbTimerRepeatCountdown_aa75e5963e7a1593d7f71ff821a5127b0}{}\label{classros__timer__client_1_1CbTimerRepeatCountdown_aa75e5963e7a1593d7f71ff821a5127b0}
+
+
+Definition at line 35 of file cb\+\_\+timer\+\_\+repeat\+\_\+countdown.\+h.
+
+
+
+Referenced by on\+Entry().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+client\+\_\+library/ros\+\_\+timer\+\_\+client/include/ros\+\_\+timer\+\_\+client/client\+\_\+behaviors/\hyperlink{cb__timer__repeat__countdown_8h}{cb\+\_\+timer\+\_\+repeat\+\_\+countdown.\+h}\item 
+smacc\+\_\+client\+\_\+library/ros\+\_\+timer\+\_\+client/src/ros\+\_\+timer\+\_\+client/\hyperlink{cb__timer__repeat__countdown_8cpp}{cb\+\_\+timer\+\_\+repeat\+\_\+countdown.\+cpp}\end{DoxyCompactItemize}

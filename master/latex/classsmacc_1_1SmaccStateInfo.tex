@@ -147,7 +147,7 @@ Definition at line 437 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 440 
 441     \textcolor{keyword}{auto} childState = this->\hyperlink{classsmacc_1_1SmaccStateInfo_af9884b3fda41fbc87abf9908b8bd72e7}{stateMachine\_}->createState<StateType>(realparentState);
 442 
-443     ROS\_ERROR\_STREAM(\textcolor{stringliteral}{"Real parent state> "} << demangleSymbol<typename StateType::TContext>());
+443     ROS\_WARN\_STREAM(\textcolor{stringliteral}{"Real parent state> "} << demangleSymbol<typename StateType::TContext>());
 444 
 445     \textcolor{comment}{/*auto contextInfo = smacc::TypeInfo::getTypeInfoFromType<InitialStateType>();}
 446 \textcolor{comment}{    auto parentState2= getState<InitialStateType::TContext>();}
@@ -204,7 +204,7 @@ References smacc\+::\+Smacc\+Transition\+Info\+::index.
       front());
 212 
 213     EventLabel<EvType>(transitionInfo.eventInfo->label);
-214     ROS\_ERROR\_STREAM(\textcolor{stringliteral}{"LABEL: "} << transitionInfo.eventInfo->label);
+214     ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"LABEL: "} << transitionInfo.eventInfo->label);
 215 
 216     \hyperlink{classsmacc_1_1SmaccStateInfo_ab7945472d7b14c50c908b1d1d0c87866}{transitions\_}.push\_back(transitionInfo);
 217 \}
