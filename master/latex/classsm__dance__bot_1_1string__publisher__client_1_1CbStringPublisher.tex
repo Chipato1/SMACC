@@ -1,0 +1,180 @@
+\hypertarget{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher}{}\section{sm\+\_\+dance\+\_\+bot\+:\+:string\+\_\+publisher\+\_\+client\+:\+:Cb\+String\+Publisher Class Reference}
+\label{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher}\index{sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher@{sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher}}
+
+
+{\ttfamily \#include $<$cb\+\_\+string\+\_\+publisher.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+dance\+\_\+bot\+:\+:string\+\_\+publisher\+\_\+client\+:\+:Cb\+String\+Publisher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+dance\+\_\+bot\+:\+:string\+\_\+publisher\+\_\+client\+:\+:Cb\+String\+Publisher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher_adf09d1ab9b2107f3c084bbe19f1a1d3e}{Cb\+String\+Publisher} (std\+::string msg)
+\item 
+virtual void \hyperlink{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher_aa5ecb93a5548cfeeb7c103c9f0009c3a}{on\+Entry} ()
+\item 
+virtual void \hyperlink{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher_ae999bf03223ac330d47dee542d259b72}{on\+Exit} () override
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsm__dance__bot_1_1string__publisher__client_1_1ClStringPublisher}{Cl\+String\+Publisher} $\ast$ \hyperlink{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher_ab193cff488df923ffc0fcc1939c487f5}{publisher\+Client\+\_\+}
+\item 
+std\+::string \hyperlink{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher_a838e820800dd07fdf1179735fe727b12}{msg\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file cb\+\_\+string\+\_\+publisher.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher@{sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher}!Cb\+String\+Publisher@{Cb\+String\+Publisher}}
+\index{Cb\+String\+Publisher@{Cb\+String\+Publisher}!sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher@{sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher}}
+\subsubsection[{\texorpdfstring{Cb\+String\+Publisher(std\+::string msg)}{CbStringPublisher(std::string msg)}}]{\setlength{\rightskip}{0pt plus 5cm}sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher\+::\+Cb\+String\+Publisher (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher_adf09d1ab9b2107f3c084bbe19f1a1d3e}{}\label{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher_adf09d1ab9b2107f3c084bbe19f1a1d3e}
+
+
+Definition at line 17 of file cb\+\_\+string\+\_\+publisher.\+h.
+
+
+
+References keyboard\+\_\+node\+::msg.
+
+
+\begin{DoxyCode}
+18     \{
+19         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"Creating CbStringPublisher behavior with stored message: "} << 
+      \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg});
+20         \hyperlink{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher_a838e820800dd07fdf1179735fe727b12}{msg\_} = \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg};
+21     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher@{sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher@{sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher}}
+\subsubsection[{\texorpdfstring{on\+Entry()}{onEntry()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher_aa5ecb93a5548cfeeb7c103c9f0009c3a}{}\label{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher_aa5ecb93a5548cfeeb7c103c9f0009c3a}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccClientBehavior_a7962382f93987c720ad432fef55b123f}{smacc\+::\+Smacc\+Client\+Behavior}.
+
+
+
+Definition at line 23 of file cb\+\_\+string\+\_\+publisher.\+h.
+
+
+
+References smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client().
+
+
+\begin{DoxyCode}
+24     \{
+25         this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a917f001e763a1059af337bf4e164f542}{requiresClient}(\hyperlink{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher_ab193cff488df923ffc0fcc1939c487f5}{publisherClient\_});
+26     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher_aa5ecb93a5548cfeeb7c103c9f0009c3a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher@{sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher}!on\+Exit@{on\+Exit}}
+\index{on\+Exit@{on\+Exit}!sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher@{sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher}}
+\subsubsection[{\texorpdfstring{on\+Exit() override}{onExit() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher\+::on\+Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher_ae999bf03223ac330d47dee542d259b72}{}\label{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher_ae999bf03223ac330d47dee542d259b72}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccClientBehavior_ac0cd72d42bd00425362a97c9803ecce5}{smacc\+::\+Smacc\+Client\+Behavior}.
+
+
+
+Definition at line 28 of file cb\+\_\+string\+\_\+publisher.\+h.
+
+
+
+References msg\+\_\+, and smacc\+::\+Smacc\+Publisher\+Client$<$ Message\+Type $>$\+::publish().
+
+
+\begin{DoxyCode}
+29     \{
+30         std\_msgs::String rosmsg;
+31         rosmsg.data = \hyperlink{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher_a838e820800dd07fdf1179735fe727b12}{msg\_};
+32         \hyperlink{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher_ab193cff488df923ffc0fcc1939c487f5}{publisherClient\_}->\hyperlink{classsmacc_1_1SmaccPublisherClient_aa635210d9104a5b6f3ea15cb2bf16518}{publish}(rosmsg);
+33     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher_ae999bf03223ac330d47dee542d259b72_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher@{sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher}!msg\+\_\+@{msg\+\_\+}}
+\index{msg\+\_\+@{msg\+\_\+}!sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher@{sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher}}
+\subsubsection[{\texorpdfstring{msg\+\_\+}{msg_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher\+::msg\+\_\+}\hypertarget{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher_a838e820800dd07fdf1179735fe727b12}{}\label{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher_a838e820800dd07fdf1179735fe727b12}
+
+
+Definition at line 15 of file cb\+\_\+string\+\_\+publisher.\+h.
+
+
+
+Referenced by on\+Exit().
+
+\index{sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher@{sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher}!publisher\+Client\+\_\+@{publisher\+Client\+\_\+}}
+\index{publisher\+Client\+\_\+@{publisher\+Client\+\_\+}!sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher@{sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher}}
+\subsubsection[{\texorpdfstring{publisher\+Client\+\_\+}{publisherClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cl\+String\+Publisher}$\ast$ sm\+\_\+dance\+\_\+bot\+::string\+\_\+publisher\+\_\+client\+::\+Cb\+String\+Publisher\+::publisher\+Client\+\_\+}\hypertarget{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher_ab193cff488df923ffc0fcc1939c487f5}{}\label{classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher_ab193cff488df923ffc0fcc1939c487f5}
+
+
+Definition at line 14 of file cb\+\_\+string\+\_\+publisher.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/clients/string\+\_\+publisher\+\_\+client/client\+\_\+behaviors/\hyperlink{cb__string__publisher_8h}{cb\+\_\+string\+\_\+publisher.\+h}\end{DoxyCompactItemize}

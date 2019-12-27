@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['backwarddistance',['backwardDistance',['../classsm__dance__bot_1_1CbNavigateBackwards.html#ace20c1dfa7b8e84c754aedbd3dd00fdf',1,'sm_dance_bot::CbNavigateBackwards']]],
-  ['backwardspeed',['backwardSpeed',['../classsm__dance__bot_1_1CbNavigateBackwards.html#a329c8dbb9c52b3b69393800872cc6e60',1,'sm_dance_bot::CbNavigateBackwards']]],
+  ['backwarddistance',['backwardDistance',['../classsm__dance__bot_1_1CbNavigateBackwards.html#ad5b1a7d85676aefa31f966baf61b6378',1,'sm_dance_bot::CbNavigateBackwards::backwardDistance()'],['../classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateBackwards.html#a4067b6379c6f1c8e7d6d90a1206e98f8',1,'sm_dance_bot::move_base_z_client::CbNavigateBackwards::backwardDistance()']]],
+  ['backwardspeed',['backwardSpeed',['../classsm__dance__bot_1_1CbNavigateBackwards.html#ac61b513376e38ae6eb3eb9c9ebf1dd8e',1,'sm_dance_bot::CbNavigateBackwards::backwardSpeed()'],['../classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateBackwards.html#a175ffec2b79c411ee1b88cff62ed37e9',1,'sm_dance_bot::move_base_z_client::CbNavigateBackwards::backwardSpeed()']]],
   ['backwardsplanpath_5f',['backwardsPlanPath_',['../classbackward__local__planner_1_1BackwardLocalPlanner.html#aaa37c16e1735cb440986b3d41e6ef8e6',1,'backward_local_planner::BackwardLocalPlanner']]],
   ['basetrajectory_5f',['baseTrajectory_',['../classodom__tracker_1_1OdomTracker.html#a889adca220c33056d9a582eceda64adc',1,'odom_tracker::OdomTracker']]],
   ['behaviortype',['behaviorType',['../structsmacc_1_1StateBehaviorInfoEntry.html#a9f77a396b80171e010b3c30778b2f3f0',1,'smacc::StateBehaviorInfoEntry']]],

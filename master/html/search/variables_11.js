@@ -6,7 +6,7 @@ var searchData=
   ['robotbasepathpub_5f',['robotBasePathPub_',['../classodom__tracker_1_1OdomTracker.html#a53e20a1b81ef82bf4c736d554e77a828',1,'odom_tracker::OdomTracker']]],
   ['root',['root',['../namespaceconf.html#ad32f00e5793a88cf41ae2357bd582ca0',1,'conf']]],
   ['roottypeinfo',['roottypeinfo',['../namespaceregex__template.html#a0b583a61fb8c99797bfa366fda2f86a2',1,'regex_template']]],
-  ['rotatedegree',['rotateDegree',['../classsm__dance__bot_1_1CbRotate.html#afc9a39441200364bc1f503e57a48a4ba',1,'sm_dance_bot::CbRotate']]],
+  ['rotatedegree',['rotateDegree',['../classsm__dance__bot_1_1CbRotate.html#aede47d27b6caff0d5459afd1762ddda2',1,'sm_dance_bot::CbRotate::rotateDegree()'],['../classsm__dance__bot_1_1move__base__z__client_1_1CbRotate.html#ab1ecbec2a3e65f6339d176f440e2e2f3',1,'sm_dance_bot::move_base_z_client::CbRotate::rotateDegree()']]],
   ['rt_5fready_5fflag',['rt_ready_flag',['../structsm__dance__bot_1_1SmDanceBot.html#a0f0587a13670ad8925555cd8f6cb6b2d',1,'sm_dance_bot::SmDanceBot']]],
   ['runmode_5f',['runMode_',['../classsmacc_1_1ISmaccStateMachine.html#a9f8cfbf577f7ae7a48b7a328e2e6b589',1,'smacc::ISmaccStateMachine']]]
 ];

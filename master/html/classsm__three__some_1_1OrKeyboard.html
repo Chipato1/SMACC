@@ -177,20 +177,7 @@ Public Member Functions</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classsmacc_1_1Orthogonal.html#a7a3da420b1554e20aea3ed01067df05c">smacc::Orthogonal</a>.</p>
 
 <p>Definition at line <a class="el" href="or__keyboard__orthogonal_8h_source.html#l00010">10</a> of file <a class="el" href="or__keyboard__orthogonal_8h_source.html">or_keyboard_orthogonal.h</a>.</p>
-
-<p>References <a class="el" href="cl__keyboard_8h_source.html#l00164">sm_three_some::ClKeyboard::initialize()</a>, and <a class="el" href="smacc__subscriber__client_8h_source.html#l00042">smacc::SmaccSubscriberClient&lt; MessageType &gt;::topicName</a>.</p>
-<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">auto</span> ClKeyboard = this-&gt;createClient&lt;OrKeyboard, sm_three_some::ClKeyboard&gt;();</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        ClKeyboard-&gt;topicName = <span class="stringliteral">&quot;/keyboard_unicode&quot;</span>;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="comment">//ClKeyboard.queueSize = 1;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        ClKeyboard-&gt;initialize();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div></div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classsm__three__some_1_1OrKeyboard_af49faa7c511ae0232ed0931ce8c85b56_cgraph.png" border="0" usemap="#classsm__three__some_1_1OrKeyboard_af49faa7c511ae0232ed0931ce8c85b56_cgraph" alt=""/></div>
-<map name="classsm__three__some_1_1OrKeyboard_af49faa7c511ae0232ed0931ce8c85b56_cgraph" id="classsm__three__some_1_1OrKeyboard_af49faa7c511ae0232ed0931ce8c85b56_cgraph">
-<area shape="rect" id="node2" href="classsm__three__some_1_1ClKeyboard.html#adbc06c9dc3a4a5b266ff70a4300dcdeb" title="sm_three_some::ClKeyboard\l::initialize" alt="" coords="261,5,467,47"/>
-<area shape="rect" id="node3" href="classsmacc_1_1SmaccSubscriberClient.html#acfa97685ecc588fe61eb57002354b58a" title="smacc::SmaccSubscriberClient\l\&lt; std_msgs::UInt16 \&gt;::initialize" alt="" coords="515,5,737,47"/>
-</map>
-</div>
-</p>
-
+<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">auto</span> clKeyboard = this-&gt;createClient&lt;OrKeyboard, ClKeyboard&gt;();</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        clKeyboard-&gt;topicName = <span class="stringliteral">&quot;/keyboard_unicode&quot;</span>;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="comment">//ClKeyboard.queueSize = 1;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        clKeyboard-&gt;initialize();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

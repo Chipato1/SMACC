@@ -12,8 +12,7 @@
 <area shape="rect" id="node12" href="$classsmacc_1_1ISmaccClient.html#a46cbc0d695214efe40d29247323bfc80" title="smacc::ISmaccClient\l::postEvent" alt="" coords="2024,71,2179,112"/>
 <area shape="rect" id="node13" href="$classsmacc_1_1ISmaccComponent.html#a687dead5b87a3b9781b9bf6ab0b7afa5" title="smacc::ISmaccComponent\l::postEvent" alt="" coords="2004,136,2199,177"/>
 <area shape="rect" id="node14" href="$classsmacc_1_1ISmaccState.html#acef404ab3766ddf2892e8dad14a4a7cf" title="smacc::ISmaccState\l::postEvent" alt="" coords="2024,201,2179,243"/>
-<area shape="rect" id="node15" href="$classsmacc_1_1SmaccState.html#a56ccdfaf818ed6409dcbd4ab8b01c60e" title="smacc::SmaccState\&lt;\l SsrFPatternStartLoop,\l SS \&gt;::throwFinishEvent" alt="" coords="2297,114,2471,170"/>
-<area shape="rect" id="node16" href="$classsmacc_1_1SmaccState.html#a4f3083a54914820cd7b9eb5a6221f29f" title="smacc::SmaccState\&lt;\l SsrFPatternStartLoop,\l SS \&gt;::throwLoopEventFromCondition" alt="" coords="2253,194,2515,250"/>
-<area shape="rect" id="node18" href="$namespacesm__viewer__sim.html#a19b5db17983d5b9bbf21e96ecf9ab5c8" title="sm_viewer_sim::delayedPost\lEvent" alt="" coords="2281,273,2487,315"/>
-<area shape="rect" id="node17" href="$structSsrFPatternStartLoop.html#a03c8e22081b280dde05b22ebf707eb30" title="SsrFPatternStartLoop\l::onEntry" alt="" coords="2563,201,2721,243"/>
+<area shape="rect" id="node15" href="$classsmacc_1_1SmaccState.html#a56ccdfaf818ed6409dcbd4ab8b01c60e" title="smacc::SmaccState\&lt;\l MsDanceBotRunMode,\l SmDanceBot, StAcquireSensors\l \&gt;::throwFinishEvent" alt="" coords="2256,92,2489,163"/>
+<area shape="rect" id="node16" href="$classsmacc_1_1SmaccState.html#a4f3083a54914820cd7b9eb5a6221f29f" title="smacc::SmaccState\&lt;\l MsDanceBotRunMode,\l SmDanceBot, StAcquireSensors\l \&gt;::throwLoopEventFromCondition" alt="" coords="2253,187,2492,257"/>
+<area shape="rect" id="node17" href="$namespacesm__viewer__sim.html#a19b5db17983d5b9bbf21e96ecf9ab5c8" title="sm_viewer_sim::delayedPost\lEvent" alt="" coords="2270,281,2475,323"/>
 </map>

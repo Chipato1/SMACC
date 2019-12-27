@@ -1,11 +1,11 @@
 <map id="smacc_sm_reference_library/sm_dance_bot/include/sm_dance_bot/superstates/ss_f_pattern_1.h" name="smacc_sm_reference_library/sm_dance_bot/include/sm_dance_bot/superstates/ss_f_pattern_1.h">
 <area shape="rect" id="node2" href="$smacc_8h.html" title="smacc/smacc.h" alt="" coords="2607,139,2729,165"/>
-<area shape="rect" id="node76" href="$ssr__fpattern__rotate__1_8h.html" title="sm_dance_bot/superstate\l_routines/f_pattern/ssr\l_fpattern_rotate_1.h" alt="" coords="2753,124,2943,180"/>
-<area shape="rect" id="node77" href="$ssr__fpattern__forward__1_8h.html" title="sm_dance_bot/superstate\l_routines/f_pattern/ssr\l_fpattern_forward_1.h" alt="" coords="2967,124,3156,180"/>
-<area shape="rect" id="node78" href="$ssr__fpattern__return__1_8h.html" title="sm_dance_bot/superstate\l_routines/f_pattern/ssr\l_fpattern_return_1.h" alt="" coords="3180,124,3369,180"/>
-<area shape="rect" id="node79" href="$ssr__fpattern__rotate__2_8h.html" title="sm_dance_bot/superstate\l_routines/f_pattern/ssr\l_fpattern_rotate_2.h" alt="" coords="3393,124,3583,180"/>
-<area shape="rect" id="node80" href="$ssr__fpattern__forward__2_8h.html" title="sm_dance_bot/superstate\l_routines/f_pattern/ssr\l_fpattern_forward_2.h" alt="" coords="3607,124,3796,180"/>
-<area shape="rect" id="node81" href="$ssr__fpattern__loop__start_8h.html" title="sm_dance_bot/superstate\l_routines/f_pattern/ssr\l_fpattern_loop_start.h" alt="" coords="3820,124,4009,180"/>
+<area shape="rect" id="node76" href="$ssr__fpattern__rotate__1_8h.html" title="sm_dance_bot/states\l/f_pattern/ssr_fpattern\l_rotate_1.h" alt="" coords="2753,124,2919,180"/>
+<area shape="rect" id="node77" href="$ssr__fpattern__forward__1_8h.html" title="sm_dance_bot/states\l/f_pattern/ssr_fpattern\l_forward_1.h" alt="" coords="2943,124,3108,180"/>
+<area shape="rect" id="node78" href="$ssr__fpattern__return__1_8h.html" title="sm_dance_bot/states\l/f_pattern/ssr_fpattern\l_return_1.h" alt="" coords="3132,124,3297,180"/>
+<area shape="rect" id="node79" href="$ssr__fpattern__rotate__2_8h.html" title="sm_dance_bot/states\l/f_pattern/ssr_fpattern\l_rotate_2.h" alt="" coords="3321,124,3487,180"/>
+<area shape="rect" id="node80" href="$ssr__fpattern__forward__2_8h.html" title="sm_dance_bot/states\l/f_pattern/ssr_fpattern\l_forward_2.h" alt="" coords="3511,124,3676,180"/>
+<area shape="rect" id="node81" href="$ssr__fpattern__loop__start_8h.html" title="sm_dance_bot/states\l/f_pattern/ssr_fpattern\l_loop_start.h" alt="" coords="3700,124,3865,180"/>
 <area shape="rect" id="node3" href="$common_8h.html" title="smacc/common.h" alt="" coords="2189,667,2326,694"/>
 <area shape="rect" id="node46" href="$smacc__state__machine__base_8h.html" title="smacc/smacc_state_machine\l_base.h" alt="" coords="1778,228,1990,269"/>
 <area shape="rect" id="node66" href="$smacc__signal__detector_8h.html" title="smacc/smacc_signal\l_detector.h" alt="" coords="2447,571,2601,612"/>

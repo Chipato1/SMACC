@@ -1,0 +1,125 @@
+\hypertarget{classsm__dance__bot_1_1tool__client_1_1CbToolStart}{}\section{sm\+\_\+dance\+\_\+bot\+:\+:tool\+\_\+client\+:\+:Cb\+Tool\+Start Class Reference}
+\label{classsm__dance__bot_1_1tool__client_1_1CbToolStart}\index{sm\+\_\+dance\+\_\+bot\+::tool\+\_\+client\+::\+Cb\+Tool\+Start@{sm\+\_\+dance\+\_\+bot\+::tool\+\_\+client\+::\+Cb\+Tool\+Start}}
+
+
+{\ttfamily \#include $<$cb\+\_\+tool\+\_\+start.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+dance\+\_\+bot\+:\+:tool\+\_\+client\+:\+:Cb\+Tool\+Start\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classsm__dance__bot_1_1tool__client_1_1CbToolStart__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+dance\+\_\+bot\+:\+:tool\+\_\+client\+:\+:Cb\+Tool\+Start\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot_1_1tool__client_1_1CbToolStart__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classsm__dance__bot_1_1tool__client_1_1CbToolStart_aecce17a02ff17a047a62f96634b9bbd4}{on\+Entry} () override
+\item 
+virtual void \hyperlink{classsm__dance__bot_1_1tool__client_1_1CbToolStart_aa835b2eef4c23cd83d24880fc47ca0d1}{on\+Exit} () override
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc_1_1SmaccToolActionClient}{smacc\+::\+Smacc\+Tool\+Action\+Client} $\ast$ \hyperlink{classsm__dance__bot_1_1tool__client_1_1CbToolStart_af25839ca32b7478b30f3c42356a417bf}{tool\+Action\+Client\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file cb\+\_\+tool\+\_\+start.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+::tool\+\_\+client\+::\+Cb\+Tool\+Start@{sm\+\_\+dance\+\_\+bot\+::tool\+\_\+client\+::\+Cb\+Tool\+Start}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!sm\+\_\+dance\+\_\+bot\+::tool\+\_\+client\+::\+Cb\+Tool\+Start@{sm\+\_\+dance\+\_\+bot\+::tool\+\_\+client\+::\+Cb\+Tool\+Start}}
+\subsubsection[{\texorpdfstring{on\+Entry() override}{onEntry() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+dance\+\_\+bot\+::tool\+\_\+client\+::\+Cb\+Tool\+Start\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__dance__bot_1_1tool__client_1_1CbToolStart_aecce17a02ff17a047a62f96634b9bbd4}{}\label{classsm__dance__bot_1_1tool__client_1_1CbToolStart_aecce17a02ff17a047a62f96634b9bbd4}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccClientBehavior_a7962382f93987c720ad432fef55b123f}{smacc\+::\+Smacc\+Client\+Behavior}.
+
+
+
+Definition at line 15 of file cb\+\_\+tool\+\_\+start.\+h.
+
+
+
+References smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client(), and smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal().
+
+
+\begin{DoxyCode}
+16   \{
+17     this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a917f001e763a1059af337bf4e164f542}{requiresClient}(\hyperlink{classsm__dance__bot_1_1tool__client_1_1CbToolStart_af25839ca32b7478b30f3c42356a417bf}{toolActionClient\_});
+18 
+19     smacc::SmaccToolActionClient::Goal goal;
+20     goal.command = smacc::SmaccToolActionClient::Goal::CMD\_START;
+21     \hyperlink{classsm__dance__bot_1_1tool__client_1_1CbToolStart_af25839ca32b7478b30f3c42356a417bf}{toolActionClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
+22   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot_1_1tool__client_1_1CbToolStart_aecce17a02ff17a047a62f96634b9bbd4_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{sm\+\_\+dance\+\_\+bot\+::tool\+\_\+client\+::\+Cb\+Tool\+Start@{sm\+\_\+dance\+\_\+bot\+::tool\+\_\+client\+::\+Cb\+Tool\+Start}!on\+Exit@{on\+Exit}}
+\index{on\+Exit@{on\+Exit}!sm\+\_\+dance\+\_\+bot\+::tool\+\_\+client\+::\+Cb\+Tool\+Start@{sm\+\_\+dance\+\_\+bot\+::tool\+\_\+client\+::\+Cb\+Tool\+Start}}
+\subsubsection[{\texorpdfstring{on\+Exit() override}{onExit() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+dance\+\_\+bot\+::tool\+\_\+client\+::\+Cb\+Tool\+Start\+::on\+Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__dance__bot_1_1tool__client_1_1CbToolStart_aa835b2eef4c23cd83d24880fc47ca0d1}{}\label{classsm__dance__bot_1_1tool__client_1_1CbToolStart_aa835b2eef4c23cd83d24880fc47ca0d1}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccClientBehavior_ac0cd72d42bd00425362a97c9803ecce5}{smacc\+::\+Smacc\+Client\+Behavior}.
+
+
+
+Definition at line 24 of file cb\+\_\+tool\+\_\+start.\+h.
+
+
+\begin{DoxyCode}
+25   \{
+26     \textcolor{comment}{//ROS\_INFO("Entering ToolClientBehavior");}
+27   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+::tool\+\_\+client\+::\+Cb\+Tool\+Start@{sm\+\_\+dance\+\_\+bot\+::tool\+\_\+client\+::\+Cb\+Tool\+Start}!tool\+Action\+Client\+\_\+@{tool\+Action\+Client\+\_\+}}
+\index{tool\+Action\+Client\+\_\+@{tool\+Action\+Client\+\_\+}!sm\+\_\+dance\+\_\+bot\+::tool\+\_\+client\+::\+Cb\+Tool\+Start@{sm\+\_\+dance\+\_\+bot\+::tool\+\_\+client\+::\+Cb\+Tool\+Start}}
+\subsubsection[{\texorpdfstring{tool\+Action\+Client\+\_\+}{toolActionClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+::\+Smacc\+Tool\+Action\+Client}$\ast$ sm\+\_\+dance\+\_\+bot\+::tool\+\_\+client\+::\+Cb\+Tool\+Start\+::tool\+Action\+Client\+\_\+}\hypertarget{classsm__dance__bot_1_1tool__client_1_1CbToolStart_af25839ca32b7478b30f3c42356a417bf}{}\label{classsm__dance__bot_1_1tool__client_1_1CbToolStart_af25839ca32b7478b30f3c42356a417bf}
+
+
+Definition at line 13 of file cb\+\_\+tool\+\_\+start.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/clients/tool\+\_\+client/client\+\_\+behaviors/\hyperlink{cb__tool__start_8h}{cb\+\_\+tool\+\_\+start.\+h}\end{DoxyCompactItemize}

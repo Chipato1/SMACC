@@ -4,7 +4,7 @@ var searchData=
   ['scene_5fmanager_5f',['scene_manager_',['../classsmacc__rviz__plugin_1_1ImuVisual.html#acef4dba58d14224192bbed7eabbd6cbb',1,'smacc_rviz_plugin::ImuVisual']]],
   ['scheduler_5f',['scheduler_',['../classsmacc_1_1SignalDetector.html#adaee5b9b91d0e6305dc1ab30f7ab566d',1,'smacc::SignalDetector']]],
   ['sensor_5f',['sensor_',['../classsmacc_1_1SensorTopic.html#affbf010b80f779369dd14d786c1ed9e3',1,'smacc::SensorTopic']]],
-  ['serviceclient_5f',['serviceClient_',['../classsm__dance__bot_1_1CbService3.html#a23064503560f82cf5d6e24e393c2aa9c',1,'sm_dance_bot::CbService3']]],
+  ['serviceclient_5f',['serviceClient_',['../classsm__dance__bot_1_1service3__client_1_1CbService3.html#af0d87e9fa611b477f2504884b432b218',1,'sm_dance_bot::service3_client::CbService3']]],
   ['servicename_5f',['serviceName_',['../classsmacc_1_1SmaccServiceClient.html#a93cf1653e9d7a0f4aa25dbb8ae7d07fc',1,'smacc::SmaccServiceClient']]],
   ['set_5fplanners_5fmode_5fflag',['set_planners_mode_flag',['../classplanner__switcher_1_1PlannerSwitcher.html#ac11d8cdbf44c99c21d3405d32f00a041',1,'planner_switcher::PlannerSwitcher']]],
   ['settings',['settings',['../namespacekeyboard__node.html#aaf29d185963f7dbed690d072de1a0b17',1,'keyboard_node']]],

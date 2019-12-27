@@ -1,18 +1,18 @@
 <map id="smacc_sm_reference_library/sm_dance_bot/include/sm_dance_bot/orthogonals/or_temperature_sensor.h" name="smacc_sm_reference_library/sm_dance_bot/include/sm_dance_bot/orthogonals/or_temperature_sensor.h">
-<area shape="rect" id="node2" href="$smacc__orthogonal_8h.html" title="smacc/smacc_orthogonal.h" alt="" coords="5,496,204,523"/>
-<area shape="rect" id="node46" href="$sensor__client_8h.html" title="smacc_interface_components\l/clients/sensor_client.h" alt="" coords="2473,228,2688,269"/>
-<area shape="rect" id="node52" href="$cl__temperature__sensor_8h.html" title="sm_dance_bot/clients\l/cl_temperature_sensor.h" alt="" coords="2269,139,2455,180"/>
-<area shape="rect" id="node3" href="$common_8h.html" title="smacc/common.h" alt="" coords="1455,571,1592,597"/>
-<area shape="rect" id="node20" href="$smacc__fifo__scheduler_8h.html" title="smacc/smacc_fifo_scheduler.h" alt="" coords="2651,653,2867,679"/>
-<area shape="rect" id="node24" href="$smacc__types_8h.html" title="smacc/smacc_types.h" alt="" coords="1477,928,1641,955"/>
-<area shape="rect" id="node26" href="$introspection_8h.html" title="smacc/introspection\l/introspection.h" alt="" coords="1761,735,1912,776"/>
-<area shape="rect" id="node42" href="$smacc__default__events_8h.html" title="smacc/smacc_default\l_events.h" alt="" coords="1087,735,1248,776"/>
-<area shape="rect" id="node43" href="$smacc__transition_8h.html" title="smacc/smacc_transition.h" alt="" coords="1638,653,1827,679"/>
-<area shape="rect" id="node22" href="$smacc__fifo__worker_8h.html" title="smacc/smacc_fifo_worker.h" alt="" coords="2661,742,2857,769"/>
-<area shape="rect" id="node30" href="$string__type__walker_8h.html" title="smacc/introspection\l/string_type_walker.h" alt="" coords="2246,831,2401,873"/>
-<area shape="rect" id="node35" href="$smacc__state__info_8h.html" title="smacc/introspection\l/smacc_state_info.h" alt="" coords="1668,831,1819,873"/>
-<area shape="rect" id="node38" href="$smacc__state__machine__info_8h.html" title="smacc/introspection\l/smacc_state_machine\l_info.h" alt="" coords="671,824,842,880"/>
-<area shape="rect" id="node47" href="$smacc__subscriber__client_8h.html" title="smacc/client_bases\l/smacc_subscriber_client.h" alt="" coords="2661,317,2855,359"/>
-<area shape="rect" id="node48" href="$smacc__client_8h.html" title="smacc/smacc_client.h" alt="" coords="2657,414,2819,441"/>
-<area shape="rect" id="node49" href="$component_8h.html" title="smacc/component.h" alt="" coords="2075,496,2228,523"/>
+<area shape="rect" id="node2" href="$smacc__orthogonal_8h.html" title="smacc/smacc_orthogonal.h" alt="" coords="5,511,204,537"/>
+<area shape="rect" id="node46" href="$sensor__client_8h.html" title="smacc_interface_components\l/clients/sensor_client.h" alt="" coords="2473,243,2688,284"/>
+<area shape="rect" id="node52" href="$cl__temperature__sensor_8h.html" title="sm_dance_bot/clients\l/temperature_sensor_client\l/cl_temperature_sensor.h" alt="" coords="2264,139,2463,195"/>
+<area shape="rect" id="node3" href="$common_8h.html" title="smacc/common.h" alt="" coords="1455,585,1592,612"/>
+<area shape="rect" id="node20" href="$smacc__fifo__scheduler_8h.html" title="smacc/smacc_fifo_scheduler.h" alt="" coords="2651,667,2867,694"/>
+<area shape="rect" id="node24" href="$smacc__types_8h.html" title="smacc/smacc_types.h" alt="" coords="1477,943,1641,969"/>
+<area shape="rect" id="node26" href="$introspection_8h.html" title="smacc/introspection\l/introspection.h" alt="" coords="1761,749,1912,791"/>
+<area shape="rect" id="node42" href="$smacc__default__events_8h.html" title="smacc/smacc_default\l_events.h" alt="" coords="1087,749,1248,791"/>
+<area shape="rect" id="node43" href="$smacc__transition_8h.html" title="smacc/smacc_transition.h" alt="" coords="1638,667,1827,694"/>
+<area shape="rect" id="node22" href="$smacc__fifo__worker_8h.html" title="smacc/smacc_fifo_worker.h" alt="" coords="2661,757,2857,783"/>
+<area shape="rect" id="node30" href="$string__type__walker_8h.html" title="smacc/introspection\l/string_type_walker.h" alt="" coords="2246,846,2401,887"/>
+<area shape="rect" id="node35" href="$smacc__state__info_8h.html" title="smacc/introspection\l/smacc_state_info.h" alt="" coords="1668,846,1819,887"/>
+<area shape="rect" id="node38" href="$smacc__state__machine__info_8h.html" title="smacc/introspection\l/smacc_state_machine\l_info.h" alt="" coords="671,839,842,895"/>
+<area shape="rect" id="node47" href="$smacc__subscriber__client_8h.html" title="smacc/client_bases\l/smacc_subscriber_client.h" alt="" coords="2661,332,2855,373"/>
+<area shape="rect" id="node48" href="$smacc__client_8h.html" title="smacc/smacc_client.h" alt="" coords="2657,429,2819,455"/>
+<area shape="rect" id="node49" href="$component_8h.html" title="smacc/component.h" alt="" coords="2075,511,2228,537"/>
 </map>

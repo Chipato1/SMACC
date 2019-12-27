@@ -1,0 +1,124 @@
+\hypertarget{classsm__dance__bot_1_1move__base__z__client_1_1CbUndoPathBackwards}{}\section{sm\+\_\+dance\+\_\+bot\+:\+:move\+\_\+base\+\_\+z\+\_\+client\+:\+:Cb\+Undo\+Path\+Backwards Class Reference}
+\label{classsm__dance__bot_1_1move__base__z__client_1_1CbUndoPathBackwards}\index{sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards@{sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards}}
+
+
+{\ttfamily \#include $<$cb\+\_\+undo\+\_\+path\+\_\+backwards.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+dance\+\_\+bot\+:\+:move\+\_\+base\+\_\+z\+\_\+client\+:\+:Cb\+Undo\+Path\+Backwards\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classsm__dance__bot_1_1move__base__z__client_1_1CbUndoPathBackwards__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+dance\+\_\+bot\+:\+:move\+\_\+base\+\_\+z\+\_\+client\+:\+:Cb\+Undo\+Path\+Backwards\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot_1_1move__base__z__client_1_1CbUndoPathBackwards__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbUndoPathBackwards_a4d5ae7f19351854449c4ba7f2f83d462}{on\+Entry} () override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tf\+::\+Transform\+Listener \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbUndoPathBackwards_a0435bdc608b904ec465a82ad16d9fbdb}{listener}
+\item 
+\hyperlink{classsmacc_1_1ClMoveBaseZ}{smacc\+::\+Cl\+Move\+BaseZ} $\ast$ \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbUndoPathBackwards_ae5c50f5cf5fdcd34f25592b8490dce25}{move\+Base\+Client\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file cb\+\_\+undo\+\_\+path\+\_\+backwards.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards@{sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards@{sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards}}
+\subsubsection[{\texorpdfstring{on\+Entry() override}{onEntry() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classsm__dance__bot_1_1move__base__z__client_1_1CbUndoPathBackwards_a4d5ae7f19351854449c4ba7f2f83d462}{}\label{classsm__dance__bot_1_1move__base__z__client_1_1CbUndoPathBackwards_a4d5ae7f19351854449c4ba7f2f83d462}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccClientBehavior_a7962382f93987c720ad432fef55b123f}{smacc\+::\+Smacc\+Client\+Behavior}.
+
+
+
+Definition at line 18 of file cb\+\_\+undo\+\_\+path\+\_\+backwards.\+h.
+
+
+
+References odom\+\_\+tracker\+::\+C\+L\+E\+A\+R\+\_\+\+P\+A\+T\+H\+\_\+\+B\+A\+C\+K\+W\+A\+RD, smacc\+::\+I\+Smacc\+Client\+::get\+Component(), odom\+\_\+tracker\+::\+Odom\+Tracker\+::get\+Path(), smacc\+::\+Cl\+Move\+Base\+Z\+::planner\+Switcher\+\_\+, smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client(), and smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal().
+
+
+\begin{DoxyCode}
+19   \{
+20     this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a917f001e763a1059af337bf4e164f542}{requiresClient}(\hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbUndoPathBackwards_ae5c50f5cf5fdcd34f25592b8490dce25}{moveBaseClient\_});
+21     \textcolor{keyword}{auto} *odomTracker = \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbUndoPathBackwards_ae5c50f5cf5fdcd34f25592b8490dce25}{moveBaseClient\_}->\hyperlink{classsmacc_1_1ISmaccClient_adef78db601749ca63c19e74a27cb88cc}{getComponent}<
+      \hyperlink{classodom__tracker_1_1OdomTracker}{odom\_tracker::OdomTracker}>();
+22 
+23     nav\_msgs::Path forwardpath = odomTracker->\hyperlink{classodom__tracker_1_1OdomTracker_a33cb7ab3947b27bf61fabb5be2dd87c9}{getPath}();
+24     \textcolor{comment}{//ROS\_INFO\_STREAM("[UndoPathBackward] Current path backwards: " << forwardpath);}
+25 
+26     odomTracker->setWorkingMode(\hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88a0cf8f27617189e35619df3c18bda6274}{odom\_tracker::WorkingMode::CLEAR\_PATH\_BACKWARD}
+      );
+27 
+28     smacc::ClMoveBaseZ::Goal goal;
+29     \textcolor{keywordflow}{if} (forwardpath.poses.size() > 0)
+30     \{
+31       goal.target\_pose = forwardpath.poses.front();
+32       \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbUndoPathBackwards_ae5c50f5cf5fdcd34f25592b8490dce25}{moveBaseClient\_}->\hyperlink{classsmacc_1_1ClMoveBaseZ_a712e0df77c9629930e03cbb4c539b485}{plannerSwitcher\_}->setBackwardPlanner();
+33       \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbUndoPathBackwards_ae5c50f5cf5fdcd34f25592b8490dce25}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
+34     \}
+35   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot_1_1move__base__z__client_1_1CbUndoPathBackwards_a4d5ae7f19351854449c4ba7f2f83d462_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards@{sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards}!listener@{listener}}
+\index{listener@{listener}!sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards@{sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards}}
+\subsubsection[{\texorpdfstring{listener}{listener}}]{\setlength{\rightskip}{0pt plus 5cm}tf\+::\+Transform\+Listener sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards\+::listener\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsm__dance__bot_1_1move__base__z__client_1_1CbUndoPathBackwards_a0435bdc608b904ec465a82ad16d9fbdb}{}\label{classsm__dance__bot_1_1move__base__z__client_1_1CbUndoPathBackwards_a0435bdc608b904ec465a82ad16d9fbdb}
+
+
+Definition at line 14 of file cb\+\_\+undo\+\_\+path\+\_\+backwards.\+h.
+
+\index{sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards@{sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards}!move\+Base\+Client\+\_\+@{move\+Base\+Client\+\_\+}}
+\index{move\+Base\+Client\+\_\+@{move\+Base\+Client\+\_\+}!sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards@{sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards}}
+\subsubsection[{\texorpdfstring{move\+Base\+Client\+\_\+}{moveBaseClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+::\+Cl\+Move\+BaseZ}$\ast$ sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards\+::move\+Base\+Client\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsm__dance__bot_1_1move__base__z__client_1_1CbUndoPathBackwards_ae5c50f5cf5fdcd34f25592b8490dce25}{}\label{classsm__dance__bot_1_1move__base__z__client_1_1CbUndoPathBackwards_ae5c50f5cf5fdcd34f25592b8490dce25}
+
+
+Definition at line 16 of file cb\+\_\+undo\+\_\+path\+\_\+backwards.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/clients/move\+\_\+base\+\_\+z\+\_\+client/client\+\_\+behaviors/\hyperlink{smacc__sm__reference__library_2sm__dance__bot_2include_2sm__dance__bot_2clients_2move__base__z__cbd8c3428f8fd904f4c517acee635ded}{cb\+\_\+undo\+\_\+path\+\_\+backwards.\+h}\end{DoxyCompactItemize}

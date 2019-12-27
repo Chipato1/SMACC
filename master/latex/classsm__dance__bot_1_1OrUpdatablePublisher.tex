@@ -57,8 +57,7 @@ Definition at line 11 of file or\+\_\+updatable\+\_\+publisher.\+h.
 
 \begin{DoxyCode}
 12     \{
-13         \textcolor{keyword}{auto} publisherClient\_ = this->createClient<OrUpdatablePublisher,
-       sm\_dance\_bot::ClUpdatableStringPublisher>();
+13         \textcolor{keyword}{auto} publisherClient\_ = this->createClient<OrUpdatablePublisher, ClUpdatableStringPublisher>();
 14         publisherClient\_->topicName = \textcolor{stringliteral}{"/updatable\_string\_publisher\_out"};
 15         publisherClient\_->initialize();
 16     \}

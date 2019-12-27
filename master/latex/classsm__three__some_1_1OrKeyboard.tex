@@ -55,31 +55,15 @@ Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01
 Definition at line 10 of file or\+\_\+keyboard\+\_\+orthogonal.\+h.
 
 
-
-References sm\+\_\+three\+\_\+some\+::\+Cl\+Keyboard\+::initialize(), and smacc\+::\+Smacc\+Subscriber\+Client$<$ Message\+Type $>$\+::topic\+Name.
-
-
 \begin{DoxyCode}
 11     \{
-12         \textcolor{keyword}{auto} ClKeyboard = this->createClient<OrKeyboard, sm\_three\_some::ClKeyboard>();
-13         ClKeyboard->topicName = \textcolor{stringliteral}{"/keyboard\_unicode"};
+12         \textcolor{keyword}{auto} clKeyboard = this->createClient<OrKeyboard, ClKeyboard>();
+13         clKeyboard->topicName = \textcolor{stringliteral}{"/keyboard\_unicode"};
 14 
 15         \textcolor{comment}{//ClKeyboard.queueSize = 1;}
-16         ClKeyboard->initialize();
+16         clKeyboard->initialize();
 17     \}
 \end{DoxyCode}
-
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classsm__three__some_1_1OrKeyboard_af49faa7c511ae0232ed0931ce8c85b56_cgraph}
-\end{center}
-\end{figure}
-
-
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

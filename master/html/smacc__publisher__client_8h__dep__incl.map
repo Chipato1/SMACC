@@ -1,10 +1,10 @@
 <map id="smacc/include/smacc/client_bases/smacc_publisher_client.h" name="smacc/include/smacc/client_bases/smacc_publisher_client.h">
-<area shape="rect" id="node2" href="$cl__string__publisher_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/clients/cl_string_publisher.h" alt="" coords="193,109,393,180"/>
-<area shape="rect" id="node7" href="$cl__updatable__publisher_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/clients/cl_updatable_publisher.h" alt="" coords="418,109,646,180"/>
-<area shape="rect" id="node3" href="$cb__string__publisher_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/client_behaviors/publisher\l_client_behaviors/cb_string\l_publisher.h" alt="" coords="5,228,200,328"/>
-<area shape="rect" id="node6" href="$or__string__publisher_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/orthogonals/or_string\l_publisher.h" alt="" coords="225,235,394,321"/>
-<area shape="rect" id="node4" href="$sm__dance__bot_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/sm_dance_bot.h" alt="" coords="329,376,498,447"/>
-<area shape="rect" id="node5" href="$sm__dance__bot_8cpp.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/src/sm_dance_bot.cpp" alt="" coords="328,495,499,551"/>
-<area shape="rect" id="node8" href="$cb__updatable__publisher_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/client_behaviors/updatable\l_publisher_client_behaviors\l/cb_updatable_publisher.h" alt="" coords="419,228,616,328"/>
-<area shape="rect" id="node9" href="$or__updatable__publisher_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/orthogonals/or_updatable\l_publisher.h" alt="" coords="641,235,831,321"/>
+<area shape="rect" id="node2" href="$cl__string__publisher_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/clients/string_publisher\l_client/cl_string_publisher.h" alt="" coords="175,109,371,195"/>
+<area shape="rect" id="node7" href="$cl__updatable__publisher_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/clients/updatable_publisher\l_client/cl_updatable_publisher.h" alt="" coords="395,109,619,195"/>
+<area shape="rect" id="node3" href="$cb__string__publisher_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/clients/string_publisher\l_client/client_behaviors\l/cb_string_publisher.h" alt="" coords="5,243,177,343"/>
+<area shape="rect" id="node6" href="$or__string__publisher_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/orthogonals/or_string\l_publisher.h" alt="" coords="201,250,371,335"/>
+<area shape="rect" id="node4" href="$sm__dance__bot_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/sm_dance_bot.h" alt="" coords="305,391,475,461"/>
+<area shape="rect" id="node5" href="$sm__dance__bot_8cpp.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/src/sm_dance_bot.cpp" alt="" coords="305,509,475,565"/>
+<area shape="rect" id="node8" href="$cb__updatable__publisher_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/clients/updatable_publisher\l_client/client_behaviors/cb\l_updatable_publisher.h" alt="" coords="395,243,595,343"/>
+<area shape="rect" id="node9" href="$or__updatable__publisher_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/orthogonals/or_updatable\l_publisher.h" alt="" coords="620,250,811,335"/>
 </map>

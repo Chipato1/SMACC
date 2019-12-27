@@ -1,0 +1,5 @@
+<map id="sm_dance_bot::service3_client::ClService3" name="sm_dance_bot::service3_client::ClService3">
+<area shape="rect" id="node2" href="$classsmacc_1_1SmaccServiceClient.html" title="{smacc::SmaccServiceClient\l\&lt; std_srvs::SetBool \&gt;\n|+ serviceName_\l# nh_\l# client_\l# initialized_\l|+ SmaccServiceClient()\l+ initialize()\l+ call()\l}" alt="" coords="5,507,204,672"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccClient.html" title="{smacc::ISmaccClient\n|# stateMachine_\l# components_\l|+ ISmaccClient()\l+ ~ISmaccClient()\l+ initialize()\l+ setStateMachine()\l+ getName()\l+ postEvent()\l+ postEvent()\l+ getComponent()\l+ createComponent()\l&#45; configureEventSourceTypes()\l}" alt="" coords="17,5,233,229"/>
+<area shape="rect" id="node4" href="$classsmacc_1_1SmaccServiceClient.html" title="{smacc::SmaccServiceClient\l\&lt; ServiceType \&gt;\n|+ serviceName_\l# nh_\l# client_\l# initialized_\l|+ SmaccServiceClient()\l+ initialize()\l+ call()\l}" alt="" coords="120,279,319,444"/>
+</map>

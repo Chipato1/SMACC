@@ -1,6 +1,6 @@
 <map id="smacc::ISmaccClient::getComponent" name="smacc::ISmaccClient::getComponent">
-<area shape="rect" id="node2" href="$classsm__dance__bot_1_1CbUndoPathBackwards.html#a5ecdf83df96ab3d74eb4e4febea7fa74" title="sm_dance_bot::CbUndoPath\lBackwards::onEntry" alt="" coords="208,5,411,47"/>
-<area shape="rect" id="node3" href="$classsm__dance__bot_1_1CbNavigateGlobalPosition.html#a281fe5c962ca5004f44e929159991c6a" title="sm_dance_bot::CbNavigate\lGlobalPosition::onEntry" alt="" coords="210,71,409,112"/>
-<area shape="rect" id="node4" href="$classsm__dance__bot_1_1CbNavigateForward.html#a8dd85c804a3d69587d0d6b7a1c4bc6a3" title="sm_dance_bot::CbNavigate\lForward::onEntry" alt="" coords="210,136,409,177"/>
-<area shape="rect" id="node5" href="$classsm__dance__bot_1_1CbNavigateBackwards.html#a5d7816a541c5f7121c9909d5b43a81c8" title="sm_dance_bot::CbNavigate\lBackwards::onEntry" alt="" coords="210,201,409,243"/>
+<area shape="rect" id="node2" href="$classsm__dance__bot_1_1move__base__z__client_1_1CbUndoPathBackwards.html#a4d5ae7f19351854449c4ba7f2f83d462" title="sm_dance_bot::move\l_base_z_client::CbUndoPath\lBackwards::onEntry" alt="" coords="208,5,411,61"/>
+<area shape="rect" id="node3" href="$classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition.html#a8ad5cc3b238e6964043213f7dbead1dd" title="sm_dance_bot::move\l_base_z_client::CbNavigate\lGlobalPosition::onEntry" alt="" coords="211,85,408,141"/>
+<area shape="rect" id="node4" href="$classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateForward.html#a75bc4e52ed09f024c37818b1bb55e738" title="sm_dance_bot::move\l_base_z_client::CbNavigate\lForward::onEntry" alt="" coords="211,165,408,221"/>
+<area shape="rect" id="node5" href="$classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateBackwards.html#ae542232601d5c97b3f40ee5e401ab734" title="sm_dance_bot::move\l_base_z_client::CbNavigate\lBackwards::onEntry" alt="" coords="211,245,408,301"/>
 </map>

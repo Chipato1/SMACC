@@ -65,5 +65,5 @@ var searchData=
   ['gettypeinfofromtype',['getTypeInfoFromType',['../classsmacc_1_1TypeInfo.html#a6107f1c622531f8bef0eec683480cb2c',1,'smacc::TypeInfo']]],
   ['gettypeinfofromtypeid',['getTypeInfoFromTypeid',['../classsmacc_1_1TypeInfo.html#a9d871ecc7a19983b37afca0cd219a5f8',1,'smacc::TypeInfo']]],
   ['getwaypoints',['getWaypoints',['../classsmacc_1_1WaypointNavigator.html#afe1e18903d81f1d3eb20e2689f25b2ca',1,'smacc::WaypointNavigator']]],
-  ['gotoradialstart',['goToRadialStart',['../classsm__dance__bot_1_1CbNavigateGlobalPosition.html#a0832f7a7f205cc483be012aef9501312',1,'sm_dance_bot::CbNavigateGlobalPosition::goToRadialStart()'],['../classsm__dance__bot_1_1CbNavigateGlobalPosition.html#a0832f7a7f205cc483be012aef9501312',1,'sm_dance_bot::CbNavigateGlobalPosition::goToRadialStart()']]]
+  ['gotoradialstart',['goToRadialStart',['../classsm__dance__bot_1_1CbNavigateGlobalPosition.html#a0832f7a7f205cc483be012aef9501312',1,'sm_dance_bot::CbNavigateGlobalPosition::goToRadialStart()'],['../classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition.html#aa7e91d17625df52b94bb29a9cd1ae7e5',1,'sm_dance_bot::move_base_z_client::CbNavigateGlobalPosition::goToRadialStart()']]]
 ];
