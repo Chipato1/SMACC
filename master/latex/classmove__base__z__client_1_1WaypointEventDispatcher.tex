@@ -1,0 +1,543 @@
+\hypertarget{classmove__base__z__client_1_1WaypointEventDispatcher}{}\section{move\+\_\+base\+\_\+z\+\_\+client\+:\+:Waypoint\+Event\+Dispatcher Class Reference}
+\label{classmove__base__z__client_1_1WaypointEventDispatcher}\index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Event\+Dispatcher@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Event\+Dispatcher}}
+
+
+{\ttfamily \#include $<$waypoints\+\_\+event\+\_\+dispatcher.\+h$>$}
+
+
+
+Collaboration diagram for move\+\_\+base\+\_\+z\+\_\+client\+:\+:Waypoint\+Event\+Dispatcher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classmove__base__z__client_1_1WaypointEventDispatcher__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T\+Derived , typename T\+Object\+Tag $>$ }\\void \hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_a70fc3a92c59e40648f350f3912d736ae}{initialize} (\hyperlink{classmove__base__z__client_1_1ClMoveBaseZ}{Cl\+Move\+BaseZ} $\ast$client)
+\item 
+void \hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_a7421f1eb8aae15a3ddde7c50bea87648}{post\+Waypoint\+Event} (int index)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::function$<$ void()$>$ \hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{post\+Waypoint\+Fn} \mbox{[}\hyperlink{waypoints__event__dispatcher_8h_add4ce0c5d955be6047a4820c63e7df08}{W\+A\+Y\+P\+O\+I\+N\+T\+S\+\_\+\+E\+V\+E\+N\+T\+C\+O\+U\+NT}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1555 of file waypoints\+\_\+event\+\_\+dispatcher.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Event\+Dispatcher@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Event\+Dispatcher}!initialize@{initialize}}
+\index{initialize@{initialize}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Event\+Dispatcher@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Event\+Dispatcher}}
+\subsubsection[{\texorpdfstring{initialize(\+Cl\+Move\+Base\+Z $\ast$client)}{initialize(ClMoveBaseZ *client)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Derived , typename T\+Object\+Tag $>$ void move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Event\+Dispatcher\+::initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Cl\+Move\+BaseZ} $\ast$}]{client}
+\end{DoxyParamCaption}
+)}\hypertarget{classmove__base__z__client_1_1WaypointEventDispatcher_a70fc3a92c59e40648f350f3912d736ae}{}\label{classmove__base__z__client_1_1WaypointEventDispatcher_a70fc3a92c59e40648f350f3912d736ae}
+
+
+Definition at line 1575 of file waypoints\+\_\+event\+\_\+dispatcher.\+h.
+
+
+
+Referenced by move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator\+::configure\+Event\+Source\+Types().
+
+
+\begin{DoxyCode}
+1576 \{
+1577     configurePostEvWaypoint<EvWaypoint0<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 0);
+1578     configurePostEvWaypoint<EvWaypoint1<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 1);
+1579     configurePostEvWaypoint<EvWaypoint2<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 2);
+1580     configurePostEvWaypoint<EvWaypoint3<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 3);
+1581     configurePostEvWaypoint<EvWaypoint4<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 4);
+1582     configurePostEvWaypoint<EvWaypoint5<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 5);
+1583     configurePostEvWaypoint<EvWaypoint6<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 6);
+1584     configurePostEvWaypoint<EvWaypoint7<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 7);
+1585     configurePostEvWaypoint<EvWaypoint8<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 8);
+1586     configurePostEvWaypoint<EvWaypoint9<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 9);
+1587     configurePostEvWaypoint<EvWaypoint10<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 10);
+1588     configurePostEvWaypoint<EvWaypoint11<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 11);
+1589     configurePostEvWaypoint<EvWaypoint12<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 12);
+1590     configurePostEvWaypoint<EvWaypoint13<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 13);
+1591     configurePostEvWaypoint<EvWaypoint14<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 14);
+1592     configurePostEvWaypoint<EvWaypoint15<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 15);
+1593     configurePostEvWaypoint<EvWaypoint16<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 16);
+1594     configurePostEvWaypoint<EvWaypoint17<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 17);
+1595     configurePostEvWaypoint<EvWaypoint18<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 18);
+1596     configurePostEvWaypoint<EvWaypoint19<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 19);
+1597     configurePostEvWaypoint<EvWaypoint20<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 20);
+1598     configurePostEvWaypoint<EvWaypoint21<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 21);
+1599     configurePostEvWaypoint<EvWaypoint22<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 22);
+1600     configurePostEvWaypoint<EvWaypoint23<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 23);
+1601     configurePostEvWaypoint<EvWaypoint24<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 24);
+1602     configurePostEvWaypoint<EvWaypoint25<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 25);
+1603     configurePostEvWaypoint<EvWaypoint26<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 26);
+1604     configurePostEvWaypoint<EvWaypoint27<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 27);
+1605     configurePostEvWaypoint<EvWaypoint28<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 28);
+1606     configurePostEvWaypoint<EvWaypoint29<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 29);
+1607     configurePostEvWaypoint<EvWaypoint30<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 30);
+1608     configurePostEvWaypoint<EvWaypoint31<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 31);
+1609     configurePostEvWaypoint<EvWaypoint32<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 32);
+1610     configurePostEvWaypoint<EvWaypoint33<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 33);
+1611     configurePostEvWaypoint<EvWaypoint34<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 34);
+1612     configurePostEvWaypoint<EvWaypoint35<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 35);
+1613     configurePostEvWaypoint<EvWaypoint36<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 36);
+1614     configurePostEvWaypoint<EvWaypoint37<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 37);
+1615     configurePostEvWaypoint<EvWaypoint38<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 38);
+1616     configurePostEvWaypoint<EvWaypoint39<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 39);
+1617     configurePostEvWaypoint<EvWaypoint40<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 40);
+1618     configurePostEvWaypoint<EvWaypoint41<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 41);
+1619     configurePostEvWaypoint<EvWaypoint42<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 42);
+1620     configurePostEvWaypoint<EvWaypoint43<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 43);
+1621     configurePostEvWaypoint<EvWaypoint44<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 44);
+1622     configurePostEvWaypoint<EvWaypoint45<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 45);
+1623     configurePostEvWaypoint<EvWaypoint46<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 46);
+1624     configurePostEvWaypoint<EvWaypoint47<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 47);
+1625     configurePostEvWaypoint<EvWaypoint48<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 48);
+1626     configurePostEvWaypoint<EvWaypoint49<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 49);
+1627     configurePostEvWaypoint<EvWaypoint50<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 50);
+1628     configurePostEvWaypoint<EvWaypoint51<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 51);
+1629     configurePostEvWaypoint<EvWaypoint52<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 52);
+1630     configurePostEvWaypoint<EvWaypoint53<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 53);
+1631     configurePostEvWaypoint<EvWaypoint54<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 54);
+1632     configurePostEvWaypoint<EvWaypoint55<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 55);
+1633     configurePostEvWaypoint<EvWaypoint56<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 56);
+1634     configurePostEvWaypoint<EvWaypoint57<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 57);
+1635     configurePostEvWaypoint<EvWaypoint58<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 58);
+1636     configurePostEvWaypoint<EvWaypoint59<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 59);
+1637     configurePostEvWaypoint<EvWaypoint60<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 60);
+1638     configurePostEvWaypoint<EvWaypoint61<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 61);
+1639     configurePostEvWaypoint<EvWaypoint62<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 62);
+1640     configurePostEvWaypoint<EvWaypoint63<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 63);
+1641     configurePostEvWaypoint<EvWaypoint64<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 64);
+1642     configurePostEvWaypoint<EvWaypoint65<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 65);
+1643     configurePostEvWaypoint<EvWaypoint66<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 66);
+1644     configurePostEvWaypoint<EvWaypoint67<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 67);
+1645     configurePostEvWaypoint<EvWaypoint68<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 68);
+1646     configurePostEvWaypoint<EvWaypoint69<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 69);
+1647     configurePostEvWaypoint<EvWaypoint70<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 70);
+1648     configurePostEvWaypoint<EvWaypoint71<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 71);
+1649     configurePostEvWaypoint<EvWaypoint72<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 72);
+1650     configurePostEvWaypoint<EvWaypoint73<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 73);
+1651     configurePostEvWaypoint<EvWaypoint74<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 74);
+1652     configurePostEvWaypoint<EvWaypoint75<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 75);
+1653     configurePostEvWaypoint<EvWaypoint76<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 76);
+1654     configurePostEvWaypoint<EvWaypoint77<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 77);
+1655     configurePostEvWaypoint<EvWaypoint78<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 78);
+1656     configurePostEvWaypoint<EvWaypoint79<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 79);
+1657     configurePostEvWaypoint<EvWaypoint80<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 80);
+1658     configurePostEvWaypoint<EvWaypoint81<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 81);
+1659     configurePostEvWaypoint<EvWaypoint82<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 82);
+1660     configurePostEvWaypoint<EvWaypoint83<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 83);
+1661     configurePostEvWaypoint<EvWaypoint84<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 84);
+1662     configurePostEvWaypoint<EvWaypoint85<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 85);
+1663     configurePostEvWaypoint<EvWaypoint86<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 86);
+1664     configurePostEvWaypoint<EvWaypoint87<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 87);
+1665     configurePostEvWaypoint<EvWaypoint88<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 88);
+1666     configurePostEvWaypoint<EvWaypoint89<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 89);
+1667     configurePostEvWaypoint<EvWaypoint90<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 90);
+1668     configurePostEvWaypoint<EvWaypoint91<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 91);
+1669     configurePostEvWaypoint<EvWaypoint92<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 92);
+1670     configurePostEvWaypoint<EvWaypoint93<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 93);
+1671     configurePostEvWaypoint<EvWaypoint94<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 94);
+1672     configurePostEvWaypoint<EvWaypoint95<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 95);
+1673     configurePostEvWaypoint<EvWaypoint96<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 96);
+1674     configurePostEvWaypoint<EvWaypoint97<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 97);
+1675     configurePostEvWaypoint<EvWaypoint98<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 98);
+1676     configurePostEvWaypoint<EvWaypoint99<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 99);
+1677     configurePostEvWaypoint<EvWaypoint100<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 100)
+      ;
+1678     configurePostEvWaypoint<EvWaypoint101<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 101)
+      ;
+1679     configurePostEvWaypoint<EvWaypoint102<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 102)
+      ;
+1680     configurePostEvWaypoint<EvWaypoint103<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 103)
+      ;
+1681     configurePostEvWaypoint<EvWaypoint104<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 104)
+      ;
+1682     configurePostEvWaypoint<EvWaypoint105<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 105)
+      ;
+1683     configurePostEvWaypoint<EvWaypoint106<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 106)
+      ;
+1684     configurePostEvWaypoint<EvWaypoint107<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 107)
+      ;
+1685     configurePostEvWaypoint<EvWaypoint108<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 108)
+      ;
+1686     configurePostEvWaypoint<EvWaypoint109<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 109)
+      ;
+1687     configurePostEvWaypoint<EvWaypoint110<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 110)
+      ;
+1688     configurePostEvWaypoint<EvWaypoint111<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 111)
+      ;
+1689     configurePostEvWaypoint<EvWaypoint112<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 112)
+      ;
+1690     configurePostEvWaypoint<EvWaypoint113<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 113)
+      ;
+1691     configurePostEvWaypoint<EvWaypoint114<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 114)
+      ;
+1692     configurePostEvWaypoint<EvWaypoint115<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 115)
+      ;
+1693     configurePostEvWaypoint<EvWaypoint116<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 116)
+      ;
+1694     configurePostEvWaypoint<EvWaypoint117<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 117)
+      ;
+1695     configurePostEvWaypoint<EvWaypoint118<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 118)
+      ;
+1696     configurePostEvWaypoint<EvWaypoint119<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 119)
+      ;
+1697     configurePostEvWaypoint<EvWaypoint120<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 120)
+      ;
+1698     configurePostEvWaypoint<EvWaypoint121<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 121)
+      ;
+1699     configurePostEvWaypoint<EvWaypoint122<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 122)
+      ;
+1700     configurePostEvWaypoint<EvWaypoint123<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 123)
+      ;
+1701     configurePostEvWaypoint<EvWaypoint124<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 124)
+      ;
+1702     configurePostEvWaypoint<EvWaypoint125<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 125)
+      ;
+1703     configurePostEvWaypoint<EvWaypoint126<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 126)
+      ;
+1704     configurePostEvWaypoint<EvWaypoint127<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 127)
+      ;
+1705     configurePostEvWaypoint<EvWaypoint128<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 128)
+      ;
+1706     configurePostEvWaypoint<EvWaypoint129<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 129)
+      ;
+1707     configurePostEvWaypoint<EvWaypoint130<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 130)
+      ;
+1708     configurePostEvWaypoint<EvWaypoint131<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 131)
+      ;
+1709     configurePostEvWaypoint<EvWaypoint132<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 132)
+      ;
+1710     configurePostEvWaypoint<EvWaypoint133<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 133)
+      ;
+1711     configurePostEvWaypoint<EvWaypoint134<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 134)
+      ;
+1712     configurePostEvWaypoint<EvWaypoint135<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 135)
+      ;
+1713     configurePostEvWaypoint<EvWaypoint136<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 136)
+      ;
+1714     configurePostEvWaypoint<EvWaypoint137<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 137)
+      ;
+1715     configurePostEvWaypoint<EvWaypoint138<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 138)
+      ;
+1716     configurePostEvWaypoint<EvWaypoint139<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 139)
+      ;
+1717     configurePostEvWaypoint<EvWaypoint140<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 140)
+      ;
+1718     configurePostEvWaypoint<EvWaypoint141<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 141)
+      ;
+1719     configurePostEvWaypoint<EvWaypoint142<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 142)
+      ;
+1720     configurePostEvWaypoint<EvWaypoint143<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 143)
+      ;
+1721     configurePostEvWaypoint<EvWaypoint144<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 144)
+      ;
+1722     configurePostEvWaypoint<EvWaypoint145<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 145)
+      ;
+1723     configurePostEvWaypoint<EvWaypoint146<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 146)
+      ;
+1724     configurePostEvWaypoint<EvWaypoint147<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 147)
+      ;
+1725     configurePostEvWaypoint<EvWaypoint148<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 148)
+      ;
+1726     configurePostEvWaypoint<EvWaypoint149<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 149)
+      ;
+1727     configurePostEvWaypoint<EvWaypoint150<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 150)
+      ;
+1728     configurePostEvWaypoint<EvWaypoint151<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 151)
+      ;
+1729     configurePostEvWaypoint<EvWaypoint152<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 152)
+      ;
+1730     configurePostEvWaypoint<EvWaypoint153<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 153)
+      ;
+1731     configurePostEvWaypoint<EvWaypoint154<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 154)
+      ;
+1732     configurePostEvWaypoint<EvWaypoint155<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 155)
+      ;
+1733     configurePostEvWaypoint<EvWaypoint156<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 156)
+      ;
+1734     configurePostEvWaypoint<EvWaypoint157<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 157)
+      ;
+1735     configurePostEvWaypoint<EvWaypoint158<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 158)
+      ;
+1736     configurePostEvWaypoint<EvWaypoint159<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 159)
+      ;
+1737     configurePostEvWaypoint<EvWaypoint160<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 160)
+      ;
+1738     configurePostEvWaypoint<EvWaypoint161<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 161)
+      ;
+1739     configurePostEvWaypoint<EvWaypoint162<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 162)
+      ;
+1740     configurePostEvWaypoint<EvWaypoint163<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 163)
+      ;
+1741     configurePostEvWaypoint<EvWaypoint164<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 164)
+      ;
+1742     configurePostEvWaypoint<EvWaypoint165<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 165)
+      ;
+1743     configurePostEvWaypoint<EvWaypoint166<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 166)
+      ;
+1744     configurePostEvWaypoint<EvWaypoint167<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 167)
+      ;
+1745     configurePostEvWaypoint<EvWaypoint168<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 168)
+      ;
+1746     configurePostEvWaypoint<EvWaypoint169<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 169)
+      ;
+1747     configurePostEvWaypoint<EvWaypoint170<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 170)
+      ;
+1748     configurePostEvWaypoint<EvWaypoint171<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 171)
+      ;
+1749     configurePostEvWaypoint<EvWaypoint172<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 172)
+      ;
+1750     configurePostEvWaypoint<EvWaypoint173<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 173)
+      ;
+1751     configurePostEvWaypoint<EvWaypoint174<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 174)
+      ;
+1752     configurePostEvWaypoint<EvWaypoint175<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 175)
+      ;
+1753     configurePostEvWaypoint<EvWaypoint176<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 176)
+      ;
+1754     configurePostEvWaypoint<EvWaypoint177<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 177)
+      ;
+1755     configurePostEvWaypoint<EvWaypoint178<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 178)
+      ;
+1756     configurePostEvWaypoint<EvWaypoint179<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 179)
+      ;
+1757     configurePostEvWaypoint<EvWaypoint180<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 180)
+      ;
+1758     configurePostEvWaypoint<EvWaypoint181<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 181)
+      ;
+1759     configurePostEvWaypoint<EvWaypoint182<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 182)
+      ;
+1760     configurePostEvWaypoint<EvWaypoint183<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 183)
+      ;
+1761     configurePostEvWaypoint<EvWaypoint184<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 184)
+      ;
+1762     configurePostEvWaypoint<EvWaypoint185<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 185)
+      ;
+1763     configurePostEvWaypoint<EvWaypoint186<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 186)
+      ;
+1764     configurePostEvWaypoint<EvWaypoint187<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 187)
+      ;
+1765     configurePostEvWaypoint<EvWaypoint188<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 188)
+      ;
+1766     configurePostEvWaypoint<EvWaypoint189<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 189)
+      ;
+1767     configurePostEvWaypoint<EvWaypoint190<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 190)
+      ;
+1768     configurePostEvWaypoint<EvWaypoint191<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 191)
+      ;
+1769     configurePostEvWaypoint<EvWaypoint192<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 192)
+      ;
+1770     configurePostEvWaypoint<EvWaypoint193<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 193)
+      ;
+1771     configurePostEvWaypoint<EvWaypoint194<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 194)
+      ;
+1772     configurePostEvWaypoint<EvWaypoint195<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 195)
+      ;
+1773     configurePostEvWaypoint<EvWaypoint196<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 196)
+      ;
+1774     configurePostEvWaypoint<EvWaypoint197<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 197)
+      ;
+1775     configurePostEvWaypoint<EvWaypoint198<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 198)
+      ;
+1776     configurePostEvWaypoint<EvWaypoint199<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 199)
+      ;
+1777     configurePostEvWaypoint<EvWaypoint200<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 200)
+      ;
+1778     configurePostEvWaypoint<EvWaypoint201<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 201)
+      ;
+1779     configurePostEvWaypoint<EvWaypoint202<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 202)
+      ;
+1780     configurePostEvWaypoint<EvWaypoint203<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 203)
+      ;
+1781     configurePostEvWaypoint<EvWaypoint204<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 204)
+      ;
+1782     configurePostEvWaypoint<EvWaypoint205<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 205)
+      ;
+1783     configurePostEvWaypoint<EvWaypoint206<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 206)
+      ;
+1784     configurePostEvWaypoint<EvWaypoint207<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 207)
+      ;
+1785     configurePostEvWaypoint<EvWaypoint208<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 208)
+      ;
+1786     configurePostEvWaypoint<EvWaypoint209<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 209)
+      ;
+1787     configurePostEvWaypoint<EvWaypoint210<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 210)
+      ;
+1788     configurePostEvWaypoint<EvWaypoint211<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 211)
+      ;
+1789     configurePostEvWaypoint<EvWaypoint212<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 212)
+      ;
+1790     configurePostEvWaypoint<EvWaypoint213<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 213)
+      ;
+1791     configurePostEvWaypoint<EvWaypoint214<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 214)
+      ;
+1792     configurePostEvWaypoint<EvWaypoint215<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 215)
+      ;
+1793     configurePostEvWaypoint<EvWaypoint216<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 216)
+      ;
+1794     configurePostEvWaypoint<EvWaypoint217<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 217)
+      ;
+1795     configurePostEvWaypoint<EvWaypoint218<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 218)
+      ;
+1796     configurePostEvWaypoint<EvWaypoint219<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 219)
+      ;
+1797     configurePostEvWaypoint<EvWaypoint220<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 220)
+      ;
+1798     configurePostEvWaypoint<EvWaypoint221<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 221)
+      ;
+1799     configurePostEvWaypoint<EvWaypoint222<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 222)
+      ;
+1800     configurePostEvWaypoint<EvWaypoint223<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 223)
+      ;
+1801     configurePostEvWaypoint<EvWaypoint224<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 224)
+      ;
+1802     configurePostEvWaypoint<EvWaypoint225<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 225)
+      ;
+1803     configurePostEvWaypoint<EvWaypoint226<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 226)
+      ;
+1804     configurePostEvWaypoint<EvWaypoint227<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 227)
+      ;
+1805     configurePostEvWaypoint<EvWaypoint228<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 228)
+      ;
+1806     configurePostEvWaypoint<EvWaypoint229<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 229)
+      ;
+1807     configurePostEvWaypoint<EvWaypoint230<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 230)
+      ;
+1808     configurePostEvWaypoint<EvWaypoint231<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 231)
+      ;
+1809     configurePostEvWaypoint<EvWaypoint232<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 232)
+      ;
+1810     configurePostEvWaypoint<EvWaypoint233<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 233)
+      ;
+1811     configurePostEvWaypoint<EvWaypoint234<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 234)
+      ;
+1812     configurePostEvWaypoint<EvWaypoint235<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 235)
+      ;
+1813     configurePostEvWaypoint<EvWaypoint236<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 236)
+      ;
+1814     configurePostEvWaypoint<EvWaypoint237<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 237)
+      ;
+1815     configurePostEvWaypoint<EvWaypoint238<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 238)
+      ;
+1816     configurePostEvWaypoint<EvWaypoint239<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 239)
+      ;
+1817     configurePostEvWaypoint<EvWaypoint240<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 240)
+      ;
+1818     configurePostEvWaypoint<EvWaypoint241<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 241)
+      ;
+1819     configurePostEvWaypoint<EvWaypoint242<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 242)
+      ;
+1820     configurePostEvWaypoint<EvWaypoint243<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 243)
+      ;
+1821     configurePostEvWaypoint<EvWaypoint244<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 244)
+      ;
+1822     configurePostEvWaypoint<EvWaypoint245<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 245)
+      ;
+1823     configurePostEvWaypoint<EvWaypoint246<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 246)
+      ;
+1824     configurePostEvWaypoint<EvWaypoint247<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 247)
+      ;
+1825     configurePostEvWaypoint<EvWaypoint248<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 248)
+      ;
+1826     configurePostEvWaypoint<EvWaypoint249<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 249)
+      ;
+1827     configurePostEvWaypoint<EvWaypoint250<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 250)
+      ;
+1828     configurePostEvWaypoint<EvWaypoint251<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 251)
+      ;
+1829     configurePostEvWaypoint<EvWaypoint252<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 252)
+      ;
+1830     configurePostEvWaypoint<EvWaypoint253<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 253)
+      ;
+1831     configurePostEvWaypoint<EvWaypoint254<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 254)
+      ;
+1832     configurePostEvWaypoint<EvWaypoint255<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 255)
+      ;
+1833     configurePostEvWaypoint<EvWaypoint256<TDerived, TObjectTag>>(\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}, client, 256)
+      ;
+1834 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove__base__z__client_1_1WaypointEventDispatcher_a70fc3a92c59e40648f350f3912d736ae_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Event\+Dispatcher@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Event\+Dispatcher}!post\+Waypoint\+Event@{post\+Waypoint\+Event}}
+\index{post\+Waypoint\+Event@{post\+Waypoint\+Event}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Event\+Dispatcher@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Event\+Dispatcher}}
+\subsubsection[{\texorpdfstring{post\+Waypoint\+Event(int index)}{postWaypointEvent(int index)}}]{\setlength{\rightskip}{0pt plus 5cm}void move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Event\+Dispatcher\+::post\+Waypoint\+Event (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{classmove__base__z__client_1_1WaypointEventDispatcher_a7421f1eb8aae15a3ddde7c50bea87648}{}\label{classmove__base__z__client_1_1WaypointEventDispatcher_a7421f1eb8aae15a3ddde7c50bea87648}
+
+
+Definition at line 5 of file waypoints\+\_\+event\+\_\+dispatcher.\+cpp.
+
+
+
+References post\+Waypoint\+Fn, and W\+A\+Y\+P\+O\+I\+N\+T\+S\+\_\+\+E\+V\+E\+N\+T\+C\+O\+U\+NT.
+
+
+
+Referenced by move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator\+::on\+Goal\+Reached().
+
+
+\begin{DoxyCode}
+6 \{
+7     \textcolor{keyword}{auto}& fn = \hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{postWaypointFn}[index % \hyperlink{waypoints__event__dispatcher_8h_add4ce0c5d955be6047a4820c63e7df08}{WAYPOINTS\_EVENTCOUNT}];
+8     \textcolor{keywordflow}{if}(fn!=\textcolor{keyword}{nullptr})
+9         fn();
+10 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove__base__z__client_1_1WaypointEventDispatcher_a7421f1eb8aae15a3ddde7c50bea87648_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Event\+Dispatcher@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Event\+Dispatcher}!post\+Waypoint\+Fn@{post\+Waypoint\+Fn}}
+\index{post\+Waypoint\+Fn@{post\+Waypoint\+Fn}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Event\+Dispatcher@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Event\+Dispatcher}}
+\subsubsection[{\texorpdfstring{post\+Waypoint\+Fn}{postWaypointFn}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::function$<$void()$>$ move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Event\+Dispatcher\+::post\+Waypoint\+Fn\mbox{[}{\bf W\+A\+Y\+P\+O\+I\+N\+T\+S\+\_\+\+E\+V\+E\+N\+T\+C\+O\+U\+NT}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}{}\label{classmove__base__z__client_1_1WaypointEventDispatcher_acc538eb7506c13f7cca2268a1742dadd}
+
+
+Definition at line 1557 of file waypoints\+\_\+event\+\_\+dispatcher.\+h.
+
+
+
+Referenced by post\+Waypoint\+Event().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/waypoints\+\_\+navigator/include/waypoints\+\_\+navigator/\hyperlink{waypoints__event__dispatcher_8h}{waypoints\+\_\+event\+\_\+dispatcher.\+h}\item 
+smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/waypoints\+\_\+navigator/src/\hyperlink{waypoints__event__dispatcher_8cpp}{waypoints\+\_\+event\+\_\+dispatcher.\+cpp}\end{DoxyCompactItemize}

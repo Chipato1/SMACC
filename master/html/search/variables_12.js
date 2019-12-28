@@ -6,11 +6,11 @@ var searchData=
   ['sensor_5f',['sensor_',['../classsmacc_1_1SensorTopic.html#affbf010b80f779369dd14d786c1ed9e3',1,'smacc::SensorTopic']]],
   ['serviceclient_5f',['serviceClient_',['../classsm__dance__bot_1_1service3__client_1_1CbService3.html#af0d87e9fa611b477f2504884b432b218',1,'sm_dance_bot::service3_client::CbService3']]],
   ['servicename_5f',['serviceName_',['../classsmacc_1_1SmaccServiceClient.html#a93cf1653e9d7a0f4aa25dbb8ae7d07fc',1,'smacc::SmaccServiceClient']]],
-  ['set_5fplanners_5fmode_5fflag',['set_planners_mode_flag',['../classplanner__switcher_1_1PlannerSwitcher.html#ac11d8cdbf44c99c21d3405d32f00a041',1,'planner_switcher::PlannerSwitcher']]],
+  ['set_5fplanners_5fmode_5fflag',['set_planners_mode_flag',['../classmove__base__z__client_1_1PlannerSwitcher.html#a74c0b5c21064a868700288e759446ac5',1,'move_base_z_client::PlannerSwitcher']]],
   ['settings',['settings',['../namespacekeyboard__node.html#aaf29d185963f7dbed690d072de1a0b17',1,'keyboard_node']]],
   ['signaldetector_5f',['signalDetector_',['../classsmacc_1_1ISmaccStateMachine.html#a3982eb671f5f001cb047d3a467789986',1,'smacc::ISmaccStateMachine']]],
   ['signaldetectorthread_5f',['signalDetectorThread_',['../classsmacc_1_1SignalDetector.html#a4346a400cd37eafc5d1d2e63d975785e',1,'smacc::SignalDetector']]],
-  ['skip_5fstraight_5fmotion_5fdistance_5f',['skip_straight_motion_distance_',['../classbackward__global__planner_1_1BackwardGlobalPlanner.html#a307c9795c48fa4f6232cf8333704f27f',1,'backward_global_planner::BackwardGlobalPlanner::skip_straight_motion_distance_()'],['../classforward__global__planner_1_1ForwardGlobalPlanner.html#a0e10cd64069d5723fbdb896fdcead82c',1,'forward_global_planner::ForwardGlobalPlanner::skip_straight_motion_distance_()']]],
+  ['skip_5fstraight_5fmotion_5fdistance_5f',['skip_straight_motion_distance_',['../classmove__base__z__client_1_1backward__global__planner_1_1BackwardGlobalPlanner.html#a422769ec3244dfe8ef5bd81e397092c0',1,'move_base_z_client::backward_global_planner::BackwardGlobalPlanner::skip_straight_motion_distance_()'],['../classmove__base__z__client_1_1forward__global__planner_1_1ForwardGlobalPlanner.html#ae33082b9dd81dd3ce8d3e68a6c032c61',1,'move_base_z_client::forward_global_planner::ForwardGlobalPlanner::skip_straight_motion_distance_()']]],
   ['smacc_5finner_5ftype',['smacc_inner_type',['../classsmacc_1_1SmaccState.html#a087d0f66729b98614feb8c59ea548af1',1,'smacc::SmaccState']]],
   ['smaccstatemachine_5f',['smaccStateMachine_',['../classsmacc_1_1SignalDetector.html#a46025de6ac7b5980e22144f9703236a4',1,'smacc::SignalDetector']]],
   ['source_5fsuffix',['source_suffix',['../namespaceconf.html#a10af2a769eb3bd3322e874f677e435b1',1,'conf']]],
@@ -33,7 +33,7 @@ var searchData=
   ['status_5fmsg_5f',['status_msg_',['../classsmacc_1_1ISmaccStateMachine.html#a4f47dd614f12a95e7a3c46d465ce4b13',1,'smacc::ISmaccStateMachine']]],
   ['statuspub_5f',['statusPub_',['../classsmacc_1_1SignalDetector.html#ae065bbd4e699e5fce00fbc508dedd4c1',1,'smacc::SignalDetector']]],
   ['sub_5f',['sub_',['../classsmacc_1_1SmaccSubscriberClient.html#a2a1c46e0ea0a2090a63232402b998518',1,'smacc::SmaccSubscriberClient::sub_()'],['../classsmacc__rviz__plugin_1_1SmaccRvizDisplay.html#abae6e8df8428a072d1de2c59dd4f9cd4',1,'smacc_rviz_plugin::SmaccRvizDisplay::sub_()']]],
-  ['subscribetoodometrytopic_5f',['subscribeToOdometryTopic_',['../classodom__tracker_1_1OdomTracker.html#ae8ddf26c78b4bb30b162d30721d761f6',1,'odom_tracker::OdomTracker']]],
-  ['succeddedconnection_5f',['succeddedConnection_',['../classsmacc_1_1WaypointNavigator.html#a932d5378c3ef5bd4e8e3152ac657112f',1,'smacc::WaypointNavigator']]],
+  ['subscribetoodometrytopic_5f',['subscribeToOdometryTopic_',['../classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#af07071223326ba38fc95037717102bb4',1,'move_base_z_client::odom_tracker::OdomTracker']]],
+  ['succeddedconnection_5f',['succeddedConnection_',['../classmove__base__z__client_1_1WaypointNavigator.html#a139d492345875777d9c9a79f9b2d494b',1,'move_base_z_client::WaypointNavigator']]],
   ['superstates',['superstates',['../Global_01Transition_01Rules_8txt.html#af31ae27f561335eed0d5161d8ee256f8',1,'Global Transition Rules.txt']]]
 ];

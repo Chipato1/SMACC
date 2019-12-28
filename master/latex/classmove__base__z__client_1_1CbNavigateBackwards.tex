@@ -1,0 +1,262 @@
+\hypertarget{classmove__base__z__client_1_1CbNavigateBackwards}{}\section{move\+\_\+base\+\_\+z\+\_\+client\+:\+:Cb\+Navigate\+Backwards Class Reference}
+\label{classmove__base__z__client_1_1CbNavigateBackwards}\index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards}}
+
+
+{\ttfamily \#include $<$cb\+\_\+navigate\+\_\+backward.\+h$>$}
+
+
+
+Inheritance diagram for move\+\_\+base\+\_\+z\+\_\+client\+:\+:Cb\+Navigate\+Backwards\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classmove__base__z__client_1_1CbNavigateBackwards__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for move\+\_\+base\+\_\+z\+\_\+client\+:\+:Cb\+Navigate\+Backwards\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove__base__z__client_1_1CbNavigateBackwards__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmove__base__z__client_1_1CbNavigateBackwards_a47e9482418fa6f26f7648b5e0d00800c}{Cb\+Navigate\+Backwards} (float \hyperlink{classmove__base__z__client_1_1CbNavigateBackwards_a53d06922eff285e4d35f4d7b1b7b7752}{backward\+Distance})
+\item 
+\hyperlink{classmove__base__z__client_1_1CbNavigateBackwards_a2536e2c30a2dbf13b19d08aca3539736}{Cb\+Navigate\+Backwards} ()
+\item 
+virtual void \hyperlink{classmove__base__z__client_1_1CbNavigateBackwards_ae5c9eb5029e0a6ea6950cb23713214bb}{on\+Entry} () override
+\item 
+virtual void \hyperlink{classmove__base__z__client_1_1CbNavigateBackwards_a1160c6f750789c4e88f46c54a3df2a1e}{on\+Exit} () override
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::optional$<$ float $>$ \hyperlink{classmove__base__z__client_1_1CbNavigateBackwards_a53d06922eff285e4d35f4d7b1b7b7752}{backward\+Distance}
+\item 
+boost\+::optional$<$ float $>$ \hyperlink{classmove__base__z__client_1_1CbNavigateBackwards_ad5214ee636b6987d9d1c98458d500b4b}{backward\+Speed}
+\item 
+tf\+::\+Transform\+Listener \hyperlink{classmove__base__z__client_1_1CbNavigateBackwards_a13939ba95a738b73e0e26f215791d675}{listener}
+\item 
+\hyperlink{classmove__base__z__client_1_1ClMoveBaseZ}{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cl\+Move\+BaseZ} $\ast$ \hyperlink{classmove__base__z__client_1_1CbNavigateBackwards_ac94348112821680532527fa006651a6c}{move\+Base\+Client\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file cb\+\_\+navigate\+\_\+backward.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards}!Cb\+Navigate\+Backwards@{Cb\+Navigate\+Backwards}}
+\index{Cb\+Navigate\+Backwards@{Cb\+Navigate\+Backwards}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards}}
+\subsubsection[{\texorpdfstring{Cb\+Navigate\+Backwards(float backward\+Distance)}{CbNavigateBackwards(float backwardDistance)}}]{\setlength{\rightskip}{0pt plus 5cm}move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards\+::\+Cb\+Navigate\+Backwards (
+\begin{DoxyParamCaption}
+\item[{float}]{backward\+Distance}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmove__base__z__client_1_1CbNavigateBackwards_a47e9482418fa6f26f7648b5e0d00800c}{}\label{classmove__base__z__client_1_1CbNavigateBackwards_a47e9482418fa6f26f7648b5e0d00800c}
+
+
+Definition at line 24 of file cb\+\_\+navigate\+\_\+backward.\+h.
+
+
+
+References backward\+Distance.
+
+
+\begin{DoxyCode}
+25     \{
+26         \textcolor{keywordflow}{if} (\hyperlink{classmove__base__z__client_1_1CbNavigateBackwards_a53d06922eff285e4d35f4d7b1b7b7752}{backwardDistance} < 0)
+27         \{
+28             ROS\_ERROR(\textcolor{stringliteral}{"cb backward: distance must be greater or equal than 0"});
+29             this->\hyperlink{classmove__base__z__client_1_1CbNavigateBackwards_a53d06922eff285e4d35f4d7b1b7b7752}{backwardDistance} = 0;
+30         \}
+31         this->\hyperlink{classmove__base__z__client_1_1CbNavigateBackwards_a53d06922eff285e4d35f4d7b1b7b7752}{backwardDistance} = \hyperlink{classmove__base__z__client_1_1CbNavigateBackwards_a53d06922eff285e4d35f4d7b1b7b7752}{backwardDistance};
+32     \}
+\end{DoxyCode}
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards}!Cb\+Navigate\+Backwards@{Cb\+Navigate\+Backwards}}
+\index{Cb\+Navigate\+Backwards@{Cb\+Navigate\+Backwards}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards}}
+\subsubsection[{\texorpdfstring{Cb\+Navigate\+Backwards()}{CbNavigateBackwards()}}]{\setlength{\rightskip}{0pt plus 5cm}move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards\+::\+Cb\+Navigate\+Backwards (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmove__base__z__client_1_1CbNavigateBackwards_a2536e2c30a2dbf13b19d08aca3539736}{}\label{classmove__base__z__client_1_1CbNavigateBackwards_a2536e2c30a2dbf13b19d08aca3539736}
+
+
+Definition at line 34 of file cb\+\_\+navigate\+\_\+backward.\+h.
+
+
+\begin{DoxyCode}
+35     \{
+36     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards}}
+\subsubsection[{\texorpdfstring{on\+Entry() override}{onEntry() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classmove__base__z__client_1_1CbNavigateBackwards_ae5c9eb5029e0a6ea6950cb23713214bb}{}\label{classmove__base__z__client_1_1CbNavigateBackwards_ae5c9eb5029e0a6ea6950cb23713214bb}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccClientBehavior_a7962382f93987c720ad432fef55b123f}{smacc\+::\+Smacc\+Client\+Behavior}.
+
+
+
+Definition at line 38 of file cb\+\_\+navigate\+\_\+backward.\+h.
+
+
+
+References backward\+Distance, smacc\+::\+Smacc\+Client\+Behavior\+::current\+State, smacc\+::\+I\+Smacc\+State\+::param(), move\+\_\+base\+\_\+z\+\_\+client\+::\+Cl\+Move\+Base\+Z\+::planner\+Switcher\+\_\+, smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client(), and smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal().
+
+
+\begin{DoxyCode}
+39     \{
+40         \textcolor{comment}{// straight motion distance}
+41         \textcolor{keywordtype}{double} dist;
+42 
+43         \textcolor{keywordflow}{if} (!\hyperlink{classmove__base__z__client_1_1CbNavigateBackwards_a53d06922eff285e4d35f4d7b1b7b7752}{backwardDistance})
+44         \{
+45             this->\hyperlink{classsmacc_1_1SmaccClientBehavior_af76fc9b877542ed5caf033f820c107d0}{currentState}->\hyperlink{classsmacc_1_1ISmaccState_a4982f2187ed6da337462721146e8ef70}{param}(\textcolor{stringliteral}{"straight\_motion\_distance"}, dist, 3.5);
+46         \}
+47         \textcolor{keywordflow}{else}
+48         \{
+49             dist = *\hyperlink{classmove__base__z__client_1_1CbNavigateBackwards_a53d06922eff285e4d35f4d7b1b7b7752}{backwardDistance};
+50         \}
+51 
+52         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"Straight motion distance: "} << dist);
+53 
+54         this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a917f001e763a1059af337bf4e164f542}{requiresClient}(\hyperlink{classmove__base__z__client_1_1CbNavigateBackwards_ac94348112821680532527fa006651a6c}{moveBaseClient\_});
+55         \textcolor{keyword}{auto} odomTracker\_ = this->getComponent<OdomTracker>();
+56         
+57         \textcolor{comment}{//this should work better with a coroutine and await}
+58         ros::Rate rate(10.0);
+59         tf::StampedTransform currentPose;
+60 
+61         \textcolor{keywordflow}{while} (ros::ok())
+62         \{
+63             \textcolor{keywordflow}{try}
+64             \{
+65                 \hyperlink{classmove__base__z__client_1_1CbNavigateBackwards_a13939ba95a738b73e0e26f215791d675}{listener}.lookupTransform(\textcolor{stringliteral}{"/odom"}, \textcolor{stringliteral}{"/base\_link"},
+66                                          ros::Time(0), currentPose);
+67 
+68                 \textcolor{keywordflow}{break};
+69             \}
+70             \textcolor{keywordflow}{catch} (tf::TransformException ex)
+71             \{
+72                 ROS\_ERROR(\textcolor{stringliteral}{"%s"}, ex.what());
+73                 ros::Duration(1.0).sleep();
+74             \}
+75         \}
+76 
+77         tf::Transform forwardDeltaTransform;
+78         forwardDeltaTransform.setIdentity();
+79         forwardDeltaTransform.setOrigin(tf::Vector3(-dist, 0, 0));
+80 
+81         tf::Transform targetPose = currentPose * forwardDeltaTransform;
+82 
+83         ClMoveBaseZ::Goal goal;
+84         goal.target\_pose.header.frame\_id = \textcolor{stringliteral}{"/odom"};
+85         goal.target\_pose.header.stamp = ros::Time::now();
+86         tf::poseTFToMsg(targetPose, goal.target\_pose.pose);
+87 
+88         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"TARGET POSE FORWARD: "} << goal.target\_pose.pose);
+89         ros::Duration(10).sleep();
+90         this->odomTracker\_->clearPath();
+91 
+92         geometry\_msgs::PoseStamped currentPoseMsg;
+93         currentPoseMsg.header.frame\_id = \textcolor{stringliteral}{"/odom"};
+94         currentPoseMsg.header.stamp = ros::Time::now();
+95         tf::poseTFToMsg(currentPose, currentPoseMsg.pose);
+96         this->odomTracker\_->setStartPoint(currentPoseMsg);
+97         this->odomTracker\_->setWorkingMode(WorkingMode::RECORD\_PATH\_FORWARD);
+98 
+99         \hyperlink{classmove__base__z__client_1_1CbNavigateBackwards_ac94348112821680532527fa006651a6c}{moveBaseClient\_}->\hyperlink{classmove__base__z__client_1_1ClMoveBaseZ_ac57d2293bc0a5c4fcef326379822cc5e}{plannerSwitcher\_}->setBackwardPlanner();
+100 
+101         \hyperlink{classmove__base__z__client_1_1CbNavigateBackwards_ac94348112821680532527fa006651a6c}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
+102     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove__base__z__client_1_1CbNavigateBackwards_ae5c9eb5029e0a6ea6950cb23713214bb_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards}!on\+Exit@{on\+Exit}}
+\index{on\+Exit@{on\+Exit}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards}}
+\subsubsection[{\texorpdfstring{on\+Exit() override}{onExit() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards\+::on\+Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classmove__base__z__client_1_1CbNavigateBackwards_a1160c6f750789c4e88f46c54a3df2a1e}{}\label{classmove__base__z__client_1_1CbNavigateBackwards_a1160c6f750789c4e88f46c54a3df2a1e}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccClientBehavior_ac0cd72d42bd00425362a97c9803ecce5}{smacc\+::\+Smacc\+Client\+Behavior}.
+
+
+
+Definition at line 104 of file cb\+\_\+navigate\+\_\+backward.\+h.
+
+
+\begin{DoxyCode}
+105     \{
+106         this->odomTracker\_->setWorkingMode(WorkingMode::IDLE);
+107     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards}!backward\+Distance@{backward\+Distance}}
+\index{backward\+Distance@{backward\+Distance}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards}}
+\subsubsection[{\texorpdfstring{backward\+Distance}{backwardDistance}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::optional$<$float$>$ move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards\+::backward\+Distance}\hypertarget{classmove__base__z__client_1_1CbNavigateBackwards_a53d06922eff285e4d35f4d7b1b7b7752}{}\label{classmove__base__z__client_1_1CbNavigateBackwards_a53d06922eff285e4d35f4d7b1b7b7752}
+
+
+Definition at line 15 of file cb\+\_\+navigate\+\_\+backward.\+h.
+
+
+
+Referenced by Cb\+Navigate\+Backwards(), and on\+Entry().
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards}!backward\+Speed@{backward\+Speed}}
+\index{backward\+Speed@{backward\+Speed}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards}}
+\subsubsection[{\texorpdfstring{backward\+Speed}{backwardSpeed}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::optional$<$float$>$ move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards\+::backward\+Speed}\hypertarget{classmove__base__z__client_1_1CbNavigateBackwards_ad5214ee636b6987d9d1c98458d500b4b}{}\label{classmove__base__z__client_1_1CbNavigateBackwards_ad5214ee636b6987d9d1c98458d500b4b}
+
+
+Definition at line 18 of file cb\+\_\+navigate\+\_\+backward.\+h.
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards}!listener@{listener}}
+\index{listener@{listener}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards}}
+\subsubsection[{\texorpdfstring{listener}{listener}}]{\setlength{\rightskip}{0pt plus 5cm}tf\+::\+Transform\+Listener move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards\+::listener}\hypertarget{classmove__base__z__client_1_1CbNavigateBackwards_a13939ba95a738b73e0e26f215791d675}{}\label{classmove__base__z__client_1_1CbNavigateBackwards_a13939ba95a738b73e0e26f215791d675}
+
+
+Definition at line 20 of file cb\+\_\+navigate\+\_\+backward.\+h.
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards}!move\+Base\+Client\+\_\+@{move\+Base\+Client\+\_\+}}
+\index{move\+Base\+Client\+\_\+@{move\+Base\+Client\+\_\+}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards}}
+\subsubsection[{\texorpdfstring{move\+Base\+Client\+\_\+}{moveBaseClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf move\+\_\+base\+\_\+z\+\_\+client\+::\+Cl\+Move\+BaseZ}$\ast$ move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards\+::move\+Base\+Client\+\_\+}\hypertarget{classmove__base__z__client_1_1CbNavigateBackwards_ac94348112821680532527fa006651a6c}{}\label{classmove__base__z__client_1_1CbNavigateBackwards_ac94348112821680532527fa006651a6c}
+
+
+Definition at line 22 of file cb\+\_\+navigate\+\_\+backward.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin/include/move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin/client\+\_\+behaviors/\hyperlink{smacc__client__library_2move__base__z__client_2move__base__z__client__plugin_2include_2move__basef18dba82c6c9ec751438c97ecb125e5}{cb\+\_\+navigate\+\_\+backward.\+h}\end{DoxyCompactItemize}

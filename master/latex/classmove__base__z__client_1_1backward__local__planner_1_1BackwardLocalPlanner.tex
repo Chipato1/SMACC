@@ -1,0 +1,1128 @@
+\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner}{}\section{move\+\_\+base\+\_\+z\+\_\+client\+:\+:backward\+\_\+local\+\_\+planner\+:\+:Backward\+Local\+Planner Class Reference}
+\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner}\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+
+
+{\ttfamily \#include $<$backward\+\_\+local\+\_\+planner.\+h$>$}
+
+
+
+Inheritance diagram for move\+\_\+base\+\_\+z\+\_\+client\+:\+:backward\+\_\+local\+\_\+planner\+:\+:Backward\+Local\+Planner\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for move\+\_\+base\+\_\+z\+\_\+client\+:\+:backward\+\_\+local\+\_\+planner\+:\+:Backward\+Local\+Planner\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9de6ad61e5c2ec81c6e4842778268457}{Backward\+Local\+Planner} ()
+\item 
+virtual \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a8d57b252d272da3c42920ee3687ddcc6}{$\sim$\+Backward\+Local\+Planner} ()
+\item 
+virtual \hyperlink{classbool}{bool} \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a8e7dec0bc31856d814d8fa6df747bbb8}{compute\+Velocity\+Commands} (geometry\+\_\+msgs\+::\+Twist \&cmd\+\_\+vel) override
+\begin{DoxyCompactList}\small\item\em Given the current position, orientation, and velocity of the robot\+: compute velocity commands to send to the robot mobile base. \end{DoxyCompactList}\item 
+virtual \hyperlink{classbool}{bool} \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a625198f20113c62e95ffaa82ecc3f472}{is\+Goal\+Reached} () override
+\begin{DoxyCompactList}\small\item\em Check if the goal pose has been achieved by the local planner. \end{DoxyCompactList}\item 
+virtual \hyperlink{classbool}{bool} \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a3b552c90996d21cadf7b2f0875706407}{set\+Plan} (const std\+::vector$<$ geometry\+\_\+msgs\+::\+Pose\+Stamped $>$ \&plan) override
+\begin{DoxyCompactList}\small\item\em Set the plan that the local planner is following. \end{DoxyCompactList}\item 
+void \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ac2cd25cd0be3bfc945826af5e9f0d5d0}{initialize} (std\+::string name, tf\+::\+Transform\+Listener $\ast$tf, costmap\+\_\+2d\+::\+Costmap2\+D\+R\+OS $\ast$\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a865618f84238fe6ff437d1e38ec5fec0}{costmap\+Ros\+\_\+})
+\begin{DoxyCompactList}\small\item\em Constructs the local planner. \end{DoxyCompactList}\item 
+void \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ad31278d3b0f2d990c5e5fe440809c864}{initialize} (std\+::string name, tf2\+\_\+ros\+::\+Buffer $\ast$tf, costmap\+\_\+2d\+::\+Costmap2\+D\+R\+OS $\ast$\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a865618f84238fe6ff437d1e38ec5fec0}{costmap\+Ros\+\_\+})
+\item 
+void \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_acdb083587fd77dc2c8d617751ac08f74}{initialize} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9dfe3fd3fd7a0c8ec414a78e1300d09c}{reconfig\+CB} (\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+Config \&config, uint32\+\_\+t level)
+\item 
+\hyperlink{classbool}{bool} \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a0a48c91cb8043aa15d01eec4931e8552}{create\+Carrot\+Goal} (const tf\+::\+Stamped$<$ tf\+::\+Pose $>$ \&tfpose)
+\item 
+void \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a3b08865dc8e19750273d971336ecba3b}{pure\+Spinning\+Cmd} (const tf\+::\+Stamped$<$ tf\+::\+Pose $>$ \&tfpose, double vetta, double gamma, double alpha\+\_\+error, double betta\+\_\+error, double rho\+\_\+error, geometry\+\_\+msgs\+::\+Twist \&cmd\+\_\+vel)
+\item 
+void \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9f3977494d5f80884eb1a1d09b5b4673}{default\+Backward\+Cmd} (const tf\+::\+Stamped$<$ tf\+::\+Pose $>$ \&tfpose, double vetta, double gamma, double alpha\+\_\+error, geometry\+\_\+msgs\+::\+Twist \&cmd\+\_\+vel)
+\item 
+void \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a691e565d33666d2f7004e791cae29b42}{publish\+Goal\+Marker} (double x, double y, double phi)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{tool__action__server__node_8cpp_ab5d66ae48b02f831fb527e5260ce1ed2}{dynamic\+\_\+reconfigure\+::\+Server}$<$\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+Config $>$ \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ab4e01416e0e6d79c00daaf7b2b9aae78}{param\+Server\+\_\+}
+\item 
+\hyperlink{tool__action__server__node_8cpp_ab5d66ae48b02f831fb527e5260ce1ed2}{dynamic\+\_\+reconfigure\+::\+Server}$<$\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+Config $>$\+::Callback\+Type \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a8851653bff38ab410bda8aca0ba32574}{f}
+\item 
+std\+::vector$<$ geometry\+\_\+msgs\+::\+Pose\+Stamped $>$ \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a451add2af7d6d83a7415277311b3ed04}{backwards\+Plan\+Path\+\_\+}
+\item 
+costmap\+\_\+2d\+::\+Costmap2\+D\+R\+OS $\ast$ \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a865618f84238fe6ff437d1e38ec5fec0}{costmap\+Ros\+\_\+}
+\item 
+ros\+::\+Publisher \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a7228d3fe90bc48b486e5c46d6ac5e815}{goal\+Marker\+Publisher\+\_\+}
+\item 
+double \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9ae9a8c4c4663a999ba107aea9f6868d}{k\+\_\+rho\+\_\+}
+\item 
+double \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ac859500c0329247de08daf864fd2d4b1}{k\+\_\+alpha\+\_\+}
+\item 
+double \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_aa2f7fe022cdc4eb11c17f6f576c732c6}{k\+\_\+betta\+\_\+}
+\item 
+\hyperlink{classbool}{bool} \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a0a89141d3d3a8ebfb9e1d69d0d33fd49}{goal\+Reached\+\_\+}
+\item 
+\hyperlink{classbool}{bool} \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a5db5b10d8cdf425321ee6ec932f594ae}{initial\+Pure\+Spinning\+Stage\+\_\+}
+\item 
+\hyperlink{classbool}{bool} \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_abf2b84c0d7a841a7fcec1b93bf5fdd0e}{pure\+Spinning\+Mode\+\_\+} = false
+\item 
+const double \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ad406c50cdc7a7603c023718543fc2f5c}{alpha\+\_\+offset\+\_\+} = M\+\_\+\+PI
+\item 
+const double \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ae35f99afc3c859a4b14d0417ef7839df}{betta\+\_\+offset\+\_\+} = 0
+\item 
+double \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a10d15842054d518159baa535afe6f1fd}{yaw\+\_\+goal\+\_\+tolerance\+\_\+}
+\item 
+double \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a89ab1ee7283a474dc19970789f51c087}{xy\+\_\+goal\+\_\+tolerance\+\_\+}
+\item 
+\hyperlink{backward__local__planner_8h_ab6024a26b088c11b8a5218a469ae5a57}{meter} \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a6dc3aa0ff63f9f7d0aae852755734b5d}{carrot\+\_\+distance\+\_\+}
+\item 
+\hyperlink{backward__local__planner_8h_a640effbe91ae9b25d698a883a9e80d96}{rad} \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a3d6cba0748b85a67f5dfd7740de9530f}{carrot\+\_\+angular\+\_\+distance\+\_\+}
+\item 
+double \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a287325b11b5eb8a76b6924b42f859e25}{max\+\_\+linear\+\_\+x\+\_\+speed\+\_\+}
+\item 
+double \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a8b5cbc273dfcf1c5e15ac4475b45ca97}{max\+\_\+angular\+\_\+z\+\_\+speed\+\_\+}
+\item 
+int \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_af304b2e7cde744ad905a1ae7889102b6}{current\+Pose\+Index\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 22 of file backward\+\_\+local\+\_\+planner.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!Backward\+Local\+Planner@{Backward\+Local\+Planner}}
+\index{Backward\+Local\+Planner@{Backward\+Local\+Planner}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{Backward\+Local\+Planner()}{BackwardLocalPlanner()}}]{\setlength{\rightskip}{0pt plus 5cm}move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::\+Backward\+Local\+Planner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9de6ad61e5c2ec81c6e4842778268457}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9de6ad61e5c2ec81c6e4842778268457}
+\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9de6ad61e5c2ec81c6e4842778268457}{Backward\+Local\+Planner()} 
+
+Definition at line 20 of file backward\+\_\+curved\+\_\+local\+\_\+planner.\+cpp.
+
+
+\begin{DoxyCode}
+21     : \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ab4e01416e0e6d79c00daaf7b2b9aae78}{paramServer\_}(ros::NodeHandle(\textcolor{stringliteral}{"~BackwardLocalPlanner"}))
+22 \{
+23 \}
+\end{DoxyCode}
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!````~Backward\+Local\+Planner@{$\sim$\+Backward\+Local\+Planner}}
+\index{````~Backward\+Local\+Planner@{$\sim$\+Backward\+Local\+Planner}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{$\sim$\+Backward\+Local\+Planner()}{~BackwardLocalPlanner()}}]{\setlength{\rightskip}{0pt plus 5cm}move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::$\sim$\+Backward\+Local\+Planner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a8d57b252d272da3c42920ee3687ddcc6}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a8d57b252d272da3c42920ee3687ddcc6}
+\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a8d57b252d272da3c42920ee3687ddcc6}{$\sim$\+Backward\+Local\+Planner()} 
+
+Definition at line 30 of file backward\+\_\+curved\+\_\+local\+\_\+planner.\+cpp.
+
+
+\begin{DoxyCode}
+31 \{
+32 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!compute\+Velocity\+Commands@{compute\+Velocity\+Commands}}
+\index{compute\+Velocity\+Commands@{compute\+Velocity\+Commands}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{compute\+Velocity\+Commands(geometry\+\_\+msgs\+::\+Twist \&cmd\+\_\+vel) override}{computeVelocityCommands(geometry_msgs::Twist &cmd_vel) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool} move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::compute\+Velocity\+Commands (
+\begin{DoxyParamCaption}
+\item[{geometry\+\_\+msgs\+::\+Twist \&}]{cmd\+\_\+vel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a8e7dec0bc31856d814d8fa6df747bbb8}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a8e7dec0bc31856d814d8fa6df747bbb8}
+
+
+Given the current position, orientation, and velocity of the robot\+: compute velocity commands to send to the robot mobile base. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd\+\_\+vel} & Will be filled with the velocity command to be passed to the robot base \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if a valid velocity command was found, false otherwise
+\end{DoxyReturn}
+\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a8e7dec0bc31856d814d8fa6df747bbb8}{compute\+Velocity\+Commands()} 
+
+Definition at line 259 of file backward\+\_\+curved\+\_\+local\+\_\+planner.\+cpp.
+
+
+
+References alpha\+\_\+offset\+\_\+, backwards\+Plan\+Path\+\_\+, betta\+\_\+offset\+\_\+, costmap\+Ros\+\_\+, create\+Carrot\+Goal(), current\+Pose\+Index\+\_\+, default\+Backward\+Cmd(), k\+\_\+alpha\+\_\+, k\+\_\+betta\+\_\+, k\+\_\+rho\+\_\+, max\+\_\+angular\+\_\+z\+\_\+speed\+\_\+, max\+\_\+linear\+\_\+x\+\_\+speed\+\_\+, move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::optional\+Robot\+Pose(), publish\+Goal\+Marker(), pure\+Spinning\+Cmd(), and pure\+Spinning\+Mode\+\_\+.
+
+
+\begin{DoxyCode}
+260 \{
+261     ROS\_DEBUG(\textcolor{stringliteral}{"LOCAL PLANNER LOOP"});
+262 
+263     geometry\_msgs::PoseStamped paux;
+264     tf::Stamped<tf::Pose> tfpose = \hyperlink{namespacemove__base__z__client_1_1backward__local__planner_a80dbd10807e5f70adfcd0ff4dcb7c1db}{optionalRobotPose}(
+      \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a865618f84238fe6ff437d1e38ec5fec0}{costmapRos\_});
+265 
+266     tf::Quaternion q = tfpose.getRotation();
+267 
+268     \textcolor{keywordtype}{bool} initialPureSpinningDefaultMovement = \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a0a48c91cb8043aa15d01eec4931e8552}{createCarrotGoal}(tfpose);
+269 
+270     \textcolor{keyword}{const} geometry\_msgs::PoseStamped &goalpose = \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a451add2af7d6d83a7415277311b3ed04}{backwardsPlanPath\_}[
+      \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_af304b2e7cde744ad905a1ae7889102b6}{currentPoseIndex\_}];
+271     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"goal pose current index: "} << goalpose);
+272     \textcolor{keyword}{const} geometry\_msgs::Point &goalposition = goalpose.pose.position;
+273 
+274     tf::Quaternion goalQ;
+275     tf::quaternionMsgToTF(goalpose.pose.orientation, goalQ);
+276 
+277     \textcolor{comment}{//goal orientation (global frame)}
+278     \textcolor{keywordtype}{double} betta = tf::getYaw(goalQ);
+279     betta = betta + \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ae35f99afc3c859a4b14d0417ef7839df}{betta\_offset\_};
+280 
+281     \textcolor{keywordtype}{double} dx = goalposition.x - tfpose.getOrigin().x();
+282     \textcolor{keywordtype}{double} dy = goalposition.y - tfpose.getOrigin().y();
+283 
+284     \textcolor{comment}{//distance error to the targetpoint}
+285     \textcolor{keywordtype}{double} rho\_error = sqrt(dx * dx + dy * dy);
+286 
+287     \textcolor{comment}{//heading to goal angle}
+288     \textcolor{keywordtype}{double} theta = tf::getYaw(q);
+289     \textcolor{keywordtype}{double} alpha = atan2(dy, dx);
+290     alpha = alpha + \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ad406c50cdc7a7603c023718543fc2f5c}{alpha\_offset\_};
+291 
+292     \textcolor{keywordtype}{double} alpha\_error = angles::shortest\_angular\_distance(alpha, theta);
+293     \textcolor{keywordtype}{double} betta\_error = angles::shortest\_angular\_distance(betta, theta);
+294 
+295     \textcolor{keywordtype}{double} vetta = \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9ae9a8c4c4663a999ba107aea9f6868d}{k\_rho\_} * rho\_error;
+296     \textcolor{keywordtype}{double} gamma = \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ac859500c0329247de08daf864fd2d4b1}{k\_alpha\_} * alpha\_error + \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_aa2f7fe022cdc4eb11c17f6f576c732c6}{k\_betta\_} * betta\_error;
+297 
+298     \textcolor{keywordflow}{if} (\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_abf2b84c0d7a841a7fcec1b93bf5fdd0e}{pureSpinningMode\_})
+299     \{
+300         this->\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a3b08865dc8e19750273d971336ecba3b}{pureSpinningCmd}(tfpose, vetta, gamma, alpha\_error, betta\_error, rho\_error, 
+      cmd\_vel);
+301     \}
+302     \textcolor{keywordflow}{else}
+303     \{
+304         \textcolor{comment}{// this is recomendable to start the initial motion looking to the goal}
+305 
+306         ROS\_WARN(\textcolor{stringliteral}{"pure spinning: %d"}, initialPureSpinningDefaultMovement);
+307         \textcolor{keywordflow}{if} (initialPureSpinningDefaultMovement)
+308         \{
+309             vetta = 0;
+310         \}
+311 
+312         this->\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9f3977494d5f80884eb1a1d09b5b4673}{defaultBackwardCmd}(tfpose, vetta, gamma, alpha\_error, cmd\_vel);
+313     \}
+314 
+315     \textcolor{keywordflow}{if} (cmd\_vel.linear.x > \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a287325b11b5eb8a76b6924b42f859e25}{max\_linear\_x\_speed\_})
+316     \{
+317         cmd\_vel.linear.x = \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a287325b11b5eb8a76b6924b42f859e25}{max\_linear\_x\_speed\_};
+318     \}
+319     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (cmd\_vel.linear.x < -\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a287325b11b5eb8a76b6924b42f859e25}{max\_linear\_x\_speed\_})
+320     \{
+321         cmd\_vel.linear.x = -\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a287325b11b5eb8a76b6924b42f859e25}{max\_linear\_x\_speed\_};
+322     \}
+323 
+324     \textcolor{keywordflow}{if} (cmd\_vel.angular.z > \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a8b5cbc273dfcf1c5e15ac4475b45ca97}{max\_angular\_z\_speed\_})
+325     \{
+326         cmd\_vel.angular.z = \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a8b5cbc273dfcf1c5e15ac4475b45ca97}{max\_angular\_z\_speed\_};
+327     \}
+328     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (cmd\_vel.angular.z < -\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a8b5cbc273dfcf1c5e15ac4475b45ca97}{max\_angular\_z\_speed\_})
+329     \{
+330         cmd\_vel.angular.z = -\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a8b5cbc273dfcf1c5e15ac4475b45ca97}{max\_angular\_z\_speed\_};
+331     \}
+332 
+333     \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a691e565d33666d2f7004e791cae29b42}{publishGoalMarker}(goalposition.x, goalposition.y, betta);
+334 
+335     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"local planner,"} << std::endl
+336                                      << \textcolor{stringliteral}{" pureSpiningMode: "} << 
+      \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_abf2b84c0d7a841a7fcec1b93bf5fdd0e}{pureSpinningMode\_} << std::endl
+337                                      << \textcolor{stringliteral}{" theta: "} << theta << std::endl
+338                                      << \textcolor{stringliteral}{" betta: "} << theta << std::endl
+339                                      << \textcolor{stringliteral}{" err\_x: "} << dx << std::endl
+340                                      << \textcolor{stringliteral}{" err\_y:"} << dy << std::endl
+341                                      << \textcolor{stringliteral}{" rho\_error:"} << rho\_error << std::endl
+342                                      << \textcolor{stringliteral}{" alpha\_error:"} << alpha\_error << std::endl
+343                                      << \textcolor{stringliteral}{" betta\_error:"} << betta\_error << std::endl
+344                                      << \textcolor{stringliteral}{" vetta:"} << vetta << std::endl
+345                                      << \textcolor{stringliteral}{" gamma:"} << gamma);
+346 
+347     \textcolor{comment}{//cmd\_vel.linear.x=0;}
+348     \textcolor{comment}{//cmd\_vel.angular.z = 0;}
+349 
+350     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+351 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a8e7dec0bc31856d814d8fa6df747bbb8_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!create\+Carrot\+Goal@{create\+Carrot\+Goal}}
+\index{create\+Carrot\+Goal@{create\+Carrot\+Goal}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{create\+Carrot\+Goal(const tf\+::\+Stamped$<$ tf\+::\+Pose $>$ \&tfpose)}{createCarrotGoal(const tf::Stamped< tf::Pose > &tfpose)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool} move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::create\+Carrot\+Goal (
+\begin{DoxyParamCaption}
+\item[{const tf\+::\+Stamped$<$ tf\+::\+Pose $>$ \&}]{tfpose}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a0a48c91cb8043aa15d01eec4931e8552}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a0a48c91cb8043aa15d01eec4931e8552}
+\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a0a48c91cb8043aa15d01eec4931e8552}{create\+Carrot\+Goal()} 
+
+Definition at line 81 of file backward\+\_\+curved\+\_\+local\+\_\+planner.\+cpp.
+
+
+
+References alpha\+\_\+offset\+\_\+, backwards\+Plan\+Path\+\_\+, carrot\+\_\+angular\+\_\+distance\+\_\+, carrot\+\_\+distance\+\_\+, current\+Pose\+Index\+\_\+, initial\+Pure\+Spinning\+Stage\+\_\+, and pure\+Spinning\+Mode\+\_\+.
+
+
+
+Referenced by compute\+Velocity\+Commands().
+
+
+\begin{DoxyCode}
+82 \{
+83     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{false};
+84     \textcolor{keywordtype}{bool} pureSpinning = \textcolor{keyword}{false};
+85 
+86     \textcolor{keywordtype}{double} angle = tf::getYaw(tfpose.getRotation());
+87 
+88     \textcolor{keywordflow}{if} (!\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_abf2b84c0d7a841a7fcec1b93bf5fdd0e}{pureSpinningMode\_})
+89     \{
+90         \textcolor{keywordflow}{if} (\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_af304b2e7cde744ad905a1ae7889102b6}{currentPoseIndex\_} <= 1)
+91         \{
+92             \textcolor{keywordtype}{double} angle = tf::getYaw(tfpose.getRotation());
+93 
+94             \textcolor{comment}{/*}
+95 \textcolor{comment}{            //closest dist}
+96 \textcolor{comment}{            double mindist = std::numeric\_limits<double>::max();}
+97 \textcolor{comment}{            int closestIndex = 1;}
+98 \textcolor{comment}{            for(int i=1;i< backwardsPlanPath\_.size();i++)}
+99 \textcolor{comment}{            \{}
+100 \textcolor{comment}{                auto& pose = backwardsPlanPath\_[i];}
+101 \textcolor{comment}{                const geometry\_msgs::Point& p = pose.pose.position;}
+102 \textcolor{comment}{}
+103 \textcolor{comment}{                // take error from the current position to the path point}
+104 \textcolor{comment}{                double dx = p.x - tfpose.getOrigin().x();}
+105 \textcolor{comment}{                double dy = p.y - tfpose.getOrigin().y();}
+106 \textcolor{comment}{                double dist = sqrt(dx * dx + dy * dy);}
+107 \textcolor{comment}{}
+108 \textcolor{comment}{                if(dist < mindist)}
+109 \textcolor{comment}{                \{}
+110 \textcolor{comment}{                    closestIndex = i;}
+111 \textcolor{comment}{                    mindist = dist;}
+112 \textcolor{comment}{                \}}
+113 \textcolor{comment}{            \}*/}
+114 
+115             \textcolor{keyword}{auto} &closestPose = \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a451add2af7d6d83a7415277311b3ed04}{backwardsPlanPath\_}[1];
+116             tf::Quaternion q;
+117             tf::quaternionMsgToTF(closestPose.pose.orientation, q);
+118             \textcolor{keywordtype}{double} pangle = tf::getYaw(q);
+119             \textcolor{keywordtype}{double} angular\_error = angles::shortest\_angular\_distance(pangle, angle);
+120 
+121             ROS\_WARN(\textcolor{stringliteral}{"pure spinning stage, angle: %lf threshold: %lf"}, angular\_error, 
+      \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a3d6cba0748b85a67f5dfd7740de9530f}{carrot\_angular\_distance\_});
+122 
+123             \textcolor{keywordflow}{if} (fabs(angular\_error) >= \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a3d6cba0748b85a67f5dfd7740de9530f}{carrot\_angular\_distance\_})
+124             \{
+125                 ok = \textcolor{keyword}{true};
+126                 \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_af304b2e7cde744ad905a1ae7889102b6}{currentPoseIndex\_} = 1;
+127                 pureSpinning = \textcolor{keyword}{true};
+128                 \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a5db5b10d8cdf425321ee6ec932f594ae}{initialPureSpinningStage\_} = \textcolor{keyword}{true};
+129             \}
+130             \textcolor{keywordflow}{else}
+131             \{
+132                 ok = \textcolor{keyword}{true};
+133                 \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_af304b2e7cde744ad905a1ae7889102b6}{currentPoseIndex\_}++;
+134                 \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a5db5b10d8cdf425321ee6ec932f594ae}{initialPureSpinningStage\_} = \textcolor{keyword}{false};
+135                 pureSpinning = \textcolor{keyword}{false};
+136                 \textcolor{comment}{//exit(0);}
+137             \}
+138         \}
+139     \}
+140 
+141     \textcolor{keywordflow}{if} (!pureSpinning)
+142     \{
+143         pureSpinning = \textcolor{keyword}{false};
+144 
+145         \textcolor{comment}{// iterate the point from the current position and backward until reaching a new goal point in the
+       path}
+146         \textcolor{keywordflow}{for} (; !ok && \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_af304b2e7cde744ad905a1ae7889102b6}{currentPoseIndex\_} < \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a451add2af7d6d83a7415277311b3ed04}{backwardsPlanPath\_}.size(); 
+      \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_af304b2e7cde744ad905a1ae7889102b6}{currentPoseIndex\_}++)
+147         \{
+148             \textcolor{keyword}{auto} &pose = \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a451add2af7d6d83a7415277311b3ed04}{backwardsPlanPath\_}[\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_af304b2e7cde744ad905a1ae7889102b6}{currentPoseIndex\_}];
+149             \textcolor{keyword}{const} geometry\_msgs::Point &p = pose.pose.position;
+150             tf::Quaternion q;
+151             tf::quaternionMsgToTF(pose.pose.orientation, q);
+152 
+153             \textcolor{comment}{// take error from the current position to the path point}
+154             \textcolor{keywordtype}{double} dx = p.x - tfpose.getOrigin().x();
+155             \textcolor{keywordtype}{double} dy = p.y - tfpose.getOrigin().y();
+156             \textcolor{keywordtype}{double} dist = sqrt(dx * dx + dy * dy);
+157 
+158             \textcolor{keywordtype}{double} pangle = tf::getYaw(q);
+159             \textcolor{keywordtype}{double} angular\_error = angles::shortest\_angular\_distance(pangle + 
+      \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ad406c50cdc7a7603c023718543fc2f5c}{alpha\_offset\_}, angle);
+160 
+161             \textcolor{comment}{// target pose found}
+162             \textcolor{keywordflow}{if} (dist >= \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a6dc3aa0ff63f9f7d0aae852755734b5d}{carrot\_distance\_})
+163             \{
+164                 ok = \textcolor{keyword}{true};
+165                 ROS\_INFO(\textcolor{stringliteral}{"target dist: %lf / %lf"}, dist, \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a6dc3aa0ff63f9f7d0aae852755734b5d}{carrot\_distance\_});
+166                 ROS\_INFO(\textcolor{stringliteral}{"Retracting: %lf/100"}, 100.0 * \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_af304b2e7cde744ad905a1ae7889102b6}{currentPoseIndex\_} / (\textcolor{keywordtype}{double})
+      \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a451add2af7d6d83a7415277311b3ed04}{backwardsPlanPath\_}.size());
+167                 \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_af304b2e7cde744ad905a1ae7889102b6}{currentPoseIndex\_}--;
+168             \}
+169         \}
+170     \}
+171 
+172     \textcolor{keywordflow}{if} (\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_af304b2e7cde744ad905a1ae7889102b6}{currentPoseIndex\_} >= \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a451add2af7d6d83a7415277311b3ed04}{backwardsPlanPath\_}.size())
+173     \{
+174         \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_af304b2e7cde744ad905a1ae7889102b6}{currentPoseIndex\_} = \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a451add2af7d6d83a7415277311b3ed04}{backwardsPlanPath\_}.size() - 1;
+175         ok = \textcolor{keyword}{true};
+176     \}
+177 
+178     ROS\_INFO(\textcolor{stringliteral}{"current index: %d"}, \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_af304b2e7cde744ad905a1ae7889102b6}{currentPoseIndex\_});
+179 
+180     \textcolor{keywordflow}{return} pureSpinning;
+181 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a0a48c91cb8043aa15d01eec4931e8552_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!default\+Backward\+Cmd@{default\+Backward\+Cmd}}
+\index{default\+Backward\+Cmd@{default\+Backward\+Cmd}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{default\+Backward\+Cmd(const tf\+::\+Stamped$<$ tf\+::\+Pose $>$ \&tfpose, double vetta, double gamma, double alpha\+\_\+error, geometry\+\_\+msgs\+::\+Twist \&cmd\+\_\+vel)}{defaultBackwardCmd(const tf::Stamped< tf::Pose > &tfpose, double vetta, double gamma, double alpha_error, geometry_msgs::Twist &cmd_vel)}}]{\setlength{\rightskip}{0pt plus 5cm}void move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::default\+Backward\+Cmd (
+\begin{DoxyParamCaption}
+\item[{const tf\+::\+Stamped$<$ tf\+::\+Pose $>$ \&}]{tfpose, }
+\item[{double}]{vetta, }
+\item[{double}]{gamma, }
+\item[{double}]{alpha\+\_\+error, }
+\item[{geometry\+\_\+msgs\+::\+Twist \&}]{cmd\+\_\+vel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9f3977494d5f80884eb1a1d09b5b4673}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9f3977494d5f80884eb1a1d09b5b4673}
+\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9f3977494d5f80884eb1a1d09b5b4673}{default\+Backward\+Cmd()} 
+
+Definition at line 188 of file backward\+\_\+curved\+\_\+local\+\_\+planner.\+cpp.
+
+
+
+References backwards\+Plan\+Path\+\_\+, goal\+Reached\+\_\+, xy\+\_\+goal\+\_\+tolerance\+\_\+, and yaw\+\_\+goal\+\_\+tolerance\+\_\+.
+
+
+
+Referenced by compute\+Velocity\+Commands().
+
+
+\begin{DoxyCode}
+189 \{
+190     cmd\_vel.linear.x = vetta;
+191     cmd\_vel.angular.z = gamma;
+192 
+193     \textcolor{keyword}{auto} &finalgoal = \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a451add2af7d6d83a7415277311b3ed04}{backwardsPlanPath\_}.back();
+194     \textcolor{keywordtype}{double} gdx = finalgoal.pose.position.x - tfpose.getOrigin().x();
+195     \textcolor{keywordtype}{double} gdy = finalgoal.pose.position.y - tfpose.getOrigin().y();
+196     \textcolor{keywordtype}{double} goaldist = sqrt(gdx * gdx + gdy * gdy);
+197 
+198     \textcolor{keywordflow}{if} (goaldist < this->\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a89ab1ee7283a474dc19970789f51c087}{xy\_goal\_tolerance\_} && alpha\_error < this->
+      \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a10d15842054d518159baa535afe6f1fd}{yaw\_goal\_tolerance\_}) \textcolor{comment}{// 5cm}
+199     \{
+200         \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a0a89141d3d3a8ebfb9e1d69d0d33fd49}{goalReached\_} = \textcolor{keyword}{true};
+201         \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a451add2af7d6d83a7415277311b3ed04}{backwardsPlanPath\_}.clear();
+202     \}
+203 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9f3977494d5f80884eb1a1d09b5b4673_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!initialize@{initialize}}
+\index{initialize@{initialize}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{initialize(std\+::string name, tf\+::\+Transform\+Listener $\ast$tf, costmap\+\_\+2d\+::\+Costmap2\+D\+R\+O\+S $\ast$costmap\+Ros\+\_\+)}{initialize(std::string name, tf::TransformListener *tf, costmap_2d::Costmap2DROS *costmapRos_)}}]{\setlength{\rightskip}{0pt plus 5cm}void move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::initialize (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name, }
+\item[{tf\+::\+Transform\+Listener $\ast$}]{tf, }
+\item[{costmap\+\_\+2d\+::\+Costmap2\+D\+R\+OS $\ast$}]{costmap\+\_\+ros}
+\end{DoxyParamCaption}
+)}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ac2cd25cd0be3bfc945826af5e9f0d5d0}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ac2cd25cd0be3bfc945826af5e9f0d5d0}
+
+
+Constructs the local planner. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name to give this instance of the local planner \\
+\hline
+{\em tf} & A pointer to a transform listener \\
+\hline
+{\em costmap\+\_\+ros} & The cost map to use for assigning costs to local plans\\
+\hline
+\end{DoxyParams}
+\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_acdb083587fd77dc2c8d617751ac08f74}{initialize()} 
+
+Definition at line 70 of file backward\+\_\+curved\+\_\+local\+\_\+planner.\+cpp.
+
+
+
+References costmap\+Ros\+\_\+, and initialize().
+
+
+\begin{DoxyCode}
+71 \{
+72     this->\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a865618f84238fe6ff437d1e38ec5fec0}{costmapRos\_} = costmap\_ros;
+73     this->\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_acdb083587fd77dc2c8d617751ac08f74}{initialize}();
+74 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ac2cd25cd0be3bfc945826af5e9f0d5d0_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!initialize@{initialize}}
+\index{initialize@{initialize}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{initialize(std\+::string name, tf2\+\_\+ros\+::\+Buffer $\ast$tf, costmap\+\_\+2d\+::\+Costmap2\+D\+R\+O\+S $\ast$costmap\+Ros\+\_\+)}{initialize(std::string name, tf2_ros::Buffer *tf, costmap_2d::Costmap2DROS *costmapRos_)}}]{\setlength{\rightskip}{0pt plus 5cm}void move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::initialize (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name, }
+\item[{tf2\+\_\+ros\+::\+Buffer $\ast$}]{tf, }
+\item[{costmap\+\_\+2d\+::\+Costmap2\+D\+R\+OS $\ast$}]{costmap\+Ros\+\_\+}
+\end{DoxyParamCaption}
+)}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ad31278d3b0f2d990c5e5fe440809c864}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ad31278d3b0f2d990c5e5fe440809c864}
+
+
+Definition at line 34 of file backward\+\_\+curved\+\_\+local\+\_\+planner.\+cpp.
+
+
+
+References costmap\+Ros\+\_\+, and initialize().
+
+
+\begin{DoxyCode}
+35 \{
+36     this->\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a865618f84238fe6ff437d1e38ec5fec0}{costmapRos\_} = costmap\_ros;
+37     this->\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_acdb083587fd77dc2c8d617751ac08f74}{initialize}();
+38 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ad31278d3b0f2d990c5e5fe440809c864_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!initialize@{initialize}}
+\index{initialize@{initialize}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{initialize()}{initialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_acdb083587fd77dc2c8d617751ac08f74}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_acdb083587fd77dc2c8d617751ac08f74}
+
+
+Definition at line 40 of file backward\+\_\+curved\+\_\+local\+\_\+planner.\+cpp.
+
+
+
+References carrot\+\_\+angular\+\_\+distance\+\_\+, carrot\+\_\+distance\+\_\+, current\+Pose\+Index\+\_\+, f, goal\+Marker\+Publisher\+\_\+, k\+\_\+alpha\+\_\+, k\+\_\+betta\+\_\+, k\+\_\+rho\+\_\+, max\+\_\+angular\+\_\+z\+\_\+speed\+\_\+, max\+\_\+linear\+\_\+x\+\_\+speed\+\_\+, param\+Server\+\_\+, pure\+Spinning\+Mode\+\_\+, reconfig\+C\+B(), xy\+\_\+goal\+\_\+tolerance\+\_\+, and yaw\+\_\+goal\+\_\+tolerance\+\_\+.
+
+
+
+Referenced by initialize().
+
+
+\begin{DoxyCode}
+41 \{
+42     \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9ae9a8c4c4663a999ba107aea9f6868d}{k\_rho\_} = -1.0;
+43     \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ac859500c0329247de08daf864fd2d4b1}{k\_alpha\_} = 0.5;
+44     \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_aa2f7fe022cdc4eb11c17f6f576c732c6}{k\_betta\_} = -1.0; \textcolor{comment}{// set to zero means that orientation is not important}
+45     \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a3d6cba0748b85a67f5dfd7740de9530f}{carrot\_angular\_distance\_} = 0.5;
+46 
+47     \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a8851653bff38ab410bda8aca0ba32574}{f} = boost::bind(&\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9dfe3fd3fd7a0c8ec414a78e1300d09c}{BackwardLocalPlanner::reconfigCB}, \textcolor{keyword}{this}, \_1, \_2);
+48     \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ab4e01416e0e6d79c00daaf7b2b9aae78}{paramServer\_}.setCallback(\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a8851653bff38ab410bda8aca0ba32574}{f});
+49     this->\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_af304b2e7cde744ad905a1ae7889102b6}{currentPoseIndex\_} = 0;
+50 
+51     ros::NodeHandle nh(\textcolor{stringliteral}{"~/BackwardLocalPlanner"});
+52     nh.param(\textcolor{stringliteral}{"pure\_spinning\_straight\_line\_mode"}, \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_abf2b84c0d7a841a7fcec1b93bf5fdd0e}{pureSpinningMode\_}, \textcolor{keyword}{true});
+53     nh.param(\textcolor{stringliteral}{"yaw\_goal\_tolerance"}, \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a10d15842054d518159baa535afe6f1fd}{yaw\_goal\_tolerance\_}, 0.05);
+54     nh.param(\textcolor{stringliteral}{"xy\_goal\_tolerance"}, \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a89ab1ee7283a474dc19970789f51c087}{xy\_goal\_tolerance\_}, 0.10);
+55     nh.param(\textcolor{stringliteral}{"k\_rho"}, \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9ae9a8c4c4663a999ba107aea9f6868d}{k\_rho\_}, \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9ae9a8c4c4663a999ba107aea9f6868d}{k\_rho\_});
+56     nh.param(\textcolor{stringliteral}{"carrot\_distance"}, \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a6dc3aa0ff63f9f7d0aae852755734b5d}{carrot\_distance\_}, 
+      \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a6dc3aa0ff63f9f7d0aae852755734b5d}{carrot\_distance\_});
+57     nh.param(\textcolor{stringliteral}{"carrot\_angular\_distance"}, \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a3d6cba0748b85a67f5dfd7740de9530f}{carrot\_angular\_distance\_}, 
+      \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a3d6cba0748b85a67f5dfd7740de9530f}{carrot\_angular\_distance\_});
+58 
+59     nh.param(\textcolor{stringliteral}{"max\_linear\_x\_speed"}, \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a287325b11b5eb8a76b6924b42f859e25}{max\_linear\_x\_speed\_}, 1.0);
+60     nh.param(\textcolor{stringliteral}{"max\_angular\_z\_speed"}, \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a8b5cbc273dfcf1c5e15ac4475b45ca97}{max\_angular\_z\_speed\_}, 2.0);
+61 
+62     \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a7228d3fe90bc48b486e5c46d6ac5e815}{goalMarkerPublisher\_} = nh.advertise<visualization\_msgs::MarkerArray>(\textcolor{stringliteral}{"goal\_marker"},
+       1);
+63 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_acdb083587fd77dc2c8d617751ac08f74_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_acdb083587fd77dc2c8d617751ac08f74_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!is\+Goal\+Reached@{is\+Goal\+Reached}}
+\index{is\+Goal\+Reached@{is\+Goal\+Reached}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{is\+Goal\+Reached() override}{isGoalReached() override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool} move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::is\+Goal\+Reached (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a625198f20113c62e95ffaa82ecc3f472}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a625198f20113c62e95ffaa82ecc3f472}
+
+
+Check if the goal pose has been achieved by the local planner. 
+
+\begin{DoxyReturn}{Returns}
+True if achieved, false otherwise
+\end{DoxyReturn}
+\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a625198f20113c62e95ffaa82ecc3f472}{is\+Goal\+Reached()} 
+
+Definition at line 377 of file backward\+\_\+curved\+\_\+local\+\_\+planner.\+cpp.
+
+
+
+References goal\+Reached\+\_\+.
+
+
+\begin{DoxyCode}
+378 \{
+379     \textcolor{keywordflow}{return} \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a0a89141d3d3a8ebfb9e1d69d0d33fd49}{goalReached\_};
+380 \}
+\end{DoxyCode}
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!publish\+Goal\+Marker@{publish\+Goal\+Marker}}
+\index{publish\+Goal\+Marker@{publish\+Goal\+Marker}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{publish\+Goal\+Marker(double x, double y, double phi)}{publishGoalMarker(double x, double y, double phi)}}]{\setlength{\rightskip}{0pt plus 5cm}void move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::publish\+Goal\+Marker (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y, }
+\item[{double}]{phi}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a691e565d33666d2f7004e791cae29b42}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a691e565d33666d2f7004e791cae29b42}
+\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a691e565d33666d2f7004e791cae29b42}{publish\+Goal\+Marker()} 
+
+Definition at line 409 of file backward\+\_\+curved\+\_\+local\+\_\+planner.\+cpp.
+
+
+
+References goal\+Marker\+Publisher\+\_\+.
+
+
+
+Referenced by compute\+Velocity\+Commands().
+
+
+\begin{DoxyCode}
+410 \{
+411     visualization\_msgs::Marker marker;
+412     marker.header.frame\_id = \textcolor{stringliteral}{"/odom"};
+413     marker.header.stamp = ros::Time::now();
+414 
+415     marker.ns = \textcolor{stringliteral}{"my\_namespace2"};
+416     marker.id = 0;
+417     marker.type = visualization\_msgs::Marker::ARROW;
+418     marker.action = visualization\_msgs::Marker::ADD;
+419 
+420     marker.scale.x = 0.05;
+421     marker.scale.y = 0.15;
+422     marker.scale.z = 0.05;
+423     marker.color.a = 1.0;
+424 
+425     marker.color.r = 1;
+426     marker.color.g = 0;
+427     marker.color.b = 0;
+428 
+429     geometry\_msgs::Point start, end;
+430     start.x = x;
+431     start.y = y;
+432 
+433     end.x = x + 0.5 * cos(phi);
+434     end.y = y + 0.5 * sin(phi);
+435 
+436     marker.points.push\_back(start);
+437     marker.points.push\_back(end);
+438 
+439     visualization\_msgs::MarkerArray ma;
+440     ma.markers.push\_back(marker);
+441 
+442     \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a7228d3fe90bc48b486e5c46d6ac5e815}{goalMarkerPublisher\_}.publish(ma);
+443 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a691e565d33666d2f7004e791cae29b42_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!pure\+Spinning\+Cmd@{pure\+Spinning\+Cmd}}
+\index{pure\+Spinning\+Cmd@{pure\+Spinning\+Cmd}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{pure\+Spinning\+Cmd(const tf\+::\+Stamped$<$ tf\+::\+Pose $>$ \&tfpose, double vetta, double gamma, double alpha\+\_\+error, double betta\+\_\+error, double rho\+\_\+error, geometry\+\_\+msgs\+::\+Twist \&cmd\+\_\+vel)}{pureSpinningCmd(const tf::Stamped< tf::Pose > &tfpose, double vetta, double gamma, double alpha_error, double betta_error, double rho_error, geometry_msgs::Twist &cmd_vel)}}]{\setlength{\rightskip}{0pt plus 5cm}void move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::pure\+Spinning\+Cmd (
+\begin{DoxyParamCaption}
+\item[{const tf\+::\+Stamped$<$ tf\+::\+Pose $>$ \&}]{tfpose, }
+\item[{double}]{vetta, }
+\item[{double}]{gamma, }
+\item[{double}]{alpha\+\_\+error, }
+\item[{double}]{betta\+\_\+error, }
+\item[{double}]{rho\+\_\+error, }
+\item[{geometry\+\_\+msgs\+::\+Twist \&}]{cmd\+\_\+vel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a3b08865dc8e19750273d971336ecba3b}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a3b08865dc8e19750273d971336ecba3b}
+\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a3b08865dc8e19750273d971336ecba3b}{pure\+Spinning\+Cmd()} 
+
+Definition at line 209 of file backward\+\_\+curved\+\_\+local\+\_\+planner.\+cpp.
+
+
+
+References backwards\+Plan\+Path\+\_\+, current\+Pose\+Index\+\_\+, goal\+Reached\+\_\+, k\+\_\+alpha\+\_\+, k\+\_\+betta\+\_\+, k\+\_\+rho\+\_\+, and move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::optional\+Robot\+Pose().
+
+
+
+Referenced by compute\+Velocity\+Commands().
+
+
+\begin{DoxyCode}
+210 \{
+211     \textcolor{keywordflow}{if} (rho\_error > 0.02)
+212     \{
+213         vetta = \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9ae9a8c4c4663a999ba107aea9f6868d}{k\_rho\_} * rho\_error;
+214         gamma = \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ac859500c0329247de08daf864fd2d4b1}{k\_alpha\_} * alpha\_error;
+215     \}
+216     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (fabs(betta\_error) >= 0.01)
+217     \{
+218         vetta = 0;
+219         gamma = \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_aa2f7fe022cdc4eb11c17f6f576c732c6}{k\_betta\_} * betta\_error;
+220     \}
+221     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_af304b2e7cde744ad905a1ae7889102b6}{currentPoseIndex\_} >= \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a451add2af7d6d83a7415277311b3ed04}{backwardsPlanPath\_}.size() - 1)
+222     \{
+223         vetta = 0;
+224         gamma = 0;
+225         \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a0a89141d3d3a8ebfb9e1d69d0d33fd49}{goalReached\_} = \textcolor{keyword}{true};
+226         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"BACKWARD LOCAL PLANNER END: rhoerror: "} << rho\_error);
+227     \}
+228 
+229     cmd\_vel.linear.x = vetta;
+230     cmd\_vel.angular.z = gamma;
+231 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a3b08865dc8e19750273d971336ecba3b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a3b08865dc8e19750273d971336ecba3b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!reconfig\+CB@{reconfig\+CB}}
+\index{reconfig\+CB@{reconfig\+CB}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{reconfig\+C\+B(\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+Config \&config, uint32\+\_\+t level)}{reconfigCB(::backward_local_planner::BackwardLocalPlannerConfig &config, uint32_t level)}}]{\setlength{\rightskip}{0pt plus 5cm}void move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::reconfig\+CB (
+\begin{DoxyParamCaption}
+\item[{\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+Config \&}]{config, }
+\item[{uint32\+\_\+t}]{level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9dfe3fd3fd7a0c8ec414a78e1300d09c}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9dfe3fd3fd7a0c8ec414a78e1300d09c}
+\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9dfe3fd3fd7a0c8ec414a78e1300d09c}{reconfig\+C\+B()} 
+
+Definition at line 358 of file backward\+\_\+curved\+\_\+local\+\_\+planner.\+cpp.
+
+
+
+References carrot\+\_\+angular\+\_\+distance\+\_\+, carrot\+\_\+distance\+\_\+, k\+\_\+alpha\+\_\+, k\+\_\+betta\+\_\+, and k\+\_\+rho\+\_\+.
+
+
+
+Referenced by initialize().
+
+
+\begin{DoxyCode}
+359 \{
+360     ROS\_INFO(\textcolor{stringliteral}{"Backward planner reconfigure Request"});
+361     \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ac859500c0329247de08daf864fd2d4b1}{k\_alpha\_} = config.k\_alpha;
+362     \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_aa2f7fe022cdc4eb11c17f6f576c732c6}{k\_betta\_} = config.k\_betta;
+363     \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9ae9a8c4c4663a999ba107aea9f6868d}{k\_rho\_} = config.k\_rho;
+364 
+365     \textcolor{comment}{//alpha\_offset\_ = config.alpha\_offset;}
+366     \textcolor{comment}{//betta\_offset\_ = config.betta\_offset;}
+367 
+368     \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a6dc3aa0ff63f9f7d0aae852755734b5d}{carrot\_distance\_} = config.carrot\_distance;
+369     \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a3d6cba0748b85a67f5dfd7740de9530f}{carrot\_angular\_distance\_} = config.carrot\_angular\_distance;
+370 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9dfe3fd3fd7a0c8ec414a78e1300d09c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!set\+Plan@{set\+Plan}}
+\index{set\+Plan@{set\+Plan}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{set\+Plan(const std\+::vector$<$ geometry\+\_\+msgs\+::\+Pose\+Stamped $>$ \&plan) override}{setPlan(const std::vector< geometry_msgs::PoseStamped > &plan) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool} move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::set\+Plan (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ geometry\+\_\+msgs\+::\+Pose\+Stamped $>$ \&}]{plan}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a3b552c90996d21cadf7b2f0875706407}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a3b552c90996d21cadf7b2f0875706407}
+
+
+Set the plan that the local planner is following. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plan} & The plan to pass to the local planner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the plan was updated successfully, false otherwise
+\end{DoxyReturn}
+\hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a3b552c90996d21cadf7b2f0875706407}{set\+Plan()} 
+
+Definition at line 387 of file backward\+\_\+curved\+\_\+local\+\_\+planner.\+cpp.
+
+
+
+References backwards\+Plan\+Path\+\_\+, goal\+Reached\+\_\+, and initial\+Pure\+Spinning\+Stage\+\_\+.
+
+
+\begin{DoxyCode}
+388 \{
+389     \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a5db5b10d8cdf425321ee6ec932f594ae}{initialPureSpinningStage\_} = \textcolor{keyword}{true};
+390     \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a0a89141d3d3a8ebfb9e1d69d0d33fd49}{goalReached\_} = \textcolor{keyword}{false};
+391     \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a451add2af7d6d83a7415277311b3ed04}{backwardsPlanPath\_} = plan;
+392     \textcolor{comment}{/*}
+393 \textcolor{comment}{    std::stringstream ss;}
+394 \textcolor{comment}{}
+395 \textcolor{comment}{    for(auto& p: plan)}
+396 \textcolor{comment}{    \{}
+397 \textcolor{comment}{        ss << p;}
+398 \textcolor{comment}{    \}}
+399 \textcolor{comment}{    ROS\_WARN\_STREAM("Backward Local Planner - plan path - " << ss.str());}
+400 \textcolor{comment}{    */}
+401     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+402 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!alpha\+\_\+offset\+\_\+@{alpha\+\_\+offset\+\_\+}}
+\index{alpha\+\_\+offset\+\_\+@{alpha\+\_\+offset\+\_\+}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{alpha\+\_\+offset\+\_\+}{alpha_offset_}}]{\setlength{\rightskip}{0pt plus 5cm}const double move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::alpha\+\_\+offset\+\_\+ = M\+\_\+\+PI\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ad406c50cdc7a7603c023718543fc2f5c}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ad406c50cdc7a7603c023718543fc2f5c}
+
+
+Definition at line 89 of file backward\+\_\+local\+\_\+planner.\+h.
+
+
+
+Referenced by compute\+Velocity\+Commands(), and create\+Carrot\+Goal().
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!backwards\+Plan\+Path\+\_\+@{backwards\+Plan\+Path\+\_\+}}
+\index{backwards\+Plan\+Path\+\_\+@{backwards\+Plan\+Path\+\_\+}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{backwards\+Plan\+Path\+\_\+}{backwardsPlanPath_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$geometry\+\_\+msgs\+::\+Pose\+Stamped$>$ move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::backwards\+Plan\+Path\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a451add2af7d6d83a7415277311b3ed04}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a451add2af7d6d83a7415277311b3ed04}
+
+
+Definition at line 76 of file backward\+\_\+local\+\_\+planner.\+h.
+
+
+
+Referenced by compute\+Velocity\+Commands(), create\+Carrot\+Goal(), default\+Backward\+Cmd(), pure\+Spinning\+Cmd(), and set\+Plan().
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!betta\+\_\+offset\+\_\+@{betta\+\_\+offset\+\_\+}}
+\index{betta\+\_\+offset\+\_\+@{betta\+\_\+offset\+\_\+}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{betta\+\_\+offset\+\_\+}{betta_offset_}}]{\setlength{\rightskip}{0pt plus 5cm}const double move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::betta\+\_\+offset\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ae35f99afc3c859a4b14d0417ef7839df}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ae35f99afc3c859a4b14d0417ef7839df}
+
+
+Definition at line 90 of file backward\+\_\+local\+\_\+planner.\+h.
+
+
+
+Referenced by compute\+Velocity\+Commands().
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!carrot\+\_\+angular\+\_\+distance\+\_\+@{carrot\+\_\+angular\+\_\+distance\+\_\+}}
+\index{carrot\+\_\+angular\+\_\+distance\+\_\+@{carrot\+\_\+angular\+\_\+distance\+\_\+}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{carrot\+\_\+angular\+\_\+distance\+\_\+}{carrot_angular_distance_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rad} move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::carrot\+\_\+angular\+\_\+distance\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a3d6cba0748b85a67f5dfd7740de9530f}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a3d6cba0748b85a67f5dfd7740de9530f}
+
+
+Definition at line 96 of file backward\+\_\+local\+\_\+planner.\+h.
+
+
+
+Referenced by create\+Carrot\+Goal(), initialize(), and reconfig\+C\+B().
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!carrot\+\_\+distance\+\_\+@{carrot\+\_\+distance\+\_\+}}
+\index{carrot\+\_\+distance\+\_\+@{carrot\+\_\+distance\+\_\+}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{carrot\+\_\+distance\+\_\+}{carrot_distance_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf meter} move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::carrot\+\_\+distance\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a6dc3aa0ff63f9f7d0aae852755734b5d}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a6dc3aa0ff63f9f7d0aae852755734b5d}
+
+
+Definition at line 95 of file backward\+\_\+local\+\_\+planner.\+h.
+
+
+
+Referenced by create\+Carrot\+Goal(), initialize(), and reconfig\+C\+B().
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!costmap\+Ros\+\_\+@{costmap\+Ros\+\_\+}}
+\index{costmap\+Ros\+\_\+@{costmap\+Ros\+\_\+}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{costmap\+Ros\+\_\+}{costmapRos_}}]{\setlength{\rightskip}{0pt plus 5cm}costmap\+\_\+2d\+::\+Costmap2\+D\+R\+OS$\ast$ move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::costmap\+Ros\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a865618f84238fe6ff437d1e38ec5fec0}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a865618f84238fe6ff437d1e38ec5fec0}
+
+
+Definition at line 77 of file backward\+\_\+local\+\_\+planner.\+h.
+
+
+
+Referenced by compute\+Velocity\+Commands(), and initialize().
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!current\+Pose\+Index\+\_\+@{current\+Pose\+Index\+\_\+}}
+\index{current\+Pose\+Index\+\_\+@{current\+Pose\+Index\+\_\+}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{current\+Pose\+Index\+\_\+}{currentPoseIndex_}}]{\setlength{\rightskip}{0pt plus 5cm}int move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::current\+Pose\+Index\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_af304b2e7cde744ad905a1ae7889102b6}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_af304b2e7cde744ad905a1ae7889102b6}
+
+
+Definition at line 102 of file backward\+\_\+local\+\_\+planner.\+h.
+
+
+
+Referenced by compute\+Velocity\+Commands(), create\+Carrot\+Goal(), initialize(), and pure\+Spinning\+Cmd().
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!f@{f}}
+\index{f@{f}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{f}{f}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf dynamic\+\_\+reconfigure\+::\+Server}$<$\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+Config$>$\+::Callback\+Type move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::f\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a8851653bff38ab410bda8aca0ba32574}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a8851653bff38ab410bda8aca0ba32574}
+
+
+Definition at line 74 of file backward\+\_\+local\+\_\+planner.\+h.
+
+
+
+Referenced by initialize().
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!goal\+Marker\+Publisher\+\_\+@{goal\+Marker\+Publisher\+\_\+}}
+\index{goal\+Marker\+Publisher\+\_\+@{goal\+Marker\+Publisher\+\_\+}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{goal\+Marker\+Publisher\+\_\+}{goalMarkerPublisher_}}]{\setlength{\rightskip}{0pt plus 5cm}ros\+::\+Publisher move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::goal\+Marker\+Publisher\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a7228d3fe90bc48b486e5c46d6ac5e815}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a7228d3fe90bc48b486e5c46d6ac5e815}
+
+
+Definition at line 79 of file backward\+\_\+local\+\_\+planner.\+h.
+
+
+
+Referenced by initialize(), and publish\+Goal\+Marker().
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!goal\+Reached\+\_\+@{goal\+Reached\+\_\+}}
+\index{goal\+Reached\+\_\+@{goal\+Reached\+\_\+}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{goal\+Reached\+\_\+}{goalReached_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool} move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::goal\+Reached\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a0a89141d3d3a8ebfb9e1d69d0d33fd49}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a0a89141d3d3a8ebfb9e1d69d0d33fd49}
+
+
+Definition at line 85 of file backward\+\_\+local\+\_\+planner.\+h.
+
+
+
+Referenced by default\+Backward\+Cmd(), is\+Goal\+Reached(), pure\+Spinning\+Cmd(), and set\+Plan().
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!initial\+Pure\+Spinning\+Stage\+\_\+@{initial\+Pure\+Spinning\+Stage\+\_\+}}
+\index{initial\+Pure\+Spinning\+Stage\+\_\+@{initial\+Pure\+Spinning\+Stage\+\_\+}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{initial\+Pure\+Spinning\+Stage\+\_\+}{initialPureSpinningStage_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool} move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::initial\+Pure\+Spinning\+Stage\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a5db5b10d8cdf425321ee6ec932f594ae}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a5db5b10d8cdf425321ee6ec932f594ae}
+
+
+Definition at line 86 of file backward\+\_\+local\+\_\+planner.\+h.
+
+
+
+Referenced by create\+Carrot\+Goal(), and set\+Plan().
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!k\+\_\+alpha\+\_\+@{k\+\_\+alpha\+\_\+}}
+\index{k\+\_\+alpha\+\_\+@{k\+\_\+alpha\+\_\+}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{k\+\_\+alpha\+\_\+}{k_alpha_}}]{\setlength{\rightskip}{0pt plus 5cm}double move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::k\+\_\+alpha\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ac859500c0329247de08daf864fd2d4b1}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ac859500c0329247de08daf864fd2d4b1}
+
+
+Definition at line 82 of file backward\+\_\+local\+\_\+planner.\+h.
+
+
+
+Referenced by compute\+Velocity\+Commands(), initialize(), pure\+Spinning\+Cmd(), and reconfig\+C\+B().
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!k\+\_\+betta\+\_\+@{k\+\_\+betta\+\_\+}}
+\index{k\+\_\+betta\+\_\+@{k\+\_\+betta\+\_\+}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{k\+\_\+betta\+\_\+}{k_betta_}}]{\setlength{\rightskip}{0pt plus 5cm}double move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::k\+\_\+betta\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_aa2f7fe022cdc4eb11c17f6f576c732c6}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_aa2f7fe022cdc4eb11c17f6f576c732c6}
+
+
+Definition at line 83 of file backward\+\_\+local\+\_\+planner.\+h.
+
+
+
+Referenced by compute\+Velocity\+Commands(), initialize(), pure\+Spinning\+Cmd(), and reconfig\+C\+B().
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!k\+\_\+rho\+\_\+@{k\+\_\+rho\+\_\+}}
+\index{k\+\_\+rho\+\_\+@{k\+\_\+rho\+\_\+}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{k\+\_\+rho\+\_\+}{k_rho_}}]{\setlength{\rightskip}{0pt plus 5cm}double move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::k\+\_\+rho\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9ae9a8c4c4663a999ba107aea9f6868d}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a9ae9a8c4c4663a999ba107aea9f6868d}
+
+
+Definition at line 81 of file backward\+\_\+local\+\_\+planner.\+h.
+
+
+
+Referenced by compute\+Velocity\+Commands(), initialize(), pure\+Spinning\+Cmd(), and reconfig\+C\+B().
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!max\+\_\+angular\+\_\+z\+\_\+speed\+\_\+@{max\+\_\+angular\+\_\+z\+\_\+speed\+\_\+}}
+\index{max\+\_\+angular\+\_\+z\+\_\+speed\+\_\+@{max\+\_\+angular\+\_\+z\+\_\+speed\+\_\+}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{max\+\_\+angular\+\_\+z\+\_\+speed\+\_\+}{max_angular_z_speed_}}]{\setlength{\rightskip}{0pt plus 5cm}double move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::max\+\_\+angular\+\_\+z\+\_\+speed\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a8b5cbc273dfcf1c5e15ac4475b45ca97}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a8b5cbc273dfcf1c5e15ac4475b45ca97}
+
+
+Definition at line 99 of file backward\+\_\+local\+\_\+planner.\+h.
+
+
+
+Referenced by compute\+Velocity\+Commands(), and initialize().
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!max\+\_\+linear\+\_\+x\+\_\+speed\+\_\+@{max\+\_\+linear\+\_\+x\+\_\+speed\+\_\+}}
+\index{max\+\_\+linear\+\_\+x\+\_\+speed\+\_\+@{max\+\_\+linear\+\_\+x\+\_\+speed\+\_\+}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{max\+\_\+linear\+\_\+x\+\_\+speed\+\_\+}{max_linear_x_speed_}}]{\setlength{\rightskip}{0pt plus 5cm}double move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::max\+\_\+linear\+\_\+x\+\_\+speed\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a287325b11b5eb8a76b6924b42f859e25}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a287325b11b5eb8a76b6924b42f859e25}
+
+
+Definition at line 98 of file backward\+\_\+local\+\_\+planner.\+h.
+
+
+
+Referenced by compute\+Velocity\+Commands(), and initialize().
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!param\+Server\+\_\+@{param\+Server\+\_\+}}
+\index{param\+Server\+\_\+@{param\+Server\+\_\+}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{param\+Server\+\_\+}{paramServer_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf dynamic\+\_\+reconfigure\+::\+Server}$<$\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+Config$>$ move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::param\+Server\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ab4e01416e0e6d79c00daaf7b2b9aae78}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_ab4e01416e0e6d79c00daaf7b2b9aae78}
+
+
+Definition at line 73 of file backward\+\_\+local\+\_\+planner.\+h.
+
+
+
+Referenced by initialize().
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!pure\+Spinning\+Mode\+\_\+@{pure\+Spinning\+Mode\+\_\+}}
+\index{pure\+Spinning\+Mode\+\_\+@{pure\+Spinning\+Mode\+\_\+}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{pure\+Spinning\+Mode\+\_\+}{pureSpinningMode_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool} move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::pure\+Spinning\+Mode\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_abf2b84c0d7a841a7fcec1b93bf5fdd0e}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_abf2b84c0d7a841a7fcec1b93bf5fdd0e}
+
+
+Definition at line 87 of file backward\+\_\+local\+\_\+planner.\+h.
+
+
+
+Referenced by compute\+Velocity\+Commands(), create\+Carrot\+Goal(), and initialize().
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!xy\+\_\+goal\+\_\+tolerance\+\_\+@{xy\+\_\+goal\+\_\+tolerance\+\_\+}}
+\index{xy\+\_\+goal\+\_\+tolerance\+\_\+@{xy\+\_\+goal\+\_\+tolerance\+\_\+}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{xy\+\_\+goal\+\_\+tolerance\+\_\+}{xy_goal_tolerance_}}]{\setlength{\rightskip}{0pt plus 5cm}double move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::xy\+\_\+goal\+\_\+tolerance\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a89ab1ee7283a474dc19970789f51c087}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a89ab1ee7283a474dc19970789f51c087}
+
+
+Definition at line 93 of file backward\+\_\+local\+\_\+planner.\+h.
+
+
+
+Referenced by default\+Backward\+Cmd(), and initialize().
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}!yaw\+\_\+goal\+\_\+tolerance\+\_\+@{yaw\+\_\+goal\+\_\+tolerance\+\_\+}}
+\index{yaw\+\_\+goal\+\_\+tolerance\+\_\+@{yaw\+\_\+goal\+\_\+tolerance\+\_\+}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner}}
+\subsubsection[{\texorpdfstring{yaw\+\_\+goal\+\_\+tolerance\+\_\+}{yaw_goal_tolerance_}}]{\setlength{\rightskip}{0pt plus 5cm}double move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::yaw\+\_\+goal\+\_\+tolerance\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a10d15842054d518159baa535afe6f1fd}{}\label{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner_a10d15842054d518159baa535afe6f1fd}
+
+
+Definition at line 92 of file backward\+\_\+local\+\_\+planner.\+h.
+
+
+
+Referenced by default\+Backward\+Cmd(), and initialize().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/custom\+\_\+planners/backward\+\_\+local\+\_\+planner/include/backward\+\_\+local\+\_\+planner/\hyperlink{backward__local__planner_8h}{backward\+\_\+local\+\_\+planner.\+h}\item 
+smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/custom\+\_\+planners/backward\+\_\+local\+\_\+planner/src/\hyperlink{backward__curved__local__planner_8cpp}{backward\+\_\+curved\+\_\+local\+\_\+planner.\+cpp}\end{DoxyCompactItemize}

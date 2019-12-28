@@ -1,0 +1,4 @@
+<map id="move_base_z_client::backward_local_planner::optionalRobotPose" name="move_base_z_client::backward_local_planner::optionalRobotPose">
+<area shape="rect" id="node2" href="$classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner.html#a8e7dec0bc31856d814d8fa6df747bbb8" title="Given the current position, orientation, and velocity of the robot: compute velocity commands to send..." alt="" coords="464,5,675,76"/>
+<area shape="rect" id="node3" href="$classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner.html#a3b08865dc8e19750273d971336ecba3b" title="move_base_z_client\l::backward_local_planner\l::BackwardLocalPlanner\l::pureSpinningCmd" alt="" coords="235,41,416,112"/>
+</map>

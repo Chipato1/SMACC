@@ -1,0 +1,123 @@
+\hypertarget{classmove__base__z__client_1_1CbUndoPathBackwards}{}\section{move\+\_\+base\+\_\+z\+\_\+client\+:\+:Cb\+Undo\+Path\+Backwards Class Reference}
+\label{classmove__base__z__client_1_1CbUndoPathBackwards}\index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards}}
+
+
+{\ttfamily \#include $<$cb\+\_\+undo\+\_\+path\+\_\+backwards.\+h$>$}
+
+
+
+Inheritance diagram for move\+\_\+base\+\_\+z\+\_\+client\+:\+:Cb\+Undo\+Path\+Backwards\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classmove__base__z__client_1_1CbUndoPathBackwards__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for move\+\_\+base\+\_\+z\+\_\+client\+:\+:Cb\+Undo\+Path\+Backwards\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove__base__z__client_1_1CbUndoPathBackwards__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classmove__base__z__client_1_1CbUndoPathBackwards_a171b0d1a2943f5aca0647b101695eb71}{on\+Entry} () override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tf\+::\+Transform\+Listener \hyperlink{classmove__base__z__client_1_1CbUndoPathBackwards_a197e2034e873c09de896e7a8b6fe898f}{listener}
+\item 
+\hyperlink{classmove__base__z__client_1_1ClMoveBaseZ}{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cl\+Move\+BaseZ} $\ast$ \hyperlink{classmove__base__z__client_1_1CbUndoPathBackwards_af2864d71702af86f1897635aca022139}{move\+Base\+Client\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file cb\+\_\+undo\+\_\+path\+\_\+backwards.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards}}
+\subsubsection[{\texorpdfstring{on\+Entry() override}{onEntry() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\hypertarget{classmove__base__z__client_1_1CbUndoPathBackwards_a171b0d1a2943f5aca0647b101695eb71}{}\label{classmove__base__z__client_1_1CbUndoPathBackwards_a171b0d1a2943f5aca0647b101695eb71}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccClientBehavior_a7962382f93987c720ad432fef55b123f}{smacc\+::\+Smacc\+Client\+Behavior}.
+
+
+
+Definition at line 16 of file cb\+\_\+undo\+\_\+path\+\_\+backwards.\+h.
+
+
+
+References move\+\_\+base\+\_\+z\+\_\+client\+::odom\+\_\+tracker\+::\+C\+L\+E\+A\+R\+\_\+\+P\+A\+T\+H\+\_\+\+B\+A\+C\+K\+W\+A\+RD, move\+\_\+base\+\_\+z\+\_\+client\+::\+Cl\+Move\+Base\+Z\+::planner\+Switcher\+\_\+, smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client(), and smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal().
+
+
+\begin{DoxyCode}
+17   \{
+18     this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a917f001e763a1059af337bf4e164f542}{requiresClient}(\hyperlink{classmove__base__z__client_1_1CbUndoPathBackwards_af2864d71702af86f1897635aca022139}{moveBaseClient\_});
+19     \textcolor{keyword}{auto} *odomTracker\_ = this->getComponent<odom\_tracker::OdomTracker>();
+20 
+21     nav\_msgs::Path forwardpath = this->odomTracker\_->getPath();
+22     \textcolor{comment}{//ROS\_INFO\_STREAM("[UndoPathBackward] Current path backwards: " << forwardpath);}
+23 
+24     this->odomTracker\_->setWorkingMode(
+      \hyperlink{namespacemove__base__z__client_1_1odom__tracker_adf3e5fc3644563922cc64a20a0197224a0cf8f27617189e35619df3c18bda6274}{odom\_tracker::WorkingMode::CLEAR\_PATH\_BACKWARD});
+25 
+26     ClMoveBaseZ::Goal goal;
+27     \textcolor{keywordflow}{if} (forwardpath.poses.size() > 0)
+28     \{
+29       goal.target\_pose = forwardpath.poses.front();
+30       \hyperlink{classmove__base__z__client_1_1CbUndoPathBackwards_af2864d71702af86f1897635aca022139}{moveBaseClient\_}->\hyperlink{classmove__base__z__client_1_1ClMoveBaseZ_ac57d2293bc0a5c4fcef326379822cc5e}{plannerSwitcher\_}->setBackwardPlanner();
+31       \hyperlink{classmove__base__z__client_1_1CbUndoPathBackwards_af2864d71702af86f1897635aca022139}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
+32     \}
+33   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove__base__z__client_1_1CbUndoPathBackwards_a171b0d1a2943f5aca0647b101695eb71_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards}!listener@{listener}}
+\index{listener@{listener}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards}}
+\subsubsection[{\texorpdfstring{listener}{listener}}]{\setlength{\rightskip}{0pt plus 5cm}tf\+::\+Transform\+Listener move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards\+::listener\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1CbUndoPathBackwards_a197e2034e873c09de896e7a8b6fe898f}{}\label{classmove__base__z__client_1_1CbUndoPathBackwards_a197e2034e873c09de896e7a8b6fe898f}
+
+
+Definition at line 12 of file cb\+\_\+undo\+\_\+path\+\_\+backwards.\+h.
+
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards}!move\+Base\+Client\+\_\+@{move\+Base\+Client\+\_\+}}
+\index{move\+Base\+Client\+\_\+@{move\+Base\+Client\+\_\+}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards}}
+\subsubsection[{\texorpdfstring{move\+Base\+Client\+\_\+}{moveBaseClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf move\+\_\+base\+\_\+z\+\_\+client\+::\+Cl\+Move\+BaseZ}$\ast$ move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards\+::move\+Base\+Client\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1CbUndoPathBackwards_af2864d71702af86f1897635aca022139}{}\label{classmove__base__z__client_1_1CbUndoPathBackwards_af2864d71702af86f1897635aca022139}
+
+
+Definition at line 14 of file cb\+\_\+undo\+\_\+path\+\_\+backwards.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin/include/move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin/client\+\_\+behaviors/\hyperlink{smacc__client__library_2move__base__z__client_2move__base__z__client__plugin_2include_2move__bascbc9ae7d3990516ddb2c98e15a09bcd2}{cb\+\_\+undo\+\_\+path\+\_\+backwards.\+h}\end{DoxyCompactItemize}

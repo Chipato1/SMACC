@@ -21,8 +21,8 @@ var searchData=
   ['smaccsignal',['SmaccSignal',['../classsmacc_1_1SmaccSignal.html',1,'smacc']]],
   ['smaccsignal_3c_20void_28_29_3e',['SmaccSignal&lt; void()&gt;',['../classsmacc_1_1SmaccSignal.html',1,'smacc']]],
   ['smaccsignal_3c_20void_28const_20resultconstptr_20_26_29_3e',['SmaccSignal&lt; void(const ResultConstPtr &amp;)&gt;',['../classsmacc_1_1SmaccSignal.html',1,'smacc']]],
-  ['smaccstate',['SmaccState',['../classSmaccState.html',1,'']]],
   ['smaccstate',['SmaccState',['../classsmacc_1_1SmaccState.html',1,'smacc']]],
+  ['smaccstate',['SmaccState',['../classSmaccState.html',1,'']]],
   ['smaccstate_3c_20msdancebotrecoverymode_2c_20smdancebot_20_3e',['SmaccState&lt; MsDanceBotRecoveryMode, SmDanceBot &gt;',['../classsmacc_1_1SmaccState.html',1,'smacc']]],
   ['smaccstate_3c_20msdancebotrunmode_2c_20smdancebot_2c_20stacquiresensors_20_3e',['SmaccState&lt; MsDanceBotRunMode, SmDanceBot, StAcquireSensors &gt;',['../classsmacc_1_1SmaccState.html',1,'smacc']]],
   ['smaccstate_3c_20ss1_2c_20smthreesome_2c_20ssr1_20_3e',['SmaccState&lt; Ss1, SmThreeSome, Ssr1 &gt;',['../classsmacc_1_1SmaccState.html',1,'smacc']]],
@@ -144,6 +144,6 @@ var searchData=
   ['ststate1',['StState1',['../structsm__three__some_1_1StState1.html',1,'sm_three_some']]],
   ['ststate2',['StState2',['../structsm__three__some_1_1StState2.html',1,'sm_three_some']]],
   ['ststate3',['StState3',['../structsm__three__some_1_1StState3.html',1,'sm_three_some']]],
-  ['success',['SUCCESS',['../structsmacc_1_1SUCCESS.html',1,'smacc']]],
-  ['success',['SUCCESS',['../classSUCCESS.html',1,'']]]
+  ['success',['SUCCESS',['../classSUCCESS.html',1,'']]],
+  ['success',['SUCCESS',['../structsmacc_1_1SUCCESS.html',1,'smacc']]]
 ];

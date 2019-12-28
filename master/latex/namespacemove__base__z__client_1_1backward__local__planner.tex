@@ -1,0 +1,50 @@
+\hypertarget{namespacemove__base__z__client_1_1backward__local__planner}{}\section{move\+\_\+base\+\_\+z\+\_\+client\+:\+:backward\+\_\+local\+\_\+planner Namespace Reference}
+\label{namespacemove__base__z__client_1_1backward__local__planner}\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner}{Backward\+Local\+Planner}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+tf\+::\+Stamped$<$ tf\+::\+Pose $>$ \hyperlink{namespacemove__base__z__client_1_1backward__local__planner_a80dbd10807e5f70adfcd0ff4dcb7c1db}{optional\+Robot\+Pose} (costmap\+\_\+2d\+::\+Costmap2\+D\+R\+OS $\ast$costmap\+Ros)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner}!optional\+Robot\+Pose@{optional\+Robot\+Pose}}
+\index{optional\+Robot\+Pose@{optional\+Robot\+Pose}!move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner@{move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner}}
+\subsubsection[{\texorpdfstring{optional\+Robot\+Pose(costmap\+\_\+2d\+::\+Costmap2\+D\+R\+O\+S $\ast$costmap\+Ros)}{optionalRobotPose(costmap_2d::Costmap2DROS *costmapRos)}}]{\setlength{\rightskip}{0pt plus 5cm}tf\+::\+Stamped$<$tf\+::\+Pose$>$ move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::optional\+Robot\+Pose (
+\begin{DoxyParamCaption}
+\item[{costmap\+\_\+2d\+::\+Costmap2\+D\+R\+OS $\ast$}]{costmap\+Ros}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacemove__base__z__client_1_1backward__local__planner_a80dbd10807e5f70adfcd0ff4dcb7c1db}{}\label{namespacemove__base__z__client_1_1backward__local__planner_a80dbd10807e5f70adfcd0ff4dcb7c1db}
+
+
+Definition at line 245 of file backward\+\_\+curved\+\_\+local\+\_\+planner.\+cpp.
+
+
+
+Referenced by move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::compute\+Velocity\+Commands(), and move\+\_\+base\+\_\+z\+\_\+client\+::backward\+\_\+local\+\_\+planner\+::\+Backward\+Local\+Planner\+::pure\+Spinning\+Cmd().
+
+
+\begin{DoxyCode}
+246 \{
+247     tf::Stamped<tf::Pose> tfpose;
+248     costmapRos->getRobotPose(tfpose);
+249     \textcolor{keywordflow}{return} tfpose;
+250 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemove__base__z__client_1_1backward__local__planner_a80dbd10807e5f70adfcd0ff4dcb7c1db_icgraph}
+\end{center}
+\end{figure}
+
+

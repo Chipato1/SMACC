@@ -38,7 +38,7 @@ virtual void \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbRotate
 \item 
 tf\+::\+Transform\+Listener \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbRotate_a378ab8e6db83063793e07f8ebdae6d2c}{listener}
 \item 
-\hyperlink{classsmacc_1_1ClMoveBaseZ}{smacc\+::\+Cl\+Move\+BaseZ} $\ast$ \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbRotate_acf8790630271d1180e2b9936edc4eb79}{move\+Base\+Client\+\_\+}
+Cl\+Move\+BaseZ $\ast$ \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbRotate_ad8f923d0b85dabf481ee69b62287c028}{move\+Base\+Client\+\_\+}
 \item 
 boost\+::optional$<$ float $>$ \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbRotate_ab1ecbec2a3e65f6339d176f440e2e2f3}{rotate\+Degree}
 \end{DoxyCompactItemize}
@@ -105,7 +105,7 @@ Definition at line 32 of file cb\+\_\+rotate.\+h.
 
 
 
-References smacc\+::\+Smacc\+Client\+Behavior\+::current\+State, smacc\+::\+I\+Smacc\+State\+::param(), smacc\+::\+Cl\+Move\+Base\+Z\+::planner\+Switcher\+\_\+, smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client(), rotate\+Degree, and smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal().
+References smacc\+::\+Smacc\+Client\+Behavior\+::current\+State, smacc\+::\+I\+Smacc\+State\+::param(), smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client(), and rotate\+Degree.
 
 
 \begin{DoxyCode}
@@ -122,11 +122,11 @@ References smacc\+::\+Smacc\+Client\+Behavior\+::current\+State, smacc\+::\+I\+S
 42             angle\_increment\_degree = *\hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbRotate_ab1ecbec2a3e65f6339d176f440e2e2f3}{rotateDegree};
 43         \}
 44 
-45         this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a917f001e763a1059af337bf4e164f542}{requiresClient}(\hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbRotate_acf8790630271d1180e2b9936edc4eb79}{moveBaseClient\_});
+45         this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a917f001e763a1059af337bf4e164f542}{requiresClient}(\hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbRotate_ad8f923d0b85dabf481ee69b62287c028}{moveBaseClient\_});
 46 
 47         \textcolor{comment}{//this should work better with a coroutine and await}
 48         \textcolor{comment}{//this->plannerSwitcher\_->setForwardPlanner();}
-49         \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbRotate_acf8790630271d1180e2b9936edc4eb79}{moveBaseClient\_}->\hyperlink{classsmacc_1_1ClMoveBaseZ_a712e0df77c9629930e03cbb4c539b485}{plannerSwitcher\_}->setDefaultPlanners();
+49         \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbRotate_ad8f923d0b85dabf481ee69b62287c028}{moveBaseClient\_}->plannerSwitcher\_->setDefaultPlanners();
 50 
 51         ros::Rate rate(10.0);
 52         geometry\_msgs::Pose currentPoseMsg;
@@ -148,7 +148,7 @@ References smacc\+::\+Smacc\+Client\+Behavior\+::current\+State, smacc\+::\+I\+S
 68             \}
 69         \}
 70 
-71         smacc::ClMoveBaseZ::Goal goal;
+71         ClMoveBaseZ::Goal goal;
 72         goal.target\_pose.header.frame\_id = \textcolor{stringliteral}{"/odom"};
 73         goal.target\_pose.header.stamp = ros::Time::now();
 74 
@@ -159,7 +159,7 @@ References smacc\+::\+Smacc\+Client\+Behavior\+::current\+State, smacc\+::\+I\+S
 79 
 80         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"current pose: "} << currentPoseMsg);
 81         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"goal pose: "} << goal.target\_pose.pose);
-82         \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbRotate_acf8790630271d1180e2b9936edc4eb79}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
+82         \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbRotate_ad8f923d0b85dabf481ee69b62287c028}{moveBaseClient\_}->sendGoal(goal);
 83     \}
 \end{DoxyCode}
 
@@ -186,7 +186,7 @@ Definition at line 17 of file cb\+\_\+rotate.\+h.
 
 \index{sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate@{sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate}!move\+Base\+Client\+\_\+@{move\+Base\+Client\+\_\+}}
 \index{move\+Base\+Client\+\_\+@{move\+Base\+Client\+\_\+}!sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate@{sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate}}
-\subsubsection[{\texorpdfstring{move\+Base\+Client\+\_\+}{moveBaseClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+::\+Cl\+Move\+BaseZ}$\ast$ sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate\+::move\+Base\+Client\+\_\+}\hypertarget{classsm__dance__bot_1_1move__base__z__client_1_1CbRotate_acf8790630271d1180e2b9936edc4eb79}{}\label{classsm__dance__bot_1_1move__base__z__client_1_1CbRotate_acf8790630271d1180e2b9936edc4eb79}
+\subsubsection[{\texorpdfstring{move\+Base\+Client\+\_\+}{moveBaseClient_}}]{\setlength{\rightskip}{0pt plus 5cm}Cl\+Move\+BaseZ$\ast$ sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate\+::move\+Base\+Client\+\_\+}\hypertarget{classsm__dance__bot_1_1move__base__z__client_1_1CbRotate_ad8f923d0b85dabf481ee69b62287c028}{}\label{classsm__dance__bot_1_1move__base__z__client_1_1CbRotate_ad8f923d0b85dabf481ee69b62287c028}
 
 
 Definition at line 19 of file cb\+\_\+rotate.\+h.

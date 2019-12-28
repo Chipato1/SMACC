@@ -1,3 +1,12 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structsmacc_1_1LogicUnit_1_1AddTEventType.html" title="smacc::LogicUnit::AddTEvent\lType\&lt; TEventList \&gt;" alt="" coords="5,5,212,47"/>
+<area shape="rect" id="node2" href="$structsmacc_1_1SmaccStateMachineBase.html" title="State Machine. " alt="" coords="283,70,494,126"/>
+<area shape="rect" id="node3" href="$structsmacc_1_1SmaccStateMachineBase.html" title="smacc::SmaccStateMachine\lBase\&lt; SmAtomic, State1 \&gt;" alt="" coords="287,5,491,47"/>
+<area shape="rect" id="node5" href="$structsmacc_1_1SmaccStateMachineBase.html" title="smacc::SmaccStateMachine\lBase\&lt; SmDanceBot, MsDanceBot\lRunMode \&gt;" alt="" coords="267,150,510,206"/>
+<area shape="rect" id="node7" href="$structsmacc_1_1SmaccStateMachineBase.html" title="smacc::SmaccStateMachine\lBase\&lt; SmThreeSome, StState1 \&gt;" alt="" coords="266,229,511,271"/>
+<area shape="rect" id="node9" href="$structsmacc_1_1SmaccStateMachineBase.html" title="smacc::SmaccStateMachine\lBase\&lt; SmViewerSim, MsRunMode \&gt;" alt="" coords="260,295,517,336"/>
+<area shape="rect" id="node4" href="$structsm__atomic_1_1SmAtomic.html" title="sm_atomic::SmAtomic" alt="" coords="597,13,765,39"/>
+<area shape="rect" id="node6" href="$structsm__dance__bot_1_1SmDanceBot.html" title="Advanced example of state machine with smacc that shows multiple techniques for the development of st..." alt="" coords="576,165,785,191"/>
+<area shape="rect" id="node8" href="$structsm__three__some_1_1SmThreeSome.html" title="sm_three_some::SmThreeSome" alt="" coords="565,237,796,263"/>
+<area shape="rect" id="node10" href="$structsm__viewer__sim_1_1SmViewerSim.html" title="sm_viewer_sim::SmViewerSim" alt="" coords="573,302,789,329"/>
+<area shape="rect" id="node11" href="$classsmacc_1_1ISmaccStateMachine.html" title="smacc::ISmaccStateMachine" alt="" coords="5,194,212,221"/>
 </map>

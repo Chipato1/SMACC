@@ -1,7 +1,7 @@
 <map id="OdomTrackerActionServer::run" name="OdomTrackerActionServer::run">
-<area shape="rect" id="node2" href="$classOdomTrackerActionServer.html#a97e470cdb4e4ae96e791d383583d9476" title="OdomTrackerActionServer\l::execute" alt="" coords="271,104,459,145"/>
-<area shape="rect" id="node3" href="$classodom__tracker_1_1OdomTracker.html#aaba0160e172d1bb7989605852f19c658" title="odom_tracker::OdomTracker\l::popPath" alt="" coords="507,5,709,47"/>
-<area shape="rect" id="node4" href="$classodom__tracker_1_1OdomTracker.html#ad25596446295049cf67a6564aad0dfa0" title="odom_tracker::OdomTracker\l::pushPath" alt="" coords="507,71,709,112"/>
-<area shape="rect" id="node5" href="$classodom__tracker_1_1OdomTracker.html#abcfb8d68a75223ff1daba4930f4f7034" title="odom_tracker::OdomTracker\l::setPublishMessages" alt="" coords="507,136,709,177"/>
-<area shape="rect" id="node6" href="$classodom__tracker_1_1OdomTracker.html#ac001a40d1107ef0d88aa7db03cafb08c" title="odom_tracker::OdomTracker\l::setWorkingMode" alt="" coords="507,201,709,243"/>
+<area shape="rect" id="node2" href="$classOdomTrackerActionServer.html#afa69287377bb2a12c5346cbe8d68cb04" title="OdomTrackerActionServer\l::execute" alt="" coords="271,133,459,174"/>
+<area shape="rect" id="node3" href="$classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#ad7bc705c10a84b14df4e7d937e4e5f7e" title="move_base_z_client\l::odom_tracker::OdomTracker\l::popPath" alt="" coords="507,5,717,61"/>
+<area shape="rect" id="node4" href="$classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#a2166488c9e1cd0fb94fdd963bca80ece" title="move_base_z_client\l::odom_tracker::OdomTracker\l::pushPath" alt="" coords="507,85,717,141"/>
+<area shape="rect" id="node5" href="$classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#af567cbb995d224a9737ec9080c7d0f09" title="move_base_z_client\l::odom_tracker::OdomTracker\l::setPublishMessages" alt="" coords="507,165,717,221"/>
+<area shape="rect" id="node6" href="$classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#aebeb8ff6d1f9375d855def4a33b90731" title="move_base_z_client\l::odom_tracker::OdomTracker\l::setWorkingMode" alt="" coords="507,245,717,301"/>
 </map>

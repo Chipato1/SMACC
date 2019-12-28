@@ -62,9 +62,9 @@ var searchData=
   ['type',['type',['../structsmacc_1_1type__.html#a9b8fcdd94d0e9fc71366e867a4094463',1,'smacc::type_::type()'],['../structsmacc_1_1add__type__wrapper.html#a3e5af90e35b5a70d9c4d952ef8011da9',1,'smacc::add_type_wrapper::type()']]],
   ['type_5f',['type_',['../structsmacc_1_1type__.html',1,'smacc']]],
   ['type_5flink',['type_link',['../namespacerosdoc__lite_1_1msgenator.html#ae7b2ebaabcca635cf4572218382dda21',1,'rosdoc_lite::msgenator']]],
-  ['typeinfo',['TypeInfo',['../classregex__template_1_1TypeInfo.html',1,'regex_template']]],
-  ['typeinfo',['TypeInfo',['../classsmacc_1_1TypeInfo.html#a7ae00f0b53f7cdbeb4ab59837074a34c',1,'smacc::TypeInfo']]],
   ['typeinfo',['TypeInfo',['../classsmacc_1_1TypeInfo.html',1,'smacc']]],
+  ['typeinfo',['TypeInfo',['../classsmacc_1_1TypeInfo.html#a7ae00f0b53f7cdbeb4ab59837074a34c',1,'smacc::TypeInfo']]],
+  ['typeinfo',['TypeInfo',['../classregex__template_1_1TypeInfo.html',1,'regex_template']]],
   ['typeinfodatabase',['typeInfoDatabase',['../classsmacc_1_1TypeInfo.html#a5dafa5950a93f6cd5b88d5ea573a504c',1,'smacc::TypeInfo']]],
   ['typelist',['typelist',['../structsmacc_1_1typelist.html',1,'smacc']]]
 ];

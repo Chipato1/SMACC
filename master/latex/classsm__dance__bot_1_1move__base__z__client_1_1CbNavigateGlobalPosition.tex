@@ -35,7 +35,7 @@ virtual void \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNaviga
 \item 
 void \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_aa7e91d17625df52b94bb29a9cd1ae7e5}{go\+To\+Radial\+Start} ()
 \item 
-void \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a79dc46f7a60a0322d27ee4db0ab11ad7}{read\+Start\+Pose\+From\+Parameter\+Server} (smacc\+::\+Cl\+Move\+Base\+Z\+::\+Goal \&goal)
+void \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_ad936dff37e9ca4d5ba0fb602ada6671e}{read\+Start\+Pose\+From\+Parameter\+Server} (Cl\+Move\+Base\+Z\+::\+Goal \&goal)
 \item 
 virtual void \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a5191a81c97253290c73e039dfda88aa9}{on\+Exit} () override
 \end{DoxyCompactItemize}
@@ -49,14 +49,14 @@ boost\+::optional$<$ float $>$ \hyperlink{classsm__dance__bot_1_1move__base__z__
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classsmacc_1_1ClMoveBaseZ}{smacc\+::\+Cl\+Move\+BaseZ} $\ast$ \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a579eaa06b93cc396b2ff615a786c495f}{move\+Base\+Client\+\_\+}
+Cl\+Move\+BaseZ $\ast$ \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a301398c07738d6680e163782d35365c5}{move\+Base\+Client\+\_\+}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 15 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
+Definition at line 18 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
 
 
 
@@ -70,12 +70,12 @@ Definition at line 15 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_aa9346ec96bd44862a7e36fffff54bdb8}{}\label{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_aa9346ec96bd44862a7e36fffff54bdb8}
 
 
-Definition at line 21 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
+Definition at line 24 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
 
 
 \begin{DoxyCode}
-22   \{
-23   \}
+25   \{
+26   \}
 \end{DoxyCode}
 \index{sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Global\+Position@{sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Global\+Position}!Cb\+Navigate\+Global\+Position@{Cb\+Navigate\+Global\+Position}}
 \index{Cb\+Navigate\+Global\+Position@{Cb\+Navigate\+Global\+Position}!sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Global\+Position@{sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Global\+Position}}
@@ -88,17 +88,17 @@ Definition at line 21 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_aaa061279a6dbdf8ee5d5d02d5bab1098}{}\label{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_aaa061279a6dbdf8ee5d5d02d5bab1098}
 
 
-Definition at line 25 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
+Definition at line 28 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
 
 
 \begin{DoxyCode}
-26   \{
-27     \textcolor{keyword}{auto} p = geometry\_msgs::Point();
-28     p.x = x;
-29     p.y = y;
-30     \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a7e8224311686be554d68853ff757be5d}{initialPoint} = p;
-31     \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a2466eeabb6e2a3f35427a444a369d45e}{initialYaw} = yaw;
-32   \}
+29   \{
+30     \textcolor{keyword}{auto} p = geometry\_msgs::Point();
+31     p.x = x;
+32     p.y = y;
+33     \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a7e8224311686be554d68853ff757be5d}{initialPoint} = p;
+34     \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a2466eeabb6e2a3f35427a444a369d45e}{initialYaw} = yaw;
+35   \}
 \end{DoxyCode}
 
 
@@ -112,11 +112,11 @@ Definition at line 25 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_aa7e91d17625df52b94bb29a9cd1ae7e5}{}\label{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_aa7e91d17625df52b94bb29a9cd1ae7e5}
 
 
-Definition at line 52 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
+Definition at line 55 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
 
 
 
-References move\+Base\+Client\+\_\+, read\+Start\+Pose\+From\+Parameter\+Server(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal(), smacc\+::\+I\+Smacc\+State\+Machine\+::set\+Global\+S\+M\+Data(), and smacc\+::\+Smacc\+Client\+Behavior\+::state\+Machine\+\_\+.
+References move\+Base\+Client\+\_\+, read\+Start\+Pose\+From\+Parameter\+Server(), smacc\+::\+I\+Smacc\+State\+Machine\+::set\+Global\+S\+M\+Data(), and smacc\+::\+Smacc\+Client\+Behavior\+::state\+Machine\+\_\+.
 
 
 
@@ -124,20 +124,20 @@ Referenced by on\+Entry().
 
 
 \begin{DoxyCode}
-53   \{
-54     ROS\_INFO(\textcolor{stringliteral}{"Sending Goal to MoveBase"});
-55     smacc::ClMoveBaseZ::Goal goal;
-56     goal.target\_pose.header.frame\_id = \textcolor{stringliteral}{"/odom"};
-57     goal.target\_pose.header.stamp = ros::Time::now();
-58     \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a79dc46f7a60a0322d27ee4db0ab11ad7}{readStartPoseFromParameterServer}(goal);
-59 
-60     \textcolor{comment}{// store the start pose on the state machine storage so that it can}
-61     \textcolor{comment}{// be referenced from other states (for example return to radial start)}
-62     this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a7950b5684d6de0a8e8959c0936ce9a19}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_a8588f9e580fbb95b53e2bd2ca3ff1f98}{setGlobalSMData}(\textcolor{stringliteral}{"radial\_start\_pose"}, goal.target\_pose)
+56   \{
+57     ROS\_INFO(\textcolor{stringliteral}{"Sending Goal to MoveBase"});
+58     ClMoveBaseZ::Goal goal;
+59     goal.target\_pose.header.frame\_id = \textcolor{stringliteral}{"/odom"};
+60     goal.target\_pose.header.stamp = ros::Time::now();
+61     \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_ad936dff37e9ca4d5ba0fb602ada6671e}{readStartPoseFromParameterServer}(goal);
+62 
+63     \textcolor{comment}{// store the start pose on the state machine storage so that it can}
+64     \textcolor{comment}{// be referenced from other states (for example return to radial start)}
+65     this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a7950b5684d6de0a8e8959c0936ce9a19}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_a8588f9e580fbb95b53e2bd2ca3ff1f98}{setGlobalSMData}(\textcolor{stringliteral}{"radial\_start\_pose"}, goal.target\_pose)
       ;
-63 
-64     \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a579eaa06b93cc396b2ff615a786c495f}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
-65   \}
+66 
+67     \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a301398c07738d6680e163782d35365c5}{moveBaseClient\_}->sendGoal(goal);
+68   \}
 \end{DoxyCode}
 
 
@@ -176,31 +176,29 @@ Reimplemented from \hyperlink{classsmacc_1_1SmaccClientBehavior_a7962382f93987c7
 
 
 
-Definition at line 34 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
+Definition at line 37 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
 
 
 
-References smacc\+::\+I\+Smacc\+Client\+::get\+Component(), go\+To\+Radial\+Start(), move\+Base\+Client\+\_\+, smacc\+::\+Cl\+Move\+Base\+Z\+::planner\+Switcher\+\_\+, odom\+\_\+tracker\+::\+R\+E\+C\+O\+R\+D\+\_\+\+P\+A\+T\+H\+\_\+\+F\+O\+R\+W\+A\+RD, and smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client().
+References go\+To\+Radial\+Start(), move\+Base\+Client\+\_\+, and smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client().
 
 
 \begin{DoxyCode}
-35   \{
-36     ROS\_INFO(\textcolor{stringliteral}{"Entering Navigate Global position"});
-37 
-38     \textcolor{comment}{// this substate will need access to the "MoveBase" resource or plugin. In this line}
-39     \textcolor{comment}{// you get the reference to this resource.}
-40     this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a917f001e763a1059af337bf4e164f542}{requiresClient}(\hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a579eaa06b93cc396b2ff615a786c495f}{moveBaseClient\_});
-41     \textcolor{keyword}{auto} *odomTracker = \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a579eaa06b93cc396b2ff615a786c495f}{moveBaseClient\_}->\hyperlink{classsmacc_1_1ISmaccClient_adef78db601749ca63c19e74a27cb88cc}{getComponent}<
-      \hyperlink{classodom__tracker_1_1OdomTracker}{odom\_tracker::OdomTracker}>();
-42 
-43     ROS\_INFO(\textcolor{stringliteral}{"Component requirements completed"});
-44 
-45     \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a579eaa06b93cc396b2ff615a786c495f}{moveBaseClient\_}->\hyperlink{classsmacc_1_1ClMoveBaseZ_a712e0df77c9629930e03cbb4c539b485}{plannerSwitcher\_}->setDefaultPlanners();
-46     odomTracker->setWorkingMode(\hyperlink{namespaceodom__tracker_a4daf27fd157b1a481fdfd6f90de00b88a989d06a586bcf9520889228da7faa643}{odom\_tracker::WorkingMode::RECORD\_PATH\_FORWARD}
-      );
+38   \{
+39     ROS\_INFO(\textcolor{stringliteral}{"Entering Navigate Global position"});
+40 
+41     \textcolor{comment}{// this substate will need access to the "MoveBase" resource or plugin. In this line}
+42     \textcolor{comment}{// you get the reference to this resource.}
+43     this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a917f001e763a1059af337bf4e164f542}{requiresClient}(\hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a301398c07738d6680e163782d35365c5}{moveBaseClient\_});
+44     \textcolor{keyword}{auto} *odomTracker = \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a301398c07738d6680e163782d35365c5}{moveBaseClient\_}->getComponent<OdomTracker>();
+45 
+46     ROS\_INFO(\textcolor{stringliteral}{"Component requirements completed"});
 47 
-48     \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_aa7e91d17625df52b94bb29a9cd1ae7e5}{goToRadialStart}();
-49   \}
+48     \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a301398c07738d6680e163782d35365c5}{moveBaseClient\_}->plannerSwitcher\_->setDefaultPlanners();
+49     odomTracker->setWorkingMode(WorkingMode::RECORD\_PATH\_FORWARD);
+50 
+51     \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_aa7e91d17625df52b94bb29a9cd1ae7e5}{goToRadialStart}();
+52   \}
 \end{DoxyCode}
 
 
@@ -227,24 +225,24 @@ Reimplemented from \hyperlink{classsmacc_1_1SmaccClientBehavior_ac0cd72d42bd0042
 
 
 
-Definition at line 89 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
+Definition at line 92 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
 
 
 \begin{DoxyCode}
-90   \{
-91     ROS\_INFO(\textcolor{stringliteral}{"Exiting move goal Action Client"});
-92   \}
+93   \{
+94     ROS\_INFO(\textcolor{stringliteral}{"Exiting move goal Action Client"});
+95   \}
 \end{DoxyCode}
 \index{sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Global\+Position@{sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Global\+Position}!read\+Start\+Pose\+From\+Parameter\+Server@{read\+Start\+Pose\+From\+Parameter\+Server}}
 \index{read\+Start\+Pose\+From\+Parameter\+Server@{read\+Start\+Pose\+From\+Parameter\+Server}!sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Global\+Position@{sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Global\+Position}}
-\subsubsection[{\texorpdfstring{read\+Start\+Pose\+From\+Parameter\+Server(smacc\+::\+Cl\+Move\+Base\+Z\+::\+Goal \&goal)}{readStartPoseFromParameterServer(smacc::ClMoveBaseZ::Goal &goal)}}]{\setlength{\rightskip}{0pt plus 5cm}void sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Global\+Position\+::read\+Start\+Pose\+From\+Parameter\+Server (
+\subsubsection[{\texorpdfstring{read\+Start\+Pose\+From\+Parameter\+Server(\+Cl\+Move\+Base\+Z\+::\+Goal \&goal)}{readStartPoseFromParameterServer(ClMoveBaseZ::Goal &goal)}}]{\setlength{\rightskip}{0pt plus 5cm}void sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Global\+Position\+::read\+Start\+Pose\+From\+Parameter\+Server (
 \begin{DoxyParamCaption}
-\item[{smacc\+::\+Cl\+Move\+Base\+Z\+::\+Goal \&}]{goal}
+\item[{Cl\+Move\+Base\+Z\+::\+Goal \&}]{goal}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a79dc46f7a60a0322d27ee4db0ab11ad7}{}\label{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a79dc46f7a60a0322d27ee4db0ab11ad7}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_ad936dff37e9ca4d5ba0fb602ada6671e}{}\label{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_ad936dff37e9ca4d5ba0fb602ada6671e}
 
 
-Definition at line 67 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
+Definition at line 70 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
 
 
 
@@ -256,27 +254,27 @@ Referenced by go\+To\+Radial\+Start().
 
 
 \begin{DoxyCode}
-68   \{
-69     \textcolor{keywordflow}{if} (!\hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a7e8224311686be554d68853ff757be5d}{initialPoint})
-70     \{
-71       this->\hyperlink{classsmacc_1_1SmaccClientBehavior_af76fc9b877542ed5caf033f820c107d0}{currentState}->\hyperlink{classsmacc_1_1ISmaccState_abbb3a24b912c6e8de28f7b86123b6357}{getParam}(\textcolor{stringliteral}{"start\_position\_x"}, goal.target\_pose.pose.position.x
+71   \{
+72     \textcolor{keywordflow}{if} (!\hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a7e8224311686be554d68853ff757be5d}{initialPoint})
+73     \{
+74       this->\hyperlink{classsmacc_1_1SmaccClientBehavior_af76fc9b877542ed5caf033f820c107d0}{currentState}->\hyperlink{classsmacc_1_1ISmaccState_abbb3a24b912c6e8de28f7b86123b6357}{getParam}(\textcolor{stringliteral}{"start\_position\_x"}, goal.target\_pose.pose.position.x
       );
-72       this->\hyperlink{classsmacc_1_1SmaccClientBehavior_af76fc9b877542ed5caf033f820c107d0}{currentState}->\hyperlink{classsmacc_1_1ISmaccState_abbb3a24b912c6e8de28f7b86123b6357}{getParam}(\textcolor{stringliteral}{"start\_position\_y"}, goal.target\_pose.pose.position.y
+75       this->\hyperlink{classsmacc_1_1SmaccClientBehavior_af76fc9b877542ed5caf033f820c107d0}{currentState}->\hyperlink{classsmacc_1_1ISmaccState_abbb3a24b912c6e8de28f7b86123b6357}{getParam}(\textcolor{stringliteral}{"start\_position\_y"}, goal.target\_pose.pose.position.y
       );
-73       \textcolor{keywordtype}{double} yaw;
-74       this->\hyperlink{classsmacc_1_1SmaccClientBehavior_af76fc9b877542ed5caf033f820c107d0}{currentState}->\hyperlink{classsmacc_1_1ISmaccState_abbb3a24b912c6e8de28f7b86123b6357}{getParam}(\textcolor{stringliteral}{"start\_position\_yaw"}, yaw);
-75 
-76       goal.target\_pose.pose.orientation = tf::createQuaternionMsgFromYaw(yaw);
-77     \}
-78     \textcolor{keywordflow}{else}
-79     \{
-80       goal.target\_pose.pose.position = *\hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a7e8224311686be554d68853ff757be5d}{initialPoint};
-81       goal.target\_pose.pose.orientation = tf::createQuaternionMsgFromYaw(*
+76       \textcolor{keywordtype}{double} yaw;
+77       this->\hyperlink{classsmacc_1_1SmaccClientBehavior_af76fc9b877542ed5caf033f820c107d0}{currentState}->\hyperlink{classsmacc_1_1ISmaccState_abbb3a24b912c6e8de28f7b86123b6357}{getParam}(\textcolor{stringliteral}{"start\_position\_yaw"}, yaw);
+78 
+79       goal.target\_pose.pose.orientation = tf::createQuaternionMsgFromYaw(yaw);
+80     \}
+81     \textcolor{keywordflow}{else}
+82     \{
+83       goal.target\_pose.pose.position = *\hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a7e8224311686be554d68853ff757be5d}{initialPoint};
+84       goal.target\_pose.pose.orientation = tf::createQuaternionMsgFromYaw(*
       \hyperlink{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a2466eeabb6e2a3f35427a444a369d45e}{initialYaw});
-82     \}
-83 
-84     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"start position read from parameter server: "} << goal.target\_pose.pose.position);
-85   \}
+85     \}
+86 
+87     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"start position read from parameter server: "} << goal.target\_pose.pose.position);
+88   \}
 \end{DoxyCode}
 
 
@@ -285,7 +283,7 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a79dc46f7a60a0322d27ee4db0ab11ad7_cgraph}
+\includegraphics[width=350pt]{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_ad936dff37e9ca4d5ba0fb602ada6671e_cgraph}
 \end{center}
 \end{figure}
 
@@ -297,7 +295,7 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a79dc46f7a60a0322d27ee4db0ab11ad7_icgraph}
+\includegraphics[width=350pt]{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_ad936dff37e9ca4d5ba0fb602ada6671e_icgraph}
 \end{center}
 \end{figure}
 
@@ -310,7 +308,7 @@ Here is the caller graph for this function\+:
 \subsubsection[{\texorpdfstring{initial\+Point}{initialPoint}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::optional$<$geometry\+\_\+msgs\+::\+Point$>$ sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Global\+Position\+::initial\+Point}\hypertarget{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a7e8224311686be554d68853ff757be5d}{}\label{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a7e8224311686be554d68853ff757be5d}
 
 
-Definition at line 18 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
+Definition at line 21 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
 
 
 
@@ -321,14 +319,14 @@ Referenced by read\+Start\+Pose\+From\+Parameter\+Server().
 \subsubsection[{\texorpdfstring{initial\+Yaw}{initialYaw}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::optional$<$float$>$ sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Global\+Position\+::initial\+Yaw}\hypertarget{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a2466eeabb6e2a3f35427a444a369d45e}{}\label{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a2466eeabb6e2a3f35427a444a369d45e}
 
 
-Definition at line 19 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
+Definition at line 22 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
 
 \index{sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Global\+Position@{sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Global\+Position}!move\+Base\+Client\+\_\+@{move\+Base\+Client\+\_\+}}
 \index{move\+Base\+Client\+\_\+@{move\+Base\+Client\+\_\+}!sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Global\+Position@{sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Global\+Position}}
-\subsubsection[{\texorpdfstring{move\+Base\+Client\+\_\+}{moveBaseClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf smacc\+::\+Cl\+Move\+BaseZ}$\ast$ sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Global\+Position\+::move\+Base\+Client\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a579eaa06b93cc396b2ff615a786c495f}{}\label{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a579eaa06b93cc396b2ff615a786c495f}
+\subsubsection[{\texorpdfstring{move\+Base\+Client\+\_\+}{moveBaseClient_}}]{\setlength{\rightskip}{0pt plus 5cm}Cl\+Move\+BaseZ$\ast$ sm\+\_\+dance\+\_\+bot\+::move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Global\+Position\+::move\+Base\+Client\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a301398c07738d6680e163782d35365c5}{}\label{classsm__dance__bot_1_1move__base__z__client_1_1CbNavigateGlobalPosition_a301398c07738d6680e163782d35365c5}
 
 
-Definition at line 97 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
+Definition at line 100 of file cb\+\_\+navigate\+\_\+global\+\_\+position.\+h.
 
 
 

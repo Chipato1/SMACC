@@ -34,7 +34,7 @@ virtual void \hyperlink{classsm__dance__bot_1_1OrNavigation_a9f87c78f5af67024c9e
 \subsection{Detailed Description}
 
 
-Definition at line 11 of file or\+\_\+navigation.\+h.
+Definition at line 13 of file or\+\_\+navigation.\+h.
 
 
 
@@ -52,28 +52,28 @@ Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01
 
 
 
-Definition at line 14 of file or\+\_\+navigation.\+h.
+Definition at line 16 of file or\+\_\+navigation.\+h.
 
 
 
-References smacc\+::\+I\+Smacc\+Component\+::configure\+Event\+Source\+Types().
+References move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator\+::configure\+Event\+Source\+Types().
 
 
 \begin{DoxyCode}
-15     \{
-16         \textcolor{keyword}{auto} movebaseClient = this->createClient<OrNavigation, smacc::ClMoveBaseZ>();
-17         movebaseClient->name\_ = \textcolor{stringliteral}{"move\_base"};
-18         movebaseClient->initialize();
-19 
-20         \textcolor{comment}{// create odom tracker}
-21         movebaseClient->createComponent<\hyperlink{classodom__tracker_1_1OdomTracker}{odom\_tracker::OdomTracker}>(\textcolor{stringliteral}{"/"});
-22         
-23         \textcolor{comment}{// create waypoints navigator component}
-24         \textcolor{keyword}{auto} waypointsNavigator\_ = movebaseClient->createComponent<
-      \hyperlink{classsmacc_1_1WaypointNavigator}{smacc::WaypointNavigator}>();
-25         waypointsNavigator\_->\hyperlink{classsmacc_1_1ISmaccComponent_ad1c9ede43be1f83c10c6e7a2e14db8d3}{configureEventSourceTypes}<OrNavigation, 
-      \hyperlink{classsmacc_1_1ClMoveBaseZ}{smacc::ClMoveBaseZ}>();
-26     \}
+17     \{
+18         \textcolor{keyword}{auto} movebaseClient = this->createClient<OrNavigation, ClMoveBaseZ>();
+19         movebaseClient->name\_ = \textcolor{stringliteral}{"move\_base"};
+20         movebaseClient->initialize();
+21 
+22         \textcolor{comment}{// create odom tracker}
+23         movebaseClient->createComponent<OdomTracker>(\textcolor{stringliteral}{"/"});
+24 
+25         \textcolor{comment}{// create waypoints navigator component}
+26         \textcolor{keyword}{auto} waypointsNavigator\_ = movebaseClient->createComponent<
+      \hyperlink{classmove__base__z__client_1_1WaypointNavigator}{WaypointNavigator}>();
+27         waypointsNavigator\_->\hyperlink{classmove__base__z__client_1_1WaypointNavigator_aafd4851a12699b1e92dd24e085bacb0e}{configureEventSourceTypes}<OrNavigation, 
+      \hyperlink{classmove__base__z__client_1_1ClMoveBaseZ}{ClMoveBaseZ}>();
+28     \}
 \end{DoxyCode}
 
 
