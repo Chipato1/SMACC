@@ -27,7 +27,7 @@ Collaboration diagram for sm\+\_\+three\+\_\+some\+:\+:St\+State2\+:
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+All$<$ Lu\+All\+Events\+Go $>$, \hyperlink{structsm__three__some_1_1StState3}{St\+State3} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Key\+PressP$<$ Cb\+Keyboard, \hyperlink{classsm__three__some_1_1OrKeyboard}{Or\+Keyboard} $>$, \hyperlink{structsm__three__some_1_1StState1}{St\+State1} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Key\+PressN$<$ Cb\+Keyboard, \hyperlink{classsm__three__some_1_1OrKeyboard}{Or\+Keyboard} $>$, \hyperlink{structsm__three__some_1_1StState3}{St\+State3} $>$ $>$ \hyperlink{structsm__three__some_1_1StState2_af65c43ecaaeffbe895d4186333cd403f}{reactions}
+typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+All$<$ Lu\+All\+Events\+Go $>$, \hyperlink{structsm__three__some_1_1StState3}{St\+State3} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ \hyperlink{structsm__three__some_1_1keyboard__client_1_1EvKeyPressP}{Ev\+Key\+PressP}$<$ \hyperlink{classsm__three__some_1_1keyboard__client_1_1CbDefaultKeyboardBehavior}{Cb\+Default\+Keyboard\+Behavior}, \hyperlink{classsm__three__some_1_1OrKeyboard}{Or\+Keyboard} $>$, \hyperlink{structsm__three__some_1_1StState1}{St\+State1} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ \hyperlink{structsm__three__some_1_1keyboard__client_1_1EvKeyPressN}{Ev\+Key\+PressN}$<$ \hyperlink{classsm__three__some_1_1keyboard__client_1_1CbDefaultKeyboardBehavior}{Cb\+Default\+Keyboard\+Behavior}, \hyperlink{classsm__three__some_1_1OrKeyboard}{Or\+Keyboard} $>$, \hyperlink{structsm__three__some_1_1StState3}{St\+State3} $>$ $>$ \hyperlink{structsm__three__some_1_1StState2_a23b2f7bee50ffc841d34ca39a7ebe2ba}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -52,7 +52,7 @@ Definition at line 3 of file st\+\_\+state\+\_\+2.\+h.
 \subsection{Member Typedef Documentation}
 \index{sm\+\_\+three\+\_\+some\+::\+St\+State2@{sm\+\_\+three\+\_\+some\+::\+St\+State2}!reactions@{reactions}}
 \index{reactions@{reactions}!sm\+\_\+three\+\_\+some\+::\+St\+State2@{sm\+\_\+three\+\_\+some\+::\+St\+State2}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ {\bf smacc\+::transition}$<$Ev\+All$<$Lu\+All\+Events\+Go$>$, {\bf St\+State3}$>$, {\bf smacc\+::transition}$<$Ev\+Key\+PressP$<$Cb\+Keyboard, {\bf Or\+Keyboard}$>$, {\bf St\+State1}$>$, {\bf smacc\+::transition}$<$Ev\+Key\+PressN$<$Cb\+Keyboard, {\bf Or\+Keyboard}$>$, {\bf St\+State3}$>$ $>$ {\bf sm\+\_\+three\+\_\+some\+::\+St\+State2\+::reactions}}\hypertarget{structsm__three__some_1_1StState2_af65c43ecaaeffbe895d4186333cd403f}{}\label{structsm__three__some_1_1StState2_af65c43ecaaeffbe895d4186333cd403f}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ {\bf smacc\+::transition}$<$Ev\+All$<$Lu\+All\+Events\+Go$>$, {\bf St\+State3}$>$, {\bf smacc\+::transition}$<${\bf Ev\+Key\+PressP}$<${\bf Cb\+Default\+Keyboard\+Behavior}, {\bf Or\+Keyboard}$>$, {\bf St\+State1}$>$, {\bf smacc\+::transition}$<${\bf Ev\+Key\+PressN}$<${\bf Cb\+Default\+Keyboard\+Behavior}, {\bf Or\+Keyboard}$>$, {\bf St\+State3}$>$ $>$ {\bf sm\+\_\+three\+\_\+some\+::\+St\+State2\+::reactions}}\hypertarget{structsm__three__some_1_1StState2_a23b2f7bee50ffc841d34ca39a7ebe2ba}{}\label{structsm__three__some_1_1StState2_a23b2f7bee50ffc841d34ca39a7ebe2ba}
 
 
 Definition at line 13 of file st\+\_\+state\+\_\+2.\+h.
@@ -72,16 +72,35 @@ Definition at line 13 of file st\+\_\+state\+\_\+2.\+h.
 Definition at line 15 of file st\+\_\+state\+\_\+2.\+h.
 
 
+
+References smacc\+::\+Smacc\+State$<$ St\+State2, Ms\+Three\+Some\+Run\+Mode $>$\+::static\+\_\+create\+Logic\+Unit().
+
+
 \begin{DoxyCode}
 16     \{
-17         static\_configure<OrOrthogonal1, CbBehavior1b>();
-18         static\_configure<OrOrthogonal2, CbBehavior2b>();
-19         static\_configure<OrKeyboard, CbKeyboard>();
-20 
-21         static\_createLogicUnit<LuAllEventsGo, EvAll<LuAllEventsGo>, mpl::list<EvTopicMessage<CbBehavior1b,
-       OrOrthogonal1>, EvTopicMessage<ClClient1, OrOrthogonal1>>>();
-22     \}
+17         static\_configure<OrTimer, CbTimer>();
+18         static\_configure<OrSubscriber, CbWatchdogSubscriberBehavior>();
+19         static\_configure<OrUpdatablePublisher, CbDefaultPublishLoop>();
+20         static\_configure<OrKeyboard, CbDefaultKeyboardBehavior>();
+21 
+22         \hyperlink{classsmacc_1_1SmaccState_a6fc90cf59c60c749e82f49aafb079b23}{static\_createLogicUnit}<LuAllEventsGo,
+23                                EvAll<LuAllEventsGo>,
+24                                mpl::list<EvTimer<CbTimer, OrTimer>,
+25                                          EvKeyPressA<CbDefaultKeyboardBehavior, OrKeyboard>>>();
+26     \}
 \end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsm__three__some_1_1StState2_a6fbadc32e16e7c1defafe35a6e1b08da_cgraph}
+\end{center}
+\end{figure}
+
+
 \index{sm\+\_\+three\+\_\+some\+::\+St\+State2@{sm\+\_\+three\+\_\+some\+::\+St\+State2}!on\+Initialize@{on\+Initialize}}
 \index{on\+Initialize@{on\+Initialize}!sm\+\_\+three\+\_\+some\+::\+St\+State2@{sm\+\_\+three\+\_\+some\+::\+St\+State2}}
 \subsubsection[{\texorpdfstring{on\+Initialize()}{onInitialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void sm\+\_\+three\+\_\+some\+::\+St\+State2\+::on\+Initialize (
@@ -91,12 +110,12 @@ Definition at line 15 of file st\+\_\+state\+\_\+2.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsm__three__some_1_1StState2_a31e1bc14ec72b4fa9dcc6a11d8e77762}{}\label{structsm__three__some_1_1StState2_a31e1bc14ec72b4fa9dcc6a11d8e77762}
 
 
-Definition at line 24 of file st\+\_\+state\+\_\+2.\+h.
+Definition at line 28 of file st\+\_\+state\+\_\+2.\+h.
 
 
 \begin{DoxyCode}
-25     \{
-26     \}
+29     \{
+30     \}
 \end{DoxyCode}
 
 

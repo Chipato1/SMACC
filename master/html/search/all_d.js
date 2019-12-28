@@ -34,6 +34,8 @@ var searchData=
   ['ms_5fdance_5fbot_5frun_5fmode_2eh',['ms_dance_bot_run_mode.h',['../ms__dance__bot__run__mode_8h.html',1,'']]],
   ['ms_5frecovery_5fmode_2eh',['ms_recovery_mode.h',['../ms__recovery__mode_8h.html',1,'']]],
   ['ms_5frun_5fmode_2eh',['ms_run_mode.h',['../ms__run__mode_8h.html',1,'']]],
+  ['ms_5fthree_5fsome_5fexception_5fmode_2eh',['ms_three_some_exception_mode.h',['../ms__three__some__exception__mode_8h.html',1,'']]],
+  ['ms_5fthree_5fsome_5frun_5fmode_2eh',['ms_three_some_run_mode.h',['../ms__three__some__run__mode_8h.html',1,'']]],
   ['msdancebotrecoverymode',['MsDanceBotRecoveryMode',['../classsm__dance__bot_1_1MsDanceBotRecoveryMode.html',1,'sm_dance_bot']]],
   ['msdancebotrunmode',['MsDanceBotRunMode',['../classsm__dance__bot_1_1MsDanceBotRunMode.html',1,'sm_dance_bot']]],
   ['msg',['msg',['../namespacekeyboard__node.html#a768777e12f75b89e4a0a60acf748e9eb',1,'keyboard_node']]],
@@ -42,7 +44,9 @@ var searchData=
   ['msgenator_2epy',['msgenator.py',['../msgenator_8py.html',1,'']]],
   ['msrecoverymode',['MsRecoveryMode',['../structsm__viewer__sim_1_1MsRecoveryMode.html',1,'sm_viewer_sim']]],
   ['msrunmode',['MsRunMode',['../structsm__viewer__sim_1_1MsRunMode.html',1,'sm_viewer_sim']]],
-  ['my_5fcontext',['my_context',['../structsmacc_1_1SmaccState_1_1my__context.html#af9c11c27b17bbf7de0d4e21c87d49f6f',1,'smacc::SmaccState::my_context::my_context()'],['../common_8h.html#af2dcacead80d69b96952496fe413bbfe',1,'my_context():&#160;common.h']]],
+  ['mstheesomeexceptionmode',['MsTheeSomeExceptionMode',['../classsm__three__some_1_1MsTheeSomeExceptionMode.html',1,'sm_three_some']]],
+  ['msthreesomerunmode',['MsThreeSomeRunMode',['../classsm__three__some_1_1MsThreeSomeRunMode.html',1,'sm_three_some']]],
   ['my_5fcontext',['my_context',['../structsmacc_1_1SmaccState_1_1my__context.html',1,'smacc::SmaccState']]],
+  ['my_5fcontext',['my_context',['../structsmacc_1_1SmaccState_1_1my__context.html#af9c11c27b17bbf7de0d4e21c87d49f6f',1,'smacc::SmaccState::my_context::my_context()'],['../common_8h.html#af2dcacead80d69b96952496fe413bbfe',1,'my_context():&#160;common.h']]],
   ['odom_5ftracker',['odom_tracker',['../namespacemove__base__z__client_1_1odom__tracker.html',1,'move_base_z_client']]]
 ];

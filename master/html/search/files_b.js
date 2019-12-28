@@ -8,5 +8,7 @@ var searchData=
   ['ms_5fdance_5fbot_5frun_5fmode_2eh',['ms_dance_bot_run_mode.h',['../ms__dance__bot__run__mode_8h.html',1,'']]],
   ['ms_5frecovery_5fmode_2eh',['ms_recovery_mode.h',['../ms__recovery__mode_8h.html',1,'']]],
   ['ms_5frun_5fmode_2eh',['ms_run_mode.h',['../ms__run__mode_8h.html',1,'']]],
+  ['ms_5fthree_5fsome_5fexception_5fmode_2eh',['ms_three_some_exception_mode.h',['../ms__three__some__exception__mode_8h.html',1,'']]],
+  ['ms_5fthree_5fsome_5frun_5fmode_2eh',['ms_three_some_run_mode.h',['../ms__three__some__run__mode_8h.html',1,'']]],
   ['msgenator_2epy',['msgenator.py',['../msgenator_8py.html',1,'']]]
 ];

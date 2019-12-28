@@ -1,0 +1,68 @@
+\hypertarget{classsm__three__some_1_1OrUpdatablePublisher}{}\section{sm\+\_\+three\+\_\+some\+:\+:Or\+Updatable\+Publisher Class Reference}
+\label{classsm__three__some_1_1OrUpdatablePublisher}\index{sm\+\_\+three\+\_\+some\+::\+Or\+Updatable\+Publisher@{sm\+\_\+three\+\_\+some\+::\+Or\+Updatable\+Publisher}}
+
+
+{\ttfamily \#include $<$or\+\_\+updatable\+\_\+publisher.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+three\+\_\+some\+:\+:Or\+Updatable\+Publisher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{classsm__three__some_1_1OrUpdatablePublisher__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+three\+\_\+some\+:\+:Or\+Updatable\+Publisher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__three__some_1_1OrUpdatablePublisher__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classsm__three__some_1_1OrUpdatablePublisher_aecda3521d565c139c75080f12e7045e0}{on\+Initialize} () override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file or\+\_\+updatable\+\_\+publisher.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+three\+\_\+some\+::\+Or\+Updatable\+Publisher@{sm\+\_\+three\+\_\+some\+::\+Or\+Updatable\+Publisher}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!sm\+\_\+three\+\_\+some\+::\+Or\+Updatable\+Publisher@{sm\+\_\+three\+\_\+some\+::\+Or\+Updatable\+Publisher}}
+\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+three\+\_\+some\+::\+Or\+Updatable\+Publisher\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__three__some_1_1OrUpdatablePublisher_aecda3521d565c139c75080f12e7045e0}{}\label{classsm__three__some_1_1OrUpdatablePublisher_aecda3521d565c139c75080f12e7045e0}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+
+
+
+Definition at line 13 of file or\+\_\+updatable\+\_\+publisher.\+h.
+
+
+\begin{DoxyCode}
+14     \{
+15         \textcolor{keyword}{auto} updatable\_publisher\_client = this->createClient<OrUpdatablePublisher, ClUpdatablePublisher>();
+16         updatable\_publisher\_client->initialize();
+17     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+three\+\_\+some/include/sm\+\_\+three\+\_\+some/orthogonals/\hyperlink{sm__three__some_2include_2sm__three__some_2orthogonals_2or__updatable__publisher_8h}{or\+\_\+updatable\+\_\+publisher.\+h}\end{DoxyCompactItemize}

@@ -27,7 +27,7 @@ Collaboration diagram for sm\+\_\+atomic\+:\+:State1\+:
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ \hyperlink{structros__timer__client_1_1EvTimer}{Ev\+Timer}$<$ \hyperlink{classros__timer__client_1_1CbTimerSingleCountdown}{Cb\+Timer\+Single\+Countdown}, \hyperlink{classsm__atomic_1_1OrTimer}{Or\+Timer} $>$, \hyperlink{structsm__atomic_1_1State2}{State2} $>$ $>$ \hyperlink{structsm__atomic_1_1State1_ab64bac9f9f51137165167b2d850bcb32}{reactions}
+typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ \hyperlink{structros__timer__client_1_1EvTimer}{Ev\+Timer}$<$ \hyperlink{classros__timer__client_1_1CbTimerCountdownOnce}{Cb\+Timer\+Countdown\+Once}, \hyperlink{classsm__atomic_1_1OrTimer}{Or\+Timer} $>$, \hyperlink{structsm__atomic_1_1State2}{State2} $>$ $>$ \hyperlink{structsm__atomic_1_1State1_afe4b84d837f9f361aebaf0600728cdd8}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -58,7 +58,7 @@ Definition at line 7 of file st\+\_\+state\+\_\+1.\+h.
 \subsection{Member Typedef Documentation}
 \index{sm\+\_\+atomic\+::\+State1@{sm\+\_\+atomic\+::\+State1}!reactions@{reactions}}
 \index{reactions@{reactions}!sm\+\_\+atomic\+::\+State1@{sm\+\_\+atomic\+::\+State1}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<${\bf smacc\+::transition}$<${\bf Ev\+Timer}$<${\bf Cb\+Timer\+Single\+Countdown}, {\bf Or\+Timer}$>$, {\bf State2}$>$ $>$ {\bf sm\+\_\+atomic\+::\+State1\+::reactions}}\hypertarget{structsm__atomic_1_1State1_ab64bac9f9f51137165167b2d850bcb32}{}\label{structsm__atomic_1_1State1_ab64bac9f9f51137165167b2d850bcb32}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<${\bf smacc\+::transition}$<${\bf Ev\+Timer}$<${\bf Cb\+Timer\+Countdown\+Once}, {\bf Or\+Timer}$>$, {\bf State2}$>$ $>$ {\bf sm\+\_\+atomic\+::\+State1\+::reactions}}\hypertarget{structsm__atomic_1_1State1_afe4b84d837f9f361aebaf0600728cdd8}{}\label{structsm__atomic_1_1State1_afe4b84d837f9f361aebaf0600728cdd8}
 
 
 Definition at line 10 of file st\+\_\+state\+\_\+1.\+h.
@@ -80,8 +80,8 @@ Definition at line 14 of file st\+\_\+state\+\_\+1.\+h.
 
 \begin{DoxyCode}
 15     \{
-16         static\_configure<OrTimer, CbTimerRepeatCountdown>(3); \textcolor{comment}{// triggers each 3 client ticks}
-17         static\_configure<OrTimer, CbTimerSingleCountdown>(10); \textcolor{comment}{// triggers once at 10 client ticks}
+16         static\_configure<OrTimer, CbTimerCountdownLoop>(3); \textcolor{comment}{// EvTimer triggers each 3 client ticks}
+17         static\_configure<OrTimer, CbTimerCountdownOnce>(10); \textcolor{comment}{// EvTimer triggers once at 10 client ticks}
 18     \}
 \end{DoxyCode}
 \index{sm\+\_\+atomic\+::\+State1@{sm\+\_\+atomic\+::\+State1}!on\+Initialize@{on\+Initialize}}
@@ -113,7 +113,7 @@ References on\+Repeat\+Behavior\+Tick\+Callback(), on\+Single\+Behavior\+Tick\+C
 29 
 30         \textcolor{comment}{// getting reference to the repeat countdown behavior}
 31         \textcolor{keyword}{auto}* cbrepeat = this->\hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_a38b8b6e3d65b7de33020c9c397cf29bb}{getOrthogonal}<OrTimer>()
-32                                ->getClientBehavior<CbTimerRepeatCountdown>();
+32                                ->getClientBehavior<CbTimerCountdownLoop>();
 33 
 34         \textcolor{comment}{// subscribe to the repeat countdown behavior callback}
 35         cbrepeat->onTimerTick(&\hyperlink{structsm__atomic_1_1State1_a9d2c943f02a8e0f1d7b86132ada1c6e0}{State1::onRepeatBehaviorTickCallback}, \textcolor{keyword}{
@@ -121,7 +121,7 @@ References on\+Repeat\+Behavior\+Tick\+Callback(), on\+Single\+Behavior\+Tick\+C
 36 
 37         \textcolor{comment}{// getting reference to the single countdown behavior}
 38         \textcolor{keyword}{auto}* cbsingle = this->\hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_a38b8b6e3d65b7de33020c9c397cf29bb}{getOrthogonal}<OrTimer>()
-39                                ->getClientBehavior<CbTimerSingleCountdown>();
+39                                ->getClientBehavior<CbTimerCountdownOnce>();
 40 
 41         \textcolor{comment}{// subscribe to the single countdown behavior callback}
 42         cbsingle->onTimerTick(&\hyperlink{structsm__atomic_1_1State1_a9cb95d91cf5a22f0d9d079dc04bf58aa}{State1::onSingleBehaviorTickCallback}, \textcolor{keyword}{

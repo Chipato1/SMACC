@@ -27,7 +27,7 @@ Collaboration diagram for Ssr3\+:
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Key\+PressP$<$ Cb\+Keyboard, Or\+Keyboard $>$, \hyperlink{structSsr2}{Ssr2} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Key\+PressN$<$ Cb\+Keyboard, Or\+Keyboard $>$, \hyperlink{structSsr1}{Ssr1} $>$ $>$ \hyperlink{structSsr3_a9b234c7ea95f593cd1fd4049e6f256d8}{reactions}
+typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Key\+PressP$<$ Cb\+Default\+Keyboard\+Behavior, Or\+Keyboard $>$, \hyperlink{structSsr2}{Ssr2} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev\+Key\+PressN$<$ Cb\+Default\+Keyboard\+Behavior, Or\+Keyboard $>$, \hyperlink{structSsr1}{Ssr1} $>$ $>$ \hyperlink{structSsr3_a5d42cce5df84cb4f58bda69736786927}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -52,7 +52,7 @@ Definition at line 1 of file ssr\+\_\+3.\+h.
 \subsection{Member Typedef Documentation}
 \index{Ssr3@{Ssr3}!reactions@{reactions}}
 \index{reactions@{reactions}!Ssr3@{Ssr3}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ {\bf smacc\+::transition}$<$Ev\+Key\+PressP$<$Cb\+Keyboard, Or\+Keyboard$>$, {\bf Ssr2}$>$, {\bf smacc\+::transition}$<$Ev\+Key\+PressN$<$Cb\+Keyboard, Or\+Keyboard$>$, {\bf Ssr1}$>$ $>$ {\bf Ssr3\+::reactions}}\hypertarget{structSsr3_a9b234c7ea95f593cd1fd4049e6f256d8}{}\label{structSsr3_a9b234c7ea95f593cd1fd4049e6f256d8}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ {\bf smacc\+::transition}$<$Ev\+Key\+PressP$<$Cb\+Default\+Keyboard\+Behavior, Or\+Keyboard$>$, {\bf Ssr2}$>$, {\bf smacc\+::transition}$<$Ev\+Key\+PressN$<$Cb\+Default\+Keyboard\+Behavior, Or\+Keyboard$>$, {\bf Ssr1}$>$ $>$ {\bf Ssr3\+::reactions}}\hypertarget{structSsr3_a5d42cce5df84cb4f58bda69736786927}{}\label{structSsr3_a5d42cce5df84cb4f58bda69736786927}
 
 
 Definition at line 10 of file ssr\+\_\+3.\+h.
@@ -74,10 +74,11 @@ Definition at line 13 of file ssr\+\_\+3.\+h.
 
 \begin{DoxyCode}
 14   \{
-15     static\_configure<OrOrthogonal1, CbBehavior1b>();
-16     static\_configure<OrOrthogonal2, CbBehavior2b>();
-17     static\_configure<OrKeyboard, CbKeyboard>();
-18   \}
+15     static\_configure<OrTimer, CbTimer>();
+16     static\_configure<OrSubscriber, CbWatchdogSubscriberBehavior>();
+17     static\_configure<OrUpdatablePublisher, CbDefaultPublishLoop>();
+18     static\_configure<OrKeyboard, CbDefaultKeyboardBehavior>();
+19   \}
 \end{DoxyCode}
 \index{Ssr3@{Ssr3}!on\+Initialize@{on\+Initialize}}
 \index{on\+Initialize@{on\+Initialize}!Ssr3@{Ssr3}}
@@ -88,13 +89,13 @@ Definition at line 13 of file ssr\+\_\+3.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structSsr3_aa20ad5030a625d39522d559ebe75feb0}{}\label{structSsr3_aa20ad5030a625d39522d559ebe75feb0}
 
 
-Definition at line 21 of file ssr\+\_\+3.\+h.
+Definition at line 22 of file ssr\+\_\+3.\+h.
 
 
 \begin{DoxyCode}
-22   \{
-23     \textcolor{comment}{//this->OnEventReceived<EvKeyPressN<CbKeyboard>>(onNextKey);}
-24   \}
+23   \{
+24     \textcolor{comment}{//this->OnEventReceived<EvKeyPressN<CbDefaultKeyboardBehavior>>(onNextKey);}
+25   \}
 \end{DoxyCode}
 
 
