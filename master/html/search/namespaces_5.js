@@ -3,6 +3,7 @@ var searchData=
   ['keyboard_5fclient',['keyboard_client',['../namespacesm__three__some_1_1keyboard__client.html',1,'sm_three_some']]],
   ['lidar_5fclient',['lidar_client',['../namespacesm__dance__bot_1_1lidar__client.html',1,'sm_dance_bot']]],
   ['move_5fbase_5fz_5fclient',['move_base_z_client',['../namespacesm__dance__bot_1_1move__base__z__client.html',1,'sm_dance_bot']]],
+  ['ros_5fpublisher_5fclient',['ros_publisher_client',['../namespacesm__dance__bot_1_1ros__publisher__client.html',1,'sm_dance_bot']]],
   ['service3_5fclient',['service3_client',['../namespacesm__dance__bot_1_1service3__client.html',1,'sm_dance_bot']]],
   ['service_5fnode_5f3',['service_node_3',['../namespaceservice__node__3.html',1,'']]],
   ['setup',['setup',['../namespacesetup.html',1,'']]],
@@ -21,7 +22,5 @@ var searchData=
   ['string_5fpublisher_5fclient',['string_publisher_client',['../namespacesm__dance__bot_1_1string__publisher__client.html',1,'sm_dance_bot']]],
   ['subscriber_5fclient',['subscriber_client',['../namespacesm__three__some_1_1subscriber__client.html',1,'sm_three_some']]],
   ['temperature_5fsensor_5fclient',['temperature_sensor_client',['../namespacesm__dance__bot_1_1temperature__sensor__client.html',1,'sm_dance_bot']]],
-  ['tool_5fclient',['tool_client',['../namespacesm__dance__bot_1_1tool__client.html',1,'sm_dance_bot']]],
-  ['updatable_5fpublisher_5fclient',['updatable_publisher_client',['../namespacesm__dance__bot_1_1updatable__publisher__client.html',1,'sm_dance_bot']]],
-  ['updatable_5fpublisher_5fclient',['updatable_publisher_client',['../namespacesm__three__some_1_1updatable__publisher__client.html',1,'sm_three_some']]]
+  ['tool_5fclient',['tool_client',['../namespacesm__dance__bot_1_1tool__client.html',1,'sm_dance_bot']]]
 ];

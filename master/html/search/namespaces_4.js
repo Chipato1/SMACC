@@ -7,6 +7,7 @@ var searchData=
   ['python_5fpaths',['python_paths',['../namespacerosdoc__lite_1_1python__paths.html',1,'rosdoc_lite']]],
   ['rdcore',['rdcore',['../namespacerosdoc__lite_1_1rdcore.html',1,'rosdoc_lite']]],
   ['regex_5ftemplate',['regex_template',['../namespaceregex__template.html',1,'']]],
+  ['ros_5fpublisher_5fclient',['ros_publisher_client',['../namespaceros__publisher__client.html',1,'']]],
   ['ros_5ftimer_5fclient',['ros_timer_client',['../namespaceros__timer__client.html',1,'']]],
   ['rosdoc_5flite',['rosdoc_lite',['../namespacerosdoc__lite.html',1,'']]],
   ['sphinxenator',['sphinxenator',['../namespacerosdoc__lite_1_1sphinxenator.html',1,'rosdoc_lite']]]

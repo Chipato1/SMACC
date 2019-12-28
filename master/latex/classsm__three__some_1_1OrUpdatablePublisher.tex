@@ -57,8 +57,9 @@ Definition at line 13 of file or\+\_\+updatable\+\_\+publisher.\+h.
 
 \begin{DoxyCode}
 14     \{
-15         \textcolor{keyword}{auto} updatable\_publisher\_client = this->createClient<OrUpdatablePublisher, ClUpdatablePublisher>();
-16         updatable\_publisher\_client->initialize();
+15         \textcolor{keyword}{auto} \hyperlink{namespaceros__publisher__client}{ros\_publisher\_client} = this->createClient<OrUpdatablePublisher,
+       ClRosPublisher>();
+16         \hyperlink{namespaceros__publisher__client}{ros\_publisher\_client}->initialize();
 17     \}
 \end{DoxyCode}
 
