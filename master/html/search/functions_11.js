@@ -12,6 +12,7 @@ var searchData=
   ['setframeorientation',['setFrameOrientation',['../classsmacc__rviz__plugin_1_1ImuVisual.html#ac308baf22f4bfb15b69b18776d22f181',1,'smacc_rviz_plugin::ImuVisual']]],
   ['setframeposition',['setFramePosition',['../classsmacc__rviz__plugin_1_1ImuVisual.html#a405f4e15692f2443f202bc55d989d669',1,'smacc_rviz_plugin::ImuVisual']]],
   ['setglobalsmdata',['setGlobalSMData',['../classsmacc_1_1ISmaccState.html#a120fcda41b44a437ff2e3906ac9fa5ca',1,'smacc::ISmaccState::setGlobalSMData()'],['../classsmacc_1_1SmaccState.html#a98f2673b257479e0a3615d5d8279a591',1,'smacc::SmaccState::setGlobalSMData()'],['../classsmacc_1_1ISmaccStateMachine.html#a8588f9e580fbb95b53e2bd2ca3ff1f98',1,'smacc::ISmaccStateMachine::setGlobalSMData()']]],
+  ['setloopmessage',['SetLoopMessage',['../classros__publisher__client_1_1CbDefaultPublishLoop.html#a281a7385dfb191207657c9c90f999a23',1,'ros_publisher_client::CbDefaultPublishLoop']]],
   ['setmessage',['setMessage',['../classsmacc__rviz__plugin_1_1ImuVisual.html#a69589c7845b2e29e092460b1ee8a8275',1,'smacc_rviz_plugin::ImuVisual']]],
   ['setparam',['setParam',['../classsmacc_1_1ISmaccState.html#a0b6c531ca8c446052022308548f55b92',1,'smacc::ISmaccState::setParam()'],['../classsmacc_1_1ISmaccStateMachine.html#afc730437f45fa107292c078dfab2aa37',1,'smacc::ISmaccStateMachine::setParam()']]],
   ['setplan',['setPlan',['../classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner.html#a3b552c90996d21cadf7b2f0875706407',1,'move_base_z_client::backward_local_planner::BackwardLocalPlanner::setPlan()'],['../classmove__base__z__client_1_1forward__local__planner_1_1ForwardLocalPlanner.html#a525b842cadd1e69e944907e1945a61c8',1,'move_base_z_client::forward_local_planner::ForwardLocalPlanner::setPlan()']]],
@@ -26,7 +27,7 @@ var searchData=
   ['smaccactionclientbase',['SmaccActionClientBase',['../classsmacc_1_1SmaccActionClientBase.html#a55625fdfd8344a88919aa6fa935b66fe',1,'smacc::SmaccActionClientBase']]],
   ['smaccclientbehavior',['SmaccClientBehavior',['../classsmacc_1_1SmaccClientBehavior.html#a5fbea298db572d6c7558bfd1a65a942b',1,'smacc::SmaccClientBehavior']]],
   ['smacceventinfo',['SmaccEventInfo',['../structsmacc_1_1SmaccEventInfo.html#adb157317435016e17767e984f912ca7e',1,'smacc::SmaccEventInfo']]],
-  ['smaccpublisherclient',['SmaccPublisherClient',['../classsmacc_1_1SmaccPublisherClient.html#a6de292c35d99dcac6f28795d6056d985',1,'smacc::SmaccPublisherClient']]],
+  ['smaccpublisherclient',['SmaccPublisherClient',['../classsmacc_1_1SmaccPublisherClient.html#ab68718f6c1846da5069069b6861ade20',1,'smacc::SmaccPublisherClient']]],
   ['smaccrvizdisplay',['SmaccRvizDisplay',['../classsmacc__rviz__plugin_1_1SmaccRvizDisplay.html#a57d912b6eeec19a0654546bb011fb593',1,'smacc_rviz_plugin::SmaccRvizDisplay']]],
   ['smaccserviceclient',['SmaccServiceClient',['../classsmacc_1_1SmaccServiceClient.html#a54f6b9cd746c3e6c604afa1c93b990fd',1,'smacc::SmaccServiceClient']]],
   ['smaccstate',['SmaccState',['../classsmacc_1_1SmaccState.html#a2fbeaca0f063a909d17de2c3040c8d17',1,'smacc::SmaccState::SmaccState()=delete'],['../classsmacc_1_1SmaccState.html#adc225018fe91da47e6e9f1d20150b26a',1,'smacc::SmaccState::SmaccState(my_context ctx)']]],
@@ -38,6 +39,6 @@ var searchData=
   ['state_5fmachine_5fvisualization',['state_machine_visualization',['../classsmacc_1_1ISmaccStateMachine.html#ac03029f770422d0ea77ea9856b8cb1a8',1,'smacc::ISmaccStateMachine']]],
   ['static_5fconfigure',['static_configure',['../classsmacc_1_1SmaccState.html#a3e335f3290e4968db0c8e22bf88356b7',1,'smacc::SmaccState']]],
   ['static_5fcreatelogicunit',['static_createLogicUnit',['../classsmacc_1_1SmaccState.html#a6fc90cf59c60c749e82f49aafb079b23',1,'smacc::SmaccState']]],
-  ['stop',['stop',['../classsmacc_1_1SignalDetector.html#a536ea005ea4ef4632c0c9c1c62c557a3',1,'smacc::SignalDetector::stop()'],['../classsmacc_1_1ISmaccStateMachine.html#a8f353fcf0686b1dacb57458da882c89b',1,'smacc::ISmaccStateMachine::Stop()'],['../structsmacc_1_1SmaccStateMachineBase.html#a9c7c7b8d814a8cb1b741c7675dc2a9f7',1,'smacc::SmaccStateMachineBase::Stop()']]],
+  ['stop',['Stop',['../classsmacc_1_1ISmaccStateMachine.html#a8f353fcf0686b1dacb57458da882c89b',1,'smacc::ISmaccStateMachine::Stop()'],['../structsmacc_1_1SmaccStateMachineBase.html#a9c7c7b8d814a8cb1b741c7675dc2a9f7',1,'smacc::SmaccStateMachineBase::Stop()'],['../classsmacc_1_1SignalDetector.html#a536ea005ea4ef4632c0c9c1c62c557a3',1,'smacc::SignalDetector::stop()']]],
   ['subscribe',['subscribe',['../classsmacc__rviz__plugin_1_1SmaccRvizDisplay.html#ad774027ba3eda277c991619332495cbb',1,'smacc_rviz_plugin::SmaccRvizDisplay']]]
 ];

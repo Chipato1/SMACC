@@ -122,6 +122,9 @@ Collaboration diagram for ros_publisher_client::CbDefaultPublishLoop:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a281a7385dfb191207657c9c90f999a23"><td class="memTemplParams" colspan="2">template&lt;typename RosMsgType &gt; </td></tr>
+<tr class="memitem:a281a7385dfb191207657c9c90f999a23"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classros__publisher__client_1_1CbDefaultPublishLoop.html#a281a7385dfb191207657c9c90f999a23">SetLoopMessage</a> (RosMsgType &amp;msg)</td></tr>
+<tr class="separator:a281a7385dfb191207657c9c90f999a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4d12184e4d5fb8cab0eb34e60757739"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classros__publisher__client_1_1CbDefaultPublishLoop.html#ae4d12184e4d5fb8cab0eb34e60757739">onEntry</a> ()</td></tr>
 <tr class="separator:ae4d12184e4d5fb8cab0eb34e60757739"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac7546e32e37fd833eac47d3976463b3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classros__publisher__client_1_1CbDefaultPublishLoop.html#aac7546e32e37fd833eac47d3976463b3">update</a> ()</td></tr>
@@ -160,7 +163,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="cb__default__publish__loop_8h_source.html#l00008">8</a> of file <a class="el" href="cb__default__publish__loop_8h_source.html">cb_default_publish_loop.h</a>.</p>
+<p>Definition at line <a class="el" href="cb__default__publish__loop_8h_source.html#l00009">9</a> of file <a class="el" href="cb__default__publish__loop_8h_source.html">cb_default_publish_loop.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ae4d12184e4d5fb8cab0eb34e60757739"></a>
 <div class="memitem">
@@ -185,8 +188,36 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classsmacc_1_1SmaccClientBehavior.html#a7962382f93987c720ad432fef55b123f">smacc::SmaccClientBehavior</a>.</p>
 
-<p>Definition at line <a class="el" href="cb__default__publish__loop_8h_source.html#l00012">12</a> of file <a class="el" href="cb__default__publish__loop_8h_source.html">cb_default_publish_loop.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="cb__default__publish__loop_8h_source.html#l00019">19</a> of file <a class="el" href="cb__default__publish__loop_8h_source.html">cb_default_publish_loop.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a281a7385dfb191207657c9c90f999a23"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RosMsgType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ros_publisher_client::CbDefaultPublishLoop::SetLoopMessage </td>
+          <td>(</td>
+          <td class="paramtype">RosMsgType &amp;&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cb__default__publish__loop_8h_source.html#l00014">14</a> of file <a class="el" href="cb__default__publish__loop_8h_source.html">cb_default_publish_loop.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aac7546e32e37fd833eac47d3976463b3"></a>
@@ -212,8 +243,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classsmacc_1_1ISmaccUpdatable.html#a84ee0520cbefdb1d412bed54650b028e">smacc::ISmaccUpdatable</a>.</p>
 
-<p>Definition at line <a class="el" href="cb__default__publish__loop_8h_source.html#l00016">16</a> of file <a class="el" href="cb__default__publish__loop_8h_source.html">cb_default_publish_loop.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="cb__default__publish__loop_8h_source.html#l00023">23</a> of file <a class="el" href="cb__default__publish__loop_8h_source.html">cb_default_publish_loop.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

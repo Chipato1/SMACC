@@ -17,7 +17,7 @@ var searchData=
   ['to',['TO',['../LICENSE_8txt.html#a2c6391e9fede2624d7b114e2961298af',1,'LICENSE.txt']]],
   ['toolactionclient_5f',['toolActionClient_',['../classsm__dance__bot_1_1tool__client_1_1CbToolStart.html#af25839ca32b7478b30f3c42356a417bf',1,'sm_dance_bot::tool_client::CbToolStart::toolActionClient_()'],['../classsm__dance__bot_1_1tool__client_1_1CbToolStop.html#a24bc2a097e7c8ab92c7a7a539720db17',1,'sm_dance_bot::tool_client::CbToolStop::toolActionClient_()']]],
   ['topic_5fproperty_5f',['topic_property_',['../classsmacc__rviz__plugin_1_1SmaccRvizDisplay.html#ad81e5239e1343b2ba01ee16d1f010932',1,'smacc_rviz_plugin::SmaccRvizDisplay']]],
-  ['topicname',['topicName',['../classsmacc_1_1SmaccPublisherClient.html#a513289e0a918f4e69ca9a93e82349965',1,'smacc::SmaccPublisherClient::topicName()'],['../classsmacc_1_1SmaccSubscriberClient.html#ac062907e834aa8e4ca7964fe2035edf7',1,'smacc::SmaccSubscriberClient::topicName()']]],
+  ['topicname',['topicName',['../classsmacc_1_1SmaccPublisherClient.html#a4b8401543c3d532e81453c9106ddaefc',1,'smacc::SmaccPublisherClient::topicName()'],['../classsmacc_1_1SmaccSubscriberClient.html#ac062907e834aa8e4ca7964fe2035edf7',1,'smacc::SmaccSubscriberClient::topicName()']]],
   ['transitionhistoryservice_5f',['transitionHistoryService_',['../classsmacc_1_1ISmaccStateMachine.html#a73e2a7ca89c3d807eafe5cfb1e86ea05',1,'smacc::ISmaccStateMachine']]],
   ['transitionloghistory_5f',['transitionLogHistory_',['../classsmacc_1_1ISmaccStateMachine.html#af682d5fce5bb7c959e2b8814dae50023',1,'smacc::ISmaccStateMachine']]],
   ['transitionlogpub_5f',['transitionLogPub_',['../classsmacc_1_1ISmaccStateMachine.html#acc42eb050325c1edc77d81675fb1286a',1,'smacc::ISmaccStateMachine']]],

@@ -14,7 +14,6 @@ var searchData=
   ['smacceventinfo',['SmaccEventInfo',['../structsmacc_1_1SmaccEventInfo.html',1,'smacc']]],
   ['smacclogicunitinfo',['SmaccLogicUnitInfo',['../structsmacc_1_1SmaccLogicUnitInfo.html',1,'smacc']]],
   ['smaccpublisherclient',['SmaccPublisherClient',['../classsmacc_1_1SmaccPublisherClient.html',1,'smacc']]],
-  ['smaccpublisherclient_3c_20std_5fmsgs_3a_3astring_20_3e',['SmaccPublisherClient&lt; std_msgs::String &gt;',['../classsmacc_1_1SmaccPublisherClient.html',1,'smacc']]],
   ['smaccrvizdisplay',['SmaccRvizDisplay',['../classsmacc__rviz__plugin_1_1SmaccRvizDisplay.html',1,'smacc_rviz_plugin']]],
   ['smaccserviceclient',['SmaccServiceClient',['../classsmacc_1_1SmaccServiceClient.html',1,'smacc']]],
   ['smaccserviceclient_3c_20std_5fsrvs_3a_3asetbool_20_3e',['SmaccServiceClient&lt; std_srvs::SetBool &gt;',['../classsmacc_1_1SmaccServiceClient.html',1,'smacc']]],

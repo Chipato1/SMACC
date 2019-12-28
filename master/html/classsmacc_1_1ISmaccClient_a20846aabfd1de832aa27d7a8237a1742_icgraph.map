@@ -1,4 +1,4 @@
 <map id="smacc::ISmaccClient::getName" name="smacc::ISmaccClient::getName">
-<area shape="rect" id="node2" href="$classsmacc_1_1SmaccServiceClient.html#a9ac26f1ca1e661e6b393ce7605166bdc" title="smacc::SmaccServiceClient\l\&lt; std_srvs::SetBool \&gt;::\linitialize" alt="" coords="218,5,417,61"/>
-<area shape="rect" id="node3" href="$classsmacc_1_1SmaccPublisherClient.html#ac1b9a683a411f4957411fcbdb3980233" title="smacc::SmaccPublisherClient\l\&lt; std_msgs::String \&gt;::initialize" alt="" coords="208,85,427,126"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1SmaccPublisherClient.html#a29e70233aebc34245ab5927534ca6291" title="smacc::SmaccPublisherClient\l::configureMessageType" alt="" coords="208,5,419,47"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1SmaccServiceClient.html#a9ac26f1ca1e661e6b393ce7605166bdc" title="smacc::SmaccServiceClient\l\&lt; std_srvs::SetBool \&gt;::\linitialize" alt="" coords="214,70,413,126"/>
 </map>
