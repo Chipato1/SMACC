@@ -13,7 +13,7 @@ var searchData=
   ['clients_5f',['clients_',['../classsmacc_1_1Orthogonal.html#a361fd1c4a5b0e6eadd55e919c19969cc',1,'smacc::Orthogonal']]],
   ['clkeyboard_5f',['ClKeyboard_',['../classsm__three__some_1_1keyboard__client_1_1CbDefaultKeyboardBehavior.html#ade54c021bbc1675dfc2a599410338f39',1,'sm_three_some::keyboard_client::CbDefaultKeyboardBehavior']]],
   ['cmd_5fserver_5f',['cmd_server_',['../classmove__base__z__client_1_1backward__global__planner_1_1BackwardGlobalPlanner.html#a470ef57fa2c4caf288ef4ba2934f44e2',1,'move_base_z_client::backward_global_planner::BackwardGlobalPlanner']]],
-  ['codedtype',['codedtype',['../classsmacc_1_1TypeInfo.html#acdd24c44f12bccdaba8d8c52c9e6d47c',1,'smacc::TypeInfo::codedtype()'],['../classregex__template_1_1TypeInfo.html#a40ab22efd190d9583e0d57d6c6bb3112',1,'regex_template.TypeInfo.codedtype()']]],
+  ['codedtype',['codedtype',['../classsmacc_1_1TypeInfo.html#acdd24c44f12bccdaba8d8c52c9e6d47c',1,'smacc::TypeInfo']]],
   ['components_5f',['components_',['../classsmacc_1_1ISmaccClient.html#ab983e85d296c9660f5943c1d511634ce',1,'smacc::ISmaccClient']]],
   ['conditionflag',['conditionFlag',['../classsmacc_1_1LuConditional.html#aa4ba603a8ae5544b298ec6254c103b56',1,'smacc::LuConditional']]],
   ['contract',['CONTRACT',['../LICENSE_8txt.html#aaa5eea22ce8028d9371e003fd23516c9',1,'LICENSE.txt']]],

@@ -140,7 +140,7 @@ Definition at line 30 of file string\+\_\+type\+\_\+walker.\+h.
 
 
 
-References finaltype, get\+Type\+Info\+From\+String(), get\+Type\+Info\+From\+Typeid(), and regex\+\_\+template\+::inputtext.
+References finaltype, get\+Type\+Info\+From\+String(), and get\+Type\+Info\+From\+Typeid().
 
 
 \begin{DoxyCode}
@@ -174,7 +174,7 @@ Definition at line 59 of file string\+\_\+type\+\_\+walker.\+cpp.
 
 
 
-References finaltype, regex\+\_\+template\+::inputtext, smacc\+::replace(), smacc\+::replace\+\_\+back(), tkey, and type\+Info\+Database.
+References finaltype, smacc\+::replace(), smacc\+::replace\+\_\+back(), tkey, and type\+Info\+Database.
 
 
 
@@ -183,14 +183,14 @@ Referenced by get\+Non\+Templatetypename(), get\+Type\+Info\+From\+Typeid(), and
 
 \begin{DoxyCode}
 60 \{
-61     \textcolor{keyword}{auto} it = \hyperlink{classsmacc_1_1TypeInfo_a5dafa5950a93f6cd5b88d5ea573a504c}{typeInfoDatabase}.find(\hyperlink{namespaceregex__template_a5e23ed7a5dae7db8eb3cdae8fb3e3230}{inputtext});
+61     \textcolor{keyword}{auto} it = \hyperlink{classsmacc_1_1TypeInfo_a5dafa5950a93f6cd5b88d5ea573a504c}{typeInfoDatabase}.find(inputtext);
 62     
 63     \textcolor{keywordflow}{if}(it != \hyperlink{classsmacc_1_1TypeInfo_a5dafa5950a93f6cd5b88d5ea573a504c}{typeInfoDatabase}.end())
-64         \textcolor{keywordflow}{return} \hyperlink{classsmacc_1_1TypeInfo_a5dafa5950a93f6cd5b88d5ea573a504c}{typeInfoDatabase}[\hyperlink{namespaceregex__template_a5e23ed7a5dae7db8eb3cdae8fb3e3230}{inputtext}];
+64         \textcolor{keywordflow}{return} \hyperlink{classsmacc_1_1TypeInfo_a5dafa5950a93f6cd5b88d5ea573a504c}{typeInfoDatabase}[inputtext];
 65 
 66     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{false};
 67     \textcolor{keywordtype}{int} typecount = 0;
-68     std::string originalinputtext = \hyperlink{namespaceregex__template_a5e23ed7a5dae7db8eb3cdae8fb3e3230}{inputtext};
+68     std::string originalinputtext = inputtext;
 69     std::map<std::string, std::string> typesdict;
 70 
 71     \textcolor{keywordflow}{while} (!ok)
@@ -205,7 +205,7 @@ Referenced by get\+Non\+Templatetypename(), get\+Type\+Info\+From\+Typeid(), and
 80         std::regex regex(simpletypeRE); \textcolor{comment}{// matches words beginning by "sub"}
 81 
 82         \textcolor{comment}{//matches = [m for m in enumerate(re.finditer(simpletypeRE, inputtext))]}
-83         std::regex\_search(\hyperlink{namespaceregex__template_a5e23ed7a5dae7db8eb3cdae8fb3e3230}{inputtext}, matches, regex);
+83         std::regex\_search(inputtext, matches, regex);
 84 
 85         \textcolor{comment}{//   if len(matches) == 0:}
 86         \textcolor{comment}{//     if len(typesdict) == 0:}
@@ -218,7 +218,7 @@ Referenced by get\+Non\+Templatetypename(), get\+Type\+Info\+From\+Typeid(), and
 93             \textcolor{keywordflow}{if} (typesdict.size() == 0)
 94             \{
 95                 \textcolor{keyword}{auto} \hyperlink{classsmacc_1_1TypeInfo_ab61d47adea9dbc8b678e06f627d6b1a3}{tkey} = \textcolor{stringliteral}{"$T"} + std::to\_string(typecount);
-96                 typesdict[\hyperlink{classsmacc_1_1TypeInfo_ab61d47adea9dbc8b678e06f627d6b1a3}{tkey}] = \hyperlink{namespaceregex__template_a5e23ed7a5dae7db8eb3cdae8fb3e3230}{inputtext};
+96                 typesdict[\hyperlink{classsmacc_1_1TypeInfo_ab61d47adea9dbc8b678e06f627d6b1a3}{tkey}] = inputtext;
 97             \}
 98             \textcolor{keywordflow}{break};
 99         \}
@@ -236,7 +236,7 @@ Referenced by get\+Non\+Templatetypename(), get\+Type\+Info\+From\+Typeid(), and
 111         \{
 112             std::string tstr = m;
 113             \textcolor{keyword}{auto} \hyperlink{classsmacc_1_1TypeInfo_ab61d47adea9dbc8b678e06f627d6b1a3}{tkey} = \textcolor{stringliteral}{"$T"} + std::to\_string(typecount);
-114             \hyperlink{namespacesmacc_af160907752916d32be9c40dc95cd29e0}{replace}(\hyperlink{namespaceregex__template_a5e23ed7a5dae7db8eb3cdae8fb3e3230}{inputtext}, tstr, \hyperlink{classsmacc_1_1TypeInfo_ab61d47adea9dbc8b678e06f627d6b1a3}{tkey});
+114             \hyperlink{namespacesmacc_af160907752916d32be9c40dc95cd29e0}{replace}(inputtext, tstr, \hyperlink{classsmacc_1_1TypeInfo_ab61d47adea9dbc8b678e06f627d6b1a3}{tkey});
 115 
 116             \textcolor{comment}{//std::cout << "updating input text:" << inputtext << std::endl;}
 117 
@@ -361,7 +361,7 @@ Referenced by get\+Non\+Templatetypename(), get\+Type\+Info\+From\+Typeid(), and
 236         ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"------------------"});
 237     \}
 238 
-239     ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"ADDING TYPE TO DATABASE: "}<< \hyperlink{namespaceregex__template_a5e23ed7a5dae7db8eb3cdae8fb3e3230}{inputtext});
+239     ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"ADDING TYPE TO DATABASE: "}<< inputtext);
 240     ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"Current Database"});
 241     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& en : \hyperlink{classsmacc_1_1TypeInfo_a5dafa5950a93f6cd5b88d5ea573a504c}{typeInfoDatabase})
 242     \{
@@ -523,7 +523,7 @@ Definition at line 55 of file string\+\_\+type\+\_\+walker.\+h.
 
 
 
-Referenced by regex\+\_\+template.\+Type\+Info\+::\+\_\+\+\_\+str\+\_\+\+\_\+(), get\+Full\+Name(), get\+Non\+Templatetypename(), get\+Type\+Info\+From\+String(), to\+String(), and Type\+Info().
+Referenced by get\+Full\+Name(), get\+Non\+Templatetypename(), get\+Type\+Info\+From\+String(), to\+String(), and Type\+Info().
 
 \index{smacc\+::\+Type\+Info@{smacc\+::\+Type\+Info}!template\+Parameters@{template\+Parameters}}
 \index{template\+Parameters@{template\+Parameters}!smacc\+::\+Type\+Info@{smacc\+::\+Type\+Info}}
@@ -541,7 +541,7 @@ Definition at line 53 of file string\+\_\+type\+\_\+walker.\+h.
 
 
 
-Referenced by regex\+\_\+template.\+Type\+Info\+::\+\_\+\+\_\+str\+\_\+\+\_\+(), get\+Type\+Info\+From\+String(), to\+String(), and Type\+Info().
+Referenced by get\+Type\+Info\+From\+String(), to\+String(), and Type\+Info().
 
 \index{smacc\+::\+Type\+Info@{smacc\+::\+Type\+Info}!type\+Info\+Database@{type\+Info\+Database}}
 \index{type\+Info\+Database@{type\+Info\+Database}!smacc\+::\+Type\+Info@{smacc\+::\+Type\+Info}}
