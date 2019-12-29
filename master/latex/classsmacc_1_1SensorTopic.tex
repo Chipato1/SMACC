@@ -120,19 +120,19 @@ Definition at line 34 of file cb\+\_\+sensor\+\_\+base.\+h.
 36     \hyperlink{classsmacc_1_1SensorTopic_ad9c462b8458e9b3c4b38404adbb5f067}{deferedEventPropagation} = [=]() \{
 37       \textcolor{comment}{// just propagate the client events from this client behavior source.}
 38       \hyperlink{classsmacc_1_1SensorTopic_a2700ebd50bc0f4eb1519ecf2d9b8696d}{c1\_} = \hyperlink{classsmacc_1_1SensorTopic_affbf010b80f779369dd14d786c1ed9e3}{sensor\_}->onMessageReceived.connect(
-39           [\textcolor{keyword}{this}](\textcolor{keyword}{auto} &\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{
+39           [\textcolor{keyword}{this}](\textcolor{keyword}{auto} &msg) \{
 40             \textcolor{keyword}{auto} *ev2 = \textcolor{keyword}{new} EvTopicMessage<TDerived, TObjectTag>();
 41             this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a3152cd2215ebc0e387a8a546de07cded}{postEvent}(ev2);
 42           \});
 43 
 44       \hyperlink{classsmacc_1_1SensorTopic_a99fd05ee6d84ddeb4ffa7ef51ddc0567}{c2\_} = \hyperlink{classsmacc_1_1SensorTopic_affbf010b80f779369dd14d786c1ed9e3}{sensor\_}->onFirstMessageReceived.connect(
-45           [\textcolor{keyword}{this}](\textcolor{keyword}{auto} &\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{
+45           [\textcolor{keyword}{this}](\textcolor{keyword}{auto} &msg) \{
 46             \textcolor{keyword}{auto} \textcolor{keyword}{event} = \textcolor{keyword}{new} EvTopicInitialMessage<TDerived, TObjectTag>();
 47             this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a3152cd2215ebc0e387a8a546de07cded}{postEvent}(event);
 48           \});
 49 
 50       \hyperlink{classsmacc_1_1SensorTopic_ae95d0b3f4d9d419b6c4367265c002826}{c3\_} = \hyperlink{classsmacc_1_1SensorTopic_affbf010b80f779369dd14d786c1ed9e3}{sensor\_}->onMessageTimeout.connect(
-51           [\textcolor{keyword}{this}](\textcolor{keyword}{auto} &\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{
+51           [\textcolor{keyword}{this}](\textcolor{keyword}{auto} &msg) \{
 52             \textcolor{keyword}{auto} \textcolor{keyword}{event} = \textcolor{keyword}{new} EvTopicMessageTimeout<TDerived, TObjectTag>();
 53             this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a3152cd2215ebc0e387a8a546de07cded}{postEvent}(event);
 54           \});

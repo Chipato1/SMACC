@@ -200,7 +200,7 @@ Referenced by subscribe().
 136 \{
 137   std::string concatenated;
 138 
-139   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& state: \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}->current\_states)
+139   \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}& state: msg->current\_states)
 140   \{
 141     concatenated = concatenated + std::string(\textcolor{stringliteral}{"/"})+ state;
 142   \}

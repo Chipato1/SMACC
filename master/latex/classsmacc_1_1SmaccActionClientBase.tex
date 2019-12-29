@@ -52,19 +52,19 @@ virtual void \hyperlink{classsmacc_1_1SmaccActionClientBase_a0224d7482b50a706f99
 \item 
 {\footnotesize template$<$typename T\+Object\+Tag , typename T\+Derived $>$ }\\void \hyperlink{classsmacc_1_1SmaccActionClientBase_a2b73288ec8aeb2622164d2f814654a97}{configure\+Event\+Source\+Types} ()
 \item 
-{\footnotesize template$<$typename T $>$ }\\boost\+::signals2\+::connection \hyperlink{classsmacc_1_1SmaccActionClientBase_ae84ce50f0bdd42c5d32a631b4e9b8b6a}{on\+Succeeded} (void(T\+::$\ast$callback)(Result\+Const\+Ptr \&), T $\ast$\hyperlink{classobject}{object})
+{\footnotesize template$<$typename T $>$ }\\boost\+::signals2\+::connection \hyperlink{classsmacc_1_1SmaccActionClientBase_ae84ce50f0bdd42c5d32a631b4e9b8b6a}{on\+Succeeded} (void(T\+::$\ast$callback)(Result\+Const\+Ptr \&), T $\ast$object)
 \item 
 {\footnotesize template$<$typename T $>$ }\\boost\+::signals2\+::connection \hyperlink{classsmacc_1_1SmaccActionClientBase_a55f2d50bf0cebd335a281ce83038dbe5}{on\+Succeeded} (std\+::function$<$ void(Result\+Const\+Ptr \&)$>$ callback)
 \item 
-{\footnotesize template$<$typename T $>$ }\\boost\+::signals2\+::connection \hyperlink{classsmacc_1_1SmaccActionClientBase_a44132eadae8bec5188cf6952dabb23fa}{on\+Aborted} (void(T\+::$\ast$callback)(Result\+Const\+Ptr \&), T $\ast$\hyperlink{classobject}{object})
+{\footnotesize template$<$typename T $>$ }\\boost\+::signals2\+::connection \hyperlink{classsmacc_1_1SmaccActionClientBase_a44132eadae8bec5188cf6952dabb23fa}{on\+Aborted} (void(T\+::$\ast$callback)(Result\+Const\+Ptr \&), T $\ast$object)
 \item 
 {\footnotesize template$<$typename T $>$ }\\boost\+::signals2\+::connection \hyperlink{classsmacc_1_1SmaccActionClientBase_a462db32eaf897ba7bb0dbb38fe14d57f}{on\+Aborted} (std\+::function$<$ void(Result\+Const\+Ptr \&)$>$ callback)
 \item 
-{\footnotesize template$<$typename T $>$ }\\boost\+::signals2\+::connection \hyperlink{classsmacc_1_1SmaccActionClientBase_a66aa6f2ae9772ab724d0944f06f85f05}{on\+Preempted} (void(T\+::$\ast$callback)(Result\+Const\+Ptr \&), T $\ast$\hyperlink{classobject}{object})
+{\footnotesize template$<$typename T $>$ }\\boost\+::signals2\+::connection \hyperlink{classsmacc_1_1SmaccActionClientBase_a66aa6f2ae9772ab724d0944f06f85f05}{on\+Preempted} (void(T\+::$\ast$callback)(Result\+Const\+Ptr \&), T $\ast$object)
 \item 
 {\footnotesize template$<$typename T $>$ }\\boost\+::signals2\+::connection \hyperlink{classsmacc_1_1SmaccActionClientBase_a5b2025b38140cbfe473a1605ad3531f8}{on\+Preempted} (std\+::function$<$ void(Result\+Const\+Ptr \&)$>$ callback)
 \item 
-{\footnotesize template$<$typename T $>$ }\\boost\+::signals2\+::connection \hyperlink{classsmacc_1_1SmaccActionClientBase_a68c63078788107776b0a4a280f7580a6}{on\+Rejected} (void(T\+::$\ast$callback)(Result\+Const\+Ptr \&), T $\ast$\hyperlink{classobject}{object})
+{\footnotesize template$<$typename T $>$ }\\boost\+::signals2\+::connection \hyperlink{classsmacc_1_1SmaccActionClientBase_a68c63078788107776b0a4a280f7580a6}{on\+Rejected} (void(T\+::$\ast$callback)(Result\+Const\+Ptr \&), T $\ast$object)
 \item 
 {\footnotesize template$<$typename T $>$ }\\boost\+::signals2\+::connection \hyperlink{classsmacc_1_1SmaccActionClientBase_a6c2f7d85c0e60285af9af52a7f79fe24}{on\+Rejected} (std\+::function$<$ void(Result\+Const\+Ptr \&)$>$ callback)
 \item 
@@ -251,18 +251,18 @@ Definition at line 85 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 \begin{DoxyCode}
 86     \{
 87         \textcolor{comment}{// we create here all the event factory functions capturing the TObjectTag}
-88         \hyperlink{classsmacc_1_1SmaccActionClientBase_afa4343d33f5c10b54a98c875b5a37b04}{postSuccessEvent} = [=](\textcolor{keyword}{auto} \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{ this->
-      postResultEvent<EvActionSucceeded<TDerived, TObjectTag>>(\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}); \};
-89         \hyperlink{classsmacc_1_1SmaccActionClientBase_ae0ec1c3fcea9712b35bc09686687c251}{postAbortedEvent} = [=](\textcolor{keyword}{auto} \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{ this->
-      postResultEvent<EvActionAborted<TDerived, TObjectTag>>(\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}); \};
-90         \hyperlink{classsmacc_1_1SmaccActionClientBase_ab573e9d9fecf76e8154fc170615e88cb}{postPreemptedEvent} = [=](\textcolor{keyword}{auto} \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{ this->
-      postResultEvent<EvActionPreempted<TDerived, TObjectTag>>(\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}); \};
-91         \hyperlink{classsmacc_1_1SmaccActionClientBase_ac6e3851af2c76823d41219efbf2df480}{postRejectedEvent} = [=](\textcolor{keyword}{auto} \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{ this->
-      postResultEvent<EvActionRejected<TDerived, TObjectTag>>(\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}); \};
-92         \hyperlink{classsmacc_1_1SmaccActionClientBase_a00b28b8a2ea8bddbbbf3e0a1d80b20a1}{postFeedbackEvent} = [=](\textcolor{keyword}{auto} \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{
+88         \hyperlink{classsmacc_1_1SmaccActionClientBase_afa4343d33f5c10b54a98c875b5a37b04}{postSuccessEvent} = [=](\textcolor{keyword}{auto} msg) \{ this->
+      postResultEvent<EvActionSucceeded<TDerived, TObjectTag>>(msg); \};
+89         \hyperlink{classsmacc_1_1SmaccActionClientBase_ae0ec1c3fcea9712b35bc09686687c251}{postAbortedEvent} = [=](\textcolor{keyword}{auto} msg) \{ this->postResultEvent<EvActionAborted<TDerived,
+       TObjectTag>>(msg); \};
+90         \hyperlink{classsmacc_1_1SmaccActionClientBase_ab573e9d9fecf76e8154fc170615e88cb}{postPreemptedEvent} = [=](\textcolor{keyword}{auto} msg) \{ this->
+      postResultEvent<EvActionPreempted<TDerived, TObjectTag>>(msg); \};
+91         \hyperlink{classsmacc_1_1SmaccActionClientBase_ac6e3851af2c76823d41219efbf2df480}{postRejectedEvent} = [=](\textcolor{keyword}{auto} msg) \{ this->
+      postResultEvent<EvActionRejected<TDerived, TObjectTag>>(msg); \};
+92         \hyperlink{classsmacc_1_1SmaccActionClientBase_a00b28b8a2ea8bddbbbf3e0a1d80b20a1}{postFeedbackEvent} = [=](\textcolor{keyword}{auto} msg) \{
 93             \textcolor{keyword}{auto} actionFeedbackEvent = \textcolor{keyword}{new} EvActionFeedback<Feedback, TObjectTag>();
 94             actionFeedbackEvent->client = \textcolor{keyword}{this};
-95             actionFeedbackEvent->feedbackMessage = *\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg};
+95             actionFeedbackEvent->feedbackMessage = *msg;
 96             this->\hyperlink{classsmacc_1_1ISmaccClient_a21a79203cb44fc717d4d977c190327c6}{postEvent}(actionFeedbackEvent);
 97             ROS\_DEBUG(\textcolor{stringliteral}{"[%s] FEEDBACK EVENT"}, \hyperlink{namespacesmacc_a792e7a3ea0843e87543a465b446ae730}{demangleType}(\textcolor{keyword}{typeid}(*\textcolor{keyword}{this})).c\_str());
 98         \};

@@ -108,7 +108,7 @@ Collaboration diagram for smacc::Bind&lt; 1 &gt;:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab1ef45ad9d56f707284a5fcb166646ee"><td class="memTemplParams" colspan="2">template&lt;typename TSmaccSignal , typename TMemberFunctionPrototype , typename TSmaccObjectType &gt; </td></tr>
-<tr class="memitem:ab1ef45ad9d56f707284a5fcb166646ee"><td class="memTemplItemLeft" align="right" valign="top">boost::signals2::connection&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structsmacc_1_1Bind_3_011_01_4.html#ab1ef45ad9d56f707284a5fcb166646ee">bindaux</a> (TSmaccSignal &amp;signal, TMemberFunctionPrototype callback, TSmaccObjectType *<a class="el" href="classobject.html">object</a>)</td></tr>
+<tr class="memitem:ab1ef45ad9d56f707284a5fcb166646ee"><td class="memTemplItemLeft" align="right" valign="top">boost::signals2::connection&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structsmacc_1_1Bind_3_011_01_4.html#ab1ef45ad9d56f707284a5fcb166646ee">bindaux</a> (TSmaccSignal &amp;signal, TMemberFunctionPrototype callback, TSmaccObjectType *object)</td></tr>
 <tr class="separator:ab1ef45ad9d56f707284a5fcb166646ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -159,8 +159,7 @@ template&lt;typename TSmaccSignal , typename TMemberFunctionPrototype , typename
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="smacc__state__machine__impl_8h_source.html#l00233">233</a> of file <a class="el" href="smacc__state__machine__impl_8h_source.html">smacc_state_machine_impl.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    {</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordflow">return</span> signal.connect([=]() { <span class="keywordflow">return</span> (<a class="code" href="classobject.html">object</a>-&gt;*callback)(); });</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    }</div><div class="ttc" id="classobject_html"><div class="ttname"><a href="classobject.html">object</a></div></div>
-</div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    {</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordflow">return</span> signal.connect([=]() { <span class="keywordflow">return</span> (object-&gt;*callback)(); });</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>

@@ -15,6 +15,5 @@ var searchData=
   ['waypoints_5fnavigator_2eh',['waypoints_navigator.h',['../waypoints__navigator_8h.html',1,'']]],
   ['waypointseventdispatcher',['waypointsEventDispatcher',['../classmove__base__z__client_1_1WaypointNavigator.html#a488a89db6cd20bc12548ac454254829f',1,'move_base_z_client::WaypointNavigator']]],
   ['workingmode',['WorkingMode',['../namespacemove__base__z__client_1_1odom__tracker.html#adf3e5fc3644563922cc64a20a0197224',1,'move_base_z_client::odom_tracker']]],
-  ['workingmode_5f',['workingMode_',['../classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#a39c97d7bf6003fde62e0bed1a221e3f0',1,'move_base_z_client::odom_tracker::OdomTracker']]],
-  ['write_5fto_5ffile',['write_to_file',['../namespacerosdoc__lite_1_1doxygenator.html#ac4fd4990b71ec3d49d1639ef63bd0630',1,'rosdoc_lite::doxygenator']]]
+  ['workingmode_5f',['workingMode_',['../classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#a39c97d7bf6003fde62e0bed1a221e3f0',1,'move_base_z_client::odom_tracker::OdomTracker']]]
 ];

@@ -75,7 +75,7 @@ Definition at line 22 of file cb\+\_\+custom\+\_\+condition\+\_\+temperature\+\_
 
 \begin{DoxyCode}
 23   \{
-24     \textcolor{keywordflow}{if} (\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}.temperature > 40)
+24     \textcolor{keywordflow}{if} (msg.temperature > 40)
 25     \{
 26       \textcolor{keyword}{auto} ev = \textcolor{keyword}{new} EvCustomTemperatureAlert();
 27       this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a3152cd2215ebc0e387a8a546de07cded}{postEvent}(ev);

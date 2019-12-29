@@ -151,7 +151,7 @@ Definition at line 49 of file sensor\+\_\+client.\+h.
 53       \hyperlink{classsmacc_1_1SmaccSubscriberClient_acfa97685ecc588fe61eb57002354b58a}{SmaccSubscriberClient<MessageType>::initialize}();
 54 
 55       this->\hyperlink{classsmacc_1_1SmaccSubscriberClient_a7635fbb013c6fdbc3998da11b44766bb}{onMessageReceived}.connect(
-56           [\textcolor{keyword}{this}](\textcolor{keyword}{auto} \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{
+56           [\textcolor{keyword}{this}](\textcolor{keyword}{auto} msg) \{
 57             \textcolor{comment}{//reseting the timer}
 58             this->\hyperlink{classsmacc_1_1SensorClient_a5a82e2fa1f0ccfe2564125fae2f9783a}{timeoutTimer\_}.stop();
 59             this->\hyperlink{classsmacc_1_1SensorClient_a5a82e2fa1f0ccfe2564125fae2f9783a}{timeoutTimer\_}.start();

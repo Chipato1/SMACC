@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['server',['Server',['../odom__tracker__node_8cpp.html#a9884574d0480319430f628f79afc0500',1,'Server():&#160;odom_tracker_node.cpp'],['../tool__action__server__node_8cpp.html#ab5d66ae48b02f831fb527e5260ce1ed2',1,'Server():&#160;tool_action_server_node.cpp']]],
+  ['server',['Server',['../odom__tracker__node_8cpp.html#a9884574d0480319430f628f79afc0500',1,'odom_tracker_node.cpp']]],
   ['shallow_5fhistory',['shallow_history',['../structsm__dance__bot_1_1SmDanceBot.html#a780b2408077887cc9c888ed0a95bff68',1,'sm_dance_bot::SmDanceBot']]],
   ['simpleactivecallback',['SimpleActiveCallback',['../classsmacc_1_1SmaccActionClientBase.html#ab99def4cdf0522abaf5a3bf7a444cfcb',1,'smacc::SmaccActionClientBase']]],
   ['simpledonecallback',['SimpleDoneCallback',['../classsmacc_1_1SmaccActionClientBase.html#a185a419026fcdbec9ddf4703a1505524',1,'smacc::SmaccActionClientBase']]],

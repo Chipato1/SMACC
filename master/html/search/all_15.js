@@ -11,6 +11,5 @@ var searchData=
   ['updateforward',['updateForward',['../classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#a12cee73239bc7685c645f8f52859b61f',1,'move_base_z_client::odom_tracker::OdomTracker']]],
   ['updateplanners',['updatePlanners',['../classmove__base__z__client_1_1PlannerSwitcher.html#a189ac8c027169a111c7d8e14d864752f',1,'move_base_z_client::PlannerSwitcher']]],
   ['updatestatusmessage',['updateStatusMessage',['../classsmacc_1_1ISmaccStateMachine.html#ad246a49015fadaeb0b1639d7ab99f7d0',1,'smacc::ISmaccStateMachine']]],
-  ['updatetopic',['updateTopic',['../classsmacc__rviz__plugin_1_1SmaccRvizDisplay.html#adf332ae95bd83969b33ba713a60832fd',1,'smacc_rviz_plugin::SmaccRvizDisplay']]],
-  ['url',['url',['../classrosdoc__lite_1_1rdcore_1_1PackageInformation.html#a0ef2dba844b386398740004bc74d1bce',1,'rosdoc_lite::rdcore::PackageInformation']]]
+  ['updatetopic',['updateTopic',['../classsmacc__rviz__plugin_1_1SmaccRvizDisplay.html#adf332ae95bd83969b33ba713a60832fd',1,'smacc_rviz_plugin::SmaccRvizDisplay']]]
 ];

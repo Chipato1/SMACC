@@ -383,10 +383,10 @@ Definition at line 117 of file smacc\+\_\+state\+\_\+base.\+h.
 118   \{
 119     \textcolor{keyword}{auto} smInfo = this->\hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_a5ec3201cbddab4f062f572fb33021041}{info\_};
 120 
-121     \textcolor{keyword}{auto} \hyperlink{namespacekeyboard__node_aec12217d2be0bbc768f52b63b0673925}{key} = \textcolor{keyword}{typeid}(MostDerived).name();
-122     \textcolor{keywordflow}{if} (smInfo->states.count(\hyperlink{namespacekeyboard__node_aec12217d2be0bbc768f52b63b0673925}{key}))
+121     \textcolor{keyword}{auto} key = \textcolor{keyword}{typeid}(MostDerived).name();
+122     \textcolor{keywordflow}{if} (smInfo->states.count(key))
 123     \{
-124       \textcolor{keywordflow}{return} smInfo->states[\hyperlink{namespacekeyboard__node_aec12217d2be0bbc768f52b63b0673925}{key}]->getFullPath();
+124       \textcolor{keywordflow}{return} smInfo->states[key]->getFullPath();
 125     \}
 126     \textcolor{keywordflow}{else}
 127     \{

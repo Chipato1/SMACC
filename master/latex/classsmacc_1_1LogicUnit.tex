@@ -42,7 +42,7 @@ virtual void \hyperlink{classsmacc_1_1LogicUnit_ade7f409516683f13754943db1081bac
 \item 
 virtual void \hyperlink{classsmacc_1_1LogicUnit_a3a81929b2014b10d0fa28d4bc2d19d9c}{on\+Event\+Notified} (const std\+::type\+\_\+info $\ast$event\+Type)
 \item 
-{\footnotesize template$<$typename T , typename T\+Class $>$ }\\void \hyperlink{classsmacc_1_1LogicUnit_a58683bd62b8100434dd4a2e4df5382b9}{create\+Event\+Callback} (void(T\+Class\+::$\ast$callback)(T $\ast$), T\+Class $\ast$\hyperlink{classobject}{object})
+{\footnotesize template$<$typename T , typename T\+Class $>$ }\\void \hyperlink{classsmacc_1_1LogicUnit_a58683bd62b8100434dd4a2e4df5382b9}{create\+Event\+Callback} (void(T\+Class\+::$\ast$callback)(T $\ast$), T\+Class $\ast$object)
 \item 
 {\footnotesize template$<$typename T $>$ }\\void \hyperlink{classsmacc_1_1LogicUnit_a42103eec6907aaa60f297145ba6ca123}{create\+Event\+Callback} (std\+::function$<$ void(T $\ast$)$>$ callback)
 \item 
@@ -105,16 +105,12 @@ Definition at line 6 of file logic\+\_\+unit\+\_\+base.\+cpp.
 Definition at line 80 of file logic\+\_\+unit\+\_\+base.\+h.
 
 
-
-References keyboard\+\_\+node\+::msg.
-
-
 \begin{DoxyCode}
 81     \{
 82         \textcolor{keyword}{const} \textcolor{keyword}{auto}* eventtype = &\textcolor{keyword}{typeid}(T);
-83         this->\hyperlink{classsmacc_1_1LogicUnit_ad1b222b3b2bb175d9e8166433e434fab}{eventCallbacks\_}[eventtype]= [=](\textcolor{keywordtype}{void}* \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg})
+83         this->\hyperlink{classsmacc_1_1LogicUnit_ad1b222b3b2bb175d9e8166433e434fab}{eventCallbacks\_}[eventtype]= [=](\textcolor{keywordtype}{void}* msg)
 84         \{
-85             T* evptr = (T*)\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg};
+85             T* evptr = (T*)msg;
 86             (\textcolor{keywordtype}{object}->*callback)(evptr);
 87         \};
 88     \}
@@ -131,16 +127,12 @@ References keyboard\+\_\+node\+::msg.
 Definition at line 91 of file logic\+\_\+unit\+\_\+base.\+h.
 
 
-
-References keyboard\+\_\+node\+::msg.
-
-
 \begin{DoxyCode}
 92     \{
 93         \textcolor{keyword}{const} \textcolor{keyword}{auto}* eventtype = &\textcolor{keyword}{typeid}(T);
-94         this->\hyperlink{classsmacc_1_1LogicUnit_ad1b222b3b2bb175d9e8166433e434fab}{eventCallbacks\_}[eventtype]= [=](\textcolor{keywordtype}{void}* \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg})
+94         this->\hyperlink{classsmacc_1_1LogicUnit_ad1b222b3b2bb175d9e8166433e434fab}{eventCallbacks\_}[eventtype]= [=](\textcolor{keywordtype}{void}* msg)
 95         \{
-96             T* evptr = (T*)\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg};
+96             T* evptr = (T*)msg;
 97             callback(evptr);
 98         \};
 99     \}

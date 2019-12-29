@@ -69,7 +69,7 @@ virtual void \hyperlink{classsmacc_1_1ISmaccStateMachine_ac2982c6c8283663e5e1e8a
 \begin{DoxyCompactList}\small\item\em this function should be implemented by the user to create the orthogonals \end{DoxyCompactList}\item 
 \hyperlink{classbool}{bool} \hyperlink{classsmacc_1_1ISmaccStateMachine_a7508f4e398e263cdce308c8074bd5151}{get\+Transition\+Log\+History} (smacc\+\_\+msgs\+::\+Smacc\+Get\+Transition\+History\+::\+Request \&req, smacc\+\_\+msgs\+::\+Smacc\+Get\+Transition\+History\+::\+Response \&res)
 \item 
-{\footnotesize template$<$typename T\+Smacc\+Signal , typename T\+Member\+Function\+Prototype , typename T\+Smacc\+Object\+Type $>$ }\\boost\+::signals2\+::connection \hyperlink{classsmacc_1_1ISmaccStateMachine_adf0f42ade0c65cc471960fe2a7c42da2}{create\+Signal\+Connection} (T\+Smacc\+Signal \&signal, T\+Member\+Function\+Prototype callback, T\+Smacc\+Object\+Type $\ast$\hyperlink{classobject}{object})
+{\footnotesize template$<$typename T\+Smacc\+Signal , typename T\+Member\+Function\+Prototype , typename T\+Smacc\+Object\+Type $>$ }\\boost\+::signals2\+::connection \hyperlink{classsmacc_1_1ISmaccStateMachine_adf0f42ade0c65cc471960fe2a7c42da2}{create\+Signal\+Connection} (T\+Smacc\+Signal \&signal, T\+Member\+Function\+Prototype callback, T\+Smacc\+Object\+Type $\ast$object)
 \item 
 {\footnotesize template$<$typename T\+Smacc\+Signal , typename T\+Member\+Function\+Prototype $>$ }\\boost\+::signals2\+::connection \hyperlink{classsmacc_1_1ISmaccStateMachine_a9248dd505790b9d46d6dbebeb31bf5f8}{create\+Signal\+Connection} (T\+Smacc\+Signal \&signal, T\+Member\+Function\+Prototype callback)
 \item 
@@ -880,7 +880,7 @@ Referenced by create\+Orthogonal(), smacc\+::\+Signal\+Detector\+::poll\+Once(),
 
 \begin{DoxyCode}
 153 \{
-154     ROS\_DEBUG(\textcolor{stringliteral}{"locking state machine: %s"}, \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}.c\_str());
+154     ROS\_DEBUG(\textcolor{stringliteral}{"locking state machine: %s"}, msg.c\_str());
 155     \hyperlink{classsmacc_1_1ISmaccStateMachine_aac785541646e5c517273bf31072505a1}{m\_mutex\_}.lock();
 156 \}
 \end{DoxyCode}
@@ -1808,7 +1808,7 @@ Referenced by create\+Orthogonal(), smacc\+::\+Signal\+Detector\+::poll\+Once(),
 
 \begin{DoxyCode}
 159 \{
-160     ROS\_DEBUG(\textcolor{stringliteral}{"unlocking state machine: %s"}, \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}.c\_str());
+160     ROS\_DEBUG(\textcolor{stringliteral}{"unlocking state machine: %s"}, msg.c\_str());
 161     \hyperlink{classsmacc_1_1ISmaccStateMachine_aac785541646e5c517273bf31072505a1}{m\_mutex\_}.unlock();
 162 \}
 \end{DoxyCode}

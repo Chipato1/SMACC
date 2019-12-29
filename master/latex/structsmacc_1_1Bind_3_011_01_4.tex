@@ -17,7 +17,7 @@ Collaboration diagram for smacc\+:\+:Bind$<$ 1 $>$\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$typename T\+Smacc\+Signal , typename T\+Member\+Function\+Prototype , typename T\+Smacc\+Object\+Type $>$ }\\boost\+::signals2\+::connection \hyperlink{structsmacc_1_1Bind_3_011_01_4_ab1ef45ad9d56f707284a5fcb166646ee}{bindaux} (T\+Smacc\+Signal \&signal, T\+Member\+Function\+Prototype callback, T\+Smacc\+Object\+Type $\ast$\hyperlink{classobject}{object})
+{\footnotesize template$<$typename T\+Smacc\+Signal , typename T\+Member\+Function\+Prototype , typename T\+Smacc\+Object\+Type $>$ }\\boost\+::signals2\+::connection \hyperlink{structsmacc_1_1Bind_3_011_01_4_ab1ef45ad9d56f707284a5fcb166646ee}{bindaux} (T\+Smacc\+Signal \&signal, T\+Member\+Function\+Prototype callback, T\+Smacc\+Object\+Type $\ast$object)
 \end{DoxyCompactItemize}
 
 
@@ -48,7 +48,7 @@ Definition at line 233 of file smacc\+\_\+state\+\_\+machine\+\_\+impl.\+h.
 
 \begin{DoxyCode}
 234     \{
-235         \textcolor{keywordflow}{return} signal.connect([=]() \{ \textcolor{keywordflow}{return} (\hyperlink{classobject}{object}->*callback)(); \});
+235         \textcolor{keywordflow}{return} signal.connect([=]() \{ \textcolor{keywordflow}{return} (object->*callback)(); \});
 236     \}
 \end{DoxyCode}
 

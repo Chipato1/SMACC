@@ -191,7 +191,7 @@ Definition at line 166 of file cl\+\_\+keyboard.\+h.
 
 
 
-References smacc\+::\+Smacc\+Subscriber\+Client$<$ std\+\_\+msgs\+::\+U\+Int16 $>$\+::initialize(), and keyboard\+\_\+node\+::msg.
+References smacc\+::\+Smacc\+Subscriber\+Client$<$ std\+\_\+msgs\+::\+U\+Int16 $>$\+::initialize().
 
 
 \begin{DoxyCode}
@@ -201,9 +201,8 @@ References smacc\+::\+Smacc\+Subscriber\+Client$<$ std\+\_\+msgs\+::\+U\+Int16 $
 169 
 170                 \textcolor{keywordflow}{if} (!this->\hyperlink{classsm__three__some_1_1keyboard__client_1_1ClKeyboard_a27fc5aa7027eda6dddd0756448b48172}{initialized\_})
 171                 \{
-172                         \hyperlink{classsm__three__some_1_1keyboard__client_1_1ClKeyboard_aa55cfcdd60014aed37b8318224e47f9d}{c\_} = this->\hyperlink{classsmacc_1_1SmaccSubscriberClient_a7635fbb013c6fdbc3998da11b44766bb}{onMessageReceived}.connect([\textcolor{keyword}{this}](\textcolor{keyword}{auto} 
-      \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{
-173                                 this->\hyperlink{classsm__three__some_1_1keyboard__client_1_1ClKeyboard_ae5a79e852ff467f4b0c3aa3660ecc4db}{onKeyboardMessage}(\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg});
+172                         \hyperlink{classsm__three__some_1_1keyboard__client_1_1ClKeyboard_aa55cfcdd60014aed37b8318224e47f9d}{c\_} = this->\hyperlink{classsmacc_1_1SmaccSubscriberClient_a7635fbb013c6fdbc3998da11b44766bb}{onMessageReceived}.connect([\textcolor{keyword}{this}](\textcolor{keyword}{auto} msg) \{
+173                                 this->\hyperlink{classsm__three__some_1_1keyboard__client_1_1ClKeyboard_ae5a79e852ff467f4b0c3aa3660ecc4db}{onKeyboardMessage}(msg);
 174 
 175                                 this->\hyperlink{classsm__three__some_1_1keyboard__client_1_1ClKeyboard_a27fc5aa7027eda6dddd0756448b48172}{initialized\_} = \textcolor{keyword}{true};
 176                         \});

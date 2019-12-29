@@ -400,7 +400,7 @@ Definition at line 133 of file odom\+\_\+tracker.\+cpp.
 
 
 
-References base\+Trajectory\+\_\+, keyboard\+\_\+node\+::msg, and robot\+Base\+Path\+Pub\+\_\+.
+References base\+Trajectory\+\_\+, and robot\+Base\+Path\+Pub\+\_\+.
 
 
 
@@ -411,7 +411,7 @@ Referenced by clear\+Path(), and process\+Odometry\+Message().
 134 \{
 135     \textcolor{keywordflow}{if} (\hyperlink{classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_a3eb6ca9be9504dc3c1da949d1e1daeda}{robotBasePathPub\_}->trylock())
 136     \{
-137         nav\_msgs::Path &\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg} = \hyperlink{classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_a3eb6ca9be9504dc3c1da949d1e1daeda}{robotBasePathPub\_}->msg\_;
+137         nav\_msgs::Path &msg = \hyperlink{classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_a3eb6ca9be9504dc3c1da949d1e1daeda}{robotBasePathPub\_}->msg\_;
 139 
 140         msg = \hyperlink{classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_a83fa5a9bfe0b2683eee33444d3f030ea}{baseTrajectory\_};
 141         msg.header.stamp = timestamp;

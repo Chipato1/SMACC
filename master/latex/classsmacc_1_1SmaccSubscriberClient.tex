@@ -148,15 +148,15 @@ Definition at line 64 of file smacc\+\_\+subscriber\+\_\+client.\+h.
 
 \begin{DoxyCode}
 65   \{
-66     this->\hyperlink{classsmacc_1_1SmaccSubscriberClient_ac131b24d58ff06791068f8dfd3401a0b}{postMessageEvent} = [=](\textcolor{keyword}{auto} \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{
+66     this->\hyperlink{classsmacc_1_1SmaccSubscriberClient_ac131b24d58ff06791068f8dfd3401a0b}{postMessageEvent} = [=](\textcolor{keyword}{auto} msg) \{
 67       \textcolor{keyword}{auto} \textcolor{keyword}{event} = \textcolor{keyword}{new} EvTopicMessage<TDerived, TObjectTag>();
-68       \textcolor{keyword}{event}->msgData = \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg};
+68       \textcolor{keyword}{event}->msgData = msg;
 69       this->\hyperlink{classsmacc_1_1ISmaccClient_a21a79203cb44fc717d4d977c190327c6}{postEvent}(event);
 70     \};
 71 
-72     this->\hyperlink{classsmacc_1_1SmaccSubscriberClient_aeec34b082c687a24a89942aca44575cc}{postInitialMessageEvent} = [=](\textcolor{keyword}{auto} \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg}) \{
+72     this->\hyperlink{classsmacc_1_1SmaccSubscriberClient_aeec34b082c687a24a89942aca44575cc}{postInitialMessageEvent} = [=](\textcolor{keyword}{auto} msg) \{
 73       \textcolor{keyword}{auto} \textcolor{keyword}{event} = \textcolor{keyword}{new} EvTopicInitialMessage<TDerived, TObjectTag>();
-74       \textcolor{keyword}{event}->msgData = \hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg};
+74       \textcolor{keyword}{event}->msgData = msg;
 75       this->\hyperlink{classsmacc_1_1ISmaccClient_a21a79203cb44fc717d4d977c190327c6}{postEvent}(event);
 76     \};
 77   \}
@@ -239,13 +239,13 @@ Definition at line 110 of file smacc\+\_\+subscriber\+\_\+client.\+h.
 111   \{
 112     \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1SmaccSubscriberClient_ad7af631a0b6bdacb76a2532a06ad0a03}{firstMessage\_})
 113     \{
-114       \hyperlink{classsmacc_1_1SmaccSubscriberClient_aeec34b082c687a24a89942aca44575cc}{postInitialMessageEvent}(\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg});
-115       this->\hyperlink{classsmacc_1_1SmaccSubscriberClient_a2927ee2e390f12000379c9f48ddb7695}{onFirstMessageReceived}(\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg});
+114       \hyperlink{classsmacc_1_1SmaccSubscriberClient_aeec34b082c687a24a89942aca44575cc}{postInitialMessageEvent}(msg);
+115       this->\hyperlink{classsmacc_1_1SmaccSubscriberClient_a2927ee2e390f12000379c9f48ddb7695}{onFirstMessageReceived}(msg);
 116       \hyperlink{classsmacc_1_1SmaccSubscriberClient_ad7af631a0b6bdacb76a2532a06ad0a03}{firstMessage\_} = \textcolor{keyword}{false};
 117     \}
 118 
-119     \hyperlink{classsmacc_1_1SmaccSubscriberClient_ac131b24d58ff06791068f8dfd3401a0b}{postMessageEvent}(\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg});
-120     \hyperlink{classsmacc_1_1SmaccSubscriberClient_a7635fbb013c6fdbc3998da11b44766bb}{onMessageReceived}(\hyperlink{namespacekeyboard__node_a768777e12f75b89e4a0a60acf748e9eb}{msg});
+119     \hyperlink{classsmacc_1_1SmaccSubscriberClient_ac131b24d58ff06791068f8dfd3401a0b}{postMessageEvent}(msg);
+120     \hyperlink{classsmacc_1_1SmaccSubscriberClient_a7635fbb013c6fdbc3998da11b44766bb}{onMessageReceived}(msg);
 121   \}
 \end{DoxyCode}
 
