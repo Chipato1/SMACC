@@ -38,7 +38,7 @@ virtual void \hyperlink{classmove__base__z__client_1_1CbRotate_ac04e8dece248a977
 \item 
 tf\+::\+Transform\+Listener \hyperlink{classmove__base__z__client_1_1CbRotate_ad9afe4d39997d7b44fc304f81f519cc5}{listener}
 \item 
-\hyperlink{classmove__base__z__client_1_1ClMoveBaseZ}{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cl\+Move\+BaseZ} $\ast$ \hyperlink{classmove__base__z__client_1_1CbRotate_a2cdf366741d50f85b51ee2c2d967df49}{move\+Base\+Client\+\_\+}
+\hyperlink{classmove__base__z__client_1_1ClMoveBaseZ}{Cl\+Move\+BaseZ} $\ast$ \hyperlink{classmove__base__z__client_1_1CbRotate_a292c3739c4c1e668c0c6e241127b5c50}{move\+Base\+Client\+\_\+}
 \item 
 boost\+::optional$<$ float $>$ \hyperlink{classmove__base__z__client_1_1CbRotate_a30d0f24b857149d78a023635562516b6}{rotate\+Degree}
 \end{DoxyCompactItemize}
@@ -47,7 +47,7 @@ boost\+::optional$<$ float $>$ \hyperlink{classmove__base__z__client_1_1CbRotate
 \subsection{Detailed Description}
 
 
-Definition at line 12 of file cb\+\_\+rotate.\+h.
+Definition at line 13 of file cb\+\_\+rotate.\+h.
 
 
 
@@ -61,12 +61,12 @@ Definition at line 12 of file cb\+\_\+rotate.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmove__base__z__client_1_1CbRotate_a38365918a9749d2ad85b584a2ab0a102}{}\label{classmove__base__z__client_1_1CbRotate_a38365918a9749d2ad85b584a2ab0a102}
 
 
-Definition at line 21 of file cb\+\_\+rotate.\+h.
+Definition at line 22 of file cb\+\_\+rotate.\+h.
 
 
 \begin{DoxyCode}
-22     \{
-23     \}
+23     \{
+24     \}
 \end{DoxyCode}
 \index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate}!Cb\+Rotate@{Cb\+Rotate}}
 \index{Cb\+Rotate@{Cb\+Rotate}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate}}
@@ -77,13 +77,13 @@ Definition at line 21 of file cb\+\_\+rotate.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmove__base__z__client_1_1CbRotate_aca51890e44db143f216d9951ab2afaf3}{}\label{classmove__base__z__client_1_1CbRotate_aca51890e44db143f216d9951ab2afaf3}
 
 
-Definition at line 25 of file cb\+\_\+rotate.\+h.
+Definition at line 26 of file cb\+\_\+rotate.\+h.
 
 
 \begin{DoxyCode}
-26     \{
-27         \hyperlink{classmove__base__z__client_1_1CbRotate_a30d0f24b857149d78a023635562516b6}{rotateDegree} = rotate\_degree;
-28     \}
+27     \{
+28         \hyperlink{classmove__base__z__client_1_1CbRotate_a30d0f24b857149d78a023635562516b6}{rotateDegree} = rotate\_degree;
+29     \}
 \end{DoxyCode}
 
 
@@ -101,7 +101,7 @@ Reimplemented from \hyperlink{classsmacc_1_1SmaccClientBehavior_a7962382f93987c7
 
 
 
-Definition at line 30 of file cb\+\_\+rotate.\+h.
+Definition at line 31 of file cb\+\_\+rotate.\+h.
 
 
 
@@ -109,58 +109,58 @@ References smacc\+::\+Smacc\+Client\+Behavior\+::current\+State, smacc\+::\+I\+S
 
 
 \begin{DoxyCode}
-31     \{
-32         \textcolor{keywordtype}{double} angle\_increment\_degree;
-33 
-34         \textcolor{keywordflow}{if} (!\hyperlink{classmove__base__z__client_1_1CbRotate_a30d0f24b857149d78a023635562516b6}{rotateDegree})
-35         \{
-36             this->\hyperlink{classsmacc_1_1SmaccClientBehavior_af76fc9b877542ed5caf033f820c107d0}{currentState}->\hyperlink{classsmacc_1_1ISmaccState_a4982f2187ed6da337462721146e8ef70}{param}(\textcolor{stringliteral}{"angle\_increment\_degree"}, angle\_increment\_degree, 45
+32     \{
+33         \textcolor{keywordtype}{double} angle\_increment\_degree;
+34 
+35         \textcolor{keywordflow}{if} (!\hyperlink{classmove__base__z__client_1_1CbRotate_a30d0f24b857149d78a023635562516b6}{rotateDegree})
+36         \{
+37             this->\hyperlink{classsmacc_1_1SmaccClientBehavior_af76fc9b877542ed5caf033f820c107d0}{currentState}->\hyperlink{classsmacc_1_1ISmaccState_a4982f2187ed6da337462721146e8ef70}{param}(\textcolor{stringliteral}{"angle\_increment\_degree"}, angle\_increment\_degree, 45
       .0);
-37         \}
-38         \textcolor{keywordflow}{else}
-39         \{
-40             angle\_increment\_degree = *\hyperlink{classmove__base__z__client_1_1CbRotate_a30d0f24b857149d78a023635562516b6}{rotateDegree};
-41         \}
-42 
-43         this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a917f001e763a1059af337bf4e164f542}{requiresClient}(\hyperlink{classmove__base__z__client_1_1CbRotate_a2cdf366741d50f85b51ee2c2d967df49}{moveBaseClient\_});
-44 
-45         \textcolor{comment}{//this should work better with a coroutine and await}
-46         \textcolor{comment}{//this->plannerSwitcher\_->setForwardPlanner();}
-47         \hyperlink{classmove__base__z__client_1_1CbRotate_a2cdf366741d50f85b51ee2c2d967df49}{moveBaseClient\_}->\hyperlink{classmove__base__z__client_1_1ClMoveBaseZ_ac57d2293bc0a5c4fcef326379822cc5e}{plannerSwitcher\_}->setDefaultPlanners();
-48 
-49         ros::Rate rate(10.0);
-50         geometry\_msgs::Pose currentPoseMsg;
-51         \textcolor{keywordflow}{while} (ros::ok())
-52         \{
-53             tf::StampedTransform currentPose;
-54             \textcolor{keywordflow}{try}
-55             \{
-56                 \hyperlink{classmove__base__z__client_1_1CbRotate_ad9afe4d39997d7b44fc304f81f519cc5}{listener}.lookupTransform(\textcolor{stringliteral}{"/odom"}, \textcolor{stringliteral}{"/base\_link"},
-57                                          ros::Time(0), currentPose);
-58 
-59                 tf::poseTFToMsg(currentPose, currentPoseMsg);
-60                 \textcolor{keywordflow}{break};
-61             \}
-62             \textcolor{keywordflow}{catch} (tf::TransformException ex)
-63             \{
-64                 ROS\_ERROR(\textcolor{stringliteral}{"%s"}, ex.what());
-65                 ros::Duration(1.0).sleep();
-66             \}
-67         \}
-68 
-69         ClMoveBaseZ::Goal goal;
-70         goal.target\_pose.header.frame\_id = \textcolor{stringliteral}{"/odom"};
-71         goal.target\_pose.header.stamp = ros::Time::now();
-72 
-73         \textcolor{keyword}{auto} currentAngle = tf::getYaw(currentPoseMsg.orientation);
-74         \textcolor{keyword}{auto} targetAngle = currentAngle + angle\_increment\_degree * M\_PI / 180.0;
-75         goal.target\_pose.pose.position = currentPoseMsg.position;
-76         goal.target\_pose.pose.orientation = tf::createQuaternionMsgFromYaw(targetAngle);
-77 
-78         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"current pose: "} << currentPoseMsg);
-79         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"goal pose: "} << goal.target\_pose.pose);
-80         \hyperlink{classmove__base__z__client_1_1CbRotate_a2cdf366741d50f85b51ee2c2d967df49}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
-81     \}
+38         \}
+39         \textcolor{keywordflow}{else}
+40         \{
+41             angle\_increment\_degree = *\hyperlink{classmove__base__z__client_1_1CbRotate_a30d0f24b857149d78a023635562516b6}{rotateDegree};
+42         \}
+43 
+44         this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a917f001e763a1059af337bf4e164f542}{requiresClient}(\hyperlink{classmove__base__z__client_1_1CbRotate_a292c3739c4c1e668c0c6e241127b5c50}{moveBaseClient\_});
+45 
+46         \textcolor{comment}{//this should work better with a coroutine and await}
+47         \textcolor{comment}{//this->plannerSwitcher\_->setForwardPlanner();}
+48         \hyperlink{classmove__base__z__client_1_1CbRotate_a292c3739c4c1e668c0c6e241127b5c50}{moveBaseClient\_}->\hyperlink{classmove__base__z__client_1_1ClMoveBaseZ_ac57d2293bc0a5c4fcef326379822cc5e}{plannerSwitcher\_}->setDefaultPlanners();
+49 
+50         ros::Rate rate(10.0);
+51         geometry\_msgs::Pose currentPoseMsg;
+52         \textcolor{keywordflow}{while} (ros::ok())
+53         \{
+54             tf::StampedTransform currentPose;
+55             \textcolor{keywordflow}{try}
+56             \{
+57                 \hyperlink{classmove__base__z__client_1_1CbRotate_ad9afe4d39997d7b44fc304f81f519cc5}{listener}.lookupTransform(\textcolor{stringliteral}{"/odom"}, \textcolor{stringliteral}{"/base\_link"},
+58                                          ros::Time(0), currentPose);
+59 
+60                 tf::poseTFToMsg(currentPose, currentPoseMsg);
+61                 \textcolor{keywordflow}{break};
+62             \}
+63             \textcolor{keywordflow}{catch} (tf::TransformException ex)
+64             \{
+65                 ROS\_ERROR(\textcolor{stringliteral}{"%s"}, ex.what());
+66                 ros::Duration(1.0).sleep();
+67             \}
+68         \}
+69 
+70         ClMoveBaseZ::Goal goal;
+71         goal.target\_pose.header.frame\_id = \textcolor{stringliteral}{"/odom"};
+72         goal.target\_pose.header.stamp = ros::Time::now();
+73 
+74         \textcolor{keyword}{auto} currentAngle = tf::getYaw(currentPoseMsg.orientation);
+75         \textcolor{keyword}{auto} targetAngle = currentAngle + angle\_increment\_degree * M\_PI / 180.0;
+76         goal.target\_pose.pose.position = currentPoseMsg.position;
+77         goal.target\_pose.pose.orientation = tf::createQuaternionMsgFromYaw(targetAngle);
+78 
+79         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"current pose: "} << currentPoseMsg);
+80         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"goal pose: "} << goal.target\_pose.pose);
+81         \hyperlink{classmove__base__z__client_1_1CbRotate_a292c3739c4c1e668c0c6e241127b5c50}{moveBaseClient\_}->\hyperlink{classsmacc_1_1SmaccActionClientBase_a58c67a87c5fb8ea1633573c58fe3eee1}{sendGoal}(goal);
+82     \}
 \end{DoxyCode}
 
 
@@ -182,21 +182,21 @@ Here is the call graph for this function\+:
 \subsubsection[{\texorpdfstring{listener}{listener}}]{\setlength{\rightskip}{0pt plus 5cm}tf\+::\+Transform\+Listener move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate\+::listener}\hypertarget{classmove__base__z__client_1_1CbRotate_ad9afe4d39997d7b44fc304f81f519cc5}{}\label{classmove__base__z__client_1_1CbRotate_ad9afe4d39997d7b44fc304f81f519cc5}
 
 
-Definition at line 15 of file cb\+\_\+rotate.\+h.
+Definition at line 16 of file cb\+\_\+rotate.\+h.
 
 \index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate}!move\+Base\+Client\+\_\+@{move\+Base\+Client\+\_\+}}
 \index{move\+Base\+Client\+\_\+@{move\+Base\+Client\+\_\+}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate}}
-\subsubsection[{\texorpdfstring{move\+Base\+Client\+\_\+}{moveBaseClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf move\+\_\+base\+\_\+z\+\_\+client\+::\+Cl\+Move\+BaseZ}$\ast$ move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate\+::move\+Base\+Client\+\_\+}\hypertarget{classmove__base__z__client_1_1CbRotate_a2cdf366741d50f85b51ee2c2d967df49}{}\label{classmove__base__z__client_1_1CbRotate_a2cdf366741d50f85b51ee2c2d967df49}
+\subsubsection[{\texorpdfstring{move\+Base\+Client\+\_\+}{moveBaseClient_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cl\+Move\+BaseZ}$\ast$ move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate\+::move\+Base\+Client\+\_\+}\hypertarget{classmove__base__z__client_1_1CbRotate_a292c3739c4c1e668c0c6e241127b5c50}{}\label{classmove__base__z__client_1_1CbRotate_a292c3739c4c1e668c0c6e241127b5c50}
 
 
-Definition at line 17 of file cb\+\_\+rotate.\+h.
+Definition at line 18 of file cb\+\_\+rotate.\+h.
 
 \index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate}!rotate\+Degree@{rotate\+Degree}}
 \index{rotate\+Degree@{rotate\+Degree}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate}}
 \subsubsection[{\texorpdfstring{rotate\+Degree}{rotateDegree}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::optional$<$float$>$ move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate\+::rotate\+Degree}\hypertarget{classmove__base__z__client_1_1CbRotate_a30d0f24b857149d78a023635562516b6}{}\label{classmove__base__z__client_1_1CbRotate_a30d0f24b857149d78a023635562516b6}
 
 
-Definition at line 19 of file cb\+\_\+rotate.\+h.
+Definition at line 20 of file cb\+\_\+rotate.\+h.
 
 
 
@@ -206,4 +206,4 @@ Referenced by on\+Entry().
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin/include/move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin/client\+\_\+behaviors/\hyperlink{smacc__client__library_2move__base__z__client_2move__base__z__client__plugin_2include_2move__bas2ff277154dfb9bba8a39d43e74a5a16e}{cb\+\_\+rotate.\+h}\end{DoxyCompactItemize}
+smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin/include/move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin/client\+\_\+behaviors/\hyperlink{cb__rotate_8h}{cb\+\_\+rotate.\+h}\end{DoxyCompactItemize}

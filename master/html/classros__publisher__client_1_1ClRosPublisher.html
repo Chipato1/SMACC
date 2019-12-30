@@ -102,7 +102,7 @@ Inheritance diagram for ros_publisher_client::ClRosPublisher:</div>
 <div class="dyncontent">
 <div class="center"><img src="classros__publisher__client_1_1ClRosPublisher__inherit__graph.png" border="0" usemap="#ros__publisher__client_1_1ClRosPublisher_inherit__map" alt="Inheritance graph"/></div>
 <map name="ros__publisher__client_1_1ClRosPublisher_inherit__map" id="ros__publisher__client_1_1ClRosPublisher_inherit__map">
-<area shape="rect" id="node2" href="classsmacc_1_1SmaccPublisherClient.html" title="{smacc::SmaccPublisherClient\n|+ topicName\l+ queueSize\l# nh_\l# pub_\l&#45; initialized_\l|+ SmaccPublisherClient()\l+ ~SmaccPublisherClient()\l+ configureMessageType()\l+ initialize()\l+ publish()\l}" alt="" coords="8,277,219,472"/>
+<area shape="rect" id="node2" href="classsmacc_1_1SmaccPublisherClient.html" title="{smacc::SmaccPublisherClient\n|+ topicName\l+ queueSize\l# nh_\l# pub_\l&#45; initialized_\l|+ SmaccPublisherClient()\l+ ~SmaccPublisherClient()\l+ configure()\l+ publish()\l}" alt="" coords="8,277,219,457"/>
 <area shape="rect" id="node3" href="classsmacc_1_1ISmaccClient.html" title="{smacc::ISmaccClient\n|# stateMachine_\l# components_\l|+ ISmaccClient()\l+ ~ISmaccClient()\l+ initialize()\l+ setStateMachine()\l+ getName()\l+ postEvent()\l+ postEvent()\l+ getComponent()\l+ createComponent()\l&#45; configureEventSourceTypes()\l}" alt="" coords="5,5,221,229"/>
 </map>
 </div>
@@ -111,7 +111,7 @@ Collaboration diagram for ros_publisher_client::ClRosPublisher:</div>
 <div class="dyncontent">
 <div class="center"><img src="classros__publisher__client_1_1ClRosPublisher__coll__graph.png" border="0" usemap="#ros__publisher__client_1_1ClRosPublisher_coll__map" alt="Collaboration graph"/></div>
 <map name="ros__publisher__client_1_1ClRosPublisher_coll__map" id="ros__publisher__client_1_1ClRosPublisher_coll__map">
-<area shape="rect" id="node2" href="classsmacc_1_1SmaccPublisherClient.html" title="{smacc::SmaccPublisherClient\n||+ SmaccPublisherClient()\l+ ~SmaccPublisherClient()\l+ configureMessageType()\l+ initialize()\l+ publish()\l}" alt="" coords="2020,1577,2231,1713"/>
+<area shape="rect" id="node2" href="classsmacc_1_1SmaccPublisherClient.html" title="{smacc::SmaccPublisherClient\n||+ SmaccPublisherClient()\l+ ~SmaccPublisherClient()\l+ configure()\l+ publish()\l}" alt="" coords="2020,1577,2231,1699"/>
 <area shape="rect" id="node3" href="classsmacc_1_1ISmaccClient.html" title="{smacc::ISmaccClient\n||+ ISmaccClient()\l+ ~ISmaccClient()\l+ initialize()\l+ setStateMachine()\l+ getName()\l+ postEvent()\l+ postEvent()\l+ getComponent()\l+ createComponent()\l&#45; configureEventSourceTypes()\l}" alt="" coords="1023,1298,1239,1507"/>
 <area shape="rect" id="node5" href="classsmacc_1_1ISmaccStateMachine.html" title="{smacc::ISmaccStateMachine\n||+ ISmaccStateMachine()\l+ ~ISmaccStateMachine()\l+ Reset()\l+ Stop()\l+ EStop()\l+ getOrthogonal()\l+ getOrthogonals()\l+ requiresComponent()\l+ postEvent()\l+ postEvent()\l+ getTransitionLogHistory()\l+ getGlobalSMData()\l+ setGlobalSMData()\l+ mapBehavior()\l+ updateStatusMessage()\l+ getStateMachineName()\l+ state_machine_visualization()\l+ getCurrentStateInfo()\l+ publishTransition()\l+ onInitialize()\l+ getTransitionLogHistory()\l+ createSignalConnection()\l+ createSignalConnection()\l+ lockStateMachine()\l+ unlockStateMachine()\l+ notifyOnStateEntryStart()\l+ notifyOnStateEntryEnd()\l+ notifyOnStateExit()\l+ getCurrentStateCounter()\l+ getCurrentState()\l# onInitializing()\l# onInitialized()\l# createOrthogonal()\l# getParam()\l# setParam()\l# param()\l&#45; propagateEventToLogicUnits()\l}" alt="" coords="1168,593,1395,1199"/>
 <area shape="rect" id="node13" href="classsmacc_1_1SignalDetector.html" title="{smacc::SignalDetector\n||+ SignalDetector()\l+ initialize()\l+ setProcessorHandle()\l+ runThread()\l+ join()\l+ stop()\l+ pollingLoop()\l+ pollOnce()\l+ postEvent()\l&#45; findUpdatableClients()\l&#45; findUpdatableBehaviors()\l}" alt="" coords="1818,1291,2012,1515"/>
@@ -124,16 +124,20 @@ Collaboration diagram for ros_publisher_client::ClRosPublisher:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9a5c4a6c97a6fcab30827521891f222f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classros__publisher__client_1_1ClRosPublisher.html#a9a5c4a6c97a6fcab30827521891f222f">ClRosPublisher</a> ()</td></tr>
 <tr class="separator:a9a5c4a6c97a6fcab30827521891f222f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae4ef0ad45fd4f4e24659b9386af80a3"><td class="memTemplParams" colspan="2">template&lt;typename MessageType &gt; </td></tr>
+<tr class="memitem:aae4ef0ad45fd4f4e24659b9386af80a3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classros__publisher__client_1_1ClRosPublisher.html#aae4ef0ad45fd4f4e24659b9386af80a3">configure</a> (std::string <a class="el" href="classsmacc_1_1SmaccPublisherClient.html#a4b8401543c3d532e81453c9106ddaefc">topicName</a>)</td></tr>
+<tr class="separator:aae4ef0ad45fd4f4e24659b9386af80a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e62a3581a730cd2e287e560d04d151b"><td class="memTemplParams" colspan="2">template&lt;typename MessageType &gt; </td></tr>
+<tr class="memitem:a9e62a3581a730cd2e287e560d04d151b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classros__publisher__client_1_1ClRosPublisher.html#a9e62a3581a730cd2e287e560d04d151b">publish</a> (const MessageType &amp;msg)</td></tr>
+<tr class="separator:a9e62a3581a730cd2e287e560d04d151b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classsmacc_1_1SmaccPublisherClient"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsmacc_1_1SmaccPublisherClient')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classsmacc_1_1SmaccPublisherClient.html">smacc::SmaccPublisherClient</a></td></tr>
 <tr class="memitem:ab68718f6c1846da5069069b6861ade20 inherit pub_methods_classsmacc_1_1SmaccPublisherClient"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccPublisherClient.html#ab68718f6c1846da5069069b6861ade20">SmaccPublisherClient</a> ()</td></tr>
 <tr class="separator:ab68718f6c1846da5069069b6861ade20 inherit pub_methods_classsmacc_1_1SmaccPublisherClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a081eda5646215dd87b66ff4e086c97c5 inherit pub_methods_classsmacc_1_1SmaccPublisherClient"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccPublisherClient.html#a081eda5646215dd87b66ff4e086c97c5">~SmaccPublisherClient</a> ()</td></tr>
 <tr class="separator:a081eda5646215dd87b66ff4e086c97c5 inherit pub_methods_classsmacc_1_1SmaccPublisherClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29e70233aebc34245ab5927534ca6291 inherit pub_methods_classsmacc_1_1SmaccPublisherClient"><td class="memTemplParams" colspan="2">template&lt;typename MessageType &gt; </td></tr>
-<tr class="memitem:a29e70233aebc34245ab5927534ca6291 inherit pub_methods_classsmacc_1_1SmaccPublisherClient"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccPublisherClient.html#a29e70233aebc34245ab5927534ca6291">configureMessageType</a> ()</td></tr>
-<tr class="separator:a29e70233aebc34245ab5927534ca6291 inherit pub_methods_classsmacc_1_1SmaccPublisherClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90710541fbc7c32600d29a065137cc50 inherit pub_methods_classsmacc_1_1SmaccPublisherClient"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccPublisherClient.html#a90710541fbc7c32600d29a065137cc50">initialize</a> () override</td></tr>
-<tr class="separator:a90710541fbc7c32600d29a065137cc50 inherit pub_methods_classsmacc_1_1SmaccPublisherClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9614fbcc4d566ad8b1b5007727bce2c1 inherit pub_methods_classsmacc_1_1SmaccPublisherClient"><td class="memTemplParams" colspan="2">template&lt;typename MessageType &gt; </td></tr>
+<tr class="memitem:a9614fbcc4d566ad8b1b5007727bce2c1 inherit pub_methods_classsmacc_1_1SmaccPublisherClient"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccPublisherClient.html#a9614fbcc4d566ad8b1b5007727bce2c1">configure</a> (std::string <a class="el" href="classsmacc_1_1SmaccPublisherClient.html#a4b8401543c3d532e81453c9106ddaefc">topicName</a>)</td></tr>
+<tr class="separator:a9614fbcc4d566ad8b1b5007727bce2c1 inherit pub_methods_classsmacc_1_1SmaccPublisherClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab82b8234c5bbedf393b70cff442bd5be inherit pub_methods_classsmacc_1_1SmaccPublisherClient"><td class="memTemplParams" colspan="2">template&lt;typename MessageType &gt; </td></tr>
 <tr class="memitem:ab82b8234c5bbedf393b70cff442bd5be inherit pub_methods_classsmacc_1_1SmaccPublisherClient"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccPublisherClient.html#ab82b8234c5bbedf393b70cff442bd5be">publish</a> (const MessageType &amp;msg)</td></tr>
 <tr class="separator:ab82b8234c5bbedf393b70cff442bd5be inherit pub_methods_classsmacc_1_1SmaccPublisherClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,6 +146,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a40222ad8b9b7962755434025b1fd5ae7 inherit pub_methods_classsmacc_1_1ISmaccClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a030e17771bf2e404a6fad97273c4d7f4 inherit pub_methods_classsmacc_1_1ISmaccClient"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1ISmaccClient.html#a030e17771bf2e404a6fad97273c4d7f4">~ISmaccClient</a> ()</td></tr>
 <tr class="separator:a030e17771bf2e404a6fad97273c4d7f4 inherit pub_methods_classsmacc_1_1ISmaccClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a974ebb6ad6cf812e7b9de6b78b3d901f inherit pub_methods_classsmacc_1_1ISmaccClient"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1ISmaccClient.html#a974ebb6ad6cf812e7b9de6b78b3d901f">initialize</a> ()</td></tr>
+<tr class="separator:a974ebb6ad6cf812e7b9de6b78b3d901f inherit pub_methods_classsmacc_1_1ISmaccClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28fd6ca2bcf9c5e57f3cc16fb0a076d3 inherit pub_methods_classsmacc_1_1ISmaccClient"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1ISmaccClient.html#a28fd6ca2bcf9c5e57f3cc16fb0a076d3">setStateMachine</a> (<a class="el" href="classsmacc_1_1ISmaccStateMachine.html">ISmaccStateMachine</a> *stateMachine)</td></tr>
 <tr class="separator:a28fd6ca2bcf9c5e57f3cc16fb0a076d3 inherit pub_methods_classsmacc_1_1ISmaccClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20846aabfd1de832aa27d7a8237a1742 inherit pub_methods_classsmacc_1_1ISmaccClient"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1ISmaccClient.html#a20846aabfd1de832aa27d7a8237a1742">getName</a> () const </td></tr>
@@ -204,6 +210,81 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="cl__ros__publisher_8h_source.html#l00012">12</a> of file <a class="el" href="cl__ros__publisher_8h_source.html">cl_ros_publisher.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aae4ef0ad45fd4f4e24659b9386af80a3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MessageType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ros_publisher_client::ClRosPublisher::configure </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>topicName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cl__ros__publisher_8h_source.html#l00017">17</a> of file <a class="el" href="cl__ros__publisher_8h_source.html">cl_ros_publisher.h</a>.</p>
+
+<p>References <a class="el" href="smacc__publisher__client_8h_source.html#l00012">smacc::SmaccPublisherClient::topicName</a>.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        SmaccPublisherClient::configure&lt;MessageType&gt;(<a class="code" href="classsmacc_1_1SmaccPublisherClient.html#a4b8401543c3d532e81453c9106ddaefc">topicName</a>);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div><div class="ttc" id="classsmacc_1_1SmaccPublisherClient_html_a4b8401543c3d532e81453c9106ddaefc"><div class="ttname"><a href="classsmacc_1_1SmaccPublisherClient.html#a4b8401543c3d532e81453c9106ddaefc">smacc::SmaccPublisherClient::topicName</a></div><div class="ttdeci">boost::optional&lt; std::string &gt; topicName</div><div class="ttdef"><b>Definition:</b> <a href="smacc__publisher__client_8h_source.html#l00012">smacc_publisher_client.h:12</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a9e62a3581a730cd2e287e560d04d151b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MessageType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ros_publisher_client::ClRosPublisher::publish </td>
+          <td>(</td>
+          <td class="paramtype">const MessageType &amp;&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cl__ros__publisher_8h_source.html#l00023">23</a> of file <a class="el" href="cl__ros__publisher_8h_source.html">cl_ros_publisher.h</a>.</p>
+
+<p>Referenced by <a class="el" href="cb__publish__once_8h_source.html#l00028">ros_publisher_client::CbPublishOnce&lt; RosMsgType &gt;::setMessage()</a>, and <a class="el" href="cb__default__publish__loop_8h_source.html#l00029">ros_publisher_client::CbDefaultPublishLoop::setMessage()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        SmaccPublisherClient::publish(msg);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div></div><!-- fragment -->
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classros__publisher__client_1_1ClRosPublisher_a9e62a3581a730cd2e287e560d04d151b_icgraph.png" border="0" usemap="#classros__publisher__client_1_1ClRosPublisher_a9e62a3581a730cd2e287e560d04d151b_icgraph" alt=""/></div>
+<map name="classros__publisher__client_1_1ClRosPublisher_a9e62a3581a730cd2e287e560d04d151b_icgraph" id="classros__publisher__client_1_1ClRosPublisher_a9e62a3581a730cd2e287e560d04d151b_icgraph">
+<area shape="rect" id="node2" href="classros__publisher__client_1_1CbPublishOnce.html#a06bef500e116390ee85a790401e600d8" title="ros_publisher_client\l::CbPublishOnce::setMessage" alt="" coords="228,5,439,47"/>
+<area shape="rect" id="node4" href="classros__publisher__client_1_1CbDefaultPublishLoop.html#a8bba9039f6a6841c21e9bc89c2fd8ab7" title="ros_publisher_client\l::CbDefaultPublishLoop\l::setMessage" alt="" coords="249,70,418,126"/>
+<area shape="rect" id="node3" href="classros__publisher__client_1_1CbPublishOnce.html#a354897ea9a30ab5d95acc8837bf9ef0f" title="ros_publisher_client\l::CbPublishOnce::CbPublishOnce" alt="" coords="487,5,715,47"/>
+<area shape="rect" id="node5" href="classros__publisher__client_1_1CbDefaultPublishLoop.html#ac7b6e38399dae0fb03f81f23b7de5124" title="ros_publisher_client\l::CbDefaultPublishLoop\l::CbDefaultPublishLoop" alt="" coords="516,70,685,126"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

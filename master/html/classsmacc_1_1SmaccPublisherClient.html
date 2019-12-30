@@ -105,10 +105,9 @@ Inheritance diagram for smacc::SmaccPublisherClient:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsmacc_1_1SmaccPublisherClient__inherit__graph.png" border="0" usemap="#smacc_1_1SmaccPublisherClient_inherit__map" alt="Inheritance graph"/></div>
 <map name="smacc_1_1SmaccPublisherClient_inherit__map" id="smacc_1_1SmaccPublisherClient_inherit__map">
-<area shape="rect" id="node3" href="classros__publisher__client_1_1ClRosPublisher.html" title="{ros_publisher_client\l::ClRosPublisher\n||+ ClRosPublisher()\l}" alt="" coords="5,527,153,619"/>
-<area shape="rect" id="node4" href="classsm__dance__bot_1_1ClUpdatableStringPublisher.html" title="{sm_dance_bot::ClUpdatable\lStringPublisher\n||+ ClUpdatableStringPublisher()\l+ update()\l}" alt="" coords="178,520,399,627"/>
-<area shape="rect" id="node5" href="classsm__dance__bot_1_1string__publisher__client_1_1ClStringPublisher.html" title="{sm_dance_bot::string\l_publisher_client::ClString\lPublisher\n||+ ClStringPublisher()\l}" alt="" coords="423,520,610,627"/>
-<area shape="rect" id="node2" href="classsmacc_1_1ISmaccClient.html" title="{smacc::ISmaccClient\n|# stateMachine_\l# components_\l|+ ISmaccClient()\l+ ~ISmaccClient()\l+ initialize()\l+ setStateMachine()\l+ getName()\l+ postEvent()\l+ postEvent()\l+ getComponent()\l+ createComponent()\l&#45; configureEventSourceTypes()\l}" alt="" coords="181,5,397,229"/>
+<area shape="rect" id="node3" href="classros__publisher__client_1_1ClRosPublisher.html" title="{ros_publisher_client\l::ClRosPublisher\n||+ ClRosPublisher()\l+ configure()\l+ publish()\l}" alt="" coords="5,505,153,627"/>
+<area shape="rect" id="node4" href="classsm__dance__bot_1_1cl__string__publisher_1_1ClStringPublisher.html" title="{sm_dance_bot::cl_string\l_publisher::ClStringPublisher\n||+ ClStringPublisher()\l}" alt="" coords="178,520,381,612"/>
+<area shape="rect" id="node2" href="classsmacc_1_1ISmaccClient.html" title="{smacc::ISmaccClient\n|# stateMachine_\l# components_\l|+ ISmaccClient()\l+ ~ISmaccClient()\l+ initialize()\l+ setStateMachine()\l+ getName()\l+ postEvent()\l+ postEvent()\l+ getComponent()\l+ createComponent()\l&#45; configureEventSourceTypes()\l}" alt="" coords="71,5,287,229"/>
 </map>
 </div>
 <div class="dynheader">
@@ -130,11 +129,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab68718f6c1846da5069069b6861ade20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a081eda5646215dd87b66ff4e086c97c5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccPublisherClient.html#a081eda5646215dd87b66ff4e086c97c5">~SmaccPublisherClient</a> ()</td></tr>
 <tr class="separator:a081eda5646215dd87b66ff4e086c97c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29e70233aebc34245ab5927534ca6291"><td class="memTemplParams" colspan="2">template&lt;typename MessageType &gt; </td></tr>
-<tr class="memitem:a29e70233aebc34245ab5927534ca6291"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccPublisherClient.html#a29e70233aebc34245ab5927534ca6291">configureMessageType</a> ()</td></tr>
-<tr class="separator:a29e70233aebc34245ab5927534ca6291"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90710541fbc7c32600d29a065137cc50"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccPublisherClient.html#a90710541fbc7c32600d29a065137cc50">initialize</a> () override</td></tr>
-<tr class="separator:a90710541fbc7c32600d29a065137cc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9614fbcc4d566ad8b1b5007727bce2c1"><td class="memTemplParams" colspan="2">template&lt;typename MessageType &gt; </td></tr>
+<tr class="memitem:a9614fbcc4d566ad8b1b5007727bce2c1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccPublisherClient.html#a9614fbcc4d566ad8b1b5007727bce2c1">configure</a> (std::string <a class="el" href="classsmacc_1_1SmaccPublisherClient.html#a4b8401543c3d532e81453c9106ddaefc">topicName</a>)</td></tr>
+<tr class="separator:a9614fbcc4d566ad8b1b5007727bce2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab82b8234c5bbedf393b70cff442bd5be"><td class="memTemplParams" colspan="2">template&lt;typename MessageType &gt; </td></tr>
 <tr class="memitem:ab82b8234c5bbedf393b70cff442bd5be"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsmacc_1_1SmaccPublisherClient.html#ab82b8234c5bbedf393b70cff442bd5be">publish</a> (const MessageType &amp;msg)</td></tr>
 <tr class="separator:ab82b8234c5bbedf393b70cff442bd5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,6 +140,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a40222ad8b9b7962755434025b1fd5ae7 inherit pub_methods_classsmacc_1_1ISmaccClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a030e17771bf2e404a6fad97273c4d7f4 inherit pub_methods_classsmacc_1_1ISmaccClient"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1ISmaccClient.html#a030e17771bf2e404a6fad97273c4d7f4">~ISmaccClient</a> ()</td></tr>
 <tr class="separator:a030e17771bf2e404a6fad97273c4d7f4 inherit pub_methods_classsmacc_1_1ISmaccClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a974ebb6ad6cf812e7b9de6b78b3d901f inherit pub_methods_classsmacc_1_1ISmaccClient"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1ISmaccClient.html#a974ebb6ad6cf812e7b9de6b78b3d901f">initialize</a> ()</td></tr>
+<tr class="separator:a974ebb6ad6cf812e7b9de6b78b3d901f inherit pub_methods_classsmacc_1_1ISmaccClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28fd6ca2bcf9c5e57f3cc16fb0a076d3 inherit pub_methods_classsmacc_1_1ISmaccClient"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1ISmaccClient.html#a28fd6ca2bcf9c5e57f3cc16fb0a076d3">setStateMachine</a> (<a class="el" href="classsmacc_1_1ISmaccStateMachine.html">ISmaccStateMachine</a> *stateMachine)</td></tr>
 <tr class="separator:a28fd6ca2bcf9c5e57f3cc16fb0a076d3 inherit pub_methods_classsmacc_1_1ISmaccClient"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20846aabfd1de832aa27d7a8237a1742 inherit pub_methods_classsmacc_1_1ISmaccClient"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1ISmaccClient.html#a20846aabfd1de832aa27d7a8237a1742">getName</a> () const </td></tr>
@@ -211,8 +210,8 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="smacc__publisher__client_8h_source.html#l00015">15</a> of file <a class="el" href="smacc__publisher__client_8h_source.html">smacc_publisher_client.h</a>.</p>
 
-<p>References <a class="el" href="smacc__publisher__client_8h_source.html#l00062">initialized_</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classsmacc_1_1SmaccPublisherClient.html#affbfbaa739a6de9f118c551c56b09dfe">initialized_</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  }</div><div class="ttc" id="classsmacc_1_1SmaccPublisherClient_html_affbfbaa739a6de9f118c551c56b09dfe"><div class="ttname"><a href="classsmacc_1_1SmaccPublisherClient.html#affbfbaa739a6de9f118c551c56b09dfe">smacc::SmaccPublisherClient::initialized_</a></div><div class="ttdeci">bool initialized_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__publisher__client_8h_source.html#l00062">smacc_publisher_client.h:62</a></div></div>
+<p>References <a class="el" href="smacc__publisher__client_8h_source.html#l00057">initialized_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classsmacc_1_1SmaccPublisherClient.html#affbfbaa739a6de9f118c551c56b09dfe">initialized_</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  }</div><div class="ttc" id="classsmacc_1_1SmaccPublisherClient_html_affbfbaa739a6de9f118c551c56b09dfe"><div class="ttname"><a href="classsmacc_1_1SmaccPublisherClient.html#affbfbaa739a6de9f118c551c56b09dfe">smacc::SmaccPublisherClient::initialized_</a></div><div class="ttdeci">bool initialized_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__publisher__client_8h_source.html#l00057">smacc_publisher_client.h:57</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -239,13 +238,13 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="smacc__publisher__client_8h_source.html#l00020">20</a> of file <a class="el" href="smacc__publisher__client_8h_source.html">smacc_publisher_client.h</a>.</p>
 
-<p>References <a class="el" href="smacc__publisher__client_8h_source.html#l00059">pub_</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classsmacc_1_1SmaccPublisherClient.html#a674fc5715c4983d093c8ae387232ae55">pub_</a>.shutdown();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  }</div><div class="ttc" id="classsmacc_1_1SmaccPublisherClient_html_a674fc5715c4983d093c8ae387232ae55"><div class="ttname"><a href="classsmacc_1_1SmaccPublisherClient.html#a674fc5715c4983d093c8ae387232ae55">smacc::SmaccPublisherClient::pub_</a></div><div class="ttdeci">ros::Publisher pub_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__publisher__client_8h_source.html#l00059">smacc_publisher_client.h:59</a></div></div>
+<p>References <a class="el" href="smacc__publisher__client_8h_source.html#l00054">pub_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classsmacc_1_1SmaccPublisherClient.html#a674fc5715c4983d093c8ae387232ae55">pub_</a>.shutdown();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  }</div><div class="ttc" id="classsmacc_1_1SmaccPublisherClient_html_a674fc5715c4983d093c8ae387232ae55"><div class="ttname"><a href="classsmacc_1_1SmaccPublisherClient.html#a674fc5715c4983d093c8ae387232ae55">smacc::SmaccPublisherClient::pub_</a></div><div class="ttdeci">ros::Publisher pub_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__publisher__client_8h_source.html#l00054">smacc_publisher_client.h:54</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a29e70233aebc34245ab5927534ca6291"></a>
+<a class="anchor" id="a9614fbcc4d566ad8b1b5007727bce2c1"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -255,9 +254,10 @@ template&lt;typename MessageType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void smacc::SmaccPublisherClient::configureMessageType </td>
+          <td class="memname">void smacc::SmaccPublisherClient::configure </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>topicName</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -270,56 +270,25 @@ template&lt;typename MessageType &gt; </div>
 
 <p>Definition at line <a class="el" href="smacc__publisher__client_8h_source.html#l00026">26</a> of file <a class="el" href="smacc__publisher__client_8h_source.html">smacc_publisher_client.h</a>.</p>
 
-<p>References <a class="el" href="client_8cpp_source.html#l00019">smacc::ISmaccClient::getName()</a>, <a class="el" href="smacc__publisher__client_8h_source.html#l00058">nh_</a>, <a class="el" href="smacc__publisher__client_8h_source.html#l00059">pub_</a>, <a class="el" href="smacc__publisher__client_8h_source.html#l00013">queueSize</a>, and <a class="el" href="smacc__publisher__client_8h_source.html#l00012">topicName</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    ROS_INFO_STREAM(<span class="stringliteral">&quot;[&quot;</span> &lt;&lt; this-&gt;<a class="code" href="classsmacc_1_1ISmaccClient.html#a20846aabfd1de832aa27d7a8237a1742">getName</a>() &lt;&lt; <span class="stringliteral">&quot;] Client Publisher to topic: &quot;</span> &lt;&lt; <a class="code" href="classsmacc_1_1SmaccPublisherClient.html#a4b8401543c3d532e81453c9106ddaefc">topicName</a>);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classsmacc_1_1SmaccPublisherClient.html#a674fc5715c4983d093c8ae387232ae55">pub_</a> = <a class="code" href="classsmacc_1_1SmaccPublisherClient.html#aaebda6a40634daf81c80add02f938ad3">nh_</a>.advertise&lt;MessageType&gt;(*<a class="code" href="classsmacc_1_1SmaccPublisherClient.html#a4b8401543c3d532e81453c9106ddaefc">topicName</a>, *<a class="code" href="classsmacc_1_1SmaccPublisherClient.html#ad7a0aa074031d2c2ea332a4d517dbae5">queueSize</a>);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  }</div><div class="ttc" id="classsmacc_1_1SmaccPublisherClient_html_ad7a0aa074031d2c2ea332a4d517dbae5"><div class="ttname"><a href="classsmacc_1_1SmaccPublisherClient.html#ad7a0aa074031d2c2ea332a4d517dbae5">smacc::SmaccPublisherClient::queueSize</a></div><div class="ttdeci">boost::optional&lt; int &gt; queueSize</div><div class="ttdef"><b>Definition:</b> <a href="smacc__publisher__client_8h_source.html#l00013">smacc_publisher_client.h:13</a></div></div>
+<p>References <a class="el" href="client_8cpp_source.html#l00019">smacc::ISmaccClient::getName()</a>, <a class="el" href="smacc__publisher__client_8h_source.html#l00057">initialized_</a>, <a class="el" href="smacc__publisher__client_8h_source.html#l00053">nh_</a>, <a class="el" href="smacc__publisher__client_8h_source.html#l00054">pub_</a>, and <a class="el" href="smacc__publisher__client_8h_source.html#l00012">topicName</a>.</p>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    this-&gt;<a class="code" href="classsmacc_1_1SmaccPublisherClient.html#a4b8401543c3d532e81453c9106ddaefc">topicName</a> = <a class="code" href="classsmacc_1_1SmaccPublisherClient.html#a4b8401543c3d532e81453c9106ddaefc">topicName</a>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="classsmacc_1_1SmaccPublisherClient.html#affbfbaa739a6de9f118c551c56b09dfe">initialized_</a>)</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keywordflow">if</span> (!this-&gt;<a class="code" href="classsmacc_1_1SmaccPublisherClient.html#a4b8401543c3d532e81453c9106ddaefc">topicName</a>)</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      {</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        ROS_ERROR(<span class="stringliteral">&quot;topic publisher with no topic name set. Skipping advertising.&quot;</span>);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">return</span>;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      }</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keywordflow">if</span> (!<a class="code" href="classsmacc_1_1SmaccPublisherClient.html#ad7a0aa074031d2c2ea332a4d517dbae5">queueSize</a>)</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classsmacc_1_1SmaccPublisherClient.html#ad7a0aa074031d2c2ea332a4d517dbae5">queueSize</a> = 1;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            ROS_INFO_STREAM(<span class="stringliteral">&quot;[&quot;</span> &lt;&lt; this-&gt;<a class="code" href="classsmacc_1_1ISmaccClient.html#a20846aabfd1de832aa27d7a8237a1742">getName</a>() &lt;&lt; <span class="stringliteral">&quot;] Client Publisher to topic: &quot;</span> &lt;&lt; <a class="code" href="classsmacc_1_1SmaccPublisherClient.html#a4b8401543c3d532e81453c9106ddaefc">topicName</a>);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <a class="code" href="classsmacc_1_1SmaccPublisherClient.html#a674fc5715c4983d093c8ae387232ae55">pub_</a> = <a class="code" href="classsmacc_1_1SmaccPublisherClient.html#aaebda6a40634daf81c80add02f938ad3">nh_</a>.advertise&lt;MessageType&gt;(*(this-&gt;<a class="code" href="classsmacc_1_1SmaccPublisherClient.html#a4b8401543c3d532e81453c9106ddaefc">topicName</a>), *<a class="code" href="classsmacc_1_1SmaccPublisherClient.html#ad7a0aa074031d2c2ea332a4d517dbae5">queueSize</a>);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      this-&gt;<a class="code" href="classsmacc_1_1SmaccPublisherClient.html#affbfbaa739a6de9f118c551c56b09dfe">initialized_</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div><div class="ttc" id="classsmacc_1_1SmaccPublisherClient_html_ad7a0aa074031d2c2ea332a4d517dbae5"><div class="ttname"><a href="classsmacc_1_1SmaccPublisherClient.html#ad7a0aa074031d2c2ea332a4d517dbae5">smacc::SmaccPublisherClient::queueSize</a></div><div class="ttdeci">boost::optional&lt; int &gt; queueSize</div><div class="ttdef"><b>Definition:</b> <a href="smacc__publisher__client_8h_source.html#l00013">smacc_publisher_client.h:13</a></div></div>
 <div class="ttc" id="classsmacc_1_1ISmaccClient_html_a20846aabfd1de832aa27d7a8237a1742"><div class="ttname"><a href="classsmacc_1_1ISmaccClient.html#a20846aabfd1de832aa27d7a8237a1742">smacc::ISmaccClient::getName</a></div><div class="ttdeci">virtual std::string getName() const </div><div class="ttdef"><b>Definition:</b> <a href="client_8cpp_source.html#l00019">client.cpp:19</a></div></div>
-<div class="ttc" id="classsmacc_1_1SmaccPublisherClient_html_a674fc5715c4983d093c8ae387232ae55"><div class="ttname"><a href="classsmacc_1_1SmaccPublisherClient.html#a674fc5715c4983d093c8ae387232ae55">smacc::SmaccPublisherClient::pub_</a></div><div class="ttdeci">ros::Publisher pub_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__publisher__client_8h_source.html#l00059">smacc_publisher_client.h:59</a></div></div>
-<div class="ttc" id="classsmacc_1_1SmaccPublisherClient_html_aaebda6a40634daf81c80add02f938ad3"><div class="ttname"><a href="classsmacc_1_1SmaccPublisherClient.html#aaebda6a40634daf81c80add02f938ad3">smacc::SmaccPublisherClient::nh_</a></div><div class="ttdeci">ros::NodeHandle nh_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__publisher__client_8h_source.html#l00058">smacc_publisher_client.h:58</a></div></div>
+<div class="ttc" id="classsmacc_1_1SmaccPublisherClient_html_a674fc5715c4983d093c8ae387232ae55"><div class="ttname"><a href="classsmacc_1_1SmaccPublisherClient.html#a674fc5715c4983d093c8ae387232ae55">smacc::SmaccPublisherClient::pub_</a></div><div class="ttdeci">ros::Publisher pub_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__publisher__client_8h_source.html#l00054">smacc_publisher_client.h:54</a></div></div>
+<div class="ttc" id="classsmacc_1_1SmaccPublisherClient_html_affbfbaa739a6de9f118c551c56b09dfe"><div class="ttname"><a href="classsmacc_1_1SmaccPublisherClient.html#affbfbaa739a6de9f118c551c56b09dfe">smacc::SmaccPublisherClient::initialized_</a></div><div class="ttdeci">bool initialized_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__publisher__client_8h_source.html#l00057">smacc_publisher_client.h:57</a></div></div>
+<div class="ttc" id="classsmacc_1_1SmaccPublisherClient_html_aaebda6a40634daf81c80add02f938ad3"><div class="ttname"><a href="classsmacc_1_1SmaccPublisherClient.html#aaebda6a40634daf81c80add02f938ad3">smacc::SmaccPublisherClient::nh_</a></div><div class="ttdeci">ros::NodeHandle nh_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__publisher__client_8h_source.html#l00053">smacc_publisher_client.h:53</a></div></div>
 <div class="ttc" id="classsmacc_1_1SmaccPublisherClient_html_a4b8401543c3d532e81453c9106ddaefc"><div class="ttname"><a href="classsmacc_1_1SmaccPublisherClient.html#a4b8401543c3d532e81453c9106ddaefc">smacc::SmaccPublisherClient::topicName</a></div><div class="ttdeci">boost::optional&lt; std::string &gt; topicName</div><div class="ttdef"><b>Definition:</b> <a href="smacc__publisher__client_8h_source.html#l00012">smacc_publisher_client.h:12</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classsmacc_1_1SmaccPublisherClient_a29e70233aebc34245ab5927534ca6291_cgraph.png" border="0" usemap="#classsmacc_1_1SmaccPublisherClient_a29e70233aebc34245ab5927534ca6291_cgraph" alt=""/></div>
-<map name="classsmacc_1_1SmaccPublisherClient_a29e70233aebc34245ab5927534ca6291_cgraph" id="classsmacc_1_1SmaccPublisherClient_a29e70233aebc34245ab5927534ca6291_cgraph">
+<div class="center"><img src="classsmacc_1_1SmaccPublisherClient_a9614fbcc4d566ad8b1b5007727bce2c1_cgraph.png" border="0" usemap="#classsmacc_1_1SmaccPublisherClient_a9614fbcc4d566ad8b1b5007727bce2c1_cgraph" alt=""/></div>
+<map name="classsmacc_1_1SmaccPublisherClient_a9614fbcc4d566ad8b1b5007727bce2c1_cgraph" id="classsmacc_1_1SmaccPublisherClient_a9614fbcc4d566ad8b1b5007727bce2c1_cgraph">
 <area shape="rect" id="node2" href="classsmacc_1_1ISmaccClient.html#a20846aabfd1de832aa27d7a8237a1742" title="smacc::ISmaccClient\l::getName" alt="" coords="264,5,419,47"/>
 <area shape="rect" id="node3" href="namespacesmacc.html#a458f5e70d468824fbcd66cc7729deaa8" title="smacc::demangleSymbol" alt="" coords="467,13,651,39"/>
 </map>
 </div>
 </p>
 
-</div>
-</div>
-<a class="anchor" id="a90710541fbc7c32600d29a065137cc50"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void smacc::SmaccPublisherClient::initialize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classsmacc_1_1ISmaccClient.html#a974ebb6ad6cf812e7b9de6b78b3d901f">smacc::ISmaccClient</a>.</p>
-
-<p>Definition at line <a class="el" href="smacc__publisher__client_8h_source.html#l00032">32</a> of file <a class="el" href="smacc__publisher__client_8h_source.html">smacc_publisher_client.h</a>.</p>
-
-<p>References <a class="el" href="smacc__publisher__client_8h_source.html#l00062">initialized_</a>.</p>
-<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="classsmacc_1_1SmaccPublisherClient.html#affbfbaa739a6de9f118c551c56b09dfe">initialized_</a>)</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keywordflow">if</span> (!<a class="code" href="classsmacc_1_1SmaccPublisherClient.html#ad7a0aa074031d2c2ea332a4d517dbae5">queueSize</a>)</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classsmacc_1_1SmaccPublisherClient.html#ad7a0aa074031d2c2ea332a4d517dbae5">queueSize</a> = 1;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keywordflow">if</span> (!<a class="code" href="classsmacc_1_1SmaccPublisherClient.html#a4b8401543c3d532e81453c9106ddaefc">topicName</a>)</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      {</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        ROS_ERROR(<span class="stringliteral">&quot;topic publisher with no topic name set. Skipping advertising.&quot;</span>);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      }</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keywordflow">else</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      {</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        this-&gt;<a class="code" href="classsmacc_1_1SmaccPublisherClient.html#affbfbaa739a6de9f118c551c56b09dfe">initialized_</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      }</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div><div class="ttc" id="classsmacc_1_1SmaccPublisherClient_html_ad7a0aa074031d2c2ea332a4d517dbae5"><div class="ttname"><a href="classsmacc_1_1SmaccPublisherClient.html#ad7a0aa074031d2c2ea332a4d517dbae5">smacc::SmaccPublisherClient::queueSize</a></div><div class="ttdeci">boost::optional&lt; int &gt; queueSize</div><div class="ttdef"><b>Definition:</b> <a href="smacc__publisher__client_8h_source.html#l00013">smacc_publisher_client.h:13</a></div></div>
-<div class="ttc" id="classsmacc_1_1SmaccPublisherClient_html_affbfbaa739a6de9f118c551c56b09dfe"><div class="ttname"><a href="classsmacc_1_1SmaccPublisherClient.html#affbfbaa739a6de9f118c551c56b09dfe">smacc::SmaccPublisherClient::initialized_</a></div><div class="ttdeci">bool initialized_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__publisher__client_8h_source.html#l00062">smacc_publisher_client.h:62</a></div></div>
-<div class="ttc" id="classsmacc_1_1SmaccPublisherClient_html_a4b8401543c3d532e81453c9106ddaefc"><div class="ttname"><a href="classsmacc_1_1SmaccPublisherClient.html#a4b8401543c3d532e81453c9106ddaefc">smacc::SmaccPublisherClient::topicName</a></div><div class="ttdeci">boost::optional&lt; std::string &gt; topicName</div><div class="ttdef"><b>Definition:</b> <a href="smacc__publisher__client_8h_source.html#l00012">smacc_publisher_client.h:12</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ab82b8234c5bbedf393b70cff442bd5be"></a>
@@ -346,19 +315,19 @@ template&lt;typename MessageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__publisher__client_8h_source.html#l00052">52</a> of file <a class="el" href="smacc__publisher__client_8h_source.html">smacc_publisher_client.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__publisher__client_8h_source.html#l00047">47</a> of file <a class="el" href="smacc__publisher__client_8h_source.html">smacc_publisher_client.h</a>.</p>
 
-<p>References <a class="el" href="smacc__publisher__client_8h_source.html#l00059">pub_</a>.</p>
+<p>References <a class="el" href="smacc__publisher__client_8h_source.html#l00054">pub_</a>.</p>
 
-<p>Referenced by <a class="el" href="cb__string__publisher_8h_source.html#l00028">sm_dance_bot::string_publisher_client::CbStringPublisher::onExit()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  {</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classsmacc_1_1SmaccPublisherClient.html#a674fc5715c4983d093c8ae387232ae55">pub_</a>.publish(msg);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div><div class="ttc" id="classsmacc_1_1SmaccPublisherClient_html_a674fc5715c4983d093c8ae387232ae55"><div class="ttname"><a href="classsmacc_1_1SmaccPublisherClient.html#a674fc5715c4983d093c8ae387232ae55">smacc::SmaccPublisherClient::pub_</a></div><div class="ttdeci">ros::Publisher pub_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__publisher__client_8h_source.html#l00059">smacc_publisher_client.h:59</a></div></div>
+<p>Referenced by <a class="el" href="cb__string__publisher_8h_source.html#l00028">sm_dance_bot::cl_string_publisher::CbStringPublisher::onExit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  {</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classsmacc_1_1SmaccPublisherClient.html#a674fc5715c4983d093c8ae387232ae55">pub_</a>.publish(msg);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  }</div><div class="ttc" id="classsmacc_1_1SmaccPublisherClient_html_a674fc5715c4983d093c8ae387232ae55"><div class="ttname"><a href="classsmacc_1_1SmaccPublisherClient.html#a674fc5715c4983d093c8ae387232ae55">smacc::SmaccPublisherClient::pub_</a></div><div class="ttdeci">ros::Publisher pub_</div><div class="ttdef"><b>Definition:</b> <a href="smacc__publisher__client_8h_source.html#l00054">smacc_publisher_client.h:54</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsmacc_1_1SmaccPublisherClient_ab82b8234c5bbedf393b70cff442bd5be_icgraph.png" border="0" usemap="#classsmacc_1_1SmaccPublisherClient_ab82b8234c5bbedf393b70cff442bd5be_icgraph" alt=""/></div>
 <map name="classsmacc_1_1SmaccPublisherClient_ab82b8234c5bbedf393b70cff442bd5be_icgraph" id="classsmacc_1_1SmaccPublisherClient_ab82b8234c5bbedf393b70cff442bd5be_icgraph">
-<area shape="rect" id="node2" href="classsm__dance__bot_1_1string__publisher__client_1_1CbStringPublisher.html#ae999bf03223ac330d47dee542d259b72" title="sm_dance_bot::string\l_publisher_client::CbString\lPublisher::onExit" alt="" coords="264,5,455,61"/>
+<area shape="rect" id="node2" href="classsm__dance__bot_1_1cl__string__publisher_1_1CbStringPublisher.html#ac93cc1eb150140331cb3e560ec8249e2" title="sm_dance_bot::cl_string\l_publisher::CbStringPublisher\l::onExit" alt="" coords="264,5,472,61"/>
 </map>
 </div>
 </p>
@@ -384,9 +353,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__publisher__client_8h_source.html#l00062">62</a> of file <a class="el" href="smacc__publisher__client_8h_source.html">smacc_publisher_client.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__publisher__client_8h_source.html#l00057">57</a> of file <a class="el" href="smacc__publisher__client_8h_source.html">smacc_publisher_client.h</a>.</p>
 
-<p>Referenced by <a class="el" href="smacc__publisher__client_8h_source.html#l00032">initialize()</a>, and <a class="el" href="smacc__publisher__client_8h_source.html#l00015">SmaccPublisherClient()</a>.</p>
+<p>Referenced by <a class="el" href="smacc__publisher__client_8h_source.html#l00026">configure()</a>, and <a class="el" href="smacc__publisher__client_8h_source.html#l00015">SmaccPublisherClient()</a>.</p>
 
 </div>
 </div>
@@ -408,9 +377,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__publisher__client_8h_source.html#l00058">58</a> of file <a class="el" href="smacc__publisher__client_8h_source.html">smacc_publisher_client.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__publisher__client_8h_source.html#l00053">53</a> of file <a class="el" href="smacc__publisher__client_8h_source.html">smacc_publisher_client.h</a>.</p>
 
-<p>Referenced by <a class="el" href="smacc__publisher__client_8h_source.html#l00026">configureMessageType()</a>.</p>
+<p>Referenced by <a class="el" href="smacc__publisher__client_8h_source.html#l00026">configure()</a>.</p>
 
 </div>
 </div>
@@ -432,9 +401,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__publisher__client_8h_source.html#l00059">59</a> of file <a class="el" href="smacc__publisher__client_8h_source.html">smacc_publisher_client.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__publisher__client_8h_source.html#l00054">54</a> of file <a class="el" href="smacc__publisher__client_8h_source.html">smacc_publisher_client.h</a>.</p>
 
-<p>Referenced by <a class="el" href="smacc__publisher__client_8h_source.html#l00026">configureMessageType()</a>, <a class="el" href="smacc__publisher__client_8h_source.html#l00052">publish()</a>, and <a class="el" href="smacc__publisher__client_8h_source.html#l00020">~SmaccPublisherClient()</a>.</p>
+<p>Referenced by <a class="el" href="smacc__publisher__client_8h_source.html#l00026">configure()</a>, <a class="el" href="smacc__publisher__client_8h_source.html#l00047">publish()</a>, and <a class="el" href="smacc__publisher__client_8h_source.html#l00020">~SmaccPublisherClient()</a>.</p>
 
 </div>
 </div>
@@ -450,8 +419,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="smacc__publisher__client_8h_source.html#l00013">13</a> of file <a class="el" href="smacc__publisher__client_8h_source.html">smacc_publisher_client.h</a>.</p>
 
-<p>Referenced by <a class="el" href="smacc__publisher__client_8h_source.html#l00026">configureMessageType()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a4b8401543c3d532e81453c9106ddaefc"></a>
@@ -466,7 +433,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="smacc__publisher__client_8h_source.html#l00012">12</a> of file <a class="el" href="smacc__publisher__client_8h_source.html">smacc_publisher_client.h</a>.</p>
 
-<p>Referenced by <a class="el" href="smacc__publisher__client_8h_source.html#l00026">configureMessageType()</a>.</p>
+<p>Referenced by <a class="el" href="cl__string__publisher_8h_source.html#l00013">sm_dance_bot::cl_string_publisher::ClStringPublisher::ClStringPublisher()</a>, <a class="el" href="cl__ros__publisher_8h_source.html#l00017">ros_publisher_client::ClRosPublisher::configure()</a>, and <a class="el" href="smacc__publisher__client_8h_source.html#l00026">configure()</a>.</p>
 
 </div>
 </div>

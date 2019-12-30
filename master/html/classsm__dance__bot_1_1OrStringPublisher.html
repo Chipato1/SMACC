@@ -177,7 +177,7 @@ Public Member Functions</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classsmacc_1_1Orthogonal.html#a7a3da420b1554e20aea3ed01067df05c">smacc::Orthogonal</a>.</p>
 
 <p>Definition at line <a class="el" href="or__string__publisher_8h_source.html#l00010">10</a> of file <a class="el" href="or__string__publisher_8h_source.html">or_string_publisher.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">auto</span> publisherClient_ = this-&gt;createClient&lt;OrStringPublisher, ClStringPublisher&gt;();</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        publisherClient_-&gt;topicName = <span class="stringliteral">&quot;/string_publisher_out&quot;</span>;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        publisherClient_-&gt;initialize();</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    }</div></div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        this-&gt;createClient&lt;OrStringPublisher, ClStringPublisher&gt;(<span class="stringliteral">&quot;/string_publisher_out&quot;</span>);</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

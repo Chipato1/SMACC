@@ -1,0 +1,316 @@
+\hypertarget{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard}{}\section{sm\+\_\+three\+\_\+some\+:\+:cl\+\_\+keyboard\+:\+:Cl\+Keyboard Class Reference}
+\label{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard}\index{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard@{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard}}
+
+
+{\ttfamily \#include $<$cl\+\_\+keyboard.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+three\+\_\+some\+:\+:cl\+\_\+keyboard\+:\+:Cl\+Keyboard\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+three\+\_\+some\+:\+:cl\+\_\+keyboard\+:\+:Cl\+Keyboard\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a279007ab2fa1b02e15be463a8ecbf750}{Cl\+Keyboard} ()
+\item 
+virtual \hyperlink{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a02b4b675bd9129729c0672242bd58d00}{$\sim$\+Cl\+Keyboard} ()
+\item 
+virtual void \hyperlink{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a79b6572562326dd94e9546b492d82fbb}{initialize} () override
+\item 
+{\footnotesize template$<$typename T\+Object\+Tag , typename T\+Derived $>$ }\\void \hyperlink{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a0fa5b87c64592b6864c5879961f131b9}{configure\+Event\+Source\+Types} ()
+\item 
+void \hyperlink{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_ac566f6a2d2b2384516ffd8517f57ecfd}{on\+Keyboard\+Message} (const std\+\_\+msgs\+::\+U\+Int16 \&unicode\+\_\+keychar)
+\item 
+{\footnotesize template$<$typename T\+Ev $>$ }\\void \hyperlink{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_acc062fa92e9d5e05a9690ad36cfc156e}{post\+Key\+Event} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::signals2\+::signal$<$ void(char keypress)$>$ \hyperlink{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a702f3984db0073247b7d216b5c36e317}{On\+Key\+Press}
+\item 
+boost\+::signals2\+::scoped\+\_\+connection \hyperlink{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_ab56d189c1d117cc0d3d57595b9bf76a9}{c\+\_\+}
+\item 
+std\+::function$<$ void(std\+\_\+msgs\+::\+U\+Int16)$>$ \hyperlink{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_abb3140ba3850b4e20f201a697b7f8388}{post\+Event\+Key\+Press}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbool}{bool} \hyperlink{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a4d0fead601bf70c79b6fc4b8688d5d18}{initialized\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 150 of file cl\+\_\+keyboard.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard@{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard}!Cl\+Keyboard@{Cl\+Keyboard}}
+\index{Cl\+Keyboard@{Cl\+Keyboard}!sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard@{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard}}
+\subsubsection[{\texorpdfstring{Cl\+Keyboard()}{ClKeyboard()}}]{\setlength{\rightskip}{0pt plus 5cm}sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard\+::\+Cl\+Keyboard (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a279007ab2fa1b02e15be463a8ecbf750}{}\label{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a279007ab2fa1b02e15be463a8ecbf750}
+
+
+Definition at line 156 of file cl\+\_\+keyboard.\+h.
+
+
+\begin{DoxyCode}
+157         \{
+158                 \hyperlink{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a4d0fead601bf70c79b6fc4b8688d5d18}{initialized\_} = \textcolor{keyword}{false};
+159         \}
+\end{DoxyCode}
+\index{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard@{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard}!````~Cl\+Keyboard@{$\sim$\+Cl\+Keyboard}}
+\index{````~Cl\+Keyboard@{$\sim$\+Cl\+Keyboard}!sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard@{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard}}
+\subsubsection[{\texorpdfstring{$\sim$\+Cl\+Keyboard()}{~ClKeyboard()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard\+::$\sim$\+Cl\+Keyboard (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a02b4b675bd9129729c0672242bd58d00}{}\label{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a02b4b675bd9129729c0672242bd58d00}
+
+
+Definition at line 161 of file cl\+\_\+keyboard.\+h.
+
+
+\begin{DoxyCode}
+162         \{
+163         \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard@{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard}!configure\+Event\+Source\+Types@{configure\+Event\+Source\+Types}}
+\index{configure\+Event\+Source\+Types@{configure\+Event\+Source\+Types}!sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard@{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard}}
+\subsubsection[{\texorpdfstring{configure\+Event\+Source\+Types()}{configureEventSourceTypes()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Object\+Tag , typename T\+Derived $>$ void sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard\+::configure\+Event\+Source\+Types (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a0fa5b87c64592b6864c5879961f131b9}{}\label{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a0fa5b87c64592b6864c5879961f131b9}
+
+
+Definition at line 182 of file cl\+\_\+keyboard.\+h.
+
+
+\begin{DoxyCode}
+183         \{
+184                 \hyperlink{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_abb3140ba3850b4e20f201a697b7f8388}{postEventKeyPress} = [=](\textcolor{keyword}{auto} unicode\_keychar) \{
+185                         \textcolor{keywordtype}{char} character = (char)unicode\_keychar.data;
+186                         ROS\_WARN(\textcolor{stringliteral}{"detected keyboard: %c"}, character);
+187 
+188                         \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'a'})
+189                                 this->postKeyEvent<EvKeyPressA<ClKeyboard, TObjectTag>>();
+190                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'b'})
+191                                 this->postKeyEvent<EvKeyPressB<ClKeyboard, TObjectTag>>();
+192                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'c'})
+193                                 this->postKeyEvent<EvKeyPressC<ClKeyboard, TObjectTag>>();
+194                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'d'})
+195                                 this->postKeyEvent<EvKeyPressD<ClKeyboard, TObjectTag>>();
+196                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'e'})
+197                                 this->postKeyEvent<EvKeyPressE<ClKeyboard, TObjectTag>>();
+198                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'f'})
+199                                 this->postKeyEvent<EvKeyPressF<ClKeyboard, TObjectTag>>();
+200                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'g'})
+201                                 this->postKeyEvent<EvKeyPressG<ClKeyboard, TObjectTag>>();
+202                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'h'})
+203                                 this->postKeyEvent<EvKeyPressH<ClKeyboard, TObjectTag>>();
+204                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'y'})
+205                                 this->postKeyEvent<EvKeyPressI<ClKeyboard, TObjectTag>>();
+206                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'j'})
+207                                 this->postKeyEvent<EvKeyPressJ<ClKeyboard, TObjectTag>>();
+208                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'k'})
+209                                 this->postKeyEvent<EvKeyPressK<ClKeyboard, TObjectTag>>();
+210                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'l'})
+211                                 this->postKeyEvent<EvKeyPressL<ClKeyboard, TObjectTag>>();
+212                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'m'})
+213                                 this->postKeyEvent<EvKeyPressM<ClKeyboard, TObjectTag>>();
+214                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'n'})
+215                                 this->postKeyEvent<EvKeyPressN<ClKeyboard, TObjectTag>>();
+216                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'o'})
+217                                 this->postKeyEvent<EvKeyPressO<ClKeyboard, TObjectTag>>();
+218                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'p'})
+219                                 this->postKeyEvent<EvKeyPressP<ClKeyboard, TObjectTag>>();
+220                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'q'})
+221                                 this->postKeyEvent<EvKeyPressQ<ClKeyboard, TObjectTag>>();
+222                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'r'})
+223                                 this->postKeyEvent<EvKeyPressR<ClKeyboard, TObjectTag>>();
+224                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'s'})
+225                                 this->postKeyEvent<EvKeyPressS<ClKeyboard, TObjectTag>>();
+226                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'t'})
+227                                 this->postKeyEvent<EvKeyPressT<ClKeyboard, TObjectTag>>();
+228                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'u'})
+229                                 this->postKeyEvent<EvKeyPressU<ClKeyboard, TObjectTag>>();
+230                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'v'})
+231                                 this->postKeyEvent<EvKeyPressV<ClKeyboard, TObjectTag>>();
+232                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'w'})
+233                                 this->postKeyEvent<EvKeyPressW<ClKeyboard, TObjectTag>>();
+234                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'x'})
+235                                 this->postKeyEvent<EvKeyPressX<ClKeyboard, TObjectTag>>();
+236                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'y'})
+237                                 this->postKeyEvent<EvKeyPressY<ClKeyboard, TObjectTag>>();
+238                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'z'})
+239                                 this->postKeyEvent<EvKeyPressZ<ClKeyboard, TObjectTag>>();
+240                         \hyperlink{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a702f3984db0073247b7d216b5c36e317}{OnKeyPress}(character); \textcolor{comment}{/*  */}
+241                 \};
+242         \}
+\end{DoxyCode}
+\index{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard@{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard}!initialize@{initialize}}
+\index{initialize@{initialize}!sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard@{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard}}
+\subsubsection[{\texorpdfstring{initialize() override}{initialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard\+::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a79b6572562326dd94e9546b492d82fbb}{}\label{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a79b6572562326dd94e9546b492d82fbb}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccSubscriberClient_acfa97685ecc588fe61eb57002354b58a}{smacc\+::\+Smacc\+Subscriber\+Client$<$ std\+\_\+msgs\+::\+U\+Int16 $>$}.
+
+
+
+Definition at line 165 of file cl\+\_\+keyboard.\+h.
+
+
+
+References smacc\+::\+Smacc\+Subscriber\+Client$<$ std\+\_\+msgs\+::\+U\+Int16 $>$\+::initialize().
+
+
+\begin{DoxyCode}
+166         \{
+167                 \hyperlink{classsmacc_1_1SmaccSubscriberClient_acfa97685ecc588fe61eb57002354b58a}{SmaccSubscriberClient<std\_msgs::UInt16>::initialize}
+      ();
+168 
+169                 \textcolor{keywordflow}{if} (!this->\hyperlink{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a4d0fead601bf70c79b6fc4b8688d5d18}{initialized\_})
+170                 \{
+171                         \hyperlink{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_ab56d189c1d117cc0d3d57595b9bf76a9}{c\_} = this->\hyperlink{classsmacc_1_1SmaccSubscriberClient_a7635fbb013c6fdbc3998da11b44766bb}{onMessageReceived}.connect([\textcolor{keyword}{this}](\textcolor{keyword}{auto} msg) \{
+172                                 this->\hyperlink{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_ac566f6a2d2b2384516ffd8517f57ecfd}{onKeyboardMessage}(msg);
+173 
+174                                 this->\hyperlink{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a4d0fead601bf70c79b6fc4b8688d5d18}{initialized\_} = \textcolor{keyword}{true};
+175                         \});
+176                 \}
+177         \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a79b6572562326dd94e9546b492d82fbb_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard@{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard}!on\+Keyboard\+Message@{on\+Keyboard\+Message}}
+\index{on\+Keyboard\+Message@{on\+Keyboard\+Message}!sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard@{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard}}
+\subsubsection[{\texorpdfstring{on\+Keyboard\+Message(const std\+\_\+msgs\+::\+U\+Int16 \&unicode\+\_\+keychar)}{onKeyboardMessage(const std_msgs::UInt16 &unicode_keychar)}}]{\setlength{\rightskip}{0pt plus 5cm}void sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard\+::on\+Keyboard\+Message (
+\begin{DoxyParamCaption}
+\item[{const std\+\_\+msgs\+::\+U\+Int16 \&}]{unicode\+\_\+keychar}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_ac566f6a2d2b2384516ffd8517f57ecfd}{}\label{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_ac566f6a2d2b2384516ffd8517f57ecfd}
+
+
+Definition at line 244 of file cl\+\_\+keyboard.\+h.
+
+
+\begin{DoxyCode}
+245         \{
+246                 \hyperlink{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_abb3140ba3850b4e20f201a697b7f8388}{postEventKeyPress}(unicode\_keychar);
+247         \}
+\end{DoxyCode}
+\index{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard@{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard}!post\+Key\+Event@{post\+Key\+Event}}
+\index{post\+Key\+Event@{post\+Key\+Event}!sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard@{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard}}
+\subsubsection[{\texorpdfstring{post\+Key\+Event()}{postKeyEvent()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Ev $>$ void sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard\+::post\+Key\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_acc062fa92e9d5e05a9690ad36cfc156e}{}\label{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_acc062fa92e9d5e05a9690ad36cfc156e}
+
+
+Definition at line 250 of file cl\+\_\+keyboard.\+h.
+
+
+
+References smacc\+::demangle\+Symbol().
+
+
+\begin{DoxyCode}
+251         \{
+252                 ROS\_WARN(\textcolor{stringliteral}{"ClKeyboard ev: %s"}, \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{smacc::demangleSymbol}(\textcolor{keyword}{typeid}(TEv).name()
+      ).c\_str());
+253                 \textcolor{keyword}{auto} \textcolor{keyword}{event} = \textcolor{keyword}{new} TEv();
+254                 this->\hyperlink{classsmacc_1_1ISmaccClient_a21a79203cb44fc717d4d977c190327c6}{postEvent}(event);
+255         \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_acc062fa92e9d5e05a9690ad36cfc156e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard@{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard}!c\+\_\+@{c\+\_\+}}
+\index{c\+\_\+@{c\+\_\+}!sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard@{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard}}
+\subsubsection[{\texorpdfstring{c\+\_\+}{c_}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::signals2\+::scoped\+\_\+connection sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard\+::c\+\_\+}\hypertarget{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_ab56d189c1d117cc0d3d57595b9bf76a9}{}\label{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_ab56d189c1d117cc0d3d57595b9bf76a9}
+
+
+Definition at line 154 of file cl\+\_\+keyboard.\+h.
+
+\index{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard@{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard}!initialized\+\_\+@{initialized\+\_\+}}
+\index{initialized\+\_\+@{initialized\+\_\+}!sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard@{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard}}
+\subsubsection[{\texorpdfstring{initialized\+\_\+}{initialized_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool} sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard\+::initialized\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a4d0fead601bf70c79b6fc4b8688d5d18}{}\label{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a4d0fead601bf70c79b6fc4b8688d5d18}
+
+
+Definition at line 258 of file cl\+\_\+keyboard.\+h.
+
+\index{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard@{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard}!On\+Key\+Press@{On\+Key\+Press}}
+\index{On\+Key\+Press@{On\+Key\+Press}!sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard@{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard}}
+\subsubsection[{\texorpdfstring{On\+Key\+Press}{OnKeyPress}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::signals2\+::signal$<$void(char keypress)$>$ sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard\+::\+On\+Key\+Press}\hypertarget{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a702f3984db0073247b7d216b5c36e317}{}\label{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a702f3984db0073247b7d216b5c36e317}
+
+
+Definition at line 153 of file cl\+\_\+keyboard.\+h.
+
+
+
+Referenced by sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cb\+Default\+Keyboard\+Behavior\+::on\+Entry().
+
+\index{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard@{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard}!post\+Event\+Key\+Press@{post\+Event\+Key\+Press}}
+\index{post\+Event\+Key\+Press@{post\+Event\+Key\+Press}!sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard@{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard}}
+\subsubsection[{\texorpdfstring{post\+Event\+Key\+Press}{postEventKeyPress}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::function$<$void(std\+\_\+msgs\+::\+U\+Int16)$>$ sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard\+::post\+Event\+Key\+Press}\hypertarget{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_abb3140ba3850b4e20f201a697b7f8388}{}\label{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_abb3140ba3850b4e20f201a697b7f8388}
+
+
+Definition at line 179 of file cl\+\_\+keyboard.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+three\+\_\+some/include/sm\+\_\+three\+\_\+some/clients/cl\+\_\+keyboard/\hyperlink{cl__keyboard_8h}{cl\+\_\+keyboard.\+h}\end{DoxyCompactItemize}

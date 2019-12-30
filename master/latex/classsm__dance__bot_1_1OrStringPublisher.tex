@@ -57,10 +57,8 @@ Definition at line 10 of file or\+\_\+string\+\_\+publisher.\+h.
 
 \begin{DoxyCode}
 11     \{
-12         \textcolor{keyword}{auto} publisherClient\_ = this->createClient<OrStringPublisher, ClStringPublisher>();
-13         publisherClient\_->topicName = \textcolor{stringliteral}{"/string\_publisher\_out"};
-14         publisherClient\_->initialize();
-15     \}
+12         this->createClient<OrStringPublisher, ClStringPublisher>(\textcolor{stringliteral}{"/string\_publisher\_out"});
+13     \}
 \end{DoxyCode}
 
 

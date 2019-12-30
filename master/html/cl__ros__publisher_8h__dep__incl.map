@@ -1,8 +1,11 @@
 <map id="smacc_client_library/ros_publisher_client/include/ros_publisher_client/cl_ros_publisher.h" name="smacc_client_library/ros_publisher_client/include/ros_publisher_client/cl_ros_publisher.h">
-<area shape="rect" id="node2" href="$cb__default__publish__loop_8h.html" title="smacc_client_library\l/ros_publisher_client\l/include/ros_publisher\l_client/client_behaviors\l/cb_default_publish_loop.h" alt="" coords="5,124,196,209"/>
-<area shape="rect" id="node5" href="$cb__muted__behavior_8h.html" title="smacc_client_library\l/ros_publisher_client\l/include/ros_publisher\l_client/client_behaviors\l/cb_muted_behavior.h" alt="" coords="221,124,391,209"/>
-<area shape="rect" id="node6" href="$cb__publish__once_8h.html" title="smacc_client_library\l/ros_publisher_client\l/include/ros_publisher\l_client/client_behaviors\l/cb_publish_once.h" alt="" coords="415,124,586,209"/>
-<area shape="rect" id="node7" href="$sm__three__some_2include_2sm__three__some_2orthogonals_2or__updatable__publisher_8h.html" title="smacc_sm_reference\l_library/sm_three_some\l/include/sm_three_some\l/orthogonals/or_updatable\l_publisher.h" alt="" coords="611,124,801,209"/>
-<area shape="rect" id="node3" href="$sm__three__some_8h.html" title="smacc_sm_reference\l_library/sm_three_some\l/include/sm_three_some\l/sm_three_some.h" alt="" coords="314,257,493,328"/>
-<area shape="rect" id="node4" href="$sm__three__some__node_8cpp.html" title="smacc_sm_reference\l_library/sm_three_some\l/src/sm_three_some_node.cpp" alt="" coords="294,376,513,432"/>
+<area shape="rect" id="node2" href="$cb__default__publish__loop_8h.html" title="smacc_client_library\l/ros_publisher_client\l/include/ros_publisher\l_client/client_behaviors\l/cb_default_publish_loop.h" alt="" coords="251,124,441,209"/>
+<area shape="rect" id="node3" href="$sm__dance__bot_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/sm_dance_bot.h" alt="" coords="261,257,431,328"/>
+<area shape="rect" id="node7" href="$cb__muted__behavior_8h.html" title="smacc_client_library\l/ros_publisher_client\l/include/ros_publisher\l_client/client_behaviors\l/cb_muted_behavior.h" alt="" coords="466,124,637,209"/>
+<area shape="rect" id="node8" href="$cb__publish__once_8h.html" title="smacc_client_library\l/ros_publisher_client\l/include/ros_publisher\l_client/client_behaviors\l/cb_publish_once.h" alt="" coords="661,124,831,209"/>
+<area shape="rect" id="node9" href="$sm__dance__bot_2include_2sm__dance__bot_2orthogonals_2or__updatable__publisher_8h.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/include/sm_dance_bot\l/orthogonals/or_updatable\l_publisher.h" alt="" coords="36,124,227,209"/>
+<area shape="rect" id="node10" href="$sm__three__some_2include_2sm__three__some_2orthogonals_2or__updatable__publisher_8h.html" title="smacc_sm_reference\l_library/sm_three_some\l/include/sm_three_some\l/orthogonals/or_updatable\l_publisher.h" alt="" coords="856,124,1047,209"/>
+<area shape="rect" id="node5" href="$sm__three__some_8h.html" title="smacc_sm_reference\l_library/sm_three_some\l/include/sm_three_some\l/sm_three_some.h" alt="" coords="566,257,745,328"/>
+<area shape="rect" id="node4" href="$sm__dance__bot_8cpp.html" title="smacc_sm_reference\l_library/sm_dance_bot\l/src/sm_dance_bot.cpp" alt="" coords="261,376,431,432"/>
+<area shape="rect" id="node6" href="$sm__three__some__node_8cpp.html" title="smacc_sm_reference\l_library/sm_three_some\l/src/sm_three_some_node.cpp" alt="" coords="546,376,765,432"/>
 </map>

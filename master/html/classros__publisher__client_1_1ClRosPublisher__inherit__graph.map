@@ -1,4 +1,4 @@
 <map id="ros_publisher_client::ClRosPublisher" name="ros_publisher_client::ClRosPublisher">
-<area shape="rect" id="node2" href="$classsmacc_1_1SmaccPublisherClient.html" title="{smacc::SmaccPublisherClient\n|+ topicName\l+ queueSize\l# nh_\l# pub_\l&#45; initialized_\l|+ SmaccPublisherClient()\l+ ~SmaccPublisherClient()\l+ configureMessageType()\l+ initialize()\l+ publish()\l}" alt="" coords="8,277,219,472"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1SmaccPublisherClient.html" title="{smacc::SmaccPublisherClient\n|+ topicName\l+ queueSize\l# nh_\l# pub_\l&#45; initialized_\l|+ SmaccPublisherClient()\l+ ~SmaccPublisherClient()\l+ configure()\l+ publish()\l}" alt="" coords="8,277,219,457"/>
 <area shape="rect" id="node3" href="$classsmacc_1_1ISmaccClient.html" title="{smacc::ISmaccClient\n|# stateMachine_\l# components_\l|+ ISmaccClient()\l+ ~ISmaccClient()\l+ initialize()\l+ setStateMachine()\l+ getName()\l+ postEvent()\l+ postEvent()\l+ getComponent()\l+ createComponent()\l&#45; configureEventSourceTypes()\l}" alt="" coords="5,5,221,229"/>
 </map>

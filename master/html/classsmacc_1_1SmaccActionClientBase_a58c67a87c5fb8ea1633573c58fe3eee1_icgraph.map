@@ -1,11 +1,11 @@
 <map id="smacc::SmaccActionClientBase::sendGoal" name="smacc::SmaccActionClientBase::sendGoal">
 <area shape="rect" id="node2" href="$classmove__base__z__client_1_1CbNavigateGlobalPosition.html#abc8b9437cce7b86ec7acb07c463c90e5" title="move_base_z_client\l::CbNavigateGlobalPosition\l::goToRadialStart" alt="" coords="245,5,440,61"/>
-<area shape="rect" id="node4" href="$classsm__dance__bot_1_1tool__client_1_1CbToolStop.html#abfd14b189bb107522360e82f21552f9c" title="sm_dance_bot::tool\l_client::CbToolStop\l::onEntry" alt="" coords="269,85,417,141"/>
-<area shape="rect" id="node5" href="$classsm__dance__bot_1_1tool__client_1_1CbToolStart.html#aecce17a02ff17a047a62f96634b9bbd4" title="sm_dance_bot::tool\l_client::CbToolStart\l::onEntry" alt="" coords="269,165,417,221"/>
-<area shape="rect" id="node6" href="$classmove__base__z__client_1_1CbUndoPathBackwards.html#a171b0d1a2943f5aca0647b101695eb71" title="move_base_z_client\l::CbUndoPathBackwards\l::onEntry" alt="" coords="254,245,431,301"/>
-<area shape="rect" id="node7" href="$classmove__base__z__client_1_1CbRotate.html#ac04e8dece248a97726a533820d15dfbe" title="move_base_z_client\l::CbRotate::onEntry" alt="" coords="267,325,418,366"/>
-<area shape="rect" id="node8" href="$classmove__base__z__client_1_1CbNavigateForward.html#a48df166608fd30ad6abfd0fca43caa51" title="move_base_z_client\l::CbNavigateForward\l::onEntry" alt="" coords="265,389,420,445"/>
-<area shape="rect" id="node9" href="$classmove__base__z__client_1_1CbNavigateBackwards.html#ae5c9eb5029e0a6ea6950cb23713214bb" title="move_base_z_client\l::CbNavigateBackwards\l::onEntry" alt="" coords="257,469,429,525"/>
-<area shape="rect" id="node10" href="$classmove__base__z__client_1_1WaypointNavigator.html#a376c1b5f822325122d29ad4f6e568b08" title="move_base_z_client\l::WaypointNavigator\l::sendNextGoal" alt="" coords="267,549,418,605"/>
+<area shape="rect" id="node4" href="$classsm__dance__bot_1_1cl__led_1_1CbLEDOn.html#a3b7de8585d728becefb8c2c5cc3b6d95" title="sm_dance_bot::cl_led\l::CbLEDOn::onEntry" alt="" coords="263,85,423,126"/>
+<area shape="rect" id="node5" href="$classsm__dance__bot_1_1cl__led_1_1CbLEDOff.html#a3c0ed097db52baae1928a19936f09a83" title="sm_dance_bot::cl_led\l::CbLEDOff::onEntry" alt="" coords="263,150,423,191"/>
+<area shape="rect" id="node6" href="$classmove__base__z__client_1_1CbUndoPathBackwards.html#a171b0d1a2943f5aca0647b101695eb71" title="move_base_z_client\l::CbUndoPathBackwards\l::onEntry" alt="" coords="254,215,431,271"/>
+<area shape="rect" id="node7" href="$classmove__base__z__client_1_1CbRotate.html#ac04e8dece248a97726a533820d15dfbe" title="move_base_z_client\l::CbRotate::onEntry" alt="" coords="267,294,418,335"/>
+<area shape="rect" id="node8" href="$classmove__base__z__client_1_1CbNavigateForward.html#a48df166608fd30ad6abfd0fca43caa51" title="move_base_z_client\l::CbNavigateForward\l::onEntry" alt="" coords="265,359,420,415"/>
+<area shape="rect" id="node9" href="$classmove__base__z__client_1_1CbNavigateBackwards.html#ae5c9eb5029e0a6ea6950cb23713214bb" title="move_base_z_client\l::CbNavigateBackwards\l::onEntry" alt="" coords="257,439,429,495"/>
+<area shape="rect" id="node10" href="$classmove__base__z__client_1_1WaypointNavigator.html#a376c1b5f822325122d29ad4f6e568b08" title="move_base_z_client\l::WaypointNavigator\l::sendNextGoal" alt="" coords="267,519,418,575"/>
 <area shape="rect" id="node3" href="$classmove__base__z__client_1_1CbNavigateGlobalPosition.html#aa91be9e16bb3b67560e97c8d29c384e4" title="move_base_z_client\l::CbNavigateGlobalPosition\l::onEntry" alt="" coords="488,5,683,61"/>
 </map>

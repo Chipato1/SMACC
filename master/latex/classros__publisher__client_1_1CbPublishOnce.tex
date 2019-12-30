@@ -27,7 +27,22 @@ Collaboration diagram for ros\+\_\+publisher\+\_\+client\+:\+:Cb\+Publish\+Once$
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classros__publisher__client_1_1CbPublishOnce_a7073167a98ec60cfc243b0809096ffb8}{on\+Entry} ()
+\hyperlink{classros__publisher__client_1_1CbPublishOnce_a7e58cbae17032aef05161697b7a061c5}{Cb\+Publish\+Once} ()
+\item 
+{\footnotesize template$<$typename T\+Message $>$ }\\\hyperlink{classros__publisher__client_1_1CbPublishOnce_a354897ea9a30ab5d95acc8837bf9ef0f}{Cb\+Publish\+Once} (const T\+Message \&data)
+\item 
+{\footnotesize template$<$typename T\+Message $>$ }\\void \hyperlink{classros__publisher__client_1_1CbPublishOnce_a06bef500e116390ee85a790401e600d8}{set\+Message} (const T\+Message \&data)
+\item 
+virtual void \hyperlink{classros__publisher__client_1_1CbPublishOnce_a223cb50cd7e4041d42106eb600575bae}{on\+Entry} () override
+\item 
+virtual void \hyperlink{classros__publisher__client_1_1CbPublishOnce_a879c967bb3e5e894e61256629636fcbd}{on\+Exit} () override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::function$<$ void()$>$ \hyperlink{classros__publisher__client_1_1CbPublishOnce_a91e0e3d574d25e160bcb3a4ca81bb0b2}{defered\+Publish\+Fn}
+\item 
+\hyperlink{classros__publisher__client_1_1ClRosPublisher}{Cl\+Ros\+Publisher} $\ast$ \hyperlink{classros__publisher__client_1_1CbPublishOnce_a50a1b2a4892ad780406231e0f870746a}{client\+\_\+}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -42,27 +57,192 @@ Definition at line 9 of file cb\+\_\+publish\+\_\+once.\+h.
 
 
 
-\subsection{Member Function Documentation}
-\index{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once@{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}!on\+Entry@{on\+Entry}}
-\index{on\+Entry@{on\+Entry}!ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once@{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}}
-\subsubsection[{\texorpdfstring{on\+Entry()}{onEntry()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ros\+Msg\+Type $>$ void {\bf ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}$<$ Ros\+Msg\+Type $>$\+::on\+Entry (
+\subsection{Constructor \& Destructor Documentation}
+\index{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once@{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}!Cb\+Publish\+Once@{Cb\+Publish\+Once}}
+\index{Cb\+Publish\+Once@{Cb\+Publish\+Once}!ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once@{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}}
+\subsubsection[{\texorpdfstring{Cb\+Publish\+Once()}{CbPublishOnce()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ros\+Msg\+Type $>$ {\bf ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}$<$ Ros\+Msg\+Type $>$\+::{\bf Cb\+Publish\+Once} (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classros__publisher__client_1_1CbPublishOnce_a7073167a98ec60cfc243b0809096ffb8}{}\label{classros__publisher__client_1_1CbPublishOnce_a7073167a98ec60cfc243b0809096ffb8}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classros__publisher__client_1_1CbPublishOnce_a7e58cbae17032aef05161697b7a061c5}{}\label{classros__publisher__client_1_1CbPublishOnce_a7e58cbae17032aef05161697b7a061c5}
+
+
+Definition at line 16 of file cb\+\_\+publish\+\_\+once.\+h.
+
+
+\begin{DoxyCode}
+17         : \hyperlink{classros__publisher__client_1_1CbPublishOnce_a91e0e3d574d25e160bcb3a4ca81bb0b2}{deferedPublishFn}(\textcolor{keyword}{nullptr})
+18     \{
+19     \}
+\end{DoxyCode}
+\index{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once@{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}!Cb\+Publish\+Once@{Cb\+Publish\+Once}}
+\index{Cb\+Publish\+Once@{Cb\+Publish\+Once}!ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once@{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}}
+\subsubsection[{\texorpdfstring{Cb\+Publish\+Once(const T\+Message \&data)}{CbPublishOnce(const TMessage &data)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ros\+Msg\+Type $>$ template$<$typename T\+Message $>$ {\bf ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}$<$ Ros\+Msg\+Type $>$\+::{\bf Cb\+Publish\+Once} (
+\begin{DoxyParamCaption}
+\item[{const T\+Message \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classros__publisher__client_1_1CbPublishOnce_a354897ea9a30ab5d95acc8837bf9ef0f}{}\label{classros__publisher__client_1_1CbPublishOnce_a354897ea9a30ab5d95acc8837bf9ef0f}
+
+
+Definition at line 22 of file cb\+\_\+publish\+\_\+once.\+h.
+
+
+
+References ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once$<$ Ros\+Msg\+Type $>$\+::set\+Message().
+
+
+\begin{DoxyCode}
+23     \{
+24         this->\hyperlink{classros__publisher__client_1_1CbPublishOnce_a06bef500e116390ee85a790401e600d8}{setMessage}(data);
+25     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classros__publisher__client_1_1CbPublishOnce_a354897ea9a30ab5d95acc8837bf9ef0f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once@{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once@{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}}
+\subsubsection[{\texorpdfstring{on\+Entry() override}{onEntry() override}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ros\+Msg\+Type $>$ virtual void {\bf ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}$<$ Ros\+Msg\+Type $>$\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classros__publisher__client_1_1CbPublishOnce_a223cb50cd7e4041d42106eb600575bae}{}\label{classros__publisher__client_1_1CbPublishOnce_a223cb50cd7e4041d42106eb600575bae}
 
 
 Reimplemented from \hyperlink{classsmacc_1_1SmaccClientBehavior_a7962382f93987c720ad432fef55b123f}{smacc\+::\+Smacc\+Client\+Behavior}.
 
 
 
-Definition at line 12 of file cb\+\_\+publish\+\_\+once.\+h.
+Definition at line 35 of file cb\+\_\+publish\+\_\+once.\+h.
+
+
+
+References ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once$<$ Ros\+Msg\+Type $>$\+::defered\+Publish\+Fn, and smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client().
 
 
 \begin{DoxyCode}
-13     \{
-14     \}
+36     \{
+37         this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a917f001e763a1059af337bf4e164f542}{requiresClient}(\hyperlink{classros__publisher__client_1_1CbPublishOnce_a50a1b2a4892ad780406231e0f870746a}{client\_});
+38 
+39         \textcolor{keywordflow}{if} (\hyperlink{classros__publisher__client_1_1CbPublishOnce_a91e0e3d574d25e160bcb3a4ca81bb0b2}{deferedPublishFn} != \textcolor{keyword}{nullptr})
+40             \hyperlink{classros__publisher__client_1_1CbPublishOnce_a91e0e3d574d25e160bcb3a4ca81bb0b2}{deferedPublishFn}();
+41     \}
 \end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classros__publisher__client_1_1CbPublishOnce_a223cb50cd7e4041d42106eb600575bae_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once@{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}!on\+Exit@{on\+Exit}}
+\index{on\+Exit@{on\+Exit}!ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once@{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}}
+\subsubsection[{\texorpdfstring{on\+Exit() override}{onExit() override}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ros\+Msg\+Type $>$ virtual void {\bf ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}$<$ Ros\+Msg\+Type $>$\+::on\+Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classros__publisher__client_1_1CbPublishOnce_a879c967bb3e5e894e61256629636fcbd}{}\label{classros__publisher__client_1_1CbPublishOnce_a879c967bb3e5e894e61256629636fcbd}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccClientBehavior_ac0cd72d42bd00425362a97c9803ecce5}{smacc\+::\+Smacc\+Client\+Behavior}.
+
+
+
+Definition at line 43 of file cb\+\_\+publish\+\_\+once.\+h.
+
+
+\begin{DoxyCode}
+44     \{
+45     \}
+\end{DoxyCode}
+\index{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once@{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}!set\+Message@{set\+Message}}
+\index{set\+Message@{set\+Message}!ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once@{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}}
+\subsubsection[{\texorpdfstring{set\+Message(const T\+Message \&data)}{setMessage(const TMessage &data)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ros\+Msg\+Type $>$ template$<$typename T\+Message $>$ void {\bf ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}$<$ Ros\+Msg\+Type $>$\+::set\+Message (
+\begin{DoxyParamCaption}
+\item[{const T\+Message \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classros__publisher__client_1_1CbPublishOnce_a06bef500e116390ee85a790401e600d8}{}\label{classros__publisher__client_1_1CbPublishOnce_a06bef500e116390ee85a790401e600d8}
+
+
+Definition at line 28 of file cb\+\_\+publish\+\_\+once.\+h.
+
+
+
+References ros\+\_\+publisher\+\_\+client\+::\+Cl\+Ros\+Publisher\+::publish().
+
+
+
+Referenced by ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once$<$ Ros\+Msg\+Type $>$\+::\+Cb\+Publish\+Once().
+
+
+\begin{DoxyCode}
+29     \{
+30         \hyperlink{classros__publisher__client_1_1CbPublishOnce_a91e0e3d574d25e160bcb3a4ca81bb0b2}{deferedPublishFn} = [=]() \{
+31             \hyperlink{classros__publisher__client_1_1CbPublishOnce_a50a1b2a4892ad780406231e0f870746a}{client\_}->\hyperlink{classros__publisher__client_1_1ClRosPublisher_a9e62a3581a730cd2e287e560d04d151b}{publish}(data);
+32         \};
+33     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classros__publisher__client_1_1CbPublishOnce_a06bef500e116390ee85a790401e600d8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classros__publisher__client_1_1CbPublishOnce_a06bef500e116390ee85a790401e600d8_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once@{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}!client\+\_\+@{client\+\_\+}}
+\index{client\+\_\+@{client\+\_\+}!ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once@{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}}
+\subsubsection[{\texorpdfstring{client\+\_\+}{client_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ros\+Msg\+Type $>$ {\bf Cl\+Ros\+Publisher}$\ast$ {\bf ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}$<$ Ros\+Msg\+Type $>$\+::client\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classros__publisher__client_1_1CbPublishOnce_a50a1b2a4892ad780406231e0f870746a}{}\label{classros__publisher__client_1_1CbPublishOnce_a50a1b2a4892ad780406231e0f870746a}
+
+
+Definition at line 13 of file cb\+\_\+publish\+\_\+once.\+h.
+
+\index{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once@{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}!defered\+Publish\+Fn@{defered\+Publish\+Fn}}
+\index{defered\+Publish\+Fn@{defered\+Publish\+Fn}!ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once@{ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}}
+\subsubsection[{\texorpdfstring{defered\+Publish\+Fn}{deferedPublishFn}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ros\+Msg\+Type $>$ std\+::function$<$void()$>$ {\bf ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once}$<$ Ros\+Msg\+Type $>$\+::defered\+Publish\+Fn\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classros__publisher__client_1_1CbPublishOnce_a91e0e3d574d25e160bcb3a4ca81bb0b2}{}\label{classros__publisher__client_1_1CbPublishOnce_a91e0e3d574d25e160bcb3a4ca81bb0b2}
+
+
+Definition at line 12 of file cb\+\_\+publish\+\_\+once.\+h.
+
+
+
+Referenced by ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once$<$ Ros\+Msg\+Type $>$\+::on\+Entry().
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

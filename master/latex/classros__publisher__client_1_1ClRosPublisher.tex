@@ -28,6 +28,10 @@ Collaboration diagram for ros\+\_\+publisher\+\_\+client\+:\+:Cl\+Ros\+Publisher
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classros__publisher__client_1_1ClRosPublisher_a9a5c4a6c97a6fcab30827521891f222f}{Cl\+Ros\+Publisher} ()
+\item 
+{\footnotesize template$<$typename Message\+Type $>$ }\\void \hyperlink{classros__publisher__client_1_1ClRosPublisher_aae4ef0ad45fd4f4e24659b9386af80a3}{configure} (std\+::string \hyperlink{classsmacc_1_1SmaccPublisherClient_a4b8401543c3d532e81453c9106ddaefc}{topic\+Name})
+\item 
+{\footnotesize template$<$typename Message\+Type $>$ }\\void \hyperlink{classros__publisher__client_1_1ClRosPublisher_a9e62a3581a730cd2e287e560d04d151b}{publish} (const Message\+Type \&msg)
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -56,6 +60,63 @@ Definition at line 12 of file cl\+\_\+ros\+\_\+publisher.\+h.
 13     \{
 14     \}
 \end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{ros\+\_\+publisher\+\_\+client\+::\+Cl\+Ros\+Publisher@{ros\+\_\+publisher\+\_\+client\+::\+Cl\+Ros\+Publisher}!configure@{configure}}
+\index{configure@{configure}!ros\+\_\+publisher\+\_\+client\+::\+Cl\+Ros\+Publisher@{ros\+\_\+publisher\+\_\+client\+::\+Cl\+Ros\+Publisher}}
+\subsubsection[{\texorpdfstring{configure(std\+::string topic\+Name)}{configure(std::string topicName)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type $>$ void ros\+\_\+publisher\+\_\+client\+::\+Cl\+Ros\+Publisher\+::configure (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{topic\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classros__publisher__client_1_1ClRosPublisher_aae4ef0ad45fd4f4e24659b9386af80a3}{}\label{classros__publisher__client_1_1ClRosPublisher_aae4ef0ad45fd4f4e24659b9386af80a3}
+
+
+Definition at line 17 of file cl\+\_\+ros\+\_\+publisher.\+h.
+
+
+
+References smacc\+::\+Smacc\+Publisher\+Client\+::topic\+Name.
+
+
+\begin{DoxyCode}
+18     \{
+19         SmaccPublisherClient::configure<MessageType>(\hyperlink{classsmacc_1_1SmaccPublisherClient_a4b8401543c3d532e81453c9106ddaefc}{topicName});
+20     \}
+\end{DoxyCode}
+\index{ros\+\_\+publisher\+\_\+client\+::\+Cl\+Ros\+Publisher@{ros\+\_\+publisher\+\_\+client\+::\+Cl\+Ros\+Publisher}!publish@{publish}}
+\index{publish@{publish}!ros\+\_\+publisher\+\_\+client\+::\+Cl\+Ros\+Publisher@{ros\+\_\+publisher\+\_\+client\+::\+Cl\+Ros\+Publisher}}
+\subsubsection[{\texorpdfstring{publish(const Message\+Type \&msg)}{publish(const MessageType &msg)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type $>$ void ros\+\_\+publisher\+\_\+client\+::\+Cl\+Ros\+Publisher\+::publish (
+\begin{DoxyParamCaption}
+\item[{const Message\+Type \&}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classros__publisher__client_1_1ClRosPublisher_a9e62a3581a730cd2e287e560d04d151b}{}\label{classros__publisher__client_1_1ClRosPublisher_a9e62a3581a730cd2e287e560d04d151b}
+
+
+Definition at line 23 of file cl\+\_\+ros\+\_\+publisher.\+h.
+
+
+
+Referenced by ros\+\_\+publisher\+\_\+client\+::\+Cb\+Publish\+Once$<$ Ros\+Msg\+Type $>$\+::set\+Message(), and ros\+\_\+publisher\+\_\+client\+::\+Cb\+Default\+Publish\+Loop\+::set\+Message().
+
+
+\begin{DoxyCode}
+24     \{
+25         SmaccPublisherClient::publish(msg);
+26     \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classros__publisher__client_1_1ClRosPublisher_a9e62a3581a730cd2e287e560d04d151b_icgraph}
+\end{center}
+\end{figure}
+
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

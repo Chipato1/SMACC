@@ -1,6 +1,6 @@
-<map id="smacc_sm_reference_library/sm_dance_bot/include/sm_dance_bot/clients/lidar_client/client_behaviors/cb_lidar_sensor.h" name="smacc_sm_reference_library/sm_dance_bot/include/sm_dance_bot/clients/lidar_client/client_behaviors/cb_lidar_sensor.h">
+<map id="smacc_sm_reference_library/sm_dance_bot/include/sm_dance_bot/clients/cl_lidar/client_behaviors/cb_lidar_sensor.h" name="smacc_sm_reference_library/sm_dance_bot/include/sm_dance_bot/clients/cl_lidar/client_behaviors/cb_lidar_sensor.h">
 <area shape="rect" id="node2" href="$cb__sensor__base_8h.html" title="smacc_interface_components\l/client_behaviors/cb_sensor_base.h" alt="" coords="3225,139,3473,180"/>
-<area shape="rect" id="node79" href="$cl__lidar_8h.html" title="sm_dance_bot/clients\l/lidar_client/cl_lidar.h" alt="" coords="3496,139,3657,180"/>
+<area shape="rect" id="node79" href="$cl__lidar_8h.html" title="sm_dance_bot/clients\l/cl_lidar/cl_lidar.h" alt="" coords="3496,139,3657,180"/>
 <area shape="rect" id="node3" href="$smacc__client__behavior_8h.html" title="smacc/smacc_client\l_behavior.h" alt="" coords="2217,228,2368,269"/>
 <area shape="rect" id="node74" href="$sensor__client_8h.html" title="smacc_interface_components\l/clients/sensor_client.h" alt="" coords="3345,407,3560,448"/>
 <area shape="rect" id="node4" href="$common_8h.html" title="smacc/common.h" alt="" coords="1669,764,1807,791"/>
