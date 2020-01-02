@@ -88,7 +88,7 @@ void \hyperlink{classsmacc_1_1SmaccState_a4f3083a54914820cd7b9eb5a6221f29f}{thro
 \item 
 {\footnotesize template$<$typename T\+Orthogonal , typename T\+Behavior , typename... Args$>$ }\\static void \hyperlink{classsmacc_1_1SmaccState_a3e335f3290e4968db0c8e22bf88356b7}{static\+\_\+configure} (Args \&\&...args)
 \item 
-{\footnotesize template$<$typename T\+Event\+List $>$ }\\static void \hyperlink{classsmacc_1_1SmaccState_a234cb467d9054c636f9ee77f1174b253}{iterate\+Logic\+Unit\+Event\+Types} (\hyperlink{structsmacc_1_1SmaccLogicUnitInfo}{Smacc\+Logic\+Unit\+Info} \&luinfo)
+{\footnotesize template$<$typename T\+Event\+List $>$ }\\static void \hyperlink{classsmacc_1_1SmaccState_a234cb467d9054c636f9ee77f1174b253}{iterate\+Logic\+Unit\+Event\+Types} (\hyperlink{structsmacc_1_1introspection_1_1SmaccLogicUnitInfo}{Smacc\+Logic\+Unit\+Info} \&luinfo)
 \item 
 {\footnotesize template$<$typename T\+L\+Unit , typename T\+Trigger\+Event , typename T\+Event\+List , typename... T\+U\+Args$>$ }\\static void \hyperlink{classsmacc_1_1SmaccState_a6fc90cf59c60c749e82f49aafb079b23}{static\+\_\+create\+Logic\+Unit} (T\+U\+Args...\+args)
 \item 
@@ -204,7 +204,7 @@ Definition at line 43 of file smacc\+\_\+state\+\_\+base.\+h.
 
 \begin{DoxyCode}
 44   \{
-45     ROS\_WARN\_STREAM(\textcolor{stringliteral}{"creatingState state: "} << \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(MostDerived).name()).
+45     ROS\_WARN\_STREAM(\textcolor{stringliteral}{"creatingState state: "} << \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(\textcolor{keyword}{typeid}(MostDerived).name()).
       c\_str());
 46     this->set\_context(ctx.pContext\_);
 47 
@@ -216,7 +216,7 @@ Definition at line 43 of file smacc\+\_\+state\+\_\+base.\+h.
 53     this->\hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_aeec54e997d715b105ebfeb5caadc4fbf}{notifyOnStateEntryStart}(
       static\_cast<MostDerived *>(\textcolor{keyword}{this}));
 54 
-55     ros::NodeHandle contextNh = \hyperlink{namespacesmacc_a80d4b85f76c7059b35e3d16ec34ea675}{optionalNodeHandle}(ctx.pContext\_);
+55     ros::NodeHandle contextNh = \hyperlink{namespacesmacc_1_1introspection_a8acc3b4146a8b2bb0a9fa4178840e9b9}{optionalNodeHandle}(ctx.pContext\_);
 56 
 57     ROS\_DEBUG(\textcolor{stringliteral}{"context node handle namespace: %s"}, contextNh.getNamespace().c\_str());
 58     \textcolor{keywordflow}{if} (contextNh.getNamespace() == \textcolor{stringliteral}{"/"})
@@ -236,32 +236,32 @@ Definition at line 43 of file smacc\+\_\+state\+\_\+base.\+h.
 72     \{
 73       ROS\_DEBUG(\textcolor{stringliteral}{"-- STATIC STATE DESCRIPTION --"});
 74 
-75       \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto} &stateBehaviorsVector : \hyperlink{classsmacc_1_1SmaccStateInfo_a2cc62c6c9dec1a4f5294f8430efb71f2}{SmaccStateInfo::staticBehaviorInfo}
+75       \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto} &stateBehaviorsVector : \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo_a2cc62c6c9dec1a4f5294f8430efb71f2}{SmaccStateInfo::staticBehaviorInfo}
       )
 76       \{
-77         ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{" - state info: "} << \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(stateBehaviorsVector.first->name
+77         ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{" - state info: "} << \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(stateBehaviorsVector.first->name
       ()));
 78         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &bhinfo : stateBehaviorsVector.second)
 79         \{
-80           ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{" - client behavior: "} << \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(bhinfo.behaviorType->name
+80           ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{" - client behavior: "} << \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(bhinfo.behaviorType->name
       ()));
 81         \}
 82       \}
 83 
 84       \textcolor{keyword}{const} std::type\_info *tindex = &(\textcolor{keyword}{typeid}(MostDerived));
 85       \textcolor{keyword}{auto} &staticDefinedBehaviors = SmaccStateInfo::staticBehaviorInfo[tindex];
-86       \textcolor{keyword}{auto} &staticDefinedLogicUnits = \hyperlink{classsmacc_1_1SmaccStateInfo_a7a22f3c1ea22042a19f897db4ecfeb67}{SmaccStateInfo::logicUnitsInfo}[tindex];
+86       \textcolor{keyword}{auto} &staticDefinedLogicUnits = \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo_a7a22f3c1ea22042a19f897db4ecfeb67}{SmaccStateInfo::logicUnitsInfo}[tindex];
 87 
 88       \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &bhinfo : staticDefinedBehaviors)
 89       \{
-90         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"- Creating static client behavior: "} << \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(bhinfo.
+90         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"- Creating static client behavior: "} << \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(bhinfo.
       behaviorType->name()));
 91         bhinfo.factoryFunction(\textcolor{keyword}{this});
 92       \}
 93 
 94       \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &lu : staticDefinedLogicUnits)
 95       \{
-96         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"- Creating static logic unit: "} << \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(lu.logicUnitType->
+96         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"- Creating static logic unit: "} << \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(lu.logicUnitType->
       name()));
 97         lu.factoryFunction(\textcolor{keyword}{this});
 98       \}
@@ -296,7 +296,7 @@ Definition at line 142 of file smacc\+\_\+state\+\_\+base.\+h.
 144     \textcolor{keywordflow}{try}
 145     \{
 146       this->\hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_a5c8d4c9a4b11c7950266a00e48080ce3}{lockStateMachine}(\textcolor{stringliteral}{"state exit"});
-147       \textcolor{keyword}{auto} fullname = \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(MostDerived).name());
+147       \textcolor{keyword}{auto} fullname = \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(\textcolor{keyword}{typeid}(MostDerived).name());
 148       ROS\_WARN\_STREAM(\textcolor{stringliteral}{"exiting state: "} << fullname);
 149       this->\hyperlink{classsmacc_1_1ISmaccState_a0b6c531ca8c446052022308548f55b92}{setParam}(\textcolor{stringliteral}{"destroyed"}, \textcolor{keyword}{true});
 150 
@@ -364,7 +364,7 @@ Definition at line 132 of file smacc\+\_\+state\+\_\+base.\+h.
 
 \begin{DoxyCode}
 133   \{
-134     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(MostDerived).name());
+134     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(\textcolor{keyword}{typeid}(MostDerived).name());
 135   \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}!get\+Full\+Path\+Name@{get\+Full\+Path\+Name}}
@@ -693,8 +693,8 @@ Definition at line 191 of file smacc\+\_\+state\+\_\+base.\+h.
 
 \begin{DoxyCode}
 192   \{
-193     \textcolor{keyword}{auto} strorthogonal = \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(TOrthogonal).name());
-194     \textcolor{keyword}{auto} strbehavior = \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(TBehavior).name());
+193     \textcolor{keyword}{auto} strorthogonal = \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(\textcolor{keyword}{typeid}(TOrthogonal).name());
+194     \textcolor{keyword}{auto} strbehavior = \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(\textcolor{keyword}{typeid}(TBehavior).name());
 195 
 196     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"Orthogonal "} << strorthogonal << \textcolor{stringliteral}{" -> "} << strbehavior);
 197 
@@ -708,11 +708,11 @@ Definition at line 191 of file smacc\+\_\+state\+\_\+base.\+h.
 205     bhinfo.orthogonalType = &(\textcolor{keyword}{typeid}(TOrthogonal));
 206 
 207     \textcolor{keyword}{const} std::type\_info *tindex = &(\textcolor{keyword}{typeid}(MostDerived));
-208     \textcolor{keywordflow}{if} (!\hyperlink{classsmacc_1_1SmaccStateInfo_a2cc62c6c9dec1a4f5294f8430efb71f2}{SmaccStateInfo::staticBehaviorInfo}.count(tindex))
-209       \hyperlink{classsmacc_1_1SmaccStateInfo_a2cc62c6c9dec1a4f5294f8430efb71f2}{SmaccStateInfo::staticBehaviorInfo}[tindex] = 
+208     \textcolor{keywordflow}{if} (!\hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo_a2cc62c6c9dec1a4f5294f8430efb71f2}{SmaccStateInfo::staticBehaviorInfo}.count(tindex))
+209       \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo_a2cc62c6c9dec1a4f5294f8430efb71f2}{SmaccStateInfo::staticBehaviorInfo}[tindex] = 
       std::vector<StateBehaviorInfoEntry>();
 210 
-211     \hyperlink{classsmacc_1_1SmaccStateInfo_a2cc62c6c9dec1a4f5294f8430efb71f2}{SmaccStateInfo::staticBehaviorInfo}[tindex].push\_back(bhinfo);
+211     \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo_a2cc62c6c9dec1a4f5294f8430efb71f2}{SmaccStateInfo::staticBehaviorInfo}[tindex].push\_back(bhinfo);
 212   \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}!static\+\_\+create\+Logic\+Unit@{static\+\_\+create\+Logic\+Unit}}
@@ -734,7 +734,7 @@ Definition at line 269 of file smacc\+\_\+state\+\_\+base.\+h.
 273     luinfo.logicUnitType = &\textcolor{keyword}{typeid}(TLUnit);
 274 
 275     std::string eventtypename = \textcolor{keyword}{typeid}(TTriggerEvent).name();
-276     \textcolor{keyword}{auto} eventType = \hyperlink{classsmacc_1_1TypeInfo_a9bff1505e37e69b869d686a30c507033}{TypeInfo::getTypeInfoFromString}(eventtypename);
+276     \textcolor{keyword}{auto} eventType = \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a47d65b6c61499d7ae8ab9f6325c84837}{TypeInfo::getTypeInfoFromString}(eventtypename);
 277 
 278     \textcolor{keywordflow}{if} (eventType->templateParameters.size() > 1)
 279     \{
@@ -753,11 +753,11 @@ Definition at line 269 of file smacc\+\_\+state\+\_\+base.\+h.
 292     \};
 293 
 294     \textcolor{keyword}{const} std::type\_info *tindex = &(\textcolor{keyword}{typeid}(MostDerived));
-295     \textcolor{keywordflow}{if} (!\hyperlink{classsmacc_1_1SmaccStateInfo_a7a22f3c1ea22042a19f897db4ecfeb67}{SmaccStateInfo::logicUnitsInfo}.count(tindex))
-296       \hyperlink{classsmacc_1_1SmaccStateInfo_a7a22f3c1ea22042a19f897db4ecfeb67}{SmaccStateInfo::logicUnitsInfo}[tindex] = 
+295     \textcolor{keywordflow}{if} (!\hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo_a7a22f3c1ea22042a19f897db4ecfeb67}{SmaccStateInfo::logicUnitsInfo}.count(tindex))
+296       \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo_a7a22f3c1ea22042a19f897db4ecfeb67}{SmaccStateInfo::logicUnitsInfo}[tindex] = 
       std::vector<SmaccLogicUnitInfo>();
 297 
-298     \hyperlink{classsmacc_1_1SmaccStateInfo_a7a22f3c1ea22042a19f897db4ecfeb67}{SmaccStateInfo::logicUnitsInfo}[tindex].push\_back(luinfo);
+298     \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo_a7a22f3c1ea22042a19f897db4ecfeb67}{SmaccStateInfo::logicUnitsInfo}[tindex].push\_back(luinfo);
 299   \}
 \end{DoxyCode}
 \index{smacc\+::\+Smacc\+State@{smacc\+::\+Smacc\+State}!throw\+Finish\+Event@{throw\+Finish\+Event}}

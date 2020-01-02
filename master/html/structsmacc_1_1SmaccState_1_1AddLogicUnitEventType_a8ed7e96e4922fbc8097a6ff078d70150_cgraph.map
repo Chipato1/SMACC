@@ -1,7 +1,7 @@
 <map id="smacc::SmaccState::AddLogicUnitEventType::operator()" name="smacc::SmaccState::AddLogicUnitEventType::operator()">
-<area shape="rect" id="node2" href="$classsmacc_1_1TypeInfo.html#a9d871ecc7a19983b37afca0cd219a5f8" title="smacc::TypeInfo::getType\lInfoFromTypeid" alt="" coords="224,35,404,76"/>
-<area shape="rect" id="node3" href="$classsmacc_1_1TypeInfo.html#a9bff1505e37e69b869d686a30c507033" title="smacc::TypeInfo::getType\lInfoFromString" alt="" coords="454,5,634,47"/>
-<area shape="rect" id="node6" href="$namespacesmacc.html#a458f5e70d468824fbcd66cc7729deaa8" title="smacc::demangleSymbol" alt="" coords="452,71,636,98"/>
-<area shape="rect" id="node4" href="$namespacesmacc.html#af160907752916d32be9c40dc95cd29e0" title="smacc::replace" alt="" coords="888,13,1007,39"/>
-<area shape="rect" id="node5" href="$namespacesmacc.html#a72fcb6f2d23e716a772176e79495bc53" title="smacc::replace_back" alt="" coords="684,38,840,65"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1introspection_1_1TypeInfo.html#a09ec2f3f94a8f1fc82ae250216c38d47" title="smacc::introspection\l::TypeInfo::getTypeInfoFrom\lTypeid" alt="" coords="224,41,417,97"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1introspection_1_1TypeInfo.html#a47d65b6c61499d7ae8ab9f6325c84837" title="smacc::introspection\l::TypeInfo::getTypeInfoFrom\lString" alt="" coords="465,5,659,61"/>
+<area shape="rect" id="node6" href="$namespacesmacc_1_1introspection.html#a2f495108db3e57604d8d3ff5ef030302" title="smacc::introspection\l::demangleSymbol" alt="" coords="485,85,639,126"/>
+<area shape="rect" id="node4" href="$namespacesmacc_1_1introspection.html#a48571b9bf3b115d2a83cc0147c96d0bd" title="smacc::introspection\l::replace" alt="" coords="909,13,1064,54"/>
+<area shape="rect" id="node5" href="$namespacesmacc_1_1introspection.html#a19350163cda321a04645dcd6f6585f24" title="smacc::introspection\l::replace_back" alt="" coords="707,42,861,83"/>
 </map>

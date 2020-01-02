@@ -128,7 +128,7 @@ Public Attributes</h2></td></tr>
 struct smacc::EvTopicInitialMessage&lt; TSource, TObjectTag &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="smacc__subscriber__client_8h_source.html#l00010">10</a> of file <a class="el" href="smacc__subscriber__client_8h_source.html">smacc_subscriber_client.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__subscriber__client_8h_source.html#l00011">11</a> of file <a class="el" href="smacc__subscriber__client_8h_source.html">smacc_subscriber_client.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="abe003a4a8fa20c45149f6a515c7686e0"></a>
 <div class="memitem">
@@ -153,8 +153,8 @@ template&lt;typename TSource, typename TObjectTag&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__subscriber__client_8h_source.html#l00013">13</a> of file <a class="el" href="smacc__subscriber__client_8h_source.html">smacc_subscriber_client.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  {</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">auto</span> typeinfo = TypeInfo::getTypeInfoFromType&lt;typename TSource::TMessageType&gt;();</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    std::string label = typeinfo-&gt;getNonTemplatetypename();</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">return</span> label;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="smacc__subscriber__client_8h_source.html#l00014">14</a> of file <a class="el" href="smacc__subscriber__client_8h_source.html">smacc_subscriber_client.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">auto</span> typeinfo = TypeInfo::getTypeInfoFromType&lt;typename TSource::TMessageType&gt;();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::string label = typeinfo-&gt;getNonTemplatetypename();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> label;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -170,9 +170,9 @@ template&lt;typename TSource, typename TObjectTag&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__subscriber__client_8h_source.html#l00021">21</a> of file <a class="el" href="smacc__subscriber__client_8h_source.html">smacc_subscriber_client.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__subscriber__client_8h_source.html#l00022">22</a> of file <a class="el" href="smacc__subscriber__client_8h_source.html">smacc_subscriber_client.h</a>.</p>
 
-<p>Referenced by <a class="el" href="smacc__subscriber__client_8h_source.html#l00064">smacc::SmaccSubscriberClient&lt; sensor_msgs::Temperature &gt;::configureEventSourceTypes()</a>.</p>
+<p>Referenced by <a class="el" href="smacc__subscriber__client_8h_source.html#l00068">smacc::client_bases::SmaccSubscriberClient&lt; sensor_msgs::Temperature &gt;::configureEventSourceTypes()</a>.</p>
 
 </div>
 </div>

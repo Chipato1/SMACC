@@ -1,0 +1,274 @@
+\hypertarget{classkeyboard__client_1_1CbDefaultKeyboardBehavior}{}\section{keyboard\+\_\+client\+:\+:Cb\+Default\+Keyboard\+Behavior Class Reference}
+\label{classkeyboard__client_1_1CbDefaultKeyboardBehavior}\index{keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior@{keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior}}
+
+
+{\ttfamily \#include $<$cb\+\_\+default\+\_\+keyboard\+\_\+behavior.\+h$>$}
+
+
+
+Inheritance diagram for keyboard\+\_\+client\+:\+:Cb\+Default\+Keyboard\+Behavior\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classkeyboard__client_1_1CbDefaultKeyboardBehavior__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for keyboard\+\_\+client\+:\+:Cb\+Default\+Keyboard\+Behavior\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkeyboard__client_1_1CbDefaultKeyboardBehavior__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classkeyboard__client_1_1CbDefaultKeyboardBehavior_a1ac673a9d9a733215f665810d6cf69aa}{on\+Entry} ()
+\item 
+{\footnotesize template$<$typename T\+Object\+Tag , typename T\+Derived $>$ }\\void \hyperlink{classkeyboard__client_1_1CbDefaultKeyboardBehavior_a70465c0886d118d226d136a4acc63ef3}{configure\+Event\+Source\+Types} ()
+\item 
+void \hyperlink{classkeyboard__client_1_1CbDefaultKeyboardBehavior_ae6b6fa6b648a503f2a55eccde8556daa}{On\+Key\+Press} (char character)
+\item 
+{\footnotesize template$<$typename T\+Ev $>$ }\\void \hyperlink{classkeyboard__client_1_1CbDefaultKeyboardBehavior_ae02c14e58b7348af59f3f82bfadbbbdd}{post\+Key\+Event} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classkeyboard__client_1_1ClKeyboard}{Cl\+Keyboard} $\ast$ \hyperlink{classkeyboard__client_1_1CbDefaultKeyboardBehavior_a17c088cabe2d686f227d2a6368629993}{Cl\+Keyboard\+\_\+}
+\item 
+boost\+::signals2\+::scoped\+\_\+connection \hyperlink{classkeyboard__client_1_1CbDefaultKeyboardBehavior_a4872d81538980d9a706cc271902097f1}{c\+\_\+}
+\item 
+std\+::function$<$ void(char)$>$ \hyperlink{classkeyboard__client_1_1CbDefaultKeyboardBehavior_ac3a5e8c2cca0fd4117ddc192858d3771}{post\+Event\+Key\+Press}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file cb\+\_\+default\+\_\+keyboard\+\_\+behavior.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior@{keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior}!configure\+Event\+Source\+Types@{configure\+Event\+Source\+Types}}
+\index{configure\+Event\+Source\+Types@{configure\+Event\+Source\+Types}!keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior@{keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior}}
+\subsubsection[{\texorpdfstring{configure\+Event\+Source\+Types()}{configureEventSourceTypes()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Object\+Tag , typename T\+Derived $>$ void keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior\+::configure\+Event\+Source\+Types (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classkeyboard__client_1_1CbDefaultKeyboardBehavior_a70465c0886d118d226d136a4acc63ef3}{}\label{classkeyboard__client_1_1CbDefaultKeyboardBehavior_a70465c0886d118d226d136a4acc63ef3}
+
+
+Definition at line 29 of file cb\+\_\+default\+\_\+keyboard\+\_\+behavior.\+h.
+
+
+\begin{DoxyCode}
+30     \{
+31         \hyperlink{classkeyboard__client_1_1CbDefaultKeyboardBehavior_ac3a5e8c2cca0fd4117ddc192858d3771}{postEventKeyPress} = [=](\textcolor{keywordtype}{char} character) \{
+32             \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'a'})
+33                 postKeyEvent<EvKeyPressA<CbDefaultKeyboardBehavior, TObjectTag>>();
+34             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'b'})
+35                 postKeyEvent<EvKeyPressB<CbDefaultKeyboardBehavior, TObjectTag>>();
+36             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'c'})
+37                 postKeyEvent<EvKeyPressC<CbDefaultKeyboardBehavior, TObjectTag>>();
+38             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'d'})
+39                 postKeyEvent<EvKeyPressD<CbDefaultKeyboardBehavior, TObjectTag>>();
+40             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'e'})
+41                 postKeyEvent<EvKeyPressE<CbDefaultKeyboardBehavior, TObjectTag>>();
+42             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'f'})
+43                 postKeyEvent<EvKeyPressF<CbDefaultKeyboardBehavior, TObjectTag>>();
+44             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'g'})
+45                 postKeyEvent<EvKeyPressG<CbDefaultKeyboardBehavior, TObjectTag>>();
+46             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'h'})
+47                 postKeyEvent<EvKeyPressH<CbDefaultKeyboardBehavior, TObjectTag>>();
+48             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'y'})
+49                 postKeyEvent<EvKeyPressI<CbDefaultKeyboardBehavior, TObjectTag>>();
+50             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'j'})
+51                 postKeyEvent<EvKeyPressJ<CbDefaultKeyboardBehavior, TObjectTag>>();
+52             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'k'})
+53                 postKeyEvent<EvKeyPressK<CbDefaultKeyboardBehavior, TObjectTag>>();
+54             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'l'})
+55                 postKeyEvent<EvKeyPressL<CbDefaultKeyboardBehavior, TObjectTag>>();
+56             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'m'})
+57                 postKeyEvent<EvKeyPressM<CbDefaultKeyboardBehavior, TObjectTag>>();
+58             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'n'})
+59                 postKeyEvent<EvKeyPressN<CbDefaultKeyboardBehavior, TObjectTag>>();
+60             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'o'})
+61                 postKeyEvent<EvKeyPressO<CbDefaultKeyboardBehavior, TObjectTag>>();
+62             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'p'})
+63                 postKeyEvent<EvKeyPressP<CbDefaultKeyboardBehavior, TObjectTag>>();
+64             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'q'})
+65                 postKeyEvent<EvKeyPressQ<CbDefaultKeyboardBehavior, TObjectTag>>();
+66             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'r'})
+67                 postKeyEvent<EvKeyPressR<CbDefaultKeyboardBehavior, TObjectTag>>();
+68             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'s'})
+69                 postKeyEvent<EvKeyPressS<CbDefaultKeyboardBehavior, TObjectTag>>();
+70             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'t'})
+71                 postKeyEvent<EvKeyPressT<CbDefaultKeyboardBehavior, TObjectTag>>();
+72             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'u'})
+73                 postKeyEvent<EvKeyPressU<CbDefaultKeyboardBehavior, TObjectTag>>();
+74             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'v'})
+75                 postKeyEvent<EvKeyPressV<CbDefaultKeyboardBehavior, TObjectTag>>();
+76             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'w'})
+77                 postKeyEvent<EvKeyPressW<CbDefaultKeyboardBehavior, TObjectTag>>();
+78             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'x'})
+79                 postKeyEvent<EvKeyPressX<CbDefaultKeyboardBehavior, TObjectTag>>();
+80             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'y'})
+81                 postKeyEvent<EvKeyPressY<CbDefaultKeyboardBehavior, TObjectTag>>();
+82             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (character == \textcolor{charliteral}{'z'})
+83                 postKeyEvent<EvKeyPressZ<CbDefaultKeyboardBehavior, TObjectTag>>();
+84         \};
+85     \}
+\end{DoxyCode}
+\index{keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior@{keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior@{keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior}}
+\subsubsection[{\texorpdfstring{on\+Entry()}{onEntry()}}]{\setlength{\rightskip}{0pt plus 5cm}void keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classkeyboard__client_1_1CbDefaultKeyboardBehavior_a1ac673a9d9a733215f665810d6cf69aa}{}\label{classkeyboard__client_1_1CbDefaultKeyboardBehavior_a1ac673a9d9a733215f665810d6cf69aa}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccClientBehavior_a7962382f93987c720ad432fef55b123f}{smacc\+::\+Smacc\+Client\+Behavior}.
+
+
+
+Definition at line 16 of file cb\+\_\+default\+\_\+keyboard\+\_\+behavior.\+h.
+
+
+
+References On\+Key\+Press(), keyboard\+\_\+client\+::\+Cl\+Keyboard\+::\+On\+Key\+Press, and smacc\+::\+Smacc\+Client\+Behavior\+::requires\+Client().
+
+
+\begin{DoxyCode}
+17     \{
+18         this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a917f001e763a1059af337bf4e164f542}{requiresClient}(\hyperlink{classkeyboard__client_1_1CbDefaultKeyboardBehavior_a17c088cabe2d686f227d2a6368629993}{ClKeyboard\_});
+19 
+20         \hyperlink{classkeyboard__client_1_1CbDefaultKeyboardBehavior_a4872d81538980d9a706cc271902097f1}{c\_} = this->\hyperlink{classkeyboard__client_1_1CbDefaultKeyboardBehavior_a17c088cabe2d686f227d2a6368629993}{ClKeyboard\_}->\hyperlink{classkeyboard__client_1_1ClKeyboard_a771589b55252145020691bfb6ec47adf}{OnKeyPress}.connect(
+21             [\textcolor{keyword}{this}](\textcolor{keywordtype}{char} character) \{
+22                 this->\hyperlink{classkeyboard__client_1_1CbDefaultKeyboardBehavior_ae6b6fa6b648a503f2a55eccde8556daa}{OnKeyPress}(character);
+23             \});
+24     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkeyboard__client_1_1CbDefaultKeyboardBehavior_a1ac673a9d9a733215f665810d6cf69aa_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior@{keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior}!On\+Key\+Press@{On\+Key\+Press}}
+\index{On\+Key\+Press@{On\+Key\+Press}!keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior@{keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior}}
+\subsubsection[{\texorpdfstring{On\+Key\+Press(char character)}{OnKeyPress(char character)}}]{\setlength{\rightskip}{0pt plus 5cm}void keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior\+::\+On\+Key\+Press (
+\begin{DoxyParamCaption}
+\item[{char}]{character}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classkeyboard__client_1_1CbDefaultKeyboardBehavior_ae6b6fa6b648a503f2a55eccde8556daa}{}\label{classkeyboard__client_1_1CbDefaultKeyboardBehavior_ae6b6fa6b648a503f2a55eccde8556daa}
+
+
+Definition at line 87 of file cb\+\_\+default\+\_\+keyboard\+\_\+behavior.\+h.
+
+
+
+References post\+Event\+Key\+Press.
+
+
+
+Referenced by on\+Entry().
+
+
+\begin{DoxyCode}
+88     \{
+89         \hyperlink{classkeyboard__client_1_1CbDefaultKeyboardBehavior_ac3a5e8c2cca0fd4117ddc192858d3771}{postEventKeyPress}(character);
+90     \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkeyboard__client_1_1CbDefaultKeyboardBehavior_ae6b6fa6b648a503f2a55eccde8556daa_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior@{keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior}!post\+Key\+Event@{post\+Key\+Event}}
+\index{post\+Key\+Event@{post\+Key\+Event}!keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior@{keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior}}
+\subsubsection[{\texorpdfstring{post\+Key\+Event()}{postKeyEvent()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Ev $>$ void keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior\+::post\+Key\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classkeyboard__client_1_1CbDefaultKeyboardBehavior_ae02c14e58b7348af59f3f82bfadbbbdd}{}\label{classkeyboard__client_1_1CbDefaultKeyboardBehavior_ae02c14e58b7348af59f3f82bfadbbbdd}
+
+
+Definition at line 93 of file cb\+\_\+default\+\_\+keyboard\+\_\+behavior.\+h.
+
+
+
+References smacc\+::introspection\+::demangle\+Symbol(), and smacc\+::\+Smacc\+Client\+Behavior\+::post\+Event().
+
+
+\begin{DoxyCode}
+94     \{
+95         ROS\_WARN(\textcolor{stringliteral}{"CbDefaultKeyboardBehavior %ld ev: %s"}, (\textcolor{keywordtype}{long})(\textcolor{keywordtype}{void} *)\textcolor{keyword}{this}, 
+      \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{smacc::demangleSymbol}(\textcolor{keyword}{typeid}(TEv).name()).c\_str());
+96         \textcolor{keyword}{auto} \textcolor{keyword}{event} = \textcolor{keyword}{new} TEv();
+97         this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a3152cd2215ebc0e387a8a546de07cded}{postEvent}(event);
+98     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkeyboard__client_1_1CbDefaultKeyboardBehavior_ae02c14e58b7348af59f3f82bfadbbbdd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior@{keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior}!c\+\_\+@{c\+\_\+}}
+\index{c\+\_\+@{c\+\_\+}!keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior@{keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior}}
+\subsubsection[{\texorpdfstring{c\+\_\+}{c_}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::signals2\+::scoped\+\_\+connection keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior\+::c\+\_\+}\hypertarget{classkeyboard__client_1_1CbDefaultKeyboardBehavior_a4872d81538980d9a706cc271902097f1}{}\label{classkeyboard__client_1_1CbDefaultKeyboardBehavior_a4872d81538980d9a706cc271902097f1}
+
+
+Definition at line 14 of file cb\+\_\+default\+\_\+keyboard\+\_\+behavior.\+h.
+
+\index{keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior@{keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior}!Cl\+Keyboard\+\_\+@{Cl\+Keyboard\+\_\+}}
+\index{Cl\+Keyboard\+\_\+@{Cl\+Keyboard\+\_\+}!keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior@{keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior}}
+\subsubsection[{\texorpdfstring{Cl\+Keyboard\+\_\+}{ClKeyboard_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cl\+Keyboard}$\ast$ keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior\+::\+Cl\+Keyboard\+\_\+}\hypertarget{classkeyboard__client_1_1CbDefaultKeyboardBehavior_a17c088cabe2d686f227d2a6368629993}{}\label{classkeyboard__client_1_1CbDefaultKeyboardBehavior_a17c088cabe2d686f227d2a6368629993}
+
+
+Definition at line 13 of file cb\+\_\+default\+\_\+keyboard\+\_\+behavior.\+h.
+
+\index{keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior@{keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior}!post\+Event\+Key\+Press@{post\+Event\+Key\+Press}}
+\index{post\+Event\+Key\+Press@{post\+Event\+Key\+Press}!keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior@{keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior}}
+\subsubsection[{\texorpdfstring{post\+Event\+Key\+Press}{postEventKeyPress}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::function$<$void(char)$>$ keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior\+::post\+Event\+Key\+Press}\hypertarget{classkeyboard__client_1_1CbDefaultKeyboardBehavior_ac3a5e8c2cca0fd4117ddc192858d3771}{}\label{classkeyboard__client_1_1CbDefaultKeyboardBehavior_ac3a5e8c2cca0fd4117ddc192858d3771}
+
+
+Definition at line 26 of file cb\+\_\+default\+\_\+keyboard\+\_\+behavior.\+h.
+
+
+
+Referenced by On\+Key\+Press().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+client\+\_\+library/keyboard\+\_\+client/include/keyboard\+\_\+client/client\+\_\+behaviors/\hyperlink{cb__default__keyboard__behavior_8h}{cb\+\_\+default\+\_\+keyboard\+\_\+behavior.\+h}\end{DoxyCompactItemize}

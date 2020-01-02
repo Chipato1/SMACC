@@ -1,0 +1,8 @@
+<map id="smacc::introspection::transitionInfoToMsg" name="smacc::introspection::transitionInfoToMsg">
+<area shape="rect" id="node2" href="$classsmacc_1_1introspection_1_1SmaccStateMachineInfo.html#a6758065a8d1faaa7c3688cf0dffe9334" title="smacc::introspection\l::SmaccStateMachineInfo\l::assembleSMStructureMessage" alt="" coords="208,8,437,64"/>
+<area shape="rect" id="node4" href="$classsmacc_1_1ISmaccStateMachine.html#ab61bff5b3c49c4bfc17972e2de8d4fd5" title="smacc::ISmaccStateMachine\l::publishTransition" alt="" coords="219,89,426,130"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1introspection_1_1SmaccStateMachineInfo.html#a0722293cbe7b231ac333de15ae3751e8" title="smacc::introspection\l::SmaccStateMachineInfo\l::computeAllStateMessage" alt="" coords="497,5,691,61"/>
+<area shape="rect" id="node5" href="$classsmacc_1_1ISmaccState.html#a8e2a45fc63c9f3cee21b4527c630f42e" title="smacc::ISmaccState\l::notifyTransitionFromTransition\lTypeInfo" alt="" coords="485,85,703,141"/>
+<area shape="rect" id="node6" href="$classsmacc_1_1ISmaccState.html#a3484b4a32ef47a8650f08df67de4fae5" title="smacc::ISmaccState\l::getParentState" alt="" coords="751,93,905,134"/>
+<area shape="rect" id="node7" href="$classsmacc_1_1ISmaccStateMachine.html#a268198b98e9540f4edb703801527a192" title="smacc::ISmaccStateMachine\l::propagateEventToLogicUnits" alt="" coords="953,93,1164,134"/>
+</map>

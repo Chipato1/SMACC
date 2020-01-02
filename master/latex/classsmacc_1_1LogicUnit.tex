@@ -2,7 +2,7 @@
 \label{classsmacc_1_1LogicUnit}\index{smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}}
 
 
-{\ttfamily \#include $<$logic\+\_\+unit\+\_\+base.\+h$>$}
+{\ttfamily \#include $<$logic\+\_\+unit.\+h$>$}
 
 
 
@@ -50,7 +50,7 @@ void \hyperlink{classsmacc_1_1LogicUnit_afcec0608a17e039791403472a2411539}{updat
 \item 
 virtual \hyperlink{classbool}{bool} \hyperlink{classsmacc_1_1LogicUnit_ae975a96f0210412e1cb4a7b5b948ade6}{triggers} ()=0
 \item 
-{\footnotesize template$<$typename T\+Ev $>$ }\\void \hyperlink{classsmacc_1_1LogicUnit_a76ef62bbd4dccf3da2c03032616b3ef6}{declare\+Post\+Event} (\hyperlink{structsmacc_1_1typelist}{typelist}$<$ T\+Ev $>$)
+{\footnotesize template$<$typename T\+Ev $>$ }\\void \hyperlink{classsmacc_1_1LogicUnit_a76ef62bbd4dccf3da2c03032616b3ef6}{declare\+Post\+Event} (\hyperlink{structsmacc_1_1introspection_1_1typelist}{typelist}$<$ T\+Ev $>$)
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -61,14 +61,14 @@ std\+::function$<$ void()$>$ \hyperlink{classsmacc_1_1LogicUnit_ac75aaeeea0e8d36
 \item 
 std\+::vector$<$ const std\+::type\+\_\+info $\ast$ $>$ \hyperlink{classsmacc_1_1LogicUnit_a6f02a49da9b408b54a2755c18c5616a8}{event\+Types}
 \item 
-std\+::map$<$ const std\+::type\+\_\+info $\ast$, std\+::function$<$ void(void $\ast$)$>$ $>$ \hyperlink{classsmacc_1_1LogicUnit_ad1b222b3b2bb175d9e8166433e434fab}{event\+Callbacks\+\_\+}
+std\+::map$<$ const std\+::type\+\_\+info $\ast$, std\+::function$<$ void(void $\ast$)$>$ $>$ \hyperlink{classsmacc_1_1LogicUnit_a29196899a02ed436e9ba68784b4d5cf4}{event\+Callbacks\+\_\+}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 19 of file logic\+\_\+unit\+\_\+base.\+h.
+Definition at line 19 of file logic\+\_\+unit.\+h.
 
 
 
@@ -82,12 +82,12 @@ Definition at line 19 of file logic\+\_\+unit\+\_\+base.\+h.
 )}\hypertarget{classsmacc_1_1LogicUnit_a5c015b00d4c0c3d379cfae8e26a1d474}{}\label{classsmacc_1_1LogicUnit_a5c015b00d4c0c3d379cfae8e26a1d474}
 
 
-Definition at line 6 of file logic\+\_\+unit\+\_\+base.\+cpp.
+Definition at line 7 of file logic\+\_\+unit.\+cpp.
 
 
 \begin{DoxyCode}
-7 \{
-8 \}
+8 \{
+9 \}
 \end{DoxyCode}
 
 
@@ -102,18 +102,17 @@ Definition at line 6 of file logic\+\_\+unit\+\_\+base.\+cpp.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1LogicUnit_a58683bd62b8100434dd4a2e4df5382b9}{}\label{classsmacc_1_1LogicUnit_a58683bd62b8100434dd4a2e4df5382b9}
 
 
-Definition at line 80 of file logic\+\_\+unit\+\_\+base.\+h.
+Definition at line 78 of file logic\+\_\+unit.\+h.
 
 
 \begin{DoxyCode}
-81     \{
-82         \textcolor{keyword}{const} \textcolor{keyword}{auto}* eventtype = &\textcolor{keyword}{typeid}(T);
-83         this->\hyperlink{classsmacc_1_1LogicUnit_ad1b222b3b2bb175d9e8166433e434fab}{eventCallbacks\_}[eventtype]= [=](\textcolor{keywordtype}{void}* msg)
-84         \{
-85             T* evptr = (T*)msg;
-86             (\textcolor{keywordtype}{object}->*callback)(evptr);
-87         \};
-88     \}
+79     \{
+80         \textcolor{keyword}{const} \textcolor{keyword}{auto} *eventtype = &\textcolor{keyword}{typeid}(T);
+81         this->\hyperlink{classsmacc_1_1LogicUnit_a29196899a02ed436e9ba68784b4d5cf4}{eventCallbacks\_}[eventtype] = [=](\textcolor{keywordtype}{void} *msg) \{
+82             T *evptr = (T *)msg;
+83             (\textcolor{keywordtype}{object}->*callback)(evptr);
+84         \};
+85     \}
 \end{DoxyCode}
 \index{smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}!create\+Event\+Callback@{create\+Event\+Callback}}
 \index{create\+Event\+Callback@{create\+Event\+Callback}!smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}}
@@ -124,18 +123,17 @@ Definition at line 80 of file logic\+\_\+unit\+\_\+base.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1LogicUnit_a42103eec6907aaa60f297145ba6ca123}{}\label{classsmacc_1_1LogicUnit_a42103eec6907aaa60f297145ba6ca123}
 
 
-Definition at line 91 of file logic\+\_\+unit\+\_\+base.\+h.
+Definition at line 88 of file logic\+\_\+unit.\+h.
 
 
 \begin{DoxyCode}
-92     \{
-93         \textcolor{keyword}{const} \textcolor{keyword}{auto}* eventtype = &\textcolor{keyword}{typeid}(T);
-94         this->\hyperlink{classsmacc_1_1LogicUnit_ad1b222b3b2bb175d9e8166433e434fab}{eventCallbacks\_}[eventtype]= [=](\textcolor{keywordtype}{void}* msg)
-95         \{
-96             T* evptr = (T*)msg;
-97             callback(evptr);
-98         \};
-99     \}
+89     \{
+90         \textcolor{keyword}{const} \textcolor{keyword}{auto} *eventtype = &\textcolor{keyword}{typeid}(T);
+91         this->\hyperlink{classsmacc_1_1LogicUnit_a29196899a02ed436e9ba68784b4d5cf4}{eventCallbacks\_}[eventtype] = [=](\textcolor{keywordtype}{void} *msg) \{
+92             T *evptr = (T *)msg;
+93             callback(evptr);
+94         \};
+95     \}
 \end{DoxyCode}
 \index{smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}!declare\+Post\+Event@{declare\+Post\+Event}}
 \index{declare\+Post\+Event@{declare\+Post\+Event}!smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}}
@@ -146,18 +144,34 @@ Definition at line 91 of file logic\+\_\+unit\+\_\+base.\+h.
 )}\hypertarget{classsmacc_1_1LogicUnit_a76ef62bbd4dccf3da2c03032616b3ef6}{}\label{classsmacc_1_1LogicUnit_a76ef62bbd4dccf3da2c03032616b3ef6}
 
 
-Definition at line 134 of file smacc\+\_\+state\+\_\+impl.\+h.
+Definition at line 7 of file smacc\+\_\+logic\+\_\+unit\+\_\+impl.\+h.
+
+
+
+References smacc\+::\+I\+Smacc\+State\+::get\+State\+Machine(), owner\+State, smacc\+::\+I\+Smacc\+State\+Machine\+::post\+Event(), and post\+Event\+Fn.
 
 
 \begin{DoxyCode}
-135 \{
-136     this->\hyperlink{classsmacc_1_1LogicUnit_ac75aaeeea0e8d3667763a332ecfd65f7}{postEventFn} = [\textcolor{keyword}{this}]() \{
-137         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"[Logic Unit Base] postingfn posting event: "} << demangleSymbol<TEv>());
-138         \textcolor{keyword}{auto} *ev = \textcolor{keyword}{new} TEv();
-139         this->\hyperlink{classsmacc_1_1LogicUnit_a8863d227f46868876632b07b500f27d6}{ownerState}->\hyperlink{classsmacc_1_1ISmaccState_a562bb3f9a3ac16b8be71e4794c9e7523}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_ad80cdd7bbc9a9f3b221c625754fed1ed}{postEvent}(ev);
-140     \};
-141 \}
+8 \{
+9     this->\hyperlink{classsmacc_1_1LogicUnit_ac75aaeeea0e8d3667763a332ecfd65f7}{postEventFn} = [\textcolor{keyword}{this}]() \{
+10         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"[Logic Unit Base] postingfn posting event: "} << demangleSymbol<TEv>());
+11         \textcolor{keyword}{auto} *ev = \textcolor{keyword}{new} TEv();
+12         this->\hyperlink{classsmacc_1_1LogicUnit_a8863d227f46868876632b07b500f27d6}{ownerState}->\hyperlink{classsmacc_1_1ISmaccState_a562bb3f9a3ac16b8be71e4794c9e7523}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_ad80cdd7bbc9a9f3b221c625754fed1ed}{postEvent}(ev);
+13     \};
+14 \}
 \end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1LogicUnit_a76ef62bbd4dccf3da2c03032616b3ef6_cgraph}
+\end{center}
+\end{figure}
+
+
 \index{smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}!initialize@{initialize}}
 \index{initialize@{initialize}!smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}}
 \subsubsection[{\texorpdfstring{initialize(\+I\+Smacc\+State $\ast$owner\+State, T\+Event\+List $\ast$)}{initialize(ISmaccState *ownerState, TEventList *)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Event\+List $>$ void smacc\+::\+Logic\+Unit\+::initialize (
@@ -168,20 +182,20 @@ Definition at line 134 of file smacc\+\_\+state\+\_\+impl.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1LogicUnit_ad6abed2fa372c64c7ca7330073ef8c95}{}\label{classsmacc_1_1LogicUnit_ad6abed2fa372c64c7ca7330073ef8c95}
 
 
-Definition at line 49 of file logic\+\_\+unit\+\_\+base.\+h.
+Definition at line 47 of file logic\+\_\+unit.\+h.
 
 
 \begin{DoxyCode}
-50     \{
-51         this->\hyperlink{classsmacc_1_1LogicUnit_a8863d227f46868876632b07b500f27d6}{ownerState} = \hyperlink{classsmacc_1_1LogicUnit_a8863d227f46868876632b07b500f27d6}{ownerState};
-52         
-53         \textcolor{keyword}{using} boost::mpl::\_1;
-54         \textcolor{keyword}{using} wrappedList = \textcolor{keyword}{typename} boost::mpl::transform<TEventList, \_1>::type;
-55         AddTEventType<TEventList> op(\textcolor{keyword}{this});
-56         boost::mpl::for\_each<wrappedList>(op);
-57         
-58         this->\hyperlink{classsmacc_1_1LogicUnit_ade7f409516683f13754943db1081bac0}{onInitialized}();
-59     \}
+48     \{
+49         this->\hyperlink{classsmacc_1_1LogicUnit_a8863d227f46868876632b07b500f27d6}{ownerState} = \hyperlink{classsmacc_1_1LogicUnit_a8863d227f46868876632b07b500f27d6}{ownerState};
+50 
+51         \textcolor{keyword}{using} boost::mpl::\_1;
+52         \textcolor{keyword}{using} wrappedList = \textcolor{keyword}{typename} boost::mpl::transform<TEventList, \_1>::type;
+53         AddTEventType<TEventList> op(\textcolor{keyword}{this});
+54         boost::mpl::for\_each<wrappedList>(op);
+55 
+56         this->\hyperlink{classsmacc_1_1LogicUnit_ade7f409516683f13754943db1081bac0}{onInitialized}();
+57     \}
 \end{DoxyCode}
 \index{smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}!notify\+Event@{notify\+Event}}
 \index{notify\+Event@{notify\+Event}!smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}}
@@ -192,24 +206,24 @@ Definition at line 49 of file logic\+\_\+unit\+\_\+base.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1LogicUnit_a1c2bee307f2586bc34c0b75fbc4f6fcf}{}\label{classsmacc_1_1LogicUnit_a1c2bee307f2586bc34c0b75fbc4f6fcf}
 
 
-Definition at line 62 of file logic\+\_\+unit\+\_\+base.\+h.
+Definition at line 60 of file logic\+\_\+unit.\+h.
 
 
 \begin{DoxyCode}
-63     \{
-64         \textcolor{keyword}{auto} tid = &(\textcolor{keyword}{typeid}(TEvent));
-65         \textcolor{keywordflow}{if} (std::find(\hyperlink{classsmacc_1_1LogicUnit_a6f02a49da9b408b54a2755c18c5616a8}{eventTypes}.begin(), \hyperlink{classsmacc_1_1LogicUnit_a6f02a49da9b408b54a2755c18c5616a8}{eventTypes}.end(), tid) != 
+61     \{
+62         \textcolor{keyword}{auto} tid = &(\textcolor{keyword}{typeid}(TEvent));
+63         \textcolor{keywordflow}{if} (std::find(\hyperlink{classsmacc_1_1LogicUnit_a6f02a49da9b408b54a2755c18c5616a8}{eventTypes}.begin(), \hyperlink{classsmacc_1_1LogicUnit_a6f02a49da9b408b54a2755c18c5616a8}{eventTypes}.end(), tid) != 
       \hyperlink{classsmacc_1_1LogicUnit_a6f02a49da9b408b54a2755c18c5616a8}{eventTypes}.end())
-66         \{
-67             this->\hyperlink{classsmacc_1_1LogicUnit_a3a81929b2014b10d0fa28d4bc2d19d9c}{onEventNotified}(tid);
-68             this->\hyperlink{classsmacc_1_1LogicUnit_afcec0608a17e039791403472a2411539}{update}();
-69 
-70             \textcolor{keywordflow}{if}(\hyperlink{classsmacc_1_1LogicUnit_ad1b222b3b2bb175d9e8166433e434fab}{eventCallbacks\_}.count(tid))
-71             \{
-72                 \hyperlink{classsmacc_1_1LogicUnit_ad1b222b3b2bb175d9e8166433e434fab}{eventCallbacks\_}[tid]((\textcolor{keywordtype}{void}*)ev);
-73             \}
-74         \}
-75     \}
+64         \{
+65             this->\hyperlink{classsmacc_1_1LogicUnit_a3a81929b2014b10d0fa28d4bc2d19d9c}{onEventNotified}(tid);
+66             this->\hyperlink{classsmacc_1_1LogicUnit_afcec0608a17e039791403472a2411539}{update}();
+67 
+68             \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1LogicUnit_a29196899a02ed436e9ba68784b4d5cf4}{eventCallbacks\_}.count(tid))
+69             \{
+70                 \hyperlink{classsmacc_1_1LogicUnit_a29196899a02ed436e9ba68784b4d5cf4}{eventCallbacks\_}[tid]((\textcolor{keywordtype}{void} *)ev);
+71             \}
+72         \}
+73     \}
 \end{DoxyCode}
 \index{smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}!on\+Event\+Notified@{on\+Event\+Notified}}
 \index{on\+Event\+Notified@{on\+Event\+Notified}!smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}}
@@ -220,16 +234,16 @@ Definition at line 62 of file logic\+\_\+unit\+\_\+base.\+h.
 )\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classsmacc_1_1LogicUnit_a3a81929b2014b10d0fa28d4bc2d19d9c}{}\label{classsmacc_1_1LogicUnit_a3a81929b2014b10d0fa28d4bc2d19d9c}
 
 
-Reimplemented in \hyperlink{classsmacc_1_1LuEventCountdown_abb66ecf93be0e2d85c476ce1c608aad1}{smacc\+::\+Lu\+Event\+Countdown}, and \hyperlink{classsmacc_1_1LuAllEventsGo_a5f63f470cf4338e698e567d96b6c6dca}{smacc\+::\+Lu\+All\+Events\+Go}.
+Reimplemented in \hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_a9a7b8d4690d21251ad3e12b2bca00620}{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown}, and \hyperlink{classsmacc_1_1logic__units_1_1LuAllEventsGo_a6c32f39649fabcc01742ca7dcb76acf8}{smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go}.
 
 
 
-Definition at line 14 of file logic\+\_\+unit\+\_\+base.\+cpp.
+Definition at line 15 of file logic\+\_\+unit.\+cpp.
 
 
 \begin{DoxyCode}
-15 \{
-16 \}
+16 \{
+17 \}
 \end{DoxyCode}
 \index{smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}!on\+Initialized@{on\+Initialized}}
 \index{on\+Initialized@{on\+Initialized}!smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}}
@@ -240,16 +254,16 @@ Definition at line 14 of file logic\+\_\+unit\+\_\+base.\+cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classsmacc_1_1LogicUnit_ade7f409516683f13754943db1081bac0}{}\label{classsmacc_1_1LogicUnit_ade7f409516683f13754943db1081bac0}
 
 
-Reimplemented in \hyperlink{classsmacc_1_1LuEventCountdown_a6594bd79b9f4634735181ce06d51744b}{smacc\+::\+Lu\+Event\+Countdown}, and \hyperlink{classsmacc_1_1LuAllEventsGo_a176ccd3e4abc80d028d2d7d6a87943bd}{smacc\+::\+Lu\+All\+Events\+Go}.
+Reimplemented in \hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_a8e58411b2e6c2a68fa0218ea7c125a75}{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown}, and \hyperlink{classsmacc_1_1logic__units_1_1LuAllEventsGo_a01229bb4935f6ebe895b3aeadc187db7}{smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go}.
 
 
 
-Definition at line 10 of file logic\+\_\+unit\+\_\+base.\+cpp.
+Definition at line 11 of file logic\+\_\+unit.\+cpp.
 
 
 \begin{DoxyCode}
-11 \{
-12 \}
+12 \{
+13 \}
 \end{DoxyCode}
 \index{smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}!triggers@{triggers}}
 \index{triggers@{triggers}!smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}}
@@ -260,7 +274,7 @@ Definition at line 10 of file logic\+\_\+unit\+\_\+base.\+cpp.
 )\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classsmacc_1_1LogicUnit_ae975a96f0210412e1cb4a7b5b948ade6}{}\label{classsmacc_1_1LogicUnit_ae975a96f0210412e1cb4a7b5b948ade6}
 
 
-Implemented in \hyperlink{classsmacc_1_1LuConditional_ab7e894c1d6a0bf0c96d9c2ea0a08fed7}{smacc\+::\+Lu\+Conditional}, \hyperlink{classsmacc_1_1LuEventCountdown_a2879bea5ed88ec64e9237119a2f5397d}{smacc\+::\+Lu\+Event\+Countdown}, and \hyperlink{classsmacc_1_1LuAllEventsGo_a277c070161ccc7ed564961b113f39c95}{smacc\+::\+Lu\+All\+Events\+Go}.
+Implemented in \hyperlink{classsmacc_1_1LuConditional_ab7e894c1d6a0bf0c96d9c2ea0a08fed7}{smacc\+::\+Lu\+Conditional}, \hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_a77e004c01a966113e63ded6be7c8ab5d}{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown}, and \hyperlink{classsmacc_1_1logic__units_1_1LuAllEventsGo_a89a25635e1ebb192433267fdbd0530b8}{smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go}.
 
 
 
@@ -287,7 +301,7 @@ Here is the caller graph for this function\+:
 )}\hypertarget{classsmacc_1_1LogicUnit_afcec0608a17e039791403472a2411539}{}\label{classsmacc_1_1LogicUnit_afcec0608a17e039791403472a2411539}
 
 
-Definition at line 18 of file logic\+\_\+unit\+\_\+base.\+cpp.
+Definition at line 19 of file logic\+\_\+unit.\+cpp.
 
 
 
@@ -295,13 +309,13 @@ References post\+Event\+Fn, and triggers().
 
 
 \begin{DoxyCode}
-19 \{
-20     \textcolor{keywordflow}{if} (this->\hyperlink{classsmacc_1_1LogicUnit_ae975a96f0210412e1cb4a7b5b948ade6}{triggers}())
-21     \{
-22         ROS\_INFO(\textcolor{stringliteral}{"Logic unit base REALLY TRIGGERS!!"});
-23         this->\hyperlink{classsmacc_1_1LogicUnit_ac75aaeeea0e8d3667763a332ecfd65f7}{postEventFn}();
-24     \}
-25 \}
+20 \{
+21     \textcolor{keywordflow}{if} (this->\hyperlink{classsmacc_1_1LogicUnit_ae975a96f0210412e1cb4a7b5b948ade6}{triggers}())
+22     \{
+23         ROS\_INFO(\textcolor{stringliteral}{"Logic unit base REALLY TRIGGERS!!"});
+24         this->\hyperlink{classsmacc_1_1LogicUnit_ac75aaeeea0e8d3667763a332ecfd65f7}{postEventFn}();
+25     \}
+26 \}
 \end{DoxyCode}
 
 
@@ -320,44 +334,48 @@ Here is the call graph for this function\+:
 \subsection{Member Data Documentation}
 \index{smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}!event\+Callbacks\+\_\+@{event\+Callbacks\+\_\+}}
 \index{event\+Callbacks\+\_\+@{event\+Callbacks\+\_\+}!smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}}
-\subsubsection[{\texorpdfstring{event\+Callbacks\+\_\+}{eventCallbacks_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$const std\+::type\+\_\+info $\ast$, std\+::function$<$void(void$\ast$)$>$ $>$ smacc\+::\+Logic\+Unit\+::event\+Callbacks\+\_\+}\hypertarget{classsmacc_1_1LogicUnit_ad1b222b3b2bb175d9e8166433e434fab}{}\label{classsmacc_1_1LogicUnit_ad1b222b3b2bb175d9e8166433e434fab}
+\subsubsection[{\texorpdfstring{event\+Callbacks\+\_\+}{eventCallbacks_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$const std\+::type\+\_\+info $\ast$, std\+::function$<$void(void $\ast$)$>$ $>$ smacc\+::\+Logic\+Unit\+::event\+Callbacks\+\_\+}\hypertarget{classsmacc_1_1LogicUnit_a29196899a02ed436e9ba68784b4d5cf4}{}\label{classsmacc_1_1LogicUnit_a29196899a02ed436e9ba68784b4d5cf4}
 
 
-Definition at line 25 of file logic\+\_\+unit\+\_\+base.\+h.
+Definition at line 25 of file logic\+\_\+unit.\+h.
 
 \index{smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}!event\+Types@{event\+Types}}
 \index{event\+Types@{event\+Types}!smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}}
 \subsubsection[{\texorpdfstring{event\+Types}{eventTypes}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$const std\+::type\+\_\+info $\ast$$>$ smacc\+::\+Logic\+Unit\+::event\+Types}\hypertarget{classsmacc_1_1LogicUnit_a6f02a49da9b408b54a2755c18c5616a8}{}\label{classsmacc_1_1LogicUnit_a6f02a49da9b408b54a2755c18c5616a8}
 
 
-Definition at line 24 of file logic\+\_\+unit\+\_\+base.\+h.
+Definition at line 24 of file logic\+\_\+unit.\+h.
 
 
 
-Referenced by smacc\+::\+Lu\+All\+Events\+Go\+::on\+Initialized(), smacc\+::\+Lu\+Event\+Countdown\+::on\+Initialized(), and smacc\+::\+Logic\+Unit\+::\+Add\+T\+Event\+Type$<$ T\+Event\+List $>$\+::operator()().
+Referenced by smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go\+::on\+Initialized(), smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown\+::on\+Initialized(), and smacc\+::\+Logic\+Unit\+::\+Add\+T\+Event\+Type$<$ T\+Event\+List $>$\+::operator()().
 
 \index{smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}!owner\+State@{owner\+State}}
 \index{owner\+State@{owner\+State}!smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}}
 \subsubsection[{\texorpdfstring{owner\+State}{ownerState}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Smacc\+State}$\ast$ smacc\+::\+Logic\+Unit\+::owner\+State}\hypertarget{classsmacc_1_1LogicUnit_a8863d227f46868876632b07b500f27d6}{}\label{classsmacc_1_1LogicUnit_a8863d227f46868876632b07b500f27d6}
 
 
-Definition at line 22 of file logic\+\_\+unit\+\_\+base.\+h.
+Definition at line 22 of file logic\+\_\+unit.\+h.
+
+
+
+Referenced by declare\+Post\+Event().
 
 \index{smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}!post\+Event\+Fn@{post\+Event\+Fn}}
 \index{post\+Event\+Fn@{post\+Event\+Fn}!smacc\+::\+Logic\+Unit@{smacc\+::\+Logic\+Unit}}
 \subsubsection[{\texorpdfstring{post\+Event\+Fn}{postEventFn}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::function$<$void()$>$ smacc\+::\+Logic\+Unit\+::post\+Event\+Fn}\hypertarget{classsmacc_1_1LogicUnit_ac75aaeeea0e8d3667763a332ecfd65f7}{}\label{classsmacc_1_1LogicUnit_ac75aaeeea0e8d3667763a332ecfd65f7}
 
 
-Definition at line 23 of file logic\+\_\+unit\+\_\+base.\+h.
+Definition at line 23 of file logic\+\_\+unit.\+h.
 
 
 
-Referenced by update().
+Referenced by declare\+Post\+Event(), and update().
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-smacc/include/smacc/logic\+\_\+units/\hyperlink{logic__unit__base_8h}{logic\+\_\+unit\+\_\+base.\+h}\item 
-smacc/include/smacc/impl/\hyperlink{smacc__state__impl_8h}{smacc\+\_\+state\+\_\+impl.\+h}\item 
-smacc/src/smacc/\hyperlink{logic__unit__base_8cpp}{logic\+\_\+unit\+\_\+base.\+cpp}\end{DoxyCompactItemize}
+smacc/include/smacc/\hyperlink{logic__unit_8h}{logic\+\_\+unit.\+h}\item 
+smacc/include/smacc/impl/\hyperlink{smacc__logic__unit__impl_8h}{smacc\+\_\+logic\+\_\+unit\+\_\+impl.\+h}\item 
+smacc/src/smacc/\hyperlink{logic__unit_8cpp}{logic\+\_\+unit.\+cpp}\end{DoxyCompactItemize}

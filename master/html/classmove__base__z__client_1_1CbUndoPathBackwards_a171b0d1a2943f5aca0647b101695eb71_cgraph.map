@@ -1,6 +1,6 @@
 <map id="move_base_z_client::CbUndoPathBackwards::onEntry" name="move_base_z_client::CbUndoPathBackwards::onEntry">
 <area shape="rect" id="node2" href="$classsmacc_1_1ISmaccClient.html#adef78db601749ca63c19e74a27cb88cc" title="smacc::ISmaccClient\l::getComponent" alt="" coords="257,5,412,47"/>
 <area shape="rect" id="node3" href="$classsmacc_1_1SmaccClientBehavior.html#a917f001e763a1059af337bf4e164f542" title="smacc::SmaccClientBehavior\l::requiresClient" alt="" coords="231,71,439,112"/>
-<area shape="rect" id="node5" href="$classsmacc_1_1SmaccActionClientBase.html#a58c67a87c5fb8ea1633573c58fe3eee1" title="smacc::SmaccActionClient\lBase::sendGoal" alt="" coords="239,136,431,177"/>
+<area shape="rect" id="node5" href="$classsmacc_1_1client__bases_1_1SmaccActionClientBase.html#a9c47a5094ac8afb01680307fe5eca922" title="smacc::client_bases\l::SmaccActionClientBase\l::sendGoal" alt="" coords="243,135,426,191"/>
 <area shape="rect" id="node4" href="$classsmacc_1_1Orthogonal.html#abcde9f489cdf94acca381ea67649a723" title="smacc::Orthogonal::\lrequiresClient" alt="" coords="487,71,637,112"/>
 </map>

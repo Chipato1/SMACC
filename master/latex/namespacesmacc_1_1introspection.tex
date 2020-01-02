@@ -1,0 +1,1082 @@
+\hypertarget{namespacesmacc_1_1introspection}{}\section{smacc\+:\+:introspection Namespace Reference}
+\label{namespacesmacc_1_1introspection}\index{smacc\+::introspection@{smacc\+::introspection}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsmacc_1_1introspection_1_1add__type__wrapper}{add\+\_\+type\+\_\+wrapper}
+\item 
+struct \hyperlink{structsmacc_1_1introspection_1_1AddSubState}{Add\+Sub\+State}
+\item 
+struct \hyperlink{structsmacc_1_1introspection_1_1AddTransition}{Add\+Transition}
+\item 
+struct \hyperlink{structsmacc_1_1introspection_1_1CheckType}{Check\+Type}
+\item 
+class \hyperlink{classsmacc_1_1introspection_1_1HasAutomaticTransitionTag}{Has\+Automatic\+Transition\+Tag}
+\item 
+class \hyperlink{classsmacc_1_1introspection_1_1HasAutomaticTransitionType}{Has\+Automatic\+Transition\+Type}
+\item 
+class \hyperlink{classsmacc_1_1introspection_1_1HasEventLabel}{Has\+Event\+Label}
+\item 
+class \hyperlink{classsmacc_1_1introspection_1_1HasOnDefinition}{Has\+On\+Definition}
+\item 
+struct \hyperlink{structsmacc_1_1introspection_1_1SmaccEventInfo}{Smacc\+Event\+Info}
+\item 
+struct \hyperlink{structsmacc_1_1introspection_1_1SmaccLogicUnitInfo}{Smacc\+Logic\+Unit\+Info}
+\item 
+class \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info}
+\item 
+class \hyperlink{classsmacc_1_1introspection_1_1SmaccStateMachineInfo}{Smacc\+State\+Machine\+Info}
+\item 
+struct \hyperlink{structsmacc_1_1introspection_1_1SmaccTransitionInfo}{Smacc\+Transition\+Info}
+\item 
+struct \hyperlink{structsmacc_1_1introspection_1_1StateBehaviorInfoEntry}{State\+Behavior\+Info\+Entry}
+\item 
+struct \hyperlink{structsmacc_1_1introspection_1_1type__}{type\+\_\+}
+\item 
+class \hyperlink{classsmacc_1_1introspection_1_1TypeInfo}{Type\+Info}
+\item 
+struct \hyperlink{structsmacc_1_1introspection_1_1typelist}{typelist}
+\item 
+struct \hyperlink{structsmacc_1_1introspection_1_1WalkStatesExecutor}{Walk\+States\+Executor}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::allocator$<$ void $>$ \hyperlink{namespacesmacc_1_1introspection_aa4064aa24887868c6347efc004c08986}{Smacc\+Allocator}
+\item 
+typedef boost\+::mpl\+::list$<$ \hyperlink{structsmacc_1_1SUCCESS}{S\+U\+C\+C\+E\+SS}, \hyperlink{structsmacc_1_1ABORT}{A\+B\+O\+RT}, \hyperlink{structsmacc_1_1PREEMPT}{P\+R\+E\+E\+M\+PT}, \hyperlink{structsmacc_1_1CONTINUELOOP}{C\+O\+N\+T\+I\+N\+U\+E\+L\+O\+OP}, \hyperlink{structsmacc_1_1ENDLOOP}{E\+N\+D\+L\+O\+OP} $>$ \hyperlink{namespacesmacc_1_1introspection_ac678f3918f2036c45d7d0da7f5afce83}{D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+ES}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacesmacc_1_1introspection_a710cf406873961567c11027582c7f720}{Smacc\+State\+Type} \{ \hyperlink{namespacesmacc_1_1introspection_a710cf406873961567c11027582c7f720a4da54a31b31f1c863864fdee05fc35c8}{Smacc\+State\+Type\+::\+S\+U\+P\+E\+R\+S\+T\+A\+TE} = 2, 
+\hyperlink{namespacesmacc_1_1introspection_a710cf406873961567c11027582c7f720a2b848a8cc886d253d21a77c43cd50aae}{Smacc\+State\+Type\+::\+S\+T\+A\+TE} = 1, 
+\hyperlink{namespacesmacc_1_1introspection_a710cf406873961567c11027582c7f720a6d39c20504d2f2afe9c8c27351e61d20}{Smacc\+State\+Type\+::\+S\+U\+P\+E\+R\+S\+T\+A\+T\+E\+\_\+\+R\+O\+U\+T\+I\+NE} = 1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespacesmacc_1_1introspection_a6c1b51c4d44fd5e41fe218f1ee150681}{transition\+Info\+To\+Msg} (const \hyperlink{structsmacc_1_1introspection_1_1SmaccTransitionInfo}{Smacc\+Transition\+Info} \&\hyperlink{classsmacc_1_1transition}{transition}, smacc\+\_\+msgs\+::\+Smacc\+Transition \&transition\+Msg)
+\item 
+{\footnotesize template$<$class T $>$ }\\auto \hyperlink{namespacesmacc_1_1introspection_a8acc3b4146a8b2bb0a9fa4178840e9b9}{optional\+Node\+Handle} (boost\+::intrusive\+\_\+ptr$<$ T $>$ \&obj) -\/$>$ ros\+::\+Node\+Handle
+\item 
+{\footnotesize template$<$class T $>$ }\\auto \hyperlink{namespacesmacc_1_1introspection_a96b953e65af67591266e9ae4b3e4ee49}{optional\+Node\+Handle} (T $\ast$) -\/$>$ ros\+::\+Node\+Handle
+\item 
+std\+::string \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangle\+Symbol} (const std\+::string \&name)
+\item 
+std\+::string \hyperlink{namespacesmacc_1_1introspection_af32c671351d958213f8031bb90767922}{demangle\+Symbol} (const char $\ast$name)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::string \hyperlink{namespacesmacc_1_1introspection_aa9158a0ff0cfe83a59877e6af7d7f873}{demangle\+Symbol} ()
+\item 
+{\footnotesize template$<$class T $>$ }\\std\+::string \hyperlink{namespacesmacc_1_1introspection_af1b3277706c3299b589c3fa801169286}{demangled\+Type\+Name} ()
+\item 
+std\+::string \hyperlink{namespacesmacc_1_1introspection_a81ad2fc77a0262640d4b1bd273938603}{demangle\+Type} (const std\+::type\+\_\+info \&tinfo)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::enable\+\_\+if$<$ \hyperlink{classsmacc_1_1introspection_1_1HasEventLabel}{Has\+Event\+Label}$<$ T $>$\+::value, void $>$\+::type \hyperlink{namespacesmacc_1_1introspection_a7d5ea10a24373bf452d3b6987d0a6bd0}{Event\+Label} (std\+::string \&label)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::enable\+\_\+if$<$!\hyperlink{classsmacc_1_1introspection_1_1HasEventLabel}{Has\+Event\+Label}$<$ T $>$\+::value, void $>$\+::type \hyperlink{namespacesmacc_1_1introspection_aaf610a608f1f29ab3827a80e052d0ebe}{Event\+Label} (std\+::string \&label)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::enable\+\_\+if$<$ \hyperlink{classsmacc_1_1introspection_1_1HasAutomaticTransitionTag}{Has\+Automatic\+Transition\+Tag}$<$ T $>$\+::value, void $>$\+::type \hyperlink{namespacesmacc_1_1introspection_ae031f62082f4e291e4933ee6f876b571}{automatic\+Transition\+Tag} (std\+::string \&transition\+\_\+name)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::enable\+\_\+if$<$!\hyperlink{classsmacc_1_1introspection_1_1HasAutomaticTransitionTag}{Has\+Automatic\+Transition\+Tag}$<$ T $>$\+::value, void $>$\+::type \hyperlink{namespacesmacc_1_1introspection_a0d72ea881eae4f1e0f71fe40b92f1f3e}{automatic\+Transition\+Tag} (std\+::string \&transition\+\_\+name)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::enable\+\_\+if$<$ \hyperlink{classsmacc_1_1introspection_1_1HasAutomaticTransitionType}{Has\+Automatic\+Transition\+Type}$<$ T $>$\+::value, void $>$\+::type \hyperlink{namespacesmacc_1_1introspection_a2afacf459b5e29bb9fe8880a2a2d2b72}{automatic\+Transition\+Type} (std\+::string \&transition\+\_\+type)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::enable\+\_\+if$<$!\hyperlink{classsmacc_1_1introspection_1_1HasAutomaticTransitionType}{Has\+Automatic\+Transition\+Type}$<$ T $>$\+::value, void $>$\+::type \hyperlink{namespacesmacc_1_1introspection_ad45bab559ffade7f9d81c6d90ab6d88c}{automatic\+Transition\+Type} (std\+::string \&transition\+\_\+type)
+\item 
+{\footnotesize template$<$typename T\+Transition $>$ }\\static std\+::string \hyperlink{namespacesmacc_1_1introspection_a62b41b5a90e19f27288b1aaac317fef1}{get\+Transition\+Type} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\disable\+\_\+if$<$ boost\+::mpl\+::is\+\_\+sequence$<$ T $>$ $>$\+::type \hyperlink{namespacesmacc_1_1introspection_a2911e2897a4572095bc9e7bc75e3a728}{process\+Sub\+State} (std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \&parent\+State)
+\item 
+{\footnotesize template$<$typename T $>$ }\\enable\+\_\+if$<$ boost\+::mpl\+::is\+\_\+sequence$<$ T $>$ $>$\+::type \hyperlink{namespacesmacc_1_1introspection_a14818620c2ac312e0622b241dcddceaa}{process\+Sub\+State} (std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \&parent\+State)
+\item 
+{\footnotesize template$<$typename T $>$ }\\enable\+\_\+if$<$ boost\+::mpl\+::is\+\_\+sequence$<$ T $>$ $>$\+::type \hyperlink{namespacesmacc_1_1introspection_a652200ed9e8e2131a417de01910b5fd4}{process\+Transitions} (std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \&source\+State)
+\item 
+{\footnotesize template$<$typename Ev , typename Dst , typename Tag $>$ }\\void \hyperlink{namespacesmacc_1_1introspection_a407401045d8c81f470e40929fc47e02b}{process\+Transition} (\hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev, boost\+::statechart\+::deep\+\_\+history$<$ Dst $>$, Tag $>$ $\ast$, std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \&source\+State)
+\item 
+{\footnotesize template$<$typename Ev , typename Dst , typename Tag $>$ }\\void \hyperlink{namespacesmacc_1_1introspection_aa880b6034dc97b727798baf3c4c526fe}{process\+Transition} (\hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev, Dst, Tag $>$ $\ast$t, std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \&source\+State)
+\item 
+{\footnotesize template$<$typename Ev , typename Dst , typename Tag $>$ }\\void \hyperlink{namespacesmacc_1_1introspection_a424354ac0fe1450aee135d39259bd05a}{process\+Transition\+Aux} (\hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev, Dst, Tag $>$ $\ast$, std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \&source\+State, \hyperlink{classbool}{bool} history, \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_aa6ffd9c39811d59f7c771941b7fad860}{Type\+Info\+::\+Ptr} \&transition\+Type\+Info)
+\item 
+{\footnotesize template$<$typename Ev , typename Dst $>$ }\\void \hyperlink{namespacesmacc_1_1introspection_a1083a0c41469be69ec8317eb7e95d3f0}{process\+Transition} (statechart\+::transition$<$ Ev, Dst $>$ $\ast$, std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \&source\+State)
+\item 
+{\footnotesize template$<$typename Ev $>$ }\\void \hyperlink{namespacesmacc_1_1introspection_a25f60bf498ae9f3d0324ed1b84ecbae4}{process\+Transition} (statechart\+::custom\+\_\+reaction$<$ Ev $>$ $\ast$, std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \&source\+State)
+\item 
+{\footnotesize template$<$typename T $>$ }\\disable\+\_\+if$<$ boost\+::mpl\+::is\+\_\+sequence$<$ T $>$ $>$\+::type \hyperlink{namespacesmacc_1_1introspection_a24beffddf95fa3dce92051b336e65d8f}{process\+Transitions} (std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \&source\+State)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::enable\+\_\+if$<$ \hyperlink{classsmacc_1_1introspection_1_1HasOnDefinition}{Has\+On\+Definition}$<$ T $>$\+::value, void $>$\+::type \hyperlink{namespacesmacc_1_1introspection_a14a28bfad794e98164dce1375d3b0796}{Call\+On\+Definition} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::enable\+\_\+if$<$!\hyperlink{classsmacc_1_1introspection_1_1HasOnDefinition}{Has\+On\+Definition}$<$ T $>$\+::value, void $>$\+::type \hyperlink{namespacesmacc_1_1introspection_a8cfcfc9c8896a6ff4bf22dbce6ecf838}{Call\+On\+Definition} ()
+\item 
+\hyperlink{classbool}{bool} \hyperlink{namespacesmacc_1_1introspection_a48571b9bf3b115d2a83cc0147c96d0bd}{replace} (std\+::string \&str, const std\+::string \&from, const std\+::string \&to)
+\item 
+std\+::string \hyperlink{namespacesmacc_1_1introspection_a19350163cda321a04645dcd6f6585f24}{replace\+\_\+back} (std\+::string roottype, std\+::map$<$ std\+::string, std\+::string $>$ \&typesdict)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{smacc\+::introspection@{smacc\+::introspection}!D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+ES@{D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+ES}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+ES@{D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+ES}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+ES}{DEFAULT_TRANSITION_TYPES}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::mpl\+::list$<${\bf S\+U\+C\+C\+E\+SS}, {\bf A\+B\+O\+RT}, {\bf P\+R\+E\+E\+M\+PT}, {\bf C\+O\+N\+T\+I\+N\+U\+E\+L\+O\+OP}, {\bf E\+N\+D\+L\+O\+OP}$>$ {\bf smacc\+::introspection\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+ES}}\hypertarget{namespacesmacc_1_1introspection_ac678f3918f2036c45d7d0da7f5afce83}{}\label{namespacesmacc_1_1introspection_ac678f3918f2036c45d7d0da7f5afce83}
+
+
+Definition at line 193 of file introspection.\+h.
+
+\index{smacc\+::introspection@{smacc\+::introspection}!Smacc\+Allocator@{Smacc\+Allocator}}
+\index{Smacc\+Allocator@{Smacc\+Allocator}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{Smacc\+Allocator}{SmaccAllocator}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::allocator$<$void$>$ {\bf smacc\+::introspection\+::\+Smacc\+Allocator}}\hypertarget{namespacesmacc_1_1introspection_aa4064aa24887868c6347efc004c08986}{}\label{namespacesmacc_1_1introspection_aa4064aa24887868c6347efc004c08986}
+
+
+Definition at line 30 of file introspection.\+h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\index{smacc\+::introspection@{smacc\+::introspection}!Smacc\+State\+Type@{Smacc\+State\+Type}}
+\index{Smacc\+State\+Type@{Smacc\+State\+Type}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{Smacc\+State\+Type}{SmaccStateType}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf smacc\+::introspection\+::\+Smacc\+State\+Type}\hspace{0.3cm}{\ttfamily [strong]}}\hypertarget{namespacesmacc_1_1introspection_a710cf406873961567c11027582c7f720}{}\label{namespacesmacc_1_1introspection_a710cf406873961567c11027582c7f720}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+U\+P\+E\+R\+S\+T\+A\+TE@{S\+U\+P\+E\+R\+S\+T\+A\+TE}!smacc\+::introspection@{smacc\+::introspection}}\index{smacc\+::introspection@{smacc\+::introspection}!S\+U\+P\+E\+R\+S\+T\+A\+TE@{S\+U\+P\+E\+R\+S\+T\+A\+TE}}\item[{\em 
+S\+U\+P\+E\+R\+S\+T\+A\+TE\hypertarget{namespacesmacc_1_1introspection_a710cf406873961567c11027582c7f720a4da54a31b31f1c863864fdee05fc35c8}{}\label{namespacesmacc_1_1introspection_a710cf406873961567c11027582c7f720a4da54a31b31f1c863864fdee05fc35c8}
+}]\index{S\+T\+A\+TE@{S\+T\+A\+TE}!smacc\+::introspection@{smacc\+::introspection}}\index{smacc\+::introspection@{smacc\+::introspection}!S\+T\+A\+TE@{S\+T\+A\+TE}}\item[{\em 
+S\+T\+A\+TE\hypertarget{namespacesmacc_1_1introspection_a710cf406873961567c11027582c7f720a2b848a8cc886d253d21a77c43cd50aae}{}\label{namespacesmacc_1_1introspection_a710cf406873961567c11027582c7f720a2b848a8cc886d253d21a77c43cd50aae}
+}]\index{S\+U\+P\+E\+R\+S\+T\+A\+T\+E\+\_\+\+R\+O\+U\+T\+I\+NE@{S\+U\+P\+E\+R\+S\+T\+A\+T\+E\+\_\+\+R\+O\+U\+T\+I\+NE}!smacc\+::introspection@{smacc\+::introspection}}\index{smacc\+::introspection@{smacc\+::introspection}!S\+U\+P\+E\+R\+S\+T\+A\+T\+E\+\_\+\+R\+O\+U\+T\+I\+NE@{S\+U\+P\+E\+R\+S\+T\+A\+T\+E\+\_\+\+R\+O\+U\+T\+I\+NE}}\item[{\em 
+S\+U\+P\+E\+R\+S\+T\+A\+T\+E\+\_\+\+R\+O\+U\+T\+I\+NE\hypertarget{namespacesmacc_1_1introspection_a710cf406873961567c11027582c7f720a6d39c20504d2f2afe9c8c27351e61d20}{}\label{namespacesmacc_1_1introspection_a710cf406873961567c11027582c7f720a6d39c20504d2f2afe9c8c27351e61d20}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 64 of file smacc\+\_\+state\+\_\+info.\+h.
+
+
+\begin{DoxyCode}
+65 \{
+66     \hyperlink{namespacesmacc_1_1introspection_a710cf406873961567c11027582c7f720a4da54a31b31f1c863864fdee05fc35c8}{SUPERSTATE} = 2,
+67     \hyperlink{namespacesmacc_1_1introspection_a710cf406873961567c11027582c7f720a2b848a8cc886d253d21a77c43cd50aae}{STATE} = 1,
+68     \hyperlink{namespacesmacc_1_1introspection_a710cf406873961567c11027582c7f720a6d39c20504d2f2afe9c8c27351e61d20}{SUPERSTATE\_ROUTINE} = 1
+69 \};
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\index{smacc\+::introspection@{smacc\+::introspection}!automatic\+Transition\+Tag@{automatic\+Transition\+Tag}}
+\index{automatic\+Transition\+Tag@{automatic\+Transition\+Tag}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{automatic\+Transition\+Tag(std\+::string \&transition\+\_\+name)}{automaticTransitionTag(std::string &transition_name)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\+::enable\+\_\+if$<${\bf Has\+Automatic\+Transition\+Tag}$<$T$>$\+::value, void$>$\+::type smacc\+::introspection\+::automatic\+Transition\+Tag (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{transition\+\_\+name}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc_1_1introspection_ae031f62082f4e291e4933ee6f876b571}{}\label{namespacesmacc_1_1introspection_ae031f62082f4e291e4933ee6f876b571}
+
+
+Definition at line 146 of file introspection.\+h.
+
+
+\begin{DoxyCode}
+147 \{
+148     transition\_name = T::getDefaultTransitionTag();
+149 \}
+\end{DoxyCode}
+\index{smacc\+::introspection@{smacc\+::introspection}!automatic\+Transition\+Tag@{automatic\+Transition\+Tag}}
+\index{automatic\+Transition\+Tag@{automatic\+Transition\+Tag}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{automatic\+Transition\+Tag(std\+::string \&transition\+\_\+name)}{automaticTransitionTag(std::string &transition_name)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\+::enable\+\_\+if$<$!{\bf Has\+Automatic\+Transition\+Tag}$<$T$>$\+::value, void$>$\+::type smacc\+::introspection\+::automatic\+Transition\+Tag (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{transition\+\_\+name}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc_1_1introspection_a0d72ea881eae4f1e0f71fe40b92f1f3e}{}\label{namespacesmacc_1_1introspection_a0d72ea881eae4f1e0f71fe40b92f1f3e}
+
+
+Definition at line 153 of file introspection.\+h.
+
+
+\begin{DoxyCode}
+154 \{
+155     transition\_name = \textcolor{stringliteral}{""};
+156 \}
+\end{DoxyCode}
+\index{smacc\+::introspection@{smacc\+::introspection}!automatic\+Transition\+Type@{automatic\+Transition\+Type}}
+\index{automatic\+Transition\+Type@{automatic\+Transition\+Type}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{automatic\+Transition\+Type(std\+::string \&transition\+\_\+type)}{automaticTransitionType(std::string &transition_type)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\+::enable\+\_\+if$<${\bf Has\+Automatic\+Transition\+Type}$<$T$>$\+::value, void$>$\+::type smacc\+::introspection\+::automatic\+Transition\+Type (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{transition\+\_\+type}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc_1_1introspection_a2afacf459b5e29bb9fe8880a2a2d2b72}{}\label{namespacesmacc_1_1introspection_a2afacf459b5e29bb9fe8880a2a2d2b72}
+
+
+Definition at line 180 of file introspection.\+h.
+
+
+\begin{DoxyCode}
+181 \{
+182     transition\_type = T::getDefaultTransitionType();
+183 \}
+\end{DoxyCode}
+\index{smacc\+::introspection@{smacc\+::introspection}!automatic\+Transition\+Type@{automatic\+Transition\+Type}}
+\index{automatic\+Transition\+Type@{automatic\+Transition\+Type}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{automatic\+Transition\+Type(std\+::string \&transition\+\_\+type)}{automaticTransitionType(std::string &transition_type)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\+::enable\+\_\+if$<$!{\bf Has\+Automatic\+Transition\+Type}$<$T$>$\+::value, void$>$\+::type smacc\+::introspection\+::automatic\+Transition\+Type (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{transition\+\_\+type}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc_1_1introspection_ad45bab559ffade7f9d81c6d90ab6d88c}{}\label{namespacesmacc_1_1introspection_ad45bab559ffade7f9d81c6d90ab6d88c}
+
+
+Definition at line 187 of file introspection.\+h.
+
+
+\begin{DoxyCode}
+188 \{
+189     transition\_type = demangledTypeName<DEFAULT>();
+190 \}
+\end{DoxyCode}
+\index{smacc\+::introspection@{smacc\+::introspection}!Call\+On\+Definition@{Call\+On\+Definition}}
+\index{Call\+On\+Definition@{Call\+On\+Definition}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{Call\+On\+Definition()}{CallOnDefinition()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\+::enable\+\_\+if$<${\bf Has\+On\+Definition}$<$T$>$\+::value, void$>$\+::type smacc\+::introspection\+::\+Call\+On\+Definition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc_1_1introspection_a14a28bfad794e98164dce1375d3b0796}{}\label{namespacesmacc_1_1introspection_a14a28bfad794e98164dce1375d3b0796}
+
+
+Definition at line 342 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+References demangle\+Symbol().
+
+
+\begin{DoxyCode}
+343 \{
+344     \textcolor{comment}{/* something when T has toString ... */}
+345     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"EXECUTING ONDEFINITION: "} << \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(\textcolor{keyword}{typeid}(T).name()));
+346     T::onDefinition();
+347 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{namespacesmacc_1_1introspection_a14a28bfad794e98164dce1375d3b0796_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::introspection@{smacc\+::introspection}!Call\+On\+Definition@{Call\+On\+Definition}}
+\index{Call\+On\+Definition@{Call\+On\+Definition}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{Call\+On\+Definition()}{CallOnDefinition()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\+::enable\+\_\+if$<$!{\bf Has\+On\+Definition}$<$T$>$\+::value, void$>$\+::type smacc\+::introspection\+::\+Call\+On\+Definition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc_1_1introspection_a8cfcfc9c8896a6ff4bf22dbce6ecf838}{}\label{namespacesmacc_1_1introspection_a8cfcfc9c8896a6ff4bf22dbce6ecf838}
+
+
+Definition at line 351 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+References demangle\+Symbol().
+
+
+\begin{DoxyCode}
+352 \{
+353     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"static OnDefinition: dont exist for "} << \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(\textcolor{keyword}{typeid}(T).name()
+      ));
+354     \textcolor{comment}{/* something when T has toString ... */}
+355 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{namespacesmacc_1_1introspection_a8cfcfc9c8896a6ff4bf22dbce6ecf838_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::introspection@{smacc\+::introspection}!demangled\+Type\+Name@{demangled\+Type\+Name}}
+\index{demangled\+Type\+Name@{demangled\+Type\+Name}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{demangled\+Type\+Name()}{demangledTypeName()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ std\+::string smacc\+::introspection\+::demangled\+Type\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacesmacc_1_1introspection_af1b3277706c3299b589c3fa801169286}{}\label{namespacesmacc_1_1introspection_af1b3277706c3299b589c3fa801169286}
+
+
+Definition at line 75 of file introspection.\+h.
+
+
+
+References demangle\+Symbol().
+
+
+\begin{DoxyCode}
+76 \{
+77     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_1_1introspection_aa9158a0ff0cfe83a59877e6af7d7f873}{demangleSymbol}(\textcolor{keyword}{typeid}(T).name());
+78 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesmacc_1_1introspection_af1b3277706c3299b589c3fa801169286_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::introspection@{smacc\+::introspection}!demangle\+Symbol@{demangle\+Symbol}}
+\index{demangle\+Symbol@{demangle\+Symbol}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{demangle\+Symbol(const std\+::string \&name)}{demangleSymbol(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::introspection\+::demangle\+Symbol (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{}\label{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}
+
+
+Definition at line 45 of file introspection.\+h.
+
+
+
+Referenced by smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info\+::assemble\+S\+M\+Structure\+Message(), Call\+On\+Definition(), smacc\+::clean\+Short\+Type\+Name(), demangled\+Type\+Name(), demangle\+Symbol(), demangle\+Type(), smacc\+::\+I\+Smacc\+State\+::get\+Class\+Name(), smacc\+::introspection\+::\+Smacc\+State\+Info\+::get\+Demangled\+Full\+Name(), smacc\+::\+Sensor\+Topic$<$ Cl\+Laser\+Sensor $>$\+::get\+Event\+Label(), smacc\+::introspection\+::\+Smacc\+Event\+Info\+::get\+Event\+Source\+Name(), smacc\+::introspection\+::\+Smacc\+Event\+Info\+::get\+Event\+Type\+Name(), smacc\+::\+Smacc\+State$<$ Ms\+Dance\+Bot\+Run\+Mode, Sm\+Dance\+Bot, St\+Acquire\+Sensors $>$\+::get\+Full\+Name(), smacc\+::\+Orthogonal\+::get\+Name(), smacc\+::\+I\+Smacc\+Client\+::get\+Name(), smacc\+::\+Smacc\+Client\+Behavior\+::get\+Name(), smacc\+::\+I\+Smacc\+Component\+::get\+Name(), smacc\+::introspection\+::\+Smacc\+Event\+Info\+::get\+Object\+Tag\+Name(), smacc\+::\+I\+Smacc\+State\+Machine\+::get\+State\+Machine\+Name(), smacc\+::introspection\+::\+Type\+Info\+::get\+Type\+Info\+From\+Typeid(), smacc\+::client\+\_\+bases\+::\+Smacc\+Action\+Client\+Base$<$ sm\+\_\+dance\+\_\+bot\+::\+L\+E\+D\+Control\+Action $>$\+::initialize(), smacc\+::\+I\+Smacc\+State\+Machine\+::map\+Behavior(), smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go\+::on\+Event\+Notified(), smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown\+::on\+Event\+Notified(), keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior\+::post\+Key\+Event(), keyboard\+\_\+client\+::\+Cl\+Keyboard\+::post\+Key\+Event(), smacc\+::client\+\_\+bases\+::\+Smacc\+Action\+Client\+Base$<$ sm\+\_\+dance\+\_\+bot\+::\+L\+E\+D\+Control\+Action $>$\+::post\+Result\+Event(), process\+Transition\+Aux(), smacc\+::\+I\+Smacc\+State\+Machine\+::requires\+Component(), smacc\+::\+Smacc\+State$<$ Ms\+Dance\+Bot\+Run\+Mode, Sm\+Dance\+Bot, St\+Acquire\+Sensors $>$\+::\+Smacc\+State(), smacc\+::\+Smacc\+State$<$ Ms\+Dance\+Bot\+Run\+Mode, Sm\+Dance\+Bot, St\+Acquire\+Sensors $>$\+::static\+\_\+configure(), and smacc\+::\+Smacc\+State$<$ Ms\+Dance\+Bot\+Run\+Mode, Sm\+Dance\+Bot, St\+Acquire\+Sensors $>$\+::$\sim$\+Smacc\+State().
+
+
+\begin{DoxyCode}
+46 \{
+47     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_1_1introspection_aa9158a0ff0cfe83a59877e6af7d7f873}{demangleSymbol}(name.c\_str());
+48 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::introspection@{smacc\+::introspection}!demangle\+Symbol@{demangle\+Symbol}}
+\index{demangle\+Symbol@{demangle\+Symbol}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{demangle\+Symbol(const char $\ast$name)}{demangleSymbol(const char *name)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::introspection\+::demangle\+Symbol (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacesmacc_1_1introspection_af32c671351d958213f8031bb90767922}{}\label{namespacesmacc_1_1introspection_af32c671351d958213f8031bb90767922}
+
+
+Definition at line 50 of file introspection.\+h.
+
+
+\begin{DoxyCode}
+51 \{
+52 \textcolor{preprocessor}{#if (\_\_GNUC\_\_ && \_\_cplusplus && \_\_GNUC\_\_ >= 3)}
+53     \textcolor{keywordtype}{int} status;
+54     \textcolor{keywordtype}{char} *res = abi::\_\_cxa\_demangle(name, 0, 0, &status);
+55     \textcolor{keywordflow}{if} (res)
+56     \{
+57         \textcolor{keyword}{const} std::string demangled\_name(res);
+58         std::free(res);
+59         \textcolor{keywordflow}{return} demangled\_name;
+60     \}
+61     \textcolor{comment}{// Demangling failed, fallback to mangled name}
+62     \textcolor{keywordflow}{return} std::string(name);
+63 \textcolor{preprocessor}{#else}
+64     \textcolor{keywordflow}{return} std::string(name);
+65 \textcolor{preprocessor}{#endif}
+66 \}
+\end{DoxyCode}
+\index{smacc\+::introspection@{smacc\+::introspection}!demangle\+Symbol@{demangle\+Symbol}}
+\index{demangle\+Symbol@{demangle\+Symbol}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{demangle\+Symbol()}{demangleSymbol()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\+::string smacc\+::introspection\+::demangle\+Symbol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacesmacc_1_1introspection_aa9158a0ff0cfe83a59877e6af7d7f873}{}\label{namespacesmacc_1_1introspection_aa9158a0ff0cfe83a59877e6af7d7f873}
+
+
+Definition at line 69 of file introspection.\+h.
+
+
+
+References demangle\+Symbol().
+
+
+\begin{DoxyCode}
+70 \{
+71     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_1_1introspection_aa9158a0ff0cfe83a59877e6af7d7f873}{demangleSymbol}(\textcolor{keyword}{typeid}(T).name());
+72 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{namespacesmacc_1_1introspection_aa9158a0ff0cfe83a59877e6af7d7f873_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::introspection@{smacc\+::introspection}!demangle\+Type@{demangle\+Type}}
+\index{demangle\+Type@{demangle\+Type}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{demangle\+Type(const std\+::type\+\_\+info \&tinfo)}{demangleType(const std::type_info &tinfo)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::introspection\+::demangle\+Type (
+\begin{DoxyParamCaption}
+\item[{const std\+::type\+\_\+info \&}]{tinfo}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacesmacc_1_1introspection_a81ad2fc77a0262640d4b1bd273938603}{}\label{namespacesmacc_1_1introspection_a81ad2fc77a0262640d4b1bd273938603}
+
+
+Definition at line 80 of file introspection.\+h.
+
+
+
+References demangle\+Symbol().
+
+
+
+Referenced by smacc\+::client\+\_\+bases\+::\+Smacc\+Action\+Client\+Base$<$ sm\+\_\+dance\+\_\+bot\+::\+L\+E\+D\+Control\+Action $>$\+::configure\+Event\+Source\+Types(), smacc\+::\+Orthogonal\+::create\+Client(), smacc\+::\+Signal\+Detector\+::find\+Updatable\+Behaviors(), smacc\+::\+Signal\+Detector\+::find\+Updatable\+Clients(), and smacc\+::\+Signal\+Detector\+::poll\+Once().
+
+
+\begin{DoxyCode}
+81 \{
+82     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_1_1introspection_aa9158a0ff0cfe83a59877e6af7d7f873}{demangleSymbol}(tinfo.name());
+83 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{namespacesmacc_1_1introspection_a81ad2fc77a0262640d4b1bd273938603_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesmacc_1_1introspection_a81ad2fc77a0262640d4b1bd273938603_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::introspection@{smacc\+::introspection}!Event\+Label@{Event\+Label}}
+\index{Event\+Label@{Event\+Label}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{Event\+Label(std\+::string \&label)}{EventLabel(std::string &label)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\+::enable\+\_\+if$<${\bf Has\+Event\+Label}$<$T$>$\+::value, void$>$\+::type smacc\+::introspection\+::\+Event\+Label (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{label}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc_1_1introspection_a7d5ea10a24373bf452d3b6987d0a6bd0}{}\label{namespacesmacc_1_1introspection_a7d5ea10a24373bf452d3b6987d0a6bd0}
+
+
+Definition at line 112 of file introspection.\+h.
+
+
+\begin{DoxyCode}
+113 \{
+114     label = T::getEventLabel();
+115 \}
+\end{DoxyCode}
+\index{smacc\+::introspection@{smacc\+::introspection}!Event\+Label@{Event\+Label}}
+\index{Event\+Label@{Event\+Label}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{Event\+Label(std\+::string \&label)}{EventLabel(std::string &label)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\+::enable\+\_\+if$<$!{\bf Has\+Event\+Label}$<$T$>$\+::value, void$>$\+::type smacc\+::introspection\+::\+Event\+Label (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{label}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc_1_1introspection_aaf610a608f1f29ab3827a80e052d0ebe}{}\label{namespacesmacc_1_1introspection_aaf610a608f1f29ab3827a80e052d0ebe}
+
+
+Definition at line 119 of file introspection.\+h.
+
+
+\begin{DoxyCode}
+120 \{
+121     label = \textcolor{stringliteral}{""};
+122 \}
+\end{DoxyCode}
+\index{smacc\+::introspection@{smacc\+::introspection}!get\+Transition\+Type@{get\+Transition\+Type}}
+\index{get\+Transition\+Type@{get\+Transition\+Type}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{get\+Transition\+Type()}{getTransitionType()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Transition $>$ static std\+::string smacc\+::introspection\+::get\+Transition\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{namespacesmacc_1_1introspection_a62b41b5a90e19f27288b1aaac317fef1}{}\label{namespacesmacc_1_1introspection_a62b41b5a90e19f27288b1aaac317fef1}
+
+
+Definition at line 232 of file introspection.\+h.
+
+
+\begin{DoxyCode}
+233 \{
+234     std::string output;
+235     CheckType<TTransition> op(&output);
+236     \textcolor{keyword}{using} boost::mpl::\_1;
+237     \textcolor{keyword}{using} wrappedList = \textcolor{keyword}{typename} boost::mpl::transform<DEFAULT\_TRANSITION\_TYPES, \_1>::type;
+238 
+239     boost::mpl::for\_each<wrappedList>(op);
+240     \textcolor{keywordflow}{return} output;
+241 \};
+\end{DoxyCode}
+\index{smacc\+::introspection@{smacc\+::introspection}!optional\+Node\+Handle@{optional\+Node\+Handle}}
+\index{optional\+Node\+Handle@{optional\+Node\+Handle}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{optional\+Node\+Handle(boost\+::intrusive\+\_\+ptr$<$ T $>$ \&obj) -\/$>$ ros\+::\+Node\+Handle}{optionalNodeHandle(boost::intrusive_ptr< T > &obj) -> ros::NodeHandle}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ auto smacc\+::introspection\+::optional\+Node\+Handle (
+\begin{DoxyParamCaption}
+\item[{boost\+::intrusive\+\_\+ptr$<$ T $>$ \&}]{obj}
+\end{DoxyParamCaption}
+) -\/$>$ ros\+::\+Node\+Handle
+}\hypertarget{namespacesmacc_1_1introspection_a8acc3b4146a8b2bb0a9fa4178840e9b9}{}\label{namespacesmacc_1_1introspection_a8acc3b4146a8b2bb0a9fa4178840e9b9}
+
+
+Definition at line 33 of file introspection.\+h.
+
+
+
+Referenced by smacc\+::\+Smacc\+State$<$ Ms\+Dance\+Bot\+Run\+Mode, Sm\+Dance\+Bot, St\+Acquire\+Sensors $>$\+::\+Smacc\+State().
+
+
+\begin{DoxyCode}
+35 \{
+36     \textcolor{keywordflow}{return} obj->getROSNode();
+37 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesmacc_1_1introspection_a8acc3b4146a8b2bb0a9fa4178840e9b9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::introspection@{smacc\+::introspection}!optional\+Node\+Handle@{optional\+Node\+Handle}}
+\index{optional\+Node\+Handle@{optional\+Node\+Handle}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{optional\+Node\+Handle(\+T $\ast$) -\/$>$ ros\+::\+Node\+Handle}{optionalNodeHandle(T *) -> ros::NodeHandle}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ auto smacc\+::introspection\+::optional\+Node\+Handle (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{}
+\end{DoxyParamCaption}
+) -\/$>$ ros\+::\+Node\+Handle
+}\hypertarget{namespacesmacc_1_1introspection_a96b953e65af67591266e9ae4b3e4ee49}{}\label{namespacesmacc_1_1introspection_a96b953e65af67591266e9ae4b3e4ee49}
+
+
+Definition at line 40 of file introspection.\+h.
+
+
+\begin{DoxyCode}
+41 \{
+42     \textcolor{keywordflow}{return} ros::NodeHandle(\textcolor{stringliteral}{""});
+43 \}
+\end{DoxyCode}
+\index{smacc\+::introspection@{smacc\+::introspection}!process\+Sub\+State@{process\+Sub\+State}}
+\index{process\+Sub\+State@{process\+Sub\+State}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{process\+Sub\+State(std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&parent\+State)}{processSubState(std::shared_ptr< SmaccStateInfo > &parentState)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ disable\+\_\+if$<$boost\+::mpl\+::is\+\_\+sequence$<$T$>$ $>$\+::type smacc\+::introspection\+::process\+Sub\+State (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Smacc\+State\+Info} $>$ \&}]{parent\+State}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc_1_1introspection_a2911e2897a4572095bc9e7bc75e3a728}{}\label{namespacesmacc_1_1introspection_a2911e2897a4572095bc9e7bc75e3a728}
+
+
+Definition at line 109 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+References smacc\+::introspection\+::\+Walk\+States\+Executor$<$ Initial\+State\+Type $>$\+::walk\+States().
+
+
+\begin{DoxyCode}
+110 \{
+111     WalkStatesExecutor<T>::walkStates(parentState, \textcolor{keyword}{false});
+112 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{namespacesmacc_1_1introspection_a2911e2897a4572095bc9e7bc75e3a728_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::introspection@{smacc\+::introspection}!process\+Sub\+State@{process\+Sub\+State}}
+\index{process\+Sub\+State@{process\+Sub\+State}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{process\+Sub\+State(std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&parent\+State)}{processSubState(std::shared_ptr< SmaccStateInfo > &parentState)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ enable\+\_\+if$<$boost\+::mpl\+::is\+\_\+sequence$<$T$>$ $>$\+::type smacc\+::introspection\+::process\+Sub\+State (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Smacc\+State\+Info} $>$ \&}]{parent\+State}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc_1_1introspection_a14818620c2ac312e0622b241dcddceaa}{}\label{namespacesmacc_1_1introspection_a14818620c2ac312e0622b241dcddceaa}
+
+
+Definition at line 117 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+\begin{DoxyCode}
+118 \{
+119     \textcolor{keyword}{using} boost::mpl::\_1;
+120     \textcolor{keyword}{using} wrappedList = \textcolor{keyword}{typename} boost::mpl::transform<T, add\_type\_wrapper<\_1>>::type;
+121     boost::mpl::for\_each<wrappedList>(AddSubState(parentState));
+122 \}
+\end{DoxyCode}
+\index{smacc\+::introspection@{smacc\+::introspection}!process\+Transition@{process\+Transition}}
+\index{process\+Transition@{process\+Transition}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{process\+Transition(smacc\+::transition$<$ Ev, boost\+::statechart\+::deep\+\_\+history$<$ Dst $>$, Tag $>$ $\ast$, std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&source\+State)}{processTransition(smacc::transition< Ev, boost::statechart::deep_history< Dst >, Tag > *, std::shared_ptr< SmaccStateInfo > &sourceState)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ev , typename Dst , typename Tag $>$ void smacc\+::introspection\+::process\+Transition (
+\begin{DoxyParamCaption}
+\item[{{\bf smacc\+::transition}$<$ Ev, boost\+::statechart\+::deep\+\_\+history$<$ Dst $>$, Tag $>$ $\ast$}]{, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Smacc\+State\+Info} $>$ \&}]{source\+State}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc_1_1introspection_a407401045d8c81f470e40929fc47e02b}{}\label{namespacesmacc_1_1introspection_a407401045d8c81f470e40929fc47e02b}
+
+
+Definition at line 138 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+References process\+Transition\+Aux().
+
+
+
+Referenced by process\+Transitions().
+
+
+\begin{DoxyCode}
+139 \{
+140     \textcolor{keyword}{auto} transitionTypeInfo = TypeInfo::getTypeInfoFromType<smacc::transition<Ev,
+       boost::statechart::deep\_history<Dst>, Tag>>();
+141     \hyperlink{classsmacc_1_1transition}{smacc::transition<Ev, Dst, Tag>} *mock;
+142     \hyperlink{namespacesmacc_1_1introspection_a424354ac0fe1450aee135d39259bd05a}{processTransitionAux}(mock, sourceState, \textcolor{keyword}{true}, transitionTypeInfo);
+143 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesmacc_1_1introspection_a407401045d8c81f470e40929fc47e02b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{namespacesmacc_1_1introspection_a407401045d8c81f470e40929fc47e02b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::introspection@{smacc\+::introspection}!process\+Transition@{process\+Transition}}
+\index{process\+Transition@{process\+Transition}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{process\+Transition(smacc\+::transition$<$ Ev, Dst, Tag $>$ $\ast$t, std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&source\+State)}{processTransition(smacc::transition< Ev, Dst, Tag > *t, std::shared_ptr< SmaccStateInfo > &sourceState)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ev , typename Dst , typename Tag $>$ void smacc\+::introspection\+::process\+Transition (
+\begin{DoxyParamCaption}
+\item[{{\bf smacc\+::transition}$<$ Ev, Dst, Tag $>$ $\ast$}]{t, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Smacc\+State\+Info} $>$ \&}]{source\+State}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc_1_1introspection_aa880b6034dc97b727798baf3c4c526fe}{}\label{namespacesmacc_1_1introspection_aa880b6034dc97b727798baf3c4c526fe}
+
+
+Definition at line 146 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+References process\+Transition\+Aux().
+
+
+\begin{DoxyCode}
+147 \{
+148     \textcolor{keyword}{auto} transitionTypeInfo = TypeInfo::getTypeInfoFromType<smacc::transition<Ev, Dst, Tag>>();
+149     \hyperlink{namespacesmacc_1_1introspection_a424354ac0fe1450aee135d39259bd05a}{processTransitionAux}(t, sourceState, \textcolor{keyword}{false}, transitionTypeInfo);
+150 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesmacc_1_1introspection_aa880b6034dc97b727798baf3c4c526fe_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::introspection@{smacc\+::introspection}!process\+Transition@{process\+Transition}}
+\index{process\+Transition@{process\+Transition}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{process\+Transition(statechart\+::transition$<$ Ev, Dst $>$ $\ast$, std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&source\+State)}{processTransition(statechart::transition< Ev, Dst > *, std::shared_ptr< SmaccStateInfo > &sourceState)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ev , typename Dst $>$ void smacc\+::introspection\+::process\+Transition (
+\begin{DoxyParamCaption}
+\item[{statechart\+::transition$<$ Ev, Dst $>$ $\ast$}]{, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Smacc\+State\+Info} $>$ \&}]{source\+State}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc_1_1introspection_a1083a0c41469be69ec8317eb7e95d3f0}{}\label{namespacesmacc_1_1introspection_a1083a0c41469be69ec8317eb7e95d3f0}
+
+
+Definition at line 249 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+\begin{DoxyCode}
+250 \{
+251     \textcolor{comment}{//ROS\_INFO\_STREAM("GOTCHA");}
+252 \}
+\end{DoxyCode}
+\index{smacc\+::introspection@{smacc\+::introspection}!process\+Transition@{process\+Transition}}
+\index{process\+Transition@{process\+Transition}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{process\+Transition(statechart\+::custom\+\_\+reaction$<$ Ev $>$ $\ast$, std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&source\+State)}{processTransition(statechart::custom_reaction< Ev > *, std::shared_ptr< SmaccStateInfo > &sourceState)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ev $>$ void smacc\+::introspection\+::process\+Transition (
+\begin{DoxyParamCaption}
+\item[{statechart\+::custom\+\_\+reaction$<$ Ev $>$ $\ast$}]{, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Smacc\+State\+Info} $>$ \&}]{source\+State}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc_1_1introspection_a25f60bf498ae9f3d0324ed1b84ecbae4}{}\label{namespacesmacc_1_1introspection_a25f60bf498ae9f3d0324ed1b84ecbae4}
+
+
+Definition at line 255 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+\begin{DoxyCode}
+256 \{
+257     \textcolor{comment}{//ROS\_INFO\_STREAM("GOTCHA");}
+258 \}
+\end{DoxyCode}
+\index{smacc\+::introspection@{smacc\+::introspection}!process\+Transition\+Aux@{process\+Transition\+Aux}}
+\index{process\+Transition\+Aux@{process\+Transition\+Aux}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{process\+Transition\+Aux(smacc\+::transition$<$ Ev, Dst, Tag $>$ $\ast$, std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&source\+State, bool history, Type\+Info\+::\+Ptr \&transition\+Type\+Info)}{processTransitionAux(smacc::transition< Ev, Dst, Tag > *, std::shared_ptr< SmaccStateInfo > &sourceState, bool history, TypeInfo::Ptr &transitionTypeInfo)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ev , typename Dst , typename Tag $>$ void smacc\+::introspection\+::process\+Transition\+Aux (
+\begin{DoxyParamCaption}
+\item[{{\bf smacc\+::transition}$<$ Ev, Dst, Tag $>$ $\ast$}]{, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Smacc\+State\+Info} $>$ \&}]{source\+State, }
+\item[{{\bf bool}}]{history, }
+\item[{{\bf Type\+Info\+::\+Ptr} \&}]{transition\+Type\+Info}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc_1_1introspection_a424354ac0fe1450aee135d39259bd05a}{}\label{namespacesmacc_1_1introspection_a424354ac0fe1450aee135d39259bd05a}
+
+
+Definition at line 153 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+References demangle\+Symbol(), and smacc\+::introspection\+::\+Walk\+States\+Executor$<$ Initial\+State\+Type $>$\+::walk\+States().
+
+
+
+Referenced by process\+Transition().
+
+
+\begin{DoxyCode}
+154 \{
+155     ROS\_INFO(\textcolor{stringliteral}{"State %s Walker transition: %s"}, sourceState->toShortName().c\_str(), 
+      \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(\textcolor{keyword}{typeid}(Ev).name()).c\_str());
+156     std::string transitionTag;
+157     std::string transitionType;
+158 
+159     \textcolor{keywordflow}{if} (\textcolor{keyword}{typeid}(Tag) != \textcolor{keyword}{typeid}(\hyperlink{structsmacc_1_1default__transition__name}{smacc::default\_transition\_name}))
+160     \{
+161         transitionTag = demangleSymbol<Tag>();
+162         transitionType = getTransitionType<Tag>();
+163         ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"TRANSITION TYPE:"} << transitionType);
+164     \}
+165     \textcolor{keywordflow}{else}
+166     \{
+167         transitionTag = \textcolor{stringliteral}{""};
+168         automaticTransitionTag<Ev>(transitionTag);
+169         automaticTransitionType<Ev>(transitionType);
+170     \}
+171 
+172     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"Transition tag: "} << transitionTag);
+173 
+174     \textcolor{keywordflow}{if} (!sourceState->stateMachine\_->containsState<Dst>())
+175     \{
+176         \textcolor{keyword}{auto} realparentState = sourceState->stateMachine\_->getState<\textcolor{keyword}{typename} Dst::TContext>();
+177         \textcolor{keyword}{auto} siblingnode = sourceState->stateMachine\_->createState<Dst>(realparentState);
+178 
+179         \textcolor{comment}{//auto siblingnode = sourceState->stateMachine\_->createState<Dst>(sourceState->parentState\_);}
+180         WalkStatesExecutor<Dst>::walkStates(siblingnode, \textcolor{keyword}{true});
+181         sourceState->declareTransition<Ev>(siblingnode, transitionTag, transitionType, history, 
+      transitionTypeInfo);
+182     \}
+183     \textcolor{keywordflow}{else}
+184     \{
+185         \textcolor{comment}{//auto realparentState = sourceState->stateMachine\_->getState<typename Dst::TContext>();}
+186         \textcolor{comment}{//auto siblingnode = sourceState->stateMachine\_->createState<Dst>(realparentState);}
+187 
+188         \textcolor{keyword}{auto} siblingnode = sourceState->stateMachine\_->getState<Dst>();
+189         sourceState->declareTransition<Ev>(siblingnode, transitionTag, transitionType, history, 
+      transitionTypeInfo);
+190     \}
+191 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesmacc_1_1introspection_a424354ac0fe1450aee135d39259bd05a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesmacc_1_1introspection_a424354ac0fe1450aee135d39259bd05a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::introspection@{smacc\+::introspection}!process\+Transitions@{process\+Transitions}}
+\index{process\+Transitions@{process\+Transitions}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{process\+Transitions(std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&source\+State)}{processTransitions(std::shared_ptr< SmaccStateInfo > &sourceState)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ enable\+\_\+if$<$boost\+::mpl\+::is\+\_\+sequence$<$T$>$ $>$\+::type smacc\+::introspection\+::process\+Transitions (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Smacc\+State\+Info} $>$ \&}]{source\+State}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc_1_1introspection_a652200ed9e8e2131a417de01910b5fd4}{}\label{namespacesmacc_1_1introspection_a652200ed9e8e2131a417de01910b5fd4}
+
+
+Definition at line 128 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+\begin{DoxyCode}
+129 \{
+130 
+131     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"State %s Walker has transition list"});
+132     \textcolor{keyword}{using} boost::mpl::\_1;
+133     \textcolor{keyword}{using} wrappedList = \textcolor{keyword}{typename} boost::mpl::transform<T, add\_type\_wrapper<\_1>>::type;
+134     boost::mpl::for\_each<wrappedList>(AddTransition(sourceState));
+135 \}
+\end{DoxyCode}
+\index{smacc\+::introspection@{smacc\+::introspection}!process\+Transitions@{process\+Transitions}}
+\index{process\+Transitions@{process\+Transitions}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{process\+Transitions(std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&source\+State)}{processTransitions(std::shared_ptr< SmaccStateInfo > &sourceState)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ disable\+\_\+if$<$boost\+::mpl\+::is\+\_\+sequence$<$T$>$ $>$\+::type smacc\+::introspection\+::process\+Transitions (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Smacc\+State\+Info} $>$ \&}]{source\+State}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc_1_1introspection_a24beffddf95fa3dce92051b336e65d8f}{}\label{namespacesmacc_1_1introspection_a24beffddf95fa3dce92051b336e65d8f}
+
+
+Definition at line 265 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+References process\+Transition().
+
+
+\begin{DoxyCode}
+266 \{
+267     \textcolor{comment}{//ROS\_INFO\_STREAM("state transition from: " << sourceState->demangledStateName << " of type: " <<
+       demangledTypeName<T>());}
+268     T *dummy;
+269     \hyperlink{namespacesmacc_1_1introspection_a25f60bf498ae9f3d0324ed1b84ecbae4}{processTransition}(dummy, sourceState);
+270 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesmacc_1_1introspection_a24beffddf95fa3dce92051b336e65d8f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::introspection@{smacc\+::introspection}!replace@{replace}}
+\index{replace@{replace}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{replace(std\+::string \&str, const std\+::string \&from, const std\+::string \&to)}{replace(std::string &str, const std::string &from, const std::string &to)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool} smacc\+::introspection\+::replace (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{str, }
+\item[{const std\+::string \&}]{from, }
+\item[{const std\+::string \&}]{to}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc_1_1introspection_a48571b9bf3b115d2a83cc0147c96d0bd}{}\label{namespacesmacc_1_1introspection_a48571b9bf3b115d2a83cc0147c96d0bd}
+
+
+Definition at line 19 of file string\+\_\+type\+\_\+walker.\+cpp.
+
+
+
+Referenced by smacc\+::introspection\+::\+Type\+Info\+::get\+Type\+Info\+From\+String(), and replace\+\_\+back().
+
+
+\begin{DoxyCode}
+20 \{
+21     \textcolor{keywordtype}{size\_t} start\_pos = str.find(from);
+22     \textcolor{keywordflow}{if} (start\_pos == std::string::npos)
+23         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+24     str.replace(start\_pos, from.length(), to);
+25     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+26 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesmacc_1_1introspection_a48571b9bf3b115d2a83cc0147c96d0bd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::introspection@{smacc\+::introspection}!replace\+\_\+back@{replace\+\_\+back}}
+\index{replace\+\_\+back@{replace\+\_\+back}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{replace\+\_\+back(std\+::string roottype, std\+::map$<$ std\+::string, std\+::string $>$ \&typesdict)}{replace_back(std::string roottype, std::map< std::string, std::string > &typesdict)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::introspection\+::replace\+\_\+back (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{roottype, }
+\item[{std\+::map$<$ std\+::string, std\+::string $>$ \&}]{typesdict}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc_1_1introspection_a19350163cda321a04645dcd6f6585f24}{}\label{namespacesmacc_1_1introspection_a19350163cda321a04645dcd6f6585f24}
+
+
+Definition at line 28 of file string\+\_\+type\+\_\+walker.\+cpp.
+
+
+
+References replace(), and smacc\+::introspection\+::\+Type\+Info\+::type\+Info\+Database.
+
+
+
+Referenced by smacc\+::introspection\+::\+Type\+Info\+::get\+Type\+Info\+From\+String().
+
+
+\begin{DoxyCode}
+29 \{
+30     \textcolor{keywordflow}{while} (roottype.find(\textcolor{stringliteral}{"$"}) != std::string::npos)
+31     \{
+32         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &t : typesdict)
+33         \{
+34             \textcolor{keyword}{auto} &tkey = t.first;
+35             \textcolor{keyword}{auto} &tval = t.second;
+36 
+37             \hyperlink{namespacesmacc_1_1introspection_a48571b9bf3b115d2a83cc0147c96d0bd}{replace}(roottype, tkey, tval);
+38         \}
+39     \}
+40 
+41     \textcolor{keywordflow}{return} roottype;
+42 
+43     \textcolor{comment}{//   def replace\_back(roottype, typesdict):}
+44     \textcolor{comment}{//     # replace back}
+45     \textcolor{comment}{//     while "$" in roottype:}
+46     \textcolor{comment}{//         #print roottype}
+47     \textcolor{comment}{//         for tkey in typesdict:}
+48     \textcolor{comment}{//             tval = typesdict[tkey]}
+49     \textcolor{comment}{//             roottype = roottype.replace(tkey, tval)}
+50 
+51     \textcolor{comment}{//     return roottype}
+52 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{namespacesmacc_1_1introspection_a19350163cda321a04645dcd6f6585f24_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesmacc_1_1introspection_a19350163cda321a04645dcd6f6585f24_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::introspection@{smacc\+::introspection}!transition\+Info\+To\+Msg@{transition\+Info\+To\+Msg}}
+\index{transition\+Info\+To\+Msg@{transition\+Info\+To\+Msg}!smacc\+::introspection@{smacc\+::introspection}}
+\subsubsection[{\texorpdfstring{transition\+Info\+To\+Msg(const Smacc\+Transition\+Info \&transition, smacc\+\_\+msgs\+::\+Smacc\+Transition \&transition\+Msg)}{transitionInfoToMsg(const SmaccTransitionInfo &transition, smacc_msgs::SmaccTransition &transitionMsg)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::introspection\+::transition\+Info\+To\+Msg (
+\begin{DoxyParamCaption}
+\item[{const {\bf Smacc\+Transition\+Info} \&}]{transition, }
+\item[{smacc\+\_\+msgs\+::\+Smacc\+Transition \&}]{transition\+Msg}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc_1_1introspection_a6c1b51c4d44fd5e41fe218f1ee150681}{}\label{namespacesmacc_1_1introspection_a6c1b51c4d44fd5e41fe218f1ee150681}
+
+
+Definition at line 9 of file reflection.\+cpp.
+
+
+
+References smacc\+::introspection\+::\+Smacc\+Transition\+Info\+::destiny\+State, smacc\+::introspection\+::\+Smacc\+Transition\+Info\+::event\+Info, smacc\+::introspection\+::\+Smacc\+Transition\+Info\+::history\+Node, smacc\+::introspection\+::\+Smacc\+Transition\+Info\+::index, smacc\+::introspection\+::\+Smacc\+Transition\+Info\+::source\+State, smacc\+::introspection\+::\+Smacc\+Transition\+Info\+::transition\+Tag, and smacc\+::introspection\+::\+Smacc\+Transition\+Info\+::transition\+Type.
+
+
+
+Referenced by smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info\+::assemble\+S\+M\+Structure\+Message(), and smacc\+::\+I\+Smacc\+State\+Machine\+::publish\+Transition().
+
+
+\begin{DoxyCode}
+10 \{
+11     transitionMsg.index = transition.index;
+12     transitionMsg.event.event\_type = transition.eventInfo->getEventTypeName();
+13 
+14     transitionMsg.source\_state\_name = transition.sourceState->demangledStateName;
+15 
+16     transitionMsg.transition\_name = transition.transitionTag;
+17     transitionMsg.transition\_type = transition.transitionType;
+18     transitionMsg.event.event\_source = transition.eventInfo->getEventSourceName();
+19     transitionMsg.event.event\_object\_tag = transition.eventInfo->getObjectTagName();
+20     transitionMsg.event.label = transition.eventInfo->label;
+21     transitionMsg.history\_node = transition.historyNode;
+22 
+23     \textcolor{keywordflow}{if} (transition.historyNode)
+24     \{
+25         \textcolor{keywordflow}{if} (transition.destinyState->parentState\_ != \textcolor{keyword}{nullptr})
+26             transitionMsg.destiny\_state\_name = transition.destinyState->parentState\_->demangledStateName;
+27         \textcolor{keywordflow}{else}
+28             transitionMsg.destiny\_state\_name = \textcolor{stringliteral}{""};
+29     \}
+30     \textcolor{keywordflow}{else}
+31     \{
+32         transitionMsg.destiny\_state\_name = transition.destinyState->demangledStateName;
+33     \}
+34 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesmacc_1_1introspection_a6c1b51c4d44fd5e41fe218f1ee150681_icgraph}
+\end{center}
+\end{figure}
+
+

@@ -1,0 +1,140 @@
+\hypertarget{structsmacc_1_1introspection_1_1AddTransition}{}\section{smacc\+:\+:introspection\+:\+:Add\+Transition Struct Reference}
+\label{structsmacc_1_1introspection_1_1AddTransition}\index{smacc\+::introspection\+::\+Add\+Transition@{smacc\+::introspection\+::\+Add\+Transition}}
+
+
+{\ttfamily \#include $<$smacc\+\_\+state\+\_\+machine\+\_\+info.\+h$>$}
+
+
+
+Collaboration diagram for smacc\+:\+:introspection\+:\+:Add\+Transition\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{structsmacc_1_1introspection_1_1AddTransition__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structsmacc_1_1introspection_1_1AddTransition_a7bec012404747e4ab3eb6ca32cf06ba7}{Add\+Transition} (std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \&current\+State)
+\item 
+{\footnotesize template$<$template$<$ typename, typename, typename $>$ typename T\+Transition, typename Tev\+Source , template$<$ typename $>$ typename Ev\+Type, typename Tag , typename Destiny\+State $>$ }\\void \hyperlink{structsmacc_1_1introspection_1_1AddTransition_a40896e3e99a230be221d1a9733cb5e50}{operator()} (T\+Transition$<$ Ev\+Type$<$ Tev\+Source $>$, Destiny\+State, Tag $>$)
+\item 
+{\footnotesize template$<$template$<$ typename, typename $>$ typename T\+Transition, typename Tev\+Source , template$<$ typename $>$ typename Ev\+Type, typename Destiny\+State $>$ }\\void \hyperlink{structsmacc_1_1introspection_1_1AddTransition_ae418fea0a96b2b2da60fb2f42a8c99cf}{operator()} (T\+Transition$<$ Ev\+Type$<$ Tev\+Source $>$, Destiny\+State $>$)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{structsmacc_1_1introspection_1_1AddTransition_a3f9708b6493a5747fbe77361d9711daa}{operator()} (T)
+\item 
+{\footnotesize template$<$typename T\+Trans$>$ }\\void \hyperlink{structsmacc_1_1introspection_1_1AddTransition_abfe5dedcabfcc1fa94f767320f9089ab}{operator()} (T\+Trans)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \& \hyperlink{structsmacc_1_1introspection_1_1AddTransition_a56fd9b1bdf6761bbe5258dc915481f4b}{current\+State\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 72 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+::introspection\+::\+Add\+Transition@{smacc\+::introspection\+::\+Add\+Transition}!Add\+Transition@{Add\+Transition}}
+\index{Add\+Transition@{Add\+Transition}!smacc\+::introspection\+::\+Add\+Transition@{smacc\+::introspection\+::\+Add\+Transition}}
+\subsubsection[{\texorpdfstring{Add\+Transition(std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&current\+State)}{AddTransition(std::shared_ptr< SmaccStateInfo > &currentState)}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+::introspection\+::\+Add\+Transition\+::\+Add\+Transition (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Smacc\+State\+Info} $>$ \&}]{current\+State}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsmacc_1_1introspection_1_1AddTransition_a7bec012404747e4ab3eb6ca32cf06ba7}{}\label{structsmacc_1_1introspection_1_1AddTransition_a7bec012404747e4ab3eb6ca32cf06ba7}
+
+
+Definition at line 76 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+\begin{DoxyCode}
+77         : \hyperlink{structsmacc_1_1introspection_1_1AddTransition_a56fd9b1bdf6761bbe5258dc915481f4b}{currentState\_}(currentState)
+78     \{
+79     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::introspection\+::\+Add\+Transition@{smacc\+::introspection\+::\+Add\+Transition}!operator()@{operator()}}
+\index{operator()@{operator()}!smacc\+::introspection\+::\+Add\+Transition@{smacc\+::introspection\+::\+Add\+Transition}}
+\subsubsection[{\texorpdfstring{operator()(\+T\+Transition$<$ Ev\+Type$<$ Tev\+Source $>$, Destiny\+State, Tag $>$)}{operator()(TTransition< EvType< TevSource >, DestinyState, Tag >)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename, typename, typename $>$ typename T\+Transition, typename Tev\+Source , template$<$ typename $>$ typename Ev\+Type, typename Tag , typename Destiny\+State $>$ void smacc\+::introspection\+::\+Add\+Transition\+::operator() (
+\begin{DoxyParamCaption}
+\item[{T\+Transition$<$ Ev\+Type$<$ Tev\+Source $>$, Destiny\+State, Tag $>$}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{structsmacc_1_1introspection_1_1AddTransition_a40896e3e99a230be221d1a9733cb5e50}{}\label{structsmacc_1_1introspection_1_1AddTransition_a40896e3e99a230be221d1a9733cb5e50}
+
+
+Definition at line 298 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+\begin{DoxyCode}
+299 \{
+300     processTransitions<TTransition<EvType<TevSource>, DestinyState, Tag>>(
+      \hyperlink{structsmacc_1_1introspection_1_1AddTransition_a56fd9b1bdf6761bbe5258dc915481f4b}{currentState\_});
+301 \}
+\end{DoxyCode}
+\index{smacc\+::introspection\+::\+Add\+Transition@{smacc\+::introspection\+::\+Add\+Transition}!operator()@{operator()}}
+\index{operator()@{operator()}!smacc\+::introspection\+::\+Add\+Transition@{smacc\+::introspection\+::\+Add\+Transition}}
+\subsubsection[{\texorpdfstring{operator()(\+T\+Transition$<$ Ev\+Type$<$ Tev\+Source $>$, Destiny\+State $>$)}{operator()(TTransition< EvType< TevSource >, DestinyState >)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename, typename $>$ typename T\+Transition, typename Tev\+Source , template$<$ typename $>$ typename Ev\+Type, typename Destiny\+State $>$ void smacc\+::introspection\+::\+Add\+Transition\+::operator() (
+\begin{DoxyParamCaption}
+\item[{T\+Transition$<$ Ev\+Type$<$ Tev\+Source $>$, Destiny\+State $>$}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{structsmacc_1_1introspection_1_1AddTransition_ae418fea0a96b2b2da60fb2f42a8c99cf}{}\label{structsmacc_1_1introspection_1_1AddTransition_ae418fea0a96b2b2da60fb2f42a8c99cf}
+
+
+Definition at line 306 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+\begin{DoxyCode}
+307 \{
+308     processTransitions<TTransition<EvType<TevSource>, DestinyState>>(
+      \hyperlink{structsmacc_1_1introspection_1_1AddTransition_a56fd9b1bdf6761bbe5258dc915481f4b}{currentState\_});
+309 \}
+\end{DoxyCode}
+\index{smacc\+::introspection\+::\+Add\+Transition@{smacc\+::introspection\+::\+Add\+Transition}!operator()@{operator()}}
+\index{operator()@{operator()}!smacc\+::introspection\+::\+Add\+Transition@{smacc\+::introspection\+::\+Add\+Transition}}
+\subsubsection[{\texorpdfstring{operator()(\+T)}{operator()(T)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void smacc\+::introspection\+::\+Add\+Transition\+::operator() (
+\begin{DoxyParamCaption}
+\item[{T}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{structsmacc_1_1introspection_1_1AddTransition_a3f9708b6493a5747fbe77361d9711daa}{}\label{structsmacc_1_1introspection_1_1AddTransition_a3f9708b6493a5747fbe77361d9711daa}
+\index{smacc\+::introspection\+::\+Add\+Transition@{smacc\+::introspection\+::\+Add\+Transition}!operator()@{operator()}}
+\index{operator()@{operator()}!smacc\+::introspection\+::\+Add\+Transition@{smacc\+::introspection\+::\+Add\+Transition}}
+\subsubsection[{\texorpdfstring{operator()(\+T\+Trans)}{operator()(TTrans)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Trans$>$ void smacc\+::introspection\+::\+Add\+Transition\+::operator() (
+\begin{DoxyParamCaption}
+\item[{T\+Trans}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{structsmacc_1_1introspection_1_1AddTransition_abfe5dedcabfcc1fa94f767320f9089ab}{}\label{structsmacc_1_1introspection_1_1AddTransition_abfe5dedcabfcc1fa94f767320f9089ab}
+
+
+Definition at line 312 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+\begin{DoxyCode}
+313 \{
+314     \textcolor{keyword}{using} type\_t = \textcolor{keyword}{typename} TTrans::type;
+315     processTransitions<type\_t>(\hyperlink{structsmacc_1_1introspection_1_1AddTransition_a56fd9b1bdf6761bbe5258dc915481f4b}{currentState\_});
+316 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+::introspection\+::\+Add\+Transition@{smacc\+::introspection\+::\+Add\+Transition}!current\+State\+\_\+@{current\+State\+\_\+}}
+\index{current\+State\+\_\+@{current\+State\+\_\+}!smacc\+::introspection\+::\+Add\+Transition@{smacc\+::introspection\+::\+Add\+Transition}}
+\subsubsection[{\texorpdfstring{current\+State\+\_\+}{currentState_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Smacc\+State\+Info}$>$\& smacc\+::introspection\+::\+Add\+Transition\+::current\+State\+\_\+}\hypertarget{structsmacc_1_1introspection_1_1AddTransition_a56fd9b1bdf6761bbe5258dc915481f4b}{}\label{structsmacc_1_1introspection_1_1AddTransition_a56fd9b1bdf6761bbe5258dc915481f4b}
+
+
+Definition at line 74 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc/include/smacc/introspection/\hyperlink{smacc__state__machine__info_8h}{smacc\+\_\+state\+\_\+machine\+\_\+info.\+h}\end{DoxyCompactItemize}

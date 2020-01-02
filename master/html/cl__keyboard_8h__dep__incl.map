@@ -1,6 +1,7 @@
-<map id="smacc_sm_reference_library/sm_three_some/include/sm_three_some/clients/cl_keyboard/cl_keyboard.h" name="smacc_sm_reference_library/sm_three_some/include/sm_three_some/clients/cl_keyboard/cl_keyboard.h">
-<area shape="rect" id="node2" href="$cb__default__keyboard__behavior_8h.html" title="smacc_sm_reference\l_library/sm_three_some\l/include/sm_three_some\l/clients/cl_keyboard/client\l_behaviors/cb_default_keyboard\l_behavior.h" alt="" coords="5,139,232,239"/>
-<area shape="rect" id="node3" href="$sm__three__some_8h.html" title="smacc_sm_reference\l_library/sm_three_some\l/include/sm_three_some\l/sm_three_some.h" alt="" coords="180,287,359,357"/>
-<area shape="rect" id="node5" href="$or__keyboard_8h.html" title="smacc_sm_reference\l_library/sm_three_some\l/include/sm_three_some\l/orthogonals/or_keyboard.h" alt="" coords="307,153,504,224"/>
-<area shape="rect" id="node4" href="$sm__three__some__node_8cpp.html" title="smacc_sm_reference\l_library/sm_three_some\l/src/sm_three_some_node.cpp" alt="" coords="160,405,379,461"/>
+<map id="smacc_client_library/keyboard_client/include/keyboard_client/cl_keyboard.h" name="smacc_client_library/keyboard_client/include/keyboard_client/cl_keyboard.h">
+<area shape="rect" id="node2" href="$cb__default__keyboard__behavior_8h.html" title="smacc_client_library\l/keyboard_client/include\l/keyboard_client/client\l_behaviors/cb_default_keyboard\l_behavior.h" alt="" coords="5,109,232,195"/>
+<area shape="rect" id="node3" href="$sm__three__some_8h.html" title="smacc_sm_reference\l_library/sm_three_some\l/include/sm_three_some\l/sm_three_some.h" alt="" coords="180,243,359,313"/>
+<area shape="rect" id="node5" href="$keyboard__client_8cpp.html" title="smacc_client_library\l/keyboard_client/src\l/keyboard_client/keyboard\l_client.cpp" alt="" coords="307,117,496,187"/>
+<area shape="rect" id="node6" href="$or__keyboard_8h.html" title="smacc_sm_reference\l_library/sm_three_some\l/include/sm_three_some\l/orthogonals/or_keyboard.h" alt="" coords="520,117,717,187"/>
+<area shape="rect" id="node4" href="$sm__three__some__node_8cpp.html" title="smacc_sm_reference\l_library/sm_three_some\l/src/sm_three_some_node.cpp" alt="" coords="160,361,379,417"/>
 </map>

@@ -27,7 +27,7 @@ Collaboration diagram for move\+\_\+base\+\_\+z\+\_\+client\+:\+:Cl\+Move\+BaseZ
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef \hyperlink{classsmacc_1_1SmaccActionClientBase_a55625fdfd8344a88919aa6fa935b66fe}{Smacc\+Action\+Client\+Base}$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::\hyperlink{classmove__base__z__client_1_1ClMoveBaseZ_a3b774d99d3dd4526f99b968d65ef5834}{Result\+Const\+Ptr} \hyperlink{classmove__base__z__client_1_1ClMoveBaseZ_a3b774d99d3dd4526f99b968d65ef5834}{Result\+Const\+Ptr}
+typedef \hyperlink{classsmacc_1_1client__bases_1_1SmaccActionClientBase_a942113f29871c3e2c3fff9e951500805}{Smacc\+Action\+Client\+Base}$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::\hyperlink{classmove__base__z__client_1_1ClMoveBaseZ_a3b774d99d3dd4526f99b968d65ef5834}{Result\+Const\+Ptr} \hyperlink{classmove__base__z__client_1_1ClMoveBaseZ_a3b774d99d3dd4526f99b968d65ef5834}{Result\+Const\+Ptr}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -48,7 +48,7 @@ std\+::shared\+\_\+ptr$<$ \hyperlink{classmove__base__z__client_1_1PlannerSwitch
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef \hyperlink{classsmacc_1_1SmaccActionClientBase_a55625fdfd8344a88919aa6fa935b66fe}{Smacc\+Action\+Client\+Base}$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$ \hyperlink{classmove__base__z__client_1_1ClMoveBaseZ_a5446f4fb56caf7c8de8dd3bd34ae64d6}{Base}
+typedef \hyperlink{classsmacc_1_1client__bases_1_1SmaccActionClientBase_a942113f29871c3e2c3fff9e951500805}{Smacc\+Action\+Client\+Base}$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$ \hyperlink{classmove__base__z__client_1_1ClMoveBaseZ_a5446f4fb56caf7c8de8dd3bd34ae64d6}{Base}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -160,7 +160,7 @@ Definition at line 17 of file move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin.\+cp
 )\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classmove__base__z__client_1_1ClMoveBaseZ_a082cef8bf5dbd0ec06adfe2a7aefbf70}{}\label{classmove__base__z__client_1_1ClMoveBaseZ_a082cef8bf5dbd0ec06adfe2a7aefbf70}
 
 
-Reimplemented from \hyperlink{classsmacc_1_1SmaccActionClientBase_a0224d7482b50a706f99bd280495ef1af}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$}.
+Reimplemented from \hyperlink{classsmacc_1_1client__bases_1_1SmaccActionClientBase_a72967f255f85e35718a1e1b0b48c38ff}{smacc\+::client\+\_\+bases\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$}.
 
 
 
@@ -168,14 +168,14 @@ Definition at line 22 of file move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin.\+cp
 
 
 
-References smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::initialize(), smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::name\+\_\+, and planner\+Switcher\+\_\+.
+References smacc\+::client\+\_\+bases\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::initialize(), smacc\+::client\+\_\+bases\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::name\+\_\+, and planner\+Switcher\+\_\+.
 
 
 \begin{DoxyCode}
 23 \{
 24     \hyperlink{classmove__base__z__client_1_1ClMoveBaseZ_ac57d2293bc0a5c4fcef326379822cc5e}{plannerSwitcher\_} = std::make\_shared<move\_base\_z\_client::PlannerSwitcher>(*(this->
-      \hyperlink{classsmacc_1_1SmaccActionClientBase_a8464e3ec514e57333339fc538a2203f4}{name\_}));
-25     \hyperlink{classsmacc_1_1SmaccActionClientBase_a0224d7482b50a706f99bd280495ef1af}{SmaccActionClientBase<move\_base\_msgs::MoveBaseAction>::initialize}
+      \hyperlink{classsmacc_1_1client__bases_1_1SmaccActionClientBase_a12b007d3c3657b0f0699e97cdb96a490}{name\_}));
+25     \hyperlink{classsmacc_1_1client__bases_1_1SmaccActionClientBase_a72967f255f85e35718a1e1b0b48c38ff}{SmaccActionClientBase<move\_base\_msgs::MoveBaseAction>::initialize}
       ();
 26 \}
 \end{DoxyCode}

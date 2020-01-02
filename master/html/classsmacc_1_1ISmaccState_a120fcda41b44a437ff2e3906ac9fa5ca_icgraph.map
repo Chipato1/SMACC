@@ -1,12 +1,4 @@
 <map id="smacc::ISmaccState::setGlobalSMData" name="smacc::ISmaccState::setGlobalSMData">
-<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccState.html#a3484b4a32ef47a8650f08df67de4fae5" title="smacc::ISmaccState\l::getParentState" alt="" coords="208,169,363,211"/>
-<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccStateMachine.html#a268198b98e9540f4edb703801527a192" title="smacc::ISmaccStateMachine\l::propagateEventToLogicUnits" alt="" coords="411,139,621,180"/>
-<area shape="rect" id="node4" href="$classsmacc_1_1ISmaccStateMachine.html#ad80cdd7bbc9a9f3b221c625754fed1ed" title="smacc::ISmaccStateMachine\l::postEvent" alt="" coords="669,136,876,177"/>
-<area shape="rect" id="node5" href="$classsmacc_1_1SmaccClientBehavior.html#ab29b23145ea074ad69340fc0af6fbb75" title="smacc::SmaccClientBehavior\l::postEvent" alt="" coords="924,5,1132,47"/>
-<area shape="rect" id="node6" href="$classsmacc_1_1ISmaccClient.html#a46cbc0d695214efe40d29247323bfc80" title="smacc::ISmaccClient\l::postEvent" alt="" coords="951,71,1105,112"/>
-<area shape="rect" id="node7" href="$classsmacc_1_1ISmaccComponent.html#a687dead5b87a3b9781b9bf6ab0b7afa5" title="smacc::ISmaccComponent\l::postEvent" alt="" coords="931,136,1125,177"/>
-<area shape="rect" id="node8" href="$classsmacc_1_1ISmaccState.html#acef404ab3766ddf2892e8dad14a4a7cf" title="smacc::ISmaccState\l::postEvent" alt="" coords="951,201,1105,243"/>
-<area shape="rect" id="node9" href="$namespacesm__viewer__sim.html#a19b5db17983d5b9bbf21e96ecf9ab5c8" title="sm_viewer_sim::delayedPost\lEvent" alt="" coords="1197,121,1402,163"/>
-<area shape="rect" id="node10" href="$classsmacc_1_1SmaccState.html#a56ccdfaf818ed6409dcbd4ab8b01c60e" title="smacc::SmaccState\&lt;\l MsDanceBotRunMode,\l SmDanceBot, StAcquireSensors\l \&gt;::throwFinishEvent" alt="" coords="1183,187,1416,257"/>
-<area shape="rect" id="node11" href="$classsmacc_1_1SmaccState.html#a4f3083a54914820cd7b9eb5a6221f29f" title="smacc::SmaccState\&lt;\l MsDanceBotRunMode,\l SmDanceBot, StAcquireSensors\l \&gt;::throwLoopEventFromCondition" alt="" coords="1180,281,1419,352"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccState.html#a3484b4a32ef47a8650f08df67de4fae5" title="smacc::ISmaccState\l::getParentState" alt="" coords="208,5,363,47"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccStateMachine.html#a268198b98e9540f4edb703801527a192" title="smacc::ISmaccStateMachine\l::propagateEventToLogicUnits" alt="" coords="411,5,621,47"/>
 </map>

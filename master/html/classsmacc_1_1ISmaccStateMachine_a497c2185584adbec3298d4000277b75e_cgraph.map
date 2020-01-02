@@ -1,7 +1,7 @@
 <map id="smacc::ISmaccStateMachine::ISmaccStateMachine" name="smacc::ISmaccStateMachine::ISmaccStateMachine">
-<area shape="rect" id="node2" href="$classsmacc_1_1SignalDetector.html#a91ab3cd92d8095cdaf8610b50731f04b" title="smacc::SignalDetector\l::initialize" alt="" coords="260,35,427,76"/>
-<area shape="rect" id="node3" href="$classsmacc_1_1SignalDetector.html#a47ec2df560e2e33758ce3975bece9385" title="smacc::SignalDetector\l::findUpdatableClients" alt="" coords="475,35,641,76"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1SignalDetector.html#a91ab3cd92d8095cdaf8610b50731f04b" title="smacc::SignalDetector\l::initialize" alt="" coords="260,39,427,80"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1SignalDetector.html#a47ec2df560e2e33758ce3975bece9385" title="smacc::SignalDetector\l::findUpdatableClients" alt="" coords="475,39,641,80"/>
 <area shape="rect" id="node4" href="$classsmacc_1_1ISmaccStateMachine.html#a262b3f2d15af019190fa69b7c0df00f8" title="smacc::ISmaccStateMachine\l::getOrthogonals" alt="" coords="689,5,896,47"/>
-<area shape="rect" id="node5" href="$namespacesmacc.html#a792e7a3ea0843e87543a465b446ae730" title="smacc::demangleType" alt="" coords="711,71,875,98"/>
-<area shape="rect" id="node6" href="$namespacesmacc.html#a458f5e70d468824fbcd66cc7729deaa8" title="smacc::demangleSymbol" alt="" coords="944,71,1128,98"/>
+<area shape="rect" id="node5" href="$namespacesmacc_1_1introspection.html#a81ad2fc77a0262640d4b1bd273938603" title="smacc::introspection\l::demangleType" alt="" coords="715,71,870,112"/>
+<area shape="rect" id="node6" href="$namespacesmacc_1_1introspection.html#a2f495108db3e57604d8d3ff5ef030302" title="smacc::introspection\l::demangleSymbol" alt="" coords="944,71,1099,112"/>
 </map>

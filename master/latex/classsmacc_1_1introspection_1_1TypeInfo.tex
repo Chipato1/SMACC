@@ -1,0 +1,607 @@
+\hypertarget{classsmacc_1_1introspection_1_1TypeInfo}{}\section{smacc\+:\+:introspection\+:\+:Type\+Info Class Reference}
+\label{classsmacc_1_1introspection_1_1TypeInfo}\index{smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}}
+
+
+{\ttfamily \#include $<$string\+\_\+type\+\_\+walker.\+h$>$}
+
+
+
+Collaboration diagram for smacc\+:\+:introspection\+:\+:Type\+Info\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1introspection_1_1TypeInfo__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1TypeInfo}{Type\+Info} $>$ \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_aa6ffd9c39811d59f7c771941b7fad860}{Ptr}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc_1_1introspection_1_1TypeInfo_ae57986b3f7e913346a379ec7ad609ffc}{Type\+Info} (std\+::string \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a697dd505119258dba1224d10eea5b2bd}{tkey}, std\+::string \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a117d2b73994b78a6e4e81cdf7054912c}{codedtype}, std\+::string \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_aa4010ed427e12db443e08ab16a3de243}{finaltype})
+\item 
+std\+::string \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a41eb6c64f46a8e24a206e5702c6f6818}{to\+String} ()
+\item 
+std\+::string \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_aa431c3dbe04a695a5e213620062c8719}{get\+Non\+Templatetypename} ()
+\item 
+const std\+::string \& \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_ad00815e2537a11be93c9a80846f4dc3a}{get\+Full\+Name} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_aa6ffd9c39811d59f7c771941b7fad860}{Type\+Info\+::\+Ptr} \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a47d65b6c61499d7ae8ab9f6325c84837}{get\+Type\+Info\+From\+String} (std\+::string inputtext)
+\item 
+static \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_aa6ffd9c39811d59f7c771941b7fad860}{Type\+Info\+::\+Ptr} \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a09ec2f3f94a8f1fc82ae250216c38d47}{get\+Type\+Info\+From\+Typeid} (const std\+::type\+\_\+info \&tid)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_aa6ffd9c39811d59f7c771941b7fad860}{Type\+Info\+::\+Ptr} \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a8716ca6ac890b4582986d9fe4f5962ad}{get\+Type\+Info\+From\+Type} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_aa6ffd9c39811d59f7c771941b7fad860}{Ptr} $>$ \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_aed5166ab8bcd94489e7bc87deb01de5c}{template\+Parameters}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::map$<$ std\+::string, \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_aa6ffd9c39811d59f7c771941b7fad860}{Ptr} $>$ \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_ab780c03206b824aaf338135d16b0eff4}{type\+Info\+Database}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a697dd505119258dba1224d10eea5b2bd}{tkey}
+\item 
+std\+::string \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a117d2b73994b78a6e4e81cdf7054912c}{codedtype}
+\item 
+std\+::string \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_aa4010ed427e12db443e08ab16a3de243}{finaltype}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file string\+\_\+type\+\_\+walker.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}}
+\subsubsection[{\texorpdfstring{Ptr}{Ptr}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::shared\+\_\+ptr$<${\bf Type\+Info}$>$ {\bf smacc\+::introspection\+::\+Type\+Info\+::\+Ptr}}\hypertarget{classsmacc_1_1introspection_1_1TypeInfo_aa6ffd9c39811d59f7c771941b7fad860}{}\label{classsmacc_1_1introspection_1_1TypeInfo_aa6ffd9c39811d59f7c771941b7fad860}
+
+
+Definition at line 16 of file string\+\_\+type\+\_\+walker.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}!Type\+Info@{Type\+Info}}
+\index{Type\+Info@{Type\+Info}!smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}}
+\subsubsection[{\texorpdfstring{Type\+Info(std\+::string tkey, std\+::string codedtype, std\+::string finaltype)}{TypeInfo(std::string tkey, std::string codedtype, std::string finaltype)}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+::introspection\+::\+Type\+Info\+::\+Type\+Info (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{tkey, }
+\item[{std\+::string}]{codedtype, }
+\item[{std\+::string}]{finaltype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1introspection_1_1TypeInfo_ae57986b3f7e913346a379ec7ad609ffc}{}\label{classsmacc_1_1introspection_1_1TypeInfo_ae57986b3f7e913346a379ec7ad609ffc}
+
+
+Definition at line 20 of file string\+\_\+type\+\_\+walker.\+h.
+
+
+
+References codedtype, finaltype, and tkey.
+
+
+\begin{DoxyCode}
+21     \{
+22         this->\hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a697dd505119258dba1224d10eea5b2bd}{tkey} = \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a697dd505119258dba1224d10eea5b2bd}{tkey};
+23         this->\hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a117d2b73994b78a6e4e81cdf7054912c}{codedtype} = \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a117d2b73994b78a6e4e81cdf7054912c}{codedtype};
+24         this->\hyperlink{classsmacc_1_1introspection_1_1TypeInfo_aa4010ed427e12db443e08ab16a3de243}{finaltype} = \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_aa4010ed427e12db443e08ab16a3de243}{finaltype};
+25     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}!get\+Full\+Name@{get\+Full\+Name}}
+\index{get\+Full\+Name@{get\+Full\+Name}!smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}}
+\subsubsection[{\texorpdfstring{get\+Full\+Name()}{getFullName()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& smacc\+::introspection\+::\+Type\+Info\+::get\+Full\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1introspection_1_1TypeInfo_ad00815e2537a11be93c9a80846f4dc3a}{}\label{classsmacc_1_1introspection_1_1TypeInfo_ad00815e2537a11be93c9a80846f4dc3a}
+
+
+Definition at line 47 of file string\+\_\+type\+\_\+walker.\+h.
+
+
+
+References finaltype.
+
+
+\begin{DoxyCode}
+48     \{
+49         \textcolor{keywordflow}{return} this->\hyperlink{classsmacc_1_1introspection_1_1TypeInfo_aa4010ed427e12db443e08ab16a3de243}{finaltype};
+50     \}
+\end{DoxyCode}
+\index{smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}!get\+Non\+Templatetypename@{get\+Non\+Templatetypename}}
+\index{get\+Non\+Templatetypename@{get\+Non\+Templatetypename}!smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}}
+\subsubsection[{\texorpdfstring{get\+Non\+Templatetypename()}{getNonTemplatetypename()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::introspection\+::\+Type\+Info\+::get\+Non\+Templatetypename (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1introspection_1_1TypeInfo_aa431c3dbe04a695a5e213620062c8719}{}\label{classsmacc_1_1introspection_1_1TypeInfo_aa431c3dbe04a695a5e213620062c8719}
+
+
+Definition at line 32 of file string\+\_\+type\+\_\+walker.\+h.
+
+
+
+References finaltype, get\+Type\+Info\+From\+String(), and get\+Type\+Info\+From\+Typeid().
+
+
+\begin{DoxyCode}
+33     \{
+34         \textcolor{keyword}{auto} index = this->\hyperlink{classsmacc_1_1introspection_1_1TypeInfo_aa4010ed427e12db443e08ab16a3de243}{finaltype}.find(\textcolor{stringliteral}{"<"});
+35         \textcolor{keywordflow}{return} this->\hyperlink{classsmacc_1_1introspection_1_1TypeInfo_aa4010ed427e12db443e08ab16a3de243}{finaltype}.substr(0, index);
+36     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1introspection_1_1TypeInfo_aa431c3dbe04a695a5e213620062c8719_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}!get\+Type\+Info\+From\+String@{get\+Type\+Info\+From\+String}}
+\index{get\+Type\+Info\+From\+String@{get\+Type\+Info\+From\+String}!smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}}
+\subsubsection[{\texorpdfstring{get\+Type\+Info\+From\+String(std\+::string inputtext)}{getTypeInfoFromString(std::string inputtext)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type\+Info\+::\+Ptr} smacc\+::introspection\+::\+Type\+Info\+::get\+Type\+Info\+From\+String (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{inputtext}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classsmacc_1_1introspection_1_1TypeInfo_a47d65b6c61499d7ae8ab9f6325c84837}{}\label{classsmacc_1_1introspection_1_1TypeInfo_a47d65b6c61499d7ae8ab9f6325c84837}
+
+
+Definition at line 61 of file string\+\_\+type\+\_\+walker.\+cpp.
+
+
+
+References finaltype, smacc\+::introspection\+::replace(), smacc\+::introspection\+::replace\+\_\+back(), tkey, and type\+Info\+Database.
+
+
+
+Referenced by get\+Non\+Templatetypename(), get\+Type\+Info\+From\+Typeid(), and smacc\+::\+Smacc\+State$<$ Ms\+Dance\+Bot\+Run\+Mode, Sm\+Dance\+Bot, St\+Acquire\+Sensors $>$\+::static\+\_\+create\+Logic\+Unit().
+
+
+\begin{DoxyCode}
+62 \{
+63     \textcolor{keyword}{auto} it = \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_ab780c03206b824aaf338135d16b0eff4}{typeInfoDatabase}.find(inputtext);
+64 
+65     \textcolor{keywordflow}{if} (it != \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_ab780c03206b824aaf338135d16b0eff4}{typeInfoDatabase}.end())
+66         \textcolor{keywordflow}{return} \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_ab780c03206b824aaf338135d16b0eff4}{typeInfoDatabase}[inputtext];
+67 
+68     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{false};
+69     \textcolor{keywordtype}{int} typecount = 0;
+70     std::string originalinputtext = inputtext;
+71     std::map<std::string, std::string> typesdict;
+72 
+73     \textcolor{keywordflow}{while} (!ok)
+74     \{
+75         \textcolor{comment}{//simpletypeRE = r"[^<>,\(\backslash\)s]+<[^<>]+>"}
+76         \textcolor{comment}{//print ("input: " + inputtext)}
+77 
+78         \textcolor{keyword}{const} \textcolor{keywordtype}{char} *simpletypeRE = \textcolor{stringliteral}{"[^\(\backslash\)\(\backslash\)<\(\backslash\)\(\backslash\)>,\(\backslash\)\(\backslash\)s]+\(\backslash\)\(\backslash\)<[^\(\backslash\)\(\backslash\)<\(\backslash\)\(\backslash\)>]+\(\backslash\)\(\backslash\)>"};
+79         \textcolor{comment}{//std::cout << inputtext << std::endl;}
+80 
+81         std::smatch matches;
+82         std::regex regex(simpletypeRE); \textcolor{comment}{// matches words beginning by "sub"}
+83 
+84         \textcolor{comment}{//matches = [m for m in enumerate(re.finditer(simpletypeRE, inputtext))]}
+85         std::regex\_search(inputtext, matches, regex);
+86 
+87         \textcolor{comment}{//   if len(matches) == 0:}
+88         \textcolor{comment}{//     if len(typesdict) == 0:}
+89         \textcolor{comment}{//         tkey = "$T" + str(typecount)}
+90         \textcolor{comment}{//         typesdict[tkey] = inputtext}
+91         \textcolor{comment}{//     break}
+92 
+93         \textcolor{keywordflow}{if} (matches.size() == 0)
+94         \{
+95             \textcolor{keywordflow}{if} (typesdict.size() == 0)
+96             \{
+97                 \textcolor{keyword}{auto} \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a697dd505119258dba1224d10eea5b2bd}{tkey} = \textcolor{stringliteral}{"$T"} + std::to\_string(typecount);
+98                 typesdict[\hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a697dd505119258dba1224d10eea5b2bd}{tkey}] = inputtext;
+99             \}
+100             \textcolor{keywordflow}{break};
+101         \}
+102 
+103         \textcolor{comment}{// for i, m in matches:}
+104         \textcolor{comment}{//     tstr = m.group(0)}
+105         \textcolor{comment}{//     tkey = "$T" + str(typecount)}
+106         \textcolor{comment}{//     inputtext = inputtext.replace(tstr, tkey)}
+107         \textcolor{comment}{//     print("updating input text: " + inputtext)}
+108         \textcolor{comment}{//     typecount += 1}
+109         \textcolor{comment}{//     typesdict[tkey] = tstr}
+110 
+111         \textcolor{keywordtype}{int} i = 0;
+112         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &m : matches)
+113         \{
+114             std::string tstr = m;
+115             \textcolor{keyword}{auto} \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a697dd505119258dba1224d10eea5b2bd}{tkey} = \textcolor{stringliteral}{"$T"} + std::to\_string(typecount);
+116             \hyperlink{namespacesmacc_1_1introspection_a48571b9bf3b115d2a83cc0147c96d0bd}{replace}(inputtext, tstr, \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a697dd505119258dba1224d10eea5b2bd}{tkey});
+117 
+118             \textcolor{comment}{//std::cout << "updating input text:" << inputtext << std::endl;}
+119 
+120             typecount++;
+121             typesdict[\hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a697dd505119258dba1224d10eea5b2bd}{tkey}] = tstr;
+122 
+123             i++;
+124         \}
+125     \}
+126 
+127     \textcolor{comment}{// allbasetypes = set()}
+128     \textcolor{comment}{// for tkey in typesdict.keys():}
+129     \textcolor{comment}{//     flat = typesdict[tkey]}
+130     \textcolor{comment}{//     print flat}
+131     \textcolor{comment}{//     startindex = flat.index("<")}
+132     \textcolor{comment}{//     flat = flat[startindex + 1:-1]}
+133     \textcolor{comment}{//     basetypes = [t.strip() for t in flat.split(",")]}
+134     \textcolor{comment}{//     for b in basetypes:}
+135     \textcolor{comment}{//         if not "$" in b:}
+136     \textcolor{comment}{//             allbasetypes.add(b)}
+137 
+138     std::set<std::string> allbasetypes;
+139     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &\hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a697dd505119258dba1224d10eea5b2bd}{tkey} : typesdict)
+140     \{
+141         \textcolor{keyword}{auto} flat = \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a697dd505119258dba1224d10eea5b2bd}{tkey}.second;
+142         \textcolor{comment}{//std::cout << flat << std::endl;}
+143 
+144         \textcolor{keywordtype}{size\_t} startindex = flat.find(\textcolor{stringliteral}{"<"});
+145         \textcolor{keywordtype}{size\_t} endindex = flat.find(\textcolor{stringliteral}{">"});
+146         \textcolor{keywordflow}{if} (startindex != std::string::npos)
+147         \{
+148             flat = flat.substr(startindex + 1, endindex - startindex - 1);
+149             std::vector<std::string> basetypes;
+150 
+151             std::istringstream iss(flat);
+152             std::string token;
+153             \textcolor{keywordflow}{while} (std::getline(iss, token, \textcolor{charliteral}{','}))
+154             \{
+155                 boost::trim(token);
+156                 basetypes.push\_back(token);
+157                 \textcolor{comment}{//std::cout << "base type: " << token << std::endl;}
+158             \}
+159 
+160             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &b : basetypes)
+161             \{
+162                 \textcolor{keywordtype}{size\_t} found = b.find(\textcolor{stringliteral}{"$"});
+163 
+164                 \textcolor{keywordflow}{if} (found == std::string::npos)
+165                 \{
+166                     allbasetypes.insert(b);
+167                 \}
+168             \}
+169         \}
+170 
+171         \textcolor{comment}{// for b in allbasetypes:}
+172         \textcolor{comment}{// typesdict[b] = b}
+173 
+174         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &b : allbasetypes)
+175         \{
+176             typesdict[b] = b;
+177         \}
+178     \}
+179     \textcolor{comment}{// types = []}
+180     \textcolor{comment}{// for tkey in typesdict:}
+181     \textcolor{comment}{//     finaltype = replace\_back(typesdict[tkey], typesdict)}
+182     \textcolor{comment}{//     t = TypeInfo(tkey, typesdict[tkey], finaltype)}
+183     \textcolor{comment}{//     types.append(t)}
+184 
+185     \textcolor{comment}{//     print t}
+186 
+187     \textcolor{comment}{//std::cout << "---------- TYPES -------" << std::endl;}
+188     std::vector<TypeInfo::Ptr> types;
+189     
+190     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} t : typesdict)
+191     \{
+192         \textcolor{comment}{//auto t = *it;}
+193         \textcolor{keyword}{auto} &\hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a697dd505119258dba1224d10eea5b2bd}{tkey} = t.first;
+194         \textcolor{keyword}{auto} &tval = t.second;
+195         \textcolor{keyword}{auto} \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_aa4010ed427e12db443e08ab16a3de243}{finaltype} = \hyperlink{namespacesmacc_1_1introspection_a19350163cda321a04645dcd6f6585f24}{replace\_back}(tval, typesdict);
+196         \textcolor{keyword}{auto} tinfo = std::make\_shared<TypeInfo>(\hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a697dd505119258dba1224d10eea5b2bd}{tkey}, tval, \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_aa4010ed427e12db443e08ab16a3de243}{finaltype});
+197         types.push\_back(tinfo);
+198 
+199         \textcolor{comment}{//std::cout << "replacing back: " << finaltype << std::endl;}
+200     \}
+201 
+202     \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_aa6ffd9c39811d59f7c771941b7fad860}{TypeInfo::Ptr} roottype = \textcolor{keyword}{nullptr};
+203     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &t : types)
+204     \{
+205         \textcolor{keywordflow}{if} (t->finaltype == originalinputtext)
+206         \{
+207             roottype = t;
+208             \textcolor{keywordflow}{break};
+209         \}
+210     \}
+211 
+212     std::sort(types.begin(), types.end(),[](\textcolor{keyword}{auto}& a, \textcolor{keyword}{auto}& b)
+213     \{
+214         \textcolor{keywordflow}{return} a->getFullName().size() > b->getFullName().size();
+215     \});
+216 
+217     \textcolor{comment}{/*}
+218 \textcolor{comment}{    std::cout<<"types order:" << std::endl;}
+219 \textcolor{comment}{    for(auto t: types)}
+220 \textcolor{comment}{    \{}
+221 \textcolor{comment}{        std::cout<< t->codedtype << std::endl;}
+222 \textcolor{comment}{    \}}
+223 \textcolor{comment}{    std::cout<<"---------" << std::endl;}
+224 \textcolor{comment}{}
+225 \textcolor{comment}{    std::cout<<"types order:" << std::endl;}
+226 \textcolor{comment}{    for(auto t: types)}
+227 \textcolor{comment}{    \{}
+228 \textcolor{comment}{        std::cout<< t->finaltype << std::endl;}
+229 \textcolor{comment}{    \}}
+230 \textcolor{comment}{    std::cout<<"---------" << std::endl;}
+231 \textcolor{comment}{    */}
+232 
+233     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} t: types)
+234     \{
+235         \textcolor{comment}{//auto t = types[it1];}
+236         std::vector<std::pair<int, TypeInfo::Ptr>> unorderedTemplateParameters;
+237 
+238         \textcolor{keyword}{auto} codedtypecopy = t->codedtype;
+239         \textcolor{comment}{//std::cout << "original typestr: " << codedtypecopy << std::endl;}
+240 
+241         \textcolor{keywordtype}{size\_t} startindex = codedtypecopy.find(\textcolor{stringliteral}{"<"});
+242         \textcolor{keywordtype}{size\_t} endindex = codedtypecopy.find(\textcolor{stringliteral}{">"});
+243         \textcolor{keywordflow}{if} (startindex != std::string::npos)
+244         \{
+245             codedtypecopy = codedtypecopy.substr(startindex + 1, endindex - startindex - 1);
+246         \}
+247         \textcolor{comment}{//std::cout << "original typestr: " << codedtypecopy << std::endl;}
+248 
+249         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &t2 : types)
+250         \textcolor{comment}{//for (auto it2= types.size() -1; it2 >=0; it2--)}
+251         \{
+252             \textcolor{comment}{//std::cout << it2 << std::endl;}
+253             \textcolor{comment}{//auto t2 = types[it2];}
+254             \textcolor{comment}{//std::cout << t2->getFullName() << std::endl;}
+255             \textcolor{keywordflow}{if} (t == t2)
+256                 \textcolor{keywordflow}{continue};
+257 
+258             \textcolor{keyword}{auto} index = codedtypecopy.find(t2->tkey);
+259             \textcolor{keywordflow}{if} (index != std::string::npos)
+260             \{
+261                 \textcolor{comment}{//auto pair = std::make\_pair(index, t2);}
+262                 \textcolor{keyword}{auto} pair = std::make\_pair(0, t2);
+263                 \textcolor{comment}{//std::cout << "matches: " << t2->tkey <<std::endl;}
+264                 unorderedTemplateParameters.push\_back(pair);
+265                 \hyperlink{namespacesmacc_1_1introspection_a48571b9bf3b115d2a83cc0147c96d0bd}{replace}(codedtypecopy,t2->tkey,\textcolor{stringliteral}{""}); \textcolor{comment}{// consume token}
+266                 \textcolor{comment}{//std::cout << "codedtypecopy: " << codedtypecopy << std::endl;}
+267             \}
+268         \}
+269 
+270         std::sort(unorderedTemplateParameters.begin(), unorderedTemplateParameters.end(),
+271                   [](\textcolor{keyword}{auto} &a, \textcolor{keyword}{auto} &b) -> \textcolor{keywordtype}{bool} \{
+272                       \textcolor{keywordflow}{return} a.first <= b.first;
+273                   \});
+274 
+275         ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"------------------"});
+276         ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"CREATING TYPE:"} << t->getFullName());
+277 
+278         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &item : unorderedTemplateParameters)
+279         \{
+280             ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{" - template paramter: "} << item.second->getFullName());
+281             t->templateParameters.push\_back(item.second);
+282         \}
+283         ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"------------------"});
+284     \}
+285 
+286     ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"ADDING TYPE TO DATABASE: "} << inputtext);
+287     ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"Current Database"});
+288     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &en : \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_ab780c03206b824aaf338135d16b0eff4}{typeInfoDatabase})
+289     \{
+290         ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"- "} << en.first);
+291     \}
+292 
+293     typeInfoDatabase[originalinputtext] = roottype;
+294     \textcolor{keywordflow}{return} roottype;
+295 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1introspection_1_1TypeInfo_a47d65b6c61499d7ae8ab9f6325c84837_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1introspection_1_1TypeInfo_a47d65b6c61499d7ae8ab9f6325c84837_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}!get\+Type\+Info\+From\+Type@{get\+Type\+Info\+From\+Type}}
+\index{get\+Type\+Info\+From\+Type@{get\+Type\+Info\+From\+Type}!smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}}
+\subsubsection[{\texorpdfstring{get\+Type\+Info\+From\+Type()}{getTypeInfoFromType()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ static {\bf Type\+Info\+::\+Ptr} smacc\+::introspection\+::\+Type\+Info\+::get\+Type\+Info\+From\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classsmacc_1_1introspection_1_1TypeInfo_a8716ca6ac890b4582986d9fe4f5962ad}{}\label{classsmacc_1_1introspection_1_1TypeInfo_a8716ca6ac890b4582986d9fe4f5962ad}
+
+
+Definition at line 42 of file string\+\_\+type\+\_\+walker.\+h.
+
+
+
+References get\+Type\+Info\+From\+Typeid().
+
+
+\begin{DoxyCode}
+43     \{
+44         \textcolor{keywordflow}{return} \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a09ec2f3f94a8f1fc82ae250216c38d47}{TypeInfo::getTypeInfoFromTypeid}(\textcolor{keyword}{typeid}(T));
+45     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1introspection_1_1TypeInfo_a8716ca6ac890b4582986d9fe4f5962ad_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}!get\+Type\+Info\+From\+Typeid@{get\+Type\+Info\+From\+Typeid}}
+\index{get\+Type\+Info\+From\+Typeid@{get\+Type\+Info\+From\+Typeid}!smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}}
+\subsubsection[{\texorpdfstring{get\+Type\+Info\+From\+Typeid(const std\+::type\+\_\+info \&tid)}{getTypeInfoFromTypeid(const std::type_info &tid)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type\+Info\+::\+Ptr} smacc\+::introspection\+::\+Type\+Info\+::get\+Type\+Info\+From\+Typeid (
+\begin{DoxyParamCaption}
+\item[{const std\+::type\+\_\+info \&}]{tid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classsmacc_1_1introspection_1_1TypeInfo_a09ec2f3f94a8f1fc82ae250216c38d47}{}\label{classsmacc_1_1introspection_1_1TypeInfo_a09ec2f3f94a8f1fc82ae250216c38d47}
+
+
+Definition at line 56 of file string\+\_\+type\+\_\+walker.\+cpp.
+
+
+
+References smacc\+::introspection\+::demangle\+Symbol(), and get\+Type\+Info\+From\+String().
+
+
+
+Referenced by get\+Non\+Templatetypename(), get\+Type\+Info\+From\+Type(), and smacc\+::\+Smacc\+State$<$ Most\+Derived, Context, Inner\+Initial, history\+Mode $>$\+::\+Add\+Logic\+Unit\+Event\+Type$<$ T\+Transition $>$\+::operator()().
+
+
+\begin{DoxyCode}
+57 \{
+58     \textcolor{keywordflow}{return} \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a47d65b6c61499d7ae8ab9f6325c84837}{TypeInfo::getTypeInfoFromString}(
+      \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(tid.name()));
+59 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1introspection_1_1TypeInfo_a09ec2f3f94a8f1fc82ae250216c38d47_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1introspection_1_1TypeInfo_a09ec2f3f94a8f1fc82ae250216c38d47_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}}
+\subsubsection[{\texorpdfstring{to\+String()}{toString()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::introspection\+::\+Type\+Info\+::to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1introspection_1_1TypeInfo_a41eb6c64f46a8e24a206e5702c6f6818}{}\label{classsmacc_1_1introspection_1_1TypeInfo_a41eb6c64f46a8e24a206e5702c6f6818}
+
+
+Definition at line 27 of file string\+\_\+type\+\_\+walker.\+h.
+
+
+
+References finaltype, and tkey.
+
+
+\begin{DoxyCode}
+28     \{
+29         \textcolor{keywordflow}{return} this->\hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a697dd505119258dba1224d10eea5b2bd}{tkey} + \textcolor{stringliteral}{":"} + this->\hyperlink{classsmacc_1_1introspection_1_1TypeInfo_aa4010ed427e12db443e08ab16a3de243}{finaltype};
+30     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}!codedtype@{codedtype}}
+\index{codedtype@{codedtype}!smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}}
+\subsubsection[{\texorpdfstring{codedtype}{codedtype}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::introspection\+::\+Type\+Info\+::codedtype\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1introspection_1_1TypeInfo_a117d2b73994b78a6e4e81cdf7054912c}{}\label{classsmacc_1_1introspection_1_1TypeInfo_a117d2b73994b78a6e4e81cdf7054912c}
+
+
+Definition at line 56 of file string\+\_\+type\+\_\+walker.\+h.
+
+
+
+Referenced by Type\+Info().
+
+\index{smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}!finaltype@{finaltype}}
+\index{finaltype@{finaltype}!smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}}
+\subsubsection[{\texorpdfstring{finaltype}{finaltype}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::introspection\+::\+Type\+Info\+::finaltype\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1introspection_1_1TypeInfo_aa4010ed427e12db443e08ab16a3de243}{}\label{classsmacc_1_1introspection_1_1TypeInfo_aa4010ed427e12db443e08ab16a3de243}
+
+
+Definition at line 57 of file string\+\_\+type\+\_\+walker.\+h.
+
+
+
+Referenced by get\+Full\+Name(), get\+Non\+Templatetypename(), get\+Type\+Info\+From\+String(), to\+String(), and Type\+Info().
+
+\index{smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}!template\+Parameters@{template\+Parameters}}
+\index{template\+Parameters@{template\+Parameters}!smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}}
+\subsubsection[{\texorpdfstring{template\+Parameters}{templateParameters}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Ptr}$>$ smacc\+::introspection\+::\+Type\+Info\+::template\+Parameters}\hypertarget{classsmacc_1_1introspection_1_1TypeInfo_aed5166ab8bcd94489e7bc87deb01de5c}{}\label{classsmacc_1_1introspection_1_1TypeInfo_aed5166ab8bcd94489e7bc87deb01de5c}
+
+
+Definition at line 18 of file string\+\_\+type\+\_\+walker.\+h.
+
+\index{smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}!tkey@{tkey}}
+\index{tkey@{tkey}!smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}}
+\subsubsection[{\texorpdfstring{tkey}{tkey}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::introspection\+::\+Type\+Info\+::tkey\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1introspection_1_1TypeInfo_a697dd505119258dba1224d10eea5b2bd}{}\label{classsmacc_1_1introspection_1_1TypeInfo_a697dd505119258dba1224d10eea5b2bd}
+
+
+Definition at line 55 of file string\+\_\+type\+\_\+walker.\+h.
+
+
+
+Referenced by get\+Type\+Info\+From\+String(), to\+String(), and Type\+Info().
+
+\index{smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}!type\+Info\+Database@{type\+Info\+Database}}
+\index{type\+Info\+Database@{type\+Info\+Database}!smacc\+::introspection\+::\+Type\+Info@{smacc\+::introspection\+::\+Type\+Info}}
+\subsubsection[{\texorpdfstring{type\+Info\+Database}{typeInfoDatabase}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$ std\+::string, {\bf Type\+Info\+::\+Ptr} $>$ smacc\+::introspection\+::\+Type\+Info\+::type\+Info\+Database\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classsmacc_1_1introspection_1_1TypeInfo_ab780c03206b824aaf338135d16b0eff4}{}\label{classsmacc_1_1introspection_1_1TypeInfo_ab780c03206b824aaf338135d16b0eff4}
+
+
+Definition at line 52 of file string\+\_\+type\+\_\+walker.\+h.
+
+
+
+Referenced by get\+Type\+Info\+From\+String(), and smacc\+::introspection\+::replace\+\_\+back().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+smacc/include/smacc/introspection/\hyperlink{string__type__walker_8h}{string\+\_\+type\+\_\+walker.\+h}\item 
+smacc/src/smacc/introspection/\hyperlink{string__type__walker_8cpp}{string\+\_\+type\+\_\+walker.\+cpp}\end{DoxyCompactItemize}

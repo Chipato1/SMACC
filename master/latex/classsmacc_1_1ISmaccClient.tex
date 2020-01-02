@@ -232,16 +232,16 @@ Definition at line 19 of file client.\+cpp.
 
 
 
-References smacc\+::demangle\+Symbol().
+References smacc\+::introspection\+::demangle\+Symbol().
 
 
 
-Referenced by smacc\+::\+Smacc\+Publisher\+Client\+::configure(), and smacc\+::\+Smacc\+Service\+Client$<$ std\+\_\+srvs\+::\+Set\+Bool $>$\+::initialize().
+Referenced by smacc\+::client\+\_\+bases\+::\+Smacc\+Publisher\+Client\+::configure(), and smacc\+::client\+\_\+bases\+::\+Smacc\+Service\+Client$<$ std\+\_\+srvs\+::\+Set\+Bool $>$\+::initialize().
 
 
 \begin{DoxyCode}
 20 \{
-21     std::string keyname = \hyperlink{namespacesmacc_a458f5e70d468824fbcd66cc7729deaa8}{demangleSymbol}(\textcolor{keyword}{typeid}(*this).name());
+21     std::string keyname = \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(\textcolor{keyword}{typeid}(*this).name());
 22     \textcolor{keywordflow}{return} keyname;
 23 \}
 \end{DoxyCode}
@@ -252,7 +252,7 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742_cgraph}
+\includegraphics[width=348pt]{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742_cgraph}
 \end{center}
 \end{figure}
 
@@ -278,7 +278,7 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classsmacc_1_1ISmaccClient_a974ebb6ad6cf812e7b9de6b78b3d901f}{}\label{classsmacc_1_1ISmaccClient_a974ebb6ad6cf812e7b9de6b78b3d901f}
 
 
-Reimplemented in \hyperlink{classsm__three__some_1_1cl__keyboard_1_1ClKeyboard_a79b6572562326dd94e9546b492d82fbb}{sm\+\_\+three\+\_\+some\+::cl\+\_\+keyboard\+::\+Cl\+Keyboard}, \hyperlink{classsmacc_1_1SmaccSubscriberClient_acfa97685ecc588fe61eb57002354b58a}{smacc\+::\+Smacc\+Subscriber\+Client$<$ Message\+Type $>$}, \hyperlink{classsmacc_1_1SmaccSubscriberClient_acfa97685ecc588fe61eb57002354b58a}{smacc\+::\+Smacc\+Subscriber\+Client$<$ sensor\+\_\+msgs\+::\+Laser\+Scan $>$}, \hyperlink{classsmacc_1_1SmaccSubscriberClient_acfa97685ecc588fe61eb57002354b58a}{smacc\+::\+Smacc\+Subscriber\+Client$<$ std\+\_\+msgs\+::\+U\+Int16 $>$}, \hyperlink{classsmacc_1_1SmaccSubscriberClient_acfa97685ecc588fe61eb57002354b58a}{smacc\+::\+Smacc\+Subscriber\+Client$<$ sensor\+\_\+msgs\+::\+Temperature $>$}, \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e533ef8}{smacc\+::\+Sensor\+Client$<$ Message\+Type $>$}, \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e533ef8}{smacc\+::\+Sensor\+Client$<$ sensor\+\_\+msgs\+::\+Laser\+Scan $>$}, \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e533ef8}{smacc\+::\+Sensor\+Client$<$ sensor\+\_\+msgs\+::\+Temperature $>$}, \hyperlink{classros__timer__client_1_1ClRosTimer_a2d290d2a5d0afa7cdab543b17dbddbff}{ros\+\_\+timer\+\_\+client\+::\+Cl\+Ros\+Timer}, \hyperlink{classsmacc_1_1SmaccActionClientBase_a0224d7482b50a706f99bd280495ef1af}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$}, \hyperlink{classsmacc_1_1SmaccActionClientBase_a0224d7482b50a706f99bd280495ef1af}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$}, \hyperlink{classsmacc_1_1SmaccActionClientBase_a0224d7482b50a706f99bd280495ef1af}{smacc\+::\+Smacc\+Action\+Client\+Base$<$ sm\+\_\+dance\+\_\+bot\+::\+L\+E\+D\+Control\+Action $>$}, \hyperlink{classmove__base__z__client_1_1ClMoveBaseZ_a082cef8bf5dbd0ec06adfe2a7aefbf70}{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cl\+Move\+BaseZ}, \hyperlink{classsmacc_1_1SmaccServiceClient_a9ac26f1ca1e661e6b393ce7605166bdc}{smacc\+::\+Smacc\+Service\+Client$<$ Service\+Type $>$}, and \hyperlink{classsmacc_1_1SmaccServiceClient_a9ac26f1ca1e661e6b393ce7605166bdc}{smacc\+::\+Smacc\+Service\+Client$<$ std\+\_\+srvs\+::\+Set\+Bool $>$}.
+Reimplemented in \hyperlink{classkeyboard__client_1_1ClKeyboard_a7ac4502969c62b0c836b531cec05f8ed}{keyboard\+\_\+client\+::\+Cl\+Keyboard}, \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_af188f0f5e89de26a07e1f964cdd23a70}{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client$<$ Message\+Type $>$}, \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_af188f0f5e89de26a07e1f964cdd23a70}{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client$<$ sensor\+\_\+msgs\+::\+Laser\+Scan $>$}, \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_af188f0f5e89de26a07e1f964cdd23a70}{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client$<$ std\+\_\+msgs\+::\+U\+Int16 $>$}, \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_af188f0f5e89de26a07e1f964cdd23a70}{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client$<$ sensor\+\_\+msgs\+::\+Temperature $>$}, \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e533ef8}{smacc\+::\+Sensor\+Client$<$ Message\+Type $>$}, \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e533ef8}{smacc\+::\+Sensor\+Client$<$ sensor\+\_\+msgs\+::\+Laser\+Scan $>$}, \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e533ef8}{smacc\+::\+Sensor\+Client$<$ sensor\+\_\+msgs\+::\+Temperature $>$}, \hyperlink{classsmacc_1_1client__bases_1_1SmaccActionClientBase_a72967f255f85e35718a1e1b0b48c38ff}{smacc\+::client\+\_\+bases\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$}, \hyperlink{classsmacc_1_1client__bases_1_1SmaccActionClientBase_a72967f255f85e35718a1e1b0b48c38ff}{smacc\+::client\+\_\+bases\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$}, \hyperlink{classsmacc_1_1client__bases_1_1SmaccActionClientBase_a72967f255f85e35718a1e1b0b48c38ff}{smacc\+::client\+\_\+bases\+::\+Smacc\+Action\+Client\+Base$<$ sm\+\_\+dance\+\_\+bot\+::\+L\+E\+D\+Control\+Action $>$}, \hyperlink{classros__timer__client_1_1ClRosTimer_a2d290d2a5d0afa7cdab543b17dbddbff}{ros\+\_\+timer\+\_\+client\+::\+Cl\+Ros\+Timer}, \hyperlink{classmove__base__z__client_1_1ClMoveBaseZ_a082cef8bf5dbd0ec06adfe2a7aefbf70}{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cl\+Move\+BaseZ}, \hyperlink{classsmacc_1_1client__bases_1_1SmaccServiceClient_aa51b80828e4ab19627210440ae15b6f3}{smacc\+::client\+\_\+bases\+::\+Smacc\+Service\+Client$<$ Service\+Type $>$}, and \hyperlink{classsmacc_1_1client__bases_1_1SmaccServiceClient_aa51b80828e4ab19627210440ae15b6f3}{smacc\+::client\+\_\+bases\+::\+Smacc\+Service\+Client$<$ std\+\_\+srvs\+::\+Set\+Bool $>$}.
 
 
 

@@ -1,0 +1,109 @@
+\hypertarget{structsmacc_1_1introspection_1_1AddSubState}{}\section{smacc\+:\+:introspection\+:\+:Add\+Sub\+State Struct Reference}
+\label{structsmacc_1_1introspection_1_1AddSubState}\index{smacc\+::introspection\+::\+Add\+Sub\+State@{smacc\+::introspection\+::\+Add\+Sub\+State}}
+
+
+{\ttfamily \#include $<$smacc\+\_\+state\+\_\+machine\+\_\+info.\+h$>$}
+
+
+
+Collaboration diagram for smacc\+:\+:introspection\+:\+:Add\+Sub\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{structsmacc_1_1introspection_1_1AddSubState__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structsmacc_1_1introspection_1_1AddSubState_a9556919fdfce601d7746c8f3efcf298b}{Add\+Sub\+State} (std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \&parent\+State)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{structsmacc_1_1introspection_1_1AddSubState_aa7c4d53de4a64ef0873bde700ed7317f}{operator()} (T)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \& \hyperlink{structsmacc_1_1introspection_1_1AddSubState_a17bd7a0edd62758b94907ecc3644cd29}{parent\+State\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 59 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+::introspection\+::\+Add\+Sub\+State@{smacc\+::introspection\+::\+Add\+Sub\+State}!Add\+Sub\+State@{Add\+Sub\+State}}
+\index{Add\+Sub\+State@{Add\+Sub\+State}!smacc\+::introspection\+::\+Add\+Sub\+State@{smacc\+::introspection\+::\+Add\+Sub\+State}}
+\subsubsection[{\texorpdfstring{Add\+Sub\+State(std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&parent\+State)}{AddSubState(std::shared_ptr< SmaccStateInfo > &parentState)}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+::introspection\+::\+Add\+Sub\+State\+::\+Add\+Sub\+State (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Smacc\+State\+Info} $>$ \&}]{parent\+State}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsmacc_1_1introspection_1_1AddSubState_a9556919fdfce601d7746c8f3efcf298b}{}\label{structsmacc_1_1introspection_1_1AddSubState_a9556919fdfce601d7746c8f3efcf298b}
+
+
+Definition at line 62 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+\begin{DoxyCode}
+63         : \hyperlink{structsmacc_1_1introspection_1_1AddSubState_a17bd7a0edd62758b94907ecc3644cd29}{parentState\_}(parentState)
+64     \{
+65     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::introspection\+::\+Add\+Sub\+State@{smacc\+::introspection\+::\+Add\+Sub\+State}!operator()@{operator()}}
+\index{operator()@{operator()}!smacc\+::introspection\+::\+Add\+Sub\+State@{smacc\+::introspection\+::\+Add\+Sub\+State}}
+\subsubsection[{\texorpdfstring{operator()(\+T)}{operator()(T)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void smacc\+::introspection\+::\+Add\+Sub\+State\+::operator() (
+\begin{DoxyParamCaption}
+\item[{T}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{structsmacc_1_1introspection_1_1AddSubState_aa7c4d53de4a64ef0873bde700ed7317f}{}\label{structsmacc_1_1introspection_1_1AddSubState_aa7c4d53de4a64ef0873bde700ed7317f}
+
+
+Definition at line 100 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+References smacc\+::introspection\+::\+Walk\+States\+Executor$<$ Initial\+State\+Type $>$\+::walk\+States().
+
+
+\begin{DoxyCode}
+101 \{
+102     \textcolor{keyword}{using} type\_t = \textcolor{keyword}{typename} T::type;
+103     \textcolor{comment}{//auto childState = this->parentState\_->createChildState<type\_t>()}
+104     \hyperlink{structsmacc_1_1introspection_1_1WalkStatesExecutor_a21848ccc6e7a7ddee0ccfff97e550ec6}{WalkStatesExecutor<type\_t>::walkStates}(
+      \hyperlink{structsmacc_1_1introspection_1_1AddSubState_a17bd7a0edd62758b94907ecc3644cd29}{parentState\_}, \textcolor{keyword}{false});
+105 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsmacc_1_1introspection_1_1AddSubState_aa7c4d53de4a64ef0873bde700ed7317f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+::introspection\+::\+Add\+Sub\+State@{smacc\+::introspection\+::\+Add\+Sub\+State}!parent\+State\+\_\+@{parent\+State\+\_\+}}
+\index{parent\+State\+\_\+@{parent\+State\+\_\+}!smacc\+::introspection\+::\+Add\+Sub\+State@{smacc\+::introspection\+::\+Add\+Sub\+State}}
+\subsubsection[{\texorpdfstring{parent\+State\+\_\+}{parentState_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Smacc\+State\+Info}$>$\& smacc\+::introspection\+::\+Add\+Sub\+State\+::parent\+State\+\_\+}\hypertarget{structsmacc_1_1introspection_1_1AddSubState_a17bd7a0edd62758b94907ecc3644cd29}{}\label{structsmacc_1_1introspection_1_1AddSubState_a17bd7a0edd62758b94907ecc3644cd29}
+
+
+Definition at line 61 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc/include/smacc/introspection/\hyperlink{smacc__state__machine__info_8h}{smacc\+\_\+state\+\_\+machine\+\_\+info.\+h}\end{DoxyCompactItemize}

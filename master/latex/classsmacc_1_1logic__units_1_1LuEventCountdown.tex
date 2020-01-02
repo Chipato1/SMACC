@@ -1,0 +1,223 @@
+\hypertarget{classsmacc_1_1logic__units_1_1LuEventCountdown}{}\section{smacc\+:\+:logic\+\_\+units\+:\+:Lu\+Event\+Countdown Class Reference}
+\label{classsmacc_1_1logic__units_1_1LuEventCountdown}\index{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown@{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown}}
+
+
+{\ttfamily \#include $<$event\+\_\+countdown.\+h$>$}
+
+
+
+Inheritance diagram for smacc\+:\+:logic\+\_\+units\+:\+:Lu\+Event\+Countdown\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classsmacc_1_1logic__units_1_1LuEventCountdown__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+:\+:logic\+\_\+units\+:\+:Lu\+Event\+Countdown\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1logic__units_1_1LuEventCountdown__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_a50f81b10581e565ba43f1338b4f400b8}{Lu\+Event\+Countdown} (int event\+Count)
+\item 
+virtual void \hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_a8e58411b2e6c2a68fa0218ea7c125a75}{on\+Initialized} () override
+\item 
+virtual void \hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_a9a7b8d4690d21251ad3e12b2bca00620}{on\+Event\+Notified} (const std\+::type\+\_\+info $\ast$event\+Type) override
+\item 
+virtual \hyperlink{classbool}{bool} \hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_a77e004c01a966113e63ded6be7c8ab5d}{triggers} () override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ const std\+::type\+\_\+info $\ast$, \hyperlink{classbool}{bool} $>$ \hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_abfce05c5bf4dd9cb5009c95f186ef25a}{triggered\+Events}
+\item 
+int \hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_a70fa43cf7f9970cc0b9172d4845a4c2e}{event\+Count\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file event\+\_\+countdown.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown@{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown}!Lu\+Event\+Countdown@{Lu\+Event\+Countdown}}
+\index{Lu\+Event\+Countdown@{Lu\+Event\+Countdown}!smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown@{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown}}
+\subsubsection[{\texorpdfstring{Lu\+Event\+Countdown(int event\+Count)}{LuEventCountdown(int eventCount)}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown\+::\+Lu\+Event\+Countdown (
+\begin{DoxyParamCaption}
+\item[{int}]{event\+Count}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1logic__units_1_1LuEventCountdown_a50f81b10581e565ba43f1338b4f400b8}{}\label{classsmacc_1_1logic__units_1_1LuEventCountdown_a50f81b10581e565ba43f1338b4f400b8}
+
+
+Definition at line 10 of file event\+\_\+countdown.\+cpp.
+
+
+\begin{DoxyCode}
+11     : \hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_a70fa43cf7f9970cc0b9172d4845a4c2e}{eventCount\_}(eventCount)
+12 \{
+13 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown@{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown}!on\+Event\+Notified@{on\+Event\+Notified}}
+\index{on\+Event\+Notified@{on\+Event\+Notified}!smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown@{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown}}
+\subsubsection[{\texorpdfstring{on\+Event\+Notified(const std\+::type\+\_\+info $\ast$event\+Type) override}{onEventNotified(const std::type_info *eventType) override}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown\+::on\+Event\+Notified (
+\begin{DoxyParamCaption}
+\item[{const std\+::type\+\_\+info $\ast$}]{event\+Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1logic__units_1_1LuEventCountdown_a9a7b8d4690d21251ad3e12b2bca00620}{}\label{classsmacc_1_1logic__units_1_1LuEventCountdown_a9a7b8d4690d21251ad3e12b2bca00620}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1LogicUnit_a3a81929b2014b10d0fa28d4bc2d19d9c}{smacc\+::\+Logic\+Unit}.
+
+
+
+Definition at line 23 of file event\+\_\+countdown.\+cpp.
+
+
+
+References smacc\+::introspection\+::demangle\+Symbol(), and event\+Count\+\_\+.
+
+
+\begin{DoxyCode}
+24 \{
+25     \hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_a70fa43cf7f9970cc0b9172d4845a4c2e}{eventCount\_}--;
+26     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"LU COUNTDOWN ("} << \hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_a70fa43cf7f9970cc0b9172d4845a4c2e}{eventCount\_} << \textcolor{stringliteral}{") RECEIVED EVENT OF TYPE:"} << 
+      \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(eventType->name()));
+27 
+28     \textcolor{comment}{// ROS\_INFO\_STREAM("LU ALL RECEIVED EVENT OF TYPE:" << demangleSymbol(eventType->name()));}
+29     \textcolor{comment}{// triggeredEvents[eventType] = true;}
+30 
+31     \textcolor{comment}{// for (auto &entry : triggeredEvents)}
+32     \textcolor{comment}{// \{}
+33     \textcolor{comment}{//     ROS\_INFO\_STREAM(demangleSymbol(entry.first->name()) << " = " << entry.second);}
+34     \textcolor{comment}{// \}}
+35 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1logic__units_1_1LuEventCountdown_a9a7b8d4690d21251ad3e12b2bca00620_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown@{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown}!on\+Initialized@{on\+Initialized}}
+\index{on\+Initialized@{on\+Initialized}!smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown@{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown}}
+\subsubsection[{\texorpdfstring{on\+Initialized() override}{onInitialized() override}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown\+::on\+Initialized (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1logic__units_1_1LuEventCountdown_a8e58411b2e6c2a68fa0218ea7c125a75}{}\label{classsmacc_1_1logic__units_1_1LuEventCountdown_a8e58411b2e6c2a68fa0218ea7c125a75}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1LogicUnit_ade7f409516683f13754943db1081bac0}{smacc\+::\+Logic\+Unit}.
+
+
+
+Definition at line 15 of file event\+\_\+countdown.\+cpp.
+
+
+
+References smacc\+::\+Logic\+Unit\+::event\+Types, and triggered\+Events.
+
+
+\begin{DoxyCode}
+16 \{
+17     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} type : \hyperlink{classsmacc_1_1LogicUnit_a6f02a49da9b408b54a2755c18c5616a8}{eventTypes})
+18     \{
+19         \hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_abfce05c5bf4dd9cb5009c95f186ef25a}{triggeredEvents}[type] = \textcolor{keyword}{false};
+20     \}
+21 \}
+\end{DoxyCode}
+\index{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown@{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown}!triggers@{triggers}}
+\index{triggers@{triggers}!smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown@{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown}}
+\subsubsection[{\texorpdfstring{triggers() override}{triggers() override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool} smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown\+::triggers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1logic__units_1_1LuEventCountdown_a77e004c01a966113e63ded6be7c8ab5d}{}\label{classsmacc_1_1logic__units_1_1LuEventCountdown_a77e004c01a966113e63ded6be7c8ab5d}
+
+
+Implements \hyperlink{classsmacc_1_1LogicUnit_ae975a96f0210412e1cb4a7b5b948ade6}{smacc\+::\+Logic\+Unit}.
+
+
+
+Definition at line 37 of file event\+\_\+countdown.\+cpp.
+
+
+
+References event\+Count\+\_\+.
+
+
+\begin{DoxyCode}
+38 \{
+39     \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_a70fa43cf7f9970cc0b9172d4845a4c2e}{eventCount\_} == 0)
+40     \{
+41         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"LU COUNTDOWN ("} << \hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_a70fa43cf7f9970cc0b9172d4845a4c2e}{eventCount\_} << \textcolor{stringliteral}{") TRIGGERS!"});
+42         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+43     \}
+44     \textcolor{keywordflow}{else}
+45     \{
+46         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+47     \}
+48 
+49     \textcolor{comment}{// ROS\_INFO("LU All TRIGGERS?");}
+50     \textcolor{comment}{// for (auto &entry : triggeredEvents)}
+51     \textcolor{comment}{// \{}
+52     \textcolor{comment}{//     if (!entry.second)}
+53     \textcolor{comment}{//         return false;}
+54     \textcolor{comment}{// \}}
+55     \textcolor{comment}{// ROS\_INFO("LU ALL TRIGGERED");}
+56     \textcolor{comment}{// return true;}
+57 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown@{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown}!event\+Count\+\_\+@{event\+Count\+\_\+}}
+\index{event\+Count\+\_\+@{event\+Count\+\_\+}!smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown@{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown}}
+\subsubsection[{\texorpdfstring{event\+Count\+\_\+}{eventCount_}}]{\setlength{\rightskip}{0pt plus 5cm}int smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown\+::event\+Count\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1logic__units_1_1LuEventCountdown_a70fa43cf7f9970cc0b9172d4845a4c2e}{}\label{classsmacc_1_1logic__units_1_1LuEventCountdown_a70fa43cf7f9970cc0b9172d4845a4c2e}
+
+
+Definition at line 23 of file event\+\_\+countdown.\+h.
+
+
+
+Referenced by on\+Event\+Notified(), and triggers().
+
+\index{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown@{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown}!triggered\+Events@{triggered\+Events}}
+\index{triggered\+Events@{triggered\+Events}!smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown@{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown}}
+\subsubsection[{\texorpdfstring{triggered\+Events}{triggeredEvents}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$const std\+::type\+\_\+info $\ast$, {\bf bool}$>$ smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown\+::triggered\+Events\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1logic__units_1_1LuEventCountdown_abfce05c5bf4dd9cb5009c95f186ef25a}{}\label{classsmacc_1_1logic__units_1_1LuEventCountdown_abfce05c5bf4dd9cb5009c95f186ef25a}
+
+
+Definition at line 22 of file event\+\_\+countdown.\+h.
+
+
+
+Referenced by on\+Initialized().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+logic\+\_\+unit\+\_\+library/event\+\_\+countdown/include/event\+\_\+countdown/\hyperlink{event__countdown_8h}{event\+\_\+countdown.\+h}\item 
+smacc\+\_\+logic\+\_\+unit\+\_\+library/event\+\_\+countdown/src/event\+\_\+countdown/\hyperlink{event__countdown_8cpp}{event\+\_\+countdown.\+cpp}\end{DoxyCompactItemize}

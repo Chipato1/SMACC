@@ -1,0 +1,328 @@
+\hypertarget{classsmacc_1_1client__bases_1_1SmaccSubscriberClient}{}\section{smacc\+:\+:client\+\_\+bases\+:\+:Smacc\+Subscriber\+Client$<$ Message\+Type $>$ Class Template Reference}
+\label{classsmacc_1_1client__bases_1_1SmaccSubscriberClient}\index{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client$<$ Message\+Type $>$@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client$<$ Message\+Type $>$}}
+
+
+{\ttfamily \#include $<$smacc\+\_\+subscriber\+\_\+client.\+h$>$}
+
+
+
+Inheritance diagram for smacc\+:\+:client\+\_\+bases\+:\+:Smacc\+Subscriber\+Client$<$ Message\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1client__bases_1_1SmaccSubscriberClient__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+:\+:client\+\_\+bases\+:\+:Smacc\+Subscriber\+Client$<$ Message\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1client__bases_1_1SmaccSubscriberClient__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Message\+Type \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a61d798bda71bf335d72e61928ca561b0}{T\+Message\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a9c3dd9981beb495a0646667acae06d73}{Smacc\+Subscriber\+Client} ()
+\item 
+virtual \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a91b9206c97b4acc76d4202639d24a53b}{$\sim$\+Smacc\+Subscriber\+Client} ()
+\item 
+{\footnotesize template$<$typename T\+Object\+Tag , typename T\+Derived $>$ }\\void \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_adf0e61d4a0b34ecc76fb9f4c3d04ef97}{configure\+Event\+Source\+Types} ()
+\item 
+virtual void \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_af188f0f5e89de26a07e1f964cdd23a70}{initialize} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::optional$<$ std\+::string $>$ \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_aeadf21a09412c6c9488e5acd50fb4f40}{topic\+Name}
+\item 
+boost\+::optional$<$ int $>$ \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a67f03f081d83476cdb7fd631b6aba450}{queue\+Size}
+\item 
+boost\+::signals2\+::signal$<$ void(const Message\+Type \&)$>$ \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_adaa280a70b97bd2c53d05b5712cbd701}{on\+First\+Message\+Received}
+\item 
+boost\+::signals2\+::signal$<$ void(const Message\+Type \&)$>$ \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a2703867f1ee638c5fffa680f93cee29a}{on\+Message\+Received}
+\item 
+std\+::function$<$ void(const Message\+Type \&)$>$ \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_ad71ae0708e8a3ea321de985076d8b0ac}{post\+Message\+Event}
+\item 
+std\+::function$<$ void(const Message\+Type \&)$>$ \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_ac184f4c0a6e924ceb9eecc71d6252106}{post\+Initial\+Message\+Event}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ros\+::\+Node\+Handle \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a401d2476e89e27acc2e905acd701f053}{nh\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_acf85b80439aff5cf2bfa0649e9e45654}{message\+Callback} (const Message\+Type \&msg)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ros\+::\+Subscriber \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a0f69a1b0a284ae47f5d717c6ab95f089}{sub\+\_\+}
+\item 
+\hyperlink{classbool}{bool} \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a1283e89a0d33a9028a5042519c6869a6}{first\+Message\+\_\+}
+\item 
+\hyperlink{classbool}{bool} \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a2096c76f6464d0a513625cc53dba51ed}{initialized\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Message\+Type$>$\\*
+class smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client$<$ Message\+Type $>$}
+
+
+
+Definition at line 43 of file smacc\+\_\+subscriber\+\_\+client.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}!T\+Message\+Type@{T\+Message\+Type}}
+\index{T\+Message\+Type@{T\+Message\+Type}!smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}}
+\subsubsection[{\texorpdfstring{T\+Message\+Type}{TMessageType}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ typedef Message\+Type {\bf smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}$<$ Message\+Type $>$\+::{\bf T\+Message\+Type}}\hypertarget{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a61d798bda71bf335d72e61928ca561b0}{}\label{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a61d798bda71bf335d72e61928ca561b0}
+
+
+Definition at line 49 of file smacc\+\_\+subscriber\+\_\+client.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}!Smacc\+Subscriber\+Client@{Smacc\+Subscriber\+Client}}
+\index{Smacc\+Subscriber\+Client@{Smacc\+Subscriber\+Client}!smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}}
+\subsubsection[{\texorpdfstring{Smacc\+Subscriber\+Client()}{SmaccSubscriberClient()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ {\bf smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}$<$ Message\+Type $>$\+::{\bf Smacc\+Subscriber\+Client} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a9c3dd9981beb495a0646667acae06d73}{}\label{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a9c3dd9981beb495a0646667acae06d73}
+
+
+Definition at line 51 of file smacc\+\_\+subscriber\+\_\+client.\+h.
+
+
+\begin{DoxyCode}
+52   \{
+53     \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a2096c76f6464d0a513625cc53dba51ed}{initialized\_} = \textcolor{keyword}{false};
+54   \}
+\end{DoxyCode}
+\index{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}!````~Smacc\+Subscriber\+Client@{$\sim$\+Smacc\+Subscriber\+Client}}
+\index{````~Smacc\+Subscriber\+Client@{$\sim$\+Smacc\+Subscriber\+Client}!smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}}
+\subsubsection[{\texorpdfstring{$\sim$\+Smacc\+Subscriber\+Client()}{~SmaccSubscriberClient()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ virtual {\bf smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}$<$ Message\+Type $>$\+::$\sim${\bf Smacc\+Subscriber\+Client} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a91b9206c97b4acc76d4202639d24a53b}{}\label{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a91b9206c97b4acc76d4202639d24a53b}
+
+
+Definition at line 56 of file smacc\+\_\+subscriber\+\_\+client.\+h.
+
+
+\begin{DoxyCode}
+57   \{
+58     \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a0f69a1b0a284ae47f5d717c6ab95f089}{sub\_}.shutdown();
+59   \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}!configure\+Event\+Source\+Types@{configure\+Event\+Source\+Types}}
+\index{configure\+Event\+Source\+Types@{configure\+Event\+Source\+Types}!smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}}
+\subsubsection[{\texorpdfstring{configure\+Event\+Source\+Types()}{configureEventSourceTypes()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ template$<$typename T\+Object\+Tag , typename T\+Derived $>$ void {\bf smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}$<$ Message\+Type $>$\+::configure\+Event\+Source\+Types (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_adf0e61d4a0b34ecc76fb9f4c3d04ef97}{}\label{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_adf0e61d4a0b34ecc76fb9f4c3d04ef97}
+
+
+Definition at line 68 of file smacc\+\_\+subscriber\+\_\+client.\+h.
+
+
+\begin{DoxyCode}
+69   \{
+70     this->\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_ad71ae0708e8a3ea321de985076d8b0ac}{postMessageEvent} = [=](\textcolor{keyword}{auto} msg) \{
+71       \textcolor{keyword}{auto} \textcolor{keyword}{event} = \textcolor{keyword}{new} EvTopicMessage<TDerived, TObjectTag>();
+72       \textcolor{keyword}{event}->msgData = msg;
+73       this->\hyperlink{classsmacc_1_1ISmaccClient_a21a79203cb44fc717d4d977c190327c6}{postEvent}(event);
+74     \};
+75 
+76     this->\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_ac184f4c0a6e924ceb9eecc71d6252106}{postInitialMessageEvent} = [=](\textcolor{keyword}{auto} msg) \{
+77       \textcolor{keyword}{auto} \textcolor{keyword}{event} = \textcolor{keyword}{new} EvTopicInitialMessage<TDerived, TObjectTag>();
+78       \textcolor{keyword}{event}->msgData = msg;
+79       this->\hyperlink{classsmacc_1_1ISmaccClient_a21a79203cb44fc717d4d977c190327c6}{postEvent}(event);
+80     \};
+81   \}
+\end{DoxyCode}
+\index{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}!initialize@{initialize}}
+\index{initialize@{initialize}!smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}}
+\subsubsection[{\texorpdfstring{initialize()}{initialize()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ virtual void {\bf smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}$<$ Message\+Type $>$\+::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_af188f0f5e89de26a07e1f964cdd23a70}{}\label{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_af188f0f5e89de26a07e1f964cdd23a70}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1ISmaccClient_a974ebb6ad6cf812e7b9de6b78b3d901f}{smacc\+::\+I\+Smacc\+Client}.
+
+
+
+Reimplemented in \hyperlink{classkeyboard__client_1_1ClKeyboard_a7ac4502969c62b0c836b531cec05f8ed}{keyboard\+\_\+client\+::\+Cl\+Keyboard}, \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e533ef8}{smacc\+::\+Sensor\+Client$<$ Message\+Type $>$}, \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e533ef8}{smacc\+::\+Sensor\+Client$<$ sensor\+\_\+msgs\+::\+Laser\+Scan $>$}, and \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e533ef8}{smacc\+::\+Sensor\+Client$<$ sensor\+\_\+msgs\+::\+Temperature $>$}.
+
+
+
+Definition at line 83 of file smacc\+\_\+subscriber\+\_\+client.\+h.
+
+
+
+Referenced by smacc\+::\+Sensor\+Client$<$ sensor\+\_\+msgs\+::\+Temperature $>$\+::initialize().
+
+
+\begin{DoxyCode}
+84   \{
+85     \textcolor{keywordflow}{if} (!\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a2096c76f6464d0a513625cc53dba51ed}{initialized\_})
+86     \{
+87       \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a1283e89a0d33a9028a5042519c6869a6}{firstMessage\_} = \textcolor{keyword}{true};
+88 
+89       \textcolor{keywordflow}{if} (!\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a67f03f081d83476cdb7fd631b6aba450}{queueSize})
+90         \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a67f03f081d83476cdb7fd631b6aba450}{queueSize} = 1;
+91 
+92       \textcolor{keywordflow}{if} (!\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_aeadf21a09412c6c9488e5acd50fb4f40}{topicName})
+93       \{
+94         ROS\_ERROR(\textcolor{stringliteral}{"topic client with no topic name set. Skipping subscribing"});
+95       \}
+96       \textcolor{keywordflow}{else}
+97       \{
+98         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"["} << this->\hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa27d7a8237a1742}{getName}() << \textcolor{stringliteral}{"] Subscribing to topic: "} << 
+      \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_aeadf21a09412c6c9488e5acd50fb4f40}{topicName});
+99 
+100         \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a0f69a1b0a284ae47f5d717c6ab95f089}{sub\_} = \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a401d2476e89e27acc2e905acd701f053}{nh\_}.subscribe(*\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_aeadf21a09412c6c9488e5acd50fb4f40}{topicName}, *\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a67f03f081d83476cdb7fd631b6aba450}{queueSize}, &
+      \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_acf85b80439aff5cf2bfa0649e9e45654}{SmaccSubscriberClient<MessageType>::messageCallback}, \textcolor{keyword}{
+      this});
+101         this->\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a2096c76f6464d0a513625cc53dba51ed}{initialized\_} = \textcolor{keyword}{true};
+102       \}
+103     \}
+104   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_af188f0f5e89de26a07e1f964cdd23a70_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}!message\+Callback@{message\+Callback}}
+\index{message\+Callback@{message\+Callback}!smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}}
+\subsubsection[{\texorpdfstring{message\+Callback(const Message\+Type \&msg)}{messageCallback(const MessageType &msg)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ void {\bf smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}$<$ Message\+Type $>$\+::message\+Callback (
+\begin{DoxyParamCaption}
+\item[{const Message\+Type \&}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_acf85b80439aff5cf2bfa0649e9e45654}{}\label{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_acf85b80439aff5cf2bfa0649e9e45654}
+
+
+Definition at line 114 of file smacc\+\_\+subscriber\+\_\+client.\+h.
+
+
+\begin{DoxyCode}
+115   \{
+116     \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a1283e89a0d33a9028a5042519c6869a6}{firstMessage\_})
+117     \{
+118       \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_ac184f4c0a6e924ceb9eecc71d6252106}{postInitialMessageEvent}(msg);
+119       this->\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_adaa280a70b97bd2c53d05b5712cbd701}{onFirstMessageReceived}(msg);
+120       \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a1283e89a0d33a9028a5042519c6869a6}{firstMessage\_} = \textcolor{keyword}{false};
+121     \}
+122 
+123     \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_ad71ae0708e8a3ea321de985076d8b0ac}{postMessageEvent}(msg);
+124     \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a2703867f1ee638c5fffa680f93cee29a}{onMessageReceived}(msg);
+125   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}!first\+Message\+\_\+@{first\+Message\+\_\+}}
+\index{first\+Message\+\_\+@{first\+Message\+\_\+}!smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}}
+\subsubsection[{\texorpdfstring{first\+Message\+\_\+}{firstMessage_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ {\bf bool} {\bf smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}$<$ Message\+Type $>$\+::first\+Message\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a1283e89a0d33a9028a5042519c6869a6}{}\label{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a1283e89a0d33a9028a5042519c6869a6}
+
+
+Definition at line 111 of file smacc\+\_\+subscriber\+\_\+client.\+h.
+
+\index{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}!initialized\+\_\+@{initialized\+\_\+}}
+\index{initialized\+\_\+@{initialized\+\_\+}!smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}}
+\subsubsection[{\texorpdfstring{initialized\+\_\+}{initialized_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ {\bf bool} {\bf smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}$<$ Message\+Type $>$\+::initialized\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a2096c76f6464d0a513625cc53dba51ed}{}\label{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a2096c76f6464d0a513625cc53dba51ed}
+
+
+Definition at line 112 of file smacc\+\_\+subscriber\+\_\+client.\+h.
+
+\index{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}!nh\+\_\+@{nh\+\_\+}}
+\index{nh\+\_\+@{nh\+\_\+}!smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}}
+\subsubsection[{\texorpdfstring{nh\+\_\+}{nh_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ ros\+::\+Node\+Handle {\bf smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}$<$ Message\+Type $>$\+::nh\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a401d2476e89e27acc2e905acd701f053}{}\label{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a401d2476e89e27acc2e905acd701f053}
+
+
+Definition at line 107 of file smacc\+\_\+subscriber\+\_\+client.\+h.
+
+\index{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}!on\+First\+Message\+Received@{on\+First\+Message\+Received}}
+\index{on\+First\+Message\+Received@{on\+First\+Message\+Received}!smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}}
+\subsubsection[{\texorpdfstring{on\+First\+Message\+Received}{onFirstMessageReceived}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ boost\+::signals2\+::signal$<$void(const Message\+Type \&)$>$ {\bf smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}$<$ Message\+Type $>$\+::on\+First\+Message\+Received}\hypertarget{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_adaa280a70b97bd2c53d05b5712cbd701}{}\label{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_adaa280a70b97bd2c53d05b5712cbd701}
+
+
+Definition at line 61 of file smacc\+\_\+subscriber\+\_\+client.\+h.
+
+\index{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}!on\+Message\+Received@{on\+Message\+Received}}
+\index{on\+Message\+Received@{on\+Message\+Received}!smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}}
+\subsubsection[{\texorpdfstring{on\+Message\+Received}{onMessageReceived}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ boost\+::signals2\+::signal$<$void(const Message\+Type \&)$>$ {\bf smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}$<$ Message\+Type $>$\+::on\+Message\+Received}\hypertarget{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a2703867f1ee638c5fffa680f93cee29a}{}\label{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a2703867f1ee638c5fffa680f93cee29a}
+
+
+Definition at line 62 of file smacc\+\_\+subscriber\+\_\+client.\+h.
+
+\index{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}!post\+Initial\+Message\+Event@{post\+Initial\+Message\+Event}}
+\index{post\+Initial\+Message\+Event@{post\+Initial\+Message\+Event}!smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}}
+\subsubsection[{\texorpdfstring{post\+Initial\+Message\+Event}{postInitialMessageEvent}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ std\+::function$<$void(const Message\+Type \&)$>$ {\bf smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}$<$ Message\+Type $>$\+::post\+Initial\+Message\+Event}\hypertarget{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_ac184f4c0a6e924ceb9eecc71d6252106}{}\label{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_ac184f4c0a6e924ceb9eecc71d6252106}
+
+
+Definition at line 65 of file smacc\+\_\+subscriber\+\_\+client.\+h.
+
+\index{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}!post\+Message\+Event@{post\+Message\+Event}}
+\index{post\+Message\+Event@{post\+Message\+Event}!smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}}
+\subsubsection[{\texorpdfstring{post\+Message\+Event}{postMessageEvent}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ std\+::function$<$void(const Message\+Type \&)$>$ {\bf smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}$<$ Message\+Type $>$\+::post\+Message\+Event}\hypertarget{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_ad71ae0708e8a3ea321de985076d8b0ac}{}\label{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_ad71ae0708e8a3ea321de985076d8b0ac}
+
+
+Definition at line 64 of file smacc\+\_\+subscriber\+\_\+client.\+h.
+
+\index{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}!queue\+Size@{queue\+Size}}
+\index{queue\+Size@{queue\+Size}!smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}}
+\subsubsection[{\texorpdfstring{queue\+Size}{queueSize}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ boost\+::optional$<$int$>$ {\bf smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}$<$ Message\+Type $>$\+::queue\+Size}\hypertarget{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a67f03f081d83476cdb7fd631b6aba450}{}\label{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a67f03f081d83476cdb7fd631b6aba450}
+
+
+Definition at line 47 of file smacc\+\_\+subscriber\+\_\+client.\+h.
+
+\index{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}!sub\+\_\+@{sub\+\_\+}}
+\index{sub\+\_\+@{sub\+\_\+}!smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}}
+\subsubsection[{\texorpdfstring{sub\+\_\+}{sub_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ ros\+::\+Subscriber {\bf smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}$<$ Message\+Type $>$\+::sub\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a0f69a1b0a284ae47f5d717c6ab95f089}{}\label{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a0f69a1b0a284ae47f5d717c6ab95f089}
+
+
+Definition at line 110 of file smacc\+\_\+subscriber\+\_\+client.\+h.
+
+\index{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}!topic\+Name@{topic\+Name}}
+\index{topic\+Name@{topic\+Name}!smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}}
+\subsubsection[{\texorpdfstring{topic\+Name}{topicName}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ boost\+::optional$<$std\+::string$>$ {\bf smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}$<$ Message\+Type $>$\+::topic\+Name}\hypertarget{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_aeadf21a09412c6c9488e5acd50fb4f40}{}\label{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_aeadf21a09412c6c9488e5acd50fb4f40}
+
+
+Definition at line 46 of file smacc\+\_\+subscriber\+\_\+client.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc/include/smacc/client\+\_\+bases/\hyperlink{smacc__subscriber__client_8h}{smacc\+\_\+subscriber\+\_\+client.\+h}\end{DoxyCompactItemize}

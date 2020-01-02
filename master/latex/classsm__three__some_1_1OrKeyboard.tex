@@ -34,7 +34,7 @@ virtual void \hyperlink{classsm__three__some_1_1OrKeyboard_af49faa7c511ae0232ed0
 \subsection{Detailed Description}
 
 
-Definition at line 9 of file or\+\_\+keyboard.\+h.
+Definition at line 8 of file or\+\_\+keyboard.\+h.
 
 
 
@@ -52,17 +52,16 @@ Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01
 
 
 
-Definition at line 12 of file or\+\_\+keyboard.\+h.
+Definition at line 11 of file or\+\_\+keyboard.\+h.
 
 
 \begin{DoxyCode}
-13     \{
-14         \textcolor{keyword}{auto} clKeyboard = this->createClient<OrKeyboard, ClKeyboard>();
-15         clKeyboard->topicName = \textcolor{stringliteral}{"/keyboard\_unicode"};
-16 
-17         \textcolor{comment}{//ClKeyboard.queueSize = 1;}
-18         clKeyboard->initialize();
-19     \}
+12     \{
+13         \textcolor{keyword}{auto} clKeyboard = this->createClient<OrKeyboard, keyboard\_client::ClKeyboard>();
+14         
+15         \textcolor{comment}{//ClKeyboard.queueSize = 1;}
+16         clKeyboard->initialize();
+17     \}
 \end{DoxyCode}
 
 

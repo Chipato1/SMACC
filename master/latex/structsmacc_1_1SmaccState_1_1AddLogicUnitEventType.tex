@@ -17,14 +17,14 @@ Collaboration diagram for smacc\+:\+:Smacc\+State$<$ Most\+Derived, Context, Inn
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{structsmacc_1_1SmaccState_1_1AddLogicUnitEventType_a056b0caaa1a419fecfb36eccc42e9aa6}{Add\+Logic\+Unit\+Event\+Type} (\hyperlink{structsmacc_1_1SmaccLogicUnitInfo}{Smacc\+Logic\+Unit\+Info} \&luinfo)
+\hyperlink{structsmacc_1_1SmaccState_1_1AddLogicUnitEventType_a056b0caaa1a419fecfb36eccc42e9aa6}{Add\+Logic\+Unit\+Event\+Type} (\hyperlink{structsmacc_1_1introspection_1_1SmaccLogicUnitInfo}{Smacc\+Logic\+Unit\+Info} \&luinfo)
 \item 
 {\footnotesize template$<$typename T $>$ }\\void \hyperlink{structsmacc_1_1SmaccState_1_1AddLogicUnitEventType_a8ed7e96e4922fbc8097a6ff078d70150}{operator()} (T)
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{structsmacc_1_1SmaccLogicUnitInfo}{Smacc\+Logic\+Unit\+Info} \& \hyperlink{structsmacc_1_1SmaccState_1_1AddLogicUnitEventType_a31c27ea945cd0127080c0bae872c028e}{lu\+Info\+\_\+}
+\hyperlink{structsmacc_1_1introspection_1_1SmaccLogicUnitInfo}{Smacc\+Logic\+Unit\+Info} \& \hyperlink{structsmacc_1_1SmaccState_1_1AddLogicUnitEventType_a31c27ea945cd0127080c0bae872c028e}{lu\+Info\+\_\+}
 \end{DoxyCompactItemize}
 
 
@@ -73,15 +73,15 @@ Definition at line 248 of file smacc\+\_\+state\+\_\+base.\+h.
 
 
 
-References smacc\+::\+Type\+Info\+::get\+Type\+Info\+From\+Typeid(), and smacc\+::\+Smacc\+Logic\+Unit\+Info\+::source\+Event\+Types.
+References smacc\+::introspection\+::\+Type\+Info\+::get\+Type\+Info\+From\+Typeid(), and smacc\+::introspection\+::\+Smacc\+Logic\+Unit\+Info\+::source\+Event\+Types.
 
 
 \begin{DoxyCode}
 249     \{
-250       \textcolor{keyword}{auto} sourceType = \hyperlink{classsmacc_1_1TypeInfo_a9d871ecc7a19983b37afca0cd219a5f8}{TypeInfo::getTypeInfoFromTypeid}(\textcolor{keyword}{typeid}(T));
-251       \textcolor{keyword}{auto} evinfo = std::make\_shared<smacc::SmaccEventInfo>(sourceType);
+250       \textcolor{keyword}{auto} sourceType = \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a09ec2f3f94a8f1fc82ae250216c38d47}{TypeInfo::getTypeInfoFromTypeid}(\textcolor{keyword}{typeid}(T));
+251       \textcolor{keyword}{auto} evinfo = std::make\_shared<SmaccEventInfo>(sourceType);
 252       EventLabel<T>(evinfo->label);
-253       \hyperlink{structsmacc_1_1SmaccState_1_1AddLogicUnitEventType_a31c27ea945cd0127080c0bae872c028e}{luInfo\_}.\hyperlink{structsmacc_1_1SmaccLogicUnitInfo_ab753c234942c41eb973873f9222b9fd9}{sourceEventTypes}.push\_back(evinfo);
+253       \hyperlink{structsmacc_1_1SmaccState_1_1AddLogicUnitEventType_a31c27ea945cd0127080c0bae872c028e}{luInfo\_}.\hyperlink{structsmacc_1_1introspection_1_1SmaccLogicUnitInfo_add386e83d888a7819c0132a75942fa5d}{sourceEventTypes}.push\_back(evinfo);
 254       ROS\_INFO\_STREAM(\textcolor{stringliteral}{"event: "} << sourceType->getFullName());
 255       ROS\_INFO\_STREAM(\textcolor{stringliteral}{"event parameters: "} << sourceType->templateParameters.size());
 256     \}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['queuesize',['queueSize',['../classsmacc_1_1SmaccPublisherClient.html#ad7a0aa074031d2c2ea332a4d517dbae5',1,'smacc::SmaccPublisherClient::queueSize()'],['../classsmacc_1_1SmaccSubscriberClient.html#ac8d4905509ecacb7c93d72c9acb9b6a1',1,'smacc::SmaccSubscriberClient::queueSize()']]]
+  ['queuesize',['queueSize',['../classsmacc_1_1client__bases_1_1SmaccPublisherClient.html#a1a9b98681b01953f134191799a029fd3',1,'smacc::client_bases::SmaccPublisherClient::queueSize()'],['../classsmacc_1_1client__bases_1_1SmaccSubscriberClient.html#a67f03f081d83476cdb7fd631b6aba450',1,'smacc::client_bases::SmaccSubscriberClient::queueSize()']]]
 ];

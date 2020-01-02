@@ -1,0 +1,523 @@
+\hypertarget{classsmacc_1_1introspection_1_1SmaccStateMachineInfo}{}\section{smacc\+:\+:introspection\+:\+:Smacc\+State\+Machine\+Info Class Reference}
+\label{classsmacc_1_1introspection_1_1SmaccStateMachineInfo}\index{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info@{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info}}
+
+
+{\ttfamily \#include $<$smacc\+\_\+state\+\_\+machine\+\_\+info.\+h$>$}
+
+
+
+Inheritance diagram for smacc\+:\+:introspection\+:\+:Smacc\+State\+Machine\+Info\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{classsmacc_1_1introspection_1_1SmaccStateMachineInfo__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+:\+:introspection\+:\+:Smacc\+State\+Machine\+Info\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1introspection_1_1SmaccStateMachineInfo__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Initial\+State\+Type $>$ }\\void \hyperlink{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_a1482f3d6b3aff8a2702331bd3049987a}{build\+State\+Machine\+Info} ()
+\item 
+{\footnotesize template$<$typename State\+Type $>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_ad3eacdb32594e603fb36a8ab478d0ce7}{create\+State} (std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ parent\+State)
+\item 
+{\footnotesize template$<$typename State\+Type $>$ }\\\hyperlink{classbool}{bool} \hyperlink{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_aa120497a9fc4cb4a05f6a27ff3be26cb}{contains\+State} ()
+\item 
+{\footnotesize template$<$typename State\+Type $>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_ab2970707b3eec89f70aba88612ab0ca5}{get\+State} ()
+\item 
+{\footnotesize template$<$typename State\+Type $>$ }\\void \hyperlink{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_ab4eafccfbba21257405fc4274c2ed22a}{add\+State} (std\+::shared\+\_\+ptr$<$ State\+Type $>$ \&state)
+\item 
+void \hyperlink{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_a0722293cbe7b231ac333de15ae3751e8}{compute\+All\+State\+Message} (std\+::vector$<$ smacc\+\_\+msgs\+::\+Smacc\+State $>$ \&msg)
+\item 
+void \hyperlink{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_a6758065a8d1faaa7c3688cf0dffe9334}{assemble\+S\+M\+Structure\+Message} (\hyperlink{classsmacc_1_1ISmaccStateMachine}{I\+Smacc\+State\+Machine} $\ast$sm)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ $>$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_aef31d74ad3669f0b0f57fe0e008cd2f8}{states}
+\item 
+std\+::vector$<$ smacc\+\_\+msgs\+::\+Smacc\+State $>$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_a48e3ff7bbe2673d23e6942234446ebee}{state\+Msgs}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info@{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info}!add\+State@{add\+State}}
+\index{add\+State@{add\+State}!smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info@{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info}}
+\subsubsection[{\texorpdfstring{add\+State(std\+::shared\+\_\+ptr$<$ State\+Type $>$ \&state)}{addState(std::shared_ptr< StateType > &state)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename State\+Type $>$ void smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info\+::add\+State (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ State\+Type $>$ \&}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_ab4eafccfbba21257405fc4274c2ed22a}{}\label{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_ab4eafccfbba21257405fc4274c2ed22a}
+
+
+Definition at line 433 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+References states.
+
+
+
+Referenced by create\+State(), and get\+State().
+
+
+\begin{DoxyCode}
+434 \{
+435     \hyperlink{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_aef31d74ad3669f0b0f57fe0e008cd2f8}{states}[state->fullStateName] = state;
+436 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_ab4eafccfbba21257405fc4274c2ed22a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info@{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info}!assemble\+S\+M\+Structure\+Message@{assemble\+S\+M\+Structure\+Message}}
+\index{assemble\+S\+M\+Structure\+Message@{assemble\+S\+M\+Structure\+Message}!smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info@{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info}}
+\subsubsection[{\texorpdfstring{assemble\+S\+M\+Structure\+Message(\+I\+Smacc\+State\+Machine $\ast$sm)}{assembleSMStructureMessage(ISmaccStateMachine *sm)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Smacc\+State\+Machine\+Info\+::assemble\+S\+M\+Structure\+Message (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Smacc\+State\+Machine} $\ast$}]{sm}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_a6758065a8d1faaa7c3688cf0dffe9334}{}\label{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_a6758065a8d1faaa7c3688cf0dffe9334}
+
+
+Definition at line 6 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+cpp.
+
+
+
+References smacc\+::introspection\+::demangle\+Symbol(), smacc\+::\+I\+Smacc\+State\+Machine\+::get\+Orthogonals(), smacc\+::introspection\+::\+Smacc\+State\+Info\+::logic\+Units\+Info, state\+Msgs, states, smacc\+::introspection\+::\+Smacc\+State\+Info\+::static\+Behavior\+Info, and smacc\+::introspection\+::transition\+Info\+To\+Msg().
+
+
+
+Referenced by compute\+All\+State\+Message().
+
+
+\begin{DoxyCode}
+7 \{
+8     ROS\_INFO(\textcolor{stringliteral}{"----------- PRINT STATE MACHINE STRUCTURE -------------------"});
+9     \hyperlink{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_a48e3ff7bbe2673d23e6942234446ebee}{stateMsgs}.clear();
+10     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &val : this->\hyperlink{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_aef31d74ad3669f0b0f57fe0e008cd2f8}{states})
+11     \{
+12         smacc\_msgs::SmaccState stateMsg;
+13         \textcolor{keyword}{auto} state = val.second;
+14         stateMsg.index = state->stateIndex\_;
+15 
+16         std::stringstream ss;
+17         ss << \textcolor{stringliteral}{"**** State: "} << \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(val.first.c\_str()) << std::endl;
+18 
+19         stateMsg.name = state->getDemangledFullName();
+20         stateMsg.level = (int)state->getStateLevel();
+21 
+22         ss << \textcolor{stringliteral}{"**** State: "} << stateMsg.name << std::endl;
+23 
+24         ss << \textcolor{stringliteral}{"Index: "} << stateMsg.index << std::endl;
+25         ss << \textcolor{stringliteral}{"StateLevel: "} << stateMsg.level << std::endl;
+26 
+27         ss << \textcolor{stringliteral}{" Childstates:"} << std::endl;
+28 
+29         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &child : state->children\_)
+30         \{
+31             \textcolor{keyword}{auto} childStateName = child->getDemangledFullName();
+32             stateMsg.children\_states.push\_back(childStateName);
+33 
+34             ss << \textcolor{stringliteral}{" - "} << childStateName << std::endl;
+35         \}
+36 
+37         ss << \textcolor{stringliteral}{" Transitions:"} << std::endl;
+38 
+39         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &transition : state->transitions\_)
+40         \{
+41             smacc\_msgs::SmaccTransition transitionMsg;
+42 
+43             \hyperlink{namespacesmacc_1_1introspection_a6c1b51c4d44fd5e41fe218f1ee150681}{transitionInfoToMsg}(transition, transitionMsg);
+44 
+45             ss << \textcolor{stringliteral}{" - Transition.  "} << std::endl;
+46             ss << \textcolor{stringliteral}{"      - Index: "} << transitionMsg.index << std::endl;
+47             ss << \textcolor{stringliteral}{"      - Transition Name: "} << transitionMsg.transition\_name << std::endl;
+48             ss << \textcolor{stringliteral}{"      - Transition Type: "} << transitionMsg.transition\_type << std::endl;
+49             ss << \textcolor{stringliteral}{"      - Event Type :"} << transitionMsg.event.event\_type << std::endl;
+50             ss << \textcolor{stringliteral}{"      - Event Source: "} << transitionMsg.event.event\_source << std::endl;
+51             ss << \textcolor{stringliteral}{"      - Event ObjectTag: "} << transitionMsg.event.event\_object\_tag << std::endl;
+52             ss << \textcolor{stringliteral}{"      - Event Label: "} << transitionMsg.event.label << std::endl;
+53             ss << \textcolor{stringliteral}{"      - Destiny State: "} << transitionMsg.destiny\_state\_name << std::endl;
+54             ss << \textcolor{stringliteral}{"      - Owner State: "} << transitionMsg.destiny\_state\_name << std::endl;
+55             ss << \textcolor{stringliteral}{"      - Is History Node: "} << std::to\_string(transitionMsg.history\_node) << std::endl;
+56             ss << \textcolor{stringliteral}{"      - TransitionC++Type: "} << transition.transitionTypeInfo->getFullName() << 
+      std::endl;
+57             ss << \textcolor{stringliteral}{"      - EventC++Type: "} << transition.eventInfo->eventType->getFullName() << std::endl;
+58 
+59             stateMsg.transitions.push\_back(transitionMsg);
+60         \}
+61 
+62         \textcolor{keyword}{const} std::type\_info *statetid = state->tid\_;
+63 
+64         std::map<const std::type\_info *, std::vector<smacc::StateBehaviorInfoEntry *>> 
+      smaccBehaviorInfoMappingByOrthogonalType;
+65 
+66         ss << \textcolor{stringliteral}{" Orthogonals:"} << std::endl;
+67         \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo_a2cc62c6c9dec1a4f5294f8430efb71f2}{SmaccStateInfo::staticBehaviorInfo}.count(statetid) > 0)
+68         \{
+69             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &bhinfo : \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo_a2cc62c6c9dec1a4f5294f8430efb71f2}{SmaccStateInfo::staticBehaviorInfo}[
+      statetid])
+70             \{
+71                 \textcolor{keywordflow}{if} (smaccBehaviorInfoMappingByOrthogonalType.count(bhinfo.orthogonalType) == 0)
+72                 \{
+73                     smaccBehaviorInfoMappingByOrthogonalType[bhinfo.orthogonalType] = 
+      std::vector<smacc::StateBehaviorInfoEntry *>();
+74                 \}
+75 
+76                 smaccBehaviorInfoMappingByOrthogonalType[bhinfo.orthogonalType].push\_back(&bhinfo);
+77             \}
+78         \}
+79 
+80         \textcolor{keyword}{auto} &runtimeOrthogonals = sm->getOrthogonals();
+81 
+82         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &orthogonal : runtimeOrthogonals)
+83         \{
+84             smacc\_msgs::SmaccOrthogonal orthogonalMsg;
+85 
+86             \textcolor{keyword}{const} \textcolor{keyword}{auto} *orthogonaltid = &\textcolor{keyword}{typeid}(*(orthogonal.second));
+87             orthogonalMsg.name = \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(orthogonaltid->name());
+88 
+89             ss << \textcolor{stringliteral}{" - orthogonal: "} << orthogonalMsg.name << std::endl;
+90 
+91             \textcolor{keywordflow}{if} (smaccBehaviorInfoMappingByOrthogonalType[orthogonaltid].size() > 0)
+92             \{
+93                 \textcolor{keyword}{auto} &behaviors = smaccBehaviorInfoMappingByOrthogonalType[orthogonaltid];
+94                 \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &bhinfo : behaviors)
+95                 \{
+96                     \textcolor{keyword}{auto} ClientBehaviorName = \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(bhinfo->behaviorType->name());
+97                     orthogonalMsg.client\_behavior\_names.push\_back(ClientBehaviorName);
+98                     ss << \textcolor{stringliteral}{"          - client behavior: "} << ClientBehaviorName << std::endl;
+99                 \}
+100             \}
+101             \textcolor{keywordflow}{else}
+102             \{
+103                 ss << \textcolor{stringliteral}{"          - NO Client BEHAVIORS -"} << std::endl;
+104             \}
+105 
+106             \textcolor{keyword}{auto} &clients = orthogonal.second->getClients();
+107             \textcolor{keywordflow}{if} (clients.size() > 0)
+108             \{
+109                 \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}& client : clients)
+110                 \{
+111                     \textcolor{keyword}{auto} clientTid = &(\textcolor{keyword}{typeid}(*client));
+112                     \textcolor{keyword}{auto} clientName = \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(clientTid->name());
+113                     orthogonalMsg.client\_names.push\_back(clientName);
+114                     ss << \textcolor{stringliteral}{"          - client: "} << clientName << std::endl;
+115                 \}
+116             \}
+117             \textcolor{keywordflow}{else}
+118             \{
+119                 ss << \textcolor{stringliteral}{"          - NO CLIENTS - "} << std::endl;
+120             \}
+121             stateMsg.orthogonals.push\_back(orthogonalMsg);
+122         \}
+123 
+124         ss << \textcolor{stringliteral}{" Logic units:"} << std::endl;
+125         \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo_a7a22f3c1ea22042a19f897db4ecfeb67}{SmaccStateInfo::logicUnitsInfo}.count(statetid) > 0)
+126         \{
+127             \textcolor{keywordtype}{int} k = 0;
+128             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &luinfo : \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo_a7a22f3c1ea22042a19f897db4ecfeb67}{SmaccStateInfo::logicUnitsInfo}[statetid])
+129             \{
+130                 smacc\_msgs::SmaccLogicUnit logicUnitMsg;
+131                 logicUnitMsg.index = k++;
+132                 logicUnitMsg.type\_name = \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(luinfo.logicUnitType->name());
+133 
+134                 ss << \textcolor{stringliteral}{" - logic unit: "} << logicUnitMsg.type\_name << std::endl;
+135                 \textcolor{keywordflow}{if} (luinfo.objectTagType != \textcolor{keyword}{nullptr})
+136                 \{
+137                     logicUnitMsg.object\_tag = luinfo.objectTagType->getFullName();
+138                     ss << \textcolor{stringliteral}{"        - object tag: "} << logicUnitMsg.object\_tag << std::endl;
+139                 \}
+140 
+141                 \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &tev : luinfo.sourceEventTypes)
+142                 \{
+143                     \textcolor{comment}{// WE SHOULD CREATE A SMACC\_EVENT\_INFO TYPE, also using in typewalker transition}
+144                     \textcolor{keyword}{auto} eventTypeName = tev->getEventTypeName();
+145                     smacc\_msgs::SmaccEvent event;
+146 
+147                     ss << \textcolor{stringliteral}{"             - triggering event: "} << tev->getEventTypeName() << std::endl;
+148                     \textcolor{keyword}{event}.event\_type = eventTypeName;
+149 
+150                     \textcolor{keyword}{event}.event\_source = tev->getEventSourceName();
+151                     ss << \textcolor{stringliteral}{"                 - source type: "} << \textcolor{keyword}{event}.event\_source << std::endl;
+152 
+153                     \textcolor{keyword}{event}.event\_object\_tag = tev->getObjectTagName();
+154                     ss << \textcolor{stringliteral}{"                 - source object: "} << \textcolor{keyword}{event}.event\_object\_tag << std::endl;
+155 
+156                     \textcolor{keyword}{event}.label = tev->label;
+157                     ss << \textcolor{stringliteral}{"                 - event label: "} << \textcolor{keyword}{event}.label << std::endl;
+158 
+159                     logicUnitMsg.event\_sources.push\_back(event);
+160                 \}
+161 
+162                 stateMsg.logic\_units.push\_back(logicUnitMsg);
+163             \}
+164         \}
+165         \textcolor{keywordflow}{else}
+166         \{
+167             ss << \textcolor{stringliteral}{"- NO LOGIC UNITS - "} << std::endl;
+168         \}
+169 
+170         ROS\_INFO\_STREAM(ss.str());
+171         \hyperlink{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_a48e3ff7bbe2673d23e6942234446ebee}{stateMsgs}.push\_back(stateMsg);
+172     \}
+173 
+174     std::sort(\hyperlink{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_a48e3ff7bbe2673d23e6942234446ebee}{stateMsgs}.begin(), \hyperlink{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_a48e3ff7bbe2673d23e6942234446ebee}{stateMsgs}.end(), [](\textcolor{keyword}{auto} &a, \textcolor{keyword}{auto} &b) \{
+175         \textcolor{keywordflow}{return} a.index > b.index;
+176     \});
+177 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_a6758065a8d1faaa7c3688cf0dffe9334_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_a6758065a8d1faaa7c3688cf0dffe9334_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info@{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info}!build\+State\+Machine\+Info@{build\+State\+Machine\+Info}}
+\index{build\+State\+Machine\+Info@{build\+State\+Machine\+Info}!smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info@{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info}}
+\subsubsection[{\texorpdfstring{build\+State\+Machine\+Info()}{buildStateMachineInfo()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Initial\+State\+Type $>$ void smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info\+::build\+State\+Machine\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_a1482f3d6b3aff8a2702331bd3049987a}{}\label{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_a1482f3d6b3aff8a2702331bd3049987a}
+
+
+Definition at line 402 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+References smacc\+::introspection\+::\+Walk\+States\+Executor$<$ Initial\+State\+Type $>$\+::walk\+States().
+
+
+\begin{DoxyCode}
+403 \{
+404     \textcolor{keyword}{auto} initialState = this->createState<InitialStateType>(\textcolor{keyword}{nullptr});
+405     \hyperlink{structsmacc_1_1introspection_1_1WalkStatesExecutor_a21848ccc6e7a7ddee0ccfff97e550ec6}{WalkStatesExecutor<InitialStateType>::walkStates}(
+      initialState, \textcolor{keyword}{true});
+406 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_a1482f3d6b3aff8a2702331bd3049987a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info@{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info}!compute\+All\+State\+Message@{compute\+All\+State\+Message}}
+\index{compute\+All\+State\+Message@{compute\+All\+State\+Message}!smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info@{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info}}
+\subsubsection[{\texorpdfstring{compute\+All\+State\+Message(std\+::vector$<$ smacc\+\_\+msgs\+::\+Smacc\+State $>$ \&msg)}{computeAllStateMessage(std::vector< smacc_msgs::SmaccState > &msg)}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info\+::compute\+All\+State\+Message (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ smacc\+\_\+msgs\+::\+Smacc\+State $>$ \&}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_a0722293cbe7b231ac333de15ae3751e8}{}\label{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_a0722293cbe7b231ac333de15ae3751e8}
+
+
+Definition at line 51 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+References assemble\+S\+M\+Structure\+Message().
+
+
+\begin{DoxyCode}
+52     \{
+53     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_a0722293cbe7b231ac333de15ae3751e8_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info@{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info}!contains\+State@{contains\+State}}
+\index{contains\+State@{contains\+State}!smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info@{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info}}
+\subsubsection[{\texorpdfstring{contains\+State()}{containsState()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename State\+Type $>$ {\bf bool} smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info\+::contains\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_aa120497a9fc4cb4a05f6a27ff3be26cb}{}\label{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_aa120497a9fc4cb4a05f6a27ff3be26cb}
+
+
+Definition at line 31 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+\begin{DoxyCode}
+32     \{
+33         \textcolor{keyword}{auto} typeNameStr = \textcolor{keyword}{typeid}(StateType).name();
+34 
+35         \textcolor{keywordflow}{return} \hyperlink{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_aef31d74ad3669f0b0f57fe0e008cd2f8}{states}.count(typeNameStr) > 0;
+36     \}
+\end{DoxyCode}
+\index{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info@{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info}!create\+State@{create\+State}}
+\index{create\+State@{create\+State}!smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info@{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info}}
+\subsubsection[{\texorpdfstring{create\+State(std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ parent\+State)}{createState(std::shared_ptr< SmaccStateInfo > parentState)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename State\+Type $>$ std\+::shared\+\_\+ptr$<$ {\bf Smacc\+State\+Info} $>$ smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info\+::create\+State (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Smacc\+State\+Info} $>$}]{parent\+State}
+\end{DoxyParamCaption}
+)}\hypertarget{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_ad3eacdb32594e603fb36a8ab478d0ce7}{}\label{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_ad3eacdb32594e603fb36a8ab478d0ce7}
+
+
+Definition at line 409 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+References add\+State(), and states.
+
+
+\begin{DoxyCode}
+410 \{
+411     \textcolor{keyword}{auto} thisptr = this->shared\_from\_this();
+412     \textcolor{keyword}{auto} *statetid = &(\textcolor{keyword}{typeid}(StateType));
+413 
+414     \textcolor{keyword}{auto} demangledName = demangledTypeName<StateType>();
+415     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"Creating State Info: "} << demangledName);
+416 
+417     \textcolor{keyword}{auto} state = std::make\_shared<SmaccStateInfo>(statetid, parent, thisptr);
+418     state->demangledStateName = demangledName;
+419     state->fullStateName = \textcolor{keyword}{typeid}(StateType).name();
+420     state->stateIndex\_ = \hyperlink{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_aef31d74ad3669f0b0f57fe0e008cd2f8}{states}.size();
+421 
+422     \textcolor{keywordflow}{if} (parent != \textcolor{keyword}{nullptr})
+423     \{
+424         parent->children\_.push\_back(state);
+425     \}
+426 
+427     this->\hyperlink{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_ab4eafccfbba21257405fc4274c2ed22a}{addState}(state);
+428 
+429     \textcolor{keywordflow}{return} state;
+430 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_ad3eacdb32594e603fb36a8ab478d0ce7_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info@{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info}!get\+State@{get\+State}}
+\index{get\+State@{get\+State}!smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info@{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info}}
+\subsubsection[{\texorpdfstring{get\+State()}{getState()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename State\+Type $>$ std\+::shared\+\_\+ptr$<${\bf Smacc\+State\+Info}$>$ smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info\+::get\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_ab2970707b3eec89f70aba88612ab0ca5}{}\label{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_ab2970707b3eec89f70aba88612ab0ca5}
+
+
+Definition at line 39 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+References add\+State().
+
+
+\begin{DoxyCode}
+40     \{
+41         \textcolor{keywordflow}{if} (this->containsState<StateType>())
+42         \{
+43             \textcolor{keywordflow}{return} \hyperlink{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_aef31d74ad3669f0b0f57fe0e008cd2f8}{states}[\textcolor{keyword}{typeid}(StateType).name()];
+44         \}
+45         \textcolor{keywordflow}{return} \textcolor{keyword}{nullptr};
+46     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_ab2970707b3eec89f70aba88612ab0ca5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info@{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info}!state\+Msgs@{state\+Msgs}}
+\index{state\+Msgs@{state\+Msgs}!smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info@{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info}}
+\subsubsection[{\texorpdfstring{state\+Msgs}{stateMsgs}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$smacc\+\_\+msgs\+::\+Smacc\+State$>$ smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info\+::state\+Msgs}\hypertarget{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_a48e3ff7bbe2673d23e6942234446ebee}{}\label{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_a48e3ff7bbe2673d23e6942234446ebee}
+
+
+Definition at line 22 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+Referenced by assemble\+S\+M\+Structure\+Message().
+
+\index{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info@{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info}!states@{states}}
+\index{states@{states}!smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info@{smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info}}
+\subsubsection[{\texorpdfstring{states}{states}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$std\+::string, std\+::shared\+\_\+ptr$<${\bf Smacc\+State\+Info}$>$ $>$ smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info\+::states}\hypertarget{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_aef31d74ad3669f0b0f57fe0e008cd2f8}{}\label{classsmacc_1_1introspection_1_1SmaccStateMachineInfo_aef31d74ad3669f0b0f57fe0e008cd2f8}
+
+
+Definition at line 20 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
+
+
+
+Referenced by add\+State(), assemble\+S\+M\+Structure\+Message(), and create\+State().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+smacc/include/smacc/introspection/\hyperlink{smacc__state__machine__info_8h}{smacc\+\_\+state\+\_\+machine\+\_\+info.\+h}\item 
+smacc/src/smacc/\hyperlink{smacc__state__machine__info_8cpp}{smacc\+\_\+state\+\_\+machine\+\_\+info.\+cpp}\end{DoxyCompactItemize}

@@ -116,7 +116,7 @@ Definition at line 68 of file signal\+\_\+detector.\+cpp.
 
 
 
-References smacc\+::demangle\+Type(), smacc\+::\+I\+Smacc\+State\+Machine\+::get\+Orthogonals(), smacc\+State\+Machine\+\_\+, and updatable\+Client\+Behaviors\+\_\+.
+References smacc\+::introspection\+::demangle\+Type(), smacc\+::\+I\+Smacc\+State\+Machine\+::get\+Orthogonals(), smacc\+State\+Machine\+\_\+, and updatable\+Client\+Behaviors\+\_\+.
 
 
 
@@ -138,7 +138,7 @@ Referenced by poll\+Once().
 79 
 80             \textcolor{keywordflow}{if} (updatableClientBehavior != \textcolor{keyword}{nullptr})
 81             \{
-82                 ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"Adding updatable behavior: "} << \hyperlink{namespacesmacc_a792e7a3ea0843e87543a465b446ae730}{demangleType}(\textcolor{keyword}{typeid}(
+82                 ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"Adding updatable behavior: "} << \hyperlink{namespacesmacc_1_1introspection_a81ad2fc77a0262640d4b1bd273938603}{demangleType}(\textcolor{keyword}{typeid}(
       updatableClientBehavior)));
 83                 this->\hyperlink{classsmacc_1_1SignalDetector_a777b671ca6bbedd2fdc83f60f9ec8f83}{updatableClientBehaviors\_}.push\_back(updatableClientBehavior)
       ;
@@ -184,7 +184,7 @@ Definition at line 42 of file signal\+\_\+detector.\+cpp.
 
 
 
-References smacc\+::demangle\+Type(), smacc\+::\+I\+Smacc\+State\+Machine\+::get\+Orthogonals(), smacc\+State\+Machine\+\_\+, and updatable\+Clients\+\_\+.
+References smacc\+::introspection\+::demangle\+Type(), smacc\+::\+I\+Smacc\+State\+Machine\+::get\+Orthogonals(), smacc\+State\+Machine\+\_\+, and updatable\+Clients\+\_\+.
 
 
 
@@ -205,7 +205,7 @@ Referenced by initialize().
 53 
 54             \textcolor{keywordflow}{if} (updatableClient != \textcolor{keyword}{nullptr})
 55             \{
-56                 ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"Adding updatable client: "} << \hyperlink{namespacesmacc_a792e7a3ea0843e87543a465b446ae730}{demangleType}(\textcolor{keyword}{typeid}(
+56                 ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"Adding updatable client: "} << \hyperlink{namespacesmacc_1_1introspection_a81ad2fc77a0262640d4b1bd273938603}{demangleType}(\textcolor{keyword}{typeid}(
       updatableClient)));
 57                 this->\hyperlink{classsmacc_1_1SignalDetector_a36a702afabbc335cbdb1e8699b669323}{updatableClients\_}.push\_back(updatableClient);
 58             \}
@@ -388,7 +388,7 @@ Definition at line 134 of file signal\+\_\+detector.\+cpp.
 
 
 
-References smacc\+::demangle\+Type(), find\+Updatable\+Behaviors(), smacc\+::\+I\+Smacc\+State\+Machine\+::get\+Current\+State(), smacc\+::\+I\+Smacc\+State\+Machine\+::get\+Current\+State\+Counter(), last\+State\+\_\+, smacc\+::\+I\+Smacc\+State\+Machine\+::lock\+State\+Machine(), smacc\+State\+Machine\+\_\+, smacc\+::\+I\+Smacc\+State\+Machine\+::unlock\+State\+Machine(), updatable\+Client\+Behaviors\+\_\+, and updatable\+Clients\+\_\+.
+References smacc\+::introspection\+::demangle\+Type(), find\+Updatable\+Behaviors(), smacc\+::\+I\+Smacc\+State\+Machine\+::get\+Current\+State(), smacc\+::\+I\+Smacc\+State\+Machine\+::get\+Current\+State\+Counter(), last\+State\+\_\+, smacc\+::\+I\+Smacc\+State\+Machine\+::lock\+State\+Machine(), smacc\+State\+Machine\+\_\+, smacc\+::\+I\+Smacc\+State\+Machine\+::unlock\+State\+Machine(), updatable\+Client\+Behaviors\+\_\+, and updatable\+Clients\+\_\+.
 
 
 
@@ -414,7 +414,7 @@ Referenced by polling\+Loop().
 150             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} *updatableClient : this->\hyperlink{classsmacc_1_1SignalDetector_a36a702afabbc335cbdb1e8699b669323}{updatableClients\_})
 151             \{
 152                 ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"[PollOnce] update client call:  "} << 
-      \hyperlink{namespacesmacc_a792e7a3ea0843e87543a465b446ae730}{demangleType}(\textcolor{keyword}{typeid}(updatableClient)));
+      \hyperlink{namespacesmacc_1_1introspection_a81ad2fc77a0262640d4b1bd273938603}{demangleType}(\textcolor{keyword}{typeid}(updatableClient)));
 153                 updatableClient->update();
 154             \}
 155         \}
@@ -445,7 +445,7 @@ Referenced by polling\+Loop().
 177                 \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} *updatableBehavior : this->\hyperlink{classsmacc_1_1SignalDetector_a777b671ca6bbedd2fdc83f60f9ec8f83}{updatableClientBehaviors\_})
 178                 \{
 179                     ROS\_DEBUG\_STREAM(\textcolor{stringliteral}{"pollOnce update client behavior call: "} << 
-      \hyperlink{namespacesmacc_a792e7a3ea0843e87543a465b446ae730}{demangleType}(\textcolor{keyword}{typeid}(*updatableBehavior)));
+      \hyperlink{namespacesmacc_1_1introspection_a81ad2fc77a0262640d4b1bd273938603}{demangleType}(\textcolor{keyword}{typeid}(*updatableBehavior)));
 180                     updatableBehavior->update();
 181                 \}
 182             \}
@@ -498,28 +498,12 @@ Definition at line 36 of file smacc\+\_\+signal\+\_\+detector.\+h.
 References processor\+Handle\+\_\+, and scheduler\+\_\+.
 
 
-
-Referenced by smacc\+::\+I\+Smacc\+State\+Machine\+::post\+Event().
-
-
 \begin{DoxyCode}
 37     \{
 38         boost::intrusive\_ptr<EventType> weakPtrEvent = ev;
 39         this->\hyperlink{classsmacc_1_1SignalDetector_adaee5b9b91d0e6305dc1ab30f7ab566d}{scheduler\_}->queue\_event(\hyperlink{classsmacc_1_1SignalDetector_a9a77dc9f0e9f8f56dff5e76077abcb78}{processorHandle\_}, weakPtrEvent);
 40     \}
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classsmacc_1_1SignalDetector_a6ab99d99cef8d101e39797a72daeb2b7_icgraph}
-\end{center}
-\end{figure}
-
-
 \index{smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}!run\+Thread@{run\+Thread}}
 \index{run\+Thread@{run\+Thread}!smacc\+::\+Signal\+Detector@{smacc\+::\+Signal\+Detector}}
 \subsubsection[{\texorpdfstring{run\+Thread()}{runThread()}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::\+Signal\+Detector\+::run\+Thread (

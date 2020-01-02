@@ -1,0 +1,195 @@
+\hypertarget{classsmacc_1_1logic__units_1_1LuAllEventsGo}{}\section{smacc\+:\+:logic\+\_\+units\+:\+:Lu\+All\+Events\+Go Class Reference}
+\label{classsmacc_1_1logic__units_1_1LuAllEventsGo}\index{smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go@{smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go}}
+
+
+{\ttfamily \#include $<$lu\+\_\+all\+\_\+events\+\_\+go.\+h$>$}
+
+
+
+Inheritance diagram for smacc\+:\+:logic\+\_\+units\+:\+:Lu\+All\+Events\+Go\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classsmacc_1_1logic__units_1_1LuAllEventsGo__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+:\+:logic\+\_\+units\+:\+:Lu\+All\+Events\+Go\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1logic__units_1_1LuAllEventsGo__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc_1_1logic__units_1_1LuAllEventsGo_ab6d024be6f7fad2546f24712e0e100e8}{Lu\+All\+Events\+Go} ()
+\item 
+virtual void \hyperlink{classsmacc_1_1logic__units_1_1LuAllEventsGo_a01229bb4935f6ebe895b3aeadc187db7}{on\+Initialized} () override
+\item 
+virtual void \hyperlink{classsmacc_1_1logic__units_1_1LuAllEventsGo_a6c32f39649fabcc01742ca7dcb76acf8}{on\+Event\+Notified} (const std\+::type\+\_\+info $\ast$event\+Type) override
+\item 
+virtual \hyperlink{classbool}{bool} \hyperlink{classsmacc_1_1logic__units_1_1LuAllEventsGo_a89a25635e1ebb192433267fdbd0530b8}{triggers} () override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ const std\+::type\+\_\+info $\ast$, \hyperlink{classbool}{bool} $>$ \hyperlink{classsmacc_1_1logic__units_1_1LuAllEventsGo_a90faf85594df56b21defaaeea610b6c5}{triggered\+Events}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file lu\+\_\+all\+\_\+events\+\_\+go.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go@{smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go}!Lu\+All\+Events\+Go@{Lu\+All\+Events\+Go}}
+\index{Lu\+All\+Events\+Go@{Lu\+All\+Events\+Go}!smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go@{smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go}}
+\subsubsection[{\texorpdfstring{Lu\+All\+Events\+Go()}{LuAllEventsGo()}}]{\setlength{\rightskip}{0pt plus 5cm}smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go\+::\+Lu\+All\+Events\+Go (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1logic__units_1_1LuAllEventsGo_ab6d024be6f7fad2546f24712e0e100e8}{}\label{classsmacc_1_1logic__units_1_1LuAllEventsGo_ab6d024be6f7fad2546f24712e0e100e8}
+
+
+Definition at line 23 of file lu\+\_\+all\+\_\+events\+\_\+go.\+h.
+
+
+\begin{DoxyCode}
+24     \{
+25     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go@{smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go}!on\+Event\+Notified@{on\+Event\+Notified}}
+\index{on\+Event\+Notified@{on\+Event\+Notified}!smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go@{smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go}}
+\subsubsection[{\texorpdfstring{on\+Event\+Notified(const std\+::type\+\_\+info $\ast$event\+Type) override}{onEventNotified(const std::type_info *eventType) override}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go\+::on\+Event\+Notified (
+\begin{DoxyParamCaption}
+\item[{const std\+::type\+\_\+info $\ast$}]{event\+Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1logic__units_1_1LuAllEventsGo_a6c32f39649fabcc01742ca7dcb76acf8}{}\label{classsmacc_1_1logic__units_1_1LuAllEventsGo_a6c32f39649fabcc01742ca7dcb76acf8}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1LogicUnit_a3a81929b2014b10d0fa28d4bc2d19d9c}{smacc\+::\+Logic\+Unit}.
+
+
+
+Definition at line 17 of file lu\+\_\+all\+\_\+events\+\_\+go.\+cpp.
+
+
+
+References smacc\+::introspection\+::demangle\+Symbol(), and triggered\+Events.
+
+
+\begin{DoxyCode}
+18 \{
+19     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"LU ALL RECEIVED EVENT OF TYPE:"} << \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(eventType->name()));
+20     \hyperlink{classsmacc_1_1logic__units_1_1LuAllEventsGo_a90faf85594df56b21defaaeea610b6c5}{triggeredEvents}[eventType] = \textcolor{keyword}{true};
+21 
+22     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &entry : \hyperlink{classsmacc_1_1logic__units_1_1LuAllEventsGo_a90faf85594df56b21defaaeea610b6c5}{triggeredEvents})
+23     \{
+24         ROS\_INFO\_STREAM(\hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(entry.first->name()) << \textcolor{stringliteral}{" = "} << entry.second);
+25     \}
+26 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1logic__units_1_1LuAllEventsGo_a6c32f39649fabcc01742ca7dcb76acf8_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go@{smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go}!on\+Initialized@{on\+Initialized}}
+\index{on\+Initialized@{on\+Initialized}!smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go@{smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go}}
+\subsubsection[{\texorpdfstring{on\+Initialized() override}{onInitialized() override}}]{\setlength{\rightskip}{0pt plus 5cm}void smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go\+::on\+Initialized (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1logic__units_1_1LuAllEventsGo_a01229bb4935f6ebe895b3aeadc187db7}{}\label{classsmacc_1_1logic__units_1_1LuAllEventsGo_a01229bb4935f6ebe895b3aeadc187db7}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1LogicUnit_ade7f409516683f13754943db1081bac0}{smacc\+::\+Logic\+Unit}.
+
+
+
+Definition at line 9 of file lu\+\_\+all\+\_\+events\+\_\+go.\+cpp.
+
+
+
+References smacc\+::\+Logic\+Unit\+::event\+Types, and triggered\+Events.
+
+
+\begin{DoxyCode}
+10 \{
+11     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} type : \hyperlink{classsmacc_1_1LogicUnit_a6f02a49da9b408b54a2755c18c5616a8}{eventTypes})
+12     \{
+13         \hyperlink{classsmacc_1_1logic__units_1_1LuAllEventsGo_a90faf85594df56b21defaaeea610b6c5}{triggeredEvents}[type] = \textcolor{keyword}{false};
+14     \}
+15 \}
+\end{DoxyCode}
+\index{smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go@{smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go}!triggers@{triggers}}
+\index{triggers@{triggers}!smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go@{smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go}}
+\subsubsection[{\texorpdfstring{triggers() override}{triggers() override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool} smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go\+::triggers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsmacc_1_1logic__units_1_1LuAllEventsGo_a89a25635e1ebb192433267fdbd0530b8}{}\label{classsmacc_1_1logic__units_1_1LuAllEventsGo_a89a25635e1ebb192433267fdbd0530b8}
+
+
+Implements \hyperlink{classsmacc_1_1LogicUnit_ae975a96f0210412e1cb4a7b5b948ade6}{smacc\+::\+Logic\+Unit}.
+
+
+
+Definition at line 28 of file lu\+\_\+all\+\_\+events\+\_\+go.\+cpp.
+
+
+
+References triggered\+Events.
+
+
+\begin{DoxyCode}
+29 \{
+30     ROS\_INFO(\textcolor{stringliteral}{"LU All TRIGGERS?"});
+31     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &entry : \hyperlink{classsmacc_1_1logic__units_1_1LuAllEventsGo_a90faf85594df56b21defaaeea610b6c5}{triggeredEvents})
+32     \{
+33         \textcolor{keywordflow}{if} (!entry.second)
+34             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+35     \}
+36     ROS\_INFO(\textcolor{stringliteral}{"LU ALL TRIGGERED"});
+37     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+38 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go@{smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go}!triggered\+Events@{triggered\+Events}}
+\index{triggered\+Events@{triggered\+Events}!smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go@{smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go}}
+\subsubsection[{\texorpdfstring{triggered\+Events}{triggeredEvents}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$const std\+::type\+\_\+info $\ast$, {\bf bool}$>$ smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go\+::triggered\+Events\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1logic__units_1_1LuAllEventsGo_a90faf85594df56b21defaaeea610b6c5}{}\label{classsmacc_1_1logic__units_1_1LuAllEventsGo_a90faf85594df56b21defaaeea610b6c5}
+
+
+Definition at line 20 of file lu\+\_\+all\+\_\+events\+\_\+go.\+h.
+
+
+
+Referenced by on\+Event\+Notified(), on\+Initialized(), and triggers().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+logic\+\_\+unit\+\_\+library/all\+\_\+events\+\_\+go/include/all\+\_\+events\+\_\+go/\hyperlink{lu__all__events__go_8h}{lu\+\_\+all\+\_\+events\+\_\+go.\+h}\item 
+smacc\+\_\+logic\+\_\+unit\+\_\+library/all\+\_\+events\+\_\+go/src/all\+\_\+events\+\_\+go/\hyperlink{lu__all__events__go_8cpp}{lu\+\_\+all\+\_\+events\+\_\+go.\+cpp}\end{DoxyCompactItemize}

@@ -1,11 +1,6 @@
 <map id="smacc::ISmaccStateMachine::postEvent" name="smacc::ISmaccStateMachine::postEvent">
-<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccClient.html#a46cbc0d695214efe40d29247323bfc80" title="smacc::ISmaccClient\l::postEvent" alt="" coords="287,5,441,47"/>
-<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccComponent.html#a687dead5b87a3b9781b9bf6ab0b7afa5" title="smacc::ISmaccComponent\l::postEvent" alt="" coords="267,71,461,112"/>
-<area shape="rect" id="node4" href="$classsmacc_1_1SmaccClientBehavior.html#ab29b23145ea074ad69340fc0af6fbb75" title="smacc::SmaccClientBehavior\l::postEvent" alt="" coords="260,136,468,177"/>
-<area shape="rect" id="node5" href="$classsmacc_1_1ISmaccState.html#acef404ab3766ddf2892e8dad14a4a7cf" title="smacc::ISmaccState\l::postEvent" alt="" coords="287,201,441,243"/>
-<area shape="rect" id="node6" href="$namespacesm__viewer__sim.html#a19b5db17983d5b9bbf21e96ecf9ab5c8" title="sm_viewer_sim::delayedPost\lEvent" alt="" coords="533,56,738,97"/>
-<area shape="rect" id="node7" href="$classsmacc_1_1ISmaccState.html#a3484b4a32ef47a8650f08df67de4fae5" title="smacc::ISmaccState\l::getParentState" alt="" coords="558,121,713,163"/>
-<area shape="rect" id="node9" href="$classsmacc_1_1SmaccState.html#a56ccdfaf818ed6409dcbd4ab8b01c60e" title="smacc::SmaccState\&lt;\l MsDanceBotRunMode,\l SmDanceBot, StAcquireSensors\l \&gt;::throwFinishEvent" alt="" coords="519,187,752,257"/>
-<area shape="rect" id="node10" href="$classsmacc_1_1SmaccState.html#a4f3083a54914820cd7b9eb5a6221f29f" title="smacc::SmaccState\&lt;\l MsDanceBotRunMode,\l SmDanceBot, StAcquireSensors\l \&gt;::throwLoopEventFromCondition" alt="" coords="516,281,755,352"/>
-<area shape="rect" id="node8" href="$classsmacc_1_1ISmaccStateMachine.html#a268198b98e9540f4edb703801527a192" title="smacc::ISmaccStateMachine\l::propagateEventToLogicUnits" alt="" coords="803,245,1013,287"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1LogicUnit.html#a76ef62bbd4dccf3da2c03032616b3ef6" title="smacc::LogicUnit::declare\lPostEvent" alt="" coords="271,5,457,47"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccClient.html#a46cbc0d695214efe40d29247323bfc80" title="smacc::ISmaccClient\l::postEvent" alt="" coords="287,71,441,112"/>
+<area shape="rect" id="node4" href="$classsmacc_1_1ISmaccComponent.html#a687dead5b87a3b9781b9bf6ab0b7afa5" title="smacc::ISmaccComponent\l::postEvent" alt="" coords="267,136,461,177"/>
+<area shape="rect" id="node5" href="$classsmacc_1_1SmaccClientBehavior.html#ab29b23145ea074ad69340fc0af6fbb75" title="smacc::SmaccClientBehavior\l::postEvent" alt="" coords="260,201,468,243"/>
 </map>
