@@ -29,5 +29,6 @@ var searchData=
   ['duration',['duration',['../classros__timer__client_1_1ClRosTimer.html#a79df7a52481e520ba959f3e6afb0a817',1,'ros_timer_client::ClRosTimer']]],
   ['dynrecofsub_5f',['dynrecofSub_',['../classmove__base__z__client_1_1PlannerSwitcher.html#a088bde4ce0fece46776a9f4efe417e15',1,'move_base_z_client::PlannerSwitcher']]],
   ['dynreconfcallback',['dynreconfCallback',['../classmove__base__z__client_1_1PlannerSwitcher.html#a7eacfedc6b6ea404ee8fab062d62a911',1,'move_base_z_client::PlannerSwitcher']]],
+  ['dance_20bot_20state_20machine',['Dance Bot State Machine',['../md_smacc_sm_reference_library_sm_dance_bot_2_launch_readme.html',1,'']]],
   ['dance_20bot_20state_20machine',['Dance Bot State Machine',['../md_smacc_sm_reference_library_sm_dance_bot_launch_readme.html',1,'']]]
 ];

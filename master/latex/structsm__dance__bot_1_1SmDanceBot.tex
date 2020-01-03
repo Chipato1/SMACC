@@ -37,8 +37,6 @@ typedef mpl\+::bool\+\_\+$<$ false $>$ \hyperlink{structsm__dance__bot_1_1SmDanc
 typedef mpl\+::bool\+\_\+$<$ false $>$ \hyperlink{structsm__dance__bot_1_1SmDanceBot_abd58ec4a2b50a45da304a5f0b9c44706}{deep\+\_\+history}
 \item 
 typedef mpl\+::bool\+\_\+$<$ false $>$ \hyperlink{structsm__dance__bot_1_1SmDanceBot_a9bc29171f1a5e3cfd09824a06f6a8058}{inherited\+\_\+deep\+\_\+history}
-\item 
-typedef \hyperlink{structsmacc_1_1SmaccStateMachineBase}{smacc\+::\+Smacc\+State\+Machine\+Base}$<$ \hyperlink{structsm__dance__bot_1_1SmDanceBot}{Sm\+Dance\+Bot}, \hyperlink{classsm__dance__bot_1_1MsDanceBotRunMode}{Ms\+Dance\+Bot\+Run\+Mode} $>$ \hyperlink{structsm__dance__bot_1_1SmDanceBot_a33b03e67fc72482c067af48e1f9d95a3}{base}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -63,13 +61,6 @@ Definition at line 126 of file sm\+\_\+dance\+\_\+bot.\+h.
 
 
 \subsection{Member Typedef Documentation}
-\index{sm\+\_\+dance\+\_\+bot\+::\+Sm\+Dance\+Bot@{sm\+\_\+dance\+\_\+bot\+::\+Sm\+Dance\+Bot}!base@{base}}
-\index{base@{base}!sm\+\_\+dance\+\_\+bot\+::\+Sm\+Dance\+Bot@{sm\+\_\+dance\+\_\+bot\+::\+Sm\+Dance\+Bot}}
-\subsubsection[{\texorpdfstring{base}{base}}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf smacc\+::\+Smacc\+State\+Machine\+Base}$<${\bf Sm\+Dance\+Bot}, {\bf Ms\+Dance\+Bot\+Run\+Mode}$>$ {\bf sm\+\_\+dance\+\_\+bot\+::\+Sm\+Dance\+Bot\+::base}}\hypertarget{structsm__dance__bot_1_1SmDanceBot_a33b03e67fc72482c067af48e1f9d95a3}{}\label{structsm__dance__bot_1_1SmDanceBot_a33b03e67fc72482c067af48e1f9d95a3}
-
-
-Definition at line 136 of file sm\+\_\+dance\+\_\+bot.\+h.
-
 \index{sm\+\_\+dance\+\_\+bot\+::\+Sm\+Dance\+Bot@{sm\+\_\+dance\+\_\+bot\+::\+Sm\+Dance\+Bot}!deep\+\_\+history@{deep\+\_\+history}}
 \index{deep\+\_\+history@{deep\+\_\+history}!sm\+\_\+dance\+\_\+bot\+::\+Sm\+Dance\+Bot@{sm\+\_\+dance\+\_\+bot\+::\+Sm\+Dance\+Bot}}
 \subsubsection[{\texorpdfstring{deep\+\_\+history}{deep_history}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::bool\+\_\+$<$false$>$ {\bf sm\+\_\+dance\+\_\+bot\+::\+Sm\+Dance\+Bot\+::deep\+\_\+history}}\hypertarget{structsm__dance__bot_1_1SmDanceBot_abd58ec4a2b50a45da304a5f0b9c44706}{}\label{structsm__dance__bot_1_1SmDanceBot_abd58ec4a2b50a45da304a5f0b9c44706}
@@ -111,23 +102,23 @@ Reimplemented from \hyperlink{classsmacc_1_1ISmaccStateMachine_ac2982c6c8283663e
 
 
 
-Definition at line 140 of file sm\+\_\+dance\+\_\+bot.\+h.
+Definition at line 138 of file sm\+\_\+dance\+\_\+bot.\+h.
 
 
 \begin{DoxyCode}
-141     \{
-142         this->\hyperlink{classsmacc_1_1ISmaccStateMachine_a8588f9e580fbb95b53e2bd2ca3ff1f98}{setGlobalSMData}(\textcolor{stringliteral}{"counter\_1"}, \hyperlink{structsm__dance__bot_1_1SmDanceBot_ab3b8db557ce94d34c60b291911eb140c}{counter\_1});
-143         this->\hyperlink{classsmacc_1_1ISmaccStateMachine_a8588f9e580fbb95b53e2bd2ca3ff1f98}{setGlobalSMData}(\textcolor{stringliteral}{"rt\_ready\_flag"}, \hyperlink{structsm__dance__bot_1_1SmDanceBot_a0f0587a13670ad8925555cd8f6cb6b2d}{rt\_ready\_flag});
-144 
-145         this->createOrthogonal<OrNavigation>();
-146         this->createOrthogonal<OrObstaclePerception>();
-147         this->createOrthogonal<OrLED>();
-148         this->createOrthogonal<OrTemperatureSensor>();
-149         this->createOrthogonal<OrStringPublisher>();
-150         this->createOrthogonal<OrService3>();
-151         this->createOrthogonal<OrTimer>();
-152         this->createOrthogonal<OrUpdatablePublisher>();
-153     \}
+139     \{
+140         this->\hyperlink{classsmacc_1_1ISmaccStateMachine_a8588f9e580fbb95b53e2bd2ca3ff1f98}{setGlobalSMData}(\textcolor{stringliteral}{"counter\_1"}, \hyperlink{structsm__dance__bot_1_1SmDanceBot_ab3b8db557ce94d34c60b291911eb140c}{counter\_1});
+141         this->\hyperlink{classsmacc_1_1ISmaccStateMachine_a8588f9e580fbb95b53e2bd2ca3ff1f98}{setGlobalSMData}(\textcolor{stringliteral}{"rt\_ready\_flag"}, \hyperlink{structsm__dance__bot_1_1SmDanceBot_a0f0587a13670ad8925555cd8f6cb6b2d}{rt\_ready\_flag});
+142 
+143         this->createOrthogonal<OrNavigation>();
+144         this->createOrthogonal<OrObstaclePerception>();
+145         this->createOrthogonal<OrLED>();
+146         this->createOrthogonal<OrTemperatureSensor>();
+147         this->createOrthogonal<OrStringPublisher>();
+148         this->createOrthogonal<OrService3>();
+149         this->createOrthogonal<OrTimer>();
+150         this->createOrthogonal<OrUpdatablePublisher>();
+151     \}
 \end{DoxyCode}
 
 

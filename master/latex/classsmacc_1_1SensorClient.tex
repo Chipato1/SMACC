@@ -34,6 +34,8 @@ typedef Message\+Type \hyperlink{classsmacc_1_1SensorClient_a5a35234e021e849d213
 \item 
 \hyperlink{classsmacc_1_1SensorClient_a3d33430d7b925d88d816d384d3c533c1}{Sensor\+Client} ()
 \item 
+{\footnotesize template$<$typename T $>$ }\\boost\+::signals2\+::connection \hyperlink{classsmacc_1_1SensorClient_ae282c87a18a5d9a8cab2eec6fe25ac94}{on\+Message\+Timeout} (void(T\+::$\ast$callback)(const ros\+::\+Timer\+Event \&), T $\ast$object)
+\item 
 {\footnotesize template$<$typename T\+Object\+Tag , typename T\+Derived $>$ }\\void \hyperlink{classsmacc_1_1SensorClient_ae1384ddfe1fab2c119be52b587dd6071}{configure\+Event\+Source\+Types} ()
 \item 
 virtual void \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e533ef8}{initialize} () override
@@ -41,11 +43,16 @@ virtual void \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e53
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-boost\+::signals2\+::signal$<$ void(const Message\+Type \&)$>$ \hyperlink{classsmacc_1_1SensorClient_a3652c00d16a1a82ef6b43466ef360c72}{on\+Message\+Timeout}
+\hyperlink{classsmacc_1_1SmaccSignal}{Smacc\+Signal}$<$ void(const ros\+::\+Timer\+Event \&)$>$ \hyperlink{classsmacc_1_1SensorClient_a41a32494e9a6fea3e1b798870c96600e}{on\+Message\+Timeout\+\_\+}
 \item 
 std\+::function$<$ void(const ros\+::\+Timer\+Event \&ev)$>$ \hyperlink{classsmacc_1_1SensorClient_ad2c6d9f2e7ceddac26024cd5901a6739}{post\+Timeout\+Message\+Event}
 \item 
 boost\+::optional$<$ ros\+::\+Duration $>$ \hyperlink{classsmacc_1_1SensorClient_a660452b6940625d3c60581961124ebd8}{timeout\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classsmacc_1_1SensorClient_a314dafd4b728b5f7b12efe5a6edee2c3}{reset\+Timer} (const Message\+Type \&msg)
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -115,20 +122,22 @@ Definition at line 30 of file sensor\+\_\+client.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SensorClient_ae1384ddfe1fab2c119be52b587dd6071}{}\label{classsmacc_1_1SensorClient_ae1384ddfe1fab2c119be52b587dd6071}
 
 
-Definition at line 40 of file sensor\+\_\+client.\+h.
+Definition at line 46 of file sensor\+\_\+client.\+h.
 
 
 \begin{DoxyCode}
-41   \{
-42     \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient}{SmaccSubscriberClient<MessageType>::template} 
+47   \{
+48     \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient}{SmaccSubscriberClient<MessageType>::template} 
       configureEventSourceTypes<TObjectTag, TDerived>();
-43 
-44     this->\hyperlink{classsmacc_1_1SensorClient_ad2c6d9f2e7ceddac26024cd5901a6739}{postTimeoutMessageEvent} = [=](\textcolor{keyword}{auto} &timerdata) \{
-45       \textcolor{keyword}{auto} \textcolor{keyword}{event} = \textcolor{keyword}{new} EvTopicMessageTimeout<TDerived, TObjectTag>();
-46       \textcolor{keyword}{event}->timerData = timerdata;
-47       this->\hyperlink{classsmacc_1_1ISmaccClient_a21a79203cb44fc717d4d977c190327c6}{postEvent}(event);
-48     \};
-49   \}
+49 
+50     this->\hyperlink{classsmacc_1_1SensorClient_ad2c6d9f2e7ceddac26024cd5901a6739}{postTimeoutMessageEvent} = [=](\textcolor{keyword}{auto} &timerdata) \{
+51       \hyperlink{classsmacc_1_1SensorClient_a41a32494e9a6fea3e1b798870c96600e}{onMessageTimeout\_}(timerdata);
+52 
+53       \textcolor{keyword}{auto} \textcolor{keyword}{event} = \textcolor{keyword}{new} EvTopicMessageTimeout<TDerived, TObjectTag>();
+54       \textcolor{keyword}{event}->timerData = timerdata;
+55       this->\hyperlink{classsmacc_1_1ISmaccClient_a21a79203cb44fc717d4d977c190327c6}{postEvent}(event);
+56     \};
+57   \}
 \end{DoxyCode}
 \index{smacc\+::\+Sensor\+Client@{smacc\+::\+Sensor\+Client}!initialize@{initialize}}
 \index{initialize@{initialize}!smacc\+::\+Sensor\+Client@{smacc\+::\+Sensor\+Client}}
@@ -143,36 +152,70 @@ Reimplemented from \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClie
 
 
 
-Definition at line 51 of file sensor\+\_\+client.\+h.
+Definition at line 59 of file sensor\+\_\+client.\+h.
 
 
 \begin{DoxyCode}
-52   \{
-53     \textcolor{keywordflow}{if} (!\hyperlink{classsmacc_1_1SensorClient_a7dde11291a16f6c2edaa02552895ee9e}{initialized\_})
-54     \{
-55       \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_af188f0f5e89de26a07e1f964cdd23a70}{SmaccSubscriberClient<MessageType>::initialize}();
-56 
-57       this->\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a2703867f1ee638c5fffa680f93cee29a}{onMessageReceived}.connect(
-58           [\textcolor{keyword}{this}](\textcolor{keyword}{auto} msg) \{
-59             \textcolor{comment}{//reseting the timer}
-60             this->\hyperlink{classsmacc_1_1SensorClient_a5a82e2fa1f0ccfe2564125fae2f9783a}{timeoutTimer\_}.stop();
-61             this->\hyperlink{classsmacc_1_1SensorClient_a5a82e2fa1f0ccfe2564125fae2f9783a}{timeoutTimer\_}.start();
-62           \});
-63 
-64       \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1SensorClient_a660452b6940625d3c60581961124ebd8}{timeout\_})
-65       \{
-66         \hyperlink{classsmacc_1_1SensorClient_a5a82e2fa1f0ccfe2564125fae2f9783a}{timeoutTimer\_} = this->\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a401d2476e89e27acc2e905acd701f053}{nh\_}.createTimer(*\hyperlink{classsmacc_1_1SensorClient_a660452b6940625d3c60581961124ebd8}{timeout\_}, boost::bind(&
+60   \{
+61     \textcolor{keywordflow}{if} (!\hyperlink{classsmacc_1_1SensorClient_a7dde11291a16f6c2edaa02552895ee9e}{initialized\_})
+62     \{
+63       \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_af188f0f5e89de26a07e1f964cdd23a70}{SmaccSubscriberClient<MessageType>::initialize}();
+64 
+65       this->\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a4f02251e3a161fb6d802b154b1081f18}{onMessageReceived}(&
+      \hyperlink{classsmacc_1_1SensorClient_a314dafd4b728b5f7b12efe5a6edee2c3}{SensorClient<MessageType>::resetTimer}, \textcolor{keyword}{this});
+66 
+67       \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1SensorClient_a660452b6940625d3c60581961124ebd8}{timeout\_})
+68       \{
+69         \hyperlink{classsmacc_1_1SensorClient_a5a82e2fa1f0ccfe2564125fae2f9783a}{timeoutTimer\_} = this->\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a401d2476e89e27acc2e905acd701f053}{nh\_}.createTimer(*\hyperlink{classsmacc_1_1SensorClient_a660452b6940625d3c60581961124ebd8}{timeout\_}, boost::bind(&
       \hyperlink{classsmacc_1_1SensorClient_adea5a6e03330691fd0bd30acf1594011}{SensorClient<MessageType>::timeoutCallback}, \textcolor{keyword}{this}, \_1));
-67         \hyperlink{classsmacc_1_1SensorClient_a5a82e2fa1f0ccfe2564125fae2f9783a}{timeoutTimer\_}.start();
-68       \}
-69       \textcolor{keywordflow}{else}
-70       \{
-71         ROS\_WARN(\textcolor{stringliteral}{"Timeout sensor client not set, skipping timeout watchdog funcionality"});
-72       \}
-73 
-74       \hyperlink{classsmacc_1_1SensorClient_a7dde11291a16f6c2edaa02552895ee9e}{initialized\_} = \textcolor{keyword}{true};
-75     \}
-76   \}
+70         \hyperlink{classsmacc_1_1SensorClient_a5a82e2fa1f0ccfe2564125fae2f9783a}{timeoutTimer\_}.start();
+71       \}
+72       \textcolor{keywordflow}{else}
+73       \{
+74         ROS\_WARN(\textcolor{stringliteral}{"Timeout sensor client not set, skipping timeout watchdog funcionality"});
+75       \}
+76 
+77       \hyperlink{classsmacc_1_1SensorClient_a7dde11291a16f6c2edaa02552895ee9e}{initialized\_} = \textcolor{keyword}{true};
+78     \}
+79   \}
+\end{DoxyCode}
+\index{smacc\+::\+Sensor\+Client@{smacc\+::\+Sensor\+Client}!on\+Message\+Timeout@{on\+Message\+Timeout}}
+\index{on\+Message\+Timeout@{on\+Message\+Timeout}!smacc\+::\+Sensor\+Client@{smacc\+::\+Sensor\+Client}}
+\subsubsection[{\texorpdfstring{on\+Message\+Timeout(void(\+T\+::$\ast$callback)(const ros\+::\+Timer\+Event \&), T $\ast$object)}{onMessageTimeout(void(T::*callback)(const ros::TimerEvent &), T *object)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ template$<$typename T $>$ boost\+::signals2\+::connection {\bf smacc\+::\+Sensor\+Client}$<$ Message\+Type $>$\+::on\+Message\+Timeout (
+\begin{DoxyParamCaption}
+\item[{void(T\+::$\ast$)(const ros\+::\+Timer\+Event \&)}]{callback, }
+\item[{T $\ast$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1SensorClient_ae282c87a18a5d9a8cab2eec6fe25ac94}{}\label{classsmacc_1_1SensorClient_ae282c87a18a5d9a8cab2eec6fe25ac94}
+
+
+Definition at line 38 of file sensor\+\_\+client.\+h.
+
+
+\begin{DoxyCode}
+39   \{
+40     \textcolor{keywordflow}{return} this->\hyperlink{classsmacc_1_1ISmaccClient_a926e4f2ae796def63d48dca389a48c47}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_adf0f42ade0c65cc471960fe2a7c42da2}{createSignalConnection}(
+      \hyperlink{classsmacc_1_1SensorClient_a41a32494e9a6fea3e1b798870c96600e}{onMessageTimeout\_}, callback, \textcolor{keywordtype}{object});
+41   \}
+\end{DoxyCode}
+\index{smacc\+::\+Sensor\+Client@{smacc\+::\+Sensor\+Client}!reset\+Timer@{reset\+Timer}}
+\index{reset\+Timer@{reset\+Timer}!smacc\+::\+Sensor\+Client@{smacc\+::\+Sensor\+Client}}
+\subsubsection[{\texorpdfstring{reset\+Timer(const Message\+Type \&msg)}{resetTimer(const MessageType &msg)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ void {\bf smacc\+::\+Sensor\+Client}$<$ Message\+Type $>$\+::reset\+Timer (
+\begin{DoxyParamCaption}
+\item[{const Message\+Type \&}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classsmacc_1_1SensorClient_a314dafd4b728b5f7b12efe5a6edee2c3}{}\label{classsmacc_1_1SensorClient_a314dafd4b728b5f7b12efe5a6edee2c3}
+
+
+Definition at line 84 of file sensor\+\_\+client.\+h.
+
+
+\begin{DoxyCode}
+85   \{
+86     \textcolor{comment}{//reseting the timer}
+87     this->\hyperlink{classsmacc_1_1SensorClient_a5a82e2fa1f0ccfe2564125fae2f9783a}{timeoutTimer\_}.stop();
+88     this->\hyperlink{classsmacc_1_1SensorClient_a5a82e2fa1f0ccfe2564125fae2f9783a}{timeoutTimer\_}.start();
+89   \}
 \end{DoxyCode}
 \index{smacc\+::\+Sensor\+Client@{smacc\+::\+Sensor\+Client}!timeout\+Callback@{timeout\+Callback}}
 \index{timeout\+Callback@{timeout\+Callback}!smacc\+::\+Sensor\+Client@{smacc\+::\+Sensor\+Client}}
@@ -183,13 +226,13 @@ Definition at line 51 of file sensor\+\_\+client.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classsmacc_1_1SensorClient_adea5a6e03330691fd0bd30acf1594011}{}\label{classsmacc_1_1SensorClient_adea5a6e03330691fd0bd30acf1594011}
 
 
-Definition at line 84 of file sensor\+\_\+client.\+h.
+Definition at line 95 of file sensor\+\_\+client.\+h.
 
 
 \begin{DoxyCode}
-85   \{
-86     \hyperlink{classsmacc_1_1SensorClient_ad2c6d9f2e7ceddac26024cd5901a6739}{postTimeoutMessageEvent}(timerdata);
-87   \}
+96   \{
+97     \hyperlink{classsmacc_1_1SensorClient_ad2c6d9f2e7ceddac26024cd5901a6739}{postTimeoutMessageEvent}(timerdata);
+98   \}
 \end{DoxyCode}
 
 
@@ -199,11 +242,11 @@ Definition at line 84 of file sensor\+\_\+client.\+h.
 \subsubsection[{\texorpdfstring{initialized\+\_\+}{initialized_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ {\bf bool} {\bf smacc\+::\+Sensor\+Client}$<$ Message\+Type $>$\+::initialized\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SensorClient_a7dde11291a16f6c2edaa02552895ee9e}{}\label{classsmacc_1_1SensorClient_a7dde11291a16f6c2edaa02552895ee9e}
 
 
-Definition at line 82 of file sensor\+\_\+client.\+h.
+Definition at line 93 of file sensor\+\_\+client.\+h.
 
-\index{smacc\+::\+Sensor\+Client@{smacc\+::\+Sensor\+Client}!on\+Message\+Timeout@{on\+Message\+Timeout}}
-\index{on\+Message\+Timeout@{on\+Message\+Timeout}!smacc\+::\+Sensor\+Client@{smacc\+::\+Sensor\+Client}}
-\subsubsection[{\texorpdfstring{on\+Message\+Timeout}{onMessageTimeout}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ boost\+::signals2\+::signal$<$void(const Message\+Type \&)$>$ {\bf smacc\+::\+Sensor\+Client}$<$ Message\+Type $>$\+::on\+Message\+Timeout}\hypertarget{classsmacc_1_1SensorClient_a3652c00d16a1a82ef6b43466ef360c72}{}\label{classsmacc_1_1SensorClient_a3652c00d16a1a82ef6b43466ef360c72}
+\index{smacc\+::\+Sensor\+Client@{smacc\+::\+Sensor\+Client}!on\+Message\+Timeout\+\_\+@{on\+Message\+Timeout\+\_\+}}
+\index{on\+Message\+Timeout\+\_\+@{on\+Message\+Timeout\+\_\+}!smacc\+::\+Sensor\+Client@{smacc\+::\+Sensor\+Client}}
+\subsubsection[{\texorpdfstring{on\+Message\+Timeout\+\_\+}{onMessageTimeout_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ {\bf Smacc\+Signal}$<$void(const ros\+::\+Timer\+Event \&)$>$ {\bf smacc\+::\+Sensor\+Client}$<$ Message\+Type $>$\+::on\+Message\+Timeout\+\_\+}\hypertarget{classsmacc_1_1SensorClient_a41a32494e9a6fea3e1b798870c96600e}{}\label{classsmacc_1_1SensorClient_a41a32494e9a6fea3e1b798870c96600e}
 
 
 Definition at line 28 of file sensor\+\_\+client.\+h.
@@ -213,21 +256,21 @@ Definition at line 28 of file sensor\+\_\+client.\+h.
 \subsubsection[{\texorpdfstring{post\+Timeout\+Message\+Event}{postTimeoutMessageEvent}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ std\+::function$<$void(const ros\+::\+Timer\+Event \&ev)$>$ {\bf smacc\+::\+Sensor\+Client}$<$ Message\+Type $>$\+::post\+Timeout\+Message\+Event}\hypertarget{classsmacc_1_1SensorClient_ad2c6d9f2e7ceddac26024cd5901a6739}{}\label{classsmacc_1_1SensorClient_ad2c6d9f2e7ceddac26024cd5901a6739}
 
 
-Definition at line 37 of file sensor\+\_\+client.\+h.
+Definition at line 43 of file sensor\+\_\+client.\+h.
 
 \index{smacc\+::\+Sensor\+Client@{smacc\+::\+Sensor\+Client}!timeout\+\_\+@{timeout\+\_\+}}
 \index{timeout\+\_\+@{timeout\+\_\+}!smacc\+::\+Sensor\+Client@{smacc\+::\+Sensor\+Client}}
 \subsubsection[{\texorpdfstring{timeout\+\_\+}{timeout_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ boost\+::optional$<$ros\+::\+Duration$>$ {\bf smacc\+::\+Sensor\+Client}$<$ Message\+Type $>$\+::timeout\+\_\+}\hypertarget{classsmacc_1_1SensorClient_a660452b6940625d3c60581961124ebd8}{}\label{classsmacc_1_1SensorClient_a660452b6940625d3c60581961124ebd8}
 
 
-Definition at line 78 of file sensor\+\_\+client.\+h.
+Definition at line 81 of file sensor\+\_\+client.\+h.
 
 \index{smacc\+::\+Sensor\+Client@{smacc\+::\+Sensor\+Client}!timeout\+Timer\+\_\+@{timeout\+Timer\+\_\+}}
 \index{timeout\+Timer\+\_\+@{timeout\+Timer\+\_\+}!smacc\+::\+Sensor\+Client@{smacc\+::\+Sensor\+Client}}
 \subsubsection[{\texorpdfstring{timeout\+Timer\+\_\+}{timeoutTimer_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ ros\+::\+Timer {\bf smacc\+::\+Sensor\+Client}$<$ Message\+Type $>$\+::timeout\+Timer\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classsmacc_1_1SensorClient_a5a82e2fa1f0ccfe2564125fae2f9783a}{}\label{classsmacc_1_1SensorClient_a5a82e2fa1f0ccfe2564125fae2f9783a}
 
 
-Definition at line 81 of file sensor\+\_\+client.\+h.
+Definition at line 92 of file sensor\+\_\+client.\+h.
 
 
 

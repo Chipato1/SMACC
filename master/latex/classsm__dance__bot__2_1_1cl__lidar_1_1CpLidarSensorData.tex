@@ -1,0 +1,152 @@
+\hypertarget{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData}{}\section{sm\+\_\+dance\+\_\+bot\+\_\+2\+:\+:cl\+\_\+lidar\+:\+:Cp\+Lidar\+Sensor\+Data Class Reference}
+\label{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData}\index{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data}}
+
+
+{\ttfamily \#include $<$cp\+\_\+lidar\+\_\+data.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+dance\+\_\+bot\+\_\+2\+:\+:cl\+\_\+lidar\+:\+:Cp\+Lidar\+Sensor\+Data\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+dance\+\_\+bot\+\_\+2\+:\+:cl\+\_\+lidar\+:\+:Cp\+Lidar\+Sensor\+Data\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a9b351aa0e6765dbfd4f9d71c2e8ba9a4}{initialize} (\hyperlink{classsmacc_1_1ISmaccClient}{smacc\+::\+I\+Smacc\+Client} $\ast$owner) override
+\item 
+void \hyperlink{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a7e113a86d6cf1a54f35864ce1cd92051}{store\+Message} (const sensor\+\_\+msgs\+::\+Laser\+Scan \&scanmsg)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sensor\+\_\+msgs\+::\+Laser\+Scan \hyperlink{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a877b88ea370b93b61a30816615e33d04}{last\+Message\+\_\+}
+\item 
+float \hyperlink{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a90d3f709388392afcb30ff988c1bcb50}{forward\+Obstacle\+Distance}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file cp\+\_\+lidar\+\_\+data.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data}!initialize@{initialize}}
+\index{initialize@{initialize}!sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data}}
+\subsubsection[{\texorpdfstring{initialize(smacc\+::\+I\+Smacc\+Client $\ast$owner) override}{initialize(smacc::ISmaccClient *owner) override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data\+::initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf smacc\+::\+I\+Smacc\+Client} $\ast$}]{owner}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a9b351aa0e6765dbfd4f9d71c2e8ba9a4}{}\label{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a9b351aa0e6765dbfd4f9d71c2e8ba9a4}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1ISmaccComponent_a3378552cb1a86aa26a07c0edc057448b}{smacc\+::\+I\+Smacc\+Component}.
+
+
+
+Definition at line 14 of file cp\+\_\+lidar\+\_\+data.\+h.
+
+
+
+References smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client$<$ Message\+Type $>$\+::on\+Message\+Received(), and store\+Message().
+
+
+\begin{DoxyCode}
+15   \{
+16     \textcolor{keyword}{auto} client\_ = \textcolor{keyword}{dynamic\_cast<}
+      \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient}{smacc::SmaccSubscriberClient<sensor\_msgs::LaserScan>} *\textcolor{keyword}{>}
+      (owner);
+17     client\_->\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a4f02251e3a161fb6d802b154b1081f18}{onMessageReceived}(&\hyperlink{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a7e113a86d6cf1a54f35864ce1cd92051}{CpLidarSensorData::storeMessage}
+      , \textcolor{keyword}{this});
+18   \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a9b351aa0e6765dbfd4f9d71c2e8ba9a4_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data}!store\+Message@{store\+Message}}
+\index{store\+Message@{store\+Message}!sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data}}
+\subsubsection[{\texorpdfstring{store\+Message(const sensor\+\_\+msgs\+::\+Laser\+Scan \&scanmsg)}{storeMessage(const sensor_msgs::LaserScan &scanmsg)}}]{\setlength{\rightskip}{0pt plus 5cm}void sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data\+::store\+Message (
+\begin{DoxyParamCaption}
+\item[{const sensor\+\_\+msgs\+::\+Laser\+Scan \&}]{scanmsg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a7e113a86d6cf1a54f35864ce1cd92051}{}\label{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a7e113a86d6cf1a54f35864ce1cd92051}
+
+
+Definition at line 20 of file cp\+\_\+lidar\+\_\+data.\+h.
+
+
+
+Referenced by initialize().
+
+
+\begin{DoxyCode}
+21   \{
+22     this->\hyperlink{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a877b88ea370b93b61a30816615e33d04}{lastMessage\_} = scanmsg;
+23     this->\hyperlink{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a90d3f709388392afcb30ff988c1bcb50}{forwardObstacleDistance} = scanmsg.ranges[scanmsg.ranges.size() / 2];
+24   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a7e113a86d6cf1a54f35864ce1cd92051_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data}!forward\+Obstacle\+Distance@{forward\+Obstacle\+Distance}}
+\index{forward\+Obstacle\+Distance@{forward\+Obstacle\+Distance}!sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data}}
+\subsubsection[{\texorpdfstring{forward\+Obstacle\+Distance}{forwardObstacleDistance}}]{\setlength{\rightskip}{0pt plus 5cm}float sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data\+::forward\+Obstacle\+Distance}\hypertarget{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a90d3f709388392afcb30ff988c1bcb50}{}\label{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a90d3f709388392afcb30ff988c1bcb50}
+
+
+Definition at line 12 of file cp\+\_\+lidar\+\_\+data.\+h.
+
+
+
+Referenced by sm\+\_\+dance\+\_\+bot\+\_\+2\+::radial\+\_\+motion\+\_\+states\+::\+Ssr\+Radial\+End\+Point\+::on\+Initialize().
+
+\index{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data}!last\+Message\+\_\+@{last\+Message\+\_\+}}
+\index{last\+Message\+\_\+@{last\+Message\+\_\+}!sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data}}
+\subsubsection[{\texorpdfstring{last\+Message\+\_\+}{lastMessage_}}]{\setlength{\rightskip}{0pt plus 5cm}sensor\+\_\+msgs\+::\+Laser\+Scan sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data\+::last\+Message\+\_\+}\hypertarget{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a877b88ea370b93b61a30816615e33d04}{}\label{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a877b88ea370b93b61a30816615e33d04}
+
+
+Definition at line 11 of file cp\+\_\+lidar\+\_\+data.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot\+\_\+2/include/sm\+\_\+dance\+\_\+bot\+\_\+2/clients/cl\+\_\+lidar/components/\hyperlink{cp__lidar__data_8h}{cp\+\_\+lidar\+\_\+data.\+h}\end{DoxyCompactItemize}

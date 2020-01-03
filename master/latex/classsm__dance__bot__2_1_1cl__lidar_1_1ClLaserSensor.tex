@@ -1,0 +1,71 @@
+\hypertarget{classsm__dance__bot__2_1_1cl__lidar_1_1ClLaserSensor}{}\section{sm\+\_\+dance\+\_\+bot\+\_\+2\+:\+:cl\+\_\+lidar\+:\+:Cl\+Laser\+Sensor Class Reference}
+\label{classsm__dance__bot__2_1_1cl__lidar_1_1ClLaserSensor}\index{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cl\+Laser\+Sensor@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cl\+Laser\+Sensor}}
+
+
+{\ttfamily \#include $<$cl\+\_\+lidar.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+dance\+\_\+bot\+\_\+2\+:\+:cl\+\_\+lidar\+:\+:Cl\+Laser\+Sensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classsm__dance__bot__2_1_1cl__lidar_1_1ClLaserSensor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+dance\+\_\+bot\+\_\+2\+:\+:cl\+\_\+lidar\+:\+:Cl\+Laser\+Sensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot__2_1_1cl__lidar_1_1ClLaserSensor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsm__dance__bot__2_1_1cl__lidar_1_1ClLaserSensor_a548355dc7e35671bf138a4d530306f53}{Cl\+Laser\+Sensor} (std\+::string topicname, ros\+::\+Duration timeout)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file cl\+\_\+lidar.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cl\+Laser\+Sensor@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cl\+Laser\+Sensor}!Cl\+Laser\+Sensor@{Cl\+Laser\+Sensor}}
+\index{Cl\+Laser\+Sensor@{Cl\+Laser\+Sensor}!sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cl\+Laser\+Sensor@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cl\+Laser\+Sensor}}
+\subsubsection[{\texorpdfstring{Cl\+Laser\+Sensor(std\+::string topicname, ros\+::\+Duration timeout)}{ClLaserSensor(std::string topicname, ros::Duration timeout)}}]{\setlength{\rightskip}{0pt plus 5cm}sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cl\+Laser\+Sensor\+::\+Cl\+Laser\+Sensor (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{topicname, }
+\item[{ros\+::\+Duration}]{timeout}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsm__dance__bot__2_1_1cl__lidar_1_1ClLaserSensor_a548355dc7e35671bf138a4d530306f53}{}\label{classsm__dance__bot__2_1_1cl__lidar_1_1ClLaserSensor_a548355dc7e35671bf138a4d530306f53}
+
+
+Definition at line 15 of file cl\+\_\+lidar.\+h.
+
+
+
+References smacc\+::\+Sensor\+Client$<$ sensor\+\_\+msgs\+::\+Laser\+Scan $>$\+::timeout\+\_\+, and smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client$<$ sensor\+\_\+msgs\+::\+Laser\+Scan $>$\+::topic\+Name.
+
+
+\begin{DoxyCode}
+16     \{
+17 
+18         this->\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_aeadf21a09412c6c9488e5acd50fb4f40}{topicName} = topicname;
+19         this->\hyperlink{classsmacc_1_1SensorClient_a660452b6940625d3c60581961124ebd8}{timeout\_} = timeout;
+20     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot\+\_\+2/include/sm\+\_\+dance\+\_\+bot\+\_\+2/clients/cl\+\_\+lidar/\hyperlink{2_2include_2sm__dance__bot__2_2clients_2cl__lidar_2cl__lidar_8h}{cl\+\_\+lidar.\+h}\end{DoxyCompactItemize}

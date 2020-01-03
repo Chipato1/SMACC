@@ -1,0 +1,72 @@
+\hypertarget{classsm__dance__bot__2_1_1OrObstaclePerception}{}\section{sm\+\_\+dance\+\_\+bot\+\_\+2\+:\+:Or\+Obstacle\+Perception Class Reference}
+\label{classsm__dance__bot__2_1_1OrObstaclePerception}\index{sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+Or\+Obstacle\+Perception@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+Or\+Obstacle\+Perception}}
+
+
+{\ttfamily \#include $<$or\+\_\+obstacle\+\_\+perception.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+dance\+\_\+bot\+\_\+2\+:\+:Or\+Obstacle\+Perception\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classsm__dance__bot__2_1_1OrObstaclePerception__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+dance\+\_\+bot\+\_\+2\+:\+:Or\+Obstacle\+Perception\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot__2_1_1OrObstaclePerception__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classsm__dance__bot__2_1_1OrObstaclePerception_a0c38cec76ed524ffa25c0cd305966045}{on\+Initialize} () override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file or\+\_\+obstacle\+\_\+perception.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+Or\+Obstacle\+Perception@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+Or\+Obstacle\+Perception}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+Or\+Obstacle\+Perception@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+Or\+Obstacle\+Perception}}
+\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+Or\+Obstacle\+Perception\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__dance__bot__2_1_1OrObstaclePerception_a0c38cec76ed524ffa25c0cd305966045}{}\label{classsm__dance__bot__2_1_1OrObstaclePerception_a0c38cec76ed524ffa25c0cd305966045}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+
+
+
+Definition at line 14 of file or\+\_\+obstacle\+\_\+perception.\+h.
+
+
+\begin{DoxyCode}
+15   \{
+16     \textcolor{keyword}{auto} lidarClient =
+17         this->createClient<OrObstaclePerception,ClLaserSensor>(\textcolor{stringliteral}{"/front/scan"}, ros::Duration(10));
+18 
+19     lidarClient->initialize();
+20 
+21     lidarClient->createComponent<\hyperlink{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData}{CpLidarSensorData}>();
+22   \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot\+\_\+2/include/sm\+\_\+dance\+\_\+bot\+\_\+2/orthogonals/\hyperlink{2_2include_2sm__dance__bot__2_2orthogonals_2or__obstacle__perception_8h}{or\+\_\+obstacle\+\_\+perception.\+h}\end{DoxyCompactItemize}

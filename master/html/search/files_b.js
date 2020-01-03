@@ -1,6 +1,7 @@
 var searchData=
 [
   ['readme_2emd',['README.md',['../README_8md.html',1,'']]],
+  ['readme_2emd',['readme.md',['../smacc__sm__reference__library_2sm__dance__bot__2_2launch_2readme_8md.html',1,'']]],
   ['readme_2emd',['readme.md',['../smacc__sm__reference__library_2sm__dance__bot_2launch_2readme_8md.html',1,'']]],
   ['readme_2emd',['readme.md',['../smacc__diagnostics_2readme_8md.html',1,'']]],
   ['readme_2emd',['README.md',['../smacc__sm__reference__library_2sm__atomic_2README_8md.html',1,'']]],

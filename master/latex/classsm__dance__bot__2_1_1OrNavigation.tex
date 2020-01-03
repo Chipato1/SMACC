@@ -1,0 +1,76 @@
+\hypertarget{classsm__dance__bot__2_1_1OrNavigation}{}\section{sm\+\_\+dance\+\_\+bot\+\_\+2\+:\+:Or\+Navigation Class Reference}
+\label{classsm__dance__bot__2_1_1OrNavigation}\index{sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+Or\+Navigation@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+Or\+Navigation}}
+
+
+{\ttfamily \#include $<$or\+\_\+navigation.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+dance\+\_\+bot\+\_\+2\+:\+:Or\+Navigation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classsm__dance__bot__2_1_1OrNavigation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+dance\+\_\+bot\+\_\+2\+:\+:Or\+Navigation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsm__dance__bot__2_1_1OrNavigation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classsm__dance__bot__2_1_1OrNavigation_acc491d801e0abacd9d152e048e77fab6}{on\+Initialize} () override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file or\+\_\+navigation.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+Or\+Navigation@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+Or\+Navigation}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+Or\+Navigation@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+Or\+Navigation}}
+\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+Or\+Navigation\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__dance__bot__2_1_1OrNavigation_acc491d801e0abacd9d152e048e77fab6}{}\label{classsm__dance__bot__2_1_1OrNavigation_acc491d801e0abacd9d152e048e77fab6}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+
+
+
+Definition at line 17 of file or\+\_\+navigation.\+h.
+
+
+\begin{DoxyCode}
+18     \{
+19         \textcolor{keyword}{auto} movebaseClient = this->createClient<OrNavigation, ClMoveBaseZ>();
+20         movebaseClient->name\_ = \textcolor{stringliteral}{"move\_base"};
+21         movebaseClient->initialize();
+22 
+23         \textcolor{comment}{// create odom tracker}
+24         movebaseClient->createComponent<\hyperlink{classmove__base__z__client_1_1odom__tracker_1_1OdomTracker}{OdomTracker}>(\textcolor{stringliteral}{"/"});
+25 
+26         \textcolor{comment}{// create waypoints navigator component}
+27         \textcolor{comment}{//auto waypointsNavigator\_ = movebaseClient->createComponent<WaypointNavigator>();}
+28         \textcolor{comment}{//waypointsNavigator\_->configureEventSourceTypes<OrNavigation, ClMoveBaseZ>();}
+29     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot\+\_\+2/include/sm\+\_\+dance\+\_\+bot\+\_\+2/orthogonals/\hyperlink{sm__dance__bot__2_2include_2sm__dance__bot__2_2orthogonals_2or__navigation_8h}{or\+\_\+navigation.\+h}\end{DoxyCompactItemize}

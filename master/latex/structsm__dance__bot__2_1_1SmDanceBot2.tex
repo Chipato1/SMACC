@@ -1,0 +1,78 @@
+\hypertarget{structsm__dance__bot__2_1_1SmDanceBot2}{}\section{sm\+\_\+dance\+\_\+bot\+\_\+2\+:\+:Sm\+Dance\+Bot2 Struct Reference}
+\label{structsm__dance__bot__2_1_1SmDanceBot2}\index{sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+Sm\+Dance\+Bot2@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+Sm\+Dance\+Bot2}}
+
+
+Advanced example of state machine with smacc that shows multiple techniques for the development of state machines.  
+
+
+
+
+{\ttfamily \#include $<$sm\+\_\+dance\+\_\+bot\+\_\+2.\+h$>$}
+
+
+
+Inheritance diagram for sm\+\_\+dance\+\_\+bot\+\_\+2\+:\+:Sm\+Dance\+Bot2\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structsm__dance__bot__2_1_1SmDanceBot2__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sm\+\_\+dance\+\_\+bot\+\_\+2\+:\+:Sm\+Dance\+Bot2\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsm__dance__bot__2_1_1SmDanceBot2__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{structsm__dance__bot__2_1_1SmDanceBot2_a15cabce5763a486bf6ace2ed5850480c}{on\+Initialize} () override
+\begin{DoxyCompactList}\small\item\em this function should be implemented by the user to create the orthogonals \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Advanced example of state machine with smacc that shows multiple techniques for the development of state machines. 
+
+Definition at line 32 of file sm\+\_\+dance\+\_\+bot\+\_\+2.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+Sm\+Dance\+Bot2@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+Sm\+Dance\+Bot2}!on\+Initialize@{on\+Initialize}}
+\index{on\+Initialize@{on\+Initialize}!sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+Sm\+Dance\+Bot2@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+Sm\+Dance\+Bot2}}
+\subsubsection[{\texorpdfstring{on\+Initialize() override}{onInitialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+Sm\+Dance\+Bot2\+::on\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{structsm__dance__bot__2_1_1SmDanceBot2_a15cabce5763a486bf6ace2ed5850480c}{}\label{structsm__dance__bot__2_1_1SmDanceBot2_a15cabce5763a486bf6ace2ed5850480c}
+
+
+this function should be implemented by the user to create the orthogonals 
+
+
+
+Reimplemented from \hyperlink{classsmacc_1_1ISmaccStateMachine_ac2982c6c8283663e5e1e8a7c82f511ec}{smacc\+::\+I\+Smacc\+State\+Machine}.
+
+
+
+Definition at line 37 of file sm\+\_\+dance\+\_\+bot\+\_\+2.\+h.
+
+
+\begin{DoxyCode}
+38   \{
+39     this->createOrthogonal<OrNavigation>();
+40     this->createOrthogonal<OrObstaclePerception>();
+41   \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot\+\_\+2/include/sm\+\_\+dance\+\_\+bot\+\_\+2/\hyperlink{sm__dance__bot__2_8h}{sm\+\_\+dance\+\_\+bot\+\_\+2.\+h}\end{DoxyCompactItemize}

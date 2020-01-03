@@ -1,3 +1,28 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structsmacc_1_1PREEMPT.html" title="smacc::PREEMPT" alt="" coords="5,5,136,32"/>
+<area shape="rect" id="node1" href="$classsmacc_1_1ISmaccUpdatable.html" title="smacc::ISmaccUpdatable" alt="" coords="17,13,202,39"/>
+<area shape="rect" id="node2" href="$classros__publisher__client_1_1CbDefaultPublishLoop.html" title="ros_publisher_client\l::CbDefaultPublishLoop" alt="" coords="301,5,471,47"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1SmaccClientBehavior.html" title="smacc::SmaccClientBehavior" alt="" coords="5,653,213,679"/>
+<area shape="rect" id="node4" href="$classkeyboard__client_1_1CbDefaultKeyboardBehavior.html" title="keyboard_client::CbDefault\lKeyboardBehavior" alt="" coords="289,71,483,112"/>
+<area shape="rect" id="node5" href="$classmove__base__z__client_1_1CbNavigateBackwards.html" title="move_base_z_client\l::CbNavigateBackwards" alt="" coords="300,136,472,177"/>
+<area shape="rect" id="node6" href="$classmove__base__z__client_1_1CbNavigateForward.html" title="move_base_z_client\l::CbNavigateForward" alt="" coords="309,201,463,243"/>
+<area shape="rect" id="node7" href="$classmove__base__z__client_1_1CbNavigateGlobalPosition.html" title="move_base_z_client\l::CbNavigateGlobalPosition" alt="" coords="289,267,483,308"/>
+<area shape="rect" id="node8" href="$classmove__base__z__client_1_1CbRotate.html" title="move_base_z_client\l::CbRotate" alt="" coords="311,332,461,373"/>
+<area shape="rect" id="node9" href="$classmove__base__z__client_1_1CbUndoPathBackwards.html" title="move_base_z_client\l::CbUndoPathBackwards" alt="" coords="297,397,475,439"/>
+<area shape="rect" id="node10" href="$classros__publisher__client_1_1CbMutedBehavior.html" title="ros_publisher_client\l::CbMutedBehavior\&lt; RosMsgType \&gt;" alt="" coords="261,463,511,504"/>
+<area shape="rect" id="node11" href="$classros__publisher__client_1_1CbPublishOnce.html" title="ros_publisher_client\l::CbPublishOnce\&lt; RosMsgType \&gt;" alt="" coords="271,528,501,569"/>
+<area shape="rect" id="node12" href="$classros__timer__client_1_1CbTimer.html" title="ros_timer_client::CbTimer" alt="" coords="293,594,479,621"/>
+<area shape="rect" id="node13" href="$classros__timer__client_1_1CbTimerCountdownLoop.html" title="ros_timer_client::CbTimer\lCountdownLoop" alt="" coords="293,645,479,687"/>
+<area shape="rect" id="node14" href="$classros__timer__client_1_1CbTimerCountdownOnce.html" title="ros_timer_client::CbTimer\lCountdownOnce" alt="" coords="293,711,479,752"/>
+<area shape="rect" id="node15" href="$classsmacc_1_1SensorTopic.html" title="smacc::SensorTopic\l\&lt; ClLaserSensor \&gt;" alt="" coords="312,776,460,817"/>
+<area shape="rect" id="node18" href="$classsmacc_1_1SensorTopic.html" title="smacc::SensorTopic\l\&lt; ClTemperatureSensor \&gt;" alt="" coords="291,841,481,883"/>
+<area shape="rect" id="node20" href="$classsm__dance__bot_1_1cl__led_1_1CbLEDOff.html" title="sm_dance_bot::cl_led\l::CbLEDOff" alt="" coords="306,907,466,948"/>
+<area shape="rect" id="node21" href="$classsm__dance__bot_1_1cl__led_1_1CbLEDOn.html" title="sm_dance_bot::cl_led\l::CbLEDOn" alt="" coords="306,972,466,1013"/>
+<area shape="rect" id="node22" href="$classsm__dance__bot_1_1cl__service3_1_1CbService3.html" title="sm_dance_bot::cl_service3\l::CbService3" alt="" coords="289,1037,483,1079"/>
+<area shape="rect" id="node23" href="$classsm__dance__bot_1_1cl__string__publisher_1_1CbStringPublisher.html" title="sm_dance_bot::cl_string\l_publisher::CbStringPublisher" alt="" coords="282,1103,490,1144"/>
+<area shape="rect" id="node24" href="$classsm__three__some_1_1cl__subscriber_1_1CbDefaultSubscriberBehavior.html" title="sm_three_some::cl_subscriber\l::CbDefaultSubscriberBehavior" alt="" coords="277,1168,495,1209"/>
+<area shape="rect" id="node25" href="$classsm__three__some_1_1cl__subscriber_1_1CbWatchdogSubscriberBehavior.html" title="sm_three_some::cl_subscriber\l::CbWatchdogSubscriberBehavior" alt="" coords="269,1233,503,1275"/>
+<area shape="rect" id="node26" href="$classsmacc_1_1SensorTopic.html" title="smacc::SensorTopic\l\&lt; ClientType \&gt;" alt="" coords="312,1299,460,1340"/>
+<area shape="rect" id="node16" href="$structsm__dance__bot_1_1cl__lidar_1_1CbLidarSensor.html" title="sm_dance_bot::cl_lidar\l::CbLidarSensor" alt="" coords="616,711,784,752"/>
+<area shape="rect" id="node17" href="$structsm__dance__bot__2_1_1cl__lidar_1_1CbLidarSensor.html" title="sm_dance_bot_2::cl\l_lidar::CbLidarSensor" alt="" coords="621,776,779,817"/>
+<area shape="rect" id="node19" href="$classsm__dance__bot_1_1cl__temperature__sensor_1_1CbConditionTemperatureSensor.html" title="sm_dance_bot::cl_temperature\l_sensor::CbConditionTemperatureSensor" alt="" coords="559,841,841,883"/>
 </map>

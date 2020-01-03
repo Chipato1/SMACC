@@ -73,7 +73,7 @@ Definition at line 148 of file cl\+\_\+keyboard.\+h.
 )}\hypertarget{classkeyboard__client_1_1ClKeyboard_a4da263c77c076b959c4c21160af1bcb5}{}\label{classkeyboard__client_1_1ClKeyboard_a4da263c77c076b959c4c21160af1bcb5}
 
 
-Definition at line 5 of file keyboard\+\_\+client.\+cpp.
+Definition at line 4 of file keyboard\+\_\+client.\+cpp.
 
 
 
@@ -81,10 +81,10 @@ References initialized\+\_\+, and smacc\+::client\+\_\+bases\+::\+Smacc\+Subscri
 
 
 \begin{DoxyCode}
-6 \{
-7     \hyperlink{classkeyboard__client_1_1ClKeyboard_aff74d4f212f4846a1f7cc6c0e4d5f728}{initialized\_} = \textcolor{keyword}{false};
-8     \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_aeadf21a09412c6c9488e5acd50fb4f40}{topicName} = \textcolor{stringliteral}{"/keyboard\_unicode"};
-9 \}
+4                        \{
+5   \hyperlink{classkeyboard__client_1_1ClKeyboard_aff74d4f212f4846a1f7cc6c0e4d5f728}{initialized\_} = \textcolor{keyword}{false};
+6   \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_aeadf21a09412c6c9488e5acd50fb4f40}{topicName} = \textcolor{stringliteral}{"/keyboard\_unicode"};
+7 \}
 \end{DoxyCode}
 \index{keyboard\+\_\+client\+::\+Cl\+Keyboard@{keyboard\+\_\+client\+::\+Cl\+Keyboard}!````~Cl\+Keyboard@{$\sim$\+Cl\+Keyboard}}
 \index{````~Cl\+Keyboard@{$\sim$\+Cl\+Keyboard}!keyboard\+\_\+client\+::\+Cl\+Keyboard@{keyboard\+\_\+client\+::\+Cl\+Keyboard}}
@@ -95,12 +95,11 @@ References initialized\+\_\+, and smacc\+::client\+\_\+bases\+::\+Smacc\+Subscri
 )\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classkeyboard__client_1_1ClKeyboard_a0e9bfb4a0e564e26f57248a78a78d087}{}\label{classkeyboard__client_1_1ClKeyboard_a0e9bfb4a0e564e26f57248a78a78d087}
 
 
-Definition at line 11 of file keyboard\+\_\+client.\+cpp.
+Definition at line 9 of file keyboard\+\_\+client.\+cpp.
 
 
 \begin{DoxyCode}
-12 \{
-13 \}
+9 \{\}
 \end{DoxyCode}
 
 
@@ -192,28 +191,24 @@ Reimplemented from \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClie
 
 
 
-Definition at line 15 of file keyboard\+\_\+client.\+cpp.
+Definition at line 11 of file keyboard\+\_\+client.\+cpp.
 
 
 
-References c\+\_\+, smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client$<$ std\+\_\+msgs\+::\+U\+Int16 $>$\+::initialize(), initialized\+\_\+, on\+Keyboard\+Message(), and smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client$<$ std\+\_\+msgs\+::\+U\+Int16 $>$\+::on\+Message\+Received.
+References smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client$<$ std\+\_\+msgs\+::\+U\+Int16 $>$\+::initialize(), initialized\+\_\+, on\+Keyboard\+Message(), and smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client$<$ std\+\_\+msgs\+::\+U\+Int16 $>$\+::on\+Message\+Received().
 
 
 \begin{DoxyCode}
-16 \{
-17 
-18     \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_af188f0f5e89de26a07e1f964cdd23a70}{SmaccSubscriberClient<std\_msgs::UInt16>::initialize}(
-      );
-19 
-20     \textcolor{keywordflow}{if} (!this->\hyperlink{classkeyboard__client_1_1ClKeyboard_aff74d4f212f4846a1f7cc6c0e4d5f728}{initialized\_})
-21     \{
-22         \hyperlink{classkeyboard__client_1_1ClKeyboard_a32d0c1c037454900708b58b709767e56}{c\_} = this->\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a2703867f1ee638c5fffa680f93cee29a}{onMessageReceived}.connect([\textcolor{keyword}{this}](\textcolor{keyword}{auto} msg) \{
-23             this->\hyperlink{classkeyboard__client_1_1ClKeyboard_adbfb9c2b98f784b12cf7740b4e861d8e}{onKeyboardMessage}(msg);
-24 
-25             this->\hyperlink{classkeyboard__client_1_1ClKeyboard_aff74d4f212f4846a1f7cc6c0e4d5f728}{initialized\_} = \textcolor{keyword}{true};
-26         \});
-27     \}
-28 \}
+11                             \{
+12 
+13   \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_af188f0f5e89de26a07e1f964cdd23a70}{SmaccSubscriberClient<std\_msgs::UInt16>::initialize}();
+14 
+15   \textcolor{keywordflow}{if} (!this->\hyperlink{classkeyboard__client_1_1ClKeyboard_aff74d4f212f4846a1f7cc6c0e4d5f728}{initialized\_}) \{
+16     this->\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a4f02251e3a161fb6d802b154b1081f18}{onMessageReceived}(&\hyperlink{classkeyboard__client_1_1ClKeyboard_adbfb9c2b98f784b12cf7740b4e861d8e}{ClKeyboard::onKeyboardMessage}, \textcolor{keyword}{
+      this});
+17     this->\hyperlink{classkeyboard__client_1_1ClKeyboard_aff74d4f212f4846a1f7cc6c0e4d5f728}{initialized\_} = \textcolor{keyword}{true};
+18   \}
+19 \}
 \end{DoxyCode}
 
 
@@ -236,7 +231,7 @@ Here is the call graph for this function\+:
 )}\hypertarget{classkeyboard__client_1_1ClKeyboard_adbfb9c2b98f784b12cf7740b4e861d8e}{}\label{classkeyboard__client_1_1ClKeyboard_adbfb9c2b98f784b12cf7740b4e861d8e}
 
 
-Definition at line 30 of file keyboard\+\_\+client.\+cpp.
+Definition at line 21 of file keyboard\+\_\+client.\+cpp.
 
 
 
@@ -248,9 +243,10 @@ Referenced by initialize().
 
 
 \begin{DoxyCode}
-31 \{
-32     \hyperlink{classkeyboard__client_1_1ClKeyboard_aadd675eea47a012b348a4e6c00e7e9d0}{postEventKeyPress}(unicode\_keychar);
-33 \}
+21                                                                         \{
+22   
+23   \hyperlink{classkeyboard__client_1_1ClKeyboard_aadd675eea47a012b348a4e6c00e7e9d0}{postEventKeyPress}(unicode\_keychar);
+24 \}
 \end{DoxyCode}
 
 
@@ -309,10 +305,6 @@ Here is the call graph for this function\+:
 
 
 Definition at line 152 of file cl\+\_\+keyboard.\+h.
-
-
-
-Referenced by initialize().
 
 \index{keyboard\+\_\+client\+::\+Cl\+Keyboard@{keyboard\+\_\+client\+::\+Cl\+Keyboard}!initialized\+\_\+@{initialized\+\_\+}}
 \index{initialized\+\_\+@{initialized\+\_\+}!keyboard\+\_\+client\+::\+Cl\+Keyboard@{keyboard\+\_\+client\+::\+Cl\+Keyboard}}

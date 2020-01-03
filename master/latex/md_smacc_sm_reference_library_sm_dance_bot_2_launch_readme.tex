@@ -1,0 +1,46 @@
+\subsection*{Setup and requirements}
+
+Make sure that you have installed all the dependencies. For example this demo depends on rigeback robot simulation.
+
+
+\begin{DoxyCode}
+1 rosdep install --from-paths src --ignore-src -r -y 
+\end{DoxyCode}
+
+
+After that you have to build the smacc ros workspace using catkin\+\_\+make.
+
+
+\begin{DoxyCode}
+1 catkin\_make
+\end{DoxyCode}
+
+
+After you build, remember to source the proper devel folder.
+
+
+\begin{DoxyCode}
+1 source ~/catkin\_ws/devel/setup.bash
+\end{DoxyCode}
+
+
+\subsection*{Default demo launching}
+
+Below is the default launch command to launch this demo\+:
+
+
+\begin{DoxyCode}
+1 roslaunch sm\_dance\_bot sm\_dance\_bot.launch
+\end{DoxyCode}
+
+
+\subsection*{Lightweight demo launching}
+
+We use this launch command to start the process hiding the xterminals for all the servers, the state machine, the smacc\+\_\+viewer and the gazebo client.
+
+
+\begin{DoxyCode}
+1 roslaunch sm\_dance\_bot sm\_dance\_bot.launch sm\_xterm:=nice server\_nodes\_xterms:=nice show\_gz\_client:=false
+       show\_smacc\_viewer:=false
+\end{DoxyCode}
+ 

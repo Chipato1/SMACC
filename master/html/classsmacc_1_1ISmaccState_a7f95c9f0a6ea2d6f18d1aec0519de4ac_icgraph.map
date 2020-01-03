@@ -1,6 +1,7 @@
 <map id="smacc::ISmaccState::requiresClient" name="smacc::ISmaccState::requiresClient">
-<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccState.html#a3484b4a32ef47a8650f08df67de4fae5" title="smacc::ISmaccState\l::getParentState" alt="" coords="228,5,383,47"/>
-<area shape="rect" id="node4" href="$structsm__dance__bot_1_1StNavigateForward1.html#aca9caa8bd74d17b2d735db4cfb3cfe4c" title="sm_dance_bot::StNavigate\lForward1::onInitialize" alt="" coords="208,71,403,112"/>
-<area shape="rect" id="node5" href="$structsm__dance__bot_1_1StNavigateToWaypointsX.html#a5954a62667839c5b56ff07ebd26541d7" title="sm_dance_bot::StNavigate\lToWaypointsX::onInitialize" alt="" coords="208,136,403,177"/>
-<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccStateMachine.html#a268198b98e9540f4edb703801527a192" title="smacc::ISmaccStateMachine\l::propagateEventToLogicUnits" alt="" coords="451,5,661,47"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccState.html#a3484b4a32ef47a8650f08df67de4fae5" title="smacc::ISmaccState\l::getParentState" alt="" coords="237,5,391,47"/>
+<area shape="rect" id="node4" href="$structsm__dance__bot__2_1_1radial__motion__states_1_1SsrRadialEndPoint.html#a68c3d9e7be4ee3d2d7096f9f9e0d2874" title="sm_dance_bot_2::radial\l_motion_states::SsrRadialEnd\lPoint::onInitialize" alt="" coords="208,70,420,126"/>
+<area shape="rect" id="node5" href="$structsm__dance__bot_1_1StNavigateForward1.html#aca9caa8bd74d17b2d735db4cfb3cfe4c" title="sm_dance_bot::StNavigate\lForward1::onInitialize" alt="" coords="217,149,411,191"/>
+<area shape="rect" id="node6" href="$structsm__dance__bot_1_1StNavigateToWaypointsX.html#a5954a62667839c5b56ff07ebd26541d7" title="sm_dance_bot::StNavigate\lToWaypointsX::onInitialize" alt="" coords="217,215,411,256"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccStateMachine.html#a268198b98e9540f4edb703801527a192" title="smacc::ISmaccStateMachine\l::propagateEventToLogicUnits" alt="" coords="468,5,679,47"/>
 </map>

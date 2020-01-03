@@ -10,7 +10,7 @@
 <area shape="rect" id="node74" href="$cb__navigate__backward_8h.html" title="move_base_z_client\l_plugin/client_behaviors\l/cb_navigate_backward.h" alt="" coords="552,243,735,299"/>
 <area shape="rect" id="node75" href="$cb__led__on_8h.html" title="sm_dance_bot/clients\l/cl_led/client_behaviors\l/cb_led_on.h" alt="" coords="2204,131,2373,187"/>
 <area shape="rect" id="node78" href="$cb__led__off_8h.html" title="sm_dance_bot/clients\l/cl_led/client_behaviors\l/cb_led_off.h" alt="" coords="2397,131,2567,187"/>
-<area shape="rect" id="node79" href="$cb__lidar__sensor_8h.html" title="sm_dance_bot/clients\l/cl_lidar/client_behaviors\l/cb_lidar_sensor.h" alt="" coords="4720,131,4897,187"/>
+<area shape="rect" id="node79" href="$include_2sm__dance__bot_2clients_2cl__lidar_2client__behaviors_2cb__lidar__sensor_8h.html" title="sm_dance_bot/clients\l/cl_lidar/client_behaviors\l/cb_lidar_sensor.h" alt="" coords="4720,131,4897,187"/>
 <area shape="rect" id="node82" href="$cb__custom__condition__temperature__sensor_8h.html" title="sm_dance_bot/clients\l/cl_temperature_sensor\l/client_behaviors/cb_custom\l_condition_temperature_sensor.h" alt="" coords="5408,124,5644,195"/>
 <area shape="rect" id="node85" href="$cb__string__publisher_8h.html" title="sm_dance_bot/clients\l/cl_string_publisher\l/client_behaviors/cb_string\l_publisher.h" alt="" coords="5193,124,5384,195"/>
 <area shape="rect" id="node88" href="$cb__service3_8h.html" title="sm_dance_bot/clients\l/cl_service3/client_behaviors\l/cb_service3.h" alt="" coords="4066,243,4269,299"/>
@@ -22,7 +22,7 @@
 <area shape="rect" id="node97" href="$event__countdown_8h.html" title="event_countdown/event\l_countdown.h" alt="" coords="6539,733,6713,775"/>
 <area shape="rect" id="node98" href="$lu__conditional_8h.html" title="conditional/lu_conditional.h" alt="" coords="6150,741,6345,767"/>
 <area shape="rect" id="node99" href="$sm__dance__bot_2include_2sm__dance__bot_2orthogonals_2or__navigation_8h.html" title="sm_dance_bot/orthogonals\l/or_navigation.h" alt="" coords="1323,139,1519,180"/>
-<area shape="rect" id="node103" href="$or__obstacle__perception_8h.html" title="sm_dance_bot/orthogonals\l/or_obstacle_perception.h" alt="" coords="5668,139,5864,180"/>
+<area shape="rect" id="node103" href="$include_2sm__dance__bot_2orthogonals_2or__obstacle__perception_8h.html" title="sm_dance_bot/orthogonals\l/or_obstacle_perception.h" alt="" coords="5668,139,5864,180"/>
 <area shape="rect" id="node104" href="$or__led_8h.html" title="sm_dance_bot/orthogonals\l/or_led.h" alt="" coords="2643,139,2839,180"/>
 <area shape="rect" id="node105" href="$or__temperature__sensor_8h.html" title="sm_dance_bot/orthogonals\l/or_temperature_sensor.h" alt="" coords="6108,139,6304,180"/>
 <area shape="rect" id="node106" href="$or__string__publisher_8h.html" title="sm_dance_bot/orthogonals\l/or_string_publisher.h" alt="" coords="5888,139,6084,180"/>
@@ -31,7 +31,7 @@
 <area shape="rect" id="node109" href="$sm__dance__bot_2include_2sm__dance__bot_2orthogonals_2or__updatable__publisher_8h.html" title="sm_dance_bot/orthogonals\l/or_updatable_publisher.h" alt="" coords="4921,139,5117,180"/>
 <area shape="rect" id="node110" href="$ms__dance__bot__run__mode_8h.html" title="sm_dance_bot/modestates\l/ms_dance_bot_run_mode.h" alt="" coords="1269,354,1473,395"/>
 <area shape="rect" id="node111" href="$ms__dance__bot__recovery__mode_8h.html" title="sm_dance_bot/modestates\l/ms_dance_bot_recovery\l_mode.h" alt="" coords="1498,347,1695,403"/>
-<area shape="rect" id="node112" href="$ss__radial__pattern__1_8h.html" title="sm_dance_bot/superstates\l/ss_radial_pattern_1.h" alt="" coords="6820,139,7016,180"/>
+<area shape="rect" id="node112" href="$include_2sm__dance__bot_2superstates_2ss__radial__pattern__1_8h.html" title="sm_dance_bot/superstates\l/ss_radial_pattern_1.h" alt="" coords="6820,139,7016,180"/>
 <area shape="rect" id="node117" href="$ss__radial__pattern__2_8h.html" title="sm_dance_bot/superstates\l/ss_radial_pattern_2.h" alt="" coords="7040,139,7236,180"/>
 <area shape="rect" id="node118" href="$ss__radial__pattern__3_8h.html" title="sm_dance_bot/superstates\l/ss_radial_pattern_3.h" alt="" coords="7260,139,7456,180"/>
 <area shape="rect" id="node119" href="$ss__f__pattern__1_8h.html" title="sm_dance_bot/superstates\l/ss_f_pattern_1.h" alt="" coords="7687,139,7883,180"/>
@@ -75,7 +75,7 @@
 <area shape="rect" id="node53" href="$smacc__action__client_8h.html" title="smacc/client_bases\l/smacc_action_client.h" alt="" coords="3372,555,3539,596"/>
 <area shape="rect" id="node64" href="$odom__tracker_8h.html" title="odom_tracker/odom_tracker.h" alt="" coords="745,361,960,388"/>
 <area shape="rect" id="node76" href="$cl__led_8h.html" title="sm_dance_bot/clients\l/cl_led/cl_led.h" alt="" coords="2576,250,2737,291"/>
-<area shape="rect" id="node80" href="$cl__lidar_8h.html" title="sm_dance_bot/clients\l/cl_lidar/cl_lidar.h" alt="" coords="5144,250,5305,291"/>
+<area shape="rect" id="node80" href="$include_2sm__dance__bot_2clients_2cl__lidar_2cl__lidar_8h.html" title="sm_dance_bot/clients\l/cl_lidar/cl_lidar.h" alt="" coords="5144,250,5305,291"/>
 <area shape="rect" id="node84" href="$cl__temperature__sensor_8h.html" title="sm_dance_bot/clients\l/cl_temperature_sensor\l/cl_temperature_sensor.h" alt="" coords="5567,243,5752,299"/>
 <area shape="rect" id="node86" href="$cl__string__publisher_8h.html" title="sm_dance_bot/clients\l/cl_string_publisher\l/cl_string_publisher.h" alt="" coords="5329,243,5491,299"/>
 <area shape="rect" id="node87" href="$smacc__publisher__client_8h.html" title="smacc/client_bases\l/smacc_publisher_client.h" alt="" coords="4589,458,4775,499"/>
@@ -83,10 +83,10 @@
 <area shape="rect" id="node90" href="$smacc__service__client_8h.html" title="smacc/client_bases\l/smacc_service_client.h" alt="" coords="5129,458,5302,499"/>
 <area shape="rect" id="node100" href="$smacc__orthogonal_8h.html" title="smacc/smacc_orthogonal.h" alt="" coords="5776,257,5975,284"/>
 <area shape="rect" id="node102" href="$waypoints__navigator_8h.html" title="waypoints_navigator\l/waypoints_navigator.h" alt="" coords="1337,250,1504,291"/>
-<area shape="rect" id="node113" href="$ssr__radial__end__point_8h.html" title="sm_dance_bot/states\l/radial_motion_states\l/ssr_radial_end_point.h" alt="" coords="7079,243,7248,299"/>
-<area shape="rect" id="node114" href="$ssr__radial__return_8h.html" title="sm_dance_bot/states\l/radial_motion_states\l/ssr_radial_return.h" alt="" coords="6515,243,6675,299"/>
-<area shape="rect" id="node115" href="$ssr__radial__rotate_8h.html" title="sm_dance_bot/states\l/radial_motion_states\l/ssr_radial_rotate.h" alt="" coords="6699,243,6859,299"/>
-<area shape="rect" id="node116" href="$ssr__radial__loop__start_8h.html" title="sm_dance_bot/states\l/radial_motion_states\l/ssr_radial_loop_start.h" alt="" coords="6883,243,7054,299"/>
+<area shape="rect" id="node113" href="$include_2sm__dance__bot_2states_2radial__motion__states_2ssr__radial__end__point_8h.html" title="sm_dance_bot/states\l/radial_motion_states\l/ssr_radial_end_point.h" alt="" coords="7079,243,7248,299"/>
+<area shape="rect" id="node114" href="$include_2sm__dance__bot_2states_2radial__motion__states_2ssr__radial__return_8h.html" title="sm_dance_bot/states\l/radial_motion_states\l/ssr_radial_return.h" alt="" coords="6515,243,6675,299"/>
+<area shape="rect" id="node115" href="$include_2sm__dance__bot_2states_2radial__motion__states_2ssr__radial__rotate_8h.html" title="sm_dance_bot/states\l/radial_motion_states\l/ssr_radial_rotate.h" alt="" coords="6699,243,6859,299"/>
+<area shape="rect" id="node116" href="$include_2sm__dance__bot_2states_2radial__motion__states_2ssr__radial__loop__start_8h.html" title="sm_dance_bot/states\l/radial_motion_states\l/ssr_radial_loop_start.h" alt="" coords="6883,243,7054,299"/>
 <area shape="rect" id="node120" href="$ssr__fpattern__rotate__1_8h.html" title="sm_dance_bot/states\l/f_pattern_states/ssr\l_fpattern_rotate_1.h" alt="" coords="7611,243,7771,299"/>
 <area shape="rect" id="node121" href="$ssr__fpattern__forward__1_8h.html" title="sm_dance_bot/states\l/f_pattern_states/ssr\l_fpattern_forward_1.h" alt="" coords="7796,243,7957,299"/>
 <area shape="rect" id="node122" href="$ssr__fpattern__return__1_8h.html" title="sm_dance_bot/states\l/f_pattern_states/ssr\l_fpattern_return_1.h" alt="" coords="7982,243,8142,299"/>

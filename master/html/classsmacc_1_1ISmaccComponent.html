@@ -107,6 +107,7 @@ Inheritance diagram for smacc::ISmaccComponent:</div>
 <map name="smacc_1_1ISmaccComponent_inherit__map" id="smacc_1_1ISmaccComponent_inherit__map">
 <area shape="rect" id="node2" href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html" title="This class track the required distance of the cord based on the external localization system..." alt="" coords="5,248,264,707"/>
 <area shape="rect" id="node3" href="classmove__base__z__client_1_1WaypointNavigator.html" title="{move_base_z_client\l::WaypointNavigator\n|+ waypointsEventDispatcher\l+ client_\l&#45; waypoints_\l&#45; succeddedConnection_\l&#45; currentWaypoint_\l|+ WaypointNavigator()\l+ initialize()\l+ insertWaypoint()\l+ removeWaypoint()\l+ loadWayPointsFromFile()\l+ setWaypoints()\l+ setWaypoints()\l+ sendNextGoal()\l+ getWaypoints()\l+ getCurrentWaypointIndex()\l+ configureEventSourceTypes()\l&#45; onGoalReached()\l}" alt="" coords="287,321,510,633"/>
+<area shape="rect" id="node4" href="classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData.html" title="{sm_dance_bot_2::cl\l_lidar::CpLidarSensorData\n|+ lastMessage_\l+ forwardObstacleDistance\l|+ initialize()\l+ storeMessage()\l}" alt="" coords="534,417,730,538"/>
 </map>
 </div>
 <div class="dynheader">
@@ -293,7 +294,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classmove__base__z__client_1_1WaypointNavigator.html#acf4e3fc40dca2aaf15b518e03639109f">move_base_z_client::WaypointNavigator</a>.</p>
+<p>Reimplemented in <a class="el" href="classmove__base__z__client_1_1WaypointNavigator.html#acf4e3fc40dca2aaf15b518e03639109f">move_base_z_client::WaypointNavigator</a>, and <a class="el" href="classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData.html#a9b351aa0e6765dbfd4f9d71c2e8ba9a4">sm_dance_bot_2::cl_lidar::CpLidarSensorData</a>.</p>
 
 <p>Definition at line <a class="el" href="smacc__component_8cpp_source.html#l00020">20</a> of file <a class="el" href="smacc__component_8cpp_source.html">smacc_component.cpp</a>.</p>
 
@@ -320,9 +321,9 @@ template&lt;typename EventType &gt; </div>
 
 <p>Definition at line <a class="el" href="smacc__component__impl_8h_source.html#l00009">9</a> of file <a class="el" href="smacc__component__impl_8h_source.html">smacc_component_impl.h</a>.</p>
 
-<p>References <a class="el" href="smacc__state__machine__impl_8h_source.html#l00126">smacc::ISmaccStateMachine::postEvent()</a>, and <a class="el" href="component_8h_source.html#l00037">stateMachine_</a>.</p>
+<p>References <a class="el" href="smacc__state__machine__impl_8h_source.html#l00128">smacc::ISmaccStateMachine::postEvent()</a>, and <a class="el" href="component_8h_source.html#l00037">stateMachine_</a>.</p>
 <div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="classsmacc_1_1ISmaccComponent.html#ae3f37acc1679f79299b86872d4b1f80f">stateMachine_</a>-&gt;<a class="code" href="classsmacc_1_1ISmaccStateMachine.html#ad80cdd7bbc9a9f3b221c625754fed1ed">postEvent</a>(ev);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div><div class="ttc" id="classsmacc_1_1ISmaccComponent_html_ae3f37acc1679f79299b86872d4b1f80f"><div class="ttname"><a href="classsmacc_1_1ISmaccComponent.html#ae3f37acc1679f79299b86872d4b1f80f">smacc::ISmaccComponent::stateMachine_</a></div><div class="ttdeci">ISmaccStateMachine * stateMachine_</div><div class="ttdef"><b>Definition:</b> <a href="component_8h_source.html#l00037">component.h:37</a></div></div>
-<div class="ttc" id="classsmacc_1_1ISmaccStateMachine_html_ad80cdd7bbc9a9f3b221c625754fed1ed"><div class="ttname"><a href="classsmacc_1_1ISmaccStateMachine.html#ad80cdd7bbc9a9f3b221c625754fed1ed">smacc::ISmaccStateMachine::postEvent</a></div><div class="ttdeci">void postEvent(EventType *ev)</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__machine__impl_8h_source.html#l00126">smacc_state_machine_impl.h:126</a></div></div>
+<div class="ttc" id="classsmacc_1_1ISmaccStateMachine_html_ad80cdd7bbc9a9f3b221c625754fed1ed"><div class="ttname"><a href="classsmacc_1_1ISmaccStateMachine.html#ad80cdd7bbc9a9f3b221c625754fed1ed">smacc::ISmaccStateMachine::postEvent</a></div><div class="ttdeci">void postEvent(EventType *ev)</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__machine__impl_8h_source.html#l00128">smacc_state_machine_impl.h:128</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
