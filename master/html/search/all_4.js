@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['empty_5fobject_5ftag',['empty_object_tag',['../structsmacc_1_1empty__object__tag.html',1,'smacc']]],
+  ['emptyobjecttag',['EmptyObjectTag',['../structsmacc_1_1logic__units_1_1EmptyObjectTag.html',1,'smacc::logic_units']]],
   ['end_5f',['end_',['../classsmacc_1_1SignalDetector.html#aaee266393c01693528a2d74b1f2354a2',1,'smacc::SignalDetector']]],
   ['endloop',['ENDLOOP',['../structsmacc_1_1default__transition__tags_1_1ENDLOOP.html',1,'smacc::default_transition_tags']]],
   ['estop',['EStop',['../classsmacc_1_1ISmaccStateMachine.html#a3c5aab001d1bb7edcb37413404e4a7c2',1,'smacc::ISmaccStateMachine::EStop()'],['../structsmacc_1_1SmaccStateMachineBase.html#af1d145820c98089389e7de97a6744231',1,'smacc::SmaccStateMachineBase::EStop()']]],

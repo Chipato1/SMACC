@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['empty_5fobject_5ftag',['empty_object_tag',['../structsmacc_1_1empty__object__tag.html',1,'smacc']]],
+  ['emptyobjecttag',['EmptyObjectTag',['../structsmacc_1_1logic__units_1_1EmptyObjectTag.html',1,'smacc::logic_units']]],
   ['endloop',['ENDLOOP',['../structsmacc_1_1default__transition__tags_1_1ENDLOOP.html',1,'smacc::default_transition_tags']]],
   ['ev1',['Ev1',['../structsm__viewer__sim_1_1Ev1.html',1,'sm_viewer_sim']]],
   ['ev2',['Ev2',['../structsm__viewer__sim_1_1Ev2.html',1,'sm_viewer_sim']]],

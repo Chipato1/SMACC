@@ -57,7 +57,7 @@ enum \hyperlink{namespacesmacc_1_1introspection_a710cf406873961567c11027582c7f72
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{namespacesmacc_1_1introspection_a6c1b51c4d44fd5e41fe218f1ee150681}{transition\+Info\+To\+Msg} (const \hyperlink{structsmacc_1_1introspection_1_1SmaccTransitionInfo}{Smacc\+Transition\+Info} \&\hyperlink{classsmacc_1_1transition}{transition}, smacc\+\_\+msgs\+::\+Smacc\+Transition \&transition\+Msg)
+void \hyperlink{namespacesmacc_1_1introspection_a6c1b51c4d44fd5e41fe218f1ee150681}{transition\+Info\+To\+Msg} (const \hyperlink{structsmacc_1_1introspection_1_1SmaccTransitionInfo}{Smacc\+Transition\+Info} \&transition, smacc\+\_\+msgs\+::\+Smacc\+Transition \&transition\+Msg)
 \item 
 {\footnotesize template$<$class T $>$ }\\auto \hyperlink{namespacesmacc_1_1introspection_a8acc3b4146a8b2bb0a9fa4178840e9b9}{optional\+Node\+Handle} (boost\+::intrusive\+\_\+ptr$<$ T $>$ \&obj) -\/$>$ ros\+::\+Node\+Handle
 \item 
@@ -93,11 +93,11 @@ std\+::string \hyperlink{namespacesmacc_1_1introspection_a81ad2fc77a0262640d4b1b
 \item 
 {\footnotesize template$<$typename T $>$ }\\enable\+\_\+if$<$ boost\+::mpl\+::is\+\_\+sequence$<$ T $>$ $>$\+::type \hyperlink{namespacesmacc_1_1introspection_a652200ed9e8e2131a417de01910b5fd4}{process\+Transitions} (std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \&source\+State)
 \item 
-{\footnotesize template$<$typename Ev , typename Dst , typename Tag $>$ }\\void \hyperlink{namespacesmacc_1_1introspection_a407401045d8c81f470e40929fc47e02b}{process\+Transition} (\hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev, boost\+::statechart\+::deep\+\_\+history$<$ Dst $>$, Tag $>$ $\ast$, std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \&source\+State)
+{\footnotesize template$<$typename Ev , typename Dst , typename Tag $>$ }\\void \hyperlink{namespacesmacc_1_1introspection_a91f7cda900e7002c923494db5afce63f}{process\+Transition} (\hyperlink{classsmacc_1_1Transition}{smacc\+::\+Transition}$<$ Ev, boost\+::statechart\+::deep\+\_\+history$<$ Dst $>$, Tag $>$ $\ast$, std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \&source\+State)
 \item 
-{\footnotesize template$<$typename Ev , typename Dst , typename Tag $>$ }\\void \hyperlink{namespacesmacc_1_1introspection_aa880b6034dc97b727798baf3c4c526fe}{process\+Transition} (\hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev, Dst, Tag $>$ $\ast$t, std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \&source\+State)
+{\footnotesize template$<$typename Ev , typename Dst , typename Tag $>$ }\\void \hyperlink{namespacesmacc_1_1introspection_a4f5403936b7b501da0c6fa9f067e09fd}{process\+Transition} (\hyperlink{classsmacc_1_1Transition}{smacc\+::\+Transition}$<$ Ev, Dst, Tag $>$ $\ast$t, std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \&source\+State)
 \item 
-{\footnotesize template$<$typename Ev , typename Dst , typename Tag $>$ }\\void \hyperlink{namespacesmacc_1_1introspection_a424354ac0fe1450aee135d39259bd05a}{process\+Transition\+Aux} (\hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ Ev, Dst, Tag $>$ $\ast$, std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \&source\+State, \hyperlink{classbool}{bool} history, \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_aa6ffd9c39811d59f7c771941b7fad860}{Type\+Info\+::\+Ptr} \&transition\+Type\+Info)
+{\footnotesize template$<$typename Ev , typename Dst , typename Tag $>$ }\\void \hyperlink{namespacesmacc_1_1introspection_a208cd71dc5579090d40b3d3b9efb28a6}{process\+Transition\+Aux} (\hyperlink{classsmacc_1_1Transition}{smacc\+::\+Transition}$<$ Ev, Dst, Tag $>$ $\ast$, std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \&source\+State, \hyperlink{classbool}{bool} history, \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_aa6ffd9c39811d59f7c771941b7fad860}{Type\+Info\+::\+Ptr} \&transition\+Type\+Info)
 \item 
 {\footnotesize template$<$typename Ev , typename Dst $>$ }\\void \hyperlink{namespacesmacc_1_1introspection_a1083a0c41469be69ec8317eb7e95d3f0}{process\+Transition} (statechart\+::transition$<$ Ev, Dst $>$ $\ast$, std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1introspection_1_1SmaccStateInfo}{Smacc\+State\+Info} $>$ \&source\+State)
 \item 
@@ -641,12 +641,12 @@ Definition at line 117 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 \end{DoxyCode}
 \index{smacc\+::introspection@{smacc\+::introspection}!process\+Transition@{process\+Transition}}
 \index{process\+Transition@{process\+Transition}!smacc\+::introspection@{smacc\+::introspection}}
-\subsubsection[{\texorpdfstring{process\+Transition(smacc\+::transition$<$ Ev, boost\+::statechart\+::deep\+\_\+history$<$ Dst $>$, Tag $>$ $\ast$, std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&source\+State)}{processTransition(smacc::transition< Ev, boost::statechart::deep_history< Dst >, Tag > *, std::shared_ptr< SmaccStateInfo > &sourceState)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ev , typename Dst , typename Tag $>$ void smacc\+::introspection\+::process\+Transition (
+\subsubsection[{\texorpdfstring{process\+Transition(smacc\+::\+Transition$<$ Ev, boost\+::statechart\+::deep\+\_\+history$<$ Dst $>$, Tag $>$ $\ast$, std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&source\+State)}{processTransition(smacc::Transition< Ev, boost::statechart::deep_history< Dst >, Tag > *, std::shared_ptr< SmaccStateInfo > &sourceState)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ev , typename Dst , typename Tag $>$ void smacc\+::introspection\+::process\+Transition (
 \begin{DoxyParamCaption}
-\item[{{\bf smacc\+::transition}$<$ Ev, boost\+::statechart\+::deep\+\_\+history$<$ Dst $>$, Tag $>$ $\ast$}]{, }
+\item[{{\bf smacc\+::\+Transition}$<$ Ev, boost\+::statechart\+::deep\+\_\+history$<$ Dst $>$, Tag $>$ $\ast$}]{, }
 \item[{std\+::shared\+\_\+ptr$<$ {\bf Smacc\+State\+Info} $>$ \&}]{source\+State}
 \end{DoxyParamCaption}
-)}\hypertarget{namespacesmacc_1_1introspection_a407401045d8c81f470e40929fc47e02b}{}\label{namespacesmacc_1_1introspection_a407401045d8c81f470e40929fc47e02b}
+)}\hypertarget{namespacesmacc_1_1introspection_a91f7cda900e7002c923494db5afce63f}{}\label{namespacesmacc_1_1introspection_a91f7cda900e7002c923494db5afce63f}
 
 
 Definition at line 138 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
@@ -662,10 +662,10 @@ Referenced by process\+Transitions().
 
 \begin{DoxyCode}
 139 \{
-140     \textcolor{keyword}{auto} transitionTypeInfo = TypeInfo::getTypeInfoFromType<smacc::transition<Ev,
+140     \textcolor{keyword}{auto} transitionTypeInfo = TypeInfo::getTypeInfoFromType<smacc::Transition<Ev,
        boost::statechart::deep\_history<Dst>, Tag>>();
-141     \hyperlink{classsmacc_1_1transition}{smacc::transition<Ev, Dst, Tag>} *mock;
-142     \hyperlink{namespacesmacc_1_1introspection_a424354ac0fe1450aee135d39259bd05a}{processTransitionAux}(mock, sourceState, \textcolor{keyword}{true}, transitionTypeInfo);
+141     \hyperlink{classsmacc_1_1Transition}{smacc::Transition<Ev, Dst, Tag>} *mock;
+142     \hyperlink{namespacesmacc_1_1introspection_a208cd71dc5579090d40b3d3b9efb28a6}{processTransitionAux}(mock, sourceState, \textcolor{keyword}{true}, transitionTypeInfo);
 143 \}
 \end{DoxyCode}
 
@@ -675,7 +675,7 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{namespacesmacc_1_1introspection_a407401045d8c81f470e40929fc47e02b_cgraph}
+\includegraphics[width=350pt]{namespacesmacc_1_1introspection_a91f7cda900e7002c923494db5afce63f_cgraph}
 \end{center}
 \end{figure}
 
@@ -687,19 +687,19 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=348pt]{namespacesmacc_1_1introspection_a407401045d8c81f470e40929fc47e02b_icgraph}
+\includegraphics[width=348pt]{namespacesmacc_1_1introspection_a91f7cda900e7002c923494db5afce63f_icgraph}
 \end{center}
 \end{figure}
 
 
 \index{smacc\+::introspection@{smacc\+::introspection}!process\+Transition@{process\+Transition}}
 \index{process\+Transition@{process\+Transition}!smacc\+::introspection@{smacc\+::introspection}}
-\subsubsection[{\texorpdfstring{process\+Transition(smacc\+::transition$<$ Ev, Dst, Tag $>$ $\ast$t, std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&source\+State)}{processTransition(smacc::transition< Ev, Dst, Tag > *t, std::shared_ptr< SmaccStateInfo > &sourceState)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ev , typename Dst , typename Tag $>$ void smacc\+::introspection\+::process\+Transition (
+\subsubsection[{\texorpdfstring{process\+Transition(smacc\+::\+Transition$<$ Ev, Dst, Tag $>$ $\ast$t, std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&source\+State)}{processTransition(smacc::Transition< Ev, Dst, Tag > *t, std::shared_ptr< SmaccStateInfo > &sourceState)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ev , typename Dst , typename Tag $>$ void smacc\+::introspection\+::process\+Transition (
 \begin{DoxyParamCaption}
-\item[{{\bf smacc\+::transition}$<$ Ev, Dst, Tag $>$ $\ast$}]{t, }
+\item[{{\bf smacc\+::\+Transition}$<$ Ev, Dst, Tag $>$ $\ast$}]{t, }
 \item[{std\+::shared\+\_\+ptr$<$ {\bf Smacc\+State\+Info} $>$ \&}]{source\+State}
 \end{DoxyParamCaption}
-)}\hypertarget{namespacesmacc_1_1introspection_aa880b6034dc97b727798baf3c4c526fe}{}\label{namespacesmacc_1_1introspection_aa880b6034dc97b727798baf3c4c526fe}
+)}\hypertarget{namespacesmacc_1_1introspection_a4f5403936b7b501da0c6fa9f067e09fd}{}\label{namespacesmacc_1_1introspection_a4f5403936b7b501da0c6fa9f067e09fd}
 
 
 Definition at line 146 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
@@ -711,8 +711,8 @@ References process\+Transition\+Aux().
 
 \begin{DoxyCode}
 147 \{
-148     \textcolor{keyword}{auto} transitionTypeInfo = TypeInfo::getTypeInfoFromType<smacc::transition<Ev, Dst, Tag>>();
-149     \hyperlink{namespacesmacc_1_1introspection_a424354ac0fe1450aee135d39259bd05a}{processTransitionAux}(t, sourceState, \textcolor{keyword}{false}, transitionTypeInfo);
+148     \textcolor{keyword}{auto} transitionTypeInfo = TypeInfo::getTypeInfoFromType<smacc::Transition<Ev, Dst, Tag>>();
+149     \hyperlink{namespacesmacc_1_1introspection_a208cd71dc5579090d40b3d3b9efb28a6}{processTransitionAux}(t, sourceState, \textcolor{keyword}{false}, transitionTypeInfo);
 150 \}
 \end{DoxyCode}
 
@@ -722,7 +722,7 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{namespacesmacc_1_1introspection_aa880b6034dc97b727798baf3c4c526fe_cgraph}
+\includegraphics[width=350pt]{namespacesmacc_1_1introspection_a4f5403936b7b501da0c6fa9f067e09fd_cgraph}
 \end{center}
 \end{figure}
 
@@ -765,14 +765,14 @@ Definition at line 255 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
 \end{DoxyCode}
 \index{smacc\+::introspection@{smacc\+::introspection}!process\+Transition\+Aux@{process\+Transition\+Aux}}
 \index{process\+Transition\+Aux@{process\+Transition\+Aux}!smacc\+::introspection@{smacc\+::introspection}}
-\subsubsection[{\texorpdfstring{process\+Transition\+Aux(smacc\+::transition$<$ Ev, Dst, Tag $>$ $\ast$, std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&source\+State, bool history, Type\+Info\+::\+Ptr \&transition\+Type\+Info)}{processTransitionAux(smacc::transition< Ev, Dst, Tag > *, std::shared_ptr< SmaccStateInfo > &sourceState, bool history, TypeInfo::Ptr &transitionTypeInfo)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ev , typename Dst , typename Tag $>$ void smacc\+::introspection\+::process\+Transition\+Aux (
+\subsubsection[{\texorpdfstring{process\+Transition\+Aux(smacc\+::\+Transition$<$ Ev, Dst, Tag $>$ $\ast$, std\+::shared\+\_\+ptr$<$ Smacc\+State\+Info $>$ \&source\+State, bool history, Type\+Info\+::\+Ptr \&transition\+Type\+Info)}{processTransitionAux(smacc::Transition< Ev, Dst, Tag > *, std::shared_ptr< SmaccStateInfo > &sourceState, bool history, TypeInfo::Ptr &transitionTypeInfo)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ev , typename Dst , typename Tag $>$ void smacc\+::introspection\+::process\+Transition\+Aux (
 \begin{DoxyParamCaption}
-\item[{{\bf smacc\+::transition}$<$ Ev, Dst, Tag $>$ $\ast$}]{, }
+\item[{{\bf smacc\+::\+Transition}$<$ Ev, Dst, Tag $>$ $\ast$}]{, }
 \item[{std\+::shared\+\_\+ptr$<$ {\bf Smacc\+State\+Info} $>$ \&}]{source\+State, }
 \item[{{\bf bool}}]{history, }
 \item[{{\bf Type\+Info\+::\+Ptr} \&}]{transition\+Type\+Info}
 \end{DoxyParamCaption}
-)}\hypertarget{namespacesmacc_1_1introspection_a424354ac0fe1450aee135d39259bd05a}{}\label{namespacesmacc_1_1introspection_a424354ac0fe1450aee135d39259bd05a}
+)}\hypertarget{namespacesmacc_1_1introspection_a208cd71dc5579090d40b3d3b9efb28a6}{}\label{namespacesmacc_1_1introspection_a208cd71dc5579090d40b3d3b9efb28a6}
 
 
 Definition at line 153 of file smacc\+\_\+state\+\_\+machine\+\_\+info.\+h.
@@ -836,7 +836,7 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{namespacesmacc_1_1introspection_a424354ac0fe1450aee135d39259bd05a_cgraph}
+\includegraphics[width=350pt]{namespacesmacc_1_1introspection_a208cd71dc5579090d40b3d3b9efb28a6_cgraph}
 \end{center}
 \end{figure}
 
@@ -848,7 +848,7 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{namespacesmacc_1_1introspection_a424354ac0fe1450aee135d39259bd05a_icgraph}
+\includegraphics[width=350pt]{namespacesmacc_1_1introspection_a208cd71dc5579090d40b3d3b9efb28a6_icgraph}
 \end{center}
 \end{figure}
 
