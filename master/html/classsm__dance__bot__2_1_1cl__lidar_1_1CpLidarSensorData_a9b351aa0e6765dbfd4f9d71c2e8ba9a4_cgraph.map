@@ -1,4 +1,4 @@
 <map id="sm_dance_bot_2::cl_lidar::CpLidarSensorData::initialize" name="sm_dance_bot_2::cl_lidar::CpLidarSensorData::initialize">
-<area shape="rect" id="node2" href="$classsmacc_1_1client__bases_1_1SmaccSubscriberClient.html#a4f02251e3a161fb6d802b154b1081f18" title="smacc::client_bases\l::SmaccSubscriberClient\l::onMessageReceived" alt="" coords="246,5,425,61"/>
-<area shape="rect" id="node3" href="$classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData.html#a7e113a86d6cf1a54f35864ce1cd92051" title="sm_dance_bot_2::cl\l_lidar::CpLidarSensorData\l::storeMessage" alt="" coords="241,85,429,141"/>
+<area shape="rect" id="node2" href="$classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData.html#a90407d8b71f7168afac52713d4ea0b62" title="sm_dance_bot_2::cl\l_lidar::CpLidarSensorData\l::MessageCallbackStoreDistanceToWall" alt="" coords="241,5,509,61"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1client__bases_1_1SmaccSubscriberClient.html#a4f02251e3a161fb6d802b154b1081f18" title="smacc::client_bases\l::SmaccSubscriberClient\l::onMessageReceived" alt="" coords="286,85,465,141"/>
 </map>

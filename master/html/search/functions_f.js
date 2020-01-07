@@ -2,8 +2,6 @@ var searchData=
 [
   ['sendgoal',['sendGoal',['../classsmacc_1_1client__bases_1_1SmaccActionClientBase.html#a9c47a5094ac8afb01680307fe5eca922',1,'smacc::client_bases::SmaccActionClientBase']]],
   ['sendnextgoal',['sendNextGoal',['../classmove__base__z__client_1_1WaypointNavigator.html#a376c1b5f822325122d29ad4f6e568b08',1,'move_base_z_client::WaypointNavigator']]],
-  ['sensorclient',['SensorClient',['../classsmacc_1_1SensorClient.html#a3d33430d7b925d88d816d384d3c533c1',1,'smacc::SensorClient']]],
-  ['sensortopic',['SensorTopic',['../classsmacc_1_1SensorTopic.html#a3c11e8c6e738cea40c8172b033533bab',1,'smacc::SensorTopic']]],
   ['setbackwardplanner',['setBackwardPlanner',['../classmove__base__z__client_1_1PlannerSwitcher.html#a7688616d66fbfe6486c0cbe77e688114',1,'move_base_z_client::PlannerSwitcher']]],
   ['setcolor',['setColor',['../classsmacc__rviz__plugin_1_1ImuVisual.html#a6b5973fedfb8620c1e1493840ae7c76b',1,'smacc_rviz_plugin::ImuVisual']]],
   ['setdefaultplanners',['setDefaultPlanners',['../classmove__base__z__client_1_1PlannerSwitcher.html#aa31306368ab2a5145c024c0c1a580547',1,'move_base_z_client::PlannerSwitcher']]],
@@ -36,7 +34,6 @@ var searchData=
   ['state_5fmachine_5fvisualization',['state_machine_visualization',['../classsmacc_1_1ISmaccStateMachine.html#ac03029f770422d0ea77ea9856b8cb1a8',1,'smacc::ISmaccStateMachine']]],
   ['static_5fconfigure',['static_configure',['../classsmacc_1_1SmaccState.html#a3e335f3290e4968db0c8e22bf88356b7',1,'smacc::SmaccState']]],
   ['static_5fcreatelogicunit',['static_createLogicUnit',['../classsmacc_1_1SmaccState.html#a6fc90cf59c60c749e82f49aafb079b23',1,'smacc::SmaccState']]],
-  ['stop',['stop',['../classsmacc_1_1SignalDetector.html#a536ea005ea4ef4632c0c9c1c62c557a3',1,'smacc::SignalDetector::stop()'],['../classsmacc_1_1ISmaccStateMachine.html#a8f353fcf0686b1dacb57458da882c89b',1,'smacc::ISmaccStateMachine::Stop()'],['../structsmacc_1_1SmaccStateMachineBase.html#a9c7c7b8d814a8cb1b741c7675dc2a9f7',1,'smacc::SmaccStateMachineBase::Stop()']]],
-  ['storemessage',['storeMessage',['../classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData.html#a7e113a86d6cf1a54f35864ce1cd92051',1,'sm_dance_bot_2::cl_lidar::CpLidarSensorData']]],
+  ['stop',['Stop',['../classsmacc_1_1ISmaccStateMachine.html#a8f353fcf0686b1dacb57458da882c89b',1,'smacc::ISmaccStateMachine::Stop()'],['../structsmacc_1_1SmaccStateMachineBase.html#a9c7c7b8d814a8cb1b741c7675dc2a9f7',1,'smacc::SmaccStateMachineBase::Stop()'],['../classsmacc_1_1SignalDetector.html#a536ea005ea4ef4632c0c9c1c62c557a3',1,'smacc::SignalDetector::stop()']]],
   ['subscribe',['subscribe',['../classsmacc__rviz__plugin_1_1SmaccRvizDisplay.html#ad774027ba3eda277c991619332495cbb',1,'smacc_rviz_plugin::SmaccRvizDisplay']]]
 ];

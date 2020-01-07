@@ -6,5 +6,6 @@ var searchData=
   ['makepurestraightsubplan',['makePureStraightSubPlan',['../namespacemove__base__z__client.html#aeda8dd87896b3e31221df66d02313358',1,'move_base_z_client']]],
   ['mapbehavior',['mapBehavior',['../classsmacc_1_1ISmaccStateMachine.html#acfb75233b79062cc7769ea751b7f320d',1,'smacc::ISmaccStateMachine']]],
   ['messagecallback',['messageCallback',['../classsmacc_1_1client__bases_1_1SmaccSubscriberClient.html#acf85b80439aff5cf2bfa0649e9e45654',1,'smacc::client_bases::SmaccSubscriberClient']]],
+  ['messagecallbackstoredistancetowall',['MessageCallbackStoreDistanceToWall',['../classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData.html#a90407d8b71f7168afac52713d4ea0b62',1,'sm_dance_bot_2::cl_lidar::CpLidarSensorData']]],
   ['my_5fcontext',['my_context',['../structsmacc_1_1SmaccState_1_1my__context.html#af9c11c27b17bbf7de0d4e21c87d49f6f',1,'smacc::SmaccState::my_context']]]
 ];

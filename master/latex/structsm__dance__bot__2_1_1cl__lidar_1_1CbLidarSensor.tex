@@ -73,35 +73,16 @@ Definition at line 14 of file cb\+\_\+lidar\+\_\+sensor.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{structsm__dance__bot__2_1_1cl__lidar_1_1CbLidarSensor_aad4085c114dd98c5e857d1a71c0309f8}{}\label{structsm__dance__bot__2_1_1cl__lidar_1_1CbLidarSensor_aad4085c114dd98c5e857d1a71c0309f8}
 
 
-Reimplemented from \hyperlink{classsmacc_1_1SensorTopic_aa18961f866b7427973acb2660c8e39ee}{smacc\+::\+Sensor\+Topic$<$ Cl\+Laser\+Sensor $>$}.
-
-
-
 Definition at line 19 of file cb\+\_\+lidar\+\_\+sensor.\+h.
-
-
-
-References smacc\+::\+Sensor\+Topic$<$ Client\+Type $>$\+::on\+Entry().
 
 
 \begin{DoxyCode}
 20   \{
 21     ROS\_INFO(\textcolor{stringliteral}{"CbLidarSensor onEntry"});
-22     \hyperlink{classsmacc_1_1SensorTopic_aa18961f866b7427973acb2660c8e39ee}{smacc::SensorTopic<ClLaserSensor>::onEntry}();
+22     \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient}{multirole\_sensor\_client::SmaccSubscriberClient<ClLaserSensor>::onEntry}
+      ();
 23   \}
 \end{DoxyCode}
-
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=345pt]{structsm__dance__bot__2_1_1cl__lidar_1_1CbLidarSensor_aad4085c114dd98c5e857d1a71c0309f8_cgraph}
-\end{center}
-\end{figure}
-
-
 \index{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cb\+Lidar\+Sensor@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cb\+Lidar\+Sensor}!on\+Message\+Callback@{on\+Message\+Callback}}
 \index{on\+Message\+Callback@{on\+Message\+Callback}!sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cb\+Lidar\+Sensor@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cb\+Lidar\+Sensor}}
 \subsubsection[{\texorpdfstring{on\+Message\+Callback(const sensor\+\_\+msgs\+::\+Laser\+Scan \&msg) override}{onMessageCallback(const sensor_msgs::LaserScan &msg) override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cb\+Lidar\+Sensor\+::on\+Message\+Callback (

@@ -1,0 +1,302 @@
+\hypertarget{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior}{}\section{multirole\+\_\+sensor\+\_\+client\+:\+:Cb\+Default\+Multi\+Role\+Sensor\+Behavior$<$ Client\+Type $>$ Class Template Reference}
+\label{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior}\index{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior$<$ Client\+Type $>$@{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior$<$ Client\+Type $>$}}
+
+
+{\ttfamily \#include $<$cb\+\_\+default\+\_\+multirole\+\_\+sensor\+\_\+behavior.\+h$>$}
+
+
+
+Inheritance diagram for multirole\+\_\+sensor\+\_\+client\+:\+:Cb\+Default\+Multi\+Role\+Sensor\+Behavior$<$ Client\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for multirole\+\_\+sensor\+\_\+client\+:\+:Cb\+Default\+Multi\+Role\+Sensor\+Behavior$<$ Client\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Client\+Type\+::\+T\+Message\+Type \hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a8343b60b6962dd8a5588d8415dd33dd9}{T\+Message\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a5164809f8d47f821134a481246f8f99c}{Cb\+Default\+Multi\+Role\+Sensor\+Behavior} ()
+\item 
+{\footnotesize template$<$typename T\+Object\+Tag , typename T\+Derived $>$ }\\void \hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a96322f17b16b23eba7d1df44385af5b0}{configure\+Event\+Source\+Types} ()
+\item 
+{\footnotesize template$<$typename Ev\+Type $>$ }\\void \hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_aeb447d720b21e12fb77a2c433d3996bd}{propagate\+Event} (const \hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a8343b60b6962dd8a5588d8415dd33dd9}{T\+Message\+Type} \&msg)
+\item 
+{\footnotesize template$<$typename Ev\+Type $>$ }\\void \hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_aa727751b652a5a9ea522bb5926925864}{propagate\+Event2} (const ros\+::\+Timer\+Event \&tdata)
+\item 
+virtual void \hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_aa9241e84a1002547336a8754b7dd2d26}{on\+Entry} () override
+\item 
+void \hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a57c5eff1507f6c85921e290a9d280ad7}{on\+Exit} ()
+\item 
+virtual void \hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_ac982bc1b6ceaa899f9033290b7094bcd}{on\+Message\+Callback} (const \hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a8343b60b6962dd8a5588d8415dd33dd9}{T\+Message\+Type} \&msg)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_ac1e1167956033fef3c059286da99d955}{get\+Event\+Label} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Client\+Type $\ast$ \hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a5e4e65ada73da49c2b8579b422b97d0d}{sensor\+\_\+}
+\item 
+std\+::function$<$ void()$>$ \hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_af49bfde7f78897b0e884faae69077013}{defered\+Event\+Propagation}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Client\+Type$>$\\*
+class multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior$<$ Client\+Type $>$}
+
+
+
+Definition at line 9 of file cb\+\_\+default\+\_\+multirole\+\_\+sensor\+\_\+behavior.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}!T\+Message\+Type@{T\+Message\+Type}}
+\index{T\+Message\+Type@{T\+Message\+Type}!multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}}
+\subsubsection[{\texorpdfstring{T\+Message\+Type}{TMessageType}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Client\+Type$>$ typedef Client\+Type\+::\+T\+Message\+Type {\bf multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}$<$ Client\+Type $>$\+::{\bf T\+Message\+Type}}\hypertarget{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a8343b60b6962dd8a5588d8415dd33dd9}{}\label{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a8343b60b6962dd8a5588d8415dd33dd9}
+
+
+Definition at line 12 of file cb\+\_\+default\+\_\+multirole\+\_\+sensor\+\_\+behavior.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}!Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{Cb\+Default\+Multi\+Role\+Sensor\+Behavior}}
+\index{Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{Cb\+Default\+Multi\+Role\+Sensor\+Behavior}!multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}}
+\subsubsection[{\texorpdfstring{Cb\+Default\+Multi\+Role\+Sensor\+Behavior()}{CbDefaultMultiRoleSensorBehavior()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Client\+Type$>$ {\bf multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}$<$ Client\+Type $>$\+::{\bf Cb\+Default\+Multi\+Role\+Sensor\+Behavior} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a5164809f8d47f821134a481246f8f99c}{}\label{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a5164809f8d47f821134a481246f8f99c}
+
+
+Definition at line 16 of file cb\+\_\+default\+\_\+multirole\+\_\+sensor\+\_\+behavior.\+h.
+
+
+\begin{DoxyCode}
+17   \{
+18     \hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a5e4e65ada73da49c2b8579b422b97d0d}{sensor\_} = \textcolor{keyword}{nullptr};
+19   \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}!configure\+Event\+Source\+Types@{configure\+Event\+Source\+Types}}
+\index{configure\+Event\+Source\+Types@{configure\+Event\+Source\+Types}!multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}}
+\subsubsection[{\texorpdfstring{configure\+Event\+Source\+Types()}{configureEventSourceTypes()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Client\+Type$>$ template$<$typename T\+Object\+Tag , typename T\+Derived $>$ void {\bf multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}$<$ Client\+Type $>$\+::configure\+Event\+Source\+Types (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a96322f17b16b23eba7d1df44385af5b0}{}\label{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a96322f17b16b23eba7d1df44385af5b0}
+
+
+Definition at line 30 of file cb\+\_\+default\+\_\+multirole\+\_\+sensor\+\_\+behavior.\+h.
+
+
+\begin{DoxyCode}
+31   \{
+32     \hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_af49bfde7f78897b0e884faae69077013}{deferedEventPropagation} = [=]() \{
+33       \textcolor{comment}{// just propagate the client events from this client behavior source.}
+34       \hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a5e4e65ada73da49c2b8579b422b97d0d}{sensor\_}->onMessageReceived(&
+      \hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_aeb447d720b21e12fb77a2c433d3996bd}{CbDefaultMultiRoleSensorBehavior<ClientType>::propagateEvent}
+      <EvTopicMessage<TDerived, TObjectTag>>, \textcolor{keyword}{this});
+35       \hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a5e4e65ada73da49c2b8579b422b97d0d}{sensor\_}->onFirstMessageReceived(&
+      \hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_aeb447d720b21e12fb77a2c433d3996bd}{CbDefaultMultiRoleSensorBehavior<ClientType>::propagateEvent}
+      <EvTopicInitialMessage<TDerived, TObjectTag>>, \textcolor{keyword}{this});
+36       \hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a5e4e65ada73da49c2b8579b422b97d0d}{sensor\_}->onMessageTimeout(&
+      \hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_aa727751b652a5a9ea522bb5926925864}{CbDefaultMultiRoleSensorBehavior<ClientType>::propagateEvent2}
+      <EvTopicMessageTimeout<TDerived, TObjectTag>>, \textcolor{keyword}{this});
+37     \};
+38   \}
+\end{DoxyCode}
+\index{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}!get\+Event\+Label@{get\+Event\+Label}}
+\index{get\+Event\+Label@{get\+Event\+Label}!multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}}
+\subsubsection[{\texorpdfstring{get\+Event\+Label()}{getEventLabel()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Client\+Type$>$ static std\+::string {\bf multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}$<$ Client\+Type $>$\+::get\+Event\+Label (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_ac1e1167956033fef3c059286da99d955}{}\label{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_ac1e1167956033fef3c059286da99d955}
+
+
+Definition at line 21 of file cb\+\_\+default\+\_\+multirole\+\_\+sensor\+\_\+behavior.\+h.
+
+
+\begin{DoxyCode}
+22   \{
+23     \textcolor{comment}{// show ros message type}
+24     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(\textcolor{keyword}{typeid}(\hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a8343b60b6962dd8a5588d8415dd33dd9}{TMessageType}).name());
+25   \}
+\end{DoxyCode}
+\index{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}!on\+Entry@{on\+Entry}}
+\index{on\+Entry@{on\+Entry}!multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}}
+\subsubsection[{\texorpdfstring{on\+Entry() override}{onEntry() override}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Client\+Type$>$ virtual void {\bf multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}$<$ Client\+Type $>$\+::on\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_aa9241e84a1002547336a8754b7dd2d26}{}\label{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_aa9241e84a1002547336a8754b7dd2d26}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccClientBehavior_a7962382f93987c720ad432fef55b123f}{smacc\+::\+Smacc\+Client\+Behavior}.
+
+
+
+Reimplemented in \hyperlink{structsm__dance__bot_1_1cl__lidar_1_1CbLidarSensor_aad3468a6ae78999c9fd01bdb81b42a49}{sm\+\_\+dance\+\_\+bot\+::cl\+\_\+lidar\+::\+Cb\+Lidar\+Sensor}.
+
+
+
+Definition at line 52 of file cb\+\_\+default\+\_\+multirole\+\_\+sensor\+\_\+behavior.\+h.
+
+
+
+Referenced by sm\+\_\+dance\+\_\+bot\+::cl\+\_\+lidar\+::\+Cb\+Lidar\+Sensor\+::on\+Entry().
+
+
+\begin{DoxyCode}
+53   \{
+54     ROS\_INFO(\textcolor{stringliteral}{"CbDefaultMultiRoleSensorBehavior onEntry. Requires client of type '%s'"}, 
+      demangleSymbol<ClientType>().c\_str());
+55 
+56     this->\hyperlink{classsmacc_1_1SmaccClientBehavior_a917f001e763a1059af337bf4e164f542}{requiresClient}(\hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a5e4e65ada73da49c2b8579b422b97d0d}{sensor\_});
+57 
+58     \textcolor{keywordflow}{if} (\hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a5e4e65ada73da49c2b8579b422b97d0d}{sensor\_} == \textcolor{keyword}{nullptr})
+59     \{
+60       ROS\_FATAL\_STREAM(\textcolor{stringliteral}{"Sensor client behavior needs a client of type: "} << demangleSymbol<ClientType>() <<
+       \textcolor{stringliteral}{" but it is not found."});
+61     \}
+62     \textcolor{keywordflow}{else}
+63     \{
+64       \hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_af49bfde7f78897b0e884faae69077013}{deferedEventPropagation}();
+65       ROS\_INFO(\textcolor{stringliteral}{"CbDefaultMultiRoleSensorBehavior onEntry. sensor initialize"});
+66       \hyperlink{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a5e4e65ada73da49c2b8579b422b97d0d}{sensor\_}->initialize();
+67     \}
+68   \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_aa9241e84a1002547336a8754b7dd2d26_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}!on\+Exit@{on\+Exit}}
+\index{on\+Exit@{on\+Exit}!multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}}
+\subsubsection[{\texorpdfstring{on\+Exit()}{onExit()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Client\+Type$>$ void {\bf multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}$<$ Client\+Type $>$\+::on\+Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a57c5eff1507f6c85921e290a9d280ad7}{}\label{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a57c5eff1507f6c85921e290a9d280ad7}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1SmaccClientBehavior_ac0cd72d42bd00425362a97c9803ecce5}{smacc\+::\+Smacc\+Client\+Behavior}.
+
+
+
+Definition at line 70 of file cb\+\_\+default\+\_\+multirole\+\_\+sensor\+\_\+behavior.\+h.
+
+
+\begin{DoxyCode}
+71   \{
+72   \}
+\end{DoxyCode}
+\index{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}!on\+Message\+Callback@{on\+Message\+Callback}}
+\index{on\+Message\+Callback@{on\+Message\+Callback}!multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}}
+\subsubsection[{\texorpdfstring{on\+Message\+Callback(const T\+Message\+Type \&msg)}{onMessageCallback(const TMessageType &msg)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Client\+Type$>$ virtual void {\bf multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}$<$ Client\+Type $>$\+::on\+Message\+Callback (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\+Message\+Type} \&}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_ac982bc1b6ceaa899f9033290b7094bcd}{}\label{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_ac982bc1b6ceaa899f9033290b7094bcd}
+
+
+Definition at line 74 of file cb\+\_\+default\+\_\+multirole\+\_\+sensor\+\_\+behavior.\+h.
+
+
+\begin{DoxyCode}
+75   \{
+76     \textcolor{comment}{// empty to fill by sensor customization based on inheritance}
+77   \}
+\end{DoxyCode}
+\index{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}!propagate\+Event@{propagate\+Event}}
+\index{propagate\+Event@{propagate\+Event}!multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}}
+\subsubsection[{\texorpdfstring{propagate\+Event(const T\+Message\+Type \&msg)}{propagateEvent(const TMessageType &msg)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Client\+Type$>$ template$<$typename Ev\+Type $>$ void {\bf multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}$<$ Client\+Type $>$\+::propagate\+Event (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\+Message\+Type} \&}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_aeb447d720b21e12fb77a2c433d3996bd}{}\label{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_aeb447d720b21e12fb77a2c433d3996bd}
+
+
+Definition at line 41 of file cb\+\_\+default\+\_\+multirole\+\_\+sensor\+\_\+behavior.\+h.
+
+
+\begin{DoxyCode}
+42   \{
+43     this->postEvent<EvType>();
+44   \}
+\end{DoxyCode}
+\index{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}!propagate\+Event2@{propagate\+Event2}}
+\index{propagate\+Event2@{propagate\+Event2}!multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}}
+\subsubsection[{\texorpdfstring{propagate\+Event2(const ros\+::\+Timer\+Event \&tdata)}{propagateEvent2(const ros::TimerEvent &tdata)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Client\+Type$>$ template$<$typename Ev\+Type $>$ void {\bf multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}$<$ Client\+Type $>$\+::propagate\+Event2 (
+\begin{DoxyParamCaption}
+\item[{const ros\+::\+Timer\+Event \&}]{tdata}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_aa727751b652a5a9ea522bb5926925864}{}\label{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_aa727751b652a5a9ea522bb5926925864}
+
+
+Definition at line 47 of file cb\+\_\+default\+\_\+multirole\+\_\+sensor\+\_\+behavior.\+h.
+
+
+\begin{DoxyCode}
+48   \{
+49     this->postEvent<EvType>();
+50   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}!defered\+Event\+Propagation@{defered\+Event\+Propagation}}
+\index{defered\+Event\+Propagation@{defered\+Event\+Propagation}!multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}}
+\subsubsection[{\texorpdfstring{defered\+Event\+Propagation}{deferedEventPropagation}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Client\+Type$>$ std\+::function$<$void()$>$ {\bf multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}$<$ Client\+Type $>$\+::defered\+Event\+Propagation}\hypertarget{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_af49bfde7f78897b0e884faae69077013}{}\label{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_af49bfde7f78897b0e884faae69077013}
+
+
+Definition at line 27 of file cb\+\_\+default\+\_\+multirole\+\_\+sensor\+\_\+behavior.\+h.
+
+
+
+Referenced by multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior$<$ Cl\+Laser\+Sensor $>$\+::on\+Entry().
+
+\index{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}!sensor\+\_\+@{sensor\+\_\+}}
+\index{sensor\+\_\+@{sensor\+\_\+}!multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior@{multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}}
+\subsubsection[{\texorpdfstring{sensor\+\_\+}{sensor_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Client\+Type$>$ Client\+Type$\ast$ {\bf multirole\+\_\+sensor\+\_\+client\+::\+Cb\+Default\+Multi\+Role\+Sensor\+Behavior}$<$ Client\+Type $>$\+::sensor\+\_\+}\hypertarget{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a5e4e65ada73da49c2b8579b422b97d0d}{}\label{classmultirole__sensor__client_1_1CbDefaultMultiRoleSensorBehavior_a5e4e65ada73da49c2b8579b422b97d0d}
+
+
+Definition at line 14 of file cb\+\_\+default\+\_\+multirole\+\_\+sensor\+\_\+behavior.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+client\+\_\+library/multirole\+\_\+sensor\+\_\+client/include/multirole\+\_\+sensor\+\_\+client/client\+\_\+behaviors/\hyperlink{cb__default__multirole__sensor__behavior_8h}{cb\+\_\+default\+\_\+multirole\+\_\+sensor\+\_\+behavior.\+h}\end{DoxyCompactItemize}

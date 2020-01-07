@@ -112,16 +112,16 @@ References on\+Repeat\+Behavior\+Tick\+Callback(), on\+Single\+Behavior\+Tick\+C
 28 
 29 
 30         \textcolor{comment}{// getting reference to the repeat countdown behavior}
-31         \textcolor{keyword}{auto}* cbrepeat = this->\hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_a38b8b6e3d65b7de33020c9c397cf29bb}{getOrthogonal}<OrTimer>()
-32                                ->getClientBehavior<CbTimerCountdownLoop>();
+31         \textcolor{keyword}{auto}* cbrepeat = this->getOrthogonal<OrTimer>()
+32                               ->getClientBehavior<CbTimerCountdownLoop>();
 33 
 34         \textcolor{comment}{// subscribe to the repeat countdown behavior callback}
 35         cbrepeat->onTimerTick(&\hyperlink{structsm__atomic_1_1State1_a9d2c943f02a8e0f1d7b86132ada1c6e0}{State1::onRepeatBehaviorTickCallback}, \textcolor{keyword}{
       this});
 36 
 37         \textcolor{comment}{// getting reference to the single countdown behavior}
-38         \textcolor{keyword}{auto}* cbsingle = this->\hyperlink{classsmacc_1_1SmaccState_afc39f8e0ca4001b2159a100da2fccd0e}{getStateMachine}().\hyperlink{classsmacc_1_1ISmaccStateMachine_a38b8b6e3d65b7de33020c9c397cf29bb}{getOrthogonal}<OrTimer>()
-39                                ->getClientBehavior<CbTimerCountdownOnce>();
+38         \textcolor{keyword}{auto}* cbsingle = this->getOrthogonal<OrTimer>()
+39                              ->getClientBehavior<CbTimerCountdownOnce>();
 40 
 41         \textcolor{comment}{// subscribe to the single countdown behavior callback}
 42         cbsingle->onTimerTick(&\hyperlink{structsm__atomic_1_1State1_a9cb95d91cf5a22f0d9d079dc04bf58aa}{State1::onSingleBehaviorTickCallback}, \textcolor{keyword}{

@@ -1,0 +1,279 @@
+\hypertarget{classmultirole__sensor__client_1_1ClMultiroleSensor}{}\section{multirole\+\_\+sensor\+\_\+client\+:\+:Cl\+Multirole\+Sensor$<$ Message\+Type $>$ Class Template Reference}
+\label{classmultirole__sensor__client_1_1ClMultiroleSensor}\index{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor$<$ Message\+Type $>$@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor$<$ Message\+Type $>$}}
+
+
+{\ttfamily \#include $<$cl\+\_\+multirole\+\_\+sensor.\+h$>$}
+
+
+
+Inheritance diagram for multirole\+\_\+sensor\+\_\+client\+:\+:Cl\+Multirole\+Sensor$<$ Message\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmultirole__sensor__client_1_1ClMultiroleSensor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for multirole\+\_\+sensor\+\_\+client\+:\+:Cl\+Multirole\+Sensor$<$ Message\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmultirole__sensor__client_1_1ClMultiroleSensor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Message\+Type \hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_af6273a0b7c896dad766130706984071f}{T\+Message\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a1d122d732da85dd3841096f294a8161e}{Cl\+Multirole\+Sensor} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\boost\+::signals2\+::connection \hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a525e83af3d81dff01600cfd6627890c5}{on\+Message\+Timeout} (void(T\+::$\ast$callback)(const ros\+::\+Timer\+Event \&), T $\ast$object)
+\item 
+{\footnotesize template$<$typename T\+Object\+Tag , typename T\+Derived $>$ }\\void \hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a243e8ec849d380d5934a384521423c9a}{configure\+Event\+Source\+Types} ()
+\item 
+virtual void \hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a8cd8e9766dd4e0f4d3be69d7979c5e50}{initialize} () override
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsmacc_1_1SmaccSignal}{Smacc\+Signal}$<$ void(const ros\+::\+Timer\+Event \&)$>$ \hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a1bc88382c36abae583a7c946cfe10ace}{on\+Message\+Timeout\+\_\+}
+\item 
+std\+::function$<$ void(const ros\+::\+Timer\+Event \&ev)$>$ \hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a7453ad95c3b9bdffd4184e2d99cd0967}{post\+Timeout\+Message\+Event}
+\item 
+boost\+::optional$<$ ros\+::\+Duration $>$ \hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_ad3f88235bff8714c6abe97dec3c276ea}{timeout\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a84b63ad1c68a8027773fa450fcce8234}{reset\+Timer} (const Message\+Type \&msg)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a9bd18eb64775ac8025ae3ef27d05d69b}{timeout\+Callback} (const ros\+::\+Timer\+Event \&timerdata)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ros\+::\+Timer \hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a1ac5801d1a126ebc3bd774bb001524fa}{timeout\+Timer\+\_\+}
+\item 
+\hyperlink{classbool}{bool} \hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a6e7db1927a389af715f541837ac78d99}{initialized\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Message\+Type$>$\\*
+class multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor$<$ Message\+Type $>$}
+
+
+
+Definition at line 25 of file cl\+\_\+multirole\+\_\+sensor.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}!T\+Message\+Type@{T\+Message\+Type}}
+\index{T\+Message\+Type@{T\+Message\+Type}!multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}}
+\subsubsection[{\texorpdfstring{T\+Message\+Type}{TMessageType}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ typedef Message\+Type {\bf multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}$<$ Message\+Type $>$\+::{\bf T\+Message\+Type}}\hypertarget{classmultirole__sensor__client_1_1ClMultiroleSensor_af6273a0b7c896dad766130706984071f}{}\label{classmultirole__sensor__client_1_1ClMultiroleSensor_af6273a0b7c896dad766130706984071f}
+
+
+Definition at line 28 of file cl\+\_\+multirole\+\_\+sensor.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}!Cl\+Multirole\+Sensor@{Cl\+Multirole\+Sensor}}
+\index{Cl\+Multirole\+Sensor@{Cl\+Multirole\+Sensor}!multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}}
+\subsubsection[{\texorpdfstring{Cl\+Multirole\+Sensor()}{ClMultiroleSensor()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ {\bf multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}$<$ Message\+Type $>$\+::{\bf Cl\+Multirole\+Sensor} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmultirole__sensor__client_1_1ClMultiroleSensor_a1d122d732da85dd3841096f294a8161e}{}\label{classmultirole__sensor__client_1_1ClMultiroleSensor_a1d122d732da85dd3841096f294a8161e}
+
+
+Definition at line 31 of file cl\+\_\+multirole\+\_\+sensor.\+h.
+
+
+\begin{DoxyCode}
+32       : \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient}{smacc::client\_bases::SmaccSubscriberClient<MessageType>}
+      ()
+33   \{
+34     ROS\_INFO(\textcolor{stringliteral}{"CbLidarSensor constructor"});
+35     \hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a6e7db1927a389af715f541837ac78d99}{initialized\_} = \textcolor{keyword}{false};
+36   \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}!configure\+Event\+Source\+Types@{configure\+Event\+Source\+Types}}
+\index{configure\+Event\+Source\+Types@{configure\+Event\+Source\+Types}!multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}}
+\subsubsection[{\texorpdfstring{configure\+Event\+Source\+Types()}{configureEventSourceTypes()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ template$<$typename T\+Object\+Tag , typename T\+Derived $>$ void {\bf multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}$<$ Message\+Type $>$\+::configure\+Event\+Source\+Types (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmultirole__sensor__client_1_1ClMultiroleSensor_a243e8ec849d380d5934a384521423c9a}{}\label{classmultirole__sensor__client_1_1ClMultiroleSensor_a243e8ec849d380d5934a384521423c9a}
+
+
+Definition at line 47 of file cl\+\_\+multirole\+\_\+sensor.\+h.
+
+
+\begin{DoxyCode}
+48   \{
+49     \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient}{SmaccSubscriberClient<MessageType>::template} 
+      configureEventSourceTypes<TObjectTag, TDerived>();
+50 
+51     this->\hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a7453ad95c3b9bdffd4184e2d99cd0967}{postTimeoutMessageEvent} = [=](\textcolor{keyword}{auto} &timerdata) \{
+52       \hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a1bc88382c36abae583a7c946cfe10ace}{onMessageTimeout\_}(timerdata);
+53 
+54       \textcolor{keyword}{auto} \textcolor{keyword}{event} = \textcolor{keyword}{new} EvTopicMessageTimeout<TDerived, TObjectTag>();
+55       \textcolor{keyword}{event}->timerData = timerdata;
+56       this->\hyperlink{classsmacc_1_1ISmaccClient_a21a79203cb44fc717d4d977c190327c6}{postEvent}(event);
+57     \};
+58   \}
+\end{DoxyCode}
+\index{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}!initialize@{initialize}}
+\index{initialize@{initialize}!multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}}
+\subsubsection[{\texorpdfstring{initialize() override}{initialize() override}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ virtual void {\bf multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}$<$ Message\+Type $>$\+::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classmultirole__sensor__client_1_1ClMultiroleSensor_a8cd8e9766dd4e0f4d3be69d7979c5e50}{}\label{classmultirole__sensor__client_1_1ClMultiroleSensor_a8cd8e9766dd4e0f4d3be69d7979c5e50}
+
+
+Reimplemented from \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_af188f0f5e89de26a07e1f964cdd23a70}{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client$<$ Message\+Type $>$}.
+
+
+
+Definition at line 60 of file cl\+\_\+multirole\+\_\+sensor.\+h.
+
+
+\begin{DoxyCode}
+61   \{
+62     \textcolor{keywordflow}{if} (!\hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a6e7db1927a389af715f541837ac78d99}{initialized\_})
+63     \{
+64       \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_af188f0f5e89de26a07e1f964cdd23a70}{SmaccSubscriberClient<MessageType>::initialize}();
+65 
+66       this->\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a4f02251e3a161fb6d802b154b1081f18}{onMessageReceived}(&
+      \hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a84b63ad1c68a8027773fa450fcce8234}{ClMultiroleSensor<MessageType>::resetTimer}, \textcolor{keyword}{this});
+67 
+68       \textcolor{keywordflow}{if} (\hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_ad3f88235bff8714c6abe97dec3c276ea}{timeout\_})
+69       \{
+70         \hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a1ac5801d1a126ebc3bd774bb001524fa}{timeoutTimer\_} = this->\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a401d2476e89e27acc2e905acd701f053}{nh\_}.createTimer(*\hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_ad3f88235bff8714c6abe97dec3c276ea}{timeout\_}, boost::bind(&
+      \hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a9bd18eb64775ac8025ae3ef27d05d69b}{ClMultiroleSensor<MessageType>::timeoutCallback}, \textcolor{keyword}{this}, \_1));
+71         \hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a1ac5801d1a126ebc3bd774bb001524fa}{timeoutTimer\_}.start();
+72       \}
+73       \textcolor{keywordflow}{else}
+74       \{
+75         ROS\_WARN(\textcolor{stringliteral}{"Timeout sensor client not set, skipping timeout watchdog funcionality"});
+76       \}
+77 
+78       \hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a6e7db1927a389af715f541837ac78d99}{initialized\_} = \textcolor{keyword}{true};
+79     \}
+80   \}
+\end{DoxyCode}
+\index{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}!on\+Message\+Timeout@{on\+Message\+Timeout}}
+\index{on\+Message\+Timeout@{on\+Message\+Timeout}!multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}}
+\subsubsection[{\texorpdfstring{on\+Message\+Timeout(void(\+T\+::$\ast$callback)(const ros\+::\+Timer\+Event \&), T $\ast$object)}{onMessageTimeout(void(T::*callback)(const ros::TimerEvent &), T *object)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ template$<$typename T $>$ boost\+::signals2\+::connection {\bf multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}$<$ Message\+Type $>$\+::on\+Message\+Timeout (
+\begin{DoxyParamCaption}
+\item[{void(T\+::$\ast$)(const ros\+::\+Timer\+Event \&)}]{callback, }
+\item[{T $\ast$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmultirole__sensor__client_1_1ClMultiroleSensor_a525e83af3d81dff01600cfd6627890c5}{}\label{classmultirole__sensor__client_1_1ClMultiroleSensor_a525e83af3d81dff01600cfd6627890c5}
+
+
+Definition at line 39 of file cl\+\_\+multirole\+\_\+sensor.\+h.
+
+
+\begin{DoxyCode}
+40   \{
+41     \textcolor{keywordflow}{return} this->\hyperlink{classsmacc_1_1ISmaccClient_a926e4f2ae796def63d48dca389a48c47}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_adf0f42ade0c65cc471960fe2a7c42da2}{createSignalConnection}(
+      \hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a1bc88382c36abae583a7c946cfe10ace}{onMessageTimeout\_}, callback, \textcolor{keywordtype}{object});
+42   \}
+\end{DoxyCode}
+\index{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}!reset\+Timer@{reset\+Timer}}
+\index{reset\+Timer@{reset\+Timer}!multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}}
+\subsubsection[{\texorpdfstring{reset\+Timer(const Message\+Type \&msg)}{resetTimer(const MessageType &msg)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ void {\bf multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}$<$ Message\+Type $>$\+::reset\+Timer (
+\begin{DoxyParamCaption}
+\item[{const Message\+Type \&}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classmultirole__sensor__client_1_1ClMultiroleSensor_a84b63ad1c68a8027773fa450fcce8234}{}\label{classmultirole__sensor__client_1_1ClMultiroleSensor_a84b63ad1c68a8027773fa450fcce8234}
+
+
+Definition at line 85 of file cl\+\_\+multirole\+\_\+sensor.\+h.
+
+
+\begin{DoxyCode}
+86   \{
+87     \textcolor{comment}{//reseting the timer}
+88     this->\hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a1ac5801d1a126ebc3bd774bb001524fa}{timeoutTimer\_}.stop();
+89     this->\hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a1ac5801d1a126ebc3bd774bb001524fa}{timeoutTimer\_}.start();
+90   \}
+\end{DoxyCode}
+\index{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}!timeout\+Callback@{timeout\+Callback}}
+\index{timeout\+Callback@{timeout\+Callback}!multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}}
+\subsubsection[{\texorpdfstring{timeout\+Callback(const ros\+::\+Timer\+Event \&timerdata)}{timeoutCallback(const ros::TimerEvent &timerdata)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ void {\bf multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}$<$ Message\+Type $>$\+::timeout\+Callback (
+\begin{DoxyParamCaption}
+\item[{const ros\+::\+Timer\+Event \&}]{timerdata}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classmultirole__sensor__client_1_1ClMultiroleSensor_a9bd18eb64775ac8025ae3ef27d05d69b}{}\label{classmultirole__sensor__client_1_1ClMultiroleSensor_a9bd18eb64775ac8025ae3ef27d05d69b}
+
+
+Definition at line 96 of file cl\+\_\+multirole\+\_\+sensor.\+h.
+
+
+\begin{DoxyCode}
+97   \{
+98     \hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a7453ad95c3b9bdffd4184e2d99cd0967}{postTimeoutMessageEvent}(timerdata);
+99   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}!initialized\+\_\+@{initialized\+\_\+}}
+\index{initialized\+\_\+@{initialized\+\_\+}!multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}}
+\subsubsection[{\texorpdfstring{initialized\+\_\+}{initialized_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ {\bf bool} {\bf multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}$<$ Message\+Type $>$\+::initialized\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmultirole__sensor__client_1_1ClMultiroleSensor_a6e7db1927a389af715f541837ac78d99}{}\label{classmultirole__sensor__client_1_1ClMultiroleSensor_a6e7db1927a389af715f541837ac78d99}
+
+
+Definition at line 94 of file cl\+\_\+multirole\+\_\+sensor.\+h.
+
+\index{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}!on\+Message\+Timeout\+\_\+@{on\+Message\+Timeout\+\_\+}}
+\index{on\+Message\+Timeout\+\_\+@{on\+Message\+Timeout\+\_\+}!multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}}
+\subsubsection[{\texorpdfstring{on\+Message\+Timeout\+\_\+}{onMessageTimeout_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ {\bf Smacc\+Signal}$<$void(const ros\+::\+Timer\+Event \&)$>$ {\bf multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}$<$ Message\+Type $>$\+::on\+Message\+Timeout\+\_\+}\hypertarget{classmultirole__sensor__client_1_1ClMultiroleSensor_a1bc88382c36abae583a7c946cfe10ace}{}\label{classmultirole__sensor__client_1_1ClMultiroleSensor_a1bc88382c36abae583a7c946cfe10ace}
+
+
+Definition at line 29 of file cl\+\_\+multirole\+\_\+sensor.\+h.
+
+\index{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}!post\+Timeout\+Message\+Event@{post\+Timeout\+Message\+Event}}
+\index{post\+Timeout\+Message\+Event@{post\+Timeout\+Message\+Event}!multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}}
+\subsubsection[{\texorpdfstring{post\+Timeout\+Message\+Event}{postTimeoutMessageEvent}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ std\+::function$<$void(const ros\+::\+Timer\+Event \&ev)$>$ {\bf multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}$<$ Message\+Type $>$\+::post\+Timeout\+Message\+Event}\hypertarget{classmultirole__sensor__client_1_1ClMultiroleSensor_a7453ad95c3b9bdffd4184e2d99cd0967}{}\label{classmultirole__sensor__client_1_1ClMultiroleSensor_a7453ad95c3b9bdffd4184e2d99cd0967}
+
+
+Definition at line 44 of file cl\+\_\+multirole\+\_\+sensor.\+h.
+
+\index{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}!timeout\+\_\+@{timeout\+\_\+}}
+\index{timeout\+\_\+@{timeout\+\_\+}!multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}}
+\subsubsection[{\texorpdfstring{timeout\+\_\+}{timeout_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ boost\+::optional$<$ros\+::\+Duration$>$ {\bf multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}$<$ Message\+Type $>$\+::timeout\+\_\+}\hypertarget{classmultirole__sensor__client_1_1ClMultiroleSensor_ad3f88235bff8714c6abe97dec3c276ea}{}\label{classmultirole__sensor__client_1_1ClMultiroleSensor_ad3f88235bff8714c6abe97dec3c276ea}
+
+
+Definition at line 82 of file cl\+\_\+multirole\+\_\+sensor.\+h.
+
+\index{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}!timeout\+Timer\+\_\+@{timeout\+Timer\+\_\+}}
+\index{timeout\+Timer\+\_\+@{timeout\+Timer\+\_\+}!multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor@{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}}
+\subsubsection[{\texorpdfstring{timeout\+Timer\+\_\+}{timeoutTimer_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ ros\+::\+Timer {\bf multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor}$<$ Message\+Type $>$\+::timeout\+Timer\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmultirole__sensor__client_1_1ClMultiroleSensor_a1ac5801d1a126ebc3bd774bb001524fa}{}\label{classmultirole__sensor__client_1_1ClMultiroleSensor_a1ac5801d1a126ebc3bd774bb001524fa}
+
+
+Definition at line 93 of file cl\+\_\+multirole\+\_\+sensor.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc\+\_\+client\+\_\+library/multirole\+\_\+sensor\+\_\+client/include/multirole\+\_\+sensor\+\_\+client/\hyperlink{cl__multirole__sensor_8h}{cl\+\_\+multirole\+\_\+sensor.\+h}\end{DoxyCompactItemize}

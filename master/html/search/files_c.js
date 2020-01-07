@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['sensor_5fclient_2eh',['sensor_client.h',['../sensor__client_8h.html',1,'']]],
   ['signal_5fdetector_2ecpp',['signal_detector.cpp',['../signal__detector_8cpp.html',1,'']]],
   ['sm_5fatomic_2eh',['sm_atomic.h',['../sm__atomic_8h.html',1,'']]],
   ['sm_5fatomic_5fnode_2ecpp',['sm_atomic_node.cpp',['../sm__atomic__node_8cpp.html',1,'']]],
@@ -69,8 +68,8 @@ var searchData=
   ['ssr_5ffpattern_5frotate_5f2_2eh',['ssr_fpattern_rotate_2.h',['../ssr__fpattern__rotate__2_8h.html',1,'']]],
   ['ssr_5fradial_5fend_5fpoint_2eh',['ssr_radial_end_point.h',['../include_2sm__dance__bot_2states_2radial__motion__states_2ssr__radial__end__point_8h.html',1,'']]],
   ['ssr_5fradial_5fend_5fpoint_2eh',['ssr_radial_end_point.h',['../2_2include_2sm__dance__bot__2_2states_2radial__motion__states_2ssr__radial__end__point_8h.html',1,'']]],
-  ['ssr_5fradial_5floop_5fstart_2eh',['ssr_radial_loop_start.h',['../include_2sm__dance__bot_2states_2radial__motion__states_2ssr__radial__loop__start_8h.html',1,'']]],
   ['ssr_5fradial_5floop_5fstart_2eh',['ssr_radial_loop_start.h',['../2_2include_2sm__dance__bot__2_2states_2radial__motion__states_2ssr__radial__loop__start_8h.html',1,'']]],
+  ['ssr_5fradial_5floop_5fstart_2eh',['ssr_radial_loop_start.h',['../include_2sm__dance__bot_2states_2radial__motion__states_2ssr__radial__loop__start_8h.html',1,'']]],
   ['ssr_5fradial_5freturn_2eh',['ssr_radial_return.h',['../include_2sm__dance__bot_2states_2radial__motion__states_2ssr__radial__return_8h.html',1,'']]],
   ['ssr_5fradial_5freturn_2eh',['ssr_radial_return.h',['../2_2include_2sm__dance__bot__2_2states_2radial__motion__states_2ssr__radial__return_8h.html',1,'']]],
   ['ssr_5fradial_5frotate_2eh',['ssr_radial_rotate.h',['../2_2include_2sm__dance__bot__2_2states_2radial__motion__states_2ssr__radial__rotate_8h.html',1,'']]],
@@ -102,8 +101,8 @@ var searchData=
   ['st_5fst1_2eh',['st_st1.h',['../st__st1_8h.html',1,'']]],
   ['st_5fst2_2eh',['st_st2.h',['../st__st2_8h.html',1,'']]],
   ['st_5fst3_2eh',['st_st3.h',['../st__st3_8h.html',1,'']]],
-  ['st_5fstate_5f1_2eh',['st_state_1.h',['../sm__atomic_2include_2sm__atomic_2states_2st__state__1_8h.html',1,'']]],
   ['st_5fstate_5f1_2eh',['st_state_1.h',['../sm__three__some_2include_2sm__three__some_2states_2st__state__1_8h.html',1,'']]],
+  ['st_5fstate_5f1_2eh',['st_state_1.h',['../sm__atomic_2include_2sm__atomic_2states_2st__state__1_8h.html',1,'']]],
   ['st_5fstate_5f2_2eh',['st_state_2.h',['../sm__atomic_2include_2sm__atomic_2states_2st__state__2_8h.html',1,'']]],
   ['st_5fstate_5f2_2eh',['st_state_2.h',['../sm__three__some_2include_2sm__three__some_2states_2st__state__2_8h.html',1,'']]],
   ['st_5fstate_5f3_2eh',['st_state_3.h',['../st__state__3_8h.html',1,'']]],

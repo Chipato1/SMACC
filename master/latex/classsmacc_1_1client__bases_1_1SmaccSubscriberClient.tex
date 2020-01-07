@@ -51,9 +51,9 @@ boost\+::optional$<$ std\+::string $>$ \hyperlink{classsmacc_1_1client__bases_1_
 \item 
 boost\+::optional$<$ int $>$ \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a67f03f081d83476cdb7fd631b6aba450}{queue\+Size}
 \item 
-\hyperlink{classsmacc_1_1SmaccSignal}{Smacc\+Signal}$<$ void(const Message\+Type \&)$>$ \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_aeb31fdb287bb54c4d9b7dffff416a857}{on\+First\+Message\+Received\+\_\+}
+\hyperlink{classsmacc_1_1SmaccSignal}{smacc\+::\+Smacc\+Signal}$<$ void(const Message\+Type \&)$>$ \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_af1ec022065a2df3faabe40768f8b2e22}{on\+First\+Message\+Received\+\_\+}
 \item 
-\hyperlink{classsmacc_1_1SmaccSignal}{Smacc\+Signal}$<$ void(const Message\+Type \&)$>$ \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_aa1c39106c9250632bfb5a22137601026}{on\+Message\+Received\+\_\+}
+\hyperlink{classsmacc_1_1SmaccSignal}{smacc\+::\+Smacc\+Signal}$<$ void(const Message\+Type \&)$>$ \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a04469577ec95e2f6c04cd4dca87dfc08}{on\+Message\+Received\+\_\+}
 \item 
 std\+::function$<$ void(const Message\+Type \&)$>$ \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_ad71ae0708e8a3ea321de985076d8b0ac}{post\+Message\+Event}
 \item 
@@ -178,7 +178,7 @@ Reimplemented from \hyperlink{classsmacc_1_1ISmaccClient_a974ebb6ad6cf812e7b9de6
 
 
 
-Reimplemented in \hyperlink{classkeyboard__client_1_1ClKeyboard_a7ac4502969c62b0c836b531cec05f8ed}{keyboard\+\_\+client\+::\+Cl\+Keyboard}, \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e533ef8}{smacc\+::\+Sensor\+Client$<$ Message\+Type $>$}, \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e533ef8}{smacc\+::\+Sensor\+Client$<$ sensor\+\_\+msgs\+::\+Laser\+Scan $>$}, and \hyperlink{classsmacc_1_1SensorClient_aab9ae52c239305f09cfc4aa48e533ef8}{smacc\+::\+Sensor\+Client$<$ sensor\+\_\+msgs\+::\+Temperature $>$}.
+Reimplemented in \hyperlink{classkeyboard__client_1_1ClKeyboard_a7ac4502969c62b0c836b531cec05f8ed}{keyboard\+\_\+client\+::\+Cl\+Keyboard}, \hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a8cd8e9766dd4e0f4d3be69d7979c5e50}{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor$<$ Message\+Type $>$}, \hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a8cd8e9766dd4e0f4d3be69d7979c5e50}{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor$<$ sensor\+\_\+msgs\+::\+Laser\+Scan $>$}, and \hyperlink{classmultirole__sensor__client_1_1ClMultiroleSensor_a8cd8e9766dd4e0f4d3be69d7979c5e50}{multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor$<$ sensor\+\_\+msgs\+::\+Temperature $>$}.
 
 
 
@@ -186,7 +186,7 @@ Definition at line 66 of file smacc\+\_\+subscriber\+\_\+client.\+h.
 
 
 
-Referenced by smacc\+::\+Sensor\+Client$<$ sensor\+\_\+msgs\+::\+Temperature $>$\+::initialize().
+Referenced by multirole\+\_\+sensor\+\_\+client\+::\+Cl\+Multirole\+Sensor$<$ sensor\+\_\+msgs\+::\+Temperature $>$\+::initialize().
 
 
 \begin{DoxyCode}
@@ -244,12 +244,12 @@ Definition at line 97 of file smacc\+\_\+subscriber\+\_\+client.\+h.
 99     \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a1283e89a0d33a9028a5042519c6869a6}{firstMessage\_})
 100     \{
 101       \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_ac184f4c0a6e924ceb9eecc71d6252106}{postInitialMessageEvent}(msg);
-102       \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_aeb31fdb287bb54c4d9b7dffff416a857}{onFirstMessageReceived\_}(msg);
+102       \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_af1ec022065a2df3faabe40768f8b2e22}{onFirstMessageReceived\_}(msg);
 103       \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a1283e89a0d33a9028a5042519c6869a6}{firstMessage\_} = \textcolor{keyword}{false};
 104     \}
 105 
 106     \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_ad71ae0708e8a3ea321de985076d8b0ac}{postMessageEvent}(msg);
-107     \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_aa1c39106c9250632bfb5a22137601026}{onMessageReceived\_}(msg);
+107     \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a04469577ec95e2f6c04cd4dca87dfc08}{onMessageReceived\_}(msg);
 108   \}
 \end{DoxyCode}
 \index{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}!on\+First\+Message\+Received@{on\+First\+Message\+Received}}
@@ -268,7 +268,7 @@ Definition at line 45 of file smacc\+\_\+subscriber\+\_\+client.\+h.
 \begin{DoxyCode}
 46   \{
 47     \textcolor{keywordflow}{return} \hyperlink{classsmacc_1_1ISmaccClient_a926e4f2ae796def63d48dca389a48c47}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_adf0f42ade0c65cc471960fe2a7c42da2}{createSignalConnection}(
-      \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_aeb31fdb287bb54c4d9b7dffff416a857}{onFirstMessageReceived\_}, callback, \textcolor{keywordtype}{object});
+      \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_af1ec022065a2df3faabe40768f8b2e22}{onFirstMessageReceived\_}, callback, \textcolor{keywordtype}{object});
 48   \}
 \end{DoxyCode}
 \index{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}!on\+Message\+Received@{on\+Message\+Received}}
@@ -291,7 +291,7 @@ Referenced by sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sen
 \begin{DoxyCode}
 40   \{
 41     \textcolor{keywordflow}{return} \hyperlink{classsmacc_1_1ISmaccClient_a926e4f2ae796def63d48dca389a48c47}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_adf0f42ade0c65cc471960fe2a7c42da2}{createSignalConnection}(
-      \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_aa1c39106c9250632bfb5a22137601026}{onMessageReceived\_}, callback, \textcolor{keywordtype}{object});
+      \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a04469577ec95e2f6c04cd4dca87dfc08}{onMessageReceived\_}, callback, \textcolor{keywordtype}{object});
 42   \}
 \end{DoxyCode}
 
@@ -344,7 +344,7 @@ Referenced by smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client$<$ senso
 
 \index{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}!on\+First\+Message\+Received\+\_\+@{on\+First\+Message\+Received\+\_\+}}
 \index{on\+First\+Message\+Received\+\_\+@{on\+First\+Message\+Received\+\_\+}!smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}}
-\subsubsection[{\texorpdfstring{on\+First\+Message\+Received\+\_\+}{onFirstMessageReceived_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ {\bf Smacc\+Signal}$<$void(const Message\+Type \&)$>$ {\bf smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}$<$ Message\+Type $>$\+::on\+First\+Message\+Received\+\_\+}\hypertarget{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_aeb31fdb287bb54c4d9b7dffff416a857}{}\label{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_aeb31fdb287bb54c4d9b7dffff416a857}
+\subsubsection[{\texorpdfstring{on\+First\+Message\+Received\+\_\+}{onFirstMessageReceived_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ {\bf smacc\+::\+Smacc\+Signal}$<$void(const Message\+Type \&)$>$ {\bf smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}$<$ Message\+Type $>$\+::on\+First\+Message\+Received\+\_\+}\hypertarget{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_af1ec022065a2df3faabe40768f8b2e22}{}\label{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_af1ec022065a2df3faabe40768f8b2e22}
 
 
 Definition at line 32 of file smacc\+\_\+subscriber\+\_\+client.\+h.
@@ -355,7 +355,7 @@ Referenced by smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client$<$ senso
 
 \index{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}!on\+Message\+Received\+\_\+@{on\+Message\+Received\+\_\+}}
 \index{on\+Message\+Received\+\_\+@{on\+Message\+Received\+\_\+}!smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client@{smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}}
-\subsubsection[{\texorpdfstring{on\+Message\+Received\+\_\+}{onMessageReceived_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ {\bf Smacc\+Signal}$<$void(const Message\+Type \&)$>$ {\bf smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}$<$ Message\+Type $>$\+::on\+Message\+Received\+\_\+}\hypertarget{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_aa1c39106c9250632bfb5a22137601026}{}\label{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_aa1c39106c9250632bfb5a22137601026}
+\subsubsection[{\texorpdfstring{on\+Message\+Received\+\_\+}{onMessageReceived_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Message\+Type$>$ {\bf smacc\+::\+Smacc\+Signal}$<$void(const Message\+Type \&)$>$ {\bf smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client}$<$ Message\+Type $>$\+::on\+Message\+Received\+\_\+}\hypertarget{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a04469577ec95e2f6c04cd4dca87dfc08}{}\label{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a04469577ec95e2f6c04cd4dca87dfc08}
 
 
 Definition at line 33 of file smacc\+\_\+subscriber\+\_\+client.\+h.

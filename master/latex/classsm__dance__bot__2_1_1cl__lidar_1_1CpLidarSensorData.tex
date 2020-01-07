@@ -11,7 +11,7 @@ Inheritance diagram for sm\+\_\+dance\+\_\+bot\+\_\+2\+:\+:cl\+\_\+lidar\+:\+:Cp
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=247pt]{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData__inherit__graph}
+\includegraphics[width=259pt]{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -29,7 +29,7 @@ Collaboration diagram for sm\+\_\+dance\+\_\+bot\+\_\+2\+:\+:cl\+\_\+lidar\+:\+:
 \item 
 virtual void \hyperlink{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a9b351aa0e6765dbfd4f9d71c2e8ba9a4}{initialize} (\hyperlink{classsmacc_1_1ISmaccClient}{smacc\+::\+I\+Smacc\+Client} $\ast$owner) override
 \item 
-void \hyperlink{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a7e113a86d6cf1a54f35864ce1cd92051}{store\+Message} (const sensor\+\_\+msgs\+::\+Laser\+Scan \&scanmsg)
+void \hyperlink{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a90407d8b71f7168afac52713d4ea0b62}{Message\+Callback\+Store\+Distance\+To\+Wall} (const sensor\+\_\+msgs\+::\+Laser\+Scan \&scanmsg)
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -66,16 +66,17 @@ Definition at line 14 of file cp\+\_\+lidar\+\_\+data.\+h.
 
 
 
-References smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client$<$ Message\+Type $>$\+::on\+Message\+Received(), and store\+Message().
+References Message\+Callback\+Store\+Distance\+To\+Wall(), and smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client$<$ Message\+Type $>$\+::on\+Message\+Received().
 
 
 \begin{DoxyCode}
 15   \{
 16     \textcolor{keyword}{auto} client\_ = \textcolor{keyword}{dynamic\_cast<}
-      \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient}{smacc::SmaccSubscriberClient<sensor\_msgs::LaserScan>} *\textcolor{keyword}{>}
-      (owner);
-17     client\_->\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a4f02251e3a161fb6d802b154b1081f18}{onMessageReceived}(&\hyperlink{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a7e113a86d6cf1a54f35864ce1cd92051}{CpLidarSensorData::storeMessage}
-      , \textcolor{keyword}{this});
+      \hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient}{multirole\_sensor\_client::SmaccSubscriberClient<sensor\_msgs::LaserScan>}
+       *\textcolor{keyword}{>}(owner);
+17     client\_->\hyperlink{classsmacc_1_1client__bases_1_1SmaccSubscriberClient_a4f02251e3a161fb6d802b154b1081f18}{onMessageReceived}(&
+      \hyperlink{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a90407d8b71f7168afac52713d4ea0b62}{CpLidarSensorData::MessageCallbackStoreDistanceToWall},
+       \textcolor{keyword}{this});
 18   \}
 \end{DoxyCode}
 
@@ -90,13 +91,13 @@ Here is the call graph for this function\+:
 \end{figure}
 
 
-\index{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data}!store\+Message@{store\+Message}}
-\index{store\+Message@{store\+Message}!sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data}}
-\subsubsection[{\texorpdfstring{store\+Message(const sensor\+\_\+msgs\+::\+Laser\+Scan \&scanmsg)}{storeMessage(const sensor_msgs::LaserScan &scanmsg)}}]{\setlength{\rightskip}{0pt plus 5cm}void sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data\+::store\+Message (
+\index{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data}!Message\+Callback\+Store\+Distance\+To\+Wall@{Message\+Callback\+Store\+Distance\+To\+Wall}}
+\index{Message\+Callback\+Store\+Distance\+To\+Wall@{Message\+Callback\+Store\+Distance\+To\+Wall}!sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data}}
+\subsubsection[{\texorpdfstring{Message\+Callback\+Store\+Distance\+To\+Wall(const sensor\+\_\+msgs\+::\+Laser\+Scan \&scanmsg)}{MessageCallbackStoreDistanceToWall(const sensor_msgs::LaserScan &scanmsg)}}]{\setlength{\rightskip}{0pt plus 5cm}void sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data\+::\+Message\+Callback\+Store\+Distance\+To\+Wall (
 \begin{DoxyParamCaption}
 \item[{const sensor\+\_\+msgs\+::\+Laser\+Scan \&}]{scanmsg}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a7e113a86d6cf1a54f35864ce1cd92051}{}\label{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a7e113a86d6cf1a54f35864ce1cd92051}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a90407d8b71f7168afac52713d4ea0b62}{}\label{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a90407d8b71f7168afac52713d4ea0b62}
 
 
 Definition at line 20 of file cp\+\_\+lidar\+\_\+data.\+h.
@@ -109,8 +110,24 @@ Referenced by initialize().
 \begin{DoxyCode}
 21   \{
 22     this->\hyperlink{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a877b88ea370b93b61a30816615e33d04}{lastMessage\_} = scanmsg;
-23     this->\hyperlink{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a90d3f709388392afcb30ff988c1bcb50}{forwardObstacleDistance} = scanmsg.ranges[scanmsg.ranges.size() / 2];
-24   \}
+23     \textcolor{keyword}{auto} fwdist = scanmsg.ranges[scanmsg.ranges.size() / 2] \textcolor{comment}{/*meter*/};
+24 
+25     \textcolor{keywordtype}{float} security\_distance = 0.5; \textcolor{comment}{//meters}
+26 
+27     \textcolor{comment}{/*if the distance is infinity or nan, use max range distance*/}
+28     \textcolor{keywordflow}{if} (fwdist == std::numeric\_limits<float>::infinity() || fwdist != fwdist)
+29     \{
+30       
+31       this->\hyperlink{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a90d3f709388392afcb30ff988c1bcb50}{forwardObstacleDistance} = scanmsg.range\_max - security\_distance \textcolor{comment}{/*meters
+      */};
+32       ROS\_INFO(\textcolor{stringliteral}{"Distance to forward obstacle is not a number, setting default value to: %lf"}, scanmsg.
+      range\_max);
+33     \}
+34     \textcolor{keywordflow}{else}
+35     \{
+36       this->\hyperlink{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a90d3f709388392afcb30ff988c1bcb50}{forwardObstacleDistance} = fwdist - security\_distance;
+37     \}
+38   \}
 \end{DoxyCode}
 
 
@@ -119,7 +136,7 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a7e113a86d6cf1a54f35864ce1cd92051_icgraph}
+\includegraphics[width=350pt]{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a90407d8b71f7168afac52713d4ea0b62_icgraph}
 \end{center}
 \end{figure}
 
@@ -133,6 +150,10 @@ Here is the caller graph for this function\+:
 
 
 Definition at line 12 of file cp\+\_\+lidar\+\_\+data.\+h.
+
+
+
+Referenced by sm\+\_\+dance\+\_\+bot\+\_\+2\+::radial\+\_\+motion\+\_\+states\+::\+Ssr\+Radial\+End\+Point\+::on\+Initialize().
 
 \index{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data}!last\+Message\+\_\+@{last\+Message\+\_\+}}
 \index{last\+Message\+\_\+@{last\+Message\+\_\+}!sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data@{sm\+\_\+dance\+\_\+bot\+\_\+2\+::cl\+\_\+lidar\+::\+Cp\+Lidar\+Sensor\+Data}}
