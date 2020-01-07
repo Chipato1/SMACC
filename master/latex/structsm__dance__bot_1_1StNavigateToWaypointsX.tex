@@ -46,8 +46,6 @@ typedef mpl\+::list$<$ \hyperlink{classsmacc_1_1Transition}{smacc\+::\+Transitio
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{structsm__dance__bot_1_1StNavigateToWaypointsX_a5954a62667839c5b56ff07ebd26541d7}{on\+Initialize} ()
-\item 
-void \hyperlink{structsm__dance__bot_1_1StNavigateToWaypointsX_afbffeff85035562723564a884314f1f6}{load\+Waypoints\+First\+Time} (\hyperlink{classmove__base__z__client_1_1WaypointNavigator}{Waypoint\+Navigator} $\ast$waypoints\+Navigator)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -75,64 +73,6 @@ Definition at line 37 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h
 
 
 \subsection{Member Function Documentation}
-\index{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+WaypointsX@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+WaypointsX}!load\+Waypoints\+First\+Time@{load\+Waypoints\+First\+Time}}
-\index{load\+Waypoints\+First\+Time@{load\+Waypoints\+First\+Time}!sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+WaypointsX@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+WaypointsX}}
-\subsubsection[{\texorpdfstring{load\+Waypoints\+First\+Time(\+Waypoint\+Navigator $\ast$waypoints\+Navigator)}{loadWaypointsFirstTime(WaypointNavigator *waypointsNavigator)}}]{\setlength{\rightskip}{0pt plus 5cm}void sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+Waypoints\+X\+::load\+Waypoints\+First\+Time (
-\begin{DoxyParamCaption}
-\item[{{\bf Waypoint\+Navigator} $\ast$}]{waypoints\+Navigator}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsm__dance__bot_1_1StNavigateToWaypointsX_afbffeff85035562723564a884314f1f6}{}\label{structsm__dance__bot_1_1StNavigateToWaypointsX_afbffeff85035562723564a884314f1f6}
-
-
-Definition at line 59 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h.
-
-
-
-References move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator\+::get\+Waypoints(), move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator\+::load\+Way\+Points\+From\+File(), and smacc\+::\+I\+Smacc\+State\+::nh.
-
-
-
-Referenced by on\+Initialize().
-
-
-\begin{DoxyCode}
-60   \{
-61     \textcolor{comment}{// if it is the first time and the waypoints navigator is not configured}
-62     \textcolor{keywordflow}{if} (waypointsNavigator->getWaypoints().size() == 0)
-63     \{
-64       std::string planfilepath;
-65       ros::NodeHandle \hyperlink{classsmacc_1_1ISmaccState_a13fe6e6abfdb87996402189d44b78494}{nh}(\textcolor{stringliteral}{"~"});
-66       \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1ISmaccState_a13fe6e6abfdb87996402189d44b78494}{nh}.getParam(\textcolor{stringliteral}{"/sm\_dance\_bot/waypoints\_plan"}, planfilepath))
-67       \{
-68         waypointsNavigator->loadWayPointsFromFile(planfilepath);
-69       \}
-70     \}
-71   \}
-\end{DoxyCode}
-
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{structsm__dance__bot_1_1StNavigateToWaypointsX_afbffeff85035562723564a884314f1f6_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{structsm__dance__bot_1_1StNavigateToWaypointsX_afbffeff85035562723564a884314f1f6_icgraph}
-\end{center}
-\end{figure}
-
-
 \index{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+WaypointsX@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+WaypointsX}!on\+Definition@{on\+Definition}}
 \index{on\+Definition@{on\+Definition}!sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+WaypointsX@{sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+WaypointsX}}
 \subsubsection[{\texorpdfstring{on\+Definition()}{onDefinition()}}]{\setlength{\rightskip}{0pt plus 5cm}static void sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+Waypoints\+X\+::on\+Definition (
@@ -164,7 +104,7 @@ Definition at line 47 of file st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h
 
 
 
-References smacc\+::\+I\+Smacc\+Client\+::get\+Component(), load\+Waypoints\+First\+Time(), and smacc\+::\+I\+Smacc\+State\+::requires\+Client().
+References smacc\+::\+I\+Smacc\+Client\+::get\+Component(), smacc\+::\+I\+Smacc\+State\+::requires\+Client(), and move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator\+::send\+Next\+Goal().
 
 
 \begin{DoxyCode}
@@ -173,11 +113,10 @@ References smacc\+::\+I\+Smacc\+Client\+::get\+Component(), load\+Waypoints\+Fir
 50     this->\hyperlink{classsmacc_1_1ISmaccState_a7f95c9f0a6ea2d6f18d1aec0519de4ac}{requiresClient}(move\_base);
 51 
 52     \textcolor{keyword}{auto} waypointsNavigator = move\_base->getComponent<WaypointNavigator>();
-53     \hyperlink{structsm__dance__bot_1_1StNavigateToWaypointsX_afbffeff85035562723564a884314f1f6}{loadWaypointsFirstTime}(waypointsNavigator);
-54 
-55     waypointsNavigator->sendNextGoal();
-56     ROS\_INFO(\textcolor{stringliteral}{"current iteration waypoints x: %ld"}, waypointsNavigator->getCurrentWaypointIndex());
-57   \}
+53     
+54     waypointsNavigator->sendNextGoal();
+55     ROS\_INFO(\textcolor{stringliteral}{"current iteration waypoints x: %ld"}, waypointsNavigator->getCurrentWaypointIndex());
+56   \}
 \end{DoxyCode}
 
 
@@ -195,4 +134,4 @@ Here is the call graph for this function\+:
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/states/\hyperlink{st__navigate__to__waypoints__x_8h}{st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h}\end{DoxyCompactItemize}
+smacc\+\_\+sm\+\_\+reference\+\_\+library/sm\+\_\+dance\+\_\+bot/include/sm\+\_\+dance\+\_\+bot/states/\hyperlink{include_2sm__dance__bot_2states_2st__navigate__to__waypoints__x_8h}{st\+\_\+navigate\+\_\+to\+\_\+waypoints\+\_\+x.\+h}\end{DoxyCompactItemize}

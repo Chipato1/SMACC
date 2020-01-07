@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['loadwaypointsfirsttime',['loadWaypointsFirstTime',['../structsm__dance__bot_1_1StNavigateToWaypointsX.html#afbffeff85035562723564a884314f1f6',1,'sm_dance_bot::StNavigateToWaypointsX']]],
+  ['loadwaypointsfirsttime',['loadWaypointsFirstTime',['../structsm__dance__bot__2_1_1StNavigateToWaypointsX.html#a83a08817982960b8c198e80f473e1275',1,'sm_dance_bot_2::StNavigateToWaypointsX']]],
   ['loadwaypointsfromfile',['loadWayPointsFromFile',['../classmove__base__z__client_1_1WaypointNavigator.html#af56d146945280a8660805aad7eb3aed9',1,'move_base_z_client::WaypointNavigator']]],
+  ['loadwaypointsfromyaml',['loadWaypointsFromYaml',['../classsm__dance__bot_1_1OrNavigation.html#a1f092ffe3a1b29ae9ea6623aff00ab16',1,'sm_dance_bot::OrNavigation::loadWaypointsFromYaml()'],['../classsm__dance__bot__2_1_1OrNavigation.html#a663fc206de1964058c851f521279ca34',1,'sm_dance_bot_2::OrNavigation::loadWaypointsFromYaml()']]],
   ['lockstatemachine',['lockStateMachine',['../classsmacc_1_1ISmaccStateMachine.html#a5c8d4c9a4b11c7950266a00e48080ce3',1,'smacc::ISmaccStateMachine']]],
   ['logicunit',['LogicUnit',['../classsmacc_1_1LogicUnit.html#a5c015b00d4c0c3d379cfae8e26a1d474',1,'smacc::LogicUnit']]],
   ['loopcondition',['loopCondition',['../structsm__dance__bot_1_1f__pattern__states_1_1SsrFPatternStartLoop.html#aa8a37c27ee62e7d831acf0a6ffd5ba97',1,'sm_dance_bot::f_pattern_states::SsrFPatternStartLoop::loopCondition()'],['../structsm__dance__bot_1_1s__pattern__states_1_1SsrSPatternLoopStart.html#a5b8adab95ab5cc8b4a4364a9553f27db',1,'sm_dance_bot::s_pattern_states::SsrSPatternLoopStart::loopCondition()']]],
