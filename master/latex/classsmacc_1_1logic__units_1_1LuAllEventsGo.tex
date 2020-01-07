@@ -83,23 +83,23 @@ Reimplemented from \hyperlink{classsmacc_1_1LogicUnit_a3a81929b2014b10d0fa28d4bc
 
 
 
-Definition at line 17 of file lu\+\_\+all\+\_\+events\+\_\+go.\+cpp.
+Definition at line 19 of file lu\+\_\+all\+\_\+events\+\_\+go.\+cpp.
 
 
 
-References smacc\+::introspection\+::demangle\+Symbol(), and triggered\+Events.
+References smacc\+::introspection\+::demangle\+Symbol().
 
 
 \begin{DoxyCode}
-18 \{
-19     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"LU ALL RECEIVED EVENT OF TYPE:"} << \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(eventType->name()));
-20     \hyperlink{classsmacc_1_1logic__units_1_1LuAllEventsGo_a90faf85594df56b21defaaeea610b6c5}{triggeredEvents}[eventType] = \textcolor{keyword}{true};
-21 
-22     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &entry : \hyperlink{classsmacc_1_1logic__units_1_1LuAllEventsGo_a90faf85594df56b21defaaeea610b6c5}{triggeredEvents})
-23     \{
-24         ROS\_INFO\_STREAM(\hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(entry.first->name()) << \textcolor{stringliteral}{" = "} << entry.second);
-25     \}
-26 \}
+20 \{
+21     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"LU ALL RECEIVED EVENT OF TYPE:"} << \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(eventType->name()));
+22     \hyperlink{classsmacc_1_1logic__units_1_1LuAllEventsGo_a90faf85594df56b21defaaeea610b6c5}{triggeredEvents}[eventType] = \textcolor{keyword}{true};
+23 
+24     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &entry : \hyperlink{classsmacc_1_1logic__units_1_1LuAllEventsGo_a90faf85594df56b21defaaeea610b6c5}{triggeredEvents})
+25     \{
+26         ROS\_INFO\_STREAM(\hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(entry.first->name()) << \textcolor{stringliteral}{" = "} << entry.second);
+27     \}
+28 \}
 \end{DoxyCode}
 
 
@@ -126,20 +126,16 @@ Reimplemented from \hyperlink{classsmacc_1_1LogicUnit_ade7f409516683f13754943db1
 
 
 
-Definition at line 9 of file lu\+\_\+all\+\_\+events\+\_\+go.\+cpp.
-
-
-
-References smacc\+::\+Logic\+Unit\+::event\+Types, and triggered\+Events.
+Definition at line 11 of file lu\+\_\+all\+\_\+events\+\_\+go.\+cpp.
 
 
 \begin{DoxyCode}
-10 \{
-11     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} type : \hyperlink{classsmacc_1_1LogicUnit_a6f02a49da9b408b54a2755c18c5616a8}{eventTypes})
-12     \{
-13         \hyperlink{classsmacc_1_1logic__units_1_1LuAllEventsGo_a90faf85594df56b21defaaeea610b6c5}{triggeredEvents}[type] = \textcolor{keyword}{false};
-14     \}
-15 \}
+12 \{
+13     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} type : \hyperlink{classsmacc_1_1LogicUnit_a6f02a49da9b408b54a2755c18c5616a8}{eventTypes})
+14     \{
+15         \hyperlink{classsmacc_1_1logic__units_1_1LuAllEventsGo_a90faf85594df56b21defaaeea610b6c5}{triggeredEvents}[type] = \textcolor{keyword}{false};
+16     \}
+17 \}
 \end{DoxyCode}
 \index{smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go@{smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go}!triggers@{triggers}}
 \index{triggers@{triggers}!smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go@{smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go}}
@@ -154,24 +150,20 @@ Implements \hyperlink{classsmacc_1_1LogicUnit_ae975a96f0210412e1cb4a7b5b948ade6}
 
 
 
-Definition at line 28 of file lu\+\_\+all\+\_\+events\+\_\+go.\+cpp.
-
-
-
-References triggered\+Events.
+Definition at line 30 of file lu\+\_\+all\+\_\+events\+\_\+go.\+cpp.
 
 
 \begin{DoxyCode}
-29 \{
-30     ROS\_INFO(\textcolor{stringliteral}{"LU All TRIGGERS?"});
-31     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &entry : \hyperlink{classsmacc_1_1logic__units_1_1LuAllEventsGo_a90faf85594df56b21defaaeea610b6c5}{triggeredEvents})
-32     \{
-33         \textcolor{keywordflow}{if} (!entry.second)
-34             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-35     \}
-36     ROS\_INFO(\textcolor{stringliteral}{"LU ALL TRIGGERED"});
-37     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
-38 \}
+31 \{
+32     ROS\_INFO(\textcolor{stringliteral}{"LU All TRIGGERS?"});
+33     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &entry : \hyperlink{classsmacc_1_1logic__units_1_1LuAllEventsGo_a90faf85594df56b21defaaeea610b6c5}{triggeredEvents})
+34     \{
+35         \textcolor{keywordflow}{if} (!entry.second)
+36             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+37     \}
+38     ROS\_INFO(\textcolor{stringliteral}{"LU ALL TRIGGERED"});
+39     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+40 \}
 \end{DoxyCode}
 
 
@@ -182,10 +174,6 @@ References triggered\+Events.
 
 
 Definition at line 20 of file lu\+\_\+all\+\_\+events\+\_\+go.\+h.
-
-
-
-Referenced by on\+Event\+Notified(), on\+Initialized(), and triggers().
 
 
 

@@ -35,7 +35,7 @@ var searchData=
   ['msdancebotrecoverymode',['MsDanceBotRecoveryMode',['../classsm__dance__bot_1_1MsDanceBotRecoveryMode.html',1,'sm_dance_bot']]],
   ['msdancebotrunmode',['MsDanceBotRunMode',['../classsm__dance__bot_1_1MsDanceBotRunMode.html',1,'sm_dance_bot']]],
   ['msg_5f',['msg_',['../classsm__dance__bot_1_1cl__string__publisher_1_1CbStringPublisher.html#a320ff6940dc15b469af3679d2d2eb655',1,'sm_dance_bot::cl_string_publisher::CbStringPublisher']]],
-  ['msgdata',['msgData',['../structsmacc_1_1EvTopicInitialMessage.html#a12015628fea3b4a0aa07e6a11fcffeda',1,'smacc::EvTopicInitialMessage::msgData()'],['../structsmacc_1_1EvTopicMessage.html#adc167f5114cc3c4ff06ea9c810cc280f',1,'smacc::EvTopicMessage::msgData()']]],
+  ['msgdata',['msgData',['../structsmacc_1_1default__events_1_1EvTopicInitialMessage.html#a989c7cf4210c7750806b081bc73112cd',1,'smacc::default_events::EvTopicInitialMessage::msgData()'],['../structsmacc_1_1default__events_1_1EvTopicMessage.html#a82384568b702a0c3a3dc2fbe7eeefea9',1,'smacc::default_events::EvTopicMessage::msgData()']]],
   ['msrecover',['MsRecover',['../classsm__three__some_1_1MsRecover.html',1,'sm_three_some']]],
   ['msrecoverymode',['MsRecoveryMode',['../structsm__viewer__sim_1_1MsRecoveryMode.html',1,'sm_viewer_sim']]],
   ['msrun',['MsRun',['../classsm__three__some_1_1MsRun.html',1,'sm_three_some']]],

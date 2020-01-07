@@ -1,0 +1,58 @@
+\hypertarget{structsmacc_1_1utils_1_1Bind_3_013_01_4}{}\section{smacc\+:\+:utils\+:\+:Bind$<$ 3 $>$ Struct Template Reference}
+\label{structsmacc_1_1utils_1_1Bind_3_013_01_4}\index{smacc\+::utils\+::\+Bind$<$ 3 $>$@{smacc\+::utils\+::\+Bind$<$ 3 $>$}}
+
+
+{\ttfamily \#include $<$smacc\+\_\+state\+\_\+machine\+\_\+impl.\+h$>$}
+
+
+
+Collaboration diagram for smacc\+:\+:utils\+:\+:Bind$<$ 3 $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{structsmacc_1_1utils_1_1Bind_3_013_01_4__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T\+Smacc\+Signal , typename T\+Member\+Function\+Prototype , typename T\+Smacc\+Object\+Type $>$ }\\boost\+::signals2\+::connection \hyperlink{structsmacc_1_1utils_1_1Bind_3_013_01_4_a8958f16a2a40b187e6500a76cfaeed63}{bindaux} (T\+Smacc\+Signal \&signal, T\+Member\+Function\+Prototype callback, T\+Smacc\+Object\+Type $\ast$object)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$$>$\\*
+struct smacc\+::utils\+::\+Bind$<$ 3 $>$}
+
+
+
+Definition at line 257 of file smacc\+\_\+state\+\_\+machine\+\_\+impl.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::utils\+::\+Bind$<$ 3 $>$@{smacc\+::utils\+::\+Bind$<$ 3 $>$}!bindaux@{bindaux}}
+\index{bindaux@{bindaux}!smacc\+::utils\+::\+Bind$<$ 3 $>$@{smacc\+::utils\+::\+Bind$<$ 3 $>$}}
+\subsubsection[{\texorpdfstring{bindaux(\+T\+Smacc\+Signal \&signal, T\+Member\+Function\+Prototype callback, T\+Smacc\+Object\+Type $\ast$object)}{bindaux(TSmaccSignal &signal, TMemberFunctionPrototype callback, TSmaccObjectType *object)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Smacc\+Signal , typename T\+Member\+Function\+Prototype , typename T\+Smacc\+Object\+Type $>$ boost\+::signals2\+::connection {\bf smacc\+::utils\+::\+Bind}$<$ 3 $>$\+::bindaux (
+\begin{DoxyParamCaption}
+\item[{T\+Smacc\+Signal \&}]{signal, }
+\item[{T\+Member\+Function\+Prototype}]{callback, }
+\item[{T\+Smacc\+Object\+Type $\ast$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsmacc_1_1utils_1_1Bind_3_013_01_4_a8958f16a2a40b187e6500a76cfaeed63}{}\label{structsmacc_1_1utils_1_1Bind_3_013_01_4_a8958f16a2a40b187e6500a76cfaeed63}
+
+
+Definition at line 260 of file smacc\+\_\+state\+\_\+machine\+\_\+impl.\+h.
+
+
+\begin{DoxyCode}
+261     \{
+262         \textcolor{keywordflow}{return} signal.connect([=](\textcolor{keyword}{auto} a1, \textcolor{keyword}{auto} a2) \{ \textcolor{keywordflow}{return} (object->*callback)(a1, a2); \});
+263     \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc/include/smacc/impl/\hyperlink{smacc__state__machine__impl_8h}{smacc\+\_\+state\+\_\+machine\+\_\+impl.\+h}\end{DoxyCompactItemize}

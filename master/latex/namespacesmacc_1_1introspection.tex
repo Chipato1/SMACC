@@ -44,7 +44,7 @@ struct \hyperlink{structsmacc_1_1introspection_1_1WalkStatesExecutor}{Walk\+Stat
 \item 
 typedef std\+::allocator$<$ void $>$ \hyperlink{namespacesmacc_1_1introspection_aa4064aa24887868c6347efc004c08986}{Smacc\+Allocator}
 \item 
-typedef boost\+::mpl\+::list$<$ \hyperlink{structsmacc_1_1SUCCESS}{S\+U\+C\+C\+E\+SS}, \hyperlink{structsmacc_1_1ABORT}{A\+B\+O\+RT}, \hyperlink{structsmacc_1_1PREEMPT}{P\+R\+E\+E\+M\+PT}, \hyperlink{structsmacc_1_1CONTINUELOOP}{C\+O\+N\+T\+I\+N\+U\+E\+L\+O\+OP}, \hyperlink{structsmacc_1_1ENDLOOP}{E\+N\+D\+L\+O\+OP} $>$ \hyperlink{namespacesmacc_1_1introspection_ac678f3918f2036c45d7d0da7f5afce83}{D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+ES}
+typedef boost\+::mpl\+::list$<$ \hyperlink{structsmacc_1_1default__transition__tags_1_1SUCCESS}{S\+U\+C\+C\+E\+SS}, \hyperlink{structsmacc_1_1default__transition__tags_1_1ABORT}{A\+B\+O\+RT}, \hyperlink{structsmacc_1_1default__transition__tags_1_1PREEMPT}{P\+R\+E\+E\+M\+PT}, \hyperlink{structsmacc_1_1default__transition__tags_1_1CONTINUELOOP}{C\+O\+N\+T\+I\+N\+U\+E\+L\+O\+OP}, \hyperlink{structsmacc_1_1default__transition__tags_1_1ENDLOOP}{E\+N\+D\+L\+O\+OP} $>$ \hyperlink{namespacesmacc_1_1introspection_ac678f3918f2036c45d7d0da7f5afce83}{D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+ES}
 \end{DoxyCompactItemize}
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
@@ -121,14 +121,14 @@ std\+::string \hyperlink{namespacesmacc_1_1introspection_a19350163cda321a04645dc
 \subsubsection[{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+ES}{DEFAULT_TRANSITION_TYPES}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::mpl\+::list$<${\bf S\+U\+C\+C\+E\+SS}, {\bf A\+B\+O\+RT}, {\bf P\+R\+E\+E\+M\+PT}, {\bf C\+O\+N\+T\+I\+N\+U\+E\+L\+O\+OP}, {\bf E\+N\+D\+L\+O\+OP}$>$ {\bf smacc\+::introspection\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+ES}}\hypertarget{namespacesmacc_1_1introspection_ac678f3918f2036c45d7d0da7f5afce83}{}\label{namespacesmacc_1_1introspection_ac678f3918f2036c45d7d0da7f5afce83}
 
 
-Definition at line 193 of file introspection.\+h.
+Definition at line 194 of file introspection.\+h.
 
 \index{smacc\+::introspection@{smacc\+::introspection}!Smacc\+Allocator@{Smacc\+Allocator}}
 \index{Smacc\+Allocator@{Smacc\+Allocator}!smacc\+::introspection@{smacc\+::introspection}}
 \subsubsection[{\texorpdfstring{Smacc\+Allocator}{SmaccAllocator}}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::allocator$<$void$>$ {\bf smacc\+::introspection\+::\+Smacc\+Allocator}}\hypertarget{namespacesmacc_1_1introspection_aa4064aa24887868c6347efc004c08986}{}\label{namespacesmacc_1_1introspection_aa4064aa24887868c6347efc004c08986}
 
 
-Definition at line 30 of file introspection.\+h.
+Definition at line 31 of file introspection.\+h.
 
 
 
@@ -171,13 +171,13 @@ Definition at line 64 of file smacc\+\_\+state\+\_\+info.\+h.
 )}\hypertarget{namespacesmacc_1_1introspection_ae031f62082f4e291e4933ee6f876b571}{}\label{namespacesmacc_1_1introspection_ae031f62082f4e291e4933ee6f876b571}
 
 
-Definition at line 146 of file introspection.\+h.
+Definition at line 147 of file introspection.\+h.
 
 
 \begin{DoxyCode}
-147 \{
-148     transition\_name = T::getDefaultTransitionTag();
-149 \}
+148 \{
+149     transition\_name = T::getDefaultTransitionTag();
+150 \}
 \end{DoxyCode}
 \index{smacc\+::introspection@{smacc\+::introspection}!automatic\+Transition\+Tag@{automatic\+Transition\+Tag}}
 \index{automatic\+Transition\+Tag@{automatic\+Transition\+Tag}!smacc\+::introspection@{smacc\+::introspection}}
@@ -188,13 +188,13 @@ Definition at line 146 of file introspection.\+h.
 )}\hypertarget{namespacesmacc_1_1introspection_a0d72ea881eae4f1e0f71fe40b92f1f3e}{}\label{namespacesmacc_1_1introspection_a0d72ea881eae4f1e0f71fe40b92f1f3e}
 
 
-Definition at line 153 of file introspection.\+h.
+Definition at line 154 of file introspection.\+h.
 
 
 \begin{DoxyCode}
-154 \{
-155     transition\_name = \textcolor{stringliteral}{""};
-156 \}
+155 \{
+156     transition\_name = \textcolor{stringliteral}{""};
+157 \}
 \end{DoxyCode}
 \index{smacc\+::introspection@{smacc\+::introspection}!automatic\+Transition\+Type@{automatic\+Transition\+Type}}
 \index{automatic\+Transition\+Type@{automatic\+Transition\+Type}!smacc\+::introspection@{smacc\+::introspection}}
@@ -205,13 +205,13 @@ Definition at line 153 of file introspection.\+h.
 )}\hypertarget{namespacesmacc_1_1introspection_a2afacf459b5e29bb9fe8880a2a2d2b72}{}\label{namespacesmacc_1_1introspection_a2afacf459b5e29bb9fe8880a2a2d2b72}
 
 
-Definition at line 180 of file introspection.\+h.
+Definition at line 181 of file introspection.\+h.
 
 
 \begin{DoxyCode}
-181 \{
-182     transition\_type = T::getDefaultTransitionType();
-183 \}
+182 \{
+183     transition\_type = T::getDefaultTransitionType();
+184 \}
 \end{DoxyCode}
 \index{smacc\+::introspection@{smacc\+::introspection}!automatic\+Transition\+Type@{automatic\+Transition\+Type}}
 \index{automatic\+Transition\+Type@{automatic\+Transition\+Type}!smacc\+::introspection@{smacc\+::introspection}}
@@ -222,13 +222,13 @@ Definition at line 180 of file introspection.\+h.
 )}\hypertarget{namespacesmacc_1_1introspection_ad45bab559ffade7f9d81c6d90ab6d88c}{}\label{namespacesmacc_1_1introspection_ad45bab559ffade7f9d81c6d90ab6d88c}
 
 
-Definition at line 187 of file introspection.\+h.
+Definition at line 188 of file introspection.\+h.
 
 
 \begin{DoxyCode}
-188 \{
-189     transition\_type = demangledTypeName<DEFAULT>();
-190 \}
+189 \{
+190     transition\_type = demangledTypeName<DEFAULT>();
+191 \}
 \end{DoxyCode}
 \index{smacc\+::introspection@{smacc\+::introspection}!Call\+On\+Definition@{Call\+On\+Definition}}
 \index{Call\+On\+Definition@{Call\+On\+Definition}!smacc\+::introspection@{smacc\+::introspection}}
@@ -309,7 +309,7 @@ Here is the call graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacesmacc_1_1introspection_af1b3277706c3299b589c3fa801169286}{}\label{namespacesmacc_1_1introspection_af1b3277706c3299b589c3fa801169286}
 
 
-Definition at line 75 of file introspection.\+h.
+Definition at line 76 of file introspection.\+h.
 
 
 
@@ -317,9 +317,9 @@ References demangle\+Symbol().
 
 
 \begin{DoxyCode}
-76 \{
-77     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_1_1introspection_aa9158a0ff0cfe83a59877e6af7d7f873}{demangleSymbol}(\textcolor{keyword}{typeid}(T).name());
-78 \}
+77 \{
+78     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_1_1introspection_aa9158a0ff0cfe83a59877e6af7d7f873}{demangleSymbol}(\textcolor{keyword}{typeid}(T).name());
+79 \}
 \end{DoxyCode}
 
 
@@ -342,17 +342,17 @@ Here is the call graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{}\label{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}
 
 
-Definition at line 45 of file introspection.\+h.
+Definition at line 46 of file introspection.\+h.
 
 
 
-Referenced by smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info\+::assemble\+S\+M\+Structure\+Message(), Call\+On\+Definition(), smacc\+::clean\+Short\+Type\+Name(), demangled\+Type\+Name(), demangle\+Symbol(), demangle\+Type(), smacc\+::\+I\+Smacc\+State\+::get\+Class\+Name(), smacc\+::introspection\+::\+Smacc\+State\+Info\+::get\+Demangled\+Full\+Name(), smacc\+::\+Sensor\+Topic$<$ Cl\+Laser\+Sensor $>$\+::get\+Event\+Label(), smacc\+::introspection\+::\+Smacc\+Event\+Info\+::get\+Event\+Source\+Name(), smacc\+::introspection\+::\+Smacc\+Event\+Info\+::get\+Event\+Type\+Name(), smacc\+::\+Smacc\+State$<$ Ms\+Dance\+Bot\+Run\+Mode, Sm\+Dance\+Bot, St\+Acquire\+Sensors $>$\+::get\+Full\+Name(), smacc\+::\+Orthogonal\+::get\+Name(), smacc\+::\+I\+Smacc\+Client\+::get\+Name(), smacc\+::\+Smacc\+Client\+Behavior\+::get\+Name(), smacc\+::\+I\+Smacc\+Component\+::get\+Name(), smacc\+::introspection\+::\+Smacc\+Event\+Info\+::get\+Object\+Tag\+Name(), smacc\+::\+I\+Smacc\+State\+Machine\+::get\+State\+Machine\+Name(), smacc\+::introspection\+::\+Type\+Info\+::get\+Type\+Info\+From\+Typeid(), smacc\+::client\+\_\+bases\+::\+Smacc\+Action\+Client\+Base$<$ sm\+\_\+dance\+\_\+bot\+::\+L\+E\+D\+Control\+Action $>$\+::initialize(), smacc\+::\+I\+Smacc\+State\+Machine\+::map\+Behavior(), smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go\+::on\+Event\+Notified(), smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown\+::on\+Event\+Notified(), keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior\+::post\+Key\+Event(), keyboard\+\_\+client\+::\+Cl\+Keyboard\+::post\+Key\+Event(), smacc\+::client\+\_\+bases\+::\+Smacc\+Action\+Client\+Base$<$ sm\+\_\+dance\+\_\+bot\+::\+L\+E\+D\+Control\+Action $>$\+::post\+Result\+Event(), process\+Transition\+Aux(), smacc\+::\+I\+Smacc\+State\+Machine\+::requires\+Component(), smacc\+::\+Smacc\+State$<$ Ms\+Dance\+Bot\+Run\+Mode, Sm\+Dance\+Bot, St\+Acquire\+Sensors $>$\+::\+Smacc\+State(), smacc\+::\+Smacc\+State$<$ Ms\+Dance\+Bot\+Run\+Mode, Sm\+Dance\+Bot, St\+Acquire\+Sensors $>$\+::static\+\_\+configure(), and smacc\+::\+Smacc\+State$<$ Ms\+Dance\+Bot\+Run\+Mode, Sm\+Dance\+Bot, St\+Acquire\+Sensors $>$\+::$\sim$\+Smacc\+State().
+Referenced by smacc\+::introspection\+::\+Smacc\+State\+Machine\+Info\+::assemble\+S\+M\+Structure\+Message(), Call\+On\+Definition(), smacc\+::utils\+::clean\+Short\+Type\+Name(), demangled\+Type\+Name(), demangle\+Symbol(), demangle\+Type(), smacc\+::\+I\+Smacc\+State\+::get\+Class\+Name(), smacc\+::introspection\+::\+Smacc\+State\+Info\+::get\+Demangled\+Full\+Name(), smacc\+::\+Sensor\+Topic$<$ Cl\+Laser\+Sensor $>$\+::get\+Event\+Label(), smacc\+::introspection\+::\+Smacc\+Event\+Info\+::get\+Event\+Source\+Name(), smacc\+::introspection\+::\+Smacc\+Event\+Info\+::get\+Event\+Type\+Name(), smacc\+::\+Smacc\+State$<$ Ms\+Dance\+Bot\+Run\+Mode, Sm\+Dance\+Bot, St\+Acquire\+Sensors $>$\+::get\+Full\+Name(), smacc\+::\+I\+Orthogonal\+::get\+Name(), smacc\+::\+I\+Smacc\+Client\+::get\+Name(), smacc\+::\+Smacc\+Client\+Behavior\+::get\+Name(), smacc\+::\+I\+Smacc\+Component\+::get\+Name(), smacc\+::introspection\+::\+Smacc\+Event\+Info\+::get\+Object\+Tag\+Name(), smacc\+::\+I\+Smacc\+State\+Machine\+::get\+State\+Machine\+Name(), smacc\+::introspection\+::\+Type\+Info\+::get\+Type\+Info\+From\+Typeid(), smacc\+::client\+\_\+bases\+::\+Smacc\+Action\+Client\+Base$<$ sm\+\_\+dance\+\_\+bot\+::\+L\+E\+D\+Control\+Action $>$\+::initialize(), smacc\+::\+I\+Smacc\+State\+Machine\+::map\+Behavior(), smacc\+::logic\+\_\+units\+::\+Lu\+All\+Events\+Go\+::on\+Event\+Notified(), smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown\+::on\+Event\+Notified(), keyboard\+\_\+client\+::\+Cb\+Default\+Keyboard\+Behavior\+::post\+Key\+Event(), keyboard\+\_\+client\+::\+Cl\+Keyboard\+::post\+Key\+Event(), smacc\+::client\+\_\+bases\+::\+Smacc\+Action\+Client\+Base$<$ sm\+\_\+dance\+\_\+bot\+::\+L\+E\+D\+Control\+Action $>$\+::post\+Result\+Event(), process\+Transition\+Aux(), smacc\+::\+I\+Smacc\+State\+Machine\+::requires\+Component(), smacc\+::\+Smacc\+State$<$ Ms\+Dance\+Bot\+Run\+Mode, Sm\+Dance\+Bot, St\+Acquire\+Sensors $>$\+::\+Smacc\+State(), smacc\+::\+Smacc\+State$<$ Ms\+Dance\+Bot\+Run\+Mode, Sm\+Dance\+Bot, St\+Acquire\+Sensors $>$\+::static\+\_\+configure(), and smacc\+::\+Smacc\+State$<$ Ms\+Dance\+Bot\+Run\+Mode, Sm\+Dance\+Bot, St\+Acquire\+Sensors $>$\+::$\sim$\+Smacc\+State().
 
 
 \begin{DoxyCode}
-46 \{
-47     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_1_1introspection_aa9158a0ff0cfe83a59877e6af7d7f873}{demangleSymbol}(name.c\_str());
-48 \}
+47 \{
+48     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_1_1introspection_aa9158a0ff0cfe83a59877e6af7d7f873}{demangleSymbol}(name.c\_str());
+49 \}
 \end{DoxyCode}
 
 
@@ -375,26 +375,26 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacesmacc_1_1introspection_af32c671351d958213f8031bb90767922}{}\label{namespacesmacc_1_1introspection_af32c671351d958213f8031bb90767922}
 
 
-Definition at line 50 of file introspection.\+h.
+Definition at line 51 of file introspection.\+h.
 
 
 \begin{DoxyCode}
-51 \{
-52 \textcolor{preprocessor}{#if (\_\_GNUC\_\_ && \_\_cplusplus && \_\_GNUC\_\_ >= 3)}
-53     \textcolor{keywordtype}{int} status;
-54     \textcolor{keywordtype}{char} *res = abi::\_\_cxa\_demangle(name, 0, 0, &status);
-55     \textcolor{keywordflow}{if} (res)
-56     \{
-57         \textcolor{keyword}{const} std::string demangled\_name(res);
-58         std::free(res);
-59         \textcolor{keywordflow}{return} demangled\_name;
-60     \}
-61     \textcolor{comment}{// Demangling failed, fallback to mangled name}
-62     \textcolor{keywordflow}{return} std::string(name);
-63 \textcolor{preprocessor}{#else}
-64     \textcolor{keywordflow}{return} std::string(name);
-65 \textcolor{preprocessor}{#endif}
-66 \}
+52 \{
+53 \textcolor{preprocessor}{#if (\_\_GNUC\_\_ && \_\_cplusplus && \_\_GNUC\_\_ >= 3)}
+54     \textcolor{keywordtype}{int} status;
+55     \textcolor{keywordtype}{char} *res = abi::\_\_cxa\_demangle(name, 0, 0, &status);
+56     \textcolor{keywordflow}{if} (res)
+57     \{
+58         \textcolor{keyword}{const} std::string demangled\_name(res);
+59         std::free(res);
+60         \textcolor{keywordflow}{return} demangled\_name;
+61     \}
+62     \textcolor{comment}{// Demangling failed, fallback to mangled name}
+63     \textcolor{keywordflow}{return} std::string(name);
+64 \textcolor{preprocessor}{#else}
+65     \textcolor{keywordflow}{return} std::string(name);
+66 \textcolor{preprocessor}{#endif}
+67 \}
 \end{DoxyCode}
 \index{smacc\+::introspection@{smacc\+::introspection}!demangle\+Symbol@{demangle\+Symbol}}
 \index{demangle\+Symbol@{demangle\+Symbol}!smacc\+::introspection@{smacc\+::introspection}}
@@ -405,7 +405,7 @@ Definition at line 50 of file introspection.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacesmacc_1_1introspection_aa9158a0ff0cfe83a59877e6af7d7f873}{}\label{namespacesmacc_1_1introspection_aa9158a0ff0cfe83a59877e6af7d7f873}
 
 
-Definition at line 69 of file introspection.\+h.
+Definition at line 70 of file introspection.\+h.
 
 
 
@@ -413,9 +413,9 @@ References demangle\+Symbol().
 
 
 \begin{DoxyCode}
-70 \{
-71     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_1_1introspection_aa9158a0ff0cfe83a59877e6af7d7f873}{demangleSymbol}(\textcolor{keyword}{typeid}(T).name());
-72 \}
+71 \{
+72     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_1_1introspection_aa9158a0ff0cfe83a59877e6af7d7f873}{demangleSymbol}(\textcolor{keyword}{typeid}(T).name());
+73 \}
 \end{DoxyCode}
 
 
@@ -438,7 +438,7 @@ Here is the call graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacesmacc_1_1introspection_a81ad2fc77a0262640d4b1bd273938603}{}\label{namespacesmacc_1_1introspection_a81ad2fc77a0262640d4b1bd273938603}
 
 
-Definition at line 80 of file introspection.\+h.
+Definition at line 81 of file introspection.\+h.
 
 
 
@@ -446,13 +446,13 @@ References demangle\+Symbol().
 
 
 
-Referenced by smacc\+::client\+\_\+bases\+::\+Smacc\+Action\+Client\+Base$<$ sm\+\_\+dance\+\_\+bot\+::\+L\+E\+D\+Control\+Action $>$\+::configure\+Event\+Source\+Types(), smacc\+::\+Orthogonal\+::create\+Client(), smacc\+::\+Signal\+Detector\+::find\+Updatable\+Behaviors(), smacc\+::\+Signal\+Detector\+::find\+Updatable\+Clients(), and smacc\+::\+Signal\+Detector\+::poll\+Once().
+Referenced by smacc\+::client\+\_\+bases\+::\+Smacc\+Action\+Client\+Base$<$ sm\+\_\+dance\+\_\+bot\+::\+L\+E\+D\+Control\+Action $>$\+::configure\+Event\+Source\+Types(), smacc\+::\+Orthogonal$<$ Or\+Service3 $>$\+::create\+Client(), smacc\+::\+Signal\+Detector\+::find\+Updatable\+Behaviors(), smacc\+::\+Signal\+Detector\+::find\+Updatable\+Clients(), and smacc\+::\+Signal\+Detector\+::poll\+Once().
 
 
 \begin{DoxyCode}
-81 \{
-82     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_1_1introspection_aa9158a0ff0cfe83a59877e6af7d7f873}{demangleSymbol}(tinfo.name());
-83 \}
+82 \{
+83     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_1_1introspection_aa9158a0ff0cfe83a59877e6af7d7f873}{demangleSymbol}(tinfo.name());
+84 \}
 \end{DoxyCode}
 
 
@@ -487,13 +487,13 @@ Here is the caller graph for this function\+:
 )}\hypertarget{namespacesmacc_1_1introspection_a7d5ea10a24373bf452d3b6987d0a6bd0}{}\label{namespacesmacc_1_1introspection_a7d5ea10a24373bf452d3b6987d0a6bd0}
 
 
-Definition at line 112 of file introspection.\+h.
+Definition at line 113 of file introspection.\+h.
 
 
 \begin{DoxyCode}
-113 \{
-114     label = T::getEventLabel();
-115 \}
+114 \{
+115     label = T::getEventLabel();
+116 \}
 \end{DoxyCode}
 \index{smacc\+::introspection@{smacc\+::introspection}!Event\+Label@{Event\+Label}}
 \index{Event\+Label@{Event\+Label}!smacc\+::introspection@{smacc\+::introspection}}
@@ -504,13 +504,13 @@ Definition at line 112 of file introspection.\+h.
 )}\hypertarget{namespacesmacc_1_1introspection_aaf610a608f1f29ab3827a80e052d0ebe}{}\label{namespacesmacc_1_1introspection_aaf610a608f1f29ab3827a80e052d0ebe}
 
 
-Definition at line 119 of file introspection.\+h.
+Definition at line 120 of file introspection.\+h.
 
 
 \begin{DoxyCode}
-120 \{
-121     label = \textcolor{stringliteral}{""};
-122 \}
+121 \{
+122     label = \textcolor{stringliteral}{""};
+123 \}
 \end{DoxyCode}
 \index{smacc\+::introspection@{smacc\+::introspection}!get\+Transition\+Type@{get\+Transition\+Type}}
 \index{get\+Transition\+Type@{get\+Transition\+Type}!smacc\+::introspection@{smacc\+::introspection}}
@@ -521,19 +521,19 @@ Definition at line 119 of file introspection.\+h.
 )\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{namespacesmacc_1_1introspection_a62b41b5a90e19f27288b1aaac317fef1}{}\label{namespacesmacc_1_1introspection_a62b41b5a90e19f27288b1aaac317fef1}
 
 
-Definition at line 232 of file introspection.\+h.
+Definition at line 233 of file introspection.\+h.
 
 
 \begin{DoxyCode}
-233 \{
-234     std::string output;
-235     CheckType<TTransition> op(&output);
-236     \textcolor{keyword}{using} boost::mpl::\_1;
-237     \textcolor{keyword}{using} wrappedList = \textcolor{keyword}{typename} boost::mpl::transform<DEFAULT\_TRANSITION\_TYPES, \_1>::type;
-238 
-239     boost::mpl::for\_each<wrappedList>(op);
-240     \textcolor{keywordflow}{return} output;
-241 \};
+234 \{
+235     std::string output;
+236     CheckType<TTransition> op(&output);
+237     \textcolor{keyword}{using} boost::mpl::\_1;
+238     \textcolor{keyword}{using} wrappedList = \textcolor{keyword}{typename} boost::mpl::transform<DEFAULT\_TRANSITION\_TYPES, \_1>::type;
+239 
+240     boost::mpl::for\_each<wrappedList>(op);
+241     \textcolor{keywordflow}{return} output;
+242 \};
 \end{DoxyCode}
 \index{smacc\+::introspection@{smacc\+::introspection}!optional\+Node\+Handle@{optional\+Node\+Handle}}
 \index{optional\+Node\+Handle@{optional\+Node\+Handle}!smacc\+::introspection@{smacc\+::introspection}}
@@ -545,7 +545,7 @@ Definition at line 232 of file introspection.\+h.
 }\hypertarget{namespacesmacc_1_1introspection_a8acc3b4146a8b2bb0a9fa4178840e9b9}{}\label{namespacesmacc_1_1introspection_a8acc3b4146a8b2bb0a9fa4178840e9b9}
 
 
-Definition at line 33 of file introspection.\+h.
+Definition at line 34 of file introspection.\+h.
 
 
 
@@ -553,9 +553,9 @@ Referenced by smacc\+::\+Smacc\+State$<$ Ms\+Dance\+Bot\+Run\+Mode, Sm\+Dance\+B
 
 
 \begin{DoxyCode}
-35 \{
-36     \textcolor{keywordflow}{return} obj->getROSNode();
-37 \}
+36 \{
+37     \textcolor{keywordflow}{return} obj->getROSNode();
+38 \}
 \end{DoxyCode}
 
 
@@ -579,13 +579,13 @@ Here is the caller graph for this function\+:
 }\hypertarget{namespacesmacc_1_1introspection_a96b953e65af67591266e9ae4b3e4ee49}{}\label{namespacesmacc_1_1introspection_a96b953e65af67591266e9ae4b3e4ee49}
 
 
-Definition at line 40 of file introspection.\+h.
+Definition at line 41 of file introspection.\+h.
 
 
 \begin{DoxyCode}
-41 \{
-42     \textcolor{keywordflow}{return} ros::NodeHandle(\textcolor{stringliteral}{""});
-43 \}
+42 \{
+43     \textcolor{keywordflow}{return} ros::NodeHandle(\textcolor{stringliteral}{""});
+44 \}
 \end{DoxyCode}
 \index{smacc\+::introspection@{smacc\+::introspection}!process\+Sub\+State@{process\+Sub\+State}}
 \index{process\+Sub\+State@{process\+Sub\+State}!smacc\+::introspection@{smacc\+::introspection}}
@@ -793,7 +793,7 @@ Referenced by process\+Transition().
 156     std::string transitionTag;
 157     std::string transitionType;
 158 
-159     \textcolor{keywordflow}{if} (\textcolor{keyword}{typeid}(Tag) != \textcolor{keyword}{typeid}(\hyperlink{structsmacc_1_1default__transition__name}{smacc::default\_transition\_name}))
+159     \textcolor{keywordflow}{if} (\textcolor{keyword}{typeid}(Tag) != \textcolor{keyword}{typeid}(default\_transition\_name))
 160     \{
 161         transitionTag = demangleSymbol<Tag>();
 162         transitionType = getTransitionType<Tag>();

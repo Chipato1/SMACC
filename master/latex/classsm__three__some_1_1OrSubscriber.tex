@@ -11,7 +11,7 @@ Inheritance diagram for sm\+\_\+three\+\_\+some\+:\+:Or\+Subscriber\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=243pt]{classsm__three__some_1_1OrSubscriber__inherit__graph}
+\includegraphics[height=550pt]{classsm__three__some_1_1OrSubscriber__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -29,6 +29,7 @@ Collaboration diagram for sm\+\_\+three\+\_\+some\+:\+:Or\+Subscriber\+:
 \item 
 virtual void \hyperlink{classsm__three__some_1_1OrSubscriber_af1362388fc43c43a38d75542931e348a}{on\+Initialize} () override
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -48,7 +49,7 @@ Definition at line 10 of file or\+\_\+subscriber.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__three__some_1_1OrSubscriber_af1362388fc43c43a38d75542931e348a}{}\label{classsm__three__some_1_1OrSubscriber_af1362388fc43c43a38d75542931e348a}
 
 
-Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+Reimplemented from \hyperlink{classsmacc_1_1IOrthogonal_ad21074708f877791f5604916dfd3b917}{smacc\+::\+I\+Orthogonal}.
 
 
 
@@ -57,7 +58,7 @@ Definition at line 13 of file or\+\_\+subscriber.\+h.
 
 \begin{DoxyCode}
 14     \{
-15         \textcolor{keyword}{auto} subscriber\_client = this->createClient<OrSubscriber, ClSubscriber>();
+15         \textcolor{keyword}{auto} subscriber\_client = this->createClient<ClSubscriber>();
 16         subscriber\_client->initialize();
 17     \}
 \end{DoxyCode}

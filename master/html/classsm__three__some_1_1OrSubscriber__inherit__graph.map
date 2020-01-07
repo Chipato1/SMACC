@@ -1,3 +1,5 @@
 <map id="sm_three_some::OrSubscriber" name="sm_three_some::OrSubscriber">
-<area shape="rect" id="node2" href="$classsmacc_1_1Orthogonal.html" title="{smacc::Orthogonal\n|&#45; stateMachine_\l&#45; clientBehaviors_\l&#45; clients_\l|+ setStateMachine()\l+ addClientBehavior()\l+ onEntry()\l+ onExit()\l+ getName()\l+ createClient()\l+ requiresComponent()\l+ requiresClient()\l+ getClients()\l+ getClientBehaviors()\l+ getClientBehavior()\l&#45; onInitialize()\l}" alt="" coords="27,5,201,273"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1Orthogonal.html" title="{smacc::Orthogonal\&lt;\l OrSubscriber \&gt;\n||+ createClient()\l}" alt="" coords="37,463,191,555"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1IOrthogonal.html" title="{smacc::IOrthogonal\n|# stateMachine_\l# clientBehaviors_\l# clients_\l|+ setStateMachine()\l+ addClientBehavior()\l+ onEntry()\l+ onExit()\l+ getName()\l+ requiresComponent()\l+ requiresClient()\l+ getClients()\l+ getClientBehaviors()\l+ getClientBehavior()\l# onInitialize()\l}" alt="" coords="41,5,216,259"/>
+<area shape="rect" id="node4" href="$classsmacc_1_1Orthogonal.html" title="{smacc::Orthogonal\&lt;\l TOrthogonal \&gt;\n||+ createClient()\l}" alt="" coords="130,308,285,400"/>
 </map>

@@ -11,7 +11,7 @@ Inheritance diagram for sm\+\_\+three\+\_\+some\+:\+:Or\+Updatable\+Publisher\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=241pt]{classsm__three__some_1_1OrUpdatablePublisher__inherit__graph}
+\includegraphics[height=550pt]{classsm__three__some_1_1OrUpdatablePublisher__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -29,6 +29,7 @@ Collaboration diagram for sm\+\_\+three\+\_\+some\+:\+:Or\+Updatable\+Publisher\
 \item 
 virtual void \hyperlink{classsm__three__some_1_1OrUpdatablePublisher_aecda3521d565c139c75080f12e7045e0}{on\+Initialize} () override
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -48,7 +49,7 @@ Definition at line 11 of file or\+\_\+updatable\+\_\+publisher.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__three__some_1_1OrUpdatablePublisher_aecda3521d565c139c75080f12e7045e0}{}\label{classsm__three__some_1_1OrUpdatablePublisher_aecda3521d565c139c75080f12e7045e0}
 
 
-Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+Reimplemented from \hyperlink{classsmacc_1_1IOrthogonal_ad21074708f877791f5604916dfd3b917}{smacc\+::\+I\+Orthogonal}.
 
 
 
@@ -57,8 +58,7 @@ Definition at line 14 of file or\+\_\+updatable\+\_\+publisher.\+h.
 
 \begin{DoxyCode}
 15     \{
-16         \textcolor{keyword}{auto} \hyperlink{namespaceros__publisher__client}{ros\_publisher\_client} = this->createClient<OrUpdatablePublisher,
-       ClRosPublisher>();
+16         \textcolor{keyword}{auto} \hyperlink{namespaceros__publisher__client}{ros\_publisher\_client} = this->createClient<ClRosPublisher>();
 17         \hyperlink{namespaceros__publisher__client}{ros\_publisher\_client}->initialize();
 18     \}
 \end{DoxyCode}

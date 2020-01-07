@@ -11,7 +11,7 @@ Inheritance diagram for sm\+\_\+atomic\+:\+:Or\+Timer\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=211pt]{classsm__atomic_1_1OrTimer__inherit__graph}
+\includegraphics[height=550pt]{classsm__atomic_1_1OrTimer__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -29,6 +29,7 @@ Collaboration diagram for sm\+\_\+atomic\+:\+:Or\+Timer\+:
 \item 
 virtual void \hyperlink{classsm__atomic_1_1OrTimer_a509b0d9ce7c6ed9e0c291decaf6dd280}{on\+Initialize} () override
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -48,7 +49,7 @@ Definition at line 6 of file or\+\_\+timer.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__atomic_1_1OrTimer_a509b0d9ce7c6ed9e0c291decaf6dd280}{}\label{classsm__atomic_1_1OrTimer_a509b0d9ce7c6ed9e0c291decaf6dd280}
 
 
-Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+Reimplemented from \hyperlink{classsmacc_1_1IOrthogonal_ad21074708f877791f5604916dfd3b917}{smacc\+::\+I\+Orthogonal}.
 
 
 
@@ -57,7 +58,7 @@ Definition at line 9 of file or\+\_\+timer.\+h.
 
 \begin{DoxyCode}
 10     \{
-11         \textcolor{keyword}{auto} client = this->createClient<OrTimer, ros\_timer\_client::ClRosTimer>(ros::Duration(1));
+11         \textcolor{keyword}{auto} client = this->createClient<ros\_timer\_client::ClRosTimer>(ros::Duration(1));
 12         client->initialize();
 13     \}
 \end{DoxyCode}

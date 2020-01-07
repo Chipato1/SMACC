@@ -135,7 +135,8 @@ Definition at line 51 of file smacc\+\_\+state\+\_\+machine\+\_\+base.\+h.
 \begin{DoxyCode}
 52     \{
 53         ROS\_INFO(\textcolor{stringliteral}{"initiate\_impl"});
-54         \textcolor{keyword}{auto} shortname = \hyperlink{namespacesmacc_a09b297b1cdb9aae93a958f323431464a}{cleanShortTypeName}(\textcolor{keyword}{typeid}(DerivedStateMachine));
+54         \textcolor{keyword}{auto} shortname = \hyperlink{namespacesmacc_1_1utils_aacd1975bb7cd9bec4b50e111a2ae7edb}{smacc::utils::cleanShortTypeName}(\textcolor{keyword}{typeid}(
+      DerivedStateMachine));
 55         this->\hyperlink{classsmacc_1_1ISmaccStateMachine_ae8c9c79ca6cd77c975f5d9cda33a6d5e}{onInitializing}(shortname);
 56 
 57         ROS\_INFO(\textcolor{stringliteral}{"Introspecting state machine via typeWalker"});

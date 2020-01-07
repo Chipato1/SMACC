@@ -1,7 +1,0 @@
-<map id="smacc::IActionResult" name="smacc::IActionResult">
-<area shape="rect" id="node2" href="$structsmacc_1_1EvActionAborted.html" title="{smacc::EvActionAborted\l\&lt; TSource, TObjectTag \&gt;\n|+ resultMessage\l|+ getEventLabel()\l+ getDefaultTransitionTag()\l+ getDefaultTransitionType()\l}" alt="" coords="5,131,208,252"/>
-<area shape="rect" id="node3" href="$structsmacc_1_1EvActionPreempted.html" title="{smacc::EvActionPreempted\l\&lt; TSource, TObjectTag \&gt;\n|+ resultMessage\l|+ getEventLabel()\l+ getDefaultTransitionTag()\l+ getDefaultTransitionType()\l}" alt="" coords="232,131,435,252"/>
-<area shape="rect" id="node4" href="$structsmacc_1_1EvActionRejected.html" title="{smacc::EvActionRejected\l\&lt; TSource, TObjectTag \&gt;\n|+ resultMessage\l|+ getEventLabel()\l+ getDefaultTransitionTag()\l+ getDefaultTransitionType()\l}" alt="" coords="459,131,661,252"/>
-<area shape="rect" id="node5" href="$structsmacc_1_1EvActionResult.html" title="{smacc::EvActionResult\l\&lt; TSource, TObjectTag \&gt;\n|+ resultMessage\l|}" alt="" coords="685,145,867,237"/>
-<area shape="rect" id="node6" href="$structsmacc_1_1EvActionSucceeded.html" title="{smacc::EvActionSucceeded\l\&lt; TSource, TObjectTag \&gt;\n|+ resultMessage\l|+ getEventLabel()\l+ getDefaultTransitionTag()\l+ getDefaultTransitionType()\l}" alt="" coords="891,131,1093,252"/>
-</map>

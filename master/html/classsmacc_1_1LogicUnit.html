@@ -105,8 +105,8 @@ Inheritance diagram for smacc::LogicUnit:</div>
 <div class="center"><img src="classsmacc_1_1LogicUnit__inherit__graph.png" border="0" usemap="#smacc_1_1LogicUnit_inherit__map" alt="Inheritance graph"/></div>
 <map name="smacc_1_1LogicUnit_inherit__map" id="smacc_1_1LogicUnit_inherit__map">
 <area shape="rect" id="node2" href="classsmacc_1_1logic__units_1_1LuAllEventsGo.html" title="{smacc::logic_units\l::LuAllEventsGo\n|&#45; triggeredEvents\l|+ LuAllEventsGo()\l+ onInitialized()\l+ onEventNotified()\l+ triggers()\l}" alt="" coords="5,314,153,450"/>
-<area shape="rect" id="node3" href="classsmacc_1_1logic__units_1_1LuEventCountdown.html" title="{smacc::logic_units\l::LuEventCountdown\n|&#45; triggeredEvents\l&#45; eventCount_\l|+ LuEventCountdown()\l+ onInitialized()\l+ onEventNotified()\l+ triggers()\l}" alt="" coords="177,307,347,457"/>
-<area shape="rect" id="node4" href="classsmacc_1_1LuConditional.html" title="{smacc::LuConditional\n|&#45; triggeredEvents\l&#45; conditionFlag\l|+ LuConditional()\l+ ~LuConditional()\l+ triggers()\l}" alt="" coords="371,321,529,443"/>
+<area shape="rect" id="node3" href="classsmacc_1_1logic__units_1_1LuConditional.html" title="{smacc::logic_units\l::LuConditional\n|&#45; triggeredEvents\l&#45; conditionFlag\l|+ LuConditional()\l+ ~LuConditional()\l+ triggers()\l}" alt="" coords="178,314,322,450"/>
+<area shape="rect" id="node4" href="classsmacc_1_1logic__units_1_1LuEventCountdown.html" title="{smacc::logic_units\l::LuEventCountdown\n|&#45; triggeredEvents\l&#45; eventCount_\l|+ LuEventCountdown()\l+ onInitialized()\l+ onEventNotified()\l+ triggers()\l}" alt="" coords="347,307,516,457"/>
 </map>
 </div>
 <div class="dynheader">
@@ -147,9 +147,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afcec0608a17e039791403472a2411539"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae975a96f0210412e1cb4a7b5b948ade6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsmacc_1_1LogicUnit.html#ae975a96f0210412e1cb4a7b5b948ade6">triggers</a> ()=0</td></tr>
 <tr class="separator:ae975a96f0210412e1cb4a7b5b948ade6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76ef62bbd4dccf3da2c03032616b3ef6"><td class="memTemplParams" colspan="2">template&lt;typename TEv &gt; </td></tr>
-<tr class="memitem:a76ef62bbd4dccf3da2c03032616b3ef6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsmacc_1_1LogicUnit.html#a76ef62bbd4dccf3da2c03032616b3ef6">declarePostEvent</a> (<a class="el" href="structsmacc_1_1introspection_1_1typelist.html">typelist</a>&lt; TEv &gt;)</td></tr>
-<tr class="separator:a76ef62bbd4dccf3da2c03032616b3ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4daf7250a0af4cff8703258668efb3e3"><td class="memTemplParams" colspan="2">template&lt;typename TEv &gt; </td></tr>
+<tr class="memitem:a4daf7250a0af4cff8703258668efb3e3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsmacc_1_1LogicUnit.html#a4daf7250a0af4cff8703258668efb3e3">declarePostEvent</a> (<a class="el" href="structsmacc_1_1introspection_1_1typelist.html">smacc::introspection::typelist</a>&lt; TEv &gt;)</td></tr>
+<tr class="separator:a4daf7250a0af4cff8703258668efb3e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -252,7 +252,7 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a76ef62bbd4dccf3da2c03032616b3ef6"></a>
+<a class="anchor" id="a4daf7250a0af4cff8703258668efb3e3"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -261,17 +261,17 @@ template&lt;typename TEv &gt; </div>
         <tr>
           <td class="memname">void smacc::LogicUnit::declarePostEvent </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structsmacc_1_1introspection_1_1typelist.html">typelist</a>&lt; TEv &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="structsmacc_1_1introspection_1_1typelist.html">smacc::introspection::typelist</a>&lt; TEv &gt;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="smacc__logic__unit__impl_8h_source.html#l00007">7</a> of file <a class="el" href="smacc__logic__unit__impl_8h_source.html">smacc_logic_unit_impl.h</a>.</p>
+<p>Definition at line <a class="el" href="smacc__logic__unit__impl_8h_source.html#l00006">6</a> of file <a class="el" href="smacc__logic__unit__impl_8h_source.html">smacc_logic_unit_impl.h</a>.</p>
 
 <p>References <a class="el" href="classsmacc_1_1ISmaccState.html#a562bb3f9a3ac16b8be71e4794c9e7523">smacc::ISmaccState::getStateMachine()</a>, <a class="el" href="logic__unit_8h_source.html#l00022">ownerState</a>, <a class="el" href="smacc__state__machine__impl_8h_source.html#l00128">smacc::ISmaccStateMachine::postEvent()</a>, and <a class="el" href="logic__unit_8h_source.html#l00023">postEventFn</a>.</p>
-<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    this-&gt;<a class="code" href="classsmacc_1_1LogicUnit.html#ac75aaeeea0e8d3667763a332ecfd65f7">postEventFn</a> = [<span class="keyword">this</span>]() {</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        ROS_INFO_STREAM(<span class="stringliteral">&quot;[Logic Unit Base] postingfn posting event: &quot;</span> &lt;&lt; demangleSymbol&lt;TEv&gt;());</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keyword">auto</span> *ev = <span class="keyword">new</span> TEv();</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        this-&gt;<a class="code" href="classsmacc_1_1LogicUnit.html#a8863d227f46868876632b07b500f27d6">ownerState</a>-&gt;<a class="code" href="classsmacc_1_1ISmaccState.html#a562bb3f9a3ac16b8be71e4794c9e7523">getStateMachine</a>().<a class="code" href="classsmacc_1_1ISmaccStateMachine.html#ad80cdd7bbc9a9f3b221c625754fed1ed">postEvent</a>(ev);</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    };</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div><div class="ttc" id="classsmacc_1_1LogicUnit_html_ac75aaeeea0e8d3667763a332ecfd65f7"><div class="ttname"><a href="classsmacc_1_1LogicUnit.html#ac75aaeeea0e8d3667763a332ecfd65f7">smacc::LogicUnit::postEventFn</a></div><div class="ttdeci">std::function&lt; void()&gt; postEventFn</div><div class="ttdef"><b>Definition:</b> <a href="logic__unit_8h_source.html#l00023">logic_unit.h:23</a></div></div>
+<div class="fragment"><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    this-&gt;<a class="code" href="classsmacc_1_1LogicUnit.html#ac75aaeeea0e8d3667763a332ecfd65f7">postEventFn</a> = [<span class="keyword">this</span>]() {</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        ROS_INFO_STREAM(<span class="stringliteral">&quot;[Logic Unit Base] postingfn posting event: &quot;</span> &lt;&lt; demangleSymbol&lt;TEv&gt;());</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keyword">auto</span> *ev = <span class="keyword">new</span> TEv();</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        this-&gt;<a class="code" href="classsmacc_1_1LogicUnit.html#a8863d227f46868876632b07b500f27d6">ownerState</a>-&gt;<a class="code" href="classsmacc_1_1ISmaccState.html#a562bb3f9a3ac16b8be71e4794c9e7523">getStateMachine</a>().<a class="code" href="classsmacc_1_1ISmaccStateMachine.html#ad80cdd7bbc9a9f3b221c625754fed1ed">postEvent</a>(ev);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    };</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div><div class="ttc" id="classsmacc_1_1LogicUnit_html_ac75aaeeea0e8d3667763a332ecfd65f7"><div class="ttname"><a href="classsmacc_1_1LogicUnit.html#ac75aaeeea0e8d3667763a332ecfd65f7">smacc::LogicUnit::postEventFn</a></div><div class="ttdeci">std::function&lt; void()&gt; postEventFn</div><div class="ttdef"><b>Definition:</b> <a href="logic__unit_8h_source.html#l00023">logic_unit.h:23</a></div></div>
 <div class="ttc" id="classsmacc_1_1ISmaccState_html_a562bb3f9a3ac16b8be71e4794c9e7523"><div class="ttname"><a href="classsmacc_1_1ISmaccState.html#a562bb3f9a3ac16b8be71e4794c9e7523">smacc::ISmaccState::getStateMachine</a></div><div class="ttdeci">virtual ISmaccStateMachine &amp; getStateMachine()=0</div></div>
 <div class="ttc" id="classsmacc_1_1LogicUnit_html_a8863d227f46868876632b07b500f27d6"><div class="ttname"><a href="classsmacc_1_1LogicUnit.html#a8863d227f46868876632b07b500f27d6">smacc::LogicUnit::ownerState</a></div><div class="ttdeci">ISmaccState * ownerState</div><div class="ttdef"><b>Definition:</b> <a href="logic__unit_8h_source.html#l00022">logic_unit.h:22</a></div></div>
 <div class="ttc" id="classsmacc_1_1ISmaccStateMachine_html_ad80cdd7bbc9a9f3b221c625754fed1ed"><div class="ttname"><a href="classsmacc_1_1ISmaccStateMachine.html#ad80cdd7bbc9a9f3b221c625754fed1ed">smacc::ISmaccStateMachine::postEvent</a></div><div class="ttdeci">void postEvent(EventType *ev)</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state__machine__impl_8h_source.html#l00128">smacc_state_machine_impl.h:128</a></div></div>
@@ -279,8 +279,8 @@ template&lt;typename TEv &gt; </div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classsmacc_1_1LogicUnit_a76ef62bbd4dccf3da2c03032616b3ef6_cgraph.png" border="0" usemap="#classsmacc_1_1LogicUnit_a76ef62bbd4dccf3da2c03032616b3ef6_cgraph" alt=""/></div>
-<map name="classsmacc_1_1LogicUnit_a76ef62bbd4dccf3da2c03032616b3ef6_cgraph" id="classsmacc_1_1LogicUnit_a76ef62bbd4dccf3da2c03032616b3ef6_cgraph">
+<div class="center"><img src="classsmacc_1_1LogicUnit_a4daf7250a0af4cff8703258668efb3e3_cgraph.png" border="0" usemap="#classsmacc_1_1LogicUnit_a4daf7250a0af4cff8703258668efb3e3_cgraph" alt=""/></div>
+<map name="classsmacc_1_1LogicUnit_a4daf7250a0af4cff8703258668efb3e3_cgraph" id="classsmacc_1_1LogicUnit_a4daf7250a0af4cff8703258668efb3e3_cgraph">
 <area shape="rect" id="node2" href="classsmacc_1_1ISmaccState.html#a562bb3f9a3ac16b8be71e4794c9e7523" title="smacc::ISmaccState\l::getStateMachine" alt="" coords="266,5,421,47"/>
 <area shape="rect" id="node3" href="classsmacc_1_1ISmaccStateMachine.html#ad80cdd7bbc9a9f3b221c625754fed1ed" title="smacc::ISmaccStateMachine\l::postEvent" alt="" coords="240,71,447,112"/>
 </map>
@@ -437,7 +437,7 @@ template&lt;typename TEvent &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classsmacc_1_1LuConditional.html#ab7e894c1d6a0bf0c96d9c2ea0a08fed7">smacc::LuConditional</a>, <a class="el" href="classsmacc_1_1logic__units_1_1LuEventCountdown.html#a77e004c01a966113e63ded6be7c8ab5d">smacc::logic_units::LuEventCountdown</a>, and <a class="el" href="classsmacc_1_1logic__units_1_1LuAllEventsGo.html#a89a25635e1ebb192433267fdbd0530b8">smacc::logic_units::LuAllEventsGo</a>.</p>
+<p>Implemented in <a class="el" href="classsmacc_1_1logic__units_1_1LuConditional.html#a6d2a5faf4a5fe8f7c9e2e3fdbc481f97">smacc::logic_units::LuConditional</a>, <a class="el" href="classsmacc_1_1logic__units_1_1LuEventCountdown.html#a77e004c01a966113e63ded6be7c8ab5d">smacc::logic_units::LuEventCountdown</a>, and <a class="el" href="classsmacc_1_1logic__units_1_1LuAllEventsGo.html#a89a25635e1ebb192433267fdbd0530b8">smacc::logic_units::LuAllEventsGo</a>.</p>
 
 <p>Referenced by <a class="el" href="logic__unit_8cpp_source.html#l00019">update()</a>.</p>
 
@@ -511,7 +511,7 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="logic__unit_8h_source.html#l00024">24</a> of file <a class="el" href="logic__unit_8h_source.html">logic_unit.h</a>.</p>
 
-<p>Referenced by <a class="el" href="lu__all__events__go_8cpp_source.html#l00009">smacc::logic_units::LuAllEventsGo::onInitialized()</a>, <a class="el" href="event__countdown_8cpp_source.html#l00015">smacc::logic_units::LuEventCountdown::onInitialized()</a>, and <a class="el" href="logic__unit_8h_source.html#l00040">smacc::LogicUnit::AddTEventType&lt; TEventList &gt;::operator()()</a>.</p>
+<p>Referenced by <a class="el" href="event__countdown_8cpp_source.html#l00016">smacc::logic_units::LuEventCountdown::onInitialized()</a>, and <a class="el" href="logic__unit_8h_source.html#l00040">smacc::LogicUnit::AddTEventType&lt; TEventList &gt;::operator()()</a>.</p>
 
 </div>
 </div>
@@ -527,7 +527,7 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="logic__unit_8h_source.html#l00022">22</a> of file <a class="el" href="logic__unit_8h_source.html">logic_unit.h</a>.</p>
 
-<p>Referenced by <a class="el" href="smacc__logic__unit__impl_8h_source.html#l00007">declarePostEvent()</a>.</p>
+<p>Referenced by <a class="el" href="smacc__logic__unit__impl_8h_source.html#l00006">declarePostEvent()</a>.</p>
 
 </div>
 </div>
@@ -543,7 +543,7 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="logic__unit_8h_source.html#l00023">23</a> of file <a class="el" href="logic__unit_8h_source.html">logic_unit.h</a>.</p>
 
-<p>Referenced by <a class="el" href="smacc__logic__unit__impl_8h_source.html#l00007">declarePostEvent()</a>, and <a class="el" href="logic__unit_8cpp_source.html#l00019">update()</a>.</p>
+<p>Referenced by <a class="el" href="smacc__logic__unit__impl_8h_source.html#l00006">declarePostEvent()</a>, and <a class="el" href="logic__unit_8cpp_source.html#l00019">update()</a>.</p>
 
 </div>
 </div>

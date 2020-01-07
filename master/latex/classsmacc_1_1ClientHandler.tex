@@ -1,0 +1,119 @@
+\hypertarget{classsmacc_1_1ClientHandler}{}\section{smacc\+:\+:Client\+Handler$<$ T\+Orthogonal, T\+Client $>$ Class Template Reference}
+\label{classsmacc_1_1ClientHandler}\index{smacc\+::\+Client\+Handler$<$ T\+Orthogonal, T\+Client $>$@{smacc\+::\+Client\+Handler$<$ T\+Orthogonal, T\+Client $>$}}
+
+
+{\ttfamily \#include $<$smacc\+\_\+orthogonal\+\_\+impl.\+h$>$}
+
+
+
+Inheritance diagram for smacc\+:\+:Client\+Handler$<$ T\+Orthogonal, T\+Client $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{classsmacc_1_1ClientHandler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+:\+:Client\+Handler$<$ T\+Orthogonal, T\+Client $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{classsmacc_1_1ClientHandler__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... T\+Args$>$ }\\\hyperlink{classsmacc_1_1ClientHandler_a92cb128619bca0f69a948ccf3e0df683}{Client\+Handler} (T\+Args...\+args)
+\item 
+{\footnotesize template$<$typename Smacc\+Component\+Type , typename... T\+Args$>$ }\\Smacc\+Component\+Type $\ast$ \hyperlink{classsmacc_1_1ClientHandler_a04efa6791578d359b2325f0d268d4cd2}{create\+Component} (T\+Args...\+targs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T\+Orthogonal, typename T\+Client$>$\\*
+class smacc\+::\+Client\+Handler$<$ T\+Orthogonal, T\+Client $>$}
+
+
+
+Definition at line 48 of file smacc\+\_\+orthogonal\+\_\+impl.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{smacc\+::\+Client\+Handler@{smacc\+::\+Client\+Handler}!Client\+Handler@{Client\+Handler}}
+\index{Client\+Handler@{Client\+Handler}!smacc\+::\+Client\+Handler@{smacc\+::\+Client\+Handler}}
+\subsubsection[{\texorpdfstring{Client\+Handler(\+T\+Args...\+args)}{ClientHandler(TArgs...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Orthogonal , typename T\+Client $>$ template$<$typename... T\+Args$>$ {\bf smacc\+::\+Client\+Handler}$<$ T\+Orthogonal, {\bf T\+Client} $>$\+::{\bf Client\+Handler} (
+\begin{DoxyParamCaption}
+\item[{T\+Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1ClientHandler_a92cb128619bca0f69a948ccf3e0df683}{}\label{classsmacc_1_1ClientHandler_a92cb128619bca0f69a948ccf3e0df683}
+
+
+Definition at line 52 of file smacc\+\_\+orthogonal\+\_\+impl.\+h.
+
+
+\begin{DoxyCode}
+53         : \hyperlink{classTClient}{TClient}(args...)
+54     \{
+55     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::\+Client\+Handler@{smacc\+::\+Client\+Handler}!create\+Component@{create\+Component}}
+\index{create\+Component@{create\+Component}!smacc\+::\+Client\+Handler@{smacc\+::\+Client\+Handler}}
+\subsubsection[{\texorpdfstring{create\+Component(\+T\+Args...\+targs)}{createComponent(TArgs...targs)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Orthogonal , typename T\+Client $>$ template$<$typename Smacc\+Component\+Type , typename... T\+Args$>$ Smacc\+Component\+Type$\ast$ {\bf smacc\+::\+Client\+Handler}$<$ T\+Orthogonal, {\bf T\+Client} $>$\+::create\+Component (
+\begin{DoxyParamCaption}
+\item[{T\+Args...}]{targs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1ClientHandler_a04efa6791578d359b2325f0d268d4cd2}{}\label{classsmacc_1_1ClientHandler_a04efa6791578d359b2325f0d268d4cd2}
+
+
+Definition at line 58 of file smacc\+\_\+orthogonal\+\_\+impl.\+h.
+
+
+
+References smacc\+::\+I\+Orthogonal\+::state\+Machine\+\_\+.
+
+
+\begin{DoxyCode}
+59     \{
+60         \textcolor{keyword}{const} std::type\_info *componentkey = &\textcolor{keyword}{typeid}(SmaccComponentType);
+61         std::shared\_ptr<SmaccComponentType> ret;
+62 
+63         \textcolor{keyword}{auto} it = this->components\_.find(componentkey);
+64 
+65         \textcolor{keywordflow}{if} (it == this->components\_.end())
+66         \{
+67             \textcolor{keyword}{auto} tname = demangledTypeName<SmaccComponentType>();
+68             ROS\_DEBUG(\textcolor{stringliteral}{"%s smacc component is required. Creating a new instance."}, tname.c\_str());
+69 
+70             ret = std::shared\_ptr<SmaccComponentType>(\textcolor{keyword}{new} SmaccComponentType(targs...));
+71             ret->initialize(\textcolor{keyword}{this});
+72             ret->setStateMachine(this->stateMachine\_);
+73 
+74             this->components\_[componentkey] = ret; \textcolor{comment}{//
+      std::dynamic\_pointer\_cast<smacc::ISmaccComponent>(ret);}
+75             ROS\_DEBUG(\textcolor{stringliteral}{"%s resource is required. Done."}, tname.c\_str());
+76         \}
+77         \textcolor{keywordflow}{else}
+78         \{
+79             ROS\_DEBUG(\textcolor{stringliteral}{"%s resource is required. Found resource in cache."}, 
+      demangledTypeName<SmaccComponentType>().c\_str());
+80             ret = dynamic\_pointer\_cast<SmaccComponentType>(it->second);
+81         \}
+82 
+83         ret->template configureEventSourceTypes<TOrthogonal, TClient>();
+84 
+85         \textcolor{keywordflow}{return} ret.get();
+86     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc/include/smacc/impl/\hyperlink{smacc__orthogonal__impl_8h}{smacc\+\_\+orthogonal\+\_\+impl.\+h}\end{DoxyCompactItemize}

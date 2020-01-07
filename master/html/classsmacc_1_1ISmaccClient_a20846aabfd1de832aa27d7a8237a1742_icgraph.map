@@ -1,4 +1,5 @@
 <map id="smacc::ISmaccClient::getName" name="smacc::ISmaccClient::getName">
-<area shape="rect" id="node2" href="$classsmacc_1_1client__bases_1_1SmaccPublisherClient.html#ade7a2549ada725b8342633137eb6ad53" title="smacc::client_bases\l::SmaccPublisherClient\l::configure" alt="" coords="208,5,376,61"/>
-<area shape="rect" id="node3" href="$classsmacc_1_1client__bases_1_1SmaccServiceClient.html#aa51b80828e4ab19627210440ae15b6f3" title="smacc::client_bases\l::SmaccServiceClient\l\&lt; std_srvs::SetBool \&gt;\l::initialize" alt="" coords="211,86,373,157"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1client__bases_1_1SmaccPublisherClient.html#ade7a2549ada725b8342633137eb6ad53" title="smacc::client_bases\l::SmaccPublisherClient\l::configure" alt="" coords="229,5,397,61"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1client__bases_1_1SmaccServiceClient.html#aa51b80828e4ab19627210440ae15b6f3" title="smacc::client_bases\l::SmaccServiceClient\l\&lt; std_srvs::SetBool \&gt;\l::initialize" alt="" coords="232,86,395,157"/>
+<area shape="rect" id="node4" href="$classsmacc_1_1client__bases_1_1SmaccSubscriberClient.html#af188f0f5e89de26a07e1f964cdd23a70" title="smacc::client_bases\l::SmaccSubscriberClient\l\&lt; sensor_msgs::Temperature\l \&gt;::initialize" alt="" coords="208,181,419,251"/>
 </map>

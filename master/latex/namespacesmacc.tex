@@ -5,62 +5,26 @@
 \item 
  \hyperlink{namespacesmacc_1_1client__bases}{client\+\_\+bases}
 \item 
+ \hyperlink{namespacesmacc_1_1default__events}{default\+\_\+events}
+\item 
+ \hyperlink{namespacesmacc_1_1default__transition__tags}{default\+\_\+transition\+\_\+tags}
+\item 
  \hyperlink{namespacesmacc_1_1introspection}{introspection}
 \item 
  \hyperlink{namespacesmacc_1_1logic__units}{logic\+\_\+units}
+\item 
+ \hyperlink{namespacesmacc_1_1utils}{utils}
 \end{DoxyCompactItemize}
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-struct \hyperlink{structsmacc_1_1ABORT}{A\+B\+O\+RT}
-\item 
-struct \hyperlink{structsmacc_1_1Bind}{Bind}
-\item 
-struct \hyperlink{structsmacc_1_1Bind_3_011_01_4}{Bind$<$ 1 $>$}
-\item 
-struct \hyperlink{structsmacc_1_1Bind_3_012_01_4}{Bind$<$ 2 $>$}
-\item 
-struct \hyperlink{structsmacc_1_1CONTINUELOOP}{C\+O\+N\+T\+I\+N\+U\+E\+L\+O\+OP}
-\item 
-struct \hyperlink{structsmacc_1_1DEFAULT}{D\+E\+F\+A\+U\+LT}
-\item 
-struct \hyperlink{structsmacc_1_1default__object__tag}{default\+\_\+object\+\_\+tag}
-\item 
-struct \hyperlink{structsmacc_1_1default__transition__name}{default\+\_\+transition\+\_\+name}
+class \hyperlink{classsmacc_1_1ClientHandler}{Client\+Handler}
 \item 
 struct \hyperlink{structsmacc_1_1empty__object__tag}{empty\+\_\+object\+\_\+tag}
 \item 
-struct \hyperlink{structsmacc_1_1ENDLOOP}{E\+N\+D\+L\+O\+OP}
-\item 
-struct \hyperlink{structsmacc_1_1EvActionAborted}{Ev\+Action\+Aborted}
-\item 
-struct \hyperlink{structsmacc_1_1EvActionFeedback}{Ev\+Action\+Feedback}
-\item 
-struct \hyperlink{structsmacc_1_1EvActionPreempted}{Ev\+Action\+Preempted}
-\item 
-struct \hyperlink{structsmacc_1_1EvActionRejected}{Ev\+Action\+Rejected}
-\item 
-struct \hyperlink{structsmacc_1_1EvActionResult}{Ev\+Action\+Result}
-\item 
-struct \hyperlink{structsmacc_1_1EvActionSucceeded}{Ev\+Action\+Succeeded}
-\item 
-struct \hyperlink{structsmacc_1_1EvLoopContinue}{Ev\+Loop\+Continue}
-\item 
-struct \hyperlink{structsmacc_1_1EvLoopEnd}{Ev\+Loop\+End}
-\item 
-struct \hyperlink{structsmacc_1_1EvStateFinish}{Ev\+State\+Finish}
-\item 
-struct \hyperlink{structsmacc_1_1EvTopicInitialMessage}{Ev\+Topic\+Initial\+Message}
-\item 
-struct \hyperlink{structsmacc_1_1EvTopicMessage}{Ev\+Topic\+Message}
-\item 
 struct \hyperlink{structsmacc_1_1EvTopicMessageTimeout}{Ev\+Topic\+Message\+Timeout}
 \item 
-struct \hyperlink{structsmacc_1_1EvTrue}{Ev\+True}
-\item 
-struct \hyperlink{structsmacc_1_1IActionResult}{I\+Action\+Result}
-\item 
-class \hyperlink{classsmacc_1_1IEventFactory}{I\+Event\+Factory}
+class \hyperlink{classsmacc_1_1IOrthogonal}{I\+Orthogonal}
 \item 
 class \hyperlink{classsmacc_1_1ISmaccClient}{I\+Smacc\+Client}
 \item 
@@ -74,13 +38,7 @@ class \hyperlink{classsmacc_1_1ISmaccUpdatable}{I\+Smacc\+Updatable}
 \item 
 class \hyperlink{classsmacc_1_1LogicUnit}{Logic\+Unit}
 \item 
-class \hyperlink{classsmacc_1_1LuConditional}{Lu\+Conditional}
-\item 
 class \hyperlink{classsmacc_1_1Orthogonal}{Orthogonal}
-\item 
-struct \hyperlink{structsmacc_1_1PREEMPT}{P\+R\+E\+E\+M\+PT}
-\item 
-struct \hyperlink{structsmacc_1_1REJECT}{R\+E\+J\+E\+CT}
 \item 
 class \hyperlink{classsmacc_1_1SensorClient}{Sensor\+Client}
 \item 
@@ -96,8 +54,6 @@ class \hyperlink{classsmacc_1_1SmaccState}{Smacc\+State}
 \item 
 struct \hyperlink{structsmacc_1_1SmaccStateMachineBase}{Smacc\+State\+Machine\+Base}
 \begin{DoxyCompactList}\small\item\em State Machine. \end{DoxyCompactList}\item 
-struct \hyperlink{structsmacc_1_1SUCCESS}{S\+U\+C\+C\+E\+SS}
-\item 
 class \hyperlink{classsmacc_1_1transition}{transition}
 \end{DoxyCompactItemize}
 \subsection*{Enumerations}
@@ -109,8 +65,6 @@ enum \hyperlink{namespacesmacc_a3e4f79486ea6ea6342dd3c712d16a4f6}{S\+M\+Run\+Mod
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
-\item 
-std\+::string \hyperlink{namespacesmacc_a09b297b1cdb9aae93a958f323431464a}{clean\+Short\+Type\+Name} (const std\+::type\+\_\+info \&tinfo)
 \item 
 {\footnotesize template$<$typename State\+Machine\+Type $>$ }\\void \hyperlink{namespacesmacc_a47ac3b8d2968b1ba4152afd64ab66bd0}{run} ()
 \end{DoxyCompactItemize}
@@ -131,74 +85,18 @@ R\+E\+L\+E\+A\+SE\hypertarget{namespacesmacc_a3e4f79486ea6ea6342dd3c712d16a4f6a7
 \end{Desc}
 
 
-Definition at line 46 of file common.\+h.
+Definition at line 43 of file common.\+h.
 
 
 \begin{DoxyCode}
-47 \{
-48   \hyperlink{namespacesmacc_a3e4f79486ea6ea6342dd3c712d16a4f6adc30ec20708ef7b0f641ef78b7880a15}{DEBUG},
-49   \hyperlink{namespacesmacc_a3e4f79486ea6ea6342dd3c712d16a4f6a7d649ef069df9885e382417c79f3d5cd}{RELEASE}
-50 \};
+44 \{
+45   \hyperlink{namespacesmacc_a3e4f79486ea6ea6342dd3c712d16a4f6adc30ec20708ef7b0f641ef78b7880a15}{DEBUG},
+46   \hyperlink{namespacesmacc_a3e4f79486ea6ea6342dd3c712d16a4f6a7d649ef069df9885e382417c79f3d5cd}{RELEASE}
+47 \};
 \end{DoxyCode}
 
 
 \subsection{Function Documentation}
-\index{smacc@{smacc}!clean\+Short\+Type\+Name@{clean\+Short\+Type\+Name}}
-\index{clean\+Short\+Type\+Name@{clean\+Short\+Type\+Name}!smacc@{smacc}}
-\subsubsection[{\texorpdfstring{clean\+Short\+Type\+Name(const std\+::type\+\_\+info \&tinfo)}{cleanShortTypeName(const std::type_info &tinfo)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::clean\+Short\+Type\+Name (
-\begin{DoxyParamCaption}
-\item[{const std\+::type\+\_\+info \&}]{tinfo}
-\end{DoxyParamCaption}
-)}\hypertarget{namespacesmacc_a09b297b1cdb9aae93a958f323431464a}{}\label{namespacesmacc_a09b297b1cdb9aae93a958f323431464a}
-
-
-Definition at line 16 of file common.\+cpp.
-
-
-
-References smacc\+::introspection\+::demangle\+Symbol().
-
-
-
-Referenced by smacc\+::\+Smacc\+State$<$ Ms\+Dance\+Bot\+Run\+Mode, Sm\+Dance\+Bot, St\+Acquire\+Sensors $>$\+::get\+Short\+Name(), smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Dance\+Bot2, S\+S1\+::\+Ss\+Radial\+Pattern1 $>$\+::initiate\+\_\+impl(), and smacc\+::\+Smacc\+State$<$ Ms\+Dance\+Bot\+Run\+Mode, Sm\+Dance\+Bot, St\+Acquire\+Sensors $>$\+::\+Smacc\+State().
-
-
-\begin{DoxyCode}
-17 \{
-18     std::string fullclassname = \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(tinfo.name());
-19     \textcolor{comment}{//ROS\_INFO("State full classname: %s", fullclassname.c\_str());}
-20 
-21     std::vector<std::string> strs;
-22     boost::split(strs,fullclassname,boost::is\_any\_of(\textcolor{stringliteral}{"::"}));
-23     std::string classname = strs.back();
-24     \textcolor{comment}{//ROS\_INFO("State classname: %s", classname.c\_str());}
-25     \textcolor{keywordflow}{return} classname;
-26 \}
-\end{DoxyCode}
-
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{namespacesmacc_a09b297b1cdb9aae93a958f323431464a_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{namespacesmacc_a09b297b1cdb9aae93a958f323431464a_icgraph}
-\end{center}
-\end{figure}
-
-
 \index{smacc@{smacc}!run@{run}}
 \index{run@{run}!smacc@{smacc}}
 \subsubsection[{\texorpdfstring{run()}{run()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename State\+Machine\+Type $>$ void smacc\+::run (

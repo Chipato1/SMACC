@@ -11,7 +11,7 @@ Inheritance diagram for sm\+\_\+three\+\_\+some\+:\+:Or\+Keyboard\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=236pt]{classsm__three__some_1_1OrKeyboard__inherit__graph}
+\includegraphics[height=550pt]{classsm__three__some_1_1OrKeyboard__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -29,6 +29,7 @@ Collaboration diagram for sm\+\_\+three\+\_\+some\+:\+:Or\+Keyboard\+:
 \item 
 virtual void \hyperlink{classsm__three__some_1_1OrKeyboard_af49faa7c511ae0232ed0931ce8c85b56}{on\+Initialize} () override
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -48,7 +49,7 @@ Definition at line 8 of file or\+\_\+keyboard.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__three__some_1_1OrKeyboard_af49faa7c511ae0232ed0931ce8c85b56}{}\label{classsm__three__some_1_1OrKeyboard_af49faa7c511ae0232ed0931ce8c85b56}
 
 
-Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+Reimplemented from \hyperlink{classsmacc_1_1IOrthogonal_ad21074708f877791f5604916dfd3b917}{smacc\+::\+I\+Orthogonal}.
 
 
 
@@ -57,7 +58,7 @@ Definition at line 11 of file or\+\_\+keyboard.\+h.
 
 \begin{DoxyCode}
 12     \{
-13         \textcolor{keyword}{auto} clKeyboard = this->createClient<OrKeyboard, keyboard\_client::ClKeyboard>();
+13         \textcolor{keyword}{auto} clKeyboard = this->createClient<keyboard\_client::ClKeyboard>();
 14         
 15         \textcolor{comment}{//ClKeyboard.queueSize = 1;}
 16         clKeyboard->initialize();

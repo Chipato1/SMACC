@@ -62,13 +62,13 @@ Definition at line 19 of file event\+\_\+countdown.\+h.
 )}\hypertarget{classsmacc_1_1logic__units_1_1LuEventCountdown_a50f81b10581e565ba43f1338b4f400b8}{}\label{classsmacc_1_1logic__units_1_1LuEventCountdown_a50f81b10581e565ba43f1338b4f400b8}
 
 
-Definition at line 10 of file event\+\_\+countdown.\+cpp.
+Definition at line 11 of file event\+\_\+countdown.\+cpp.
 
 
 \begin{DoxyCode}
-11     : \hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_a70fa43cf7f9970cc0b9172d4845a4c2e}{eventCount\_}(eventCount)
-12 \{
-13 \}
+12     : \hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_a70fa43cf7f9970cc0b9172d4845a4c2e}{eventCount\_}(eventCount)
+13 \{
+14 \}
 \end{DoxyCode}
 
 
@@ -86,7 +86,7 @@ Reimplemented from \hyperlink{classsmacc_1_1LogicUnit_a3a81929b2014b10d0fa28d4bc
 
 
 
-Definition at line 23 of file event\+\_\+countdown.\+cpp.
+Definition at line 24 of file event\+\_\+countdown.\+cpp.
 
 
 
@@ -94,19 +94,19 @@ References smacc\+::introspection\+::demangle\+Symbol(), and event\+Count\+\_\+.
 
 
 \begin{DoxyCode}
-24 \{
-25     \hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_a70fa43cf7f9970cc0b9172d4845a4c2e}{eventCount\_}--;
-26     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"LU COUNTDOWN ("} << \hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_a70fa43cf7f9970cc0b9172d4845a4c2e}{eventCount\_} << \textcolor{stringliteral}{") RECEIVED EVENT OF TYPE:"} << 
+25 \{
+26     \hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_a70fa43cf7f9970cc0b9172d4845a4c2e}{eventCount\_}--;
+27     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"LU COUNTDOWN ("} << \hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_a70fa43cf7f9970cc0b9172d4845a4c2e}{eventCount\_} << \textcolor{stringliteral}{") RECEIVED EVENT OF TYPE:"} << 
       \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(eventType->name()));
-27 
-28     \textcolor{comment}{// ROS\_INFO\_STREAM("LU ALL RECEIVED EVENT OF TYPE:" << demangleSymbol(eventType->name()));}
-29     \textcolor{comment}{// triggeredEvents[eventType] = true;}
-30 
-31     \textcolor{comment}{// for (auto &entry : triggeredEvents)}
-32     \textcolor{comment}{// \{}
-33     \textcolor{comment}{//     ROS\_INFO\_STREAM(demangleSymbol(entry.first->name()) << " = " << entry.second);}
-34     \textcolor{comment}{// \}}
-35 \}
+28 
+29     \textcolor{comment}{// ROS\_INFO\_STREAM("LU ALL RECEIVED EVENT OF TYPE:" << demangleSymbol(eventType->name()));}
+30     \textcolor{comment}{// triggeredEvents[eventType] = true;}
+31 
+32     \textcolor{comment}{// for (auto &entry : triggeredEvents)}
+33     \textcolor{comment}{// \{}
+34     \textcolor{comment}{//     ROS\_INFO\_STREAM(demangleSymbol(entry.first->name()) << " = " << entry.second);}
+35     \textcolor{comment}{// \}}
+36 \}
 \end{DoxyCode}
 
 
@@ -133,7 +133,7 @@ Reimplemented from \hyperlink{classsmacc_1_1LogicUnit_ade7f409516683f13754943db1
 
 
 
-Definition at line 15 of file event\+\_\+countdown.\+cpp.
+Definition at line 16 of file event\+\_\+countdown.\+cpp.
 
 
 
@@ -141,12 +141,12 @@ References smacc\+::\+Logic\+Unit\+::event\+Types, and triggered\+Events.
 
 
 \begin{DoxyCode}
-16 \{
-17     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} type : \hyperlink{classsmacc_1_1LogicUnit_a6f02a49da9b408b54a2755c18c5616a8}{eventTypes})
-18     \{
-19         \hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_abfce05c5bf4dd9cb5009c95f186ef25a}{triggeredEvents}[type] = \textcolor{keyword}{false};
-20     \}
-21 \}
+17 \{
+18     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} type : \hyperlink{classsmacc_1_1LogicUnit_a6f02a49da9b408b54a2755c18c5616a8}{eventTypes})
+19     \{
+20         \hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_abfce05c5bf4dd9cb5009c95f186ef25a}{triggeredEvents}[type] = \textcolor{keyword}{false};
+21     \}
+22 \}
 \end{DoxyCode}
 \index{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown@{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown}!triggers@{triggers}}
 \index{triggers@{triggers}!smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown@{smacc\+::logic\+\_\+units\+::\+Lu\+Event\+Countdown}}
@@ -161,7 +161,7 @@ Implements \hyperlink{classsmacc_1_1LogicUnit_ae975a96f0210412e1cb4a7b5b948ade6}
 
 
 
-Definition at line 37 of file event\+\_\+countdown.\+cpp.
+Definition at line 38 of file event\+\_\+countdown.\+cpp.
 
 
 
@@ -169,26 +169,26 @@ References event\+Count\+\_\+.
 
 
 \begin{DoxyCode}
-38 \{
-39     \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_a70fa43cf7f9970cc0b9172d4845a4c2e}{eventCount\_} == 0)
-40     \{
-41         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"LU COUNTDOWN ("} << \hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_a70fa43cf7f9970cc0b9172d4845a4c2e}{eventCount\_} << \textcolor{stringliteral}{") TRIGGERS!"});
-42         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
-43     \}
-44     \textcolor{keywordflow}{else}
-45     \{
-46         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-47     \}
-48 
-49     \textcolor{comment}{// ROS\_INFO("LU All TRIGGERS?");}
-50     \textcolor{comment}{// for (auto &entry : triggeredEvents)}
-51     \textcolor{comment}{// \{}
-52     \textcolor{comment}{//     if (!entry.second)}
-53     \textcolor{comment}{//         return false;}
-54     \textcolor{comment}{// \}}
-55     \textcolor{comment}{// ROS\_INFO("LU ALL TRIGGERED");}
-56     \textcolor{comment}{// return true;}
-57 \}
+39 \{
+40     \textcolor{keywordflow}{if} (\hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_a70fa43cf7f9970cc0b9172d4845a4c2e}{eventCount\_} == 0)
+41     \{
+42         ROS\_INFO\_STREAM(\textcolor{stringliteral}{"LU COUNTDOWN ("} << \hyperlink{classsmacc_1_1logic__units_1_1LuEventCountdown_a70fa43cf7f9970cc0b9172d4845a4c2e}{eventCount\_} << \textcolor{stringliteral}{") TRIGGERS!"});
+43         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+44     \}
+45     \textcolor{keywordflow}{else}
+46     \{
+47         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+48     \}
+49 
+50     \textcolor{comment}{// ROS\_INFO("LU All TRIGGERS?");}
+51     \textcolor{comment}{// for (auto &entry : triggeredEvents)}
+52     \textcolor{comment}{// \{}
+53     \textcolor{comment}{//     if (!entry.second)}
+54     \textcolor{comment}{//         return false;}
+55     \textcolor{comment}{// \}}
+56     \textcolor{comment}{// ROS\_INFO("LU ALL TRIGGERED");}
+57     \textcolor{comment}{// return true;}
+58 \}
 \end{DoxyCode}
 
 

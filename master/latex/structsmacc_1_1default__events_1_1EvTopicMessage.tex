@@ -1,0 +1,88 @@
+\hypertarget{structsmacc_1_1default__events_1_1EvTopicMessage}{}\section{smacc\+:\+:default\+\_\+events\+:\+:Ev\+Topic\+Message$<$ T\+Source, T\+Object\+Tag $>$ Struct Template Reference}
+\label{structsmacc_1_1default__events_1_1EvTopicMessage}\index{smacc\+::default\+\_\+events\+::\+Ev\+Topic\+Message$<$ T\+Source, T\+Object\+Tag $>$@{smacc\+::default\+\_\+events\+::\+Ev\+Topic\+Message$<$ T\+Source, T\+Object\+Tag $>$}}
+
+
+{\ttfamily \#include $<$smacc\+\_\+default\+\_\+events.\+h$>$}
+
+
+
+Inheritance diagram for smacc\+:\+:default\+\_\+events\+:\+:Ev\+Topic\+Message$<$ T\+Source, T\+Object\+Tag $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{structsmacc_1_1default__events_1_1EvTopicMessage__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for smacc\+:\+:default\+\_\+events\+:\+:Ev\+Topic\+Message$<$ T\+Source, T\+Object\+Tag $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{structsmacc_1_1default__events_1_1EvTopicMessage__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \hyperlink{structsmacc_1_1default__events_1_1EvTopicMessage_afaa5fc76f1c6c3eaf30deb8aa58508c0}{get\+Event\+Label} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T\+Source\+::\+T\+Message\+Type \hyperlink{structsmacc_1_1default__events_1_1EvTopicMessage_a82384568b702a0c3a3dc2fbe7eeefea9}{msg\+Data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T\+Source, typename T\+Object\+Tag$>$\\*
+struct smacc\+::default\+\_\+events\+::\+Ev\+Topic\+Message$<$ T\+Source, T\+Object\+Tag $>$}
+
+
+
+Definition at line 176 of file smacc\+\_\+default\+\_\+events.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{smacc\+::default\+\_\+events\+::\+Ev\+Topic\+Message@{smacc\+::default\+\_\+events\+::\+Ev\+Topic\+Message}!get\+Event\+Label@{get\+Event\+Label}}
+\index{get\+Event\+Label@{get\+Event\+Label}!smacc\+::default\+\_\+events\+::\+Ev\+Topic\+Message@{smacc\+::default\+\_\+events\+::\+Ev\+Topic\+Message}}
+\subsubsection[{\texorpdfstring{get\+Event\+Label()}{getEventLabel()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Source , typename T\+Object\+Tag $>$ static std\+::string {\bf smacc\+::default\+\_\+events\+::\+Ev\+Topic\+Message}$<$ T\+Source, T\+Object\+Tag $>$\+::get\+Event\+Label (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structsmacc_1_1default__events_1_1EvTopicMessage_afaa5fc76f1c6c3eaf30deb8aa58508c0}{}\label{structsmacc_1_1default__events_1_1EvTopicMessage_afaa5fc76f1c6c3eaf30deb8aa58508c0}
+
+
+Definition at line 178 of file smacc\+\_\+default\+\_\+events.\+h.
+
+
+\begin{DoxyCode}
+179   \{
+180     \textcolor{keyword}{auto} typeinfo = TypeInfo::getTypeInfoFromType<typename TSource::TMessageType>();
+181 
+182     std::string label = typeinfo->getNonTemplatetypename();
+183     \textcolor{keywordflow}{return} label;
+184   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{smacc\+::default\+\_\+events\+::\+Ev\+Topic\+Message@{smacc\+::default\+\_\+events\+::\+Ev\+Topic\+Message}!msg\+Data@{msg\+Data}}
+\index{msg\+Data@{msg\+Data}!smacc\+::default\+\_\+events\+::\+Ev\+Topic\+Message@{smacc\+::default\+\_\+events\+::\+Ev\+Topic\+Message}}
+\subsubsection[{\texorpdfstring{msg\+Data}{msgData}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Source , typename T\+Object\+Tag $>$ T\+Source\+::\+T\+Message\+Type {\bf smacc\+::default\+\_\+events\+::\+Ev\+Topic\+Message}$<$ T\+Source, T\+Object\+Tag $>$\+::msg\+Data}\hypertarget{structsmacc_1_1default__events_1_1EvTopicMessage_a82384568b702a0c3a3dc2fbe7eeefea9}{}\label{structsmacc_1_1default__events_1_1EvTopicMessage_a82384568b702a0c3a3dc2fbe7eeefea9}
+
+
+Definition at line 186 of file smacc\+\_\+default\+\_\+events.\+h.
+
+
+
+Referenced by smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client$<$ sensor\+\_\+msgs\+::\+Temperature $>$\+::configure\+Event\+Source\+Types().
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+smacc/include/smacc/\hyperlink{smacc__default__events_8h}{smacc\+\_\+default\+\_\+events.\+h}\end{DoxyCompactItemize}

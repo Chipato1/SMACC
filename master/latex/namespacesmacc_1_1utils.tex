@@ -1,0 +1,77 @@
+\hypertarget{namespacesmacc_1_1utils}{}\section{smacc\+:\+:utils Namespace Reference}
+\label{namespacesmacc_1_1utils}\index{smacc\+::utils@{smacc\+::utils}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsmacc_1_1utils_1_1Bind}{Bind}
+\item 
+struct \hyperlink{structsmacc_1_1utils_1_1Bind_3_011_01_4}{Bind$<$ 1 $>$}
+\item 
+struct \hyperlink{structsmacc_1_1utils_1_1Bind_3_012_01_4}{Bind$<$ 2 $>$}
+\item 
+struct \hyperlink{structsmacc_1_1utils_1_1Bind_3_013_01_4}{Bind$<$ 3 $>$}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{namespacesmacc_1_1utils_aacd1975bb7cd9bec4b50e111a2ae7edb}{clean\+Short\+Type\+Name} (const std\+::type\+\_\+info \&tinfo)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{smacc\+::utils@{smacc\+::utils}!clean\+Short\+Type\+Name@{clean\+Short\+Type\+Name}}
+\index{clean\+Short\+Type\+Name@{clean\+Short\+Type\+Name}!smacc\+::utils@{smacc\+::utils}}
+\subsubsection[{\texorpdfstring{clean\+Short\+Type\+Name(const std\+::type\+\_\+info \&tinfo)}{cleanShortTypeName(const std::type_info &tinfo)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string smacc\+::utils\+::clean\+Short\+Type\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::type\+\_\+info \&}]{tinfo}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacesmacc_1_1utils_aacd1975bb7cd9bec4b50e111a2ae7edb}{}\label{namespacesmacc_1_1utils_aacd1975bb7cd9bec4b50e111a2ae7edb}
+
+
+Definition at line 13 of file common.\+cpp.
+
+
+
+References smacc\+::introspection\+::demangle\+Symbol().
+
+
+
+Referenced by smacc\+::\+Smacc\+State$<$ Ms\+Dance\+Bot\+Run\+Mode, Sm\+Dance\+Bot, St\+Acquire\+Sensors $>$\+::get\+Short\+Name(), smacc\+::\+Smacc\+State\+Machine\+Base$<$ Sm\+Dance\+Bot2, S\+S1\+::\+Ss\+Radial\+Pattern1 $>$\+::initiate\+\_\+impl(), and smacc\+::\+Smacc\+State$<$ Ms\+Dance\+Bot\+Run\+Mode, Sm\+Dance\+Bot, St\+Acquire\+Sensors $>$\+::\+Smacc\+State().
+
+
+\begin{DoxyCode}
+14 \{
+15     std::string fullclassname = \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(tinfo.name());
+16     \textcolor{comment}{//ROS\_INFO("State full classname: %s", fullclassname.c\_str());}
+17 
+18     std::vector<std::string> strs;
+19     boost::split(strs, fullclassname, boost::is\_any\_of(\textcolor{stringliteral}{"::"}));
+20     std::string classname = strs.back();
+21     \textcolor{comment}{//ROS\_INFO("State classname: %s", classname.c\_str());}
+22     \textcolor{keywordflow}{return} classname;
+23 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesmacc_1_1utils_aacd1975bb7cd9bec4b50e111a2ae7edb_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesmacc_1_1utils_aacd1975bb7cd9bec4b50e111a2ae7edb_icgraph}
+\end{center}
+\end{figure}
+
+

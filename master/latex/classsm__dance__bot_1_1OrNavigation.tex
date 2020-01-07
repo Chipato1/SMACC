@@ -11,7 +11,7 @@ Inheritance diagram for sm\+\_\+dance\+\_\+bot\+:\+:Or\+Navigation\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=235pt]{classsm__dance__bot_1_1OrNavigation__inherit__graph}
+\includegraphics[height=550pt]{classsm__dance__bot_1_1OrNavigation__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -29,6 +29,7 @@ Collaboration diagram for sm\+\_\+dance\+\_\+bot\+:\+:Or\+Navigation\+:
 \item 
 virtual void \hyperlink{classsm__dance__bot_1_1OrNavigation_a9f87c78f5af67024c9eda25097a135ac}{on\+Initialize} () override
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -48,20 +49,16 @@ Definition at line 13 of file or\+\_\+navigation.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__dance__bot_1_1OrNavigation_a9f87c78f5af67024c9eda25097a135ac}{}\label{classsm__dance__bot_1_1OrNavigation_a9f87c78f5af67024c9eda25097a135ac}
 
 
-Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+Reimplemented from \hyperlink{classsmacc_1_1IOrthogonal_ad21074708f877791f5604916dfd3b917}{smacc\+::\+I\+Orthogonal}.
 
 
 
 Definition at line 16 of file or\+\_\+navigation.\+h.
 
 
-
-References move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator\+::configure\+Event\+Source\+Types().
-
-
 \begin{DoxyCode}
 17     \{
-18         \textcolor{keyword}{auto} movebaseClient = this->createClient<OrNavigation, ClMoveBaseZ>();
+18         \textcolor{keyword}{auto} movebaseClient = this->createClient<ClMoveBaseZ>();
 19         movebaseClient->name\_ = \textcolor{stringliteral}{"move\_base"};
 20         movebaseClient->initialize();
 21 
@@ -69,24 +66,9 @@ References move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator\+::configu
 23         movebaseClient->createComponent<OdomTracker>(\textcolor{stringliteral}{"/"});
 24 
 25         \textcolor{comment}{// create waypoints navigator component}
-26         \textcolor{keyword}{auto} waypointsNavigator\_ = movebaseClient->createComponent<
-      \hyperlink{classmove__base__z__client_1_1WaypointNavigator}{WaypointNavigator}>();
-27         waypointsNavigator\_->\hyperlink{classmove__base__z__client_1_1WaypointNavigator_aafd4851a12699b1e92dd24e085bacb0e}{configureEventSourceTypes}<OrNavigation, 
-      \hyperlink{classmove__base__z__client_1_1ClMoveBaseZ}{ClMoveBaseZ}>();
-28     \}
+26         movebaseClient->createComponent<\hyperlink{classmove__base__z__client_1_1WaypointNavigator}{WaypointNavigator}>();
+27     \}
 \end{DoxyCode}
-
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classsm__dance__bot_1_1OrNavigation_a9f87c78f5af67024c9eda25097a135ac_cgraph}
-\end{center}
-\end{figure}
-
-
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

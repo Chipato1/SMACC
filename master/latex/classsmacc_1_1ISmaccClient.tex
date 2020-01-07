@@ -43,7 +43,7 @@ virtual std\+::string \hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa2
 \item 
 {\footnotesize template$<$typename T\+Component $>$ }\\T\+Component $\ast$ \hyperlink{classsmacc_1_1ISmaccClient_adef78db601749ca63c19e74a27cb88cc}{get\+Component} ()
 \item 
-{\footnotesize template$<$typename Smacc\+Component\+Type , typename... T\+Args$>$ }\\Smacc\+Component\+Type $\ast$ \hyperlink{classsmacc_1_1ISmaccClient_aef02e196c5537837558cacea53b12f2f}{create\+Component} (T\+Args...\+targs)
+{\footnotesize template$<$typename T\+Object\+Tag , typename T\+Derived $>$ }\\void \hyperlink{classsmacc_1_1ISmaccClient_a643285b93f2bd33987e0d0d1a12caf10}{configure\+Event\+Source\+Types} ()
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -52,15 +52,10 @@ virtual std\+::string \hyperlink{classsmacc_1_1ISmaccClient_a20846aabfd1de832aa2
 \item 
 std\+::map$<$ const std\+::type\+\_\+info $\ast$, std\+::shared\+\_\+ptr$<$ \hyperlink{classsmacc_1_1ISmaccComponent}{smacc\+::\+I\+Smacc\+Component} $>$ $>$ \hyperlink{classsmacc_1_1ISmaccClient_ab983e85d296c9660f5943c1d511634ce}{components\+\_\+}
 \end{DoxyCompactItemize}
-\subsection*{Private Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-{\footnotesize template$<$typename T\+Object\+Tag , typename T\+Derived $>$ }\\void \hyperlink{classsmacc_1_1ISmaccClient_a643285b93f2bd33987e0d0d1a12caf10}{configure\+Event\+Source\+Types} ()
-\end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classsmacc_1_1ISmaccClient_ab3e0a1388d84ea577a59f487cbfc08e3}{Orthogonal}
+class \hyperlink{classsmacc_1_1ISmaccClient_a5fd6fcd01e77db4e3506afadec0d39dc}{I\+Orthogonal}
 \end{DoxyCompactItemize}
 
 
@@ -114,60 +109,14 @@ Definition at line 11 of file client.\+cpp.
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classsmacc_1_1ISmaccClient_a643285b93f2bd33987e0d0d1a12caf10}{}\label{classsmacc_1_1ISmaccClient_a643285b93f2bd33987e0d0d1a12caf10}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsmacc_1_1ISmaccClient_a643285b93f2bd33987e0d0d1a12caf10}{}\label{classsmacc_1_1ISmaccClient_a643285b93f2bd33987e0d0d1a12caf10}
 
 
-Definition at line 49 of file smacc\+\_\+client.\+h.
-
-
-\begin{DoxyCode}
-49 \{\}
-\end{DoxyCode}
-\index{smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}!create\+Component@{create\+Component}}
-\index{create\+Component@{create\+Component}!smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}}
-\subsubsection[{\texorpdfstring{create\+Component(\+T\+Args...\+targs)}{createComponent(TArgs...targs)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Smacc\+Component\+Type , typename... T\+Args$>$ Smacc\+Component\+Type $\ast$ smacc\+::\+I\+Smacc\+Client\+::create\+Component (
-\begin{DoxyParamCaption}
-\item[{T\+Args...}]{targs}
-\end{DoxyParamCaption}
-)}\hypertarget{classsmacc_1_1ISmaccClient_aef02e196c5537837558cacea53b12f2f}{}\label{classsmacc_1_1ISmaccClient_aef02e196c5537837558cacea53b12f2f}
-
-
-Definition at line 36 of file smacc\+\_\+client\+\_\+impl.\+h.
-
-
-
-References components\+\_\+, and state\+Machine\+\_\+.
+Definition at line 38 of file smacc\+\_\+client.\+h.
 
 
 \begin{DoxyCode}
-37 \{
-38     \textcolor{keyword}{const} std::type\_info *componentkey = &\textcolor{keyword}{typeid}(SmaccComponentType);
-39     std::shared\_ptr<SmaccComponentType> ret;
-40 
-41     \textcolor{keyword}{auto} it = \hyperlink{classsmacc_1_1ISmaccClient_ab983e85d296c9660f5943c1d511634ce}{components\_}.find(componentkey);
-42 
-43     \textcolor{keywordflow}{if} (it == \hyperlink{classsmacc_1_1ISmaccClient_ab983e85d296c9660f5943c1d511634ce}{components\_}.end())
-44     \{
-45         \textcolor{keyword}{auto} tname = demangledTypeName<SmaccComponentType>();
-46         ROS\_DEBUG(\textcolor{stringliteral}{"%s smacc component is required. Creating a new instance."}, tname.c\_str());
-47 
-48         ret = std::shared\_ptr<SmaccComponentType>(\textcolor{keyword}{new} SmaccComponentType(targs...));
-49         ret->initialize(\textcolor{keyword}{this});
-50         ret->setStateMachine(\hyperlink{classsmacc_1_1ISmaccClient_a926e4f2ae796def63d48dca389a48c47}{stateMachine\_});
-51 
-52         \hyperlink{classsmacc_1_1ISmaccClient_ab983e85d296c9660f5943c1d511634ce}{components\_}[componentkey] = ret; \textcolor{comment}{//
-      std::dynamic\_pointer\_cast<smacc::ISmaccComponent>(ret);}
-53         ROS\_DEBUG(\textcolor{stringliteral}{"%s resource is required. Done."}, tname.c\_str());
-54     \}
-55     \textcolor{keywordflow}{else}
-56     \{
-57         ROS\_DEBUG(\textcolor{stringliteral}{"%s resource is required. Found resource in cache."}, 
-      demangledTypeName<SmaccComponentType>().c\_str());
-58         ret = dynamic\_pointer\_cast<SmaccComponentType>(it->second);
-59     \}
-60 
-61     \textcolor{keywordflow}{return} ret.get();
-62 \}
+38 \{\}
 \end{DoxyCode}
 \index{smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}!get\+Component@{get\+Component}}
 \index{get\+Component@{get\+Component}!smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}}
@@ -236,7 +185,7 @@ References smacc\+::introspection\+::demangle\+Symbol().
 
 
 
-Referenced by smacc\+::client\+\_\+bases\+::\+Smacc\+Publisher\+Client\+::configure(), and smacc\+::client\+\_\+bases\+::\+Smacc\+Service\+Client$<$ std\+\_\+srvs\+::\+Set\+Bool $>$\+::initialize().
+Referenced by smacc\+::client\+\_\+bases\+::\+Smacc\+Publisher\+Client\+::configure(), smacc\+::client\+\_\+bases\+::\+Smacc\+Service\+Client$<$ std\+\_\+srvs\+::\+Set\+Bool $>$\+::initialize(), and smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client$<$ sensor\+\_\+msgs\+::\+Temperature $>$\+::initialize().
 
 
 \begin{DoxyCode}
@@ -338,6 +287,10 @@ Definition at line 15 of file smacc\+\_\+client\+\_\+impl.\+h.
 References smacc\+::\+I\+Smacc\+State\+Machine\+::post\+Event(), and state\+Machine\+\_\+.
 
 
+
+Referenced by smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client$<$ sensor\+\_\+msgs\+::\+Temperature $>$\+::configure\+Event\+Source\+Types().
+
+
 \begin{DoxyCode}
 16 \{
 17     \hyperlink{classsmacc_1_1ISmaccClient_a926e4f2ae796def63d48dca389a48c47}{stateMachine\_}->\hyperlink{classsmacc_1_1ISmaccStateMachine_ad80cdd7bbc9a9f3b221c625754fed1ed}{postEvent}<EventType>();
@@ -351,6 +304,18 @@ Here is the call graph for this function\+:
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classsmacc_1_1ISmaccClient_a21a79203cb44fc717d4d977c190327c6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsmacc_1_1ISmaccClient_a21a79203cb44fc717d4d977c190327c6_icgraph}
 \end{center}
 \end{figure}
 
@@ -379,12 +344,12 @@ References state\+Machine\+\_\+.
 
 
 \subsection{Friends And Related Function Documentation}
-\index{smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}!Orthogonal@{Orthogonal}}
-\index{Orthogonal@{Orthogonal}!smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}}
-\subsubsection[{\texorpdfstring{Orthogonal}{Orthogonal}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Orthogonal}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classsmacc_1_1ISmaccClient_ab3e0a1388d84ea577a59f487cbfc08e3}{}\label{classsmacc_1_1ISmaccClient_ab3e0a1388d84ea577a59f487cbfc08e3}
+\index{smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}!I\+Orthogonal@{I\+Orthogonal}}
+\index{I\+Orthogonal@{I\+Orthogonal}!smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}}
+\subsubsection[{\texorpdfstring{I\+Orthogonal}{IOrthogonal}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf I\+Orthogonal}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classsmacc_1_1ISmaccClient_a5fd6fcd01e77db4e3506afadec0d39dc}{}\label{classsmacc_1_1ISmaccClient_a5fd6fcd01e77db4e3506afadec0d39dc}
 
 
-Definition at line 51 of file smacc\+\_\+client.\+h.
+Definition at line 48 of file smacc\+\_\+client.\+h.
 
 
 
@@ -398,7 +363,7 @@ Definition at line 45 of file smacc\+\_\+client.\+h.
 
 
 
-Referenced by create\+Component(), and get\+Component().
+Referenced by get\+Component().
 
 \index{smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}!state\+Machine\+\_\+@{state\+Machine\+\_\+}}
 \index{state\+Machine\+\_\+@{state\+Machine\+\_\+}!smacc\+::\+I\+Smacc\+Client@{smacc\+::\+I\+Smacc\+Client}}
@@ -409,7 +374,7 @@ Definition at line 42 of file smacc\+\_\+client.\+h.
 
 
 
-Referenced by create\+Component(), post\+Event(), and set\+State\+Machine().
+Referenced by smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client$<$ sensor\+\_\+msgs\+::\+Temperature $>$\+::on\+First\+Message\+Received(), smacc\+::client\+\_\+bases\+::\+Smacc\+Subscriber\+Client$<$ sensor\+\_\+msgs\+::\+Temperature $>$\+::on\+Message\+Received(), post\+Event(), and set\+State\+Machine().
 
 
 

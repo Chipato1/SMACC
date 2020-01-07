@@ -11,7 +11,7 @@ Inheritance diagram for sm\+\_\+dance\+\_\+bot\+:\+:Or\+Updatable\+Publisher\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=234pt]{classsm__dance__bot_1_1OrUpdatablePublisher__inherit__graph}
+\includegraphics[height=550pt]{classsm__dance__bot_1_1OrUpdatablePublisher__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -29,6 +29,7 @@ Collaboration diagram for sm\+\_\+dance\+\_\+bot\+:\+:Or\+Updatable\+Publisher\+
 \item 
 virtual void \hyperlink{classsm__dance__bot_1_1OrUpdatablePublisher_a7de06135fd7ddea74ad9bb547fb6e79a}{on\+Initialize} () override
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -48,7 +49,7 @@ Definition at line 8 of file or\+\_\+updatable\+\_\+publisher.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__dance__bot_1_1OrUpdatablePublisher_a7de06135fd7ddea74ad9bb547fb6e79a}{}\label{classsm__dance__bot_1_1OrUpdatablePublisher_a7de06135fd7ddea74ad9bb547fb6e79a}
 
 
-Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+Reimplemented from \hyperlink{classsmacc_1_1IOrthogonal_ad21074708f877791f5604916dfd3b917}{smacc\+::\+I\+Orthogonal}.
 
 
 
@@ -57,8 +58,7 @@ Definition at line 11 of file or\+\_\+updatable\+\_\+publisher.\+h.
 
 \begin{DoxyCode}
 12     \{
-13         \textcolor{keyword}{auto} publisherClient\_ = this->createClient<OrUpdatablePublisher,
-       ros\_publisher\_client::ClRosPublisher>();
+13         \textcolor{keyword}{auto} publisherClient\_ = this->createClient<ros\_publisher\_client::ClRosPublisher>();
 14         publisherClient\_->configure<std\_msgs::String>(\textcolor{stringliteral}{"/updatable\_string\_publisher\_out"});
 15     \}
 \end{DoxyCode}

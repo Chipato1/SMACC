@@ -51,15 +51,15 @@ Definition at line 19 of file smacc\+\_\+state\+\_\+info.\+h.
 )}\hypertarget{structsmacc_1_1introspection_1_1SmaccEventInfo_a322035851e387c9cb58bc1cfe4c68544}{}\label{structsmacc_1_1introspection_1_1SmaccEventInfo_a322035851e387c9cb58bc1cfe4c68544}
 
 
-Definition at line 67 of file smacc\+\_\+state\+\_\+info.\+cpp.
+Definition at line 68 of file smacc\+\_\+state\+\_\+info.\+cpp.
 
 
 \begin{DoxyCode}
-68 \{
-69     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"CREATING EVENT INFO: "} << \hyperlink{structsmacc_1_1introspection_1_1SmaccEventInfo_af3bdf1abf797864e681662d92a5515f9}{eventType}->getFullName());
-70 
-71     this->\hyperlink{structsmacc_1_1introspection_1_1SmaccEventInfo_af3bdf1abf797864e681662d92a5515f9}{eventType} = \hyperlink{structsmacc_1_1introspection_1_1SmaccEventInfo_af3bdf1abf797864e681662d92a5515f9}{eventType};
-72 \}
+69 \{
+70     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"CREATING EVENT INFO: "} << \hyperlink{structsmacc_1_1introspection_1_1SmaccEventInfo_af3bdf1abf797864e681662d92a5515f9}{eventType}->getFullName());
+71 
+72     this->\hyperlink{structsmacc_1_1introspection_1_1SmaccEventInfo_af3bdf1abf797864e681662d92a5515f9}{eventType} = \hyperlink{structsmacc_1_1introspection_1_1SmaccEventInfo_af3bdf1abf797864e681662d92a5515f9}{eventType};
+73 \}
 \end{DoxyCode}
 
 
@@ -73,7 +73,7 @@ Definition at line 67 of file smacc\+\_\+state\+\_\+info.\+cpp.
 )}\hypertarget{structsmacc_1_1introspection_1_1SmaccEventInfo_af9e90a557f8f62069a17234f79bcefa0}{}\label{structsmacc_1_1introspection_1_1SmaccEventInfo_af9e90a557f8f62069a17234f79bcefa0}
 
 
-Definition at line 74 of file smacc\+\_\+state\+\_\+info.\+cpp.
+Definition at line 75 of file smacc\+\_\+state\+\_\+info.\+cpp.
 
 
 
@@ -81,18 +81,18 @@ References smacc\+::introspection\+::demangle\+Symbol().
 
 
 \begin{DoxyCode}
-75 \{
-76     \textcolor{keywordflow}{if} (\hyperlink{structsmacc_1_1introspection_1_1SmaccEventInfo_af3bdf1abf797864e681662d92a5515f9}{eventType}->templateParameters.size() > 0)
-77     \{
-78         \textcolor{keyword}{auto} eventsourcename = \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(\hyperlink{structsmacc_1_1introspection_1_1SmaccEventInfo_af3bdf1abf797864e681662d92a5515f9}{eventType}->templateParameters[0]->
+76 \{
+77     \textcolor{keywordflow}{if} (\hyperlink{structsmacc_1_1introspection_1_1SmaccEventInfo_af3bdf1abf797864e681662d92a5515f9}{eventType}->templateParameters.size() > 0)
+78     \{
+79         \textcolor{keyword}{auto} eventsourcename = \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(\hyperlink{structsmacc_1_1introspection_1_1SmaccEventInfo_af3bdf1abf797864e681662d92a5515f9}{eventType}->templateParameters[0]->
       getFullName().c\_str());
-79         \textcolor{keywordflow}{return} eventsourcename;
-80     \}
-81     \textcolor{keywordflow}{else}
-82     \{
-83         \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
-84     \}
-85 \}
+80         \textcolor{keywordflow}{return} eventsourcename;
+81     \}
+82     \textcolor{keywordflow}{else}
+83     \{
+84         \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
+85     \}
+86 \}
 \end{DoxyCode}
 
 
@@ -115,7 +115,7 @@ Here is the call graph for this function\+:
 )}\hypertarget{structsmacc_1_1introspection_1_1SmaccEventInfo_ae0ed6a9506dbe526269a0bd956a71044}{}\label{structsmacc_1_1introspection_1_1SmaccEventInfo_ae0ed6a9506dbe526269a0bd956a71044}
 
 
-Definition at line 87 of file smacc\+\_\+state\+\_\+info.\+cpp.
+Definition at line 88 of file smacc\+\_\+state\+\_\+info.\+cpp.
 
 
 
@@ -123,9 +123,9 @@ References smacc\+::introspection\+::demangle\+Symbol().
 
 
 \begin{DoxyCode}
-88 \{
-89     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(\hyperlink{structsmacc_1_1introspection_1_1SmaccEventInfo_af3bdf1abf797864e681662d92a5515f9}{eventType}->getNonTemplatetypename().c\_str());
-90 \}
+89 \{
+90     \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(\hyperlink{structsmacc_1_1introspection_1_1SmaccEventInfo_af3bdf1abf797864e681662d92a5515f9}{eventType}->getNonTemplatetypename().c\_str());
+91 \}
 \end{DoxyCode}
 
 
@@ -148,7 +148,7 @@ Here is the call graph for this function\+:
 )}\hypertarget{structsmacc_1_1introspection_1_1SmaccEventInfo_a0aa5d15822e7642079f375ee0f4ff096}{}\label{structsmacc_1_1introspection_1_1SmaccEventInfo_a0aa5d15822e7642079f375ee0f4ff096}
 
 
-Definition at line 92 of file smacc\+\_\+state\+\_\+info.\+cpp.
+Definition at line 93 of file smacc\+\_\+state\+\_\+info.\+cpp.
 
 
 
@@ -156,17 +156,17 @@ References smacc\+::introspection\+::demangle\+Symbol().
 
 
 \begin{DoxyCode}
-93 \{
-94     \textcolor{keywordflow}{if} (\hyperlink{structsmacc_1_1introspection_1_1SmaccEventInfo_af3bdf1abf797864e681662d92a5515f9}{eventType}->templateParameters.size() > 1)
-95     \{
-96         \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(\hyperlink{structsmacc_1_1introspection_1_1SmaccEventInfo_af3bdf1abf797864e681662d92a5515f9}{eventType}->templateParameters[1]->getFullName().c\_str(
+94 \{
+95     \textcolor{keywordflow}{if} (\hyperlink{structsmacc_1_1introspection_1_1SmaccEventInfo_af3bdf1abf797864e681662d92a5515f9}{eventType}->templateParameters.size() > 1)
+96     \{
+97         \textcolor{keywordflow}{return} \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(\hyperlink{structsmacc_1_1introspection_1_1SmaccEventInfo_af3bdf1abf797864e681662d92a5515f9}{eventType}->templateParameters[1]->getFullName().c\_str(
       ));
-97     \}
-98     \textcolor{keywordflow}{else}
-99     \{
-100         \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
-101     \}
-102 \}
+98     \}
+99     \textcolor{keywordflow}{else}
+100     \{
+101         \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
+102     \}
+103 \}
 \end{DoxyCode}
 
 

@@ -1,3 +1,5 @@
 <map id="sm_dance_bot::OrStringPublisher" name="sm_dance_bot::OrStringPublisher">
-<area shape="rect" id="node2" href="$classsmacc_1_1Orthogonal.html" title="{smacc::Orthogonal\n|&#45; stateMachine_\l&#45; clientBehaviors_\l&#45; clients_\l|+ setStateMachine()\l+ addClientBehavior()\l+ onEntry()\l+ onExit()\l+ getName()\l+ createClient()\l+ requiresComponent()\l+ requiresClient()\l+ getClients()\l+ getClientBehaviors()\l+ getClientBehavior()\l&#45; onInitialize()\l}" alt="" coords="35,5,210,273"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1Orthogonal.html" title="{smacc::Orthogonal\&lt;\l OrStringPublisher \&gt;\n||+ createClient()\l}" alt="" coords="45,463,200,555"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1IOrthogonal.html" title="{smacc::IOrthogonal\n|# stateMachine_\l# clientBehaviors_\l# clients_\l|+ setStateMachine()\l+ addClientBehavior()\l+ onEntry()\l+ onExit()\l+ getName()\l+ requiresComponent()\l+ requiresClient()\l+ getClients()\l+ getClientBehaviors()\l+ getClientBehavior()\l# onInitialize()\l}" alt="" coords="50,5,225,259"/>
+<area shape="rect" id="node4" href="$classsmacc_1_1Orthogonal.html" title="{smacc::Orthogonal\&lt;\l TOrthogonal \&gt;\n||+ createClient()\l}" alt="" coords="139,308,293,400"/>
 </map>

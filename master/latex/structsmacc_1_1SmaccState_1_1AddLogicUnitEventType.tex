@@ -35,7 +35,7 @@ struct smacc\+::\+Smacc\+State$<$ Most\+Derived, Context, Inner\+Initial, histor
 
 
 
-Definition at line 239 of file smacc\+\_\+state\+\_\+base.\+h.
+Definition at line 242 of file smacc\+\_\+state\+\_\+base.\+h.
 
 
 
@@ -49,13 +49,13 @@ Definition at line 239 of file smacc\+\_\+state\+\_\+base.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsmacc_1_1SmaccState_1_1AddLogicUnitEventType_a056b0caaa1a419fecfb36eccc42e9aa6}{}\label{structsmacc_1_1SmaccState_1_1AddLogicUnitEventType_a056b0caaa1a419fecfb36eccc42e9aa6}
 
 
-Definition at line 241 of file smacc\+\_\+state\+\_\+base.\+h.
+Definition at line 244 of file smacc\+\_\+state\+\_\+base.\+h.
 
 
 \begin{DoxyCode}
-242         : \hyperlink{structsmacc_1_1SmaccState_1_1AddLogicUnitEventType_a31c27ea945cd0127080c0bae872c028e}{luInfo\_}(luinfo)
-243     \{
-244     \}
+245         : \hyperlink{structsmacc_1_1SmaccState_1_1AddLogicUnitEventType_a31c27ea945cd0127080c0bae872c028e}{luInfo\_}(luinfo)
+246     \{
+247     \}
 \end{DoxyCode}
 
 
@@ -69,7 +69,7 @@ Definition at line 241 of file smacc\+\_\+state\+\_\+base.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structsmacc_1_1SmaccState_1_1AddLogicUnitEventType_a8ed7e96e4922fbc8097a6ff078d70150}{}\label{structsmacc_1_1SmaccState_1_1AddLogicUnitEventType_a8ed7e96e4922fbc8097a6ff078d70150}
 
 
-Definition at line 248 of file smacc\+\_\+state\+\_\+base.\+h.
+Definition at line 251 of file smacc\+\_\+state\+\_\+base.\+h.
 
 
 
@@ -77,14 +77,14 @@ References smacc\+::introspection\+::\+Type\+Info\+::get\+Type\+Info\+From\+Type
 
 
 \begin{DoxyCode}
-249     \{
-250       \textcolor{keyword}{auto} sourceType = \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a09ec2f3f94a8f1fc82ae250216c38d47}{TypeInfo::getTypeInfoFromTypeid}(\textcolor{keyword}{typeid}(T));
-251       \textcolor{keyword}{auto} evinfo = std::make\_shared<SmaccEventInfo>(sourceType);
-252       EventLabel<T>(evinfo->label);
-253       \hyperlink{structsmacc_1_1SmaccState_1_1AddLogicUnitEventType_a31c27ea945cd0127080c0bae872c028e}{luInfo\_}.\hyperlink{structsmacc_1_1introspection_1_1SmaccLogicUnitInfo_add386e83d888a7819c0132a75942fa5d}{sourceEventTypes}.push\_back(evinfo);
-254       ROS\_INFO\_STREAM(\textcolor{stringliteral}{"event: "} << sourceType->getFullName());
-255       ROS\_INFO\_STREAM(\textcolor{stringliteral}{"event parameters: "} << sourceType->templateParameters.size());
-256     \}
+252     \{
+253       \textcolor{keyword}{auto} sourceType = \hyperlink{classsmacc_1_1introspection_1_1TypeInfo_a09ec2f3f94a8f1fc82ae250216c38d47}{TypeInfo::getTypeInfoFromTypeid}(\textcolor{keyword}{typeid}(T));
+254       \textcolor{keyword}{auto} evinfo = std::make\_shared<SmaccEventInfo>(sourceType);
+255       EventLabel<T>(evinfo->label);
+256       \hyperlink{structsmacc_1_1SmaccState_1_1AddLogicUnitEventType_a31c27ea945cd0127080c0bae872c028e}{luInfo\_}.\hyperlink{structsmacc_1_1introspection_1_1SmaccLogicUnitInfo_add386e83d888a7819c0132a75942fa5d}{sourceEventTypes}.push\_back(evinfo);
+257       ROS\_INFO\_STREAM(\textcolor{stringliteral}{"event: "} << sourceType->getFullName());
+258       ROS\_INFO\_STREAM(\textcolor{stringliteral}{"event parameters: "} << sourceType->templateParameters.size());
+259     \}
 \end{DoxyCode}
 
 
@@ -106,7 +106,7 @@ Here is the call graph for this function\+:
 \subsubsection[{\texorpdfstring{lu\+Info\+\_\+}{luInfo_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Most\+Derived, class Context, class Inner\+Initial = mpl\+::list$<$$>$, sc\+::history\+\_\+mode history\+Mode = sc\+::has\+\_\+deep\+\_\+history$>$ template$<$typename T\+Transition $>$ {\bf Smacc\+Logic\+Unit\+Info}\& {\bf smacc\+::\+Smacc\+State}$<$ Most\+Derived, Context, Inner\+Initial, history\+Mode $>$\+::{\bf Add\+Logic\+Unit\+Event\+Type}$<$ T\+Transition $>$\+::lu\+Info\+\_\+}\hypertarget{structsmacc_1_1SmaccState_1_1AddLogicUnitEventType_a31c27ea945cd0127080c0bae872c028e}{}\label{structsmacc_1_1SmaccState_1_1AddLogicUnitEventType_a31c27ea945cd0127080c0bae872c028e}
 
 
-Definition at line 246 of file smacc\+\_\+state\+\_\+base.\+h.
+Definition at line 249 of file smacc\+\_\+state\+\_\+base.\+h.
 
 
 

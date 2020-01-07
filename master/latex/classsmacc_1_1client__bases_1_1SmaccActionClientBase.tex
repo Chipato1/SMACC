@@ -260,8 +260,9 @@ Definition at line 87 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 93         \hyperlink{classsmacc_1_1client__bases_1_1SmaccActionClientBase_a04cb60c48127e5534c1ce7045fb5abdc}{postRejectedEvent} = [=](\textcolor{keyword}{auto} msg) \{ this->
       postResultEvent<EvActionRejected<TDerived, TObjectTag>>(msg); \};
 94         \hyperlink{classsmacc_1_1client__bases_1_1SmaccActionClientBase_ac754fb0adfc982fe1adde0d92842a33b}{postFeedbackEvent} = [=](\textcolor{keyword}{auto} msg) \{
-95             \textcolor{keyword}{auto} actionFeedbackEvent = \textcolor{keyword}{new} EvActionFeedback<Feedback, TObjectTag>();
-96             actionFeedbackEvent->client = \textcolor{keyword}{this};
+95             \textcolor{keyword}{auto} actionFeedbackEvent = \textcolor{keyword}{new} 
+      \hyperlink{structsmacc_1_1default__events_1_1EvActionFeedback}{EvActionFeedback<Feedback, TObjectTag>}();
+96             actionFeedbackEvent->\hyperlink{structsmacc_1_1default__events_1_1EvActionFeedback_a356e106d4c54e12dc81a0f3063ecff4a}{client} = \textcolor{keyword}{this};
 97             actionFeedbackEvent->feedbackMessage = *msg;
 98             this->\hyperlink{classsmacc_1_1ISmaccClient_a21a79203cb44fc717d4d977c190327c6}{postEvent}(actionFeedbackEvent);
 99             ROS\_DEBUG(\textcolor{stringliteral}{"[%s] FEEDBACK EVENT"}, \hyperlink{namespacesmacc_1_1introspection_a81ad2fc77a0262640d4b1bd273938603}{demangleType}(\textcolor{keyword}{typeid}(*\textcolor{keyword}{this})).c\_str());
@@ -596,7 +597,7 @@ Definition at line 77 of file smacc\+\_\+action\+\_\+client\+\_\+base.\+h.
 \begin{DoxyCode}
 78     \{
 79         \textcolor{keyword}{auto} *ev = \textcolor{keyword}{new} EvType();
-80         ev->client = \textcolor{keyword}{this};
+80         \textcolor{comment}{//ev->client = this;}
 81         ev->resultMessage = *result;
 82         ROS\_INFO(\textcolor{stringliteral}{"Posting EVENT %s"}, \hyperlink{namespacesmacc_1_1introspection_a2f495108db3e57604d8d3ff5ef030302}{demangleSymbol}(\textcolor{keyword}{typeid}(ev).name()).c\_str());
 83         this->\hyperlink{classsmacc_1_1ISmaccClient_a21a79203cb44fc717d4d977c190327c6}{postEvent}(ev);

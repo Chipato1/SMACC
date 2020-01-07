@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['iactionresult',['IActionResult',['../structsmacc_1_1IActionResult.html',1,'smacc']]],
   ['idle',['IDLE',['../namespacemove__base__z__client_1_1odom__tracker.html#adf3e5fc3644563922cc64a20a0197224aa5daf7f2ebbba4975d61dab1c40188c7',1,'move_base_z_client::odom_tracker']]],
-  ['ieventfactory',['IEventFactory',['../classsmacc_1_1IEventFactory.html',1,'smacc']]],
   ['imu_5fvisual_2ecpp',['imu_visual.cpp',['../imu__visual_8cpp.html',1,'']]],
   ['imu_5fvisual_2eh',['imu_visual.h',['../imu__visual_8h.html',1,'']]],
   ['imuvisual',['ImuVisual',['../classsmacc__rviz__plugin_1_1ImuVisual.html',1,'smacc_rviz_plugin']]],
@@ -24,6 +22,8 @@ var searchData=
   ['inner_5finitial_5flist',['inner_initial_list',['../classsmacc_1_1SmaccState.html#acb4ac84bce421d39b594510a6b2df558',1,'smacc::SmaccState']]],
   ['insertwaypoint',['insertWaypoint',['../classmove__base__z__client_1_1WaypointNavigator.html#a92b16647ad59ca96f37211db34a32405',1,'move_base_z_client::WaypointNavigator']]],
   ['introspection_2eh',['introspection.h',['../introspection_8h.html',1,'']]],
+  ['iorthogonal',['IOrthogonal',['../classsmacc_1_1IOrthogonal.html',1,'smacc']]],
+  ['iorthogonal',['IOrthogonal',['../classsmacc_1_1ISmaccComponent.html#a5fd6fcd01e77db4e3506afadec0d39dc',1,'smacc::ISmaccComponent::IOrthogonal()'],['../classsmacc_1_1ISmaccClient.html#a5fd6fcd01e77db4e3506afadec0d39dc',1,'smacc::ISmaccClient::IOrthogonal()']]],
   ['isgoalreached',['isGoalReached',['../classmove__base__z__client_1_1backward__local__planner_1_1BackwardLocalPlanner.html#a625198f20113c62e95ffaa82ecc3f472',1,'move_base_z_client::backward_local_planner::BackwardLocalPlanner::isGoalReached()'],['../classmove__base__z__client_1_1forward__local__planner_1_1ForwardLocalPlanner.html#a9d46d3b7dc05bbb0f1a0c7f996b5b557',1,'move_base_z_client::forward_local_planner::ForwardLocalPlanner::isGoalReached()']]],
   ['ismaccactionclient',['ISmaccActionClient',['../classsmacc_1_1client__bases_1_1ISmaccActionClient.html',1,'smacc::client_bases']]],
   ['ismaccactionclient',['ISmaccActionClient',['../classsmacc_1_1client__bases_1_1ISmaccActionClient.html#a379f2672d1b971422821026ca90eb96a',1,'smacc::client_bases::ISmaccActionClient']]],

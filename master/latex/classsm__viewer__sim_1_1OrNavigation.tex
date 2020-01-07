@@ -11,7 +11,7 @@ Inheritance diagram for sm\+\_\+viewer\+\_\+sim\+:\+:Or\+Navigation\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=238pt]{classsm__viewer__sim_1_1OrNavigation__inherit__graph}
+\includegraphics[height=550pt]{classsm__viewer__sim_1_1OrNavigation__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -29,6 +29,7 @@ Collaboration diagram for sm\+\_\+viewer\+\_\+sim\+:\+:Or\+Navigation\+:
 \item 
 virtual void \hyperlink{classsm__viewer__sim_1_1OrNavigation_a6f39ecbb3c1ad253c283588df860a8c4}{on\+Initialize} () override
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -48,7 +49,7 @@ Definition at line 8 of file or\+\_\+navigation.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classsm__viewer__sim_1_1OrNavigation_a6f39ecbb3c1ad253c283588df860a8c4}{}\label{classsm__viewer__sim_1_1OrNavigation_a6f39ecbb3c1ad253c283588df860a8c4}
 
 
-Reimplemented from \hyperlink{classsmacc_1_1Orthogonal_a7a3da420b1554e20aea3ed01067df05c}{smacc\+::\+Orthogonal}.
+Reimplemented from \hyperlink{classsmacc_1_1IOrthogonal_ad21074708f877791f5604916dfd3b917}{smacc\+::\+I\+Orthogonal}.
 
 
 
@@ -57,7 +58,7 @@ Definition at line 11 of file or\+\_\+navigation.\+h.
 
 \begin{DoxyCode}
 12     \{
-13         \textcolor{keyword}{auto} client = this->createClient<OrNavigation, ClMoveBaseZ>();
+13         \textcolor{keyword}{auto} client = this->createClient<ClMoveBaseZ>();
 14         client->name\_ = \textcolor{stringliteral}{"move\_base"};
 15         client->initialize();
 16     \}
