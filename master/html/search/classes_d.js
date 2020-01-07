@@ -115,10 +115,10 @@ var searchData=
   ['ssrradialendpoint',['SsrRadialEndPoint',['../structsm__dance__bot_1_1radial__motion__states_1_1SsrRadialEndPoint.html',1,'sm_dance_bot::radial_motion_states']]],
   ['ssrradialloopstart',['SsrRadialLoopStart',['../structsm__dance__bot_1_1radial__motion__states_1_1SsrRadialLoopStart.html',1,'sm_dance_bot::radial_motion_states']]],
   ['ssrradialloopstart',['SsrRadialLoopStart',['../structsm__dance__bot__2_1_1radial__motion__states_1_1SsrRadialLoopStart.html',1,'sm_dance_bot_2::radial_motion_states']]],
-  ['ssrradialreturn',['SsrRadialReturn',['../structsm__dance__bot_1_1radial__motion__states_1_1SsrRadialReturn.html',1,'sm_dance_bot::radial_motion_states']]],
   ['ssrradialreturn',['SsrRadialReturn',['../structsm__dance__bot__2_1_1radial__motion__states_1_1SsrRadialReturn.html',1,'sm_dance_bot_2::radial_motion_states']]],
-  ['ssrradialrotate',['SsrRadialRotate',['../structsm__dance__bot_1_1radial__motion__states_1_1SsrRadialRotate.html',1,'sm_dance_bot::radial_motion_states']]],
+  ['ssrradialreturn',['SsrRadialReturn',['../structsm__dance__bot_1_1radial__motion__states_1_1SsrRadialReturn.html',1,'sm_dance_bot::radial_motion_states']]],
   ['ssrradialrotate',['SsrRadialRotate',['../structsm__dance__bot__2_1_1radial__motion__states_1_1SsrRadialRotate.html',1,'sm_dance_bot_2::radial_motion_states']]],
+  ['ssrradialrotate',['SsrRadialRotate',['../structsm__dance__bot_1_1radial__motion__states_1_1SsrRadialRotate.html',1,'sm_dance_bot::radial_motion_states']]],
   ['ssrspatternforward1',['SsrSPatternForward1',['../structsm__dance__bot_1_1s__pattern__states_1_1SsrSPatternForward1.html',1,'sm_dance_bot::s_pattern_states']]],
   ['ssrspatternforward2',['SsrSPatternForward2',['../structsm__dance__bot_1_1s__pattern__states_1_1SsrSPatternForward2.html',1,'sm_dance_bot::s_pattern_states']]],
   ['ssrspatternforward3',['SsrSPatternForward3',['../structsm__dance__bot_1_1s__pattern__states_1_1SsrSPatternForward3.html',1,'sm_dance_bot::s_pattern_states']]],
@@ -153,6 +153,6 @@ var searchData=
   ['ststate1',['StState1',['../structsm__three__some_1_1StState1.html',1,'sm_three_some']]],
   ['ststate2',['StState2',['../structsm__three__some_1_1StState2.html',1,'sm_three_some']]],
   ['ststate3',['StState3',['../structsm__three__some_1_1StState3.html',1,'sm_three_some']]],
-  ['success',['SUCCESS',['../structsmacc_1_1default__transition__tags_1_1SUCCESS.html',1,'smacc::default_transition_tags']]],
-  ['success',['SUCCESS',['../classSUCCESS.html',1,'']]]
+  ['success',['SUCCESS',['../classSUCCESS.html',1,'']]],
+  ['success',['SUCCESS',['../structsmacc_1_1default__transition__tags_1_1SUCCESS.html',1,'smacc::default_transition_tags']]]
 ];

@@ -117,17 +117,16 @@ Referenced by initialize().
 27     \textcolor{comment}{/*if the distance is infinity or nan, use max range distance*/}
 28     \textcolor{keywordflow}{if} (fwdist == std::numeric\_limits<float>::infinity() || fwdist != fwdist)
 29     \{
-30       
-31       this->\hyperlink{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a90d3f709388392afcb30ff988c1bcb50}{forwardObstacleDistance} = scanmsg.range\_max - security\_distance \textcolor{comment}{/*meters
+30       this->\hyperlink{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a90d3f709388392afcb30ff988c1bcb50}{forwardObstacleDistance} = scanmsg.range\_max - security\_distance \textcolor{comment}{/*meters
       */};
-32       ROS\_INFO(\textcolor{stringliteral}{"Distance to forward obstacle is not a number, setting default value to: %lf"}, scanmsg.
+31       ROS\_INFO(\textcolor{stringliteral}{"Distance to forward obstacle is not a number, setting default value to: %lf"}, scanmsg.
       range\_max);
-33     \}
-34     \textcolor{keywordflow}{else}
-35     \{
-36       this->\hyperlink{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a90d3f709388392afcb30ff988c1bcb50}{forwardObstacleDistance} = fwdist - security\_distance;
-37     \}
-38   \}
+32     \}
+33     \textcolor{keywordflow}{else}
+34     \{
+35       this->\hyperlink{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a90d3f709388392afcb30ff988c1bcb50}{forwardObstacleDistance} = fwdist - security\_distance;
+36     \}
+37   \}
 \end{DoxyCode}
 
 

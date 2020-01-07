@@ -36,7 +36,7 @@ struct \hyperlink{structsm__dance__bot_1_1StAcquireSensors_1_1ON__SENSORS__AVAIL
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef mpl\+::list$<$ transition$<$ Ev\+All$<$ Lu\+All\+Events\+Go, Unit1 $>$, \hyperlink{structsm__dance__bot_1_1StEventCountDown}{St\+Event\+Count\+Down}, \hyperlink{structsm__dance__bot_1_1StAcquireSensors_1_1ON__SENSORS__AVAILABLE}{O\+N\+\_\+\+S\+E\+N\+S\+O\+R\+S\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ \hyperlink{structsm__dance__bot_1_1EvGlobalError}{Ev\+Global\+Error}, sc\+::deep\+\_\+history$<$ \hyperlink{structsm__dance__bot_1_1StAcquireSensors}{St\+Acquire\+Sensors} $>$ $>$ $>$ \hyperlink{structsm__dance__bot_1_1StAcquireSensors_aee65ad66e119102e3ef5e2e959c0e08b}{reactions}
+typedef mpl\+::list$<$ transition$<$ Ev\+All\+Go$<$ Lu\+All\+Events\+Go, Unit1 $>$, \hyperlink{structsm__dance__bot_1_1StEventCountDown}{St\+Event\+Count\+Down}, \hyperlink{structsm__dance__bot_1_1StAcquireSensors_1_1ON__SENSORS__AVAILABLE}{O\+N\+\_\+\+S\+E\+N\+S\+O\+R\+S\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE} $>$, \hyperlink{classsmacc_1_1transition}{smacc\+::transition}$<$ \hyperlink{structsm__dance__bot_1_1EvGlobalError}{Ev\+Global\+Error}, sc\+::deep\+\_\+history$<$ \hyperlink{structsm__dance__bot_1_1StAcquireSensors}{St\+Acquire\+Sensors} $>$ $>$ $>$ \hyperlink{structsm__dance__bot_1_1StAcquireSensors_a62f6a1b5bd25352ee4ec83277112e4a8}{reactions}
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -56,7 +56,7 @@ Definition at line 4 of file st\+\_\+acquire\+\_\+sensors.\+h.
 \subsection{Member Typedef Documentation}
 \index{sm\+\_\+dance\+\_\+bot\+::\+St\+Acquire\+Sensors@{sm\+\_\+dance\+\_\+bot\+::\+St\+Acquire\+Sensors}!reactions@{reactions}}
 \index{reactions@{reactions}!sm\+\_\+dance\+\_\+bot\+::\+St\+Acquire\+Sensors@{sm\+\_\+dance\+\_\+bot\+::\+St\+Acquire\+Sensors}}
-\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ transition$<$Ev\+All$<$Lu\+All\+Events\+Go, Unit1$>$, {\bf St\+Event\+Count\+Down}, {\bf O\+N\+\_\+\+S\+E\+N\+S\+O\+R\+S\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE}$>$, {\bf smacc\+::transition}$<${\bf Ev\+Global\+Error}, sc\+::deep\+\_\+history$<${\bf St\+Acquire\+Sensors}$>$ $>$ $>$ {\bf sm\+\_\+dance\+\_\+bot\+::\+St\+Acquire\+Sensors\+::reactions}}\hypertarget{structsm__dance__bot_1_1StAcquireSensors_aee65ad66e119102e3ef5e2e959c0e08b}{}\label{structsm__dance__bot_1_1StAcquireSensors_aee65ad66e119102e3ef5e2e959c0e08b}
+\subsubsection[{\texorpdfstring{reactions}{reactions}}]{\setlength{\rightskip}{0pt plus 5cm}typedef mpl\+::list$<$ transition$<$Ev\+All\+Go$<$Lu\+All\+Events\+Go, Unit1$>$, {\bf St\+Event\+Count\+Down}, {\bf O\+N\+\_\+\+S\+E\+N\+S\+O\+R\+S\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE}$>$, {\bf smacc\+::transition}$<${\bf Ev\+Global\+Error}, sc\+::deep\+\_\+history$<${\bf St\+Acquire\+Sensors}$>$ $>$ $>$ {\bf sm\+\_\+dance\+\_\+bot\+::\+St\+Acquire\+Sensors\+::reactions}}\hypertarget{structsm__dance__bot_1_1StAcquireSensors_a62f6a1b5bd25352ee4ec83277112e4a8}{}\label{structsm__dance__bot_1_1StAcquireSensors_a62f6a1b5bd25352ee4ec83277112e4a8}
 
 
 Definition at line 31 of file st\+\_\+acquire\+\_\+sensors.\+h.
@@ -89,14 +89,14 @@ References smacc\+::\+Smacc\+State$<$ St\+Acquire\+Sensors, Ms\+Dance\+Bot\+Run\
 39       static\_configure<OrUpdatablePublisher, ros\_publisher\_client::CbDefaultPublishLoop>();
 40 
 41       \hyperlink{classsmacc_1_1SmaccState_a6fc90cf59c60c749e82f49aafb079b23}{static\_createLogicUnit}<LuAllEventsGo,
-42                              EvAll<LuAllEventsGo, Unit1>,
+42                              EvAllGo<LuAllEventsGo, Unit1>,
 43                              mpl::list<EvTopicMessage<CbLidarSensor, OrObstaclePerception>, 
       EvTopicMessage<CbConditionTemperatureSensor, OrTemperatureSensor>>>();
 44 
 45       \textcolor{comment}{// auto luall = static\_createLogicUnit<LuAllEventsGo>();}
 46       \textcolor{comment}{// luall->enablesOn<EvTopicMessage<CbLidarSensor, OrObstaclePerception>,
        EvTopicMessage<CbConditionTemperatureSensor, OrTemperatureSensor>>();}
-47       \textcolor{comment}{// luall->throwsEvent<EvAll<LuAllEventsGo, Unit1>>();}
+47       \textcolor{comment}{// luall->throwsEvent<EvAllGo<LuAllEventsGo, Unit1>>();}
 48    \}
 \end{DoxyCode}
 
