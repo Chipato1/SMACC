@@ -40,11 +40,6 @@ virtual void \hyperlink{classmove__base__z__client_1_1ClMoveBaseZ_a082cef8bf5dbd
 \item 
 virtual std\+::string \hyperlink{classmove__base__z__client_1_1ClMoveBaseZ_aa7446f57e3740d89c71ba12f1f3c00c0}{get\+Name} () const override
 \end{DoxyCompactItemize}
-\subsection*{Public Attributes}
-\begin{DoxyCompactItemize}
-\item 
-std\+::shared\+\_\+ptr$<$ \hyperlink{classmove__base__z__client_1_1PlannerSwitcher}{move\+\_\+base\+\_\+z\+\_\+client\+::\+Planner\+Switcher} $>$ \hyperlink{classmove__base__z__client_1_1ClMoveBaseZ_ac57d2293bc0a5c4fcef326379822cc5e}{planner\+Switcher\+\_\+}
-\end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
 \item 
@@ -104,7 +99,7 @@ Definition at line 12 of file move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin.\+cp
 )\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmove__base__z__client_1_1ClMoveBaseZ_ab5de84b969e58d80723f5c0d3ce79afa}{}\label{classmove__base__z__client_1_1ClMoveBaseZ_ab5de84b969e58d80723f5c0d3ce79afa}
 
 
-Definition at line 28 of file move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin.\+cpp.
+Definition at line 27 of file move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin.\+cpp.
 
 
 
@@ -112,8 +107,8 @@ References P\+L\+U\+G\+I\+N\+L\+I\+B\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+C\+L\+A\+S\+
 
 
 \begin{DoxyCode}
-29 \{
-30 \}
+28 \{
+29 \}
 \end{DoxyCode}
 
 
@@ -168,16 +163,14 @@ Definition at line 22 of file move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin.\+cp
 
 
 
-References smacc\+::client\+\_\+bases\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::initialize(), smacc\+::client\+\_\+bases\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::name\+\_\+, and planner\+Switcher\+\_\+.
+References smacc\+::client\+\_\+bases\+::\+Smacc\+Action\+Client\+Base$<$ move\+\_\+base\+\_\+msgs\+::\+Move\+Base\+Action $>$\+::initialize().
 
 
 \begin{DoxyCode}
 23 \{
-24     \hyperlink{classmove__base__z__client_1_1ClMoveBaseZ_ac57d2293bc0a5c4fcef326379822cc5e}{plannerSwitcher\_} = std::make\_shared<move\_base\_z\_client::PlannerSwitcher>(*(this->
-      \hyperlink{classsmacc_1_1client__bases_1_1SmaccActionClientBase_a12b007d3c3657b0f0699e97cdb96a490}{name\_}));
-25     \hyperlink{classsmacc_1_1client__bases_1_1SmaccActionClientBase_a72967f255f85e35718a1e1b0b48c38ff}{SmaccActionClientBase<move\_base\_msgs::MoveBaseAction>::initialize}
+24     \hyperlink{classsmacc_1_1client__bases_1_1SmaccActionClientBase_a72967f255f85e35718a1e1b0b48c38ff}{SmaccActionClientBase<move\_base\_msgs::MoveBaseAction>::initialize}
       ();
-26 \}
+25 \}
 \end{DoxyCode}
 
 
@@ -190,20 +183,6 @@ Here is the call graph for this function\+:
 \end{center}
 \end{figure}
 
-
-
-
-\subsection{Member Data Documentation}
-\index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cl\+Move\+BaseZ@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cl\+Move\+BaseZ}!planner\+Switcher\+\_\+@{planner\+Switcher\+\_\+}}
-\index{planner\+Switcher\+\_\+@{planner\+Switcher\+\_\+}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Cl\+Move\+BaseZ@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Cl\+Move\+BaseZ}}
-\subsubsection[{\texorpdfstring{planner\+Switcher\+\_\+}{plannerSwitcher_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf move\+\_\+base\+\_\+z\+\_\+client\+::\+Planner\+Switcher}$>$ move\+\_\+base\+\_\+z\+\_\+client\+::\+Cl\+Move\+Base\+Z\+::planner\+Switcher\+\_\+}\hypertarget{classmove__base__z__client_1_1ClMoveBaseZ_ac57d2293bc0a5c4fcef326379822cc5e}{}\label{classmove__base__z__client_1_1ClMoveBaseZ_ac57d2293bc0a5c4fcef326379822cc5e}
-
-
-Definition at line 25 of file move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin.\+h.
-
-
-
-Referenced by initialize(), move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards\+::on\+Entry(), move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate\+::on\+Entry(), move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Absolute\+Rotate\+::on\+Entry(), move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Global\+Position\+::on\+Entry(), move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Forward\+::on\+Entry(), and move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards\+::on\+Entry().
 
 
 

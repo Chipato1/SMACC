@@ -1,9 +1,11 @@
 <map id="sm_dance_bot::StNavigateToWaypointsX::onInitialize" name="sm_dance_bot::StNavigateToWaypointsX::onInitialize">
-<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccClient.html#adef78db601749ca63c19e74a27cb88cc" title="smacc::ISmaccClient\l::getComponent" alt="" coords="248,5,403,47"/>
-<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccState.html#a7f95c9f0a6ea2d6f18d1aec0519de4ac" title="smacc::ISmaccState\l::requiresClient" alt="" coords="248,71,403,112"/>
-<area shape="rect" id="node4" href="$classmove__base__z__client_1_1WaypointNavigator.html#a376c1b5f822325122d29ad4f6e568b08" title="move_base_z_client\l::WaypointNavigator\l::sendNextGoal" alt="" coords="250,135,401,191"/>
-<area shape="rect" id="node5" href="$classmove__base__z__client_1_1WaypointNavigator.html#ae4c5a879ff016f197c1cec54b2adaa1b" title="move_base_z_client\l::WaypointNavigator\l::onGoalReached" alt="" coords="467,55,617,111"/>
-<area shape="rect" id="node7" href="$classsmacc_1_1client__bases_1_1SmaccActionClientBase.html#af6d77c27d21b2e4f621f53c5f1df088b" title="smacc::client_bases\l::SmaccActionClientBase\l::onSucceeded" alt="" coords="451,135,633,191"/>
-<area shape="rect" id="node8" href="$classsmacc_1_1client__bases_1_1SmaccActionClientBase.html#a9c47a5094ac8afb01680307fe5eca922" title="smacc::client_bases\l::SmaccActionClientBase\l::sendGoal" alt="" coords="451,215,633,271"/>
-<area shape="rect" id="node6" href="$classmove__base__z__client_1_1WaypointEventDispatcher.html#a7421f1eb8aae15a3ddde7c50bea87648" title="move_base_z_client\l::WaypointEventDispatcher\l::postWaypointEvent" alt="" coords="681,55,873,111"/>
+<area shape="rect" id="node2" href="$classsmacc_1_1ISmaccClient.html#adef78db601749ca63c19e74a27cb88cc" title="smacc::ISmaccClient\l::getComponent" alt="" coords="477,5,631,47"/>
+<area shape="rect" id="node3" href="$classsmacc_1_1ISmaccState.html#a7f95c9f0a6ea2d6f18d1aec0519de4ac" title="smacc::ISmaccState\l::requiresClient" alt="" coords="248,72,403,113"/>
+<area shape="rect" id="node4" href="$classmove__base__z__client_1_1WaypointNavigator.html#a376c1b5f822325122d29ad4f6e568b08" title="move_base_z_client\l::WaypointNavigator\l::sendNextGoal" alt="" coords="250,147,401,203"/>
+<area shape="rect" id="node5" href="$classmove__base__z__client_1_1WaypointNavigator.html#ae4c5a879ff016f197c1cec54b2adaa1b" title="move_base_z_client\l::WaypointNavigator\l::onGoalReached" alt="" coords="479,70,629,126"/>
+<area shape="rect" id="node7" href="$classsmacc_1_1client__bases_1_1SmaccActionClientBase.html#af6d77c27d21b2e4f621f53c5f1df088b" title="smacc::client_bases\l::SmaccActionClientBase\l::onSucceeded" alt="" coords="463,150,645,206"/>
+<area shape="rect" id="node8" href="$classsmacc_1_1client__bases_1_1SmaccActionClientBase.html#a9c47a5094ac8afb01680307fe5eca922" title="smacc::client_bases\l::SmaccActionClientBase\l::sendGoal" alt="" coords="463,230,645,286"/>
+<area shape="rect" id="node9" href="$classmove__base__z__client_1_1PlannerSwitcher.html#aa31306368ab2a5145c024c0c1a580547" title="move_base_z_client\l::PlannerSwitcher::setDefault\lPlanners" alt="" coords="451,310,657,366"/>
+<area shape="rect" id="node6" href="$classmove__base__z__client_1_1WaypointEventDispatcher.html#a7421f1eb8aae15a3ddde7c50bea87648" title="move_base_z_client\l::WaypointEventDispatcher\l::postWaypointEvent" alt="" coords="729,70,921,126"/>
+<area shape="rect" id="node10" href="$classmove__base__z__client_1_1PlannerSwitcher.html#a189ac8c027169a111c7d8e14d864752f" title="move_base_z_client\l::PlannerSwitcher::updatePlanners" alt="" coords="705,317,945,359"/>
 </map>

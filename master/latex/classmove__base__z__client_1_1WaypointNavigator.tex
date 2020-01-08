@@ -90,14 +90,14 @@ Definition at line 27 of file waypoints\+\_\+navigator.\+h.
 )}\hypertarget{classmove__base__z__client_1_1WaypointNavigator_a1b0b77cbe446c8fba0f87b50b509e173}{}\label{classmove__base__z__client_1_1WaypointNavigator_a1b0b77cbe446c8fba0f87b50b509e173}
 
 
-Definition at line 11 of file waypoints\+\_\+navigator.\+cpp.
+Definition at line 12 of file waypoints\+\_\+navigator.\+cpp.
 
 
 \begin{DoxyCode}
-12     : \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a7da763128724f7b08c32c79cb3a88934}{currentWaypoint\_}(0),
-13       \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}(0)
-14 \{
-15 \}
+13     : \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a7da763128724f7b08c32c79cb3a88934}{currentWaypoint\_}(0),
+14       \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}(0)
+15 \{
+16 \}
 \end{DoxyCode}
 
 
@@ -145,7 +145,7 @@ Here is the call graph for this function\+:
 ) const}\hypertarget{classmove__base__z__client_1_1WaypointNavigator_acda51c0054bc7d9c3fb336160d5e2569}{}\label{classmove__base__z__client_1_1WaypointNavigator_acda51c0054bc7d9c3fb336160d5e2569}
 
 
-Definition at line 81 of file waypoints\+\_\+navigator.\+cpp.
+Definition at line 88 of file waypoints\+\_\+navigator.\+cpp.
 
 
 
@@ -153,9 +153,9 @@ References current\+Waypoint\+\_\+.
 
 
 \begin{DoxyCode}
-82 \{
-83   \textcolor{keywordflow}{return} \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a7da763128724f7b08c32c79cb3a88934}{currentWaypoint\_};
-84 \}
+89 \{
+90   \textcolor{keywordflow}{return} \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a7da763128724f7b08c32c79cb3a88934}{currentWaypoint\_};
+91 \}
 \end{DoxyCode}
 \index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator}!get\+Waypoints@{get\+Waypoints}}
 \index{get\+Waypoints@{get\+Waypoints}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator}}
@@ -166,34 +166,18 @@ References current\+Waypoint\+\_\+.
 ) const}\hypertarget{classmove__base__z__client_1_1WaypointNavigator_ade5fc5c909bb1812fa964b6b7fbd9de8}{}\label{classmove__base__z__client_1_1WaypointNavigator_ade5fc5c909bb1812fa964b6b7fbd9de8}
 
 
-Definition at line 76 of file waypoints\+\_\+navigator.\+cpp.
+Definition at line 83 of file waypoints\+\_\+navigator.\+cpp.
 
 
 
 References waypoints\+\_\+.
 
 
-
-Referenced by sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+St\+Navigate\+To\+Waypoints\+X\+::load\+Waypoints\+First\+Time().
-
-
 \begin{DoxyCode}
-77 \{
-78   \textcolor{keywordflow}{return} \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_};
-79 \}
+84 \{
+85   \textcolor{keywordflow}{return} \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_};
+86 \}
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classmove__base__z__client_1_1WaypointNavigator_ade5fc5c909bb1812fa964b6b7fbd9de8_icgraph}
-\end{center}
-\end{figure}
-
-
 \index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator}!initialize@{initialize}}
 \index{initialize@{initialize}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator}}
 \subsubsection[{\texorpdfstring{initialize(smacc\+::\+I\+Smacc\+Client $\ast$owner) override}{initialize(smacc::ISmaccClient *owner) override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator\+::initialize (
@@ -225,7 +209,7 @@ Definition at line 36 of file waypoints\+\_\+navigator.\+h.
 )}\hypertarget{classmove__base__z__client_1_1WaypointNavigator_a92b16647ad59ca96f37211db34a32405}{}\label{classmove__base__z__client_1_1WaypointNavigator_a92b16647ad59ca96f37211db34a32405}
 
 
-Definition at line 40 of file waypoints\+\_\+navigator.\+cpp.
+Definition at line 47 of file waypoints\+\_\+navigator.\+cpp.
 
 
 
@@ -233,12 +217,12 @@ References waypoints\+\_\+.
 
 
 \begin{DoxyCode}
-41 \{
-42   \textcolor{keywordflow}{if} (index >= 0 && index <= \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}.size())
-43   \{
-44     \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}.insert(\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}.begin(), index, newpose);
-45   \}
-46 \}
+48 \{
+49   \textcolor{keywordflow}{if} (index >= 0 && index <= \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}.size())
+50   \{
+51     \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}.insert(\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}.begin(), index, newpose);
+52   \}
+53 \}
 \end{DoxyCode}
 \index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator}!load\+Way\+Points\+From\+File@{load\+Way\+Points\+From\+File}}
 \index{load\+Way\+Points\+From\+File@{load\+Way\+Points\+From\+File}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator}}
@@ -249,7 +233,7 @@ References waypoints\+\_\+.
 )}\hypertarget{classmove__base__z__client_1_1WaypointNavigator_af56d146945280a8660805aad7eb3aed9}{}\label{classmove__base__z__client_1_1WaypointNavigator_af56d146945280a8660805aad7eb3aed9}
 
 
-Definition at line 87 of file waypoints\+\_\+navigator.\+cpp.
+Definition at line 94 of file waypoints\+\_\+navigator.\+cpp.
 
 
 
@@ -257,65 +241,65 @@ References waypoints\+\_\+.
 
 
 
-Referenced by sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+St\+Navigate\+To\+Waypoints\+X\+::load\+Waypoints\+First\+Time(), sm\+\_\+dance\+\_\+bot\+::\+Or\+Navigation\+::load\+Waypoints\+From\+Yaml(), and sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+Or\+Navigation\+::load\+Waypoints\+From\+Yaml().
+Referenced by sm\+\_\+dance\+\_\+bot\+::\+Or\+Navigation\+::load\+Waypoints\+From\+Yaml(), and sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+Or\+Navigation\+::load\+Waypoints\+From\+Yaml().
 
 
 \begin{DoxyCode}
-88 \{
-89   this->\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}.clear();
-90   std::ifstream ifs(filepath.c\_str(), std::ifstream::in);
-91   \textcolor{keywordflow}{if} (ifs.good() == \textcolor{keyword}{false})
-92   \{
-93     \textcolor{keywordflow}{throw} std::string(\textcolor{stringliteral}{"Waypoints file not found"});
-94   \}
-95 
-96 \textcolor{preprocessor}{#ifdef HAVE\_NEW\_YAMLCPP}
-97   YAML::Node node = YAML::Load(ifs);
-98 \textcolor{preprocessor}{#else}
-99   YAML::Parser parser(ifs);
-100   parser.GetNextDocument(node);
-101 \textcolor{preprocessor}{#endif}
+95 \{
+96   this->\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}.clear();
+97   std::ifstream ifs(filepath.c\_str(), std::ifstream::in);
+98   \textcolor{keywordflow}{if} (ifs.good() == \textcolor{keyword}{false})
+99   \{
+100     \textcolor{keywordflow}{throw} std::string(\textcolor{stringliteral}{"Waypoints file not found"});
+101   \}
 102 
 103 \textcolor{preprocessor}{#ifdef HAVE\_NEW\_YAMLCPP}
-104   \textcolor{keyword}{const} YAML::Node &wp\_node\_tmp = node[\textcolor{stringliteral}{"waypoints"}];
-105   \textcolor{keyword}{const} YAML::Node *wp\_node = wp\_node\_tmp ? &wp\_node\_tmp : NULL;
-106 \textcolor{preprocessor}{#else}
-107   \textcolor{keyword}{const} YAML::Node *wp\_node = node.FindValue(\textcolor{stringliteral}{"waypoints"});
+104   YAML::Node node = YAML::Load(ifs);
+105 \textcolor{preprocessor}{#else}
+106   YAML::Parser parser(ifs);
+107   parser.GetNextDocument(node);
 108 \textcolor{preprocessor}{#endif}
 109 
-110   \textcolor{keywordflow}{if} (wp\_node != NULL)
-111   \{
-112     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < wp\_node->size(); ++i)
-113     \{
-114       \textcolor{comment}{// Parse waypoint entries on YAML}
-115       geometry\_msgs::Pose wp;
+110 \textcolor{preprocessor}{#ifdef HAVE\_NEW\_YAMLCPP}
+111   \textcolor{keyword}{const} YAML::Node &wp\_node\_tmp = node[\textcolor{stringliteral}{"waypoints"}];
+112   \textcolor{keyword}{const} YAML::Node *wp\_node = wp\_node\_tmp ? &wp\_node\_tmp : NULL;
+113 \textcolor{preprocessor}{#else}
+114   \textcolor{keyword}{const} YAML::Node *wp\_node = node.FindValue(\textcolor{stringliteral}{"waypoints"});
+115 \textcolor{preprocessor}{#endif}
 116 
-117       \textcolor{keywordflow}{try}
-118       \{
-119         \textcolor{comment}{// (*wp\_node)[i]["name"] >> wp.name;}
-120         \textcolor{comment}{// (*wp\_node)[i]["frame\_id"] >> wp.header.frame\_id;}
-121         wp.position.x = (*wp\_node)[i][\textcolor{stringliteral}{"position"}][\textcolor{stringliteral}{"x"}].as<\textcolor{keywordtype}{double}>();
-122         wp.position.y = (*wp\_node)[i][\textcolor{stringliteral}{"position"}][\textcolor{stringliteral}{"y"}].as<\textcolor{keywordtype}{double}>();
-123         wp.position.z = (*wp\_node)[i][\textcolor{stringliteral}{"position"}][\textcolor{stringliteral}{"z"}].as<\textcolor{keywordtype}{double}>();
-124         wp.orientation.x = (*wp\_node)[i][\textcolor{stringliteral}{"orientation"}][\textcolor{stringliteral}{"x"}].as<\textcolor{keywordtype}{double}>();
-125         wp.orientation.y = (*wp\_node)[i][\textcolor{stringliteral}{"orientation"}][\textcolor{stringliteral}{"y"}].as<\textcolor{keywordtype}{double}>();
-126         wp.orientation.z = (*wp\_node)[i][\textcolor{stringliteral}{"orientation"}][\textcolor{stringliteral}{"z"}].as<\textcolor{keywordtype}{double}>();
-127         wp.orientation.w = (*wp\_node)[i][\textcolor{stringliteral}{"orientation"}][\textcolor{stringliteral}{"w"}].as<\textcolor{keywordtype}{double}>();
-128 
-129         this->\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}.push\_back(wp);
-130       \}
-131       \textcolor{keywordflow}{catch} (...)
-132       \{
-133         ROS\_ERROR(\textcolor{stringliteral}{"parsing waypoint file, syntax error in point %d"}, i);
-134       \}
-135     \}
-136     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"Parsed "} << this->\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}.size() << \textcolor{stringliteral}{" waypoints."});
-137   \}
-138   \textcolor{keywordflow}{else}
-139   \{
-140     ROS\_WARN\_STREAM(\textcolor{stringliteral}{"Couldn't find any waypoints in the provided yaml file."});
-141   \}
-142 \}
+117   \textcolor{keywordflow}{if} (wp\_node != NULL)
+118   \{
+119     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < wp\_node->size(); ++i)
+120     \{
+121       \textcolor{comment}{// Parse waypoint entries on YAML}
+122       geometry\_msgs::Pose wp;
+123 
+124       \textcolor{keywordflow}{try}
+125       \{
+126         \textcolor{comment}{// (*wp\_node)[i]["name"] >> wp.name;}
+127         \textcolor{comment}{// (*wp\_node)[i]["frame\_id"] >> wp.header.frame\_id;}
+128         wp.position.x = (*wp\_node)[i][\textcolor{stringliteral}{"position"}][\textcolor{stringliteral}{"x"}].as<\textcolor{keywordtype}{double}>();
+129         wp.position.y = (*wp\_node)[i][\textcolor{stringliteral}{"position"}][\textcolor{stringliteral}{"y"}].as<\textcolor{keywordtype}{double}>();
+130         wp.position.z = (*wp\_node)[i][\textcolor{stringliteral}{"position"}][\textcolor{stringliteral}{"z"}].as<\textcolor{keywordtype}{double}>();
+131         wp.orientation.x = (*wp\_node)[i][\textcolor{stringliteral}{"orientation"}][\textcolor{stringliteral}{"x"}].as<\textcolor{keywordtype}{double}>();
+132         wp.orientation.y = (*wp\_node)[i][\textcolor{stringliteral}{"orientation"}][\textcolor{stringliteral}{"y"}].as<\textcolor{keywordtype}{double}>();
+133         wp.orientation.z = (*wp\_node)[i][\textcolor{stringliteral}{"orientation"}][\textcolor{stringliteral}{"z"}].as<\textcolor{keywordtype}{double}>();
+134         wp.orientation.w = (*wp\_node)[i][\textcolor{stringliteral}{"orientation"}][\textcolor{stringliteral}{"w"}].as<\textcolor{keywordtype}{double}>();
+135 
+136         this->\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}.push\_back(wp);
+137       \}
+138       \textcolor{keywordflow}{catch} (...)
+139       \{
+140         ROS\_ERROR(\textcolor{stringliteral}{"parsing waypoint file, syntax error in point %d"}, i);
+141       \}
+142     \}
+143     ROS\_INFO\_STREAM(\textcolor{stringliteral}{"Parsed "} << this->\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}.size() << \textcolor{stringliteral}{" waypoints."});
+144   \}
+145   \textcolor{keywordflow}{else}
+146   \{
+147     ROS\_WARN\_STREAM(\textcolor{stringliteral}{"Couldn't find any waypoints in the provided yaml file."});
+148   \}
+149 \}
 \end{DoxyCode}
 
 
@@ -338,7 +322,7 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1WaypointNavigator_ae4c5a879ff016f197c1cec54b2adaa1b}{}\label{classmove__base__z__client_1_1WaypointNavigator_ae4c5a879ff016f197c1cec54b2adaa1b}
 
 
-Definition at line 17 of file waypoints\+\_\+navigator.\+cpp.
+Definition at line 18 of file waypoints\+\_\+navigator.\+cpp.
 
 
 
@@ -350,12 +334,12 @@ Referenced by send\+Next\+Goal().
 
 
 \begin{DoxyCode}
-18 \{
-19   \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a488a89db6cd20bc12548ac454254829f}{waypointsEventDispatcher}.\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_a7421f1eb8aae15a3ddde7c50bea87648}{postWaypointEvent}(
+19 \{
+20   \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a488a89db6cd20bc12548ac454254829f}{waypointsEventDispatcher}.\hyperlink{classmove__base__z__client_1_1WaypointEventDispatcher_a7421f1eb8aae15a3ddde7c50bea87648}{postWaypointEvent}(
       \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a7da763128724f7b08c32c79cb3a88934}{currentWaypoint\_});
-20   \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a7da763128724f7b08c32c79cb3a88934}{currentWaypoint\_}++;
-21   this->\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a139d492345875777d9c9a79f9b2d494b}{succeddedConnection\_}.disconnect();
-22 \}
+21   \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a7da763128724f7b08c32c79cb3a88934}{currentWaypoint\_}++;
+22   this->\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a139d492345875777d9c9a79f9b2d494b}{succeddedConnection\_}.disconnect();
+23 \}
 \end{DoxyCode}
 
 
@@ -390,7 +374,7 @@ Here is the caller graph for this function\+:
 )}\hypertarget{classmove__base__z__client_1_1WaypointNavigator_afef3c44c7c21d279be8cd9a404bf3bfc}{}\label{classmove__base__z__client_1_1WaypointNavigator_afef3c44c7c21d279be8cd9a404bf3bfc}
 
 
-Definition at line 68 of file waypoints\+\_\+navigator.\+cpp.
+Definition at line 75 of file waypoints\+\_\+navigator.\+cpp.
 
 
 
@@ -398,12 +382,12 @@ References waypoints\+\_\+.
 
 
 \begin{DoxyCode}
-69 \{
-70   \textcolor{keywordflow}{if} (index >= 0 && index < \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}.size())
-71   \{
-72     \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}.erase(\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}.begin() + index);
-73   \}
-74 \}
+76 \{
+77   \textcolor{keywordflow}{if} (index >= 0 && index < \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}.size())
+78   \{
+79     \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}.erase(\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}.begin() + index);
+80   \}
+81 \}
 \end{DoxyCode}
 \index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator}!send\+Next\+Goal@{send\+Next\+Goal}}
 \index{send\+Next\+Goal@{send\+Next\+Goal}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator}}
@@ -414,34 +398,40 @@ References waypoints\+\_\+.
 )}\hypertarget{classmove__base__z__client_1_1WaypointNavigator_a376c1b5f822325122d29ad4f6e568b08}{}\label{classmove__base__z__client_1_1WaypointNavigator_a376c1b5f822325122d29ad4f6e568b08}
 
 
-Definition at line 24 of file waypoints\+\_\+navigator.\+cpp.
+Definition at line 25 of file waypoints\+\_\+navigator.\+cpp.
 
 
 
-References client\+\_\+, current\+Waypoint\+\_\+, on\+Goal\+Reached(), smacc\+::client\+\_\+bases\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::on\+Succeeded(), smacc\+::client\+\_\+bases\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal(), succedded\+Connection\+\_\+, and waypoints\+\_\+.
+References client\+\_\+, current\+Waypoint\+\_\+, smacc\+::\+I\+Smacc\+Client\+::get\+Component(), on\+Goal\+Reached(), smacc\+::client\+\_\+bases\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::on\+Succeeded(), smacc\+::client\+\_\+bases\+::\+Smacc\+Action\+Client\+Base$<$ Action\+Type $>$\+::send\+Goal(), move\+\_\+base\+\_\+z\+\_\+client\+::\+Planner\+Switcher\+::set\+Default\+Planners(), succedded\+Connection\+\_\+, and waypoints\+\_\+.
 
 
 
-Referenced by sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+Waypoints\+X\+::on\+Initialize().
+Referenced by sm\+\_\+dance\+\_\+bot\+\_\+2\+::\+St\+Navigate\+To\+Waypoints\+X\+::on\+Entry(), and sm\+\_\+dance\+\_\+bot\+::\+St\+Navigate\+To\+Waypoints\+X\+::on\+Initialize().
 
 
 \begin{DoxyCode}
-25 \{
-26   \textcolor{keywordflow}{if} (\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a7da763128724f7b08c32c79cb3a88934}{currentWaypoint\_} >= 0 && \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a7da763128724f7b08c32c79cb3a88934}{currentWaypoint\_} < 
+26 \{
+27   \textcolor{keywordflow}{if} (\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a7da763128724f7b08c32c79cb3a88934}{currentWaypoint\_} >= 0 && \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a7da763128724f7b08c32c79cb3a88934}{currentWaypoint\_} < 
       \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}.size())
-27   \{
-28     \textcolor{keyword}{auto} &next = \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}[\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a7da763128724f7b08c32c79cb3a88934}{currentWaypoint\_}];
-29 
-30     ClMoveBaseZ::Goal goal;
-31     goal.target\_pose.header.frame\_id = \textcolor{stringliteral}{"/odom"};
-32     goal.target\_pose.header.stamp = ros::Time::now();
-33     goal.target\_pose.pose = next;
-34 
-35     this->\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a139d492345875777d9c9a79f9b2d494b}{succeddedConnection\_} = \hyperlink{classmove__base__z__client_1_1WaypointNavigator_aadb289ffdaeda3a751fe569a2ee84c48}{client\_}->\hyperlink{classsmacc_1_1client__bases_1_1SmaccActionClientBase_af6d77c27d21b2e4f621f53c5f1df088b}{onSucceeded}(&
+28   \{
+29     \textcolor{keyword}{auto} &next = \hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}[\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a7da763128724f7b08c32c79cb3a88934}{currentWaypoint\_}];
+30 
+31     ClMoveBaseZ::Goal goal;
+32     goal.target\_pose.header.frame\_id = \textcolor{stringliteral}{"/odom"};
+33     goal.target\_pose.header.stamp = ros::Time::now();
+34     goal.target\_pose.pose = next;
+35 
+36     \textcolor{keyword}{auto} plannerSwitcher = \hyperlink{classmove__base__z__client_1_1WaypointNavigator_aadb289ffdaeda3a751fe569a2ee84c48}{client\_}->\hyperlink{classsmacc_1_1ISmaccClient_adef78db601749ca63c19e74a27cb88cc}{getComponent}<PlannerSwitcher>();
+37     plannerSwitcher->setDefaultPlanners();
+38 
+39     ros::spinOnce();
+40     ros::Duration(5).sleep();
+41 
+42     this->\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a139d492345875777d9c9a79f9b2d494b}{succeddedConnection\_} = \hyperlink{classmove__base__z__client_1_1WaypointNavigator_aadb289ffdaeda3a751fe569a2ee84c48}{client\_}->\hyperlink{classsmacc_1_1client__bases_1_1SmaccActionClientBase_af6d77c27d21b2e4f621f53c5f1df088b}{onSucceeded}(&
       \hyperlink{classmove__base__z__client_1_1WaypointNavigator_ae4c5a879ff016f197c1cec54b2adaa1b}{WaypointNavigator::onGoalReached}, \textcolor{keyword}{this});
-36     \hyperlink{classmove__base__z__client_1_1WaypointNavigator_aadb289ffdaeda3a751fe569a2ee84c48}{client\_}->\hyperlink{classsmacc_1_1client__bases_1_1SmaccActionClientBase_a9c47a5094ac8afb01680307fe5eca922}{sendGoal}(goal);
-37   \}
-38 \}
+43     \hyperlink{classmove__base__z__client_1_1WaypointNavigator_aadb289ffdaeda3a751fe569a2ee84c48}{client\_}->\hyperlink{classsmacc_1_1client__bases_1_1SmaccActionClientBase_a9c47a5094ac8afb01680307fe5eca922}{sendGoal}(goal);
+44   \}
+45 \}
 \end{DoxyCode}
 
 
@@ -476,7 +466,7 @@ Here is the caller graph for this function\+:
 )}\hypertarget{classmove__base__z__client_1_1WaypointNavigator_a2414712bd721461c810eb8908f57eef7}{}\label{classmove__base__z__client_1_1WaypointNavigator_a2414712bd721461c810eb8908f57eef7}
 
 
-Definition at line 48 of file waypoints\+\_\+navigator.\+cpp.
+Definition at line 55 of file waypoints\+\_\+navigator.\+cpp.
 
 
 
@@ -484,9 +474,9 @@ References waypoints\+\_\+.
 
 
 \begin{DoxyCode}
-49 \{
-50   this->\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_} = waypoints;
-51 \}
+56 \{
+57   this->\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_} = waypoints;
+58 \}
 \end{DoxyCode}
 \index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator}!set\+Waypoints@{set\+Waypoints}}
 \index{set\+Waypoints@{set\+Waypoints}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator}}
@@ -497,7 +487,7 @@ References waypoints\+\_\+.
 )}\hypertarget{classmove__base__z__client_1_1WaypointNavigator_a8844f85f9c953c34025db8ada4709e59}{}\label{classmove__base__z__client_1_1WaypointNavigator_a8844f85f9c953c34025db8ada4709e59}
 
 
-Definition at line 53 of file waypoints\+\_\+navigator.\+cpp.
+Definition at line 60 of file waypoints\+\_\+navigator.\+cpp.
 
 
 
@@ -505,19 +495,19 @@ References waypoints\+\_\+.
 
 
 \begin{DoxyCode}
-54 \{
-55   this->\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}.clear();
-56   \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &p : waypoints)
-57   \{
-58     geometry\_msgs::Pose pose;
-59     pose.position.x = p.x\_;
-60     pose.position.y = p.y\_;
-61     pose.position.z = 0.0;
-62     pose.orientation = tf::createQuaternionMsgFromYaw(p.yaw\_);
-63 
-64     this->\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}.push\_back(pose);
-65   \}
-66 \}
+61 \{
+62   this->\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}.clear();
+63   \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} &p : waypoints)
+64   \{
+65     geometry\_msgs::Pose pose;
+66     pose.position.x = p.x\_;
+67     pose.position.y = p.y\_;
+68     pose.position.z = 0.0;
+69     pose.orientation = tf::createQuaternionMsgFromYaw(p.yaw\_);
+70 
+71     this->\hyperlink{classmove__base__z__client_1_1WaypointNavigator_a83e4e39987eaf1c8856d32d581eb4cd0}{waypoints\_}.push\_back(pose);
+72   \}
+73 \}
 \end{DoxyCode}
 
 
@@ -581,5 +571,5 @@ Referenced by on\+Goal\+Reached().
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/waypoints\+\_\+navigator/include/waypoints\+\_\+navigator/\hyperlink{waypoints__navigator_8h}{waypoints\+\_\+navigator.\+h}\item 
-smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/waypoints\+\_\+navigator/src/\hyperlink{waypoints__navigator_8cpp}{waypoints\+\_\+navigator.\+cpp}\end{DoxyCompactItemize}
+smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin/include/move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin/components/waypoints\+\_\+navigator/\hyperlink{waypoints__navigator_8h}{waypoints\+\_\+navigator.\+h}\item 
+smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin/src/components/waypoints\+\_\+navigator/\hyperlink{waypoints__navigator_8cpp}{waypoints\+\_\+navigator.\+cpp}\end{DoxyCompactItemize}

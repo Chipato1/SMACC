@@ -112,7 +112,7 @@ Referenced by initialize().
 22     this->\hyperlink{classsm__dance__bot__2_1_1cl__lidar_1_1CpLidarSensorData_a877b88ea370b93b61a30816615e33d04}{lastMessage\_} = scanmsg;
 23     \textcolor{keyword}{auto} fwdist = scanmsg.ranges[scanmsg.ranges.size() / 2] \textcolor{comment}{/*meter*/};
 24 
-25     \textcolor{keywordtype}{float} security\_distance = 0.5; \textcolor{comment}{//meters}
+25     \textcolor{keywordtype}{float} security\_distance = 0.9; \textcolor{comment}{//meters}
 26 
 27     \textcolor{comment}{/*if the distance is infinity or nan, use max range distance*/}
 28     \textcolor{keywordflow}{if} (fwdist == std::numeric\_limits<float>::infinity() || fwdist != fwdist)

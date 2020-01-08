@@ -162,7 +162,7 @@ Inheritance diagram for smacc::ISmaccState:</div>
 <area shape="rect" id="node3" href="structsm__dance__bot_1_1f__pattern__states_1_1SsrFPatternStartLoop.html" title="{SsrFPatternStartLoop\l\&lt; SsFPattern1 \&gt;\n||+ loopCondition()\l+ onEntry()\l+ onDefinition()\l}" alt="" coords="7185,1108,7344,1229"/>
 <area shape="rect" id="node5" href="structsm__dance__bot_1_1StRotateDegrees6.html" title="{sm_dance_bot::StRotateDegrees6\n||+ onInitialize()\l+ onDefinition()\l}" alt="" coords="2287,1477,2528,1569"/>
 <area shape="rect" id="node7" href="structsm__dance__bot_1_1SS3_1_1SsRadialPattern3.html" title="{sm_dance_bot::SS3::\lSsRadialPattern3\n|+ iteration_count\l|+ onInitialize()\l+ onDefinition()\l+ total_iterations()\l+ ray_angle_increment\l_degree()\l+ ray_length_meters()\l}" alt="" coords="4246,1440,4417,1605"/>
-<area shape="rect" id="node9" href="structsm__dance__bot__2_1_1StNavigateToWaypointsX.html" title="{sm_dance_bot_2::StNavigate\lToWaypointsX\n||+ onInitialize()\l+ loadWaypointsFirstTime()\l+ onDefinition()\l}" alt="" coords="5153,1462,5363,1583"/>
+<area shape="rect" id="node9" href="structsm__dance__bot__2_1_1StNavigateToWaypointsX.html" title="{sm_dance_bot_2::StNavigate\lToWaypointsX\n||+ onInitialize()\l+ onEntry()\l+ onDefinition()\l}" alt="" coords="5153,1462,5363,1583"/>
 <area shape="rect" id="node11" href="structsm__dance__bot_1_1StNavigateToWaypoint1.html" title="{sm_dance_bot::StNavigate\lToWaypoint1\n||+ onInitialize()\l+ onDefinition()\l}" alt="" coords="1394,1469,1589,1576"/>
 <area shape="rect" id="node13" href="structsm__dance__bot_1_1SS1_1_1SsRadialPattern1.html" title="{sm_dance_bot::SS1::\lSsRadialPattern1\n|+ iteration_count\l|+ onInitialize()\l+ total_iterations()\l+ ray_angle_increment\l_degree()\l+ ray_length_meters()\l+ onDefinition()\l}" alt="" coords="2553,1440,2723,1605"/>
 <area shape="rect" id="node15" href="structsm__dance__bot_1_1radial__motion__states_1_1SsrRadialRotate.html" title="{sm_dance_bot::radial\l_motion_states::SsrRadialRotate\n||+ onInitialize()\l+ onDefinition()\l}" alt="" coords="3739,1469,3969,1576"/>
@@ -573,7 +573,7 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="smacc__state__impl_8h_source.html#l00016">16</a> of file <a class="el" href="smacc__state__impl_8h_source.html">smacc_state_impl.h</a>.</p>
 
-<p>Referenced by <a class="el" href="smacc__state_8h_source.html#l00049">getLogicUnits()</a>, and <a class="el" href="cb__navigate__global__position_8h_source.html#l00068">move_base_z_client::CbNavigateGlobalPosition::readStartPoseFromParameterServer()</a>.</p>
+<p>Referenced by <a class="el" href="smacc__state_8h_source.html#l00049">getLogicUnits()</a>, and <a class="el" href="cb__navigate__global__position_8cpp_source.html#l00055">move_base_z_client::CbNavigateGlobalPosition::readStartPoseFromParameterServer()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classsmacc_1_1ISmaccState.html#a13fe6e6abfdb87996402189d44b78494">nh</a>.getParam(param_name, param_storage);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div><div class="ttc" id="classsmacc_1_1ISmaccState_html_a13fe6e6abfdb87996402189d44b78494"><div class="ttname"><a href="classsmacc_1_1ISmaccState.html#a13fe6e6abfdb87996402189d44b78494">smacc::ISmaccState::nh</a></div><div class="ttdeci">ros::NodeHandle nh</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state_8h_source.html#l00074">smacc_state.h:74</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -585,7 +585,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node4" href="classmove__base__z__client_1_1CbNavigateGlobalPosition.html#a866ea02c9e25ac1df9df88272deb04b3" title="move_base_z_client\l::CbNavigateGlobalPosition\l::readStartPoseFromParameterServer" alt="" coords="208,70,471,126"/>
 <area shape="rect" id="node3" href="classsmacc_1_1ISmaccStateMachine.html#a268198b98e9540f4edb703801527a192" title="smacc::ISmaccStateMachine\l::propagateEventToLogicUnits" alt="" coords="519,5,729,47"/>
 <area shape="rect" id="node5" href="classmove__base__z__client_1_1CbNavigateGlobalPosition.html#abc8b9437cce7b86ec7acb07c463c90e5" title="move_base_z_client\l::CbNavigateGlobalPosition\l::goToRadialStart" alt="" coords="527,70,721,126"/>
-<area shape="rect" id="node6" href="classmove__base__z__client_1_1CbNavigateGlobalPosition.html#aa91be9e16bb3b67560e97c8d29c384e4" title="move_base_z_client\l::CbNavigateGlobalPosition\l::onEntry" alt="" coords="777,70,972,126"/>
+<area shape="rect" id="node6" href="classmove__base__z__client_1_1CbNavigateGlobalPosition.html#a79f11334456f350b488f7d9a204ea3c5" title="move_base_z_client\l::CbNavigateGlobalPosition\l::onEntry" alt="" coords="777,70,972,126"/>
 </map>
 </div>
 </p>
@@ -840,7 +840,7 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="smacc__state__impl_8h_source.html#l00032">32</a> of file <a class="el" href="smacc__state__impl_8h_source.html">smacc_state_impl.h</a>.</p>
 
-<p>Referenced by <a class="el" href="smacc__state_8h_source.html#l00049">getLogicUnits()</a>, <a class="el" href="cb__absolute__rotate_8h_source.html#l00031">move_base_z_client::CbAbsoluteRotate::onEntry()</a>, <a class="el" href="cb__rotate_8h_source.html#l00031">move_base_z_client::CbRotate::onEntry()</a>, <a class="el" href="cb__navigate__forward_8h_source.html#l00037">move_base_z_client::CbNavigateForward::onEntry()</a>, and <a class="el" href="cb__navigate__backward_8h_source.html#l00041">move_base_z_client::CbNavigateBackwards::onEntry()</a>.</p>
+<p>Referenced by <a class="el" href="smacc__state_8h_source.html#l00049">getLogicUnits()</a>, <a class="el" href="cb__rotate_8cpp_source.html#l00014">move_base_z_client::CbRotate::onEntry()</a>, <a class="el" href="cb__absolute__rotate_8cpp_source.html#l00015">move_base_z_client::CbAbsoluteRotate::onEntry()</a>, <a class="el" href="cb__navigate__backward_8cpp_source.html#l00024">move_base_z_client::CbNavigateBackwards::onEntry()</a>, and <a class="el" href="cb__navigate__forward_8cpp_source.html#l00016">move_base_z_client::CbNavigateForward::onEntry()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classsmacc_1_1ISmaccState.html#a13fe6e6abfdb87996402189d44b78494">nh</a>.param(param_name, param_val, default_val);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div><div class="ttc" id="classsmacc_1_1ISmaccState_html_a13fe6e6abfdb87996402189d44b78494"><div class="ttname"><a href="classsmacc_1_1ISmaccState.html#a13fe6e6abfdb87996402189d44b78494">smacc::ISmaccState::nh</a></div><div class="ttdeci">ros::NodeHandle nh</div><div class="ttdef"><b>Definition:</b> <a href="smacc__state_8h_source.html#l00074">smacc_state.h:74</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -849,10 +849,10 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classsmacc_1_1ISmaccState_a4982f2187ed6da337462721146e8ef70_icgraph.png" border="0" usemap="#classsmacc_1_1ISmaccState_a4982f2187ed6da337462721146e8ef70_icgraph" alt=""/></div>
 <map name="classsmacc_1_1ISmaccState_a4982f2187ed6da337462721146e8ef70_icgraph" id="classsmacc_1_1ISmaccState_a4982f2187ed6da337462721146e8ef70_icgraph">
 <area shape="rect" id="node2" href="classsmacc_1_1ISmaccState.html#afeb001de0ad472535e5edfda46749683" title="smacc::ISmaccState\l::getLogicUnits" alt="" coords="217,5,371,47"/>
-<area shape="rect" id="node4" href="classmove__base__z__client_1_1CbAbsoluteRotate.html#a4b6b5f51746fe1bd9d7928440da8cc32" title="move_base_z_client\l::CbAbsoluteRotate::\lonEntry" alt="" coords="218,70,370,126"/>
-<area shape="rect" id="node5" href="classmove__base__z__client_1_1CbRotate.html#ac04e8dece248a97726a533820d15dfbe" title="move_base_z_client\l::CbRotate::onEntry" alt="" coords="219,149,369,191"/>
-<area shape="rect" id="node6" href="classmove__base__z__client_1_1CbNavigateForward.html#a48df166608fd30ad6abfd0fca43caa51" title="move_base_z_client\l::CbNavigateForward\l::onEntry" alt="" coords="217,214,371,270"/>
-<area shape="rect" id="node7" href="classmove__base__z__client_1_1CbNavigateBackwards.html#ae5c9eb5029e0a6ea6950cb23713214bb" title="move_base_z_client\l::CbNavigateBackwards\l::onEntry" alt="" coords="208,294,380,350"/>
+<area shape="rect" id="node4" href="classmove__base__z__client_1_1CbRotate.html#a1528192ce89f2c1cbd9deffafecefb69" title="move_base_z_client\l::CbRotate::onEntry" alt="" coords="219,71,369,112"/>
+<area shape="rect" id="node5" href="classmove__base__z__client_1_1CbAbsoluteRotate.html#ab5537a52d9ddb242be60e6f9e0b231af" title="move_base_z_client\l::CbAbsoluteRotate::\lonEntry" alt="" coords="218,135,370,191"/>
+<area shape="rect" id="node6" href="classmove__base__z__client_1_1CbNavigateBackwards.html#a0338ce2154851a817642a698650b3d8d" title="move_base_z_client\l::CbNavigateBackwards\l::onEntry" alt="" coords="208,215,380,271"/>
+<area shape="rect" id="node7" href="classmove__base__z__client_1_1CbNavigateForward.html#ab167238d60578809027d4649a4eea536" title="move_base_z_client\l::CbNavigateForward\l::onEntry" alt="" coords="217,295,371,351"/>
 <area shape="rect" id="node3" href="classsmacc_1_1ISmaccStateMachine.html#a268198b98e9540f4edb703801527a192" title="smacc::ISmaccStateMachine\l::propagateEventToLogicUnits" alt="" coords="428,5,639,47"/>
 </map>
 </div>

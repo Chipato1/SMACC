@@ -301,7 +301,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="include_2sm__dance__bot_2states_2radial__motion__states_2ssr__radial__rotate_8h_source.html#l00014">14</a> of file <a class="el" href="include_2sm__dance__bot_2states_2radial__motion__states_2ssr__radial__rotate_8h_source.html">ssr_radial_rotate.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    static_configure&lt;OrNavigation, CbRotate&gt;(SS::ray_angle_increment_degree());</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    static_configure&lt;OrLED, CbLEDOff&gt;();</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  }</div></div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    static_configure&lt;OrNavigation, CbAbsoluteRotate&gt;();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    static_configure&lt;OrLED, CbLEDOff&gt;();</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ad04ad0c26c9d2bff70ff19b4dee71252"></a>
@@ -326,7 +326,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="include_2sm__dance__bot_2states_2radial__motion__states_2ssr__radial__rotate_8h_source.html#l00020">20</a> of file <a class="el" href="include_2sm__dance__bot_2states_2radial__motion__states_2ssr__radial__rotate_8h_source.html">ssr_radial_rotate.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  }</div></div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">auto</span> cbAbsRotate = this-&gt;getOrthogonal&lt;OrNavigation&gt;()</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                           -&gt;getClientBehavior&lt;CbAbsoluteRotate&gt;();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">auto</span> &amp;superstate = this-&gt;context&lt;SS&gt;();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    cbAbsRotate-&gt;absoluteGoalAngleDegree = superstate.iteration_count * SS::ray_angle_increment_degree();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>

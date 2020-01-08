@@ -1,5 +1,9 @@
 <map id="move_base_z_client::odom_tracker::OdomTracker::setWorkingMode" name="move_base_z_client::odom_tracker::OdomTracker::setWorkingMode">
-<area shape="rect" id="node2" href="$classOdomTrackerActionServer.html#afa69287377bb2a12c5346cbe8d68cb04" title="OdomTrackerActionServer\l::execute" alt="" coords="264,13,452,54"/>
-<area shape="rect" id="node3" href="$classOdomTrackerActionServer.html#a8ab6984c7383949a048d72437e9f79d3" title="OdomTrackerActionServer::run" alt="" coords="500,20,717,47"/>
-<area shape="rect" id="node4" href="$odom__tracker__node_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="765,20,820,47"/>
+<area shape="rect" id="node2" href="$classOdomTrackerActionServer.html#afa69287377bb2a12c5346cbe8d68cb04" title="OdomTrackerActionServer\l::execute" alt="" coords="264,5,452,47"/>
+<area shape="rect" id="node5" href="$classmove__base__z__client_1_1CbNavigateBackwards.html#a0338ce2154851a817642a698650b3d8d" title="move_base_z_client\l::CbNavigateBackwards\l::onEntry" alt="" coords="272,70,444,126"/>
+<area shape="rect" id="node6" href="$classmove__base__z__client_1_1CbNavigateForward.html#ab167238d60578809027d4649a4eea536" title="move_base_z_client\l::CbNavigateForward\l::onEntry" alt="" coords="281,150,435,206"/>
+<area shape="rect" id="node7" href="$classmove__base__z__client_1_1CbNavigateBackwards.html#a6046911372eedceeb2d29794a50a3443" title="move_base_z_client\l::CbNavigateBackwards\l::onExit" alt="" coords="272,230,444,286"/>
+<area shape="rect" id="node8" href="$classmove__base__z__client_1_1CbNavigateForward.html#aad7d35b5c46b938cfa64a6f14ecf2337" title="move_base_z_client\l::CbNavigateForward\l::onExit" alt="" coords="281,310,435,366"/>
+<area shape="rect" id="node3" href="$classOdomTrackerActionServer.html#a8ab6984c7383949a048d72437e9f79d3" title="OdomTrackerActionServer::run" alt="" coords="500,13,717,39"/>
+<area shape="rect" id="node4" href="$odom__tracker__node_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="765,13,820,39"/>
 </map>

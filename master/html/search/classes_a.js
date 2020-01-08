@@ -28,8 +28,8 @@ var searchData=
   ['orthogonal_3c_20ortimer_20_3e',['Orthogonal&lt; OrTimer &gt;',['../classsmacc_1_1Orthogonal.html',1,'smacc']]],
   ['orthogonal_3c_20orupdatablepublisher_20_3e',['Orthogonal&lt; OrUpdatablePublisher &gt;',['../classsmacc_1_1Orthogonal.html',1,'smacc']]],
   ['ortimer',['OrTimer',['../classsm__three__some_1_1OrTimer.html',1,'sm_three_some']]],
-  ['ortimer',['OrTimer',['../classsm__atomic_1_1OrTimer.html',1,'sm_atomic']]],
   ['ortimer',['OrTimer',['../classsm__dance__bot_1_1OrTimer.html',1,'sm_dance_bot']]],
+  ['ortimer',['OrTimer',['../classsm__atomic_1_1OrTimer.html',1,'sm_atomic']]],
   ['orupdatablepublisher',['OrUpdatablePublisher',['../classsm__three__some_1_1OrUpdatablePublisher.html',1,'sm_three_some']]],
   ['orupdatablepublisher',['OrUpdatablePublisher',['../classsm__dance__bot_1_1OrUpdatablePublisher.html',1,'sm_dance_bot']]]
 ];

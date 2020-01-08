@@ -6,6 +6,16 @@
 
 
 
+Inheritance diagram for move\+\_\+base\+\_\+z\+\_\+client\+:\+:Planner\+Switcher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classmove__base__z__client_1_1PlannerSwitcher__inherit__graph}
+\end{center}
+\end{figure}
+
+
 Collaboration diagram for move\+\_\+base\+\_\+z\+\_\+client\+:\+:Planner\+Switcher\+:
 \nopagebreak
 \begin{figure}[H]
@@ -43,12 +53,13 @@ ros\+::\+Subscriber \hyperlink{classmove__base__z__client_1_1PlannerSwitcher_a08
 \item 
 \hyperlink{classbool}{bool} \hyperlink{classmove__base__z__client_1_1PlannerSwitcher_a74c0b5c21064a868700288e759446ac5}{set\+\_\+planners\+\_\+mode\+\_\+flag}
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 17 of file planner\+\_\+switcher.\+h.
+Definition at line 19 of file planner\+\_\+switcher.\+h.
 
 
 
@@ -179,6 +190,10 @@ Definition at line 17 of file planner\+\_\+switcher.\+cpp.
 References desired\+\_\+global\+\_\+planner\+\_\+, desired\+\_\+local\+\_\+planner\+\_\+, and update\+Planners().
 
 
+
+Referenced by move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Undo\+Path\+Backwards\+::on\+Entry(), and move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards\+::on\+Entry().
+
+
 \begin{DoxyCode}
 18 \{
 19   ROS\_INFO(\textcolor{stringliteral}{"[PlannerSwitcher] Planner Switcher: Trying to set BackwardPlanner"});
@@ -199,6 +214,18 @@ Here is the call graph for this function\+:
 \end{figure}
 
 
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove__base__z__client_1_1PlannerSwitcher_a7688616d66fbfe6486c0cbe77e688114_icgraph}
+\end{center}
+\end{figure}
+
+
 \index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Planner\+Switcher@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Planner\+Switcher}!set\+Default\+Planners@{set\+Default\+Planners}}
 \index{set\+Default\+Planners@{set\+Default\+Planners}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Planner\+Switcher@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Planner\+Switcher}}
 \subsubsection[{\texorpdfstring{set\+Default\+Planners()}{setDefaultPlanners()}}]{\setlength{\rightskip}{0pt plus 5cm}void move\+\_\+base\+\_\+z\+\_\+client\+::\+Planner\+Switcher\+::set\+Default\+Planners (
@@ -213,6 +240,10 @@ Definition at line 33 of file planner\+\_\+switcher.\+cpp.
 
 
 References desired\+\_\+global\+\_\+planner\+\_\+, desired\+\_\+local\+\_\+planner\+\_\+, and update\+Planners().
+
+
+
+Referenced by move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Global\+Position\+::on\+Entry(), move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Absolute\+Rotate\+::on\+Entry(), move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Rotate\+::on\+Entry(), and move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator\+::send\+Next\+Goal().
 
 
 \begin{DoxyCode}
@@ -234,6 +265,18 @@ Here is the call graph for this function\+:
 \end{figure}
 
 
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove__base__z__client_1_1PlannerSwitcher_aa31306368ab2a5145c024c0c1a580547_icgraph}
+\end{center}
+\end{figure}
+
+
 \index{move\+\_\+base\+\_\+z\+\_\+client\+::\+Planner\+Switcher@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Planner\+Switcher}!set\+Forward\+Planner@{set\+Forward\+Planner}}
 \index{set\+Forward\+Planner@{set\+Forward\+Planner}!move\+\_\+base\+\_\+z\+\_\+client\+::\+Planner\+Switcher@{move\+\_\+base\+\_\+z\+\_\+client\+::\+Planner\+Switcher}}
 \subsubsection[{\texorpdfstring{set\+Forward\+Planner()}{setForwardPlanner()}}]{\setlength{\rightskip}{0pt plus 5cm}void move\+\_\+base\+\_\+z\+\_\+client\+::\+Planner\+Switcher\+::set\+Forward\+Planner (
@@ -248,6 +291,10 @@ Definition at line 25 of file planner\+\_\+switcher.\+cpp.
 
 
 References desired\+\_\+global\+\_\+planner\+\_\+, desired\+\_\+local\+\_\+planner\+\_\+, and update\+Planners().
+
+
+
+Referenced by move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Forward\+::on\+Entry().
 
 
 \begin{DoxyCode}
@@ -266,6 +313,18 @@ Here is the call graph for this function\+:
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classmove__base__z__client_1_1PlannerSwitcher_a4797022f304538949a2019b351ec47a8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove__base__z__client_1_1PlannerSwitcher_a4797022f304538949a2019b351ec47a8_icgraph}
 \end{center}
 \end{figure}
 
@@ -338,7 +397,7 @@ Here is the caller graph for this function\+:
 \subsubsection[{\texorpdfstring{desired\+\_\+global\+\_\+planner\+\_\+}{desired_global_planner_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string move\+\_\+base\+\_\+z\+\_\+client\+::\+Planner\+Switcher\+::desired\+\_\+global\+\_\+planner\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1PlannerSwitcher_a004c15858f0a6b9abcd8211d58a7e34c}{}\label{classmove__base__z__client_1_1PlannerSwitcher_a004c15858f0a6b9abcd8211d58a7e34c}
 
 
-Definition at line 28 of file planner\+\_\+switcher.\+h.
+Definition at line 30 of file planner\+\_\+switcher.\+h.
 
 
 
@@ -349,7 +408,7 @@ Referenced by dynreconf\+Callback(), set\+Backward\+Planner(), set\+Default\+Pla
 \subsubsection[{\texorpdfstring{desired\+\_\+local\+\_\+planner\+\_\+}{desired_local_planner_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string move\+\_\+base\+\_\+z\+\_\+client\+::\+Planner\+Switcher\+::desired\+\_\+local\+\_\+planner\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1PlannerSwitcher_ae47bd6c9c70b27cddcb394f26bb9372d}{}\label{classmove__base__z__client_1_1PlannerSwitcher_ae47bd6c9c70b27cddcb394f26bb9372d}
 
 
-Definition at line 29 of file planner\+\_\+switcher.\+h.
+Definition at line 31 of file planner\+\_\+switcher.\+h.
 
 
 
@@ -360,7 +419,7 @@ Referenced by dynreconf\+Callback(), set\+Backward\+Planner(), set\+Default\+Pla
 \subsubsection[{\texorpdfstring{dynrecof\+Sub\+\_\+}{dynrecofSub_}}]{\setlength{\rightskip}{0pt plus 5cm}ros\+::\+Subscriber move\+\_\+base\+\_\+z\+\_\+client\+::\+Planner\+Switcher\+::dynrecof\+Sub\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1PlannerSwitcher_a088bde4ce0fece46776a9f4efe417e15}{}\label{classmove__base__z__client_1_1PlannerSwitcher_a088bde4ce0fece46776a9f4efe417e15}
 
 
-Definition at line 30 of file planner\+\_\+switcher.\+h.
+Definition at line 32 of file planner\+\_\+switcher.\+h.
 
 
 
@@ -371,7 +430,7 @@ Referenced by Planner\+Switcher().
 \subsubsection[{\texorpdfstring{set\+\_\+planners\+\_\+mode\+\_\+flag}{set_planners_mode_flag}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bool} move\+\_\+base\+\_\+z\+\_\+client\+::\+Planner\+Switcher\+::set\+\_\+planners\+\_\+mode\+\_\+flag\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmove__base__z__client_1_1PlannerSwitcher_a74c0b5c21064a868700288e759446ac5}{}\label{classmove__base__z__client_1_1PlannerSwitcher_a74c0b5c21064a868700288e759446ac5}
 
 
-Definition at line 31 of file planner\+\_\+switcher.\+h.
+Definition at line 33 of file planner\+\_\+switcher.\+h.
 
 
 
@@ -381,5 +440,5 @@ Referenced by dynreconf\+Callback().
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/planner\+\_\+switcher/include/planner\+\_\+switcher/\hyperlink{planner__switcher_8h}{planner\+\_\+switcher.\+h}\item 
-smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/planner\+\_\+switcher/src/\hyperlink{planner__switcher_8cpp}{planner\+\_\+switcher.\+cpp}\end{DoxyCompactItemize}
+smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin/include/move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin/components/planner\+\_\+switcher/\hyperlink{planner__switcher_8h}{planner\+\_\+switcher.\+h}\item 
+smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin/src/components/planner\+\_\+switcher/\hyperlink{planner__switcher_8cpp}{planner\+\_\+switcher.\+cpp}\end{DoxyCompactItemize}

@@ -279,6 +279,8 @@ Here is the call graph for this function:</div>
 <p>Definition at line <a class="el" href="odom__tracker_8cpp_source.html#l00101">101</a> of file <a class="el" href="odom__tracker_8cpp_source.html">odom_tracker.cpp</a>.</p>
 
 <p>References <a class="el" href="odom__tracker_8h_source.html#l00106">baseTrajectory_</a>, <a class="el" href="odom__tracker_8h_source.html#l00115">m_mutex_</a>, and <a class="el" href="odom__tracker_8cpp_source.html#l00133">rtPublishPaths()</a>.</p>
+
+<p>Referenced by <a class="el" href="cb__navigate__backward_8cpp_source.html#l00024">move_base_z_client::CbNavigateBackwards::onEntry()</a>, and <a class="el" href="cb__navigate__forward_8cpp_source.html#l00016">move_base_z_client::CbNavigateForward::onEntry()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    std::lock_guard&lt;std::mutex&gt; lock(<a class="code" href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#a63676e03be48b18ac48d5e2f11f19a25">m_mutex_</a>);</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#a83fa5a9bfe0b2683eee33444d3f030ea">baseTrajectory_</a>.poses.clear();</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#a6ee06474c7aea4423a7937c8ebc193ad">rtPublishPaths</a>(ros::Time::now());</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div><div class="ttc" id="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_html_a6ee06474c7aea4423a7937c8ebc193ad"><div class="ttname"><a href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#a6ee06474c7aea4423a7937c8ebc193ad">move_base_z_client::odom_tracker::OdomTracker::rtPublishPaths</a></div><div class="ttdeci">virtual void rtPublishPaths(ros::Time timestamp)</div><div class="ttdef"><b>Definition:</b> <a href="odom__tracker_8cpp_source.html#l00133">odom_tracker.cpp:133</a></div></div>
 <div class="ttc" id="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_html_a83fa5a9bfe0b2683eee33444d3f030ea"><div class="ttname"><a href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#a83fa5a9bfe0b2683eee33444d3f030ea">move_base_z_client::odom_tracker::OdomTracker::baseTrajectory_</a></div><div class="ttdeci">nav_msgs::Path baseTrajectory_</div><div class="ttdoc">Processed path for the mouth of the reel. </div><div class="ttdef"><b>Definition:</b> <a href="odom__tracker_8h_source.html#l00106">odom_tracker.h:106</a></div></div>
 <div class="ttc" id="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_html_a63676e03be48b18ac48d5e2f11f19a25"><div class="ttname"><a href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#a63676e03be48b18ac48d5e2f11f19a25">move_base_z_client::odom_tracker::OdomTracker::m_mutex_</a></div><div class="ttdeci">std::mutex m_mutex_</div><div class="ttdef"><b>Definition:</b> <a href="odom__tracker_8h_source.html#l00115">odom_tracker.h:115</a></div></div>
@@ -289,6 +291,17 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_ae131b8bd2c3587b12cdc9b22699e8837_cgraph.png" border="0" usemap="#classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_ae131b8bd2c3587b12cdc9b22699e8837_cgraph" alt=""/></div>
 <map name="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_ae131b8bd2c3587b12cdc9b22699e8837_cgraph" id="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_ae131b8bd2c3587b12cdc9b22699e8837_cgraph">
 <area shape="rect" id="node2" href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#a6ee06474c7aea4423a7937c8ebc193ad" title="move_base_z_client\l::odom_tracker::OdomTracker\l::rtPublishPaths" alt="" coords="264,5,475,61"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_ae131b8bd2c3587b12cdc9b22699e8837_icgraph.png" border="0" usemap="#classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_ae131b8bd2c3587b12cdc9b22699e8837_icgraph" alt=""/></div>
+<map name="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_ae131b8bd2c3587b12cdc9b22699e8837_icgraph" id="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_ae131b8bd2c3587b12cdc9b22699e8837_icgraph">
+<area shape="rect" id="node2" href="classmove__base__z__client_1_1CbNavigateBackwards.html#a0338ce2154851a817642a698650b3d8d" title="move_base_z_client\l::CbNavigateBackwards\l::onEntry" alt="" coords="264,5,436,61"/>
+<area shape="rect" id="node3" href="classmove__base__z__client_1_1CbNavigateForward.html#ab167238d60578809027d4649a4eea536" title="move_base_z_client\l::CbNavigateForward\l::onEntry" alt="" coords="273,85,427,141"/>
 </map>
 </div>
 </p>
@@ -489,9 +502,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_a6ee06474c7aea4423a7937c8ebc193ad_icgraph.png" border="0" usemap="#classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_a6ee06474c7aea4423a7937c8ebc193ad_icgraph" alt=""/></div>
 <map name="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_a6ee06474c7aea4423a7937c8ebc193ad_icgraph" id="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_a6ee06474c7aea4423a7937c8ebc193ad_icgraph">
-<area shape="rect" id="node2" href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#ae131b8bd2c3587b12cdc9b22699e8837" title="move_base_z_client\l::odom_tracker::OdomTracker\l::clearPath" alt="" coords="264,5,475,61"/>
-<area shape="rect" id="node3" href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#a79b9f1e3b15fa6ac82dd93ab78e23579" title="odom callback: Updates the path &#45; this must be called periodically for each odometry message..." alt="" coords="264,85,475,141"/>
-<area shape="rect" id="node4" href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#ab6d1b57e311a9434a95c112e2f62501f" title="move_base_z_client\l::odom_tracker::OdomTracker\l::OdomTracker" alt="" coords="523,85,733,141"/>
+<area shape="rect" id="node2" href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#ae131b8bd2c3587b12cdc9b22699e8837" title="move_base_z_client\l::odom_tracker::OdomTracker\l::clearPath" alt="" coords="264,85,475,141"/>
+<area shape="rect" id="node5" href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#a79b9f1e3b15fa6ac82dd93ab78e23579" title="odom callback: Updates the path &#45; this must be called periodically for each odometry message..." alt="" coords="264,165,475,221"/>
+<area shape="rect" id="node3" href="classmove__base__z__client_1_1CbNavigateBackwards.html#a0338ce2154851a817642a698650b3d8d" title="move_base_z_client\l::CbNavigateBackwards\l::onEntry" alt="" coords="542,5,714,61"/>
+<area shape="rect" id="node4" href="classmove__base__z__client_1_1CbNavigateForward.html#ab167238d60578809027d4649a4eea536" title="move_base_z_client\l::CbNavigateForward\l::onEntry" alt="" coords="551,85,705,141"/>
+<area shape="rect" id="node6" href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#ab6d1b57e311a9434a95c112e2f62501f" title="move_base_z_client\l::odom_tracker::OdomTracker\l::OdomTracker" alt="" coords="523,165,733,221"/>
 </map>
 </div>
 </p>
@@ -552,9 +567,22 @@ Here is the caller graph for this function:</div>
 <p>Definition at line <a class="el" href="odom__tracker_8cpp_source.html#l00109">109</a> of file <a class="el" href="odom__tracker_8cpp_source.html">odom_tracker.cpp</a>.</p>
 
 <p>References <a class="el" href="odom__tracker_8h_source.html#l00106">baseTrajectory_</a>, and <a class="el" href="odom__tracker_8h_source.html#l00115">m_mutex_</a>.</p>
+
+<p>Referenced by <a class="el" href="cb__navigate__backward_8cpp_source.html#l00024">move_base_z_client::CbNavigateBackwards::onEntry()</a>, and <a class="el" href="cb__navigate__forward_8cpp_source.html#l00016">move_base_z_client::CbNavigateForward::onEntry()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    std::lock_guard&lt;std::mutex&gt; lock(<a class="code" href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#a63676e03be48b18ac48d5e2f11f19a25">m_mutex_</a>);</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#a83fa5a9bfe0b2683eee33444d3f030ea">baseTrajectory_</a>.poses.size() &gt; 0)</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    {</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <a class="code" href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#a83fa5a9bfe0b2683eee33444d3f030ea">baseTrajectory_</a>.poses[0] = pose;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    {</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <a class="code" href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#a83fa5a9bfe0b2683eee33444d3f030ea">baseTrajectory_</a>.poses.push_back(pose);</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div><div class="ttc" id="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_html_a83fa5a9bfe0b2683eee33444d3f030ea"><div class="ttname"><a href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#a83fa5a9bfe0b2683eee33444d3f030ea">move_base_z_client::odom_tracker::OdomTracker::baseTrajectory_</a></div><div class="ttdeci">nav_msgs::Path baseTrajectory_</div><div class="ttdoc">Processed path for the mouth of the reel. </div><div class="ttdef"><b>Definition:</b> <a href="odom__tracker_8h_source.html#l00106">odom_tracker.h:106</a></div></div>
 <div class="ttc" id="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_html_a63676e03be48b18ac48d5e2f11f19a25"><div class="ttname"><a href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#a63676e03be48b18ac48d5e2f11f19a25">move_base_z_client::odom_tracker::OdomTracker::m_mutex_</a></div><div class="ttdeci">std::mutex m_mutex_</div><div class="ttdef"><b>Definition:</b> <a href="odom__tracker_8h_source.html#l00115">odom_tracker.h:115</a></div></div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_afa402777496c8d0df39191f40377bd0e_icgraph.png" border="0" usemap="#classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_afa402777496c8d0df39191f40377bd0e_icgraph" alt=""/></div>
+<map name="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_afa402777496c8d0df39191f40377bd0e_icgraph" id="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_afa402777496c8d0df39191f40377bd0e_icgraph">
+<area shape="rect" id="node2" href="classmove__base__z__client_1_1CbNavigateBackwards.html#a0338ce2154851a817642a698650b3d8d" title="move_base_z_client\l::CbNavigateBackwards\l::onEntry" alt="" coords="264,5,436,61"/>
+<area shape="rect" id="node3" href="classmove__base__z__client_1_1CbNavigateForward.html#ab167238d60578809027d4649a4eea536" title="move_base_z_client\l::CbNavigateForward\l::onEntry" alt="" coords="273,85,427,141"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="aebeb8ff6d1f9375d855def4a33b90731"></a>
@@ -576,7 +604,7 @@ Here is the caller graph for this function:</div>
 
 <p>References <a class="el" href="odom__tracker_8h_source.html#l00115">m_mutex_</a>, and <a class="el" href="odom__tracker_8h_source.html#l00108">workingMode_</a>.</p>
 
-<p>Referenced by <a class="el" href="odom__tracker__node_8cpp_source.html#l00032">OdomTrackerActionServer::execute()</a>.</p>
+<p>Referenced by <a class="el" href="odom__tracker__node_8cpp_source.html#l00032">OdomTrackerActionServer::execute()</a>, <a class="el" href="cb__navigate__backward_8cpp_source.html#l00024">move_base_z_client::CbNavigateBackwards::onEntry()</a>, <a class="el" href="cb__navigate__forward_8cpp_source.html#l00016">move_base_z_client::CbNavigateForward::onEntry()</a>, <a class="el" href="cb__navigate__backward_8cpp_source.html#l00092">move_base_z_client::CbNavigateBackwards::onExit()</a>, and <a class="el" href="cb__navigate__forward_8cpp_source.html#l00084">move_base_z_client::CbNavigateForward::onExit()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//ROS_INFO(&quot;odom_tracker m_mutex acquire&quot;);</span></div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    std::lock_guard&lt;std::mutex&gt; lock(<a class="code" href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#a63676e03be48b18ac48d5e2f11f19a25">m_mutex_</a>);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    ROS_INFO(<span class="stringliteral">&quot;[OdomTracker] setting working mode to: %d&quot;</span>, (uint8_t)workingMode);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#a39c97d7bf6003fde62e0bed1a221e3f0">workingMode_</a> = workingMode;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">//ROS_INFO(&quot;odom_tracker m_mutex release&quot;);</span></div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div><div class="ttc" id="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_html_a39c97d7bf6003fde62e0bed1a221e3f0"><div class="ttname"><a href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#a39c97d7bf6003fde62e0bed1a221e3f0">move_base_z_client::odom_tracker::OdomTracker::workingMode_</a></div><div class="ttdeci">WorkingMode workingMode_</div><div class="ttdef"><b>Definition:</b> <a href="odom__tracker_8h_source.html#l00108">odom_tracker.h:108</a></div></div>
 <div class="ttc" id="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_html_a63676e03be48b18ac48d5e2f11f19a25"><div class="ttname"><a href="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker.html#a63676e03be48b18ac48d5e2f11f19a25">move_base_z_client::odom_tracker::OdomTracker::m_mutex_</a></div><div class="ttdeci">std::mutex m_mutex_</div><div class="ttdef"><b>Definition:</b> <a href="odom__tracker_8h_source.html#l00115">odom_tracker.h:115</a></div></div>
 </div><!-- fragment -->
@@ -585,9 +613,13 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_aebeb8ff6d1f9375d855def4a33b90731_icgraph.png" border="0" usemap="#classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_aebeb8ff6d1f9375d855def4a33b90731_icgraph" alt=""/></div>
 <map name="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_aebeb8ff6d1f9375d855def4a33b90731_icgraph" id="classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_aebeb8ff6d1f9375d855def4a33b90731_icgraph">
-<area shape="rect" id="node2" href="classOdomTrackerActionServer.html#afa69287377bb2a12c5346cbe8d68cb04" title="OdomTrackerActionServer\l::execute" alt="" coords="264,13,452,54"/>
-<area shape="rect" id="node3" href="classOdomTrackerActionServer.html#a8ab6984c7383949a048d72437e9f79d3" title="OdomTrackerActionServer::run" alt="" coords="500,20,717,47"/>
-<area shape="rect" id="node4" href="odom__tracker__node_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="765,20,820,47"/>
+<area shape="rect" id="node2" href="classOdomTrackerActionServer.html#afa69287377bb2a12c5346cbe8d68cb04" title="OdomTrackerActionServer\l::execute" alt="" coords="264,5,452,47"/>
+<area shape="rect" id="node5" href="classmove__base__z__client_1_1CbNavigateBackwards.html#a0338ce2154851a817642a698650b3d8d" title="move_base_z_client\l::CbNavigateBackwards\l::onEntry" alt="" coords="272,70,444,126"/>
+<area shape="rect" id="node6" href="classmove__base__z__client_1_1CbNavigateForward.html#ab167238d60578809027d4649a4eea536" title="move_base_z_client\l::CbNavigateForward\l::onEntry" alt="" coords="281,150,435,206"/>
+<area shape="rect" id="node7" href="classmove__base__z__client_1_1CbNavigateBackwards.html#a6046911372eedceeb2d29794a50a3443" title="move_base_z_client\l::CbNavigateBackwards\l::onExit" alt="" coords="272,230,444,286"/>
+<area shape="rect" id="node8" href="classmove__base__z__client_1_1CbNavigateForward.html#aad7d35b5c46b938cfa64a6f14ecf2337" title="move_base_z_client\l::CbNavigateForward\l::onExit" alt="" coords="281,310,435,366"/>
+<area shape="rect" id="node3" href="classOdomTrackerActionServer.html#a8ab6984c7383949a048d72437e9f79d3" title="OdomTrackerActionServer::run" alt="" coords="500,13,717,39"/>
+<area shape="rect" id="node4" href="odom__tracker__node_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="765,13,820,39"/>
 </map>
 </div>
 </p>
@@ -1007,8 +1039,8 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>smacc_client_library/move_base_z_client/odom_tracker/include/odom_tracker/<a class="el" href="odom__tracker_8h_source.html">odom_tracker.h</a></li>
-<li>smacc_client_library/move_base_z_client/odom_tracker/src/<a class="el" href="odom__tracker_8cpp_source.html">odom_tracker.cpp</a></li>
+<li>smacc_client_library/move_base_z_client/move_base_z_client_plugin/include/move_base_z_client_plugin/components/odom_tracker/<a class="el" href="odom__tracker_8h_source.html">odom_tracker.h</a></li>
+<li>smacc_client_library/move_base_z_client/move_base_z_client_plugin/src/components/odom_tracker/<a class="el" href="odom__tracker_8cpp_source.html">odom_tracker.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

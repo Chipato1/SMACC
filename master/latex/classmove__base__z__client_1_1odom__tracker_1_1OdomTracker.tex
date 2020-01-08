@@ -187,6 +187,10 @@ Definition at line 101 of file odom\+\_\+tracker.\+cpp.
 References base\+Trajectory\+\_\+, m\+\_\+mutex\+\_\+, and rt\+Publish\+Paths().
 
 
+
+Referenced by move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards\+::on\+Entry(), and move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Forward\+::on\+Entry().
+
+
 \begin{DoxyCode}
 102 \{
 103     std::lock\_guard<std::mutex> lock(\hyperlink{classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_a63676e03be48b18ac48d5e2f11f19a25}{m\_mutex\_});
@@ -203,6 +207,18 @@ Here is the call graph for this function\+:
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_ae131b8bd2c3587b12cdc9b22699e8837_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_ae131b8bd2c3587b12cdc9b22699e8837_icgraph}
 \end{center}
 \end{figure}
 
@@ -487,6 +503,10 @@ Definition at line 109 of file odom\+\_\+tracker.\+cpp.
 References base\+Trajectory\+\_\+, and m\+\_\+mutex\+\_\+.
 
 
+
+Referenced by move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards\+::on\+Entry(), and move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Forward\+::on\+Entry().
+
+
 \begin{DoxyCode}
 110 \{
 111     std::lock\_guard<std::mutex> lock(\hyperlink{classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_a63676e03be48b18ac48d5e2f11f19a25}{m\_mutex\_});
@@ -500,6 +520,18 @@ References base\+Trajectory\+\_\+, and m\+\_\+mutex\+\_\+.
 119     \}
 120 \}
 \end{DoxyCode}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmove__base__z__client_1_1odom__tracker_1_1OdomTracker_afa402777496c8d0df39191f40377bd0e_icgraph}
+\end{center}
+\end{figure}
+
+
 \index{move\+\_\+base\+\_\+z\+\_\+client\+::odom\+\_\+tracker\+::\+Odom\+Tracker@{move\+\_\+base\+\_\+z\+\_\+client\+::odom\+\_\+tracker\+::\+Odom\+Tracker}!set\+Working\+Mode@{set\+Working\+Mode}}
 \index{set\+Working\+Mode@{set\+Working\+Mode}!move\+\_\+base\+\_\+z\+\_\+client\+::odom\+\_\+tracker\+::\+Odom\+Tracker@{move\+\_\+base\+\_\+z\+\_\+client\+::odom\+\_\+tracker\+::\+Odom\+Tracker}}
 \subsubsection[{\texorpdfstring{set\+Working\+Mode(\+Working\+Mode working\+Mode)}{setWorkingMode(WorkingMode workingMode)}}]{\setlength{\rightskip}{0pt plus 5cm}void move\+\_\+base\+\_\+z\+\_\+client\+::odom\+\_\+tracker\+::\+Odom\+Tracker\+::set\+Working\+Mode (
@@ -517,7 +549,7 @@ References m\+\_\+mutex\+\_\+, and working\+Mode\+\_\+.
 
 
 
-Referenced by Odom\+Tracker\+Action\+Server\+::execute().
+Referenced by Odom\+Tracker\+Action\+Server\+::execute(), move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards\+::on\+Entry(), move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Forward\+::on\+Entry(), move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Backwards\+::on\+Exit(), and move\+\_\+base\+\_\+z\+\_\+client\+::\+Cb\+Navigate\+Forward\+::on\+Exit().
 
 
 \begin{DoxyCode}
@@ -875,5 +907,5 @@ Referenced by Odom\+Tracker(), process\+Odometry\+Message(), and set\+Working\+M
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/odom\+\_\+tracker/include/odom\+\_\+tracker/\hyperlink{odom__tracker_8h}{odom\+\_\+tracker.\+h}\item 
-smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/odom\+\_\+tracker/src/\hyperlink{odom__tracker_8cpp}{odom\+\_\+tracker.\+cpp}\end{DoxyCompactItemize}
+smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin/include/move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin/components/odom\+\_\+tracker/\hyperlink{odom__tracker_8h}{odom\+\_\+tracker.\+h}\item 
+smacc\+\_\+client\+\_\+library/move\+\_\+base\+\_\+z\+\_\+client/move\+\_\+base\+\_\+z\+\_\+client\+\_\+plugin/src/components/odom\+\_\+tracker/\hyperlink{odom__tracker_8cpp}{odom\+\_\+tracker.\+cpp}\end{DoxyCompactItemize}

@@ -51,7 +51,7 @@ Definition at line 14 of file or\+\_\+navigation.\+h.
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classsm__dance__bot__2_1_1OrNavigation_a663fc206de1964058c851f521279ca34}{}\label{classsm__dance__bot__2_1_1OrNavigation_a663fc206de1964058c851f521279ca34}
 
 
-Definition at line 34 of file or\+\_\+navigation.\+h.
+Definition at line 35 of file or\+\_\+navigation.\+h.
 
 
 
@@ -59,16 +59,16 @@ References move\+\_\+base\+\_\+z\+\_\+client\+::\+Waypoint\+Navigator\+::load\+W
 
 
 \begin{DoxyCode}
-35     \{
-36         \textcolor{comment}{// if it is the first time and the waypoints navigator is not configured}
-37 
-38         std::string planfilepath;
-39         ros::NodeHandle nh(\textcolor{stringliteral}{"~"});
-40         \textcolor{keywordflow}{if} (nh.getParam(\textcolor{stringliteral}{"/sm\_dance\_bot\_2/waypoints\_plan"}, planfilepath))
-41         \{
-42             waypointsNavigator->\hyperlink{classmove__base__z__client_1_1WaypointNavigator_af56d146945280a8660805aad7eb3aed9}{loadWayPointsFromFile}(planfilepath);
-43         \}
-44     \}
+36     \{
+37         \textcolor{comment}{// if it is the first time and the waypoints navigator is not configured}
+38 
+39         std::string planfilepath;
+40         ros::NodeHandle nh(\textcolor{stringliteral}{"~"});
+41         \textcolor{keywordflow}{if} (nh.getParam(\textcolor{stringliteral}{"/sm\_dance\_bot\_2/waypoints\_plan"}, planfilepath))
+42         \{
+43             waypointsNavigator->\hyperlink{classmove__base__z__client_1_1WaypointNavigator_af56d146945280a8660805aad7eb3aed9}{loadWayPointsFromFile}(planfilepath);
+44         \}
+45     \}
 \end{DoxyCode}
 
 
@@ -100,21 +100,22 @@ Definition at line 17 of file or\+\_\+navigation.\+h.
 
 \begin{DoxyCode}
 18     \{
-19         \textcolor{keyword}{auto} movebaseClient = this->createClient<ClMoveBaseZ>();
-20         movebaseClient->name\_ = \textcolor{stringliteral}{"move\_base"};
-21         movebaseClient->initialize();
-22 
-23         \textcolor{comment}{// create odom tracker}
-24         movebaseClient->createComponent<\hyperlink{classmove__base__z__client_1_1odom__tracker_1_1OdomTracker}{OdomTracker}>(\textcolor{stringliteral}{"/"});
-25 
-26         \textcolor{comment}{// create odom tracker}
-27         movebaseClient->createComponent<\hyperlink{classmove__base__z__client_1_1odom__tracker_1_1OdomTracker}{OdomTracker}>(\textcolor{stringliteral}{"/"});
-28 
-29         \textcolor{comment}{// create waypoints navigator component}
-30         \textcolor{keyword}{auto} waypointsNavigator = movebaseClient->createComponent<
+19         std::string node\_namespace = \textcolor{stringliteral}{"move\_base"};
+20         \textcolor{keyword}{auto} movebaseClient = this->createClient<ClMoveBaseZ>();
+21         movebaseClient->name\_ = node\_namespace;
+22         movebaseClient->initialize();
+23 
+24         \textcolor{comment}{// create planner switcher}
+25         movebaseClient->createComponent<\hyperlink{classmove__base__z__client_1_1PlannerSwitcher}{PlannerSwitcher}>(node\_namespace);    
+26 
+27         \textcolor{comment}{// create odom tracker}
+28         movebaseClient->createComponent<\hyperlink{classmove__base__z__client_1_1odom__tracker_1_1OdomTracker}{OdomTracker}>(\textcolor{stringliteral}{"/"});
+29 
+30         \textcolor{comment}{// create waypoints navigator component}
+31         \textcolor{keyword}{auto} waypointsNavigator = movebaseClient->createComponent<
       \hyperlink{classmove__base__z__client_1_1WaypointNavigator}{WaypointNavigator}>();
-31         \hyperlink{classsm__dance__bot__2_1_1OrNavigation_a663fc206de1964058c851f521279ca34}{loadWaypointsFromYaml}(waypointsNavigator);
-32     \}
+32         \hyperlink{classsm__dance__bot__2_1_1OrNavigation_a663fc206de1964058c851f521279ca34}{loadWaypointsFromYaml}(waypointsNavigator);
+33     \}
 \end{DoxyCode}
 
 

@@ -1,0 +1,8 @@
+<map id="move_base_z_client::PlannerSwitcher::setDefaultPlanners" name="move_base_z_client::PlannerSwitcher::setDefaultPlanners">
+<area shape="rect" id="node2" href="$classmove__base__z__client_1_1CbNavigateGlobalPosition.html#a79f11334456f350b488f7d9a204ea3c5" title="move_base_z_client\l::CbNavigateGlobalPosition\l::onEntry" alt="" coords="260,5,455,61"/>
+<area shape="rect" id="node3" href="$classmove__base__z__client_1_1CbAbsoluteRotate.html#ab5537a52d9ddb242be60e6f9e0b231af" title="move_base_z_client\l::CbAbsoluteRotate::\lonEntry" alt="" coords="281,85,433,141"/>
+<area shape="rect" id="node4" href="$classmove__base__z__client_1_1CbRotate.html#a1528192ce89f2c1cbd9deffafecefb69" title="move_base_z_client\l::CbRotate::onEntry" alt="" coords="282,165,433,206"/>
+<area shape="rect" id="node5" href="$classmove__base__z__client_1_1WaypointNavigator.html#a376c1b5f822325122d29ad4f6e568b08" title="move_base_z_client\l::WaypointNavigator\l::sendNextGoal" alt="" coords="282,229,433,285"/>
+<area shape="rect" id="node6" href="$structsm__dance__bot_1_1StNavigateToWaypointsX.html#a5954a62667839c5b56ff07ebd26541d7" title="sm_dance_bot::StNavigate\lToWaypointsX::onInitialize" alt="" coords="511,203,705,245"/>
+<area shape="rect" id="node7" href="$structsm__dance__bot__2_1_1StNavigateToWaypointsX.html#a57b8b85e63f37bbbc84049126fb4cf9a" title="sm_dance_bot_2::StNavigate\lToWaypointsX::onEntry" alt="" coords="503,269,713,310"/>
+</map>

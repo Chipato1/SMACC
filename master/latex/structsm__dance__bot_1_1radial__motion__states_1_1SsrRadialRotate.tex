@@ -74,7 +74,7 @@ Definition at line 14 of file ssr\+\_\+radial\+\_\+rotate.\+h.
 
 \begin{DoxyCode}
 15   \{
-16     static\_configure<OrNavigation, CbRotate>(SS::ray\_angle\_increment\_degree());
+16     static\_configure<OrNavigation, CbAbsoluteRotate>();
 17     static\_configure<OrLED, CbLEDOff>();
 18   \}
 \end{DoxyCode}
@@ -92,7 +92,12 @@ Definition at line 20 of file ssr\+\_\+radial\+\_\+rotate.\+h.
 
 \begin{DoxyCode}
 21   \{
-22   \}
+22     \textcolor{keyword}{auto} cbAbsRotate = this->getOrthogonal<OrNavigation>()
+23                            ->getClientBehavior<CbAbsoluteRotate>();
+24 
+25     \textcolor{keyword}{auto} &superstate = this->context<SS>();
+26     cbAbsRotate->absoluteGoalAngleDegree = superstate.iteration\_count * SS::ray\_angle\_increment\_degree();
+27   \}
 \end{DoxyCode}
 
 

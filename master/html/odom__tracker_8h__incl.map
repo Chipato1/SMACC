@@ -1,14 +1,14 @@
-<map id="smacc_client_library/move_base_z_client/odom_tracker/include/odom_tracker/odom_tracker.h" name="smacc_client_library/move_base_z_client/odom_tracker/include/odom_tracker/odom_tracker.h">
-<area shape="rect" id="node2" href="$common_8h.html" title="smacc/common.h" alt="" coords="1895,213,2032,240"/>
-<area shape="rect" id="node45" href="$component_8h.html" title="smacc/component.h" alt="" coords="2125,131,2279,158"/>
-<area shape="rect" id="node19" href="$smacc__fifo__scheduler_8h.html" title="smacc/smacc_fifo_scheduler.h" alt="" coords="1475,295,1691,322"/>
-<area shape="rect" id="node23" href="$smacc__types_8h.html" title="smacc/smacc_types.h" alt="" coords="1795,571,1959,597"/>
-<area shape="rect" id="node25" href="$introspection_8h.html" title="smacc/introspection\l/introspection.h" alt="" coords="2181,377,2332,419"/>
-<area shape="rect" id="node43" href="$smacc__default__events_8h.html" title="smacc/smacc_default\l_events.h" alt="" coords="1865,377,2027,419"/>
-<area shape="rect" id="node44" href="$smacc__transition_8h.html" title="smacc/smacc_transition.h" alt="" coords="2153,295,2342,322"/>
-<area shape="rect" id="node21" href="$smacc__fifo__worker_8h.html" title="smacc/smacc_fifo_worker.h" alt="" coords="1125,385,1321,411"/>
-<area shape="rect" id="node29" href="$string__type__walker_8h.html" title="smacc/introspection\l/string_type_walker.h" alt="" coords="2294,474,2449,515"/>
-<area shape="rect" id="node34" href="$smacc__state__info_8h.html" title="smacc/introspection\l/smacc_state_info.h" alt="" coords="2068,474,2219,515"/>
-<area shape="rect" id="node37" href="$smacc__state__machine__info_8h.html" title="smacc/introspection\l/smacc_state_machine\l_info.h" alt="" coords="3330,467,3501,523"/>
-<area shape="rect" id="node38" href="$smacc__orthogonal_8h.html" title="smacc/smacc_orthogonal.h" alt="" coords="3763,571,3961,597"/>
+<map id="smacc_client_library/move_base_z_client/move_base_z_client_plugin/include/move_base_z_client_plugin/components/odom_tracker/odom_tracker.h" name="smacc_client_library/move_base_z_client/move_base_z_client_plugin/include/move_base_z_client_plugin/components/odom_tracker/odom_tracker.h">
+<area shape="rect" id="node2" href="$common_8h.html" title="smacc/common.h" alt="" coords="1895,228,2032,255"/>
+<area shape="rect" id="node45" href="$component_8h.html" title="smacc/component.h" alt="" coords="2125,146,2279,173"/>
+<area shape="rect" id="node19" href="$smacc__fifo__scheduler_8h.html" title="smacc/smacc_fifo_scheduler.h" alt="" coords="1475,310,1691,337"/>
+<area shape="rect" id="node23" href="$smacc__types_8h.html" title="smacc/smacc_types.h" alt="" coords="1795,585,1959,612"/>
+<area shape="rect" id="node25" href="$introspection_8h.html" title="smacc/introspection\l/introspection.h" alt="" coords="2181,392,2332,433"/>
+<area shape="rect" id="node43" href="$smacc__default__events_8h.html" title="smacc/smacc_default\l_events.h" alt="" coords="1865,392,2027,433"/>
+<area shape="rect" id="node44" href="$smacc__transition_8h.html" title="smacc/smacc_transition.h" alt="" coords="2153,310,2342,337"/>
+<area shape="rect" id="node21" href="$smacc__fifo__worker_8h.html" title="smacc/smacc_fifo_worker.h" alt="" coords="1125,399,1321,426"/>
+<area shape="rect" id="node29" href="$string__type__walker_8h.html" title="smacc/introspection\l/string_type_walker.h" alt="" coords="2294,489,2449,530"/>
+<area shape="rect" id="node34" href="$smacc__state__info_8h.html" title="smacc/introspection\l/smacc_state_info.h" alt="" coords="2068,489,2219,530"/>
+<area shape="rect" id="node37" href="$smacc__state__machine__info_8h.html" title="smacc/introspection\l/smacc_state_machine\l_info.h" alt="" coords="3330,481,3501,537"/>
+<area shape="rect" id="node38" href="$smacc__orthogonal_8h.html" title="smacc/smacc_orthogonal.h" alt="" coords="3763,585,3961,612"/>
 </map>
